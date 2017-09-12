@@ -1,0 +1,225 @@
+{
+  "localId": "5b3447fc-a4f6-42d1-805d-93ab6c389c1e",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "e635e2c2d61149592bd94401a1a39a8951be2fdc",
+  "platform": 6,
+  "size": 2819722,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "zh_CN": "小米公司",
+    "en_US": "MIUI"
+  },
+  "designers": {
+    "zh_CN": "小米公司",
+    "en_US": "MIUI"
+  },
+  "titles": {
+    "zh_CN": "轻奢",
+    "en_US": "High Life",
+    "zh_TW": "輕奢"
+  },
+  "descriptions": {
+    "zh_CN": "经典的深咖啡配色，配以暗金色泽，沉稳干练又显内涵，一如你对生活品质的考究，这就是MIUI轻奢版。",
+    "en_US": "For the person who appreciates the finer things in life.",
+    "zh_TW": "經典的深咖啡配色，配以暗金色澤，沈穩幹練又顯內涵，一如你對生活品質的考究，這就是MIUI輕奢版。"
+  },
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_lockscreen_0.jpg",
+      "preview_launcher_0.jpg",
+      "preview_launcher_1.jpg",
+      "preview_statusbar_0.jpg",
+      "preview_contact_0.jpg",
+      "preview_mms_0.jpg",
+      "preview_mms_1.jpg",
+      "preview_icons_small_0.jpg",
+      "preview_icons_0.jpg",
+      "preview_clock_2x4_0.png"
+    ],
+    "en_US": [
+      "en_US_lockscreen_0.jpg",
+      "en_US_launcher_0.jpg",
+      "en_US_launcher_1.jpg",
+      "en_US_statusbar_0.jpg",
+      "en_US_contact_0.jpg",
+      "en_US_mms_0.jpg",
+      "en_US_mms_1.jpg",
+      "en_US_clock_2x4_0.png"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_lockscreen_0.jpg",
+      "preview_launcher_0.jpg",
+      "preview_launcher_1.jpg",
+      "preview_statusbar_0.jpg",
+      "preview_contact_0.jpg",
+      "preview_mms_0.jpg",
+      "preview_mms_1.jpg",
+      "preview_icons_0.jpg",
+      "preview_clock_2x4_0.png"
+    ],
+    "en_US": [
+      "en_US_lockscreen_0.jpg",
+      "en_US_launcher_0.jpg",
+      "en_US_launcher_1.jpg",
+      "en_US_statusbar_0.jpg",
+      "en_US_contact_0.jpg",
+      "en_US_mms_0.jpg",
+      "en_US_mms_1.jpg",
+      "en_US_clock_2x4_0.png"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [],
+  "subResources": [
+    {
+      "localId": "1914afcd-66ab-4c3f-942d-696b7d654928",
+      "resourceCode": "launcher",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "040c6a1b-b735-4dab-8b3c-9615b5bc6020",
+      "resourceCode": "framework",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "6075cdf4-df79-4587-9a76-b075721451ed",
+      "resourceCode": "contact",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "ba34cb74-9eda-4ddf-bdc4-fef0c69aea35",
+      "resourceCode": "mms",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "23501b82-2def-4271-9845-89776a0ef57b",
+      "resourceCode": "wallpaper",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "c20919c8-b32a-4659-8343-02d6f007c0fe",
+      "resourceCode": "statusbar",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "7aba81d0-3ad3-49d1-bc52-f2485c1c42eb",
+      "resourceCode": "lockscreen",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "056e4e59-5556-4474-bfc4-a2177b5eba20",
+      "resourceCode": "clock_2x4",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "3d1235c9-9b83-44d3-9c97-794b54740a3b",
+      "resourceCode": "com.android.fileexplorer",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "6ce4d324-2a02-46b2-9f03-35bbc7e79dc9",
+      "resourceCode": "com.android.keyguard",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "81accaff-803d-4b26-b65e-920673663214",
+      "resourceCode": "com.android.settings",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "3c633ac8-e609-47d0-ae2f-ed762afc6fd9",
+      "resourceCode": "com.android.thememanager",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "3bf9f992-708d-4b95-8be9-33943780f881",
+      "resourceCode": "com.android.updater",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "2f7bc486-55d1-4476-b25b-888b05e4d291",
+      "resourceCode": "framework-miui-res",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "e5973b90-a27f-4451-8fcf-8c03f8e67555",
+      "resourceCode": "icons",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "2b9ad4ea-d57a-4314-bd85-12fd5ebfd7e5",
+      "resourceCode": "com.miui.antispam",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "c8eb289d-33c0-4c92-b205-608ebcfad4a5",
+      "resourceCode": "com.miui.securitycenter",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "1f838e03-a481-4558-b9f9-60a0c399cf03",
+      "resourceCode": "com.miui.cleanmaster",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "c80994b4-0efc-4d62-ae7c-ac62dadef21d",
+      "resourceCode": "com.miui.gallery",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "bd511417-c067-45d7-8b63-b6227aec0666",
+      "resourceCode": "com.miui.mipub",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null
+}

@@ -1,0 +1,53 @@
+{
+  "localId": "dc31b721-a231-4861-aaae-83801c31e2e8",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "platform": 4,
+  "size": 25949,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "zh_CN": "小米公司",
+    "en_US": "MIUI"
+  },
+  "designers": {
+    "zh_CN": "小米公司",
+    "en_US": "MIUI"
+  },
+  "titles": {
+    "zh_CN": "男生",
+    "en_US": "Ocean Breeze",
+    "zh_TW": "男生"
+  },
+  "descriptions": {
+    "zh_CN": "海洋色壁纸配上滑板鞋底纹，满满的运动风和成长感，青春就是明快。",
+    "en_US": "There is no blue without yellow and orange, there is no boy without hope and happiness.",
+    "zh_TW": "海洋色壁紙配上滑板鞋底紋，滿滿的運動風和成長感，青春就是明快。"
+  },
+  "builtInThumbnails": {
+    "fallback": [],
+    "en_US": []
+  },
+  "builtInPreviews": {
+    "fallback": [],
+    "en_US": []
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "e75f2b02-8ac5-486f-a9a0-4f19d872d6a5",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null
+}

@@ -1,0 +1,53 @@
+{
+  "localId": "aff65409-6942-448a-8045-15f7aff9c9ee",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "platform": 4,
+  "size": 291,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "zh_CN": "小米公司",
+    "en_US": "MIUI"
+  },
+  "designers": {
+    "zh_CN": "小米公司",
+    "en_US": "MIUI"
+  },
+  "titles": {
+    "zh_CN": "女生",
+    "en_US": "Pink Blush",
+    "zh_TW": "女生"
+  },
+  "descriptions": {
+    "zh_CN": "水嫩可爱、吹弹可破的粉嫩，配合图标超Q的果冻质感，映衬出少女的梦幻透明感。",
+    "en_US": "Pink up your life!",
+    "zh_TW": "水嫩可愛、吹彈可破的粉嫩，配合圖標超Q的果凍質感，映襯出少女的夢幻透明感。"
+  },
+  "builtInThumbnails": {
+    "fallback": [],
+    "en_US": []
+  },
+  "builtInPreviews": {
+    "fallback": [],
+    "en_US": []
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "6b8971d0-853f-4eaa-b585-7bd6e6fccfed",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null
+}

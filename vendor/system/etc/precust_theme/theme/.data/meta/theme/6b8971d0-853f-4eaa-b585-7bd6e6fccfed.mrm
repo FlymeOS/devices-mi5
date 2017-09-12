@@ -1,0 +1,246 @@
+{
+  "localId": "6b8971d0-853f-4eaa-b585-7bd6e6fccfed",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "24d87b171a251d9d097a34bbe9c2aede6ff9b866",
+  "platform": 6,
+  "size": 2367906,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "zh_CN": "小米公司",
+    "en_US": "MIUI"
+  },
+  "designers": {
+    "zh_CN": "小米公司",
+    "en_US": "MIUI"
+  },
+  "titles": {
+    "zh_CN": "女生",
+    "en_US": "Pink Blush",
+    "zh_TW": "女生"
+  },
+  "descriptions": {
+    "zh_CN": "水嫩可爱、吹弹可破的粉嫩，配合图标超Q的果冻质感，映衬出少女的梦幻透明感。",
+    "en_US": "Pink up your life!",
+    "zh_TW": "水嫩可愛、吹彈可破的粉嫩，配合圖標超Q的果凍質感，映襯出少女的夢幻透明感。"
+  },
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_lockscreen_0.jpg",
+      "preview_launcher_0.jpg",
+      "preview_launcher_1.jpg",
+      "preview_statusbar_0.jpg",
+      "preview_contact_0.jpg",
+      "preview_mms_0.jpg",
+      "preview_mms_1.jpg",
+      "preview_icons_small_0.jpg",
+      "preview_icons_0.jpg",
+      "preview_clock_2x4_0.png"
+    ],
+    "en_US": [
+      "en_US_lockscreen_0.jpg",
+      "en_US_launcher_0.jpg",
+      "en_US_launcher_1.jpg",
+      "en_US_statusbar_0.jpg",
+      "en_US_contact_0.jpg",
+      "en_US_mms_0.jpg",
+      "en_US_mms_1.jpg",
+      "en_US_clock_2x4_0.png"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_lockscreen_0.jpg",
+      "preview_launcher_0.jpg",
+      "preview_launcher_1.jpg",
+      "preview_statusbar_0.jpg",
+      "preview_contact_0.jpg",
+      "preview_mms_0.jpg",
+      "preview_mms_1.jpg",
+      "preview_icons_0.jpg",
+      "preview_clock_2x4_0.png"
+    ],
+    "en_US": [
+      "en_US_lockscreen_0.jpg",
+      "en_US_launcher_0.jpg",
+      "en_US_launcher_1.jpg",
+      "en_US_statusbar_0.jpg",
+      "en_US_contact_0.jpg",
+      "en_US_mms_0.jpg",
+      "en_US_mms_1.jpg",
+      "en_US_clock_2x4_0.png"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [],
+  "subResources": [
+    {
+      "localId": "a3958749-a4ff-47d5-bfca-3526b2c18730",
+      "resourceCode": "launcher",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "aff65409-6942-448a-8045-15f7aff9c9ee",
+      "resourceCode": "framework",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "8c6426d4-f457-4a47-b371-5e0b17997e5e",
+      "resourceCode": "contact",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "a2fe1bb8-6993-4656-9f5f-5b2671d41508",
+      "resourceCode": "mms",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "6abd802f-c29a-4326-ab77-b55ef9a01603",
+      "resourceCode": "wallpaper",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "286a1ef9-7cfb-41dd-b860-185900d832ed",
+      "resourceCode": "statusbar",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "4f9b0fb9-7c8a-49cd-a48a-fade73c03d51",
+      "resourceCode": "lockscreen",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "ea680d1c-1f51-4e44-a931-427885f58892",
+      "resourceCode": "clock_2x4",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "8873d443-8bfd-4a7e-9ec0-78f905ba866c",
+      "resourceCode": "com.android.fileexplorer",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "909d0e44-7303-4549-9eea-4375df84166b",
+      "resourceCode": "com.android.providers.downloads.ui",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "12fcb2f5-0cc8-475a-ab5d-cec1b0193f4c",
+      "resourceCode": "com.android.settings",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "3571c9ea-af9e-4b81-a6e0-3758dbfa37d7",
+      "resourceCode": "com.android.thememanager",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "0c3a4250-c107-4d90-93c4-2ea36fd34e0f",
+      "resourceCode": "com.android.updater",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "1a025da6-c548-42e5-995c-78b99db99f99",
+      "resourceCode": "com.miui.notes",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "3c0ca313-3566-440b-837a-e37001056c3b",
+      "resourceCode": "com.miui.securitycenter",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "0455431a-20da-40dd-b5c8-e7c4100dff99",
+      "resourceCode": "com.miui.weather2",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "5d9f2046-f15f-4084-aeb3-7f189ea06228",
+      "resourceCode": "framework-miui-res",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "41f74ab1-e909-4319-8083-6fd6838fe5ea",
+      "resourceCode": "icons",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "d58c9005-3422-4662-8101-3a5dd50e93f8",
+      "resourceCode": "com.miui.antispam",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "a685530c-7fbe-4588-acbf-c1f1dabbfa10",
+      "resourceCode": "com.miui.networkassistant",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "ccfee3cb-56bc-4404-9af0-89ea5d4d254d",
+      "resourceCode": "com.miui.cleanmaster",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "8f1f230f-7fbd-4637-a3ec-eb4257d5cb03",
+      "resourceCode": "com.miui.gallery",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "a71a9758-b0a7-4309-89d3-8b201300ed95",
+      "resourceCode": "com.miui.mipub",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null
+}

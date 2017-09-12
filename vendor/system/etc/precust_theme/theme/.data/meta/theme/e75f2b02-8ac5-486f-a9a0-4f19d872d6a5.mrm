@@ -1,0 +1,179 @@
+{
+  "localId": "e75f2b02-8ac5-486f-a9a0-4f19d872d6a5",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "0642068a1f70560907a34d26b256b23de73cd2d7",
+  "platform": 6,
+  "size": 1722070,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "zh_CN": "小米公司",
+    "en_US": "MIUI"
+  },
+  "designers": {
+    "zh_CN": "小米公司",
+    "en_US": "MIUI"
+  },
+  "titles": {
+    "zh_CN": "男生",
+    "en_US": "Ocean Breeze",
+    "zh_TW": "男生"
+  },
+  "descriptions": {
+    "zh_CN": "海洋色壁纸配上滑板鞋底纹，满满的运动风和成长感，青春就是明快。",
+    "en_US": "There is no blue without yellow and orange, there is no boy without hope and happiness.",
+    "zh_TW": "海洋色壁紙配上滑板鞋底紋，滿滿的運動風和成長感，青春就是明快。"
+  },
+  "builtInThumbnails": {
+    "fallback": [
+      "preview_lockscreen_0.jpg",
+      "preview_launcher_0.jpg",
+      "preview_launcher_1.jpg",
+      "preview_statusbar_0.jpg",
+      "preview_contact_0.jpg",
+      "preview_mms_0.jpg",
+      "preview_mms_1.jpg",
+      "preview_icons_small_0.jpg",
+      "preview_icons_0.jpg"
+    ],
+    "en_US": [
+      "en_US_lockscreen_0.jpg",
+      "en_US_launcher_0.jpg",
+      "en_US_launcher_1.jpg",
+      "en_US_statusbar_0.jpg",
+      "en_US_contact_0.jpg",
+      "en_US_mms_0.jpg",
+      "en_US_mms_1.jpg"
+    ]
+  },
+  "builtInPreviews": {
+    "fallback": [
+      "preview_lockscreen_0.jpg",
+      "preview_launcher_0.jpg",
+      "preview_launcher_1.jpg",
+      "preview_statusbar_0.jpg",
+      "preview_contact_0.jpg",
+      "preview_mms_0.jpg",
+      "preview_mms_1.jpg",
+      "preview_icons_0.jpg"
+    ],
+    "en_US": [
+      "en_US_lockscreen_0.jpg",
+      "en_US_launcher_0.jpg",
+      "en_US_launcher_1.jpg",
+      "en_US_statusbar_0.jpg",
+      "en_US_contact_0.jpg",
+      "en_US_mms_0.jpg",
+      "en_US_mms_1.jpg"
+    ]
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [],
+  "subResources": [
+    {
+      "localId": "66eb9591-2f0d-47dd-906d-7f0636cd478b",
+      "resourceCode": "launcher",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "1d26750f-ed9e-4b5c-8746-302a5a6ae31c",
+      "resourceCode": "contact",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "eea382d7-ce81-4319-b465-eab693b43a9e",
+      "resourceCode": "mms",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "6d13e558-068e-4143-a6a3-5fc6c78b28e8",
+      "resourceCode": "wallpaper",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "0c3050cf-9324-4417-b093-c20d79c04787",
+      "resourceCode": "statusbar",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "787c96f2-5dd1-4708-94b5-dbf15fa4dee8",
+      "resourceCode": "lockscreen",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "db47b4f6-7ed3-48c3-94b2-0dcc74e5d17e",
+      "resourceCode": "com.android.fileexplorer",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "b10dc868-b908-4bd5-a4c2-0e7cfbbcf88b",
+      "resourceCode": "com.android.providers.downloads.ui",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "dc31b721-a231-4861-aaae-83801c31e2e8",
+      "resourceCode": "com.android.settings",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "0bfe4af3-36b6-4fdd-8576-efcfff426a92",
+      "resourceCode": "com.android.thememanager",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "0b7fd000-6463-4db4-b0c6-0fa142f3c2aa",
+      "resourceCode": "framework-miui-res",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "d2c0a825-9b9f-4733-b15c-a98a69cb50a6",
+      "resourceCode": "icons",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "3548ba73-6dce-4850-a3e6-1bf8f748e268",
+      "resourceCode": "com.miui.antispam",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    },
+    {
+      "localId": "c317da54-1f9a-4424-8ebb-39156a8b265b",
+      "resourceCode": "com.miui.securitycenter",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null
+}

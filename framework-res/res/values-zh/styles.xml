@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextAppearance.Toast" parent="@style/TextAppearance">
+        <item name="textSize">12.0sp</item>
+        <item name="textColor">@color/toast_text_color</item>
+        <item name="fontFamily">miui</item>
+    </style>
+</resources>

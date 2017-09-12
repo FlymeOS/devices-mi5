@@ -1,0 +1,53 @@
+{
+  "localId": "a7eeffd6-1d91-462f-b026-2a6d5f625d1c",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "platform": 4,
+  "size": 7337,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "zh_CN": "小米公司",
+    "en_US": "MIUI"
+  },
+  "designers": {
+    "zh_CN": "小米公司",
+    "en_US": "MIUI"
+  },
+  "titles": {
+    "zh_CN": "女神",
+    "en_US": "Rosé",
+    "zh_TW": "女神"
+  },
+  "descriptions": {
+    "zh_CN": "最典雅高贵的粉色，搭配经典钻石底纹等奢侈品元素的完美融入，这才是倾国倾城的女神范！",
+    "en_US": "Pink isn't just a color. It’s an attitude.",
+    "zh_TW": "最典雅高貴的粉色，搭配經典鑽石底紋等奢侈品元素的完美融入，這才是傾國傾城的女神範！"
+  },
+  "builtInThumbnails": {
+    "fallback": [],
+    "en_US": []
+  },
+  "builtInPreviews": {
+    "fallback": [],
+    "en_US": []
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "c8701ec0-5b68-4291-96a6-933b921c2db4",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null
+}

@@ -1,0 +1,53 @@
+{
+  "localId": "6ce4d324-2a02-46b2-9f03-35bbc7e79dc9",
+  "onlineId": null,
+  "assemblyId": null,
+  "productId": null,
+  "hash": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "platform": 4,
+  "size": 40690,
+  "updatedTime": 0,
+  "version": "1.0",
+  "authors": {
+    "zh_CN": "小米公司",
+    "en_US": "MIUI"
+  },
+  "designers": {
+    "zh_CN": "小米公司",
+    "en_US": "MIUI"
+  },
+  "titles": {
+    "zh_CN": "轻奢",
+    "en_US": "High Life",
+    "zh_TW": "輕奢"
+  },
+  "descriptions": {
+    "zh_CN": "经典的深咖啡配色，配以暗金色泽，沉稳干练又显内涵，一如你对生活品质的考究，这就是MIUI轻奢。",
+    "en_US": "For the person who appreciates the finer things in life.",
+    "zh_TW": "經典的深咖啡配色，配以暗金色澤，沈穩幹練又顯內涵，一如你對生活品質的考究，這就是MIUI輕奢版。"
+  },
+  "builtInThumbnails": {
+    "fallback": [],
+    "en_US": []
+  },
+  "builtInPreviews": {
+    "fallback": [],
+    "en_US": []
+  },
+  "thumbnails": [],
+  "previews": [],
+  "parentResources": [
+    {
+      "localId": "5b3447fc-a4f6-42d1-805d-93ab6c389c1e",
+      "resourceCode": "theme",
+      "extraMeta": {},
+      "metaPath": null,
+      "contentPath": null
+    }
+  ],
+  "subResources": [],
+  "extraMeta": {},
+  "metaPath": null,
+  "contentPath": null,
+  "rightsPath": null
+}
