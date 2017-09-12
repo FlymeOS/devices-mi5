@@ -12,6 +12,8 @@ import /init.${ro.zygote}.rc
 import /init.trace.rc
 import /init.miui.rc
 
+import /init.flyme.rc
+
 on early-init
     # Set init and its forked children's oom_adj.
     write /proc/1/oom_score_adj -1000
