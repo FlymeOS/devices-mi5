@@ -1,0 +1,27 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: framework.jar
+compressionType: false
+doNotCompress: null
+isFrameworkApk: false
+packageInfo: null
+sdkInfo: null
+sharedLibrary: false
+unknownFiles:
+  .classpath: '8'
+  .project: '8'
+  org/apache/commons/lang3/package.html: '8'
+  org/apache/commons/lang3/overview.html: '8'
+  org/apache/commons/lang3/reflect/package.html: '8'
+  org/apache/commons/lang3/mutable/package.html: '8'
+  org/apache/commons/lang3/event/package.html: '8'
+  org/apache/commons/lang3/math/package.html: '8'
+  org/apache/commons/lang3/exception/package.html: '8'
+  org/apache/commons/lang3/time/package.html: '8'
+  org/apache/commons/lang3/concurrent/package.html: '8'
+  org/apache/commons/lang3/builder/package.html: '8'
+  org/apache/commons/lang3/text/package.html: '8'
+  org/apache/commons/lang3/text/translate/package.html: '8'
+  org/apache/commons/lang3/tuple/package.html: '8'
+usesFramework: null
+version: 2.1.1-04d478-SNAPSHOT
+versionInfo: null
