@@ -1348,6 +1348,9 @@
     .param p1, "onlyCore"    # Z
 
     .prologue
+
+    return-void
+
     .line 466
     new-instance v0, Lcom/miui/server/SecurityManagerService$1;
 
