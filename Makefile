@@ -40,7 +40,7 @@ vendor_modify_images := boot
 # The default value is app or pri-app which not need to configure.
 # You can configure the directory name which relative to the vendor/system directory.
 #-----------------------------------------------------------------------------
-#vendor_remove_dirs := vendor/operator/app
+vendor_remove_dirs := data-app etc/precust_theme media/lockscreen media/theme media/wallpaper
 
 ##############################################################################
 # The value decides the file which you want to remove in the vendor directory for the ota package.
