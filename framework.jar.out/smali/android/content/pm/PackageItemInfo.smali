@@ -482,6 +482,9 @@
     .param p1, "pm"    # Landroid/content/pm/PackageManager;
 
     .prologue
+
+    goto :goto_flyme_0
+
     .line 156
     iget-object v1, p0, Landroid/content/pm/PackageItemInfo;->packageName:Ljava/lang/String;
 
@@ -521,6 +524,9 @@
 
     .restart local v0    # "dr":Landroid/graphics/drawable/Drawable;
     :cond_1
+
+    :goto_flyme_0
+
     invoke-virtual {p0}, Landroid/content/pm/PackageItemInfo;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
     move-result-object v1
