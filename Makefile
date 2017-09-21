@@ -54,7 +54,7 @@ vendor_remove_dirs := data-app etc/precust_theme media/lockscreen media/theme me
 # The default value is Bluetooth.
 # You can configure the apk name in the vendor/system/app or vendor/system/priv-app directory.
 #-----------------------------------------------------------------------------
-vendor_saved_apps := Bluetooth BluetoothExt BluetoothMidiService HTMLViewer KeyChain MiuiBluetooth NfcNci PicoTts PrintSpooler Stk UserDictionaryProvider BackupRestoreConfirmation DefaultContainerService ExternalStorageProvider FusedLocation InputDevices ProxyHandler SharedStorageBackup Shell miui miuisystem telresources AMAPNetworkLocation com.qualcomm.location
+vendor_saved_apps := Bluetooth BluetoothExt BluetoothMidiService HTMLViewer KeyChain MiuiBluetooth NfcNci PicoTts PrintSpooler Stk UserDictionaryProvider BackupRestoreConfirmation DefaultContainerService ExternalStorageProvider FusedLocation InputDevices ProxyHandler SharedStorageBackup Shell miui miuisystem telresources AMAPNetworkLocation com.qualcomm.location QtiTetherService QtiGbaAuthService QtiTelephonyService com.qualcomm.qti.services.secureui qcrilmsgtunnel
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
@@ -105,7 +105,7 @@ vendor_modify_jars := framework services telephony-common wifi-service
 # The command idtoname how to use: first use "apktool d source/system/framework/framework-res.apk other/TMP/framework-res",
 # and then use "idtoname other/TMP/framework-res/res/values/public_master.xml XXXX/smali"(XXXX is the directory where you decode board system apk).
 #-----------------------------------------------------------------------------
-board_modify_apps := TeleService
+board_modify_apps := TeleService Telecom
 
 ##############################################################################
 # The value decides which jar you want to modify, when the jar is based on the board framework jar.
