@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroid/app/ApplicationPackageManager$FlymeInjector;,
         Landroid/app/ApplicationPackageManager$OnPermissionsChangeListenerDelegate;,
         Landroid/app/ApplicationPackageManager$MoveCallbackDelegate;,
         Landroid/app/ApplicationPackageManager$ResourceName;
@@ -2741,6 +2742,13 @@
     .locals 2
 
     .prologue
+
+    invoke-static {}, Landroid/app/ApplicationPackageManager$FlymeInjector;->getFlymeDefaultActivityIcon()Landroid/graphics/drawable/Drawable;
+
+    move-result-object v0
+
+    return-object v0
+
     .line 896
     invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
 
@@ -2807,6 +2815,13 @@
 
     .line 821
     .local v0, "cachedIcon":Landroid/graphics/drawable/Drawable;
+
+    invoke-static/range {p1 .. p1}, Landroid/app/ApplicationPackageManager$FlymeInjector;->isFlymeCalendarPkg(Ljava/lang/String;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_0
+
     if-eqz v0, :cond_0
 
     .line 872
@@ -2844,6 +2859,10 @@
     const/4 v6, 0x0
 
     invoke-virtual {v4, p2, v6}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+
+    move-result-object v1
+
+    invoke-static/range {p0 .. p3}, Landroid/app/ApplicationPackageManager$FlymeInjector;->getFlymeThemeDrawable(Landroid/app/ApplicationPackageManager;Ljava/lang/String;ILandroid/content/pm/ApplicationInfo;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
@@ -8344,4 +8363,87 @@
     move-exception v0
 
     goto :goto_0
+.end method
+
+.method public getPackageArchiveInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    .locals 6
+    .param p1, "archiveFilePath"    # Ljava/lang/String;
+    .param p2, "flags"    # I
+
+    .prologue
+    const/4 v4, 0x0
+
+    invoke-super {p0, p1, p2}, Landroid/content/pm/PackageManager;->getPackageArchiveInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+
+    move-result-object v3
+
+    .local v3, "packageInfo":Landroid/content/pm/PackageInfo;
+    if-nez v3, :cond_0
+
+    return-object v4
+
+    :cond_0
+    iget-object v4, p0, Landroid/app/ApplicationPackageManager;->mContext:Landroid/app/ContextImpl;
+
+    invoke-static {v4}, Landroid/content/pm/FlymePackageManager;->getInstance(Landroid/content/Context;)Landroid/content/pm/FlymePackageManager;
+
+    move-result-object v2
+
+    .local v2, "fpm":Landroid/content/pm/FlymePackageManager;
+    if-eqz v2, :cond_1
+
+    invoke-static {}, Landroid/os/Binder;->getCallingUid()I
+
+    move-result v4
+
+    const/16 v5, 0x3e8
+
+    if-eq v4, v5, :cond_1
+
+    invoke-virtual {v2}, Landroid/content/pm/FlymePackageManager;->getInternalAppList()Ljava/util/List;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_1
+
+    invoke-virtual {v2}, Landroid/content/pm/FlymePackageManager;->getInternalAppList()Ljava/util/List;
+
+    move-result-object v4
+
+    iget-object v5, v3, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
+
+    invoke-interface {v4, v5}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_1
+
+    :try_start_0
+    iget-object v4, v3, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
+
+    const/4 v5, 0x0
+
+    invoke-virtual {p0, v4, v5}, Landroid/app/ApplicationPackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+
+    move-result-object v1
+
+    .local v1, "fakeInfo":Landroid/content/pm/PackageInfo;
+    if-eqz v1, :cond_1
+
+    iget v4, v1, Landroid/content/pm/PackageInfo;->versionCode:I
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    const v5, 0x7fffffff
+
+    if-ne v4, v5, :cond_1
+
+    return-object v1
+
+    .end local v1    # "fakeInfo":Landroid/content/pm/PackageInfo;
+    :catch_0
+    move-exception v0
+
+    :cond_1
+    return-object v3
 .end method

@@ -24,6 +24,8 @@
 
 
 # instance fields
+.field mFlymeStableInsetTop:I
+
 .field private final mBackgroundFallback:Lcom/android/internal/widget/BackgroundFallback;
 
 .field private final mBackgroundPadding:Landroid/graphics/Rect;
@@ -1464,6 +1466,15 @@
     .param p7, "animate"    # Z
 
     .prologue
+
+    iget-object v0, p0, Lcom/android/internal/policy/PhoneWindow$DecorView;->this$0:Lcom/android/internal/policy/PhoneWindow;
+
+    move/from16 v1, p4
+
+    invoke-static {p0, p1, v0, v1}, Lcom/android/internal/policy/PhoneWindow$FlymeInjector;->flymeGetDisplayMetricsHeight(Lcom/android/internal/policy/PhoneWindow$DecorView;Lcom/android/internal/policy/PhoneWindow$ColorViewState;Lcom/android/internal/policy/PhoneWindow;I)I
+
+    move-result p4
+
     .line 2981
     if-lez p4, :cond_3
 
@@ -2030,6 +2041,8 @@
 
     .line 2888
     if-eqz p1, :cond_0
+
+    invoke-static/range {p0 .. p1}, Lcom/android/internal/policy/PhoneWindow$FlymeInjector;->setFlymeStableInsetTop(Lcom/android/internal/policy/PhoneWindow$DecorView;Landroid/view/WindowInsets;)V
 
     .line 2889
     invoke-virtual/range {p1 .. p1}, Landroid/view/WindowInsets;->getStableInsetTop()I
@@ -3309,6 +3322,19 @@
     .line 2314
     .restart local v2    # "handled":Z
     :goto_2
+
+    invoke-static {p0, p1}, Lcom/android/internal/policy/PhoneWindow$FlymeInjector;->flymeDispatchKeyEvent(Lcom/android/internal/policy/PhoneWindow$DecorView;Landroid/view/KeyEvent;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_flyme_0
+
+    const/4 v6, 0x1
+
+    return v6
+
+    :cond_flyme_0
+
     if-nez v2, :cond_0
 
     .line 2319
@@ -3672,6 +3698,8 @@
 
     .line 2697
     :cond_0
+    invoke-static/range {p0 .. p1}, Lcom/android/internal/policy/PhoneWindow$FlymeInjector;->flymeDrawStatusBarBackground(Lcom/android/internal/policy/PhoneWindow$DecorView;Landroid/graphics/Canvas;)V
+
     return-void
 .end method
 
@@ -5737,6 +5765,18 @@
 
     if-eqz v2, :cond_1
 
+    invoke-static/range {p0 .. p1}, Lcom/android/internal/policy/PhoneWindow$FlymeInjector;->flymeSuperDispatchKeyEvent(Lcom/android/internal/policy/PhoneWindow$DecorView;Landroid/view/KeyEvent;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_flyme_0
+
+    const/4 v2, 0x1
+
+    return v2
+
+    :cond_flyme_0
+
     .line 2390
     if-ne v0, v1, :cond_0
 
@@ -5877,4 +5917,22 @@
     const/4 v0, 0x0
 
     goto :goto_0
+.end method
+
+.method flymeGetFieldActionMode()Landroid/view/ActionMode;
+    .locals 1
+
+    .prologue
+    iget-object v0, p0, Lcom/android/internal/policy/PhoneWindow$DecorView;->mPrimaryActionMode:Landroid/view/ActionMode;
+
+    return-object v0
+.end method
+
+.method flymeGetFieldStatusColorViewState()Lcom/android/internal/policy/PhoneWindow$ColorViewState;
+    .locals 1
+
+    .prologue
+    iget-object v0, p0, Lcom/android/internal/policy/PhoneWindow$DecorView;->mStatusColorViewState:Lcom/android/internal/policy/PhoneWindow$ColorViewState;
+
+    return-object v0
 .end method

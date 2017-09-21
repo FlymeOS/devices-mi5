@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroid/widget/Toast$FlymeInjector;,
         Landroid/widget/Toast$TN;
     }
 .end annotation
@@ -474,9 +475,7 @@
     .line 469
     iget-object v0, p0, Landroid/widget/Toast;->mTN:Landroid/widget/Toast$TN;
 
-    iget-object v0, v0, Landroid/widget/Toast$TN;->mParams:Landroid/view/WindowManager$LayoutParams;
-
-    iput p1, v0, Landroid/view/WindowManager$LayoutParams;->type:I
+    iput p1, v0, Landroid/widget/Toast$TN;->mFlymeToastType:I
 
     .line 470
     return-void
@@ -535,6 +534,16 @@
     iget-object v3, p0, Landroid/widget/Toast;->mNextView:Landroid/view/View;
 
     iput-object v3, v2, Landroid/widget/Toast$TN;->mNextView:Landroid/view/View;
+
+    invoke-static/range {p0 .. p0}, Landroid/widget/Toast$FlymeInjector;->checkSameMsg(Landroid/widget/Toast;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_flyme_0
+
+    return-void
+
+    :cond_flyme_0
 
     .line 122
     :try_start_0

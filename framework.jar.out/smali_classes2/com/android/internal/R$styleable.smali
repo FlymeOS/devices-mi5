@@ -15,6 +15,16 @@
 
 
 # static fields
+.field public static final AndroidManifestActivity_needAccessControl:I = 0x2a
+
+.field public static final SizeAdaptiveLayout:[I
+
+.field public static final SizeAdaptiveLayout_Layout:[I
+
+.field public static final SizeAdaptiveLayout_Layout_layout_maxHeight:I = 0x0
+
+.field public static final SizeAdaptiveLayout_Layout_layout_minHeight:I = 0x1
+
 .field public static final AbsListView:[I
 
 .field public static final AbsListView_cacheColorHint:I = 0x6
@@ -4859,6 +4869,8 @@
     .line 25097
     const/16 v0, 0x2a
 
+    add-int/lit8 v0, v0, 0x1
+
     new-array v0, v0, [I
 
     fill-array-data v0, :array_e
@@ -6450,6 +6462,22 @@
 
     sput-object v0, Lcom/android/internal/R$styleable;->ShapeDrawablePadding:[I
 
+    const/4 v1, 0x0
+
+    new-array v0, v1, [I
+
+    sput-object v0, Lcom/android/internal/R$styleable;->SizeAdaptiveLayout:[I
+
+    const v0, #android:^attr-private@layout_maxHeight#t
+
+    const v1, #android:^attr-private@layout_minHeight#t
+
+    filled-new-array {v0, v1}, [I
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/internal/R$styleable;->SizeAdaptiveLayout_Layout:[I
+
     .line 50183
     new-array v0, v3, [I
 
@@ -7186,6 +7214,7 @@
         0x10104ef
         0x11600b9
         0x11600bb
+        #android:^attr-private@needAccessControl#t
     .end array-data
 
     .line 26404
