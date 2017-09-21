@@ -199,6 +199,10 @@
 
 .field private mNotifManager:Landroid/app/INotificationManager;
 
+.field private final mNotificationComponent:Landroid/content/ComponentName;
+
+.field private mNotificationSequenceNumber:I
+
 .field private final mOverLimitNotified:Landroid/util/ArraySet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
