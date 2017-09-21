@@ -33,5 +33,10 @@ elif [ "$apkBaseName" = "Telecom" ]; then
 elif [ "$apkBaseName" = "ConnectivitySettings" ]; then
     echo ">>> in custom_app for $apkBaseName to adjust the interface "setDefaultDataSubId" with "setDefaultDataSubIdExtended""
     find $tempSmaliDir/ -name "*.smali" | xargs sed -i 's#Landroid\/telephony\/SubscriptionManager;->setDefaultDataSubId(I)V#Landroid\/telephony\/SubscriptionManager;->setDefaultDataSubIdExtended(I)V#g'
+
+elif [ "$apkBaseName" = "SystemUI" ]; then
+    echo ">>> in custom_app for $apkBaseName."
+    injectMethod $tempSmaliDir/smali/com/android/systemui/keyguard/KeyguardViewMediator.smali "onSystemReady()V" "const/4 v0, 0x1\n    invoke-direct {p0, v0}, Lcom/android/systemui/keyguard/KeyguardViewMediator;->enableFingerprintNavigation(Z)V"
+    sed -i '$i\    <uses-permission android:name="com.fingerprints.service.ACCESS_EXTENSION_SERVICE"/>' $tempSmaliDir/AndroidManifest.xml
 fi
 

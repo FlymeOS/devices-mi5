@@ -570,7 +570,7 @@
     if-ne v7, v0, :cond_3
 
     .line 270
-    invoke-direct {p0}, Lcom/android/server/policy/MiuiPhoneWindowManager;->injectHomeEvent()V
+    invoke-direct {p0}, Lcom/android/server/policy/MiuiPhoneWindowManager;->injectBackEvent()V
 
     goto :goto_0
 
