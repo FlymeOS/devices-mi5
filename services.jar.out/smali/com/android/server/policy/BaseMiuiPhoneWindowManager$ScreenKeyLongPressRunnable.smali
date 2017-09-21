@@ -114,7 +114,7 @@
     .line 1475
     iget-object v0, p0, Lcom/android/server/policy/BaseMiuiPhoneWindowManager$ScreenKeyLongPressRunnable;->mSystemKeyPackages:Ljava/util/HashSet;
 
-    const-string v1, "com.miui.home"
+    const-string v1, "com.meizu.flyme.launcher"
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
