@@ -405,7 +405,17 @@
 
     move-object/from16 v2, v29
 
-    invoke-static {v3, v0, v5, v1, v2}, Lcom/android/server/am/ActivityManagerServiceInjector;->showMiuiAppCrashDialog(Lcom/android/server/am/ActivityManagerService;Ljava/util/HashMap;Landroid/content/Context;Lcom/android/server/am/ProcessRecord;Lcom/android/server/am/AppErrorResult;)V
+    #invoke-static {v3, v0, v5, v1, v2}, Lcom/android/server/am/ActivityManagerServiceInjector;->showMiuiAppCrashDialog(Lcom/android/server/am/ActivityManagerService;Ljava/util/HashMap;Landroid/content/Context;Lcom/android/server/am/ProcessRecord;Lcom/android/server/am/AppErrorResult;)V
+
+    new-instance v8, Lcom/android/server/am/AppErrorDialog;
+
+    invoke-direct {v8, v5, v3, v2, v1}, Lcom/android/server/am/AppErrorDialog;-><init>(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;Lcom/android/server/am/AppErrorResult;Lcom/android/server/am/ProcessRecord;)V
+
+    invoke-virtual {v8}, Landroid/app/Dialog;->show()V
+
+    move-object/from16 v0, v28
+
+    iput-object v8, v0, Lcom/android/server/am/ProcessRecord;->crashDialog:Landroid/app/Dialog;
 
     .line 1484
     :cond_9
