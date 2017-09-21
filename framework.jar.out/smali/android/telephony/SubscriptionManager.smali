@@ -2475,3 +2475,13 @@
 
     return-void
 .end method
+
+.method public setDefaultDataSubIdExtended(I)V
+    .locals 0
+    .param p1, "subId"    # I
+
+    .prologue
+    invoke-static {p1}, Landroid/telephony/SubscriptionManager;->setDefaultDataSubId(I)V
+
+    return-void
+.end method

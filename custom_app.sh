@@ -29,5 +29,9 @@ if [ "$apkBaseName" = "TeleService" ]; then
 elif [ "$apkBaseName" = "Telecom" ]; then
     echo ">>> in custom_app for $apkBaseName to adjust the interface "setDefaultVoiceSubId" with "setDefaultVoiceSubIdExtended""
     find $tempSmaliDir/ -name "*.smali" | xargs sed -i 's#Landroid\/telephony\/SubscriptionManager;->setDefaultVoiceSubId(I)V#Landroid\/telephony\/SubscriptionManager;->setDefaultVoiceSubIdExtended(I)V#g'
+
+elif [ "$apkBaseName" = "ConnectivitySettings" ]; then
+    echo ">>> in custom_app for $apkBaseName to adjust the interface "setDefaultDataSubId" with "setDefaultDataSubIdExtended""
+    find $tempSmaliDir/ -name "*.smali" | xargs sed -i 's#Landroid\/telephony\/SubscriptionManager;->setDefaultDataSubId(I)V#Landroid\/telephony\/SubscriptionManager;->setDefaultDataSubIdExtended(I)V#g'
 fi
 
