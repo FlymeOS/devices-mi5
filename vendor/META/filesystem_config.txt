@@ -2129,7 +2129,6 @@ system/framework/javax.obex.jar 0 0 644 selabel=u:object_r:system_file:s0 capabi
 system/framework/libspacescompat.jar 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/framework/media_cmd.jar 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/framework/microlog4android.jar 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/framework/miui.jar 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/framework/miuipushsdkshared.jar 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/framework/miuisdk.jar 0 0 777 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/framework/miuistatssdkshared.jar 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
