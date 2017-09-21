@@ -25,5 +25,9 @@ function injectMethod {
 if [ "$apkBaseName" = "TeleService" ]; then
     echo ">>> in custom_app for $apkBaseName."
     injectMethod $tempSmaliDir/smali/com/android/phone/PhoneGlobals.smali "onCreate()V" "invoke-static/range {p0 .. p0}, Lcom/android/phone/PhoneGlobals;->onCreateFlymeInject(Landroid/content/Context;)V"
+
+elif [ "$apkBaseName" = "Telecom" ]; then
+    echo ">>> in custom_app for $apkBaseName to adjust the interface "setDefaultVoiceSubId" with "setDefaultVoiceSubIdExtended""
+    find $tempSmaliDir/ -name "*.smali" | xargs sed -i 's#Landroid\/telephony\/SubscriptionManager;->setDefaultVoiceSubId(I)V#Landroid\/telephony\/SubscriptionManager;->setDefaultVoiceSubIdExtended(I)V#g'
 fi
 

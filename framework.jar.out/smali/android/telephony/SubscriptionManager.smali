@@ -2465,3 +2465,13 @@
 
     goto :goto_0
 .end method
+
+.method public setDefaultVoiceSubIdExtended(I)V
+    .locals 0
+    .param p1, "subId"    # I
+
+    .prologue
+    invoke-static {p1}, Landroid/telephony/SubscriptionManager;->setDefaultVoiceSubId(I)V
+
+    return-void
+.end method
