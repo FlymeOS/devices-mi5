@@ -27,17 +27,11 @@
 
 .field mCursorChanged:Z
 
-.field mCursorRectInWindow:Landroid/graphics/Rect;
-
 .field final mExtractedText:Landroid/view/inputmethod/ExtractedText;
 
 .field mExtractedTextRequest:Landroid/view/inputmethod/ExtractedTextRequest;
 
 .field mSelectionModeChanged:Z
-
-.field mTmpOffset:[F
-
-.field mTmpRectF:Landroid/graphics/RectF;
 
 
 # direct methods
@@ -45,36 +39,16 @@
     .locals 1
 
     .prologue
-    .line 5640
+    .line 5093
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5641
-    new-instance v0, Landroid/graphics/Rect;
-
-    invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
-
-    iput-object v0, p0, Landroid/widget/Editor$InputMethodState;->mCursorRectInWindow:Landroid/graphics/Rect;
-
-    .line 5642
-    new-instance v0, Landroid/graphics/RectF;
-
-    invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
-
-    iput-object v0, p0, Landroid/widget/Editor$InputMethodState;->mTmpRectF:Landroid/graphics/RectF;
-
-    .line 5643
-    const/4 v0, 0x2
-
-    new-array v0, v0, [F
-
-    iput-object v0, p0, Landroid/widget/Editor$InputMethodState;->mTmpOffset:[F
-
-    .line 5645
+    .line 5095
     new-instance v0, Landroid/view/inputmethod/ExtractedText;
 
     invoke-direct {v0}, Landroid/view/inputmethod/ExtractedText;-><init>()V
 
     iput-object v0, p0, Landroid/widget/Editor$InputMethodState;->mExtractedText:Landroid/view/inputmethod/ExtractedText;
 
+    .line 5093
     return-void
 .end method

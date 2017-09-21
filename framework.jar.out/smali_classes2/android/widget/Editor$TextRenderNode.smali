@@ -26,15 +26,15 @@
     .param p1, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 176
+    .line 166
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 177
+    .line 167
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Landroid/widget/Editor$TextRenderNode;->isDirty:Z
 
-    .line 178
+    .line 168
     const/4 v0, 0x0
 
     invoke-static {p1, v0}, Landroid/view/RenderNode;->create(Ljava/lang/String;Landroid/view/View;)Landroid/view/RenderNode;
@@ -43,37 +43,33 @@
 
     iput-object v0, p0, Landroid/widget/Editor$TextRenderNode;->renderNode:Landroid/view/RenderNode;
 
-    .line 179
+    .line 166
     return-void
 .end method
 
 
 # virtual methods
 .method needsRecord()Z
-    .locals 1
+    .locals 2
 
     .prologue
-    .line 180
-    iget-boolean v0, p0, Landroid/widget/Editor$TextRenderNode;->isDirty:Z
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Landroid/widget/Editor$TextRenderNode;->renderNode:Landroid/view/RenderNode;
-
-    invoke-virtual {v0}, Landroid/view/RenderNode;->isValid()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    :cond_0
     const/4 v0, 0x1
 
-    :goto_0
-    return v0
+    .line 170
+    iget-boolean v1, p0, Landroid/widget/Editor$TextRenderNode;->isDirty:Z
 
-    :cond_1
+    if-nez v1, :cond_0
+
+    iget-object v1, p0, Landroid/widget/Editor$TextRenderNode;->renderNode:Landroid/view/RenderNode;
+
+    invoke-virtual {v1}, Landroid/view/RenderNode;->isValid()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
     const/4 v0, 0x0
 
-    goto :goto_0
+    :cond_0
+    return v0
 .end method

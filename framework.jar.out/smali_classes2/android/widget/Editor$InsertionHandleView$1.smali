@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroid/widget/Editor$InsertionHandleView;->hideAfterDelay()V
+    value = Landroid/widget/Editor$InsertionHandleView;->show()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -24,9 +24,10 @@
 # direct methods
 .method constructor <init>(Landroid/widget/Editor$InsertionHandleView;)V
     .locals 0
+    .param p1, "this$1"    # Landroid/widget/Editor$InsertionHandleView;
 
     .prologue
-    .line 4680
+    .line 3906
     iput-object p1, p0, Landroid/widget/Editor$InsertionHandleView$1;->this$1:Landroid/widget/Editor$InsertionHandleView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,11 +41,13 @@
     .locals 1
 
     .prologue
-    .line 4682
+    .line 3909
     iget-object v0, p0, Landroid/widget/Editor$InsertionHandleView$1;->this$1:Landroid/widget/Editor$InsertionHandleView;
 
-    invoke-virtual {v0}, Landroid/widget/Editor$InsertionHandleView;->hide()V
+    iget-object v0, v0, Landroid/widget/Editor$InsertionHandleView;->this$0:Landroid/widget/Editor;
 
-    .line 4683
+    invoke-virtual {v0}, Landroid/widget/Editor;->startInsertionActionMode()V
+
+    .line 3908
     return-void
 .end method

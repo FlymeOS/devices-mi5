@@ -1,11 +1,14 @@
 .class Landroid/widget/Editor$InsertionHandleView$2;
-.super Landroid/animation/AnimatorListenerAdapter;
+.super Ljava/lang/Object;
 .source "Editor.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroid/widget/Editor$InsertionHandleView;->createAnimations()V
+    value = Landroid/widget/Editor$InsertionHandleView;->hideAfterDelay()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -21,32 +24,28 @@
 # direct methods
 .method constructor <init>(Landroid/widget/Editor$InsertionHandleView;)V
     .locals 0
+    .param p1, "this$1"    # Landroid/widget/Editor$InsertionHandleView;
 
     .prologue
-    .line 4869
+    .line 3925
     iput-object p1, p0, Landroid/widget/Editor$InsertionHandleView$2;->this$1:Landroid/widget/Editor$InsertionHandleView;
 
-    invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onAnimationEnd(Landroid/animation/Animator;)V
-    .locals 2
-    .param p1, "animation"    # Landroid/animation/Animator;
+.method public run()V
+    .locals 1
 
     .prologue
-    .line 4872
+    .line 3927
     iget-object v0, p0, Landroid/widget/Editor$InsertionHandleView$2;->this$1:Landroid/widget/Editor$InsertionHandleView;
 
-    iget-object v0, v0, Landroid/widget/Editor$InsertionHandleView;->mContainer:Landroid/widget/Editor$AnimatePopupWindow;
+    invoke-virtual {v0}, Landroid/widget/Editor$InsertionHandleView;->hide()V
 
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/widget/Editor$AnimatePopupWindow;->dismiss(Z)V
-
-    .line 4873
+    .line 3926
     return-void
 .end method

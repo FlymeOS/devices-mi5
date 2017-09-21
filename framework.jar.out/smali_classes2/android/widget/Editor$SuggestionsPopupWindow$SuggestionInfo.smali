@@ -33,29 +33,29 @@
 # direct methods
 .method private constructor <init>(Landroid/widget/Editor$SuggestionsPopupWindow;)V
     .locals 3
+    .param p1, "this$1"    # Landroid/widget/Editor$SuggestionsPopupWindow;
 
     .prologue
-    .line 3108
+    .line 2705
     iput-object p1, p0, Landroid/widget/Editor$SuggestionsPopupWindow$SuggestionInfo;->this$1:Landroid/widget/Editor$SuggestionsPopupWindow;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3112
+    .line 2709
     new-instance v0, Landroid/text/SpannableStringBuilder;
 
     invoke-direct {v0}, Landroid/text/SpannableStringBuilder;-><init>()V
 
     iput-object v0, p0, Landroid/widget/Editor$SuggestionsPopupWindow$SuggestionInfo;->text:Landroid/text/SpannableStringBuilder;
 
-    .line 3113
+    .line 2710
     new-instance v0, Landroid/text/style/TextAppearanceSpan;
 
     iget-object v1, p0, Landroid/widget/Editor$SuggestionsPopupWindow$SuggestionInfo;->this$1:Landroid/widget/Editor$SuggestionsPopupWindow;
 
     iget-object v1, v1, Landroid/widget/Editor$SuggestionsPopupWindow;->this$0:Landroid/widget/Editor;
 
-    # getter for: Landroid/widget/Editor;->mTextView:Landroid/widget/TextView;
-    invoke-static {v1}, Landroid/widget/Editor;->access$800(Landroid/widget/Editor;)Landroid/widget/TextView;
+    invoke-static {v1}, Landroid/widget/Editor;->-get5(Landroid/widget/Editor;)Landroid/widget/TextView;
 
     move-result-object v1
 
@@ -63,22 +63,23 @@
 
     move-result-object v1
 
-    const v2, 0x1030118
+    .line 2711
+    const v2, #android:style@TextAppearance.SuggestionHighlight#t
 
+    .line 2710
     invoke-direct {v0, v1, v2}, Landroid/text/style/TextAppearanceSpan;-><init>(Landroid/content/Context;I)V
 
     iput-object v0, p0, Landroid/widget/Editor$SuggestionsPopupWindow$SuggestionInfo;->highlightSpan:Landroid/text/style/TextAppearanceSpan;
 
+    .line 2705
     return-void
 .end method
 
-.method synthetic constructor <init>(Landroid/widget/Editor$SuggestionsPopupWindow;Landroid/widget/Editor$1;)V
+.method synthetic constructor <init>(Landroid/widget/Editor$SuggestionsPopupWindow;Landroid/widget/Editor$SuggestionsPopupWindow$SuggestionInfo;)V
     .locals 0
-    .param p1, "x0"    # Landroid/widget/Editor$SuggestionsPopupWindow;
-    .param p2, "x1"    # Landroid/widget/Editor$1;
+    .param p1, "this$1"    # Landroid/widget/Editor$SuggestionsPopupWindow;
 
     .prologue
-    .line 3108
     invoke-direct {p0, p1}, Landroid/widget/Editor$SuggestionsPopupWindow$SuggestionInfo;-><init>(Landroid/widget/Editor$SuggestionsPopupWindow;)V
 
     return-void
