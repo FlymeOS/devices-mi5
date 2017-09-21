@@ -54339,7 +54339,7 @@
 
     move-result v7
 
-    if-eqz v8, :cond_flyme_0
+    if-eqz v7, :cond_flyme_0
 
     invoke-static {}, Lcom/android/server/pm/PackageManagerService$FlymePackageManagerServiceInjector;->getFlymeEmptyApplicationInfo()Landroid/content/pm/ParceledListSlice;
 
