@@ -80,7 +80,7 @@
     <string name="config_persistentDataPackageName">com.google.android.gms</string>
     <string name="config_webViewPackageName">com.google.android.webview</string>
     <string name="prohibit_manual_network_selection_in_gobal_mode">false</string>
-    <string name="config_keyguardComponent">com.android.keyguard/com.android.keyguard.KeyguardService</string>
+    <string name="config_keyguardComponent">com.android.systemui/com.android.systemui.keyguard.KeyguardService</string>
     <string name="config_forceVoiceInteractionServicePackage" />
     <string name="config_radio_access_family" />
     <string name="config_cameraLaunchGestureSensorStringType" />
