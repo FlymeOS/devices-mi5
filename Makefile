@@ -54,7 +54,7 @@ vendor_remove_dirs := data-app etc/precust_theme media/lockscreen media/theme me
 # The default value is Bluetooth.
 # You can configure the apk name in the vendor/system/app or vendor/system/priv-app directory.
 #-----------------------------------------------------------------------------
-vendor_saved_apps := Bluetooth BluetoothExt BluetoothMidiService HTMLViewer KeyChain MiuiBluetooth NfcNci PicoTts PrintSpooler Stk UserDictionaryProvider BackupRestoreConfirmation DefaultContainerService ExternalStorageProvider FusedLocation InputDevices ProxyHandler SharedStorageBackup Shell miuisystem telresources AMAPNetworkLocation com.qualcomm.location QtiTetherService QtiGbaAuthService QtiTelephonyService com.qualcomm.qti.services.secureui qcrilmsgtunnel FingerprintServiceExtension SecurityCoreAdd TimeService shutdownlistener
+vendor_saved_apps := Bluetooth BluetoothExt BluetoothMidiService HTMLViewer KeyChain MiuiBluetooth NfcNci PicoTts PrintSpooler Stk UserDictionaryProvider BackupRestoreConfirmation DefaultContainerService ExternalStorageProvider FusedLocation InputDevices ProxyHandler SharedStorageBackup Shell miuisystem telresources AMAPNetworkLocation com.qualcomm.location QtiTetherService QtiGbaAuthService QtiTelephonyService com.qualcomm.qti.services.secureui qcrilmsgtunnel FingerprintServiceExtension SecurityCoreAdd TimeService shutdownlistener datastatusnotification embms fastdormancy ims CNEService
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
