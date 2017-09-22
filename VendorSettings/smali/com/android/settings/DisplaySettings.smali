@@ -1141,6 +1141,12 @@
 
     iput-object v0, p0, Lcom/android/vendorsettings/DisplaySettings;->lH:Landroid/preference/ListPreference;
 
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+
     .line 154
     const-string v0, "screen_off_timeout"
 
@@ -1307,9 +1313,9 @@
     iput-object v0, p0, Lcom/android/vendorsettings/DisplaySettings;->lL:Landroid/preference/CheckBoxPreference;
 
     .line 208
-    iget-object v0, p0, Lcom/android/vendorsettings/DisplaySettings;->lL:Landroid/preference/CheckBoxPreference;
+    #iget-object v0, p0, Lcom/android/vendorsettings/DisplaySettings;->lL:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    #invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 213
     :goto_1
@@ -1350,6 +1356,12 @@
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
     iput-object v0, p0, Lcom/android/vendorsettings/DisplaySettings;->lP:Landroid/preference/CheckBoxPreference;
+
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 225
     iget-object v0, p0, Lcom/android/vendorsettings/DisplaySettings;->lP:Landroid/preference/CheckBoxPreference;

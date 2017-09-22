@@ -1322,6 +1322,18 @@
 
     iput-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ot:Landroid/preference/ListPreference;
 
+    const-string v0, "under_keyguard"
+
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v0
+
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+
     .line 150
     const-string v0, "support_camera_quick_snap"
 

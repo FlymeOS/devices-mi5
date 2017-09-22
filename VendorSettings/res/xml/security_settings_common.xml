@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <PreferenceCategory android:title="@string/security_password_category_name" android:key="security_second_category">
-        <PreferenceScreen android:persistent="false" android:title="@string/unlock_set_unlock_launch_picker_title" android:key="unlock_set_or_change" />
-        <PreferenceScreen android:persistent="false" android:title="@string/privacy_password_title" android:key="privacy_password" />
-    </PreferenceCategory>
     <PreferenceCategory android:title="@string/security_keyguard_category_name" android:key="security_category">
-        <PreferenceScreen android:title="@string/owner_info_settings_title" android:key="owner_info_settings" />
-        <PreferenceScreen android:title="@string/keyguard_shortcut_title" android:key="keyguard_shortcut_settings" android:summary="@string/keyguard_shortcut_summary" />
-        <ListPreference android:persistent="false" android:entries="@array/screen_timeout_entries" android:title="@string/screen_timeout" android:key="screen_timeout" android:summary="@string/screen_timeout_summary" android:entryValues="@array/screen_timeout_values" />
         <PreferenceScreen android:persistent="false" android:title="@string/bluetooth_unlock_title" android:key="bluetooth_unlock" />
         <CheckBoxPreference android:persistent="false" android:title="@string/smartcover_sensitive_title" android:key="smartcover_sensitive_hall_sensor" />
         <CheckBoxPreference android:persistent="false" android:title="@string/lockpattern_settings_enable_power_button_instantly_locks" android:key="power_button_instantly_locks" />
-        <CheckBoxPreference android:persistent="false" android:title="@string/wakeup_for_keyguard_notification_title" android:key="wakeup_for_keyguard_notification" />
         <CheckBoxPreference android:title="@string/pref_volume_wake_title" android:key="pref_volume_wake" android:summary="@string/pref_volume_wake_summary" />
-        <CheckBoxPreference android:persistent="true" android:title="@string/pref_volume_launch_camera_title" android:key="pref_volume_launch_camera" android:summary="@string/pref_volume_launch_camera_summary" />
         <CheckBoxPreference android:persistent="false" android:title="@string/screen_on_proximity_sensor_title" android:key="screen_on_proximity_sensor" android:summary="@string/screen_on_proximity_sensor_summary" />
     </PreferenceCategory>
 </PreferenceScreen>

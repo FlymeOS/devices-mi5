@@ -50,7 +50,7 @@
     </header>
     <header android:icon="@drawable/ic_children_mode_settings" android:id="@id/children_mode_settings" android:title="@string/children_mode_title" android:fragment="com.android.vendorsettings.ChildrenModeSettings" />
     <header android:icon="@drawable/ic_edge_mode_settings" android:id="@id/edge_mode_settings" android:title="@string/pref_edge_handgrip" android:fragment="com.android.vendorsettings.EdgeModeSettings" />
-    <header android:icon="@drawable/ic_other_advanced_settings" android:id="@id/other_advanced_settings" android:title="@string/other_advanced_settings" android:fragment="com.android.vendorsettings.OtherPersonalSettings" />
+    <header android:icon="@drawable/ic_other_advanced_settings" android:id="@id/other_advanced_settings" android:title="@string/settings_label" android:fragment="com.android.vendorsettings.OtherPersonalSettings" />
     <header android:icon="@drawable/ic_location_settings" android:id="@id/location_settings" android:title="@string/location_settings_title" android:fragment="com.android.vendorsettings.location.MiuiLocationSettings" />
     <header android:id="@id/account_settings" android:title="@string/header_category_accounts" />
     <header android:icon="@drawable/xiaomi_account" android:id="@id/micloud_settings" android:title="@string/xiaomi_account">

@@ -29,6 +29,5 @@
     <PreferenceCategory android:title="@string/pref_operational_key" android:key="pref_button_category">
         <CheckBoxPreference android:title="@string/pref_button_light" android:key="pref_button_light" android:summary="@string/pref_button_light_summary" />
         <ListPreference android:persistent="false" android:entries="@array/button_light_timeout_entries" android:title="@string/button_light_timeout" android:key="button_light_timeout" android:dependency="pref_button_light" android:dialogTitle="@string/button_light_timeout" android:entryValues="@array/button_light_timeout_value" />
-        <Preference android:title="@string/auto_disable_screenbuttons_title" android:key="audo_disable_screen_buttons_settings" android:summary="@string/auto_disable_screenbuttons_summary" android:fragment="com.android.vendorsettings.AutoDisableScreenButtonsAppListSettings" />
     </PreferenceCategory>
 </PreferenceScreen>

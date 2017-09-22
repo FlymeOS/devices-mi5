@@ -749,6 +749,10 @@
 
     iput-object v0, p0, Lcom/android/vendorsettings/HeadsetSettings;->ny:Landroid/preference/Preference;
 
+    iget-object v1, p0, Lcom/android/vendorsettings/HeadsetSettings;->nu:Landroid/preference/PreferenceCategory;
+
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+
     .line 72
     const-string v0, "dolby_settings"
 

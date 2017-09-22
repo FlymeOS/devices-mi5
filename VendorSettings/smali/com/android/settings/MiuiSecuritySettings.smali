@@ -1454,6 +1454,8 @@
 
     move-result-object v5
 
+    invoke-virtual {v0, v5}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
+
     .line 139
     new-instance v6, Landroid/security/MiuiLockPatternUtils;
 
@@ -1490,7 +1492,7 @@
 
     .line 147
     :cond_4
-    invoke-virtual {v0, v5}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
+    #invoke-virtual {v0, v5}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
     .line 162
     :goto_1
@@ -1570,27 +1572,27 @@
 
     .line 193
     :goto_3
-    const-string v0, "wakeup_for_keyguard_notification"
+    #const-string v0, "wakeup_for_keyguard_notification"
 
-    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    #invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiSecuritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
-    move-result-object v0
+    #move-result-object v0
 
-    check-cast v0, Landroid/preference/CheckBoxPreference;
+    #check-cast v0, Landroid/preference/CheckBoxPreference;
 
     .line 195
-    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
+    #invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSecuritySettings;->getContentResolver()Landroid/content/ContentResolver;
 
-    move-result-object v1
+    #move-result-object v1
 
-    const-string v3, "wakeup_for_keyguard_notification"
+    #const-string v3, "wakeup_for_keyguard_notification"
 
-    invoke-static {v1, v3, v2}, Landroid/provider/MiuiSettings$System;->getBoolean(Landroid/content/ContentResolver;Ljava/lang/String;Z)Z
+    #invoke-static {v1, v3, v2}, Landroid/provider/MiuiSettings$System;->getBoolean(Landroid/content/ContentResolver;Ljava/lang/String;Z)Z
 
-    move-result v1
+    #move-result v1
 
     .line 198
-    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
+    #invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 200
     const-string v0, "pref_volume_wake"
@@ -1630,7 +1632,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
+    #invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 206
     return-void

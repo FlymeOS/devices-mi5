@@ -361,9 +361,18 @@
     move-result-object v4
 
     .line 219
+    if-eqz v4, :cond_flyme_0
+
     invoke-virtual {v4, v0}, Landroid/preference/Preference;->setIntent(Landroid/content/Intent;)V
 
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v4}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+
     .line 242
+    :cond_flyme_0
     const-string v0, "frequency_band"
 
     invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -636,6 +645,9 @@
     .line 325
     :cond_8
     :goto_7
+
+    return-void
+
     const-string v0, "wifi_scan_always_available"
 
     invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -658,7 +670,7 @@
     if-ne v1, v2, :cond_12
 
     :goto_8
-    invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
+    #invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 330
     return-void
@@ -800,10 +812,20 @@
     if-nez v3, :cond_2
 
     :goto_1
-    invoke-virtual {v2, v0}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    #invoke-virtual {v2, v0}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 499
-    invoke-virtual {v2, v4}, Landroid/preference/Preference;->setSelectable(Z)V
+    #invoke-virtual {v2, v4}, Landroid/preference/Preference;->setSelectable(Z)V
+
+    if-eqz v2, :cond_flyme_0
+
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+
+    :cond_flyme_0
 
     .line 501
     const-string v0, "current_ip_address"
@@ -825,10 +847,20 @@
     move-result-object v0
 
     :cond_0
-    invoke-virtual {v2, v0}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
+    #invoke-virtual {v2, v0}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 505
-    invoke-virtual {v2, v4}, Landroid/preference/Preference;->setSelectable(Z)V
+    #invoke-virtual {v2, v4}, Landroid/preference/Preference;->setSelectable(Z)V
+
+    if-eqz v2, :cond_flyme_1
+
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+
+    :cond_flyme_1
 
     .line 506
     return-void

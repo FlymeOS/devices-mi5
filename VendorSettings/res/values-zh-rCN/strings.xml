@@ -386,8 +386,8 @@
     <string name="forget">取消保存</string>
     <string name="save">保存</string>
     <string name="done">完成</string>
-    <string name="settings_label">设置</string>
-    <string name="settings_label_launcher">设置</string>
+    <string name="settings_label">原厂设置</string>
+    <string name="settings_label_launcher">原厂设置</string>
     <string name="settings_shortcut">设置快捷方式</string>
     <string name="airplane_mode">飞行模式</string>
     <string name="radio_controls_title">更多连接方式</string>
@@ -3463,7 +3463,7 @@ PIN码可能不正确。"</string>
     <string name="apn_general">通用</string>
     <string name="touch_title">触控</string>
     <string name="touch_sensitive_title">手套模式</string>
-    <string name="touch_sensitive_summary">启用超灵敏触控，戴手套也能操作手机，开启时会同时打开防误触模式</string>
+    <string name="touch_sensitive_summary">启用超灵敏触控，戴手套也能操作手机</string>
     <string name="touch_sensitive_turn_off_title">手套模式已关闭</string>
     <string name="touch_sensitive_turn_off_summary">要同时关闭“防误触模式”吗？</string>
     <string name="touch_sensitive_turn_off_confirm">关闭防误触</string>
@@ -4438,7 +4438,7 @@ PIN码可能不正确。"</string>
     <string name="usb_mount">装载 USB 存储设备</string>
     <string name="usb_mount_summary" />
     <string name="usb_insert_summary">插入要装载的 USB 存储设备</string>
-    <string name="fp_nav_center_back_to_home_title">轻触桌面键回桌面</string>
+    <string name="fp_nav_center_back_to_home_title">轻触桌面键返回</string>
     <string name="convenience_key_category_title">便捷键</string>
     <string name="single_key_use">单按键使用</string>
     <string name="single_key_use_summary">以桌面键代替其余两个按键进行常规操作</string>

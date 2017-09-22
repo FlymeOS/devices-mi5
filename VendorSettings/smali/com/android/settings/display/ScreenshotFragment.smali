@@ -170,6 +170,12 @@
 
     iput-object v0, p0, Lcom/android/vendorsettings/display/ScreenshotFragment;->ZW:Landroid/preference/CheckBoxPreference;
 
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ScreenshotFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+
     .line 30
     iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenshotFragment;->ZV:Landroid/preference/CheckBoxPreference;
 

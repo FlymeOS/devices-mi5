@@ -428,8 +428,8 @@ Broadcasting uses low-power Bluetooth signals."</string>
     <string name="forget">Forget</string>
     <string name="save">Save</string>
     <string name="done">Done</string>
-    <string name="settings_label">Settings</string>
-    <string name="settings_label_launcher">Settings</string>
+    <string name="settings_label">VendorSettings</string>
+    <string name="settings_label_launcher">VendorSettings</string>
     <string name="settings_shortcut">Settings shortcut</string>
     <string name="airplane_mode">Airplane mode</string>
     <string name="radio_controls_title">More</string>
@@ -4594,7 +4594,7 @@ Select your operating system:"</string>
     <string name="usb_mount">Mount USB storage</string>
     <string name="usb_mount_summary" />
     <string name="usb_insert_summary">Connect USB storage</string>
-    <string name="fp_nav_center_back_to_home_title">Tap Home button to go back to Home screen</string>
+    <string name="fp_nav_center_back_to_home_title">Tap Home button to go back</string>
     <string name="convenience_key_category_title">Shortcuts</string>
     <string name="single_key_use">Single button</string>
     <string name="single_key_use_summary">Use Home button for functions performed by the other 2 buttons</string>
