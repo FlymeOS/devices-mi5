@@ -967,6 +967,8 @@
 
     .line 657
     :goto_0
+    invoke-static/range {p0 .. p2}, Landroid/media/RingtoneManager;->setFlymeActualDefaultRingtoneUri(Landroid/content/Context;ILandroid/net/Uri;)V
+
     return-void
 
     .line 655
@@ -988,8 +990,6 @@
 
     :cond_1
     const/4 v1, 0x0
-
-    invoke-static/range {p0 .. p2}, Landroid/media/RingtoneManager;->setFlymeActualDefaultRingtoneUri(Landroid/content/Context;ILandroid/net/Uri;)V
 
     goto :goto_1
 .end method
