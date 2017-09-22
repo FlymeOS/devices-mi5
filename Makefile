@@ -54,7 +54,7 @@ vendor_remove_dirs := data-app etc/precust_theme media/lockscreen media/theme me
 # The default value is Bluetooth.
 # You can configure the apk name in the vendor/system/app or vendor/system/priv-app directory.
 #-----------------------------------------------------------------------------
-vendor_saved_apps := Bluetooth BluetoothExt BluetoothMidiService HTMLViewer KeyChain MiuiBluetooth NfcNci PicoTts PrintSpooler Stk UserDictionaryProvider BackupRestoreConfirmation DefaultContainerService ExternalStorageProvider FusedLocation InputDevices ProxyHandler SharedStorageBackup Shell miui miuisystem telresources AMAPNetworkLocation com.qualcomm.location QtiTetherService QtiGbaAuthService QtiTelephonyService com.qualcomm.qti.services.secureui qcrilmsgtunnel FingerprintServiceExtension SecurityCoreAdd
+vendor_saved_apps := Bluetooth BluetoothExt BluetoothMidiService HTMLViewer KeyChain MiuiBluetooth NfcNci PicoTts PrintSpooler Stk UserDictionaryProvider BackupRestoreConfirmation DefaultContainerService ExternalStorageProvider FusedLocation InputDevices ProxyHandler SharedStorageBackup Shell miuisystem telresources AMAPNetworkLocation com.qualcomm.location QtiTetherService QtiGbaAuthService QtiTelephonyService com.qualcomm.qti.services.secureui qcrilmsgtunnel FingerprintServiceExtension SecurityCoreAdd
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
@@ -63,7 +63,7 @@ vendor_saved_apps := Bluetooth BluetoothExt BluetoothMidiService HTMLViewer KeyC
 # You need ro decode FMRadio.apk to the project directory(use apktool d FMRadio.apk) first,
 # and then you can make it by:   make FMRadio
 #-----------------------------------------------------------------------------
-vendor_modify_apps := VendorSettings
+vendor_modify_apps := VendorSettings miui
 
 ##############################################################################
 # The value decides which vendor jar you want to modify.
