@@ -386,8 +386,8 @@
     <string name="forget">取消保存</string>
     <string name="save">保存</string>
     <string name="done">完成</string>
-    <string name="settings_label">原厂设置</string>
-    <string name="settings_label_launcher">原厂设置</string>
+    <string name="settings_label">附加设置</string>
+    <string name="settings_label_launcher">附加设置</string>
     <string name="settings_shortcut">设置快捷方式</string>
     <string name="airplane_mode">飞行模式</string>
     <string name="radio_controls_title">更多连接方式</string>

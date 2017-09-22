@@ -428,8 +428,8 @@ Broadcasting uses low-power Bluetooth signals."</string>
     <string name="forget">Forget</string>
     <string name="save">Save</string>
     <string name="done">Done</string>
-    <string name="settings_label">VendorSettings</string>
-    <string name="settings_label_launcher">VendorSettings</string>
+    <string name="settings_label">Additional settings</string>
+    <string name="settings_label_launcher">Additional settings</string>
     <string name="settings_shortcut">Settings shortcut</string>
     <string name="airplane_mode">Airplane mode</string>
     <string name="radio_controls_title">More</string>

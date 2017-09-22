@@ -1965,7 +1965,6 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <action android:name="com.android.settings.ADDITIONAL_APPLICATION_SETTING"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
             <meta-data android:name="com.android.vendorsettings.FRAGMENT_CLASS" android:value="com.android.vendorsettings.OtherPersonalSettings"/>
