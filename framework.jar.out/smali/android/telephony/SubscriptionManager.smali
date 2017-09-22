@@ -2477,11 +2477,19 @@
 .end method
 
 .method public setDefaultDataSubIdExtended(I)V
-    .locals 0
+    .locals 2
     .param p1, "subId"    # I
 
     .prologue
-    invoke-static {p1}, Landroid/telephony/SubscriptionManager;->setDefaultDataSubId(I)V
+    invoke-static {p1}, Landroid/telephony/SubscriptionManager;->getSlotId(I)I
+
+    move-result v0
+
+    invoke-static {}, Lmiui/telephony/SubscriptionManager;->getDefault()Lmiui/telephony/SubscriptionManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Lmiui/telephony/SubscriptionManager;->setDefaultDataSlotId(I)V
 
     return-void
 .end method
