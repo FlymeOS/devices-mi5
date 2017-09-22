@@ -225,7 +225,7 @@
     .param p1, "drawable"    # Landroid/graphics/drawable/Drawable;
 
     .prologue
-    const v10, 0x1010367
+    const v10, #android:attr@state_hovered#t
 
     const/16 v9, 0x190
 
@@ -252,13 +252,13 @@
 
     .line 7859
     .local v2, "stateListDrawable":Landroid/graphics/drawable/StateListDrawable;
-    const v3, 0x10100a7
+    const v3, #android:attr@state_pressed#t
 
-    const v4, 0x101009e
+    const v4, #android:attr@state_enabled#t
 
-    const v5, 0x101009c
+    const v5, #android:attr@state_focused#t
 
-    const v6, 0x101009d
+    const v6, #android:attr@state_window_focused#t
 
     filled-new-array {v3, v4, v5, v6}, [I
 
@@ -504,36 +504,30 @@
 
     move-result-object v1
 
-    .line 7826
     .local v1, "child":Landroid/view/View;
     if-eqz v1, :cond_0
 
-    .line 7827
-    const v2, 0x1020001
+    const v2, #android:id@checkbox#t
 
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 7828
     .local v0, "checkbox":Landroid/view/View;
     instance-of v2, v0, Landroid/widget/Checkable;
 
     if-eqz v2, :cond_0
 
-    .line 7829
     invoke-virtual {v0}, Landroid/view/View;->getVisibility()I
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 7830
     const/4 v2, 0x1
 
     return v2
 
-    .line 7833
     .end local v0    # "checkbox":Landroid/view/View;
     :cond_0
     return v3

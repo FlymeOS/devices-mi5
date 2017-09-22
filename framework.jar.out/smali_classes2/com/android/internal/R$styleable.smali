@@ -6462,21 +6462,7 @@
 
     sput-object v0, Lcom/android/internal/R$styleable;->ShapeDrawablePadding:[I
 
-    const/4 v1, 0x0
-
-    new-array v0, v1, [I
-
-    sput-object v0, Lcom/android/internal/R$styleable;->SizeAdaptiveLayout:[I
-
-    const v0, #android:^attr-private@layout_maxHeight#t
-
-    const v1, #android:^attr-private@layout_minHeight#t
-
-    filled-new-array {v0, v1}, [I
-
-    move-result-object v0
-
-    sput-object v0, Lcom/android/internal/R$styleable;->SizeAdaptiveLayout_Layout:[I
+    invoke-static {}, Lcom/android/internal/R$styleable;->initFlymeExtraFields()V
 
     .line 50183
     new-array v0, v3, [I
@@ -9974,6 +9960,29 @@
     .prologue
     .line 22625
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method private static initFlymeExtraFields()V
+    .locals 2
+
+    .prologue
+    const/4 v1, 0x0
+
+    new-array v0, v1, [I
+
+    sput-object v0, Lcom/android/internal/R$styleable;->SizeAdaptiveLayout:[I
+
+    const v0, #android:^attr-private@layout_maxHeight#t
+
+    const v1, #android:^attr-private@layout_minHeight#t
+
+    filled-new-array {v0, v1}, [I
+
+    move-result-object v0
+
+    sput-object v0, Lcom/android/internal/R$styleable;->SizeAdaptiveLayout_Layout:[I
 
     return-void
 .end method
