@@ -1852,7 +1852,7 @@
     .line 1440
     iget-object v1, p0, Landroid/app/DownloadManager;->mResolver:Landroid/content/ContentResolver;
 
-    sget-object v2, Landroid/app/DownloadManager;->MIUI_UNDERLYING_COLUMNS:[Ljava/lang/String;
+    sget-object v2, Landroid/app/DownloadManager;->UNDERLYING_COLUMNS:[Ljava/lang/String;
 
     iget-object v3, p0, Landroid/app/DownloadManager;->mBaseUri:Landroid/net/Uri;
 
