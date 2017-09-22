@@ -12,3 +12,6 @@ mkdir -p $RAMDISK_DIR/proc
 mkdir -p $RAMDISK_DIR/sys
 mkdir -p $RAMDISK_DIR/system
 
+$SEPOLICY_INJECT -s radio -t access_control_service -c service_manager -p add,find -P $SEPOLICY > /dev/null 2>&1
+$SEPOLICY_INJECT -s downloader -t access_control_service -c service_manager -p add,find -P $SEPOLICY > /dev/null 2>&1
+
