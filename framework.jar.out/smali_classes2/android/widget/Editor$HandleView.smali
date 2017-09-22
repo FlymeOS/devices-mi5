@@ -836,14 +836,12 @@
 
     iput v8, p0, Landroid/widget/Editor$HandleView;->mLastParentX:I
 
-    .line 3808
     invoke-virtual {v4}, Landroid/widget/Editor$PositionListener;->getPositionY()I
 
     move-result v8
 
     iput v8, p0, Landroid/widget/Editor$HandleView;->mLastParentY:I
 
-    .line 3809
     iput-boolean v10, p0, Landroid/widget/Editor$HandleView;->mIsDragging:Z
 
     .line 3810
@@ -853,7 +851,6 @@
 
     goto :goto_0
 
-    .line 3815
     .end local v4    # "positionListener":Landroid/widget/Editor$PositionListener;
     :pswitch_1
 
