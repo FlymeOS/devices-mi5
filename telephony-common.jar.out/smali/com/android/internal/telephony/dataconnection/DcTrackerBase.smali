@@ -3977,26 +3977,34 @@
     .line 819
     .local v1, "phoneSubId":I
     :try_start_0
-    iget-object v6, p0, Lcom/android/internal/telephony/dataconnection/DcTrackerBase;->mResolver:Landroid/content/ContentResolver;
+    invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
 
-    const-string v7, "data_roaming"
+    move-result-object v5
 
-    if-eqz v0, :cond_0
-
-    move v5, v3
-
-    :goto_0
-    invoke-static {v6, v7, v5}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
-    :try_end_0
-    .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {v5}, Landroid/telephony/TelephonyManager;->getSimCount()I
 
     move-result v5
 
-    if-eqz v5, :cond_1
+    if-ne v5, v3, :cond_2
 
-    move v0, v3
+    iget-object v5, p0, Lcom/android/internal/telephony/dataconnection/DcTrackerBase;->mResolver:Landroid/content/ContentResolver;
 
-    .line 829
+    const-string v6, "data_roaming"
+
+    if-eqz v0, :cond_0
+
+    :goto_0
+    invoke-static {v5, v6, v3}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    :try_end_0
+    .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    const/4 v0, 0x1
+
+    .end local v0    # "isDataRoamingEnabled":Z
     :goto_1
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -4031,18 +4039,47 @@
     .line 832
     return v0
 
+    .restart local v0    # "isDataRoamingEnabled":Z
     :cond_0
-    move v5, v4
+    move v3, v4
 
     .line 819
     goto :goto_0
 
     :cond_1
-    move v0, v4
+    const/4 v0, 0x0
 
+    .local v0, "isDataRoamingEnabled":Z
     goto :goto_1
 
-    .line 825
+    .local v0, "isDataRoamingEnabled":Z
+    :cond_2
+    :try_start_1
+    iget-object v3, p0, Lcom/android/internal/telephony/dataconnection/DcTrackerBase;->mResolver:Landroid/content/ContentResolver;
+
+    const-string v4, "data_roaming"
+
+    invoke-static {v3, v4, v1}, Landroid/telephony/TelephonyManager;->getIntWithSubId(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+    :try_end_1
+    .catch Landroid/provider/Settings$SettingNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    const/4 v0, 0x1
+
+    .local v0, "isDataRoamingEnabled":Z
+    goto :goto_1
+
+    .local v0, "isDataRoamingEnabled":Z
+    :cond_3
+    const/4 v0, 0x0
+
+    .local v0, "isDataRoamingEnabled":Z
+    goto :goto_1
+
+    .local v0, "isDataRoamingEnabled":Z
     :catch_0
     move-exception v2
 
@@ -7659,7 +7696,7 @@
 .end method
 
 .method public setDataOnRoamingEnabled(Z)V
-    .locals 4
+    .locals 5
     .param p1, "enabled"    # Z
 
     .prologue
@@ -7676,7 +7713,7 @@
 
     move-result v2
 
-    if-eq v2, p1, :cond_1
+    if-eq v2, p1, :cond_2
 
     .line 781
     if-eqz p1, :cond_0
@@ -7686,13 +7723,25 @@
     .line 787
     .local v1, "roaming":I
     :goto_0
+    invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroid/telephony/TelephonyManager;->getSimCount()I
+
+    move-result v2
+
+    const/4 v3, 0x1
+
+    if-ne v2, v3, :cond_1
+
     iget-object v2, p0, Lcom/android/internal/telephony/dataconnection/DcTrackerBase;->mResolver:Landroid/content/ContentResolver;
 
     const-string v3, "data_roaming"
 
     invoke-static {v2, v3, v1}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
-    .line 792
+    :goto_1
     iget-object v2, p0, Lcom/android/internal/telephony/dataconnection/DcTrackerBase;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
 
     invoke-virtual {v2, v1, v0}, Landroid/telephony/SubscriptionManager;->setDataRoaming(II)I
@@ -7730,17 +7779,44 @@
 
     .line 804
     .end local v1    # "roaming":I
-    :goto_1
+    :goto_2
     return-void
 
     .line 781
     :cond_0
     const/4 v1, 0x0
 
+    .restart local v1    # "roaming":I
     goto :goto_0
 
     .line 800
     :cond_1
+    iget-object v2, p0, Lcom/android/internal/telephony/dataconnection/DcTrackerBase;->mResolver:Landroid/content/ContentResolver;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "data_roaming"
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3, v1}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
+
+    goto :goto_1
+
+    .end local v1    # "roaming":I
+    :cond_2
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -7771,7 +7847,7 @@
 
     invoke-virtual {p0, v2}, Lcom/android/internal/telephony/dataconnection/DcTrackerBase;->log(Ljava/lang/String;)V
 
-    goto :goto_1
+    goto :goto_2
 .end method
 
 .method protected setDataProfilesAsNeeded()V
