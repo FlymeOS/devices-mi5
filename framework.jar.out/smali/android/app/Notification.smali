@@ -468,6 +468,8 @@
 
     iput-object v0, p0, Landroid/app/Notification;->extraNotification:Landroid/app/MiuiNotification;
 
+    invoke-static/range {p0 .. p0}, Landroid/app/Notification$FlymeInjector;->initFlymeExtFields(Landroid/app/Notification;)V
+
     .line 1377
     new-instance v0, Landroid/app/Notification$Builder;
 
@@ -502,8 +504,6 @@
     move-result-object v0
 
     invoke-virtual {v0, p0}, Landroid/app/Notification$Builder;->buildInto(Landroid/app/Notification;)Landroid/app/Notification;
-
-    invoke-static/range {p0 .. p0}, Landroid/app/Notification$FlymeInjector;->initFlymeExtFields(Landroid/app/Notification;)V
 
     .line 1385
     return-void
