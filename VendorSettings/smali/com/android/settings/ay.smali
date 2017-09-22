@@ -1,19 +1,19 @@
-.class Lcom/android/settings/ay;
+.class Lcom/android/vendorsettings/ay;
 .super Landroid/os/Handler;
 .source "ChooseLockPassword.java"
 
 
 # instance fields
-.field final synthetic eg:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+.field final synthetic eg:Lcom/android/vendorsettings/ChooseLockPassword$ChooseLockPasswordFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/ChooseLockPassword$ChooseLockPasswordFragment;)V
     .locals 0
 
     .prologue
     .line 193
-    iput-object p1, p0, Lcom/android/settings/ay;->eg:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/ay;->eg:Lcom/android/vendorsettings/ChooseLockPassword$ChooseLockPasswordFragment;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -34,13 +34,13 @@
     if-ne v0, v1, :cond_0
 
     .line 197
-    iget-object v1, p0, Lcom/android/settings/ay;->eg:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/ay;->eg:Lcom/android/vendorsettings/ChooseLockPassword$ChooseLockPasswordFragment;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    check-cast v0, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
+    check-cast v0, Lcom/android/vendorsettings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->a(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/ChooseLockPassword$ChooseLockPasswordFragment;->a(Lcom/android/vendorsettings/ChooseLockPassword$ChooseLockPasswordFragment$Stage;)V
 
     .line 199
     :cond_0

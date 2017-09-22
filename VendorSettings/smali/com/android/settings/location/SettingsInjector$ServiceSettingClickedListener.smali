@@ -1,4 +1,4 @@
-.class Lcom/android/settings/location/SettingsInjector$ServiceSettingClickedListener;
+.class Lcom/android/vendorsettings/location/SettingsInjector$ServiceSettingClickedListener;
 .super Ljava/lang/Object;
 .source "SettingsInjector.java"
 
@@ -7,23 +7,23 @@
 
 
 # instance fields
-.field private ahA:Lcom/android/settings/location/InjectedSetting;
+.field private ahA:Lcom/android/vendorsettings/location/InjectedSetting;
 
-.field final synthetic ahB:Lcom/android/settings/location/SettingsInjector;
+.field final synthetic ahB:Lcom/android/vendorsettings/location/SettingsInjector;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/location/SettingsInjector;Lcom/android/settings/location/InjectedSetting;)V
+.method public constructor <init>(Lcom/android/vendorsettings/location/SettingsInjector;Lcom/android/vendorsettings/location/InjectedSetting;)V
     .locals 0
 
     .prologue
     .line 291
-    iput-object p1, p0, Lcom/android/settings/location/SettingsInjector$ServiceSettingClickedListener;->ahB:Lcom/android/settings/location/SettingsInjector;
+    iput-object p1, p0, Lcom/android/vendorsettings/location/SettingsInjector$ServiceSettingClickedListener;->ahB:Lcom/android/vendorsettings/location/SettingsInjector;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 292
-    iput-object p2, p0, Lcom/android/settings/location/SettingsInjector$ServiceSettingClickedListener;->ahA:Lcom/android/settings/location/InjectedSetting;
+    iput-object p2, p0, Lcom/android/vendorsettings/location/SettingsInjector$ServiceSettingClickedListener;->ahA:Lcom/android/vendorsettings/location/InjectedSetting;
 
     .line 293
     return-void
@@ -41,13 +41,13 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 301
-    iget-object v1, p0, Lcom/android/settings/location/SettingsInjector$ServiceSettingClickedListener;->ahA:Lcom/android/settings/location/InjectedSetting;
+    iget-object v1, p0, Lcom/android/vendorsettings/location/SettingsInjector$ServiceSettingClickedListener;->ahA:Lcom/android/vendorsettings/location/InjectedSetting;
 
-    iget-object v1, v1, Lcom/android/settings/location/InjectedSetting;->packageName:Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/vendorsettings/location/InjectedSetting;->packageName:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/settings/location/SettingsInjector$ServiceSettingClickedListener;->ahA:Lcom/android/settings/location/InjectedSetting;
+    iget-object v2, p0, Lcom/android/vendorsettings/location/SettingsInjector$ServiceSettingClickedListener;->ahA:Lcom/android/vendorsettings/location/InjectedSetting;
 
-    iget-object v2, v2, Lcom/android/settings/location/InjectedSetting;->agY:Ljava/lang/String;
+    iget-object v2, v2, Lcom/android/vendorsettings/location/InjectedSetting;->agY:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
@@ -57,15 +57,15 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     .line 303
-    iget-object v1, p0, Lcom/android/settings/location/SettingsInjector$ServiceSettingClickedListener;->ahB:Lcom/android/settings/location/SettingsInjector;
+    iget-object v1, p0, Lcom/android/vendorsettings/location/SettingsInjector$ServiceSettingClickedListener;->ahB:Lcom/android/vendorsettings/location/SettingsInjector;
 
-    invoke-static {v1}, Lcom/android/settings/location/SettingsInjector;->a(Lcom/android/settings/location/SettingsInjector;)Landroid/content/Context;
+    invoke-static {v1}, Lcom/android/vendorsettings/location/SettingsInjector;->a(Lcom/android/vendorsettings/location/SettingsInjector;)Landroid/content/Context;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/location/SettingsInjector$ServiceSettingClickedListener;->ahA:Lcom/android/settings/location/InjectedSetting;
+    iget-object v2, p0, Lcom/android/vendorsettings/location/SettingsInjector$ServiceSettingClickedListener;->ahA:Lcom/android/vendorsettings/location/InjectedSetting;
 
-    iget-object v2, v2, Lcom/android/settings/location/InjectedSetting;->BW:Landroid/os/UserHandle;
+    iget-object v2, v2, Lcom/android/vendorsettings/location/InjectedSetting;->BW:Landroid/os/UserHandle;
 
     invoke-virtual {v1, v0, v2}, Landroid/content/Context;->startActivityAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 

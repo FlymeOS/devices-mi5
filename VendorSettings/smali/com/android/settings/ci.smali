@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ci;
+.class Lcom/android/vendorsettings/ci;
 .super Ljava/lang/Object;
 .source "DeviceAdminAdd.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic lb:Lcom/android/settings/DeviceAdminAdd;
+.field final synthetic lb:Lcom/android/vendorsettings/DeviceAdminAdd;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DeviceAdminAdd;)V
+.method constructor <init>(Lcom/android/vendorsettings/DeviceAdminAdd;)V
     .locals 0
 
     .prologue
     .line 412
-    iput-object p1, p0, Lcom/android/settings/ci;->lb:Lcom/android/settings/DeviceAdminAdd;
+    iput-object p1, p0, Lcom/android/vendorsettings/ci;->lb:Lcom/android/vendorsettings/DeviceAdminAdd;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,13 +41,13 @@
 
     .line 418
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/ci;->lb:Lcom/android/settings/DeviceAdminAdd;
+    iget-object v0, p0, Lcom/android/vendorsettings/ci;->lb:Lcom/android/vendorsettings/DeviceAdminAdd;
 
-    iget-object v0, v0, Lcom/android/settings/DeviceAdminAdd;->ds:Landroid/app/admin/DevicePolicyManager;
+    iget-object v0, v0, Lcom/android/vendorsettings/DeviceAdminAdd;->ds:Landroid/app/admin/DevicePolicyManager;
 
-    iget-object v1, p0, Lcom/android/settings/ci;->lb:Lcom/android/settings/DeviceAdminAdd;
+    iget-object v1, p0, Lcom/android/vendorsettings/ci;->lb:Lcom/android/vendorsettings/DeviceAdminAdd;
 
-    iget-object v1, v1, Lcom/android/settings/DeviceAdminAdd;->kH:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v1, v1, Lcom/android/vendorsettings/DeviceAdminAdd;->kH:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v1}, Landroid/app/admin/DeviceAdminInfo;->getComponent()Landroid/content/ComponentName;
 
@@ -56,9 +56,9 @@
     invoke-virtual {v0, v1}, Landroid/app/admin/DevicePolicyManager;->removeActiveAdmin(Landroid/content/ComponentName;)V
 
     .line 419
-    iget-object v0, p0, Lcom/android/settings/ci;->lb:Lcom/android/settings/DeviceAdminAdd;
+    iget-object v0, p0, Lcom/android/vendorsettings/ci;->lb:Lcom/android/vendorsettings/DeviceAdminAdd;
 
-    invoke-virtual {v0}, Lcom/android/settings/DeviceAdminAdd;->finish()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/DeviceAdminAdd;->finish()V
 
     .line 420
     return-void

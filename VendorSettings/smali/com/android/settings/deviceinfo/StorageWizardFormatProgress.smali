@@ -1,12 +1,12 @@
-.class public Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;
-.super Lcom/android/settings/deviceinfo/StorageWizardBase;
+.class public Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;
+.super Lcom/android/vendorsettings/deviceinfo/StorageWizardBase;
 .source "StorageWizardFormatProgress.java"
 
 
 # instance fields
 .field private Xq:Z
 
-.field private Xr:Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
+.field private Xr:Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
 
 
 # direct methods
@@ -15,50 +15,50 @@
 
     .prologue
     .line 42
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/StorageWizardBase;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardBase;-><init>()V
 
     .line 238
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;)Z
+.method static synthetic a(Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;)Z
     .locals 1
 
     .prologue
     .line 42
-    iget-boolean v0, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Xq:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Xq:Z
 
     return v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;)V
+.method static synthetic b(Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;)V
     .locals 0
 
     .prologue
     .line 42
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->pq()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->pq()V
 
     return-void
 .end method
 
-.method static synthetic c(Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;)Ljava/lang/String;
+.method static synthetic c(Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 42
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->po()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->po()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;)Ljava/lang/String;
+.method static synthetic d(Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 42
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->pp()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->pp()Ljava/lang/String;
 
     move-result-object v0
 
@@ -70,7 +70,7 @@
 
     .prologue
     .line 194
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Vv:Landroid/os/storage/DiskInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Vv:Landroid/os/storage/DiskInfo;
 
     invoke-virtual {v0}, Landroid/os/storage/DiskInfo;->getDescription()Ljava/lang/String;
 
@@ -84,7 +84,7 @@
 
     .prologue
     .line 199
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Vv:Landroid/os/storage/DiskInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Vv:Landroid/os/storage/DiskInfo;
 
     invoke-virtual {v0}, Landroid/os/storage/DiskInfo;->isSd()Z
 
@@ -95,7 +95,7 @@
     .line 200
     const v0, 0x1040497
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -105,7 +105,7 @@
 
     .line 201
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Vv:Landroid/os/storage/DiskInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Vv:Landroid/os/storage/DiskInfo;
 
     invoke-virtual {v0}, Landroid/os/storage/DiskInfo;->isUsb()Z
 
@@ -116,7 +116,7 @@
     .line 202
     const v0, 0x1040499
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -136,7 +136,7 @@
     const/4 v0, 0x0
 
     .line 209
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -154,18 +154,18 @@
     if-nez v2, :cond_0
 
     .line 212
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Vi:Landroid/os/storage/StorageManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Vi:Landroid/os/storage/StorageManager;
 
     invoke-virtual {v2, v1}, Landroid/os/storage/StorageManager;->forgetVolume(Ljava/lang/String;)V
 
     .line 216
     :cond_0
-    iget-boolean v1, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Xq:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Xq:Z
 
     if-eqz v1, :cond_1
 
     .line 218
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -197,14 +197,14 @@
     .line 227
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/deviceinfo/StorageWizardMigrate;
+    const-class v1, Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 228
     const-string v1, "android.os.storage.extra.DISK_ID"
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Vv:Landroid/os/storage/DiskInfo;
+    iget-object v2, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Vv:Landroid/os/storage/DiskInfo;
 
     invoke-virtual {v2}, Landroid/os/storage/DiskInfo;->getId()Ljava/lang/String;
 
@@ -213,11 +213,11 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 229
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->startActivity(Landroid/content/Intent;)V
 
     .line 235
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->finishAffinity()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->finishAffinity()V
 
     .line 236
     return-void
@@ -226,14 +226,14 @@
     :cond_2
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/deviceinfo/StorageWizardReady;
+    const-class v1, Lcom/android/vendorsettings/deviceinfo/StorageWizardReady;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 232
     const-string v1, "android.os.storage.extra.DISK_ID"
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Vv:Landroid/os/storage/DiskInfo;
+    iget-object v2, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Vv:Landroid/os/storage/DiskInfo;
 
     invoke-virtual {v2}, Landroid/os/storage/DiskInfo;->getId()Ljava/lang/String;
 
@@ -242,7 +242,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 233
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 .end method
@@ -258,15 +258,15 @@
     const/4 v3, 0x0
 
     .line 51
-    invoke-super {p0, p1}, Lcom/android/settings/deviceinfo/StorageWizardBase;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/deviceinfo/StorageWizardBase;->onCreate(Landroid/os/Bundle;)V
 
     .line 52
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Vv:Landroid/os/storage/DiskInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Vv:Landroid/os/storage/DiskInfo;
 
     if-nez v0, :cond_0
 
     .line 53
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->finish()V
 
     .line 76
     :goto_0
@@ -276,13 +276,13 @@
     :cond_0
     const v0, 0x7f040165
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->setContentView(I)V
 
     .line 57
-    invoke-virtual {p0, v4}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->setKeepScreenOn(Z)V
+    invoke-virtual {p0, v4}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->setKeepScreenOn(Z)V
 
     .line 59
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -292,19 +292,19 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Xq:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Xq:Z
 
     .line 61
-    iget-boolean v0, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Xq:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Xq:Z
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->aJ(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->aJ(Z)V
 
     .line 63
     const v0, 0x7f0c0489
 
     new-array v1, v4, [Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Vv:Landroid/os/storage/DiskInfo;
+    iget-object v2, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Vv:Landroid/os/storage/DiskInfo;
 
     invoke-virtual {v2}, Landroid/os/storage/DiskInfo;->getDescription()Ljava/lang/String;
 
@@ -312,14 +312,14 @@
 
     aput-object v2, v1, v3
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->a(I[Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->a(I[Ljava/lang/String;)V
 
     .line 64
     const v0, 0x7f0c048a
 
     new-array v1, v4, [Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Vv:Landroid/os/storage/DiskInfo;
+    iget-object v2, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Vv:Landroid/os/storage/DiskInfo;
 
     invoke-virtual {v2}, Landroid/os/storage/DiskInfo;->getDescription()Ljava/lang/String;
 
@@ -327,10 +327,10 @@
 
     aput-object v2, v1, v3
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->b(I[Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->b(I[Ljava/lang/String;)V
 
     .line 66
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->getNextButton()Landroid/widget/Button;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->getNextButton()Landroid/widget/Button;
 
     move-result-object v0
 
@@ -339,45 +339,45 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 68
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->getLastNonConfigurationInstance()Ljava/lang/Object;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->getLastNonConfigurationInstance()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
+    check-cast v0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Xr:Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Xr:Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
 
     .line 69
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Xr:Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Xr:Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
 
     if-nez v0, :cond_1
 
     .line 70
-    new-instance v0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
+    new-instance v0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
 
-    invoke-direct {v0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$PartitionTask;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress$PartitionTask;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Xr:Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Xr:Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
 
     .line 71
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Xr:Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Xr:Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$PartitionTask;->e(Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;)V
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress$PartitionTask;->e(Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;)V
 
     .line 72
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Xr:Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Xr:Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
 
     new-array v1, v3, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$PartitionTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress$PartitionTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     goto :goto_0
 
     .line 74
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Xr:Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Xr:Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$PartitionTask;->e(Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;)V
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress$PartitionTask;->e(Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;)V
 
     goto :goto_0
 .end method
@@ -387,7 +387,7 @@
 
     .prologue
     .line 80
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->Xr:Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress;->Xr:Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress$PartitionTask;
 
     return-object v0
 .end method

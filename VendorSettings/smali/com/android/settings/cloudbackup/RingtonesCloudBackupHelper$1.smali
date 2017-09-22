@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/cloudbackup/RingtonesCloudBackupHelper$1;
+.class final Lcom/android/vendorsettings/cloudbackup/RingtonesCloudBackupHelper$1;
 .super Ljava/util/HashMap;
 .source "RingtonesCloudBackupHelper.java"
 
@@ -20,7 +20,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 35
     const-string v0, "notification_sound"
@@ -31,7 +31,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 36
     const-string v0, "alarm_alert"
@@ -42,7 +42,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 38
     const-string v0, "sms_delivered_sound"
@@ -53,7 +53,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 39
     const-string v0, "sms_received_sound"
@@ -64,7 +64,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 40
     const-string v0, "calendar_alert"
@@ -75,7 +75,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 42
     const-string v0, "ringtone_sound_slot_1"
@@ -86,7 +86,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 43
     const-string v0, "ringtone_sound_slot_2"
@@ -97,7 +97,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 44
     const-string v0, "sms_received_sound_slot_1"
@@ -108,7 +108,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 45
     const-string v0, "sms_received_sound_slot_2"
@@ -119,7 +119,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 46
     const-string v0, "sms_delivered_sound_slot_1"
@@ -130,7 +130,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 47
     const-string v0, "sms_delivered_sound_slot_2"
@@ -141,7 +141,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/cloudbackup/RingtonesCloudBackupHelper$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 48
     return-void

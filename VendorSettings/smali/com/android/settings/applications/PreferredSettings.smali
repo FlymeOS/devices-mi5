@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/PreferredSettings;
+.class public Lcom/android/vendorsettings/applications/PreferredSettings;
 .super Lmiui/app/ListActivity;
 .source "PreferredSettings.java"
 
@@ -29,12 +29,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/PreferredSettings;)Landroid/content/IntentFilter;
+.method static synthetic a(Lcom/android/vendorsettings/applications/PreferredSettings;)Landroid/content/IntentFilter;
     .locals 1
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     return-object v0
 .end method
@@ -92,14 +92,14 @@
 
     .prologue
     .line 139
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSettings;->getListAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSettings;->getListAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/PreferredSettings$ResolveListAdapter;
+    check-cast v0, Lcom/android/vendorsettings/applications/PreferredSettings$ResolveListAdapter;
 
     .line 140
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -108,7 +108,7 @@
 
     iget-object v2, v2, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSettings;->getUserId()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSettings;->getUserId()I
 
     move-result v3
 
@@ -119,13 +119,13 @@
 
     iget-object v1, v1, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/android/settings/applications/PreferredSettings;->mPackageName:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mPackageName:Ljava/lang/String;
 
     .line 146
-    invoke-virtual {v0, p1}, Lcom/android/settings/applications/PreferredSettings$ResolveListAdapter;->f(Landroid/content/pm/ResolveInfo;)V
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/applications/PreferredSettings$ResolveListAdapter;->f(Landroid/content/pm/ResolveInfo;)V
 
     .line 147
-    invoke-virtual {v0}, Lcom/android/settings/applications/PreferredSettings$ResolveListAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/PreferredSettings$ResolveListAdapter;->notifyDataSetChanged()V
 
     .line 148
     return-void
@@ -138,19 +138,19 @@
     const/4 v3, 0x0
 
     .line 151
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSettings;->getListAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSettings;->getListAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/PreferredSettings$ResolveListAdapter;
+    check-cast v0, Lcom/android/vendorsettings/applications/PreferredSettings$ResolveListAdapter;
 
     .line 152
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v4
 
     .line 154
-    invoke-virtual {v0}, Lcom/android/settings/applications/PreferredSettings$ResolveListAdapter;->getCount()I
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/PreferredSettings$ResolveListAdapter;->getCount()I
 
     move-result v5
 
@@ -166,7 +166,7 @@
     if-ge v2, v5, :cond_1
 
     .line 158
-    invoke-virtual {v0, v2}, Lcom/android/settings/applications/PreferredSettings$ResolveListAdapter;->aV(I)Landroid/content/pm/ResolveInfo;
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/applications/PreferredSettings$ResolveListAdapter;->aV(I)Landroid/content/pm/ResolveInfo;
 
     move-result-object v7
 
@@ -200,7 +200,7 @@
 
     .line 164
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/applications/PreferredSettings;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mPackageName:Ljava/lang/String;
 
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -209,7 +209,7 @@
     if-nez v2, :cond_3
 
     .line 165
-    iget-object v2, p0, Lcom/android/settings/applications/PreferredSettings;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mPackageName:Ljava/lang/String;
 
     invoke-virtual {v4, v2}, Landroid/content/pm/PackageManager;->clearPackagePreferredActivities(Ljava/lang/String;)V
 
@@ -221,7 +221,7 @@
     .line 173
     new-instance v2, Landroid/content/IntentFilter;
 
-    iget-object v3, p0, Lcom/android/settings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     invoke-direct {v2, v3}, Landroid/content/IntentFilter;-><init>(Landroid/content/IntentFilter;)V
 
@@ -256,20 +256,20 @@
 
     iget-object v1, v1, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/android/settings/applications/PreferredSettings;->mPackageName:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mPackageName:Ljava/lang/String;
 
     .line 182
-    invoke-virtual {v0, p1}, Lcom/android/settings/applications/PreferredSettings$ResolveListAdapter;->f(Landroid/content/pm/ResolveInfo;)V
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/applications/PreferredSettings$ResolveListAdapter;->f(Landroid/content/pm/ResolveInfo;)V
 
     .line 183
-    invoke-virtual {v0}, Lcom/android/settings/applications/PreferredSettings$ResolveListAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/PreferredSettings$ResolveListAdapter;->notifyDataSetChanged()V
 
     .line 184
     return-void
 
     .line 166
     :cond_3
-    iget-object v2, p0, Lcom/android/settings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     invoke-virtual {v2}, Landroid/content/IntentFilter;->countCategories()I
 
@@ -279,7 +279,7 @@
 
     const-string v2, "android.intent.category.HOME"
 
-    iget-object v5, p0, Lcom/android/settings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     invoke-virtual {v5, v3}, Landroid/content/IntentFilter;->getCategory(I)Ljava/lang/String;
 
@@ -292,7 +292,7 @@
     if-eqz v2, :cond_2
 
     .line 167
-    iget-object v2, p0, Lcom/android/settings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     new-instance v5, Landroid/content/ComponentName;
 
@@ -313,7 +313,7 @@
 
     .line 179
     :cond_4
-    iget-object v1, p0, Lcom/android/settings/applications/PreferredSettings;->mIntent:Landroid/content/Intent;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mIntent:Landroid/content/Intent;
 
     invoke-virtual {v4, v1, v3}, Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
 
@@ -336,7 +336,7 @@
     invoke-super {p0, p1}, Lmiui/app/ListActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 49
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSettings;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSettings;->getListView()Landroid/widget/ListView;
 
     move-result-object v3
 
@@ -358,7 +358,7 @@
     iput v8, v0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
     .line 58
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -374,7 +374,7 @@
     invoke-virtual {v3, v0}, Landroid/widget/ListView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 61
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSettings;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSettings;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 
@@ -386,12 +386,12 @@
 
     .line 66
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v4
 
     .line 67
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSettings;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSettings;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -403,10 +403,10 @@
 
     check-cast v0, Landroid/content/IntentFilter;
 
-    iput-object v0, p0, Lcom/android/settings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     .line 68
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSettings;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSettings;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -416,10 +416,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/PreferredSettings;->mPackageName:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mPackageName:Ljava/lang/String;
 
     .line 69
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSettings;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSettings;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -431,10 +431,10 @@
 
     check-cast v0, Landroid/content/Intent;
 
-    iput-object v0, p0, Lcom/android/settings/applications/PreferredSettings;->mIntent:Landroid/content/Intent;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mIntent:Landroid/content/Intent;
 
     .line 70
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSettings;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSettings;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -444,10 +444,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/PreferredSettings;->KH:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->KH:Ljava/lang/String;
 
     .line 71
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -462,10 +462,10 @@
 
     aget-object v1, v0, v1
 
-    iput-object v1, p0, Lcom/android/settings/applications/PreferredSettings;->KT:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->KT:Ljava/lang/String;
 
     .line 73
-    iget-object v1, p0, Lcom/android/settings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     if-nez v1, :cond_1
 
@@ -474,17 +474,17 @@
 
     invoke-direct {v1}, Landroid/content/IntentFilter;-><init>()V
 
-    iput-object v1, p0, Lcom/android/settings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iput-object v1, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     .line 75
-    iget-object v1, p0, Lcom/android/settings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     const-string v3, "android.intent.action.MAIN"
 
     invoke-virtual {v1, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 76
-    iget-object v1, p0, Lcom/android/settings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     const-string v3, "android.intent.category.HOME"
 
@@ -497,10 +497,10 @@
 
     invoke-direct {v1, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    iput-object v1, p0, Lcom/android/settings/applications/PreferredSettings;->mIntent:Landroid/content/Intent;
+    iput-object v1, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mIntent:Landroid/content/Intent;
 
     .line 79
-    iget-object v1, p0, Lcom/android/settings/applications/PreferredSettings;->mIntent:Landroid/content/Intent;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mIntent:Landroid/content/Intent;
 
     const-string v3, "android.intent.category.HOME"
 
@@ -509,20 +509,20 @@
     .line 81
     aget-object v0, v0, v8
 
-    iput-object v0, p0, Lcom/android/settings/applications/PreferredSettings;->KH:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->KH:Ljava/lang/String;
 
     .line 83
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSettings;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSettings;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/applications/PreferredSettings;->KH:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->KH:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lmiui/app/ActionBar;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 85
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredSettings;->mIntent:Landroid/content/Intent;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mIntent:Landroid/content/Intent;
 
     const/high16 v1, 0x20000
 
@@ -552,7 +552,7 @@
     if-eqz v3, :cond_2
 
     .line 92
-    iput-object v0, p0, Lcom/android/settings/applications/PreferredSettings;->KS:Landroid/content/pm/ResolveInfo;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->KS:Landroid/content/pm/ResolveInfo;
 
     :cond_2
     move v3, v2
@@ -613,12 +613,12 @@
     if-eqz v6, :cond_6
 
     .line 104
-    iget-object v6, p0, Lcom/android/settings/applications/PreferredSettings;->KS:Landroid/content/pm/ResolveInfo;
+    iget-object v6, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->KS:Landroid/content/pm/ResolveInfo;
 
     if-nez v6, :cond_7
 
     .line 105
-    iput-object v1, p0, Lcom/android/settings/applications/PreferredSettings;->KS:Landroid/content/pm/ResolveInfo;
+    iput-object v1, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->KS:Landroid/content/pm/ResolveInfo;
 
     .line 94
     :cond_6
@@ -645,24 +645,24 @@
     if-nez v6, :cond_6
 
     .line 110
-    iput-object v1, p0, Lcom/android/settings/applications/PreferredSettings;->KS:Landroid/content/pm/ResolveInfo;
+    iput-object v1, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->KS:Landroid/content/pm/ResolveInfo;
 
     goto :goto_3
 
     .line 117
     :cond_8
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredSettings;->mIntent:Landroid/content/Intent;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->mIntent:Landroid/content/Intent;
 
     invoke-virtual {v4, v0, v8}, Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
 
     move-result-object v0
 
     .line 118
-    new-instance v1, Lcom/android/settings/applications/PreferredSettings$ResolveListAdapter;
+    new-instance v1, Lcom/android/vendorsettings/applications/PreferredSettings$ResolveListAdapter;
 
-    invoke-direct {v1, p0, p0, v5, v0}, Lcom/android/settings/applications/PreferredSettings$ResolveListAdapter;-><init>(Lcom/android/settings/applications/PreferredSettings;Landroid/content/Context;Ljava/util/List;Landroid/content/pm/ResolveInfo;)V
+    invoke-direct {v1, p0, p0, v5, v0}, Lcom/android/vendorsettings/applications/PreferredSettings$ResolveListAdapter;-><init>(Lcom/android/vendorsettings/applications/PreferredSettings;Landroid/content/Context;Ljava/util/List;Landroid/content/pm/ResolveInfo;)V
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/applications/PreferredSettings;->setListAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/applications/PreferredSettings;->setListAdapter(Landroid/widget/ListAdapter;)V
 
     .line 119
     return-void
@@ -676,23 +676,23 @@
     invoke-super/range {p0 .. p5}, Lmiui/app/ListActivity;->onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
 
     .line 125
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSettings;->getListAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSettings;->getListAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/PreferredSettings$ResolveListAdapter;
+    check-cast v0, Lcom/android/vendorsettings/applications/PreferredSettings$ResolveListAdapter;
 
     .line 126
-    invoke-virtual {v0, p3}, Lcom/android/settings/applications/PreferredSettings$ResolveListAdapter;->aV(I)Landroid/content/pm/ResolveInfo;
+    invoke-virtual {v0, p3}, Lcom/android/vendorsettings/applications/PreferredSettings$ResolveListAdapter;->aV(I)Landroid/content/pm/ResolveInfo;
 
     move-result-object v1
 
     .line 127
-    invoke-virtual {v0}, Lcom/android/settings/applications/PreferredSettings$ResolveListAdapter;->kX()Landroid/content/pm/ResolveInfo;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/PreferredSettings$ResolveListAdapter;->kX()Landroid/content/pm/ResolveInfo;
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/android/settings/applications/PreferredSettings;->a(Landroid/content/pm/ResolveInfo;Landroid/content/pm/ResolveInfo;)Z
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/applications/PreferredSettings;->a(Landroid/content/pm/ResolveInfo;Landroid/content/pm/ResolveInfo;)Z
 
     move-result v0
 
@@ -704,9 +704,9 @@
 
     .line 131
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredSettings;->KH:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->KH:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/settings/applications/PreferredSettings;->KT:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/PreferredSettings;->KT:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
@@ -715,13 +715,13 @@
     if-eqz v0, :cond_1
 
     .line 132
-    invoke-direct {p0, v1}, Lcom/android/settings/applications/PreferredSettings;->d(Landroid/content/pm/ResolveInfo;)V
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/applications/PreferredSettings;->d(Landroid/content/pm/ResolveInfo;)V
 
     goto :goto_0
 
     .line 134
     :cond_1
-    invoke-direct {p0, v1}, Lcom/android/settings/applications/PreferredSettings;->e(Landroid/content/pm/ResolveInfo;)V
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/applications/PreferredSettings;->e(Landroid/content/pm/ResolveInfo;)V
 
     goto :goto_0
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/privacypassword/PrivacyPasswordSetting;
+.class public Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting;
 .super Landroid/preference/PreferenceActivity;
 .source "PrivacyPasswordSetting.java"
 
@@ -33,7 +33,7 @@
     .line 21
     const-string v1, ":android:show_fragment"
 
-    const-class v2, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;
+    const-class v2, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -57,7 +57,7 @@
 
     .prologue
     .line 28
-    const-class v0, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;
+    const-class v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

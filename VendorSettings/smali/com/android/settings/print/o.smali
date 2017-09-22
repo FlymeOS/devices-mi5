@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/print/o;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/vendorsettings/print/o;
+.super Lcom/android/vendorsettings/search/a;
 .source "PrintSettingsFragment.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 633
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/search/a;-><init>()V
 
     return-void
 .end method
@@ -51,15 +51,15 @@
     move-result-object v4
 
     .line 643
-    new-instance v1, Lcom/android/settings/search/n;
+    new-instance v1, Lcom/android/vendorsettings/search/n;
 
-    invoke-direct {v1, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, p1}, Lcom/android/vendorsettings/search/n;-><init>(Landroid/content/Context;)V
 
     .line 644
-    iput-object v4, v1, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v4, v1, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
     .line 645
-    iput-object v4, v1, Lcom/android/settings/search/n;->apu:Ljava/lang/String;
+    iput-object v4, v1, Lcom/android/vendorsettings/search/n;->apu:Ljava/lang/String;
 
     .line 646
     invoke-interface {v2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -111,16 +111,16 @@
     invoke-direct {v7, v8, v9}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 658
-    new-instance v8, Lcom/android/settings/search/n;
+    new-instance v8, Lcom/android/vendorsettings/search/n;
 
-    invoke-direct {v8, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v8, p1}, Lcom/android/vendorsettings/search/n;-><init>(Landroid/content/Context;)V
 
     .line 659
     invoke-virtual {v7}, Landroid/content/ComponentName;->flattenToString()Ljava/lang/String;
 
     move-result-object v7
 
-    iput-object v7, v8, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v7, v8, Lcom/android/vendorsettings/search/n;->key:Ljava/lang/String;
 
     .line 660
     invoke-virtual {v0}, Landroid/printservice/PrintServiceInfo;->getResolveInfo()Landroid/content/pm/ResolveInfo;
@@ -135,7 +135,7 @@
 
     move-result-object v0
 
-    iput-object v0, v8, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v0, v8, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
     .line 661
     const v0, 0x7f0c06f1
@@ -144,7 +144,7 @@
 
     move-result-object v0
 
-    iput-object v0, v8, Lcom/android/settings/search/n;->Va:Ljava/lang/String;
+    iput-object v0, v8, Lcom/android/vendorsettings/search/n;->Va:Ljava/lang/String;
 
     .line 662
     const v0, 0x7f0c06f2
@@ -153,10 +153,10 @@
 
     move-result-object v0
 
-    iput-object v0, v8, Lcom/android/settings/search/n;->Vb:Ljava/lang/String;
+    iput-object v0, v8, Lcom/android/vendorsettings/search/n;->Vb:Ljava/lang/String;
 
     .line 663
-    iput-object v4, v8, Lcom/android/settings/search/n;->apu:Ljava/lang/String;
+    iput-object v4, v8, Lcom/android/vendorsettings/search/n;->apu:Ljava/lang/String;
 
     .line 664
     invoke-interface {v2, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z

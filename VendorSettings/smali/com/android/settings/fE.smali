@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fE;
+.class Lcom/android/vendorsettings/fE;
 .super Ljava/lang/Object;
 .source "MiuiZonePicker.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic uK:Lcom/android/settings/MiuiZonePicker;
+.field final synthetic uK:Lcom/android/vendorsettings/MiuiZonePicker;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiZonePicker;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiZonePicker;)V
     .locals 0
 
     .prologue
     .line 80
-    iput-object p1, p0, Lcom/android/settings/fE;->uK:Lcom/android/settings/MiuiZonePicker;
+    iput-object p1, p0, Lcom/android/vendorsettings/fE;->uK:Lcom/android/vendorsettings/MiuiZonePicker;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/android/settings/fE;->uK:Lcom/android/settings/MiuiZonePicker;
+    iget-object v0, p0, Lcom/android/vendorsettings/fE;->uK:Lcom/android/vendorsettings/MiuiZonePicker;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiZonePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/MiuiZonePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

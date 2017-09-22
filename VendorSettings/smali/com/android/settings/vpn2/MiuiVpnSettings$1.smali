@@ -1,19 +1,19 @@
-.class Lcom/android/settings/vpn2/MiuiVpnSettings$1;
+.class Lcom/android/vendorsettings/vpn2/MiuiVpnSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "MiuiVpnSettings.java"
 
 
 # instance fields
-.field final synthetic awb:Lcom/android/settings/vpn2/MiuiVpnSettings;
+.field final synthetic awb:Lcom/android/vendorsettings/vpn2/MiuiVpnSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/vpn2/MiuiVpnSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/vpn2/MiuiVpnSettings;)V
     .locals 0
 
     .prologue
     .line 97
-    iput-object p1, p0, Lcom/android/settings/vpn2/MiuiVpnSettings$1;->awb:Lcom/android/settings/vpn2/MiuiVpnSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnSettings$1;->awb:Lcom/android/vendorsettings/vpn2/MiuiVpnSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -36,9 +36,9 @@
     move-result v0
 
     .line 101
-    iget-object v1, p0, Lcom/android/settings/vpn2/MiuiVpnSettings$1;->awb:Lcom/android/settings/vpn2/MiuiVpnSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnSettings$1;->awb:Lcom/android/vendorsettings/vpn2/MiuiVpnSettings;
 
-    invoke-static {v1, v0}, Lcom/android/settings/vpn2/MiuiVpnSettings;->a(Lcom/android/settings/vpn2/MiuiVpnSettings;Z)V
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/vpn2/MiuiVpnSettings;->a(Lcom/android/vendorsettings/vpn2/MiuiVpnSettings;Z)V
 
     .line 102
     return-void

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;
+.class Lcom/android/vendorsettings/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;
 .super Ljava/lang/Object;
 .source "DeviceProfilesSettings.java"
 
@@ -7,28 +7,28 @@
 
 
 # instance fields
-.field final synthetic RA:Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+.field final synthetic RA:Lcom/android/vendorsettings/bluetooth/DeviceProfilesSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/bluetooth/DeviceProfilesSettings;)V
+.method private constructor <init>(Lcom/android/vendorsettings/bluetooth/DeviceProfilesSettings;)V
     .locals 0
 
     .prologue
     .line 81
-    iput-object p1, p0, Lcom/android/settings/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;->RA:Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;->RA:Lcom/android/vendorsettings/bluetooth/DeviceProfilesSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/bluetooth/DeviceProfilesSettings;Lcom/android/settings/bluetooth/DeviceProfilesSettings$1;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/bluetooth/DeviceProfilesSettings;Lcom/android/vendorsettings/bluetooth/DeviceProfilesSettings$1;)V
     .locals 0
 
     .prologue
     .line 81
-    invoke-direct {p0, p1}, Lcom/android/settings/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;-><init>(Lcom/android/settings/bluetooth/DeviceProfilesSettings;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;-><init>(Lcom/android/vendorsettings/bluetooth/DeviceProfilesSettings;)V
 
     return-void
 .end method
@@ -40,9 +40,9 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/android/settings/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;->RA:Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/DeviceProfilesSettings$RenameEditTextPreference;->RA:Lcom/android/vendorsettings/bluetooth/DeviceProfilesSettings;
 
-    invoke-static {v0}, Lcom/android/settings/bluetooth/DeviceProfilesSettings;->a(Lcom/android/settings/bluetooth/DeviceProfilesSettings;)Landroid/preference/EditTextPreference;
+    invoke-static {v0}, Lcom/android/vendorsettings/bluetooth/DeviceProfilesSettings;->a(Lcom/android/vendorsettings/bluetooth/DeviceProfilesSettings;)Landroid/preference/EditTextPreference;
 
     move-result-object v0
 

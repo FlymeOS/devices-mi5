@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/PreferredDialerSettings;
+.class public Lcom/android/vendorsettings/applications/PreferredDialerSettings;
 .super Lmiui/app/ListActivity;
 .source "PreferredDialerSettings.java"
 
@@ -23,22 +23,22 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/PreferredDialerSettings;)Ljava/lang/String;
+.method static synthetic a(Lcom/android/vendorsettings/applications/PreferredDialerSettings;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredDialerSettings;->KI:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->KI:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/PreferredDialerSettings;Ljava/lang/String;)V
+.method static synthetic a(Lcom/android/vendorsettings/applications/PreferredDialerSettings;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 47
-    invoke-direct {p0, p1}, Lcom/android/settings/applications/PreferredDialerSettings;->au(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->au(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -50,7 +50,7 @@
     .line 103
     .line 105
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredDialerSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
@@ -61,7 +61,7 @@
     move-result-object v0
 
     .line 107
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredDialerSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -93,42 +93,42 @@
     const/4 v1, 0x0
 
     .line 155
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredDialerSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/applications/PreferredDialerSettings;->KI:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->KI:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Landroid/content/pm/PackageManager;->clearPackagePreferredActivities(Ljava/lang/String;)V
 
     .line 157
-    iput-object p1, p0, Lcom/android/settings/applications/PreferredDialerSettings;->KI:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->KI:Ljava/lang/String;
 
     .line 158
     invoke-static {p0}, Landroid/telecom/TelecomManager;->from(Landroid/content/Context;)Landroid/telecom/TelecomManager;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/applications/PreferredDialerSettings;->KI:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->KI:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Landroid/telecom/TelecomManager;->setDefaultDialer(Ljava/lang/String;)Z
 
     .line 159
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredDialerSettings;->getListAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->getListAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/PreferredDialerSettings$DialerApplicationListAdapter;
+    check-cast v0, Lcom/android/vendorsettings/applications/PreferredDialerSettings$DialerApplicationListAdapter;
 
     .line 160
-    invoke-virtual {v0}, Lcom/android/settings/applications/PreferredDialerSettings$DialerApplicationListAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings$DialerApplicationListAdapter;->notifyDataSetChanged()V
 
     .line 163
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredDialerSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    invoke-direct {p0}, Lcom/android/settings/applications/PreferredDialerSettings;->kU()Landroid/content/Intent;
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->kU()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -267,7 +267,7 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addDataScheme(Ljava/lang/String;)V
 
     .line 192
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredDialerSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -286,11 +286,11 @@
 
     .prologue
     .line 84
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredDialerSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    invoke-direct {p0}, Lcom/android/settings/applications/PreferredDialerSettings;->kU()Landroid/content/Intent;
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->kU()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -349,11 +349,11 @@
 
     .prologue
     .line 90
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredDialerSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    invoke-direct {p0}, Lcom/android/settings/applications/PreferredDialerSettings;->kU()Landroid/content/Intent;
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->kU()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -423,14 +423,14 @@
     invoke-super {p0, p1}, Lmiui/app/ListActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 62
-    invoke-direct {p0}, Lcom/android/settings/applications/PreferredDialerSettings;->getDefaultDialerPackage()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->getDefaultDialerPackage()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/PreferredDialerSettings;->KI:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->KI:Ljava/lang/String;
 
     .line 63
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredDialerSettings;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -440,19 +440,19 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/PreferredDialerSettings;->KH:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->KH:Ljava/lang/String;
 
     .line 64
     const-string v0, "com.android.contacts"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/applications/PreferredDialerSettings;->at(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->at(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/PreferredDialerSettings;->KJ:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->KJ:Ljava/lang/String;
 
     .line 65
-    invoke-direct {p0}, Lcom/android/settings/applications/PreferredDialerSettings;->kV()Ljava/util/List;
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->kV()Ljava/util/List;
 
     move-result-object v0
 
@@ -480,19 +480,19 @@
     check-cast v0, Ljava/lang/String;
 
     .line 69
-    new-instance v3, Lcom/android/settings/applications/PreferredDialerSettings$DialerApplicationInfo;
+    new-instance v3, Lcom/android/vendorsettings/applications/PreferredDialerSettings$DialerApplicationInfo;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/applications/PreferredDialerSettings$DialerApplicationInfo;-><init>(Lcom/android/settings/applications/PreferredDialerSettings;)V
+    invoke-direct {v3, p0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings$DialerApplicationInfo;-><init>(Lcom/android/vendorsettings/applications/PreferredDialerSettings;)V
 
     .line 70
-    iput-object v0, v3, Lcom/android/settings/applications/PreferredDialerSettings$DialerApplicationInfo;->packageName:Ljava/lang/String;
+    iput-object v0, v3, Lcom/android/vendorsettings/applications/PreferredDialerSettings$DialerApplicationInfo;->packageName:Ljava/lang/String;
 
     .line 71
-    invoke-direct {p0, v0}, Lcom/android/settings/applications/PreferredDialerSettings;->at(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->at(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v3, Lcom/android/settings/applications/PreferredDialerSettings$DialerApplicationInfo;->KM:Ljava/lang/String;
+    iput-object v0, v3, Lcom/android/vendorsettings/applications/PreferredDialerSettings$DialerApplicationInfo;->KM:Ljava/lang/String;
 
     .line 72
     invoke-interface {v1, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -501,11 +501,11 @@
 
     .line 74
     :cond_0
-    new-instance v0, Lcom/android/settings/applications/PreferredDialerSettings$DialerApplicationListAdapter;
+    new-instance v0, Lcom/android/vendorsettings/applications/PreferredDialerSettings$DialerApplicationListAdapter;
 
-    invoke-direct {v0, p0, p0, v1}, Lcom/android/settings/applications/PreferredDialerSettings$DialerApplicationListAdapter;-><init>(Lcom/android/settings/applications/PreferredDialerSettings;Landroid/content/Context;Ljava/util/List;)V
+    invoke-direct {v0, p0, p0, v1}, Lcom/android/vendorsettings/applications/PreferredDialerSettings$DialerApplicationListAdapter;-><init>(Lcom/android/vendorsettings/applications/PreferredDialerSettings;Landroid/content/Context;Ljava/util/List;)V
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/PreferredDialerSettings;->setListAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->setListAdapter(Landroid/widget/ListAdapter;)V
 
     .line 75
     return-void
@@ -525,21 +525,21 @@
     invoke-super/range {p0 .. p5}, Lmiui/app/ListActivity;->onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
 
     .line 117
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredDialerSettings;->getListAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->getListAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/PreferredDialerSettings$DialerApplicationListAdapter;
+    check-cast v0, Lcom/android/vendorsettings/applications/PreferredDialerSettings$DialerApplicationListAdapter;
 
     .line 118
-    invoke-virtual {v0, p3}, Lcom/android/settings/applications/PreferredDialerSettings$DialerApplicationListAdapter;->aU(I)Lcom/android/settings/applications/PreferredDialerSettings$DialerApplicationInfo;
+    invoke-virtual {v0, p3}, Lcom/android/vendorsettings/applications/PreferredDialerSettings$DialerApplicationListAdapter;->aU(I)Lcom/android/vendorsettings/applications/PreferredDialerSettings$DialerApplicationInfo;
 
     move-result-object v2
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredDialerSettings;->KI:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->KI:Ljava/lang/String;
 
-    iget-object v3, v2, Lcom/android/settings/applications/PreferredDialerSettings$DialerApplicationInfo;->packageName:Ljava/lang/String;
+    iget-object v3, v2, Lcom/android/vendorsettings/applications/PreferredDialerSettings$DialerApplicationInfo;->packageName:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -555,11 +555,11 @@
     .line 125
     :cond_1
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredDialerSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iget-object v3, v2, Lcom/android/settings/applications/PreferredDialerSettings$DialerApplicationInfo;->packageName:Ljava/lang/String;
+    iget-object v3, v2, Lcom/android/vendorsettings/applications/PreferredDialerSettings$DialerApplicationInfo;->packageName:Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -585,11 +585,11 @@
 
     new-array v3, v6, [Ljava/lang/Object;
 
-    iget-object v4, p0, Lcom/android/settings/applications/PreferredDialerSettings;->KJ:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->KJ:Ljava/lang/String;
 
     aput-object v4, v3, v7
 
-    invoke-virtual {p0, v0, v3}, Lcom/android/settings/applications/PreferredDialerSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v0, v3}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -600,15 +600,15 @@
 
     new-array v4, v4, [Ljava/lang/Object;
 
-    iget-object v5, p0, Lcom/android/settings/applications/PreferredDialerSettings;->KJ:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->KJ:Ljava/lang/String;
 
     aput-object v5, v4, v7
 
-    iget-object v5, p0, Lcom/android/settings/applications/PreferredDialerSettings;->KJ:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->KJ:Ljava/lang/String;
 
     aput-object v5, v4, v6
 
-    invoke-virtual {p0, v3, v4}, Lcom/android/settings/applications/PreferredDialerSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v3, v4}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -617,11 +617,11 @@
 
     new-array v5, v6, [Ljava/lang/Object;
 
-    iget-object v6, p0, Lcom/android/settings/applications/PreferredDialerSettings;->KJ:Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->KJ:Ljava/lang/String;
 
     aput-object v6, v5, v7
 
-    invoke-virtual {p0, v4, v5}, Lcom/android/settings/applications/PreferredDialerSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v4, v5}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -640,9 +640,9 @@
 
     const v3, 0x7f0c0d7f
 
-    new-instance v5, Lcom/android/settings/applications/PreferredDialerSettings$1;
+    new-instance v5, Lcom/android/vendorsettings/applications/PreferredDialerSettings$1;
 
-    invoke-direct {v5, p0, v2}, Lcom/android/settings/applications/PreferredDialerSettings$1;-><init>(Lcom/android/settings/applications/PreferredDialerSettings;Lcom/android/settings/applications/PreferredDialerSettings$DialerApplicationInfo;)V
+    invoke-direct {v5, p0, v2}, Lcom/android/vendorsettings/applications/PreferredDialerSettings$1;-><init>(Lcom/android/vendorsettings/applications/PreferredDialerSettings;Lcom/android/vendorsettings/applications/PreferredDialerSettings$DialerApplicationInfo;)V
 
     invoke-virtual {v0, v3, v5}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -666,9 +666,9 @@
 
     .line 150
     :cond_2
-    iget-object v0, v2, Lcom/android/settings/applications/PreferredDialerSettings$DialerApplicationInfo;->packageName:Ljava/lang/String;
+    iget-object v0, v2, Lcom/android/vendorsettings/applications/PreferredDialerSettings$DialerApplicationInfo;->packageName:Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/applications/PreferredDialerSettings;->au(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/applications/PreferredDialerSettings;->au(Ljava/lang/String;)V
 
     goto :goto_0
 .end method

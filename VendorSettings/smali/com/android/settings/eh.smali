@@ -1,19 +1,19 @@
-.class Lcom/android/settings/eh;
+.class Lcom/android/vendorsettings/eh;
 .super Landroid/content/BroadcastReceiver;
 .source "MiuiCryptKeeperSettings.java"
 
 
 # instance fields
-.field final synthetic ql:Lcom/android/settings/MiuiCryptKeeperSettings;
+.field final synthetic ql:Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiCryptKeeperSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiCryptKeeperSettings;)V
     .locals 0
 
     .prologue
     .line 85
-    iput-object p1, p0, Lcom/android/settings/eh;->ql:Lcom/android/settings/MiuiCryptKeeperSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/eh;->ql:Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -98,9 +98,9 @@
 
     .line 102
     :goto_1
-    iget-object v4, p0, Lcom/android/settings/eh;->ql:Lcom/android/settings/MiuiCryptKeeperSettings;
+    iget-object v4, p0, Lcom/android/vendorsettings/eh;->ql:Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
 
-    invoke-static {v4}, Lcom/android/settings/MiuiCryptKeeperSettings;->a(Lcom/android/settings/MiuiCryptKeeperSettings;)Landroid/widget/Button;
+    invoke-static {v4}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->a(Lcom/android/vendorsettings/MiuiCryptKeeperSettings;)Landroid/widget/Button;
 
     move-result-object v4
 
@@ -114,9 +114,9 @@
     invoke-virtual {v4, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 103
-    iget-object v1, p0, Lcom/android/settings/eh;->ql:Lcom/android/settings/MiuiCryptKeeperSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/eh;->ql:Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
 
-    invoke-static {v1}, Lcom/android/settings/MiuiCryptKeeperSettings;->b(Lcom/android/settings/MiuiCryptKeeperSettings;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->b(Lcom/android/vendorsettings/MiuiCryptKeeperSettings;)Landroid/widget/TextView;
 
     move-result-object v4
 
@@ -132,9 +132,9 @@
     invoke-virtual {v4, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 105
-    iget-object v1, p0, Lcom/android/settings/eh;->ql:Lcom/android/settings/MiuiCryptKeeperSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/eh;->ql:Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
 
-    invoke-static {v1}, Lcom/android/settings/MiuiCryptKeeperSettings;->b(Lcom/android/settings/MiuiCryptKeeperSettings;)Landroid/widget/TextView;
+    invoke-static {v1}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->b(Lcom/android/vendorsettings/MiuiCryptKeeperSettings;)Landroid/widget/TextView;
 
     move-result-object v1
 

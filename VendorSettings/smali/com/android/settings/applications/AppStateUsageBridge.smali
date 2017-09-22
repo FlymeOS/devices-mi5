@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/AppStateUsageBridge;
-.super Lcom/android/settings/applications/AppStateAppOpsBridge;
+.class public Lcom/android/vendorsettings/applications/AppStateUsageBridge;
+.super Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;
 .source "AppStateUsageBridge.java"
 
 
@@ -25,26 +25,26 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/applications/AppStateUsageBridge;->GC:[Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/applications/AppStateUsageBridge;->GC:[Ljava/lang/String;
 
     .line 67
-    new-instance v0, Lcom/android/settings/applications/AppStateUsageBridge$1;
+    new-instance v0, Lcom/android/vendorsettings/applications/AppStateUsageBridge$1;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/AppStateUsageBridge$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/applications/AppStateUsageBridge$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/AppStateUsageBridge;->GG:Lcom/android/b/a/p;
+    sput-object v0, Lcom/android/vendorsettings/applications/AppStateUsageBridge;->GG:Lcom/android/b/a/p;
 
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lcom/android/b/a/a;Lcom/android/settings/applications/AppStateBaseBridge$Callback;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/android/b/a/a;Lcom/android/vendorsettings/applications/AppStateBaseBridge$Callback;)V
     .locals 6
 
     .prologue
     .line 43
     const/16 v4, 0x2b
 
-    sget-object v5, Lcom/android/settings/applications/AppStateUsageBridge;->GC:[Ljava/lang/String;
+    sget-object v5, Lcom/android/vendorsettings/applications/AppStateUsageBridge;->GC:[Ljava/lang/String;
 
     move-object v0, p0
 
@@ -54,7 +54,7 @@
 
     move-object v3, p3
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/applications/AppStateAppOpsBridge;-><init>(Landroid/content/Context;Lcom/android/b/a/a;Lcom/android/settings/applications/AppStateBaseBridge$Callback;I[Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;-><init>(Landroid/content/Context;Lcom/android/b/a/a;Lcom/android/vendorsettings/applications/AppStateBaseBridge$Callback;I[Ljava/lang/String;)V
 
     .line 44
     return-void
@@ -67,7 +67,7 @@
 
     .prologue
     .line 48
-    invoke-virtual {p0, p2, p3}, Lcom/android/settings/applications/AppStateUsageBridge;->j(Ljava/lang/String;I)Lcom/android/settings/applications/AppStateUsageBridge$UsageState;
+    invoke-virtual {p0, p2, p3}, Lcom/android/vendorsettings/applications/AppStateUsageBridge;->j(Ljava/lang/String;I)Lcom/android/vendorsettings/applications/AppStateUsageBridge$UsageState;
 
     move-result-object v0
 
@@ -77,19 +77,19 @@
     return-void
 .end method
 
-.method public j(Ljava/lang/String;I)Lcom/android/settings/applications/AppStateUsageBridge$UsageState;
+.method public j(Ljava/lang/String;I)Lcom/android/vendorsettings/applications/AppStateUsageBridge$UsageState;
     .locals 2
 
     .prologue
     .line 52
-    invoke-super {p0, p1, p2}, Lcom/android/settings/applications/AppStateAppOpsBridge;->g(Ljava/lang/String;I)Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->g(Ljava/lang/String;I)Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;
 
     move-result-object v0
 
     .line 53
-    new-instance v1, Lcom/android/settings/applications/AppStateUsageBridge$UsageState;
+    new-instance v1, Lcom/android/vendorsettings/applications/AppStateUsageBridge$UsageState;
 
-    invoke-direct {v1, v0}, Lcom/android/settings/applications/AppStateUsageBridge$UsageState;-><init>(Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;)V
+    invoke-direct {v1, v0}, Lcom/android/vendorsettings/applications/AppStateUsageBridge$UsageState;-><init>(Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;)V
 
     return-object v1
 .end method

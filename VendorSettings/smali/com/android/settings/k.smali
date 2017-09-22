@@ -1,4 +1,4 @@
-.class Lcom/android/settings/k;
+.class Lcom/android/vendorsettings/k;
 .super Ljava/lang/Object;
 .source "ActivityPicker.java"
 
@@ -28,17 +28,17 @@
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/k;->C:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/android/vendorsettings/k;->C:Landroid/graphics/Rect;
 
     .line 330
     new-instance v0, Landroid/graphics/Canvas;
 
     invoke-direct {v0}, Landroid/graphics/Canvas;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/k;->mCanvas:Landroid/graphics/Canvas;
+    iput-object v0, p0, Lcom/android/vendorsettings/k;->mCanvas:Landroid/graphics/Canvas;
 
     .line 333
-    iget-object v0, p0, Lcom/android/settings/k;->mCanvas:Landroid/graphics/Canvas;
+    iget-object v0, p0, Lcom/android/vendorsettings/k;->mCanvas:Landroid/graphics/Canvas;
 
     new-instance v1, Landroid/graphics/PaintFlagsDrawFilter;
 
@@ -51,13 +51,13 @@
     invoke-virtual {v0, v1}, Landroid/graphics/Canvas;->setDrawFilter(Landroid/graphics/DrawFilter;)V
 
     .line 336
-    iput-object p3, p0, Lcom/android/settings/k;->mMetrics:Landroid/util/DisplayMetrics;
+    iput-object p3, p0, Lcom/android/vendorsettings/k;->mMetrics:Landroid/util/DisplayMetrics;
 
     .line 337
-    iput p1, p0, Lcom/android/settings/k;->A:I
+    iput p1, p0, Lcom/android/vendorsettings/k;->A:I
 
     .line 338
-    iput p2, p0, Lcom/android/settings/k;->B:I
+    iput p2, p0, Lcom/android/vendorsettings/k;->B:I
 
     .line 339
     return-void
@@ -70,18 +70,18 @@
 
     .prologue
     .line 354
-    iget v4, p0, Lcom/android/settings/k;->A:I
+    iget v4, p0, Lcom/android/vendorsettings/k;->A:I
 
     .line 355
-    iget v3, p0, Lcom/android/settings/k;->B:I
+    iget v3, p0, Lcom/android/vendorsettings/k;->B:I
 
     .line 357
     if-nez p1, :cond_1
 
     .line 358
-    new-instance p1, Lcom/android/settings/j;
+    new-instance p1, Lcom/android/vendorsettings/j;
 
-    invoke-direct {p1, v4, v3}, Lcom/android/settings/j;-><init>(II)V
+    invoke-direct {p1, v4, v3}, Lcom/android/vendorsettings/j;-><init>(II)V
 
     .line 429
     :cond_0
@@ -163,22 +163,22 @@
 
     .line 389
     :goto_3
-    iget v2, p0, Lcom/android/settings/k;->A:I
+    iget v2, p0, Lcom/android/vendorsettings/k;->A:I
 
-    iget v5, p0, Lcom/android/settings/k;->B:I
+    iget v5, p0, Lcom/android/vendorsettings/k;->B:I
 
     invoke-static {v2, v5, v1}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
     .line 390
-    iget-object v5, p0, Lcom/android/settings/k;->mCanvas:Landroid/graphics/Canvas;
+    iget-object v5, p0, Lcom/android/vendorsettings/k;->mCanvas:Landroid/graphics/Canvas;
 
     .line 391
     invoke-virtual {v5, v1}, Landroid/graphics/Canvas;->setBitmap(Landroid/graphics/Bitmap;)V
 
     .line 397
-    iget-object v2, p0, Lcom/android/settings/k;->C:Landroid/graphics/Rect;
+    iget-object v2, p0, Lcom/android/vendorsettings/k;->C:Landroid/graphics/Rect;
 
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
 
@@ -187,14 +187,14 @@
     invoke-virtual {v2, v6}, Landroid/graphics/Rect;->set(Landroid/graphics/Rect;)V
 
     .line 398
-    iget v2, p0, Lcom/android/settings/k;->A:I
+    iget v2, p0, Lcom/android/vendorsettings/k;->A:I
 
     sub-int/2addr v2, v4
 
     div-int/lit8 v2, v2, 0x2
 
     .line 399
-    iget v6, p0, Lcom/android/settings/k;->B:I
+    iget v6, p0, Lcom/android/vendorsettings/k;->B:I
 
     sub-int/2addr v6, v3
 
@@ -211,7 +211,7 @@
     invoke-virtual {p1, v5}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
     .line 402
-    iget-object v2, p0, Lcom/android/settings/k;->C:Landroid/graphics/Rect;
+    iget-object v2, p0, Lcom/android/vendorsettings/k;->C:Landroid/graphics/Rect;
 
     invoke-virtual {p1, v2}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
@@ -227,7 +227,7 @@
 
     move-object v1, v0
 
-    iget-object v6, p0, Lcom/android/settings/k;->mMetrics:Landroid/util/DisplayMetrics;
+    iget-object v6, p0, Lcom/android/vendorsettings/k;->mMetrics:Landroid/util/DisplayMetrics;
 
     invoke-virtual {v1, v6}, Landroid/graphics/drawable/BitmapDrawable;->setTargetDensity(Landroid/util/DisplayMetrics;)V
 
@@ -267,7 +267,7 @@
     if-nez v2, :cond_2
 
     .line 371
-    iget-object v2, p0, Lcom/android/settings/k;->mMetrics:Landroid/util/DisplayMetrics;
+    iget-object v2, p0, Lcom/android/vendorsettings/k;->mMetrics:Landroid/util/DisplayMetrics;
 
     invoke-virtual {v1, v2}, Landroid/graphics/drawable/BitmapDrawable;->setTargetDensity(Landroid/util/DisplayMetrics;)V
     :try_end_0
@@ -284,9 +284,9 @@
     move v2, v4
 
     .line 426
-    new-instance p1, Lcom/android/settings/j;
+    new-instance p1, Lcom/android/vendorsettings/j;
 
-    invoke-direct {p1, v2, v1}, Lcom/android/settings/j;-><init>(II)V
+    invoke-direct {p1, v2, v1}, Lcom/android/vendorsettings/j;-><init>(II)V
 
     goto/16 :goto_0
 
@@ -320,22 +320,22 @@
     sget-object v5, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
     .line 409
-    iget v6, p0, Lcom/android/settings/k;->A:I
+    iget v6, p0, Lcom/android/vendorsettings/k;->A:I
 
-    iget v7, p0, Lcom/android/settings/k;->B:I
+    iget v7, p0, Lcom/android/vendorsettings/k;->B:I
 
     invoke-static {v6, v7, v5}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
 
     move-result-object v5
 
     .line 410
-    iget-object v6, p0, Lcom/android/settings/k;->mCanvas:Landroid/graphics/Canvas;
+    iget-object v6, p0, Lcom/android/vendorsettings/k;->mCanvas:Landroid/graphics/Canvas;
 
     .line 411
     invoke-virtual {v6, v5}, Landroid/graphics/Canvas;->setBitmap(Landroid/graphics/Bitmap;)V
 
     .line 412
-    iget-object v7, p0, Lcom/android/settings/k;->C:Landroid/graphics/Rect;
+    iget-object v7, p0, Lcom/android/vendorsettings/k;->C:Landroid/graphics/Rect;
 
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
 
@@ -364,7 +364,7 @@
     invoke-virtual {p1, v6}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
     .line 417
-    iget-object v1, p0, Lcom/android/settings/k;->C:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/android/vendorsettings/k;->C:Landroid/graphics/Rect;
 
     invoke-virtual {p1, v1}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
@@ -380,7 +380,7 @@
 
     move-object v1, v0
 
-    iget-object v5, p0, Lcom/android/settings/k;->mMetrics:Landroid/util/DisplayMetrics;
+    iget-object v5, p0, Lcom/android/vendorsettings/k;->mMetrics:Landroid/util/DisplayMetrics;
 
     invoke-virtual {v1, v5}, Landroid/graphics/drawable/BitmapDrawable;->setTargetDensity(Landroid/util/DisplayMetrics;)V
 

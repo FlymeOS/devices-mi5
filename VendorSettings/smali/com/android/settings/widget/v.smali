@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/widget/v;
+.class public interface abstract Lcom/android/vendorsettings/widget/v;
 .super Ljava/lang/Object;
 .source "ScreenView.java"
 
 
 # virtual methods
-.method public abstract e(Lcom/android/settings/widget/ScreenView;)V
+.method public abstract e(Lcom/android/vendorsettings/widget/ScreenView;)V
 .end method
 
-.method public abstract f(Lcom/android/settings/widget/ScreenView;)V
+.method public abstract f(Lcom/android/vendorsettings/widget/ScreenView;)V
 .end method

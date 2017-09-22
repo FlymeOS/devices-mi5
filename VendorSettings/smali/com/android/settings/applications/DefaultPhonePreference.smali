@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/DefaultPhonePreference;
-.super Lcom/android/settings/AppListPreference;
+.class public Lcom/android/vendorsettings/applications/DefaultPhonePreference;
+.super Lcom/android/vendorsettings/AppListPreference;
 .source "DefaultPhonePreference.java"
 
 
@@ -13,24 +13,24 @@
 
     .prologue
     .line 36
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/AppListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/AppListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 38
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/DefaultPhonePreference;->mContext:Landroid/content/Context;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/DefaultPhonePreference;->mContext:Landroid/content/Context;
 
     .line 39
-    invoke-static {p1}, Lcom/android/settings/applications/DefaultPhonePreference;->an(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/applications/DefaultPhonePreference;->an(Landroid/content/Context;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 40
-    invoke-direct {p0}, Lcom/android/settings/applications/DefaultPhonePreference;->ku()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/DefaultPhonePreference;->ku()V
 
     .line 42
     :cond_0
@@ -100,7 +100,7 @@
 
     .prologue
     .line 65
-    invoke-virtual {p0}, Lcom/android/settings/applications/DefaultPhonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/DefaultPhonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -116,7 +116,7 @@
 
     .prologue
     .line 54
-    invoke-virtual {p0}, Lcom/android/settings/applications/DefaultPhonePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/DefaultPhonePreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -161,11 +161,11 @@
 
     .line 61
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/applications/DefaultPhonePreference;->getDefaultPackage()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/DefaultPhonePreference;->getDefaultPackage()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v3, v0}, Lcom/android/settings/applications/DefaultPhonePreference;->a([Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v3, v0}, Lcom/android/vendorsettings/applications/DefaultPhonePreference;->a([Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
 
     .line 62
     return-void
@@ -184,7 +184,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/settings/applications/DefaultPhonePreference;->getDefaultPackage()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/DefaultPhonePreference;->getDefaultPackage()Ljava/lang/String;
 
     move-result-object v0
 
@@ -195,7 +195,7 @@
     if-nez v0, :cond_0
 
     .line 47
-    iget-object v0, p0, Lcom/android/settings/applications/DefaultPhonePreference;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/DefaultPhonePreference;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/telecom/TelecomManager;->from(Landroid/content/Context;)Landroid/telecom/TelecomManager;
 
@@ -205,11 +205,11 @@
 
     .line 49
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/applications/DefaultPhonePreference;->getEntry()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/DefaultPhonePreference;->getEntry()Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/DefaultPhonePreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/DefaultPhonePreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 50
     const/4 v0, 0x1

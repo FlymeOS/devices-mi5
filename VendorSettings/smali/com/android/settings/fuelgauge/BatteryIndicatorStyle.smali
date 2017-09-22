@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;
+.class public Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;
 .super Landroid/app/Activity;
 .source "BatteryIndicatorStyle.java"
 
@@ -22,22 +22,22 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;)[Ljava/lang/CharSequence;
+.method static synthetic a(Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;)[Ljava/lang/CharSequence;
     .locals 1
 
     .prologue
     .line 15
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->ZS:[Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;->ZS:[Ljava/lang/CharSequence;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;)Landroid/content/ContentResolver;
+.method static synthetic b(Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;)Landroid/content/ContentResolver;
     .locals 1
 
     .prologue
     .line 15
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->mResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;->mResolver:Landroid/content/ContentResolver;
 
     return-object v0
 .end method
@@ -59,7 +59,7 @@
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     .line 40
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->mResolver:Landroid/content/ContentResolver;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;->mResolver:Landroid/content/ContentResolver;
 
     const-string v2, "battery_indicator_style"
 
@@ -74,32 +74,32 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v1
 
     .line 43
-    iget-object v2, p0, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->ZR:[Ljava/lang/CharSequence;
+    iget-object v2, p0, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;->ZR:[Ljava/lang/CharSequence;
 
-    new-instance v3, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle$1;
+    new-instance v3, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle$1;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle$1;-><init>(Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;)V
+    invoke-direct {v3, p0}, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle$1;-><init>(Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;)V
 
     invoke-virtual {v0, v2, v1, v3}, Landroid/app/AlertDialog$Builder;->setSingleChoiceItems([Ljava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 55
     const/high16 v1, 0x1040000
 
-    new-instance v2, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle$2;
+    new-instance v2, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle$2;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle$2;-><init>(Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle$2;-><init>(Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 62
-    new-instance v1, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle$3;
+    new-instance v1, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle$3;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle$3;-><init>(Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle$3;-><init>(Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;)V
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
 
@@ -119,12 +119,12 @@
     .line 75
     if-eqz p1, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->ZS:[Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;->ZS:[Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_1
 
     .line 76
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->ZS:[Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;->ZS:[Ljava/lang/CharSequence;
 
     array-length v0, v0
 
@@ -134,7 +134,7 @@
     if-ltz v0, :cond_1
 
     .line 77
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->ZS:[Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;->ZS:[Ljava/lang/CharSequence;
 
     aget-object v1, v1, v0
 
@@ -171,10 +171,10 @@
     .line 24
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->requestWindowFeature(I)Z
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;->requestWindowFeature(I)Z
 
     .line 25
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
@@ -183,7 +183,7 @@
     invoke-virtual {v0, v1}, Landroid/view/Window;->setBackgroundDrawableResource(I)V
 
     .line 26
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -193,10 +193,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->ZR:[Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;->ZR:[Ljava/lang/CharSequence;
 
     .line 27
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -206,17 +206,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->ZS:[Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;->ZS:[Ljava/lang/CharSequence;
 
     .line 28
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->mResolver:Landroid/content/ContentResolver;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;->mResolver:Landroid/content/ContentResolver;
 
     .line 29
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->qR()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;->qR()V
 
     .line 30
     return-void
@@ -232,7 +232,7 @@
     .line 34
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fuelgauge/BatteryIndicatorStyle;->setVisible(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fuelgauge/BatteryIndicatorStyle;->setVisible(Z)V
 
     .line 35
     return-void

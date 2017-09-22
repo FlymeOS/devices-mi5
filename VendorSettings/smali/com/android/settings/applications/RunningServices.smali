@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/RunningServices;
+.class public Lcom/android/vendorsettings/applications/RunningServices;
 .super Landroid/app/Fragment;
 .source "RunningServices.java"
 
@@ -10,7 +10,7 @@
 
 .field private final Ia:Ljava/lang/Runnable;
 
-.field private Oa:Lcom/android/settings/applications/RunningProcessesView;
+.field private Oa:Lcom/android/vendorsettings/applications/RunningProcessesView;
 
 
 # direct methods
@@ -22,31 +22,31 @@
     invoke-direct {p0}, Landroid/app/Fragment;-><init>()V
 
     .line 108
-    new-instance v0, Lcom/android/settings/applications/RunningServices$1;
+    new-instance v0, Lcom/android/vendorsettings/applications/RunningServices$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/applications/RunningServices$1;-><init>(Lcom/android/settings/applications/RunningServices;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/applications/RunningServices$1;-><init>(Lcom/android/vendorsettings/applications/RunningServices;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningServices;->Ia:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/RunningServices;->Ia:Ljava/lang/Runnable;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/RunningServices;)Landroid/view/View;
+.method static synthetic a(Lcom/android/vendorsettings/applications/RunningServices;)Landroid/view/View;
     .locals 1
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServices;->HY:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServices;->HY:Landroid/view/View;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/applications/RunningServices;)Lcom/android/settings/applications/RunningProcessesView;
+.method static synthetic b(Lcom/android/vendorsettings/applications/RunningServices;)Lcom/android/vendorsettings/applications/RunningProcessesView;
     .locals 1
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServices;->Oa:Lcom/android/settings/applications/RunningProcessesView;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServices;->Oa:Lcom/android/vendorsettings/applications/RunningProcessesView;
 
     return-object v0
 .end method
@@ -58,16 +58,16 @@
     const/4 v0, 0x1
 
     .line 103
-    iget-object v1, p0, Lcom/android/settings/applications/RunningServices;->Oa:Lcom/android/settings/applications/RunningProcessesView;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/RunningServices;->Oa:Lcom/android/vendorsettings/applications/RunningProcessesView;
 
-    iget-object v1, v1, Lcom/android/settings/applications/RunningProcessesView;->Nm:Lcom/android/settings/applications/RunningProcessesView$ServiceListAdapter;
+    iget-object v1, v1, Lcom/android/vendorsettings/applications/RunningProcessesView;->Nm:Lcom/android/vendorsettings/applications/RunningProcessesView$ServiceListAdapter;
 
-    invoke-virtual {v1}, Lcom/android/settings/applications/RunningProcessesView$ServiceListAdapter;->lr()Z
+    invoke-virtual {v1}, Lcom/android/vendorsettings/applications/RunningProcessesView$ServiceListAdapter;->lr()Z
 
     move-result v1
 
     .line 104
-    iget-object v2, p0, Lcom/android/settings/applications/RunningServices;->Ht:Landroid/view/Menu;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/RunningServices;->Ht:Landroid/view/Menu;
 
     invoke-interface {v2, v0}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
@@ -76,7 +76,7 @@
     invoke-interface {v2, v1}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
     .line 105
-    iget-object v2, p0, Lcom/android/settings/applications/RunningServices;->Ht:Landroid/view/Menu;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/RunningServices;->Ht:Landroid/view/Menu;
 
     const/4 v3, 0x2
 
@@ -111,7 +111,7 @@
     .line 43
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/RunningServices;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/RunningServices;->setHasOptionsMenu(Z)V
 
     .line 44
     return-void
@@ -128,7 +128,7 @@
     const/4 v1, 0x1
 
     .line 60
-    iput-object p1, p0, Lcom/android/settings/applications/RunningServices;->Ht:Landroid/view/Menu;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/RunningServices;->Ht:Landroid/view/Menu;
 
     .line 61
     const v0, 0x7f0c0599
@@ -149,7 +149,7 @@
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
     .line 65
-    invoke-direct {p0}, Lcom/android/settings/applications/RunningServices;->ke()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/RunningServices;->ke()V
 
     .line 66
     return-void
@@ -175,14 +175,14 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/RunningProcessesView;
+    check-cast v0, Lcom/android/vendorsettings/applications/RunningProcessesView;
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningServices;->Oa:Lcom/android/settings/applications/RunningProcessesView;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/RunningServices;->Oa:Lcom/android/vendorsettings/applications/RunningProcessesView;
 
     .line 52
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServices;->Oa:Lcom/android/settings/applications/RunningProcessesView;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServices;->Oa:Lcom/android/vendorsettings/applications/RunningProcessesView;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/RunningProcessesView;->lp()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/RunningProcessesView;->lp()V
 
     .line 53
     const v0, 0x7f130124
@@ -191,7 +191,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningServices;->HY:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/RunningServices;->HY:Landroid/view/View;
 
     .line 55
     return-object v1
@@ -218,15 +218,15 @@
 
     .line 85
     :pswitch_0
-    iget-object v2, p0, Lcom/android/settings/applications/RunningServices;->Oa:Lcom/android/settings/applications/RunningProcessesView;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/RunningServices;->Oa:Lcom/android/vendorsettings/applications/RunningProcessesView;
 
-    iget-object v2, v2, Lcom/android/settings/applications/RunningProcessesView;->Nm:Lcom/android/settings/applications/RunningProcessesView$ServiceListAdapter;
+    iget-object v2, v2, Lcom/android/vendorsettings/applications/RunningProcessesView;->Nm:Lcom/android/vendorsettings/applications/RunningProcessesView$ServiceListAdapter;
 
-    invoke-virtual {v2, v0}, Lcom/android/settings/applications/RunningProcessesView$ServiceListAdapter;->au(Z)V
+    invoke-virtual {v2, v0}, Lcom/android/vendorsettings/applications/RunningProcessesView$ServiceListAdapter;->au(Z)V
 
     .line 93
     :goto_1
-    invoke-direct {p0}, Lcom/android/settings/applications/RunningServices;->ke()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/RunningServices;->ke()V
 
     move v0, v1
 
@@ -235,11 +235,11 @@
 
     .line 88
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServices;->Oa:Lcom/android/settings/applications/RunningProcessesView;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServices;->Oa:Lcom/android/vendorsettings/applications/RunningProcessesView;
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningProcessesView;->Nm:Lcom/android/settings/applications/RunningProcessesView$ServiceListAdapter;
+    iget-object v0, v0, Lcom/android/vendorsettings/applications/RunningProcessesView;->Nm:Lcom/android/vendorsettings/applications/RunningProcessesView$ServiceListAdapter;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/RunningProcessesView$ServiceListAdapter;->au(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/applications/RunningProcessesView$ServiceListAdapter;->au(Z)V
 
     goto :goto_1
 
@@ -259,9 +259,9 @@
     invoke-super {p0}, Landroid/app/Fragment;->onPause()V
 
     .line 78
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServices;->Oa:Lcom/android/settings/applications/RunningProcessesView;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServices;->Oa:Lcom/android/vendorsettings/applications/RunningProcessesView;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/RunningProcessesView;->lq()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/RunningProcessesView;->lq()V
 
     .line 79
     return-void
@@ -272,7 +272,7 @@
 
     .prologue
     .line 99
-    invoke-direct {p0}, Lcom/android/settings/applications/RunningServices;->ke()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/RunningServices;->ke()V
 
     .line 100
     return-void
@@ -286,22 +286,22 @@
     invoke-super {p0}, Landroid/app/Fragment;->onResume()V
 
     .line 71
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServices;->Oa:Lcom/android/settings/applications/RunningProcessesView;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServices;->Oa:Lcom/android/vendorsettings/applications/RunningProcessesView;
 
-    iget-object v1, p0, Lcom/android/settings/applications/RunningServices;->Ia:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/RunningServices;->Ia:Ljava/lang/Runnable;
 
-    invoke-virtual {v0, p0, v1}, Lcom/android/settings/applications/RunningProcessesView;->a(Landroid/app/Fragment;Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, p0, v1}, Lcom/android/vendorsettings/applications/RunningProcessesView;->a(Landroid/app/Fragment;Ljava/lang/Runnable;)Z
 
     move-result v0
 
     .line 72
-    iget-object v1, p0, Lcom/android/settings/applications/RunningServices;->HY:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/RunningServices;->HY:Landroid/view/View;
 
-    iget-object v2, p0, Lcom/android/settings/applications/RunningServices;->Oa:Lcom/android/settings/applications/RunningProcessesView;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/RunningServices;->Oa:Lcom/android/vendorsettings/applications/RunningProcessesView;
 
     const/4 v3, 0x0
 
-    invoke-static {v1, v2, v0, v3}, Lcom/android/settings/iC;->a(Landroid/view/View;Landroid/view/View;ZZ)V
+    invoke-static {v1, v2, v0, v3}, Lcom/android/vendorsettings/iC;->a(Landroid/view/View;Landroid/view/View;ZZ)V
 
     .line 73
     return-void

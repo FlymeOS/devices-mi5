@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/notification/ServiceListing;
+.class public Lcom/android/vendorsettings/notification/ServiceListing;
 .super Ljava/lang/Object;
 .source "ServiceListing.java"
 
 
 # instance fields
-.field private final aiJ:Lcom/android/settings/notification/ManagedServiceSettings$Config;
+.field private final aiJ:Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;
 
 .field private final akh:Ljava/util/HashSet;
 
@@ -24,7 +24,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/android/settings/notification/ManagedServiceSettings$Config;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;)V
     .locals 2
 
     .prologue
@@ -36,58 +36,58 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/notification/ServiceListing;->akh:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->akh:Ljava/util/HashSet;
 
     .line 46
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/notification/ServiceListing;->aki:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->aki:Ljava/util/List;
 
     .line 47
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/notification/ServiceListing;->akj:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->akj:Ljava/util/List;
 
     .line 189
-    new-instance v0, Lcom/android/settings/notification/ServiceListing$1;
+    new-instance v0, Lcom/android/vendorsettings/notification/ServiceListing$1;
 
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/notification/ServiceListing$1;-><init>(Lcom/android/settings/notification/ServiceListing;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/notification/ServiceListing$1;-><init>(Lcom/android/vendorsettings/notification/ServiceListing;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/notification/ServiceListing;->wd:Landroid/database/ContentObserver;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->wd:Landroid/database/ContentObserver;
 
     .line 196
-    new-instance v0, Lcom/android/settings/notification/ServiceListing$2;
+    new-instance v0, Lcom/android/vendorsettings/notification/ServiceListing$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/notification/ServiceListing$2;-><init>(Lcom/android/settings/notification/ServiceListing;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/notification/ServiceListing$2;-><init>(Lcom/android/vendorsettings/notification/ServiceListing;)V
 
-    iput-object v0, p0, Lcom/android/settings/notification/ServiceListing;->akl:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->akl:Landroid/content/BroadcastReceiver;
 
     .line 52
-    iput-object p1, p0, Lcom/android/settings/notification/ServiceListing;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/notification/ServiceListing;->mContext:Landroid/content/Context;
 
     .line 53
-    iput-object p2, p0, Lcom/android/settings/notification/ServiceListing;->aiJ:Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    iput-object p2, p0, Lcom/android/vendorsettings/notification/ServiceListing;->aiJ:Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;
 
     .line 54
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/ServiceListing;->mContentResolver:Landroid/content/ContentResolver;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->mContentResolver:Landroid/content/ContentResolver;
 
     .line 55
     return-void
 .end method
 
-.method public static a(Lcom/android/settings/notification/ManagedServiceSettings$Config;Landroid/content/Context;)I
+.method public static a(Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;Landroid/content/Context;)I
     .locals 2
 
     .prologue
@@ -96,7 +96,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/notification/ManagedServiceSettings$Config;->aiP:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;->aiP:Ljava/lang/String;
 
     invoke-static {v0, v1}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
@@ -134,21 +134,21 @@
     goto :goto_0
 .end method
 
-.method public static a(Lcom/android/settings/notification/ManagedServiceSettings$Config;Landroid/content/pm/PackageManager;)I
+.method public static a(Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;Landroid/content/pm/PackageManager;)I
     .locals 1
 
     .prologue
     .line 93
     const/4 v0, 0x0
 
-    invoke-static {p0, v0, p1}, Lcom/android/settings/notification/ServiceListing;->a(Lcom/android/settings/notification/ManagedServiceSettings$Config;Ljava/util/List;Landroid/content/pm/PackageManager;)I
+    invoke-static {p0, v0, p1}, Lcom/android/vendorsettings/notification/ServiceListing;->a(Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;Ljava/util/List;Landroid/content/pm/PackageManager;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method private static a(Lcom/android/settings/notification/ManagedServiceSettings$Config;Ljava/util/List;Landroid/content/pm/PackageManager;)I
+.method private static a(Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;Ljava/util/List;Landroid/content/pm/PackageManager;)I
     .locals 8
 
     .prologue
@@ -170,7 +170,7 @@
     .line 115
     new-instance v2, Landroid/content/Intent;
 
-    iget-object v3, p0, Lcom/android/settings/notification/ManagedServiceSettings$Config;->intentAction:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;->intentAction:Ljava/lang/String;
 
     invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
@@ -203,7 +203,7 @@
     iget-object v0, v0, Landroid/content/pm/ResolveInfo;->serviceInfo:Landroid/content/pm/ServiceInfo;
 
     .line 124
-    iget-object v5, p0, Lcom/android/settings/notification/ManagedServiceSettings$Config;->permission:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;->permission:Ljava/lang/String;
 
     iget-object v6, v0, Landroid/content/pm/ServiceInfo;->permission:Ljava/lang/String;
 
@@ -214,7 +214,7 @@
     if-nez v5, :cond_1
 
     .line 125
-    iget-object v5, p0, Lcom/android/settings/notification/ManagedServiceSettings$Config;->tag:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;->tag:Ljava/lang/String;
 
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -226,7 +226,7 @@
 
     move-result-object v6
 
-    iget-object v7, p0, Lcom/android/settings/notification/ManagedServiceSettings$Config;->aiQ:Ljava/lang/String;
+    iget-object v7, p0, Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;->aiQ:Ljava/lang/String;
 
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -262,7 +262,7 @@
 
     move-result-object v0
 
-    iget-object v6, p0, Lcom/android/settings/notification/ManagedServiceSettings$Config;->permission:Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;->permission:Ljava/lang/String;
 
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -304,17 +304,17 @@
     return v1
 .end method
 
-.method public static a(Landroid/content/Context;Lcom/android/settings/notification/ManagedServiceSettings$Config;Landroid/content/ComponentName;)Landroid/content/pm/ServiceInfo;
+.method public static a(Landroid/content/Context;Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;Landroid/content/ComponentName;)Landroid/content/pm/ServiceInfo;
     .locals 5
 
     .prologue
     .line 97
-    new-instance v0, Lcom/android/settings/notification/ServiceListing;
+    new-instance v0, Lcom/android/vendorsettings/notification/ServiceListing;
 
-    invoke-direct {v0, p0, p1}, Lcom/android/settings/notification/ServiceListing;-><init>(Landroid/content/Context;Lcom/android/settings/notification/ManagedServiceSettings$Config;)V
+    invoke-direct {v0, p0, p1}, Lcom/android/vendorsettings/notification/ServiceListing;-><init>(Landroid/content/Context;Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;)V
 
     .line 98
-    invoke-virtual {v0}, Lcom/android/settings/notification/ServiceListing;->sy()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/notification/ServiceListing;->sy()Ljava/util/List;
 
     move-result-object v0
 
@@ -370,7 +370,7 @@
     const/4 v1, 0x0
 
     .line 141
-    iget-object v0, p0, Lcom/android/settings/notification/ServiceListing;->akh:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->akh:Ljava/util/HashSet;
 
     invoke-virtual {v0}, Ljava/util/HashSet;->iterator()Ljava/util/Iterator;
 
@@ -417,11 +417,11 @@
 
     .line 149
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/notification/ServiceListing;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v2, p0, Lcom/android/vendorsettings/notification/ServiceListing;->mContentResolver:Landroid/content/ContentResolver;
 
-    iget-object v0, p0, Lcom/android/settings/notification/ServiceListing;->aiJ:Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->aiJ:Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;
 
-    iget-object v3, v0, Lcom/android/settings/notification/ManagedServiceSettings$Config;->aiP:Ljava/lang/String;
+    iget-object v3, v0, Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;->aiP:Ljava/lang/String;
 
     if-eqz v1, :cond_2
 
@@ -447,16 +447,16 @@
 
     .prologue
     .line 154
-    iget-object v0, p0, Lcom/android/settings/notification/ServiceListing;->akh:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->akh:Ljava/util/HashSet;
 
     invoke-virtual {v0}, Ljava/util/HashSet;->clear()V
 
     .line 155
-    iget-object v0, p0, Lcom/android/settings/notification/ServiceListing;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->mContentResolver:Landroid/content/ContentResolver;
 
-    iget-object v1, p0, Lcom/android/settings/notification/ServiceListing;->aiJ:Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/ServiceListing;->aiJ:Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;
 
-    iget-object v1, v1, Lcom/android/settings/notification/ManagedServiceSettings$Config;->aiP:Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;->aiP:Ljava/lang/String;
 
     invoke-static {v0, v1}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
@@ -499,7 +499,7 @@
     if-eqz v2, :cond_0
 
     .line 161
-    iget-object v3, p0, Lcom/android/settings/notification/ServiceListing;->akh:Ljava/util/HashSet;
+    iget-object v3, p0, Lcom/android/vendorsettings/notification/ServiceListing;->akh:Ljava/util/HashSet;
 
     invoke-virtual {v3, v2}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -524,32 +524,32 @@
     if-eqz p2, :cond_0
 
     .line 182
-    iget-object v0, p0, Lcom/android/settings/notification/ServiceListing;->akh:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->akh:Ljava/util/HashSet;
 
     invoke-virtual {v0, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 186
     :goto_0
-    invoke-direct {p0}, Lcom/android/settings/notification/ServiceListing;->sw()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/ServiceListing;->sw()V
 
     .line 187
     return-void
 
     .line 184
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/notification/ServiceListing;->akh:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->akh:Ljava/util/HashSet;
 
     invoke-virtual {v0, p1}, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
 
     goto :goto_0
 .end method
 
-.method public a(Lcom/android/settings/notification/ServiceListing$Callback;)V
+.method public a(Lcom/android/vendorsettings/notification/ServiceListing$Callback;)V
     .locals 1
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/notification/ServiceListing;->akj:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->akj:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -557,12 +557,12 @@
     return-void
 .end method
 
-.method public b(Lcom/android/settings/notification/ServiceListing$Callback;)V
+.method public b(Lcom/android/vendorsettings/notification/ServiceListing$Callback;)V
     .locals 1
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/android/settings/notification/ServiceListing;->akj:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->akj:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
@@ -575,7 +575,7 @@
 
     .prologue
     .line 177
-    iget-object v0, p0, Lcom/android/settings/notification/ServiceListing;->akh:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->akh:Ljava/util/HashSet;
 
     invoke-virtual {v0, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -589,7 +589,7 @@
 
     .prologue
     .line 66
-    iget-boolean v0, p0, Lcom/android/settings/notification/ServiceListing;->akk:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->akk:Z
 
     if-ne v0, p1, :cond_0
 
@@ -599,10 +599,10 @@
 
     .line 67
     :cond_0
-    iput-boolean p1, p0, Lcom/android/settings/notification/ServiceListing;->akk:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/notification/ServiceListing;->akk:Z
 
     .line 68
-    iget-boolean v0, p0, Lcom/android/settings/notification/ServiceListing;->akk:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->akk:Z
 
     if-eqz v0, :cond_1
 
@@ -637,18 +637,18 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addDataScheme(Ljava/lang/String;)V
 
     .line 76
-    iget-object v1, p0, Lcom/android/settings/notification/ServiceListing;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/ServiceListing;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/android/settings/notification/ServiceListing;->akl:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/android/vendorsettings/notification/ServiceListing;->akl:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 77
-    iget-object v0, p0, Lcom/android/settings/notification/ServiceListing;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->mContentResolver:Landroid/content/ContentResolver;
 
-    iget-object v1, p0, Lcom/android/settings/notification/ServiceListing;->aiJ:Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/ServiceListing;->aiJ:Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;
 
-    iget-object v1, v1, Lcom/android/settings/notification/ManagedServiceSettings$Config;->aiP:Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;->aiP:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/provider/Settings$Secure;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -656,7 +656,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/android/settings/notification/ServiceListing;->wd:Landroid/database/ContentObserver;
+    iget-object v3, p0, Lcom/android/vendorsettings/notification/ServiceListing;->wd:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
@@ -664,16 +664,16 @@
 
     .line 80
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/notification/ServiceListing;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->mContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/settings/notification/ServiceListing;->akl:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/ServiceListing;->akl:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 81
-    iget-object v0, p0, Lcom/android/settings/notification/ServiceListing;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->mContentResolver:Landroid/content/ContentResolver;
 
-    iget-object v1, p0, Lcom/android/settings/notification/ServiceListing;->wd:Landroid/database/ContentObserver;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/ServiceListing;->wd:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
@@ -685,23 +685,23 @@
 
     .prologue
     .line 168
-    invoke-direct {p0}, Lcom/android/settings/notification/ServiceListing;->sx()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/ServiceListing;->sx()V
 
     .line 169
-    iget-object v0, p0, Lcom/android/settings/notification/ServiceListing;->aiJ:Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->aiJ:Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;
 
-    iget-object v1, p0, Lcom/android/settings/notification/ServiceListing;->aki:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/ServiceListing;->aki:Ljava/util/List;
 
-    iget-object v2, p0, Lcom/android/settings/notification/ServiceListing;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/vendorsettings/notification/ServiceListing;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v2
 
-    invoke-static {v0, v1, v2}, Lcom/android/settings/notification/ServiceListing;->a(Lcom/android/settings/notification/ManagedServiceSettings$Config;Ljava/util/List;Landroid/content/pm/PackageManager;)I
+    invoke-static {v0, v1, v2}, Lcom/android/vendorsettings/notification/ServiceListing;->a(Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;Ljava/util/List;Landroid/content/pm/PackageManager;)I
 
     .line 170
-    iget-object v0, p0, Lcom/android/settings/notification/ServiceListing;->akj:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->akj:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -718,18 +718,18 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/notification/ServiceListing$Callback;
+    check-cast v0, Lcom/android/vendorsettings/notification/ServiceListing$Callback;
 
     .line 171
-    iget-object v2, p0, Lcom/android/settings/notification/ServiceListing;->aki:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/vendorsettings/notification/ServiceListing;->aki:Ljava/util/List;
 
-    invoke-interface {v0, v2}, Lcom/android/settings/notification/ServiceListing$Callback;->B(Ljava/util/List;)V
+    invoke-interface {v0, v2}, Lcom/android/vendorsettings/notification/ServiceListing$Callback;->B(Ljava/util/List;)V
 
     goto :goto_0
 
     .line 173
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/notification/ServiceListing;->aki:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing;->aki:Ljava/util/List;
 
     return-object v0
 .end method

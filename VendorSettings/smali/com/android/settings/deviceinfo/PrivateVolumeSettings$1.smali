@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/PrivateVolumeSettings$1;
+.class Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$1;
 .super Ljava/lang/Object;
 .source "PrivateVolumeSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Wm:Lcom/android/settings/deviceinfo/PrivateVolumeSettings;
+.field final synthetic Wm:Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/PrivateVolumeSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings;)V
     .locals 0
 
     .prologue
     .line 633
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$1;->Wm:Lcom/android/settings/deviceinfo/PrivateVolumeSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$1;->Wm:Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 636
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$1;->Wm:Lcom/android/settings/deviceinfo/PrivateVolumeSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$1;->Wm:Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings;
 
-    invoke-static {v0, p1}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings;->a(Lcom/android/settings/deviceinfo/PrivateVolumeSettings;Lcom/android/b/d/d;)V
+    invoke-static {v0, p1}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings;->a(Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings;Lcom/android/b/d/d;)V
 
     .line 637
     return-void

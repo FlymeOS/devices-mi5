@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment$1;
+.class Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment$1;
 .super Ljava/lang/Object;
 .source "StorageSettings.java"
 
@@ -9,22 +9,22 @@
 # instance fields
 .field final synthetic Xh:Landroid/os/storage/VolumeInfo;
 
-.field final synthetic Xi:Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment;
+.field final synthetic Xi:Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment;
 
 .field final synthetic val$context:Landroid/content/Context;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment;Landroid/content/Context;Landroid/os/storage/VolumeInfo;)V
+.method constructor <init>(Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment;Landroid/content/Context;Landroid/os/storage/VolumeInfo;)V
     .locals 0
 
     .prologue
     .line 395
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment$1;->Xi:Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment$1;->Xi:Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment;
 
-    iput-object p2, p0, Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment$1;->val$context:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment$1;->val$context:Landroid/content/Context;
 
-    iput-object p3, p0, Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment$1;->Xh:Landroid/os/storage/VolumeInfo;
+    iput-object p3, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment$1;->Xh:Landroid/os/storage/VolumeInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,19 +38,19 @@
 
     .prologue
     .line 398
-    new-instance v0, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;
+    new-instance v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment$1;->val$context:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment$1;->val$context:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment$1;->Xh:Landroid/os/storage/VolumeInfo;
+    iget-object v2, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment$1;->Xh:Landroid/os/storage/VolumeInfo;
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;-><init>(Landroid/content/Context;Landroid/os/storage/VolumeInfo;)V
+    invoke-direct {v0, v1, v2}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;-><init>(Landroid/content/Context;Landroid/os/storage/VolumeInfo;)V
 
     const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 399
     return-void

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bq;
+.class Lcom/android/vendorsettings/bq;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ih:Lcom/android/settings/DataUsageSummary;
+.field final synthetic ih:Lcom/android/vendorsettings/DataUsageSummary;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary;)V
+.method constructor <init>(Lcom/android/vendorsettings/DataUsageSummary;)V
     .locals 0
 
     .prologue
     .line 514
-    iput-object p1, p0, Lcom/android/settings/bq;->ih:Lcom/android/settings/DataUsageSummary;
+    iput-object p1, p0, Lcom/android/vendorsettings/bq;->ih:Lcom/android/vendorsettings/DataUsageSummary;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 517
-    iget-object v0, p0, Lcom/android/settings/bq;->ih:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/vendorsettings/bq;->ih:Lcom/android/vendorsettings/DataUsageSummary;
 
-    invoke-virtual {v0}, Lcom/android/settings/DataUsageSummary;->ek()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/DataUsageSummary;->ek()V
 
     .line 518
     return-void

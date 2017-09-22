@@ -1,22 +1,22 @@
-.class Lcom/android/settings/applications/AppLaunchSettings$1;
+.class Lcom/android/vendorsettings/applications/AppLaunchSettings$1;
 .super Ljava/lang/Object;
 .source "AppLaunchSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/cO;
+.implements Lcom/android/vendorsettings/cO;
 
 
 # instance fields
-.field final synthetic Fu:Lcom/android/settings/applications/AppLaunchSettings;
+.field final synthetic Fu:Lcom/android/vendorsettings/applications/AppLaunchSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/AppLaunchSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/applications/AppLaunchSettings;)V
     .locals 0
 
     .prologue
     .line 118
-    iput-object p1, p0, Lcom/android/settings/applications/AppLaunchSettings$1;->Fu:Lcom/android/settings/applications/AppLaunchSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/AppLaunchSettings$1;->Fu:Lcom/android/vendorsettings/applications/AppLaunchSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 121
-    iget-object v0, p0, Lcom/android/settings/applications/AppLaunchSettings$1;->Fu:Lcom/android/settings/applications/AppLaunchSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppLaunchSettings$1;->Fu:Lcom/android/vendorsettings/applications/AppLaunchSettings;
 
     check-cast p2, Ljava/lang/Integer;
 
@@ -38,7 +38,7 @@
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/applications/AppLaunchSettings;->a(Lcom/android/settings/applications/AppLaunchSettings;I)Z
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/applications/AppLaunchSettings;->a(Lcom/android/vendorsettings/applications/AppLaunchSettings;I)Z
 
     move-result v0
 

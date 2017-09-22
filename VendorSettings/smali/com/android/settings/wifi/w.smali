@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/w;
+.class Lcom/android/vendorsettings/wifi/w;
 .super Ljava/lang/Object;
 .source "MiuiWifiDetailFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aAM:Lcom/android/settings/wifi/MiuiWifiDetailFragment;
+.field final synthetic aAM:Lcom/android/vendorsettings/wifi/MiuiWifiDetailFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/MiuiWifiDetailFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/MiuiWifiDetailFragment;)V
     .locals 0
 
     .prologue
     .line 186
-    iput-object p1, p0, Lcom/android/settings/wifi/w;->aAM:Lcom/android/settings/wifi/MiuiWifiDetailFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/w;->aAM:Lcom/android/vendorsettings/wifi/MiuiWifiDetailFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 189
-    iget-object v0, p0, Lcom/android/settings/wifi/w;->aAM:Lcom/android/settings/wifi/MiuiWifiDetailFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/w;->aAM:Lcom/android/vendorsettings/wifi/MiuiWifiDetailFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/MiuiWifiDetailFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/MiuiWifiDetailFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/wifi/bi;->cF(Landroid/content/Context;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/bi;->cF(Landroid/content/Context;)V
 
     .line 190
     return-void

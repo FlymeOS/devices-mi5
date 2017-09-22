@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;
+.class public Lcom/android/vendorsettings/applications/SystemAppSettings$HeaderAdapter;
 .super Landroid/widget/ArrayAdapter;
 .source "SystemAppSettings.java"
 
@@ -20,7 +20,7 @@
     invoke-direct {p0, p1, v0, p2}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;ILjava/util/List;)V
 
     .line 167
-    iput-object p1, p0, Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/SystemAppSettings$HeaderAdapter;->mContext:Landroid/content/Context;
 
     .line 168
     const-string v0, "layout_inflater"
@@ -31,7 +31,7 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    iput-object v0, p0, Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/SystemAppSettings$HeaderAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     .line 169
     return-void
@@ -82,7 +82,7 @@
 
     .line 199
     .line 200
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/applications/SystemAppSettings$HeaderAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -96,7 +96,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/applications/SystemAppSettings$ViewHolder;
+    check-cast v1, Lcom/android/vendorsettings/applications/SystemAppSettings$ViewHolder;
 
     move-object v2, v1
 
@@ -107,7 +107,7 @@
     if-nez p2, :cond_3
 
     .line 209
-    iget-object v1, p0, Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/SystemAppSettings$HeaderAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     sget v2, Lmiui/R$layout;->preference_value:I
 
@@ -121,9 +121,9 @@
     invoke-virtual {v2, v1}, Landroid/view/View;->setBackgroundResource(I)V
 
     .line 211
-    new-instance v3, Lcom/android/settings/applications/SystemAppSettings$ViewHolder;
+    new-instance v3, Lcom/android/vendorsettings/applications/SystemAppSettings$ViewHolder;
 
-    invoke-direct {v3}, Lcom/android/settings/applications/SystemAppSettings$ViewHolder;-><init>()V
+    invoke-direct {v3}, Lcom/android/vendorsettings/applications/SystemAppSettings$ViewHolder;-><init>()V
 
     .line 212
     const v1, 0x1020016
@@ -134,7 +134,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iput-object v1, v3, Lcom/android/settings/applications/SystemAppSettings$ViewHolder;->title:Landroid/widget/TextView;
+    iput-object v1, v3, Lcom/android/vendorsettings/applications/SystemAppSettings$ViewHolder;->title:Landroid/widget/TextView;
 
     .line 213
     const v1, 0x1020006
@@ -145,10 +145,10 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    iput-object v1, v3, Lcom/android/settings/applications/SystemAppSettings$ViewHolder;->icon:Landroid/widget/ImageView;
+    iput-object v1, v3, Lcom/android/vendorsettings/applications/SystemAppSettings$ViewHolder;->icon:Landroid/widget/ImageView;
 
     .line 214
-    iget-object v1, p0, Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/SystemAppSettings$HeaderAdapter;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -161,21 +161,21 @@
     move-result v1
 
     .line 215
-    iget-object v4, v3, Lcom/android/settings/applications/SystemAppSettings$ViewHolder;->title:Landroid/widget/TextView;
+    iget-object v4, v3, Lcom/android/vendorsettings/applications/SystemAppSettings$ViewHolder;->title:Landroid/widget/TextView;
 
-    iget-object v5, v3, Lcom/android/settings/applications/SystemAppSettings$ViewHolder;->title:Landroid/widget/TextView;
+    iget-object v5, v3, Lcom/android/vendorsettings/applications/SystemAppSettings$ViewHolder;->title:Landroid/widget/TextView;
 
     invoke-virtual {v5}, Landroid/widget/TextView;->getPaddingTop()I
 
     move-result v5
 
-    iget-object v6, v3, Lcom/android/settings/applications/SystemAppSettings$ViewHolder;->title:Landroid/widget/TextView;
+    iget-object v6, v3, Lcom/android/vendorsettings/applications/SystemAppSettings$ViewHolder;->title:Landroid/widget/TextView;
 
     invoke-virtual {v6}, Landroid/widget/TextView;->getPaddingRight()I
 
     move-result v6
 
-    iget-object v7, v3, Lcom/android/settings/applications/SystemAppSettings$ViewHolder;->title:Landroid/widget/TextView;
+    iget-object v7, v3, Lcom/android/vendorsettings/applications/SystemAppSettings$ViewHolder;->title:Landroid/widget/TextView;
 
     invoke-virtual {v7}, Landroid/widget/TextView;->getPaddingBottom()I
 
@@ -184,7 +184,7 @@
     invoke-virtual {v4, v1, v5, v6, v7}, Landroid/widget/TextView;->setPadding(IIII)V
 
     .line 219
-    iget-object v1, p0, Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/SystemAppSettings$HeaderAdapter;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -197,7 +197,7 @@
     move-result v1
 
     .line 220
-    iget-object v4, v3, Lcom/android/settings/applications/SystemAppSettings$ViewHolder;->icon:Landroid/widget/ImageView;
+    iget-object v4, v3, Lcom/android/vendorsettings/applications/SystemAppSettings$ViewHolder;->icon:Landroid/widget/ImageView;
 
     invoke-virtual {v4}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -206,7 +206,7 @@
     iput v1, v4, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 221
-    iget-object v4, v3, Lcom/android/settings/applications/SystemAppSettings$ViewHolder;->icon:Landroid/widget/ImageView;
+    iget-object v4, v3, Lcom/android/vendorsettings/applications/SystemAppSettings$ViewHolder;->icon:Landroid/widget/ImageView;
 
     invoke-virtual {v4}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -215,7 +215,7 @@
     iput v1, v4, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     .line 222
-    iget-object v1, v3, Lcom/android/settings/applications/SystemAppSettings$ViewHolder;->icon:Landroid/widget/ImageView;
+    iget-object v1, v3, Lcom/android/vendorsettings/applications/SystemAppSettings$ViewHolder;->icon:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v8, v8, v8, v8}, Landroid/widget/ImageView;->setPadding(IIII)V
 
@@ -252,7 +252,7 @@
     :goto_1
     const-string v1, "system_app"
 
-    iget-object v4, p0, Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/SystemAppSettings$HeaderAdapter;->mContext:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -280,8 +280,8 @@
     move-result-object v1
 
     .line 232
-    # getter for: Lcom/android/settings/applications/SystemAppSettings;->Pl:Ljava/util/HashMap;
-    invoke-static {}, Lcom/android/settings/applications/SystemAppSettings;->access$000()Ljava/util/HashMap;
+    # getter for: Lcom/android/vendorsettings/applications/SystemAppSettings;->Pl:Ljava/util/HashMap;
+    invoke-static {}, Lcom/android/vendorsettings/applications/SystemAppSettings;->access$000()Ljava/util/HashMap;
 
     move-result-object v4
 
@@ -296,7 +296,7 @@
 
     const-string v4, "system_app"
 
-    iget-object v5, p0, Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/SystemAppSettings$HeaderAdapter;->mContext:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -320,9 +320,9 @@
     .line 239
     :cond_1
     :goto_2
-    iget-object v1, v3, Lcom/android/settings/applications/SystemAppSettings$ViewHolder;->title:Landroid/widget/TextView;
+    iget-object v1, v3, Lcom/android/vendorsettings/applications/SystemAppSettings$ViewHolder;->title:Landroid/widget/TextView;
 
-    iget-object v4, p0, Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/SystemAppSettings$HeaderAdapter;->mContext:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -335,11 +335,11 @@
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 240
-    iget-object v1, v3, Lcom/android/settings/applications/SystemAppSettings$ViewHolder;->icon:Landroid/widget/ImageView;
+    iget-object v1, v3, Lcom/android/vendorsettings/applications/SystemAppSettings$ViewHolder;->icon:Landroid/widget/ImageView;
 
-    iget-object v3, p0, Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/SystemAppSettings$HeaderAdapter;->mContext:Landroid/content/Context;
 
-    invoke-direct {p0, v3, v0}, Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;->c(Landroid/content/Context;Landroid/preference/PreferenceActivity$Header;)Landroid/graphics/drawable/Drawable;
+    invoke-direct {p0, v3, v0}, Lcom/android/vendorsettings/applications/SystemAppSettings$HeaderAdapter;->c(Landroid/content/Context;Landroid/preference/PreferenceActivity$Header;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
@@ -350,9 +350,9 @@
 
     .line 236
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/applications/SystemAppSettings$HeaderAdapter;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/SystemAppSettings$HeaderAdapter;->mContext:Landroid/content/Context;
 
-    invoke-static {v1, v0}, Lcom/android/settings/applications/SystemAppSettings;->b(Landroid/content/Context;Landroid/preference/PreferenceActivity$Header;)V
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/applications/SystemAppSettings;->b(Landroid/content/Context;Landroid/preference/PreferenceActivity$Header;)V
 
     goto :goto_2
 

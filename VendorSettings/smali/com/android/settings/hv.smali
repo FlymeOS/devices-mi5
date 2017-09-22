@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/hv;
-.super Lcom/android/settings/hn;
+.class public Lcom/android/vendorsettings/hv;
+.super Lcom/android/vendorsettings/hn;
 .source "SettingsCompatActivity.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 5
-    invoke-direct {p0}, Lcom/android/settings/hn;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/hn;-><init>()V
 
     return-void
 .end method

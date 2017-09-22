@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/a;
+.class public Lcom/android/vendorsettings/a;
 .super Ljava/lang/Object;
 .source "AESUtil.java"
 

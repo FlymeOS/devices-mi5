@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/AnalyticsReceiver;
+.class public Lcom/android/vendorsettings/AnalyticsReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "AnalyticsReceiver.java"
 
@@ -53,7 +53,7 @@
 
     .line 34
     :goto_0
-    invoke-static {v0}, Lcom/android/settings/AnalyticsReceiver;->g(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-static {v0}, Lcom/android/vendorsettings/AnalyticsReceiver;->g(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
@@ -93,7 +93,7 @@
     .line 39
     const-string v0, "wifi_enable"
 
-    invoke-static {v0}, Lcom/android/settings/AnalyticsReceiver;->g(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-static {v0}, Lcom/android/vendorsettings/AnalyticsReceiver;->g(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
@@ -106,7 +106,7 @@
     .line 41
     const-string v0, "wifi_disable"
 
-    invoke-static {v0}, Lcom/android/settings/AnalyticsReceiver;->g(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-static {v0}, Lcom/android/vendorsettings/AnalyticsReceiver;->g(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
@@ -135,7 +135,7 @@
     .line 47
     const-string v0, "ringer_normal"
 
-    invoke-static {v0}, Lcom/android/settings/AnalyticsReceiver;->g(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-static {v0}, Lcom/android/vendorsettings/AnalyticsReceiver;->g(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
@@ -148,7 +148,7 @@
     .line 49
     const-string v0, "ringer_silent"
 
-    invoke-static {v0}, Lcom/android/settings/AnalyticsReceiver;->g(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-static {v0}, Lcom/android/vendorsettings/AnalyticsReceiver;->g(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
@@ -158,7 +158,7 @@
     :cond_6
     const-string v0, "ringer_vibrate"
 
-    invoke-static {v0}, Lcom/android/settings/AnalyticsReceiver;->g(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-static {v0}, Lcom/android/vendorsettings/AnalyticsReceiver;->g(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
@@ -188,7 +188,7 @@
 
     .line 56
     :goto_2
-    invoke-static {v0}, Lcom/android/settings/AnalyticsReceiver;->g(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-static {v0}, Lcom/android/vendorsettings/AnalyticsReceiver;->g(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
@@ -211,7 +211,7 @@
     if-eqz v1, :cond_a
 
     .line 58
-    invoke-direct {p0, p1}, Lcom/android/settings/AnalyticsReceiver;->d(Landroid/content/Context;)Z
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/AnalyticsReceiver;->d(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -226,7 +226,7 @@
     move-result-object v1
 
     .line 61
-    invoke-static {v0, v1}, Lcom/android/settings/AnalyticsReceiver;->a(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/Intent;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/AnalyticsReceiver;->a(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/Intent;
 
     move-result-object v0
 
@@ -343,7 +343,7 @@
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Lcom/android/settings/AnalyticsReceiver;->a(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/Intent;
+    invoke-static {p0, v0}, Lcom/android/vendorsettings/AnalyticsReceiver;->a(Ljava/lang/String;Ljava/lang/Object;)Landroid/content/Intent;
 
     move-result-object v0
 
@@ -358,7 +358,7 @@
 
     .prologue
     .line 21
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/AnalyticsReceiver;->a(Landroid/content/Context;Landroid/content/Intent;)Landroid/content/Intent;
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/AnalyticsReceiver;->a(Landroid/content/Context;Landroid/content/Intent;)Landroid/content/Intent;
 
     move-result-object v0
 

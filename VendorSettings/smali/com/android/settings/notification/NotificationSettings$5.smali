@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/notification/NotificationSettings$5;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/vendorsettings/notification/NotificationSettings$5;
+.super Lcom/android/vendorsettings/search/a;
 .source "NotificationSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 662
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/search/a;-><init>()V
 
     return-void
 .end method
@@ -56,7 +56,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 673
-    invoke-static {p1}, Lcom/android/settings/iC;->Y(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/iC;->Y(Landroid/content/Context;)Z
 
     move-result v1
 

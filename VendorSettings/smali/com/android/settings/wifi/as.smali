@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/as;
+.class Lcom/android/vendorsettings/wifi/as;
 .super Ljava/lang/Object;
 .source "WifiSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aDW:Lcom/android/settings/wifi/WifiSettings;
+.field final synthetic aDW:Lcom/android/vendorsettings/wifi/WifiSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/WifiSettings;)V
     .locals 0
 
     .prologue
     .line 251
-    iput-object p1, p0, Lcom/android/settings/wifi/as;->aDW:Lcom/android/settings/wifi/WifiSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/as;->aDW:Lcom/android/vendorsettings/wifi/WifiSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 257
-    iget-object v0, p0, Lcom/android/settings/wifi/as;->aDW:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/as;->aDW:Lcom/android/vendorsettings/wifi/WifiSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/WifiSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

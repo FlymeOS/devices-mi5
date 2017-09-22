@@ -1,4 +1,4 @@
-.class synthetic Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$5;
+.class synthetic Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$5;
 .super Ljava/lang/Object;
 .source "PrivacyPasswordChooseAccessControl.java"
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 291
-    invoke-static {}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->values()[Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    invoke-static {}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->values()[Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
     move-result-object v0
 
@@ -21,12 +21,12 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$5;->anv:[I
+    sput-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$5;->anv:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$5;->anv:[I
+    sget-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$5;->anv:[I
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anJ:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anJ:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -40,9 +40,9 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$5;->anv:[I
+    sget-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$5;->anv:[I
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anN:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anN:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -56,9 +56,9 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$5;->anv:[I
+    sget-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$5;->anv:[I
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anK:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anK:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -72,9 +72,9 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$5;->anv:[I
+    sget-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$5;->anv:[I
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anL:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anL:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -88,9 +88,9 @@
 
     :goto_3
     :try_start_4
-    sget-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$5;->anv:[I
+    sget-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$5;->anv:[I
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anO:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anO:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -104,9 +104,9 @@
 
     :goto_4
     :try_start_5
-    sget-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$5;->anv:[I
+    sget-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$5;->anv:[I
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anM:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anM:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 

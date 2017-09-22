@@ -1,4 +1,4 @@
-.class Lcom/android/settings/cloud/c;
+.class Lcom/android/vendorsettings/cloud/c;
 .super Landroid/database/sqlite/SQLiteOpenHelper;
 .source "CloudDataDbHandler.java"
 
@@ -83,7 +83,7 @@
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     .line 166
-    invoke-virtual {p0, p1}, Lcom/android/settings/cloud/c;->onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/cloud/c;->onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 167
     return-void

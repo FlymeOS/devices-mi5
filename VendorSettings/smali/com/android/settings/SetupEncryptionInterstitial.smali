@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/SetupEncryptionInterstitial;
-.super Lcom/android/settings/EncryptionInterstitial;
+.class public Lcom/android/vendorsettings/SetupEncryptionInterstitial;
+.super Lcom/android/vendorsettings/EncryptionInterstitial;
 .source "SetupEncryptionInterstitial.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 38
-    invoke-direct {p0}, Lcom/android/settings/EncryptionInterstitial;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/EncryptionInterstitial;-><init>()V
 
     .line 69
     return-void
@@ -20,12 +20,12 @@
 
     .prologue
     .line 42
-    invoke-static {p0, p1, p2}, Lcom/android/settings/EncryptionInterstitial;->b(Landroid/content/Context;IZ)Landroid/content/Intent;
+    invoke-static {p0, p1, p2}, Lcom/android/vendorsettings/EncryptionInterstitial;->b(Landroid/content/Context;IZ)Landroid/content/Intent;
 
     move-result-object v0
 
     .line 44
-    const-class v1, Lcom/android/settings/SetupEncryptionInterstitial;
+    const-class v1, Lcom/android/vendorsettings/SetupEncryptionInterstitial;
 
     invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -57,7 +57,7 @@
     .line 52
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/EncryptionInterstitial;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/vendorsettings/EncryptionInterstitial;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -66,7 +66,7 @@
     .line 53
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/SetupEncryptionInterstitial$SetupEncryptionInterstitialFragment;
+    const-class v2, Lcom/android/vendorsettings/SetupEncryptionInterstitial$SetupEncryptionInterstitialFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -83,7 +83,7 @@
 
     .prologue
     .line 60
-    const-class v0, Lcom/android/settings/SetupEncryptionInterstitial$SetupEncryptionInterstitialFragment;
+    const-class v0, Lcom/android/vendorsettings/SetupEncryptionInterstitial$SetupEncryptionInterstitialFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -101,16 +101,16 @@
 
     .prologue
     .line 65
-    invoke-virtual {p0}, Lcom/android/settings/SetupEncryptionInterstitial;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SetupEncryptionInterstitial;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/hH;->n(Landroid/content/Intent;)I
+    invoke-static {v0}, Lcom/android/vendorsettings/hH;->n(Landroid/content/Intent;)I
 
     move-result v0
 
     .line 66
-    invoke-super {p0, p1, v0, p3}, Lcom/android/settings/EncryptionInterstitial;->onApplyThemeResource(Landroid/content/res/Resources$Theme;IZ)V
+    invoke-super {p0, p1, v0, p3}, Lcom/android/vendorsettings/EncryptionInterstitial;->onApplyThemeResource(Landroid/content/res/Resources$Theme;IZ)V
 
     .line 67
     return-void

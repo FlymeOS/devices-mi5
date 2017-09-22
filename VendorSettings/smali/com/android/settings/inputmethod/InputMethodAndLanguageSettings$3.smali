@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$3;
+.class Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings$3;
 .super Ljava/lang/Object;
 .source "InputMethodAndLanguageSettings.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic afZ:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+.field final synthetic afZ:Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings;
 
 .field final synthetic agb:Landroid/hardware/input/InputDeviceIdentifier;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;Landroid/hardware/input/InputDeviceIdentifier;)V
+.method constructor <init>(Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings;Landroid/hardware/input/InputDeviceIdentifier;)V
     .locals 0
 
     .prologue
     .line 609
-    iput-object p1, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$3;->afZ:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings$3;->afZ:Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings;
 
-    iput-object p2, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$3;->agb:Landroid/hardware/input/InputDeviceIdentifier;
+    iput-object p2, p0, Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings$3;->agb:Landroid/hardware/input/InputDeviceIdentifier;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,11 +34,11 @@
 
     .prologue
     .line 612
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$3;->afZ:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings$3;->afZ:Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings;
 
-    iget-object v1, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$3;->agb:Landroid/hardware/input/InputDeviceIdentifier;
+    iget-object v1, p0, Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings$3;->agb:Landroid/hardware/input/InputDeviceIdentifier;
 
-    invoke-static {v0, v1}, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->a(Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;Landroid/hardware/input/InputDeviceIdentifier;)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings;->a(Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings;Landroid/hardware/input/InputDeviceIdentifier;)V
 
     .line 613
     const/4 v0, 0x1

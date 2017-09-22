@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/vpn2/VpnUtils;
+.class public Lcom/android/vendorsettings/vpn2/VpnUtils;
 .super Ljava/lang/Object;
 .source "VpnUtils.java"
 
@@ -24,7 +24,7 @@
     .line 52
     iget-object v0, p1, Lcom/android/internal/net/VpnProfile;->key:Ljava/lang/String;
 
-    invoke-static {p0, v0}, Lcom/android/settings/vpn2/VpnUtils;->x(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lcom/android/vendorsettings/vpn2/VpnUtils;->x(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 54
     :cond_0
@@ -59,7 +59,7 @@
     const/4 v0, 0x0
 
     .line 66
-    invoke-static {p0}, Lcom/android/settings/vpn2/VpnUtils;->cm(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/vendorsettings/vpn2/VpnUtils;->cm(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -244,13 +244,13 @@
 
     .prologue
     .line 104
-    invoke-static {p0, p1}, Lcom/android/settings/vpn2/VpnUtils;->o(Landroid/content/Context;Z)V
+    invoke-static {p0, p1}, Lcom/android/vendorsettings/vpn2/VpnUtils;->o(Landroid/content/Context;Z)V
 
     .line 105
     if-eqz p1, :cond_0
 
     .line 106
-    invoke-static {p0}, Lcom/android/settings/vpn2/VpnUtils;->cn(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/vendorsettings/vpn2/VpnUtils;->cn(Landroid/content/Context;)Z
 
     move-result v0
 

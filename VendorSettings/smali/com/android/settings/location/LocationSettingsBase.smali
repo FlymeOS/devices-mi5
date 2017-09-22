@@ -1,5 +1,5 @@
-.class public abstract Lcom/android/settings/location/LocationSettingsBase;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public abstract Lcom/android/vendorsettings/location/LocationSettingsBase;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "LocationSettingsBase.java"
 
 
@@ -17,12 +17,12 @@
 
     .prologue
     .line 35
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 49
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/location/LocationSettingsBase;->mActive:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/location/LocationSettingsBase;->mActive:Z
 
     return-void
 .end method
@@ -32,7 +32,7 @@
 
     .prologue
     .line 89
-    invoke-virtual {p0}, Lcom/android/settings/location/LocationSettingsBase;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/LocationSettingsBase;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -61,7 +61,7 @@
 
     .prologue
     .line 94
-    invoke-direct {p0}, Lcom/android/settings/location/LocationSettingsBase;->isRestricted()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/location/LocationSettingsBase;->isRestricted()Z
 
     move-result v0
 
@@ -87,7 +87,7 @@
 
     .line 100
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/location/LocationSettingsBase;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/LocationSettingsBase;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -100,14 +100,14 @@
     move-result v0
 
     .line 102
-    iget-boolean v1, p0, Lcom/android/settings/location/LocationSettingsBase;->mActive:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/location/LocationSettingsBase;->mActive:Z
 
     if-eqz v1, :cond_1
 
     .line 103
     const/4 v1, 0x1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/location/LocationSettingsBase;->l(IZ)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/location/LocationSettingsBase;->l(IZ)V
 
     .line 113
     :cond_1
@@ -125,7 +125,7 @@
     .line 108
     const-string v1, "CURRENT_MODE"
 
-    iget v2, p0, Lcom/android/settings/location/LocationSettingsBase;->ahj:I
+    iget v2, p0, Lcom/android/vendorsettings/location/LocationSettingsBase;->ahj:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -135,7 +135,7 @@
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 110
-    invoke-virtual {p0}, Lcom/android/settings/location/LocationSettingsBase;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/LocationSettingsBase;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -144,7 +144,7 @@
     invoke-virtual {v1, v0, v2}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;Ljava/lang/String;)V
 
     .line 111
-    invoke-virtual {p0}, Lcom/android/settings/location/LocationSettingsBase;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/LocationSettingsBase;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -153,7 +153,7 @@
     invoke-static {v0, v1, p1}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 112
-    invoke-virtual {p0}, Lcom/android/settings/location/LocationSettingsBase;->rJ()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/LocationSettingsBase;->rJ()V
 
     goto :goto_0
 .end method
@@ -166,14 +166,14 @@
 
     .prologue
     .line 53
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 54
-    new-instance v0, Lcom/android/settings/location/LocationSettingsBase$1;
+    new-instance v0, Lcom/android/vendorsettings/location/LocationSettingsBase$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/location/LocationSettingsBase$1;-><init>(Lcom/android/settings/location/LocationSettingsBase;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/location/LocationSettingsBase$1;-><init>(Lcom/android/vendorsettings/location/LocationSettingsBase;)V
 
-    iput-object v0, p0, Lcom/android/settings/location/LocationSettingsBase;->mReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/vendorsettings/location/LocationSettingsBase;->mReceiver:Landroid/content/BroadcastReceiver;
 
     .line 63
     return-void
@@ -185,11 +185,11 @@
     .prologue
     .line 77
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/location/LocationSettingsBase;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/LocationSettingsBase;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/location/LocationSettingsBase;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/location/LocationSettingsBase;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
     :try_end_0
@@ -197,12 +197,12 @@
 
     .line 81
     :goto_0
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPause()V
 
     .line 82
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/location/LocationSettingsBase;->mActive:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/location/LocationSettingsBase;->mActive:Z
 
     .line 83
     return-void
@@ -219,12 +219,12 @@
 
     .prologue
     .line 67
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 68
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/location/LocationSettingsBase;->mActive:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/location/LocationSettingsBase;->mActive:Z
 
     .line 69
     new-instance v0, Landroid/content/IntentFilter;
@@ -237,11 +237,11 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 71
-    invoke-virtual {p0}, Lcom/android/settings/location/LocationSettingsBase;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/LocationSettingsBase;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/location/LocationSettingsBase;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/android/vendorsettings/location/LocationSettingsBase;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -254,12 +254,12 @@
 
     .prologue
     .line 116
-    iget-boolean v0, p0, Lcom/android/settings/location/LocationSettingsBase;->mActive:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/location/LocationSettingsBase;->mActive:Z
 
     if-eqz v0, :cond_1
 
     .line 117
-    invoke-virtual {p0}, Lcom/android/settings/location/LocationSettingsBase;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/LocationSettingsBase;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -272,7 +272,7 @@
     move-result v0
 
     .line 119
-    iput v0, p0, Lcom/android/settings/location/LocationSettingsBase;->ahj:I
+    iput v0, p0, Lcom/android/vendorsettings/location/LocationSettingsBase;->ahj:I
 
     .line 120
     const-string v1, "LocationSettingsBase"
@@ -294,11 +294,11 @@
 
     .line 123
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/location/LocationSettingsBase;->isRestricted()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/location/LocationSettingsBase;->isRestricted()Z
 
     move-result v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/location/LocationSettingsBase;->l(IZ)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/location/LocationSettingsBase;->l(IZ)V
 
     .line 125
     :cond_1

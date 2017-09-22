@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/ProcessStatsUi;
-.super Lcom/android/settings/applications/ProcessStatsBase;
+.class public Lcom/android/vendorsettings/applications/ProcessStatsUi;
+.super Lcom/android/vendorsettings/applications/ProcessStatsBase;
 .source "ProcessStatsUi.java"
 
 
@@ -41,7 +41,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/applications/ProcessStatsUi;->Mv:[I
+    sput-object v0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Mv:[I
 
     .line 136
     new-array v0, v2, [I
@@ -50,7 +50,7 @@
 
     aput v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/applications/ProcessStatsUi;->Mw:[I
+    sput-object v0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Mw:[I
 
     .line 140
     const/4 v0, 0x3
@@ -59,21 +59,21 @@
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/android/settings/applications/ProcessStatsUi;->Mx:[I
+    sput-object v0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Mx:[I
 
     .line 189
-    new-instance v0, Lcom/android/settings/applications/ProcessStatsUi$1;
+    new-instance v0, Lcom/android/vendorsettings/applications/ProcessStatsUi$1;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/ProcessStatsUi$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/applications/ProcessStatsUi$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/ProcessStatsUi;->My:Ljava/util/Comparator;
+    sput-object v0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->My:Ljava/util/Comparator;
 
     .line 202
-    new-instance v0, Lcom/android/settings/applications/ProcessStatsUi$2;
+    new-instance v0, Lcom/android/vendorsettings/applications/ProcessStatsUi$2;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/ProcessStatsUi$2;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/applications/ProcessStatsUi$2;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/ProcessStatsUi;->Mz:Ljava/util/Comparator;
+    sput-object v0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Mz:Ljava/util/Comparator;
 
     return-void
 
@@ -105,7 +105,7 @@
 
     .prologue
     .line 41
-    invoke-direct {p0}, Lcom/android/settings/applications/ProcessStatsBase;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/ProcessStatsBase;-><init>()V
 
     return-void
 .end method
@@ -115,9 +115,9 @@
 
     .prologue
     .line 95
-    iget-object v1, p0, Lcom/android/settings/applications/ProcessStatsUi;->Mu:Landroid/view/MenuItem;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Mu:Landroid/view/MenuItem;
 
-    iget-boolean v0, p0, Lcom/android/settings/applications/ProcessStatsUi;->Ms:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Ms:Z
 
     if-nez v0, :cond_0
 
@@ -127,9 +127,9 @@
     invoke-interface {v1, v0}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
     .line 96
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsUi;->Mt:Landroid/view/MenuItem;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Mt:Landroid/view/MenuItem;
 
-    iget-boolean v1, p0, Lcom/android/settings/applications/ProcessStatsUi;->Ms:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Ms:Z
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
@@ -150,7 +150,7 @@
 
     .prologue
     .line 59
-    const-class v0, Lcom/android/settings/applications/ProcessStatsUi;
+    const-class v0, Lcom/android/vendorsettings/applications/ProcessStatsUi;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -166,19 +166,19 @@
     const/4 v11, 0x0
 
     .line 153
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsUi;->Mr:Landroid/preference/PreferenceGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Mr:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceGroup;->removeAll()V
 
     .line 154
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsUi;->Mr:Landroid/preference/PreferenceGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Mr:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v0, v11}, Landroid/preference/PreferenceGroup;->setOrderingAsAdded(Z)V
 
     .line 155
-    iget-object v1, p0, Lcom/android/settings/applications/ProcessStatsUi;->Mr:Landroid/preference/PreferenceGroup;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Mr:Landroid/preference/PreferenceGroup;
 
-    iget-boolean v0, p0, Lcom/android/settings/applications/ProcessStatsUi;->Ms:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Ms:Z
 
     if-eqz v0, :cond_0
 
@@ -188,21 +188,21 @@
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->setTitle(I)V
 
     .line 158
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsUi;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsUi;->getActivity()Landroid/app/Activity;
 
     move-result-object v12
 
     .line 159
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsUi;->IM:Lcom/android/settings/applications/ProcStatsData;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->IM:Lcom/android/vendorsettings/applications/ProcStatsData;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/ProcStatsData;->la()Lcom/android/settings/applications/ProcStatsData$MemInfo;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/ProcStatsData;->la()Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;
 
     move-result-object v13
 
     .line 161
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsUi;->IM:Lcom/android/settings/applications/ProcStatsData;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->IM:Lcom/android/vendorsettings/applications/ProcStatsData;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/ProcStatsData;->lb()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/ProcStatsData;->lb()Ljava/util/List;
 
     move-result-object v14
 
@@ -221,10 +221,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/ProcStatsPackageEntry;
+    check-cast v0, Lcom/android/vendorsettings/applications/ProcStatsPackageEntry;
 
     .line 166
-    invoke-virtual {v0}, Lcom/android/settings/applications/ProcStatsPackageEntry;->lc()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/ProcStatsPackageEntry;->lc()V
 
     .line 164
     add-int/lit8 v0, v1, 0x1
@@ -241,21 +241,21 @@
 
     .line 169
     :cond_1
-    iget-boolean v0, p0, Lcom/android/settings/applications/ProcessStatsUi;->Ms:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Ms:Z
 
     if-eqz v0, :cond_2
 
-    sget-object v0, Lcom/android/settings/applications/ProcessStatsUi;->Mz:Ljava/util/Comparator;
+    sget-object v0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Mz:Ljava/util/Comparator;
 
     :goto_2
     invoke-static {v14, v0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     .line 176
-    iget-boolean v0, p0, Lcom/android/settings/applications/ProcessStatsUi;->Ms:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Ms:Z
 
     if-eqz v0, :cond_3
 
-    iget-wide v4, v13, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Ll:D
+    iget-wide v4, v13, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Ll:D
 
     :goto_3
     move v0, v11
@@ -273,39 +273,39 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/applications/ProcStatsPackageEntry;
+    check-cast v2, Lcom/android/vendorsettings/applications/ProcStatsPackageEntry;
 
     .line 180
-    new-instance v1, Lcom/android/settings/applications/ProcessStatsPreference;
+    new-instance v1, Lcom/android/vendorsettings/applications/ProcessStatsPreference;
 
-    invoke-direct {v1, v12}, Lcom/android/settings/applications/ProcessStatsPreference;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, v12}, Lcom/android/vendorsettings/applications/ProcessStatsPreference;-><init>(Landroid/content/Context;)V
 
     .line 181
-    iget-object v3, p0, Lcom/android/settings/applications/ProcessStatsUi;->i:Landroid/content/pm/PackageManager;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->i:Landroid/content/pm/PackageManager;
 
-    invoke-virtual {v2, v12, v3}, Lcom/android/settings/applications/ProcStatsPackageEntry;->a(Landroid/content/Context;Landroid/content/pm/PackageManager;)V
+    invoke-virtual {v2, v12, v3}, Lcom/android/vendorsettings/applications/ProcStatsPackageEntry;->a(Landroid/content/Context;Landroid/content/pm/PackageManager;)V
 
     .line 182
-    iget-object v3, p0, Lcom/android/settings/applications/ProcessStatsUi;->i:Landroid/content/pm/PackageManager;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->i:Landroid/content/pm/PackageManager;
 
-    iget-wide v6, v13, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lq:D
+    iget-wide v6, v13, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lq:D
 
-    iget-wide v8, v13, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Ls:D
+    iget-wide v8, v13, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Ls:D
 
-    iget-boolean v10, p0, Lcom/android/settings/applications/ProcessStatsUi;->Ms:Z
+    iget-boolean v10, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Ms:Z
 
     if-nez v10, :cond_4
 
     const/4 v10, 0x1
 
     :goto_5
-    invoke-virtual/range {v1 .. v10}, Lcom/android/settings/applications/ProcessStatsPreference;->a(Lcom/android/settings/applications/ProcStatsPackageEntry;Landroid/content/pm/PackageManager;DDDZ)V
+    invoke-virtual/range {v1 .. v10}, Lcom/android/vendorsettings/applications/ProcessStatsPreference;->a(Lcom/android/vendorsettings/applications/ProcStatsPackageEntry;Landroid/content/pm/PackageManager;DDDZ)V
 
     .line 184
-    invoke-virtual {v1, v0}, Lcom/android/settings/applications/ProcessStatsPreference;->setOrder(I)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/applications/ProcessStatsPreference;->setOrder(I)V
 
     .line 185
-    iget-object v2, p0, Lcom/android/settings/applications/ProcessStatsUi;->Mr:Landroid/preference/PreferenceGroup;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Mr:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v2, v1}, Landroid/preference/PreferenceGroup;->addPreference(Landroid/preference/Preference;)Z
 
@@ -316,15 +316,15 @@
 
     .line 169
     :cond_2
-    sget-object v0, Lcom/android/settings/applications/ProcessStatsUi;->My:Ljava/util/Comparator;
+    sget-object v0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->My:Ljava/util/Comparator;
 
     goto :goto_2
 
     .line 176
     :cond_3
-    iget-wide v0, v13, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lp:D
+    iget-wide v0, v13, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lp:D
 
-    iget-wide v2, v13, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lq:D
+    iget-wide v2, v13, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lq:D
 
     mul-double v4, v0, v2
 
@@ -346,10 +346,10 @@
 
     .prologue
     .line 64
-    invoke-super {p0, p1}, Lcom/android/settings/applications/ProcessStatsBase;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/applications/ProcessStatsBase;->onCreate(Landroid/os/Bundle;)V
 
     .line 66
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsUi;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsUi;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -357,28 +357,28 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcessStatsUi;->i:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->i:Landroid/content/pm/PackageManager;
 
     .line 68
     const v0, 0x7f08007b
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/ProcessStatsUi;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/ProcessStatsUi;->addPreferencesFromResource(I)V
 
     .line 69
     const-string v0, "app_list"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/ProcessStatsUi;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/ProcessStatsUi;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceGroup;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcessStatsUi;->Mr:Landroid/preference/PreferenceGroup;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Mr:Landroid/preference/PreferenceGroup;
 
     .line 70
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/ProcessStatsUi;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/ProcessStatsUi;->setHasOptionsMenu(Z)V
 
     .line 71
     return-void
@@ -391,7 +391,7 @@
     const/4 v2, 0x0
 
     .line 75
-    invoke-super {p0, p1, p2}, Lcom/android/settings/applications/ProcessStatsBase;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/applications/ProcessStatsBase;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     .line 76
     const/4 v0, 0x1
@@ -402,7 +402,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcessStatsUi;->Mt:Landroid/view/MenuItem;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Mt:Landroid/view/MenuItem;
 
     .line 77
     const/4 v0, 0x2
@@ -413,10 +413,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcessStatsUi;->Mu:Landroid/view/MenuItem;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Mu:Landroid/view/MenuItem;
 
     .line 78
-    invoke-direct {p0}, Lcom/android/settings/applications/ProcessStatsUi;->ll()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/ProcessStatsUi;->ll()V
 
     .line 79
     return-void
@@ -436,7 +436,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 91
-    invoke-super {p0, p1}, Lcom/android/settings/applications/ProcessStatsBase;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/applications/ProcessStatsBase;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v1
 
@@ -445,20 +445,20 @@
 
     .line 86
     :pswitch_0
-    iget-boolean v0, p0, Lcom/android/settings/applications/ProcessStatsUi;->Ms:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Ms:Z
 
     if-nez v0, :cond_0
 
     move v0, v1
 
     :goto_1
-    iput-boolean v0, p0, Lcom/android/settings/applications/ProcessStatsUi;->Ms:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->Ms:Z
 
     .line 87
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsUi;->ld()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsUi;->ld()V
 
     .line 88
-    invoke-direct {p0}, Lcom/android/settings/applications/ProcessStatsUi;->ll()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/ProcessStatsUi;->ll()V
 
     goto :goto_0
 
@@ -483,7 +483,7 @@
 
     .prologue
     .line 111
-    instance-of v0, p2, Lcom/android/settings/applications/ProcessStatsPreference;
+    instance-of v0, p2, Lcom/android/vendorsettings/applications/ProcessStatsPreference;
 
     if-nez v0, :cond_0
 
@@ -498,30 +498,30 @@
     move-object v0, p2
 
     .line 114
-    check-cast v0, Lcom/android/settings/applications/ProcessStatsPreference;
+    check-cast v0, Lcom/android/vendorsettings/applications/ProcessStatsPreference;
 
     .line 115
-    iget-object v1, p0, Lcom/android/settings/applications/ProcessStatsUi;->IM:Lcom/android/settings/applications/ProcStatsData;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/ProcessStatsUi;->IM:Lcom/android/vendorsettings/applications/ProcStatsData;
 
-    invoke-virtual {v1}, Lcom/android/settings/applications/ProcStatsData;->la()Lcom/android/settings/applications/ProcStatsData$MemInfo;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/applications/ProcStatsData;->la()Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;
 
     move-result-object v2
 
     .line 116
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsUi;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsUi;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/hn;
+    check-cast v1, Lcom/android/vendorsettings/hn;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/ProcessStatsPreference;->lk()Lcom/android/settings/applications/ProcStatsPackageEntry;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/ProcessStatsPreference;->lk()Lcom/android/vendorsettings/applications/ProcStatsPackageEntry;
 
     move-result-object v0
 
-    invoke-static {v1, v2, v0}, Lcom/android/settings/applications/ProcessStatsUi;->a(Lcom/android/settings/hn;Lcom/android/settings/applications/ProcStatsData$MemInfo;Lcom/android/settings/applications/ProcStatsPackageEntry;)V
+    invoke-static {v1, v2, v0}, Lcom/android/vendorsettings/applications/ProcessStatsUi;->a(Lcom/android/vendorsettings/hn;Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;Lcom/android/vendorsettings/applications/ProcStatsPackageEntry;)V
 
     .line 118
-    invoke-super {p0, p1, p2}, Lcom/android/settings/applications/ProcessStatsBase;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/applications/ProcessStatsBase;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -533,7 +533,7 @@
 
     .prologue
     .line 106
-    invoke-super {p0, p1}, Lcom/android/settings/applications/ProcessStatsBase;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/applications/ProcessStatsBase;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 107
     return-void

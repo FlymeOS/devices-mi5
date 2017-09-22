@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/AgpsSettings;
+.class public Lcom/android/vendorsettings/AgpsSettings;
 .super Lmiui/preference/PreferenceActivity;
 .source "AgpsSettings.java"
 
@@ -87,7 +87,7 @@
     if-lez v5, :cond_3
 
     .line 381
-    iget-object v5, p0, Lcom/android/settings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v5, p0, Lcom/android/vendorsettings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v6, "assisted_gps_supl_host"
 
@@ -98,7 +98,7 @@
     if-eqz v1, :cond_4
 
     .line 388
-    iget-object v0, p0, Lcom/android/settings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v5, "assisted_gps_supl_port"
 
@@ -115,7 +115,7 @@
     if-lez v0, :cond_0
 
     .line 395
-    iget-object v0, p0, Lcom/android/settings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "assisted_gps_position_mode"
 
@@ -132,7 +132,7 @@
     if-lez v0, :cond_1
 
     .line 399
-    iget-object v0, p0, Lcom/android/settings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "assisted_gps_network"
 
@@ -162,7 +162,7 @@
 
     .line 410
     :goto_2
-    iget-object v1, p0, Lcom/android/settings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v1, p0, Lcom/android/vendorsettings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "assisted_gps_reset_type"
 
@@ -174,11 +174,11 @@
 
     .line 384
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v5, "assisted_gps_supl_host"
 
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v6
 
@@ -194,11 +194,11 @@
 
     .line 391
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "assisted_gps_supl_port"
 
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v5
 
@@ -239,7 +239,7 @@
 
     .prologue
     .line 203
-    iget-boolean v0, p0, Lcom/android/settings/AgpsSettings;->mFirstTime:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/AgpsSettings;->mFirstTime:Z
 
     if-nez v0, :cond_0
 
@@ -249,21 +249,21 @@
     :cond_0
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/AgpsSettings;->mFirstTime:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/AgpsSettings;->mFirstTime:Z
 
     .line 205
-    iget-object v0, p0, Lcom/android/settings/AgpsSettings;->G:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->G:Landroid/preference/EditTextPreference;
 
-    invoke-direct {p0}, Lcom/android/settings/AgpsSettings;->n()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/AgpsSettings;->n()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
     .line 206
-    iget-object v0, p0, Lcom/android/settings/AgpsSettings;->H:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->H:Landroid/preference/EditTextPreference;
 
-    invoke-direct {p0}, Lcom/android/settings/AgpsSettings;->o()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/AgpsSettings;->o()Ljava/lang/String;
 
     move-result-object v1
 
@@ -271,43 +271,43 @@
 
     .line 209
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/AgpsSettings;->G:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->G:Landroid/preference/EditTextPreference;
 
-    iget-object v1, p0, Lcom/android/settings/AgpsSettings;->G:Landroid/preference/EditTextPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/AgpsSettings;->G:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/AgpsSettings;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/AgpsSettings;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 210
-    iget-object v0, p0, Lcom/android/settings/AgpsSettings;->H:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->H:Landroid/preference/EditTextPreference;
 
-    iget-object v1, p0, Lcom/android/settings/AgpsSettings;->H:Landroid/preference/EditTextPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/AgpsSettings;->H:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/AgpsSettings;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/AgpsSettings;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 211
-    invoke-direct {p0}, Lcom/android/settings/AgpsSettings;->k()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/AgpsSettings;->k()V
 
     .line 212
-    invoke-direct {p0}, Lcom/android/settings/AgpsSettings;->l()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/AgpsSettings;->l()V
 
     .line 213
-    invoke-direct {p0}, Lcom/android/settings/AgpsSettings;->m()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/AgpsSettings;->m()V
 
     .line 214
     return-void
@@ -325,7 +325,7 @@
     if-eqz v0, :cond_0
 
     .line 225
-    sget-object p1, Lcom/android/settings/AgpsSettings;->F:Ljava/lang/String;
+    sget-object p1, Lcom/android/vendorsettings/AgpsSettings;->F:Ljava/lang/String;
 
     .line 227
     :cond_0
@@ -339,7 +339,7 @@
     .line 232
     if-eqz p1, :cond_0
 
-    sget-object v0, Lcom/android/settings/AgpsSettings;->F:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/AgpsSettings;->F:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -363,7 +363,7 @@
     .line 150
     const-string v0, "agps_pref"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/AgpsSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/AgpsSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -373,7 +373,7 @@
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 152
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -387,12 +387,12 @@
     invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     .line 155
-    invoke-direct {p0}, Lcom/android/settings/AgpsSettings;->r()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/AgpsSettings;->r()Ljava/lang/String;
 
     move-result-object v2
 
     .line 156
-    iput-object v2, p0, Lcom/android/settings/AgpsSettings;->I:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/vendorsettings/AgpsSettings;->I:Ljava/lang/String;
 
     .line 157
     const-string v3, "MSB"
@@ -464,7 +464,7 @@
     .line 170
     const-string v0, "agps_network"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/AgpsSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/AgpsSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -474,7 +474,7 @@
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 172
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -485,12 +485,12 @@
     move-result-object v1
 
     .line 173
-    invoke-direct {p0}, Lcom/android/settings/AgpsSettings;->p()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/AgpsSettings;->p()Ljava/lang/String;
 
     move-result-object v2
 
     .line 174
-    iput-object v2, p0, Lcom/android/settings/AgpsSettings;->K:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/vendorsettings/AgpsSettings;->K:Ljava/lang/String;
 
     .line 175
     const-string v3, "ALL"
@@ -540,7 +540,7 @@
     .line 185
     const-string v0, "agps_reset_type"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/AgpsSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/AgpsSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -550,7 +550,7 @@
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 187
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -561,12 +561,12 @@
     move-result-object v1
 
     .line 188
-    invoke-direct {p0}, Lcom/android/settings/AgpsSettings;->q()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/AgpsSettings;->q()Ljava/lang/String;
 
     move-result-object v2
 
     .line 189
-    iput-object v2, p0, Lcom/android/settings/AgpsSettings;->J:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/vendorsettings/AgpsSettings;->J:Ljava/lang/String;
 
     .line 190
     const-string v3, "COLD"
@@ -638,7 +638,7 @@
 
     .prologue
     .line 240
-    iget-object v0, p0, Lcom/android/settings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "assisted_gps_supl_host"
 
@@ -653,7 +653,7 @@
     return-object v0
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -671,7 +671,7 @@
 
     .prologue
     .line 247
-    iget-object v0, p0, Lcom/android/settings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "assisted_gps_supl_port"
 
@@ -686,7 +686,7 @@
     return-object v0
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -704,7 +704,7 @@
 
     .prologue
     .line 254
-    iget-object v0, p0, Lcom/android/settings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "assisted_gps_network"
 
@@ -719,7 +719,7 @@
     return-object v0
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -737,7 +737,7 @@
 
     .prologue
     .line 261
-    iget-object v0, p0, Lcom/android/settings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "assisted_gps_reset_type"
 
@@ -791,7 +791,7 @@
 
     .line 272
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -809,7 +809,7 @@
 
     .prologue
     .line 277
-    iget-object v0, p0, Lcom/android/settings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "assisted_gps_position_mode"
 
@@ -824,7 +824,7 @@
     return-object v0
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -849,13 +849,13 @@
     .line 311
     const-string v0, "host"
 
-    iget-object v2, p0, Lcom/android/settings/AgpsSettings;->G:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/AgpsSettings;->G:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-direct {p0, v2}, Lcom/android/settings/AgpsSettings;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v2}, Lcom/android/vendorsettings/AgpsSettings;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -864,13 +864,13 @@
     .line 312
     const-string v0, "port"
 
-    iget-object v2, p0, Lcom/android/settings/AgpsSettings;->H:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/AgpsSettings;->H:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-direct {p0, v2}, Lcom/android/settings/AgpsSettings;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v2}, Lcom/android/vendorsettings/AgpsSettings;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -879,22 +879,22 @@
     .line 313
     const-string v0, "providerid"
 
-    iget-object v2, p0, Lcom/android/settings/AgpsSettings;->I:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/AgpsSettings;->I:Ljava/lang/String;
 
     invoke-virtual {v1, v0, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 314
     const-string v0, "network"
 
-    iget-object v2, p0, Lcom/android/settings/AgpsSettings;->K:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/AgpsSettings;->K:Ljava/lang/String;
 
     invoke-virtual {v1, v0, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 315
-    invoke-direct {p0, v1}, Lcom/android/settings/AgpsSettings;->a(Landroid/os/Bundle;)V
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/AgpsSettings;->a(Landroid/os/Bundle;)V
 
     .line 316
-    iget-object v0, p0, Lcom/android/settings/AgpsSettings;->J:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->J:Ljava/lang/String;
 
     const-string v2, "HOT"
 
@@ -915,7 +915,7 @@
     :goto_0
     const-string v0, "location"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/AgpsSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/AgpsSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -958,7 +958,7 @@
 
     .line 318
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/AgpsSettings;->J:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->J:Ljava/lang/String;
 
     const-string v2, "WARM"
 
@@ -1067,58 +1067,58 @@
     :goto_0
     const-string v0, "MSB"
 
-    iput-object v0, p0, Lcom/android/settings/AgpsSettings;->I:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->I:Ljava/lang/String;
 
     .line 352
     const-string v0, "HOME"
 
-    iput-object v0, p0, Lcom/android/settings/AgpsSettings;->K:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->K:Ljava/lang/String;
 
     .line 353
     const-string v0, "HOT"
 
-    iput-object v0, p0, Lcom/android/settings/AgpsSettings;->J:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->J:Ljava/lang/String;
 
     .line 354
     const-string v0, "providerid"
 
-    iget-object v1, p0, Lcom/android/settings/AgpsSettings;->I:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/AgpsSettings;->I:Ljava/lang/String;
 
     invoke-virtual {v3, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 355
     const-string v0, "network"
 
-    iget-object v1, p0, Lcom/android/settings/AgpsSettings;->K:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/AgpsSettings;->K:Ljava/lang/String;
 
     invoke-virtual {v3, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 356
     const-string v0, "resettype"
 
-    iget-object v1, p0, Lcom/android/settings/AgpsSettings;->J:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/AgpsSettings;->J:Ljava/lang/String;
 
     invoke-virtual {v3, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 357
-    invoke-direct {p0, v3}, Lcom/android/settings/AgpsSettings;->a(Landroid/os/Bundle;)V
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/AgpsSettings;->a(Landroid/os/Bundle;)V
 
     .line 358
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lcom/android/settings/AgpsSettings;->a(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/AgpsSettings;->a(Z)V
 
     .line 359
     const-string v0, "location"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/AgpsSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/AgpsSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/location/LocationManager;
 
     .line 361
-    iget-object v1, p0, Lcom/android/settings/AgpsSettings;->J:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/AgpsSettings;->J:Ljava/lang/String;
 
     const-string v2, "HOT"
 
@@ -1243,7 +1243,7 @@
 
     .line 363
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/AgpsSettings;->J:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/AgpsSettings;->J:Ljava/lang/String;
 
     const-string v2, "WARM"
 
@@ -1308,16 +1308,16 @@
     invoke-super {p0, p1}, Lmiui/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 126
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
+    iput-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->mContentResolver:Landroid/content/ContentResolver;
 
     .line 127
     const v0, 0x7f08000e
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/AgpsSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/AgpsSettings;->addPreferencesFromResource(I)V
 
     .line 128
     if-nez p1, :cond_0
@@ -1325,10 +1325,10 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/AgpsSettings;->mFirstTime:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/AgpsSettings;->mFirstTime:Z
 
     .line 129
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1338,32 +1338,32 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/AgpsSettings;->F:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/AgpsSettings;->F:Ljava/lang/String;
 
     .line 130
     const-string v0, "server_addr"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/AgpsSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/AgpsSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    iput-object v0, p0, Lcom/android/settings/AgpsSettings;->G:Landroid/preference/EditTextPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->G:Landroid/preference/EditTextPreference;
 
     .line 131
     const-string v0, "server_port"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/AgpsSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/AgpsSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    iput-object v0, p0, Lcom/android/settings/AgpsSettings;->H:Landroid/preference/EditTextPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/AgpsSettings;->H:Landroid/preference/EditTextPreference;
 
     .line 132
-    invoke-direct {p0, v1}, Lcom/android/settings/AgpsSettings;->a(Z)V
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/AgpsSettings;->a(Z)V
 
     .line 133
     return-void
@@ -1387,7 +1387,7 @@
     invoke-super {p0, p1}, Lmiui/preference/PreferenceActivity;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
     .line 286
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1408,7 +1408,7 @@
     .line 289
     const/4 v0, 0x2
 
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1453,13 +1453,13 @@
 
     .line 299
     :pswitch_0
-    invoke-direct {p0}, Lcom/android/settings/AgpsSettings;->s()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/AgpsSettings;->s()V
 
     goto :goto_0
 
     .line 303
     :pswitch_1
-    invoke-direct {p0}, Lcom/android/settings/AgpsSettings;->t()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/AgpsSettings;->t()V
 
     goto :goto_0
 
@@ -1481,7 +1481,7 @@
     invoke-super {p0}, Lmiui/preference/PreferenceActivity;->onPause()V
 
     .line 145
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -1541,7 +1541,7 @@
     if-nez v3, :cond_4
 
     .line 428
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1557,7 +1557,7 @@
     .line 431
     const-string v3, "HOME"
 
-    iput-object v3, p0, Lcom/android/settings/AgpsSettings;->K:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/vendorsettings/AgpsSettings;->K:Ljava/lang/String;
 
     .line 435
     :cond_0
@@ -1596,7 +1596,7 @@
     .line 433
     const-string v3, "ALL"
 
-    iput-object v3, p0, Lcom/android/settings/AgpsSettings;->K:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/vendorsettings/AgpsSettings;->K:Ljava/lang/String;
 
     goto :goto_0
 
@@ -1611,7 +1611,7 @@
     if-nez v3, :cond_7
 
     .line 442
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1627,7 +1627,7 @@
     .line 445
     const-string v3, "HOT"
 
-    iput-object v3, p0, Lcom/android/settings/AgpsSettings;->J:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/vendorsettings/AgpsSettings;->J:Ljava/lang/String;
 
     goto :goto_1
 
@@ -1638,7 +1638,7 @@
     .line 447
     const-string v3, "WARM"
 
-    iput-object v3, p0, Lcom/android/settings/AgpsSettings;->J:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/vendorsettings/AgpsSettings;->J:Ljava/lang/String;
 
     goto :goto_1
 
@@ -1646,7 +1646,7 @@
     :cond_6
     const-string v3, "COLD"
 
-    iput-object v3, p0, Lcom/android/settings/AgpsSettings;->J:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/vendorsettings/AgpsSettings;->J:Ljava/lang/String;
 
     goto :goto_1
 
@@ -1661,7 +1661,7 @@
     if-nez v0, :cond_2
 
     .line 454
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1677,7 +1677,7 @@
     .line 457
     const-string v3, "MSB"
 
-    iput-object v3, p0, Lcom/android/settings/AgpsSettings;->I:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/vendorsettings/AgpsSettings;->I:Ljava/lang/String;
 
     goto :goto_1
 
@@ -1688,7 +1688,7 @@
     .line 459
     const-string v3, "MSA"
 
-    iput-object v3, p0, Lcom/android/settings/AgpsSettings;->I:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/vendorsettings/AgpsSettings;->I:Ljava/lang/String;
 
     goto :goto_1
 .end method
@@ -1701,7 +1701,7 @@
     invoke-super {p0}, Lmiui/preference/PreferenceActivity;->onResume()V
 
     .line 138
-    invoke-virtual {p0}, Lcom/android/settings/AgpsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AgpsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -1720,7 +1720,7 @@
 
     .prologue
     .line 217
-    invoke-virtual {p0, p2}, Lcom/android/settings/AgpsSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p2}, Lcom/android/vendorsettings/AgpsSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1734,7 +1734,7 @@
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/AgpsSettings;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/AgpsSettings;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 

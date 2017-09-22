@@ -1,10 +1,10 @@
-.class Lcom/android/settings/widget/A;
+.class Lcom/android/vendorsettings/widget/A;
 .super Landroid/os/AsyncTask;
 .source "SettingsAppWidgetProvider.java"
 
 
 # instance fields
-.field final synthetic azr:Lcom/android/settings/widget/z;
+.field final synthetic azr:Lcom/android/vendorsettings/widget/z;
 
 .field final synthetic val$context:Landroid/content/Context;
 
@@ -12,16 +12,16 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/widget/z;Landroid/content/Context;Landroid/content/ContentResolver;)V
+.method constructor <init>(Lcom/android/vendorsettings/widget/z;Landroid/content/Context;Landroid/content/ContentResolver;)V
     .locals 0
 
     .prologue
     .line 552
-    iput-object p1, p0, Lcom/android/settings/widget/A;->azr:Lcom/android/settings/widget/z;
+    iput-object p1, p0, Lcom/android/vendorsettings/widget/A;->azr:Lcom/android/vendorsettings/widget/z;
 
-    iput-object p2, p0, Lcom/android/settings/widget/A;->val$context:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/vendorsettings/widget/A;->val$context:Landroid/content/Context;
 
-    iput-object p3, p0, Lcom/android/settings/widget/A;->val$resolver:Landroid/content/ContentResolver;
+    iput-object p3, p0, Lcom/android/vendorsettings/widget/A;->val$resolver:Landroid/content/ContentResolver;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -41,7 +41,7 @@
     const/4 v2, 0x0
 
     .line 555
-    iget-object v0, p0, Lcom/android/settings/widget/A;->val$context:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/A;->val$context:Landroid/content/Context;
 
     const-string v4, "user"
 
@@ -61,7 +61,7 @@
     if-nez v0, :cond_1
 
     .line 558
-    iget-object v0, p0, Lcom/android/settings/widget/A;->val$resolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/A;->val$resolver:Landroid/content/ContentResolver;
 
     const-string v4, "location_mode"
 
@@ -76,7 +76,7 @@
 
     .line 575
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/widget/A;->val$resolver:Landroid/content/ContentResolver;
+    iget-object v1, p0, Lcom/android/vendorsettings/widget/A;->val$resolver:Landroid/content/ContentResolver;
 
     const-string v4, "location_mode"
 
@@ -123,11 +123,11 @@
 
     .line 579
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/widget/A;->azr:Lcom/android/settings/widget/z;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/A;->azr:Lcom/android/vendorsettings/widget/z;
 
-    iget-object v1, p0, Lcom/android/settings/widget/A;->val$context:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/widget/A;->val$context:Landroid/content/Context;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/z;->getActualState(Landroid/content/Context;)I
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/widget/z;->getActualState(Landroid/content/Context;)I
 
     move-result v0
 
@@ -164,7 +164,7 @@
     .line 552
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/A;->doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/widget/A;->doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -176,9 +176,9 @@
 
     .prologue
     .line 584
-    iget-object v1, p0, Lcom/android/settings/widget/A;->azr:Lcom/android/settings/widget/z;
+    iget-object v1, p0, Lcom/android/vendorsettings/widget/A;->azr:Lcom/android/vendorsettings/widget/z;
 
-    iget-object v2, p0, Lcom/android/settings/widget/A;->val$context:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/vendorsettings/widget/A;->val$context:Landroid/content/Context;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -189,12 +189,12 @@
     const/4 v0, 0x1
 
     :goto_0
-    invoke-virtual {v1, v2, v0}, Lcom/android/settings/widget/z;->setCurrentState(Landroid/content/Context;I)V
+    invoke-virtual {v1, v2, v0}, Lcom/android/vendorsettings/widget/z;->setCurrentState(Landroid/content/Context;I)V
 
     .line 587
-    iget-object v0, p0, Lcom/android/settings/widget/A;->val$context:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/A;->val$context:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->cq(Landroid/content/Context;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->cq(Landroid/content/Context;)V
 
     .line 588
     return-void
@@ -213,7 +213,7 @@
     .line 552
     check-cast p1, Ljava/lang/Boolean;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/A;->onPostExecute(Ljava/lang/Boolean;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/widget/A;->onPostExecute(Ljava/lang/Boolean;)V
 
     return-void
 .end method

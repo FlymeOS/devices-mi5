@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/AppStatePowerBridge;
-.super Lcom/android/settings/applications/AppStateBaseBridge;
+.class public Lcom/android/vendorsettings/applications/AppStatePowerBridge;
+.super Lcom/android/vendorsettings/applications/AppStateBaseBridge;
 .source "AppStatePowerBridge.java"
 
 
@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private final GE:Lcom/android/settings/fuelgauge/PowerWhitelistBackend;
+.field private final GE:Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;
 
 
 # direct methods
@@ -21,30 +21,30 @@
 
     sget-object v1, Lcom/android/b/a/a;->aIt:Lcom/android/b/a/p;
 
-    new-instance v2, Lcom/android/settings/applications/AppStatePowerBridge$1;
+    new-instance v2, Lcom/android/vendorsettings/applications/AppStatePowerBridge$1;
 
-    invoke-direct {v2}, Lcom/android/settings/applications/AppStatePowerBridge$1;-><init>()V
+    invoke-direct {v2}, Lcom/android/vendorsettings/applications/AppStatePowerBridge$1;-><init>()V
 
     invoke-direct {v0, v1, v2}, Lcom/android/b/a/t;-><init>(Lcom/android/b/a/p;Lcom/android/b/a/p;)V
 
-    sput-object v0, Lcom/android/settings/applications/AppStatePowerBridge;->GF:Lcom/android/b/a/p;
+    sput-object v0, Lcom/android/vendorsettings/applications/AppStatePowerBridge;->GF:Lcom/android/b/a/p;
 
     return-void
 .end method
 
-.method public constructor <init>(Lcom/android/b/a/a;Lcom/android/settings/applications/AppStateBaseBridge$Callback;)V
+.method public constructor <init>(Lcom/android/b/a/a;Lcom/android/vendorsettings/applications/AppStateBaseBridge$Callback;)V
     .locals 1
 
     .prologue
     .line 34
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/applications/AppStateBaseBridge;-><init>(Lcom/android/b/a/a;Lcom/android/settings/applications/AppStateBaseBridge$Callback;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/applications/AppStateBaseBridge;-><init>(Lcom/android/b/a/a;Lcom/android/vendorsettings/applications/AppStateBaseBridge$Callback;)V
 
     .line 31
-    invoke-static {}, Lcom/android/settings/fuelgauge/PowerWhitelistBackend;->rf()Lcom/android/settings/fuelgauge/PowerWhitelistBackend;
+    invoke-static {}, Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;->rf()Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStatePowerBridge;->GE:Lcom/android/settings/fuelgauge/PowerWhitelistBackend;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStatePowerBridge;->GE:Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;
 
     .line 35
     return-void
@@ -57,9 +57,9 @@
 
     .prologue
     .line 50
-    iget-object v0, p0, Lcom/android/settings/applications/AppStatePowerBridge;->GE:Lcom/android/settings/fuelgauge/PowerWhitelistBackend;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStatePowerBridge;->GE:Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;
 
-    invoke-virtual {v0, p2}, Lcom/android/settings/fuelgauge/PowerWhitelistBackend;->aZ(Ljava/lang/String;)Z
+    invoke-virtual {v0, p2}, Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;->aZ(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -85,7 +85,7 @@
 
     .prologue
     .line 39
-    iget-object v0, p0, Lcom/android/settings/applications/AppStatePowerBridge;->Gs:Lcom/android/b/a/w;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStatePowerBridge;->Gs:Lcom/android/b/a/w;
 
     invoke-virtual {v0}, Lcom/android/b/a/w;->zo()Ljava/util/ArrayList;
 
@@ -112,13 +112,13 @@
     check-cast v0, Lcom/android/b/a/o;
 
     .line 43
-    iget-object v1, p0, Lcom/android/settings/applications/AppStatePowerBridge;->GE:Lcom/android/settings/fuelgauge/PowerWhitelistBackend;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStatePowerBridge;->GE:Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;
 
     iget-object v5, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
     iget-object v5, v5, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
-    invoke-virtual {v1, v5}, Lcom/android/settings/fuelgauge/PowerWhitelistBackend;->aZ(Ljava/lang/String;)Z
+    invoke-virtual {v1, v5}, Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;->aZ(Ljava/lang/String;)Z
 
     move-result v1
 

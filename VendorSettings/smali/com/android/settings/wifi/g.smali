@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/wifi/g;
-.super Lcom/android/settings/wifi/a;
+.class public Lcom/android/vendorsettings/wifi/g;
+.super Lcom/android/vendorsettings/wifi/a;
 .source "MiuiAccessPointPreference.java"
 
 
@@ -33,32 +33,32 @@
 
     .prologue
     .line 215
-    new-instance v0, Lcom/android/settings/wifi/h;
+    new-instance v0, Lcom/android/vendorsettings/wifi/h;
 
-    invoke-direct {v0}, Lcom/android/settings/wifi/h;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/wifi/h;-><init>()V
 
-    sput-object v0, Lcom/android/settings/wifi/g;->aAt:Ljava/util/Comparator;
+    sput-object v0, Lcom/android/vendorsettings/wifi/g;->aAt:Ljava/util/Comparator;
 
     return-void
 .end method
 
-.method constructor <init>(Lcom/android/b/e/a;Landroid/content/Context;Lcom/android/settings/wifi/c;Z)V
+.method constructor <init>(Lcom/android/b/e/a;Landroid/content/Context;Lcom/android/vendorsettings/wifi/c;Z)V
     .locals 1
 
     .prologue
     const/4 v0, 0x1
 
     .line 68
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/settings/wifi/a;-><init>(Lcom/android/b/e/a;Landroid/content/Context;Lcom/android/settings/wifi/c;Z)V
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/vendorsettings/wifi/a;-><init>(Lcom/android/b/e/a;Landroid/content/Context;Lcom/android/vendorsettings/wifi/c;Z)V
 
     .line 55
-    iput-boolean v0, p0, Lcom/android/settings/wifi/g;->aAn:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/wifi/g;->aAn:Z
 
     .line 56
-    iput-boolean v0, p0, Lcom/android/settings/wifi/g;->aAo:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/wifi/g;->aAo:Z
 
     .line 69
-    invoke-direct {p0, p2}, Lcom/android/settings/wifi/g;->init(Landroid/content/Context;)V
+    invoke-direct {p0, p2}, Lcom/android/vendorsettings/wifi/g;->init(Landroid/content/Context;)V
 
     .line 70
     return-void
@@ -97,10 +97,10 @@
     const/4 v1, 0x1
 
     .line 74
-    iput-object p1, p0, Lcom/android/settings/wifi/g;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/g;->mContext:Landroid/content/Context;
 
     .line 75
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/g;->d(Landroid/content/Context;)Z
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/wifi/g;->d(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -109,7 +109,7 @@
     move v0, v1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/wifi/g;->uG:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/wifi/g;->uG:Z
 
     .line 79
     new-instance v0, Landroid/util/TypedValue;
@@ -138,7 +138,7 @@
 
     move-result v3
 
-    iput v3, p0, Lcom/android/settings/wifi/g;->aAr:I
+    iput v3, p0, Lcom/android/vendorsettings/wifi/g;->aAr:I
 
     .line 85
     sget v3, Lmiui/R$attr;->preferencePrimaryTextColor:I
@@ -157,7 +157,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/wifi/g;->aAs:I
+    iput v0, p0, Lcom/android/vendorsettings/wifi/g;->aAs:I
 
     .line 88
     return-void
@@ -174,7 +174,7 @@
 
     .prologue
     .line 235
-    sget-object v0, Lcom/android/settings/wifi/g;->aAt:Ljava/util/Comparator;
+    sget-object v0, Lcom/android/vendorsettings/wifi/g;->aAt:Ljava/util/Comparator;
 
     return-object v0
 .end method
@@ -186,10 +186,10 @@
 
     .prologue
     .line 162
-    iput-object p1, p0, Lcom/android/settings/wifi/g;->azP:Lcom/android/b/e/a;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/g;->azP:Lcom/android/b/e/a;
 
     .line 163
-    invoke-virtual {p0}, Lcom/android/settings/wifi/g;->refresh()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/g;->refresh()V
 
     .line 164
     return-void
@@ -200,7 +200,7 @@
 
     .prologue
     .line 167
-    iput-boolean p1, p0, Lcom/android/settings/wifi/g;->aAp:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/wifi/g;->aAp:Z
 
     .line 168
     return-void
@@ -211,11 +211,11 @@
 
     .prologue
     .line 187
-    invoke-virtual {p0}, Lcom/android/settings/wifi/g;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/g;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/iC;->Y(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/iC;->Y(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -228,7 +228,7 @@
 
     .line 190
     :cond_0
-    iput-boolean p1, p0, Lcom/android/settings/wifi/g;->aAq:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/wifi/g;->aAq:Z
 
     .line 191
     return-void
@@ -239,7 +239,7 @@
 
     .prologue
     .line 179
-    iput-object p1, p0, Lcom/android/settings/wifi/g;->aAm:Landroid/view/View$OnClickListener;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/g;->aAm:Landroid/view/View$OnClickListener;
 
     .line 180
     return-void
@@ -260,7 +260,7 @@
     const/4 v3, 0x0
 
     .line 97
-    invoke-super {p0, p1}, Lcom/android/settings/wifi/a;->onBindView(Landroid/view/View;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/wifi/a;->onBindView(Landroid/view/View;)V
 
     .line 98
     const v0, 0x7f1301db
@@ -277,22 +277,22 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 100
-    iget-boolean v1, p0, Lcom/android/settings/wifi/g;->aAn:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/wifi/g;->aAn:Z
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setEnabled(Z)V
 
     .line 101
-    iget-boolean v1, p0, Lcom/android/settings/wifi/g;->aAn:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/wifi/g;->aAn:Z
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/android/settings/wifi/g;->aAm:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/g;->aAm:Landroid/view/View$OnClickListener;
 
     :goto_0
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 102
-    iget-boolean v1, p0, Lcom/android/settings/wifi/g;->aAo:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/wifi/g;->aAo:Z
 
     if-eqz v1, :cond_2
 
@@ -355,7 +355,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/CheckedTextView;->setCheckMarkDrawable(I)V
 
     .line 118
-    invoke-virtual {p0}, Lcom/android/settings/wifi/g;->isConnected()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/g;->isConnected()Z
 
     move-result v1
 
@@ -369,13 +369,13 @@
     if-eqz v1, :cond_3
 
     .line 120
-    iget v1, p0, Lcom/android/settings/wifi/g;->aAr:I
+    iget v1, p0, Lcom/android/vendorsettings/wifi/g;->aAr:I
 
     invoke-virtual {v0, v1}, Landroid/widget/CheckedTextView;->setTextColor(I)V
 
     .line 126
     :goto_2
-    iget-boolean v1, p0, Lcom/android/settings/wifi/g;->aAq:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/wifi/g;->aAq:Z
 
     if-eqz v1, :cond_4
 
@@ -400,7 +400,7 @@
     invoke-virtual {v0, v3, v3, v1, v3}, Landroid/widget/CheckedTextView;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
     .line 134
-    iget-boolean v0, p0, Lcom/android/settings/wifi/g;->uG:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/wifi/g;->uG:Z
 
     if-eqz v0, :cond_6
 
@@ -412,7 +412,7 @@
     check-cast v0, Landroid/widget/RadioButton;
 
     .line 136
-    invoke-virtual {p0}, Lcom/android/settings/wifi/g;->isConnected()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/g;->isConnected()Z
 
     move-result v1
 
@@ -422,7 +422,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/RadioButton;->setVisibility(I)V
 
     .line 137
-    invoke-virtual {p0}, Lcom/android/settings/wifi/g;->isConnected()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/g;->isConnected()Z
 
     move-result v1
 
@@ -439,14 +439,14 @@
     check-cast v0, Landroid/widget/ImageView;
 
     .line 143
-    invoke-virtual {p0}, Lcom/android/settings/wifi/g;->getIcon()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/g;->getIcon()Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 144
-    invoke-virtual {p0}, Lcom/android/settings/wifi/g;->wP()Lcom/android/b/e/a;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/g;->wP()Lcom/android/b/e/a;
 
     move-result-object v1
 
@@ -469,13 +469,13 @@
     invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 148
-    invoke-virtual {p0}, Lcom/android/settings/wifi/g;->isConnected()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/g;->isConnected()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/g;->wP()Lcom/android/b/e/a;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/g;->wP()Lcom/android/b/e/a;
 
     move-result-object v0
 
@@ -487,7 +487,7 @@
 
     if-ne v0, v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/g;->wP()Lcom/android/b/e/a;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/g;->wP()Lcom/android/b/e/a;
 
     move-result-object v0
 
@@ -499,7 +499,7 @@
 
     if-ne v0, v1, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/settings/wifi/g;->uG:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/wifi/g;->uG:Z
 
     if-nez v0, :cond_0
 
@@ -513,7 +513,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 151
-    iget-object v1, p0, Lcom/android/settings/wifi/g;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/g;->mContext:Landroid/content/Context;
 
     const v2, 0x7f0c0f55
 
@@ -541,7 +541,7 @@
 
     .line 122
     :cond_3
-    iget v1, p0, Lcom/android/settings/wifi/g;->aAs:I
+    iget v1, p0, Lcom/android/vendorsettings/wifi/g;->aAs:I
 
     invoke-virtual {v0, v1}, Landroid/widget/CheckedTextView;->setTextColor(I)V
 
@@ -549,20 +549,20 @@
 
     .line 128
     :cond_4
-    invoke-virtual {p0}, Lcom/android/settings/wifi/g;->xa()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/g;->xa()Z
 
     move-result v1
 
     if-eqz v1, :cond_7
 
     .line 129
-    invoke-virtual {p0}, Lcom/android/settings/wifi/g;->wP()Lcom/android/b/e/a;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/g;->wP()Lcom/android/b/e/a;
 
     move-result-object v1
 
     iget-object v1, v1, Lcom/android/b/e/a;->aKI:Landroid/net/wifi/ScanResult;
 
-    invoke-static {v1}, Lcom/android/settings/wifi/bi;->e(Landroid/net/wifi/ScanResult;)I
+    invoke-static {v1}, Lcom/android/vendorsettings/wifi/bi;->e(Landroid/net/wifi/ScanResult;)I
 
     move-result v1
 
@@ -576,7 +576,7 @@
 
     .line 139
     :cond_6
-    invoke-virtual {p0}, Lcom/android/settings/wifi/g;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/g;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -632,13 +632,13 @@
 
     .prologue
     .line 206
-    invoke-virtual {p0}, Lcom/android/settings/wifi/g;->wP()Lcom/android/b/e/a;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/g;->wP()Lcom/android/b/e/a;
 
     move-result-object v0
 
     iget-object v0, v0, Lcom/android/b/e/a;->aKI:Landroid/net/wifi/ScanResult;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/bi;->d(Landroid/net/wifi/ScanResult;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/bi;->d(Landroid/net/wifi/ScanResult;)Z
 
     move-result v0
 
@@ -650,7 +650,7 @@
 
     .prologue
     .line 239
-    invoke-virtual {p0}, Lcom/android/settings/wifi/g;->wP()Lcom/android/b/e/a;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/g;->wP()Lcom/android/b/e/a;
 
     move-result-object v0
 

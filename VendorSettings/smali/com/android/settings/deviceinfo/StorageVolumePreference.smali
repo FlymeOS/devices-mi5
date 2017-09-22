@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/deviceinfo/StorageVolumePreference;
+.class public Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;
 .super Landroid/preference/Preference;
 .source "StorageVolumePreference.java"
 
@@ -26,14 +26,14 @@
     .line 46
     const/4 v2, -0x1
 
-    iput v2, p0, Lcom/android/settings/deviceinfo/StorageVolumePreference;->Xk:I
+    iput v2, p0, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->Xk:I
 
     .line 122
-    new-instance v2, Lcom/android/settings/deviceinfo/StorageVolumePreference$1;
+    new-instance v2, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/deviceinfo/StorageVolumePreference$1;-><init>(Lcom/android/settings/deviceinfo/StorageVolumePreference;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference$1;-><init>(Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;)V
 
-    iput-object v2, p0, Lcom/android/settings/deviceinfo/StorageVolumePreference;->Xl:Landroid/view/View$OnClickListener;
+    iput-object v2, p0, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->Xl:Landroid/view/View$OnClickListener;
 
     .line 51
     const-class v2, Landroid/os/storage/StorageManager;
@@ -46,32 +46,32 @@
 
     check-cast v2, Landroid/os/storage/StorageManager;
 
-    iput-object v2, p0, Lcom/android/settings/deviceinfo/StorageVolumePreference;->Vr:Landroid/os/storage/StorageManager;
+    iput-object v2, p0, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->Vr:Landroid/os/storage/StorageManager;
 
     .line 52
     move-object/from16 v0, p2
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/StorageVolumePreference;->Vq:Landroid/os/storage/VolumeInfo;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->Vq:Landroid/os/storage/VolumeInfo;
 
     .line 53
     move/from16 v0, p3
 
-    iput v0, p0, Lcom/android/settings/deviceinfo/StorageVolumePreference;->mColor:I
+    iput v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->mColor:I
 
     .line 55
     const v2, 0x7f040160
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/deviceinfo/StorageVolumePreference;->setLayoutResource(I)V
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->setLayoutResource(I)V
 
     .line 57
     invoke-virtual/range {p2 .. p2}, Landroid/os/storage/VolumeInfo;->getId()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/deviceinfo/StorageVolumePreference;->setKey(Ljava/lang/String;)V
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->setKey(Ljava/lang/String;)V
 
     .line 58
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/StorageVolumePreference;->Vr:Landroid/os/storage/StorageManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->Vr:Landroid/os/storage/StorageManager;
 
     move-object/from16 v0, p2
 
@@ -79,7 +79,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/deviceinfo/StorageVolumePreference;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 61
     const-string v2, "private"
@@ -164,7 +164,7 @@
 
     move-result-object v10
 
-    invoke-virtual {p0, v10}, Lcom/android/settings/deviceinfo/StorageVolumePreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v10}, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 77
     const-wide/16 v10, 0x64
@@ -175,10 +175,10 @@
 
     long-to-int v6, v6
 
-    iput v6, p0, Lcom/android/settings/deviceinfo/StorageVolumePreference;->Xk:I
+    iput v6, p0, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->Xk:I
 
     .line 79
-    iget-object v6, p0, Lcom/android/settings/deviceinfo/StorageVolumePreference;->Vr:Landroid/os/storage/StorageManager;
+    iget-object v6, p0, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->Vr:Landroid/os/storage/StorageManager;
 
     invoke-virtual {v6, v3}, Landroid/os/storage/StorageManager;->getStorageLowBytes(Ljava/io/File;)J
 
@@ -189,9 +189,9 @@
     if-gez v3, :cond_0
 
     .line 80
-    sget v2, Lcom/android/settings/deviceinfo/StorageSettings;->Xa:I
+    sget v2, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Xa:I
 
-    iput v2, p0, Lcom/android/settings/deviceinfo/StorageVolumePreference;->mColor:I
+    iput v2, p0, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->mColor:I
 
     .line 81
     const v2, 0x7f0201bc
@@ -208,12 +208,12 @@
     invoke-virtual {v2}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
 
     .line 90
-    iget v3, p0, Lcom/android/settings/deviceinfo/StorageVolumePreference;->mColor:I
+    iget v3, p0, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->mColor:I
 
     invoke-virtual {v2, v3}, Landroid/graphics/drawable/Drawable;->setTint(I)V
 
     .line 91
-    invoke-virtual {p0, v2}, Lcom/android/settings/deviceinfo/StorageVolumePreference;->setIcon(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
     .line 99
     return-void
@@ -236,22 +236,22 @@
 
     move-result v3
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/deviceinfo/StorageVolumePreference;->setSummary(I)V
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->setSummary(I)V
 
     .line 86
     const/4 v3, -0x1
 
-    iput v3, p0, Lcom/android/settings/deviceinfo/StorageVolumePreference;->Xk:I
+    iput v3, p0, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->Xk:I
 
     goto :goto_1
 .end method
 
-.method static synthetic a(Lcom/android/settings/deviceinfo/StorageVolumePreference;)Landroid/os/storage/VolumeInfo;
+.method static synthetic a(Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;)Landroid/os/storage/VolumeInfo;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageVolumePreference;->Vq:Landroid/os/storage/VolumeInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->Vq:Landroid/os/storage/VolumeInfo;
 
     return-object v0
 .end method
@@ -281,7 +281,7 @@
     check-cast v0, Landroid/widget/ProgressBar;
 
     .line 111
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/StorageVolumePreference;->Vq:Landroid/os/storage/VolumeInfo;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->Vq:Landroid/os/storage/VolumeInfo;
 
     invoke-virtual {v1}, Landroid/os/storage/VolumeInfo;->getType()I
 
@@ -291,7 +291,7 @@
 
     if-ne v1, v2, :cond_0
 
-    iget v1, p0, Lcom/android/settings/deviceinfo/StorageVolumePreference;->Xk:I
+    iget v1, p0, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->Xk:I
 
     const/4 v2, -0x1
 
@@ -303,12 +303,12 @@
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
     .line 113
-    iget v1, p0, Lcom/android/settings/deviceinfo/StorageVolumePreference;->Xk:I
+    iget v1, p0, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->Xk:I
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setProgress(I)V
 
     .line 114
-    iget v1, p0, Lcom/android/settings/deviceinfo/StorageVolumePreference;->mColor:I
+    iget v1, p0, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;->mColor:I
 
     invoke-static {v1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 

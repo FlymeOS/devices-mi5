@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/sound/RingerVolumeActivity;
+.class public Lcom/android/vendorsettings/sound/RingerVolumeActivity;
 .super Lmiui/app/Activity;
 .source "RingerVolumeActivity.java"
 
@@ -24,14 +24,14 @@
     invoke-super {p0, p1}, Lmiui/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 19
-    const-class v0, Lcom/android/settings/sound/RingerVolumeFragment;
+    const-class v0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v1
 
     .line 20
-    invoke-virtual {p0}, Lcom/android/settings/sound/RingerVolumeActivity;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/RingerVolumeActivity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v2
 

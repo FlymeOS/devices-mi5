@@ -1,4 +1,4 @@
-.class Lcom/android/settings/gh;
+.class Lcom/android/vendorsettings/gh;
 .super Ljava/lang/Object;
 .source "PrivacySettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic vV:Lcom/android/settings/PrivacySettings;
+.field final synthetic vV:Lcom/android/vendorsettings/PrivacySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/PrivacySettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/PrivacySettings;)V
     .locals 0
 
     .prologue
     .line 141
-    iput-object p1, p0, Lcom/android/settings/gh;->vV:Lcom/android/settings/PrivacySettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/gh;->vV:Lcom/android/vendorsettings/PrivacySettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,9 +41,9 @@
     move-result v2
 
     .line 151
-    iget-object v3, p0, Lcom/android/settings/gh;->vV:Lcom/android/settings/PrivacySettings;
+    iget-object v3, p0, Lcom/android/vendorsettings/gh;->vV:Lcom/android/vendorsettings/PrivacySettings;
 
-    invoke-static {v3}, Lcom/android/settings/PrivacySettings;->a(Lcom/android/settings/PrivacySettings;)Landroid/preference/CheckBoxPreference;
+    invoke-static {v3}, Lcom/android/vendorsettings/PrivacySettings;->a(Lcom/android/vendorsettings/PrivacySettings;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v3
 
@@ -51,9 +51,9 @@
 
     .line 153
     :try_start_0
-    iget-object v3, p0, Lcom/android/settings/gh;->vV:Lcom/android/settings/PrivacySettings;
+    iget-object v3, p0, Lcom/android/vendorsettings/gh;->vV:Lcom/android/vendorsettings/PrivacySettings;
 
-    invoke-static {v3}, Lcom/android/settings/PrivacySettings;->b(Lcom/android/settings/PrivacySettings;)Landroid/app/backup/IBackupManager;
+    invoke-static {v3}, Lcom/android/vendorsettings/PrivacySettings;->b(Lcom/android/vendorsettings/PrivacySettings;)Landroid/app/backup/IBackupManager;
 
     move-result-object v3
 
@@ -73,9 +73,9 @@
     move-exception v3
 
     .line 156
-    iget-object v3, p0, Lcom/android/settings/gh;->vV:Lcom/android/settings/PrivacySettings;
+    iget-object v3, p0, Lcom/android/vendorsettings/gh;->vV:Lcom/android/vendorsettings/PrivacySettings;
 
-    invoke-static {v3}, Lcom/android/settings/PrivacySettings;->a(Lcom/android/settings/PrivacySettings;)Landroid/preference/CheckBoxPreference;
+    invoke-static {v3}, Lcom/android/vendorsettings/PrivacySettings;->a(Lcom/android/vendorsettings/PrivacySettings;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v3
 

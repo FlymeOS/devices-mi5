@@ -1,4 +1,4 @@
-.class Lcom/android/settings/gD;
+.class Lcom/android/vendorsettings/gD;
 .super Ljava/lang/Object;
 .source "RadioInfo.java"
 
@@ -11,20 +11,20 @@
 
 .field final synthetic ya:Z
 
-.field final synthetic yb:Lcom/android/settings/gC;
+.field final synthetic yb:Lcom/android/vendorsettings/gC;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/gC;Lcom/android/ims/ImsManager;Z)V
+.method constructor <init>(Lcom/android/vendorsettings/gC;Lcom/android/ims/ImsManager;Z)V
     .locals 0
 
     .prologue
     .line 1127
-    iput-object p1, p0, Lcom/android/settings/gD;->yb:Lcom/android/settings/gC;
+    iput-object p1, p0, Lcom/android/vendorsettings/gD;->yb:Lcom/android/vendorsettings/gC;
 
-    iput-object p2, p0, Lcom/android/settings/gD;->val$imsManager:Lcom/android/ims/ImsManager;
+    iput-object p2, p0, Lcom/android/vendorsettings/gD;->val$imsManager:Lcom/android/ims/ImsManager;
 
-    iput-boolean p3, p0, Lcom/android/settings/gD;->ya:Z
+    iput-boolean p3, p0, Lcom/android/vendorsettings/gD;->ya:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     .prologue
     .line 1130
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/gD;->val$imsManager:Lcom/android/ims/ImsManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/gD;->val$imsManager:Lcom/android/ims/ImsManager;
 
     invoke-virtual {v0}, Lcom/android/ims/ImsManager;->getConfigInterface()Lcom/android/ims/ImsConfig;
 
@@ -47,7 +47,7 @@
 
     const/16 v2, 0xa
 
-    iget-boolean v0, p0, Lcom/android/settings/gD;->ya:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/gD;->ya:Z
 
     if-eqz v0, :cond_0
 

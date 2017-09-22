@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/notification/NotificationBackend$AppRow;
-.super Lcom/android/settings/notification/NotificationBackend$Row;
+.class public Lcom/android/vendorsettings/notification/NotificationBackend$AppRow;
+.super Lcom/android/vendorsettings/notification/NotificationBackend$Row;
 .source "NotificationBackend.java"
 
 
@@ -29,7 +29,7 @@
 
     .prologue
     .line 137
-    invoke-direct {p0}, Lcom/android/settings/notification/NotificationBackend$Row;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/NotificationBackend$Row;-><init>()V
 
     return-void
 .end method

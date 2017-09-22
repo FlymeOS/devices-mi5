@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/ProcessStatsSummary;
-.super Lcom/android/settings/applications/ProcessStatsBase;
+.class public Lcom/android/vendorsettings/applications/ProcessStatsSummary;
+.super Lcom/android/vendorsettings/applications/ProcessStatsBase;
 .source "ProcessStatsSummary.java"
 
 # interfaces
@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field private Ix:Lcom/android/settings/applications/LayoutPreference;
+.field private Ix:Lcom/android/vendorsettings/applications/LayoutPreference;
 
-.field private Mk:Lcom/android/settings/applications/LinearColorBar;
+.field private Mk:Lcom/android/vendorsettings/applications/LinearColorBar;
 
 .field private Ml:Landroid/widget/TextView;
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/applications/ProcessStatsBase;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/ProcessStatsBase;-><init>()V
 
     return-void
 .end method
@@ -42,7 +42,7 @@
 
     .prologue
     .line 54
-    const-class v0, Lcom/android/settings/applications/ProcessStatsSummary;
+    const-class v0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -56,7 +56,7 @@
 
     .prologue
     .line 76
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsSummary;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -68,7 +68,7 @@
     move-result v1
 
     .line 78
-    iget-object v2, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Mk:Lcom/android/settings/applications/LinearColorBar;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Mk:Lcom/android/vendorsettings/applications/LinearColorBar;
 
     const v3, 0x7f0e0042
 
@@ -76,23 +76,23 @@
 
     move-result v3
 
-    invoke-virtual {v2, v1, v1, v3}, Lcom/android/settings/applications/LinearColorBar;->a(III)V
+    invoke-virtual {v2, v1, v1, v3}, Lcom/android/vendorsettings/applications/LinearColorBar;->a(III)V
 
     .line 80
-    iget-object v1, p0, Lcom/android/settings/applications/ProcessStatsSummary;->IM:Lcom/android/settings/applications/ProcStatsData;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->IM:Lcom/android/vendorsettings/applications/ProcStatsData;
 
-    invoke-virtual {v1}, Lcom/android/settings/applications/ProcStatsData;->la()Lcom/android/settings/applications/ProcStatsData$MemInfo;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/applications/ProcStatsData;->la()Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;
 
     move-result-object v1
 
     .line 82
-    iget-wide v2, v1, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lj:D
+    iget-wide v2, v1, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lj:D
 
     .line 83
-    iget-wide v4, v1, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Ll:D
+    iget-wide v4, v1, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Ll:D
 
     .line 84
-    iget-wide v6, v1, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lk:D
+    iget-wide v6, v1, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lk:D
 
     .line 85
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -122,7 +122,7 @@
     move-result-object v9
 
     .line 90
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsSummary;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -133,9 +133,9 @@
     move-result-object v0
 
     .line 91
-    iget-object v10, p0, Lcom/android/settings/applications/ProcessStatsSummary;->IM:Lcom/android/settings/applications/ProcStatsData;
+    iget-object v10, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->IM:Lcom/android/vendorsettings/applications/ProcStatsData;
 
-    invoke-virtual {v10}, Lcom/android/settings/applications/ProcStatsData;->kZ()I
+    invoke-virtual {v10}, Lcom/android/vendorsettings/applications/ProcStatsData;->kZ()I
 
     move-result v10
 
@@ -153,11 +153,11 @@
 
     .line 97
     :goto_0
-    iget-object v10, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Ml:Landroid/widget/TextView;
+    iget-object v10, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Ml:Landroid/widget/TextView;
 
     const v11, 0x7f0c0464
 
-    invoke-virtual {p0, v11}, Lcom/android/settings/applications/ProcessStatsSummary;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v11}, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v11
 
@@ -191,7 +191,7 @@
     double-to-float v1, v6
 
     .line 100
-    iget-object v6, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Mk:Lcom/android/settings/applications/LinearColorBar;
+    iget-object v6, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Mk:Lcom/android/vendorsettings/applications/LinearColorBar;
 
     const/4 v7, 0x0
 
@@ -199,51 +199,51 @@
 
     sub-float/2addr v10, v1
 
-    invoke-virtual {v6, v1, v7, v10}, Lcom/android/settings/applications/LinearColorBar;->a(FFF)V
+    invoke-virtual {v6, v1, v7, v10}, Lcom/android/vendorsettings/applications/LinearColorBar;->a(FFF)V
 
     .line 102
-    iget-object v1, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Mm:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Mm:Landroid/preference/Preference;
 
     invoke-virtual {v1, v0}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 103
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Mn:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Mn:Landroid/preference/Preference;
 
     invoke-virtual {v0, v8}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 104
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Mo:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Mo:Landroid/preference/Preference;
 
     double-to-long v2, v2
 
     double-to-long v4, v4
 
-    invoke-static {v2, v3, v4, v5}, Lcom/android/settings/iC;->a(JJ)Ljava/lang/String;
+    invoke-static {v2, v3, v4, v5}, Lcom/android/vendorsettings/iC;->a(JJ)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 105
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Mp:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Mp:Landroid/preference/Preference;
 
     invoke-virtual {v0, v9}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 106
-    sget-object v0, Lcom/android/settings/applications/ProcessStatsSummary;->LI:[I
+    sget-object v0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->LI:[I
 
-    iget v1, p0, Lcom/android/settings/applications/ProcessStatsSummary;->LL:I
+    iget v1, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->LL:I
 
     aget v0, v0, v1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/ProcessStatsSummary;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
     .line 107
-    iget-object v1, p0, Lcom/android/settings/applications/ProcessStatsSummary;->IM:Lcom/android/settings/applications/ProcStatsData;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->IM:Lcom/android/vendorsettings/applications/ProcStatsData;
 
-    invoke-virtual {v1}, Lcom/android/settings/applications/ProcStatsData;->lb()Ljava/util/List;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/applications/ProcStatsData;->lb()Ljava/util/List;
 
     move-result-object v1
 
@@ -252,9 +252,9 @@
     move-result v1
 
     .line 108
-    iget-object v2, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Mq:Landroid/preference/Preference;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Mq:Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsSummary;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -301,97 +301,97 @@
 
     .prologue
     .line 59
-    invoke-super {p0, p1}, Lcom/android/settings/applications/ProcessStatsBase;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/applications/ProcessStatsBase;->onCreate(Landroid/os/Bundle;)V
 
     .line 61
     const v0, 0x7f08007a
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/ProcessStatsSummary;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->addPreferencesFromResource(I)V
 
     .line 62
     const-string v0, "status_header"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/ProcessStatsSummary;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/LayoutPreference;
+    check-cast v0, Lcom/android/vendorsettings/applications/LayoutPreference;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Ix:Lcom/android/settings/applications/LayoutPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Ix:Lcom/android/vendorsettings/applications/LayoutPreference;
 
     .line 63
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Ix:Lcom/android/settings/applications/LayoutPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Ix:Lcom/android/vendorsettings/applications/LayoutPreference;
 
     const v1, 0x7f1301f6
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/LayoutPreference;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/applications/LayoutPreference;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Ml:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Ml:Landroid/widget/TextView;
 
     .line 64
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Ix:Lcom/android/settings/applications/LayoutPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Ix:Lcom/android/vendorsettings/applications/LayoutPreference;
 
     const v1, 0x7f1301f7
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/LayoutPreference;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/applications/LayoutPreference;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/LinearColorBar;
+    check-cast v0, Lcom/android/vendorsettings/applications/LinearColorBar;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Mk:Lcom/android/settings/applications/LinearColorBar;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Mk:Lcom/android/vendorsettings/applications/LinearColorBar;
 
     .line 66
     const-string v0, "performance"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/ProcessStatsSummary;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Mm:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Mm:Landroid/preference/Preference;
 
     .line 67
     const-string v0, "total_memory"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/ProcessStatsSummary;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Mn:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Mn:Landroid/preference/Preference;
 
     .line 68
     const-string v0, "average_used"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/ProcessStatsSummary;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Mo:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Mo:Landroid/preference/Preference;
 
     .line 69
     const-string v0, "free"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/ProcessStatsSummary;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Mp:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Mp:Landroid/preference/Preference;
 
     .line 70
     const-string v0, "apps_list"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/ProcessStatsSummary;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Mq:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Mq:Landroid/preference/Preference;
 
     .line 71
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Mq:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Mq:Landroid/preference/Preference;
 
     invoke-virtual {v0, p0}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
@@ -408,7 +408,7 @@
     const/4 v4, 0x0
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsSummary;->Mq:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->Mq:Landroid/preference/Preference;
 
     if-ne p1, v0, :cond_0
 
@@ -425,17 +425,17 @@
     .line 122
     const-string v0, "duration_index"
 
-    iget v1, p0, Lcom/android/settings/applications/ProcessStatsSummary;->LL:I
+    iget v1, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->LL:I
 
     invoke-virtual {v5, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 123
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsSummary;->IM:Lcom/android/settings/applications/ProcStatsData;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->IM:Lcom/android/vendorsettings/applications/ProcStatsData;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/ProcStatsData;->kY()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/ProcStatsData;->kY()V
 
     .line 124
-    const-class v0, Lcom/android/settings/applications/ProcessStatsUi;
+    const-class v0, Lcom/android/vendorsettings/applications/ProcessStatsUi;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -447,7 +447,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/applications/ProcessStatsSummary;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/vendorsettings/applications/ProcessStatsSummary;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
 
     move v4, v6
 

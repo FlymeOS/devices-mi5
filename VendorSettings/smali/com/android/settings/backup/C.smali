@@ -1,4 +1,4 @@
-.class Lcom/android/settings/backup/C;
+.class Lcom/android/vendorsettings/backup/C;
 .super Ljava/lang/Object;
 .source "ToggleBackupSettingFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Ql:Lcom/android/settings/backup/ToggleBackupSettingFragment;
+.field final synthetic Ql:Lcom/android/vendorsettings/backup/ToggleBackupSettingFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/backup/ToggleBackupSettingFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/backup/ToggleBackupSettingFragment;)V
     .locals 0
 
     .prologue
     .line 153
-    iput-object p1, p0, Lcom/android/settings/backup/C;->Ql:Lcom/android/settings/backup/ToggleBackupSettingFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/backup/C;->Ql:Lcom/android/vendorsettings/backup/ToggleBackupSettingFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
     if-nez v0, :cond_0
 
     .line 158
-    iget-object v0, p0, Lcom/android/settings/backup/C;->Ql:Lcom/android/settings/backup/ToggleBackupSettingFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/C;->Ql:Lcom/android/vendorsettings/backup/ToggleBackupSettingFragment;
 
-    invoke-static {v0}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->a(Lcom/android/settings/backup/ToggleBackupSettingFragment;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/backup/ToggleBackupSettingFragment;->a(Lcom/android/vendorsettings/backup/ToggleBackupSettingFragment;)V
 
     .line 162
     :goto_0
@@ -52,9 +52,9 @@
 
     .line 161
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/backup/C;->Ql:Lcom/android/settings/backup/ToggleBackupSettingFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/C;->Ql:Lcom/android/vendorsettings/backup/ToggleBackupSettingFragment;
 
-    invoke-static {v0, v1}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->a(Lcom/android/settings/backup/ToggleBackupSettingFragment;Z)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/backup/ToggleBackupSettingFragment;->a(Lcom/android/vendorsettings/backup/ToggleBackupSettingFragment;Z)V
 
     goto :goto_0
 .end method

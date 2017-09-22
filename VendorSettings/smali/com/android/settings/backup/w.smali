@@ -1,31 +1,31 @@
-.class Lcom/android/settings/backup/w;
+.class Lcom/android/vendorsettings/backup/w;
 .super Ljava/lang/Object;
 .source "SettingsAgent.java"
 
 
 # instance fields
-.field final synthetic Qd:Lcom/android/settings/backup/t;
+.field final synthetic Qd:Lcom/android/vendorsettings/backup/t;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/backup/t;)V
+.method private constructor <init>(Lcom/android/vendorsettings/backup/t;)V
     .locals 0
 
     .prologue
     .line 165
-    iput-object p1, p0, Lcom/android/settings/backup/w;->Qd:Lcom/android/settings/backup/t;
+    iput-object p1, p0, Lcom/android/vendorsettings/backup/w;->Qd:Lcom/android/vendorsettings/backup/t;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/backup/t;Lcom/android/settings/backup/u;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/backup/t;Lcom/android/vendorsettings/backup/u;)V
     .locals 0
 
     .prologue
     .line 165
-    invoke-direct {p0, p1}, Lcom/android/settings/backup/w;-><init>(Lcom/android/settings/backup/t;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/backup/w;-><init>(Lcom/android/vendorsettings/backup/t;)V
 
     return-void
 .end method
@@ -37,13 +37,13 @@
 
     .prologue
     .line 167
-    iget-object v0, p0, Lcom/android/settings/backup/w;->Qd:Lcom/android/settings/backup/t;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/w;->Qd:Lcom/android/vendorsettings/backup/t;
 
-    iget-object v0, v0, Lcom/android/settings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
+    iget-object v0, v0, Lcom/android/vendorsettings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
 
-    new-instance v1, Lcom/android/settings/cloudbackup/f;
+    new-instance v1, Lcom/android/vendorsettings/cloudbackup/f;
 
-    invoke-direct {v1}, Lcom/android/settings/cloudbackup/f;-><init>()V
+    invoke-direct {v1}, Lcom/android/vendorsettings/cloudbackup/f;-><init>()V
 
     invoke-static {v0, p1, v1}, Lcom/xiaomi/settingsdk/backup/SettingsBackupHelper;->backupSettings(Landroid/content/Context;Landroid/os/ParcelFileDescriptor;Lcom/xiaomi/settingsdk/backup/ICloudBackup;)Lcom/xiaomi/settingsdk/backup/data/DataPackage;
 
@@ -107,9 +107,9 @@
     check-cast v0, Ljava/lang/String;
 
     .line 170
-    iget-object v2, p0, Lcom/android/settings/backup/w;->Qd:Lcom/android/settings/backup/t;
+    iget-object v2, p0, Lcom/android/vendorsettings/backup/w;->Qd:Lcom/android/vendorsettings/backup/t;
 
-    iget-object v2, v2, Lcom/android/settings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
+    iget-object v2, v2, Lcom/android/vendorsettings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
 
     invoke-virtual {v2, v0}, Lmiui/app/backup/FullBackupAgent;->addAttachedFile(Ljava/lang/String;)V
 
@@ -127,13 +127,13 @@
 
     .prologue
     .line 176
-    iget-object v0, p0, Lcom/android/settings/backup/w;->Qd:Lcom/android/settings/backup/t;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/w;->Qd:Lcom/android/vendorsettings/backup/t;
 
-    iget-object v0, v0, Lcom/android/settings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
+    iget-object v0, v0, Lcom/android/vendorsettings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
 
-    new-instance v1, Lcom/android/settings/cloudbackup/f;
+    new-instance v1, Lcom/android/vendorsettings/cloudbackup/f;
 
-    invoke-direct {v1}, Lcom/android/settings/cloudbackup/f;-><init>()V
+    invoke-direct {v1}, Lcom/android/vendorsettings/cloudbackup/f;-><init>()V
 
     invoke-static {v0, p1, v1}, Lcom/xiaomi/settingsdk/backup/SettingsBackupHelper;->restoreSettings(Landroid/content/Context;Landroid/os/ParcelFileDescriptor;Lcom/xiaomi/settingsdk/backup/ICloudBackup;)V
 

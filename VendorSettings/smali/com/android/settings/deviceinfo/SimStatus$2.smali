@@ -1,19 +1,19 @@
-.class Lcom/android/settings/deviceinfo/SimStatus$2;
+.class Lcom/android/vendorsettings/deviceinfo/SimStatus$2;
 .super Landroid/telephony/PhoneStateListener;
 .source "SimStatus.java"
 
 
 # instance fields
-.field final synthetic WJ:Lcom/android/settings/deviceinfo/SimStatus;
+.field final synthetic WJ:Lcom/android/vendorsettings/deviceinfo/SimStatus;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/SimStatus;I)V
+.method constructor <init>(Lcom/android/vendorsettings/deviceinfo/SimStatus;I)V
     .locals 0
 
     .prologue
     .line 421
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/SimStatus$2;->WJ:Lcom/android/settings/deviceinfo/SimStatus;
+    iput-object p1, p0, Lcom/android/vendorsettings/deviceinfo/SimStatus$2;->WJ:Lcom/android/vendorsettings/deviceinfo/SimStatus;
 
     invoke-direct {p0, p2}, Landroid/telephony/PhoneStateListener;-><init>(I)V
 
@@ -27,14 +27,14 @@
 
     .prologue
     .line 424
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/SimStatus$2;->WJ:Lcom/android/settings/deviceinfo/SimStatus;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/SimStatus$2;->WJ:Lcom/android/vendorsettings/deviceinfo/SimStatus;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/SimStatus;->b(Lcom/android/settings/deviceinfo/SimStatus;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/deviceinfo/SimStatus;->b(Lcom/android/vendorsettings/deviceinfo/SimStatus;)V
 
     .line 425
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/SimStatus$2;->WJ:Lcom/android/settings/deviceinfo/SimStatus;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/SimStatus$2;->WJ:Lcom/android/vendorsettings/deviceinfo/SimStatus;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/SimStatus;->c(Lcom/android/settings/deviceinfo/SimStatus;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/deviceinfo/SimStatus;->c(Lcom/android/vendorsettings/deviceinfo/SimStatus;)V
 
     .line 426
     return-void
@@ -45,9 +45,9 @@
 
     .prologue
     .line 435
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/SimStatus$2;->WJ:Lcom/android/settings/deviceinfo/SimStatus;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/SimStatus$2;->WJ:Lcom/android/vendorsettings/deviceinfo/SimStatus;
 
-    invoke-static {v0, p1}, Lcom/android/settings/deviceinfo/SimStatus;->a(Lcom/android/settings/deviceinfo/SimStatus;Landroid/telephony/ServiceState;)V
+    invoke-static {v0, p1}, Lcom/android/vendorsettings/deviceinfo/SimStatus;->a(Lcom/android/vendorsettings/deviceinfo/SimStatus;Landroid/telephony/ServiceState;)V
 
     .line 436
     return-void
@@ -58,9 +58,9 @@
 
     .prologue
     .line 430
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/SimStatus$2;->WJ:Lcom/android/settings/deviceinfo/SimStatus;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/SimStatus$2;->WJ:Lcom/android/vendorsettings/deviceinfo/SimStatus;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/deviceinfo/SimStatus;->a(Landroid/telephony/SignalStrength;)V
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/deviceinfo/SimStatus;->a(Landroid/telephony/SignalStrength;)V
 
     .line 431
     return-void

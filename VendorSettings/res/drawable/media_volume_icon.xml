@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.vendorsettings">
     <item android:drawable="@drawable/ic_audio_headset" settings:state_muted="false" settings:state_wired="true" />
     <item android:drawable="@drawable/ic_audio_headset_mute" settings:state_muted="true" settings:state_wired="true" />
     <item android:drawable="@drawable/ic_audio_bt" settings:state_muted="false" settings:state_a2dp="true" />

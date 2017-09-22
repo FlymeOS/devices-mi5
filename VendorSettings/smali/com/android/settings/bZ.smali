@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bZ;
+.class Lcom/android/vendorsettings/bZ;
 .super Ljava/lang/Object;
 .source "DevelopmentSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic kD:Lcom/android/settings/DevelopmentSettings;
+.field final synthetic kD:Lcom/android/vendorsettings/DevelopmentSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DevelopmentSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/DevelopmentSettings;)V
     .locals 0
 
     .prologue
     .line 1995
-    iput-object p1, p0, Lcom/android/settings/bZ;->kD:Lcom/android/settings/DevelopmentSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/bZ;->kD:Lcom/android/vendorsettings/DevelopmentSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 1998
-    iget-object v1, p0, Lcom/android/settings/bZ;->kD:Lcom/android/settings/DevelopmentSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/bZ;->kD:Lcom/android/vendorsettings/DevelopmentSettings;
 
     const/4 v0, -0x1
 
@@ -39,12 +39,12 @@
     const/4 v0, 0x1
 
     :goto_0
-    invoke-static {v1, v0}, Lcom/android/settings/DevelopmentSettings;->a(Lcom/android/settings/DevelopmentSettings;Z)V
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/DevelopmentSettings;->a(Lcom/android/vendorsettings/DevelopmentSettings;Z)V
 
     .line 1999
-    iget-object v0, p0, Lcom/android/settings/bZ;->kD:Lcom/android/settings/DevelopmentSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/bZ;->kD:Lcom/android/vendorsettings/DevelopmentSettings;
 
-    invoke-static {v0}, Lcom/android/settings/DevelopmentSettings;->b(Lcom/android/settings/DevelopmentSettings;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/DevelopmentSettings;->b(Lcom/android/vendorsettings/DevelopmentSettings;)V
 
     .line 2000
     return-void

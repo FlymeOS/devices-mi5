@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;
+.class public Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;
 .super Ljava/lang/Object;
 .source "UserDictionaryAddWordContents.java"
 
@@ -18,7 +18,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 202
-    iput-object p2, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;->agW:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;->agW:Ljava/lang/String;
 
     .line 203
     if-nez p2, :cond_0
@@ -30,7 +30,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;->mDescription:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;->mDescription:Ljava/lang/String;
 
     .line 210
     :goto_0
@@ -53,13 +53,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;->mDescription:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;->mDescription:Ljava/lang/String;
 
     goto :goto_0
 
     .line 208
     :cond_1
-    invoke-static {p2}, Lcom/android/settings/iC;->Y(Ljava/lang/String;)Ljava/util/Locale;
+    invoke-static {p2}, Lcom/android/vendorsettings/iC;->Y(Ljava/lang/String;)Ljava/util/Locale;
 
     move-result-object v0
 
@@ -67,7 +67,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;->mDescription:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;->mDescription:Ljava/lang/String;
 
     goto :goto_0
 .end method
@@ -79,7 +79,7 @@
 
     .prologue
     .line 216
-    iget-object v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;->agW:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;->agW:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -89,7 +89,7 @@
 
     .prologue
     .line 220
-    iget-object v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;->agW:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;->agW:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -109,7 +109,7 @@
 
     .prologue
     .line 213
-    iget-object v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;->mDescription:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordContents$LocaleRenderer;->mDescription:Ljava/lang/String;
 
     return-object v0
 .end method

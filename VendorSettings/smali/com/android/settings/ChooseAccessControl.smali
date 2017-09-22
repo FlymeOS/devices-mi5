@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ChooseAccessControl;
-.super Lcom/android/settings/ChooseLockPattern;
+.class public Lcom/android/vendorsettings/ChooseAccessControl;
+.super Lcom/android/vendorsettings/ChooseLockPattern;
 .source "ChooseAccessControl.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 15
-    invoke-direct {p0}, Lcom/android/settings/ChooseLockPattern;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/ChooseLockPattern;-><init>()V
 
     .line 24
     return-void
@@ -24,7 +24,7 @@
     .line 19
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/ChooseLockPattern;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/vendorsettings/ChooseLockPattern;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -33,7 +33,7 @@
     .line 20
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/ChooseAccessControl$ChooseAccessControlFragment;
+    const-class v2, Lcom/android/vendorsettings/ChooseAccessControl$ChooseAccessControlFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

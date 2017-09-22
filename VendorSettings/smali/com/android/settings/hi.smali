@@ -1,5 +1,5 @@
-.class Lcom/android/settings/hi;
-.super Lcom/android/settings/search/a;
+.class Lcom/android/vendorsettings/hi;
+.super Lcom/android/vendorsettings/search/a;
 .source "SecuritySettings.java"
 
 
@@ -13,11 +13,11 @@
 
     .prologue
     .line 920
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/search/a;-><init>()V
 
     .line 922
-    # getter for: Lcom/android/settings/SecuritySettings;->mE:I
-    invoke-static {}, Lcom/android/settings/SecuritySettings;->access$000()I
+    # getter for: Lcom/android/vendorsettings/SecuritySettings;->mE:I
+    invoke-static {}, Lcom/android/vendorsettings/SecuritySettings;->access$000()I
 
     move-result v0
 
@@ -26,7 +26,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/hi;->vW:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/hi;->vW:Z
 
     .line 923
     return-void
@@ -62,21 +62,21 @@
     move-result-object v3
 
     .line 974
-    new-instance v0, Lcom/android/settings/search/n;
+    new-instance v0, Lcom/android/vendorsettings/search/n;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/android/vendorsettings/search/n;-><init>(Landroid/content/Context;)V
 
     .line 975
-    iput-object v3, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v3, v0, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
     .line 976
-    iput-object v3, v0, Lcom/android/settings/search/n;->apu:Ljava/lang/String;
+    iput-object v3, v0, Lcom/android/vendorsettings/search/n;->apu:Ljava/lang/String;
 
     .line 977
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 979
-    iget-boolean v0, p0, Lcom/android/settings/hi;->vW:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/hi;->vW:Z
 
     if-nez v0, :cond_0
 
@@ -95,19 +95,19 @@
 
     .line 983
     :goto_0
-    new-instance v4, Lcom/android/settings/search/n;
+    new-instance v4, Lcom/android/vendorsettings/search/n;
 
-    invoke-direct {v4, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v4, p1}, Lcom/android/vendorsettings/search/n;-><init>(Landroid/content/Context;)V
 
     .line 984
     invoke-virtual {v1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v4, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v0, v4, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
     .line 985
-    iput-object v3, v4, Lcom/android/settings/search/n;->apu:Ljava/lang/String;
+    iput-object v3, v4, Lcom/android/vendorsettings/search/n;->apu:Ljava/lang/String;
 
     .line 986
     invoke-interface {v2, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -130,9 +130,9 @@
     if-eqz v0, :cond_1
 
     .line 993
-    new-instance v0, Lcom/android/settings/search/n;
+    new-instance v0, Lcom/android/vendorsettings/search/n;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/android/vendorsettings/search/n;-><init>(Landroid/content/Context;)V
 
     .line 994
     const v4, 0x7f0c01eb
@@ -141,10 +141,10 @@
 
     move-result-object v4
 
-    iput-object v4, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v4, v0, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
     .line 995
-    iput-object v3, v0, Lcom/android/settings/search/n;->apu:Ljava/lang/String;
+    iput-object v3, v0, Lcom/android/vendorsettings/search/n;->apu:Ljava/lang/String;
 
     .line 996
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -184,19 +184,19 @@
 
     .line 1009
     :goto_1
-    new-instance v4, Lcom/android/settings/search/n;
+    new-instance v4, Lcom/android/vendorsettings/search/n;
 
-    invoke-direct {v4, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v4, p1}, Lcom/android/vendorsettings/search/n;-><init>(Landroid/content/Context;)V
 
     .line 1010
     invoke-virtual {v1, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v4, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v0, v4, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
     .line 1011
-    iput-object v3, v4, Lcom/android/settings/search/n;->apu:Ljava/lang/String;
+    iput-object v3, v4, Lcom/android/vendorsettings/search/n;->apu:Ljava/lang/String;
 
     .line 1012
     invoke-interface {v2, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -208,8 +208,8 @@
     invoke-direct {v1, p1}, Lcom/android/internal/widget/LockPatternUtils;-><init>(Landroid/content/Context;)V
 
     .line 1017
-    # getter for: Lcom/android/settings/SecuritySettings;->mE:I
-    invoke-static {}, Lcom/android/settings/SecuritySettings;->access$000()I
+    # getter for: Lcom/android/vendorsettings/SecuritySettings;->mE:I
+    invoke-static {}, Lcom/android/vendorsettings/SecuritySettings;->access$000()I
 
     move-result v0
 
@@ -232,7 +232,7 @@
 
     check-cast v0, Landroid/app/admin/DevicePolicyManager;
 
-    invoke-static {v4, v1, v0}, Lcom/android/settings/SecuritySettings;->b(Landroid/content/pm/PackageManager;Lcom/android/internal/widget/LockPatternUtils;Landroid/app/admin/DevicePolicyManager;)Ljava/util/ArrayList;
+    invoke-static {v4, v1, v0}, Lcom/android/vendorsettings/SecuritySettings;->b(Landroid/content/pm/PackageManager;Lcom/android/internal/widget/LockPatternUtils;Landroid/app/admin/DevicePolicyManager;)Ljava/util/ArrayList;
 
     move-result-object v4
 
@@ -253,20 +253,20 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/ic;
+    check-cast v0, Lcom/android/vendorsettings/ic;
 
     .line 1023
-    new-instance v5, Lcom/android/settings/search/n;
+    new-instance v5, Lcom/android/vendorsettings/search/n;
 
-    invoke-direct {v5, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v5, p1}, Lcom/android/vendorsettings/search/n;-><init>(Landroid/content/Context;)V
 
     .line 1024
-    iget-object v0, v0, Lcom/android/settings/ic;->title:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/vendorsettings/ic;->title:Ljava/lang/String;
 
-    iput-object v0, v5, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v0, v5, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
     .line 1025
-    iput-object v3, v5, Lcom/android/settings/search/n;->apu:Ljava/lang/String;
+    iput-object v3, v5, Lcom/android/vendorsettings/search/n;->apu:Ljava/lang/String;
 
     .line 1026
     invoke-interface {v2, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -310,7 +310,7 @@
     invoke-direct {v0, p1}, Lcom/android/internal/widget/LockPatternUtils;-><init>(Landroid/content/Context;)V
 
     .line 933
-    invoke-static {p1, v0}, Lcom/android/settings/SecuritySettings;->b(Landroid/content/Context;Lcom/android/internal/widget/LockPatternUtils;)I
+    invoke-static {p1, v0}, Lcom/android/vendorsettings/SecuritySettings;->b(Landroid/content/Context;Lcom/android/internal/widget/LockPatternUtils;)I
 
     move-result v1
 
@@ -326,7 +326,7 @@
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 939
-    iget-boolean v0, p0, Lcom/android/settings/hi;->vW:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/hi;->vW:Z
 
     if-eqz v0, :cond_0
 
@@ -415,7 +415,7 @@
     invoke-direct {v2, p1}, Lcom/android/internal/widget/LockPatternUtils;-><init>(Landroid/content/Context;)V
 
     .line 1038
-    invoke-static {p1, v2}, Lcom/android/settings/SecuritySettings;->b(Landroid/content/Context;Lcom/android/internal/widget/LockPatternUtils;)I
+    invoke-static {p1, v2}, Lcom/android/vendorsettings/SecuritySettings;->b(Landroid/content/Context;Lcom/android/internal/widget/LockPatternUtils;)I
 
     .line 1041
     invoke-static {}, Landroid/telephony/TelephonyManager;->getDefault()Landroid/telephony/TelephonyManager;
@@ -423,7 +423,7 @@
     move-result-object v0
 
     .line 1042
-    iget-boolean v3, p0, Lcom/android/settings/hi;->vW:Z
+    iget-boolean v3, p0, Lcom/android/vendorsettings/hi;->vW:Z
 
     if-eqz v3, :cond_0
 
@@ -465,8 +465,8 @@
 
     .line 1052
     :cond_2
-    # getter for: Lcom/android/settings/SecuritySettings;->mE:I
-    invoke-static {}, Lcom/android/settings/SecuritySettings;->access$000()I
+    # getter for: Lcom/android/vendorsettings/SecuritySettings;->mE:I
+    invoke-static {}, Lcom/android/vendorsettings/SecuritySettings;->access$000()I
 
     move-result v0
 

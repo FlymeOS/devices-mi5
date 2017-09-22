@@ -1,4 +1,4 @@
-.class Lcom/android/settings/display/n;
+.class Lcom/android/vendorsettings/display/n;
 .super Ljava/lang/Object;
 .source "ForceTouchGuideActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Yr:Lcom/android/settings/display/ForceTouchGuideActivity;
+.field final synthetic Yr:Lcom/android/vendorsettings/display/ForceTouchGuideActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/display/ForceTouchGuideActivity;)V
+.method constructor <init>(Lcom/android/vendorsettings/display/ForceTouchGuideActivity;)V
     .locals 0
 
     .prologue
     .line 59
-    iput-object p1, p0, Lcom/android/settings/display/n;->Yr:Lcom/android/settings/display/ForceTouchGuideActivity;
+    iput-object p1, p0, Lcom/android/vendorsettings/display/n;->Yr:Lcom/android/vendorsettings/display/ForceTouchGuideActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/android/settings/display/n;->Yr:Lcom/android/settings/display/ForceTouchGuideActivity;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/n;->Yr:Lcom/android/vendorsettings/display/ForceTouchGuideActivity;
 
-    invoke-static {v0}, Lcom/android/settings/display/ForceTouchGuideActivity;->a(Lcom/android/settings/display/ForceTouchGuideActivity;)Landroid/widget/VideoView;
+    invoke-static {v0}, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->a(Lcom/android/vendorsettings/display/ForceTouchGuideActivity;)Landroid/widget/VideoView;
 
     move-result-object v0
 

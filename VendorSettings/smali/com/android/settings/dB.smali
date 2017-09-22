@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dB;
+.class public Lcom/android/vendorsettings/dB;
 .super Ljava/lang/Object;
 .source "KeyguardSettingsCompatHelper.java"
 
@@ -37,7 +37,7 @@
 
     .prologue
     .line 174
-    invoke-static {p0}, Lcom/android/settings/fy;->c(Landroid/app/Fragment;)V
+    invoke-static {p0}, Lcom/android/vendorsettings/fy;->c(Landroid/app/Fragment;)V
 
     .line 175
     return-void
@@ -117,25 +117,25 @@
     return-void
 .end method
 
-.method public static a(Lcom/android/settings/LockPatternView;I)V
+.method public static a(Lcom/android/vendorsettings/LockPatternView;I)V
     .locals 0
 
     .prologue
     .line 219
-    invoke-virtual {p0, p1}, Lcom/android/settings/LockPatternView;->P(I)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/LockPatternView;->P(I)V
 
     .line 220
     return-void
 .end method
 
-.method public static a(Ljava/lang/String;Lcom/android/settings/cZ;)V
+.method public static a(Ljava/lang/String;Lcom/android/vendorsettings/cZ;)V
     .locals 1
 
     .prologue
     .line 223
     const/4 v0, 0x0
 
-    invoke-virtual {p1, p0, v0}, Lcom/android/settings/cZ;->a(Ljava/lang/String;Lcom/android/settings/de;)V
+    invoke-virtual {p1, p0, v0}, Lcom/android/vendorsettings/cZ;->a(Ljava/lang/String;Lcom/android/vendorsettings/de;)V
 
     .line 224
     return-void
@@ -239,7 +239,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Lcom/android/settings/SettingsPreferenceFragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+.method public static a(Lcom/android/vendorsettings/SettingsPreferenceFragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
     .locals 6
 
     .prologue
@@ -256,7 +256,7 @@
 
     move-object v5, p3
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/SettingsPreferenceFragment;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
 
     move-result v0
 
@@ -366,7 +366,7 @@
 
     .prologue
     .line 178
-    invoke-static {p0}, Lcom/android/settings/fy;->d(Landroid/app/Fragment;)V
+    invoke-static {p0}, Lcom/android/vendorsettings/fy;->d(Landroid/app/Fragment;)V
 
     .line 179
     return-void
@@ -657,7 +657,7 @@
 
     .prologue
     .line 227
-    invoke-static {p0}, Lcom/android/settings/iC;->v(Landroid/content/Context;)I
+    invoke-static {p0}, Lcom/android/vendorsettings/iC;->v(Landroid/content/Context;)I
 
     move-result v0
 

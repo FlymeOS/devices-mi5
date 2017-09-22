@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/bluetooth/BluetoothSettings$4;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/vendorsettings/bluetooth/BluetoothSettings$4;
+.super Lcom/android/vendorsettings/search/a;
 .source "BluetoothSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 576
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/search/a;-><init>()V
 
     return-void
 .end method
@@ -33,29 +33,29 @@
     move-result-object v2
 
     .line 585
-    new-instance v0, Lcom/android/settings/search/n;
+    new-instance v0, Lcom/android/vendorsettings/search/n;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/android/vendorsettings/search/n;-><init>(Landroid/content/Context;)V
 
     .line 586
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    iput-object v3, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v3, v0, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
     .line 587
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    iput-object v3, v0, Lcom/android/settings/search/n;->apu:Ljava/lang/String;
+    iput-object v3, v0, Lcom/android/vendorsettings/search/n;->apu:Ljava/lang/String;
 
     .line 588
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 591
-    invoke-static {p1}, Lcom/android/settings/bluetooth/Utils;->ax(Landroid/content/Context;)Lcom/android/b/b/R;
+    invoke-static {p1}, Lcom/android/vendorsettings/bluetooth/Utils;->ax(Landroid/content/Context;)Lcom/android/b/b/R;
 
     move-result-object v0
 
@@ -90,26 +90,26 @@
     check-cast v0, Landroid/bluetooth/BluetoothDevice;
 
     .line 599
-    new-instance v4, Lcom/android/settings/search/n;
+    new-instance v4, Lcom/android/vendorsettings/search/n;
 
-    invoke-direct {v4, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v4, p1}, Lcom/android/vendorsettings/search/n;-><init>(Landroid/content/Context;)V
 
     .line 600
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothDevice;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v4, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v0, v4, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
     .line 601
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v4, Lcom/android/settings/search/n;->apu:Ljava/lang/String;
+    iput-object v0, v4, Lcom/android/vendorsettings/search/n;->apu:Ljava/lang/String;
 
     .line 602
-    iput-boolean p2, v4, Lcom/android/settings/search/n;->enabled:Z
+    iput-boolean p2, v4, Lcom/android/vendorsettings/search/n;->enabled:Z
 
     .line 603
     invoke-interface {v1, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z

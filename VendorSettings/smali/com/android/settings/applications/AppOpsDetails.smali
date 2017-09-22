@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/AppOpsDetails;
-.super Lcom/android/settings/InstrumentedFragment;
+.class public Lcom/android/vendorsettings/applications/AppOpsDetails;
+.super Lcom/android/vendorsettings/InstrumentedFragment;
 .source "AppOpsDetails.java"
 
 
@@ -8,7 +8,7 @@
 
 .field private Fj:Landroid/content/pm/PackageInfo;
 
-.field private Fv:Lcom/android/settings/applications/AppOpsState;
+.field private Fv:Lcom/android/vendorsettings/applications/AppOpsState;
 
 .field private i:Landroid/content/pm/PackageManager;
 
@@ -25,17 +25,17 @@
 
     .prologue
     .line 50
-    invoke-direct {p0}, Lcom/android/settings/InstrumentedFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/InstrumentedFragment;-><init>()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/AppOpsDetails;)Landroid/app/AppOpsManager;
+.method static synthetic a(Lcom/android/vendorsettings/applications/AppOpsDetails;)Landroid/app/AppOpsManager;
     .locals 1
 
     .prologue
     .line 50
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsDetails;->mAppOps:Landroid/app/AppOpsManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->mAppOps:Landroid/app/AppOpsManager;
 
     return-object v0
 .end method
@@ -45,7 +45,7 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsDetails;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->mRootView:Landroid/view/View;
 
     const v1, 0x7f13001f
 
@@ -54,7 +54,7 @@
     move-result-object v1
 
     .line 66
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsDetails;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->i:Landroid/content/pm/PackageManager;
 
     iget-object v2, p1, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -63,7 +63,7 @@
     move-result-object v2
 
     .line 67
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsDetails;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->i:Landroid/content/pm/PackageManager;
 
     iget-object v3, p1, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -77,7 +77,7 @@
     iget-object v0, p1, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
 
     :goto_0
-    invoke-static {v1, v2, v3, v0}, Lcom/android/settings/applications/InstalledAppDetails;->a(Landroid/view/View;Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;)V
+    invoke-static {v1, v2, v3, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->a(Landroid/view/View;Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;)V
 
     .line 70
     return-void
@@ -104,16 +104,16 @@
     invoke-virtual {v1, v0, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 153
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppOpsDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hn;
+    check-cast v0, Lcom/android/vendorsettings/hn;
 
     .line 154
     const/4 v2, -0x1
 
-    invoke-virtual {v0, p0, v2, v1}, Lcom/android/settings/hn;->finishPreferencePanel(Landroid/app/Fragment;ILandroid/content/Intent;)V
+    invoke-virtual {v0, p0, v2, v1}, Lcom/android/vendorsettings/hn;->finishPreferencePanel(Landroid/app/Fragment;ILandroid/content/Intent;)V
 
     .line 155
     return-void
@@ -126,7 +126,7 @@
     const/4 v2, 0x0
 
     .line 73
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsDetails;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppOpsDetails;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -146,7 +146,7 @@
     .line 76
     if-nez v0, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppOpsDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -172,7 +172,7 @@
     .line 83
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsDetails;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->i:Landroid/content/pm/PackageManager;
 
     const/16 v3, 0x2200
 
@@ -180,7 +180,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppOpsDetails;->Fj:Landroid/content/pm/PackageInfo;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->Fj:Landroid/content/pm/PackageInfo;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -234,7 +234,7 @@
     invoke-static {v3, v4, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     .line 88
-    iput-object v2, p0, Lcom/android/settings/applications/AppOpsDetails;->Fj:Landroid/content/pm/PackageInfo;
+    iput-object v2, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->Fj:Landroid/content/pm/PackageInfo;
 
     goto :goto_2
 .end method
@@ -248,7 +248,7 @@
     const/4 v5, 0x0
 
     .line 95
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsDetails;->Fj:Landroid/content/pm/PackageInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->Fj:Landroid/content/pm/PackageInfo;
 
     if-nez v0, :cond_0
 
@@ -258,12 +258,12 @@
 
     .line 99
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsDetails;->Fj:Landroid/content/pm/PackageInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->Fj:Landroid/content/pm/PackageInfo;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/applications/AppOpsDetails;->b(Landroid/content/pm/PackageInfo;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/applications/AppOpsDetails;->b(Landroid/content/pm/PackageInfo;)V
 
     .line 101
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppOpsDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -272,7 +272,7 @@
     move-result-object v7
 
     .line 103
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsDetails;->FD:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->FD:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->removeAllViews()V
 
@@ -280,7 +280,7 @@
     const-string v2, ""
 
     .line 105
-    sget-object v8, Lcom/android/settings/applications/AppOpsState;->FO:[Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sget-object v8, Lcom/android/vendorsettings/applications/AppOpsState;->FO:[Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     array-length v9, v8
 
@@ -292,19 +292,19 @@
     aget-object v0, v8, v6
 
     .line 106
-    iget-object v1, p0, Lcom/android/settings/applications/AppOpsDetails;->Fv:Lcom/android/settings/applications/AppOpsState;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->Fv:Lcom/android/vendorsettings/applications/AppOpsState;
 
-    iget-object v3, p0, Lcom/android/settings/applications/AppOpsDetails;->Fj:Landroid/content/pm/PackageInfo;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->Fj:Landroid/content/pm/PackageInfo;
 
     iget-object v3, v3, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
     iget v3, v3, Landroid/content/pm/ApplicationInfo;->uid:I
 
-    iget-object v10, p0, Lcom/android/settings/applications/AppOpsDetails;->Fj:Landroid/content/pm/PackageInfo;
+    iget-object v10, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->Fj:Landroid/content/pm/PackageInfo;
 
     iget-object v10, v10, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
 
-    invoke-virtual {v1, v0, v3, v10}, Lcom/android/settings/applications/AppOpsState;->a(Lcom/android/settings/applications/AppOpsState$OpsTemplate;ILjava/lang/String;)Ljava/util/List;
+    invoke-virtual {v1, v0, v3, v10}, Lcom/android/vendorsettings/applications/AppOpsState;->a(Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;ILjava/lang/String;)Ljava/util/List;
 
     move-result-object v0
 
@@ -326,26 +326,26 @@
 
     move-object v1, v0
 
-    check-cast v1, Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+    check-cast v1, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;
 
     .line 109
-    invoke-virtual {v1, v5}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->aC(I)Landroid/app/AppOpsManager$OpEntry;
+    invoke-virtual {v1, v5}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->aC(I)Landroid/app/AppOpsManager$OpEntry;
 
     move-result-object v3
 
     .line 110
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsDetails;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->mInflater:Landroid/view/LayoutInflater;
 
     const v11, 0x7f040010
 
-    iget-object v12, p0, Lcom/android/settings/applications/AppOpsDetails;->FD:Landroid/widget/LinearLayout;
+    iget-object v12, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->FD:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v11, v12, v5}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object v11
 
     .line 112
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsDetails;->FD:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->FD:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v11}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
@@ -363,7 +363,7 @@
 
     .line 116
     :try_start_0
-    iget-object v12, p0, Lcom/android/settings/applications/AppOpsDetails;->i:Landroid/content/pm/PackageManager;
+    iget-object v12, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->i:Landroid/content/pm/PackageManager;
 
     const/4 v13, 0x0
 
@@ -388,7 +388,7 @@
     iget-object v2, v0, Landroid/content/pm/PermissionInfo;->group:Ljava/lang/String;
 
     .line 119
-    iget-object v12, p0, Lcom/android/settings/applications/AppOpsDetails;->i:Landroid/content/pm/PackageManager;
+    iget-object v12, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->i:Landroid/content/pm/PackageManager;
 
     iget-object v0, v0, Landroid/content/pm/PermissionInfo;->group:Ljava/lang/String;
 
@@ -412,7 +412,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iget-object v13, p0, Lcom/android/settings/applications/AppOpsDetails;->i:Landroid/content/pm/PackageManager;
+    iget-object v13, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->i:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v12, v13}, Landroid/content/pm/PermissionGroupInfo;->loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
 
@@ -438,9 +438,9 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iget-object v12, p0, Lcom/android/settings/applications/AppOpsDetails;->Fv:Lcom/android/settings/applications/AppOpsState;
+    iget-object v12, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->Fv:Lcom/android/vendorsettings/applications/AppOpsState;
 
-    invoke-virtual {v1, v12}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->b(Lcom/android/settings/applications/AppOpsState;)Ljava/lang/CharSequence;
+    invoke-virtual {v1, v12}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->b(Lcom/android/vendorsettings/applications/AppOpsState;)Ljava/lang/CharSequence;
 
     move-result-object v12
 
@@ -455,7 +455,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    invoke-virtual {v1, v7, v4}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->a(Landroid/content/res/Resources;Z)Ljava/lang/CharSequence;
+    invoke-virtual {v1, v7, v4}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->a(Landroid/content/res/Resources;Z)Ljava/lang/CharSequence;
 
     move-result-object v12
 
@@ -480,9 +480,9 @@
     move-result v11
 
     .line 134
-    iget-object v3, p0, Lcom/android/settings/applications/AppOpsDetails;->mAppOps:Landroid/app/AppOpsManager;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->mAppOps:Landroid/app/AppOpsManager;
 
-    invoke-virtual {v1}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->jL()Landroid/app/AppOpsManager$PackageOps;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->jL()Landroid/app/AppOpsManager$PackageOps;
 
     move-result-object v12
 
@@ -490,7 +490,7 @@
 
     move-result v12
 
-    invoke-virtual {v1}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->jL()Landroid/app/AppOpsManager$PackageOps;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->jL()Landroid/app/AppOpsManager$PackageOps;
 
     move-result-object v13
 
@@ -510,9 +510,9 @@
     invoke-virtual {v0, v3}, Landroid/widget/Switch;->setChecked(Z)V
 
     .line 136
-    new-instance v3, Lcom/android/settings/applications/AppOpsDetails$1;
+    new-instance v3, Lcom/android/vendorsettings/applications/AppOpsDetails$1;
 
-    invoke-direct {v3, p0, v11, v1}, Lcom/android/settings/applications/AppOpsDetails$1;-><init>(Lcom/android/settings/applications/AppOpsDetails;ILcom/android/settings/applications/AppOpsState$AppOpEntry;)V
+    invoke-direct {v3, p0, v11, v1}, Lcom/android/vendorsettings/applications/AppOpsDetails$1;-><init>(Lcom/android/vendorsettings/applications/AppOpsDetails;ILcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;)V
 
     invoke-virtual {v0, v3}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
@@ -556,21 +556,21 @@
 
     .prologue
     .line 160
-    invoke-super {p0, p1}, Lcom/android/settings/InstrumentedFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/InstrumentedFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 162
-    new-instance v0, Lcom/android/settings/applications/AppOpsState;
+    new-instance v0, Lcom/android/vendorsettings/applications/AppOpsState;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppOpsDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/applications/AppOpsState;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/applications/AppOpsState;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppOpsDetails;->Fv:Lcom/android/settings/applications/AppOpsState;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->Fv:Lcom/android/vendorsettings/applications/AppOpsState;
 
     .line 163
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppOpsDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -578,10 +578,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppOpsDetails;->i:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->i:Landroid/content/pm/PackageManager;
 
     .line 164
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppOpsDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -593,10 +593,10 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppOpsDetails;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->mInflater:Landroid/view/LayoutInflater;
 
     .line 165
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppOpsDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppOpsDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -608,15 +608,15 @@
 
     check-cast v0, Landroid/app/AppOpsManager;
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppOpsDetails;->mAppOps:Landroid/app/AppOpsManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->mAppOps:Landroid/app/AppOpsManager;
 
     .line 167
-    invoke-direct {p0}, Lcom/android/settings/applications/AppOpsDetails;->jE()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/AppOpsDetails;->jE()Ljava/lang/String;
 
     .line 169
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppOpsDetails;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/AppOpsDetails;->setHasOptionsMenu(Z)V
 
     .line 170
     return-void
@@ -636,10 +636,10 @@
     move-result-object v1
 
     .line 176
-    invoke-static {p2, v1, v1, v2}, Lcom/android/settings/iC;->a(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/View;Z)V
+    invoke-static {p2, v1, v1, v2}, Lcom/android/vendorsettings/iC;->a(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/View;Z)V
 
     .line 178
-    iput-object v1, p0, Lcom/android/settings/applications/AppOpsDetails;->mRootView:Landroid/view/View;
+    iput-object v1, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->mRootView:Landroid/view/View;
 
     .line 179
     const v0, 0x7f130020
@@ -650,7 +650,7 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppOpsDetails;->FD:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails;->FD:Landroid/widget/LinearLayout;
 
     .line 180
     return-object v1
@@ -663,17 +663,17 @@
     const/4 v1, 0x1
 
     .line 190
-    invoke-super {p0}, Lcom/android/settings/InstrumentedFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/InstrumentedFragment;->onResume()V
 
     .line 191
-    invoke-direct {p0}, Lcom/android/settings/applications/AppOpsDetails;->jF()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/AppOpsDetails;->jF()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 192
-    invoke-direct {p0, v1, v1}, Lcom/android/settings/applications/AppOpsDetails;->c(ZZ)V
+    invoke-direct {p0, v1, v1}, Lcom/android/vendorsettings/applications/AppOpsDetails;->c(ZZ)V
 
     .line 194
     :cond_0

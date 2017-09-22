@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/hH;
+.class public Lcom/android/vendorsettings/hH;
 .super Ljava/lang/Object;
 .source "SetupWizardUtils.java"
 

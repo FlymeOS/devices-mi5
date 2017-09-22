@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fF;
+.class Lcom/android/vendorsettings/fF;
 .super Ljava/lang/Object;
 .source "MonitoringCertInfoActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic uM:Lcom/android/settings/MonitoringCertInfoActivity;
+.field final synthetic uM:Lcom/android/vendorsettings/MonitoringCertInfoActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MonitoringCertInfoActivity;)V
+.method constructor <init>(Lcom/android/vendorsettings/MonitoringCertInfoActivity;)V
     .locals 0
 
     .prologue
     .line 73
-    iput-object p1, p0, Lcom/android/settings/fF;->uM:Lcom/android/settings/MonitoringCertInfoActivity;
+    iput-object p1, p0, Lcom/android/vendorsettings/fF;->uM:Lcom/android/vendorsettings/MonitoringCertInfoActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/android/settings/fF;->uM:Lcom/android/settings/MonitoringCertInfoActivity;
+    iget-object v0, p0, Lcom/android/vendorsettings/fF;->uM:Lcom/android/vendorsettings/MonitoringCertInfoActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/MonitoringCertInfoActivity;->finish()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/MonitoringCertInfoActivity;->finish()V
 
     .line 76
     return-void

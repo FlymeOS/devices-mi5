@@ -1,4 +1,4 @@
-.class Lcom/android/settings/display/M;
+.class Lcom/android/vendorsettings/display/M;
 .super Ljava/lang/Object;
 .source "ScreenTimeoutDialogActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ZU:Lcom/android/settings/display/ScreenTimeoutDialogActivity;
+.field final synthetic ZU:Lcom/android/vendorsettings/display/ScreenTimeoutDialogActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/display/ScreenTimeoutDialogActivity;)V
+.method constructor <init>(Lcom/android/vendorsettings/display/ScreenTimeoutDialogActivity;)V
     .locals 0
 
     .prologue
     .line 76
-    iput-object p1, p0, Lcom/android/settings/display/M;->ZU:Lcom/android/settings/display/ScreenTimeoutDialogActivity;
+    iput-object p1, p0, Lcom/android/vendorsettings/display/M;->ZU:Lcom/android/vendorsettings/display/ScreenTimeoutDialogActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/android/settings/display/M;->ZU:Lcom/android/settings/display/ScreenTimeoutDialogActivity;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/M;->ZU:Lcom/android/vendorsettings/display/ScreenTimeoutDialogActivity;
 
-    invoke-static {v0}, Lcom/android/settings/display/ScreenTimeoutDialogActivity;->a(Lcom/android/settings/display/ScreenTimeoutDialogActivity;)[Ljava/lang/CharSequence;
+    invoke-static {v0}, Lcom/android/vendorsettings/display/ScreenTimeoutDialogActivity;->a(Lcom/android/vendorsettings/display/ScreenTimeoutDialogActivity;)[Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -43,9 +43,9 @@
     if-ltz p2, :cond_0
 
     .line 79
-    iget-object v0, p0, Lcom/android/settings/display/M;->ZU:Lcom/android/settings/display/ScreenTimeoutDialogActivity;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/M;->ZU:Lcom/android/vendorsettings/display/ScreenTimeoutDialogActivity;
 
-    invoke-static {v0}, Lcom/android/settings/display/ScreenTimeoutDialogActivity;->a(Lcom/android/settings/display/ScreenTimeoutDialogActivity;)[Ljava/lang/CharSequence;
+    invoke-static {v0}, Lcom/android/vendorsettings/display/ScreenTimeoutDialogActivity;->a(Lcom/android/vendorsettings/display/ScreenTimeoutDialogActivity;)[Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -61,9 +61,9 @@
 
     .line 81
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/display/M;->ZU:Lcom/android/settings/display/ScreenTimeoutDialogActivity;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/M;->ZU:Lcom/android/vendorsettings/display/ScreenTimeoutDialogActivity;
 
-    invoke-virtual {v1}, Lcom/android/settings/display/ScreenTimeoutDialogActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/display/ScreenTimeoutDialogActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -79,9 +79,9 @@
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
     .line 87
-    iget-object v0, p0, Lcom/android/settings/display/M;->ZU:Lcom/android/settings/display/ScreenTimeoutDialogActivity;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/M;->ZU:Lcom/android/vendorsettings/display/ScreenTimeoutDialogActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/display/ScreenTimeoutDialogActivity;->finish()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/display/ScreenTimeoutDialogActivity;->finish()V
 
     .line 88
     return-void

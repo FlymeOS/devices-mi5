@@ -1,19 +1,19 @@
-.class Lcom/android/settings/nfc/PaymentBackend$1;
+.class Lcom/android/vendorsettings/nfc/PaymentBackend$1;
 .super Landroid/os/Handler;
 .source "PaymentBackend.java"
 
 
 # instance fields
-.field final synthetic aiw:Lcom/android/settings/nfc/PaymentBackend;
+.field final synthetic aiw:Lcom/android/vendorsettings/nfc/PaymentBackend;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/nfc/PaymentBackend;)V
+.method constructor <init>(Lcom/android/vendorsettings/nfc/PaymentBackend;)V
     .locals 0
 
     .prologue
     .line 187
-    iput-object p1, p0, Lcom/android/settings/nfc/PaymentBackend$1;->aiw:Lcom/android/settings/nfc/PaymentBackend;
+    iput-object p1, p0, Lcom/android/vendorsettings/nfc/PaymentBackend$1;->aiw:Lcom/android/vendorsettings/nfc/PaymentBackend;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/android/settings/nfc/PaymentBackend$1;->aiw:Lcom/android/settings/nfc/PaymentBackend;
+    iget-object v0, p0, Lcom/android/vendorsettings/nfc/PaymentBackend$1;->aiw:Lcom/android/vendorsettings/nfc/PaymentBackend;
 
-    invoke-virtual {v0}, Lcom/android/settings/nfc/PaymentBackend;->refresh()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/nfc/PaymentBackend;->refresh()V
 
     .line 191
     return-void

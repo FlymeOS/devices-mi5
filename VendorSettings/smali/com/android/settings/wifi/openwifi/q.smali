@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/wifi/openwifi/q;
-.super Lcom/android/settings/wifi/openwifi/p;
+.class public Lcom/android/vendorsettings/wifi/openwifi/q;
+.super Lcom/android/vendorsettings/wifi/openwifi/p;
 .source "WiWidePortalController.java"
 
 
@@ -21,10 +21,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/wifi/openwifi/q;->aFY:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/vendorsettings/wifi/openwifi/q;->aFY:Ljava/util/HashMap;
 
     .line 20
-    sget-object v0, Lcom/android/settings/wifi/openwifi/q;->aFY:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/wifi/openwifi/q;->aFY:Ljava/util/HashMap;
 
     const-string v1, "airport-free-wifi"
 
@@ -33,7 +33,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 22
-    sget-object v0, Lcom/android/settings/wifi/openwifi/q;->aFY:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/wifi/openwifi/q;->aFY:Ljava/util/HashMap;
 
     const-string v1, "free-airport-wifi"
 
@@ -42,7 +42,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 24
-    sget-object v0, Lcom/android/settings/wifi/openwifi/q;->aFY:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/wifi/openwifi/q;->aFY:Ljava/util/HashMap;
 
     const-string v1, "airport-freewifi-hq"
 
@@ -51,7 +51,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 25
-    sget-object v0, Lcom/android/settings/wifi/openwifi/q;->aFY:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/wifi/openwifi/q;->aFY:Ljava/util/HashMap;
 
     const-string v1, "airport-vipwifi-hq"
 
@@ -68,7 +68,7 @@
 
     .prologue
     .line 43
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/wifi/openwifi/p;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/vendorsettings/wifi/openwifi/p;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 44
     return-void
@@ -93,7 +93,7 @@
     return v0
 
     :cond_0
-    sget-object v0, Lcom/android/settings/wifi/openwifi/q;->aFY:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/wifi/openwifi/q;->aFY:Ljava/util/HashMap;
 
     invoke-virtual {p0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -125,7 +125,7 @@
     return-object v0
 
     :cond_0
-    sget-object v0, Lcom/android/settings/wifi/openwifi/q;->aFY:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/wifi/openwifi/q;->aFY:Ljava/util/HashMap;
 
     invoke-virtual {p0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -154,11 +154,11 @@
     const/4 v3, 0x0
 
     .line 56
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/q;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/openwifi/q;->mContext:Landroid/content/Context;
 
     const-string v4, "http://clients3.google.com/generate_204"
 
-    invoke-static {v0, v4}, Lcom/android/settings/wifi/j;->A(Landroid/content/Context;Ljava/lang/String;)Ljava/net/URL;
+    invoke-static {v0, v4}, Lcom/android/vendorsettings/wifi/j;->A(Landroid/content/Context;Ljava/lang/String;)Ljava/net/URL;
 
     move-result-object v0
 
@@ -277,7 +277,7 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/wifi/openwifi/q;->aFX:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/vendorsettings/wifi/openwifi/q;->aFX:Ljava/lang/String;
 
     .line 83
     const-string v3, "WiWideController"
@@ -292,7 +292,7 @@
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/android/settings/wifi/openwifi/q;->aFX:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/vendorsettings/wifi/openwifi/q;->aFX:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -306,23 +306,23 @@
 
     .line 85
     :cond_3
-    iget-object v3, p0, Lcom/android/settings/wifi/openwifi/q;->aFO:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/wifi/openwifi/q;->aFO:Ljava/lang/String;
 
-    invoke-static {v3}, Lcom/android/settings/wifi/openwifi/q;->cp(Ljava/lang/String;)Z
+    invoke-static {v3}, Lcom/android/vendorsettings/wifi/openwifi/q;->cp(Ljava/lang/String;)Z
 
     move-result v3
 
     if-eqz v3, :cond_5
 
     .line 86
-    iget-object v3, p0, Lcom/android/settings/wifi/openwifi/q;->aFO:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/wifi/openwifi/q;->aFO:Ljava/lang/String;
 
-    invoke-static {v3}, Lcom/android/settings/wifi/openwifi/q;->cq(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/android/vendorsettings/wifi/openwifi/q;->cq(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     .line 87
-    iget-object v4, p0, Lcom/android/settings/wifi/openwifi/q;->aFX:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/vendorsettings/wifi/openwifi/q;->aFX:Ljava/lang/String;
 
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -336,7 +336,7 @@
 
     if-nez v4, :cond_5
 
-    iget-object v4, p0, Lcom/android/settings/wifi/openwifi/q;->aFX:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/vendorsettings/wifi/openwifi/q;->aFX:Ljava/lang/String;
 
     invoke-virtual {v4, v3}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
     :try_end_2

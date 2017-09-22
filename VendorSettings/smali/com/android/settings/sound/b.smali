@@ -1,3 +1,3 @@
-.class synthetic Lcom/android/settings/sound/b;
+.class synthetic Lcom/android/vendorsettings/sound/b;
 .super Ljava/lang/Object;
 .source "AsyncMediaPlayer.java"

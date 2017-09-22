@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/wifi/av;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/vendorsettings/wifi/av;
+.super Lcom/android/vendorsettings/search/a;
 .source "WifiSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 1004
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/search/a;-><init>()V
 
     return-void
 .end method
@@ -35,23 +35,23 @@
     move-result-object v2
 
     .line 1011
-    new-instance v0, Lcom/android/settings/search/n;
+    new-instance v0, Lcom/android/vendorsettings/search/n;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/android/vendorsettings/search/n;-><init>(Landroid/content/Context;)V
 
     .line 1012
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    iput-object v3, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v3, v0, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
     .line 1013
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    iput-object v3, v0, Lcom/android/settings/search/n;->apu:Ljava/lang/String;
+    iput-object v3, v0, Lcom/android/vendorsettings/search/n;->apu:Ljava/lang/String;
 
     .line 1014
     const v3, 0x7f0c0a19
@@ -60,7 +60,7 @@
 
     move-result-object v3
 
-    iput-object v3, v0, Lcom/android/settings/search/n;->apt:Ljava/lang/String;
+    iput-object v3, v0, Lcom/android/vendorsettings/search/n;->apt:Ljava/lang/String;
 
     .line 1015
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -91,26 +91,26 @@
     check-cast v0, Lcom/android/b/e/a;
 
     .line 1021
-    new-instance v4, Lcom/android/settings/search/n;
+    new-instance v4, Lcom/android/vendorsettings/search/n;
 
-    invoke-direct {v4, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v4, p1}, Lcom/android/vendorsettings/search/n;-><init>(Landroid/content/Context;)V
 
     .line 1022
     invoke-virtual {v0}, Lcom/android/b/e/a;->AB()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v4, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v0, v4, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
     .line 1023
     invoke-virtual {v2, v5}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, v4, Lcom/android/settings/search/n;->apu:Ljava/lang/String;
+    iput-object v0, v4, Lcom/android/vendorsettings/search/n;->apu:Ljava/lang/String;
 
     .line 1024
-    iput-boolean p2, v4, Lcom/android/settings/search/n;->enabled:Z
+    iput-boolean p2, v4, Lcom/android/vendorsettings/search/n;->enabled:Z
 
     .line 1025
     invoke-interface {v1, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z

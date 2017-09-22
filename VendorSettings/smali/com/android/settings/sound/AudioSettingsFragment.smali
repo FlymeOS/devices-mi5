@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/sound/AudioSettingsFragment;
-.super Lcom/android/settings/BaseListFragment;
+.class public Lcom/android/vendorsettings/sound/AudioSettingsFragment;
+.super Lcom/android/vendorsettings/BaseListFragment;
 .source "AudioSettingsFragment.java"
 
 
@@ -8,15 +8,15 @@
 
 
 # instance fields
-.field private aqf:Lcom/android/settings/sound/x;
+.field private aqf:Lcom/android/vendorsettings/sound/x;
 
 .field private aqg:Z
 
 .field private aqh:Z
 
-.field private aqi:Lcom/android/settings/sound/k;
+.field private aqi:Lcom/android/vendorsettings/sound/k;
 
-.field private aqj:Lcom/android/settings/sound/BatchMediaPlayer;
+.field private aqj:Lcom/android/vendorsettings/sound/BatchMediaPlayer;
 
 .field private aqk:Landroid/os/AsyncTask;
 
@@ -57,7 +57,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/sound/AudioSettingsFragment;->aqe:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqe:Ljava/lang/String;
 
     return-void
 .end method
@@ -69,49 +69,49 @@
     const/4 v0, 0x0
 
     .line 36
-    invoke-direct {p0}, Lcom/android/settings/BaseListFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/BaseListFragment;-><init>()V
 
     .line 47
-    iput-boolean v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqg:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqg:Z
 
     .line 48
-    iput-boolean v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqh:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqh:Z
 
     .line 49
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->mRingtoneType:I
+    iput v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->mRingtoneType:I
 
     .line 134
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/sound/AudioSettingsFragment;Landroid/os/AsyncTask;)Landroid/os/AsyncTask;
+.method static synthetic a(Lcom/android/vendorsettings/sound/AudioSettingsFragment;Landroid/os/AsyncTask;)Landroid/os/AsyncTask;
     .locals 0
 
     .prologue
     .line 36
-    iput-object p1, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqk:Landroid/os/AsyncTask;
+    iput-object p1, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqk:Landroid/os/AsyncTask;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/sound/AudioSettingsFragment;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic a(Lcom/android/vendorsettings/sound/AudioSettingsFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
     .prologue
     .line 36
-    iput-object p1, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqm:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqm:Ljava/lang/String;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/sound/AudioSettingsFragment;)V
+.method static synthetic a(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 36
-    invoke-direct {p0}, Lcom/android/settings/sound/AudioSettingsFragment;->ui()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->ui()V
 
     return-void
 .end method
@@ -121,34 +121,34 @@
 
     .prologue
     .line 36
-    sget-object v0, Lcom/android/settings/sound/AudioSettingsFragment;->aqe:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqe:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/sound/AudioSettingsFragment;)I
+.method static synthetic b(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)I
     .locals 1
 
     .prologue
     .line 36
-    iget v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->mRingtoneType:I
+    iget v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->mRingtoneType:I
 
     return v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/sound/AudioSettingsFragment;Ljava/lang/String;)Lcom/android/settings/sound/n;
+.method static synthetic b(Lcom/android/vendorsettings/sound/AudioSettingsFragment;Ljava/lang/String;)Lcom/android/vendorsettings/sound/n;
     .locals 1
 
     .prologue
     .line 36
-    invoke-direct {p0, p1}, Lcom/android/settings/sound/AudioSettingsFragment;->bE(Ljava/lang/String;)Lcom/android/settings/sound/n;
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->bE(Ljava/lang/String;)Lcom/android/vendorsettings/sound/n;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method private bE(Ljava/lang/String;)Lcom/android/settings/sound/n;
+.method private bE(Ljava/lang/String;)Lcom/android/vendorsettings/sound/n;
     .locals 12
 
     .prologue
@@ -178,22 +178,22 @@
 
     .line 363
     :cond_0
-    new-instance v2, Lcom/android/settings/sound/n;
+    new-instance v2, Lcom/android/vendorsettings/sound/n;
 
-    invoke-direct {v2, p0, v1}, Lcom/android/settings/sound/n;-><init>(Lcom/android/settings/sound/AudioSettingsFragment;Lcom/android/settings/sound/e;)V
+    invoke-direct {v2, p0, v1}, Lcom/android/vendorsettings/sound/n;-><init>(Lcom/android/vendorsettings/sound/AudioSettingsFragment;Lcom/android/vendorsettings/sound/e;)V
 
     .line 364
-    iput-object p1, v2, Lcom/android/settings/sound/n;->path:Ljava/lang/String;
+    iput-object p1, v2, Lcom/android/vendorsettings/sound/n;->path:Ljava/lang/String;
 
     .line 365
     invoke-virtual {v0}, Ljava/io/File;->lastModified()J
 
     move-result-wide v4
 
-    iput-wide v4, v2, Lcom/android/settings/sound/n;->aqv:J
+    iput-wide v4, v2, Lcom/android/vendorsettings/sound/n;->aqv:J
 
     .line 366
-    invoke-static {p1}, Lcom/android/settings/sound/p;->getFileName(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/android/vendorsettings/sound/p;->getFileName(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -225,11 +225,11 @@
 
     move-result-object v0
 
-    iput-object v0, v2, Lcom/android/settings/sound/n;->name:Ljava/lang/String;
+    iput-object v0, v2, Lcom/android/vendorsettings/sound/n;->name:Ljava/lang/String;
 
     .line 375
     :goto_2
-    invoke-static {p1}, Lcom/android/settings/sound/p;->bH(Ljava/lang/String;)J
+    invoke-static {p1}, Lcom/android/vendorsettings/sound/p;->bH(Ljava/lang/String;)J
 
     move-result-wide v4
 
@@ -255,7 +255,7 @@
 
     .line 373
     :cond_2
-    iput-object v0, v2, Lcom/android/settings/sound/n;->name:Ljava/lang/String;
+    iput-object v0, v2, Lcom/android/vendorsettings/sound/n;->name:Ljava/lang/String;
 
     goto :goto_2
 
@@ -300,7 +300,7 @@
 
     move-result-object v0
 
-    iput-object v0, v2, Lcom/android/settings/sound/n;->aqu:Ljava/lang/String;
+    iput-object v0, v2, Lcom/android/vendorsettings/sound/n;->aqu:Ljava/lang/String;
 
     move-object v0, v2
 
@@ -308,104 +308,104 @@
     goto :goto_0
 .end method
 
-.method static synthetic c(Lcom/android/settings/sound/AudioSettingsFragment;)Z
+.method static synthetic c(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Z
     .locals 1
 
     .prologue
     .line 36
-    iget-boolean v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqg:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqg:Z
 
     return v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/sound/AudioSettingsFragment;)Z
+.method static synthetic d(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Z
     .locals 1
 
     .prologue
     .line 36
-    iget-boolean v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqh:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqh:Z
 
     return v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/sound/AudioSettingsFragment;)Landroid/media/AudioManager;
+.method static synthetic e(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Landroid/media/AudioManager;
     .locals 1
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->mAudioManager:Landroid/media/AudioManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->mAudioManager:Landroid/media/AudioManager;
 
     return-object v0
 .end method
 
-.method static synthetic f(Lcom/android/settings/sound/AudioSettingsFragment;)Ljava/lang/String;
+.method static synthetic f(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqm:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqm:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic g(Lcom/android/settings/sound/AudioSettingsFragment;)Lcom/android/settings/sound/BatchMediaPlayer;
+.method static synthetic g(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Lcom/android/vendorsettings/sound/BatchMediaPlayer;
     .locals 1
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqj:Lcom/android/settings/sound/BatchMediaPlayer;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqj:Lcom/android/vendorsettings/sound/BatchMediaPlayer;
 
     return-object v0
 .end method
 
-.method static synthetic h(Lcom/android/settings/sound/AudioSettingsFragment;)Ljava/util/Comparator;
+.method static synthetic h(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Ljava/util/Comparator;
     .locals 1
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aql:Ljava/util/Comparator;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aql:Ljava/util/Comparator;
 
     return-object v0
 .end method
 
-.method static synthetic i(Lcom/android/settings/sound/AudioSettingsFragment;)Z
+.method static synthetic i(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Z
     .locals 1
 
     .prologue
     .line 36
-    invoke-direct {p0}, Lcom/android/settings/sound/AudioSettingsFragment;->uj()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->uj()Z
 
     move-result v0
 
     return v0
 .end method
 
-.method static synthetic j(Lcom/android/settings/sound/AudioSettingsFragment;)Landroid/os/AsyncTask;
+.method static synthetic j(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Landroid/os/AsyncTask;
     .locals 1
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqk:Landroid/os/AsyncTask;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqk:Landroid/os/AsyncTask;
 
     return-object v0
 .end method
 
-.method static synthetic k(Lcom/android/settings/sound/AudioSettingsFragment;)Lcom/android/settings/sound/k;
+.method static synthetic k(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Lcom/android/vendorsettings/sound/k;
     .locals 1
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqi:Lcom/android/settings/sound/k;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqi:Lcom/android/vendorsettings/sound/k;
 
     return-object v0
 .end method
 
-.method static synthetic l(Lcom/android/settings/sound/AudioSettingsFragment;)Landroid/os/Handler;
+.method static synthetic l(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Landroid/os/Handler;
     .locals 1
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -415,15 +415,15 @@
 
     .prologue
     .line 385
-    new-instance v0, Lcom/android/settings/sound/h;
+    new-instance v0, Lcom/android/vendorsettings/sound/h;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/sound/h;-><init>(Lcom/android/settings/sound/AudioSettingsFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/sound/h;-><init>(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)V
 
     const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/sound/h;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/sound/h;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 420
     return-void
@@ -434,28 +434,28 @@
 
     .prologue
     .line 423
-    iget-object v1, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqf:Lcom/android/settings/sound/x;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqf:Lcom/android/vendorsettings/sound/x;
 
     monitor-enter v1
 
     .line 424
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqf:Lcom/android/settings/sound/x;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqf:Lcom/android/vendorsettings/sound/x;
 
-    sget-object v2, Lcom/android/settings/sound/AudioSettingsFragment;->aqe:Ljava/lang/String;
+    sget-object v2, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqe:Ljava/lang/String;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/sound/x;->bL(Ljava/lang/String;)Z
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/sound/x;->bL(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 425
-    iget-object v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqf:Lcom/android/settings/sound/x;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqf:Lcom/android/vendorsettings/sound/x;
 
-    sget-object v2, Lcom/android/settings/sound/AudioSettingsFragment;->aqe:Ljava/lang/String;
+    sget-object v2, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqe:Ljava/lang/String;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/sound/x;->bK(Ljava/lang/String;)Lcom/android/settings/sound/z;
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/sound/x;->bK(Ljava/lang/String;)Lcom/android/vendorsettings/sound/z;
 
     .line 426
     const/4 v0, 0x1
@@ -493,7 +493,7 @@
 
     .prologue
     .line 72
-    invoke-super {p0, p1}, Lcom/android/settings/BaseListFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/BaseListFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 74
     new-instance v0, Landroid/os/Handler;
@@ -504,17 +504,17 @@
 
     invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->mHandler:Landroid/os/Handler;
 
     .line 75
-    new-instance v0, Lcom/android/settings/sound/x;
+    new-instance v0, Lcom/android/vendorsettings/sound/x;
 
-    invoke-direct {v0}, Lcom/android/settings/sound/x;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/sound/x;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqf:Lcom/android/settings/sound/x;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqf:Lcom/android/vendorsettings/sound/x;
 
     .line 77
-    invoke-virtual {p0}, Lcom/android/settings/sound/AudioSettingsFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -524,82 +524,82 @@
     .line 79
     const-string v1, "android.intent.extra.ringtone.SHOW_DEFAULT"
 
-    iget-boolean v2, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqg:Z
+    iget-boolean v2, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqg:Z
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqg:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqg:Z
 
     .line 80
     const-string v1, "android.intent.extra.ringtone.SHOW_SILENT"
 
-    iget-boolean v2, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqh:Z
+    iget-boolean v2, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqh:Z
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqh:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqh:Z
 
     .line 81
     const-string v1, "android.intent.extra.ringtone.TYPE"
 
-    iget v2, p0, Lcom/android/settings/sound/AudioSettingsFragment;->mRingtoneType:I
+    iget v2, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->mRingtoneType:I
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->getInt(Ljava/lang/String;I)I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->mRingtoneType:I
+    iput v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->mRingtoneType:I
 
     .line 84
     :cond_0
-    new-instance v0, Lcom/android/settings/sound/e;
+    new-instance v0, Lcom/android/vendorsettings/sound/e;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/sound/e;-><init>(Lcom/android/settings/sound/AudioSettingsFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/sound/e;-><init>(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aql:Ljava/util/Comparator;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aql:Ljava/util/Comparator;
 
     .line 96
-    new-instance v0, Lcom/android/settings/sound/k;
+    new-instance v0, Lcom/android/vendorsettings/sound/k;
 
-    invoke-virtual {p0}, Lcom/android/settings/sound/AudioSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/sound/k;-><init>(Lcom/android/settings/sound/AudioSettingsFragment;Landroid/content/Context;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/sound/k;-><init>(Lcom/android/vendorsettings/sound/AudioSettingsFragment;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqi:Lcom/android/settings/sound/k;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqi:Lcom/android/vendorsettings/sound/k;
 
     .line 97
-    iget-object v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqi:Lcom/android/settings/sound/k;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqi:Lcom/android/vendorsettings/sound/k;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/sound/AudioSettingsFragment;->setListAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->setListAdapter(Landroid/widget/ListAdapter;)V
 
     .line 99
-    new-instance v0, Lcom/android/settings/sound/BatchMediaPlayer;
+    new-instance v0, Lcom/android/vendorsettings/sound/BatchMediaPlayer;
 
-    invoke-virtual {p0}, Lcom/android/settings/sound/AudioSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/sound/BatchMediaPlayer;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/sound/BatchMediaPlayer;-><init>(Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqj:Lcom/android/settings/sound/BatchMediaPlayer;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqj:Lcom/android/vendorsettings/sound/BatchMediaPlayer;
 
     .line 100
-    iget-object v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqj:Lcom/android/settings/sound/BatchMediaPlayer;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqj:Lcom/android/vendorsettings/sound/BatchMediaPlayer;
 
-    new-instance v1, Lcom/android/settings/sound/f;
+    new-instance v1, Lcom/android/vendorsettings/sound/f;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/sound/f;-><init>(Lcom/android/settings/sound/AudioSettingsFragment;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/sound/f;-><init>(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)V
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/sound/BatchMediaPlayer;->a(Lcom/android/settings/sound/v;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/sound/BatchMediaPlayer;->a(Lcom/android/vendorsettings/sound/v;)V
 
     .line 112
-    invoke-virtual {p0}, Lcom/android/settings/sound/AudioSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -611,16 +611,16 @@
 
     check-cast v0, Landroid/media/AudioManager;
 
-    iput-object v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->mAudioManager:Landroid/media/AudioManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->mAudioManager:Landroid/media/AudioManager;
 
     .line 114
-    invoke-virtual {p0}, Lcom/android/settings/sound/AudioSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/sound/AudioSettingsFragment;->mRingtoneType:I
+    iget v1, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->mRingtoneType:I
 
-    invoke-static {v0, v1}, Lcom/android/settings/sound/p;->c(Landroid/app/Activity;I)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/sound/p;->c(Landroid/app/Activity;I)V
 
     .line 115
     return-void
@@ -631,12 +631,12 @@
 
     .prologue
     .line 130
-    invoke-super {p0}, Lcom/android/settings/BaseListFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/BaseListFragment;->onPause()V
 
     .line 131
-    iget-object v0, p0, Lcom/android/settings/sound/AudioSettingsFragment;->aqj:Lcom/android/settings/sound/BatchMediaPlayer;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqj:Lcom/android/vendorsettings/sound/BatchMediaPlayer;
 
-    invoke-virtual {v0}, Lcom/android/settings/sound/BatchMediaPlayer;->stop()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/sound/BatchMediaPlayer;->stop()V
 
     .line 132
     return-void
@@ -647,16 +647,16 @@
 
     .prologue
     .line 119
-    invoke-super {p0}, Lcom/android/settings/BaseListFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/BaseListFragment;->onResume()V
 
     .line 120
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    new-instance v1, Lcom/android/settings/sound/g;
+    new-instance v1, Lcom/android/vendorsettings/sound/g;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/sound/g;-><init>(Lcom/android/settings/sound/AudioSettingsFragment;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/sound/g;-><init>(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

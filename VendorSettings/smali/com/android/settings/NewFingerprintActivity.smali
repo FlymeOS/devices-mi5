@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/NewFingerprintActivity;
+.class public Lcom/android/vendorsettings/NewFingerprintActivity;
 .super Landroid/app/Activity;
 .source "NewFingerprintActivity.java"
 
@@ -24,7 +24,7 @@
     invoke-direct {v0, p0, p1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 42
-    invoke-virtual {p0, v0, p2}, Lcom/android/settings/NewFingerprintActivity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, p2}, Lcom/android/vendorsettings/NewFingerprintActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 43
     return-void
@@ -49,11 +49,11 @@
     if-ne p2, v0, :cond_0
 
     .line 33
-    const-class v0, Lcom/android/settings/NewFingerprintInternalActivity;
+    const-class v0, Lcom/android/vendorsettings/NewFingerprintInternalActivity;
 
     const/16 v1, 0x66
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/NewFingerprintActivity;->a(Ljava/lang/Class;I)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/NewFingerprintActivity;->a(Ljava/lang/Class;I)V
 
     .line 38
     :goto_0
@@ -61,10 +61,10 @@
 
     .line 35
     :cond_0
-    invoke-virtual {p0, p2}, Lcom/android/settings/NewFingerprintActivity;->setResult(I)V
+    invoke-virtual {p0, p2}, Lcom/android/vendorsettings/NewFingerprintActivity;->setResult(I)V
 
     .line 36
-    invoke-virtual {p0}, Lcom/android/settings/NewFingerprintActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NewFingerprintActivity;->finish()V
 
     goto :goto_0
 .end method
@@ -82,7 +82,7 @@
     .line 17
     const-string v0, "miui.permission.USE_INTERNAL_GENERAL_API"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/NewFingerprintActivity;->checkCallingOrSelfPermission(Ljava/lang/String;)I
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/NewFingerprintActivity;->checkCallingOrSelfPermission(Ljava/lang/String;)I
 
     move-result v0
 
@@ -106,11 +106,11 @@
     if-eqz v0, :cond_1
 
     .line 22
-    const-class v0, Lcom/android/settings/MiuiConfirmCommonPassword;
+    const-class v0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;
 
     const/16 v1, 0x65
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/NewFingerprintActivity;->a(Ljava/lang/Class;I)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/NewFingerprintActivity;->a(Ljava/lang/Class;I)V
 
     .line 26
     :goto_0
@@ -118,11 +118,11 @@
 
     .line 24
     :cond_1
-    const-class v0, Lcom/android/settings/NewFingerprintInternalActivity;
+    const-class v0, Lcom/android/vendorsettings/NewFingerprintInternalActivity;
 
     const/16 v1, 0x66
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/NewFingerprintActivity;->a(Ljava/lang/Class;I)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/NewFingerprintActivity;->a(Ljava/lang/Class;I)V
 
     goto :goto_0
 .end method

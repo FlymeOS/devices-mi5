@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fx;
+.class Lcom/android/vendorsettings/fx;
 .super Ljava/lang/Object;
 .source "MiuiTetherSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ue:Lcom/android/settings/MiuiTetherSettings;
+.field final synthetic ue:Lcom/android/vendorsettings/MiuiTetherSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiTetherSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiTetherSettings;)V
     .locals 0
 
     .prologue
     .line 386
-    iput-object p1, p0, Lcom/android/settings/fx;->ue:Lcom/android/settings/MiuiTetherSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/fx;->ue:Lcom/android/vendorsettings/MiuiTetherSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,16 +30,16 @@
 
     .prologue
     .line 390
-    iget-object v0, p0, Lcom/android/settings/fx;->ue:Lcom/android/settings/MiuiTetherSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fx;->ue:Lcom/android/vendorsettings/MiuiTetherSettings;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiTetherSettings;->a(Lcom/android/settings/MiuiTetherSettings;I)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/MiuiTetherSettings;->a(Lcom/android/vendorsettings/MiuiTetherSettings;I)V
 
     .line 392
-    iget-object v0, p0, Lcom/android/settings/fx;->ue:Lcom/android/settings/MiuiTetherSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fx;->ue:Lcom/android/vendorsettings/MiuiTetherSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiTetherSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/MiuiTetherSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

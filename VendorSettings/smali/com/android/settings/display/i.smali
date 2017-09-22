@@ -1,10 +1,10 @@
-.class Lcom/android/settings/display/i;
+.class Lcom/android/vendorsettings/display/i;
 .super Landroid/widget/BaseAdapter;
 .source "FluencyModeListPreference.java"
 
 
 # instance fields
-.field final synthetic Yi:Lcom/android/settings/display/FluencyModeListPreference;
+.field final synthetic Yi:Lcom/android/vendorsettings/display/FluencyModeListPreference;
 
 .field private mContext:Landroid/content/Context;
 
@@ -12,26 +12,26 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/display/FluencyModeListPreference;Landroid/content/Context;)V
+.method constructor <init>(Lcom/android/vendorsettings/display/FluencyModeListPreference;Landroid/content/Context;)V
     .locals 1
 
     .prologue
     .line 170
-    iput-object p1, p0, Lcom/android/settings/display/i;->Yi:Lcom/android/settings/display/FluencyModeListPreference;
+    iput-object p1, p0, Lcom/android/vendorsettings/display/i;->Yi:Lcom/android/vendorsettings/display/FluencyModeListPreference;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 171
-    iput-object p2, p0, Lcom/android/settings/display/i;->mContext:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/vendorsettings/display/i;->mContext:Landroid/content/Context;
 
     .line 172
-    iget-object v0, p0, Lcom/android/settings/display/i;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/i;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/display/i;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/i;->mInflater:Landroid/view/LayoutInflater;
 
     .line 173
     return-void
@@ -44,9 +44,9 @@
 
     .prologue
     .line 177
-    iget-object v0, p0, Lcom/android/settings/display/i;->Yi:Lcom/android/settings/display/FluencyModeListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/i;->Yi:Lcom/android/vendorsettings/display/FluencyModeListPreference;
 
-    invoke-virtual {v0}, Lcom/android/settings/display/FluencyModeListPreference;->getEntryValues()[Ljava/lang/CharSequence;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/display/FluencyModeListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -82,9 +82,9 @@
     .line 187
     if-ltz p1, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/display/i;->Yi:Lcom/android/settings/display/FluencyModeListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/i;->Yi:Lcom/android/vendorsettings/display/FluencyModeListPreference;
 
-    invoke-static {v0}, Lcom/android/settings/display/FluencyModeListPreference;->a(Lcom/android/settings/display/FluencyModeListPreference;)[Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/display/FluencyModeListPreference;->a(Lcom/android/vendorsettings/display/FluencyModeListPreference;)[Ljava/lang/String;
 
     move-result-object v0
 
@@ -102,7 +102,7 @@
     if-nez p2, :cond_2
 
     .line 191
-    iget-object v0, p0, Lcom/android/settings/display/i;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/i;->mInflater:Landroid/view/LayoutInflater;
 
     const v1, 0x7f040087
 
@@ -132,9 +132,9 @@
     check-cast v1, Landroid/widget/TextView;
 
     .line 195
-    iget-object v2, p0, Lcom/android/settings/display/i;->Yi:Lcom/android/settings/display/FluencyModeListPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/display/i;->Yi:Lcom/android/vendorsettings/display/FluencyModeListPreference;
 
-    invoke-static {v2}, Lcom/android/settings/display/FluencyModeListPreference;->a(Lcom/android/settings/display/FluencyModeListPreference;)[Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/vendorsettings/display/FluencyModeListPreference;->a(Lcom/android/vendorsettings/display/FluencyModeListPreference;)[Ljava/lang/String;
 
     move-result-object v2
 
@@ -143,9 +143,9 @@
     invoke-virtual {v0, v2}, Landroid/widget/CheckedTextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 196
-    iget-object v0, p0, Lcom/android/settings/display/i;->Yi:Lcom/android/settings/display/FluencyModeListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/i;->Yi:Lcom/android/vendorsettings/display/FluencyModeListPreference;
 
-    invoke-static {v0}, Lcom/android/settings/display/FluencyModeListPreference;->c(Lcom/android/settings/display/FluencyModeListPreference;)[Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/display/FluencyModeListPreference;->c(Lcom/android/vendorsettings/display/FluencyModeListPreference;)[Ljava/lang/String;
 
     move-result-object v0
 

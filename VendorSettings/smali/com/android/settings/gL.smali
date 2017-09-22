@@ -1,4 +1,4 @@
-.class Lcom/android/settings/gL;
+.class Lcom/android/vendorsettings/gL;
 .super Ljava/lang/Object;
 .source "RadioInfo.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic xZ:Lcom/android/settings/RadioInfo;
+.field final synthetic xZ:Lcom/android/vendorsettings/RadioInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RadioInfo;)V
+.method constructor <init>(Lcom/android/vendorsettings/RadioInfo;)V
     .locals 0
 
     .prologue
     .line 1235
-    iput-object p1, p0, Lcom/android/settings/gL;->xZ:Lcom/android/settings/RadioInfo;
+    iput-object p1, p0, Lcom/android/vendorsettings/gL;->xZ:Lcom/android/vendorsettings/RadioInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 1237
-    iget-object v0, p0, Lcom/android/settings/gL;->xZ:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/gL;->xZ:Lcom/android/vendorsettings/RadioInfo;
 
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->P(Lcom/android/settings/RadioInfo;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/vendorsettings/RadioInfo;->P(Lcom/android/vendorsettings/RadioInfo;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -45,9 +45,9 @@
     .line 1238
     if-ltz p3, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/gL;->xZ:Lcom/android/settings/RadioInfo;
+    iget-object v1, p0, Lcom/android/vendorsettings/gL;->xZ:Lcom/android/vendorsettings/RadioInfo;
 
-    invoke-static {v1}, Lcom/android/settings/RadioInfo;->m(Lcom/android/settings/RadioInfo;)[Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/vendorsettings/RadioInfo;->m(Lcom/android/vendorsettings/RadioInfo;)[Ljava/lang/String;
 
     move-result-object v1
 
@@ -58,9 +58,9 @@
     if-gt p3, v1, :cond_0
 
     .line 1239
-    iget-object v1, p0, Lcom/android/settings/gL;->xZ:Lcom/android/settings/RadioInfo;
+    iget-object v1, p0, Lcom/android/vendorsettings/gL;->xZ:Lcom/android/vendorsettings/RadioInfo;
 
-    invoke-static {v1}, Lcom/android/settings/RadioInfo;->o(Lcom/android/settings/RadioInfo;)Lcom/android/internal/telephony/Phone;
+    invoke-static {v1}, Lcom/android/vendorsettings/RadioInfo;->o(Lcom/android/vendorsettings/RadioInfo;)Lcom/android/internal/telephony/Phone;
 
     move-result-object v1
 

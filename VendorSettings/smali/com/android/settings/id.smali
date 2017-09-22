@@ -1,4 +1,4 @@
-.class Lcom/android/settings/id;
+.class Lcom/android/vendorsettings/id;
 .super Ljava/lang/Object;
 .source "TrustedCredentialsSettings.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic Bq:Lcom/android/settings/ir;
+.field final synthetic Bq:Lcom/android/vendorsettings/ir;
 
-.field final synthetic Br:Lcom/android/settings/TrustedCredentialsSettings;
+.field final synthetic Br:Lcom/android/vendorsettings/TrustedCredentialsSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/ir;)V
+.method constructor <init>(Lcom/android/vendorsettings/TrustedCredentialsSettings;Lcom/android/vendorsettings/ir;)V
     .locals 0
 
     .prologue
     .line 229
-    iput-object p1, p0, Lcom/android/settings/id;->Br:Lcom/android/settings/TrustedCredentialsSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/id;->Br:Lcom/android/vendorsettings/TrustedCredentialsSettings;
 
-    iput-object p2, p0, Lcom/android/settings/id;->Bq:Lcom/android/settings/ir;
+    iput-object p2, p0, Lcom/android/vendorsettings/id;->Bq:Lcom/android/vendorsettings/ir;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,15 +34,15 @@
 
     .prologue
     .line 233
-    iget-object v0, p0, Lcom/android/settings/id;->Br:Lcom/android/settings/TrustedCredentialsSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/id;->Br:Lcom/android/vendorsettings/TrustedCredentialsSettings;
 
-    iget-object v1, p0, Lcom/android/settings/id;->Bq:Lcom/android/settings/ir;
+    iget-object v1, p0, Lcom/android/vendorsettings/id;->Bq:Lcom/android/vendorsettings/ir;
 
-    invoke-virtual {v1, p3, p4}, Lcom/android/settings/ir;->d(II)Lcom/android/settings/io;
+    invoke-virtual {v1, p3, p4}, Lcom/android/vendorsettings/ir;->d(II)Lcom/android/vendorsettings/io;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/TrustedCredentialsSettings;->a(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/io;)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/TrustedCredentialsSettings;->a(Lcom/android/vendorsettings/TrustedCredentialsSettings;Lcom/android/vendorsettings/io;)V
 
     .line 234
     const/4 v0, 0x1

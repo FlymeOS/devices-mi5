@@ -1,4 +1,4 @@
-.class Lcom/android/settings/sound/s;
+.class Lcom/android/vendorsettings/sound/s;
 .super Ljava/lang/Object;
 .source "BatchMediaPlayer.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aqE:Lcom/android/settings/sound/BatchMediaPlayer;
+.field final synthetic aqE:Lcom/android/vendorsettings/sound/BatchMediaPlayer;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sound/BatchMediaPlayer;)V
+.method constructor <init>(Lcom/android/vendorsettings/sound/BatchMediaPlayer;)V
     .locals 0
 
     .prologue
     .line 63
-    iput-object p1, p0, Lcom/android/settings/sound/s;->aqE:Lcom/android/settings/sound/BatchMediaPlayer;
+    iput-object p1, p0, Lcom/android/vendorsettings/sound/s;->aqE:Lcom/android/vendorsettings/sound/BatchMediaPlayer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,9 +35,9 @@
     if-ne p2, v2, :cond_0
 
     .line 67
-    iget-object v0, p0, Lcom/android/settings/sound/s;->aqE:Lcom/android/settings/sound/BatchMediaPlayer;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/s;->aqE:Lcom/android/vendorsettings/sound/BatchMediaPlayer;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/sound/BatchMediaPlayer;->stop(I)V
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/sound/BatchMediaPlayer;->stop(I)V
 
     .line 73
     :goto_0
@@ -50,21 +50,21 @@
     if-ne p2, v0, :cond_1
 
     .line 69
-    iget-object v0, p0, Lcom/android/settings/sound/s;->aqE:Lcom/android/settings/sound/BatchMediaPlayer;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/s;->aqE:Lcom/android/vendorsettings/sound/BatchMediaPlayer;
 
     const/4 v1, 0x2
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/sound/BatchMediaPlayer;->stop(I)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/sound/BatchMediaPlayer;->stop(I)V
 
     goto :goto_0
 
     .line 71
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/sound/s;->aqE:Lcom/android/settings/sound/BatchMediaPlayer;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/s;->aqE:Lcom/android/vendorsettings/sound/BatchMediaPlayer;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/sound/BatchMediaPlayer;->stop(I)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/sound/BatchMediaPlayer;->stop(I)V
 
     goto :goto_0
 .end method

@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/widget/I;
+.class public interface abstract Lcom/android/vendorsettings/widget/I;
 .super Ljava/lang/Object;
 .source "SwitchBar.java"
 

@@ -1,8 +1,8 @@
-.class interface abstract Lcom/android/settings/inputmethod/InputMethodPreference$OnSavePreferenceListener;
+.class interface abstract Lcom/android/vendorsettings/inputmethod/InputMethodPreference$OnSavePreferenceListener;
 .super Ljava/lang/Object;
 .source "InputMethodPreference.java"
 
 
 # virtual methods
-.method public abstract a(Lcom/android/settings/inputmethod/InputMethodPreference;)V
+.method public abstract a(Lcom/android/vendorsettings/inputmethod/InputMethodPreference;)V
 .end method

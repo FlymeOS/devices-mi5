@@ -1,22 +1,22 @@
-.class Lcom/android/settings/widget/H;
+.class Lcom/android/vendorsettings/widget/H;
 .super Ljava/lang/Object;
 .source "SwitchBar.java"
 
 # interfaces
-.implements Lcom/android/settings/widget/I;
+.implements Lcom/android/vendorsettings/widget/I;
 
 
 # instance fields
-.field final synthetic azE:Lcom/android/settings/widget/SwitchBar;
+.field final synthetic azE:Lcom/android/vendorsettings/widget/SwitchBar;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/widget/SwitchBar;)V
+.method constructor <init>(Lcom/android/vendorsettings/widget/SwitchBar;)V
     .locals 0
 
     .prologue
     .line 101
-    iput-object p1, p0, Lcom/android/settings/widget/H;->azE:Lcom/android/settings/widget/SwitchBar;
+    iput-object p1, p0, Lcom/android/vendorsettings/widget/H;->azE:Lcom/android/vendorsettings/widget/SwitchBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 104
-    iget-object v0, p0, Lcom/android/settings/widget/H;->azE:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/H;->azE:Lcom/android/vendorsettings/widget/SwitchBar;
 
-    invoke-virtual {v0, p2}, Lcom/android/settings/widget/SwitchBar;->bv(Z)V
+    invoke-virtual {v0, p2}, Lcom/android/vendorsettings/widget/SwitchBar;->bv(Z)V
 
     .line 105
     return-void

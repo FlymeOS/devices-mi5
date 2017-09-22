@@ -1,31 +1,31 @@
-.class Lcom/android/settings/applications/AppStateBaseBridge$MainHandler;
+.class Lcom/android/vendorsettings/applications/AppStateBaseBridge$MainHandler;
 .super Landroid/os/Handler;
 .source "AppStateBaseBridge.java"
 
 
 # instance fields
-.field final synthetic Gw:Lcom/android/settings/applications/AppStateBaseBridge;
+.field final synthetic Gw:Lcom/android/vendorsettings/applications/AppStateBaseBridge;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/applications/AppStateBaseBridge;)V
+.method private constructor <init>(Lcom/android/vendorsettings/applications/AppStateBaseBridge;)V
     .locals 0
 
     .prologue
     .line 110
-    iput-object p1, p0, Lcom/android/settings/applications/AppStateBaseBridge$MainHandler;->Gw:Lcom/android/settings/applications/AppStateBaseBridge;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/AppStateBaseBridge$MainHandler;->Gw:Lcom/android/vendorsettings/applications/AppStateBaseBridge;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/applications/AppStateBaseBridge;Lcom/android/settings/applications/AppStateBaseBridge$1;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/applications/AppStateBaseBridge;Lcom/android/vendorsettings/applications/AppStateBaseBridge$1;)V
     .locals 0
 
     .prologue
     .line 110
-    invoke-direct {p0, p1}, Lcom/android/settings/applications/AppStateBaseBridge$MainHandler;-><init>(Lcom/android/settings/applications/AppStateBaseBridge;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/applications/AppStateBaseBridge$MainHandler;-><init>(Lcom/android/vendorsettings/applications/AppStateBaseBridge;)V
 
     return-void
 .end method
@@ -47,11 +47,11 @@
 
     .line 117
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateBaseBridge$MainHandler;->Gw:Lcom/android/settings/applications/AppStateBaseBridge;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStateBaseBridge$MainHandler;->Gw:Lcom/android/vendorsettings/applications/AppStateBaseBridge;
 
-    iget-object v0, v0, Lcom/android/settings/applications/AppStateBaseBridge;->Gt:Lcom/android/settings/applications/AppStateBaseBridge$Callback;
+    iget-object v0, v0, Lcom/android/vendorsettings/applications/AppStateBaseBridge;->Gt:Lcom/android/vendorsettings/applications/AppStateBaseBridge$Callback;
 
-    invoke-interface {v0}, Lcom/android/settings/applications/AppStateBaseBridge$Callback;->jR()V
+    invoke-interface {v0}, Lcom/android/vendorsettings/applications/AppStateBaseBridge$Callback;->jR()V
 
     goto :goto_0
 

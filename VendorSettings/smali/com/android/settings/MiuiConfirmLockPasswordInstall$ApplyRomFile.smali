@@ -1,19 +1,19 @@
-.class Lcom/android/settings/MiuiConfirmLockPasswordInstall$ApplyRomFile;
+.class Lcom/android/vendorsettings/MiuiConfirmLockPasswordInstall$ApplyRomFile;
 .super Ljava/io/File;
 .source "MiuiConfirmLockPasswordInstall.java"
 
 
 # instance fields
-.field final synthetic this$0:Lcom/android/settings/MiuiConfirmLockPasswordInstall;
+.field final synthetic this$0:Lcom/android/vendorsettings/MiuiConfirmLockPasswordInstall;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/MiuiConfirmLockPasswordInstall;Ljava/lang/String;)V
+.method public constructor <init>(Lcom/android/vendorsettings/MiuiConfirmLockPasswordInstall;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 70
-    iput-object p1, p0, Lcom/android/settings/MiuiConfirmLockPasswordInstall$ApplyRomFile;->this$0:Lcom/android/settings/MiuiConfirmLockPasswordInstall;
+    iput-object p1, p0, Lcom/android/vendorsettings/MiuiConfirmLockPasswordInstall$ApplyRomFile;->this$0:Lcom/android/vendorsettings/MiuiConfirmLockPasswordInstall;
 
     .line 71
     invoke-direct {p0, p2}, Ljava/io/File;-><init>(Ljava/lang/String;)V

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/DefaultAssistPreference$Info;
+.class Lcom/android/vendorsettings/applications/DefaultAssistPreference$Info;
 .super Ljava/lang/Object;
 .source "DefaultAssistPreference.java"
 
@@ -18,12 +18,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 203
-    iput-object p1, p0, Lcom/android/settings/applications/DefaultAssistPreference$Info;->component:Landroid/content/ComponentName;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/DefaultAssistPreference$Info;->component:Landroid/content/ComponentName;
 
     .line 204
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/applications/DefaultAssistPreference$Info;->Ig:Landroid/service/voice/VoiceInteractionServiceInfo;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/DefaultAssistPreference$Info;->Ig:Landroid/service/voice/VoiceInteractionServiceInfo;
 
     .line 205
     return-void
@@ -37,10 +37,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 208
-    iput-object p1, p0, Lcom/android/settings/applications/DefaultAssistPreference$Info;->component:Landroid/content/ComponentName;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/DefaultAssistPreference$Info;->component:Landroid/content/ComponentName;
 
     .line 209
-    iput-object p2, p0, Lcom/android/settings/applications/DefaultAssistPreference$Info;->Ig:Landroid/service/voice/VoiceInteractionServiceInfo;
+    iput-object p2, p0, Lcom/android/vendorsettings/applications/DefaultAssistPreference$Info;->Ig:Landroid/service/voice/VoiceInteractionServiceInfo;
 
     .line 210
     return-void
@@ -53,7 +53,7 @@
 
     .prologue
     .line 213
-    iget-object v0, p0, Lcom/android/settings/applications/DefaultAssistPreference$Info;->Ig:Landroid/service/voice/VoiceInteractionServiceInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/DefaultAssistPreference$Info;->Ig:Landroid/service/voice/VoiceInteractionServiceInfo;
 
     if-eqz v0, :cond_0
 

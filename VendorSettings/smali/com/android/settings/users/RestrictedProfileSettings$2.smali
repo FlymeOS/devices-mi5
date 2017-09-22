@@ -1,4 +1,4 @@
-.class Lcom/android/settings/users/RestrictedProfileSettings$2;
+.class Lcom/android/vendorsettings/users/RestrictedProfileSettings$2;
 .super Ljava/lang/Object;
 .source "RestrictedProfileSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aub:Lcom/android/settings/users/RestrictedProfileSettings;
+.field final synthetic aub:Lcom/android/vendorsettings/users/RestrictedProfileSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/RestrictedProfileSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/users/RestrictedProfileSettings;)V
     .locals 0
 
     .prologue
     .line 139
-    iput-object p1, p0, Lcom/android/settings/users/RestrictedProfileSettings$2;->aub:Lcom/android/settings/users/RestrictedProfileSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/users/RestrictedProfileSettings$2;->aub:Lcom/android/vendorsettings/users/RestrictedProfileSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 141
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings$2;->aub:Lcom/android/settings/users/RestrictedProfileSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/users/RestrictedProfileSettings$2;->aub:Lcom/android/vendorsettings/users/RestrictedProfileSettings;
 
-    iget-object v0, v0, Lcom/android/settings/users/RestrictedProfileSettings;->sR:Landroid/os/UserManager;
+    iget-object v0, v0, Lcom/android/vendorsettings/users/RestrictedProfileSettings;->sR:Landroid/os/UserManager;
 
-    iget-object v1, p0, Lcom/android/settings/users/RestrictedProfileSettings$2;->aub:Lcom/android/settings/users/RestrictedProfileSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/users/RestrictedProfileSettings$2;->aub:Lcom/android/vendorsettings/users/RestrictedProfileSettings;
 
-    iget-object v1, v1, Lcom/android/settings/users/RestrictedProfileSettings;->atb:Landroid/os/UserHandle;
+    iget-object v1, v1, Lcom/android/vendorsettings/users/RestrictedProfileSettings;->atb:Landroid/os/UserHandle;
 
     invoke-virtual {v1}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -45,9 +45,9 @@
     invoke-virtual {v0, v1}, Landroid/os/UserManager;->removeUser(I)Z
 
     .line 142
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings$2;->aub:Lcom/android/settings/users/RestrictedProfileSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/users/RestrictedProfileSettings$2;->aub:Lcom/android/vendorsettings/users/RestrictedProfileSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/users/RestrictedProfileSettings;->hU()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/users/RestrictedProfileSettings;->hU()V
 
     .line 143
     return-void

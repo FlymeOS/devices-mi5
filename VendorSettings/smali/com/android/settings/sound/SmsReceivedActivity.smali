@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/sound/SmsReceivedActivity;
-.super Lcom/android/settings/sound/q;
+.class public Lcom/android/vendorsettings/sound/SmsReceivedActivity;
+.super Lcom/android/vendorsettings/sound/q;
 .source "SmsReceivedActivity.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 9
-    invoke-direct {p0}, Lcom/android/settings/sound/q;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/sound/q;-><init>()V
 
     return-void
 .end method
@@ -33,7 +33,7 @@
     const/4 v2, 0x2
 
     .line 23
-    invoke-super {p0}, Lcom/android/settings/sound/q;->ul()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/vendorsettings/sound/q;->ul()Landroid/content/Intent;
 
     move-result-object v0
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/LinearColorBar;
+.class public Lcom/android/vendorsettings/applications/LinearColorBar;
 .super Landroid/widget/LinearLayout;
 .source "LinearColorBar.java"
 
@@ -12,7 +12,7 @@
 
 .field private JD:Z
 
-.field private JE:Lcom/android/settings/applications/LinearColorBar$OnRegionTappedListener;
+.field private JE:Lcom/android/vendorsettings/applications/LinearColorBar$OnRegionTappedListener;
 
 .field private JF:I
 
@@ -62,99 +62,99 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 29
-    iput v0, p0, Lcom/android/settings/applications/LinearColorBar;->Jz:I
+    iput v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->Jz:I
 
     .line 30
-    iput v0, p0, Lcom/android/settings/applications/LinearColorBar;->JA:I
+    iput v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JA:I
 
     .line 31
     const v0, -0x312825
 
-    iput v0, p0, Lcom/android/settings/applications/LinearColorBar;->JB:I
+    iput v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JB:I
 
     .line 33
-    iput-boolean v1, p0, Lcom/android/settings/applications/LinearColorBar;->JC:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JC:Z
 
     .line 37
     const/4 v0, 0x7
 
-    iput v0, p0, Lcom/android/settings/applications/LinearColorBar;->JF:I
+    iput v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JF:I
 
     .line 39
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
 
     .line 40
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/LinearColorBar;->mPaint:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->mPaint:Landroid/graphics/Paint;
 
     .line 48
     new-instance v0, Landroid/graphics/Path;
 
     invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/LinearColorBar;->JM:Landroid/graphics/Path;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JM:Landroid/graphics/Path;
 
     .line 49
     new-instance v0, Landroid/graphics/Path;
 
     invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/LinearColorBar;->JN:Landroid/graphics/Path;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JN:Landroid/graphics/Path;
 
     .line 50
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/LinearColorBar;->JO:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JO:Landroid/graphics/Paint;
 
     .line 51
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/LinearColorBar;->JP:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JP:Landroid/graphics/Paint;
 
     .line 64
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/LinearColorBar;->setWillNotDraw(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/LinearColorBar;->setWillNotDraw(Z)V
 
     .line 65
-    iget-object v0, p0, Lcom/android/settings/applications/LinearColorBar;->mPaint:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->mPaint:Landroid/graphics/Paint;
 
     sget-object v2, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 66
-    iget-object v0, p0, Lcom/android/settings/applications/LinearColorBar;->JO:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JO:Landroid/graphics/Paint;
 
     sget-object v2, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 67
-    iget-object v0, p0, Lcom/android/settings/applications/LinearColorBar;->JO:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JO:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
     .line 68
-    iget-object v0, p0, Lcom/android/settings/applications/LinearColorBar;->JP:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JP:Landroid/graphics/Paint;
 
     sget-object v2, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 69
-    invoke-virtual {p0}, Lcom/android/settings/applications/LinearColorBar;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -171,19 +171,19 @@
     const/4 v0, 0x2
 
     :goto_0
-    iput v0, p0, Lcom/android/settings/applications/LinearColorBar;->JI:I
+    iput v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JI:I
 
     .line 71
-    iget-object v0, p0, Lcom/android/settings/applications/LinearColorBar;->JP:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JP:Landroid/graphics/Paint;
 
-    iget v2, p0, Lcom/android/settings/applications/LinearColorBar;->JI:I
+    iget v2, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JI:I
 
     int-to-float v2, v2
 
     invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
     .line 72
-    iget-object v0, p0, Lcom/android/settings/applications/LinearColorBar;->JP:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JP:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
@@ -202,13 +202,13 @@
 
     .prologue
     .line 177
-    invoke-virtual {p0}, Lcom/android/settings/applications/LinearColorBar;->isPressed()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->isPressed()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    iget v0, p0, Lcom/android/settings/applications/LinearColorBar;->JL:I
+    iget v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JL:I
 
     and-int/2addr v0, p2
 
@@ -224,7 +224,7 @@
 
     .line 180
     :cond_1
-    iget v0, p0, Lcom/android/settings/applications/LinearColorBar;->JF:I
+    iget v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JF:I
 
     and-int/2addr v0, p2
 
@@ -245,11 +245,11 @@
     const/4 v1, 0x0
 
     .line 118
-    invoke-virtual {p0}, Lcom/android/settings/applications/LinearColorBar;->getPaddingTop()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->getPaddingTop()I
 
     move-result v0
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/LinearColorBar;->getPaddingBottom()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->getPaddingBottom()I
 
     move-result v2
 
@@ -264,21 +264,21 @@
 
     .line 120
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
 
     iput v8, v0, Landroid/graphics/Rect;->top:I
 
     .line 121
-    iget-object v0, p0, Lcom/android/settings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/LinearColorBar;->getHeight()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->getHeight()I
 
     move-result v2
 
     iput v2, v0, Landroid/graphics/Rect;->bottom:I
 
     .line 122
-    iget-boolean v0, p0, Lcom/android/settings/applications/LinearColorBar;->JC:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JC:Z
 
     if-nez v0, :cond_0
 
@@ -288,12 +288,12 @@
 
     .line 125
     :cond_0
-    iget-boolean v0, p0, Lcom/android/settings/applications/LinearColorBar;->JD:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JD:Z
 
     if-eqz v0, :cond_1
 
     .line 126
-    iget-object v9, p0, Lcom/android/settings/applications/LinearColorBar;->JO:Landroid/graphics/Paint;
+    iget-object v9, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JO:Landroid/graphics/Paint;
 
     new-instance v0, Landroid/graphics/LinearGradient;
 
@@ -301,11 +301,11 @@
 
     int-to-float v4, v2
 
-    iget v2, p0, Lcom/android/settings/applications/LinearColorBar;->JB:I
+    iget v2, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JB:I
 
     and-int v5, v2, v3
 
-    iget v6, p0, Lcom/android/settings/applications/LinearColorBar;->JB:I
+    iget v6, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JB:I
 
     sget-object v7, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
 
@@ -319,7 +319,7 @@
 
     .line 132
     :goto_2
-    iget-object v9, p0, Lcom/android/settings/applications/LinearColorBar;->JP:Landroid/graphics/Paint;
+    iget-object v9, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JP:Landroid/graphics/Paint;
 
     new-instance v0, Landroid/graphics/LinearGradient;
 
@@ -345,7 +345,7 @@
 
     .line 129
     :cond_1
-    iget-object v9, p0, Lcom/android/settings/applications/LinearColorBar;->JO:Landroid/graphics/Paint;
+    iget-object v9, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JO:Landroid/graphics/Paint;
 
     new-instance v0, Landroid/graphics/LinearGradient;
 
@@ -353,11 +353,11 @@
 
     int-to-float v4, v2
 
-    iget v2, p0, Lcom/android/settings/applications/LinearColorBar;->JA:I
+    iget v2, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JA:I
 
     and-int v5, v2, v3
 
-    iget v6, p0, Lcom/android/settings/applications/LinearColorBar;->JA:I
+    iget v6, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JA:I
 
     sget-object v7, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
 
@@ -384,16 +384,16 @@
 
     .prologue
     .line 89
-    iput p1, p0, Lcom/android/settings/applications/LinearColorBar;->Jw:F
+    iput p1, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->Jw:F
 
     .line 90
-    iput p2, p0, Lcom/android/settings/applications/LinearColorBar;->Jx:F
+    iput p2, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->Jx:F
 
     .line 91
-    iput p3, p0, Lcom/android/settings/applications/LinearColorBar;->Jy:F
+    iput p3, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->Jy:F
 
     .line 92
-    invoke-virtual {p0}, Lcom/android/settings/applications/LinearColorBar;->invalidate()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->invalidate()V
 
     .line 93
     return-void
@@ -404,35 +404,35 @@
 
     .prologue
     .line 96
-    iput p1, p0, Lcom/android/settings/applications/LinearColorBar;->Jz:I
+    iput p1, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->Jz:I
 
     .line 97
-    iput p2, p0, Lcom/android/settings/applications/LinearColorBar;->JA:I
+    iput p2, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JA:I
 
     .line 98
-    iput p3, p0, Lcom/android/settings/applications/LinearColorBar;->JB:I
+    iput p3, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JB:I
 
     .line 99
-    invoke-direct {p0}, Lcom/android/settings/applications/LinearColorBar;->kJ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->kJ()V
 
     .line 100
-    invoke-virtual {p0}, Lcom/android/settings/applications/LinearColorBar;->invalidate()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->invalidate()V
 
     .line 101
     return-void
 .end method
 
-.method public a(Lcom/android/settings/applications/LinearColorBar$OnRegionTappedListener;)V
+.method public a(Lcom/android/vendorsettings/applications/LinearColorBar$OnRegionTappedListener;)V
     .locals 1
 
     .prologue
     .line 77
-    iget-object v0, p0, Lcom/android/settings/applications/LinearColorBar;->JE:Lcom/android/settings/applications/LinearColorBar$OnRegionTappedListener;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JE:Lcom/android/vendorsettings/applications/LinearColorBar$OnRegionTappedListener;
 
     if-eq p1, v0, :cond_0
 
     .line 78
-    iput-object p1, p0, Lcom/android/settings/applications/LinearColorBar;->JE:Lcom/android/settings/applications/LinearColorBar$OnRegionTappedListener;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JE:Lcom/android/vendorsettings/applications/LinearColorBar$OnRegionTappedListener;
 
     .line 79
     if-eqz p1, :cond_1
@@ -440,7 +440,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/LinearColorBar;->setClickable(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/LinearColorBar;->setClickable(Z)V
 
     .line 81
     :cond_0
@@ -458,10 +458,10 @@
 
     .prologue
     .line 84
-    iput p1, p0, Lcom/android/settings/applications/LinearColorBar;->JF:I
+    iput p1, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JF:I
 
     .line 85
-    invoke-virtual {p0}, Lcom/android/settings/applications/LinearColorBar;->invalidate()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->invalidate()V
 
     .line 86
     return-void
@@ -472,13 +472,13 @@
 
     .prologue
     .line 104
-    iput-boolean p1, p0, Lcom/android/settings/applications/LinearColorBar;->JC:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JC:Z
 
     .line 105
-    invoke-direct {p0}, Lcom/android/settings/applications/LinearColorBar;->kJ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->kJ()V
 
     .line 106
-    invoke-virtual {p0}, Lcom/android/settings/applications/LinearColorBar;->invalidate()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->invalidate()V
 
     .line 107
     return-void
@@ -489,7 +489,7 @@
 
     .prologue
     .line 164
-    invoke-virtual {p0}, Lcom/android/settings/applications/LinearColorBar;->invalidate()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->invalidate()V
 
     .line 165
     return-void
@@ -503,7 +503,7 @@
     invoke-super/range {p0 .. p1}, Landroid/widget/LinearLayout;->onDraw(Landroid/graphics/Canvas;)V
 
     .line 190
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/applications/LinearColorBar;->getWidth()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->getWidth()I
 
     move-result v13
 
@@ -515,7 +515,7 @@
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/settings/applications/LinearColorBar;->Jw:F
+    iget v2, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->Jw:F
 
     mul-float/2addr v1, v2
 
@@ -528,7 +528,7 @@
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/settings/applications/LinearColorBar;->Jx:F
+    iget v2, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->Jx:F
 
     mul-float/2addr v1, v2
 
@@ -541,7 +541,7 @@
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/settings/applications/LinearColorBar;->Jy:F
+    iget v2, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->Jy:F
 
     mul-float/2addr v1, v2
 
@@ -552,12 +552,12 @@
     .line 199
     move-object/from16 v0, p0
 
-    iget-boolean v1, v0, Lcom/android/settings/applications/LinearColorBar;->JD:Z
+    iget-boolean v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JD:Z
 
     if-eqz v1, :cond_9
 
     .line 204
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/applications/LinearColorBar;->isLayoutRtl()Z
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->isLayoutRtl()Z
 
     move-result v1
 
@@ -567,7 +567,7 @@
 
     .line 205
     :goto_0
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/applications/LinearColorBar;->isLayoutRtl()Z
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->isLayoutRtl()Z
 
     move-result v3
 
@@ -584,13 +584,13 @@
     :goto_1
     move-object/from16 v0, p0
 
-    iget v1, v0, Lcom/android/settings/applications/LinearColorBar;->JG:I
+    iget v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JG:I
 
     if-ne v1, v11, :cond_1
 
     move-object/from16 v0, p0
 
-    iget v1, v0, Lcom/android/settings/applications/LinearColorBar;->JH:I
+    iget v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JH:I
 
     if-eq v1, v10, :cond_3
 
@@ -598,21 +598,21 @@
     :cond_1
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->JM:Landroid/graphics/Path;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JM:Landroid/graphics/Path;
 
     invoke-virtual {v1}, Landroid/graphics/Path;->reset()V
 
     .line 219
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->JN:Landroid/graphics/Path;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JN:Landroid/graphics/Path;
 
     invoke-virtual {v1}, Landroid/graphics/Path;->reset()V
 
     .line 220
     move-object/from16 v0, p0
 
-    iget-boolean v1, v0, Lcom/android/settings/applications/LinearColorBar;->JC:Z
+    iget-boolean v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JC:Z
 
     if-eqz v1, :cond_2
 
@@ -621,20 +621,20 @@
     .line 221
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
 
     iget v14, v1, Landroid/graphics/Rect;->top:I
 
     .line 224
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->JM:Landroid/graphics/Path;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JM:Landroid/graphics/Path;
 
     int-to-float v2, v11
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/android/settings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
+    iget-object v3, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
 
     iget v3, v3, Landroid/graphics/Rect;->top:I
 
@@ -645,7 +645,7 @@
     .line 225
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->JM:Landroid/graphics/Path;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JM:Landroid/graphics/Path;
 
     int-to-float v2, v11
 
@@ -664,7 +664,7 @@
     .line 228
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->JM:Landroid/graphics/Path;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JM:Landroid/graphics/Path;
 
     add-int/lit8 v2, v13, 0x2
 
@@ -679,7 +679,7 @@
     .line 229
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->JM:Landroid/graphics/Path;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JM:Landroid/graphics/Path;
 
     add-int/lit8 v2, v13, 0x2
 
@@ -697,7 +697,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/android/settings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
+    iget-object v7, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->top:I
 
@@ -708,14 +708,14 @@
     .line 232
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->JM:Landroid/graphics/Path;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JM:Landroid/graphics/Path;
 
     invoke-virtual {v1}, Landroid/graphics/Path;->close()V
 
     .line 233
     move-object/from16 v0, p0
 
-    iget v1, v0, Lcom/android/settings/applications/LinearColorBar;->JI:I
+    iget v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JI:I
 
     int-to-float v1, v1
 
@@ -726,7 +726,7 @@
     .line 234
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->JN:Landroid/graphics/Path;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JN:Landroid/graphics/Path;
 
     const/high16 v2, -0x40000000    # -2.0f
 
@@ -739,7 +739,7 @@
     .line 235
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->JN:Landroid/graphics/Path;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JN:Landroid/graphics/Path;
 
     const/high16 v2, -0x40000000    # -2.0f
 
@@ -759,7 +759,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/android/settings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
+    iget-object v7, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->top:I
 
@@ -770,7 +770,7 @@
     .line 238
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->JN:Landroid/graphics/Path;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JN:Landroid/graphics/Path;
 
     add-int/lit8 v2, v13, 0x2
 
@@ -787,7 +787,7 @@
     .line 239
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->JN:Landroid/graphics/Path;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JN:Landroid/graphics/Path;
 
     add-int/lit8 v2, v13, 0x2
 
@@ -811,7 +811,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/android/settings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
+    iget-object v7, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->top:I
 
@@ -823,18 +823,18 @@
     :cond_2
     move-object/from16 v0, p0
 
-    iput v11, v0, Lcom/android/settings/applications/LinearColorBar;->JG:I
+    iput v11, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JG:I
 
     .line 244
     move-object/from16 v0, p0
 
-    iput v10, v0, Lcom/android/settings/applications/LinearColorBar;->JH:I
+    iput v10, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JH:I
 
     .line 247
     :cond_3
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->JN:Landroid/graphics/Path;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JN:Landroid/graphics/Path;
 
     invoke-virtual {v1}, Landroid/graphics/Path;->isEmpty()Z
 
@@ -845,11 +845,11 @@
     .line 248
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->JN:Landroid/graphics/Path;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JN:Landroid/graphics/Path;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/applications/LinearColorBar;->JP:Landroid/graphics/Paint;
+    iget-object v2, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JP:Landroid/graphics/Paint;
 
     move-object/from16 v0, p1
 
@@ -858,11 +858,11 @@
     .line 249
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->JM:Landroid/graphics/Path;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JM:Landroid/graphics/Path;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/applications/LinearColorBar;->JO:Landroid/graphics/Paint;
+    iget-object v2, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JO:Landroid/graphics/Paint;
 
     move-object/from16 v0, p1
 
@@ -875,9 +875,9 @@
     .line 257
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
+    iget-object v2, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/applications/LinearColorBar;->isLayoutRtl()Z
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->isLayoutRtl()Z
 
     move-result v1
 
@@ -893,9 +893,9 @@
     .line 258
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
+    iget-object v2, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/applications/LinearColorBar;->isLayoutRtl()Z
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->isLayoutRtl()Z
 
     move-result v1
 
@@ -909,17 +909,17 @@
     .line 260
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->mPaint:Landroid/graphics/Paint;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mPaint:Landroid/graphics/Paint;
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/settings/applications/LinearColorBar;->Jz:I
+    iget v2, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->Jz:I
 
     const/4 v3, 0x1
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v2, v3}, Lcom/android/settings/applications/LinearColorBar;->i(II)I
+    invoke-direct {v0, v2, v3}, Lcom/android/vendorsettings/applications/LinearColorBar;->i(II)I
 
     move-result v2
 
@@ -928,11 +928,11 @@
     .line 261
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/applications/LinearColorBar;->mPaint:Landroid/graphics/Paint;
+    iget-object v2, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mPaint:Landroid/graphics/Paint;
 
     move-object/from16 v0, p1
 
@@ -949,12 +949,12 @@
     :cond_5
     move-object/from16 v0, p0
 
-    iput v9, v0, Lcom/android/settings/applications/LinearColorBar;->JJ:I
+    iput v9, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JJ:I
 
     .line 267
     move-object/from16 v0, p0
 
-    iput v8, v0, Lcom/android/settings/applications/LinearColorBar;->JK:I
+    iput v8, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JK:I
 
     .line 271
     if-ge v12, v8, :cond_11
@@ -962,9 +962,9 @@
     .line 276
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
+    iget-object v2, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/applications/LinearColorBar;->isLayoutRtl()Z
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->isLayoutRtl()Z
 
     move-result v1
 
@@ -980,9 +980,9 @@
     .line 277
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
+    iget-object v2, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/applications/LinearColorBar;->isLayoutRtl()Z
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->isLayoutRtl()Z
 
     move-result v1
 
@@ -996,17 +996,17 @@
     .line 279
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->mPaint:Landroid/graphics/Paint;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mPaint:Landroid/graphics/Paint;
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/settings/applications/LinearColorBar;->JA:I
+    iget v2, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JA:I
 
     const/4 v3, 0x2
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v2, v3}, Lcom/android/settings/applications/LinearColorBar;->i(II)I
+    invoke-direct {v0, v2, v3}, Lcom/android/vendorsettings/applications/LinearColorBar;->i(II)I
 
     move-result v2
 
@@ -1015,11 +1015,11 @@
     .line 280
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/applications/LinearColorBar;->mPaint:Landroid/graphics/Paint;
+    iget-object v2, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mPaint:Landroid/graphics/Paint;
 
     move-object/from16 v0, p1
 
@@ -1042,9 +1042,9 @@
     .line 292
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
+    iget-object v4, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/applications/LinearColorBar;->isLayoutRtl()Z
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->isLayoutRtl()Z
 
     move-result v5
 
@@ -1060,9 +1060,9 @@
     .line 293
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
+    iget-object v4, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/applications/LinearColorBar;->isLayoutRtl()Z
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->isLayoutRtl()Z
 
     move-result v1
 
@@ -1076,17 +1076,17 @@
     .line 295
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->mPaint:Landroid/graphics/Paint;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mPaint:Landroid/graphics/Paint;
 
     move-object/from16 v0, p0
 
-    iget v2, v0, Lcom/android/settings/applications/LinearColorBar;->JB:I
+    iget v2, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->JB:I
 
     const/4 v3, 0x4
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v2, v3}, Lcom/android/settings/applications/LinearColorBar;->i(II)I
+    invoke-direct {v0, v2, v3}, Lcom/android/vendorsettings/applications/LinearColorBar;->i(II)I
 
     move-result v2
 
@@ -1095,11 +1095,11 @@
     .line 296
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mRect:Landroid/graphics/Rect;
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/applications/LinearColorBar;->mPaint:Landroid/graphics/Paint;
+    iget-object v2, v0, Lcom/android/vendorsettings/applications/LinearColorBar;->mPaint:Landroid/graphics/Paint;
 
     move-object/from16 v0, p1
 
@@ -1117,7 +1117,7 @@
 
     .line 212
     :cond_9
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/applications/LinearColorBar;->isLayoutRtl()Z
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->isLayoutRtl()Z
 
     move-result v1
 
@@ -1127,7 +1127,7 @@
 
     .line 213
     :goto_8
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/applications/LinearColorBar;->isLayoutRtl()Z
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->isLayoutRtl()Z
 
     move-result v2
 
@@ -1200,7 +1200,7 @@
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/LinearLayout;->onSizeChanged(IIII)V
 
     .line 139
-    invoke-direct {p0}, Lcom/android/settings/applications/LinearColorBar;->kJ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->kJ()V
 
     .line 140
     return-void
@@ -1211,7 +1211,7 @@
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/android/settings/applications/LinearColorBar;->JE:Lcom/android/settings/applications/LinearColorBar$OnRegionTappedListener;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JE:Lcom/android/vendorsettings/applications/LinearColorBar$OnRegionTappedListener;
 
     if-eqz v0, :cond_0
 
@@ -1240,31 +1240,31 @@
     float-to-int v0, v0
 
     .line 148
-    iget v1, p0, Lcom/android/settings/applications/LinearColorBar;->JJ:I
+    iget v1, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JJ:I
 
     if-ge v0, v1, :cond_1
 
     .line 149
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/applications/LinearColorBar;->JL:I
+    iput v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JL:I
 
     .line 155
     :goto_1
-    invoke-virtual {p0}, Lcom/android/settings/applications/LinearColorBar;->invalidate()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/LinearColorBar;->invalidate()V
 
     goto :goto_0
 
     .line 150
     :cond_1
-    iget v1, p0, Lcom/android/settings/applications/LinearColorBar;->JK:I
+    iget v1, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JK:I
 
     if-ge v0, v1, :cond_2
 
     .line 151
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/android/settings/applications/LinearColorBar;->JL:I
+    iput v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JL:I
 
     goto :goto_1
 
@@ -1272,7 +1272,7 @@
     :cond_2
     const/4 v0, 0x4
 
-    iput v0, p0, Lcom/android/settings/applications/LinearColorBar;->JL:I
+    iput v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JL:I
 
     goto :goto_1
 
@@ -1288,25 +1288,25 @@
 
     .prologue
     .line 169
-    iget-object v0, p0, Lcom/android/settings/applications/LinearColorBar;->JE:Lcom/android/settings/applications/LinearColorBar$OnRegionTappedListener;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JE:Lcom/android/vendorsettings/applications/LinearColorBar$OnRegionTappedListener;
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lcom/android/settings/applications/LinearColorBar;->JL:I
+    iget v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JL:I
 
     if-eqz v0, :cond_0
 
     .line 170
-    iget-object v0, p0, Lcom/android/settings/applications/LinearColorBar;->JE:Lcom/android/settings/applications/LinearColorBar$OnRegionTappedListener;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JE:Lcom/android/vendorsettings/applications/LinearColorBar$OnRegionTappedListener;
 
-    iget v1, p0, Lcom/android/settings/applications/LinearColorBar;->JL:I
+    iget v1, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JL:I
 
-    invoke-interface {v0, v1}, Lcom/android/settings/applications/LinearColorBar$OnRegionTappedListener;->aM(I)V
+    invoke-interface {v0, v1}, Lcom/android/vendorsettings/applications/LinearColorBar$OnRegionTappedListener;->aM(I)V
 
     .line 171
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/applications/LinearColorBar;->JL:I
+    iput v0, p0, Lcom/android/vendorsettings/applications/LinearColorBar;->JL:I
 
     .line 173
     :cond_0

@@ -1,19 +1,19 @@
-.class Lcom/android/settings/backup/B;
+.class Lcom/android/vendorsettings/backup/B;
 .super Landroid/preference/Preference;
 .source "ToggleBackupSettingFragment.java"
 
 
 # instance fields
-.field final synthetic Ql:Lcom/android/settings/backup/ToggleBackupSettingFragment;
+.field final synthetic Ql:Lcom/android/vendorsettings/backup/ToggleBackupSettingFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/backup/ToggleBackupSettingFragment;Landroid/content/Context;)V
+.method constructor <init>(Lcom/android/vendorsettings/backup/ToggleBackupSettingFragment;Landroid/content/Context;)V
     .locals 0
 
     .prologue
     .line 69
-    iput-object p1, p0, Lcom/android/settings/backup/B;->Ql:Lcom/android/settings/backup/ToggleBackupSettingFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/backup/B;->Ql:Lcom/android/vendorsettings/backup/ToggleBackupSettingFragment;
 
     invoke-direct {p0, p2}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
@@ -39,7 +39,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 74
-    invoke-virtual {p0}, Lcom/android/settings/backup/B;->getSummary()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/backup/B;->getSummary()Ljava/lang/CharSequence;
 
     move-result-object v1
 

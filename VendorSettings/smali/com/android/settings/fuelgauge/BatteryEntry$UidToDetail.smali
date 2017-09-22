@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fuelgauge/BatteryEntry$UidToDetail;
+.class Lcom/android/vendorsettings/fuelgauge/BatteryEntry$UidToDetail;
 .super Ljava/lang/Object;
 .source "BatteryEntry.java"
 

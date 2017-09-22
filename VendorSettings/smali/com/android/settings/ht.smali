@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ht;
+.class Lcom/android/vendorsettings/ht;
 .super Ljava/lang/Object;
 .source "SettingsActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic zB:Lcom/android/settings/hn;
+.field final synthetic zB:Lcom/android/vendorsettings/hn;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/hn;)V
+.method constructor <init>(Lcom/android/vendorsettings/hn;)V
     .locals 0
 
     .prologue
     .line 888
-    iput-object p1, p0, Lcom/android/settings/ht;->zB:Lcom/android/settings/hn;
+    iput-object p1, p0, Lcom/android/vendorsettings/ht;->zB:Lcom/android/vendorsettings/hn;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 891
-    iget-object v0, p0, Lcom/android/settings/ht;->zB:Lcom/android/settings/hn;
+    iget-object v0, p0, Lcom/android/vendorsettings/ht;->zB:Lcom/android/vendorsettings/hn;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/android/settings/hn;->b(Lcom/android/settings/hn;Z)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/hn;->b(Lcom/android/vendorsettings/hn;Z)V
 
     .line 892
     return-void

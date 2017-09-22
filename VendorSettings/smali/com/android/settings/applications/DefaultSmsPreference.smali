@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/DefaultSmsPreference;
-.super Lcom/android/settings/AppListPreference;
+.class public Lcom/android/vendorsettings/applications/DefaultSmsPreference;
+.super Lcom/android/vendorsettings/AppListPreference;
 .source "DefaultSmsPreference.java"
 
 
@@ -9,10 +9,10 @@
 
     .prologue
     .line 34
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/AppListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/AppListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 36
-    invoke-direct {p0}, Lcom/android/settings/applications/DefaultSmsPreference;->kv()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/DefaultSmsPreference;->kv()V
 
     .line 37
     return-void
@@ -44,7 +44,7 @@
 
     .prologue
     .line 53
-    invoke-virtual {p0}, Lcom/android/settings/applications/DefaultSmsPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/DefaultSmsPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -77,7 +77,7 @@
 
     .prologue
     .line 40
-    invoke-virtual {p0}, Lcom/android/settings/applications/DefaultSmsPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/DefaultSmsPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -130,11 +130,11 @@
 
     .line 49
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/applications/DefaultSmsPreference;->getDefaultPackage()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/DefaultSmsPreference;->getDefaultPackage()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v3, v0}, Lcom/android/settings/applications/DefaultSmsPreference;->a([Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v3, v0}, Lcom/android/vendorsettings/applications/DefaultSmsPreference;->a([Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
 
     .line 50
     return-void
@@ -153,7 +153,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-direct {p0}, Lcom/android/settings/applications/DefaultSmsPreference;->getDefaultPackage()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/DefaultSmsPreference;->getDefaultPackage()Ljava/lang/String;
 
     move-result-object v0
 
@@ -164,7 +164,7 @@
     if-nez v0, :cond_0
 
     .line 63
-    invoke-virtual {p0}, Lcom/android/settings/applications/DefaultSmsPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/DefaultSmsPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -172,11 +172,11 @@
 
     .line 65
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/applications/DefaultSmsPreference;->getEntry()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/DefaultSmsPreference;->getEntry()Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/DefaultSmsPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/DefaultSmsPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 66
     const/4 v0, 0x1

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dF;
+.class Lcom/android/vendorsettings/dF;
 .super Ljava/lang/Object;
 .source "KeyguardShortcutChooserSettings.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic oH:Lcom/android/settings/dD;
+.field final synthetic oH:Lcom/android/vendorsettings/dD;
 
-.field final synthetic oI:Lcom/android/settings/dE;
+.field final synthetic oI:Lcom/android/vendorsettings/dE;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dE;Lcom/android/settings/dD;)V
+.method constructor <init>(Lcom/android/vendorsettings/dE;Lcom/android/vendorsettings/dD;)V
     .locals 0
 
     .prologue
     .line 116
-    iput-object p1, p0, Lcom/android/settings/dF;->oI:Lcom/android/settings/dE;
+    iput-object p1, p0, Lcom/android/vendorsettings/dF;->oI:Lcom/android/vendorsettings/dE;
 
-    iput-object p2, p0, Lcom/android/settings/dF;->oH:Lcom/android/settings/dD;
+    iput-object p2, p0, Lcom/android/vendorsettings/dF;->oH:Lcom/android/vendorsettings/dD;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,22 +36,22 @@
     const/4 v4, 0x0
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/dF;->oI:Lcom/android/settings/dE;
+    iget-object v0, p0, Lcom/android/vendorsettings/dF;->oI:Lcom/android/vendorsettings/dE;
 
-    iget-object v0, v0, Lcom/android/settings/dE;->oG:Lcom/android/settings/KeyguardShortcutChooserSettings;
+    iget-object v0, v0, Lcom/android/vendorsettings/dE;->oG:Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;
 
-    iget-object v1, p0, Lcom/android/settings/dF;->oH:Lcom/android/settings/dD;
+    iget-object v1, p0, Lcom/android/vendorsettings/dF;->oH:Lcom/android/vendorsettings/dD;
 
-    iget-object v1, v1, Lcom/android/settings/dD;->oF:Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/vendorsettings/dD;->oF:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lcom/android/settings/KeyguardShortcutChooserSettings;->a(Lcom/android/settings/KeyguardShortcutChooserSettings;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;->a(Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;Ljava/lang/String;)Ljava/lang/String;
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/dF;->oI:Lcom/android/settings/dE;
+    iget-object v0, p0, Lcom/android/vendorsettings/dF;->oI:Lcom/android/vendorsettings/dE;
 
-    iget-object v0, v0, Lcom/android/settings/dE;->oG:Lcom/android/settings/KeyguardShortcutChooserSettings;
+    iget-object v0, v0, Lcom/android/vendorsettings/dE;->oG:Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;
 
-    invoke-static {v0}, Lcom/android/settings/KeyguardShortcutChooserSettings;->b(Lcom/android/settings/KeyguardShortcutChooserSettings;)Landroid/app/Activity;
+    invoke-static {v0}, Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;->b(Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;)Landroid/app/Activity;
 
     move-result-object v0
 
@@ -59,11 +59,11 @@
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/android/settings/dF;->oI:Lcom/android/settings/dE;
+    iget-object v0, p0, Lcom/android/vendorsettings/dF;->oI:Lcom/android/vendorsettings/dE;
 
-    iget-object v0, v0, Lcom/android/settings/dE;->oG:Lcom/android/settings/KeyguardShortcutChooserSettings;
+    iget-object v0, v0, Lcom/android/vendorsettings/dE;->oG:Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;
 
-    invoke-static {v0}, Lcom/android/settings/KeyguardShortcutChooserSettings;->c(Lcom/android/settings/KeyguardShortcutChooserSettings;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;->c(Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;)Z
 
     move-result v0
 
@@ -72,26 +72,26 @@
     const-string v0, "keyguard_left_function_chooser"
 
     :goto_0
-    iget-object v2, p0, Lcom/android/settings/dF;->oI:Lcom/android/settings/dE;
+    iget-object v2, p0, Lcom/android/vendorsettings/dF;->oI:Lcom/android/vendorsettings/dE;
 
-    iget-object v2, v2, Lcom/android/settings/dE;->oG:Lcom/android/settings/KeyguardShortcutChooserSettings;
+    iget-object v2, v2, Lcom/android/vendorsettings/dE;->oG:Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;
 
-    invoke-static {v2}, Lcom/android/settings/KeyguardShortcutChooserSettings;->d(Lcom/android/settings/KeyguardShortcutChooserSettings;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;->d(Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;)Ljava/lang/String;
 
     move-result-object v2
 
     invoke-static {v1, v0, v2}, Landroid/provider/MiuiSettings$System;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 124
-    iget-object v0, p0, Lcom/android/settings/dF;->oI:Lcom/android/settings/dE;
+    iget-object v0, p0, Lcom/android/vendorsettings/dF;->oI:Lcom/android/vendorsettings/dE;
 
-    iget-object v1, v0, Lcom/android/settings/dE;->oG:Lcom/android/settings/KeyguardShortcutChooserSettings;
+    iget-object v1, v0, Lcom/android/vendorsettings/dE;->oG:Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;
 
-    iget-object v0, p0, Lcom/android/settings/dF;->oI:Lcom/android/settings/dE;
+    iget-object v0, p0, Lcom/android/vendorsettings/dF;->oI:Lcom/android/vendorsettings/dE;
 
-    iget-object v0, v0, Lcom/android/settings/dE;->oG:Lcom/android/settings/KeyguardShortcutChooserSettings;
+    iget-object v0, v0, Lcom/android/vendorsettings/dE;->oG:Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;
 
-    invoke-static {v0}, Lcom/android/settings/KeyguardShortcutChooserSettings;->c(Lcom/android/settings/KeyguardShortcutChooserSettings;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;->c(Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;)Z
 
     move-result v0
 
@@ -104,22 +104,22 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    iget-object v3, p0, Lcom/android/settings/dF;->oH:Lcom/android/settings/dD;
+    iget-object v3, p0, Lcom/android/vendorsettings/dF;->oH:Lcom/android/vendorsettings/dD;
 
-    iget-object v3, v3, Lcom/android/settings/dD;->label:Ljava/lang/String;
+    iget-object v3, v3, Lcom/android/vendorsettings/dD;->label:Ljava/lang/String;
 
     aput-object v3, v2, v4
 
-    invoke-virtual {v1, v0, v2}, Lcom/android/settings/KeyguardShortcutChooserSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v1, v0, v2}, Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 126
-    iget-object v1, p0, Lcom/android/settings/dF;->oI:Lcom/android/settings/dE;
+    iget-object v1, p0, Lcom/android/vendorsettings/dF;->oI:Lcom/android/vendorsettings/dE;
 
-    iget-object v1, v1, Lcom/android/settings/dE;->oG:Lcom/android/settings/KeyguardShortcutChooserSettings;
+    iget-object v1, v1, Lcom/android/vendorsettings/dE;->oG:Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;
 
-    invoke-static {v1}, Lcom/android/settings/KeyguardShortcutChooserSettings;->b(Lcom/android/settings/KeyguardShortcutChooserSettings;)Landroid/app/Activity;
+    invoke-static {v1}, Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;->b(Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;)Landroid/app/Activity;
 
     move-result-object v1
 
@@ -130,15 +130,15 @@
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     .line 127
-    iget-object v0, p0, Lcom/android/settings/dF;->oI:Lcom/android/settings/dE;
+    iget-object v0, p0, Lcom/android/vendorsettings/dF;->oI:Lcom/android/vendorsettings/dE;
 
-    iget-object v0, v0, Lcom/android/settings/dE;->oG:Lcom/android/settings/KeyguardShortcutChooserSettings;
+    iget-object v0, v0, Lcom/android/vendorsettings/dE;->oG:Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;
 
-    invoke-static {v0}, Lcom/android/settings/KeyguardShortcutChooserSettings;->e(Lcom/android/settings/KeyguardShortcutChooserSettings;)Lcom/android/settings/dE;
+    invoke-static {v0}, Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;->e(Lcom/android/vendorsettings/KeyguardShortcutChooserSettings;)Lcom/android/vendorsettings/dE;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/dE;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/dE;->notifyDataSetChanged()V
 
     .line 128
     return-void

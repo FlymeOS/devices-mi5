@@ -1,4 +1,4 @@
-.class Lcom/android/settings/location/MiuiLocationSettings$1;
+.class Lcom/android/vendorsettings/location/MiuiLocationSettings$1;
 .super Ljava/lang/Object;
 .source "MiuiLocationSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ahu:Lcom/android/settings/location/MiuiLocationSettings;
+.field final synthetic ahu:Lcom/android/vendorsettings/location/MiuiLocationSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/location/MiuiLocationSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/location/MiuiLocationSettings;)V
     .locals 0
 
     .prologue
     .line 143
-    iput-object p1, p0, Lcom/android/settings/location/MiuiLocationSettings$1;->ahu:Lcom/android/settings/location/MiuiLocationSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings$1;->ahu:Lcom/android/vendorsettings/location/MiuiLocationSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -62,7 +62,7 @@
 
     check-cast p2, Landroid/preference/Preference;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/location/MiuiLocationSettings$1;->a(Landroid/preference/Preference;Landroid/preference/Preference;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/location/MiuiLocationSettings$1;->a(Landroid/preference/Preference;Landroid/preference/Preference;)I
 
     move-result v0
 

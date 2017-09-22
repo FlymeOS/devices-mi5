@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "MiuiSecurityBluetoothSettingsFragment.java"
 
 
 # instance fields
-.field private dr:Lcom/android/settings/aH;
+.field private dr:Lcom/android/vendorsettings/aH;
 
 .field private fi:Landroid/security/MiuiLockPatternUtils;
 
@@ -15,12 +15,12 @@
 
     .prologue
     .line 20
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 35
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
 
     return-void
 .end method
@@ -49,18 +49,18 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 179
-    invoke-virtual {p0, v0, p1}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, p1}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 180
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;)Lcom/android/settings/aH;
+.method static synthetic a(Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;)Lcom/android/vendorsettings/aH;
     .locals 1
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->dr:Lcom/android/settings/aH;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->dr:Lcom/android/vendorsettings/aH;
 
     return-object v0
 .end method
@@ -70,7 +70,7 @@
 
     .prologue
     .line 90
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -78,7 +78,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->f(Ljava/lang/String;Ljava/lang/String;)Landroid/preference/Preference;
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->f(Ljava/lang/String;Ljava/lang/String;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -92,7 +92,7 @@
     .line 94
     new-instance v0, Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -115,7 +115,7 @@
 
     .prologue
     .line 40
-    const-class v0, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;
+    const-class v0, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -139,12 +139,12 @@
     const/4 v3, 0x1
 
     .line 134
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 136
     const-string v0, "unlock_device_by_bluetooth"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -153,7 +153,7 @@
     .line 137
     const-string v1, "bluetooth_devices"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -167,7 +167,7 @@
     if-ne p2, v4, :cond_3
 
     .line 140
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
 
     invoke-virtual {v2}, Landroid/security/MiuiLockPatternUtils;->getBluetoothUnlockEnabled()Z
 
@@ -176,7 +176,7 @@
     if-eqz v2, :cond_1
 
     .line 141
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -189,7 +189,7 @@
     invoke-virtual {v2, v3}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
 
     .line 142
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
 
     invoke-virtual {v2, v5}, Landroid/security/MiuiLockPatternUtils;->setBluetoothUnlockEnabled(Z)V
 
@@ -206,7 +206,7 @@
 
     .line 146
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
 
     invoke-virtual {v2}, Landroid/security/MiuiLockPatternUtils;->getBluetoothAddressToUnlock()Ljava/lang/String;
 
@@ -219,13 +219,13 @@
     if-eqz v2, :cond_2
 
     .line 147
-    invoke-direct {p0, v6}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->T(I)V
+    invoke-direct {p0, v6}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->T(I)V
 
     goto :goto_0
 
     .line 149
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
 
     invoke-virtual {v2, v3}, Landroid/security/MiuiLockPatternUtils;->setBluetoothUnlockEnabled(Z)V
 
@@ -236,7 +236,7 @@
     invoke-virtual {v1, v3}, Landroid/preference/PreferenceCategory;->setEnabled(Z)V
 
     .line 152
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -259,7 +259,7 @@
     if-ne p2, v4, :cond_4
 
     .line 156
-    invoke-direct {p0, v7}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->T(I)V
+    invoke-direct {p0, v7}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->T(I)V
 
     goto :goto_0
 
@@ -312,7 +312,7 @@
     invoke-virtual {v1, v2, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 164
-    const-class v0, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;
+    const-class v0, Lcom/android/vendorsettings/MiuiSecurityBluetoothMatchDeviceFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -320,7 +320,7 @@
 
     const/16 v2, 0x68
 
-    invoke-virtual {p0, p0, v0, v2, v1}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
+    invoke-virtual {p0, p0, v0, v2, v1}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
 
     goto :goto_0
 
@@ -334,7 +334,7 @@
     if-ne p2, v4, :cond_0
 
     .line 168
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
 
     invoke-virtual {v2, v3}, Landroid/security/MiuiLockPatternUtils;->setBluetoothUnlockEnabled(Z)V
 
@@ -352,32 +352,32 @@
 
     .prologue
     .line 45
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 46
     new-instance v0, Landroid/security/MiuiLockPatternUtils;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Landroid/security/MiuiLockPatternUtils;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
 
     .line 47
-    new-instance v0, Lcom/android/settings/aH;
+    new-instance v0, Lcom/android/vendorsettings/aH;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1, p0}, Lcom/android/settings/aH;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
+    invoke-direct {v0, v1, p0}, Lcom/android/vendorsettings/aH;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->dr:Lcom/android/settings/aH;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->dr:Lcom/android/vendorsettings/aH;
 
     .line 49
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -391,7 +391,7 @@
     :cond_0
     const v0, 0x7f080089
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->addPreferencesFromResource(I)V
 
     .line 55
     return-void
@@ -420,16 +420,16 @@
     if-eqz v1, :cond_1
 
     .line 105
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->dr:Lcom/android/settings/aH;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->dr:Lcom/android/vendorsettings/aH;
 
     const/16 v1, 0x64
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/aH;->b(ILjava/lang/CharSequence;)Z
+    invoke-virtual {v0, v1, v2}, Lcom/android/vendorsettings/aH;->b(ILjava/lang/CharSequence;)Z
 
     .line 129
     :cond_0
     :goto_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -446,13 +446,13 @@
     if-eqz v1, :cond_2
 
     .line 107
-    const-class v0, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    const-class v0, Lcom/android/vendorsettings/MiuiSecurityBluetoothDeviceInfoFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, p0, v0, v5, v2}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
+    invoke-virtual {p0, p0, v0, v5, v2}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
 
     goto :goto_0
 
@@ -469,7 +469,7 @@
     .line 109
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -480,9 +480,9 @@
     move-result-object v0
 
     .line 110
-    new-instance v1, Lcom/android/settings/eR;
+    new-instance v1, Lcom/android/vendorsettings/eR;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/eR;-><init>(Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/eR;-><init>(Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;)V
 
     .line 121
     const/4 v2, 0x1
@@ -495,7 +495,7 @@
     invoke-virtual {v0, v2}, Landroid/app/AlertDialog;->setCanceledOnTouchOutside(Z)V
 
     .line 123
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -510,7 +510,7 @@
     .line 124
     const/4 v2, -0x2
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -523,7 +523,7 @@
     invoke-virtual {v0, v2, v3, v1}, Landroid/app/AlertDialog;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
     .line 125
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -550,12 +550,12 @@
     const/4 v6, 0x0
 
     .line 59
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 61
     const-string v0, "unlock_device_by_bluetooth"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -564,7 +564,7 @@
     .line 62
     const-string v1, "bluetooth_devices"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -574,7 +574,7 @@
     invoke-virtual {v1}, Landroid/preference/PreferenceCategory;->removeAll()V
 
     .line 65
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
 
     invoke-virtual {v2}, Landroid/security/MiuiLockPatternUtils;->getBluetoothAddressToUnlock()Ljava/lang/String;
 
@@ -587,14 +587,14 @@
     if-nez v2, :cond_1
 
     .line 66
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
 
     invoke-virtual {v2}, Landroid/security/MiuiLockPatternUtils;->getBluetoothNameToUnlock()Ljava/lang/String;
 
     move-result-object v3
 
     .line 67
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
 
     invoke-virtual {v2}, Landroid/security/MiuiLockPatternUtils;->getBluetoothAddressToUnlock()Ljava/lang/String;
 
@@ -611,7 +611,7 @@
     :goto_0
     const-string v3, "matched_device"
 
-    invoke-direct {p0, v3, v2}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->f(Ljava/lang/String;Ljava/lang/String;)Landroid/preference/Preference;
+    invoke-direct {p0, v3, v2}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->f(Ljava/lang/String;Ljava/lang/String;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -622,7 +622,7 @@
 
     const v3, 0x7f0c1023
 
-    invoke-direct {p0, v2, v3}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->e(Ljava/lang/String;I)Landroid/preference/Preference;
+    invoke-direct {p0, v2, v3}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->e(Ljava/lang/String;I)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -630,7 +630,7 @@
 
     .line 80
     :goto_1
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->fi:Landroid/security/MiuiLockPatternUtils;
 
     invoke-virtual {v2}, Landroid/security/MiuiLockPatternUtils;->getBluetoothUnlockEnabled()Z
 
@@ -716,7 +716,7 @@
 
     const v3, 0x7f0c1022
 
-    invoke-direct {p0, v2, v3}, Lcom/android/settings/MiuiSecurityBluetoothSettingsFragment;->e(Ljava/lang/String;I)Landroid/preference/Preference;
+    invoke-direct {p0, v2, v3}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettingsFragment;->e(Ljava/lang/String;I)Landroid/preference/Preference;
 
     move-result-object v2
 

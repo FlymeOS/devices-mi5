@@ -1,9 +1,9 @@
-.class public final Lcom/android/settings/cloud/push/c;
+.class public final Lcom/android/vendorsettings/cloud/push/c;
 .super Ljava/lang/Object;
 .source "CloudEntity.java"
 
 # interfaces
-.implements Lcom/android/settings/cloud/push/b;
+.implements Lcom/android/vendorsettings/cloud/push/b;
 
 
 # static fields
@@ -22,7 +22,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/push/c;->CONTENT_URI:Landroid/net/Uri;
+    sput-object v0, Lcom/android/vendorsettings/cloud/push/c;->CONTENT_URI:Landroid/net/Uri;
 
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/StorageWizardBase$1;
+.class Lcom/android/vendorsettings/deviceinfo/StorageWizardBase$1;
 .super Ljava/lang/Object;
 .source "StorageWizardBase.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Xp:Lcom/android/settings/deviceinfo/StorageWizardBase;
+.field final synthetic Xp:Lcom/android/vendorsettings/deviceinfo/StorageWizardBase;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/StorageWizardBase;)V
+.method constructor <init>(Lcom/android/vendorsettings/deviceinfo/StorageWizardBase;)V
     .locals 0
 
     .prologue
     .line 88
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/StorageWizardBase$1;->Xp:Lcom/android/settings/deviceinfo/StorageWizardBase;
+    iput-object p1, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardBase$1;->Xp:Lcom/android/vendorsettings/deviceinfo/StorageWizardBase;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardBase$1;->Xp:Lcom/android/settings/deviceinfo/StorageWizardBase;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardBase$1;->Xp:Lcom/android/vendorsettings/deviceinfo/StorageWizardBase;
 
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/StorageWizardBase;->hY()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardBase;->hY()V
 
     .line 92
     return-void

@@ -1,22 +1,22 @@
-.class Lcom/android/settings/applications/InstalledAppDetails$7;
+.class Lcom/android/vendorsettings/applications/InstalledAppDetails$7;
 .super Ljava/lang/Object;
 .source "InstalledAppDetails.java"
 
 # interfaces
-.implements Lcom/android/settings/applications/PermissionsSummaryHelper$PermissionsResultCallback;
+.implements Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$PermissionsResultCallback;
 
 
 # instance fields
-.field final synthetic IQ:Lcom/android/settings/applications/InstalledAppDetails;
+.field final synthetic IQ:Lcom/android/vendorsettings/applications/InstalledAppDetails;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/InstalledAppDetails;)V
+.method constructor <init>(Lcom/android/vendorsettings/applications/InstalledAppDetails;)V
     .locals 0
 
     .prologue
     .line 964
-    iput-object p1, p0, Lcom/android/settings/applications/InstalledAppDetails$7;->IQ:Lcom/android/settings/applications/InstalledAppDetails;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails$7;->IQ:Lcom/android/vendorsettings/applications/InstalledAppDetails;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,9 +36,9 @@
     const/4 v1, 0x1
 
     .line 967
-    iget-object v3, p0, Lcom/android/settings/applications/InstalledAppDetails$7;->IQ:Lcom/android/settings/applications/InstalledAppDetails;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails$7;->IQ:Lcom/android/vendorsettings/applications/InstalledAppDetails;
 
-    invoke-virtual {v3}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v3}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -50,14 +50,14 @@
 
     .line 970
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/applications/InstalledAppDetails$7;->IQ:Lcom/android/settings/applications/InstalledAppDetails;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails$7;->IQ:Lcom/android/vendorsettings/applications/InstalledAppDetails;
 
-    invoke-static {v3, v2}, Lcom/android/settings/applications/InstalledAppDetails;->a(Lcom/android/settings/applications/InstalledAppDetails;Landroid/content/BroadcastReceiver;)Landroid/content/BroadcastReceiver;
+    invoke-static {v3, v2}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->a(Lcom/android/vendorsettings/applications/InstalledAppDetails;Landroid/content/BroadcastReceiver;)Landroid/content/BroadcastReceiver;
 
     .line 971
-    iget-object v3, p0, Lcom/android/settings/applications/InstalledAppDetails$7;->IQ:Lcom/android/settings/applications/InstalledAppDetails;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails$7;->IQ:Lcom/android/vendorsettings/applications/InstalledAppDetails;
 
-    invoke-virtual {v3}, Lcom/android/settings/applications/InstalledAppDetails;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v3}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -84,18 +84,18 @@
 
     .line 999
     :goto_1
-    iget-object v2, p0, Lcom/android/settings/applications/InstalledAppDetails$7;->IQ:Lcom/android/settings/applications/InstalledAppDetails;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails$7;->IQ:Lcom/android/vendorsettings/applications/InstalledAppDetails;
 
-    invoke-static {v2}, Lcom/android/settings/applications/InstalledAppDetails;->f(Lcom/android/settings/applications/InstalledAppDetails;)Landroid/preference/Preference;
+    invoke-static {v2}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->f(Lcom/android/vendorsettings/applications/InstalledAppDetails;)Landroid/preference/Preference;
 
     move-result-object v2
 
     invoke-virtual {v2, v1}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 1000
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails$7;->IQ:Lcom/android/settings/applications/InstalledAppDetails;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails$7;->IQ:Lcom/android/vendorsettings/applications/InstalledAppDetails;
 
-    invoke-static {v1}, Lcom/android/settings/applications/InstalledAppDetails;->f(Lcom/android/settings/applications/InstalledAppDetails;)Landroid/preference/Preference;
+    invoke-static {v1}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->f(Lcom/android/vendorsettings/applications/InstalledAppDetails;)Landroid/preference/Preference;
 
     move-result-object v1
 

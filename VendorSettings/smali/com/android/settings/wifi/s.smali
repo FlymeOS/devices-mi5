@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/s;
+.class Lcom/android/vendorsettings/wifi/s;
 .super Ljava/lang/Object;
 .source "MiuiWifiDetailFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aAM:Lcom/android/settings/wifi/MiuiWifiDetailFragment;
+.field final synthetic aAM:Lcom/android/vendorsettings/wifi/MiuiWifiDetailFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/MiuiWifiDetailFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/MiuiWifiDetailFragment;)V
     .locals 0
 
     .prologue
     .line 138
-    iput-object p1, p0, Lcom/android/settings/wifi/s;->aAM:Lcom/android/settings/wifi/MiuiWifiDetailFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/s;->aAM:Lcom/android/vendorsettings/wifi/MiuiWifiDetailFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,9 +32,9 @@
     .line 141
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/s;->aAM:Lcom/android/settings/wifi/MiuiWifiDetailFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/s;->aAM:Lcom/android/vendorsettings/wifi/MiuiWifiDetailFragment;
 
-    invoke-virtual {v1}, Lcom/android/settings/wifi/MiuiWifiDetailFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/wifi/MiuiWifiDetailFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -56,9 +56,9 @@
 
     const v1, 0x104000a
 
-    new-instance v2, Lcom/android/settings/wifi/t;
+    new-instance v2, Lcom/android/vendorsettings/wifi/t;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/wifi/t;-><init>(Lcom/android/settings/wifi/s;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/wifi/t;-><init>(Lcom/android/vendorsettings/wifi/s;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -78,9 +78,9 @@
     move-result-object v0
 
     .line 153
-    new-instance v1, Lcom/android/settings/wifi/u;
+    new-instance v1, Lcom/android/vendorsettings/wifi/u;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/wifi/u;-><init>(Lcom/android/settings/wifi/s;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/wifi/u;-><init>(Lcom/android/vendorsettings/wifi/s;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 

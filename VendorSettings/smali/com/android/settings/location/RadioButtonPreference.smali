@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/location/RadioButtonPreference;
+.class public Lcom/android/vendorsettings/location/RadioButtonPreference;
 .super Lmiui/preference/RadioButtonPreference;
 .source "RadioButtonPreference.java"
 
 
 # instance fields
-.field private ahw:Lcom/android/settings/location/RadioButtonPreference$OnClickListener;
+.field private ahw:Lcom/android/vendorsettings/location/RadioButtonPreference$OnClickListener;
 
 
 # direct methods
@@ -15,7 +15,7 @@
     .line 59
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/location/RadioButtonPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/location/RadioButtonPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 60
     return-void
@@ -31,7 +31,7 @@
     .line 44
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/location/RadioButtonPreference;->ahw:Lcom/android/settings/location/RadioButtonPreference$OnClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/location/RadioButtonPreference;->ahw:Lcom/android/vendorsettings/location/RadioButtonPreference$OnClickListener;
 
     .line 56
     return-void
@@ -47,7 +47,7 @@
     .line 44
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/location/RadioButtonPreference;->ahw:Lcom/android/settings/location/RadioButtonPreference$OnClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/location/RadioButtonPreference;->ahw:Lcom/android/vendorsettings/location/RadioButtonPreference$OnClickListener;
 
     .line 50
     return-void
@@ -55,12 +55,12 @@
 
 
 # virtual methods
-.method a(Lcom/android/settings/location/RadioButtonPreference$OnClickListener;)V
+.method a(Lcom/android/vendorsettings/location/RadioButtonPreference$OnClickListener;)V
     .locals 0
 
     .prologue
     .line 63
-    iput-object p1, p0, Lcom/android/settings/location/RadioButtonPreference;->ahw:Lcom/android/settings/location/RadioButtonPreference$OnClickListener;
+    iput-object p1, p0, Lcom/android/vendorsettings/location/RadioButtonPreference;->ahw:Lcom/android/vendorsettings/location/RadioButtonPreference$OnClickListener;
 
     .line 64
     return-void
@@ -105,14 +105,14 @@
 
     .prologue
     .line 68
-    iget-object v0, p0, Lcom/android/settings/location/RadioButtonPreference;->ahw:Lcom/android/settings/location/RadioButtonPreference$OnClickListener;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/RadioButtonPreference;->ahw:Lcom/android/vendorsettings/location/RadioButtonPreference$OnClickListener;
 
     if-eqz v0, :cond_0
 
     .line 69
-    iget-object v0, p0, Lcom/android/settings/location/RadioButtonPreference;->ahw:Lcom/android/settings/location/RadioButtonPreference$OnClickListener;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/RadioButtonPreference;->ahw:Lcom/android/vendorsettings/location/RadioButtonPreference$OnClickListener;
 
-    invoke-interface {v0, p0}, Lcom/android/settings/location/RadioButtonPreference$OnClickListener;->b(Lcom/android/settings/location/RadioButtonPreference;)V
+    invoke-interface {v0, p0}, Lcom/android/vendorsettings/location/RadioButtonPreference$OnClickListener;->b(Lcom/android/vendorsettings/location/RadioButtonPreference;)V
 
     .line 71
     :cond_0

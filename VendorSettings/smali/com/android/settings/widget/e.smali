@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/widget/e;
+.class public interface abstract Lcom/android/vendorsettings/widget/e;
 .super Ljava/lang/Object;
 .source "ChartDataUsageView.java"
 

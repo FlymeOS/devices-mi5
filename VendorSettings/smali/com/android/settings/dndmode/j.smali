@@ -1,19 +1,19 @@
-.class Lcom/android/settings/dndmode/j;
+.class Lcom/android/vendorsettings/dndmode/j;
 .super Landroid/database/ContentObserver;
 .source "AutoTimeSettingsFragment.java"
 
 
 # instance fields
-.field final synthetic aau:Lcom/android/settings/dndmode/h;
+.field final synthetic aau:Lcom/android/vendorsettings/dndmode/h;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dndmode/h;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/vendorsettings/dndmode/h;Landroid/os/Handler;)V
     .locals 0
 
     .prologue
     .line 74
-    iput-object p1, p0, Lcom/android/settings/dndmode/j;->aau:Lcom/android/settings/dndmode/h;
+    iput-object p1, p0, Lcom/android/vendorsettings/dndmode/j;->aau:Lcom/android/vendorsettings/dndmode/h;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -27,15 +27,15 @@
 
     .prologue
     .line 77
-    iget-object v0, p0, Lcom/android/settings/dndmode/j;->aau:Lcom/android/settings/dndmode/h;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/j;->aau:Lcom/android/vendorsettings/dndmode/h;
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/h;->g(Lcom/android/settings/dndmode/h;)Landroid/preference/CheckBoxPreference;
+    invoke-static {v0}, Lcom/android/vendorsettings/dndmode/h;->g(Lcom/android/vendorsettings/dndmode/h;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/j;->aau:Lcom/android/settings/dndmode/h;
+    iget-object v1, p0, Lcom/android/vendorsettings/dndmode/j;->aau:Lcom/android/vendorsettings/dndmode/h;
 
-    invoke-static {v1}, Lcom/android/settings/dndmode/h;->b(Lcom/android/settings/dndmode/h;)Landroid/app/Activity;
+    invoke-static {v1}, Lcom/android/vendorsettings/dndmode/h;->b(Lcom/android/vendorsettings/dndmode/h;)Landroid/app/Activity;
 
     move-result-object v1
 

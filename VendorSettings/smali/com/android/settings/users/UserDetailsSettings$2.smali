@@ -1,4 +1,4 @@
-.class Lcom/android/settings/users/UserDetailsSettings$2;
+.class Lcom/android/vendorsettings/users/UserDetailsSettings$2;
 .super Ljava/lang/Object;
 .source "UserDetailsSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic auk:Lcom/android/settings/users/UserDetailsSettings;
+.field final synthetic auk:Lcom/android/vendorsettings/users/UserDetailsSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/UserDetailsSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/users/UserDetailsSettings;)V
     .locals 0
 
     .prologue
     .line 177
-    iput-object p1, p0, Lcom/android/settings/users/UserDetailsSettings$2;->auk:Lcom/android/settings/users/UserDetailsSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/users/UserDetailsSettings$2;->auk:Lcom/android/vendorsettings/users/UserDetailsSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 179
-    iget-object v0, p0, Lcom/android/settings/users/UserDetailsSettings$2;->auk:Lcom/android/settings/users/UserDetailsSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/users/UserDetailsSettings$2;->auk:Lcom/android/vendorsettings/users/UserDetailsSettings;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/users/UserDetailsSettings;->bj(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/users/UserDetailsSettings;->bj(Z)V
 
     .line 180
     return-void

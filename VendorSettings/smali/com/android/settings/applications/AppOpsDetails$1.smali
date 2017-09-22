@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/AppOpsDetails$1;
+.class Lcom/android/vendorsettings/applications/AppOpsDetails$1;
 .super Ljava/lang/Object;
 .source "AppOpsDetails.java"
 
@@ -9,22 +9,22 @@
 # instance fields
 .field final synthetic FE:I
 
-.field final synthetic FF:Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+.field final synthetic FF:Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;
 
-.field final synthetic FG:Lcom/android/settings/applications/AppOpsDetails;
+.field final synthetic FG:Lcom/android/vendorsettings/applications/AppOpsDetails;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/AppOpsDetails;ILcom/android/settings/applications/AppOpsState$AppOpEntry;)V
+.method constructor <init>(Lcom/android/vendorsettings/applications/AppOpsDetails;ILcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;)V
     .locals 0
 
     .prologue
     .line 136
-    iput-object p1, p0, Lcom/android/settings/applications/AppOpsDetails$1;->FG:Lcom/android/settings/applications/AppOpsDetails;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/AppOpsDetails$1;->FG:Lcom/android/vendorsettings/applications/AppOpsDetails;
 
-    iput p2, p0, Lcom/android/settings/applications/AppOpsDetails$1;->FE:I
+    iput p2, p0, Lcom/android/vendorsettings/applications/AppOpsDetails$1;->FE:I
 
-    iput-object p3, p0, Lcom/android/settings/applications/AppOpsDetails$1;->FF:Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+    iput-object p3, p0, Lcom/android/vendorsettings/applications/AppOpsDetails$1;->FF:Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,17 +38,17 @@
 
     .prologue
     .line 139
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsDetails$1;->FG:Lcom/android/settings/applications/AppOpsDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails$1;->FG:Lcom/android/vendorsettings/applications/AppOpsDetails;
 
-    invoke-static {v0}, Lcom/android/settings/applications/AppOpsDetails;->a(Lcom/android/settings/applications/AppOpsDetails;)Landroid/app/AppOpsManager;
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/AppOpsDetails;->a(Lcom/android/vendorsettings/applications/AppOpsDetails;)Landroid/app/AppOpsManager;
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/settings/applications/AppOpsDetails$1;->FE:I
+    iget v2, p0, Lcom/android/vendorsettings/applications/AppOpsDetails$1;->FE:I
 
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsDetails$1;->FF:Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails$1;->FF:Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->jL()Landroid/app/AppOpsManager$PackageOps;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->jL()Landroid/app/AppOpsManager$PackageOps;
 
     move-result-object v0
 
@@ -56,9 +56,9 @@
 
     move-result v3
 
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsDetails$1;->FF:Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsDetails$1;->FF:Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->jL()Landroid/app/AppOpsManager$PackageOps;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->jL()Landroid/app/AppOpsManager$PackageOps;
 
     move-result-object v0
 

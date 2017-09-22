@@ -1,4 +1,4 @@
-.class Lcom/android/settings/eB;
+.class Lcom/android/vendorsettings/eB;
 .super Landroid/os/AsyncTask;
 .source "MiuiMasterClear.java"
 
@@ -6,23 +6,23 @@
 # instance fields
 .field private mAppContext:Landroid/content/Context;
 
-.field final synthetic rw:Lcom/android/settings/MiuiMasterClear;
+.field final synthetic rw:Lcom/android/vendorsettings/MiuiMasterClear;
 
 .field private rx:Lmiui/app/ProgressDialog;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/MiuiMasterClear;Landroid/content/Context;)V
+.method public constructor <init>(Lcom/android/vendorsettings/MiuiMasterClear;Landroid/content/Context;)V
     .locals 0
 
     .prologue
     .line 488
-    iput-object p1, p0, Lcom/android/settings/eB;->rw:Lcom/android/settings/MiuiMasterClear;
+    iput-object p1, p0, Lcom/android/vendorsettings/eB;->rw:Lcom/android/vendorsettings/MiuiMasterClear;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     .line 489
-    iput-object p2, p0, Lcom/android/settings/eB;->mAppContext:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/vendorsettings/eB;->mAppContext:Landroid/content/Context;
 
     .line 490
     return-void
@@ -37,7 +37,7 @@
     const/4 v0, 0x0
 
     .line 501
-    iget-object v1, p0, Lcom/android/settings/eB;->mAppContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/eB;->mAppContext:Landroid/content/Context;
 
     invoke-static {v1}, Lmiui/cloud/finddevice/FindDeviceStatusManager;->obtain(Landroid/content/Context;)Lmiui/cloud/finddevice/FindDeviceStatusManager;
 
@@ -124,7 +124,7 @@
     .line 485
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/eB;->doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/eB;->doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -136,22 +136,22 @@
 
     .prologue
     .line 520
-    iget-object v0, p0, Lcom/android/settings/eB;->rx:Lmiui/app/ProgressDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/eB;->rx:Lmiui/app/ProgressDialog;
 
     invoke-virtual {v0}, Lmiui/app/ProgressDialog;->dismiss()V
 
     .line 522
-    iget-object v0, p0, Lcom/android/settings/eB;->rw:Lcom/android/settings/MiuiMasterClear;
+    iget-object v0, p0, Lcom/android/vendorsettings/eB;->rw:Lcom/android/vendorsettings/MiuiMasterClear;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/eB;->rw:Lcom/android/settings/MiuiMasterClear;
+    iget-object v0, p0, Lcom/android/vendorsettings/eB;->rw:Lcom/android/vendorsettings/MiuiMasterClear;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiMasterClear;->isDetached()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/MiuiMasterClear;->isDetached()Z
 
     move-result v0
 
@@ -167,9 +167,9 @@
     if-nez p1, :cond_2
 
     .line 527
-    iget-object v0, p0, Lcom/android/settings/eB;->rw:Lcom/android/settings/MiuiMasterClear;
+    iget-object v0, p0, Lcom/android/vendorsettings/eB;->rw:Lcom/android/vendorsettings/MiuiMasterClear;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiMasterClear;->d(Lcom/android/settings/MiuiMasterClear;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiMasterClear;->d(Lcom/android/vendorsettings/MiuiMasterClear;)V
 
     goto :goto_0
 
@@ -182,17 +182,17 @@
     if-nez v0, :cond_3
 
     .line 532
-    iget-object v0, p0, Lcom/android/settings/eB;->rw:Lcom/android/settings/MiuiMasterClear;
+    iget-object v0, p0, Lcom/android/vendorsettings/eB;->rw:Lcom/android/vendorsettings/MiuiMasterClear;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiMasterClear;->e(Lcom/android/settings/MiuiMasterClear;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiMasterClear;->e(Lcom/android/vendorsettings/MiuiMasterClear;)V
 
     goto :goto_0
 
     .line 535
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/eB;->rw:Lcom/android/settings/MiuiMasterClear;
+    iget-object v0, p0, Lcom/android/vendorsettings/eB;->rw:Lcom/android/vendorsettings/MiuiMasterClear;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -232,9 +232,9 @@
     invoke-virtual {v2, v4, v5}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 545
-    new-instance v4, Lcom/android/settings/eC;
+    new-instance v4, Lcom/android/vendorsettings/eC;
 
-    invoke-direct {v4, p0}, Lcom/android/settings/eC;-><init>(Lcom/android/settings/eB;)V
+    invoke-direct {v4, p0}, Lcom/android/vendorsettings/eC;-><init>(Lcom/android/vendorsettings/eB;)V
 
     const/4 v5, 0x0
 
@@ -250,7 +250,7 @@
     .line 485
     check-cast p1, Ljava/lang/Boolean;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/eB;->onPostExecute(Ljava/lang/Boolean;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/eB;->onPostExecute(Ljava/lang/Boolean;)V
 
     return-void
 .end method
@@ -260,19 +260,19 @@
 
     .prologue
     .line 494
-    iget-object v0, p0, Lcom/android/settings/eB;->rw:Lcom/android/settings/MiuiMasterClear;
+    iget-object v0, p0, Lcom/android/vendorsettings/eB;->rw:Lcom/android/vendorsettings/MiuiMasterClear;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     const-string v1, ""
 
-    iget-object v2, p0, Lcom/android/settings/eB;->rw:Lcom/android/settings/MiuiMasterClear;
+    iget-object v2, p0, Lcom/android/vendorsettings/eB;->rw:Lcom/android/vendorsettings/MiuiMasterClear;
 
     const v3, 0x7f0c0e3c
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/MiuiMasterClear;->getString(I)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Lcom/android/vendorsettings/MiuiMasterClear;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -280,7 +280,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/eB;->rx:Lmiui/app/ProgressDialog;
+    iput-object v0, p0, Lcom/android/vendorsettings/eB;->rx:Lmiui/app/ProgressDialog;
 
     .line 497
     return-void

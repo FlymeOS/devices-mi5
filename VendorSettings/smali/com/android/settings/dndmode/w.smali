@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dndmode/w;
+.class Lcom/android/vendorsettings/dndmode/w;
 .super Ljava/lang/Object;
 .source "VipCallSettingsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic abe:Lcom/android/settings/dndmode/v;
+.field final synthetic abe:Lcom/android/vendorsettings/dndmode/v;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dndmode/v;)V
+.method constructor <init>(Lcom/android/vendorsettings/dndmode/v;)V
     .locals 0
 
     .prologue
     .line 122
-    iput-object p1, p0, Lcom/android/settings/dndmode/w;->abe:Lcom/android/settings/dndmode/v;
+    iput-object p1, p0, Lcom/android/vendorsettings/dndmode/w;->abe:Lcom/android/vendorsettings/dndmode/v;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 122
-    invoke-virtual {p0}, Lcom/android/settings/dndmode/w;->qg()Ljava/lang/Boolean;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dndmode/w;->qg()Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -48,9 +48,9 @@
     const/4 v6, 0x1
 
     .line 125
-    iget-object v0, p0, Lcom/android/settings/dndmode/w;->abe:Lcom/android/settings/dndmode/v;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/w;->abe:Lcom/android/vendorsettings/dndmode/v;
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/v;->a(Lcom/android/settings/dndmode/v;)Lmiui/app/Activity;
+    invoke-static {v0}, Lcom/android/vendorsettings/dndmode/v;->a(Lcom/android/vendorsettings/dndmode/v;)Lmiui/app/Activity;
 
     move-result-object v0
 
@@ -85,8 +85,8 @@
 
     .line 131
     :try_start_0
-    # getter for: Lcom/android/settings/dndmode/v;->aaX:Ljava/util/HashMap;
-    invoke-static {}, Lcom/android/settings/dndmode/v;->access$100()Ljava/util/HashMap;
+    # getter for: Lcom/android/vendorsettings/dndmode/v;->aaX:Ljava/util/HashMap;
+    invoke-static {}, Lcom/android/vendorsettings/dndmode/v;->access$100()Ljava/util/HashMap;
 
     move-result-object v0
 
@@ -123,8 +123,8 @@
     if-nez v3, :cond_0
 
     .line 136
-    # getter for: Lcom/android/settings/dndmode/v;->aaX:Ljava/util/HashMap;
-    invoke-static {}, Lcom/android/settings/dndmode/v;->access$100()Ljava/util/HashMap;
+    # getter for: Lcom/android/vendorsettings/dndmode/v;->aaX:Ljava/util/HashMap;
+    invoke-static {}, Lcom/android/vendorsettings/dndmode/v;->access$100()Ljava/util/HashMap;
 
     move-result-object v3
 

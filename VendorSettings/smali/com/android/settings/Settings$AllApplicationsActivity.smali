@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/Settings$AllApplicationsActivity;
-.super Lcom/android/settings/hn;
+.class public Lcom/android/vendorsettings/Settings$AllApplicationsActivity;
+.super Lcom/android/vendorsettings/hn;
 .source "Settings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 54
-    invoke-direct {p0}, Lcom/android/settings/hn;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/hn;-><init>()V
 
     return-void
 .end method

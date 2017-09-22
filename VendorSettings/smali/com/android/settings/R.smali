@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/R;
+.class public Lcom/android/vendorsettings/R;
 .super Landroid/widget/BaseAdapter;
 .source "AutoDisableScreenButtonsAppListSettings.java"
 
@@ -6,38 +6,38 @@
 # instance fields
 .field private D:Ljava/util/List;
 
-.field final synthetic bG:Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;
+.field final synthetic bG:Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;
 
 .field mClickListener:Landroid/view/View$OnClickListener;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;)V
+.method public constructor <init>(Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;)V
     .locals 1
 
     .prologue
     .line 274
-    iput-object p1, p0, Lcom/android/settings/R;->bG:Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/R;->bG:Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 355
-    new-instance v0, Lcom/android/settings/S;
+    new-instance v0, Lcom/android/vendorsettings/S;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/S;-><init>(Lcom/android/settings/R;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/S;-><init>(Lcom/android/vendorsettings/R;)V
 
-    iput-object v0, p0, Lcom/android/settings/R;->mClickListener:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/R;->mClickListener:Landroid/view/View$OnClickListener;
 
     .line 275
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/R;I)I
+.method static synthetic a(Lcom/android/vendorsettings/R;I)I
     .locals 1
 
     .prologue
     .line 273
-    invoke-direct {p0, p1}, Lcom/android/settings/R;->i(I)I
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/R;->i(I)I
 
     move-result v0
 
@@ -52,14 +52,14 @@
     const/4 v0, 0x0
 
     :goto_0
-    sget-object v1, Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;->bC:[I
+    sget-object v1, Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;->bC:[I
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_1
 
     .line 386
-    sget-object v1, Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;->bC:[I
+    sget-object v1, Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;->bC:[I
 
     aget v1, v1, v0
 
@@ -89,7 +89,7 @@
     .line 393
     if-ltz p1, :cond_0
 
-    sget-object v0, Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;->bC:[I
+    sget-object v0, Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;->bC:[I
 
     array-length v0, v0
 
@@ -104,7 +104,7 @@
     return v0
 
     :cond_1
-    sget-object v0, Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;->bC:[I
+    sget-object v0, Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;->bC:[I
 
     aget v0, v0, p1
 
@@ -113,7 +113,7 @@
 
 
 # virtual methods
-.method protected a(Lcom/android/settings/V;)V
+.method protected a(Lcom/android/vendorsettings/V;)V
     .locals 4
 
     .prologue
@@ -122,9 +122,9 @@
     .line 365
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    iget-object v1, p0, Lcom/android/settings/R;->bG:Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/R;->bG:Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;
 
-    invoke-static {v1}, Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;->d(Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;)Landroid/content/Context;
+    invoke-static {v1}, Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;->d(Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;)Landroid/content/Context;
 
     move-result-object v1
 
@@ -141,37 +141,37 @@
     move-result-object v0
 
     .line 369
-    iget-object v1, p0, Lcom/android/settings/R;->bG:Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/R;->bG:Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;
 
-    iget-object v1, v1, Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;->bB:[Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;->bB:[Ljava/lang/String;
 
-    invoke-static {p1}, Lcom/android/settings/V;->e(Lcom/android/settings/V;)I
-
-    move-result v2
-
-    invoke-direct {p0, v2}, Lcom/android/settings/R;->h(I)I
+    invoke-static {p1}, Lcom/android/vendorsettings/V;->e(Lcom/android/vendorsettings/V;)I
 
     move-result v2
 
-    new-instance v3, Lcom/android/settings/T;
+    invoke-direct {p0, v2}, Lcom/android/vendorsettings/R;->h(I)I
 
-    invoke-direct {v3, p0, p1}, Lcom/android/settings/T;-><init>(Lcom/android/settings/R;Lcom/android/settings/V;)V
+    move-result v2
+
+    new-instance v3, Lcom/android/vendorsettings/T;
+
+    invoke-direct {v3, p0, p1}, Lcom/android/vendorsettings/T;-><init>(Lcom/android/vendorsettings/R;Lcom/android/vendorsettings/V;)V
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setSingleChoiceItems([Ljava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 380
-    iget-object v1, p0, Lcom/android/settings/R;->bG:Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/R;->bG:Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;->a(Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;Landroid/app/Dialog;)Landroid/app/Dialog;
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;->a(Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;Landroid/app/Dialog;)Landroid/app/Dialog;
 
     .line 381
-    iget-object v0, p0, Lcom/android/settings/R;->bG:Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/R;->bG:Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;
 
-    invoke-static {v0}, Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;->i(Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;)Landroid/app/Dialog;
+    invoke-static {v0}, Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;->i(Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;)Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -181,18 +181,18 @@
     return-void
 .end method
 
-.method public g(I)Lcom/android/settings/V;
+.method public g(I)Lcom/android/vendorsettings/V;
     .locals 1
 
     .prologue
     .line 303
-    iget-object v0, p0, Lcom/android/settings/R;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/R;->D:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/V;
+    check-cast v0, Lcom/android/vendorsettings/V;
 
     return-object v0
 .end method
@@ -202,7 +202,7 @@
 
     .prologue
     .line 288
-    iget-object v0, p0, Lcom/android/settings/R;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/R;->D:Ljava/util/List;
 
     if-nez v0, :cond_0
 
@@ -212,7 +212,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/R;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/R;->D:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -226,7 +226,7 @@
 
     .prologue
     .line 273
-    invoke-virtual {p0, p1}, Lcom/android/settings/R;->g(I)Lcom/android/settings/V;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/R;->g(I)Lcom/android/vendorsettings/V;
 
     move-result-object v0
 
@@ -248,15 +248,15 @@
 
     .prologue
     .line 293
-    iget-object v0, p0, Lcom/android/settings/R;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/R;->D:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/V;
+    check-cast v0, Lcom/android/vendorsettings/V;
 
-    invoke-static {v0}, Lcom/android/settings/V;->c(Lcom/android/settings/V;)I
+    invoke-static {v0}, Lcom/android/vendorsettings/V;->c(Lcom/android/vendorsettings/V;)I
 
     move-result v0
 
@@ -272,16 +272,16 @@
     const/4 v4, 0x0
 
     .line 313
-    iget-object v0, p0, Lcom/android/settings/R;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/R;->D:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/V;
+    check-cast v0, Lcom/android/vendorsettings/V;
 
     .line 315
-    invoke-static {v0}, Lcom/android/settings/V;->c(Lcom/android/settings/V;)I
+    invoke-static {v0}, Lcom/android/vendorsettings/V;->c(Lcom/android/vendorsettings/V;)I
 
     move-result v1
 
@@ -291,14 +291,14 @@
     if-nez p2, :cond_1
 
     .line 317
-    new-instance v2, Lcom/android/settings/U;
+    new-instance v2, Lcom/android/vendorsettings/U;
 
-    invoke-direct {v2, p0, v4}, Lcom/android/settings/U;-><init>(Lcom/android/settings/R;Lcom/android/settings/N;)V
+    invoke-direct {v2, p0, v4}, Lcom/android/vendorsettings/U;-><init>(Lcom/android/vendorsettings/R;Lcom/android/vendorsettings/N;)V
 
     .line 318
-    iget-object v1, p0, Lcom/android/settings/R;->bG:Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/R;->bG:Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;
 
-    invoke-static {v1}, Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;->g(Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;)Landroid/view/LayoutInflater;
+    invoke-static {v1}, Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;->g(Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;)Landroid/view/LayoutInflater;
 
     move-result-object v1
 
@@ -317,7 +317,7 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    iput-object v1, v2, Lcom/android/settings/U;->icon:Landroid/widget/ImageView;
+    iput-object v1, v2, Lcom/android/vendorsettings/U;->icon:Landroid/widget/ImageView;
 
     .line 320
     const v1, 0x1020016
@@ -328,7 +328,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iput-object v1, v2, Lcom/android/settings/U;->title:Landroid/widget/TextView;
+    iput-object v1, v2, Lcom/android/vendorsettings/U;->title:Landroid/widget/TextView;
 
     .line 321
     const v1, 0x1020010
@@ -339,7 +339,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iput-object v1, v2, Lcom/android/settings/U;->summary:Landroid/widget/TextView;
+    iput-object v1, v2, Lcom/android/vendorsettings/U;->summary:Landroid/widget/TextView;
 
     .line 322
     invoke-virtual {p2, v2}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
@@ -348,7 +348,7 @@
 
     .line 327
     :goto_0
-    invoke-static {v0}, Lcom/android/settings/V;->d(Lcom/android/settings/V;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/V;->d(Lcom/android/vendorsettings/V;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -359,7 +359,7 @@
     if-eqz v2, :cond_2
 
     .line 328
-    iget-object v2, v1, Lcom/android/settings/U;->summary:Landroid/widget/TextView;
+    iget-object v2, v1, Lcom/android/vendorsettings/U;->summary:Landroid/widget/TextView;
 
     const/16 v3, 0x8
 
@@ -367,24 +367,24 @@
 
     .line 335
     :goto_1
-    iget-object v2, p0, Lcom/android/settings/R;->bG:Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/R;->bG:Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;
 
-    invoke-static {v2}, Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;->h(Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;)Lcom/android/settings/q;
+    invoke-static {v2}, Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;->h(Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;)Lcom/android/vendorsettings/q;
 
     move-result-object v2
 
-    iget-object v3, v1, Lcom/android/settings/U;->icon:Landroid/widget/ImageView;
+    iget-object v3, v1, Lcom/android/vendorsettings/U;->icon:Landroid/widget/ImageView;
 
-    invoke-virtual {v0}, Lcom/android/settings/V;->Q()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/V;->Q()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {v2, v3, v4}, Lcom/android/settings/q;->a(Landroid/widget/ImageView;Ljava/lang/String;)Z
+    invoke-virtual {v2, v3, v4}, Lcom/android/vendorsettings/q;->a(Landroid/widget/ImageView;Ljava/lang/String;)Z
 
     .line 336
-    iget-object v1, v1, Lcom/android/settings/U;->title:Landroid/widget/TextView;
+    iget-object v1, v1, Lcom/android/vendorsettings/U;->title:Landroid/widget/TextView;
 
-    invoke-static {v0}, Lcom/android/settings/V;->b(Lcom/android/settings/V;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/V;->b(Lcom/android/vendorsettings/V;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -396,7 +396,7 @@
     invoke-virtual {p2, v1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 338
-    iget-object v0, p0, Lcom/android/settings/R;->mClickListener:Landroid/view/View$OnClickListener;
+    iget-object v0, p0, Lcom/android/vendorsettings/R;->mClickListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -411,22 +411,22 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/U;
+    check-cast v1, Lcom/android/vendorsettings/U;
 
     goto :goto_0
 
     .line 331
     :cond_2
-    iget-object v2, v1, Lcom/android/settings/U;->summary:Landroid/widget/TextView;
+    iget-object v2, v1, Lcom/android/vendorsettings/U;->summary:Landroid/widget/TextView;
 
-    invoke-static {v0}, Lcom/android/settings/V;->d(Lcom/android/settings/V;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/V;->d(Lcom/android/vendorsettings/V;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 332
-    iget-object v2, v1, Lcom/android/settings/U;->summary:Landroid/widget/TextView;
+    iget-object v2, v1, Lcom/android/vendorsettings/U;->summary:Landroid/widget/TextView;
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setVisibility(I)V
 
@@ -434,7 +434,7 @@
 
     .line 339
     :cond_3
-    invoke-static {v0}, Lcom/android/settings/V;->c(Lcom/android/settings/V;)I
+    invoke-static {v0}, Lcom/android/vendorsettings/V;->c(Lcom/android/vendorsettings/V;)I
 
     move-result v1
 
@@ -446,14 +446,14 @@
     if-nez p2, :cond_4
 
     .line 341
-    new-instance v2, Lcom/android/settings/U;
+    new-instance v2, Lcom/android/vendorsettings/U;
 
-    invoke-direct {v2, p0, v4}, Lcom/android/settings/U;-><init>(Lcom/android/settings/R;Lcom/android/settings/N;)V
+    invoke-direct {v2, p0, v4}, Lcom/android/vendorsettings/U;-><init>(Lcom/android/vendorsettings/R;Lcom/android/vendorsettings/N;)V
 
     .line 342
-    iget-object v1, p0, Lcom/android/settings/R;->bG:Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/R;->bG:Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;
 
-    invoke-static {v1}, Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;->g(Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;)Landroid/view/LayoutInflater;
+    invoke-static {v1}, Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;->g(Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;)Landroid/view/LayoutInflater;
 
     move-result-object v1
 
@@ -472,7 +472,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iput-object v1, v2, Lcom/android/settings/U;->bK:Landroid/widget/TextView;
+    iput-object v1, v2, Lcom/android/vendorsettings/U;->bK:Landroid/widget/TextView;
 
     .line 344
     invoke-virtual {p2, v5}, Landroid/view/View;->setEnabled(Z)V
@@ -484,9 +484,9 @@
 
     .line 349
     :goto_3
-    iget-object v1, v1, Lcom/android/settings/U;->bK:Landroid/widget/TextView;
+    iget-object v1, v1, Lcom/android/vendorsettings/U;->bK:Landroid/widget/TextView;
 
-    invoke-static {v0}, Lcom/android/settings/V;->b(Lcom/android/settings/V;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/V;->b(Lcom/android/vendorsettings/V;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -500,7 +500,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/U;
+    check-cast v1, Lcom/android/vendorsettings/U;
 
     goto :goto_3
 .end method
@@ -520,7 +520,7 @@
 
     .prologue
     .line 283
-    iput-object p1, p0, Lcom/android/settings/R;->D:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/vendorsettings/R;->D:Ljava/util/List;
 
     .line 284
     return-void

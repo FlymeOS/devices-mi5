@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/ProcessStatsDetail$3;
+.class final Lcom/android/vendorsettings/applications/ProcessStatsDetail$3;
 .super Ljava/lang/Object;
 .source "ProcessStatsDetail.java"
 
@@ -19,14 +19,14 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/applications/ProcStatsEntry$Service;Lcom/android/settings/applications/ProcStatsEntry$Service;)I
+.method public a(Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;)I
     .locals 4
 
     .prologue
     .line 303
-    iget-wide v0, p1, Lcom/android/settings/applications/ProcStatsEntry$Service;->mDuration:J
+    iget-wide v0, p1, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mDuration:J
 
-    iget-wide v2, p2, Lcom/android/settings/applications/ProcStatsEntry$Service;->mDuration:J
+    iget-wide v2, p2, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mDuration:J
 
     cmp-long v0, v0, v2
 
@@ -41,9 +41,9 @@
 
     .line 305
     :cond_0
-    iget-wide v0, p1, Lcom/android/settings/applications/ProcStatsEntry$Service;->mDuration:J
+    iget-wide v0, p1, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mDuration:J
 
-    iget-wide v2, p2, Lcom/android/settings/applications/ProcStatsEntry$Service;->mDuration:J
+    iget-wide v2, p2, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mDuration:J
 
     cmp-long v0, v0, v2
 
@@ -66,11 +66,11 @@
 
     .prologue
     .line 300
-    check-cast p1, Lcom/android/settings/applications/ProcStatsEntry$Service;
+    check-cast p1, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;
 
-    check-cast p2, Lcom/android/settings/applications/ProcStatsEntry$Service;
+    check-cast p2, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/applications/ProcessStatsDetail$3;->a(Lcom/android/settings/applications/ProcStatsEntry$Service;Lcom/android/settings/applications/ProcStatsEntry$Service;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/applications/ProcessStatsDetail$3;->a(Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;)I
 
     move-result v0
 

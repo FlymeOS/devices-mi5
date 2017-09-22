@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/users/UserDialogs;
+.class public final Lcom/android/vendorsettings/users/UserDialogs;
 .super Ljava/lang/Object;
 .source "UserDialogs.java"
 
@@ -110,7 +110,7 @@
     invoke-virtual {v1, v0}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
     .line 66
-    invoke-static {p0, p1}, Lcom/android/settings/users/UserDialogs;->z(Landroid/content/Context;I)Landroid/view/View;
+    invoke-static {p0, p1}, Lcom/android/vendorsettings/users/UserDialogs;->z(Landroid/content/Context;I)Landroid/view/View;
 
     move-result-object v0
 
@@ -240,7 +240,7 @@
     move-result-object v2
 
     .line 84
-    invoke-static {p0, p1}, Lcom/android/settings/iC;->h(Landroid/content/Context;I)Landroid/content/pm/ApplicationInfo;
+    invoke-static {p0, p1}, Lcom/android/vendorsettings/iC;->h(Landroid/content/Context;I)Landroid/content/pm/ApplicationInfo;
 
     move-result-object v3
 

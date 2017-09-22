@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/deviceinfo/StorageWizardInit;
-.super Lcom/android/settings/deviceinfo/StorageWizardBase;
+.class public Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;
+.super Lcom/android/vendorsettings/deviceinfo/StorageWizardBase;
 .source "StorageWizardInit.java"
 
 
@@ -19,34 +19,34 @@
 
     .prologue
     .line 31
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/StorageWizardBase;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardBase;-><init>()V
 
     .line 83
-    new-instance v0, Lcom/android/settings/deviceinfo/StorageWizardInit$1;
+    new-instance v0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/deviceinfo/StorageWizardInit$1;-><init>(Lcom/android/settings/deviceinfo/StorageWizardInit;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit$1;-><init>(Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;)V
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Xy:Landroid/widget/CompoundButton$OnCheckedChangeListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Xy:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/deviceinfo/StorageWizardInit;)Landroid/widget/RadioButton;
+.method static synthetic a(Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;)Landroid/widget/RadioButton;
     .locals 1
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Xw:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Xw:Landroid/widget/RadioButton;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/deviceinfo/StorageWizardInit;)Landroid/widget/RadioButton;
+.method static synthetic b(Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;)Landroid/widget/RadioButton;
     .locals 1
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Xx:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Xx:Landroid/widget/RadioButton;
 
     return-object v0
 .end method
@@ -60,7 +60,7 @@
     const/4 v3, 0x1
 
     .line 101
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Xw:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Xw:Landroid/widget/RadioButton;
 
     invoke-virtual {v0}, Landroid/widget/RadioButton;->isChecked()Z
 
@@ -69,11 +69,11 @@
     if-eqz v0, :cond_2
 
     .line 102
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Vq:Landroid/os/storage/VolumeInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Vq:Landroid/os/storage/VolumeInfo;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Vq:Landroid/os/storage/VolumeInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Vq:Landroid/os/storage/VolumeInfo;
 
     invoke-virtual {v0}, Landroid/os/storage/VolumeInfo;->getType()I
 
@@ -81,7 +81,7 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Vq:Landroid/os/storage/VolumeInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Vq:Landroid/os/storage/VolumeInfo;
 
     invoke-virtual {v0}, Landroid/os/storage/VolumeInfo;->getState()I
 
@@ -92,9 +92,9 @@
     if-eq v0, v1, :cond_1
 
     .line 105
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Vi:Landroid/os/storage/StorageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Vi:Landroid/os/storage/StorageManager;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Vq:Landroid/os/storage/VolumeInfo;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Vq:Landroid/os/storage/VolumeInfo;
 
     invoke-virtual {v1}, Landroid/os/storage/VolumeInfo;->getFsUuid()Ljava/lang/String;
 
@@ -105,14 +105,14 @@
     .line 107
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/deviceinfo/StorageWizardReady;
+    const-class v1, Lcom/android/vendorsettings/deviceinfo/StorageWizardReady;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 108
     const-string v1, "android.os.storage.extra.DISK_ID"
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Vv:Landroid/os/storage/DiskInfo;
+    iget-object v2, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Vv:Landroid/os/storage/DiskInfo;
 
     invoke-virtual {v2}, Landroid/os/storage/DiskInfo;->getId()Ljava/lang/String;
 
@@ -121,7 +121,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 109
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardInit;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->startActivity(Landroid/content/Intent;)V
 
     .line 125
     :cond_0
@@ -132,14 +132,14 @@
     :cond_1
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/deviceinfo/StorageWizardFormatConfirm;
+    const-class v1, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatConfirm;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 114
     const-string v1, "android.os.storage.extra.DISK_ID"
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Vv:Landroid/os/storage/DiskInfo;
+    iget-object v2, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Vv:Landroid/os/storage/DiskInfo;
 
     invoke-virtual {v2}, Landroid/os/storage/DiskInfo;->getId()Ljava/lang/String;
 
@@ -155,13 +155,13 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 116
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardInit;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
     .line 119
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Xx:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Xx:Landroid/widget/RadioButton;
 
     invoke-virtual {v0}, Landroid/widget/RadioButton;->isChecked()Z
 
@@ -172,14 +172,14 @@
     .line 120
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/deviceinfo/StorageWizardFormatConfirm;
+    const-class v1, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatConfirm;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 121
     const-string v1, "android.os.storage.extra.DISK_ID"
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Vv:Landroid/os/storage/DiskInfo;
+    iget-object v2, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Vv:Landroid/os/storage/DiskInfo;
 
     invoke-virtual {v2}, Landroid/os/storage/DiskInfo;->getId()Ljava/lang/String;
 
@@ -193,7 +193,7 @@
     invoke-virtual {v0, v1, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 123
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardInit;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 .end method
@@ -207,15 +207,15 @@
     const/4 v2, 0x0
 
     .line 39
-    invoke-super {p0, p1}, Lcom/android/settings/deviceinfo/StorageWizardBase;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/deviceinfo/StorageWizardBase;->onCreate(Landroid/os/Bundle;)V
 
     .line 40
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Vv:Landroid/os/storage/DiskInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Vv:Landroid/os/storage/DiskInfo;
 
     if-nez v0, :cond_1
 
     .line 41
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/StorageWizardInit;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->finish()V
 
     .line 81
     :cond_0
@@ -226,7 +226,7 @@
     :cond_1
     const v0, 0x7f040162
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardInit;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->setContentView(I)V
 
     .line 46
     invoke-static {p0}, Landroid/os/UserManager;->get(Landroid/content/Context;)Landroid/os/UserManager;
@@ -248,17 +248,17 @@
     move v0, v1
 
     :goto_1
-    iput-boolean v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->WB:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->WB:Z
 
     .line 49
-    invoke-virtual {p0, v1}, Lcom/android/settings/deviceinfo/StorageWizardInit;->aJ(Z)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->aJ(Z)V
 
     .line 50
     const v0, 0x7f0c047f
 
     new-array v3, v1, [Ljava/lang/String;
 
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Vv:Landroid/os/storage/DiskInfo;
+    iget-object v4, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Vv:Landroid/os/storage/DiskInfo;
 
     invoke-virtual {v4}, Landroid/os/storage/DiskInfo;->getDescription()Ljava/lang/String;
 
@@ -266,58 +266,58 @@
 
     aput-object v4, v3, v2
 
-    invoke-virtual {p0, v0, v3}, Lcom/android/settings/deviceinfo/StorageWizardInit;->a(I[Ljava/lang/String;)V
+    invoke-virtual {p0, v0, v3}, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->a(I[Ljava/lang/String;)V
 
     .line 52
     const v0, 0x7f1302c7
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardInit;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/RadioButton;
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Xw:Landroid/widget/RadioButton;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Xw:Landroid/widget/RadioButton;
 
     .line 53
     const v0, 0x7f1302c9
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardInit;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/RadioButton;
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Xx:Landroid/widget/RadioButton;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Xx:Landroid/widget/RadioButton;
 
     .line 55
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Xw:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Xw:Landroid/widget/RadioButton;
 
-    iget-object v3, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Xy:Landroid/widget/CompoundButton$OnCheckedChangeListener;
+    iget-object v3, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Xy:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
     invoke-virtual {v0, v3}, Landroid/widget/RadioButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 56
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Xx:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Xx:Landroid/widget/RadioButton;
 
-    iget-object v3, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Xy:Landroid/widget/CompoundButton$OnCheckedChangeListener;
+    iget-object v3, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Xy:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
     invoke-virtual {v0, v3}, Landroid/widget/RadioButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 58
     const v0, 0x7f1302c8
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardInit;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Xw:Landroid/widget/RadioButton;
+    iget-object v3, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Xw:Landroid/widget/RadioButton;
 
     invoke-virtual {v3}, Landroid/widget/RadioButton;->getCompoundPaddingLeft()I
 
     move-result v3
 
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Xw:Landroid/widget/RadioButton;
+    iget-object v4, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Xw:Landroid/widget/RadioButton;
 
     invoke-virtual {v4}, Landroid/widget/RadioButton;->getCompoundPaddingRight()I
 
@@ -328,17 +328,17 @@
     .line 61
     const v0, 0x7f1302ca
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageWizardInit;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Xw:Landroid/widget/RadioButton;
+    iget-object v3, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Xw:Landroid/widget/RadioButton;
 
     invoke-virtual {v3}, Landroid/widget/RadioButton;->getCompoundPaddingLeft()I
 
     move-result v3
 
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Xw:Landroid/widget/RadioButton;
+    iget-object v4, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Xw:Landroid/widget/RadioButton;
 
     invoke-virtual {v4}, Landroid/widget/RadioButton;->getCompoundPaddingRight()I
 
@@ -347,30 +347,30 @@
     invoke-virtual {v0, v3, v2, v4, v2}, Landroid/view/View;->setPadding(IIII)V
 
     .line 65
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/StorageWizardInit;->getNextButton()Landroid/widget/Button;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->getNextButton()Landroid/widget/Button;
 
     move-result-object v0
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 71
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Xw:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Xw:Landroid/widget/RadioButton;
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     .line 72
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/StorageWizardInit;->hY()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->hY()V
 
     .line 73
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/StorageWizardInit;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->finish()V
 
     .line 78
-    iget-boolean v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->WB:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->WB:Z
 
     if-nez v0, :cond_0
 
     .line 79
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit;->Xx:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardInit;->Xx:Landroid/widget/RadioButton;
 
     invoke-virtual {v0, v2}, Landroid/widget/RadioButton;->setEnabled(Z)V
 

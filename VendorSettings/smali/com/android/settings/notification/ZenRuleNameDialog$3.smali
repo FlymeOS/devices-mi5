@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/ZenRuleNameDialog$3;
+.class Lcom/android/vendorsettings/notification/ZenRuleNameDialog$3;
 .super Ljava/lang/Object;
 .source "ZenRuleNameDialog.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic alT:Lcom/android/settings/notification/ZenRuleNameDialog;
+.field final synthetic alT:Lcom/android/vendorsettings/notification/ZenRuleNameDialog;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/ZenRuleNameDialog;)V
+.method constructor <init>(Lcom/android/vendorsettings/notification/ZenRuleNameDialog;)V
     .locals 0
 
     .prologue
     .line 112
-    iput-object p1, p0, Lcom/android/settings/notification/ZenRuleNameDialog$3;->alT:Lcom/android/settings/notification/ZenRuleNameDialog;
+    iput-object p1, p0, Lcom/android/vendorsettings/notification/ZenRuleNameDialog$3;->alT:Lcom/android/vendorsettings/notification/ZenRuleNameDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 125
-    iget-object v0, p0, Lcom/android/settings/notification/ZenRuleNameDialog$3;->alT:Lcom/android/settings/notification/ZenRuleNameDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenRuleNameDialog$3;->alT:Lcom/android/vendorsettings/notification/ZenRuleNameDialog;
 
-    invoke-static {v0}, Lcom/android/settings/notification/ZenRuleNameDialog;->g(Lcom/android/settings/notification/ZenRuleNameDialog;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/notification/ZenRuleNameDialog;->g(Lcom/android/vendorsettings/notification/ZenRuleNameDialog;)V
 
     .line 126
     return-void

@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/AppStateOverlayBridge$1;
+.class final Lcom/android/vendorsettings/applications/AppStateOverlayBridge$1;
 .super Ljava/lang/Object;
 .source "AppStateOverlayBridge.java"
 

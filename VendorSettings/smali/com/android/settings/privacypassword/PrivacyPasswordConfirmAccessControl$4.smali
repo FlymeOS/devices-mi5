@@ -1,4 +1,4 @@
-.class Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$4;
+.class Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$4;
 .super Ljava/lang/Object;
 .source "PrivacyPasswordConfirmAccessControl.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aoi:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl;
+.field final synthetic aoi:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl;)V
+.method constructor <init>(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl;)V
     .locals 0
 
     .prologue
     .line 180
-    iput-object p1, p0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$4;->aoi:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl;
+    iput-object p1, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$4;->aoi:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 184
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$4;->aoi:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$4;->aoi:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl;
 
-    invoke-virtual {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl;->finish()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl;->finish()V
 
     .line 185
     return-void

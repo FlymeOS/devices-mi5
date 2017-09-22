@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/dN;
+.class public interface abstract Lcom/android/vendorsettings/dN;
 .super Ljava/lang/Object;
 .source "LockPatternView.java"
 

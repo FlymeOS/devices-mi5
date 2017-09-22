@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cZ;
+.class public Lcom/android/vendorsettings/cZ;
 .super Ljava/lang/Object;
 .source "FingerprintHelper.java"
 
@@ -20,7 +20,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 21
-    iput-object p1, p0, Lcom/android/settings/cZ;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/cZ;->mContext:Landroid/content/Context;
 
     .line 22
     return-void
@@ -57,7 +57,7 @@
     if-nez v1, :cond_0
 
     .line 173
-    iget-object v1, p0, Lcom/android/settings/cZ;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/cZ;->mContext:Landroid/content/Context;
 
     invoke-static {v1, p1}, Landroid/security/FingerprintIdUtils;->getUserFingerprintIds(Landroid/content/Context;I)Ljava/util/HashMap;
 
@@ -89,7 +89,7 @@
     invoke-virtual {v1, v0, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 179
-    iget-object v0, p0, Lcom/android/settings/cZ;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/cZ;->mContext:Landroid/content/Context;
 
     invoke-static {v0, v1}, Landroid/security/FingerprintIdUtils;->putUserFingerprintIds(Landroid/content/Context;Ljava/util/HashMap;)V
 
@@ -100,12 +100,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/cZ;ILjava/util/List;Ljava/util/List;)V
+.method static synthetic a(Lcom/android/vendorsettings/cZ;ILjava/util/List;Ljava/util/List;)V
     .locals 0
 
     .prologue
     .line 14
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/cZ;->a(ILjava/util/List;Ljava/util/List;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/vendorsettings/cZ;->a(ILjava/util/List;Ljava/util/List;)V
 
     return-void
 .end method
@@ -115,12 +115,12 @@
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/android/settings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
 
     if-nez v0, :cond_0
 
     .line 31
-    iget-object v0, p0, Lcom/android/settings/cZ;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/cZ;->mContext:Landroid/content/Context;
 
     const-string v1, "fingerprint"
 
@@ -130,7 +130,7 @@
 
     check-cast v0, Landroid/hardware/fingerprint/FingerprintManager;
 
-    iput-object v0, p0, Lcom/android/settings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
 
     .line 33
     :cond_0
@@ -139,34 +139,34 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/cY;[B)V
+.method public a(Lcom/android/vendorsettings/cY;[B)V
     .locals 4
 
     .prologue
     .line 55
-    invoke-direct {p0}, Lcom/android/settings/cZ;->dU()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/cZ;->dU()V
 
     .line 56
     new-instance v0, Landroid/os/CancellationSignal;
 
     invoke-direct {v0}, Landroid/os/CancellationSignal;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/cZ;->mCancellationSignal:Landroid/os/CancellationSignal;
+    iput-object v0, p0, Lcom/android/vendorsettings/cZ;->mCancellationSignal:Landroid/os/CancellationSignal;
 
     .line 57
-    invoke-virtual {p0}, Lcom/android/settings/cZ;->dV()Ljava/util/List;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/cZ;->dV()Ljava/util/List;
 
     move-result-object v0
 
     .line 59
-    new-instance v1, Lcom/android/settings/da;
+    new-instance v1, Lcom/android/vendorsettings/da;
 
-    invoke-direct {v1, p0, p1, v0}, Lcom/android/settings/da;-><init>(Lcom/android/settings/cZ;Lcom/android/settings/cY;Ljava/util/List;)V
+    invoke-direct {v1, p0, p1, v0}, Lcom/android/vendorsettings/da;-><init>(Lcom/android/vendorsettings/cZ;Lcom/android/vendorsettings/cY;Ljava/util/List;)V
 
     .line 85
-    iget-object v0, p0, Lcom/android/settings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
 
-    iget-object v2, p0, Lcom/android/settings/cZ;->mCancellationSignal:Landroid/os/CancellationSignal;
+    iget-object v2, p0, Lcom/android/vendorsettings/cZ;->mCancellationSignal:Landroid/os/CancellationSignal;
 
     const/4 v3, 0x0
 
@@ -176,7 +176,7 @@
     return-void
 .end method
 
-.method public a(Lcom/android/settings/dd;Ljava/util/List;)V
+.method public a(Lcom/android/vendorsettings/dd;Ljava/util/List;)V
     .locals 6
 
     .prologue
@@ -205,24 +205,24 @@
 
     .line 126
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/cZ;->dU()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/cZ;->dU()V
 
     .line 127
     new-instance v0, Landroid/os/CancellationSignal;
 
     invoke-direct {v0}, Landroid/os/CancellationSignal;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/cZ;->mCancellationSignal:Landroid/os/CancellationSignal;
+    iput-object v0, p0, Lcom/android/vendorsettings/cZ;->mCancellationSignal:Landroid/os/CancellationSignal;
 
     .line 129
-    new-instance v4, Lcom/android/settings/dc;
+    new-instance v4, Lcom/android/vendorsettings/dc;
 
-    invoke-direct {v4, p0, p1}, Lcom/android/settings/dc;-><init>(Lcom/android/settings/cZ;Lcom/android/settings/dd;)V
+    invoke-direct {v4, p0, p1}, Lcom/android/vendorsettings/dc;-><init>(Lcom/android/vendorsettings/cZ;Lcom/android/vendorsettings/dd;)V
 
     .line 160
-    iget-object v0, p0, Lcom/android/settings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
 
-    iget-object v2, p0, Lcom/android/settings/cZ;->mCancellationSignal:Landroid/os/CancellationSignal;
+    iget-object v2, p0, Lcom/android/vendorsettings/cZ;->mCancellationSignal:Landroid/os/CancellationSignal;
 
     const/4 v3, 0x0
 
@@ -234,12 +234,12 @@
     return-void
 .end method
 
-.method public a(Ljava/lang/String;Lcom/android/settings/de;)V
+.method public a(Ljava/lang/String;Lcom/android/vendorsettings/de;)V
     .locals 6
 
     .prologue
     .line 105
-    invoke-direct {p0}, Lcom/android/settings/cZ;->dU()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/cZ;->dU()V
 
     .line 106
     new-instance v0, Landroid/hardware/fingerprint/Fingerprint;
@@ -257,12 +257,12 @@
     invoke-direct/range {v0 .. v5}, Landroid/hardware/fingerprint/Fingerprint;-><init>(Ljava/lang/CharSequence;IIJ)V
 
     .line 107
-    new-instance v1, Lcom/android/settings/db;
+    new-instance v1, Lcom/android/vendorsettings/db;
 
-    invoke-direct {v1, p0, p2}, Lcom/android/settings/db;-><init>(Lcom/android/settings/cZ;Lcom/android/settings/de;)V
+    invoke-direct {v1, p0, p2}, Lcom/android/vendorsettings/db;-><init>(Lcom/android/vendorsettings/cZ;Lcom/android/vendorsettings/de;)V
 
     .line 119
-    iget-object v2, p0, Lcom/android/settings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
 
     invoke-virtual {v2, v0, v1}, Landroid/hardware/fingerprint/FingerprintManager;->remove(Landroid/hardware/fingerprint/Fingerprint;Landroid/hardware/fingerprint/FingerprintManager$RemovalCallback;)V
 
@@ -275,10 +275,10 @@
 
     .prologue
     .line 36
-    invoke-direct {p0}, Lcom/android/settings/cZ;->dU()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/cZ;->dU()V
 
     .line 37
-    iget-object v0, p0, Lcom/android/settings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
 
     invoke-virtual {v0}, Landroid/hardware/fingerprint/FingerprintManager;->getEnrolledFingerprints()Ljava/util/List;
 
@@ -339,23 +339,23 @@
 
     .prologue
     .line 95
-    iget-object v0, p0, Lcom/android/settings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
 
     if-eqz v0, :cond_0
 
     .line 96
-    iget-object v0, p0, Lcom/android/settings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
 
     invoke-virtual {v0}, Landroid/hardware/fingerprint/FingerprintManager;->postEnroll()I
 
     .line 99
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/cZ;->mCancellationSignal:Landroid/os/CancellationSignal;
+    iget-object v0, p0, Lcom/android/vendorsettings/cZ;->mCancellationSignal:Landroid/os/CancellationSignal;
 
     if-eqz v0, :cond_1
 
     .line 100
-    iget-object v0, p0, Lcom/android/settings/cZ;->mCancellationSignal:Landroid/os/CancellationSignal;
+    iget-object v0, p0, Lcom/android/vendorsettings/cZ;->mCancellationSignal:Landroid/os/CancellationSignal;
 
     invoke-virtual {v0}, Landroid/os/CancellationSignal;->cancel()V
 
@@ -369,12 +369,12 @@
 
     .prologue
     .line 164
-    iget-object v0, p0, Lcom/android/settings/cZ;->mCancellationSignal:Landroid/os/CancellationSignal;
+    iget-object v0, p0, Lcom/android/vendorsettings/cZ;->mCancellationSignal:Landroid/os/CancellationSignal;
 
     if-eqz v0, :cond_0
 
     .line 165
-    iget-object v0, p0, Lcom/android/settings/cZ;->mCancellationSignal:Landroid/os/CancellationSignal;
+    iget-object v0, p0, Lcom/android/vendorsettings/cZ;->mCancellationSignal:Landroid/os/CancellationSignal;
 
     invoke-virtual {v0}, Landroid/os/CancellationSignal;->cancel()V
 
@@ -388,10 +388,10 @@
 
     .prologue
     .line 25
-    invoke-direct {p0}, Lcom/android/settings/cZ;->dU()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/cZ;->dU()V
 
     .line 26
-    iget-object v0, p0, Lcom/android/settings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
 
     invoke-virtual {v0}, Landroid/hardware/fingerprint/FingerprintManager;->isHardwareDetected()Z
 
@@ -405,10 +405,10 @@
 
     .prologue
     .line 50
-    invoke-direct {p0}, Lcom/android/settings/cZ;->dU()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/cZ;->dU()V
 
     .line 51
-    iget-object v0, p0, Lcom/android/settings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/cZ;->mM:Landroid/hardware/fingerprint/FingerprintManager;
 
     invoke-virtual {v0}, Landroid/hardware/fingerprint/FingerprintManager;->preEnroll()J
 

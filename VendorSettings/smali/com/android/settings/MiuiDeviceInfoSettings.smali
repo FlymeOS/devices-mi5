@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiDeviceInfoSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/MiuiDeviceInfoSettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "MiuiDeviceInfoSettings.java"
 
 # interfaces
@@ -19,7 +19,7 @@
 
 .field private qm:Lmiui/preference/ValuePreference;
 
-.field private qn:Lcom/android/settings/el;
+.field private qn:Lcom/android/vendorsettings/el;
 
 .field qo:I
 
@@ -34,24 +34,24 @@
 
     .prologue
     .line 64
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 108
     const/4 v0, 0x3
 
     new-array v0, v0, [J
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->lq:[J
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->lq:[J
 
     .line 110
     const/4 v0, 0x4
 
-    iput v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qo:I
+    iput v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qo:I
 
     .line 111
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qp:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qp:J
 
     .line 845
     return-void
@@ -426,24 +426,24 @@
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiDeviceInfoSettings;)Ljava/lang/String;
+.method static synthetic a(Lcom/android/vendorsettings/MiuiDeviceInfoSettings;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 64
-    invoke-direct {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->eV()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->eV()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiDeviceInfoSettings;J)Ljava/lang/String;
+.method static synthetic a(Lcom/android/vendorsettings/MiuiDeviceInfoSettings;J)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 64
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/MiuiDeviceInfoSettings;->h(J)Ljava/lang/String;
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->h(J)Ljava/lang/String;
 
     move-result-object v0
 
@@ -469,7 +469,7 @@
 
     .line 466
     :try_start_0
-    invoke-virtual {p0, p2}, Lcom/android/settings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p2}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -533,7 +533,7 @@
 
     .prologue
     .line 475
-    invoke-virtual {p0, p1}, Lcom/android/settings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -554,7 +554,7 @@
     move-exception v1
 
     .line 479
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -575,7 +575,7 @@
     .prologue
     .line 486
     :try_start_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -584,7 +584,7 @@
     .line 487
     const/4 v1, 0x0
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -594,7 +594,7 @@
 
     move-result-object v2
 
-    invoke-static {p2, v1, v2}, Lcom/android/settings/gc;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, v1, v2}, Lcom/android/vendorsettings/gc;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -621,7 +621,7 @@
     :try_start_0
     const-string v0, "/proc/version"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiDeviceInfoSettings;->C(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->C(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -770,7 +770,7 @@
     :try_start_0
     const-string v0, "/sys/board_properties/soc/msv"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiDeviceInfoSettings;->C(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->C(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -934,9 +934,9 @@
     invoke-direct {v1, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 596
-    new-instance v3, Lcom/android/settings/ek;
+    new-instance v3, Lcom/android/vendorsettings/ek;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/ek;-><init>(Lcom/android/settings/MiuiDeviceInfoSettings;)V
+    invoke-direct {v3, p0}, Lcom/android/vendorsettings/ek;-><init>(Lcom/android/vendorsettings/MiuiDeviceInfoSettings;)V
 
     invoke-virtual {v1, v3}, Ljava/io/File;->list(Ljava/io/FilenameFilter;)[Ljava/lang/String;
 
@@ -955,7 +955,7 @@
     .line 609
     const v1, 0x7f0c0d46
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiDeviceInfoSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -963,7 +963,7 @@
 
     .line 619
     :goto_0
-    invoke-direct {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->eW()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->eW()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1012,7 +1012,7 @@
     .line 611
     const v1, 0x7f0c0d47
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiDeviceInfoSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1031,7 +1031,7 @@
     .line 613
     const v1, 0x7f0c0d48
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiDeviceInfoSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1050,7 +1050,7 @@
     .line 615
     const v1, 0x7f0c0d4a
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiDeviceInfoSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1069,7 +1069,7 @@
     .line 617
     const v1, 0x7f0c0d4c
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiDeviceInfoSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1089,7 +1089,7 @@
     if-ge v3, v0, :cond_5
 
     .line 626
-    invoke-direct {p0, v3, v6}, Lcom/android/settings/MiuiDeviceInfoSettings;->a(ILjava/io/BufferedReader;)F
+    invoke-direct {p0, v3, v6}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->a(ILjava/io/BufferedReader;)F
 
     move-result v0
 
@@ -1110,7 +1110,7 @@
 
     .line 631
     :cond_5
-    invoke-direct {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->eX()F
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->eX()F
 
     move-result v0
 
@@ -1779,7 +1779,7 @@
     .line 763
     const-string v0, "device_internal_memory"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1888,18 +1888,18 @@
 
     new-array v6, v10, [Ljava/lang/Object;
 
-    invoke-direct {p0, v4, v5}, Lcom/android/settings/MiuiDeviceInfoSettings;->i(J)Ljava/lang/String;
+    invoke-direct {p0, v4, v5}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->i(J)Ljava/lang/String;
 
     move-result-object v4
 
     aput-object v4, v6, v7
 
-    invoke-virtual {p0, v1, v6}, Lcom/android/settings/MiuiDeviceInfoSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v1, v6}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
     .line 784
-    invoke-static {v2, v3}, Lcom/android/settings/MiuiDeviceInfoSettings;->g(J)J
+    invoke-static {v2, v3}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->g(J)J
 
     move-result-wide v2
 
@@ -1908,13 +1908,13 @@
 
     new-array v5, v10, [Ljava/lang/Object;
 
-    invoke-direct {p0, v2, v3}, Lcom/android/settings/MiuiDeviceInfoSettings;->i(J)Ljava/lang/String;
+    invoke-direct {p0, v2, v3}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->i(J)Ljava/lang/String;
 
     move-result-object v2
 
     aput-object v2, v5, v7
 
-    invoke-virtual {p0, v4, v5}, Lcom/android/settings/MiuiDeviceInfoSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v4, v5}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1954,7 +1954,7 @@
     const-wide/high16 v6, 0x4000000000000000L    # 2.0
 
     .line 791
-    sget-wide v0, Lcom/android/settings/MiuiDeviceInfoSettings;->qr:J
+    sget-wide v0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qr:J
 
     const-wide/16 v2, 0x0
 
@@ -1963,13 +1963,13 @@
     if-nez v0, :cond_0
 
     .line 792
-    sput-wide p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qr:J
+    sput-wide p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qr:J
 
     .line 794
     const-wide/32 v0, 0x3b9aca00
 
     .line 795
-    sget-wide v2, Lcom/android/settings/MiuiDeviceInfoSettings;->qr:J
+    sget-wide v2, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qr:J
 
     const-wide/16 v4, 0x8
 
@@ -1980,7 +1980,7 @@
     if-ltz v2, :cond_1
 
     .line 796
-    sget-wide v2, Lcom/android/settings/MiuiDeviceInfoSettings;->qr:J
+    sget-wide v2, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qr:J
 
     div-long/2addr v2, v0
 
@@ -2008,18 +2008,18 @@
 
     mul-long/2addr v0, v2
 
-    sput-wide v0, Lcom/android/settings/MiuiDeviceInfoSettings;->qr:J
+    sput-wide v0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qr:J
 
     .line 801
     :cond_0
     :goto_0
-    sget-wide v0, Lcom/android/settings/MiuiDeviceInfoSettings;->qr:J
+    sget-wide v0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qr:J
 
     return-wide v0
 
     .line 798
     :cond_1
-    sget-wide v2, Lcom/android/settings/MiuiDeviceInfoSettings;->qr:J
+    sget-wide v2, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qr:J
 
     div-long/2addr v2, v0
 
@@ -2029,7 +2029,7 @@
 
     mul-long/2addr v0, v2
 
-    sput-wide v0, Lcom/android/settings/MiuiDeviceInfoSettings;->qr:J
+    sput-wide v0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qr:J
 
     goto :goto_0
 .end method
@@ -2039,7 +2039,7 @@
 
     .prologue
     .line 827
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -2055,7 +2055,7 @@
 
     .prologue
     .line 831
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -2090,7 +2090,7 @@
 
     .prologue
     .line 126
-    const-class v0, Lcom/android/settings/MiuiDeviceInfoSettings;
+    const-class v0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -2110,12 +2110,12 @@
     const/4 v2, 0x1
 
     .line 131
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 132
     const v0, 0x7f08002e
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDeviceInfoSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->addPreferencesFromResource(I)V
 
     .line 133
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
@@ -2127,12 +2127,12 @@
     move v0, v2
 
     :goto_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDeviceInfoSettings;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->setHasOptionsMenu(Z)V
 
     .line 135
     const-string v0, "model_number"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -2176,7 +2176,7 @@
 
     move-result-object v3
 
-    invoke-direct {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->du()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->du()Ljava/lang/String;
 
     move-result-object v4
 
@@ -2194,7 +2194,7 @@
     :goto_1
     const-string v0, "firmware_version"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -2224,7 +2224,7 @@
     .line 160
     const-string v3, "security_patch"
 
-    invoke-direct {p0, v3, v0}, Lcom/android/settings/MiuiDeviceInfoSettings;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v3, v0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 165
     :goto_3
@@ -2277,7 +2277,7 @@
 
     .line 171
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->eU()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->eU()Ljava/lang/String;
 
     move-result-object v3
 
@@ -2314,7 +2314,7 @@
 
     const v3, 0x7f0c1051
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/MiuiDeviceInfoSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -2331,34 +2331,34 @@
     :goto_5
     const-string v3, "device_miui_version"
 
-    invoke-direct {p0, v3, v0}, Lcom/android/settings/MiuiDeviceInfoSettings;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v3, v0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 193
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qn:Lcom/android/settings/el;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qn:Lcom/android/vendorsettings/el;
 
     if-nez v0, :cond_2
 
     .line 194
-    new-instance v0, Lcom/android/settings/el;
+    new-instance v0, Lcom/android/vendorsettings/el;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/el;-><init>(Lcom/android/settings/MiuiDeviceInfoSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/el;-><init>(Lcom/android/vendorsettings/MiuiDeviceInfoSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qn:Lcom/android/settings/el;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qn:Lcom/android/vendorsettings/el;
 
     .line 195
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qn:Lcom/android/settings/el;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qn:Lcom/android/vendorsettings/el;
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/el;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/el;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 199
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/iC;->Z(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/iC;->Z(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -2367,7 +2367,7 @@
     .line 200
     const-string v0, "baseband_version"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -2375,7 +2375,7 @@
     if-eqz v0, :cond_3
 
     .line 202
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -2386,14 +2386,14 @@
     :goto_6
     const-string v0, "kernel_version"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Lmiui/preference/ValuePreference;
 
     .line 208
-    invoke-direct {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->dt()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->dt()Ljava/lang/String;
 
     move-result-object v1
 
@@ -2402,7 +2402,7 @@
     .line 210
     const-string v0, "hardware_version"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -2428,7 +2428,7 @@
     if-eqz v0, :cond_4
 
     .line 214
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -2439,7 +2439,7 @@
     :goto_7
     const-string v0, "build_number"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -2453,14 +2453,14 @@
     .line 223
     const-string v0, "wifi_type_approval"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Lmiui/preference/ValuePreference;
 
     .line 224
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -2482,7 +2482,7 @@
     if-eqz v1, :cond_16
 
     .line 226
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -2490,7 +2490,7 @@
 
     .line 233
     :goto_8
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -2507,10 +2507,10 @@
 
     const-string v3, "ro.url.safetylegal"
 
-    invoke-direct {p0, v0, v1, v3}, Lcom/android/settings/MiuiDeviceInfoSettings;->a(Landroid/preference/PreferenceGroup;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1, v3}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->a(Landroid/preference/PreferenceGroup;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 238
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -2529,7 +2529,7 @@
     .line 239
     const-string v1, "translation_contributors"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -2537,14 +2537,14 @@
 
     .line 246
     :cond_5
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
     .line 248
     const-string v1, "container"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -2553,22 +2553,22 @@
     .line 249
     const-string v4, "team"
 
-    invoke-static {v3, v1, v4, v2}, Lcom/android/settings/iC;->a(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
+    invoke-static {v3, v1, v4, v2}, Lcom/android/vendorsettings/iC;->a(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
     .line 253
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
     .line 254
     const-string v4, "contributors"
 
-    invoke-static {v3, v1, v4, v2}, Lcom/android/settings/iC;->a(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
+    invoke-static {v3, v1, v4, v2}, Lcom/android/vendorsettings/iC;->a(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
     .line 257
     const-string v1, "user_manual"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -2578,16 +2578,16 @@
     .line 260
     const-string v1, "device_name"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
     check-cast v1, Lmiui/preference/ValuePreference;
 
-    iput-object v1, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qm:Lmiui/preference/ValuePreference;
+    iput-object v1, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qm:Lmiui/preference/ValuePreference;
 
     .line 261
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -2630,7 +2630,7 @@
     :cond_6
     const-string v1, "instruction"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -2669,7 +2669,7 @@
 
     move-result-object v3
 
-    invoke-direct {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->du()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->du()Ljava/lang/String;
 
     move-result-object v4
 
@@ -2708,7 +2708,7 @@
 
     move-result-object v3
 
-    invoke-direct {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->du()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->du()Ljava/lang/String;
 
     move-result-object v4
 
@@ -2736,7 +2736,7 @@
 
     move-result-object v3
 
-    invoke-direct {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->du()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->du()Ljava/lang/String;
 
     move-result-object v4
 
@@ -2762,7 +2762,7 @@
 
     move-result-object v3
 
-    invoke-direct {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->du()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->du()Ljava/lang/String;
 
     move-result-object v4
 
@@ -2812,13 +2812,13 @@
 
     .line 162
     :cond_e
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     const-string v3, "security_patch"
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -2866,7 +2866,7 @@
 
     const v3, 0x7f0c1052
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/MiuiDeviceInfoSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -2917,7 +2917,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/MiuiDeviceInfoSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -2964,7 +2964,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/MiuiDeviceInfoSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -3013,7 +3013,7 @@
 
     const-string v1, "gsm.version.baseband"
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/MiuiDeviceInfoSettings;->d(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_6
 
@@ -3049,7 +3049,7 @@
     .line 433
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -3066,7 +3066,7 @@
     move-result-object v0
 
     .line 437
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -3088,7 +3088,7 @@
     return-object v0
 
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreateDialog(I)Landroid/app/Dialog;
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreateDialog(I)Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -3135,7 +3135,7 @@
 
     .prologue
     .line 571
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onDestroy()V
 
     .line 572
     return-void
@@ -3153,7 +3153,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 456
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -3179,7 +3179,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     .line 452
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDeviceInfoSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->startActivity(Landroid/content/Intent;)V
 
     .line 453
     const/4 v0, 0x1
@@ -3225,7 +3225,7 @@
     invoke-virtual {v4, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 839
-    const-class v0, Lcom/android/settings/MiuiDeviceNameEditFragment;
+    const-class v0, Lcom/android/vendorsettings/MiuiDeviceNameEditFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -3237,7 +3237,7 @@
 
     move v5, v3
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/MiuiDeviceInfoSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     .line 842
     :cond_0
@@ -3314,11 +3314,11 @@
     if-eqz v0, :cond_e
 
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qq:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qq:Ljava/lang/String;
 
     if-eqz v0, :cond_e
 
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qq:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qq:Ljava/lang/String;
 
     invoke-virtual {p2}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 
@@ -3335,7 +3335,7 @@
 
     move-result-wide v4
 
-    iget-wide v6, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qp:J
+    iget-wide v6, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qp:J
 
     sub-long/2addr v4, v6
 
@@ -3346,25 +3346,25 @@
     if-lez v0, :cond_b
 
     .line 296
-    iget v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qo:I
+    iget v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qo:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qo:I
+    iput v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qo:I
 
     .line 297
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     if-eqz v0, :cond_2
 
     .line 298
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->cancel()V
 
     .line 300
     :cond_2
-    iget v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qo:I
+    iget v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qo:I
 
     if-lez v0, :cond_4
 
@@ -3386,19 +3386,19 @@
     .line 308
     :cond_3
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
-    iget v5, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qo:I
+    iget v5, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qo:I
 
     new-array v6, v1, [Ljava/lang/Object;
 
-    iget v7, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qo:I
+    iget v7, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qo:I
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3414,16 +3414,16 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     .line 310
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     .line 312
     :cond_4
-    iget v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qo:I
+    iget v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qo:I
 
     if-gtz v0, :cond_6
 
@@ -3474,21 +3474,21 @@
     invoke-direct {v2, v3, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
     .line 323
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-virtual {v0, v2}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
 
     .line 324
-    iput v9, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qo:I
+    iput v9, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qo:I
 
     .line 325
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qp:J
+    iput-wide v2, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qp:J
 
     .line 345
     :cond_6
@@ -3520,7 +3520,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 348
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDeviceInfoSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->startActivity(Landroid/content/Intent;)V
 
     .line 408
     :cond_7
@@ -3529,10 +3529,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qq:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qq:Ljava/lang/String;
 
     .line 409
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -3602,12 +3602,12 @@
 
     .line 332
     :cond_c
-    iget-object v3, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iget-object v3, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     if-eqz v3, :cond_d
 
     .line 333
-    iget-object v3, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iget-object v3, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     invoke-virtual {v3}, Landroid/widget/Toast;->cancel()V
 
@@ -3622,11 +3622,11 @@
     if-nez v2, :cond_6
 
     .line 336
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -3638,10 +3638,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     .line 338
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
@@ -3649,7 +3649,7 @@
 
     .line 342
     :cond_e
-    iput v9, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qo:I
+    iput v9, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qo:I
 
     goto/16 :goto_2
 
@@ -3668,11 +3668,11 @@
     if-eqz v0, :cond_10
 
     .line 350
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->lq:[J
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->lq:[J
 
-    iget-object v2, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->lq:[J
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->lq:[J
 
-    iget-object v3, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->lq:[J
+    iget-object v3, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->lq:[J
 
     array-length v3, v3
 
@@ -3681,9 +3681,9 @@
     invoke-static {v0, v1, v2, v8, v3}, Ljava/lang/System;->arraycopy([JI[JII)V
 
     .line 351
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->lq:[J
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->lq:[J
 
-    iget-object v1, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->lq:[J
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->lq:[J
 
     array-length v1, v1
 
@@ -3696,7 +3696,7 @@
     aput-wide v2, v0, v1
 
     .line 352
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->lq:[J
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->lq:[J
 
     aget-wide v0, v0, v8
 
@@ -3732,7 +3732,7 @@
 
     .line 357
     :try_start_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDeviceInfoSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -3786,24 +3786,24 @@
     if-eqz v0, :cond_16
 
     .line 363
-    iget v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->lr:I
+    iget v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->lr:I
 
     if-lez v0, :cond_14
 
     .line 364
-    iget v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->lr:I
+    iget v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->lr:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->lr:I
+    iput v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->lr:I
 
     .line 365
-    iget v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->lr:I
+    iget v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->lr:I
 
     if-nez v0, :cond_12
 
     .line 366
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -3826,18 +3826,18 @@
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     .line 369
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     if-eqz v0, :cond_11
 
     .line 370
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->cancel()V
 
     .line 372
     :cond_11
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -3847,10 +3847,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     .line 374
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
@@ -3870,7 +3870,7 @@
     invoke-virtual {v0, v2, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 379
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -3880,43 +3880,43 @@
 
     .line 381
     :cond_12
-    iget v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->lr:I
+    iget v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->lr:I
 
     if-lez v0, :cond_7
 
-    iget v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->lr:I
+    iget v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->lr:I
 
     const/4 v2, 0x5
 
     if-ge v0, v2, :cond_7
 
     .line 383
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     if-eqz v0, :cond_13
 
     .line 384
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->cancel()V
 
     .line 386
     :cond_13
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
     const v3, 0x7f110002
 
-    iget v4, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->lr:I
+    iget v4, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->lr:I
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    iget v5, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->lr:I
+    iget v5, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->lr:I
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -3932,10 +3932,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     .line 389
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
@@ -3943,23 +3943,23 @@
 
     .line 391
     :cond_14
-    iget v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->lr:I
+    iget v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->lr:I
 
     if-gez v0, :cond_7
 
     .line 392
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     if-eqz v0, :cond_15
 
     .line 393
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->cancel()V
 
     .line 395
     :cond_15
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -3969,10 +3969,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     .line 397
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
@@ -3993,7 +3993,7 @@
     if-eqz v0, :cond_17
 
     .line 400
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiDeviceInfoSettings;->showDialog(I)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->showDialog(I)V
 
     goto/16 :goto_3
 
@@ -4011,11 +4011,11 @@
 
     if-eqz v0, :cond_7
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/iC;->Z(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/iC;->Z(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -4029,23 +4029,23 @@
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 403
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    const-class v3, Lcom/android/settings/deviceinfo/MiuiStatus;
+    const-class v3, Lcom/android/vendorsettings/deviceinfo/MiuiStatus;
 
     invoke-virtual {v0, v2, v3}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
     .line 404
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDeviceInfoSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->startActivity(Landroid/content/Intent;)V
 
     .line 405
     invoke-virtual {p2}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qq:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qq:Ljava/lang/String;
 
     move v0, v1
 
@@ -4062,10 +4062,10 @@
     const/4 v1, 0x0
 
     .line 576
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 578
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -4074,22 +4074,22 @@
     move-result-object v2
 
     .line 579
-    iget-object v3, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qm:Lmiui/preference/ValuePreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qm:Lmiui/preference/ValuePreference;
 
     invoke-virtual {v3, v2}, Lmiui/preference/ValuePreference;->setValue(Ljava/lang/String;)V
 
     .line 580
-    iget-object v2, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qm:Lmiui/preference/ValuePreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qm:Lmiui/preference/ValuePreference;
 
     invoke-virtual {v2, v0}, Lmiui/preference/ValuePreference;->setShowRightArrow(Z)V
 
     .line 581
-    iget-object v2, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qm:Lmiui/preference/ValuePreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qm:Lmiui/preference/ValuePreference;
 
     invoke-virtual {v2, p0}, Lmiui/preference/ValuePreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 582
-    iget-object v2, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->qm:Lmiui/preference/ValuePreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->qm:Lmiui/preference/ValuePreference;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -4101,10 +4101,10 @@
     invoke-virtual {v2, v0}, Lmiui/preference/ValuePreference;->setEnabled(Z)V
 
     .line 584
-    invoke-direct {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->eY()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->eY()V
 
     .line 586
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -4125,12 +4125,12 @@
     const/4 v0, -0x1
 
     :goto_1
-    iput v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->lr:I
+    iput v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->lr:I
 
     .line 589
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceInfoSettings;->ls:Landroid/widget/Toast;
 
     .line 590
     return-void

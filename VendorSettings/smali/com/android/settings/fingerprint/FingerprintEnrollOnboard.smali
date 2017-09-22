@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/fingerprint/FingerprintEnrollOnboard;
-.super Lcom/android/settings/fingerprint/a;
+.class public Lcom/android/vendorsettings/fingerprint/FingerprintEnrollOnboard;
+.super Lcom/android/vendorsettings/fingerprint/a;
 .source "FingerprintEnrollOnboard.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 31
-    invoke-direct {p0}, Lcom/android/settings/fingerprint/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/fingerprint/a;-><init>()V
 
     return-void
 .end method
@@ -19,7 +19,7 @@
 
     .prologue
     .line 76
-    invoke-virtual {p0}, Lcom/android/settings/fingerprint/FingerprintEnrollOnboard;->qs()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollOnboard;->qs()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -29,10 +29,10 @@
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[B)Landroid/content/Intent;
 
     .line 78
-    invoke-virtual {p0, v0}, Lcom/android/settings/fingerprint/FingerprintEnrollOnboard;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollOnboard;->startActivity(Landroid/content/Intent;)V
 
     .line 79
-    invoke-virtual {p0}, Lcom/android/settings/fingerprint/FingerprintEnrollOnboard;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollOnboard;->finish()V
 
     .line 80
     return-void
@@ -45,14 +45,14 @@
     const/4 v5, 0x1
 
     .line 60
-    invoke-virtual {p0}, Lcom/android/settings/fingerprint/FingerprintEnrollOnboard;->qv()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollOnboard;->qv()Landroid/content/Intent;
 
     move-result-object v1
 
     .line 61
     const-class v0, Landroid/hardware/fingerprint/FingerprintManager;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fingerprint/FingerprintEnrollOnboard;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollOnboard;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -90,7 +90,7 @@
     invoke-virtual {v1, v0, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 68
-    invoke-virtual {p0, v1, v5}, Lcom/android/settings/fingerprint/FingerprintEnrollOnboard;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v1, v5}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollOnboard;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 69
     return-void
@@ -117,10 +117,10 @@
     move-result-object v0
 
     .line 52
-    invoke-virtual {p0, v1}, Lcom/android/settings/fingerprint/FingerprintEnrollOnboard;->setResult(I)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollOnboard;->setResult(I)V
 
     .line 53
-    invoke-direct {p0, v0}, Lcom/android/settings/fingerprint/FingerprintEnrollOnboard;->g([B)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollOnboard;->g([B)V
 
     .line 57
     :goto_0
@@ -128,7 +128,7 @@
 
     .line 55
     :cond_0
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/fingerprint/a;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/vendorsettings/fingerprint/a;->onActivityResult(IILandroid/content/Intent;)V
 
     goto :goto_0
 .end method
@@ -138,17 +138,17 @@
 
     .prologue
     .line 37
-    invoke-super {p0, p1}, Lcom/android/settings/fingerprint/a;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/fingerprint/a;->onCreate(Landroid/os/Bundle;)V
 
     .line 38
     const v0, 0x7f040084
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fingerprint/FingerprintEnrollOnboard;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollOnboard;->setContentView(I)V
 
     .line 39
     const v0, 0x7f0c01f0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fingerprint/FingerprintEnrollOnboard;->bZ(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollOnboard;->bZ(I)V
 
     .line 40
     return-void
@@ -159,7 +159,7 @@
 
     .prologue
     .line 44
-    invoke-direct {p0}, Lcom/android/settings/fingerprint/FingerprintEnrollOnboard;->qu()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollOnboard;->qu()V
 
     .line 45
     return-void
@@ -172,7 +172,7 @@
     .line 83
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/fingerprint/FingerprintEnrollFindSensor;
+    const-class v1, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollFindSensor;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -186,7 +186,7 @@
     .line 72
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/ChooseLockGeneric;
+    const-class v1, Lcom/android/vendorsettings/ChooseLockGeneric;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 

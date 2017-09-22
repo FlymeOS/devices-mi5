@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/CheckableLinearLayout;
+.class public Lcom/android/vendorsettings/CheckableLinearLayout;
 .super Landroid/widget/LinearLayout;
 .source "CheckableLinearLayout.java"
 
@@ -41,7 +41,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/CheckableLinearLayout;->da:F
+    iput v0, p0, Lcom/android/vendorsettings/CheckableLinearLayout;->da:F
 
     .line 35
     return-void
@@ -52,7 +52,7 @@
 
     .prologue
     .line 63
-    invoke-virtual {p0}, Lcom/android/settings/CheckableLinearLayout;->getChildCount()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/CheckableLinearLayout;->getChildCount()I
 
     move-result v2
 
@@ -65,7 +65,7 @@
     if-ge v1, v2, :cond_1
 
     .line 65
-    invoke-virtual {p0, v1}, Lcom/android/settings/CheckableLinearLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/CheckableLinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -77,7 +77,7 @@
     .line 67
     check-cast v0, Landroid/widget/Checkable;
 
-    iget-boolean v3, p0, Lcom/android/settings/CheckableLinearLayout;->mChecked:Z
+    iget-boolean v3, p0, Lcom/android/vendorsettings/CheckableLinearLayout;->mChecked:Z
 
     invoke-interface {v0, v3}, Landroid/widget/Checkable;->setChecked(Z)V
 
@@ -101,7 +101,7 @@
 
     .prologue
     .line 54
-    iget-boolean v0, p0, Lcom/android/settings/CheckableLinearLayout;->mChecked:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/CheckableLinearLayout;->mChecked:Z
 
     return v0
 .end method
@@ -111,10 +111,10 @@
 
     .prologue
     .line 48
-    iput-boolean p1, p0, Lcom/android/settings/CheckableLinearLayout;->mChecked:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/CheckableLinearLayout;->mChecked:Z
 
     .line 49
-    invoke-direct {p0}, Lcom/android/settings/CheckableLinearLayout;->al()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/CheckableLinearLayout;->al()V
 
     .line 50
     return-void
@@ -128,7 +128,7 @@
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     .line 40
-    invoke-virtual {p0}, Lcom/android/settings/CheckableLinearLayout;->getChildCount()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/CheckableLinearLayout;->getChildCount()I
 
     move-result v2
 
@@ -141,7 +141,7 @@
     if-ge v1, v2, :cond_1
 
     .line 42
-    invoke-virtual {p0, v1}, Lcom/android/settings/CheckableLinearLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/CheckableLinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
@@ -161,7 +161,7 @@
 
     .line 42
     :cond_0
-    iget v0, p0, Lcom/android/settings/CheckableLinearLayout;->da:F
+    iget v0, p0, Lcom/android/vendorsettings/CheckableLinearLayout;->da:F
 
     goto :goto_1
 
@@ -175,14 +175,14 @@
 
     .prologue
     .line 59
-    iget-boolean v0, p0, Lcom/android/settings/CheckableLinearLayout;->mChecked:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/CheckableLinearLayout;->mChecked:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
     :goto_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/CheckableLinearLayout;->setChecked(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/CheckableLinearLayout;->setChecked(Z)V
 
     .line 60
     return-void

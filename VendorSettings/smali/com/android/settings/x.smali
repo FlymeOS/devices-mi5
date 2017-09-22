@@ -1,4 +1,4 @@
-.class synthetic Lcom/android/settings/x;
+.class synthetic Lcom/android/vendorsettings/x;
 .super Ljava/lang/Object;
 .source "ApnSettings.java"
 
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/x;->$SwitchMap$com$android$internal$telephony$PhoneConstants$DataState:[I
+    sput-object v0, Lcom/android/vendorsettings/x;->$SwitchMap$com$android$internal$telephony$PhoneConstants$DataState:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/x;->$SwitchMap$com$android$internal$telephony$PhoneConstants$DataState:[I
+    sget-object v0, Lcom/android/vendorsettings/x;->$SwitchMap$com$android$internal$telephony$PhoneConstants$DataState:[I
 
     sget-object v1, Lcom/android/internal/telephony/PhoneConstants$DataState;->CONNECTED:Lcom/android/internal/telephony/PhoneConstants$DataState;
 

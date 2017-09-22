@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/inputmethod/KeyboardLayoutDialogFragment$OnSetupKeyboardLayoutsListener;
+.class public interface abstract Lcom/android/vendorsettings/inputmethod/KeyboardLayoutDialogFragment$OnSetupKeyboardLayoutsListener;
 .super Ljava/lang/Object;
 .source "KeyboardLayoutDialogFragment.java"
 

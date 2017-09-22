@@ -1,19 +1,19 @@
-.class Lcom/android/settings/applications/AppStorageSettings$ClearUserDataObserver;
+.class Lcom/android/vendorsettings/applications/AppStorageSettings$ClearUserDataObserver;
 .super Landroid/content/pm/IPackageDataObserver$Stub;
 .source "AppStorageSettings.java"
 
 
 # instance fields
-.field final synthetic Hh:Lcom/android/settings/applications/AppStorageSettings;
+.field final synthetic Hh:Lcom/android/vendorsettings/applications/AppStorageSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/AppStorageSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/applications/AppStorageSettings;)V
     .locals 0
 
     .prologue
     .line 509
-    iput-object p1, p0, Lcom/android/settings/applications/AppStorageSettings$ClearUserDataObserver;->Hh:Lcom/android/settings/applications/AppStorageSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings$ClearUserDataObserver;->Hh:Lcom/android/vendorsettings/applications/AppStorageSettings;
 
     invoke-direct {p0}, Landroid/content/pm/IPackageDataObserver$Stub;-><init>()V
 
@@ -29,9 +29,9 @@
     const/4 v0, 0x1
 
     .line 511
-    iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings$ClearUserDataObserver;->Hh:Lcom/android/settings/applications/AppStorageSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings$ClearUserDataObserver;->Hh:Lcom/android/vendorsettings/applications/AppStorageSettings;
 
-    invoke-static {v1}, Lcom/android/settings/applications/AppStorageSettings;->c(Lcom/android/settings/applications/AppStorageSettings;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/android/vendorsettings/applications/AppStorageSettings;->c(Lcom/android/vendorsettings/applications/AppStorageSettings;)Landroid/os/Handler;
 
     move-result-object v1
 
@@ -46,9 +46,9 @@
     iput v0, v1, Landroid/os/Message;->arg1:I
 
     .line 513
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings$ClearUserDataObserver;->Hh:Lcom/android/settings/applications/AppStorageSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings$ClearUserDataObserver;->Hh:Lcom/android/vendorsettings/applications/AppStorageSettings;
 
-    invoke-static {v0}, Lcom/android/settings/applications/AppStorageSettings;->c(Lcom/android/settings/applications/AppStorageSettings;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->c(Lcom/android/vendorsettings/applications/AppStorageSettings;)Landroid/os/Handler;
 
     move-result-object v0
 

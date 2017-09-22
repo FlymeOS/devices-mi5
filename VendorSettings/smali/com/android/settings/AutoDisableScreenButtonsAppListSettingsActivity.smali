@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/AutoDisableScreenButtonsAppListSettingsActivity;
+.class public Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettingsActivity;
 .super Landroid/app/Activity;
 .source "AutoDisableScreenButtonsAppListSettingsActivity.java"
 
@@ -24,14 +24,14 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 15
-    const-class v0, Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;
+    const-class v0, Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v1
 
     .line 16
-    invoke-virtual {p0}, Lcom/android/settings/AutoDisableScreenButtonsAppListSettingsActivity;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettingsActivity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v2
 

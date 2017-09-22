@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ek;
+.class Lcom/android/vendorsettings/ek;
 .super Ljava/lang/Object;
 .source "MiuiDeviceInfoSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic qs:Lcom/android/settings/MiuiDeviceInfoSettings;
+.field final synthetic qs:Lcom/android/vendorsettings/MiuiDeviceInfoSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiDeviceInfoSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiDeviceInfoSettings;)V
     .locals 0
 
     .prologue
     .line 596
-    iput-object p1, p0, Lcom/android/settings/ek;->qs:Lcom/android/settings/MiuiDeviceInfoSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/ek;->qs:Lcom/android/vendorsettings/MiuiDeviceInfoSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

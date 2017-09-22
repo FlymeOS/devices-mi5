@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/applications/MiuiSmsDefaultDialog;
+.class public final Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;
 .super Landroid/app/Activity;
 .source "MiuiSmsDefaultDialog.java"
 
@@ -51,15 +51,15 @@
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/applications/MiuiSmsDefaultDialog;->Ar:Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
+    iput-object v2, p0, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;->Ar:Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
 
     .line 124
-    iget-object v2, p0, Lcom/android/settings/applications/MiuiSmsDefaultDialog;->Ar:Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;->Ar:Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
 
     if-eqz v2, :cond_0
 
     .line 127
-    invoke-virtual {p0, v1}, Lcom/android/settings/applications/MiuiSmsDefaultDialog;->showDialog(I)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;->showDialog(I)V
 
     .line 130
     invoke-static {p0, v1}, Lcom/android/internal/telephony/SmsApplication;->getDefaultSmsApplication(Landroid/content/Context;Z)Landroid/content/ComponentName;
@@ -81,7 +81,7 @@
     .line 134
     iget-object v2, v2, Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;->mPackageName:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/android/settings/applications/MiuiSmsDefaultDialog;->Ar:Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;->Ar:Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
 
     iget-object v3, v3, Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;->mPackageName:Ljava/lang/String;
 
@@ -98,32 +98,32 @@
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/MiuiSmsDefaultDialog;)I
+.method static synthetic a(Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;)I
     .locals 1
 
     .prologue
     .line 25
-    iget v0, p0, Lcom/android/settings/applications/MiuiSmsDefaultDialog;->Kx:I
+    iget v0, p0, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;->Kx:I
 
     return v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/MiuiSmsDefaultDialog;I)I
+.method static synthetic a(Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;I)I
     .locals 0
 
     .prologue
     .line 25
-    iput p1, p0, Lcom/android/settings/applications/MiuiSmsDefaultDialog;->Kx:I
+    iput p1, p0, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;->Kx:I
 
     return p1
 .end method
 
-.method static synthetic b(Lcom/android/settings/applications/MiuiSmsDefaultDialog;)Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
+.method static synthetic b(Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;)Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
     .locals 1
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/android/settings/applications/MiuiSmsDefaultDialog;->Ar:Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;->Ar:Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
 
     return-object v0
 .end method
@@ -138,7 +138,7 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 36
-    invoke-virtual {p0}, Lcom/android/settings/applications/MiuiSmsDefaultDialog;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -152,17 +152,17 @@
     .line 39
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/applications/MiuiSmsDefaultDialog;->setResult(I)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;->setResult(I)V
 
     .line 40
-    invoke-direct {p0, v0}, Lcom/android/settings/applications/MiuiSmsDefaultDialog;->V(Ljava/lang/String;)Z
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;->V(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 41
-    invoke-virtual {p0}, Lcom/android/settings/applications/MiuiSmsDefaultDialog;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;->finish()V
 
     .line 43
     :cond_0
@@ -181,7 +181,7 @@
     const/4 v0, 0x0
 
     .line 55
-    iput p1, p0, Lcom/android/settings/applications/MiuiSmsDefaultDialog;->Kx:I
+    iput p1, p0, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;->Kx:I
 
     .line 56
     packed-switch p1, :pswitch_data_0
@@ -208,13 +208,13 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/android/settings/applications/MiuiSmsDefaultDialog;->Ar:Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;->Ar:Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
 
     iget-object v4, v4, Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;->mApplicationName:Ljava/lang/String;
 
     aput-object v4, v2, v3
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/applications/MiuiSmsDefaultDialog;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v1, v2}, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -222,9 +222,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/applications/MiuiSmsDefaultDialog$2;
+    new-instance v1, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog$2;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/applications/MiuiSmsDefaultDialog$2;-><init>(Lcom/android/settings/applications/MiuiSmsDefaultDialog;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog$2;-><init>(Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;)V
 
     invoke-virtual {v0, v5, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -232,9 +232,9 @@
 
     const v1, 0x7f0c0f39
 
-    new-instance v2, Lcom/android/settings/applications/MiuiSmsDefaultDialog$1;
+    new-instance v2, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/applications/MiuiSmsDefaultDialog$1;-><init>(Lcom/android/settings/applications/MiuiSmsDefaultDialog;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog$1;-><init>(Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -246,9 +246,9 @@
     move-result-object v0
 
     .line 76
-    new-instance v1, Lcom/android/settings/applications/MiuiSmsDefaultDialog$3;
+    new-instance v1, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog$3;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/applications/MiuiSmsDefaultDialog$3;-><init>(Lcom/android/settings/applications/MiuiSmsDefaultDialog;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog$3;-><init>(Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -270,9 +270,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/applications/MiuiSmsDefaultDialog$5;
+    new-instance v1, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog$5;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/applications/MiuiSmsDefaultDialog$5;-><init>(Lcom/android/settings/applications/MiuiSmsDefaultDialog;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog$5;-><init>(Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;)V
 
     invoke-virtual {v0, v5, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -280,9 +280,9 @@
 
     const v1, 0x1040013
 
-    new-instance v2, Lcom/android/settings/applications/MiuiSmsDefaultDialog$4;
+    new-instance v2, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog$4;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/applications/MiuiSmsDefaultDialog$4;-><init>(Lcom/android/settings/applications/MiuiSmsDefaultDialog;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog$4;-><init>(Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -294,9 +294,9 @@
     move-result-object v0
 
     .line 105
-    new-instance v1, Lcom/android/settings/applications/MiuiSmsDefaultDialog$6;
+    new-instance v1, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog$6;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/applications/MiuiSmsDefaultDialog$6;-><init>(Lcom/android/settings/applications/MiuiSmsDefaultDialog;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog$6;-><init>(Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -322,7 +322,7 @@
     .line 48
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/MiuiSmsDefaultDialog;->setVisible(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/MiuiSmsDefaultDialog;->setVisible(Z)V
 
     .line 49
     return-void

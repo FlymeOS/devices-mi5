@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/ProcessStatsMemDetail;
-.super Lcom/android/settings/InstrumentedFragment;
+.class public Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;
+.super Lcom/android/vendorsettings/InstrumentedFragment;
 .source "ProcessStatsMemDetail.java"
 
 
@@ -37,7 +37,7 @@
 
     .prologue
     .line 33
-    invoke-direct {p0}, Lcom/android/settings/InstrumentedFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/InstrumentedFragment;-><init>()V
 
     return-void
 .end method
@@ -54,14 +54,14 @@
     if-lez v0, :cond_0
 
     .line 134
-    iget-wide v0, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mg:D
+    iget-wide v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mg:D
 
     div-double v0, p3, v0
 
     double-to-float v0, v0
 
     .line 135
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsMemDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -69,7 +69,7 @@
 
     mul-double/2addr v2, p3
 
-    iget-wide v4, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->mTotalTime:J
+    iget-wide v4, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->mTotalTime:J
 
     long-to-double v4, v4
 
@@ -82,7 +82,7 @@
     move-result-object v1
 
     .line 137
-    invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/settings/applications/ProcessStatsMemDetail;->a(Landroid/view/ViewGroup;Ljava/lang/CharSequence;FLjava/lang/CharSequence;)V
+    invoke-direct {p0, p1, p2, v0, v1}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->a(Landroid/view/ViewGroup;Ljava/lang/CharSequence;FLjava/lang/CharSequence;)V
 
     .line 139
     :cond_0
@@ -94,7 +94,7 @@
 
     .prologue
     .line 107
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsMemDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -193,7 +193,7 @@
 
     .prologue
     .line 98
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->mRootView:Landroid/view/View;
 
     const v1, 0x7f1301f9
 
@@ -203,10 +203,10 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mh:Landroid/view/ViewGroup;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mh:Landroid/view/ViewGroup;
 
     .line 99
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->mRootView:Landroid/view/View;
 
     const v1, 0x7f1301fa
 
@@ -216,13 +216,13 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mi:Landroid/view/ViewGroup;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mi:Landroid/view/ViewGroup;
 
     .line 101
-    invoke-direct {p0}, Lcom/android/settings/applications/ProcessStatsMemDetail;->li()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->li()V
 
     .line 102
-    invoke-direct {p0}, Lcom/android/settings/applications/ProcessStatsMemDetail;->lj()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->lj()V
 
     .line 103
     return-void
@@ -233,7 +233,7 @@
 
     .prologue
     .line 122
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsMemDetail;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -252,7 +252,7 @@
     if-ge v0, v2, :cond_1
 
     .line 124
-    iget-object v2, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Ma:[J
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Ma:[J
 
     aget-wide v2, v2, v0
 
@@ -263,28 +263,28 @@
     if-lez v2, :cond_0
 
     .line 125
-    iget-object v2, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Ma:[J
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Ma:[J
 
     aget-wide v2, v2, v0
 
     long-to-float v2, v2
 
-    iget-wide v4, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->mTotalTime:J
+    iget-wide v4, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->mTotalTime:J
 
     long-to-float v3, v4
 
     div-float/2addr v2, v3
 
     .line 126
-    iget-object v3, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mh:Landroid/view/ViewGroup;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mh:Landroid/view/ViewGroup;
 
     aget-object v4, v1, v0
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsMemDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
-    iget-object v6, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Ma:[J
+    iget-object v6, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Ma:[J
 
     aget-wide v6, v6, v0
 
@@ -292,7 +292,7 @@
 
     move-result-object v5
 
-    invoke-direct {p0, v3, v4, v2, v5}, Lcom/android/settings/applications/ProcessStatsMemDetail;->a(Landroid/view/ViewGroup;Ljava/lang/CharSequence;FLjava/lang/CharSequence;)V
+    invoke-direct {p0, v3, v4, v2, v5}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->a(Landroid/view/ViewGroup;Ljava/lang/CharSequence;FLjava/lang/CharSequence;)V
 
     .line 123
     :cond_0
@@ -310,7 +310,7 @@
 
     .prologue
     .line 142
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsMemDetail;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -321,9 +321,9 @@
     move-result-object v1
 
     .line 143
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mi:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mi:Landroid/view/ViewGroup;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsMemDetail;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -333,14 +333,14 @@
 
     move-result-object v2
 
-    iget-wide v4, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Me:D
+    iget-wide v4, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Me:D
 
-    invoke-direct {p0, v0, v2, v4, v5}, Lcom/android/settings/applications/ProcessStatsMemDetail;->a(Landroid/view/ViewGroup;Ljava/lang/CharSequence;D)V
+    invoke-direct {p0, v0, v2, v4, v5}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->a(Landroid/view/ViewGroup;Ljava/lang/CharSequence;D)V
 
     .line 145
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mi:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mi:Landroid/view/ViewGroup;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsMemDetail;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -350,14 +350,14 @@
 
     move-result-object v2
 
-    iget-wide v4, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Md:D
+    iget-wide v4, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Md:D
 
-    invoke-direct {p0, v0, v2, v4, v5}, Lcom/android/settings/applications/ProcessStatsMemDetail;->a(Landroid/view/ViewGroup;Ljava/lang/CharSequence;D)V
+    invoke-direct {p0, v0, v2, v4, v5}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->a(Landroid/view/ViewGroup;Ljava/lang/CharSequence;D)V
 
     .line 147
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mi:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mi:Landroid/view/ViewGroup;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsMemDetail;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -367,9 +367,9 @@
 
     move-result-object v2
 
-    iget-wide v4, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mf:D
+    iget-wide v4, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mf:D
 
-    invoke-direct {p0, v0, v2, v4, v5}, Lcom/android/settings/applications/ProcessStatsMemDetail;->a(Landroid/view/ViewGroup;Ljava/lang/CharSequence;D)V
+    invoke-direct {p0, v0, v2, v4, v5}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->a(Landroid/view/ViewGroup;Ljava/lang/CharSequence;D)V
 
     .line 149
     const/4 v0, 0x0
@@ -380,15 +380,15 @@
     if-ge v0, v2, :cond_0
 
     .line 150
-    iget-object v2, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mi:Landroid/view/ViewGroup;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mi:Landroid/view/ViewGroup;
 
     aget-object v3, v1, v0
 
-    iget-object v4, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Ln:[D
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Ln:[D
 
     aget-wide v4, v4, v0
 
-    invoke-direct {p0, v2, v3, v4, v5}, Lcom/android/settings/applications/ProcessStatsMemDetail;->a(Landroid/view/ViewGroup;Ljava/lang/CharSequence;D)V
+    invoke-direct {p0, v2, v3, v4, v5}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->a(Landroid/view/ViewGroup;Ljava/lang/CharSequence;D)V
 
     .line 149
     add-int/lit8 v0, v0, 0x1
@@ -397,9 +397,9 @@
 
     .line 152
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mi:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mi:Landroid/view/ViewGroup;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsMemDetail;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -409,14 +409,14 @@
 
     move-result-object v1
 
-    iget-wide v2, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mb:D
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mb:D
 
-    invoke-direct {p0, v0, v1, v2, v3}, Lcom/android/settings/applications/ProcessStatsMemDetail;->a(Landroid/view/ViewGroup;Ljava/lang/CharSequence;D)V
+    invoke-direct {p0, v0, v1, v2, v3}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->a(Landroid/view/ViewGroup;Ljava/lang/CharSequence;D)V
 
     .line 154
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mi:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mi:Landroid/view/ViewGroup;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsMemDetail;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -426,14 +426,14 @@
 
     move-result-object v1
 
-    iget-wide v2, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mc:D
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mc:D
 
-    invoke-direct {p0, v0, v1, v2, v3}, Lcom/android/settings/applications/ProcessStatsMemDetail;->a(Landroid/view/ViewGroup;Ljava/lang/CharSequence;D)V
+    invoke-direct {p0, v0, v1, v2, v3}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->a(Landroid/view/ViewGroup;Ljava/lang/CharSequence;D)V
 
     .line 156
-    iget-object v0, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mi:Landroid/view/ViewGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mi:Landroid/view/ViewGroup;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsMemDetail;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -443,9 +443,9 @@
 
     move-result-object v1
 
-    iget-wide v2, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mg:D
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mg:D
 
-    invoke-direct {p0, v0, v1, v2, v3}, Lcom/android/settings/applications/ProcessStatsMemDetail;->a(Landroid/view/ViewGroup;Ljava/lang/CharSequence;D)V
+    invoke-direct {p0, v0, v1, v2, v3}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->a(Landroid/view/ViewGroup;Ljava/lang/CharSequence;D)V
 
     .line 158
     return-void
@@ -458,10 +458,10 @@
 
     .prologue
     .line 62
-    invoke-super {p0, p1}, Lcom/android/settings/InstrumentedFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/InstrumentedFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 63
-    invoke-virtual {p0}, Lcom/android/settings/applications/ProcessStatsMemDetail;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -472,7 +472,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Ma:[J
+    iput-object v1, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Ma:[J
 
     .line 65
     const-string v1, "mem_state_weights"
@@ -481,7 +481,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Ln:[D
+    iput-object v1, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Ln:[D
 
     .line 66
     const-string v1, "mem_cached_weight"
@@ -490,7 +490,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mb:D
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mb:D
 
     .line 67
     const-string v1, "mem_free_weight"
@@ -499,7 +499,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mc:D
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mc:D
 
     .line 68
     const-string v1, "mem_zram_weight"
@@ -508,7 +508,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Md:D
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Md:D
 
     .line 69
     const-string v1, "mem_kernel_weight"
@@ -517,7 +517,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Me:D
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Me:D
 
     .line 70
     const-string v1, "mem_native_weight"
@@ -526,7 +526,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mf:D
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mf:D
 
     .line 71
     const-string v1, "mem_total_weight"
@@ -535,7 +535,7 @@
 
     move-result-wide v2
 
-    iput-wide v2, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Mg:D
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Mg:D
 
     .line 72
     const-string v1, "use_uss"
@@ -544,7 +544,7 @@
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->Ld:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->Ld:Z
 
     .line 73
     const-string v1, "total_time"
@@ -553,7 +553,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->mTotalTime:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->mTotalTime:J
 
     .line 74
     return-void
@@ -573,13 +573,13 @@
     move-result-object v0
 
     .line 80
-    invoke-static {p2, v0, v0, v1}, Lcom/android/settings/iC;->a(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/View;Z)V
+    invoke-static {p2, v0, v0, v1}, Lcom/android/vendorsettings/iC;->a(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/View;Z)V
 
     .line 82
-    iput-object v0, p0, Lcom/android/settings/applications/ProcessStatsMemDetail;->mRootView:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->mRootView:Landroid/view/View;
 
     .line 83
-    invoke-direct {p0}, Lcom/android/settings/applications/ProcessStatsMemDetail;->lf()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/ProcessStatsMemDetail;->lf()V
 
     .line 84
     return-object v0
@@ -590,7 +590,7 @@
 
     .prologue
     .line 94
-    invoke-super {p0}, Lcom/android/settings/InstrumentedFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/InstrumentedFragment;->onPause()V
 
     .line 95
     return-void

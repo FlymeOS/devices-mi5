@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dP;
+.class Lcom/android/vendorsettings/dP;
 .super Ljava/lang/Object;
 .source "LockSecureAfterTimeout.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic pI:Lcom/android/settings/LockSecureAfterTimeout;
+.field final synthetic pI:Lcom/android/vendorsettings/LockSecureAfterTimeout;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/LockSecureAfterTimeout;)V
+.method constructor <init>(Lcom/android/vendorsettings/LockSecureAfterTimeout;)V
     .locals 0
 
     .prologue
     .line 14
-    iput-object p1, p0, Lcom/android/settings/dP;->pI:Lcom/android/settings/LockSecureAfterTimeout;
+    iput-object p1, p0, Lcom/android/vendorsettings/dP;->pI:Lcom/android/vendorsettings/LockSecureAfterTimeout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,9 +32,9 @@
     const/4 v2, 0x0
 
     .line 17
-    iget-object v0, p0, Lcom/android/settings/dP;->pI:Lcom/android/settings/LockSecureAfterTimeout;
+    iget-object v0, p0, Lcom/android/vendorsettings/dP;->pI:Lcom/android/vendorsettings/LockSecureAfterTimeout;
 
-    invoke-virtual {v0}, Lcom/android/settings/LockSecureAfterTimeout;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/LockSecureAfterTimeout;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -53,9 +53,9 @@
     invoke-static {v0, v1, v4, v5}, Landroid/provider/Settings$Secure;->putLong(Landroid/content/ContentResolver;Ljava/lang/String;J)Z
 
     .line 19
-    iget-object v0, p0, Lcom/android/settings/dP;->pI:Lcom/android/settings/LockSecureAfterTimeout;
+    iget-object v0, p0, Lcom/android/vendorsettings/dP;->pI:Lcom/android/vendorsettings/LockSecureAfterTimeout;
 
-    invoke-static {v0}, Lcom/android/settings/LockSecureAfterTimeout;->a(Lcom/android/settings/LockSecureAfterTimeout;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/vendorsettings/LockSecureAfterTimeout;->a(Lcom/android/vendorsettings/LockSecureAfterTimeout;)Ljava/util/List;
 
     move-result-object v0
 

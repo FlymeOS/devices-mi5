@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/HandyModeGuidePreference;
+.class public Lcom/android/vendorsettings/display/HandyModeGuidePreference;
 .super Landroid/preference/Preference;
 .source "HandyModeGuidePreference.java"
 
@@ -11,7 +11,7 @@
     .line 12
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/display/HandyModeGuidePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/display/HandyModeGuidePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 13
     return-void
@@ -26,7 +26,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {p0, p1, v0, v1}, Lcom/android/settings/display/HandyModeGuidePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, v0, v1}, Lcom/android/vendorsettings/display/HandyModeGuidePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 17
     return-void
@@ -42,7 +42,7 @@
     .line 21
     const v0, 0x7f04008d
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/HandyModeGuidePreference;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/HandyModeGuidePreference;->setLayoutResource(I)V
 
     .line 22
     return-void

@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/cO;
+.class public interface abstract Lcom/android/vendorsettings/cO;
 .super Ljava/lang/Object;
 .source "DropDownPreference.java"
 

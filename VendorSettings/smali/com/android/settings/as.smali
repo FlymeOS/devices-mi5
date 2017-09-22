@@ -1,10 +1,10 @@
-.class Lcom/android/settings/as;
+.class Lcom/android/vendorsettings/as;
 .super Landroid/os/AsyncTask;
 .source "ChildrenModeSettings.java"
 
 
 # instance fields
-.field final synthetic dl:Lcom/android/settings/ChildrenModeSettings;
+.field final synthetic dl:Lcom/android/vendorsettings/ChildrenModeSettings;
 
 .field final synthetic dm:Ljava/util/List;
 
@@ -14,18 +14,18 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ChildrenModeSettings;Ljava/util/List;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+.method constructor <init>(Lcom/android/vendorsettings/ChildrenModeSettings;Ljava/util/List;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 0
 
     .prologue
     .line 144
-    iput-object p1, p0, Lcom/android/settings/as;->dl:Lcom/android/settings/ChildrenModeSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/as;->dl:Lcom/android/vendorsettings/ChildrenModeSettings;
 
-    iput-object p2, p0, Lcom/android/settings/as;->dm:Ljava/util/List;
+    iput-object p2, p0, Lcom/android/vendorsettings/as;->dm:Ljava/util/List;
 
-    iput-object p3, p0, Lcom/android/settings/as;->dn:Ljava/util/ArrayList;
+    iput-object p3, p0, Lcom/android/vendorsettings/as;->dn:Ljava/util/ArrayList;
 
-    iput-object p4, p0, Lcom/android/settings/as;->do:Ljava/util/ArrayList;
+    iput-object p4, p0, Lcom/android/vendorsettings/as;->do:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -41,7 +41,7 @@
     .line 144
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/as;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/as;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
 
@@ -53,7 +53,7 @@
 
     .prologue
     .line 147
-    iget-object v0, p0, Lcom/android/settings/as;->dm:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/as;->dm:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -80,17 +80,17 @@
     iget v2, v0, Landroid/content/pm/ApplicationInfo;->flags:I
 
     .line 153
-    iget-object v2, p0, Lcom/android/settings/as;->dl:Lcom/android/settings/ChildrenModeSettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/as;->dl:Lcom/android/vendorsettings/ChildrenModeSettings;
 
     iget-object v3, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
-    invoke-static {v2, v3}, Lcom/android/settings/ChildrenModeSettings;->a(Lcom/android/settings/ChildrenModeSettings;Ljava/lang/String;)Z
+    invoke-static {v2, v3}, Lcom/android/vendorsettings/ChildrenModeSettings;->a(Lcom/android/vendorsettings/ChildrenModeSettings;Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    sget-object v2, Lcom/android/settings/ChildrenModeSettings;->o:Ljava/util/HashSet;
+    sget-object v2, Lcom/android/vendorsettings/ChildrenModeSettings;->o:Ljava/util/HashSet;
 
     iget-object v3, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
@@ -111,17 +111,17 @@
 
     if-eqz v2, :cond_1
 
-    iget-object v2, p0, Lcom/android/settings/as;->dl:Lcom/android/settings/ChildrenModeSettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/as;->dl:Lcom/android/vendorsettings/ChildrenModeSettings;
 
-    invoke-virtual {v2}, Lcom/android/settings/ChildrenModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v2}, Lcom/android/vendorsettings/ChildrenModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
     if-eqz v2, :cond_1
 
-    iget-object v2, p0, Lcom/android/settings/as;->dl:Lcom/android/settings/ChildrenModeSettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/as;->dl:Lcom/android/vendorsettings/ChildrenModeSettings;
 
-    invoke-virtual {v2}, Lcom/android/settings/ChildrenModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v2}, Lcom/android/vendorsettings/ChildrenModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -133,9 +133,9 @@
 
     .line 163
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/as;->dl:Lcom/android/settings/ChildrenModeSettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/as;->dl:Lcom/android/vendorsettings/ChildrenModeSettings;
 
-    invoke-static {v2}, Lcom/android/settings/ChildrenModeSettings;->c(Lcom/android/settings/ChildrenModeSettings;)Lmiui/security/SecurityManager;
+    invoke-static {v2}, Lcom/android/vendorsettings/ChildrenModeSettings;->c(Lcom/android/vendorsettings/ChildrenModeSettings;)Lmiui/security/SecurityManager;
 
     move-result-object v2
 
@@ -148,7 +148,7 @@
     if-eqz v2, :cond_2
 
     .line 164
-    iget-object v2, p0, Lcom/android/settings/as;->dn:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/vendorsettings/as;->dn:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -156,7 +156,7 @@
 
     .line 166
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/as;->do:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/vendorsettings/as;->do:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -164,22 +164,22 @@
 
     .line 169
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/as;->dl:Lcom/android/settings/ChildrenModeSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/as;->dl:Lcom/android/vendorsettings/ChildrenModeSettings;
 
-    iget-object v1, p0, Lcom/android/settings/as;->dn:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/vendorsettings/as;->dn:Ljava/util/ArrayList;
 
     const/4 v2, 0x1
 
-    invoke-static {v0, v1, v2}, Lcom/android/settings/ChildrenModeSettings;->a(Lcom/android/settings/ChildrenModeSettings;Ljava/util/ArrayList;Z)V
+    invoke-static {v0, v1, v2}, Lcom/android/vendorsettings/ChildrenModeSettings;->a(Lcom/android/vendorsettings/ChildrenModeSettings;Ljava/util/ArrayList;Z)V
 
     .line 170
-    iget-object v0, p0, Lcom/android/settings/as;->dl:Lcom/android/settings/ChildrenModeSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/as;->dl:Lcom/android/vendorsettings/ChildrenModeSettings;
 
-    iget-object v1, p0, Lcom/android/settings/as;->do:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/vendorsettings/as;->do:Ljava/util/ArrayList;
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/android/settings/ChildrenModeSettings;->a(Lcom/android/settings/ChildrenModeSettings;Ljava/util/ArrayList;Z)V
+    invoke-static {v0, v1, v2}, Lcom/android/vendorsettings/ChildrenModeSettings;->a(Lcom/android/vendorsettings/ChildrenModeSettings;Ljava/util/ArrayList;Z)V
 
     .line 171
     const/4 v0, 0x0

@@ -1,21 +1,21 @@
-.class Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter;
+.class Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter;
 .super Landroid/widget/ArrayAdapter;
 .source "NotificationStation.java"
 
 
 # instance fields
-.field final synthetic ajO:Lcom/android/settings/notification/NotificationStation;
+.field final synthetic ajO:Lcom/android/vendorsettings/notification/NotificationStation;
 
 .field private final mInflater:Landroid/view/LayoutInflater;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/notification/NotificationStation;Landroid/content/Context;)V
+.method public constructor <init>(Lcom/android/vendorsettings/notification/NotificationStation;Landroid/content/Context;)V
     .locals 1
 
     .prologue
     .line 302
-    iput-object p1, p0, Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter;->ajO:Lcom/android/settings/notification/NotificationStation;
+    iput-object p1, p0, Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter;->ajO:Lcom/android/vendorsettings/notification/NotificationStation;
 
     .line 303
     const/4 v0, 0x0
@@ -31,7 +31,7 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    iput-object v0, p0, Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     .line 305
     return-void
@@ -42,7 +42,7 @@
 
     .prologue
     .line 342
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter;->mInflater:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0400c4
 
@@ -62,11 +62,11 @@
 
     .prologue
     .line 309
-    invoke-virtual {p0, p1}, Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;
+    check-cast v0, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;
 
     .line 310
     const-string v1, "getView(%s/%s)"
@@ -77,17 +77,17 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, v0, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->pkg:Ljava/lang/String;
+    iget-object v4, v0, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->pkg:Ljava/lang/String;
 
     aput-object v4, v2, v3
 
     const/4 v3, 0x1
 
-    iget-object v4, v0, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
+    iget-object v4, v0, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
 
     aput-object v4, v2, v3
 
-    invoke-static {v1, v2}, Lcom/android/settings/notification/NotificationStation;->c(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v1, v2}, Lcom/android/vendorsettings/notification/NotificationStation;->c(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 312
     if-eqz p2, :cond_2
@@ -97,7 +97,7 @@
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 316
-    iget-object v1, v0, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->icon:Landroid/graphics/drawable/Drawable;
+    iget-object v1, v0, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->icon:Landroid/graphics/drawable/Drawable;
 
     if-eqz v1, :cond_0
 
@@ -110,13 +110,13 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    iget-object v2, v0, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->icon:Landroid/graphics/drawable/Drawable;
+    iget-object v2, v0, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->icon:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 319
     :cond_0
-    iget-object v1, v0, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->ajP:Landroid/graphics/drawable/Drawable;
+    iget-object v1, v0, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->ajP:Landroid/graphics/drawable/Drawable;
 
     if-eqz v1, :cond_1
 
@@ -129,7 +129,7 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    iget-object v2, v0, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->ajP:Landroid/graphics/drawable/Drawable;
+    iget-object v2, v0, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->ajP:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
@@ -143,7 +143,7 @@
 
     check-cast v1, Landroid/widget/DateTimeView;
 
-    iget-wide v2, v0, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->timestamp:J
+    iget-wide v2, v0, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->timestamp:J
 
     invoke-virtual {v1, v2, v3}, Landroid/widget/DateTimeView;->setTime(J)V
 
@@ -156,7 +156,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iget-object v2, v0, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
+    iget-object v2, v0, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -169,7 +169,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iget-object v2, v0, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->ajQ:Ljava/lang/CharSequence;
+    iget-object v2, v0, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->ajQ:Ljava/lang/CharSequence;
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -185,7 +185,7 @@
     invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 328
-    iget-boolean v1, v0, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->active:Z
+    iget-boolean v1, v0, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->active:Z
 
     if-eqz v1, :cond_3
 
@@ -195,9 +195,9 @@
     invoke-virtual {p2, v1}, Landroid/view/View;->setAlpha(F)V
 
     .line 331
-    new-instance v1, Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter$1;
+    new-instance v1, Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter$1;
 
-    invoke-direct {v1, p0, v0}, Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter$1;-><init>(Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter;Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;)V
+    invoke-direct {v1, p0, v0}, Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter$1;-><init>(Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter;Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;)V
 
     invoke-virtual {p2, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -206,7 +206,7 @@
 
     .line 312
     :cond_2
-    invoke-direct {p0, p3}, Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter;->e(Landroid/view/ViewGroup;)Landroid/view/View;
+    invoke-direct {p0, p3}, Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter;->e(Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p2
 

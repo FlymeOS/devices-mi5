@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/MiuiSettings;
+.class public Lcom/android/vendorsettings/MiuiSettings;
 .super Lmiui/preference/PreferenceActivity;
 .source "MiuiSettings.java"
 
@@ -19,17 +19,17 @@
 
 .field private td:[I
 
-.field private te:Lcom/android/settings/accounts/AuthenticatorHelper;
+.field private te:Lcom/android/vendorsettings/accounts/AuthenticatorHelper;
 
 .field private tf:Lmiui/widget/NavigationLayout;
 
-.field private tg:Lcom/android/settings/SettingsFragment;
+.field private tg:Lcom/android/vendorsettings/SettingsFragment;
 
 .field private th:Ljava/lang/String;
 
 .field private ti:Z
 
-.field private tj:Lcom/android/settings/vpn2/VpnManager;
+.field private tj:Lcom/android/vendorsettings/vpn2/VpnManager;
 
 .field private tk:I
 
@@ -40,28 +40,28 @@
 
     .prologue
     .line 91
-    new-instance v0, Lcom/android/settings/MiuiSettings$1;
+    new-instance v0, Lcom/android/vendorsettings/MiuiSettings$1;
 
-    invoke-direct {v0}, Lcom/android/settings/MiuiSettings$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/MiuiSettings$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/MiuiSettings;->tb:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/vendorsettings/MiuiSettings;->tb:Ljava/util/HashMap;
 
     .line 175
-    new-instance v0, Lcom/android/settings/MiuiSettings$2;
+    new-instance v0, Lcom/android/vendorsettings/MiuiSettings$2;
 
-    invoke-direct {v0}, Lcom/android/settings/MiuiSettings$2;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/MiuiSettings$2;-><init>()V
 
-    sput-object v0, Lcom/android/settings/MiuiSettings;->tl:Ljava/util/Map;
+    sput-object v0, Lcom/android/vendorsettings/MiuiSettings;->tl:Ljava/util/Map;
 
     .line 402
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    sput-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sput-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     .line 404
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     const v1, 0x7f13038a
 
@@ -72,7 +72,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 405
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     const v1, 0x7f1303a3
 
@@ -83,7 +83,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 406
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     const v1, 0x7f1303a2
 
@@ -94,7 +94,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 407
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     const v1, 0x7f1303ae
 
@@ -105,7 +105,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 408
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     const v1, 0x7f1303af
 
@@ -116,7 +116,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 409
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     const v1, 0x7f1303c9
 
@@ -127,7 +127,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 410
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     const v1, 0x7f1303a7
 
@@ -138,7 +138,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 411
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     const v1, 0x7f1303a4
 
@@ -149,7 +149,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 412
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     const v1, 0x7f1303a5
 
@@ -160,7 +160,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 413
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     const v1, 0x7f1303a8
 
@@ -171,7 +171,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 414
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     const v1, 0x7f130396
 
@@ -182,7 +182,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 415
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     const v1, 0x7f1303a9
 
@@ -193,7 +193,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 416
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     const v1, 0x7f1303aa
 
@@ -204,7 +204,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 417
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     const v1, 0x7f13038b
 
@@ -215,7 +215,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 418
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     const v1, 0x7f130389
 
@@ -226,7 +226,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 419
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     const v1, 0x7f1303c4
 
@@ -237,7 +237,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 420
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     const v1, 0x7f1303ac
 
@@ -248,7 +248,7 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 421
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     const v1, 0x7f1303bd
 
@@ -276,7 +276,7 @@
 
     fill-array-data v0, :array_0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSettings;->tc:[I
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->tc:[I
 
     .line 148
     const/4 v0, 0x5
@@ -285,22 +285,22 @@
 
     fill-array-data v0, :array_1
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSettings;->td:[I
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->td:[I
 
     .line 165
     const-string v0, "com.android.settings.MiuiDeviceInfoSettings"
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSettings;->th:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->th:Ljava/lang/String;
 
     .line 166
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiSettings;->ti:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/MiuiSettings;->ti:Z
 
     .line 169
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/MiuiSettings;->tk:I
+    iput v0, p0, Lcom/android/vendorsettings/MiuiSettings;->tk:I
 
     .line 618
     return-void
@@ -355,7 +355,7 @@
     const/4 v2, 0x0
 
     .line 1002
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v4
 
@@ -427,16 +427,16 @@
     .line 242
     const v0, 0x7f1302a9
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSettings;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiSettings;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Lmiui/widget/NavigationLayout;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSettings;->tf:Lmiui/widget/NavigationLayout;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->tf:Lmiui/widget/NavigationLayout;
 
     .line 243
-    iget-object v0, p0, Lcom/android/settings/MiuiSettings;->tf:Lmiui/widget/NavigationLayout;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->tf:Lmiui/widget/NavigationLayout;
 
     const/4 v1, 0x0
 
@@ -446,14 +446,14 @@
     if-nez p1, :cond_0
 
     .line 246
-    new-instance v0, Lcom/android/settings/SettingsFragment;
+    new-instance v0, Lcom/android/vendorsettings/SettingsFragment;
 
-    invoke-direct {v0}, Lcom/android/settings/SettingsFragment;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/SettingsFragment;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSettings;->tg:Lcom/android/settings/SettingsFragment;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->tg:Lcom/android/vendorsettings/SettingsFragment;
 
     .line 247
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -463,7 +463,7 @@
 
     sget v1, Lmiui/R$id;->navigation:I
 
-    iget-object v2, p0, Lcom/android/settings/MiuiSettings;->tg:Lcom/android/settings/SettingsFragment;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiSettings;->tg:Lcom/android/vendorsettings/SettingsFragment;
 
     invoke-virtual {v0, v1, v2}, Landroid/app/FragmentTransaction;->replace(ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;
 
@@ -477,7 +477,7 @@
 
     .line 250
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -487,9 +487,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/SettingsFragment;
+    check-cast v0, Lcom/android/vendorsettings/SettingsFragment;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSettings;->tg:Lcom/android/settings/SettingsFragment;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->tg:Lcom/android/vendorsettings/SettingsFragment;
 
     goto :goto_0
 .end method
@@ -504,14 +504,14 @@
     if-nez p1, :cond_0
 
     .line 256
-    new-instance v0, Lcom/android/settings/SettingsFragment;
+    new-instance v0, Lcom/android/vendorsettings/SettingsFragment;
 
-    invoke-direct {v0}, Lcom/android/settings/SettingsFragment;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/SettingsFragment;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSettings;->tg:Lcom/android/settings/SettingsFragment;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->tg:Lcom/android/vendorsettings/SettingsFragment;
 
     .line 257
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -519,7 +519,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MiuiSettings;->tg:Lcom/android/settings/SettingsFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiSettings;->tg:Lcom/android/vendorsettings/SettingsFragment;
 
     invoke-virtual {v0, v2, v1}, Landroid/app/FragmentTransaction;->replace(ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;
 
@@ -533,7 +533,7 @@
 
     .line 260
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -541,9 +541,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/SettingsFragment;
+    check-cast v0, Lcom/android/vendorsettings/SettingsFragment;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSettings;->tg:Lcom/android/settings/SettingsFragment;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->tg:Lcom/android/vendorsettings/SettingsFragment;
 
     goto :goto_0
 .end method
@@ -564,14 +564,14 @@
 
     .line 217
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 218
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -589,7 +589,7 @@
     if-nez v1, :cond_0
 
     .line 220
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -600,13 +600,13 @@
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 221
-    iput-object v0, p0, Lcom/android/settings/MiuiSettings;->th:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->th:Ljava/lang/String;
 
     .line 222
-    invoke-direct {p0}, Lcom/android/settings/MiuiSettings;->fV()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiSettings;->fV()V
 
     .line 223
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->invalidateHeaders()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->invalidateHeaders()V
 
     goto :goto_0
 .end method
@@ -616,7 +616,7 @@
 
     .prologue
     .line 1021
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -714,7 +714,7 @@
     check-cast v0, Landroid/os/UserHandle;
 
     .line 568
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
@@ -785,7 +785,7 @@
     move-result-object v4
 
     .line 585
-    sget-object v5, Lcom/android/settings/MiuiSettings;->tl:Ljava/util/Map;
+    sget-object v5, Lcom/android/vendorsettings/MiuiSettings;->tl:Ljava/util/Map;
 
     invoke-interface {v5, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -814,7 +814,7 @@
     iput-object v0, v5, Landroid/preference/PreferenceActivity$Header;->intent:Landroid/content/Intent;
 
     .line 592
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tl:Ljava/util/Map;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tl:Ljava/util/Map;
 
     invoke-interface {v0, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -829,7 +829,7 @@
     iput v0, v5, Landroid/preference/PreferenceActivity$Header;->iconRes:I
 
     .line 593
-    invoke-static {p0, p1, v5}, Lcom/android/settings/iC;->a(Landroid/content/Context;Ljava/util/List;Landroid/preference/PreferenceActivity$Header;)Z
+    invoke-static {p0, p1, v5}, Lcom/android/vendorsettings/iC;->a(Landroid/content/Context;Ljava/util/List;Landroid/preference/PreferenceActivity$Header;)Z
 
     .line 596
     invoke-interface {p1, v1, v5}, Ljava/util/List;->add(ILjava/lang/Object;)V
@@ -853,19 +853,19 @@
     .line 230
     const-string v0, "select_header"
 
-    iget-object v1, p0, Lcom/android/settings/MiuiSettings;->th:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiSettings;->th:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSettings;->th:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->th:Ljava/lang/String;
 
     .line 232
     :cond_0
     const v0, 0x7f04013b
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSettings;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiSettings;->setContentView(I)V
 
     .line 234
     sget-boolean v0, Lmiui/os/Build;->IS_TABLET:Z
@@ -873,7 +873,7 @@
     if-eqz v0, :cond_1
 
     .line 235
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiSettings;->d(Landroid/os/Bundle;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/MiuiSettings;->d(Landroid/os/Bundle;)V
 
     .line 239
     :goto_0
@@ -881,17 +881,17 @@
 
     .line 237
     :cond_1
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiSettings;->e(Landroid/os/Bundle;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/MiuiSettings;->e(Landroid/os/Bundle;)V
 
     goto :goto_0
 .end method
 
-.method public fT()Lcom/android/settings/accounts/AuthenticatorHelper;
+.method public fT()Lcom/android/vendorsettings/accounts/AuthenticatorHelper;
     .locals 1
 
     .prologue
     .line 615
-    iget-object v0, p0, Lcom/android/settings/MiuiSettings;->te:Lcom/android/settings/accounts/AuthenticatorHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->te:Lcom/android/vendorsettings/accounts/AuthenticatorHelper;
 
     return-object v0
 .end method
@@ -901,7 +901,7 @@
 
     .prologue
     .line 998
-    iget-object v0, p0, Lcom/android/settings/MiuiSettings;->th:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->th:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -913,7 +913,7 @@
     .line 1063
     const v0, 0x7f1302a9
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSettings;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiSettings;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -935,7 +935,7 @@
     .line 1069
     const v0, 0x7f1302a9
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSettings;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiSettings;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -982,9 +982,9 @@
     move-result v5
 
     .line 429
-    iget-object v0, p0, Lcom/android/settings/MiuiSettings;->tj:Lcom/android/settings/vpn2/VpnManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->tj:Lcom/android/vendorsettings/vpn2/VpnManager;
 
-    invoke-virtual {v0}, Lcom/android/settings/vpn2/VpnManager;->vQ()I
+    invoke-virtual {v0}, Lcom/android/vendorsettings/vpn2/VpnManager;->vQ()I
 
     move-result v6
 
@@ -1011,7 +1011,7 @@
     long-to-int v7, v8
 
     .line 435
-    sget-object v1, Lcom/android/settings/MiuiSettings;->tm:Ljava/util/HashSet;
+    sget-object v1, Lcom/android/vendorsettings/MiuiSettings;->tm:Ljava/util/HashSet;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1035,7 +1035,7 @@
 
     if-eqz v1, :cond_22
 
-    iget-object v1, p0, Lcom/android/settings/MiuiSettings;->td:[I
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiSettings;->td:[I
 
     invoke-static {v1, v7}, Lcom/android/internal/util/ArrayUtils;->contains([II)Z
 
@@ -1104,7 +1104,7 @@
 
     .line 438
     :cond_5
-    invoke-static {p0, p1, v0}, Lcom/android/settings/iC;->a(Landroid/content/Context;Ljava/util/List;Landroid/preference/PreferenceActivity$Header;)Z
+    invoke-static {p0, p1, v0}, Lcom/android/vendorsettings/iC;->a(Landroid/content/Context;Ljava/util/List;Landroid/preference/PreferenceActivity$Header;)Z
 
     goto :goto_1
 
@@ -1115,7 +1115,7 @@
     if-ne v7, v1, :cond_7
 
     .line 441
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -1139,7 +1139,7 @@
     if-ne v7, v1, :cond_8
 
     .line 446
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -1162,17 +1162,17 @@
 
     if-ne v7, v1, :cond_a
 
-    invoke-static {p0}, Lcom/android/settings/iC;->Z(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/vendorsettings/iC;->Z(Landroid/content/Context;)Z
 
     move-result v1
 
     if-nez v1, :cond_9
 
-    invoke-static {}, Lcom/android/settings/fy;->gg()Lcom/android/settings/fy;
+    invoke-static {}, Lcom/android/vendorsettings/fy;->gg()Lcom/android/vendorsettings/fy;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/android/settings/fy;->isMultiSimSupported()Z
+    invoke-virtual {v1}, Lcom/android/vendorsettings/fy;->isMultiSimSupported()Z
 
     move-result v1
 
@@ -1190,11 +1190,11 @@
 
     if-ne v7, v1, :cond_b
 
-    invoke-static {}, Lcom/android/settings/fy;->gg()Lcom/android/settings/fy;
+    invoke-static {}, Lcom/android/vendorsettings/fy;->gg()Lcom/android/vendorsettings/fy;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/android/settings/fy;->isMultiSimSupported()Z
+    invoke-virtual {v1}, Lcom/android/vendorsettings/fy;->isMultiSimSupported()Z
 
     move-result v1
 
@@ -1218,7 +1218,7 @@
 
     if-eqz v1, :cond_c
 
-    invoke-static {}, Lcom/android/settings/iC;->iu()Z
+    invoke-static {}, Lcom/android/vendorsettings/iC;->iu()Z
 
     move-result v1
 
@@ -1403,7 +1403,7 @@
 
     if-nez v1, :cond_18
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getBaseContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getBaseContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -1483,7 +1483,7 @@
     .line 509
     const-string v1, "vibrator"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -1504,7 +1504,7 @@
     .line 511
     iget v1, v0, Landroid/preference/PreferenceActivity$Header;->titleRes:I
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1525,11 +1525,11 @@
     if-ne v7, v1, :cond_20
 
     .line 513
-    new-instance v1, Lcom/android/settings/cZ;
+    new-instance v1, Lcom/android/vendorsettings/cZ;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/cZ;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/cZ;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v1}, Lcom/android/settings/cZ;->isHardwareDetected()Z
+    invoke-virtual {v1}, Lcom/android/vendorsettings/cZ;->isHardwareDetected()Z
 
     move-result v1
 
@@ -1543,7 +1543,7 @@
     .line 515
     iget v1, v0, Landroid/preference/PreferenceActivity$Header;->titleRes:I
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1657,7 +1657,7 @@
     if-eqz v0, :cond_28
 
     .line 552
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiSettings;->l(Ljava/util/List;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/MiuiSettings;->l(Ljava/util/List;)V
 
     .line 554
     :cond_28
@@ -1674,17 +1674,17 @@
 
     .prologue
     .line 929
-    iget-object v0, p0, Lcom/android/settings/MiuiSettings;->te:Lcom/android/settings/accounts/AuthenticatorHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->te:Lcom/android/vendorsettings/accounts/AuthenticatorHelper;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/accounts/AuthenticatorHelper;->onAccountsUpdated([Landroid/accounts/Account;)V
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/accounts/AuthenticatorHelper;->onAccountsUpdated([Landroid/accounts/Account;)V
 
     .line 930
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiSettings;->ti:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/MiuiSettings;->ti:Z
 
     .line 931
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->invalidateHeaders()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->invalidateHeaders()V
 
     .line 932
     return-void
@@ -1700,11 +1700,11 @@
     if-nez v0, :cond_0
 
     .line 293
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->finish()V
 
     .line 295
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -1718,14 +1718,14 @@
     .line 297
     if-eqz v0, :cond_1
 
-    instance-of v2, v0, Lcom/android/settings/fY;
+    instance-of v2, v0, Lcom/android/vendorsettings/fY;
 
     if-eqz v2, :cond_1
 
     .line 298
-    check-cast v0, Lcom/android/settings/fY;
+    check-cast v0, Lcom/android/vendorsettings/fY;
 
-    invoke-interface {v0}, Lcom/android/settings/fY;->Y()Z
+    invoke-interface {v0}, Lcom/android/vendorsettings/fY;->Y()Z
 
     move-result v0
 
@@ -1746,7 +1746,7 @@
     if-gt v0, v1, :cond_2
 
     .line 305
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->finish()V
 
     goto :goto_0
 
@@ -1762,37 +1762,37 @@
 
     .prologue
     .line 939
-    iget-boolean v0, p0, Lcom/android/settings/MiuiSettings;->ti:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/MiuiSettings;->ti:Z
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->isFinishing()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->isFinishing()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/MiuiSettings;->tg:Lcom/android/settings/SettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->tg:Lcom/android/vendorsettings/SettingsFragment;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/MiuiSettings;->tg:Lcom/android/settings/SettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->tg:Lcom/android/vendorsettings/SettingsFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/SettingsFragment;->isAdded()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/SettingsFragment;->isAdded()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 941
-    iget-object v0, p0, Lcom/android/settings/MiuiSettings;->tg:Lcom/android/settings/SettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->tg:Lcom/android/vendorsettings/SettingsFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/SettingsFragment;->aa()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/SettingsFragment;->aa()V
 
     .line 942
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiSettings;->ti:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/MiuiSettings;->ti:Z
 
     .line 944
     :cond_0
@@ -1809,7 +1809,7 @@
     move-result-object v0
 
     .line 272
-    const-class v1, Lcom/android/settings/wifi/WifiSettings;
+    const-class v1, Lcom/android/vendorsettings/wifi/WifiSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1821,7 +1821,7 @@
 
     if-nez v1, :cond_0
 
-    const-class v1, Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    const-class v1, Lcom/android/vendorsettings/wifi/p2p/WifiP2pSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1833,7 +1833,7 @@
 
     if-nez v1, :cond_0
 
-    const-class v1, Lcom/android/settings/wfd/WifiDisplaySettings;
+    const-class v1, Lcom/android/vendorsettings/wfd/WifiDisplaySettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1845,7 +1845,7 @@
 
     if-nez v1, :cond_0
 
-    const-class v1, Lcom/android/settings/bluetooth/BluetoothSettings;
+    const-class v1, Lcom/android/vendorsettings/bluetooth/BluetoothSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1857,7 +1857,7 @@
 
     if-nez v1, :cond_0
 
-    const-class v1, Lcom/android/settings/DreamSettings;
+    const-class v1, Lcom/android/vendorsettings/DreamSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1884,7 +1884,7 @@
     if-nez v1, :cond_2
 
     .line 280
-    const-class v1, Lcom/android/settings/applications/ApplicationsContainer;
+    const-class v1, Lcom/android/vendorsettings/applications/ApplicationsContainer;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1897,7 +1897,7 @@
     if-eqz v1, :cond_3
 
     .line 281
-    const-class v1, Lcom/android/settings/applications/ManageApplicationsActivity;
+    const-class v1, Lcom/android/vendorsettings/applications/ManageApplicationsActivity;
 
     invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -1920,7 +1920,7 @@
 
     move v3, p3
 
-    invoke-static/range {v0 .. v5}, Lcom/android/settings/iC;->a(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Z)Landroid/content/Intent;
+    invoke-static/range {v0 .. v5}, Lcom/android/vendorsettings/iC;->a(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Z)Landroid/content/Intent;
 
     move-result-object v0
 
@@ -1936,25 +1936,25 @@
     .line 186
     const-string v0, "user"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/os/UserManager;
 
     .line 187
-    new-instance v1, Lcom/android/settings/accounts/AuthenticatorHelper;
+    new-instance v1, Lcom/android/vendorsettings/accounts/AuthenticatorHelper;
 
     sget-object v2, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
 
-    invoke-direct {v1, p0, v2, v0, v3}, Lcom/android/settings/accounts/AuthenticatorHelper;-><init>(Landroid/content/Context;Landroid/os/UserHandle;Landroid/os/UserManager;Lcom/android/settings/accounts/AuthenticatorHelper$OnAccountsUpdateListener;)V
+    invoke-direct {v1, p0, v2, v0, v3}, Lcom/android/vendorsettings/accounts/AuthenticatorHelper;-><init>(Landroid/content/Context;Landroid/os/UserHandle;Landroid/os/UserManager;Lcom/android/vendorsettings/accounts/AuthenticatorHelper$OnAccountsUpdateListener;)V
 
-    iput-object v1, p0, Lcom/android/settings/MiuiSettings;->te:Lcom/android/settings/accounts/AuthenticatorHelper;
+    iput-object v1, p0, Lcom/android/vendorsettings/MiuiSettings;->te:Lcom/android/vendorsettings/accounts/AuthenticatorHelper;
 
     .line 188
-    iget-object v0, p0, Lcom/android/settings/MiuiSettings;->te:Lcom/android/settings/accounts/AuthenticatorHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->te:Lcom/android/vendorsettings/accounts/AuthenticatorHelper;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/accounts/AuthenticatorHelper;->al(Landroid/content/Context;)V
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/accounts/AuthenticatorHelper;->al(Landroid/content/Context;)V
 
     .line 189
     invoke-super {p0, p1}, Lmiui/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
@@ -1969,21 +1969,21 @@
     invoke-virtual {v0, p0, v3, v1}, Landroid/accounts/AccountManager;->addOnAccountsUpdatedListener(Landroid/accounts/OnAccountsUpdateListener;Landroid/os/Handler;Z)V
 
     .line 193
-    invoke-virtual {p0, p1}, Lcom/android/settings/MiuiSettings;->c(Landroid/os/Bundle;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/MiuiSettings;->c(Landroid/os/Bundle;)V
 
     .line 194
-    invoke-direct {p0}, Lcom/android/settings/MiuiSettings;->fS()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiSettings;->fS()V
 
     .line 196
-    new-instance v0, Lcom/android/settings/vpn2/VpnManager;
+    new-instance v0, Lcom/android/vendorsettings/vpn2/VpnManager;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/vpn2/VpnManager;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/vpn2/VpnManager;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSettings;->tj:Lcom/android/settings/vpn2/VpnManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->tj:Lcom/android/vendorsettings/vpn2/VpnManager;
 
     .line 197
     return-void
@@ -2016,7 +2016,7 @@
     const/4 v2, 0x0
 
     .line 948
-    sget-object v0, Lcom/android/settings/MiuiSettings;->tb:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/MiuiSettings;->tb:Ljava/util/HashMap;
 
     iget-wide v4, p1, Landroid/preference/PreferenceActivity$Header;->id:J
 
@@ -2038,13 +2038,13 @@
     .line 950
     const-string v1, "entry_level_primary"
 
-    invoke-static {v1, v0}, Lcom/android/settings/analytics/a;->k(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/analytics/a;->k(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 952
     :cond_0
     iget-object v0, p1, Landroid/preference/PreferenceActivity$Header;->fragment:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSettings;->th:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->th:Ljava/lang/String;
 
     .line 953
     iget-wide v0, p1, Landroid/preference/PreferenceActivity$Header;->id:J
@@ -2090,7 +2090,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 958
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiSettings;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -2117,7 +2117,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 962
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiSettings;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -2151,7 +2151,7 @@
     .line 965
     iget-object v0, p1, Landroid/preference/PreferenceActivity$Header;->intent:Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiSettings;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -2218,7 +2218,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
@@ -2244,7 +2244,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 979
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiSettings;->startActivity(Landroid/content/Intent;)V
 
     goto/16 :goto_0
 
@@ -2275,7 +2275,7 @@
 
     move-object v6, v2
 
-    invoke-virtual/range {v3 .. v9}, Lcom/android/settings/MiuiSettings;->startWithFragment(Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;III)V
+    invoke-virtual/range {v3 .. v9}, Lcom/android/vendorsettings/MiuiSettings;->startWithFragment(Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;III)V
 
     goto/16 :goto_0
 
@@ -2290,7 +2290,7 @@
 
     if-eqz v0, :cond_9
 
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiSettings;->a(Landroid/preference/PreferenceActivity$Header;)Z
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/MiuiSettings;->a(Landroid/preference/PreferenceActivity$Header;)Z
 
     move-result v0
 
@@ -2310,7 +2310,7 @@
 
     move-object v6, v2
 
-    invoke-virtual/range {v3 .. v9}, Lcom/android/settings/MiuiSettings;->startWithFragment(Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;III)V
+    invoke-virtual/range {v3 .. v9}, Lcom/android/vendorsettings/MiuiSettings;->startWithFragment(Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;III)V
 
     goto/16 :goto_0
 
@@ -2351,7 +2351,7 @@
     :cond_c
     iget-object v0, p1, Landroid/preference/PreferenceActivity$Header;->intent:Landroid/content/Intent;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiSettings;->startActivity(Landroid/content/Intent;)V
 
     goto/16 :goto_0
 .end method
@@ -2366,7 +2366,7 @@
     if-eqz v0, :cond_0
 
     .line 315
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -2380,13 +2380,13 @@
     .line 317
     if-eqz v0, :cond_0
 
-    instance-of v1, v0, Lcom/android/settings/BaseFragment;
+    instance-of v1, v0, Lcom/android/vendorsettings/BaseFragment;
 
     if-eqz v1, :cond_0
 
-    check-cast v0, Lcom/android/settings/BaseFragment;
+    check-cast v0, Lcom/android/vendorsettings/BaseFragment;
 
-    invoke-virtual {v0, p1, p2}, Lcom/android/settings/BaseFragment;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v0, p1, p2}, Lcom/android/vendorsettings/BaseFragment;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 
@@ -2417,7 +2417,7 @@
     if-eqz v0, :cond_0
 
     .line 328
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -2431,13 +2431,13 @@
     .line 330
     if-eqz v0, :cond_0
 
-    instance-of v1, v0, Lcom/android/settings/BaseFragment;
+    instance-of v1, v0, Lcom/android/vendorsettings/BaseFragment;
 
     if-eqz v1, :cond_0
 
-    check-cast v0, Lcom/android/settings/BaseFragment;
+    check-cast v0, Lcom/android/vendorsettings/BaseFragment;
 
-    invoke-virtual {v0, p1, p2}, Lcom/android/settings/BaseFragment;->onKeyUp(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v0, p1, p2}, Lcom/android/vendorsettings/BaseFragment;->onKeyUp(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 
@@ -2466,15 +2466,15 @@
     invoke-super {p0, p1}, Lmiui/preference/PreferenceActivity;->onNewIntent(Landroid/content/Intent;)V
 
     .line 208
-    invoke-virtual {p0, p1}, Lcom/android/settings/MiuiSettings;->setIntent(Landroid/content/Intent;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/MiuiSettings;->setIntent(Landroid/content/Intent;)V
 
     .line 209
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiSettings;->ti:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/MiuiSettings;->ti:Z
 
     .line 210
-    invoke-direct {p0}, Lcom/android/settings/MiuiSettings;->fS()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiSettings;->fS()V
 
     .line 211
     return-void
@@ -2494,7 +2494,7 @@
     if-ne v0, v1, :cond_0
 
     .line 341
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->finish()V
 
     .line 342
     const/4 v0, 0x1
@@ -2518,13 +2518,13 @@
     .line 1082
     const-string v0, "select_header"
 
-    iget-object v1, p0, Lcom/android/settings/MiuiSettings;->th:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiSettings;->th:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSettings;->th:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->th:Ljava/lang/String;
 
     .line 1083
     invoke-super {p0, p1}, Lmiui/preference/PreferenceActivity;->onRestoreInstanceState(Landroid/os/Bundle;)V
@@ -2541,21 +2541,21 @@
     invoke-super {p0}, Lmiui/preference/PreferenceActivity;->onResume()V
 
     .line 605
-    iget-object v0, p0, Lcom/android/settings/MiuiSettings;->tj:Lcom/android/settings/vpn2/VpnManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiSettings;->tj:Lcom/android/vendorsettings/vpn2/VpnManager;
 
-    invoke-virtual {v0}, Lcom/android/settings/vpn2/VpnManager;->vQ()I
+    invoke-virtual {v0}, Lcom/android/vendorsettings/vpn2/VpnManager;->vQ()I
 
     move-result v0
 
     .line 606
-    iget v1, p0, Lcom/android/settings/MiuiSettings;->tk:I
+    iget v1, p0, Lcom/android/vendorsettings/MiuiSettings;->tk:I
 
     const/4 v2, -0x1
 
     if-ne v1, v2, :cond_1
 
     .line 607
-    iput v0, p0, Lcom/android/settings/MiuiSettings;->tk:I
+    iput v0, p0, Lcom/android/vendorsettings/MiuiSettings;->tk:I
 
     .line 612
     :cond_0
@@ -2564,17 +2564,17 @@
 
     .line 608
     :cond_1
-    iget v1, p0, Lcom/android/settings/MiuiSettings;->tk:I
+    iget v1, p0, Lcom/android/vendorsettings/MiuiSettings;->tk:I
 
     if-eq v0, v1, :cond_0
 
     .line 609
-    iget-object v1, p0, Lcom/android/settings/MiuiSettings;->tg:Lcom/android/settings/SettingsFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiSettings;->tg:Lcom/android/vendorsettings/SettingsFragment;
 
-    invoke-virtual {v1}, Lcom/android/settings/SettingsFragment;->aa()V
+    invoke-virtual {v1}, Lcom/android/vendorsettings/SettingsFragment;->aa()V
 
     .line 610
-    iput v0, p0, Lcom/android/settings/MiuiSettings;->tk:I
+    iput v0, p0, Lcom/android/vendorsettings/MiuiSettings;->tk:I
 
     goto :goto_0
 .end method
@@ -2586,7 +2586,7 @@
     .line 1076
     const-string v0, "select_header"
 
-    iget-object v1, p0, Lcom/android/settings/MiuiSettings;->th:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiSettings;->th:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -2616,7 +2616,7 @@
 
     move v5, p3
 
-    invoke-virtual/range {v0 .. v6}, Lcom/android/settings/MiuiSettings;->startWithFragment(Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;III)V
+    invoke-virtual/range {v0 .. v6}, Lcom/android/vendorsettings/MiuiSettings;->startWithFragment(Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;III)V
 
     .line 1032
     return-void
@@ -2640,7 +2640,7 @@
 
     .line 1041
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 

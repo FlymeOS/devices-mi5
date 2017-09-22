@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ei;
+.class Lcom/android/vendorsettings/ei;
 .super Ljava/lang/Object;
 .source "MiuiCryptKeeperSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ql:Lcom/android/settings/MiuiCryptKeeperSettings;
+.field final synthetic ql:Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiCryptKeeperSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiCryptKeeperSettings;)V
     .locals 0
 
     .prologue
     .line 115
-    iput-object p1, p0, Lcom/android/settings/ei;->ql:Lcom/android/settings/MiuiCryptKeeperSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/ei;->ql:Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,24 +30,24 @@
 
     .prologue
     .line 118
-    iget-object v0, p0, Lcom/android/settings/ei;->ql:Lcom/android/settings/MiuiCryptKeeperSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/ei;->ql:Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
 
     const/16 v1, 0x37
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiCryptKeeperSettings;->a(Lcom/android/settings/MiuiCryptKeeperSettings;I)Z
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->a(Lcom/android/vendorsettings/MiuiCryptKeeperSettings;I)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/ei;->ql:Lcom/android/settings/MiuiCryptKeeperSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/ei;->ql:Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
 
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    iget-object v2, p0, Lcom/android/settings/ei;->ql:Lcom/android/settings/MiuiCryptKeeperSettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/ei;->ql:Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
 
-    invoke-virtual {v2}, Lcom/android/settings/MiuiCryptKeeperSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v2}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -77,12 +77,12 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiCryptKeeperSettings;->a(Lcom/android/settings/MiuiCryptKeeperSettings;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->a(Lcom/android/vendorsettings/MiuiCryptKeeperSettings;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
 
     .line 125
-    iget-object v0, p0, Lcom/android/settings/ei;->ql:Lcom/android/settings/MiuiCryptKeeperSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/ei;->ql:Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiCryptKeeperSettings;->c(Lcom/android/settings/MiuiCryptKeeperSettings;)Landroid/app/AlertDialog;
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->c(Lcom/android/vendorsettings/MiuiCryptKeeperSettings;)Landroid/app/AlertDialog;
 
     move-result-object v0
 

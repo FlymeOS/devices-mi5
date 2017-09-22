@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fB;
+.class Lcom/android/vendorsettings/fB;
 .super Ljava/lang/Object;
 .source "MiuiWirelessSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic uD:Lcom/android/settings/MiuiWirelessSettings;
+.field final synthetic uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiWirelessSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiWirelessSettings;)V
     .locals 0
 
     .prologue
     .line 379
-    iput-object p1, p0, Lcom/android/settings/fB;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/fB;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 382
-    iget-object v0, p0, Lcom/android/settings/fB;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fB;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -50,14 +50,14 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiWirelessSettings;->a(Lcom/android/settings/MiuiWirelessSettings;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/MiuiWirelessSettings;->a(Lcom/android/vendorsettings/MiuiWirelessSettings;Ljava/lang/String;)V
 
     .line 383
-    iget-object v0, p0, Lcom/android/settings/fB;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fB;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiWirelessSettings;->b(Lcom/android/settings/MiuiWirelessSettings;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/MiuiWirelessSettings;->b(Lcom/android/vendorsettings/MiuiWirelessSettings;Ljava/lang/String;)Ljava/lang/String;
 
     .line 384
     return-void

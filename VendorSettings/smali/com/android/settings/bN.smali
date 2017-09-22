@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/bN;
+.class public Lcom/android/vendorsettings/bN;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -23,17 +23,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1573
-    invoke-static {p1, p2, p3, p4, p5}, Lcom/android/settings/DataUsageSummary;->a(Landroid/content/Context;JJ)Ljava/lang/String;
+    invoke-static {p1, p2, p3, p4, p5}, Lcom/android/vendorsettings/DataUsageSummary;->a(Landroid/content/Context;JJ)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/bN;->label:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/vendorsettings/bN;->label:Ljava/lang/CharSequence;
 
     .line 1574
-    iput-wide p2, p0, Lcom/android/settings/bN;->start:J
+    iput-wide p2, p0, Lcom/android/vendorsettings/bN;->start:J
 
     .line 1575
-    iput-wide p4, p0, Lcom/android/settings/bN;->end:J
+    iput-wide p4, p0, Lcom/android/vendorsettings/bN;->end:J
 
     .line 1576
     return-void
@@ -47,7 +47,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1569
-    iput-object p1, p0, Lcom/android/settings/bN;->label:Ljava/lang/CharSequence;
+    iput-object p1, p0, Lcom/android/vendorsettings/bN;->label:Ljava/lang/CharSequence;
 
     .line 1570
     return-void
@@ -55,14 +55,14 @@
 
 
 # virtual methods
-.method public b(Lcom/android/settings/bN;)I
+.method public b(Lcom/android/vendorsettings/bN;)I
     .locals 4
 
     .prologue
     .line 1594
-    iget-wide v0, p0, Lcom/android/settings/bN;->start:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/bN;->start:J
 
-    iget-wide v2, p1, Lcom/android/settings/bN;->start:J
+    iget-wide v2, p1, Lcom/android/vendorsettings/bN;->start:J
 
     invoke-static {v0, v1, v2, v3}, Ljava/lang/Long;->compare(JJ)I
 
@@ -76,9 +76,9 @@
 
     .prologue
     .line 1563
-    check-cast p1, Lcom/android/settings/bN;
+    check-cast p1, Lcom/android/vendorsettings/bN;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/bN;->b(Lcom/android/settings/bN;)I
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/bN;->b(Lcom/android/vendorsettings/bN;)I
 
     move-result v0
 
@@ -92,25 +92,25 @@
     const/4 v0, 0x0
 
     .line 1585
-    instance-of v1, p1, Lcom/android/settings/bN;
+    instance-of v1, p1, Lcom/android/vendorsettings/bN;
 
     if-eqz v1, :cond_0
 
     .line 1586
-    check-cast p1, Lcom/android/settings/bN;
+    check-cast p1, Lcom/android/vendorsettings/bN;
 
     .line 1587
-    iget-wide v2, p0, Lcom/android/settings/bN;->start:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/bN;->start:J
 
-    iget-wide v4, p1, Lcom/android/settings/bN;->start:J
+    iget-wide v4, p1, Lcom/android/vendorsettings/bN;->start:J
 
     cmp-long v1, v2, v4
 
     if-nez v1, :cond_0
 
-    iget-wide v2, p0, Lcom/android/settings/bN;->end:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/bN;->end:J
 
-    iget-wide v4, p1, Lcom/android/settings/bN;->end:J
+    iget-wide v4, p1, Lcom/android/vendorsettings/bN;->end:J
 
     cmp-long v1, v2, v4
 
@@ -128,7 +128,7 @@
 
     .prologue
     .line 1580
-    iget-object v0, p0, Lcom/android/settings/bN;->label:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/vendorsettings/bN;->label:Ljava/lang/CharSequence;
 
     invoke-interface {v0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/cN;
+.class Lcom/android/vendorsettings/cN;
 .super Ljava/lang/Object;
 .source "DropDownPreference.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic mo:Lcom/android/settings/DropDownPreference;
+.field final synthetic mo:Lcom/android/vendorsettings/DropDownPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DropDownPreference;)V
+.method constructor <init>(Lcom/android/vendorsettings/DropDownPreference;)V
     .locals 0
 
     .prologue
     .line 67
-    iput-object p1, p0, Lcom/android/settings/cN;->mo:Lcom/android/settings/DropDownPreference;
+    iput-object p1, p0, Lcom/android/vendorsettings/cN;->mo:Lcom/android/vendorsettings/DropDownPreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/android/settings/cN;->mo:Lcom/android/settings/DropDownPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/cN;->mo:Lcom/android/vendorsettings/DropDownPreference;
 
-    invoke-static {v0}, Lcom/android/settings/DropDownPreference;->a(Lcom/android/settings/DropDownPreference;)Landroid/widget/Spinner;
+    invoke-static {v0}, Lcom/android/vendorsettings/DropDownPreference;->a(Lcom/android/vendorsettings/DropDownPreference;)Landroid/widget/Spinner;
 
     move-result-object v0
 

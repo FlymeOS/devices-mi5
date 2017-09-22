@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/t;
+.class public Lcom/android/vendorsettings/display/t;
 .super Ljava/lang/Object;
 .source "NetworkApiHelper.java"
 
@@ -27,7 +27,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/display/t;->DEVICE:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/display/t;->DEVICE:Ljava/lang/String;
 
     .line 43
     const-string v0, "ro.carrier.name"
@@ -38,7 +38,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/display/t;->YA:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/display/t;->YA:Ljava/lang/String;
 
     .line 44
     const-string v0, "ro.product.mod_device"
@@ -49,7 +49,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/display/t;->REGION:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/display/t;->REGION:Ljava/lang/String;
 
     .line 45
     new-instance v0, Ljava/lang/StringBuilder;
@@ -72,7 +72,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/display/t;->YB:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/display/t;->YB:Ljava/lang/String;
 
     return-void
 .end method
@@ -103,7 +103,7 @@
 
     .line 93
     :cond_1
-    invoke-static {p0, p3}, Lcom/android/settings/display/t;->w(Landroid/content/Context;Ljava/lang/String;)Ljava/util/List;
+    invoke-static {p0, p3}, Lcom/android/vendorsettings/display/t;->w(Landroid/content/Context;Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v1
 
@@ -316,7 +316,7 @@
 
     const-string v2, "device"
 
-    sget-object v3, Lcom/android/settings/display/t;->DEVICE:Ljava/lang/String;
+    sget-object v3, Lcom/android/vendorsettings/display/t;->DEVICE:Ljava/lang/String;
 
     invoke-direct {v1, v2, v3}, Lorg/apache/http/message/BasicNameValuePair;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -327,7 +327,7 @@
 
     const-string v2, "carrier"
 
-    sget-object v3, Lcom/android/settings/display/t;->YA:Ljava/lang/String;
+    sget-object v3, Lcom/android/vendorsettings/display/t;->YA:Ljava/lang/String;
 
     invoke-direct {v1, v2, v3}, Lorg/apache/http/message/BasicNameValuePair;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -338,7 +338,7 @@
 
     const-string v2, "region"
 
-    sget-object v3, Lcom/android/settings/display/t;->REGION:Ljava/lang/String;
+    sget-object v3, Lcom/android/vendorsettings/display/t;->REGION:Ljava/lang/String;
 
     invoke-direct {v1, v2, v3}, Lorg/apache/http/message/BasicNameValuePair;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -349,7 +349,7 @@
 
     const-string v2, "miuiVersion"
 
-    sget-object v3, Lcom/android/settings/display/t;->YB:Ljava/lang/String;
+    sget-object v3, Lcom/android/vendorsettings/display/t;->YB:Ljava/lang/String;
 
     invoke-direct {v1, v2, v3}, Lorg/apache/http/message/BasicNameValuePair;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -360,7 +360,7 @@
 
     const-string v2, "versionType"
 
-    invoke-static {}, Lcom/android/settings/display/t;->od()Ljava/lang/String;
+    invoke-static {}, Lcom/android/vendorsettings/display/t;->od()Ljava/lang/String;
 
     move-result-object v3
 
@@ -384,7 +384,7 @@
 
     const-string v2, "mi"
 
-    invoke-static {p0, p1}, Lcom/android/settings/display/t;->v(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p1}, Lcom/android/vendorsettings/display/t;->v(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 

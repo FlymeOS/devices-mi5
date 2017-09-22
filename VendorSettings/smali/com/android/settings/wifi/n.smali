@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/n;
+.class public Lcom/android/vendorsettings/wifi/n;
 .super Ljava/lang/Object;
 .source "MiuiTetherDeviceInfo.java"
 
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 11
-    iput-object p1, p0, Lcom/android/settings/wifi/n;->aAA:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/n;->aAA:Ljava/lang/String;
 
     .line 12
-    iput-object p2, p0, Lcom/android/settings/wifi/n;->mDeviceAddress:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/vendorsettings/wifi/n;->mDeviceAddress:Ljava/lang/String;
 
     .line 13
     return-void
@@ -34,7 +34,7 @@
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/android/settings/wifi/n;->mDeviceAddress:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/n;->mDeviceAddress:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -44,7 +44,7 @@
 
     .prologue
     .line 16
-    iget-object v0, p0, Lcom/android/settings/wifi/n;->aAA:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/n;->aAA:Ljava/lang/String;
 
     return-object v0
 .end method

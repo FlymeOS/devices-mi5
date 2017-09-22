@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;
+.class Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;
 .super Ljava/lang/Object;
 .source "ChooseAccountFragment.java"
 
@@ -21,43 +21,43 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 60
-    iput-object p1, p0, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;->EA:Ljava/lang/CharSequence;
+    iput-object p1, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;->EA:Ljava/lang/CharSequence;
 
     .line 61
-    iput-object p2, p0, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;->type:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;->type:Ljava/lang/String;
 
     .line 62
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;)Ljava/lang/String;
+.method static synthetic b(Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;->type:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;->type:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;)Ljava/lang/CharSequence;
+.method static synthetic c(Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;)Ljava/lang/CharSequence;
     .locals 1
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;->EA:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;->EA:Ljava/lang/CharSequence;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public a(Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;)I
+.method public a(Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;)I
     .locals 2
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;->EA:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;->EA:Ljava/lang/CharSequence;
 
     if-nez v0, :cond_0
 
@@ -70,7 +70,7 @@
 
     .line 68
     :cond_0
-    iget-object v0, p1, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;->EA:Ljava/lang/CharSequence;
+    iget-object v0, p1, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;->EA:Ljava/lang/CharSequence;
 
     if-nez v0, :cond_1
 
@@ -81,9 +81,9 @@
 
     .line 71
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;->EA:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;->EA:Ljava/lang/CharSequence;
 
-    iget-object v1, p1, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;->EA:Ljava/lang/CharSequence;
+    iget-object v1, p1, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;->EA:Ljava/lang/CharSequence;
 
     invoke-static {v0, v1}, Lcom/android/internal/util/CharSequences;->compareToIgnoreCase(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)I
 
@@ -97,9 +97,9 @@
 
     .prologue
     .line 56
-    check-cast p1, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;
+    check-cast p1, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;->a(Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;)I
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;->a(Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;)I
 
     move-result v0
 

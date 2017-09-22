@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;
+.class Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;
 .super Ljava/lang/Object;
 .source "NotificationStation.java"
 
@@ -34,12 +34,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/notification/NotificationStation$1;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/notification/NotificationStation$1;)V
     .locals 0
 
     .prologue
     .line 63
-    invoke-direct {p0}, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;-><init>()V
 
     return-void
 .end method

@@ -9,7 +9,7 @@
             <package>com.android.phone</package>
             <class>com.android.phone.settings.MobileNetworkSettings</class>
             <keywords>search_network</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_mobile_network_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_mobile_network_settings</drawable>
             <path>path_network_settings</path>
             <is_setting>true</is_setting>
             <second_space>false</second_space>
@@ -18,8 +18,8 @@
             <id>0001</id>
             <resource_name>apn_settings</resource_name>
             <intent_action>android.intent.action.MAIN</intent_action>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$ApnSettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$ApnSettingsActivity</class>
             <keywords>search_apn_settings</keywords>
             <path>path_apn_settings</path>
             <is_setting>true</is_setting>
@@ -50,20 +50,20 @@
         <item>
             <id>0100</id>
             <resource_name>wifi_settings_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.wifi.MiuiWifiSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.wifi.MiuiWifiSettings</fragment>
             <keywords>search_wifi</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_wifi_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_wifi_settings</drawable>
             <path>path_wifi_settings</path>
             <is_setting>true</is_setting>
         </item>
         <item>
             <id>0101</id>
             <resource_name>wifi_enable</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.wifi.MiuiWifiSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.wifi.MiuiWifiSettings</fragment>
             <keywords>search_wifi_enable</keywords>
             <path>path_wifi_enable</path>
             <is_setting>true</is_setting>
@@ -71,9 +71,9 @@
         <item>
             <id>0102</id>
             <resource_name>advanced_settings</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.wifi.AdvancedWifiSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.wifi.AdvancedWifiSettings</fragment>
             <keywords>search_wifi_advanced_settings</keywords>
             <path>path_advanced_settings</path>
             <is_setting>true</is_setting>
@@ -81,9 +81,9 @@
         <item>
             <id>0103</id>
             <resource_name>wifi_setting_sleep_policy_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.wifi.AdvancedWifiSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.wifi.AdvancedWifiSettings</fragment>
             <keywords>search_wifi_setting_sleep_policy_title</keywords>
             <path>path_wifi_setting_sleep_policy_title</path>
             <is_setting>true</is_setting>
@@ -91,9 +91,9 @@
         <item>
             <id>0104</id>
             <resource_name>wifi_scan_always_available</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.wifi.AdvancedWifiSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.wifi.AdvancedWifiSettings</fragment>
             <keywords>search_wifi_scan_always_available</keywords>
             <path>path_wifi_scan_always_available</path>
             <is_setting>true</is_setting>
@@ -101,9 +101,9 @@
         <item>
             <id>0105</id>
             <resource_name>wifi_setting_frequency_band_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.wifi.AdvancedWifiSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.wifi.AdvancedWifiSettings</fragment>
             <keywords>search_wifi_advanced_settings</keywords>
             <path>path_advanced_settings</path>
             <is_setting>true</is_setting>
@@ -112,9 +112,9 @@
             <id>0106</id>
             <resource_name>wifi_install_credentials</resource_name>
             <intent_action>android.credentials.INSTALL_AS_USER</intent_action>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.wifi.AdvancedWifiSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.wifi.AdvancedWifiSettings</fragment>
             <keywords>search_wifi_install_credentials</keywords>
             <path>path_wifi_install_credentials</path>
             <is_setting>true</is_setting>
@@ -122,9 +122,9 @@
         <item>
             <id>0107</id>
             <resource_name>wifi_advanced_mac_address_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.wifi.AdvancedWifiSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.wifi.AdvancedWifiSettings</fragment>
             <keywords>search_wifi_advanced_mac_address_title</keywords>
             <path>path_wifi_advanced_mac_address_title</path>
             <is_setting>true</is_setting>
@@ -132,9 +132,9 @@
         <item>
             <id>0108</id>
             <resource_name>wifi_advanced_ip_address_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.wifi.AdvancedWifiSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.wifi.AdvancedWifiSettings</fragment>
             <keywords>search_wifi_advanced_ip_address_title</keywords>
             <path>path_wifi_advanced_ip_address_title</path>
             <is_setting>true</is_setting>
@@ -142,8 +142,8 @@
         <item>
             <id>0109</id>
             <resource_name>wifi_menu_p2p</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$WifiP2pSettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$WifiP2pSettingsActivity</class>
             <keywords>search_wifi_menu_p2p</keywords>
             <path>path_wifi_menu_p2p</path>
             <is_setting>true</is_setting>
@@ -152,9 +152,9 @@
             <id>0110</id>
             <resource_name>wps_connect_title</resource_name>
             <intent_action>android.intent.action.MAIN</intent_action>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.wifi.WpsFragment</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.wifi.WpsFragment</fragment>
             <keywords>search_wps_connect_title</keywords>
             <path>path_wps_connect_title</path>
             <is_setting>true</is_setting>
@@ -163,9 +163,9 @@
             <id>0111</id>
             <resource_name>wifi_menu_wps_pin</resource_name>
             <intent_action>android.intent.action.MAIN</intent_action>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.wifi.WpsFragment</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.wifi.WpsFragment</fragment>
             <keywords>search_wifi_menu_wps_pin</keywords>
             <path>path_wifi_menu_wps_pin</path>
             <is_setting>true</is_setting>
@@ -173,20 +173,20 @@
         <item>
             <id>0200</id>
             <resource_name>bluetooth_settings_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.bluetooth.MiuiBluetoothSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.bluetooth.MiuiBluetoothSettings</fragment>
             <keywords>search_bluetooth</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_bluetooth_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_bluetooth_settings</drawable>
             <path>path_bluetooth_settings</path>
             <is_setting>true</is_setting>
         </item>
         <item>
             <id>0201</id>
             <resource_name>bluetooth_enable</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.bluetooth.MiuiBluetoothSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.bluetooth.MiuiBluetoothSettings</fragment>
             <keywords>search_bluetooth_enable</keywords>
             <path>path_bluetooth_enable</path>
             <is_setting>true</is_setting>
@@ -194,9 +194,9 @@
         <item>
             <id>0202</id>
             <resource_name>bluetooth_device_searchable</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.bluetooth.MiuiBluetoothSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.bluetooth.MiuiBluetoothSettings</fragment>
             <keywords>search_bluetooth_device_searchable</keywords>
             <path>path_bluetooth_device_searchable</path>
             <is_setting>true</is_setting>
@@ -204,9 +204,9 @@
         <item>
             <id>0203</id>
             <resource_name>device_name</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiDeviceNameEditFragment</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiDeviceNameEditFragment</fragment>
             <keywords>search_bluetooth_device_name</keywords>
             <path>path_bluetooth_device_name</path>
             <is_setting>true</is_setting>
@@ -215,11 +215,11 @@
         <item>
             <id>0300</id>
             <resource_name>wifi_tether_settings_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiTetherSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiTetherSettings</fragment>
             <keywords>search_tether</keywords>
-            <drawable>android.resource://com.android.settings/ic_portable_wlan_hotspot_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/ic_portable_wlan_hotspot_settings</drawable>
             <path>path_wifi_tether_settings</path>
             <is_setting>true</is_setting>
             <second_space>false</second_space>
@@ -227,9 +227,9 @@
         <item>
             <id>0301</id>
             <resource_name>wifi_tether_checkbox_text</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiTetherSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiTetherSettings</fragment>
             <keywords>search_wifi_tether_checkbox</keywords>
             <path>path_wifi_tether_checkbox</path>
             <is_setting>true</is_setting>
@@ -238,9 +238,9 @@
         <item>
             <id>0302</id>
             <resource_name>wifi_tether_configure_ap_text</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiTetherSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiTetherSettings</fragment>
             <keywords>search_wifi_tether_configure_ap_text</keywords>
             <path>path_wifi_tether_configure_ap_text</path>
             <is_setting>true</is_setting>
@@ -249,20 +249,20 @@
         <item>
             <id>0400</id>
             <resource_name>radio_controls_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiWirelessSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiWirelessSettings</fragment>
             <keywords>search_wifi_more_settings</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_wifi_more_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_wifi_more_settings</drawable>
             <path>path_wifi_more_settings</path>
             <is_setting>true</is_setting>
         </item>
         <item>
             <id>0401</id>
             <resource_name>airplane_mode</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiWirelessSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiWirelessSettings</fragment>
             <keywords>search_airplane</keywords>
             <path>path_airplane_mode_settings</path>
             <is_setting>true</is_setting>
@@ -270,9 +270,9 @@
         <item>
             <id>0402</id>
             <resource_name>vpn_settings_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.vpn2.MiuiVpnSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.vpn2.MiuiVpnSettings</fragment>
             <keywords>search_vpn</keywords>
             <path>path_vpn_settings</path>
             <is_setting>true</is_setting>
@@ -281,9 +281,9 @@
         <item>
             <id>0403</id>
             <resource_name>vpn_settings_password</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.vpn2.MiuiVpnSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.vpn2.MiuiVpnSettings</fragment>
             <keywords>search_vpn_settings_password</keywords>
             <path>path_vpn_settings_password</path>
             <is_setting>true</is_setting>
@@ -292,9 +292,9 @@
         <item>
             <id>0404</id>
             <resource_name>vpn_enable</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.vpn2.MiuiVpnSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.vpn2.MiuiVpnSettings</fragment>
             <keywords>search_vpn_enable</keywords>
             <path>path_vpn_enable</path>
             <is_setting>true</is_setting>
@@ -303,9 +303,9 @@
         <item>
             <id>0405</id>
             <resource_name>tether_settings_title_usb</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiWirelessSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiWirelessSettings</fragment>
             <keywords>search_tether_settings_title_usb</keywords>
             <path>path_tether_settings_title_usb</path>
             <is_setting>true</is_setting>
@@ -313,9 +313,9 @@
         <item>
             <id>0406</id>
             <resource_name>tether_settings_title_bluetooth</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiWirelessSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiWirelessSettings</fragment>
             <keywords>search_tether_settings_title_bluetooth</keywords>
             <path>path_tether_settings_title_bluetooth</path>
             <is_setting>true</is_setting>
@@ -323,9 +323,9 @@
         <item>
             <id>0407</id>
             <resource_name>restriction_nfc_enable_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiWirelessSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiWirelessSettings</fragment>
             <keywords>search_restriction_nfc_enable_title</keywords>
             <path>path_tether_restriction_nfc_enable_title</path>
             <is_setting>true</is_setting>
@@ -334,9 +334,9 @@
         <item>
             <id>0408</id>
             <resource_name>android_beam_settings_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.nfc.MiuiAndroidBeam</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.nfc.MiuiAndroidBeam</fragment>
             <keywords>search_android_beam</keywords>
             <path>path_android_beam_settings</path>
             <is_setting>true</is_setting>
@@ -345,9 +345,9 @@
         <item>
             <id>0409</id>
             <resource_name>nfc_se_route_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiWirelessSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiWirelessSettings</fragment>
             <keywords>search_nfc_se_route_title</keywords>
             <path>path_nfc_se_route_title</path>
             <is_setting>true</is_setting>
@@ -366,10 +366,10 @@
         <item>
             <id>0500</id>
             <resource_name>display_settings</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$DisplaySettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$DisplaySettingsActivity</class>
             <keywords>search_display</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_display_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_display_settings</drawable>
             <path>path_display_settings</path>
             <is_setting>true</is_setting>
         </item>
@@ -377,8 +377,8 @@
             <id>0501</id>
             <resource_name>accelerometer_title</resource_name>
             <intent_action>android.settings.DISPLAY_SETTINGS</intent_action>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$DisplaySettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$DisplaySettingsActivity</class>
             <keywords>search_accelerometer</keywords>
             <path>path_accelerometer_settings</path>
             <is_setting>true</is_setting>
@@ -386,8 +386,8 @@
         <item>
             <id>0502</id>
             <resource_name>brightness</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.display.BrightnessActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.display.BrightnessActivity</class>
             <keywords>search_brightness</keywords>
             <path>path_brightness_settings</path>
             <is_setting>true</is_setting>
@@ -395,8 +395,8 @@
         <item>
             <id>0503</id>
             <resource_name>screen_color_temperature_and_saturation</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.display.ScreenEffect</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.display.ScreenEffect</class>
             <keywords>search_screen_effect</keywords>
             <path>path_screen_effect_settings</path>
             <is_setting>true</is_setting>
@@ -405,10 +405,10 @@
         <item>
             <id>0504</id>
             <resource_name>touch_sensitive_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$DisplaySettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$DisplaySettingsActivity</class>
             <keywords>search_touch_sensitive_title</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_display_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_display_settings</drawable>
             <path>path_touch_sensitive_title</path>
             <is_setting>true</is_setting>
             <is_searchable>support_touch_sensitive</is_searchable>
@@ -416,8 +416,8 @@
         <item>
             <id>0505</id>
             <resource_name>title_font_current2</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$DisplaySettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$DisplaySettingsActivity</class>
             <keywords>search_font</keywords>
             <path>path_font_settings</path>
             <is_setting>true</is_setting>
@@ -426,8 +426,8 @@
             <id>0506</id>
             <resource_name>title_layout_current2</resource_name>
             <intent_action>android.intent.action.MAIN</intent_action>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$PageLayoutActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$PageLayoutActivity</class>
             <keywords>search_page_layout_settings</keywords>
             <path>path_page_layout_settings</path>
             <is_setting>true</is_setting>
@@ -436,8 +436,8 @@
         <item>
             <id>0507</id>
             <resource_name>screen_color_and_optimize</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.display.ScreenEffect</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.display.ScreenEffect</class>
             <keywords>search_screen_effect</keywords>
             <path>path_screen_optimize</path>
             <is_setting>true</is_setting>
@@ -446,9 +446,9 @@
         <item>
             <id>0508</id>
             <resource_name>screen_paper_mode_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.display.PaperModeFragment</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.display.PaperModeFragment</fragment>
             <keywords>search_screen_paper_mode</keywords>
             <path>path_screen_paper_mode</path>
             <is_setting>true</is_setting>
@@ -457,10 +457,10 @@
         <item>
             <id>0509</id>
             <resource_name>gesture_wakeup_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$DisplaySettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$DisplaySettingsActivity</class>
             <keywords>search_gesture_wakeup_title</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_display_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_display_settings</drawable>
             <path>path_gesture_wakeup_title</path>
             <is_setting>true</is_setting>
             <is_searchable>support_gesture_wakeup</is_searchable>
@@ -471,7 +471,7 @@
             <package>com.miui.home</package>
             <class>com.miui.home.launcher.setting.WallpaperSettingsActivity</class>
             <keywords>search_wallpaper</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_wallpaper_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_wallpaper_settings</drawable>
             <path>path_wallpaper_settings</path>
             <is_setting>true</is_setting>
         </item>
@@ -481,28 +481,28 @@
             <package>com.android.thememanager</package>
             <class>com.android.thememanager.activity.ThemeTabActivity</class>
             <intent_action>android.intent.action.VIEW</intent_action>
-            <intent_data>theme://zhuti.xiaomi.com/list?S.REQUEST_RESOURCE_CODE=theme&amp;miref=com.android.settings&amp;miback=true&amp;B.REQUEST_PREFERENCE_SYTLE=true&amp;pageKey1=CompoundLocal</intent_data>
+            <intent_data>theme://zhuti.xiaomi.com/list?S.REQUEST_RESOURCE_CODE=theme&amp;miref=com.android.vendorsettings&amp;miback=true&amp;B.REQUEST_PREFERENCE_SYTLE=true&amp;pageKey1=CompoundLocal</intent_data>
             <keywords>search_theme_settings</keywords>
-            <drawable>android.resource://com.android.settings/drawable/com_android_thememanager</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/com_android_thememanager</drawable>
             <path>path_theme_settings</path>
             <is_setting>true</is_setting>
         </item>
         <item>
             <id>0800</id>
             <resource_name>sound_vibrate_settings</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiSoundSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiSoundSettings</fragment>
             <keywords>search_sound_settings</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_sound_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_sound_settings</drawable>
             <path>path_sound_settings</path>
             <is_setting>true</is_setting>
         </item>
         <item>
             <id>0801</id>
             <resource_name>ringtone_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.sound.RingtoneActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.sound.RingtoneActivity</class>
             <keywords>search_ringtone</keywords>
             <path>path_ringtone_settings</path>
             <is_setting>true</is_setting>
@@ -510,8 +510,8 @@
         <item>
             <id>0802</id>
             <resource_name>sms_received_sound_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.sound.SmsReceivedActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.sound.SmsReceivedActivity</class>
             <keywords>search_sms_received</keywords>
             <path>path_sms_received_settings</path>
             <is_setting>true</is_setting>
@@ -519,8 +519,8 @@
         <item>
             <id>0803</id>
             <resource_name>alarm_sound_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.sound.SmsReceivedActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.sound.SmsReceivedActivity</class>
             <keywords>search_alarm_sound_title</keywords>
             <path>path_alarm_sound_title</path>
             <is_setting>true</is_setting>
@@ -528,9 +528,9 @@
         <item>
             <id>0806</id>
             <resource_name>vibrate_when_ringing_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiSoundSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiSoundSettings</fragment>
             <keywords>search_vibrate_when_ringing_title</keywords>
             <path>path_vibrate_when_ringing_title</path>
             <is_setting>true</is_setting>
@@ -538,9 +538,9 @@
         <item>
             <id>0807</id>
             <resource_name>vibrate_in_silent_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiSoundSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiSoundSettings</fragment>
             <keywords>search_vibrate_in_silent_title</keywords>
             <path>path_vibrate_in_silent_title</path>
             <is_setting>true</is_setting>
@@ -548,9 +548,9 @@
         <item>
             <id>0808</id>
             <resource_name>vibrate_on_touch_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiSoundSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiSoundSettings</fragment>
             <keywords>search_vibrate_on_touch_title</keywords>
             <path>path_vibrate_on_touch_title</path>
             <is_setting>true</is_setting>
@@ -558,9 +558,9 @@
         <item>
             <id>0809</id>
             <resource_name>dtmf_tone_enable_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiSoundSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiSoundSettings</fragment>
             <keywords>search_dtmf_tone_enable_title</keywords>
             <path>path_dtmf_tone_enable_title</path>
             <is_setting>true</is_setting>
@@ -568,9 +568,9 @@
         <item>
             <id>0810</id>
             <resource_name>sound_effects_enable_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiSoundSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiSoundSettings</fragment>
             <keywords>search_sound_effects_enable_title</keywords>
             <path>path_sound_effects_enable_title</path>
             <is_setting>true</is_setting>
@@ -578,9 +578,9 @@
         <item>
             <id>0811</id>
             <resource_name>lock_sounds_enable_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiSoundSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiSoundSettings</fragment>
             <keywords>search_lock_sounds_enable_title</keywords>
             <path>path_lock_sounds_enable_title</path>
             <is_setting>true</is_setting>
@@ -588,9 +588,9 @@
         <item>
             <id>0813</id>
             <resource_name>notification_sound_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiSoundSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiSoundSettings</fragment>
             <keywords>search_notification_sound_title</keywords>
             <path>path_notification_sound</path>
             <is_setting>true</is_setting>
@@ -598,9 +598,9 @@
         <item>
             <id>0815</id>
             <resource_name>music_audio_effect_optimize</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.HeadsetSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.HeadsetSettings</fragment>
             <keywords>search_music_audio_effect_optimize</keywords>
             <path>path_music_audio_effect_optimize</path>
             <is_setting>true</is_setting>
@@ -608,9 +608,9 @@
         <item>
             <id>0820</id>
             <resource_name>zen_mode_option_miui_silent</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiSoundSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiSoundSettings</fragment>
             <keywords>search_zen_mode_option_miui_silent</keywords>
             <path>path_zen_mode_option_miui_silent</path>
             <is_setting>true</is_setting>
@@ -618,11 +618,11 @@
         <item>
             <id>0900</id>
             <resource_name>lock_settings_with_fingerprint</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiSecuritySettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiSecuritySettings</fragment>
             <keywords>search_unlock_set</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_unlock_set_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_unlock_set_settings</drawable>
             <path>path_unlock_set_settings</path>
             <extras>path_no_fingerprint_unlock_set_settings/lock_settings</extras>
             <is_setting>true</is_setting>
@@ -630,9 +630,9 @@
         <item>
             <id>0901</id>
             <resource_name>security_passwords_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment</fragment>
             <keywords>search_security_passwords_title</keywords>
             <path>path_security_passwords_title</path>
             <is_setting>true</is_setting>
@@ -642,9 +642,9 @@
         <item>
             <id>0902</id>
             <resource_name>owner_info_settings_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.OwnerInfoSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.OwnerInfoSettings</fragment>
             <keywords>search_owner_info_settings</keywords>
             <path>path_owner_info_settings</path>
             <extras>path_no_fingerprint_owner_info_settings</extras>
@@ -653,8 +653,8 @@
         <item>
             <id>0903</id>
             <resource_name>screen_timeout</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.display.ScreenTimeoutDialogActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.display.ScreenTimeoutDialogActivity</class>
             <keywords>search_screen_timeout</keywords>
             <path>path_screen_timeout_settings</path>
             <extras>path_no_fingerprint_screen_timeout_settings</extras>
@@ -663,9 +663,9 @@
         <item>
             <id>0904</id>
             <resource_name>change_password</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiSecurityChooseUnlock$MiuiSecurityChooseUnlockFragment</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiSecurityChooseUnlock$MiuiSecurityChooseUnlockFragment</fragment>
             <keywords>search_turn_on_security_lock</keywords>
             <path>path_turn_on_security_lock</path>
             <extras>path_no_fingerprint_turn_on_security_lock</extras>
@@ -674,9 +674,9 @@
         <item>
             <id>0906</id>
             <resource_name>wakeup_for_keyguard_notification_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiSecuritySettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiSecuritySettings</fragment>
             <keywords>search_wakeup_for_keyguard_notification_title</keywords>
             <path>path_wakeup_for_keyguard_notification_title</path>
             <extras>path_no_fingerprint_wakeup_for_keyguard_notification_title</extras>
@@ -685,9 +685,9 @@
         <item>
             <id>0907</id>
             <resource_name>pref_volume_wake_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiSecuritySettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiSecuritySettings</fragment>
             <keywords>search_pref_volume_wake_title</keywords>
             <path>path_pref_volume_wake_title</path>
             <extras>path_no_fingerprint_pref_volume_wake_title</extras>
@@ -696,9 +696,9 @@
         <item>
             <id>0908</id>
             <resource_name>screen_on_proximity_sensor_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiSecuritySettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiSecuritySettings</fragment>
             <keywords>search_screen_on_proximity_sensor_title</keywords>
             <path>path_screen_on_proximity_sensor_title</path>
             <extras>path_no_fingerprint_screen_on_proximity_sensor_title</extras>
@@ -707,19 +707,19 @@
         <item>
             <id>1000</id>
             <resource_name>status_bar_settings</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$StatusBarSettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$StatusBarSettingsActivity</class>
             <keywords>search_status_bar</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_status_bar_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_status_bar_settings</drawable>
             <path>path_status_bar_settings</path>
             <is_setting>true</is_setting>
         </item>
         <item>
             <id>1001</id>
             <resource_name>status_bar_settings_manage_notification</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.NotificationAppListSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.NotificationAppListSettings</fragment>
             <keywords>search_notification_app_list_settings</keywords>
             <path>path_notification_app_list_settings</path>
             <is_setting>true</is_setting>
@@ -727,9 +727,9 @@
         <item>
             <id>1002</id>
             <resource_name>status_bar_settings_toggle_position</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.TogglePositionFragment</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.TogglePositionFragment</fragment>
             <keywords>search_toggle_position</keywords>
             <path>path_toggle_position_settings</path>
             <is_setting>true</is_setting>
@@ -737,8 +737,8 @@
         <item>
             <id>1003</id>
             <resource_name>status_bar_settings_style</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$StatusBarSettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$StatusBarSettingsActivity</class>
             <keywords>search_status_bar_settings_style</keywords>
             <path>path_status_bar_settings_style</path>
             <is_setting>true</is_setting>
@@ -746,8 +746,8 @@
         <item>
             <id>1004</id>
             <resource_name>status_bar_settings_show_notification_icon</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$StatusBarSettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$StatusBarSettingsActivity</class>
             <keywords>search_status_bar_settings_show_notification_icon</keywords>
             <path>path_status_bar_settings_show_notification_icon</path>
             <is_setting>true</is_setting>
@@ -755,8 +755,8 @@
         <item>
             <id>1005</id>
             <resource_name>status_bar_settings_show_network_speed</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$StatusBarSettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$StatusBarSettingsActivity</class>
             <keywords>search_status_bar_settings_show_network_speed</keywords>
             <path>path_status_bar_settings_show_network_speed</path>
             <is_setting>true</is_setting>
@@ -764,8 +764,8 @@
         <item>
             <id>1006</id>
             <resource_name>status_bar_settings_show_carrier</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$StatusBarSettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$StatusBarSettingsActivity</class>
             <keywords>search_status_bar_settings_show_carrier</keywords>
             <path>path_status_bar_settings_show_carrier</path>
             <is_setting>true</is_setting>
@@ -773,9 +773,9 @@
         <item>
             <id>1007</id>
             <resource_name>status_bar_settings_custom_carrier</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.CarrierCustomEditFragment</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.CarrierCustomEditFragment</fragment>
             <keywords>search_status_bar_settings_custom_carrier</keywords>
             <path>path_status_bar_settings_custom_carrier</path>
             <is_setting>true</is_setting>
@@ -783,8 +783,8 @@
         <item>
             <id>1009</id>
             <resource_name>status_bar_settings_toggle_collapse_after_clicked</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$StatusBarSettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$StatusBarSettingsActivity</class>
             <keywords>search_status_bar_settings_toggle_collapse_after_clicked</keywords>
             <path>path_status_bar_settings_toggle_collapse_after_clicked</path>
             <is_setting>true</is_setting>
@@ -792,8 +792,8 @@
         <item>
             <id>1010</id>
             <resource_name>status_bar_settings_expandable_under_keyguard</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$StatusBarSettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$StatusBarSettingsActivity</class>
             <keywords>search_status_bar_settings_expandable_under_keyguard</keywords>
             <path>path_status_bar_settings_expandable_under_keyguard</path>
             <is_setting>true</is_setting>
@@ -805,25 +805,25 @@
             <package>com.miui.securitycore</package>
             <class>com.miui.securityspace.ui.activity.PrivateSpaceMainActivity</class>
             <keywords>search_second_space</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_second_space</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_second_space</drawable>
             <path>path_second_space</path>
             <is_setting>true</is_setting>
         </item>
         <item>
             <id>1200</id>
             <resource_name>do_not_disturb_mode</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.dndmode.DoNotDisturbModeActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.dndmode.DoNotDisturbModeActivity</class>
             <keywords>search_do_not_disturb</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_do_not_disturb_mode_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_do_not_disturb_mode_settings</drawable>
             <path>path_do_not_disturb_settings</path>
             <is_setting>true</is_setting>
         </item>
         <item>
             <id>1201</id>
             <resource_name>dndm_open</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.dndmode.DoNotDisturbModeActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.dndmode.DoNotDisturbModeActivity</class>
             <keywords>search_dndm_open</keywords>
             <path>path_dndm_open</path>
             <is_setting>true</is_setting>
@@ -831,8 +831,8 @@
         <item>
             <id>1202</id>
             <resource_name>dndm_auto_button_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.dndmode.DoNotDisturbModeActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.dndmode.DoNotDisturbModeActivity</class>
             <keywords>search_dndm_auto_button_title</keywords>
             <path>path_dndm_auto_button_title</path>
             <is_setting>true</is_setting>
@@ -840,8 +840,8 @@
         <item>
             <id>1203</id>
             <resource_name>dndm_auto_time_setting</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.dndmode.AutoTimeSettings</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.dndmode.AutoTimeSettings</class>
             <keywords>search_dndm_auto_time_setting</keywords>
             <path>path_dndm_auto_time_setting</path>
             <is_setting>true</is_setting>
@@ -849,8 +849,8 @@
         <item>
             <id>1204</id>
             <resource_name>dndm_alarm_content</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.dndmode.AlarmContentActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.dndmode.AlarmContentActivity</class>
             <keywords>search_dndm_alarm_content</keywords>
             <path>path_dndm_alarm_content</path>
             <is_setting>true</is_setting>
@@ -858,8 +858,8 @@
         <item>
             <id>1205</id>
             <resource_name>dndm_repeated_call_setting_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.dndmode.DoNotDisturbModeActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.dndmode.DoNotDisturbModeActivity</class>
             <keywords>search_dndm_repeated_call_setting_title</keywords>
             <path>path_dndm_repeated_call_setting_title</path>
             <is_setting>true</is_setting>
@@ -867,8 +867,8 @@
         <item>
             <id>1206</id>
             <resource_name>dndm_wristband</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.dndmode.AutoTimeSettings</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.dndmode.AutoTimeSettings</class>
             <keywords>search_dndm_wristband</keywords>
             <path>path_dndm_wristband</path>
             <is_setting>true</is_setting>
@@ -876,8 +876,8 @@
         <item>
             <id>1207</id>
             <resource_name>dndm_vip_call_setting_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.dndmode.VipCallSettings</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.dndmode.VipCallSettings</class>
             <keywords>search_dndm_vip_call_setting_title</keywords>
             <path>path_dndm_vip_call_setting_title</path>
             <is_setting>true</is_setting>
@@ -885,18 +885,18 @@
         <item>
             <id>1300</id>
             <resource_name>power_usage_summary_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$BatterySettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$BatterySettingsActivity</class>
             <keywords>search_battery</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_battery_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_battery_settings</drawable>
             <path>path_battery_settings</path>
             <is_setting>true</is_setting>
         </item>
         <item>
             <id>1301</id>
             <resource_name>battery_indicator_style</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.fuelgauge.BatteryIndicatorStyle</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.fuelgauge.BatteryIndicatorStyle</class>
             <keywords>search_battery_indicator</keywords>
             <path>path_battery_indicator_settings</path>
             <is_setting>true</is_setting>
@@ -915,20 +915,20 @@
         <item>
             <id>1303</id>
             <resource_name>fluency_mode</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$BatterySettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$BatterySettingsActivity</class>
             <keywords>search_fluency_mode</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_battery_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_battery_settings</drawable>
             <path>path_fluency_mode</path>
             <is_setting>true</is_setting>
         </item>
         <item>
             <id>1400</id>
             <resource_name>storage_settings</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$StorageSettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$StorageSettingsActivity</class>
             <keywords>search_storage</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_storage_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_storage_settings</drawable>
             <path>path_device_info_memory</path>
             <is_setting>true</is_setting>
         </item>
@@ -945,8 +945,8 @@
         <item>
             <id>2400</id>
             <resource_name>oldman_mode_entry_name</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.OldmanModeSettings</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.OldmanModeSettings</class>
             <intent_action>android.intent.action.MAIN</intent_action>
             <keywords>search_oldman_mode</keywords>
             <drawable>ic_oldman_mode_settings</drawable>
@@ -958,9 +958,9 @@
         <item>
             <id>2500</id>
             <resource_name>pref_edge_handgrip</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.EdgeModeSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.EdgeModeSettings</fragment>
             <keywords>search_edge_handgrip</keywords>
             <drawable>ic_edge_mode_settings</drawable>
             <path>path_edge_handgrip</path>
@@ -970,20 +970,20 @@
         <item>
             <id>1500</id>
             <resource_name>other_advanced_settings</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.OtherPersonalSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.OtherPersonalSettings</fragment>
             <keywords>search_other_advanced_settings</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_other_advanced_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_other_advanced_settings</drawable>
             <path>path_other_advanced_settings</path>
             <is_setting>true</is_setting>
         </item>
         <item>
             <id>1503</id>
             <resource_name>date_and_time_settings_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.DateTimeSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.DateTimeSettings</fragment>
             <keywords>search_date_time</keywords>
             <path>path_date_time_settings</path>
             <is_setting>true</is_setting>
@@ -991,9 +991,9 @@
         <item>
             <id>1504</id>
             <resource_name>children_mode_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.ChildrenModeSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.ChildrenModeSettings</fragment>
             <keywords>search_children_mode_title</keywords>
             <path>path_children_mode_settings</path>
             <is_setting>true</is_setting>
@@ -1002,9 +1002,9 @@
         <item>
             <id>1505</id>
             <resource_name>language_settings</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.inputmethod.InputMethodAndLanguageSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.inputmethod.InputMethodAndLanguageSettings</fragment>
             <keywords>search_language</keywords>
             <path>path_language_settings</path>
             <is_setting>true</is_setting>
@@ -1012,9 +1012,9 @@
         <item>
             <id>1506</id>
             <resource_name>language_picker_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiLocalePicker</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiLocalePicker</fragment>
             <keywords>search_language_picker_title</keywords>
             <path>path_language_picker_title</path>
             <is_setting>true</is_setting>
@@ -1022,9 +1022,9 @@
         <item>
             <id>1507</id>
             <resource_name>user_dict_settings_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.UserDictionarySettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.UserDictionarySettings</fragment>
             <keywords>search_user_dict_settings_title</keywords>
             <path>path_user_dict_settings_title</path>
             <is_setting>true</is_setting>
@@ -1032,9 +1032,9 @@
         <item>
             <id>1508</id>
             <resource_name>tts_settings_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.tts.TextToSpeechSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.tts.TextToSpeechSettings</fragment>
             <keywords>search_tts_settings_title</keywords>
             <path>path_tts_settings_title</path>
             <is_setting>true</is_setting>
@@ -1042,9 +1042,9 @@
         <item>
             <id>1509</id>
             <resource_name>pointer_speed</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.inputmethod.InputMethodAndLanguageSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.inputmethod.InputMethodAndLanguageSettings</fragment>
             <keywords>search_pointer_speed</keywords>
             <path>path_pointer_speed</path>
             <is_setting>true</is_setting>
@@ -1052,9 +1052,9 @@
         <item>
             <id>1510</id>
             <resource_name>security_privacy_settings_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.SecuritySettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.SecuritySettings</fragment>
             <keywords>search_safe_result_header_title_system</keywords>
             <path>path_safe_result_header_title_system</path>
             <is_setting>true</is_setting>
@@ -1062,9 +1062,9 @@
         <item>
             <id>1511</id>
             <resource_name>manage_device_admin</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.DeviceAdminSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.DeviceAdminSettings</fragment>
             <keywords>search_manage_device_admin</keywords>
             <path>path_manage_device_admin</path>
             <is_setting>true</is_setting>
@@ -1072,9 +1072,9 @@
         <item>
             <id>1512</id>
             <resource_name>location_settings_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.location.MiuiLocationSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.location.MiuiLocationSettings</fragment>
             <keywords>search_location_settings_title</keywords>
             <path>path_location_settings_title</path>
             <is_setting>true</is_setting>
@@ -1082,9 +1082,9 @@
         <item>
             <id>1513</id>
             <resource_name>manage_notification_access_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.notification.NotificationAccessSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.notification.NotificationAccessSettings</fragment>
             <keywords>search_manage_notification_access_title</keywords>
             <path>path_manage_notification_access_title</path>
             <is_setting>true</is_setting>
@@ -1092,9 +1092,9 @@
         <item>
             <id>1514</id>
             <resource_name>trusted_credentials</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiSecurityTrustedCredentials</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiSecurityTrustedCredentials</fragment>
             <keywords>search_trusted_credentials</keywords>
             <path>path_trusted_credentials</path>
             <is_setting>true</is_setting>
@@ -1112,9 +1112,9 @@
         <item>
             <id>1516</id>
             <resource_name>security_encryption_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.EncryptionSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.EncryptionSettings</fragment>
             <keywords>search_security_encryption_title</keywords>
             <path>path_security_encryption_title</path>
             <is_setting>true</is_setting>
@@ -1134,8 +1134,8 @@
             <id>1550</id>
             <resource_name>force_touch</resource_name>
             <intent_action>android.intent.action.FORCE_TOUCH_GUIDE</intent_action>
-            <package>com.android.settings</package>
-            <class>com.android.settings.display.ForceTouchGuideActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.display.ForceTouchGuideActivity</class>
             <keywords>search_force_touch</keywords>
             <path>path_force_touch</path>
             <is_searchable>support_force_touch</is_searchable>
@@ -1144,9 +1144,9 @@
         <item>
             <id>1518</id>
             <resource_name>led_settings</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.LedSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.LedSettings</fragment>
             <keywords>search_led</keywords>
             <path>path_led_settings</path>
             <is_setting>true</is_setting>
@@ -1154,9 +1154,9 @@
         <item>
             <id>1519</id>
             <resource_name>key_settings_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.KeySettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.KeySettings</fragment>
             <keywords>search_key</keywords>
             <path>path_key_settings</path>
             <is_setting>true</is_setting>
@@ -1164,9 +1164,9 @@
         <item>
             <id>1520</id>
             <resource_name>app_switch_key</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.KeySettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.KeySettings</fragment>
             <keywords>search_app_switch_key</keywords>
             <path>path_app_switch_key</path>
             <is_setting>true</is_setting>
@@ -1174,9 +1174,9 @@
         <item>
             <id>1521</id>
             <resource_name>home_key</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.KeySettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.KeySettings</fragment>
             <keywords>search_home_key</keywords>
             <path>path_home_key</path>
             <is_setting>true</is_setting>
@@ -1184,9 +1184,9 @@
         <item>
             <id>1522</id>
             <resource_name>back_key</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.KeySettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.KeySettings</fragment>
             <keywords>search_back_key</keywords>
             <path>path_back_key</path>
             <is_setting>true</is_setting>
@@ -1194,9 +1194,9 @@
         <item>
             <id>1523</id>
             <resource_name>screen_key_long_press_timeout</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.KeySettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.KeySettings</fragment>
             <keywords>search_screen_key_long_press_timeout</keywords>
             <path>path_screen_key_long_press_timeout</path>
             <is_setting>true</is_setting>
@@ -1204,9 +1204,9 @@
         <item>
             <id>1525</id>
             <resource_name>handy_mode</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.display.HandyModeFragment</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.display.HandyModeFragment</fragment>
             <keywords>search_handy_mode</keywords>
             <path>path_handy_mode_settings</path>
             <is_setting>true</is_setting>
@@ -1214,9 +1214,9 @@
         <item>
             <id>1526</id>
             <resource_name>accessibility_settings</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.accessibility.AccessibilitySettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.accessibility.AccessibilitySettings</fragment>
             <keywords>search_accessibility_settings</keywords>
             <path>path_accessibility_settings</path>
             <is_setting>true</is_setting>
@@ -1224,9 +1224,9 @@
         <item>
             <id>1527</id>
             <resource_name>accessibility_captioning_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.accessibility.CaptionPropertiesFragment</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.accessibility.CaptionPropertiesFragment</fragment>
             <keywords>search_accessibility_captioning_title</keywords>
             <path>path_accessibility_captioning_title</path>
             <is_setting>true</is_setting>
@@ -1234,9 +1234,9 @@
         <item>
             <id>1528</id>
             <resource_name>accessibility_screen_magnification_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.accessibility.ToggleScreenMagnificationPreferenceFragment</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.accessibility.ToggleScreenMagnificationPreferenceFragment</fragment>
             <keywords>search_accessibility_screen_magnification_title</keywords>
             <path>path_accessibility_screen_magnification_title</path>
             <is_setting>true</is_setting>
@@ -1244,9 +1244,9 @@
         <item>
             <id>1529</id>
             <resource_name>accessibility_global_gesture_preference_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.accessibility.ToggleGlobalGesturePreferenceFragment</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.accessibility.ToggleGlobalGesturePreferenceFragment</fragment>
             <keywords>search_accessibility_global_gesture_preference_title</keywords>
             <path>path_accessibility_global_gesture_preference_title</path>
             <is_setting>true</is_setting>
@@ -1254,9 +1254,9 @@
         <item>
             <id>1530</id>
             <resource_name>tts_settings_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.tts.TextToSpeechSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.tts.TextToSpeechSettings</fragment>
             <keywords>search_ntts_settings_title</keywords>
             <path>path_ntts_settings_title</path>
             <is_setting>true</is_setting>
@@ -1264,9 +1264,9 @@
         <item>
             <id>1531</id>
             <resource_name>accessibility_long_press_timeout_preference_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.accessibility.AccessibilitySettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.accessibility.AccessibilitySettings</fragment>
             <keywords>search_accessibility_long_press_timeout_preference_title</keywords>
             <path>path_accessibility_long_press_timeout_preference_title</path>
             <is_setting>true</is_setting>
@@ -1274,9 +1274,9 @@
         <item>
             <id>1532</id>
             <resource_name>accessibility_display_daltonizer_preference_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.accessibility.ToggleDaltonizerPreferenceFragment</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.accessibility.ToggleDaltonizerPreferenceFragment</fragment>
             <keywords>search_accessibility_display_daltonizer_preference_title</keywords>
             <path>path_accessibility_display_daltonizer_preference_title</path>
             <is_setting>true</is_setting>
@@ -1284,9 +1284,9 @@
         <item>
             <id>1533</id>
             <resource_name>music_headset_settings</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.HeadsetSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.HeadsetSettings</fragment>
             <keywords>search_music_headset_settings</keywords>
             <path>path_music_headset_settings</path>
             <is_setting>true</is_setting>
@@ -1295,9 +1295,9 @@
         <item>
             <id>1538</id>
             <resource_name>development_settings_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.DevelopmentSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.DevelopmentSettings</fragment>
             <keywords>search_development_settings</keywords>
             <path>path_development_settings</path>
             <is_setting>true</is_setting>
@@ -1316,8 +1316,8 @@
         <item>
             <id>1540</id>
             <resource_name>privacy_settings</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$PrivacySettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$PrivacySettingsActivity</class>
             <keywords>search_privacy</keywords>
             <path>path_privacy_settings</path>
             <is_setting>true</is_setting>
@@ -1336,8 +1336,8 @@
         <item>
             <id>1542</id>
             <resource_name>local_auto_backup_section_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$PrivacySettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$PrivacySettingsActivity</class>
             <keywords>search_local_auto_backup_section_title</keywords>
             <path>path_local_auto_backup_section_title</path>
             <is_setting>true</is_setting>
@@ -1357,8 +1357,8 @@
         <item>
             <id>1544</id>
             <resource_name>cloud_backup_settings_section_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.Settings$PrivacySettingsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.Settings$PrivacySettingsActivity</class>
             <keywords>search_cloud_backup_settings_section_title</keywords>
             <path>path_cloud_backup_settings_section_title</path>
             <is_setting>true</is_setting>
@@ -1367,9 +1367,9 @@
         <item>
             <id>1545</id>
             <resource_name>master_clear_title</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiMasterClear</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiMasterClear</fragment>
             <keywords>search_master_clear_title</keywords>
             <path>path_master_clear_title</path>
             <is_setting>true</is_setting>
@@ -1390,7 +1390,7 @@
             <package>com.xiaomi.account</package>
             <class>com.xiaomi.account.ui.AccountSettingsActivity</class>
             <keywords>search_xiaomi_account</keywords>
-            <drawable>android.resource://com.android.settings/drawable/xiaomi_account</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/xiaomi_account</drawable>
             <path>path_xiaomi_account</path>
             <is_setting>true</is_setting>
         </item>
@@ -1398,33 +1398,33 @@
             <id>1700</id>
             <resource_name>account_list</resource_name>
             <intent_action>android.intent.action.MAIN</intent_action>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>com.android.settings.accounts.MiuiAccountListSettings
-<fragment>com.android.settings.accounts.MiuiAccountListSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>com.android.vendorsettings.accounts.MiuiAccountListSettings
+<fragment>com.android.vendorsettings.accounts.MiuiAccountListSettings</fragment>
             <keywords>search_account_list</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_account_list</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_account_list</drawable>
             <path>path_account_list</path>
             <is_setting>true</is_setting>
         </item>
         <item>
             <id>1800</id>
             <resource_name>sync_settings</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.accounts.MiuiManageAccountsSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.accounts.MiuiManageAccountsSettings</fragment>
             <keywords>search_sync_settings</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_sync_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_sync_settings</drawable>
             <path>path_sync_settings</path>
             <is_setting>true</is_setting>
         </item>
         <item>
             <id>1900</id>
             <resource_name>system_app_settings</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.applications.SystemAppSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.applications.SystemAppSettings</fragment>
             <keywords>search_system_app_settings</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_system_app_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_system_app_settings</drawable>
             <path>path_system_app_settings</path>
             <is_setting>true</is_setting>
         </item>
@@ -1432,10 +1432,10 @@
             <id>2000</id>
             <resource_name>applications_settings</resource_name>
             <intent_action>android.intent.action.MAIN</intent_action>
-            <package>com.android.settings</package>
-            <class>com.android.settings.applications.ManageApplicationsActivity</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.applications.ManageApplicationsActivity</class>
             <keywords>search_application_settings</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_other_advanced_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_other_advanced_settings</drawable>
             <path>path_applications_settings</path>
             <is_setting>true</is_setting>
         </item>
@@ -1445,7 +1445,7 @@
             <package>com.miui.securitycore</package>
             <class>com.miui.xspace.ui.activity.XSpaceSettingActivity</class>
             <keywords>search_xspace</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_xspace</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_xspace</drawable>
             <path>path_xspace</path>
             <is_setting>true</is_setting>
             <second_space>false</second_space>
@@ -1456,7 +1456,7 @@
             <package>com.miui.securitycenter</package>
             <class>com.miui.permcenter.MainAcitivty</class>
             <keywords>search_app_permission</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_app_permission</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_app_permission</drawable>
             <path>path_app_permission</path>
             <is_setting>true</is_setting>
         </item>
@@ -1467,27 +1467,27 @@
             <package>com.miui.securitycenter</package>
             <class>com.miui.applicationlock.TransitionHelper</class>
             <keywords>search_application_lock</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_app_lock</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_app_lock</drawable>
             <path>path_application_lock</path>
             <is_setting>true</is_setting>
         </item>
         <item>
             <id>2300</id>
             <resource_name>about_settings</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiDeviceInfoSettings</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiDeviceInfoSettings</fragment>
             <keywords>search_about</keywords>
-            <drawable>android.resource://com.android.settings/drawable/ic_about_settings</drawable>
+            <drawable>android.resource://com.android.vendorsettings/drawable/ic_about_settings</drawable>
             <path>path_about_about_settings</path>
             <is_setting>true</is_setting>
         </item>
         <item>
             <id>2301</id>
             <resource_name>device_name</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.MiuiDeviceNameEditFragment</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.MiuiDeviceNameEditFragment</fragment>
             <keywords>search_device_name</keywords>
             <path>path_device_name</path>
             <is_setting>true</is_setting>
@@ -1496,9 +1496,9 @@
         <item>
             <id>2302</id>
             <resource_name>legal_information</resource_name>
-            <package>com.android.settings</package>
-            <class>com.android.settings.SubSettings</class>
-            <fragment>com.android.settings.Legal</fragment>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.SubSettings</class>
+            <fragment>com.android.vendorsettings.Legal</fragment>
             <keywords>search_legal_information</keywords>
             <path>path_legal_information</path>
             <is_setting>true</is_setting>
@@ -1507,8 +1507,8 @@
             <id>2306</id>
             <resource_name>device_status</resource_name>
             <intent_action>android.intent.action.MAIN</intent_action>
-            <package>com.android.settings</package>
-            <class>com.android.settings.deviceinfo.Status</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.deviceinfo.Status</class>
             <keywords>search_device_status</keywords>
             <path>path_device_status</path>
             <is_setting>true</is_setting>
@@ -1517,8 +1517,8 @@
             <id>2307</id>
             <resource_name>status_sim</resource_name>
             <intent_action>android.intent.action.MAIN</intent_action>
-            <package>com.android.settings</package>
-            <class>com.android.settings.deviceinfo.SimStatus</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.deviceinfo.SimStatus</class>
             <keywords>search_status_sim</keywords>
             <path>path_status_sim</path>
             <is_setting>true</is_setting>
@@ -1528,8 +1528,8 @@
             <id>2308</id>
             <resource_name>slot_status_title</resource_name>
             <intent_action>android.intent.action.MAIN</intent_action>
-            <package>com.android.settings</package>
-            <class>com.android.settings.deviceinfo.ImeiInformation</class>
+            <package>com.android.vendorsettings</package>
+            <class>com.android.vendorsettings.deviceinfo.ImeiInformation</class>
             <keywords>search_slot_status_title</keywords>
             <path>path_slot_status_title</path>
             <is_setting>true</is_setting>

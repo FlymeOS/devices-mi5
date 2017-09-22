@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/AppOpsState$1;
+.class final Lcom/android/vendorsettings/applications/AppOpsState$1;
 .super Ljava/lang/Object;
 .source "AppOpsState.java"
 
@@ -23,14 +23,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppOpsState$1;->sCollator:Ljava/text/Collator;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsState$1;->sCollator:Ljava/text/Collator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lcom/android/settings/applications/AppOpsState$AppOpEntry;Lcom/android/settings/applications/AppOpsState$AppOpEntry;)I
+.method public a(Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;)I
     .locals 6
 
     .prologue
@@ -39,22 +39,22 @@
     const/4 v0, -0x1
 
     .line 427
-    invoke-virtual {p1}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->jK()I
+    invoke-virtual {p1}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->jK()I
 
     move-result v2
 
-    invoke-virtual {p2}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->jK()I
+    invoke-virtual {p2}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->jK()I
 
     move-result v3
 
     if-eq v2, v3, :cond_2
 
     .line 428
-    invoke-virtual {p1}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->jK()I
+    invoke-virtual {p1}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->jK()I
 
     move-result v2
 
-    invoke-virtual {p2}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->jK()I
+    invoke-virtual {p2}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->jK()I
 
     move-result v3
 
@@ -73,18 +73,18 @@
 
     .line 430
     :cond_2
-    invoke-virtual {p1}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->isRunning()Z
+    invoke-virtual {p1}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->isRunning()Z
 
     move-result v2
 
-    invoke-virtual {p2}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->isRunning()Z
+    invoke-virtual {p2}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->isRunning()Z
 
     move-result v3
 
     if-eq v2, v3, :cond_3
 
     .line 432
-    invoke-virtual {p1}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->isRunning()Z
+    invoke-virtual {p1}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->isRunning()Z
 
     move-result v2
 
@@ -96,11 +96,11 @@
 
     .line 434
     :cond_3
-    invoke-virtual {p1}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->getTime()J
+    invoke-virtual {p1}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->getTime()J
 
     move-result-wide v2
 
-    invoke-virtual {p2}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->getTime()J
+    invoke-virtual {p2}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->getTime()J
 
     move-result-wide v4
 
@@ -109,11 +109,11 @@
     if-eqz v2, :cond_4
 
     .line 436
-    invoke-virtual {p1}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->getTime()J
+    invoke-virtual {p1}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->getTime()J
 
     move-result-wide v2
 
-    invoke-virtual {p2}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->getTime()J
+    invoke-virtual {p2}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->getTime()J
 
     move-result-wide v4
 
@@ -127,21 +127,21 @@
 
     .line 438
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsState$1;->sCollator:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsState$1;->sCollator:Ljava/text/Collator;
 
-    invoke-virtual {p1}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->jJ()Lcom/android/settings/applications/AppOpsState$AppEntry;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Lcom/android/settings/applications/AppOpsState$AppEntry;->getLabel()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->jJ()Lcom/android/vendorsettings/applications/AppOpsState$AppEntry;
 
     move-result-object v1
 
-    invoke-virtual {p2}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->jJ()Lcom/android/settings/applications/AppOpsState$AppEntry;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/applications/AppOpsState$AppEntry;->getLabel()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p2}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->jJ()Lcom/android/vendorsettings/applications/AppOpsState$AppEntry;
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lcom/android/settings/applications/AppOpsState$AppEntry;->getLabel()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/android/vendorsettings/applications/AppOpsState$AppEntry;->getLabel()Ljava/lang/String;
 
     move-result-object v2
 
@@ -157,11 +157,11 @@
 
     .prologue
     .line 423
-    check-cast p1, Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+    check-cast p1, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;
 
-    check-cast p2, Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+    check-cast p2, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/applications/AppOpsState$1;->a(Lcom/android/settings/applications/AppOpsState$AppOpEntry;Lcom/android/settings/applications/AppOpsState$AppOpEntry;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/applications/AppOpsState$1;->a(Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;)I
 
     move-result v0
 

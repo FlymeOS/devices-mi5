@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/accessibility/ColorPreference;
-.super Lcom/android/settings/accessibility/ListDialogPreference;
+.class public Lcom/android/vendorsettings/accessibility/ColorPreference;
+.super Lcom/android/vendorsettings/accessibility/ListDialogPreference;
 .source "ColorPreference.java"
 
 
@@ -15,17 +15,17 @@
 
     .prologue
     .line 40
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/accessibility/ListDialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/accessibility/ListDialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 42
     const v0, 0x7f04008c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/ColorPreference;->setDialogLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accessibility/ColorPreference;->setDialogLayoutResource(I)V
 
     .line 43
     const v0, 0x7f040037
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/ColorPreference;->au(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accessibility/ColorPreference;->au(I)V
 
     .line 44
     return-void
@@ -38,7 +38,7 @@
 
     .prologue
     .line 68
-    invoke-super {p0, p1}, Lcom/android/settings/accessibility/ListDialogPreference;->at(I)Ljava/lang/CharSequence;
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/accessibility/ListDialogPreference;->at(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -51,7 +51,7 @@
 
     .line 74
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/accessibility/ColorPreference;->av(I)I
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/accessibility/ColorPreference;->av(I)I
 
     move-result v0
 
@@ -71,7 +71,7 @@
     move-result v0
 
     .line 78
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ColorPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ColorPreference;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -117,7 +117,7 @@
 
     .prologue
     .line 114
-    invoke-virtual {p0, p2}, Lcom/android/settings/accessibility/ColorPreference;->av(I)I
+    invoke-virtual {p0, p2}, Lcom/android/vendorsettings/accessibility/ColorPreference;->av(I)I
 
     move-result v2
 
@@ -165,7 +165,7 @@
 
     .line 131
     :goto_1
-    invoke-virtual {p0, p2}, Lcom/android/settings/accessibility/ColorPreference;->at(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, p2}, Lcom/android/vendorsettings/accessibility/ColorPreference;->at(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -214,10 +214,10 @@
     const/4 v4, 0x0
 
     .line 83
-    invoke-super {p0, p1}, Lcom/android/settings/accessibility/ListDialogPreference;->onBindView(Landroid/view/View;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/accessibility/ListDialogPreference;->onBindView(Landroid/view/View;)V
 
     .line 85
-    iget-boolean v0, p0, Lcom/android/settings/accessibility/ColorPreference;->Do:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/accessibility/ColorPreference;->Do:Z
 
     if-eqz v0, :cond_0
 
@@ -231,7 +231,7 @@
     check-cast v0, Landroid/widget/ImageView;
 
     .line 87
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ColorPreference;->getValue()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ColorPreference;->getValue()I
 
     move-result v1
 
@@ -251,7 +251,7 @@
 
     .line 94
     :goto_0
-    iget-object v2, p0, Lcom/android/settings/accessibility/ColorPreference;->Dn:Landroid/graphics/drawable/ColorDrawable;
+    iget-object v2, p0, Lcom/android/vendorsettings/accessibility/ColorPreference;->Dn:Landroid/graphics/drawable/ColorDrawable;
 
     if-nez v2, :cond_2
 
@@ -260,16 +260,16 @@
 
     invoke-direct {v2, v1}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
 
-    iput-object v2, p0, Lcom/android/settings/accessibility/ColorPreference;->Dn:Landroid/graphics/drawable/ColorDrawable;
+    iput-object v2, p0, Lcom/android/vendorsettings/accessibility/ColorPreference;->Dn:Landroid/graphics/drawable/ColorDrawable;
 
     .line 96
-    iget-object v1, p0, Lcom/android/settings/accessibility/ColorPreference;->Dn:Landroid/graphics/drawable/ColorDrawable;
+    iget-object v1, p0, Lcom/android/vendorsettings/accessibility/ColorPreference;->Dn:Landroid/graphics/drawable/ColorDrawable;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 101
     :goto_1
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ColorPreference;->getSummary()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ColorPreference;->getSummary()Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -285,7 +285,7 @@
 
     .line 108
     :goto_2
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ColorPreference;->isEnabled()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ColorPreference;->isEnabled()Z
 
     move-result v1
 
@@ -308,7 +308,7 @@
 
     .line 98
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/accessibility/ColorPreference;->Dn:Landroid/graphics/drawable/ColorDrawable;
+    iget-object v2, p0, Lcom/android/vendorsettings/accessibility/ColorPreference;->Dn:Landroid/graphics/drawable/ColorDrawable;
 
     invoke-virtual {v2, v1}, Landroid/graphics/drawable/ColorDrawable;->setColor(I)V
 
@@ -332,7 +332,7 @@
 
     .prologue
     .line 63
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ColorPreference;->getValue()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ColorPreference;->getValue()I
 
     move-result v0
 
@@ -342,7 +342,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-super {p0}, Lcom/android/settings/accessibility/ListDialogPreference;->shouldDisableDependents()Z
+    invoke-super {p0}, Lcom/android/vendorsettings/accessibility/ListDialogPreference;->shouldDisableDependents()Z
 
     move-result v0
 

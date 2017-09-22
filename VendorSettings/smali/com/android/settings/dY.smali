@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dY;
+.class Lcom/android/vendorsettings/dY;
 .super Ljava/lang/Object;
 .source "MiuiApnEditor.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic pY:Lcom/android/settings/MiuiApnEditor;
+.field final synthetic pY:Lcom/android/vendorsettings/MiuiApnEditor;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiApnEditor;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiApnEditor;)V
     .locals 0
 
     .prologue
     .line 49
-    iput-object p1, p0, Lcom/android/settings/dY;->pY:Lcom/android/settings/MiuiApnEditor;
+    iput-object p1, p0, Lcom/android/vendorsettings/dY;->pY:Lcom/android/vendorsettings/MiuiApnEditor;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,20 +30,20 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/android/settings/dY;->pY:Lcom/android/settings/MiuiApnEditor;
+    iget-object v0, p0, Lcom/android/vendorsettings/dY;->pY:Lcom/android/vendorsettings/MiuiApnEditor;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/MiuiApnEditor;->c(Z)Z
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/MiuiApnEditor;->c(Z)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 53
-    iget-object v0, p0, Lcom/android/settings/dY;->pY:Lcom/android/settings/MiuiApnEditor;
+    iget-object v0, p0, Lcom/android/vendorsettings/dY;->pY:Lcom/android/vendorsettings/MiuiApnEditor;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiApnEditor;->finish()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/MiuiApnEditor;->finish()V
 
     .line 55
     :cond_0

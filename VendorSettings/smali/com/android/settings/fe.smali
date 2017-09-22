@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fe;
+.class Lcom/android/vendorsettings/fe;
 .super Ljava/lang/Object;
 .source "MiuiSecurityFingerprintSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic sp:Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;
+.field final synthetic sp:Lcom/android/vendorsettings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 161
-    iput-object p1, p0, Lcom/android/settings/fe;->sp:Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/fe;->sp:Lcom/android/vendorsettings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,9 +51,9 @@
     if-eqz v2, :cond_0
 
     .line 168
-    iget-object v0, p0, Lcom/android/settings/fe;->sp:Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/fe;->sp:Lcom/android/vendorsettings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->a(Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->a(Lcom/android/vendorsettings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;)V
 
     .line 173
     :goto_0
@@ -63,9 +63,9 @@
 
     .line 170
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/fe;->sp:Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;
+    iget-object v2, p0, Lcom/android/vendorsettings/fe;->sp:Lcom/android/vendorsettings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;
 
-    invoke-static {v2, v1, v0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->a(Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v1, v0}, Lcom/android/vendorsettings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->a(Lcom/android/vendorsettings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/HeadsetCalibrateFragment;
-.super Lcom/android/settings/BaseFragment;
+.class public Lcom/android/vendorsettings/HeadsetCalibrateFragment;
+.super Lcom/android/vendorsettings/BaseFragment;
 .source "HeadsetCalibrateFragment.java"
 
 # interfaces
@@ -43,26 +43,26 @@
     const/4 v0, 0x0
 
     .line 16
-    invoke-direct {p0}, Lcom/android/settings/BaseFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/BaseFragment;-><init>()V
 
     .line 21
-    iput-object v1, p0, Lcom/android/settings/HeadsetCalibrateFragment;->ne:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->ne:Ljava/lang/String;
 
     .line 22
-    iput-object v1, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nf:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nf:Ljava/lang/String;
 
     .line 23
-    iput-boolean v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->ng:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->ng:Z
 
     .line 24
-    iput-boolean v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nh:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nh:Z
 
     .line 206
-    new-instance v0, Lcom/android/settings/dk;
+    new-instance v0, Lcom/android/vendorsettings/dk;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/dk;-><init>(Lcom/android/settings/HeadsetCalibrateFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/dk;-><init>(Lcom/android/vendorsettings/HeadsetCalibrateFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->np:Landroid/content/DialogInterface$OnClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->np:Landroid/content/DialogInterface$OnClickListener;
 
     return-void
 .end method
@@ -76,7 +76,7 @@
     .line 173
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->ng:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->ng:Z
 
     .line 174
     const-string v0, "persist.sys.button_jack_switch"
@@ -84,29 +84,29 @@
     invoke-static {v0, p1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 176
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->ni:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->ni:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 177
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nj:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nj:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 178
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nk:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nk:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 179
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nm:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nm:Landroid/view/View;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 180
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nn:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nn:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
@@ -129,14 +129,14 @@
     if-eqz v0, :cond_0
 
     .line 184
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->ni:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->ni:Landroid/widget/TextView;
 
     const v1, 0x7f0c0068
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 185
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nj:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nj:Landroid/widget/TextView;
 
     const v1, 0x7f0c0069
 
@@ -148,14 +148,14 @@
 
     .line 187
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->ni:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->ni:Landroid/widget/TextView;
 
     const v1, 0x7f0c0066
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 188
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nj:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nj:Landroid/widget/TextView;
 
     const v1, 0x7f0c0067
 
@@ -164,12 +164,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/HeadsetCalibrateFragment;Z)Z
+.method static synthetic a(Lcom/android/vendorsettings/HeadsetCalibrateFragment;Z)Z
     .locals 0
 
     .prologue
     .line 16
-    iput-boolean p1, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nh:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nh:Z
 
     return p1
 .end method
@@ -179,18 +179,18 @@
 
     .prologue
     .line 193
-    iget-boolean v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->ng:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->ng:Z
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nh:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nh:Z
 
     if-nez v0, :cond_0
 
     .line 194
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetCalibrateFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -210,7 +210,7 @@
 
     const v1, 0x104000a
 
-    iget-object v2, p0, Lcom/android/settings/HeadsetCalibrateFragment;->np:Landroid/content/DialogInterface$OnClickListener;
+    iget-object v2, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->np:Landroid/content/DialogInterface$OnClickListener;
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -218,7 +218,7 @@
 
     const/high16 v1, 0x1040000
 
-    iget-object v2, p0, Lcom/android/settings/HeadsetCalibrateFragment;->np:Landroid/content/DialogInterface$OnClickListener;
+    iget-object v2, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->np:Landroid/content/DialogInterface$OnClickListener;
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -246,7 +246,7 @@
 
     .prologue
     .line 154
-    invoke-direct {p0}, Lcom/android/settings/HeadsetCalibrateFragment;->eb()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->eb()Z
 
     move-result v0
 
@@ -256,7 +256,7 @@
     .line 156
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lcom/android/settings/HeadsetCalibrateFragment;->no:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->no:Z
 
     .line 158
     :cond_0
@@ -285,7 +285,7 @@
 
     .prologue
     .line 102
-    iget-boolean v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->no:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->no:Z
 
     if-eqz v0, :cond_0
 
@@ -297,10 +297,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->no:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->no:Z
 
     .line 106
-    invoke-super {p0}, Lcom/android/settings/BaseFragment;->finish()V
+    invoke-super {p0}, Lcom/android/vendorsettings/BaseFragment;->finish()V
 
     goto :goto_0
 .end method
@@ -310,17 +310,17 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nk:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nk:Landroid/view/View;
 
     if-ne p1, v0, :cond_0
 
     .line 66
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nh:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nh:Z
 
     .line 67
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetCalibrateFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->finish()V
 
     .line 69
     :cond_0
@@ -332,7 +332,7 @@
 
     .prologue
     .line 123
-    iget-boolean v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->ng:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->ng:Z
 
     if-nez v0, :cond_1
 
@@ -361,7 +361,7 @@
     return v0
 
     :cond_1
-    invoke-super {p0, p1, p2}, Lcom/android/settings/BaseFragment;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/BaseFragment;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 
@@ -377,7 +377,7 @@
     const/4 v1, 0x1
 
     .line 136
-    iget-boolean v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->ng:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->ng:Z
 
     if-nez v0, :cond_4
 
@@ -392,7 +392,7 @@
     :cond_0
     const-string v0, "persist.sys.button_jack_profile"
 
-    iget-object v2, p0, Lcom/android/settings/HeadsetCalibrateFragment;->ne:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->ne:Ljava/lang/String;
 
     invoke-static {v0, v2}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -402,7 +402,7 @@
     const-string v0, "0"
 
     :goto_0
-    invoke-direct {p0, v0}, Lcom/android/settings/HeadsetCalibrateFragment;->F(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->F(Ljava/lang/String;)V
 
     move v0, v1
 
@@ -428,7 +428,7 @@
 
     .line 144
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetCalibrateFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -449,7 +449,7 @@
 
     .line 149
     :cond_4
-    invoke-super {p0, p1, p2}, Lcom/android/settings/BaseFragment;->onKeyUp(ILandroid/view/KeyEvent;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/BaseFragment;->onKeyUp(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 
@@ -470,7 +470,7 @@
     if-ne v0, v1, :cond_0
 
     .line 164
-    invoke-direct {p0}, Lcom/android/settings/HeadsetCalibrateFragment;->eb()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->eb()Z
 
     move-result v0
 
@@ -484,7 +484,7 @@
     return v0
 
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/settings/BaseFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/BaseFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -496,32 +496,32 @@
 
     .prologue
     .line 111
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nl:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nl:Landroid/view/View;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 113
-    iget-boolean v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nh:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nh:Z
 
     if-nez v0, :cond_0
 
     .line 114
     const-string v0, "persist.sys.button_jack_profile"
 
-    iget-object v1, p0, Lcom/android/settings/HeadsetCalibrateFragment;->ne:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->ne:Ljava/lang/String;
 
     invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 115
     const-string v0, "persist.sys.button_jack_switch"
 
-    iget-object v1, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nf:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nf:Ljava/lang/String;
 
     invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 118
     :cond_0
-    invoke-super {p0}, Lcom/android/settings/BaseFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/BaseFragment;->onPause()V
 
     .line 119
     return-void
@@ -532,7 +532,7 @@
 
     .prologue
     .line 90
-    invoke-super {p0}, Lcom/android/settings/BaseFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/BaseFragment;->onResume()V
 
     .line 91
     const-string v0, "persist.sys.button_jack_profile"
@@ -543,7 +543,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->ne:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->ne:Ljava/lang/String;
 
     .line 92
     const-string v0, "persist.sys.button_jack_profile"
@@ -561,7 +561,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nf:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nf:Ljava/lang/String;
 
     .line 94
     const-string v0, "persist.sys.button_jack_switch"
@@ -571,7 +571,7 @@
     invoke-static {v0, v1}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 96
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nl:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nl:Landroid/view/View;
 
     const-wide/16 v2, 0x190
 
@@ -596,7 +596,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->ni:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->ni:Landroid/widget/TextView;
 
     .line 46
     const v0, 0x7f13015b
@@ -607,7 +607,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nj:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nj:Landroid/widget/TextView;
 
     .line 47
     const v0, 0x7f130157
@@ -616,7 +616,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nl:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nl:Landroid/view/View;
 
     .line 48
     const v0, 0x7f130158
@@ -625,7 +625,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nm:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nm:Landroid/view/View;
 
     .line 49
     const v0, 0x7f130159
@@ -634,7 +634,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nn:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nn:Landroid/view/View;
 
     .line 50
     const v0, 0x7f13015c
@@ -643,42 +643,42 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nk:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nk:Landroid/view/View;
 
     .line 52
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->ni:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->ni:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 53
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nj:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nj:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 54
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nk:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nk:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 55
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nm:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nm:Landroid/view/View;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 56
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nn:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nn:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 58
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nk:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nk:Landroid/view/View;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 60
-    invoke-super {p0, p1, p2}, Lcom/android/settings/BaseFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/BaseFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 61
     return-void
@@ -691,13 +691,13 @@
     const/16 v0, 0x8
 
     .line 73
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetCalibrateFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetCalibrateFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -709,7 +709,7 @@
 
     .line 74
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nl:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nl:Landroid/view/View;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
@@ -719,12 +719,12 @@
 
     .line 78
     :cond_1
-    iget-boolean v1, p0, Lcom/android/settings/HeadsetCalibrateFragment;->ng:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->ng:Z
 
     if-eqz v1, :cond_2
 
     .line 79
-    iget-object v1, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nl:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nl:Landroid/view/View;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
 
@@ -732,7 +732,7 @@
 
     .line 81
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nl:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nl:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getVisibility()I
 
@@ -742,12 +742,12 @@
 
     .line 83
     :goto_1
-    iget-object v1, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nl:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nl:Landroid/view/View;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 84
-    iget-object v0, p0, Lcom/android/settings/HeadsetCalibrateFragment;->nl:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->nl:Landroid/view/View;
 
     const-wide/16 v2, 0x190
 

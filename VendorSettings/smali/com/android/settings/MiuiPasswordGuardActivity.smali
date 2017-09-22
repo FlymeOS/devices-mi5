@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiPasswordGuardActivity;
-.super Lcom/android/settings/Settings;
+.class public Lcom/android/vendorsettings/MiuiPasswordGuardActivity;
+.super Lcom/android/vendorsettings/Settings;
 .source "MiuiPasswordGuardActivity.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 5
-    invoke-direct {p0}, Lcom/android/settings/Settings;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/Settings;-><init>()V
 
     return-void
 .end method
@@ -21,7 +21,7 @@
 
     .prologue
     .line 8
-    invoke-super {p0, p1}, Lcom/android/settings/Settings;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/Settings;->onCreate(Landroid/os/Bundle;)V
 
     .line 9
     return-void

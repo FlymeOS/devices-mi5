@@ -1,4 +1,4 @@
-.class Lcom/android/settings/tts/n;
+.class Lcom/android/vendorsettings/tts/n;
 .super Ljava/lang/Object;
 .source "TtsEngineSettingsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ata:Lcom/android/settings/tts/m;
+.field final synthetic ata:Lcom/android/vendorsettings/tts/m;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/tts/m;)V
+.method constructor <init>(Lcom/android/vendorsettings/tts/m;)V
     .locals 0
 
     .prologue
     .line 78
-    iput-object p1, p0, Lcom/android/settings/tts/n;->ata:Lcom/android/settings/tts/m;
+    iput-object p1, p0, Lcom/android/vendorsettings/tts/n;->ata:Lcom/android/vendorsettings/tts/m;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 81
-    iget-object v0, p0, Lcom/android/settings/tts/n;->ata:Lcom/android/settings/tts/m;
+    iget-object v0, p0, Lcom/android/vendorsettings/tts/n;->ata:Lcom/android/vendorsettings/tts/m;
 
-    iget-object v0, v0, Lcom/android/settings/tts/m;->asZ:Lcom/android/settings/tts/l;
+    iget-object v0, v0, Lcom/android/vendorsettings/tts/m;->asZ:Lcom/android/vendorsettings/tts/l;
 
-    invoke-static {v0}, Lcom/android/settings/tts/l;->a(Lcom/android/settings/tts/l;)Landroid/preference/ListPreference;
+    invoke-static {v0}, Lcom/android/vendorsettings/tts/l;->a(Lcom/android/vendorsettings/tts/l;)Landroid/preference/ListPreference;
 
     move-result-object v0
 

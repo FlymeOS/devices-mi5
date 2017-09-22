@@ -1,35 +1,35 @@
-.class public Lcom/android/settings/notification/OtherSoundSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/notification/OtherSoundSettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "OtherSoundSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/search/k;
+.implements Lcom/android/vendorsettings/search/k;
 
 
 # static fields
-.field public static final ajC:Lcom/android/settings/search/a;
+.field public static final ajC:Lcom/android/vendorsettings/search/a;
 
-.field private static final ajT:Lcom/android/settings/notification/SettingPref;
+.field private static final ajT:Lcom/android/vendorsettings/notification/SettingPref;
 
-.field private static final ajU:Lcom/android/settings/notification/SettingPref;
+.field private static final ajU:Lcom/android/vendorsettings/notification/SettingPref;
 
-.field private static final ajV:Lcom/android/settings/notification/SettingPref;
+.field private static final ajV:Lcom/android/vendorsettings/notification/SettingPref;
 
-.field private static final ajW:Lcom/android/settings/notification/SettingPref;
+.field private static final ajW:Lcom/android/vendorsettings/notification/SettingPref;
 
-.field private static final ajX:Lcom/android/settings/notification/SettingPref;
+.field private static final ajX:Lcom/android/vendorsettings/notification/SettingPref;
 
-.field private static final ajY:Lcom/android/settings/notification/SettingPref;
+.field private static final ajY:Lcom/android/vendorsettings/notification/SettingPref;
 
-.field private static final ajZ:Lcom/android/settings/notification/SettingPref;
+.field private static final ajZ:Lcom/android/vendorsettings/notification/SettingPref;
 
-.field private static final aka:Lcom/android/settings/notification/SettingPref;
+.field private static final aka:Lcom/android/vendorsettings/notification/SettingPref;
 
-.field private static final akb:[Lcom/android/settings/notification/SettingPref;
+.field private static final akb:[Lcom/android/vendorsettings/notification/SettingPref;
 
 
 # instance fields
-.field private final akc:Lcom/android/settings/notification/OtherSoundSettings$SettingsObserver;
+.field private final akc:Lcom/android/vendorsettings/notification/OtherSoundSettings$SettingsObserver;
 
 .field private mContext:Landroid/content/Context;
 
@@ -48,7 +48,7 @@
     const/4 v4, 0x1
 
     .line 70
-    new-instance v0, Lcom/android/settings/notification/OtherSoundSettings$1;
+    new-instance v0, Lcom/android/vendorsettings/notification/OtherSoundSettings$1;
 
     const-string v2, "dial_pad_tones"
 
@@ -56,12 +56,12 @@
 
     new-array v5, v9, [I
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/notification/OtherSoundSettings$1;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/notification/OtherSoundSettings$1;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
 
-    sput-object v0, Lcom/android/settings/notification/OtherSoundSettings;->ajT:Lcom/android/settings/notification/SettingPref;
+    sput-object v0, Lcom/android/vendorsettings/notification/OtherSoundSettings;->ajT:Lcom/android/vendorsettings/notification/SettingPref;
 
     .line 78
-    new-instance v0, Lcom/android/settings/notification/SettingPref;
+    new-instance v0, Lcom/android/vendorsettings/notification/SettingPref;
 
     const-string v2, "screen_locking_sounds"
 
@@ -69,12 +69,12 @@
 
     new-array v5, v9, [I
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/notification/SettingPref;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/notification/SettingPref;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
 
-    sput-object v0, Lcom/android/settings/notification/OtherSoundSettings;->ajU:Lcom/android/settings/notification/SettingPref;
+    sput-object v0, Lcom/android/vendorsettings/notification/OtherSoundSettings;->ajU:Lcom/android/vendorsettings/notification/SettingPref;
 
     .line 81
-    new-instance v3, Lcom/android/settings/notification/SettingPref;
+    new-instance v3, Lcom/android/vendorsettings/notification/SettingPref;
 
     const-string v5, "charging_sounds"
 
@@ -84,12 +84,12 @@
 
     move v7, v4
 
-    invoke-direct/range {v3 .. v8}, Lcom/android/settings/notification/SettingPref;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
+    invoke-direct/range {v3 .. v8}, Lcom/android/vendorsettings/notification/SettingPref;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
 
-    sput-object v3, Lcom/android/settings/notification/OtherSoundSettings;->ajV:Lcom/android/settings/notification/SettingPref;
+    sput-object v3, Lcom/android/vendorsettings/notification/OtherSoundSettings;->ajV:Lcom/android/vendorsettings/notification/SettingPref;
 
     .line 84
-    new-instance v3, Lcom/android/settings/notification/OtherSoundSettings$2;
+    new-instance v3, Lcom/android/vendorsettings/notification/OtherSoundSettings$2;
 
     const-string v5, "docking_sounds"
 
@@ -99,12 +99,12 @@
 
     move v7, v4
 
-    invoke-direct/range {v3 .. v8}, Lcom/android/settings/notification/OtherSoundSettings$2;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
+    invoke-direct/range {v3 .. v8}, Lcom/android/vendorsettings/notification/OtherSoundSettings$2;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
 
-    sput-object v3, Lcom/android/settings/notification/OtherSoundSettings;->ajW:Lcom/android/settings/notification/SettingPref;
+    sput-object v3, Lcom/android/vendorsettings/notification/OtherSoundSettings;->ajW:Lcom/android/vendorsettings/notification/SettingPref;
 
     .line 92
-    new-instance v0, Lcom/android/settings/notification/OtherSoundSettings$3;
+    new-instance v0, Lcom/android/vendorsettings/notification/OtherSoundSettings$3;
 
     const-string v2, "touch_sounds"
 
@@ -112,12 +112,12 @@
 
     new-array v5, v9, [I
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/notification/OtherSoundSettings$3;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/notification/OtherSoundSettings$3;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
 
-    sput-object v0, Lcom/android/settings/notification/OtherSoundSettings;->ajX:Lcom/android/settings/notification/SettingPref;
+    sput-object v0, Lcom/android/vendorsettings/notification/OtherSoundSettings;->ajX:Lcom/android/vendorsettings/notification/SettingPref;
 
     .line 106
-    new-instance v0, Lcom/android/settings/notification/OtherSoundSettings$4;
+    new-instance v0, Lcom/android/vendorsettings/notification/OtherSoundSettings$4;
 
     const-string v2, "vibrate_on_touch"
 
@@ -125,12 +125,12 @@
 
     new-array v5, v9, [I
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/notification/OtherSoundSettings$4;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/notification/OtherSoundSettings$4;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
 
-    sput-object v0, Lcom/android/settings/notification/OtherSoundSettings;->ajY:Lcom/android/settings/notification/SettingPref;
+    sput-object v0, Lcom/android/vendorsettings/notification/OtherSoundSettings;->ajY:Lcom/android/vendorsettings/notification/SettingPref;
 
     .line 114
-    new-instance v3, Lcom/android/settings/notification/OtherSoundSettings$5;
+    new-instance v3, Lcom/android/vendorsettings/notification/OtherSoundSettings$5;
 
     const-string v5, "dock_audio_media"
 
@@ -142,12 +142,12 @@
 
     move v7, v9
 
-    invoke-direct/range {v3 .. v8}, Lcom/android/settings/notification/OtherSoundSettings$5;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
+    invoke-direct/range {v3 .. v8}, Lcom/android/vendorsettings/notification/OtherSoundSettings$5;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
 
-    sput-object v3, Lcom/android/settings/notification/OtherSoundSettings;->ajZ:Lcom/android/settings/notification/SettingPref;
+    sput-object v3, Lcom/android/vendorsettings/notification/OtherSoundSettings;->ajZ:Lcom/android/vendorsettings/notification/SettingPref;
 
     .line 135
-    new-instance v3, Lcom/android/settings/notification/OtherSoundSettings$6;
+    new-instance v3, Lcom/android/vendorsettings/notification/OtherSoundSettings$6;
 
     const-string v5, "emergency_tone"
 
@@ -159,63 +159,63 @@
 
     move v7, v9
 
-    invoke-direct/range {v3 .. v8}, Lcom/android/settings/notification/OtherSoundSettings$6;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
+    invoke-direct/range {v3 .. v8}, Lcom/android/vendorsettings/notification/OtherSoundSettings$6;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
 
-    sput-object v3, Lcom/android/settings/notification/OtherSoundSettings;->aka:Lcom/android/settings/notification/SettingPref;
+    sput-object v3, Lcom/android/vendorsettings/notification/OtherSoundSettings;->aka:Lcom/android/vendorsettings/notification/SettingPref;
 
     .line 159
     const/16 v0, 0x8
 
-    new-array v0, v0, [Lcom/android/settings/notification/SettingPref;
+    new-array v0, v0, [Lcom/android/vendorsettings/notification/SettingPref;
 
-    sget-object v2, Lcom/android/settings/notification/OtherSoundSettings;->ajT:Lcom/android/settings/notification/SettingPref;
+    sget-object v2, Lcom/android/vendorsettings/notification/OtherSoundSettings;->ajT:Lcom/android/vendorsettings/notification/SettingPref;
 
     aput-object v2, v0, v9
 
-    sget-object v2, Lcom/android/settings/notification/OtherSoundSettings;->ajU:Lcom/android/settings/notification/SettingPref;
+    sget-object v2, Lcom/android/vendorsettings/notification/OtherSoundSettings;->ajU:Lcom/android/vendorsettings/notification/SettingPref;
 
     aput-object v2, v0, v4
 
-    sget-object v2, Lcom/android/settings/notification/OtherSoundSettings;->ajV:Lcom/android/settings/notification/SettingPref;
+    sget-object v2, Lcom/android/vendorsettings/notification/OtherSoundSettings;->ajV:Lcom/android/vendorsettings/notification/SettingPref;
 
     aput-object v2, v0, v1
 
-    sget-object v1, Lcom/android/settings/notification/OtherSoundSettings;->ajW:Lcom/android/settings/notification/SettingPref;
+    sget-object v1, Lcom/android/vendorsettings/notification/OtherSoundSettings;->ajW:Lcom/android/vendorsettings/notification/SettingPref;
 
     aput-object v1, v0, v10
 
     const/4 v1, 0x4
 
-    sget-object v2, Lcom/android/settings/notification/OtherSoundSettings;->ajX:Lcom/android/settings/notification/SettingPref;
+    sget-object v2, Lcom/android/vendorsettings/notification/OtherSoundSettings;->ajX:Lcom/android/vendorsettings/notification/SettingPref;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x5
 
-    sget-object v2, Lcom/android/settings/notification/OtherSoundSettings;->ajY:Lcom/android/settings/notification/SettingPref;
+    sget-object v2, Lcom/android/vendorsettings/notification/OtherSoundSettings;->ajY:Lcom/android/vendorsettings/notification/SettingPref;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x6
 
-    sget-object v2, Lcom/android/settings/notification/OtherSoundSettings;->ajZ:Lcom/android/settings/notification/SettingPref;
+    sget-object v2, Lcom/android/vendorsettings/notification/OtherSoundSettings;->ajZ:Lcom/android/vendorsettings/notification/SettingPref;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x7
 
-    sget-object v2, Lcom/android/settings/notification/OtherSoundSettings;->aka:Lcom/android/settings/notification/SettingPref;
+    sget-object v2, Lcom/android/vendorsettings/notification/OtherSoundSettings;->aka:Lcom/android/vendorsettings/notification/SettingPref;
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/notification/OtherSoundSettings;->akb:[Lcom/android/settings/notification/SettingPref;
+    sput-object v0, Lcom/android/vendorsettings/notification/OtherSoundSettings;->akb:[Lcom/android/vendorsettings/notification/SettingPref;
 
     .line 255
-    new-instance v0, Lcom/android/settings/notification/OtherSoundSettings$7;
+    new-instance v0, Lcom/android/vendorsettings/notification/OtherSoundSettings$7;
 
-    invoke-direct {v0}, Lcom/android/settings/notification/OtherSoundSettings$7;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/notification/OtherSoundSettings$7;-><init>()V
 
-    sput-object v0, Lcom/android/settings/notification/OtherSoundSettings;->ajC:Lcom/android/settings/search/a;
+    sput-object v0, Lcom/android/vendorsettings/notification/OtherSoundSettings;->ajC:Lcom/android/vendorsettings/search/a;
 
     return-void
 
@@ -240,14 +240,14 @@
 
     .prologue
     .line 47
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 170
-    new-instance v0, Lcom/android/settings/notification/OtherSoundSettings$SettingsObserver;
+    new-instance v0, Lcom/android/vendorsettings/notification/OtherSoundSettings$SettingsObserver;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/notification/OtherSoundSettings$SettingsObserver;-><init>(Lcom/android/settings/notification/OtherSoundSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/notification/OtherSoundSettings$SettingsObserver;-><init>(Lcom/android/vendorsettings/notification/OtherSoundSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/notification/OtherSoundSettings;->akc:Lcom/android/settings/notification/OtherSoundSettings$SettingsObserver;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/OtherSoundSettings;->akc:Lcom/android/vendorsettings/notification/OtherSoundSettings$SettingsObserver;
 
     .line 225
     return-void
@@ -258,31 +258,31 @@
 
     .prologue
     .line 47
-    invoke-static {p0}, Lcom/android/settings/notification/OtherSoundSettings;->bL(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/vendorsettings/notification/OtherSoundSettings;->bL(Landroid/content/Context;)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/notification/OtherSoundSettings;)Landroid/content/ContentResolver;
+.method static synthetic a(Lcom/android/vendorsettings/notification/OtherSoundSettings;)Landroid/content/ContentResolver;
     .locals 1
 
     .prologue
     .line 47
-    invoke-virtual {p0}, Lcom/android/settings/notification/OtherSoundSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/notification/OtherSoundSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/notification/OtherSoundSettings;)Landroid/content/Context;
+.method static synthetic b(Lcom/android/vendorsettings/notification/OtherSoundSettings;)Landroid/content/Context;
     .locals 1
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/android/settings/notification/OtherSoundSettings;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/OtherSoundSettings;->mContext:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -343,19 +343,19 @@
 
     .prologue
     .line 47
-    invoke-static {p0}, Lcom/android/settings/notification/OtherSoundSettings;->bK(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/vendorsettings/notification/OtherSoundSettings;->bK(Landroid/content/Context;)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method static synthetic su()[Lcom/android/settings/notification/SettingPref;
+.method static synthetic su()[Lcom/android/vendorsettings/notification/SettingPref;
     .locals 1
 
     .prologue
     .line 47
-    sget-object v0, Lcom/android/settings/notification/OtherSoundSettings;->akb:[Lcom/android/settings/notification/SettingPref;
+    sget-object v0, Lcom/android/vendorsettings/notification/OtherSoundSettings;->akb:[Lcom/android/vendorsettings/notification/SettingPref;
 
     return-object v0
 .end method
@@ -377,7 +377,7 @@
 
     .prologue
     .line 176
-    const-class v0, Lcom/android/settings/notification/OtherSoundSettings;
+    const-class v0, Lcom/android/vendorsettings/notification/OtherSoundSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -391,22 +391,22 @@
 
     .prologue
     .line 191
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 193
     const v0, 0x7f08006d
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/notification/OtherSoundSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/notification/OtherSoundSettings;->addPreferencesFromResource(I)V
 
     .line 195
-    invoke-virtual {p0}, Lcom/android/settings/notification/OtherSoundSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/notification/OtherSoundSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/OtherSoundSettings;->mContext:Landroid/content/Context;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/OtherSoundSettings;->mContext:Landroid/content/Context;
 
     .line 197
-    sget-object v1, Lcom/android/settings/notification/OtherSoundSettings;->akb:[Lcom/android/settings/notification/SettingPref;
+    sget-object v1, Lcom/android/vendorsettings/notification/OtherSoundSettings;->akb:[Lcom/android/vendorsettings/notification/SettingPref;
 
     array-length v2, v1
 
@@ -418,7 +418,7 @@
     aget-object v3, v1, v0
 
     .line 198
-    invoke-virtual {v3, p0}, Lcom/android/settings/notification/SettingPref;->c(Lcom/android/settings/SettingsPreferenceFragment;)Landroid/preference/Preference;
+    invoke-virtual {v3, p0}, Lcom/android/vendorsettings/notification/SettingPref;->c(Lcom/android/vendorsettings/SettingsPreferenceFragment;)Landroid/preference/Preference;
 
     .line 197
     add-int/lit8 v0, v0, 0x1
@@ -435,14 +435,14 @@
 
     .prologue
     .line 210
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPause()V
 
     .line 211
-    iget-object v0, p0, Lcom/android/settings/notification/OtherSoundSettings;->akc:Lcom/android/settings/notification/OtherSoundSettings$SettingsObserver;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/OtherSoundSettings;->akc:Lcom/android/vendorsettings/notification/OtherSoundSettings$SettingsObserver;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/notification/OtherSoundSettings$SettingsObserver;->aX(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/notification/OtherSoundSettings$SettingsObserver;->aX(Z)V
 
     .line 212
     return-void
@@ -453,14 +453,14 @@
 
     .prologue
     .line 204
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 205
-    iget-object v0, p0, Lcom/android/settings/notification/OtherSoundSettings;->akc:Lcom/android/settings/notification/OtherSoundSettings$SettingsObserver;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/OtherSoundSettings;->akc:Lcom/android/vendorsettings/notification/OtherSoundSettings$SettingsObserver;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/notification/OtherSoundSettings$SettingsObserver;->aX(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/notification/OtherSoundSettings$SettingsObserver;->aX(Z)V
 
     .line 206
     return-void

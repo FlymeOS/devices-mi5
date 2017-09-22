@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/dU;
-.super Lcom/android/settings/ac;
+.class public Lcom/android/vendorsettings/dU;
+.super Lcom/android/vendorsettings/ac;
 .source "MiuiAirplaneModeEnabler.java"
 
 
@@ -42,7 +42,7 @@
 
     .prologue
     .line 70
-    iget-object v0, p0, Lcom/android/settings/dU;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dU;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -58,7 +58,7 @@
     invoke-static {v1, v2, v0}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 73
-    iget-object v0, p0, Lcom/android/settings/dU;->co:Lmiui/widget/SlidingButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/dU;->co:Lmiui/widget/SlidingButton;
 
     invoke-virtual {v0, p1}, Lmiui/widget/SlidingButton;->setChecked(Z)V
 
@@ -75,7 +75,7 @@
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 78
-    iget-object v1, p0, Lcom/android/settings/dU;->mActivity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/android/vendorsettings/dU;->mActivity:Landroid/app/Activity;
 
     sget-object v2, Landroid/os/UserHandle;->ALL:Landroid/os/UserHandle;
 
@@ -123,7 +123,7 @@
     if-eqz v0, :cond_0
 
     .line 96
-    iget-object v0, p0, Lcom/android/settings/dU;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dU;->mActivity:Landroid/app/Activity;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -143,13 +143,13 @@
 
     .line 100
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/dU;->co:Lmiui/widget/SlidingButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/dU;->co:Lmiui/widget/SlidingButton;
 
     invoke-virtual {v0}, Lmiui/widget/SlidingButton;->isChecked()Z
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dU;->b(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dU;->b(Z)V
 
     goto :goto_0
 .end method
@@ -159,23 +159,23 @@
 
     .prologue
     .line 56
-    iget-boolean v0, p0, Lcom/android/settings/dU;->pS:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/dU;->pS:Z
 
     if-eqz v0, :cond_0
 
     .line 57
-    iget-object v0, p0, Lcom/android/settings/dU;->L:Lcom/android/internal/telephony/PhoneStateIntentReceiver;
+    iget-object v0, p0, Lcom/android/vendorsettings/dU;->L:Lcom/android/internal/telephony/PhoneStateIntentReceiver;
 
     invoke-virtual {v0}, Lcom/android/internal/telephony/PhoneStateIntentReceiver;->unregisterIntent()V
 
     .line 58
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/dU;->pS:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/dU;->pS:Z
 
     .line 60
     :cond_0
-    invoke-super {p0}, Lcom/android/settings/ac;->pause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/ac;->pause()V
 
     .line 61
     return-void
@@ -186,23 +186,23 @@
 
     .prologue
     .line 48
-    iget-boolean v0, p0, Lcom/android/settings/dU;->pS:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/dU;->pS:Z
 
     if-nez v0, :cond_0
 
     .line 49
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/dU;->pS:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/dU;->pS:Z
 
     .line 50
-    iget-object v0, p0, Lcom/android/settings/dU;->L:Lcom/android/internal/telephony/PhoneStateIntentReceiver;
+    iget-object v0, p0, Lcom/android/vendorsettings/dU;->L:Lcom/android/internal/telephony/PhoneStateIntentReceiver;
 
     invoke-virtual {v0}, Lcom/android/internal/telephony/PhoneStateIntentReceiver;->registerIntent()V
 
     .line 52
     :cond_0
-    invoke-super {p0}, Lcom/android/settings/ac;->resume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/ac;->resume()V
 
     .line 53
     return-void
@@ -213,11 +213,11 @@
 
     .prologue
     .line 119
-    iget-object v0, p0, Lcom/android/settings/dU;->co:Lmiui/widget/SlidingButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/dU;->co:Lmiui/widget/SlidingButton;
 
-    iget-object v1, p0, Lcom/android/settings/dU;->mActivity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/android/vendorsettings/dU;->mActivity:Landroid/app/Activity;
 
-    invoke-static {v1}, Lcom/android/settings/dU;->c(Landroid/content/Context;)Z
+    invoke-static {v1}, Lcom/android/vendorsettings/dU;->c(Landroid/content/Context;)Z
 
     move-result v1
 

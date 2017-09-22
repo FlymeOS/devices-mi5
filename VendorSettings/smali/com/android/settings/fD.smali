@@ -1,31 +1,31 @@
-.class Lcom/android/settings/fD;
+.class Lcom/android/vendorsettings/fD;
 .super Landroid/content/BroadcastReceiver;
 .source "MiuiWirelessSettings.java"
 
 
 # instance fields
-.field final synthetic uD:Lcom/android/settings/MiuiWirelessSettings;
+.field final synthetic uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/MiuiWirelessSettings;)V
+.method private constructor <init>(Lcom/android/vendorsettings/MiuiWirelessSettings;)V
     .locals 0
 
     .prologue
     .line 152
-    iput-object p1, p0, Lcom/android/settings/fD;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/fD;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/MiuiWirelessSettings;Lcom/android/settings/fA;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/MiuiWirelessSettings;Lcom/android/vendorsettings/fA;)V
     .locals 0
 
     .prologue
     .line 152
-    invoke-direct {p0, p1}, Lcom/android/settings/fD;-><init>(Lcom/android/settings/MiuiWirelessSettings;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/fD;-><init>(Lcom/android/vendorsettings/MiuiWirelessSettings;)V
 
     return-void
 .end method
@@ -76,7 +76,7 @@
     move-result-object v2
 
     .line 164
-    iget-object v3, p0, Lcom/android/settings/fD;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iget-object v3, p0, Lcom/android/vendorsettings/fD;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -114,7 +114,7 @@
 
     check-cast v2, [Ljava/lang/String;
 
-    invoke-static {v3, v0, v1, v2}, Lcom/android/settings/MiuiWirelessSettings;->a(Lcom/android/settings/MiuiWirelessSettings;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-static {v3, v0, v1, v2}, Lcom/android/vendorsettings/MiuiWirelessSettings;->a(Lcom/android/vendorsettings/MiuiWirelessSettings;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 199
     :cond_0
@@ -132,14 +132,14 @@
     if-eqz v1, :cond_2
 
     .line 168
-    iget-object v0, p0, Lcom/android/settings/fD;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fD;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
-    invoke-static {v0, v3}, Lcom/android/settings/MiuiWirelessSettings;->a(Lcom/android/settings/MiuiWirelessSettings;Z)Z
+    invoke-static {v0, v3}, Lcom/android/vendorsettings/MiuiWirelessSettings;->a(Lcom/android/vendorsettings/MiuiWirelessSettings;Z)Z
 
     .line 169
-    iget-object v0, p0, Lcom/android/settings/fD;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fD;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiWirelessSettings;->b(Lcom/android/settings/MiuiWirelessSettings;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->b(Lcom/android/vendorsettings/MiuiWirelessSettings;)V
 
     goto :goto_0
 
@@ -154,14 +154,14 @@
     if-eqz v1, :cond_3
 
     .line 171
-    iget-object v0, p0, Lcom/android/settings/fD;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fD;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
-    invoke-static {v0, v2}, Lcom/android/settings/MiuiWirelessSettings;->a(Lcom/android/settings/MiuiWirelessSettings;Z)Z
+    invoke-static {v0, v2}, Lcom/android/vendorsettings/MiuiWirelessSettings;->a(Lcom/android/vendorsettings/MiuiWirelessSettings;Z)Z
 
     .line 172
-    iget-object v0, p0, Lcom/android/settings/fD;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fD;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiWirelessSettings;->b(Lcom/android/settings/MiuiWirelessSettings;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->b(Lcom/android/vendorsettings/MiuiWirelessSettings;)V
 
     goto :goto_0
 
@@ -176,7 +176,7 @@
     if-eqz v1, :cond_4
 
     .line 174
-    iget-object v0, p0, Lcom/android/settings/fD;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fD;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
     const-string v1, "connected"
 
@@ -184,12 +184,12 @@
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiWirelessSettings;->b(Lcom/android/settings/MiuiWirelessSettings;Z)Z
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/MiuiWirelessSettings;->b(Lcom/android/vendorsettings/MiuiWirelessSettings;Z)Z
 
     .line 175
-    iget-object v0, p0, Lcom/android/settings/fD;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fD;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiWirelessSettings;->b(Lcom/android/settings/MiuiWirelessSettings;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->b(Lcom/android/vendorsettings/MiuiWirelessSettings;)V
 
     goto :goto_0
 
@@ -204,9 +204,9 @@
     if-eqz v0, :cond_0
 
     .line 177
-    iget-object v0, p0, Lcom/android/settings/fD;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fD;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiWirelessSettings;->c(Lcom/android/settings/MiuiWirelessSettings;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->c(Lcom/android/vendorsettings/MiuiWirelessSettings;)Z
 
     move-result v0
 
@@ -226,17 +226,17 @@
     .line 197
     :cond_5
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/fD;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fD;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiWirelessSettings;->b(Lcom/android/settings/MiuiWirelessSettings;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->b(Lcom/android/vendorsettings/MiuiWirelessSettings;)V
 
     goto :goto_0
 
     .line 181
     :sswitch_0
-    iget-object v0, p0, Lcom/android/settings/fD;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fD;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiWirelessSettings;->a(Lcom/android/settings/MiuiWirelessSettings;)Ljava/util/concurrent/atomic/AtomicReference;
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->a(Lcom/android/vendorsettings/MiuiWirelessSettings;)Ljava/util/concurrent/atomic/AtomicReference;
 
     move-result-object v0
 
@@ -253,17 +253,17 @@
     invoke-virtual {v0, v3}, Landroid/bluetooth/BluetoothPan;->setBluetoothTethering(Z)V
 
     .line 184
-    iget-object v0, p0, Lcom/android/settings/fD;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fD;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
-    invoke-static {v0, v2}, Lcom/android/settings/MiuiWirelessSettings;->c(Lcom/android/settings/MiuiWirelessSettings;Z)Z
+    invoke-static {v0, v2}, Lcom/android/vendorsettings/MiuiWirelessSettings;->c(Lcom/android/vendorsettings/MiuiWirelessSettings;Z)Z
 
     goto :goto_1
 
     .line 190
     :sswitch_1
-    iget-object v0, p0, Lcom/android/settings/fD;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fD;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
-    invoke-static {v0, v2}, Lcom/android/settings/MiuiWirelessSettings;->c(Lcom/android/settings/MiuiWirelessSettings;Z)Z
+    invoke-static {v0, v2}, Lcom/android/vendorsettings/MiuiWirelessSettings;->c(Lcom/android/vendorsettings/MiuiWirelessSettings;Z)Z
 
     goto :goto_1
 

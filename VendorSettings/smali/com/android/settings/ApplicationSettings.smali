@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ApplicationSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/ApplicationSettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "ApplicationSettings.java"
 
 
@@ -15,7 +15,7 @@
 
     .prologue
     .line 29
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -27,7 +27,7 @@
     const/4 v0, 0x0
 
     .line 119
-    invoke-virtual {p0}, Lcom/android/settings/ApplicationSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApplicationSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -50,7 +50,7 @@
 
     .prologue
     .line 135
-    invoke-virtual {p0}, Lcom/android/settings/ApplicationSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApplicationSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -112,7 +112,7 @@
 
     .line 127
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/ApplicationSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApplicationSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -133,7 +133,7 @@
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 131
-    invoke-virtual {p0}, Lcom/android/settings/ApplicationSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApplicationSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -156,7 +156,7 @@
 
     .prologue
     .line 48
-    const-class v0, Lcom/android/settings/ApplicationSettings;
+    const-class v0, Lcom/android/vendorsettings/ApplicationSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -181,7 +181,7 @@
     if-eqz v0, :cond_0
 
     .line 92
-    invoke-virtual {p0}, Lcom/android/settings/ApplicationSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApplicationSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -193,7 +193,7 @@
 
     .line 105
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/ApplicationSettings;->bv:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApplicationSettings;->bv:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p1}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
@@ -211,7 +211,7 @@
     if-eqz v0, :cond_1
 
     .line 95
-    invoke-virtual {p0}, Lcom/android/settings/ApplicationSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApplicationSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -234,7 +234,7 @@
     if-eqz v0, :cond_2
 
     .line 98
-    invoke-virtual {p0}, Lcom/android/settings/ApplicationSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApplicationSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -246,7 +246,7 @@
 
     .line 102
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/ApplicationSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApplicationSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -264,55 +264,55 @@
     const/4 v1, 0x0
 
     .line 58
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 60
     const v0, 0x7f080018
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApplicationSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApplicationSettings;->addPreferencesFromResource(I)V
 
     .line 62
     const-string v0, "toggle_advanced_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApplicationSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApplicationSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApplicationSettings;->bu:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApplicationSettings;->bu:Landroid/preference/CheckBoxPreference;
 
     .line 64
-    iget-object v0, p0, Lcom/android/settings/ApplicationSettings;->bu:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApplicationSettings;->bu:Landroid/preference/CheckBoxPreference;
 
-    invoke-direct {p0}, Lcom/android/settings/ApplicationSettings;->N()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/ApplicationSettings;->N()Z
 
     move-result v2
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 65
-    invoke-virtual {p0}, Lcom/android/settings/ApplicationSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApplicationSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/ApplicationSettings;->bu:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApplicationSettings;->bu:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 72
     const-string v0, "app_install_location"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApplicationSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApplicationSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApplicationSettings;->bv:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApplicationSettings;->bv:Landroid/preference/ListPreference;
 
     .line 74
-    invoke-virtual {p0}, Lcom/android/settings/ApplicationSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApplicationSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -331,11 +331,11 @@
     if-nez v0, :cond_1
 
     .line 77
-    invoke-virtual {p0}, Lcom/android/settings/ApplicationSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApplicationSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/ApplicationSettings;->bv:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApplicationSettings;->bv:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -351,20 +351,20 @@
 
     .line 79
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/ApplicationSettings;->bv:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApplicationSettings;->bv:Landroid/preference/ListPreference;
 
-    invoke-direct {p0}, Lcom/android/settings/ApplicationSettings;->O()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/ApplicationSettings;->O()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 80
-    iget-object v0, p0, Lcom/android/settings/ApplicationSettings;->bv:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApplicationSettings;->bv:Landroid/preference/ListPreference;
 
-    new-instance v1, Lcom/android/settings/M;
+    new-instance v1, Lcom/android/vendorsettings/M;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/M;-><init>(Lcom/android/settings/ApplicationSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/M;-><init>(Lcom/android/vendorsettings/ApplicationSettings;)V
 
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -376,23 +376,23 @@
 
     .prologue
     .line 110
-    iget-object v0, p0, Lcom/android/settings/ApplicationSettings;->bu:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApplicationSettings;->bu:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_0
 
     .line 111
-    iget-object v0, p0, Lcom/android/settings/ApplicationSettings;->bu:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApplicationSettings;->bu:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
     .line 112
-    invoke-direct {p0, v0}, Lcom/android/settings/ApplicationSettings;->f(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/ApplicationSettings;->f(Z)V
 
     .line 115
     :cond_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 

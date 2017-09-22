@@ -1,26 +1,26 @@
-.class public Lcom/android/settings/MiuiDisplaySettings;
-.super Lcom/android/settings/DisplaySettings;
+.class public Lcom/android/vendorsettings/MiuiDisplaySettings;
+.super Lcom/android/vendorsettings/DisplaySettings;
 .source "MiuiDisplaySettings.java"
 
 
 # instance fields
 .field private qA:Landroid/preference/CheckBoxPreference;
 
-.field private qB:Lcom/android/settings/display/ResolutionListPreference;
+.field private qB:Lcom/android/vendorsettings/display/ResolutionListPreference;
 
 .field private qC:Landroid/database/ContentObserver;
 
-.field private qD:Lcom/android/settings/ag;
+.field private qD:Lcom/android/vendorsettings/ag;
 
 .field private qE:Lmiui/preference/ValuePreference;
 
-.field private qF:Lcom/android/settings/ag;
+.field private qF:Lcom/android/vendorsettings/ag;
 
 .field private qG:Lmiui/preference/ValuePreference;
 
 .field private qx:Landroid/preference/CheckBoxPreference;
 
-.field private qy:Lcom/android/settings/fy;
+.field private qy:Lcom/android/vendorsettings/fy;
 
 .field private qz:Landroid/preference/CheckBoxPreference;
 
@@ -31,7 +31,7 @@
 
     .prologue
     .line 33
-    invoke-direct {p0}, Lcom/android/settings/DisplaySettings;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/DisplaySettings;-><init>()V
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     .prologue
     .line 244
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -53,42 +53,42 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiDisplaySettings;)V
+.method static synthetic a(Lcom/android/vendorsettings/MiuiDisplaySettings;)V
     .locals 0
 
     .prologue
     .line 33
-    invoke-direct {p0}, Lcom/android/settings/MiuiDisplaySettings;->eZ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->eZ()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiDisplaySettings;Z)V
+.method static synthetic a(Lcom/android/vendorsettings/MiuiDisplaySettings;Z)V
     .locals 0
 
     .prologue
     .line 33
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiDisplaySettings;->E(Z)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/MiuiDisplaySettings;->E(Z)V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/MiuiDisplaySettings;)Lmiui/preference/ValuePreference;
+.method static synthetic b(Lcom/android/vendorsettings/MiuiDisplaySettings;)Lmiui/preference/ValuePreference;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qE:Lmiui/preference/ValuePreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qE:Lmiui/preference/ValuePreference;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/MiuiDisplaySettings;)Lmiui/preference/ValuePreference;
+.method static synthetic c(Lcom/android/vendorsettings/MiuiDisplaySettings;)Lmiui/preference/ValuePreference;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qG:Lmiui/preference/ValuePreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qG:Lmiui/preference/ValuePreference;
 
     return-object v0
 .end method
@@ -100,7 +100,7 @@
     .line 201
     const-string v0, "screen_paper_mode"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -115,11 +115,11 @@
     invoke-virtual {v0, v1}, Lmiui/preference/ValuePreference;->setShowRightArrow(Z)V
 
     .line 204
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/display/PaperModeFragment;->bj(Landroid/content/Context;)Z
+    invoke-static {v1}, Lcom/android/vendorsettings/display/PaperModeFragment;->bj(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -146,14 +146,14 @@
 
     .prologue
     .line 209
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qD:Lcom/android/settings/ag;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qD:Lcom/android/vendorsettings/ag;
 
-    invoke-virtual {v0}, Lcom/android/settings/ag;->af()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/ag;->af()V
 
     .line 210
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qF:Lcom/android/settings/ag;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qF:Lcom/android/vendorsettings/ag;
 
-    invoke-virtual {v0}, Lcom/android/settings/ag;->af()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/ag;->af()V
 
     .line 211
     return-void
@@ -172,10 +172,10 @@
     const/4 v4, 0x0
 
     .line 58
-    invoke-super {p0, p1}, Lcom/android/settings/DisplaySettings;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/DisplaySettings;->onCreate(Landroid/os/Bundle;)V
 
     .line 60
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -216,16 +216,16 @@
     .line 70
     :cond_0
     :goto_0
-    invoke-static {}, Lcom/android/settings/fy;->gg()Lcom/android/settings/fy;
+    invoke-static {}, Lcom/android/vendorsettings/fy;->gg()Lcom/android/vendorsettings/fy;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qy:Lcom/android/settings/fy;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qy:Lcom/android/vendorsettings/fy;
 
     .line 71
     const-string v0, "touch_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -240,7 +240,7 @@
 
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    iput-object v1, p0, Lcom/android/settings/MiuiDisplaySettings;->qx:Landroid/preference/CheckBoxPreference;
+    iput-object v1, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qx:Landroid/preference/CheckBoxPreference;
 
     .line 74
     const-string v1, "support_touch_sensitive"
@@ -252,12 +252,12 @@
     if-nez v1, :cond_c
 
     .line 75
-    iget-object v1, p0, Lcom/android/settings/MiuiDisplaySettings;->qx:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qx:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
     .line 76
-    iput-object v5, p0, Lcom/android/settings/MiuiDisplaySettings;->qx:Landroid/preference/CheckBoxPreference;
+    iput-object v5, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qx:Landroid/preference/CheckBoxPreference;
 
     .line 81
     :goto_1
@@ -268,7 +268,7 @@
     if-nez v1, :cond_1
 
     .line 82
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -278,24 +278,24 @@
     :cond_1
     const-string v0, "line_breaking"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qz:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qz:Landroid/preference/CheckBoxPreference;
 
     .line 89
     const-string v0, "gesture_wakeup"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qA:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qA:Landroid/preference/CheckBoxPreference;
 
     .line 90
     const-string v0, "support_gesture_wakeup"
@@ -307,11 +307,11 @@
     if-nez v0, :cond_d
 
     .line 91
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MiuiDisplaySettings;->qA:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qA:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -319,7 +319,7 @@
     :goto_2
     const-string v0, "screen_timeout"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -327,7 +327,7 @@
     if-eqz v0, :cond_2
 
     .line 102
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -337,16 +337,16 @@
     :cond_2
     const-string v0, "screen_resolution"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/display/ResolutionListPreference;
+    check-cast v0, Lcom/android/vendorsettings/display/ResolutionListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qB:Lcom/android/settings/display/ResolutionListPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qB:Lcom/android/vendorsettings/display/ResolutionListPreference;
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qB:Lcom/android/settings/display/ResolutionListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qB:Lcom/android/vendorsettings/display/ResolutionListPreference;
 
     if-eqz v0, :cond_3
 
@@ -359,16 +359,16 @@
     if-nez v0, :cond_3
 
     .line 108
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MiuiDisplaySettings;->qB:Lcom/android/settings/display/ResolutionListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qB:Lcom/android/vendorsettings/display/ResolutionListPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 109
-    iput-object v5, p0, Lcom/android/settings/MiuiDisplaySettings;->qB:Lcom/android/settings/display/ResolutionListPreference;
+    iput-object v5, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qB:Lcom/android/vendorsettings/display/ResolutionListPreference;
 
     .line 111
     :cond_3
@@ -379,7 +379,7 @@
     .line 112
     const-string v0, "font_settings_cat"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -389,7 +389,7 @@
     if-eqz v0, :cond_4
 
     .line 114
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -408,7 +408,7 @@
     .line 119
     const-string v0, "screen_effect"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -416,7 +416,7 @@
     if-eqz v0, :cond_5
 
     .line 121
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -433,7 +433,7 @@
     .line 126
     const-string v0, "screen_paper_mode"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -441,7 +441,7 @@
     if-eqz v0, :cond_6
 
     .line 128
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -450,87 +450,87 @@
     .line 143
     :cond_6
     :goto_3
-    new-instance v0, Lcom/android/settings/display/k;
+    new-instance v0, Lcom/android/vendorsettings/display/k;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1, v5}, Lcom/android/settings/display/k;-><init>(Landroid/content/Context;Landroid/widget/TextView;)V
+    invoke-direct {v0, v1, v5}, Lcom/android/vendorsettings/display/k;-><init>(Landroid/content/Context;Landroid/widget/TextView;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qD:Lcom/android/settings/ag;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qD:Lcom/android/vendorsettings/ag;
 
     .line 144
     const-string v0, "font_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Lmiui/preference/ValuePreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qE:Lmiui/preference/ValuePreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qE:Lmiui/preference/ValuePreference;
 
     .line 145
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qE:Lmiui/preference/ValuePreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qE:Lmiui/preference/ValuePreference;
 
     if-eqz v0, :cond_7
 
     .line 146
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qE:Lmiui/preference/ValuePreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qE:Lmiui/preference/ValuePreference;
 
     invoke-virtual {v0, v6}, Lmiui/preference/ValuePreference;->setShowRightArrow(Z)V
 
     .line 147
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qD:Lcom/android/settings/ag;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qD:Lcom/android/vendorsettings/ag;
 
-    new-instance v1, Lcom/android/settings/eo;
+    new-instance v1, Lcom/android/vendorsettings/eo;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/eo;-><init>(Lcom/android/settings/MiuiDisplaySettings;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/eo;-><init>(Lcom/android/vendorsettings/MiuiDisplaySettings;)V
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/ag;->a(Lcom/android/settings/ah;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/ag;->a(Lcom/android/vendorsettings/ah;)V
 
     .line 155
     :cond_7
-    new-instance v0, Lcom/android/settings/display/x;
+    new-instance v0, Lcom/android/vendorsettings/display/x;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1, v5}, Lcom/android/settings/display/x;-><init>(Landroid/content/Context;Landroid/widget/TextView;)V
+    invoke-direct {v0, v1, v5}, Lcom/android/vendorsettings/display/x;-><init>(Landroid/content/Context;Landroid/widget/TextView;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qF:Lcom/android/settings/ag;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qF:Lcom/android/vendorsettings/ag;
 
     .line 156
     const-string v0, "page_layout_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Lmiui/preference/ValuePreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qG:Lmiui/preference/ValuePreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qG:Lmiui/preference/ValuePreference;
 
     .line 157
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qG:Lmiui/preference/ValuePreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qG:Lmiui/preference/ValuePreference;
 
     if-eqz v0, :cond_8
 
     .line 158
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qG:Lmiui/preference/ValuePreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qG:Lmiui/preference/ValuePreference;
 
     invoke-virtual {v0, v6}, Lmiui/preference/ValuePreference;->setShowRightArrow(Z)V
 
     .line 159
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qF:Lcom/android/settings/ag;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qF:Lcom/android/vendorsettings/ag;
 
-    new-instance v1, Lcom/android/settings/ep;
+    new-instance v1, Lcom/android/vendorsettings/ep;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/ep;-><init>(Lcom/android/settings/MiuiDisplaySettings;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/ep;-><init>(Lcom/android/vendorsettings/MiuiDisplaySettings;)V
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/ag;->a(Lcom/android/settings/ah;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/ag;->a(Lcom/android/vendorsettings/ah;)V
 
     .line 166
     :cond_8
@@ -543,24 +543,24 @@
     .line 167
     const-string v0, "font_settings_cat"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceGroup;
 
     .line 168
-    iget-object v1, p0, Lcom/android/settings/MiuiDisplaySettings;->qG:Lmiui/preference/ValuePreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qG:Lmiui/preference/ValuePreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
 
     .line 169
-    iput-object v5, p0, Lcom/android/settings/MiuiDisplaySettings;->qG:Lmiui/preference/ValuePreference;
+    iput-object v5, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qG:Lmiui/preference/ValuePreference;
 
     .line 170
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qF:Lcom/android/settings/ag;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qF:Lcom/android/vendorsettings/ag;
 
-    invoke-virtual {v0, v5}, Lcom/android/settings/ag;->a(Lcom/android/settings/ah;)V
+    invoke-virtual {v0, v5}, Lcom/android/vendorsettings/ag;->a(Lcom/android/vendorsettings/ah;)V
 
     .line 174
     :cond_9
@@ -571,7 +571,7 @@
     .line 175
     const-string v0, "font_settings_cat"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -580,22 +580,22 @@
     .line 176
     if-eqz v0, :cond_a
 
-    iget-object v1, p0, Lcom/android/settings/MiuiDisplaySettings;->qE:Lmiui/preference/ValuePreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qE:Lmiui/preference/ValuePreference;
 
     if-eqz v1, :cond_a
 
     .line 177
-    iget-object v1, p0, Lcom/android/settings/MiuiDisplaySettings;->qE:Lmiui/preference/ValuePreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qE:Lmiui/preference/ValuePreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
 
     .line 178
-    iput-object v5, p0, Lcom/android/settings/MiuiDisplaySettings;->qE:Lmiui/preference/ValuePreference;
+    iput-object v5, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qE:Lmiui/preference/ValuePreference;
 
     .line 179
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qD:Lcom/android/settings/ag;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qD:Lcom/android/vendorsettings/ag;
 
-    invoke-virtual {v0, v5}, Lcom/android/settings/ag;->a(Lcom/android/settings/ah;)V
+    invoke-virtual {v0, v5}, Lcom/android/vendorsettings/ag;->a(Lcom/android/vendorsettings/ah;)V
 
     .line 182
     :cond_a
@@ -603,7 +603,7 @@
 
     .line 67
     :cond_b
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -613,15 +613,15 @@
 
     .line 78
     :cond_c
-    iget-object v1, p0, Lcom/android/settings/MiuiDisplaySettings;->qx:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qx:Landroid/preference/CheckBoxPreference;
 
-    iget-object v2, p0, Lcom/android/settings/MiuiDisplaySettings;->qy:Lcom/android/settings/fy;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qy:Lcom/android/vendorsettings/fy;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/fy;->K(Landroid/content/Context;)Z
+    invoke-virtual {v2, v3}, Lcom/android/vendorsettings/fy;->K(Landroid/content/Context;)Z
 
     move-result v2
 
@@ -631,7 +631,7 @@
 
     .line 93
     :cond_d
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -644,7 +644,7 @@
     if-eqz v0, :cond_e
 
     .line 94
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qA:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qA:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v6}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -652,7 +652,7 @@
 
     .line 96
     :cond_e
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qA:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qA:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -660,18 +660,18 @@
 
     .line 131
     :cond_f
-    new-instance v0, Lcom/android/settings/en;
+    new-instance v0, Lcom/android/vendorsettings/en;
 
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/en;-><init>(Lcom/android/settings/MiuiDisplaySettings;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/en;-><init>(Lcom/android/vendorsettings/MiuiDisplaySettings;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qC:Landroid/database/ContentObserver;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qC:Landroid/database/ContentObserver;
 
     .line 137
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -685,7 +685,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/MiuiDisplaySettings;->qC:Landroid/database/ContentObserver;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qC:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1, v4, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
@@ -704,7 +704,7 @@
     .line 252
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -724,9 +724,9 @@
 
     const v1, 0x7f0c0d77
 
-    new-instance v2, Lcom/android/settings/eq;
+    new-instance v2, Lcom/android/vendorsettings/eq;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/eq;-><init>(Lcom/android/settings/MiuiDisplaySettings;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/eq;-><init>(Lcom/android/vendorsettings/MiuiDisplaySettings;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -750,7 +750,7 @@
     return-object v0
 
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/settings/DisplaySettings;->onCreateDialog(I)Landroid/app/Dialog;
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/DisplaySettings;->onCreateDialog(I)Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -762,12 +762,12 @@
 
     .prologue
     .line 193
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qC:Landroid/database/ContentObserver;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qC:Landroid/database/ContentObserver;
 
     if-eqz v0, :cond_0
 
     .line 194
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -775,18 +775,18 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MiuiDisplaySettings;->qC:Landroid/database/ContentObserver;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qC:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
     .line 195
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qC:Landroid/database/ContentObserver;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qC:Landroid/database/ContentObserver;
 
     .line 197
     :cond_0
-    invoke-super {p0}, Lcom/android/settings/DisplaySettings;->onDestroy()V
+    invoke-super {p0}, Lcom/android/vendorsettings/DisplaySettings;->onDestroy()V
 
     .line 198
     return-void
@@ -797,31 +797,31 @@
 
     .prologue
     .line 215
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qx:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qx:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_1
 
     .line 216
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qx:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qx:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
     .line 217
-    iget-object v1, p0, Lcom/android/settings/MiuiDisplaySettings;->qy:Lcom/android/settings/fy;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qy:Lcom/android/vendorsettings/fy;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/MiuiDisplaySettings;->qx:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qx:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v3
 
-    invoke-virtual {v1, v2, v3}, Lcom/android/settings/fy;->e(Landroid/content/Context;Z)V
+    invoke-virtual {v1, v2, v3}, Lcom/android/vendorsettings/fy;->e(Landroid/content/Context;Z)V
 
     .line 218
     if-eqz v0, :cond_0
@@ -829,12 +829,12 @@
     .line 219
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiDisplaySettings;->E(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->E(Z)V
 
     .line 240
     :cond_0
     :goto_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/DisplaySettings;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/DisplaySettings;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -842,14 +842,14 @@
 
     .line 221
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qz:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qz:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_3
 
     .line 222
     const-string v1, "persist.sys.line_breaking"
 
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qz:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qz:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -871,14 +871,14 @@
 
     .line 224
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qA:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qA:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_5
 
     .line 225
     const-string v1, "gesture_wakeup"
 
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qA:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qA:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -892,22 +892,22 @@
     invoke-static {v1, v0}, Lcom/xiaomi/mistatistic/sdk/MiStatInterface;->recordCountEvent(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 226
-    iget-object v0, p0, Lcom/android/settings/MiuiDisplaySettings;->qA:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qA:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
-    invoke-static {v0}, Lcom/android/settings/dj;->z(Z)V
+    invoke-static {v0}, Lcom/android/vendorsettings/dj;->z(Z)V
 
     .line 227
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     const-string v1, "gesture_wakeup"
 
-    iget-object v2, p0, Lcom/android/settings/MiuiDisplaySettings;->qA:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiDisplaySettings;->qA:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -927,7 +927,7 @@
     :cond_5
     const-string v0, "font_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -964,7 +964,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -994,7 +994,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 238
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiDisplaySettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->startActivity(Landroid/content/Intent;)V
 
     goto/16 :goto_0
 .end method
@@ -1004,13 +1004,13 @@
 
     .prologue
     .line 186
-    invoke-super {p0}, Lcom/android/settings/DisplaySettings;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/DisplaySettings;->onResume()V
 
     .line 187
-    invoke-direct {p0}, Lcom/android/settings/MiuiDisplaySettings;->eZ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->eZ()V
 
     .line 188
-    invoke-direct {p0}, Lcom/android/settings/MiuiDisplaySettings;->fa()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->fa()V
 
     .line 189
     return-void

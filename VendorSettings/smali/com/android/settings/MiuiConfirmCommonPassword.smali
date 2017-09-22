@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/MiuiConfirmCommonPassword;
+.class public Lcom/android/vendorsettings/MiuiConfirmCommonPassword;
 .super Landroid/app/Activity;
 .source "MiuiConfirmCommonPassword.java"
 
@@ -8,7 +8,7 @@
 
 .field private qd:Landroid/app/AlertDialog;
 
-.field private qe:Lcom/android/settings/cZ;
+.field private qe:Lcom/android/vendorsettings/cZ;
 
 .field private qf:I
 
@@ -28,20 +28,20 @@
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
     .line 28
-    iput-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
 
     .line 29
-    iput-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qe:Lcom/android/settings/cZ;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qe:Lcom/android/vendorsettings/cZ;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiConfirmCommonPassword;)V
+.method static synthetic a(Lcom/android/vendorsettings/MiuiConfirmCommonPassword;)V
     .locals 0
 
     .prologue
     .line 27
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->eT()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->eT()V
 
     return-void
 .end method
@@ -53,7 +53,7 @@
     .line 230
     const-string v0, "security_core_add"
 
-    iget-object v1, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qg:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qg:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -62,36 +62,36 @@
     return v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/MiuiConfirmCommonPassword;)Lcom/android/settings/cZ;
+.method static synthetic b(Lcom/android/vendorsettings/MiuiConfirmCommonPassword;)Lcom/android/vendorsettings/cZ;
     .locals 1
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qe:Lcom/android/settings/cZ;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qe:Lcom/android/vendorsettings/cZ;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/MiuiConfirmCommonPassword;)Landroid/app/AlertDialog;
+.method static synthetic c(Lcom/android/vendorsettings/MiuiConfirmCommonPassword;)Landroid/app/AlertDialog;
     .locals 1
 
     .prologue
     .line 27
-    iget-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/MiuiConfirmCommonPassword;)I
+.method static synthetic d(Lcom/android/vendorsettings/MiuiConfirmCommonPassword;)I
     .locals 2
 
     .prologue
     .line 27
-    iget v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qf:I
+    iget v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qf:I
 
     add-int/lit8 v1, v0, 0x1
 
-    iput v1, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qf:I
+    iput v1, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qf:I
 
     return v0
 .end method
@@ -101,11 +101,11 @@
 
     .prologue
     .line 284
-    iget-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
@@ -114,26 +114,26 @@
     if-eqz v0, :cond_0
 
     .line 285
-    iget-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 286
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
 
     .line 288
     :cond_0
     return-void
 .end method
 
-.method static synthetic e(Lcom/android/settings/MiuiConfirmCommonPassword;)I
+.method static synthetic e(Lcom/android/vendorsettings/MiuiConfirmCommonPassword;)I
     .locals 1
 
     .prologue
     .line 27
-    iget v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qf:I
+    iget v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qf:I
 
     return v0
 .end method
@@ -143,17 +143,17 @@
 
     .prologue
     .line 79
-    new-instance v0, Lcom/android/settings/ef;
+    new-instance v0, Lcom/android/vendorsettings/ef;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/ef;-><init>(Lcom/android/settings/MiuiConfirmCommonPassword;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/ef;-><init>(Lcom/android/vendorsettings/MiuiConfirmCommonPassword;)V
 
     .line 91
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->getLayoutInflater()Landroid/view/LayoutInflater;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v1
 
     .line 92
-    iget-object v2, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
 
     if-nez v2, :cond_0
 
@@ -196,50 +196,50 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
 
     .line 99
-    iget-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     .line 102
     :cond_0
-    new-instance v0, Lcom/android/settings/cZ;
+    new-instance v0, Lcom/android/vendorsettings/cZ;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/cZ;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/cZ;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qe:Lcom/android/settings/cZ;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qe:Lcom/android/vendorsettings/cZ;
 
     .line 103
-    iget-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qe:Lcom/android/settings/cZ;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qe:Lcom/android/vendorsettings/cZ;
 
-    invoke-virtual {v0}, Lcom/android/settings/cZ;->dV()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cZ;->dV()Ljava/util/List;
 
     move-result-object v0
 
     .line 104
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->aM()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->aM()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
     .line 105
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiConfirmCommonPassword;->i(Ljava/util/List;)Ljava/util/List;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->i(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v0
 
     .line 107
     :cond_1
-    new-instance v1, Lcom/android/settings/eg;
+    new-instance v1, Lcom/android/vendorsettings/eg;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/eg;-><init>(Lcom/android/settings/MiuiConfirmCommonPassword;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/eg;-><init>(Lcom/android/vendorsettings/MiuiConfirmCommonPassword;)V
 
     .line 138
-    iget-object v2, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qe:Lcom/android/settings/cZ;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qe:Lcom/android/vendorsettings/cZ;
 
-    invoke-virtual {v2, v1, v0}, Lcom/android/settings/cZ;->a(Lcom/android/settings/dd;Ljava/util/List;)V
+    invoke-virtual {v2, v1, v0}, Lcom/android/vendorsettings/cZ;->a(Lcom/android/vendorsettings/dd;Ljava/util/List;)V
 
     .line 139
     return-void
@@ -250,19 +250,19 @@
 
     .prologue
     .line 142
-    iget-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qe:Lcom/android/settings/cZ;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qe:Lcom/android/vendorsettings/cZ;
 
     if-eqz v0, :cond_0
 
     .line 143
-    iget-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qe:Lcom/android/settings/cZ;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qe:Lcom/android/vendorsettings/cZ;
 
-    invoke-virtual {v0}, Lcom/android/settings/cZ;->dX()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cZ;->dX()V
 
     .line 144
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qe:Lcom/android/settings/cZ;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qe:Lcom/android/vendorsettings/cZ;
 
     .line 146
     :cond_0
@@ -274,18 +274,18 @@
 
     .prologue
     .line 168
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->eQ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->eQ()V
 
     .line 169
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->dismissDialog()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->dismissDialog()V
 
     .line 171
     const/4 v0, -0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiConfirmCommonPassword;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->setResult(I)V
 
     .line 172
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->finish()V
 
     .line 173
     return-void
@@ -296,7 +296,7 @@
 
     .prologue
     .line 176
-    iget-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qe:Lcom/android/settings/cZ;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qe:Lcom/android/vendorsettings/cZ;
 
     if-nez v0, :cond_0
 
@@ -306,7 +306,7 @@
 
     .line 179
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
 
     const v1, 0x7f13007c
 
@@ -321,33 +321,33 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 182
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->eQ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->eQ()V
 
     .line 183
-    iget v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qf:I
+    iget v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qf:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qf:I
+    iput v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qf:I
 
     .line 184
-    iget v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qf:I
+    iget v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qf:I
 
     const/4 v1, 0x5
 
     if-lt v0, v1, :cond_1
 
     .line 185
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->dismissDialog()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->dismissDialog()V
 
     .line 186
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->eT()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->eT()V
 
     goto :goto_0
 
     .line 188
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->eP()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->eP()V
 
     goto :goto_0
 .end method
@@ -359,13 +359,13 @@
     const/4 v3, 0x0
 
     .line 252
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     const-string v1, "miui_password_type"
 
-    iget v2, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->mUserId:I
+    iget v2, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->mUserId:I
 
     invoke-static {v0, v1, v3, v2}, Landroid/provider/Settings$Secure;->getIntForUser(Landroid/content/ContentResolver;Ljava/lang/String;II)I
 
@@ -380,7 +380,7 @@
     if-ne v0, v1, :cond_0
 
     .line 257
-    const-class v0, Lcom/android/settings/ConfirmLockPattern$InternalActivity;
+    const-class v0, Lcom/android/vendorsettings/ConfirmLockPattern$InternalActivity;
 
     .line 262
     :goto_0
@@ -389,14 +389,14 @@
     invoke-direct {v1, p0, v0}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 263
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->aM()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->aM()Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
     .line 264
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -414,7 +414,7 @@
 
     .line 268
     :goto_1
-    invoke-virtual {p0, v0, v3}, Lcom/android/settings/MiuiConfirmCommonPassword;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v3}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 273
     :goto_2
@@ -422,16 +422,16 @@
 
     .line 259
     :cond_0
-    const-class v0, Lcom/android/settings/ConfirmLockPassword$InternalActivity;
+    const-class v0, Lcom/android/vendorsettings/ConfirmLockPassword$InternalActivity;
 
     goto :goto_0
 
     .line 270
     :cond_1
-    invoke-virtual {p0, v3}, Lcom/android/settings/MiuiConfirmCommonPassword;->setResult(I)V
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->setResult(I)V
 
     .line 271
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->finish()V
 
     goto :goto_2
 
@@ -441,32 +441,32 @@
     goto :goto_1
 .end method
 
-.method static synthetic f(Lcom/android/settings/MiuiConfirmCommonPassword;)V
+.method static synthetic f(Lcom/android/vendorsettings/MiuiConfirmCommonPassword;)V
     .locals 0
 
     .prologue
     .line 27
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->eQ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->eQ()V
 
     return-void
 .end method
 
-.method static synthetic g(Lcom/android/settings/MiuiConfirmCommonPassword;)V
+.method static synthetic g(Lcom/android/vendorsettings/MiuiConfirmCommonPassword;)V
     .locals 0
 
     .prologue
     .line 27
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->dismissDialog()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->dismissDialog()V
 
     return-void
 .end method
 
-.method static synthetic h(Lcom/android/settings/MiuiConfirmCommonPassword;)Z
+.method static synthetic h(Lcom/android/vendorsettings/MiuiConfirmCommonPassword;)Z
     .locals 1
 
     .prologue
     .line 27
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->aM()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->aM()Z
 
     move-result v0
 
@@ -480,14 +480,14 @@
     const/4 v0, 0x1
 
     .line 202
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->aM()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->aM()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 203
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiConfirmCommonPassword;->i(Ljava/util/List;)Ljava/util/List;
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->i(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v1
 
@@ -522,7 +522,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 213
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -599,25 +599,25 @@
 
     .prologue
     .line 150
-    iget v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->mUserId:I
+    iget v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->mUserId:I
 
     if-eqz v0, :cond_1
 
-    iget v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->mUserId:I
+    iget v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->mUserId:I
 
     const/16 v1, -0x2710
 
     if-eq v0, v1, :cond_1
 
     .line 152
-    invoke-virtual {p0, p1}, Lcom/android/settings/MiuiConfirmCommonPassword;->S(I)Z
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->S(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 153
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->eR()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->eR()V
 
     .line 165
     :goto_0
@@ -625,26 +625,26 @@
 
     .line 155
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->eS()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->eS()V
 
     goto :goto_0
 
     .line 159
     :cond_1
-    invoke-virtual {p0, p1}, Lcom/android/settings/MiuiConfirmCommonPassword;->S(I)Z
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->S(I)Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
     .line 160
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->eR()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->eR()V
 
     goto :goto_0
 
     .line 162
     :cond_2
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->eS()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->eS()V
 
     goto :goto_0
 .end method
@@ -656,7 +656,7 @@
     const/4 v0, 0x0
 
     .line 193
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -700,10 +700,10 @@
     invoke-super {p0, p1, p2, p3}, Landroid/app/Activity;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 278
-    invoke-virtual {p0, p2}, Lcom/android/settings/MiuiConfirmCommonPassword;->setResult(I)V
+    invoke-virtual {p0, p2}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->setResult(I)V
 
     .line 280
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->finish()V
 
     .line 281
     return-void
@@ -723,23 +723,23 @@
     .line 40
     const-string v0, "activity"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiConfirmCommonPassword;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/app/ActivityManager;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qh:Landroid/app/ActivityManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qh:Landroid/app/ActivityManager;
 
     .line 42
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
     if-eqz v0, :cond_4
 
     .line 43
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -750,17 +750,17 @@
     move-result-object v2
 
     .line 44
-    iput-object v2, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qg:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qg:Ljava/lang/String;
 
     .line 45
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->aM()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->aM()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 46
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -770,19 +770,19 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->mUserId:I
+    iput v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->mUserId:I
 
     .line 47
-    iget v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->mUserId:I
+    iget v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->mUserId:I
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->mUserId:I
+    iget v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->mUserId:I
 
     if-eq v0, v4, :cond_0
 
     .line 48
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -795,7 +795,7 @@
     move-result v0
 
     .line 49
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->getWindow()Landroid/view/Window;
 
     move-result-object v3
 
@@ -814,7 +814,7 @@
     if-nez v0, :cond_4
 
     .line 53
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -825,7 +825,7 @@
     move-result-object v3
 
     .line 54
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -866,18 +866,18 @@
     .line 64
     :cond_1
     :try_start_0
-    new-instance v0, Lcom/android/settings/cZ;
+    new-instance v0, Lcom/android/vendorsettings/cZ;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/cZ;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/cZ;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v0}, Lcom/android/settings/cZ;->dV()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cZ;->dV()Ljava/util/List;
 
     move-result-object v0
 
     .line 65
     if-nez v1, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -900,15 +900,15 @@
 
     if-lez v1, :cond_4
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiConfirmCommonPassword;->h(Ljava/util/List;)Z
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->h(Ljava/util/List;)Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qh:Landroid/app/ActivityManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qh:Landroid/app/ActivityManager;
 
-    iget v1, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->mUserId:I
+    iget v1, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->mUserId:I
 
     invoke-virtual {v0, v1}, Landroid/app/ActivityManager;->isUserRunning(I)Z
 
@@ -917,7 +917,7 @@
     if-eqz v0, :cond_4
 
     .line 67
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->eP()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->eP()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -946,7 +946,7 @@
 
     .line 75
     :cond_4
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->eT()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->eT()V
 
     goto :goto_1
 .end method
@@ -956,10 +956,10 @@
 
     .prologue
     .line 246
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->eQ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->eQ()V
 
     .line 247
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->dismissDialog()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->dismissDialog()V
 
     .line 248
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
@@ -973,14 +973,14 @@
 
     .prologue
     .line 235
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->eQ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->eQ()V
 
     .line 236
-    iget-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
@@ -989,17 +989,17 @@
     if-eqz v0, :cond_0
 
     .line 237
-    iget-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 238
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->qd:Landroid/app/AlertDialog;
 
     .line 239
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;->finish()V
 
     .line 241
     :cond_0

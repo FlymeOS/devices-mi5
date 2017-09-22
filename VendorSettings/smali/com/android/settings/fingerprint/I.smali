@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fingerprint/I;
+.class Lcom/android/vendorsettings/fingerprint/I;
 .super Ljava/lang/Object;
 .source "FingerprintSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic acx:Lcom/android/settings/fingerprint/G;
+.field final synthetic acx:Lcom/android/vendorsettings/fingerprint/G;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fingerprint/G;)V
+.method constructor <init>(Lcom/android/vendorsettings/fingerprint/G;)V
     .locals 0
 
     .prologue
     .line 554
-    iput-object p1, p0, Lcom/android/settings/fingerprint/I;->acx:Lcom/android/settings/fingerprint/G;
+    iput-object p1, p0, Lcom/android/vendorsettings/fingerprint/I;->acx:Lcom/android/vendorsettings/fingerprint/G;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 557
-    iget-object v0, p0, Lcom/android/settings/fingerprint/I;->acx:Lcom/android/settings/fingerprint/G;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/I;->acx:Lcom/android/vendorsettings/fingerprint/G;
 
-    invoke-static {v0}, Lcom/android/settings/fingerprint/G;->a(Lcom/android/settings/fingerprint/G;)Landroid/widget/EditText;
+    invoke-static {v0}, Lcom/android/vendorsettings/fingerprint/G;->a(Lcom/android/vendorsettings/fingerprint/G;)Landroid/widget/EditText;
 
     move-result-object v0
 
@@ -45,9 +45,9 @@
     move-result-object v1
 
     .line 559
-    iget-object v0, p0, Lcom/android/settings/fingerprint/I;->acx:Lcom/android/settings/fingerprint/G;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/I;->acx:Lcom/android/vendorsettings/fingerprint/G;
 
-    invoke-static {v0}, Lcom/android/settings/fingerprint/G;->b(Lcom/android/settings/fingerprint/G;)Landroid/hardware/fingerprint/Fingerprint;
+    invoke-static {v0}, Lcom/android/vendorsettings/fingerprint/G;->b(Lcom/android/vendorsettings/fingerprint/G;)Landroid/hardware/fingerprint/Fingerprint;
 
     move-result-object v0
 
@@ -96,18 +96,18 @@
     invoke-static {v2, v0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 564
-    iget-object v0, p0, Lcom/android/settings/fingerprint/I;->acx:Lcom/android/settings/fingerprint/G;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/I;->acx:Lcom/android/vendorsettings/fingerprint/G;
 
-    invoke-virtual {v0}, Lcom/android/settings/fingerprint/G;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/fingerprint/G;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/fingerprint/x;
+    check-cast v0, Lcom/android/vendorsettings/fingerprint/x;
 
     .line 567
-    iget-object v2, p0, Lcom/android/settings/fingerprint/I;->acx:Lcom/android/settings/fingerprint/G;
+    iget-object v2, p0, Lcom/android/vendorsettings/fingerprint/I;->acx:Lcom/android/vendorsettings/fingerprint/G;
 
-    invoke-static {v2}, Lcom/android/settings/fingerprint/G;->b(Lcom/android/settings/fingerprint/G;)Landroid/hardware/fingerprint/Fingerprint;
+    invoke-static {v2}, Lcom/android/vendorsettings/fingerprint/G;->b(Lcom/android/vendorsettings/fingerprint/G;)Landroid/hardware/fingerprint/Fingerprint;
 
     move-result-object v2
 
@@ -115,7 +115,7 @@
 
     move-result v2
 
-    invoke-static {v0, v2, v1}, Lcom/android/settings/fingerprint/x;->a(Lcom/android/settings/fingerprint/x;ILjava/lang/String;)V
+    invoke-static {v0, v2, v1}, Lcom/android/vendorsettings/fingerprint/x;->a(Lcom/android/vendorsettings/fingerprint/x;ILjava/lang/String;)V
 
     .line 570
     :cond_0

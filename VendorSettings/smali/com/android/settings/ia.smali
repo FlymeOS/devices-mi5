@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/ia;
+.class public final Lcom/android/vendorsettings/ia;
 .super Ljava/lang/Object;
 .source "TrustAgentSettings.java"
 
@@ -31,16 +31,16 @@
 
     .prologue
     .line 57
-    instance-of v0, p1, Lcom/android/settings/ia;
+    instance-of v0, p1, Lcom/android/vendorsettings/ia;
 
     if-eqz v0, :cond_0
 
     .line 58
-    iget-object v0, p0, Lcom/android/settings/ia;->component:Landroid/content/ComponentName;
+    iget-object v0, p0, Lcom/android/vendorsettings/ia;->component:Landroid/content/ComponentName;
 
-    check-cast p1, Lcom/android/settings/ia;
+    check-cast p1, Lcom/android/vendorsettings/ia;
 
-    iget-object v1, p1, Lcom/android/settings/ia;->component:Landroid/content/ComponentName;
+    iget-object v1, p1, Lcom/android/vendorsettings/ia;->component:Landroid/content/ComponentName;
 
     invoke-virtual {v0, v1}, Landroid/content/ComponentName;->equals(Ljava/lang/Object;)Z
 

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/StatusBarStyleFragment;
-.super Lcom/android/settings/BaseFragment;
+.class public Lcom/android/vendorsettings/StatusBarStyleFragment;
+.super Lcom/android/vendorsettings/BaseFragment;
 .source "StatusBarStyleFragment.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 12
-    invoke-direct {p0}, Lcom/android/settings/BaseFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/BaseFragment;-><init>()V
 
     return-void
 .end method
@@ -66,7 +66,7 @@
 
     .prologue
     .line 31
-    invoke-super {p0, p1, p2}, Lcom/android/settings/BaseFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/BaseFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 33
     const v0, 0x7f1302be
@@ -76,9 +76,9 @@
     move-result-object v0
 
     .line 34
-    new-instance v1, Lcom/android/settings/hP;
+    new-instance v1, Lcom/android/vendorsettings/hP;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/hP;-><init>(Lcom/android/settings/StatusBarStyleFragment;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/hP;-><init>(Lcom/android/vendorsettings/StatusBarStyleFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -90,9 +90,9 @@
     move-result-object v0
 
     .line 45
-    new-instance v1, Lcom/android/settings/hQ;
+    new-instance v1, Lcom/android/vendorsettings/hQ;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/hQ;-><init>(Lcom/android/settings/StatusBarStyleFragment;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/hQ;-><init>(Lcom/android/vendorsettings/StatusBarStyleFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

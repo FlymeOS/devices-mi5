@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fingerprint/r;
+.class Lcom/android/vendorsettings/fingerprint/r;
 .super Ljava/lang/Object;
 .source "FingerprintLocationAnimationView.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic acj:Lcom/android/settings/fingerprint/FingerprintLocationAnimationView;
+.field final synthetic acj:Lcom/android/vendorsettings/fingerprint/FingerprintLocationAnimationView;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fingerprint/FingerprintLocationAnimationView;)V
+.method constructor <init>(Lcom/android/vendorsettings/fingerprint/FingerprintLocationAnimationView;)V
     .locals 0
 
     .prologue
     .line 119
-    iput-object p1, p0, Lcom/android/settings/fingerprint/r;->acj:Lcom/android/settings/fingerprint/FingerprintLocationAnimationView;
+    iput-object p1, p0, Lcom/android/vendorsettings/fingerprint/r;->acj:Lcom/android/vendorsettings/fingerprint/FingerprintLocationAnimationView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 122
-    iget-object v1, p0, Lcom/android/settings/fingerprint/r;->acj:Lcom/android/settings/fingerprint/FingerprintLocationAnimationView;
+    iget-object v1, p0, Lcom/android/vendorsettings/fingerprint/r;->acj:Lcom/android/vendorsettings/fingerprint/FingerprintLocationAnimationView;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
@@ -42,12 +42,12 @@
 
     move-result v0
 
-    invoke-static {v1, v0}, Lcom/android/settings/fingerprint/FingerprintLocationAnimationView;->a(Lcom/android/settings/fingerprint/FingerprintLocationAnimationView;F)F
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/fingerprint/FingerprintLocationAnimationView;->a(Lcom/android/vendorsettings/fingerprint/FingerprintLocationAnimationView;F)F
 
     .line 123
-    iget-object v0, p0, Lcom/android/settings/fingerprint/r;->acj:Lcom/android/settings/fingerprint/FingerprintLocationAnimationView;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/r;->acj:Lcom/android/vendorsettings/fingerprint/FingerprintLocationAnimationView;
 
-    invoke-virtual {v0}, Lcom/android/settings/fingerprint/FingerprintLocationAnimationView;->invalidate()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/fingerprint/FingerprintLocationAnimationView;->invalidate()V
 
     .line 124
     return-void

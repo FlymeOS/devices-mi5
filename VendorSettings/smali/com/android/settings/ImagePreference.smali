@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ImagePreference;
+.class public Lcom/android/vendorsettings/ImagePreference;
 .super Landroid/preference/Preference;
 .source "ImagePreference.java"
 
@@ -11,7 +11,7 @@
     .line 11
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/ImagePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/ImagePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 12
     return-void
@@ -24,7 +24,7 @@
     .line 20
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/ImagePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/vendorsettings/ImagePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 21
     return-void
@@ -40,7 +40,7 @@
     .line 16
     const v0, 0x7f040091
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ImagePreference;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ImagePreference;->setLayoutResource(I)V
 
     .line 17
     return-void

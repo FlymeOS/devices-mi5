@@ -1,4 +1,4 @@
-.class Lcom/android/settings/cF;
+.class Lcom/android/vendorsettings/cF;
 .super Ljava/lang/Object;
 .source "DreamSettings.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic mg:Lcom/android/settings/DreamSettings;
+.field final synthetic mg:Lcom/android/vendorsettings/DreamSettings;
 
 .field final synthetic mh:Ljava/lang/Runnable;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DreamSettings;Ljava/lang/Runnable;)V
+.method constructor <init>(Lcom/android/vendorsettings/DreamSettings;Ljava/lang/Runnable;)V
     .locals 0
 
     .prologue
     .line 181
-    iput-object p1, p0, Lcom/android/settings/cF;->mg:Lcom/android/settings/DreamSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/cF;->mg:Lcom/android/vendorsettings/DreamSettings;
 
-    iput-object p2, p0, Lcom/android/settings/cF;->mh:Ljava/lang/Runnable;
+    iput-object p2, p0, Lcom/android/vendorsettings/cF;->mh:Ljava/lang/Runnable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,7 +34,7 @@
 
     .prologue
     .line 184
-    iget-object v0, p0, Lcom/android/settings/cF;->mh:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/vendorsettings/cF;->mh:Ljava/lang/Runnable;
 
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 

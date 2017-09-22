@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ib;
+.class public Lcom/android/vendorsettings/ib;
 .super Ljava/lang/Object;
 .source "TrustAgentUtils.java"
 
@@ -76,7 +76,7 @@
     goto :goto_0
 .end method
 
-.method public static b(Landroid/content/pm/PackageManager;Landroid/content/pm/ResolveInfo;)Lcom/android/settings/ic;
+.method public static b(Landroid/content/pm/PackageManager;Landroid/content/pm/ResolveInfo;)Lcom/android/vendorsettings/ic;
     .locals 8
 
     .prologue
@@ -106,9 +106,9 @@
 
     .line 73
     :cond_1
-    new-instance v1, Lcom/android/settings/ic;
+    new-instance v1, Lcom/android/vendorsettings/ic;
 
-    invoke-direct {v1}, Lcom/android/settings/ic;-><init>()V
+    invoke-direct {v1}, Lcom/android/vendorsettings/ic;-><init>()V
 
     .line 77
     :try_start_0
@@ -224,7 +224,7 @@
 
     move-result-object v4
 
-    iput-object v4, v1, Lcom/android/settings/ic;->summary:Ljava/lang/String;
+    iput-object v4, v1, Lcom/android/vendorsettings/ic;->summary:Ljava/lang/String;
 
     .line 97
     const/4 v4, 0x0
@@ -233,7 +233,7 @@
 
     move-result-object v4
 
-    iput-object v4, v1, Lcom/android/settings/ic;->title:Ljava/lang/String;
+    iput-object v4, v1, Lcom/android/vendorsettings/ic;->title:Ljava/lang/String;
 
     .line 99
     const/4 v4, 0x2
@@ -417,7 +417,7 @@
     if-nez v2, :cond_9
 
     :goto_6
-    iput-object v0, v1, Lcom/android/settings/ic;->componentName:Landroid/content/ComponentName;
+    iput-object v0, v1, Lcom/android/vendorsettings/ic;->componentName:Landroid/content/ComponentName;
 
     move-object v0, v1
 

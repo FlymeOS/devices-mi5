@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ap;
+.class Lcom/android/vendorsettings/ap;
 .super Landroid/database/ContentObserver;
 .source "CarrierCustomEditFragment.java"
 
@@ -6,18 +6,18 @@
 # instance fields
 .field final synthetic cY:I
 
-.field final synthetic cZ:Lcom/android/settings/CarrierCustomEditFragment;
+.field final synthetic cZ:Lcom/android/vendorsettings/CarrierCustomEditFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CarrierCustomEditFragment;Landroid/os/Handler;I)V
+.method constructor <init>(Lcom/android/vendorsettings/CarrierCustomEditFragment;Landroid/os/Handler;I)V
     .locals 0
 
     .prologue
     .line 99
-    iput-object p1, p0, Lcom/android/settings/ap;->cZ:Lcom/android/settings/CarrierCustomEditFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/ap;->cZ:Lcom/android/vendorsettings/CarrierCustomEditFragment;
 
-    iput p3, p0, Lcom/android/settings/ap;->cY:I
+    iput p3, p0, Lcom/android/vendorsettings/ap;->cY:I
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -31,15 +31,15 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Lcom/android/settings/ap;->cZ:Lcom/android/settings/CarrierCustomEditFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/ap;->cZ:Lcom/android/vendorsettings/CarrierCustomEditFragment;
 
-    iget-object v0, v0, Lcom/android/settings/CarrierCustomEditFragment;->cU:[Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/vendorsettings/CarrierCustomEditFragment;->cU:[Ljava/lang/String;
 
-    iget v1, p0, Lcom/android/settings/ap;->cY:I
+    iget v1, p0, Lcom/android/vendorsettings/ap;->cY:I
 
-    iget-object v2, p0, Lcom/android/settings/ap;->cZ:Lcom/android/settings/CarrierCustomEditFragment;
+    iget-object v2, p0, Lcom/android/vendorsettings/ap;->cZ:Lcom/android/vendorsettings/CarrierCustomEditFragment;
 
-    invoke-virtual {v2}, Lcom/android/settings/CarrierCustomEditFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v2}, Lcom/android/vendorsettings/CarrierCustomEditFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -57,7 +57,7 @@
 
     move-result-object v3
 
-    iget v4, p0, Lcom/android/settings/ap;->cY:I
+    iget v4, p0, Lcom/android/vendorsettings/ap;->cY:I
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -76,21 +76,21 @@
     aput-object v2, v0, v1
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/ap;->cZ:Lcom/android/settings/CarrierCustomEditFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/ap;->cZ:Lcom/android/vendorsettings/CarrierCustomEditFragment;
 
-    invoke-static {v0}, Lcom/android/settings/CarrierCustomEditFragment;->a(Lcom/android/settings/CarrierCustomEditFragment;)[Landroid/widget/EditText;
+    invoke-static {v0}, Lcom/android/vendorsettings/CarrierCustomEditFragment;->a(Lcom/android/vendorsettings/CarrierCustomEditFragment;)[Landroid/widget/EditText;
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/ap;->cY:I
+    iget v1, p0, Lcom/android/vendorsettings/ap;->cY:I
 
     aget-object v0, v0, v1
 
-    iget-object v1, p0, Lcom/android/settings/ap;->cZ:Lcom/android/settings/CarrierCustomEditFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/ap;->cZ:Lcom/android/vendorsettings/CarrierCustomEditFragment;
 
-    iget-object v1, v1, Lcom/android/settings/CarrierCustomEditFragment;->cU:[Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/vendorsettings/CarrierCustomEditFragment;->cU:[Ljava/lang/String;
 
-    iget v2, p0, Lcom/android/settings/ap;->cY:I
+    iget v2, p0, Lcom/android/vendorsettings/ap;->cY:I
 
     aget-object v1, v1, v2
 

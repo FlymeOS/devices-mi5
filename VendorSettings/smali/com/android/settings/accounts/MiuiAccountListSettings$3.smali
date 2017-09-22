@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/MiuiAccountListSettings$3;
+.class Lcom/android/vendorsettings/accounts/MiuiAccountListSettings$3;
 .super Ljava/lang/Object;
 .source "MiuiAccountListSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic EG:Lcom/android/settings/accounts/MiuiAccountListSettings;
+.field final synthetic EG:Lcom/android/vendorsettings/accounts/MiuiAccountListSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accounts/MiuiAccountListSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/accounts/MiuiAccountListSettings;)V
     .locals 0
 
     .prologue
     .line 195
-    iput-object p1, p0, Lcom/android/settings/accounts/MiuiAccountListSettings$3;->EG:Lcom/android/settings/accounts/MiuiAccountListSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/accounts/MiuiAccountListSettings$3;->EG:Lcom/android/vendorsettings/accounts/MiuiAccountListSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,7 +58,7 @@
 
     check-cast p2, Landroid/preference/PreferenceActivity$Header;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/accounts/MiuiAccountListSettings$3;->a(Landroid/preference/PreferenceActivity$Header;Landroid/preference/PreferenceActivity$Header;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/accounts/MiuiAccountListSettings$3;->a(Landroid/preference/PreferenceActivity$Header;Landroid/preference/PreferenceActivity$Header;)I
 
     move-result v0
 

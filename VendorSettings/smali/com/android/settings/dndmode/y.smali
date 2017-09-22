@@ -1,22 +1,22 @@
-.class Lcom/android/settings/dndmode/y;
+.class Lcom/android/vendorsettings/dndmode/y;
 .super Ljava/lang/Object;
 .source "VipCallSettingsFragment.java"
 
 # interfaces
-.implements Lcom/android/settings/dndmode/C;
+.implements Lcom/android/vendorsettings/dndmode/C;
 
 
 # instance fields
-.field final synthetic abe:Lcom/android/settings/dndmode/v;
+.field final synthetic abe:Lcom/android/vendorsettings/dndmode/v;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dndmode/v;)V
+.method constructor <init>(Lcom/android/vendorsettings/dndmode/v;)V
     .locals 0
 
     .prologue
     .line 239
-    iput-object p1, p0, Lcom/android/settings/dndmode/y;->abe:Lcom/android/settings/dndmode/v;
+    iput-object p1, p0, Lcom/android/vendorsettings/dndmode/y;->abe:Lcom/android/vendorsettings/dndmode/v;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
     .line 244
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    iget-object v2, p0, Lcom/android/settings/dndmode/y;->abe:Lcom/android/settings/dndmode/v;
+    iget-object v2, p0, Lcom/android/vendorsettings/dndmode/y;->abe:Lcom/android/vendorsettings/dndmode/v;
 
-    invoke-static {v2}, Lcom/android/settings/dndmode/v;->a(Lcom/android/settings/dndmode/v;)Lmiui/app/Activity;
+    invoke-static {v2}, Lcom/android/vendorsettings/dndmode/v;->a(Lcom/android/vendorsettings/dndmode/v;)Lmiui/app/Activity;
 
     move-result-object v2
 
@@ -61,9 +61,9 @@
 
     const v2, 0x7f0c0ba0
 
-    new-instance v3, Lcom/android/settings/dndmode/z;
+    new-instance v3, Lcom/android/vendorsettings/dndmode/z;
 
-    invoke-direct {v3, p0, v0}, Lcom/android/settings/dndmode/z;-><init>(Lcom/android/settings/dndmode/y;Ljava/lang/String;)V
+    invoke-direct {v3, p0, v0}, Lcom/android/vendorsettings/dndmode/z;-><init>(Lcom/android/vendorsettings/dndmode/y;Ljava/lang/String;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

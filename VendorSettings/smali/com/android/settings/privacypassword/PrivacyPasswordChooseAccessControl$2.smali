@@ -1,22 +1,22 @@
-.class Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;
+.class Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;
 .super Ljava/lang/Object;
 .source "PrivacyPasswordChooseAccessControl.java"
 
 # interfaces
-.implements Lcom/android/settings/dN;
+.implements Lcom/android/vendorsettings/dN;
 
 
 # instance fields
-.field final synthetic anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+.field final synthetic anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;)V
+.method constructor <init>(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;)V
     .locals 0
 
     .prologue
     .line 132
-    iput-object p1, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iput-object p1, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,27 +30,27 @@
     const/4 v2, 0x0
 
     .line 173
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    iget-object v0, v0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->anm:Landroid/widget/TextView;
+    iget-object v0, v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->anm:Landroid/widget/TextView;
 
     const v1, 0x7f0c0557
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 174
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    invoke-static {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->c(Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->c(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;)Landroid/widget/TextView;
 
     move-result-object v0
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setEnabled(Z)V
 
     .line 175
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    invoke-static {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->d(Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->d(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -82,17 +82,17 @@
 
     .prologue
     .line 164
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    iget-object v0, v0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->anp:Lcom/android/settings/LockPatternView;
+    iget-object v0, v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->anp:Lcom/android/vendorsettings/LockPatternView;
 
-    iget-object v1, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v1, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    invoke-static {v1}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->a(Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;)Ljava/lang/Runnable;
+    invoke-static {v1}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->a(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;)Ljava/lang/Runnable;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/LockPatternView;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/LockPatternView;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 165
     return-void
@@ -103,31 +103,31 @@
 
     .prologue
     .line 142
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    invoke-static {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->b(Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;)Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    invoke-static {v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->b(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;)Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anN:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anN:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
     if-eq v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    invoke-static {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->b(Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;)Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    invoke-static {v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->b(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;)Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anO:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anO:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
     if-ne v0, v1, :cond_3
 
     .line 143
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    iget-object v0, v0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->ep:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->ep:Ljava/util/List;
 
     if-nez v0, :cond_1
 
@@ -142,9 +142,9 @@
 
     .line 145
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    iget-object v0, v0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->ep:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->ep:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->equals(Ljava/lang/Object;)Z
 
@@ -153,11 +153,11 @@
     if-eqz v0, :cond_2
 
     .line 146
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anP:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anP:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->a(Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->a(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;)V
 
     .line 160
     :goto_0
@@ -165,33 +165,33 @@
 
     .line 148
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anO:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anO:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->a(Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->a(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;)V
 
     goto :goto_0
 
     .line 150
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    invoke-static {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->b(Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;)Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    invoke-static {v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->b(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;)Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anJ:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anJ:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
     if-eq v0, v1, :cond_4
 
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    invoke-static {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->b(Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;)Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    invoke-static {v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->b(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;)Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
     move-result-object v0
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anL:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anL:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
     if-ne v0, v1, :cond_6
 
@@ -206,30 +206,30 @@
     if-ge v0, v1, :cond_5
 
     .line 152
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anL:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anL:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->a(Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->a(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;)V
 
     goto :goto_0
 
     .line 154
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v1, v0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->ep:Ljava/util/List;
+    iput-object v1, v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->ep:Ljava/util/List;
 
     .line 155
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anM:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;->anM:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->a(Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->a(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;)V
 
     goto :goto_0
 
@@ -247,9 +247,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v2, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    invoke-static {v2}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->b(Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;)Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
+    invoke-static {v2}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->b(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;)Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$Stage;
 
     move-result-object v2
 
@@ -283,20 +283,20 @@
 
     .prologue
     .line 136
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    iget-object v0, v0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->anp:Lcom/android/settings/LockPatternView;
+    iget-object v0, v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->anp:Lcom/android/vendorsettings/LockPatternView;
 
-    iget-object v1, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v1, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    invoke-static {v1}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->a(Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;)Ljava/lang/Runnable;
+    invoke-static {v1}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->a(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;)Ljava/lang/Runnable;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/LockPatternView;->removeCallbacks(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/LockPatternView;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 137
-    invoke-direct {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$2;->aD()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$2;->aD()V
 
     .line 138
     return-void

@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/applications/LinearColorPreference;
+.class public Lcom/android/vendorsettings/applications/LinearColorPreference;
 .super Landroid/preference/Preference;
 .source "LinearColorPreference.java"
 
 
 # instance fields
-.field JE:Lcom/android/settings/applications/LinearColorBar$OnRegionTappedListener;
+.field JE:Lcom/android/vendorsettings/applications/LinearColorBar$OnRegionTappedListener;
 
 .field JF:I
 
@@ -36,40 +36,40 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/LinearColorBar;
+    check-cast v0, Lcom/android/vendorsettings/applications/LinearColorBar;
 
     .line 69
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/LinearColorBar;->aq(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/applications/LinearColorBar;->aq(Z)V
 
     .line 70
-    iget v1, p0, Lcom/android/settings/applications/LinearColorPreference;->JQ:I
+    iget v1, p0, Lcom/android/vendorsettings/applications/LinearColorPreference;->JQ:I
 
-    iget v2, p0, Lcom/android/settings/applications/LinearColorPreference;->JR:I
+    iget v2, p0, Lcom/android/vendorsettings/applications/LinearColorPreference;->JR:I
 
-    iget v3, p0, Lcom/android/settings/applications/LinearColorPreference;->JS:I
+    iget v3, p0, Lcom/android/vendorsettings/applications/LinearColorPreference;->JS:I
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/settings/applications/LinearColorBar;->a(III)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/android/vendorsettings/applications/LinearColorBar;->a(III)V
 
     .line 71
-    iget v1, p0, Lcom/android/settings/applications/LinearColorPreference;->Jw:F
+    iget v1, p0, Lcom/android/vendorsettings/applications/LinearColorPreference;->Jw:F
 
-    iget v2, p0, Lcom/android/settings/applications/LinearColorPreference;->Jx:F
+    iget v2, p0, Lcom/android/vendorsettings/applications/LinearColorPreference;->Jx:F
 
-    iget v3, p0, Lcom/android/settings/applications/LinearColorPreference;->Jy:F
+    iget v3, p0, Lcom/android/vendorsettings/applications/LinearColorPreference;->Jy:F
 
-    invoke-virtual {v0, v1, v2, v3}, Lcom/android/settings/applications/LinearColorBar;->a(FFF)V
+    invoke-virtual {v0, v1, v2, v3}, Lcom/android/vendorsettings/applications/LinearColorBar;->a(FFF)V
 
     .line 72
-    iget v1, p0, Lcom/android/settings/applications/LinearColorPreference;->JF:I
+    iget v1, p0, Lcom/android/vendorsettings/applications/LinearColorPreference;->JF:I
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/LinearColorBar;->aL(I)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/applications/LinearColorBar;->aL(I)V
 
     .line 73
-    iget-object v1, p0, Lcom/android/settings/applications/LinearColorPreference;->JE:Lcom/android/settings/applications/LinearColorBar$OnRegionTappedListener;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/LinearColorPreference;->JE:Lcom/android/vendorsettings/applications/LinearColorBar$OnRegionTappedListener;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/LinearColorBar;->a(Lcom/android/settings/applications/LinearColorBar$OnRegionTappedListener;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/applications/LinearColorBar;->a(Lcom/android/vendorsettings/applications/LinearColorBar$OnRegionTappedListener;)V
 
     .line 74
     return-void

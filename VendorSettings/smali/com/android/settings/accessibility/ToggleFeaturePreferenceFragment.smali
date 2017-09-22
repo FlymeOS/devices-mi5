@@ -1,10 +1,10 @@
-.class public abstract Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public abstract Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "ToggleFeaturePreferenceFragment.java"
 
 
 # instance fields
-.field protected DA:Lcom/android/settings/widget/K;
+.field protected DA:Lcom/android/vendorsettings/widget/K;
 
 .field protected DB:Landroid/preference/Preference;
 
@@ -12,7 +12,7 @@
 
 .field protected DD:Landroid/content/Intent;
 
-.field protected me:Lcom/android/settings/widget/SwitchBar;
+.field protected me:Lcom/android/vendorsettings/widget/SwitchBar;
 
 .field protected zW:Ljava/lang/String;
 
@@ -23,7 +23,7 @@
 
     .prologue
     .line 44
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -33,12 +33,12 @@
 
     .prologue
     .line 153
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->me:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->me:Lcom/android/vendorsettings/widget/SwitchBar;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/SwitchBar;->hide()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/widget/SwitchBar;->hide()V
 
     .line 154
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->iN()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->iN()V
 
     .line 155
     return-void
@@ -49,19 +49,19 @@
 
     .prologue
     .line 158
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->DA:Lcom/android/settings/widget/K;
+    iget-object v0, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->DA:Lcom/android/vendorsettings/widget/K;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/K;->a(Lcom/android/settings/widget/L;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/widget/K;->a(Lcom/android/vendorsettings/widget/L;)V
 
     .line 159
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->iV()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->iV()V
 
     .line 160
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->me:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->me:Lcom/android/vendorsettings/widget/SwitchBar;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/SwitchBar;->hide()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/widget/SwitchBar;->hide()V
 
     .line 161
     return-void
@@ -80,11 +80,11 @@
     if-nez p1, :cond_0
 
     .line 169
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->DB:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->DB:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -100,7 +100,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->zW:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->zW:Ljava/lang/String;
 
     .line 177
     const-string v0, "checked"
@@ -119,14 +119,14 @@
     move-result v0
 
     .line 179
-    iget-object v1, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->me:Lcom/android/settings/widget/SwitchBar;
+    iget-object v1, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->me:Lcom/android/vendorsettings/widget/SwitchBar;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/widget/SwitchBar;->bw(Z)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/widget/SwitchBar;->bw(Z)V
 
     .line 181
-    iget-object v1, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->DA:Lcom/android/settings/widget/K;
+    iget-object v1, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->DA:Lcom/android/vendorsettings/widget/K;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/widget/K;->bw(Z)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/widget/K;->bw(Z)V
 
     .line 185
     :cond_1
@@ -145,7 +145,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->setTitle(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->setTitle(Ljava/lang/String;)V
 
     .line 190
     :cond_2
@@ -165,12 +165,12 @@
     move-result-object v0
 
     .line 193
-    iget-object v1, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->DB:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->DB:Landroid/preference/Preference;
 
     invoke-virtual {v1, v0}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 196
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
@@ -183,7 +183,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setSelector(Landroid/graphics/drawable/Drawable;)V
 
     .line 197
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
@@ -195,11 +195,11 @@
 
     .line 199
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->DB:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->DB:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -227,10 +227,10 @@
 
     .prologue
     .line 113
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 115
-    invoke-direct {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->iX()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->iX()V
 
     .line 116
     return-void
@@ -243,14 +243,14 @@
     const/4 v3, 0x0
 
     .line 60
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 61
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->getPreferenceManager()Landroid/preference/PreferenceManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -259,38 +259,38 @@
     move-result-object v0
 
     .line 63
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->setPreferenceScreen(Landroid/preference/PreferenceScreen;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->setPreferenceScreen(Landroid/preference/PreferenceScreen;)V
 
     .line 64
-    new-instance v1, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment$1;
+    new-instance v1, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment$1;
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-direct {v1, p0, v2}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment$1;-><init>(Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;Landroid/content/Context;)V
+    invoke-direct {v1, p0, v2}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment$1;-><init>(Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->DB:Landroid/preference/Preference;
+    iput-object v1, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->DB:Landroid/preference/Preference;
 
     .line 88
-    iget-object v1, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->DB:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->DB:Landroid/preference/Preference;
 
     invoke-virtual {v1, v3}, Landroid/preference/Preference;->setSelectable(Z)V
 
     .line 89
-    iget-object v1, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->DB:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->DB:Landroid/preference/Preference;
 
     invoke-virtual {v1, v3}, Landroid/preference/Preference;->setPersistent(Z)V
 
     .line 90
-    iget-object v1, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->DB:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->DB:Landroid/preference/Preference;
 
     const v2, 0x7f04017d
 
     invoke-virtual {v1, v2}, Landroid/preference/Preference;->setLayoutResource(I)V
 
     .line 91
-    iget-object v1, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->DB:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->DB:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
@@ -303,10 +303,10 @@
 
     .prologue
     .line 129
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     .line 131
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->DD:Landroid/content/Intent;
+    iget-object v0, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->DD:Landroid/content/Intent;
 
     if-nez v0, :cond_0
 
@@ -316,7 +316,7 @@
 
     .line 135
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->DC:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->DC:Ljava/lang/CharSequence;
 
     invoke-interface {p1, v0}, Landroid/view/Menu;->add(Ljava/lang/CharSequence;)Landroid/view/MenuItem;
 
@@ -328,7 +328,7 @@
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
     .line 137
-    iget-object v1, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->DD:Landroid/content/Intent;
+    iget-object v1, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->DD:Landroid/content/Intent;
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIntent(Landroid/content/Intent;)Landroid/view/MenuItem;
 
@@ -345,10 +345,10 @@
 
     .prologue
     .line 120
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroyView()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onDestroyView()V
 
     .line 122
-    invoke-direct {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->iY()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->iY()V
 
     .line 123
     return-void
@@ -359,62 +359,62 @@
 
     .prologue
     .line 96
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 98
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hn;
+    check-cast v0, Lcom/android/vendorsettings/hn;
 
     .line 99
-    invoke-virtual {v0}, Lcom/android/settings/hn;->hD()Lcom/android/settings/widget/SwitchBar;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/hn;->hD()Lcom/android/vendorsettings/widget/SwitchBar;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->me:Lcom/android/settings/widget/SwitchBar;
+    iput-object v0, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->me:Lcom/android/vendorsettings/widget/SwitchBar;
 
     .line 102
-    new-instance v0, Lcom/android/settings/widget/K;
+    new-instance v0, Lcom/android/vendorsettings/widget/K;
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/widget/K;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/widget/K;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->DA:Lcom/android/settings/widget/K;
+    iput-object v0, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->DA:Lcom/android/vendorsettings/widget/K;
 
     .line 103
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->DA:Lcom/android/settings/widget/K;
+    iget-object v0, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->DA:Lcom/android/vendorsettings/widget/K;
 
     const v1, 0x7f0c0ece
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/K;->setTitle(I)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/widget/K;->setTitle(I)V
 
     .line 104
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->DA:Lcom/android/settings/widget/K;
+    iget-object v0, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->DA:Lcom/android/vendorsettings/widget/K;
 
     const/4 v1, -0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/K;->setOrder(I)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/widget/K;->setOrder(I)V
 
     .line 105
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->DA:Lcom/android/settings/widget/K;
+    iget-object v1, p0, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->DA:Lcom/android/vendorsettings/widget/K;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 108
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->g(Landroid/os/Bundle;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->g(Landroid/os/Bundle;)V
 
     .line 109
     return-void
@@ -425,7 +425,7 @@
 
     .prologue
     .line 164
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accessibility/ToggleFeaturePreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

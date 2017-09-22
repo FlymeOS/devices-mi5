@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/p2p/b;
+.class public Lcom/android/vendorsettings/wifi/p2p/b;
 .super Landroid/preference/Preference;
 .source "WifiP2pPersistentGroup.java"
 
@@ -16,7 +16,7 @@
     invoke-direct {p0, p1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
     .line 30
-    iput-object p2, p0, Lcom/android/settings/wifi/p2p/b;->aGb:Landroid/net/wifi/p2p/WifiP2pGroup;
+    iput-object p2, p0, Lcom/android/vendorsettings/wifi/p2p/b;->aGb:Landroid/net/wifi/p2p/WifiP2pGroup;
 
     .line 31
     return-void
@@ -29,7 +29,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/b;->aGb:Landroid/net/wifi/p2p/WifiP2pGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/p2p/b;->aGb:Landroid/net/wifi/p2p/WifiP2pGroup;
 
     invoke-virtual {v0}, Landroid/net/wifi/p2p/WifiP2pGroup;->getNetworkName()Ljava/lang/String;
 
@@ -43,7 +43,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/b;->aGb:Landroid/net/wifi/p2p/WifiP2pGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/p2p/b;->aGb:Landroid/net/wifi/p2p/WifiP2pGroup;
 
     invoke-virtual {v0}, Landroid/net/wifi/p2p/WifiP2pGroup;->getNetworkId()I
 
@@ -57,13 +57,13 @@
 
     .prologue
     .line 35
-    iget-object v0, p0, Lcom/android/settings/wifi/p2p/b;->aGb:Landroid/net/wifi/p2p/WifiP2pGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/p2p/b;->aGb:Landroid/net/wifi/p2p/WifiP2pGroup;
 
     invoke-virtual {v0}, Landroid/net/wifi/p2p/WifiP2pGroup;->getNetworkName()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/p2p/b;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/p2p/b;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 36
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V

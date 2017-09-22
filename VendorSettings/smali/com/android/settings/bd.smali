@@ -1,19 +1,19 @@
-.class Lcom/android/settings/bd;
+.class Lcom/android/vendorsettings/bd;
 .super Landroid/os/Handler;
 .source "CryptKeeper.java"
 
 
 # instance fields
-.field final synthetic gu:Lcom/android/settings/CryptKeeper;
+.field final synthetic gu:Lcom/android/vendorsettings/CryptKeeper;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CryptKeeper;)V
+.method constructor <init>(Lcom/android/vendorsettings/CryptKeeper;)V
     .locals 0
 
     .prologue
     .line 351
-    iput-object p1, p0, Lcom/android/settings/bd;->gu:Lcom/android/settings/CryptKeeper;
+    iput-object p1, p0, Lcom/android/vendorsettings/bd;->gu:Lcom/android/vendorsettings/CryptKeeper;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -37,17 +37,17 @@
 
     .line 356
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/bd;->gu:Lcom/android/settings/CryptKeeper;
+    iget-object v0, p0, Lcom/android/vendorsettings/bd;->gu:Lcom/android/vendorsettings/CryptKeeper;
 
-    invoke-static {v0}, Lcom/android/settings/CryptKeeper;->g(Lcom/android/settings/CryptKeeper;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/CryptKeeper;->g(Lcom/android/vendorsettings/CryptKeeper;)V
 
     goto :goto_0
 
     .line 360
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/bd;->gu:Lcom/android/settings/CryptKeeper;
+    iget-object v0, p0, Lcom/android/vendorsettings/bd;->gu:Lcom/android/vendorsettings/CryptKeeper;
 
-    invoke-static {v0}, Lcom/android/settings/CryptKeeper;->h(Lcom/android/settings/CryptKeeper;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/CryptKeeper;->h(Lcom/android/vendorsettings/CryptKeeper;)V
 
     goto :goto_0
 

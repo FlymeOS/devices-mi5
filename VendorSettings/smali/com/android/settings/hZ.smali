@@ -1,31 +1,31 @@
-.class Lcom/android/settings/hZ;
+.class Lcom/android/vendorsettings/hZ;
 .super Landroid/widget/BaseAdapter;
 .source "ToggleArrangementFragment.java"
 
 
 # instance fields
-.field final synthetic Be:Lcom/android/settings/ToggleArrangementFragment;
+.field final synthetic Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/ToggleArrangementFragment;)V
+.method private constructor <init>(Lcom/android/vendorsettings/ToggleArrangementFragment;)V
     .locals 0
 
     .prologue
     .line 135
-    iput-object p1, p0, Lcom/android/settings/hZ;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/hZ;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/ToggleArrangementFragment;Lcom/android/settings/hY;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/ToggleArrangementFragment;Lcom/android/vendorsettings/hY;)V
     .locals 0
 
     .prologue
     .line 135
-    invoke-direct {p0, p1}, Lcom/android/settings/hZ;-><init>(Lcom/android/settings/ToggleArrangementFragment;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/hZ;-><init>(Lcom/android/vendorsettings/ToggleArrangementFragment;)V
 
     return-void
 .end method
@@ -37,9 +37,9 @@
 
     .prologue
     .line 139
-    iget-object v0, p0, Lcom/android/settings/hZ;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/hZ;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ToggleArrangementFragment;->b(Lcom/android/settings/ToggleArrangementFragment;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/android/vendorsettings/ToggleArrangementFragment;->b(Lcom/android/vendorsettings/ToggleArrangementFragment;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -55,9 +55,9 @@
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/android/settings/hZ;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/hZ;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ToggleArrangementFragment;->b(Lcom/android/settings/ToggleArrangementFragment;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/android/vendorsettings/ToggleArrangementFragment;->b(Lcom/android/vendorsettings/ToggleArrangementFragment;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -73,9 +73,9 @@
 
     .prologue
     .line 149
-    iget-object v0, p0, Lcom/android/settings/hZ;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/hZ;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ToggleArrangementFragment;->b(Lcom/android/settings/ToggleArrangementFragment;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/android/vendorsettings/ToggleArrangementFragment;->b(Lcom/android/vendorsettings/ToggleArrangementFragment;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -116,9 +116,9 @@
 
     .line 159
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/hZ;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/hZ;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ToggleArrangementFragment;->b(Lcom/android/settings/ToggleArrangementFragment;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/android/vendorsettings/ToggleArrangementFragment;->b(Lcom/android/vendorsettings/ToggleArrangementFragment;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -138,17 +138,17 @@
     if-ne v2, v0, :cond_3
 
     .line 162
-    iget-object v0, p0, Lcom/android/settings/hZ;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/hZ;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ToggleArrangementFragment;->c(Lcom/android/settings/ToggleArrangementFragment;)Landroid/view/View;
+    invoke-static {v0}, Lcom/android/vendorsettings/ToggleArrangementFragment;->c(Lcom/android/vendorsettings/ToggleArrangementFragment;)Landroid/view/View;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/hZ;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/hZ;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ToggleArrangementFragment;->c(Lcom/android/settings/ToggleArrangementFragment;)Landroid/view/View;
+    invoke-static {v0}, Lcom/android/vendorsettings/ToggleArrangementFragment;->c(Lcom/android/vendorsettings/ToggleArrangementFragment;)Landroid/view/View;
 
     move-result-object v0
 
@@ -160,13 +160,13 @@
 
     .line 163
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/hZ;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/hZ;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ToggleArrangementFragment;->d(Lcom/android/settings/ToggleArrangementFragment;)Lcom/android/settings/toggleposition/FixedDividerSortableListView;
+    invoke-static {v0}, Lcom/android/vendorsettings/ToggleArrangementFragment;->d(Lcom/android/vendorsettings/ToggleArrangementFragment;)Lcom/android/vendorsettings/toggleposition/FixedDividerSortableListView;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/toggleposition/FixedDividerSortableListView;->getContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/toggleposition/FixedDividerSortableListView;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -175,7 +175,7 @@
     move-result-object v0
 
     .line 164
-    iget-object v1, p0, Lcom/android/settings/hZ;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/hZ;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
     const v2, 0x7f040159
 
@@ -183,12 +183,12 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/android/settings/ToggleArrangementFragment;->a(Lcom/android/settings/ToggleArrangementFragment;Landroid/view/View;)Landroid/view/View;
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/ToggleArrangementFragment;->a(Lcom/android/vendorsettings/ToggleArrangementFragment;Landroid/view/View;)Landroid/view/View;
 
     .line 165
-    iget-object v0, p0, Lcom/android/settings/hZ;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/hZ;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ToggleArrangementFragment;->c(Lcom/android/settings/ToggleArrangementFragment;)Landroid/view/View;
+    invoke-static {v0}, Lcom/android/vendorsettings/ToggleArrangementFragment;->c(Lcom/android/vendorsettings/ToggleArrangementFragment;)Landroid/view/View;
 
     move-result-object v0
 
@@ -198,7 +198,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/hZ;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/hZ;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
     const v2, 0x7f0c00bd
 
@@ -206,9 +206,9 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    iget-object v4, p0, Lcom/android/settings/hZ;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iget-object v4, p0, Lcom/android/vendorsettings/hZ;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
-    invoke-static {v4}, Lcom/android/settings/ToggleArrangementFragment;->e(Lcom/android/settings/ToggleArrangementFragment;)I
+    invoke-static {v4}, Lcom/android/vendorsettings/ToggleArrangementFragment;->e(Lcom/android/vendorsettings/ToggleArrangementFragment;)I
 
     move-result v4
 
@@ -218,7 +218,7 @@
 
     aput-object v4, v3, v5
 
-    invoke-virtual {v1, v2, v3}, Lcom/android/settings/ToggleArrangementFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v1, v2, v3}, Lcom/android/vendorsettings/ToggleArrangementFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -226,9 +226,9 @@
 
     .line 168
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/hZ;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/hZ;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ToggleArrangementFragment;->c(Lcom/android/settings/ToggleArrangementFragment;)Landroid/view/View;
+    invoke-static {v0}, Lcom/android/vendorsettings/ToggleArrangementFragment;->c(Lcom/android/vendorsettings/ToggleArrangementFragment;)Landroid/view/View;
 
     move-result-object p2
 
@@ -241,13 +241,13 @@
     if-nez p2, :cond_4
 
     .line 172
-    iget-object v0, p0, Lcom/android/settings/hZ;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/hZ;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ToggleArrangementFragment;->d(Lcom/android/settings/ToggleArrangementFragment;)Lcom/android/settings/toggleposition/FixedDividerSortableListView;
+    invoke-static {v0}, Lcom/android/vendorsettings/ToggleArrangementFragment;->d(Lcom/android/vendorsettings/ToggleArrangementFragment;)Lcom/android/vendorsettings/toggleposition/FixedDividerSortableListView;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/toggleposition/FixedDividerSortableListView;->getContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/toggleposition/FixedDividerSortableListView;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -269,26 +269,26 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/hZ;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/hZ;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
-    invoke-static {v1}, Lcom/android/settings/ToggleArrangementFragment;->d(Lcom/android/settings/ToggleArrangementFragment;)Lcom/android/settings/toggleposition/FixedDividerSortableListView;
+    invoke-static {v1}, Lcom/android/vendorsettings/ToggleArrangementFragment;->d(Lcom/android/vendorsettings/ToggleArrangementFragment;)Lcom/android/vendorsettings/toggleposition/FixedDividerSortableListView;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/android/settings/toggleposition/FixedDividerSortableListView;->getListenerForStartingSort()Landroid/view/View$OnTouchListener;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/toggleposition/FixedDividerSortableListView;->getListenerForStartingSort()Landroid/view/View$OnTouchListener;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 176
-    iget-object v0, p0, Lcom/android/settings/hZ;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/hZ;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ToggleArrangementFragment;->d(Lcom/android/settings/ToggleArrangementFragment;)Lcom/android/settings/toggleposition/FixedDividerSortableListView;
+    invoke-static {v0}, Lcom/android/vendorsettings/ToggleArrangementFragment;->d(Lcom/android/vendorsettings/ToggleArrangementFragment;)Lcom/android/vendorsettings/toggleposition/FixedDividerSortableListView;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/toggleposition/FixedDividerSortableListView;->uH()Landroid/view/View$OnTouchListener;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/toggleposition/FixedDividerSortableListView;->uH()Landroid/view/View$OnTouchListener;
 
     move-result-object v0
 
@@ -317,9 +317,9 @@
     invoke-static {v2, v0}, Lmiui/app/ToggleManager;->updateTextView(ILandroid/widget/TextView;)V
 
     .line 183
-    iget-object v0, p0, Lcom/android/settings/hZ;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/hZ;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ToggleArrangementFragment;->f(Lcom/android/settings/ToggleArrangementFragment;)Ljava/util/HashMap;
+    invoke-static {v0}, Lcom/android/vendorsettings/ToggleArrangementFragment;->f(Lcom/android/vendorsettings/ToggleArrangementFragment;)Ljava/util/HashMap;
 
     move-result-object v0
 

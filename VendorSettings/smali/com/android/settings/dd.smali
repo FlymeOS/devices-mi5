@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/dd;
+.class public interface abstract Lcom/android/vendorsettings/dd;
 .super Ljava/lang/Object;
 .source "FingerprintIdentifyCallback.java"
 

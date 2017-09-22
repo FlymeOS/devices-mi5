@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/InputMethodPreference$1;
+.class Lcom/android/vendorsettings/inputmethod/InputMethodPreference$1;
 .super Ljava/lang/Object;
 .source "InputMethodPreference.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic agn:Lcom/android/settings/inputmethod/InputMethodPreference;
+.field final synthetic agn:Lcom/android/vendorsettings/inputmethod/InputMethodPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/inputmethod/InputMethodPreference;)V
+.method constructor <init>(Lcom/android/vendorsettings/inputmethod/InputMethodPreference;)V
     .locals 0
 
     .prologue
     .line 227
-    iput-object p1, p0, Lcom/android/settings/inputmethod/InputMethodPreference$1;->agn:Lcom/android/settings/inputmethod/InputMethodPreference;
+    iput-object p1, p0, Lcom/android/vendorsettings/inputmethod/InputMethodPreference$1;->agn:Lcom/android/vendorsettings/inputmethod/InputMethodPreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,27 +30,27 @@
 
     .prologue
     .line 231
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodPreference$1;->agn:Lcom/android/settings/inputmethod/InputMethodPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/InputMethodPreference$1;->agn:Lcom/android/vendorsettings/inputmethod/InputMethodPreference;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/inputmethod/InputMethodPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/inputmethod/InputMethodPreference;->setChecked(Z)V
 
     .line 232
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodPreference$1;->agn:Lcom/android/settings/inputmethod/InputMethodPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/InputMethodPreference$1;->agn:Lcom/android/vendorsettings/inputmethod/InputMethodPreference;
 
-    invoke-static {v0}, Lcom/android/settings/inputmethod/InputMethodPreference;->b(Lcom/android/settings/inputmethod/InputMethodPreference;)Lcom/android/settings/inputmethod/InputMethodPreference$OnSavePreferenceListener;
+    invoke-static {v0}, Lcom/android/vendorsettings/inputmethod/InputMethodPreference;->b(Lcom/android/vendorsettings/inputmethod/InputMethodPreference;)Lcom/android/vendorsettings/inputmethod/InputMethodPreference$OnSavePreferenceListener;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/inputmethod/InputMethodPreference$1;->agn:Lcom/android/settings/inputmethod/InputMethodPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/inputmethod/InputMethodPreference$1;->agn:Lcom/android/vendorsettings/inputmethod/InputMethodPreference;
 
-    invoke-interface {v0, v1}, Lcom/android/settings/inputmethod/InputMethodPreference$OnSavePreferenceListener;->a(Lcom/android/settings/inputmethod/InputMethodPreference;)V
+    invoke-interface {v0, v1}, Lcom/android/vendorsettings/inputmethod/InputMethodPreference$OnSavePreferenceListener;->a(Lcom/android/vendorsettings/inputmethod/InputMethodPreference;)V
 
     .line 233
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodPreference$1;->agn:Lcom/android/settings/inputmethod/InputMethodPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/InputMethodPreference$1;->agn:Lcom/android/vendorsettings/inputmethod/InputMethodPreference;
 
-    invoke-static {v0}, Lcom/android/settings/inputmethod/InputMethodPreference;->c(Lcom/android/settings/inputmethod/InputMethodPreference;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/inputmethod/InputMethodPreference;->c(Lcom/android/vendorsettings/inputmethod/InputMethodPreference;)V
 
     .line 234
     return-void

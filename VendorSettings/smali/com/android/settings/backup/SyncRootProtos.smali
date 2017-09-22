@@ -1,3 +1,3 @@
-.class public final Lcom/android/settings/backup/SyncRootProtos;
+.class public final Lcom/android/vendorsettings/backup/SyncRootProtos;
 .super Ljava/lang/Object;
 .source "SyncRootProtos.java"

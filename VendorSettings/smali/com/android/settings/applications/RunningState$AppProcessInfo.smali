@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/RunningState$AppProcessInfo;
+.class Lcom/android/vendorsettings/applications/RunningState$AppProcessInfo;
 .super Ljava/lang/Object;
 .source "RunningState.java"
 
@@ -20,7 +20,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 139
-    iput-object p1, p0, Lcom/android/settings/applications/RunningState$AppProcessInfo;->OI:Landroid/app/ActivityManager$RunningAppProcessInfo;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/RunningState$AppProcessInfo;->OI:Landroid/app/ActivityManager$RunningAppProcessInfo;
 
     .line 140
     return-void

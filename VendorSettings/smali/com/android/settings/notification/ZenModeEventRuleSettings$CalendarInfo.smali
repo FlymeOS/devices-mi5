@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/notification/ZenModeEventRuleSettings$CalendarInfo;
+.class public Lcom/android/vendorsettings/notification/ZenModeEventRuleSettings$CalendarInfo;
 .super Ljava/lang/Object;
 .source "ZenModeEventRuleSettings.java"
 

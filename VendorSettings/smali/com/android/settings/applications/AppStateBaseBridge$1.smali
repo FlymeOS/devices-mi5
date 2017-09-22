@@ -1,3 +1,3 @@
-.class synthetic Lcom/android/settings/applications/AppStateBaseBridge$1;
+.class synthetic Lcom/android/vendorsettings/applications/AppStateBaseBridge$1;
 .super Ljava/lang/Object;
 .source "AppStateBaseBridge.java"

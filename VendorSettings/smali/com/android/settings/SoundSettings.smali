@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/SoundSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/SoundSettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "SoundSettings.java"
 
 # interfaces
@@ -15,9 +15,9 @@
 
 .field private AB:Landroid/preference/CheckBoxPreference;
 
-.field private AC:Lcom/android/settings/DefaultRingtonePreference;
+.field private AC:Lcom/android/vendorsettings/DefaultRingtonePreference;
 
-.field private AD:Lcom/android/settings/DefaultRingtonePreference;
+.field private AD:Lcom/android/vendorsettings/DefaultRingtonePreference;
 
 .field protected AE:Landroid/preference/ListPreference;
 
@@ -45,11 +45,11 @@
 
 .field private final mReceiver:Landroid/content/BroadcastReceiver;
 
-.field private nD:Lcom/android/settings/fG;
+.field private nD:Lcom/android/vendorsettings/fG;
 
 .field private nE:Z
 
-.field private final nG:Lcom/android/settings/fH;
+.field private final nG:Lcom/android/vendorsettings/fH;
 
 
 # direct methods
@@ -98,7 +98,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/SoundSettings;->Av:[Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/SoundSettings;->Av:[Ljava/lang/String;
 
     return-void
 .end method
@@ -108,58 +108,58 @@
 
     .prologue
     .line 61
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 133
-    new-instance v0, Lcom/android/settings/hL;
+    new-instance v0, Lcom/android/vendorsettings/hL;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/hL;-><init>(Lcom/android/settings/SoundSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/hL;-><init>(Lcom/android/vendorsettings/SoundSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/SoundSettings;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->mHandler:Landroid/os/Handler;
 
     .line 150
-    new-instance v0, Lcom/android/settings/hM;
+    new-instance v0, Lcom/android/vendorsettings/hM;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/hM;-><init>(Lcom/android/settings/SoundSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/hM;-><init>(Lcom/android/vendorsettings/SoundSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/SoundSettings;->mReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     .line 342
-    new-instance v0, Lcom/android/settings/hO;
+    new-instance v0, Lcom/android/vendorsettings/hO;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/hO;-><init>(Lcom/android/settings/SoundSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/hO;-><init>(Lcom/android/vendorsettings/SoundSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/SoundSettings;->nG:Lcom/android/settings/fH;
+    iput-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->nG:Lcom/android/vendorsettings/fH;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/SoundSettings;)Lcom/android/settings/DefaultRingtonePreference;
+.method static synthetic a(Lcom/android/vendorsettings/SoundSettings;)Lcom/android/vendorsettings/DefaultRingtonePreference;
     .locals 1
 
     .prologue
     .line 61
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AC:Lcom/android/settings/DefaultRingtonePreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AC:Lcom/android/vendorsettings/DefaultRingtonePreference;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/SoundSettings;Landroid/content/Intent;)V
+.method static synthetic a(Lcom/android/vendorsettings/SoundSettings;Landroid/content/Intent;)V
     .locals 0
 
     .prologue
     .line 61
-    invoke-direct {p0, p1}, Lcom/android/settings/SoundSettings;->o(Landroid/content/Intent;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/SoundSettings;->o(Landroid/content/Intent;)V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/SoundSettings;)Lcom/android/settings/DefaultRingtonePreference;
+.method static synthetic b(Lcom/android/vendorsettings/SoundSettings;)Lcom/android/vendorsettings/DefaultRingtonePreference;
     .locals 1
 
     .prologue
     .line 61
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AD:Lcom/android/settings/DefaultRingtonePreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AD:Lcom/android/vendorsettings/DefaultRingtonePreference;
 
     return-object v0
 .end method
@@ -185,11 +185,11 @@
 
     .prologue
     .line 379
-    iget-boolean v0, p0, Lcom/android/settings/SoundSettings;->nE:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/SoundSettings;->nE:Z
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->isResumed()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->isResumed()Z
 
     move-result v0
 
@@ -199,30 +199,30 @@
     :try_start_0
     const-string v0, "dolby_control"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     .line 382
-    iget-object v1, p0, Lcom/android/settings/SoundSettings;->nD:Lcom/android/settings/fG;
+    iget-object v1, p0, Lcom/android/vendorsettings/SoundSettings;->nD:Lcom/android/vendorsettings/fG;
 
-    invoke-virtual {v1}, Lcom/android/settings/fG;->gn()Z
+    invoke-virtual {v1}, Lcom/android/vendorsettings/fG;->gn()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
     .line 383
-    iget-object v1, p0, Lcom/android/settings/SoundSettings;->nD:Lcom/android/settings/fG;
+    iget-object v1, p0, Lcom/android/vendorsettings/SoundSettings;->nD:Lcom/android/vendorsettings/fG;
 
-    invoke-virtual {v1}, Lcom/android/settings/fG;->go()I
+    invoke-virtual {v1}, Lcom/android/vendorsettings/fG;->go()I
 
     move-result v1
 
     .line 384
-    iget-object v2, p0, Lcom/android/settings/SoundSettings;->nD:Lcom/android/settings/fG;
+    iget-object v2, p0, Lcom/android/vendorsettings/SoundSettings;->nD:Lcom/android/vendorsettings/fG;
 
-    invoke-virtual {v2}, Lcom/android/settings/fG;->gq()I
+    invoke-virtual {v2}, Lcom/android/vendorsettings/fG;->gq()I
 
     move-result v2
 
@@ -240,9 +240,9 @@
 
     .line 386
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/SoundSettings;->nD:Lcom/android/settings/fG;
+    iget-object v2, p0, Lcom/android/vendorsettings/SoundSettings;->nD:Lcom/android/vendorsettings/fG;
 
-    invoke-virtual {v2}, Lcom/android/settings/fG;->gp()I
+    invoke-virtual {v2}, Lcom/android/vendorsettings/fG;->gp()I
 
     move-result v2
 
@@ -349,34 +349,34 @@
 
     .prologue
     .line 326
-    invoke-direct {p0}, Lcom/android/settings/SoundSettings;->ec()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/SoundSettings;->ec()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 327
-    invoke-static {}, Lcom/android/settings/fG;->gm()Lcom/android/settings/fG;
+    invoke-static {}, Lcom/android/vendorsettings/fG;->gm()Lcom/android/vendorsettings/fG;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/SoundSettings;->nD:Lcom/android/settings/fG;
+    iput-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->nD:Lcom/android/vendorsettings/fG;
 
     .line 328
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->nD:Lcom/android/settings/fG;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->nD:Lcom/android/vendorsettings/fG;
 
-    iget-object v1, p0, Lcom/android/settings/SoundSettings;->nG:Lcom/android/settings/fH;
+    iget-object v1, p0, Lcom/android/vendorsettings/SoundSettings;->nG:Lcom/android/vendorsettings/fH;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/fG;->a(Lcom/android/settings/fH;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/fG;->a(Lcom/android/vendorsettings/fH;)V
 
     .line 329
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->nD:Lcom/android/settings/fG;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->nD:Lcom/android/vendorsettings/fG;
 
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/fG;->O(Landroid/content/Context;)Z
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/fG;->O(Landroid/content/Context;)Z
 
     .line 334
     :goto_0
@@ -386,12 +386,12 @@
     :cond_0
     const-string v0, "dolby_control"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     .line 332
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -407,7 +407,7 @@
     .line 485
     new-instance v0, Ljava/lang/Thread;
 
-    iget-object v1, p0, Lcom/android/settings/SoundSettings;->AF:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/vendorsettings/SoundSettings;->AF:Ljava/lang/Runnable;
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
@@ -422,7 +422,7 @@
 
     .prologue
     .line 575
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -444,12 +444,12 @@
     const/4 v2, 0x0
 
     .line 579
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
     .line 581
-    invoke-direct {p0}, Lcom/android/settings/SoundSettings;->ic()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/SoundSettings;->ic()Z
 
     move-result v0
 
@@ -458,21 +458,21 @@
     .line 582
     const-string v0, "dock_sounds"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/SoundSettings;->AH:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AH:Landroid/preference/CheckBoxPreference;
 
     .line 583
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AH:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AH:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setPersistent(Z)V
 
     .line 584
-    iget-object v4, p0, Lcom/android/settings/SoundSettings;->AH:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/SoundSettings;->AH:Landroid/preference/CheckBoxPreference;
 
     const-string v0, "dock_sounds_enabled"
 
@@ -490,14 +490,14 @@
     .line 586
     const-string v0, "dock_audio"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/SoundSettings;->AG:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AG:Landroid/preference/Preference;
 
     .line 587
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AG:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AG:Landroid/preference/Preference;
 
     invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
 
@@ -513,39 +513,39 @@
 
     .line 589
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     const-string v2, "dock_category"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 590
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     const-string v2, "dock_audio"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 591
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     const-string v2, "dock_sounds"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -566,7 +566,7 @@
     .line 649
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -608,7 +608,7 @@
     const/4 v2, 0x0
 
     .line 597
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AG:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AG:Landroid/preference/Preference;
 
     if-eqz v0, :cond_0
 
@@ -632,7 +632,7 @@
 
     .line 603
     :goto_0
-    iput-object p1, p0, Lcom/android/settings/SoundSettings;->AI:Landroid/content/Intent;
+    iput-object p1, p0, Lcom/android/vendorsettings/SoundSettings;->AI:Landroid/content/Intent;
 
     .line 605
     if-eqz v3, :cond_6
@@ -641,7 +641,7 @@
     const/4 v4, 0x1
 
     :try_start_0
-    invoke-virtual {p0, v4}, Lcom/android/settings/SoundSettings;->removeDialog(I)V
+    invoke-virtual {p0, v4}, Lcom/android/vendorsettings/SoundSettings;->removeDialog(I)V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -650,7 +650,7 @@
     if-eqz v0, :cond_2
 
     .line 614
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AG:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AG:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setEnabled(Z)V
 
@@ -672,12 +672,12 @@
     if-ne v3, v0, :cond_5
 
     .line 617
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
     .line 618
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AG:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AG:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setEnabled(Z)V
 
@@ -699,21 +699,21 @@
     :cond_3
     const-string v0, "dock_audio_media_enabled"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/SoundSettings;->AJ:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AJ:Landroid/preference/CheckBoxPreference;
 
     .line 626
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AJ:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AJ:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setPersistent(Z)V
 
     .line 627
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AJ:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AJ:Landroid/preference/CheckBoxPreference;
 
     const-string v4, "dock_audio_media_enabled"
 
@@ -735,7 +735,7 @@
 
     .line 631
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AG:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AG:Landroid/preference/Preference;
 
     invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
 
@@ -743,7 +743,7 @@
 
     .line 635
     :cond_6
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AG:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AG:Landroid/preference/Preference;
 
     invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
 
@@ -763,7 +763,7 @@
 
     .prologue
     .line 477
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -778,9 +778,9 @@
     move-result-object v0
 
     .line 480
-    iget-object v1, p0, Lcom/android/settings/SoundSettings;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/vendorsettings/SoundSettings;->mHandler:Landroid/os/Handler;
 
-    iget-object v2, p0, Lcom/android/settings/SoundSettings;->mHandler:Landroid/os/Handler;
+    iget-object v2, p0, Lcom/android/vendorsettings/SoundSettings;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v2, p2, v0}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
@@ -824,7 +824,7 @@
 
     .prologue
     .line 168
-    const-class v0, Lcom/android/settings/SoundSettings;
+    const-class v0, Lcom/android/vendorsettings/SoundSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -842,10 +842,10 @@
     const/4 v2, 0x0
 
     .line 173
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 174
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -859,42 +859,42 @@
     .line 177
     const-string v0, "audio"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SoundSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SoundSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/media/AudioManager;
 
-    iput-object v0, p0, Lcom/android/settings/SoundSettings;->mAudioManager:Landroid/media/AudioManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->mAudioManager:Landroid/media/AudioManager;
 
     .line 179
     const v0, 0x7f0800a0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SoundSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SoundSettings;->addPreferencesFromResource(I)V
 
     .line 191
     const-string v0, "vibrate_when_ringing"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/SoundSettings;->Aw:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->Aw:Landroid/preference/CheckBoxPreference;
 
     .line 196
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->Aw:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->Aw:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_0
 
     .line 197
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->Aw:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->Aw:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setPersistent(Z)V
 
     .line 198
-    iget-object v4, p0, Lcom/android/settings/SoundSettings;->Aw:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/SoundSettings;->Aw:Landroid/preference/CheckBoxPreference;
 
     const-string v0, "vibrate_when_ringing"
 
@@ -913,21 +913,21 @@
     :cond_0
     const-string v0, "dtmf_tone"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/SoundSettings;->Ay:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->Ay:Landroid/preference/CheckBoxPreference;
 
     .line 204
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->Ay:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->Ay:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setPersistent(Z)V
 
     .line 205
-    iget-object v4, p0, Lcom/android/settings/SoundSettings;->Ay:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/SoundSettings;->Ay:Landroid/preference/CheckBoxPreference;
 
     const-string v0, "dtmf_tone"
 
@@ -945,21 +945,21 @@
     .line 207
     const-string v0, "sound_effects"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/SoundSettings;->Ax:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->Ax:Landroid/preference/CheckBoxPreference;
 
     .line 208
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->Ax:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->Ax:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setPersistent(Z)V
 
     .line 209
-    iget-object v4, p0, Lcom/android/settings/SoundSettings;->Ax:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/SoundSettings;->Ax:Landroid/preference/CheckBoxPreference;
 
     const-string v0, "sound_effects_enabled"
 
@@ -977,21 +977,21 @@
     .line 211
     const-string v0, "haptic_feedback"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/SoundSettings;->Az:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->Az:Landroid/preference/CheckBoxPreference;
 
     .line 212
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->Az:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->Az:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setPersistent(Z)V
 
     .line 213
-    iget-object v4, p0, Lcom/android/settings/SoundSettings;->Az:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/SoundSettings;->Az:Landroid/preference/CheckBoxPreference;
 
     const-string v0, "haptic_feedback_enabled"
 
@@ -1007,32 +1007,32 @@
     invoke-virtual {v4, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 216
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v4, p0, Lcom/android/settings/SoundSettings;->Az:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/SoundSettings;->Az:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v4}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 217
     const-string v0, "lock_sounds"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/SoundSettings;->AB:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AB:Landroid/preference/CheckBoxPreference;
 
     .line 218
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AB:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AB:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setPersistent(Z)V
 
     .line 219
-    iget-object v4, p0, Lcom/android/settings/SoundSettings;->AB:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/SoundSettings;->AB:Landroid/preference/CheckBoxPreference;
 
     const-string v0, "lockscreen_sounds_enabled"
 
@@ -1050,40 +1050,40 @@
     .line 231
     const-string v0, "ringtone"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/DefaultRingtonePreference;
+    check-cast v0, Lcom/android/vendorsettings/DefaultRingtonePreference;
 
-    iput-object v0, p0, Lcom/android/settings/SoundSettings;->AC:Lcom/android/settings/DefaultRingtonePreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AC:Lcom/android/vendorsettings/DefaultRingtonePreference;
 
     .line 232
     const-string v0, "notification_sound"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/DefaultRingtonePreference;
+    check-cast v0, Lcom/android/vendorsettings/DefaultRingtonePreference;
 
-    iput-object v0, p0, Lcom/android/settings/SoundSettings;->AD:Lcom/android/settings/DefaultRingtonePreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AD:Lcom/android/vendorsettings/DefaultRingtonePreference;
 
     .line 234
     const-string v0, "haptic_feedback_level"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/SoundSettings;->AE:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AE:Landroid/preference/ListPreference;
 
     .line 235
     const-string v0, "vibrator"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SoundSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SoundSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1100,41 +1100,41 @@
 
     .line 237
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->Aw:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->Aw:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_2
 
     .line 238
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/settings/SoundSettings;->Aw:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/SoundSettings;->Aw:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 240
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/settings/SoundSettings;->AE:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/SoundSettings;->AE:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 241
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/SoundSettings;->AE:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AE:Landroid/preference/ListPreference;
 
     .line 244
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/iC;->Y(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/iC;->Y(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -1143,7 +1143,7 @@
     .line 245
     const-string v0, "vibrate_when_ringing"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SoundSettings;->U(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SoundSettings;->U(Ljava/lang/String;)V
 
     .line 261
     :cond_4
@@ -1154,7 +1154,7 @@
     invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 262
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
@@ -1164,18 +1164,18 @@
     invoke-virtual {v3, v0, v4}, Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
 
     .line 279
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/iC;->Y(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/iC;->Y(Landroid/content/Context;)Z
 
     move-result v0
 
     if-nez v0, :cond_b
 
     .line 280
-    sget-object v0, Lcom/android/settings/SoundSettings;->Av:[Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/SoundSettings;->Av:[Ljava/lang/String;
 
     array-length v3, v0
 
@@ -1185,7 +1185,7 @@
     aget-object v4, v0, v2
 
     .line 281
-    invoke-virtual {p0, v4}, Lcom/android/settings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v4}, Lcom/android/vendorsettings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -1193,7 +1193,7 @@
     if-eqz v4, :cond_5
 
     .line 283
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v5
 
@@ -1237,22 +1237,22 @@
 
     .line 288
     :cond_b
-    new-instance v0, Lcom/android/settings/hN;
+    new-instance v0, Lcom/android/vendorsettings/hN;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/hN;-><init>(Lcom/android/settings/SoundSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/hN;-><init>(Lcom/android/vendorsettings/SoundSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/SoundSettings;->AF:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AF:Ljava/lang/Runnable;
 
     .line 307
-    invoke-direct {p0}, Lcom/android/settings/SoundSettings;->id()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SoundSettings;->id()V
 
     .line 309
-    invoke-direct {p0}, Lcom/android/settings/SoundSettings;->ia()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SoundSettings;->ia()V
 
     .line 312
     const-string v0, "dirac_control"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SoundSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1260,7 +1260,7 @@
     if-eqz v0, :cond_c
 
     .line 314
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1297,7 +1297,7 @@
 
     .line 319
     :cond_d
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -1316,7 +1316,7 @@
     if-ne p1, v0, :cond_0
 
     .line 643
-    invoke-direct {p0}, Lcom/android/settings/SoundSettings;->ie()Landroid/app/Dialog;
+    invoke-direct {p0}, Lcom/android/vendorsettings/SoundSettings;->ie()Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -1335,24 +1335,24 @@
 
     .prologue
     .line 439
-    invoke-direct {p0}, Lcom/android/settings/SoundSettings;->ec()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/SoundSettings;->ec()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 440
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->nD:Lcom/android/settings/fG;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->nD:Lcom/android/vendorsettings/fG;
 
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/fG;->P(Landroid/content/Context;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/fG;->P(Landroid/content/Context;)V
 
     .line 442
     :cond_0
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onDestroy()V
 
     .line 443
     return-void
@@ -1363,14 +1363,14 @@
 
     .prologue
     .line 432
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPause()V
 
     .line 433
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/SoundSettings;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/SoundSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
@@ -1405,7 +1405,7 @@
     move-result v0
 
     .line 559
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -1445,18 +1445,18 @@
     const/4 v2, 0x0
 
     .line 490
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->Aw:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->Aw:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_3
 
     .line 491
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
     const-string v4, "vibrate_when_ringing"
 
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->Aw:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->Aw:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -1472,7 +1472,7 @@
     .line 551
     :cond_0
     :goto_1
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v2
 
@@ -1487,18 +1487,18 @@
 
     .line 493
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->Ay:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->Ay:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_5
 
     .line 494
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     const-string v3, "dtmf_tone"
 
-    iget-object v4, p0, Lcom/android/settings/SoundSettings;->Ay:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/SoundSettings;->Ay:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -1518,12 +1518,12 @@
 
     .line 497
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->Ax:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->Ax:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_8
 
     .line 498
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->Ax:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->Ax:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -1532,19 +1532,19 @@
     if-eqz v0, :cond_6
 
     .line 499
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->mAudioManager:Landroid/media/AudioManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->mAudioManager:Landroid/media/AudioManager;
 
     invoke-virtual {v0}, Landroid/media/AudioManager;->loadSoundEffects()V
 
     .line 503
     :goto_3
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     const-string v3, "sound_effects_enabled"
 
-    iget-object v4, p0, Lcom/android/settings/SoundSettings;->Ax:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/SoundSettings;->Ax:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -1559,7 +1559,7 @@
 
     .line 501
     :cond_6
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->mAudioManager:Landroid/media/AudioManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->mAudioManager:Landroid/media/AudioManager;
 
     invoke-virtual {v0}, Landroid/media/AudioManager;->unloadSoundEffects()V
 
@@ -1573,18 +1573,18 @@
 
     .line 506
     :cond_8
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->Az:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->Az:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_a
 
     .line 507
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     const-string v3, "haptic_feedback_enabled"
 
-    iget-object v4, p0, Lcom/android/settings/SoundSettings;->Az:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/SoundSettings;->Az:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -1604,18 +1604,18 @@
 
     .line 510
     :cond_a
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AB:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AB:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_c
 
     .line 511
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     const-string v3, "lockscreen_sounds_enabled"
 
-    iget-object v4, p0, Lcom/android/settings/SoundSettings;->AB:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/SoundSettings;->AB:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -1635,21 +1635,21 @@
 
     .line 514
     :cond_c
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AA:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AA:Landroid/preference/Preference;
 
     if-eq p2, v0, :cond_1
 
     .line 517
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AG:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AG:Landroid/preference/Preference;
 
     if-ne p2, v0, :cond_12
 
     .line 518
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AI:Landroid/content/Intent;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AI:Landroid/content/Intent;
 
     if-eqz v0, :cond_d
 
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AI:Landroid/content/Intent;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AI:Landroid/content/Intent;
 
     const-string v3, "android.intent.extra.DOCK_STATE"
 
@@ -1662,7 +1662,7 @@
     if-nez v0, :cond_e
 
     .line 523
-    invoke-virtual {p0, v1}, Lcom/android/settings/SoundSettings;->showDialog(I)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/SoundSettings;->showDialog(I)V
 
     goto/16 :goto_1
 
@@ -1674,7 +1674,7 @@
 
     .line 525
     :cond_e
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AI:Landroid/content/Intent;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AI:Landroid/content/Intent;
 
     const-string v3, "android.bluetooth.device.extra.DEVICE"
 
@@ -1693,7 +1693,7 @@
     .line 528
     new-instance v0, Landroid/content/Intent;
 
-    iget-object v1, p0, Lcom/android/settings/SoundSettings;->AI:Landroid/content/Intent;
+    iget-object v1, p0, Lcom/android/vendorsettings/SoundSettings;->AI:Landroid/content/Intent;
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Intent;)V
 
@@ -1703,16 +1703,16 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 530
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/bluetooth/DockEventReceiver;
+    const-class v2, Lcom/android/vendorsettings/bluetooth/DockEventReceiver;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
     .line 531
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1728,7 +1728,7 @@
 
     .line 533
     :cond_10
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AG:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AG:Landroid/preference/Preference;
 
     check-cast v0, Landroid/preference/PreferenceScreen;
 
@@ -1740,7 +1740,7 @@
     .line 535
     const-string v4, "checked"
 
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -1756,7 +1756,7 @@
     invoke-virtual {v3, v4, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 538
-    invoke-super {p0, v0, v0}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, v0, v0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     goto/16 :goto_1
 
@@ -1768,18 +1768,18 @@
 
     .line 541
     :cond_12
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AH:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AH:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_14
 
     .line 542
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     const-string v3, "dock_sounds_enabled"
 
-    iget-object v4, p0, Lcom/android/settings/SoundSettings;->AH:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/SoundSettings;->AH:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -1799,18 +1799,18 @@
 
     .line 544
     :cond_14
-    iget-object v0, p0, Lcom/android/settings/SoundSettings;->AJ:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/SoundSettings;->AJ:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v0, :cond_0
 
     .line 545
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     const-string v3, "dock_audio_media_enabled"
 
-    iget-object v4, p0, Lcom/android/settings/SoundSettings;->AJ:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/SoundSettings;->AJ:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -1834,10 +1834,10 @@
 
     .prologue
     .line 417
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 419
-    invoke-direct {p0}, Lcom/android/settings/SoundSettings;->ib()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SoundSettings;->ib()V
 
     .line 421
     new-instance v0, Landroid/content/IntentFilter;
@@ -1847,23 +1847,23 @@
     invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
     .line 422
-    invoke-virtual {p0}, Lcom/android/settings/SoundSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SoundSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/SoundSettings;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/android/vendorsettings/SoundSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 425
-    invoke-direct {p0}, Lcom/android/settings/SoundSettings;->ec()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/SoundSettings;->ec()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 426
-    invoke-direct {p0}, Lcom/android/settings/SoundSettings;->ej()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SoundSettings;->ej()V
 
     .line 428
     :cond_0

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/BugreportPreference;
+.class public Lcom/android/vendorsettings/BugreportPreference;
 .super Landroid/preference/DialogPreference;
 .source "BugreportPreference.java"
 

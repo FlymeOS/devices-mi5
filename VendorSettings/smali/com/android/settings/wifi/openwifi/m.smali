@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/openwifi/m;
+.class Lcom/android/vendorsettings/wifi/openwifi/m;
 .super Ljava/lang/Object;
 .source "OpenWifiController.java"
 
@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic aFV:Lcom/android/settings/wifi/openwifi/l;
+.field final synthetic aFV:Lcom/android/vendorsettings/wifi/openwifi/l;
 
 .field final synthetic val$account:Landroid/accounts/Account;
 
@@ -15,16 +15,16 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/openwifi/l;Landroid/accounts/Account;Landroid/os/ConditionVariable;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/openwifi/l;Landroid/accounts/Account;Landroid/os/ConditionVariable;)V
     .locals 0
 
     .prologue
     .line 288
-    iput-object p1, p0, Lcom/android/settings/wifi/openwifi/m;->aFV:Lcom/android/settings/wifi/openwifi/l;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/openwifi/m;->aFV:Lcom/android/vendorsettings/wifi/openwifi/l;
 
-    iput-object p2, p0, Lcom/android/settings/wifi/openwifi/m;->val$account:Landroid/accounts/Account;
+    iput-object p2, p0, Lcom/android/vendorsettings/wifi/openwifi/m;->val$account:Landroid/accounts/Account;
 
-    iput-object p3, p0, Lcom/android/settings/wifi/openwifi/m;->val$condition:Landroid/os/ConditionVariable;
+    iput-object p3, p0, Lcom/android/vendorsettings/wifi/openwifi/m;->val$condition:Landroid/os/ConditionVariable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,21 +44,21 @@
 
     .line 293
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/wifi/openwifi/m;->aFV:Lcom/android/settings/wifi/openwifi/l;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/openwifi/m;->aFV:Lcom/android/vendorsettings/wifi/openwifi/l;
 
-    iget-object v2, p0, Lcom/android/settings/wifi/openwifi/m;->val$account:Landroid/accounts/Account;
+    iget-object v2, p0, Lcom/android/vendorsettings/wifi/openwifi/m;->val$account:Landroid/accounts/Account;
 
     invoke-interface {v0, v2}, Lcom/xiaomi/accountsdk/account/IXiaomiAccountService;->getPhone(Landroid/accounts/Account;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/android/settings/wifi/openwifi/l;->a(Lcom/android/settings/wifi/openwifi/l;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/wifi/openwifi/l;->a(Lcom/android/vendorsettings/wifi/openwifi/l;Ljava/lang/String;)Ljava/lang/String;
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 297
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/m;->val$condition:Landroid/os/ConditionVariable;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/openwifi/m;->val$condition:Landroid/os/ConditionVariable;
 
     invoke-virtual {v0}, Landroid/os/ConditionVariable;->open()V
 

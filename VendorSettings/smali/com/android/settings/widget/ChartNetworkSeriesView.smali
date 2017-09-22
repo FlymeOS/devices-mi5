@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/widget/ChartNetworkSeriesView;
+.class public Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;
 .super Landroid/view/View;
 .source "ChartNetworkSeriesView.java"
 
@@ -6,9 +6,9 @@
 # instance fields
 .field private awR:J
 
-.field private awW:Lcom/android/settings/widget/a;
+.field private awW:Lcom/android/vendorsettings/widget/a;
 
-.field private awX:Lcom/android/settings/widget/a;
+.field private awX:Lcom/android/vendorsettings/widget/a;
 
 .field private axg:Landroid/graphics/Paint;
 
@@ -53,7 +53,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {p0, p1, v0, v1}, Lcom/android/settings/widget/ChartNetworkSeriesView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, v0, v1}, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 80
     return-void
@@ -66,7 +66,7 @@
     .line 83
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/widget/ChartNetworkSeriesView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 84
     return-void
@@ -86,19 +86,19 @@
     .line 69
     const-wide/high16 v0, -0x8000000000000000L
 
-    iput-wide v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->mEndTime:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->mEndTime:J
 
     .line 71
-    iput-boolean v5, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axr:Z
+    iput-boolean v5, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axr:Z
 
     .line 72
-    iput-boolean v5, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axs:Z
+    iput-boolean v5, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axs:Z
 
     .line 73
-    iput-boolean v5, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axt:Z
+    iput-boolean v5, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axt:Z
 
     .line 89
-    sget-object v0, Lcom/android/settings/gt;->wt:[I
+    sget-object v0, Lcom/android/vendorsettings/gt;->wt:[I
 
     invoke-virtual {p1, p2, v0, p3, v5}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -131,13 +131,13 @@
     move-result v4
 
     .line 99
-    invoke-virtual {p0, v1, v2, v3}, Lcom/android/settings/widget/ChartNetworkSeriesView;->c(III)V
+    invoke-virtual {p0, v1, v2, v3}, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->c(III)V
 
     .line 100
-    invoke-virtual {p0, v4}, Lcom/android/settings/widget/ChartNetworkSeriesView;->dl(I)V
+    invoke-virtual {p0, v4}, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->dl(I)V
 
     .line 101
-    invoke-virtual {p0, v5}, Lcom/android/settings/widget/ChartNetworkSeriesView;->setWillNotDraw(Z)V
+    invoke-virtual {p0, v5}, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->setWillNotDraw(Z)V
 
     .line 103
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
@@ -147,21 +147,21 @@
 
     invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axl:Landroid/graphics/Path;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axl:Landroid/graphics/Path;
 
     .line 106
     new-instance v0, Landroid/graphics/Path;
 
     invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axm:Landroid/graphics/Path;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axm:Landroid/graphics/Path;
 
     .line 107
     new-instance v0, Landroid/graphics/Path;
 
     invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axn:Landroid/graphics/Path;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axn:Landroid/graphics/Path;
 
     .line 108
     return-void
@@ -176,26 +176,26 @@
 
     move-object/from16 v0, p0
 
-    iput-wide v2, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->awR:J
+    iput-wide v2, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->awR:J
 
     .line 173
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axl:Landroid/graphics/Path;
+    iget-object v2, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axl:Landroid/graphics/Path;
 
     invoke-virtual {v2}, Landroid/graphics/Path;->reset()V
 
     .line 174
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axm:Landroid/graphics/Path;
+    iget-object v2, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axm:Landroid/graphics/Path;
 
     invoke-virtual {v2}, Landroid/graphics/Path;->reset()V
 
     .line 175
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axn:Landroid/graphics/Path;
+    iget-object v2, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axn:Landroid/graphics/Path;
 
     invoke-virtual {v2}, Landroid/graphics/Path;->reset()V
 
@@ -204,18 +204,18 @@
 
     move-object/from16 v0, p0
 
-    iput-boolean v2, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axr:Z
+    iput-boolean v2, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axr:Z
 
     .line 179
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axk:Landroid/net/NetworkStatsHistory;
+    iget-object v2, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axk:Landroid/net/NetworkStatsHistory;
 
     if-eqz v2, :cond_0
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axk:Landroid/net/NetworkStatsHistory;
+    iget-object v2, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axk:Landroid/net/NetworkStatsHistory;
 
     invoke-virtual {v2}, Landroid/net/NetworkStatsHistory;->size()I
 
@@ -232,10 +232,10 @@
 
     .line 183
     :cond_1
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/widget/ChartNetworkSeriesView;->getWidth()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->getWidth()I
 
     .line 184
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/widget/ChartNetworkSeriesView;->getHeight()I
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->getHeight()I
 
     move-result v13
 
@@ -248,23 +248,23 @@
     .line 189
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->awW:Lcom/android/settings/widget/a;
+    iget-object v2, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->awW:Lcom/android/vendorsettings/widget/a;
 
-    invoke-interface {v2, v9}, Lcom/android/settings/widget/a;->e(F)J
+    invoke-interface {v2, v9}, Lcom/android/vendorsettings/widget/a;->e(F)J
 
     move-result-wide v6
 
     .line 192
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axl:Landroid/graphics/Path;
+    iget-object v2, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axl:Landroid/graphics/Path;
 
     invoke-virtual {v2, v9, v8}, Landroid/graphics/Path;->moveTo(FF)V
 
     .line 193
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axm:Landroid/graphics/Path;
+    iget-object v2, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axm:Landroid/graphics/Path;
 
     invoke-virtual {v2, v9, v8}, Landroid/graphics/Path;->moveTo(FF)V
 
@@ -277,11 +277,11 @@
     .line 202
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axk:Landroid/net/NetworkStatsHistory;
+    iget-object v2, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axk:Landroid/net/NetworkStatsHistory;
 
     move-object/from16 v0, p0
 
-    iget-wide v10, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axp:J
+    iget-wide v10, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axp:J
 
     invoke-virtual {v2, v10, v11}, Landroid/net/NetworkStatsHistory;->getIndexBefore(J)I
 
@@ -290,11 +290,11 @@
     .line 203
     move-object/from16 v0, p0
 
-    iget-object v10, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axk:Landroid/net/NetworkStatsHistory;
+    iget-object v10, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axk:Landroid/net/NetworkStatsHistory;
 
     move-object/from16 v0, p0
 
-    iget-wide v14, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axq:J
+    iget-wide v14, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axq:J
 
     invoke-virtual {v10, v14, v15}, Landroid/net/NetworkStatsHistory;->getIndexAfter(J)I
 
@@ -317,7 +317,7 @@
     .line 205
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axk:Landroid/net/NetworkStatsHistory;
+    iget-object v7, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axk:Landroid/net/NetworkStatsHistory;
 
     invoke-virtual {v7, v11, v6}, Landroid/net/NetworkStatsHistory;->getValues(ILandroid/net/NetworkStatsHistory$Entry;)Landroid/net/NetworkStatsHistory$Entry;
 
@@ -336,20 +336,20 @@
     .line 210
     move-object/from16 v0, p0
 
-    iget-object v10, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->awW:Lcom/android/settings/widget/a;
+    iget-object v10, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->awW:Lcom/android/vendorsettings/widget/a;
 
     move-wide/from16 v0, v16
 
-    invoke-interface {v10, v0, v1}, Lcom/android/settings/widget/a;->s(J)F
+    invoke-interface {v10, v0, v1}, Lcom/android/vendorsettings/widget/a;->s(J)F
 
     move-result v15
 
     .line 211
     move-object/from16 v0, p0
 
-    iget-object v10, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->awW:Lcom/android/settings/widget/a;
+    iget-object v10, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->awW:Lcom/android/vendorsettings/widget/a;
 
-    invoke-interface {v10, v6, v7}, Lcom/android/settings/widget/a;->s(J)F
+    invoke-interface {v10, v6, v7}, Lcom/android/vendorsettings/widget/a;->s(J)F
 
     move-result v10
 
@@ -395,9 +395,9 @@
     .line 220
     move-object/from16 v0, p0
 
-    iget-object v9, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->awX:Lcom/android/settings/widget/a;
+    iget-object v9, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->awX:Lcom/android/vendorsettings/widget/a;
 
-    invoke-interface {v9, v2, v3}, Lcom/android/settings/widget/a;->s(J)F
+    invoke-interface {v9, v2, v3}, Lcom/android/vendorsettings/widget/a;->s(J)F
 
     move-result v9
 
@@ -409,14 +409,14 @@
     .line 224
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axl:Landroid/graphics/Path;
+    iget-object v4, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axl:Landroid/graphics/Path;
 
     invoke-virtual {v4, v15, v8}, Landroid/graphics/Path;->lineTo(FF)V
 
     .line 225
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axm:Landroid/graphics/Path;
+    iget-object v4, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axm:Landroid/graphics/Path;
 
     invoke-virtual {v4, v15, v8}, Landroid/graphics/Path;->lineTo(FF)V
 
@@ -424,14 +424,14 @@
     :cond_3
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axl:Landroid/graphics/Path;
+    iget-object v4, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axl:Landroid/graphics/Path;
 
     invoke-virtual {v4, v10, v9}, Landroid/graphics/Path;->lineTo(FF)V
 
     .line 230
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axm:Landroid/graphics/Path;
+    iget-object v4, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axm:Landroid/graphics/Path;
 
     invoke-virtual {v4, v10, v9}, Landroid/graphics/Path;->lineTo(FF)V
 
@@ -448,7 +448,7 @@
     :cond_4
     move-object/from16 v0, p0
 
-    iget-wide v6, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->mEndTime:J
+    iget-wide v6, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->mEndTime:J
 
     cmp-long v4, v4, v6
 
@@ -457,27 +457,27 @@
     .line 239
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->awW:Lcom/android/settings/widget/a;
+    iget-object v4, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->awW:Lcom/android/vendorsettings/widget/a;
 
     move-object/from16 v0, p0
 
-    iget-wide v6, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->mEndTime:J
+    iget-wide v6, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->mEndTime:J
 
-    invoke-interface {v4, v6, v7}, Lcom/android/settings/widget/a;->s(J)F
+    invoke-interface {v4, v6, v7}, Lcom/android/vendorsettings/widget/a;->s(J)F
 
     move-result v9
 
     .line 241
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axl:Landroid/graphics/Path;
+    iget-object v4, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axl:Landroid/graphics/Path;
 
     invoke-virtual {v4, v9, v8}, Landroid/graphics/Path;->lineTo(FF)V
 
     .line 242
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axm:Landroid/graphics/Path;
+    iget-object v4, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axm:Landroid/graphics/Path;
 
     invoke-virtual {v4, v9, v8}, Landroid/graphics/Path;->lineTo(FF)V
 
@@ -485,7 +485,7 @@
     :cond_5
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axm:Landroid/graphics/Path;
+    iget-object v4, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axm:Landroid/graphics/Path;
 
     int-to-float v5, v13
 
@@ -494,7 +494,7 @@
     .line 254
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axm:Landroid/graphics/Path;
+    iget-object v4, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axm:Landroid/graphics/Path;
 
     const/4 v5, 0x0
 
@@ -505,10 +505,10 @@
     .line 256
     move-object/from16 v0, p0
 
-    iput-wide v2, v0, Lcom/android/settings/widget/ChartNetworkSeriesView;->awR:J
+    iput-wide v2, v0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->awR:J
 
     .line 291
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/widget/ChartNetworkSeriesView;->invalidate()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->invalidate()V
 
     goto/16 :goto_0
 .end method
@@ -520,19 +520,19 @@
 
     .prologue
     .line 145
-    iput-object p1, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axk:Landroid/net/NetworkStatsHistory;
+    iput-object p1, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axk:Landroid/net/NetworkStatsHistory;
 
     .line 146
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartNetworkSeriesView;->wh()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->wh()V
 
     .line 147
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartNetworkSeriesView;->invalidate()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->invalidate()V
 
     .line 148
     return-void
 .end method
 
-.method a(Lcom/android/settings/widget/a;Lcom/android/settings/widget/a;)V
+.method a(Lcom/android/vendorsettings/widget/a;Lcom/android/vendorsettings/widget/a;)V
     .locals 1
 
     .prologue
@@ -543,9 +543,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/a;
+    check-cast v0, Lcom/android/vendorsettings/widget/a;
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->awW:Lcom/android/settings/widget/a;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->awW:Lcom/android/vendorsettings/widget/a;
 
     .line 112
     const-string v0, "missing vert"
@@ -554,9 +554,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/a;
+    check-cast v0, Lcom/android/vendorsettings/widget/a;
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->awX:Lcom/android/settings/widget/a;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->awX:Lcom/android/vendorsettings/widget/a;
 
     .line 113
     return-void
@@ -567,7 +567,7 @@
 
     .prologue
     .line 156
-    iput-boolean p1, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axt:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axt:Z
 
     .line 157
     return-void
@@ -580,10 +580,10 @@
     .line 299
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axs:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axs:Z
 
     .line 300
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartNetworkSeriesView;->invalidate()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->invalidate()V
 
     .line 301
     return-void
@@ -600,14 +600,14 @@
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axg:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axg:Landroid/graphics/Paint;
 
     .line 117
-    iget-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axg:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axg:Landroid/graphics/Paint;
 
     const/high16 v1, 0x40800000    # 4.0f
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartNetworkSeriesView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -622,19 +622,19 @@
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
     .line 118
-    iget-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axg:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axg:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axg:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axg:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axg:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axg:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v3}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
@@ -643,22 +643,22 @@
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axh:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axh:Landroid/graphics/Paint;
 
     .line 123
-    iget-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axh:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axh:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p2}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 124
-    iget-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axh:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axh:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 125
-    iget-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axh:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axh:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v3}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
@@ -667,22 +667,22 @@
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axi:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axi:Landroid/graphics/Paint;
 
     .line 128
-    iget-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axi:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axi:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p3}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 129
-    iget-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axi:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axi:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 130
-    iget-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axi:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axi:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v3}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
@@ -691,34 +691,34 @@
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axj:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axj:Landroid/graphics/Paint;
 
     .line 133
-    iget-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axj:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axj:Landroid/graphics/Paint;
 
     const/high16 v1, 0x40400000    # 3.0f
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
     .line 134
-    iget-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axj:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axj:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p3}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 135
-    iget-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axj:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axj:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 136
-    iget-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axj:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axj:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v3}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
     .line 137
-    iget-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axj:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axj:Landroid/graphics/Paint;
 
     new-instance v1, Landroid/graphics/DashPathEffect;
 
@@ -752,7 +752,7 @@
 
     .prologue
     .line 141
-    iput p1, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axo:I
+    iput p1, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axo:I
 
     .line 142
     return-void
@@ -763,10 +763,10 @@
 
     .prologue
     .line 151
-    iput-wide p1, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axp:J
+    iput-wide p1, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axp:J
 
     .line 152
-    iput-wide p3, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axq:J
+    iput-wide p3, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axq:J
 
     .line 153
     return-void
@@ -779,16 +779,16 @@
     const/4 v6, 0x0
 
     .line 322
-    iget-boolean v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axr:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axr:Z
 
     if-nez v0, :cond_0
 
     .line 323
-    invoke-direct {p0}, Lcom/android/settings/widget/ChartNetworkSeriesView;->wi()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->wi()V
 
     .line 326
     :cond_0
-    iget-boolean v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axs:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axs:Z
 
     if-eqz v0, :cond_1
 
@@ -798,20 +798,20 @@
     move-result v0
 
     .line 328
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartNetworkSeriesView;->getWidth()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->getWidth()I
 
     move-result v1
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartNetworkSeriesView;->getHeight()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->getHeight()I
 
     move-result v2
 
     invoke-virtual {p1, v6, v6, v1, v2}, Landroid/graphics/Canvas;->clipRect(IIII)Z
 
     .line 329
-    iget-object v1, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axn:Landroid/graphics/Path;
+    iget-object v1, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axn:Landroid/graphics/Path;
 
-    iget-object v2, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axj:Landroid/graphics/Paint;
+    iget-object v2, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axj:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v1, v2}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
@@ -820,11 +820,11 @@
 
     .line 333
     :cond_1
-    iget-boolean v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axt:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axt:Z
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axi:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axi:Landroid/graphics/Paint;
 
     .line 335
     :goto_0
@@ -833,24 +833,24 @@
     move-result v1
 
     .line 336
-    iget v2, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axo:I
+    iget v2, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axo:I
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartNetworkSeriesView;->getWidth()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->getWidth()I
 
     move-result v3
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartNetworkSeriesView;->getHeight()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->getHeight()I
 
     move-result v4
 
-    iget v5, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axo:I
+    iget v5, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axo:I
 
     sub-int/2addr v4, v5
 
     invoke-virtual {p1, v2, v6, v3, v4}, Landroid/graphics/Canvas;->clipRect(IIII)Z
 
     .line 337
-    iget-object v2, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axm:Landroid/graphics/Path;
+    iget-object v2, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axm:Landroid/graphics/Path;
 
     invoke-virtual {p1, v2, v0}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
@@ -862,7 +862,7 @@
 
     .line 333
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axh:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axh:Landroid/graphics/Paint;
 
     goto :goto_0
 .end method
@@ -872,7 +872,7 @@
 
     .prologue
     .line 295
-    iput-wide p1, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->mEndTime:J
+    iput-wide p1, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->mEndTime:J
 
     .line 296
     return-void
@@ -885,15 +885,15 @@
     .line 160
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axr:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axr:Z
 
     .line 161
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->awR:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->awR:J
 
     .line 162
-    invoke-virtual {p0}, Lcom/android/settings/widget/ChartNetworkSeriesView;->invalidate()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->invalidate()V
 
     .line 163
     return-void
@@ -904,7 +904,7 @@
 
     .prologue
     .line 304
-    iget-wide v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axu:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axu:J
 
     return-wide v0
 .end method
@@ -914,11 +914,11 @@
 
     .prologue
     .line 308
-    iget-boolean v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axs:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axs:Z
 
     if-eqz v0, :cond_1
 
-    iget-wide v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axu:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axu:J
 
     .line 309
     :goto_0
@@ -928,16 +928,16 @@
 
     if-gtz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axk:Landroid/net/NetworkStatsHistory;
+    iget-object v2, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axk:Landroid/net/NetworkStatsHistory;
 
     if-eqz v2, :cond_0
 
     .line 311
-    iget-object v1, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axk:Landroid/net/NetworkStatsHistory;
+    iget-object v1, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axk:Landroid/net/NetworkStatsHistory;
 
-    iget-wide v2, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axp:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axp:J
 
-    iget-wide v4, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->axq:J
+    iget-wide v4, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->axq:J
 
     const/4 v6, 0x0
 
@@ -958,7 +958,7 @@
 
     .line 308
     :cond_1
-    iget-wide v0, p0, Lcom/android/settings/widget/ChartNetworkSeriesView;->awR:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;->awR:J
 
     goto :goto_0
 .end method

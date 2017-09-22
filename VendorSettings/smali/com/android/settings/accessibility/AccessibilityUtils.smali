@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accessibility/AccessibilityUtils;
+.class Lcom/android/vendorsettings/accessibility/AccessibilityUtils;
 .super Ljava/lang/Object;
 .source "AccessibilityUtils.java"
 
@@ -103,7 +103,7 @@
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
     .line 47
-    sget-object v2, Lcom/android/settings/accessibility/AccessibilitySettings;->Cv:Landroid/text/TextUtils$SimpleStringSplitter;
+    sget-object v2, Lcom/android/vendorsettings/accessibility/AccessibilitySettings;->Cv:Landroid/text/TextUtils$SimpleStringSplitter;
 
     .line 48
     invoke-virtual {v2, v1}, Landroid/text/TextUtils$SimpleStringSplitter;->setString(Ljava/lang/String;)V

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fT;
+.class Lcom/android/vendorsettings/fT;
 .super Ljava/lang/Object;
 .source "NotificationAppListSettings.java"
 
@@ -12,28 +12,28 @@
 
 .field public title:Landroid/widget/TextView;
 
-.field final synthetic vi:Lcom/android/settings/fR;
+.field final synthetic vi:Lcom/android/vendorsettings/fR;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/fR;)V
+.method private constructor <init>(Lcom/android/vendorsettings/fR;)V
     .locals 0
 
     .prologue
     .line 394
-    iput-object p1, p0, Lcom/android/settings/fT;->vi:Lcom/android/settings/fR;
+    iput-object p1, p0, Lcom/android/vendorsettings/fT;->vi:Lcom/android/vendorsettings/fR;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/fR;Lcom/android/settings/fN;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/fR;Lcom/android/vendorsettings/fN;)V
     .locals 0
 
     .prologue
     .line 394
-    invoke-direct {p0, p1}, Lcom/android/settings/fT;-><init>(Lcom/android/settings/fR;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/fT;-><init>(Lcom/android/vendorsettings/fR;)V
 
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/d;
+.class public Lcom/android/vendorsettings/display/d;
 .super Ljava/lang/Object;
 .source "DisplayUtils.java"
 
@@ -11,7 +11,7 @@
     .line 110
     new-instance v0, Landroid/content/ComponentName;
 
-    const-class v1, Lcom/android/settings/display/ScreenPaperModeUpdateService;
+    const-class v1, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;
 
     invoke-direct {v0, p0, v1}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -139,7 +139,7 @@
 
     const-string v2, "android.intent.action.INIT_PAPER_MODE_PKG_LIST"
 
-    invoke-static {p0, v1, v2}, Lcom/android/settings/display/d;->a(Landroid/content/Context;ILjava/lang/String;)Landroid/app/job/JobInfo$Builder;
+    invoke-static {p0, v1, v2}, Lcom/android/vendorsettings/display/d;->a(Landroid/content/Context;ILjava/lang/String;)Landroid/app/job/JobInfo$Builder;
 
     move-result-object v1
 
@@ -185,7 +185,7 @@
 
     const-string v2, "android.intent.action.UPDATE_PAPER_MODE_PKG_LIST"
 
-    invoke-static {p0, v1, v2}, Lcom/android/settings/display/d;->a(Landroid/content/Context;ILjava/lang/String;)Landroid/app/job/JobInfo$Builder;
+    invoke-static {p0, v1, v2}, Lcom/android/vendorsettings/display/d;->a(Landroid/content/Context;ILjava/lang/String;)Landroid/app/job/JobInfo$Builder;
 
     move-result-object v1
 

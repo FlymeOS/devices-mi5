@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/aZ;
+.class Lcom/android/vendorsettings/wifi/aZ;
 .super Ljava/lang/Object;
 .source "WpsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aEZ:Lcom/android/settings/wifi/aY;
+.field final synthetic aEZ:Lcom/android/vendorsettings/wifi/aY;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/aY;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/aY;)V
     .locals 0
 
     .prologue
     .line 188
-    iput-object p1, p0, Lcom/android/settings/wifi/aZ;->aEZ:Lcom/android/settings/wifi/aY;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/aZ;->aEZ:Lcom/android/vendorsettings/wifi/aY;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 192
-    iget-object v0, p0, Lcom/android/settings/wifi/aZ;->aEZ:Lcom/android/settings/wifi/aY;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/aZ;->aEZ:Lcom/android/vendorsettings/wifi/aY;
 
-    iget-object v0, v0, Lcom/android/settings/wifi/aY;->aEY:Lcom/android/settings/wifi/WpsFragment;
+    iget-object v0, v0, Lcom/android/vendorsettings/wifi/aY;->aEY:Lcom/android/vendorsettings/wifi/WpsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/WpsFragment;->b(Lcom/android/settings/wifi/WpsFragment;)Lmiui/widget/ProgressBar;
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/WpsFragment;->b(Lcom/android/vendorsettings/wifi/WpsFragment;)Lmiui/widget/ProgressBar;
 
     move-result-object v0
 

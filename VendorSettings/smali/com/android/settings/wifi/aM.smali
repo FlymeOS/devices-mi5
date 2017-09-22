@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/aM;
+.class Lcom/android/vendorsettings/wifi/aM;
 .super Ljava/lang/Object;
 .source "WifiTipActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aEC:Lcom/android/settings/wifi/WifiTipActivity;
+.field final synthetic aEC:Lcom/android/vendorsettings/wifi/WifiTipActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiTipActivity;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/WifiTipActivity;)V
     .locals 0
 
     .prologue
     .line 41
-    iput-object p1, p0, Lcom/android/settings/wifi/aM;->aEC:Lcom/android/settings/wifi/WifiTipActivity;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/aM;->aEC:Lcom/android/vendorsettings/wifi/WifiTipActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/android/settings/wifi/aM;->aEC:Lcom/android/settings/wifi/WifiTipActivity;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/aM;->aEC:Lcom/android/vendorsettings/wifi/WifiTipActivity;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/WifiTipActivity;->a(Lcom/android/settings/wifi/WifiTipActivity;)I
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/WifiTipActivity;->a(Lcom/android/vendorsettings/wifi/WifiTipActivity;)I
 
     move-result v0
 
@@ -41,11 +41,11 @@
     if-ne v0, v1, :cond_0
 
     .line 46
-    iget-object v0, p0, Lcom/android/settings/wifi/aM;->aEC:Lcom/android/settings/wifi/WifiTipActivity;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/aM;->aEC:Lcom/android/vendorsettings/wifi/WifiTipActivity;
 
     const-string v1, "wifi"
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/wifi/WifiTipActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/wifi/WifiTipActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -59,9 +59,9 @@
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
     .line 50
-    iget-object v0, p0, Lcom/android/settings/wifi/aM;->aEC:Lcom/android/settings/wifi/WifiTipActivity;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/aM;->aEC:Lcom/android/vendorsettings/wifi/WifiTipActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiTipActivity;->finish()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/WifiTipActivity;->finish()V
 
     .line 51
     return-void

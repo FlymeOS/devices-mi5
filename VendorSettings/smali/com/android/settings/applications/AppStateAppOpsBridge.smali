@@ -1,5 +1,5 @@
-.class public abstract Lcom/android/settings/applications/AppStateAppOpsBridge;
-.super Lcom/android/settings/applications/AppStateBaseBridge;
+.class public abstract Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;
+.super Lcom/android/vendorsettings/applications/AppStateBaseBridge;
 .source "AppStateAppOpsBridge.java"
 
 
@@ -20,38 +20,38 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/android/b/a/a;Lcom/android/settings/applications/AppStateBaseBridge$Callback;I[Ljava/lang/String;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/android/b/a/a;Lcom/android/vendorsettings/applications/AppStateBaseBridge$Callback;I[Ljava/lang/String;)V
     .locals 2
 
     .prologue
     .line 61
-    invoke-direct {p0, p2, p3}, Lcom/android/settings/applications/AppStateBaseBridge;-><init>(Lcom/android/b/a/a;Lcom/android/settings/applications/AppStateBaseBridge$Callback;)V
+    invoke-direct {p0, p2, p3}, Lcom/android/vendorsettings/applications/AppStateBaseBridge;-><init>(Lcom/android/b/a/a;Lcom/android/vendorsettings/applications/AppStateBaseBridge$Callback;)V
 
     .line 62
-    iput-object p1, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->mContext:Landroid/content/Context;
 
     .line 63
     invoke-static {}, Landroid/app/AppGlobals;->getPackageManager()Landroid/content/pm/IPackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gj:Landroid/content/pm/IPackageManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gj:Landroid/content/pm/IPackageManager;
 
     .line 64
     invoke-static {p1}, Landroid/os/UserManager;->get(Landroid/content/Context;)Landroid/os/UserManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->sR:Landroid/os/UserManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->sR:Landroid/os/UserManager;
 
     .line 65
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->sR:Landroid/os/UserManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->sR:Landroid/os/UserManager;
 
     invoke-virtual {v0}, Landroid/os/UserManager;->getUserProfiles()Ljava/util/List;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gk:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gk:Ljava/util/List;
 
     .line 66
     const-string v0, "appops"
@@ -62,7 +62,7 @@
 
     check-cast v0, Landroid/app/AppOpsManager;
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->mAppOpsManager:Landroid/app/AppOpsManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->mAppOpsManager:Landroid/app/AppOpsManager;
 
     .line 67
     const/4 v0, 0x1
@@ -73,10 +73,10 @@
 
     aput p4, v0, v1
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gl:[I
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gl:[I
 
     .line 68
-    iput-object p5, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gm:[Ljava/lang/String;
+    iput-object p5, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gm:[Ljava/lang/String;
 
     .line 69
     return-void
@@ -126,7 +126,7 @@
     const/4 v1, 0x0
 
     .line 72
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gk:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gk:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -139,7 +139,7 @@
     if-ge v2, v3, :cond_1
 
     .line 74
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gk:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gk:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -188,7 +188,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -220,7 +220,7 @@
 
     .line 193
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gk:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gk:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -255,9 +255,9 @@
     if-eqz v0, :cond_0
 
     .line 200
-    iget-object v2, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gj:Landroid/content/pm/IPackageManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gj:Landroid/content/pm/IPackageManager;
 
-    iget-object v3, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gm:[Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gm:[Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -299,18 +299,18 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;
+    check-cast v2, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;
 
     .line 206
     if-eqz v2, :cond_1
 
     .line 207
-    iput-object v1, v2, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;->Gn:Landroid/content/pm/PackageInfo;
+    iput-object v1, v2, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;->Gn:Landroid/content/pm/PackageInfo;
 
     .line 208
     const/4 v1, 0x1
 
-    iput-boolean v1, v2, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;->Go:Z
+    iput-boolean v1, v2, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;->Go:Z
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -345,7 +345,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gm:[Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gm:[Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -369,9 +369,9 @@
     const/4 v3, 0x0
 
     .line 225
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->mAppOpsManager:Landroid/app/AppOpsManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->mAppOpsManager:Landroid/app/AppOpsManager;
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gl:[I
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gl:[I
 
     invoke-virtual {v0, v1}, Landroid/app/AppOpsManager;->getPackagesForOps([I)Ljava/util/List;
 
@@ -410,7 +410,7 @@
     move-result v6
 
     .line 231
-    invoke-direct {p0, v6}, Lcom/android/settings/applications/AppStateAppOpsBridge;->aE(I)Z
+    invoke-direct {p0, v6}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->aE(I)Z
 
     move-result v1
 
@@ -451,7 +451,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;
+    check-cast v1, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;
 
     .line 241
     if-nez v1, :cond_3
@@ -493,7 +493,7 @@
 
     move-result-object v0
 
-    iget-object v6, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gm:[Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gm:[Ljava/lang/String;
 
     invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -572,7 +572,7 @@
 
     move-result v0
 
-    iput v0, v1, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;->Gq:I
+    iput v0, v1, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;->Gq:I
 
     goto/16 :goto_2
 
@@ -596,7 +596,7 @@
     invoke-direct {v6}, Ljava/util/HashSet;-><init>()V
 
     .line 149
-    iget-object v2, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gm:[Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gm:[Ljava/lang/String;
 
     array-length v4, v2
 
@@ -608,7 +608,7 @@
     aget-object v7, v2, v1
 
     .line 150
-    iget-object v8, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gj:Landroid/content/pm/IPackageManager;
+    iget-object v8, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gj:Landroid/content/pm/IPackageManager;
 
     invoke-interface {v8, v7}, Landroid/content/pm/IPackageManager;->getAppOpPermissionPackages(Ljava/lang/String;)[Ljava/lang/String;
 
@@ -651,7 +651,7 @@
     invoke-direct {v4}, Landroid/util/SparseArray;-><init>()V
 
     .line 164
-    iget-object v1, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gk:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gk:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -707,14 +707,14 @@
     check-cast v1, Ljava/lang/String;
 
     .line 169
-    iget-object v11, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gj:Landroid/content/pm/IPackageManager;
+    iget-object v11, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gj:Landroid/content/pm/IPackageManager;
 
     invoke-interface {v11, v1, v9}, Landroid/content/pm/IPackageManager;->isPackageAvailable(Ljava/lang/String;I)Z
 
     move-result v11
 
     .line 171
-    invoke-direct {p0, v1}, Lcom/android/settings/applications/AppStateAppOpsBridge;->am(Ljava/lang/String;)Z
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->am(Ljava/lang/String;)Z
 
     move-result v12
 
@@ -723,9 +723,9 @@
     if-eqz v11, :cond_4
 
     .line 172
-    new-instance v11, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;
+    new-instance v11, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;
 
-    invoke-direct {v11, v1, v2}, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;-><init>(Ljava/lang/String;Landroid/os/UserHandle;)V
+    invoke-direct {v11, v1, v2}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;-><init>(Ljava/lang/String;Landroid/os/UserHandle;)V
 
     .line 173
     invoke-virtual {v8, v1, v11}, Landroid/util/ArrayMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -751,7 +751,7 @@
 
     move-result-object v4
 
-    iget-object v6, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gm:[Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gm:[Ljava/lang/String;
 
     aget-object v5, v6, v5
 
@@ -782,14 +782,14 @@
 .method protected abstract a(Lcom/android/b/a/o;Ljava/lang/String;I)V
 .end method
 
-.method public g(Ljava/lang/String;I)Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;
+.method public g(Ljava/lang/String;I)Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;
     .locals 6
 
     .prologue
     const/4 v0, 0x0
 
     .line 93
-    new-instance v1, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;
+    new-instance v1, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;
 
     new-instance v2, Landroid/os/UserHandle;
 
@@ -799,15 +799,15 @@
 
     invoke-direct {v2, v3}, Landroid/os/UserHandle;-><init>(I)V
 
-    invoke-direct {v1, p1, v2}, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;-><init>(Ljava/lang/String;Landroid/os/UserHandle;)V
+    invoke-direct {v1, p1, v2}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;-><init>(Ljava/lang/String;Landroid/os/UserHandle;)V
 
     .line 96
     :try_start_0
-    iget-object v2, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gj:Landroid/content/pm/IPackageManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gj:Landroid/content/pm/IPackageManager;
 
     const/16 v3, 0x1000
 
-    iget-object v4, v1, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;->userHandle:Landroid/os/UserHandle;
+    iget-object v4, v1, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;->userHandle:Landroid/os/UserHandle;
 
     invoke-virtual {v4}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -817,15 +817,15 @@
 
     move-result-object v2
 
-    iput-object v2, v1, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;->Gn:Landroid/content/pm/PackageInfo;
+    iput-object v2, v1, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;->Gn:Landroid/content/pm/PackageInfo;
 
     .line 99
-    iget-object v2, v1, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;->Gn:Landroid/content/pm/PackageInfo;
+    iget-object v2, v1, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;->Gn:Landroid/content/pm/PackageInfo;
 
     iget-object v2, v2, Landroid/content/pm/PackageInfo;->requestedPermissions:[Ljava/lang/String;
 
     .line 100
-    iget-object v3, v1, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;->Gn:Landroid/content/pm/PackageInfo;
+    iget-object v3, v1, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;->Gn:Landroid/content/pm/PackageInfo;
 
     iget-object v3, v3, Landroid/content/pm/PackageInfo;->requestedPermissionsFlags:[I
 
@@ -841,9 +841,9 @@
     .line 103
     aget-object v4, v2, v0
 
-    iget-object v5, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gm:[Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gm:[Ljava/lang/String;
 
-    invoke-direct {p0, v4, v5}, Lcom/android/settings/applications/AppStateAppOpsBridge;->a(Ljava/lang/String;[Ljava/lang/String;)Z
+    invoke-direct {p0, v4, v5}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->a(Ljava/lang/String;[Ljava/lang/String;)Z
 
     move-result v4
 
@@ -852,7 +852,7 @@
     .line 104
     const/4 v4, 0x1
 
-    iput-boolean v4, v1, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;->Gp:Z
+    iput-boolean v4, v1, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;->Gp:Z
 
     .line 105
     aget v4, v3, v0
@@ -864,13 +864,13 @@
     .line 106
     const/4 v0, 0x1
 
-    iput-boolean v0, v1, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;->Go:Z
+    iput-boolean v0, v1, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;->Go:Z
 
     .line 113
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->mAppOpsManager:Landroid/app/AppOpsManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->mAppOpsManager:Landroid/app/AppOpsManager;
 
-    iget-object v2, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gl:[I
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gl:[I
 
     invoke-virtual {v0, p2, p1, v2}, Landroid/app/AppOpsManager;->getOpsForPackage(ILjava/lang/String;[I)Ljava/util/List;
 
@@ -928,7 +928,7 @@
 
     move-result v0
 
-    iput v0, v1, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;->Gq:I
+    iput v0, v1, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;->Gq:I
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -978,18 +978,18 @@
 
     .prologue
     .line 125
-    invoke-direct {p0}, Lcom/android/settings/applications/AppStateAppOpsBridge;->jN()Landroid/util/SparseArray;
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->jN()Landroid/util/SparseArray;
 
     move-result-object v3
 
     .line 128
-    invoke-direct {p0, v3}, Lcom/android/settings/applications/AppStateAppOpsBridge;->b(Landroid/util/SparseArray;)V
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->b(Landroid/util/SparseArray;)V
 
     .line 129
-    invoke-direct {p0, v3}, Lcom/android/settings/applications/AppStateAppOpsBridge;->c(Landroid/util/SparseArray;)V
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->c(Landroid/util/SparseArray;)V
 
     .line 132
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->Gs:Lcom/android/b/a/w;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->Gs:Lcom/android/b/a/w;
 
     invoke-virtual {v0}, Lcom/android/b/a/w;->zo()Ljava/util/ArrayList;
 
@@ -1042,7 +1042,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;
+    check-cast v1, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;
 
     :goto_1
     iput-object v1, v0, Lcom/android/b/a/o;->aIP:Ljava/lang/Object;
@@ -1072,7 +1072,7 @@
     const/4 v1, 0x0
 
     .line 264
-    invoke-direct {p0}, Lcom/android/settings/applications/AppStateAppOpsBridge;->jN()Landroid/util/SparseArray;
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->jN()Landroid/util/SparseArray;
 
     move-result-object v0
 
@@ -1087,7 +1087,7 @@
 
     .line 268
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->sR:Landroid/os/UserManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->sR:Landroid/os/UserManager;
 
     invoke-virtual {v2}, Landroid/os/UserManager;->getUserHandle()I
 
@@ -1123,7 +1123,7 @@
     const/4 v1, 0x0
 
     .line 277
-    invoke-direct {p0}, Lcom/android/settings/applications/AppStateAppOpsBridge;->jN()Landroid/util/SparseArray;
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->jN()Landroid/util/SparseArray;
 
     move-result-object v0
 
@@ -1136,13 +1136,13 @@
 
     .line 281
     :cond_1
-    invoke-direct {p0, v0}, Lcom/android/settings/applications/AppStateAppOpsBridge;->b(Landroid/util/SparseArray;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->b(Landroid/util/SparseArray;)V
 
     .line 282
-    invoke-direct {p0, v0}, Lcom/android/settings/applications/AppStateAppOpsBridge;->c(Landroid/util/SparseArray;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->c(Landroid/util/SparseArray;)V
 
     .line 283
-    iget-object v2, p0, Lcom/android/settings/applications/AppStateAppOpsBridge;->sR:Landroid/os/UserManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->sR:Landroid/os/UserManager;
 
     invoke-virtual {v2}, Landroid/os/UserManager;->getUserHandle()I
 
@@ -1178,10 +1178,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;
+    check-cast v0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;
 
     .line 291
-    invoke-virtual {v0}, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;->jQ()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;->jQ()Z
 
     move-result v0
 

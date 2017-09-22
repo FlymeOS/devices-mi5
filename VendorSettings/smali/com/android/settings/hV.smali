@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hV;
+.class Lcom/android/vendorsettings/hV;
 .super Ljava/lang/Object;
 .source "TetherSettings.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic AU:Lcom/android/settings/TetherSettings;
+.field final synthetic AU:Lcom/android/vendorsettings/TetherSettings;
 
 .field final synthetic val$context:Landroid/content/Context;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/TetherSettings;Landroid/content/Context;)V
+.method constructor <init>(Lcom/android/vendorsettings/TetherSettings;Landroid/content/Context;)V
     .locals 0
 
     .prologue
     .line 581
-    iput-object p1, p0, Lcom/android/settings/hV;->AU:Lcom/android/settings/TetherSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/hV;->AU:Lcom/android/vendorsettings/TetherSettings;
 
-    iput-object p2, p0, Lcom/android/settings/hV;->val$context:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/vendorsettings/hV;->val$context:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,14 +34,14 @@
 
     .prologue
     .line 584
-    iget-object v0, p0, Lcom/android/settings/hV;->AU:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/hV;->AU:Lcom/android/vendorsettings/TetherSettings;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/TetherSettings;->a(Lcom/android/settings/TetherSettings;I)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/TetherSettings;->a(Lcom/android/vendorsettings/TetherSettings;I)V
 
     .line 585
-    iget-object v0, p0, Lcom/android/settings/hV;->val$context:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/hV;->val$context:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/telephony/TelephonyManager;->from(Landroid/content/Context;)Landroid/telephony/TelephonyManager;
 

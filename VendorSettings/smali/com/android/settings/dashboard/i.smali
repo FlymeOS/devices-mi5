@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dashboard/i;
+.class Lcom/android/vendorsettings/dashboard/i;
 .super Landroid/widget/BaseAdapter;
 .source "SearchResultsSummary.java"
 
@@ -28,13 +28,13 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/dashboard/i;->Vd:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->Vd:Ljava/util/HashMap;
 
     .line 522
-    iput-object p1, p0, Lcom/android/settings/dashboard/i;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/dashboard/i;->mContext:Landroid/content/Context;
 
     .line 523
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->mContext:Landroid/content/Context;
 
     const-string v1, "layout_inflater"
 
@@ -44,23 +44,23 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    iput-object v0, p0, Lcom/android/settings/dashboard/i;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->mInflater:Landroid/view/LayoutInflater;
 
     .line 524
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/dashboard/i;->mDataValid:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/dashboard/i;->mDataValid:Z
 
     .line 525
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/dashboard/i;)Landroid/database/Cursor;
+.method static synthetic a(Lcom/android/vendorsettings/dashboard/i;)Landroid/database/Cursor;
     .locals 1
 
     .prologue
     .line 510
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->mCursor:Landroid/database/Cursor;
 
     return-object v0
 .end method
@@ -72,15 +72,15 @@
 
     .prologue
     .line 545
-    iget-boolean v0, p0, Lcom/android/settings/dashboard/i;->mDataValid:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/dashboard/i;->mDataValid:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->mCursor:Landroid/database/Cursor;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v0}, Landroid/database/Cursor;->isClosed()Z
 
@@ -96,7 +96,7 @@
     return v0
 
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v0}, Landroid/database/Cursor;->getCount()I
 
@@ -112,11 +112,11 @@
     const/4 v1, 0x0
 
     .line 551
-    iget-boolean v0, p0, Lcom/android/settings/dashboard/i;->mDataValid:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/dashboard/i;->mDataValid:Z
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v0, p1}, Landroid/database/Cursor;->moveToPosition(I)Z
 
@@ -125,7 +125,7 @@
     if-eqz v0, :cond_2
 
     .line 552
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->mCursor:Landroid/database/Cursor;
 
     const/4 v2, 0x1
 
@@ -134,7 +134,7 @@
     move-result-object v2
 
     .line 553
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->mCursor:Landroid/database/Cursor;
 
     const/4 v3, 0x2
 
@@ -143,7 +143,7 @@
     move-result-object v3
 
     .line 554
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->mCursor:Landroid/database/Cursor;
 
     const/4 v4, 0x3
 
@@ -152,7 +152,7 @@
     move-result-object v4
 
     .line 555
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->mCursor:Landroid/database/Cursor;
 
     const/4 v5, 0x4
 
@@ -161,7 +161,7 @@
     move-result-object v5
 
     .line 556
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->mCursor:Landroid/database/Cursor;
 
     const/16 v6, 0x8
 
@@ -170,7 +170,7 @@
     move-result-object v6
 
     .line 557
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->mCursor:Landroid/database/Cursor;
 
     const/4 v7, 0x6
 
@@ -179,7 +179,7 @@
     move-result-object v0
 
     .line 559
-    iget-object v7, p0, Lcom/android/settings/dashboard/i;->mCursor:Landroid/database/Cursor;
+    iget-object v7, p0, Lcom/android/vendorsettings/dashboard/i;->mCursor:Landroid/database/Cursor;
 
     const/16 v8, 0xa
 
@@ -188,7 +188,7 @@
     move-result-object v8
 
     .line 561
-    iget-object v7, p0, Lcom/android/settings/dashboard/i;->mCursor:Landroid/database/Cursor;
+    iget-object v7, p0, Lcom/android/vendorsettings/dashboard/i;->mCursor:Landroid/database/Cursor;
 
     const/16 v9, 0xd
 
@@ -210,7 +210,7 @@
     if-nez v0, :cond_0
 
     .line 566
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->Vd:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->Vd:Ljava/util/HashMap;
 
     invoke-virtual {v0, v8}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -223,7 +223,7 @@
 
     .line 569
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->mContext:Landroid/content/Context;
 
     const/4 v9, 0x0
 
@@ -234,7 +234,7 @@
     move-result-object v1
 
     .line 574
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->Vd:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->Vd:Ljava/util/HashMap;
 
     invoke-virtual {v0, v8, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -250,9 +250,9 @@
 
     .line 583
     :goto_1
-    new-instance v0, Lcom/android/settings/dashboard/h;
+    new-instance v0, Lcom/android/vendorsettings/dashboard/h;
 
-    invoke-direct/range {v0 .. v7}, Lcom/android/settings/dashboard/h;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct/range {v0 .. v7}, Lcom/android/vendorsettings/dashboard/h;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
 
     .line 586
     :goto_2
@@ -292,7 +292,7 @@
 
     .line 577
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/dashboard/i;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/dashboard/i;->mContext:Landroid/content/Context;
 
     goto :goto_0
 
@@ -333,7 +333,7 @@
     const v4, 0x7f02008a
 
     .line 596
-    iget-boolean v0, p0, Lcom/android/settings/dashboard/i;->mDataValid:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/dashboard/i;->mDataValid:Z
 
     if-nez v0, :cond_0
 
@@ -350,7 +350,7 @@
 
     .line 600
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v0, p1}, Landroid/database/Cursor;->moveToPosition(I)Z
 
@@ -388,7 +388,7 @@
     if-nez p2, :cond_2
 
     .line 609
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->mInflater:Landroid/view/LayoutInflater;
 
     const v1, 0x7f040131
 
@@ -418,28 +418,28 @@
     check-cast v1, Landroid/widget/ImageView;
 
     .line 617
-    invoke-virtual {p0, p1}, Lcom/android/settings/dashboard/i;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/dashboard/i;->getItem(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/dashboard/h;
+    check-cast v2, Lcom/android/vendorsettings/dashboard/h;
 
     .line 618
-    iget-object v3, v2, Lcom/android/settings/dashboard/h;->title:Ljava/lang/String;
+    iget-object v3, v2, Lcom/android/vendorsettings/dashboard/h;->title:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 620
-    iget v0, v2, Lcom/android/settings/dashboard/h;->iconResId:I
+    iget v0, v2, Lcom/android/vendorsettings/dashboard/h;->iconResId:I
 
     if-eq v0, v4, :cond_3
 
     .line 621
-    iget-object v0, v2, Lcom/android/settings/dashboard/h;->context:Landroid/content/Context;
+    iget-object v0, v2, Lcom/android/vendorsettings/dashboard/h;->context:Landroid/content/Context;
 
     .line 624
     :try_start_0
-    iget v3, v2, Lcom/android/settings/dashboard/h;->iconResId:I
+    iget v3, v2, Lcom/android/vendorsettings/dashboard/h;->iconResId:I
 
     invoke-virtual {v0, v3}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -471,7 +471,7 @@
 
     move-result-object v1
 
-    iget-object v2, v2, Lcom/android/settings/dashboard/h;->title:Ljava/lang/String;
+    iget-object v2, v2, Lcom/android/vendorsettings/dashboard/h;->title:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -502,7 +502,7 @@
 
     .prologue
     .line 528
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->mCursor:Landroid/database/Cursor;
 
     if-ne p1, v0, :cond_0
 
@@ -515,10 +515,10 @@
 
     .line 531
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/dashboard/i;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/i;->mCursor:Landroid/database/Cursor;
 
     .line 532
-    iput-object p1, p0, Lcom/android/settings/dashboard/i;->mCursor:Landroid/database/Cursor;
+    iput-object p1, p0, Lcom/android/vendorsettings/dashboard/i;->mCursor:Landroid/database/Cursor;
 
     .line 533
     if-eqz p1, :cond_1
@@ -526,10 +526,10 @@
     .line 534
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lcom/android/settings/dashboard/i;->mDataValid:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/dashboard/i;->mDataValid:Z
 
     .line 535
-    invoke-virtual {p0}, Lcom/android/settings/dashboard/i;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dashboard/i;->notifyDataSetChanged()V
 
     goto :goto_0
 
@@ -537,10 +537,10 @@
     :cond_1
     const/4 v1, 0x0
 
-    iput-boolean v1, p0, Lcom/android/settings/dashboard/i;->mDataValid:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/dashboard/i;->mDataValid:Z
 
     .line 538
-    invoke-virtual {p0}, Lcom/android/settings/dashboard/i;->notifyDataSetInvalidated()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dashboard/i;->notifyDataSetInvalidated()V
 
     goto :goto_0
 .end method

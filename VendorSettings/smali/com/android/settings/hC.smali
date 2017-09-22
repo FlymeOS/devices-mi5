@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hC;
+.class Lcom/android/vendorsettings/hC;
 .super Landroid/widget/ArrayAdapter;
 .source "SettingsFragment.java"
 
@@ -14,18 +14,18 @@
 
 .field private uJ:Ljava/lang/String;
 
-.field final synthetic zP:Lcom/android/settings/SettingsFragment;
+.field final synthetic zP:Lcom/android/vendorsettings/SettingsFragment;
 
 .field private final zS:I
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/SettingsFragment;Landroid/content/Context;Ljava/util/List;)V
+.method public constructor <init>(Lcom/android/vendorsettings/SettingsFragment;Landroid/content/Context;Ljava/util/List;)V
     .locals 2
 
     .prologue
     .line 503
-    iput-object p1, p0, Lcom/android/settings/hC;->zP:Lcom/android/settings/SettingsFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/hC;->zP:Lcom/android/vendorsettings/SettingsFragment;
 
     .line 504
     const/4 v0, 0x0
@@ -35,16 +35,16 @@
     .line 496
     const/4 v0, 0x4
 
-    iput v0, p0, Lcom/android/settings/hC;->zS:I
+    iput v0, p0, Lcom/android/vendorsettings/hC;->zS:I
 
     .line 505
-    iput-object p2, p0, Lcom/android/settings/hC;->mContext:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/vendorsettings/hC;->mContext:Landroid/content/Context;
 
     .line 506
-    iput-object p3, p0, Lcom/android/settings/hC;->mList:Ljava/util/List;
+    iput-object p3, p0, Lcom/android/vendorsettings/hC;->mList:Ljava/util/List;
 
     .line 507
-    iget-object v0, p0, Lcom/android/settings/hC;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/hC;->mContext:Landroid/content/Context;
 
     const-string v1, "layout_inflater"
 
@@ -54,30 +54,30 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    iput-object v0, p0, Lcom/android/settings/hC;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/vendorsettings/hC;->mInflater:Landroid/view/LayoutInflater;
 
     .line 508
-    iget-object v0, p0, Lcom/android/settings/hC;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/hC;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/hC;->mPackageManager:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/hC;->mPackageManager:Landroid/content/pm/PackageManager;
 
     .line 509
-    # invokes: Lcom/android/settings/SettingsFragment;->getLanguage()Ljava/lang/String;
-    invoke-static {}, Lcom/android/settings/SettingsFragment;->access$1400()Ljava/lang/String;
+    # invokes: Lcom/android/vendorsettings/SettingsFragment;->getLanguage()Ljava/lang/String;
+    invoke-static {}, Lcom/android/vendorsettings/SettingsFragment;->access$1400()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/hC;->uJ:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/hC;->uJ:Ljava/lang/String;
 
     .line 510
     return-void
 .end method
 
-.method private a(Lcom/android/settings/hc;)I
+.method private a(Lcom/android/vendorsettings/hc;)I
     .locals 1
 
     .prologue
@@ -85,7 +85,7 @@
     if-eqz p1, :cond_0
 
     .line 529
-    invoke-virtual {p1}, Lcom/android/settings/hc;->getType()I
+    invoke-virtual {p1}, Lcom/android/vendorsettings/hc;->getType()I
 
     move-result v0
 
@@ -99,12 +99,12 @@
     goto :goto_0
 .end method
 
-.method private a(Landroid/view/View;Lcom/android/settings/hB;Lcom/android/settings/hc;)V
+.method private a(Landroid/view/View;Lcom/android/vendorsettings/hB;Lcom/android/vendorsettings/hc;)V
     .locals 4
 
     .prologue
     .line 555
-    invoke-virtual {p3}, Lcom/android/settings/hc;->hn()Ljava/lang/String;
+    invoke-virtual {p3}, Lcom/android/vendorsettings/hc;->hn()Ljava/lang/String;
 
     move-result-object v0
 
@@ -116,7 +116,7 @@
     if-eqz v1, :cond_0
 
     .line 557
-    invoke-virtual {p3}, Lcom/android/settings/hc;->getPath()Ljava/lang/String;
+    invoke-virtual {p3}, Lcom/android/vendorsettings/hc;->getPath()Ljava/lang/String;
 
     move-result-object v0
 
@@ -135,17 +135,17 @@
 
     .line 560
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/hC;->zP:Lcom/android/settings/SettingsFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/hC;->zP:Lcom/android/vendorsettings/SettingsFragment;
 
-    iget-object v2, p0, Lcom/android/settings/hC;->zP:Lcom/android/settings/SettingsFragment;
+    iget-object v2, p0, Lcom/android/vendorsettings/hC;->zP:Lcom/android/vendorsettings/SettingsFragment;
 
-    invoke-static {v2}, Lcom/android/settings/SettingsFragment;->l(Lcom/android/settings/SettingsFragment;)Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/vendorsettings/SettingsFragment;->l(Lcom/android/vendorsettings/SettingsFragment;)Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/hC;->uJ:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/hC;->uJ:Ljava/lang/String;
 
-    invoke-static {v1, v0, v2, v3}, Lcom/android/settings/SettingsFragment;->a(Lcom/android/settings/SettingsFragment;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;
+    invoke-static {v1, v0, v2, v3}, Lcom/android/vendorsettings/SettingsFragment;->a(Lcom/android/vendorsettings/SettingsFragment;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;
 
     move-result-object v1
 
@@ -157,13 +157,13 @@
     if-nez v0, :cond_1
 
     .line 562
-    iget-object v0, p2, Lcom/android/settings/hB;->ln:Landroid/widget/TextView;
+    iget-object v0, p2, Lcom/android/vendorsettings/hB;->ln:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 564
     :cond_1
-    invoke-virtual {p3}, Lcom/android/settings/hc;->getPath()Ljava/lang/String;
+    invoke-virtual {p3}, Lcom/android/vendorsettings/hc;->getPath()Ljava/lang/String;
 
     move-result-object v0
 
@@ -174,9 +174,9 @@
     if-nez v0, :cond_2
 
     .line 565
-    iget-object v0, p2, Lcom/android/settings/hB;->zR:Landroid/widget/TextView;
+    iget-object v0, p2, Lcom/android/vendorsettings/hB;->zR:Landroid/widget/TextView;
 
-    invoke-virtual {p3}, Lcom/android/settings/hc;->getPath()Ljava/lang/String;
+    invoke-virtual {p3}, Lcom/android/vendorsettings/hc;->getPath()Ljava/lang/String;
 
     move-result-object v1
 
@@ -187,9 +187,9 @@
     if-eqz p1, :cond_3
 
     .line 568
-    new-instance v0, Lcom/android/settings/hD;
+    new-instance v0, Lcom/android/vendorsettings/hD;
 
-    invoke-direct {v0, p0, p3}, Lcom/android/settings/hD;-><init>(Lcom/android/settings/hC;Lcom/android/settings/hc;)V
+    invoke-direct {v0, p0, p3}, Lcom/android/vendorsettings/hD;-><init>(Lcom/android/vendorsettings/hC;Lcom/android/vendorsettings/hc;)V
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -204,7 +204,7 @@
     .prologue
     .line 519
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/hC;->mPackageManager:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/hC;->mPackageManager:Landroid/content/pm/PackageManager;
 
     const/4 v1, 0x0
 
@@ -213,7 +213,7 @@
     move-result-object v0
 
     .line 520
-    iget-object v1, p0, Lcom/android/settings/hC;->mPackageManager:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/hC;->mPackageManager:Landroid/content/pm/PackageManager;
 
     const-wide/32 v2, 0x927c0
 
@@ -242,18 +242,18 @@
 
 
 # virtual methods
-.method public ae(I)Lcom/android/settings/hc;
+.method public ae(I)Lcom/android/vendorsettings/hc;
     .locals 1
 
     .prologue
     .line 547
-    iget-object v0, p0, Lcom/android/settings/hC;->mList:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/hC;->mList:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hc;
+    check-cast v0, Lcom/android/vendorsettings/hc;
 
     return-object v0
 .end method
@@ -263,7 +263,7 @@
 
     .prologue
     .line 543
-    iget-object v0, p0, Lcom/android/settings/hC;->mList:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/hC;->mList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -277,7 +277,7 @@
 
     .prologue
     .line 494
-    invoke-virtual {p0, p1}, Lcom/android/settings/hC;->ae(I)Lcom/android/settings/hc;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/hC;->ae(I)Lcom/android/vendorsettings/hc;
 
     move-result-object v0
 
@@ -299,11 +299,11 @@
 
     .prologue
     .line 539
-    invoke-virtual {p0, p1}, Lcom/android/settings/hC;->ae(I)Lcom/android/settings/hc;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/hC;->ae(I)Lcom/android/vendorsettings/hc;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/hC;->a(Lcom/android/settings/hc;)I
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/hC;->a(Lcom/android/vendorsettings/hc;)I
 
     move-result v0
 
@@ -319,12 +319,12 @@
     const/4 v5, 0x0
 
     .line 578
-    invoke-virtual {p0, p1}, Lcom/android/settings/hC;->ae(I)Lcom/android/settings/hc;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/hC;->ae(I)Lcom/android/vendorsettings/hc;
 
     move-result-object v2
 
     .line 579
-    invoke-direct {p0, v2}, Lcom/android/settings/hC;->a(Lcom/android/settings/hc;)I
+    invoke-direct {p0, v2}, Lcom/android/vendorsettings/hC;->a(Lcom/android/vendorsettings/hc;)I
 
     move-result v3
 
@@ -336,7 +336,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hB;
+    check-cast v0, Lcom/android/vendorsettings/hB;
 
     move-object v1, v0
 
@@ -352,9 +352,9 @@
 
     .line 585
     :cond_1
-    new-instance v1, Lcom/android/settings/hB;
+    new-instance v1, Lcom/android/vendorsettings/hB;
 
-    invoke-direct {v1, v0}, Lcom/android/settings/hB;-><init>(Lcom/android/settings/hw;)V
+    invoke-direct {v1, v0}, Lcom/android/vendorsettings/hB;-><init>(Lcom/android/vendorsettings/hw;)V
 
     .line 586
     packed-switch v3, :pswitch_data_1
@@ -372,7 +372,7 @@
 
     .line 589
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/hC;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/vendorsettings/hC;->mInflater:Landroid/view/LayoutInflater;
 
     const v4, 0x7f040132
 
@@ -381,7 +381,7 @@
     move-result-object p2
 
     .line 590
-    invoke-virtual {p0}, Lcom/android/settings/hC;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/hC;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -405,7 +405,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, v1, Lcom/android/settings/hB;->icon:Landroid/widget/ImageView;
+    iput-object v0, v1, Lcom/android/vendorsettings/hB;->icon:Landroid/widget/ImageView;
 
     .line 594
     const v0, 0x7f130294
@@ -418,7 +418,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v1, Lcom/android/settings/hB;->ln:Landroid/widget/TextView;
+    iput-object v0, v1, Lcom/android/vendorsettings/hB;->ln:Landroid/widget/TextView;
 
     .line 595
     const v0, 0x7f130295
@@ -431,13 +431,13 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v1, Lcom/android/settings/hB;->zR:Landroid/widget/TextView;
+    iput-object v0, v1, Lcom/android/vendorsettings/hB;->zR:Landroid/widget/TextView;
 
     goto :goto_2
 
     .line 598
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/hC;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/vendorsettings/hC;->mInflater:Landroid/view/LayoutInflater;
 
     const v4, 0x7f04012f
 
@@ -449,7 +449,7 @@
 
     .line 601
     :pswitch_3
-    iget-object v0, p0, Lcom/android/settings/hC;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/vendorsettings/hC;->mInflater:Landroid/view/LayoutInflater;
 
     const v4, 0x7f040130
 
@@ -461,14 +461,14 @@
 
     .line 610
     :pswitch_4
-    invoke-direct {p0, p2, v1, v2}, Lcom/android/settings/hC;->a(Landroid/view/View;Lcom/android/settings/hB;Lcom/android/settings/hc;)V
+    invoke-direct {p0, p2, v1, v2}, Lcom/android/vendorsettings/hC;->a(Landroid/view/View;Lcom/android/vendorsettings/hB;Lcom/android/vendorsettings/hc;)V
 
     .line 611
-    invoke-static {}, Lcom/android/settings/SettingsFragment;->hP()Ljava/util/HashMap;
+    invoke-static {}, Lcom/android/vendorsettings/SettingsFragment;->hP()Ljava/util/HashMap;
 
     move-result-object v0
 
-    invoke-virtual {v2}, Lcom/android/settings/hc;->getCategory()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/android/vendorsettings/hc;->getCategory()Ljava/lang/String;
 
     move-result-object v3
 
@@ -480,7 +480,7 @@
     if-eqz v0, :cond_2
 
     .line 613
-    iget-object v1, v1, Lcom/android/settings/hB;->icon:Landroid/widget/ImageView;
+    iget-object v1, v1, Lcom/android/vendorsettings/hB;->icon:Landroid/widget/ImageView;
 
     check-cast v0, Ljava/lang/Integer;
 
@@ -494,15 +494,15 @@
 
     .line 615
     :cond_2
-    iget-object v0, v1, Lcom/android/settings/hB;->icon:Landroid/widget/ImageView;
+    iget-object v0, v1, Lcom/android/vendorsettings/hB;->icon:Landroid/widget/ImageView;
 
-    iget-object v1, p0, Lcom/android/settings/hC;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/hC;->mContext:Landroid/content/Context;
 
-    invoke-virtual {v2}, Lcom/android/settings/hc;->hq()Ljava/lang/String;
+    invoke-virtual {v2}, Lcom/android/vendorsettings/hc;->hq()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-direct {p0, v1, v2}, Lcom/android/settings/hC;->h(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
+    invoke-direct {p0, v1, v2}, Lcom/android/vendorsettings/hC;->h(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
@@ -512,10 +512,10 @@
 
     .line 619
     :pswitch_5
-    invoke-direct {p0, p2, v1, v2}, Lcom/android/settings/hC;->a(Landroid/view/View;Lcom/android/settings/hB;Lcom/android/settings/hc;)V
+    invoke-direct {p0, p2, v1, v2}, Lcom/android/vendorsettings/hC;->a(Landroid/view/View;Lcom/android/vendorsettings/hB;Lcom/android/vendorsettings/hc;)V
 
     .line 620
-    iget-object v0, v1, Lcom/android/settings/hB;->icon:Landroid/widget/ImageView;
+    iget-object v0, v1, Lcom/android/vendorsettings/hB;->icon:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v5}, Landroid/widget/ImageView;->setImageResource(I)V
 
@@ -554,10 +554,10 @@
 
     .prologue
     .line 513
-    iput-object p1, p0, Lcom/android/settings/hC;->mList:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/vendorsettings/hC;->mList:Ljava/util/List;
 
     .line 514
-    invoke-virtual {p0}, Lcom/android/settings/hC;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/hC;->notifyDataSetChanged()V
 
     .line 515
     return-void

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/s;
+.class public Lcom/android/vendorsettings/display/s;
 .super Ljava/lang/Object;
 .source "LargeFontUtils.java"
 
@@ -58,7 +58,7 @@
     invoke-static {v1, v2, p1}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 36
-    invoke-static {p1}, Lcom/android/settings/display/s;->getFontScale(I)F
+    invoke-static {p1}, Lcom/android/vendorsettings/display/s;->getFontScale(I)F
 
     move-result v1
 

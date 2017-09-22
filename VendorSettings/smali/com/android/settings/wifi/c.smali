@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/c;
+.class public Lcom/android/vendorsettings/wifi/c;
 .super Ljava/lang/Object;
 .source "AccessPointPreference.java"
 
@@ -22,21 +22,21 @@
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/c;->azU:Landroid/util/SparseArray;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/c;->azU:Landroid/util/SparseArray;
 
     .line 248
-    iput-object p1, p0, Lcom/android/settings/wifi/c;->i:Landroid/content/pm/PackageManager;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/c;->i:Landroid/content/pm/PackageManager;
 
     .line 249
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/c;I)Landroid/graphics/drawable/Drawable;
+.method static synthetic a(Lcom/android/vendorsettings/wifi/c;I)Landroid/graphics/drawable/Drawable;
     .locals 1
 
     .prologue
     .line 243
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/c;->dy(I)Landroid/graphics/drawable/Drawable;
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/wifi/c;->dy(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
@@ -48,7 +48,7 @@
 
     .prologue
     .line 252
-    iget-object v0, p0, Lcom/android/settings/wifi/c;->azU:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/c;->azU:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->indexOfKey(I)I
 
@@ -58,7 +58,7 @@
     if-gez v0, :cond_0
 
     .line 254
-    iget-object v0, p0, Lcom/android/settings/wifi/c;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/c;->i:Landroid/content/pm/PackageManager;
 
     new-instance v1, Landroid/os/UserHandle;
 
@@ -71,7 +71,7 @@
     move-result-object v0
 
     .line 255
-    iget-object v1, p0, Lcom/android/settings/wifi/c;->azU:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/c;->azU:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p1, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
@@ -80,7 +80,7 @@
     return-object v0
 
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/wifi/c;->azU:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/c;->azU:Landroid/util/SparseArray;
 
     invoke-virtual {v1, v0}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 

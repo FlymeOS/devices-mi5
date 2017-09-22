@@ -1,26 +1,26 @@
-.class Lcom/android/settings/eG;
+.class Lcom/android/vendorsettings/eG;
 .super Ljava/lang/Object;
 .source "MiuiMasterClear.java"
 
 
 # instance fields
-.field final synthetic rA:Lcom/android/settings/eE;
+.field final synthetic rA:Lcom/android/vendorsettings/eE;
 
 .field private rB:I
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/eE;I)V
+.method constructor <init>(Lcom/android/vendorsettings/eE;I)V
     .locals 0
 
     .prologue
     .line 651
-    iput-object p1, p0, Lcom/android/settings/eG;->rA:Lcom/android/settings/eE;
+    iput-object p1, p0, Lcom/android/vendorsettings/eG;->rA:Lcom/android/vendorsettings/eE;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 652
-    iput p2, p0, Lcom/android/settings/eG;->rB:I
+    iput p2, p0, Lcom/android/vendorsettings/eG;->rB:I
 
     .line 653
     return-void
@@ -62,7 +62,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget v0, p0, Lcom/android/settings/eG;->rB:I
+    iget v0, p0, Lcom/android/vendorsettings/eG;->rB:I
 
     int-to-long v0, v0
 

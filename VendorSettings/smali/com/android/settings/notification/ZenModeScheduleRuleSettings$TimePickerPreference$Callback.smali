@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/notification/ZenModeScheduleRuleSettings$TimePickerPreference$Callback;
+.class public interface abstract Lcom/android/vendorsettings/notification/ZenModeScheduleRuleSettings$TimePickerPreference$Callback;
 .super Ljava/lang/Object;
 .source "ZenModeScheduleRuleSettings.java"
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/cp;
+.class Lcom/android/vendorsettings/cp;
 .super Ljava/lang/Object;
 .source "DeviceAdminSettings.java"
 

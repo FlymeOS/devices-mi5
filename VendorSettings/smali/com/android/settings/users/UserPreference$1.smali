@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/users/UserPreference$1;
+.class final Lcom/android/vendorsettings/users/UserPreference$1;
 .super Ljava/lang/Object;
 .source "UserPreference.java"
 
@@ -19,17 +19,17 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/users/UserPreference;Lcom/android/settings/users/UserPreference;)I
+.method public a(Lcom/android/vendorsettings/users/UserPreference;Lcom/android/vendorsettings/users/UserPreference;)I
     .locals 2
 
     .prologue
     .line 39
-    invoke-static {p1}, Lcom/android/settings/users/UserPreference;->a(Lcom/android/settings/users/UserPreference;)I
+    invoke-static {p1}, Lcom/android/vendorsettings/users/UserPreference;->a(Lcom/android/vendorsettings/users/UserPreference;)I
 
     move-result v0
 
     .line 40
-    invoke-static {p2}, Lcom/android/settings/users/UserPreference;->a(Lcom/android/settings/users/UserPreference;)I
+    invoke-static {p2}, Lcom/android/vendorsettings/users/UserPreference;->a(Lcom/android/vendorsettings/users/UserPreference;)I
 
     move-result v1
 
@@ -64,11 +64,11 @@
 
     .prologue
     .line 36
-    check-cast p1, Lcom/android/settings/users/UserPreference;
+    check-cast p1, Lcom/android/vendorsettings/users/UserPreference;
 
-    check-cast p2, Lcom/android/settings/users/UserPreference;
+    check-cast p2, Lcom/android/vendorsettings/users/UserPreference;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/users/UserPreference$1;->a(Lcom/android/settings/users/UserPreference;Lcom/android/settings/users/UserPreference;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/users/UserPreference$1;->a(Lcom/android/vendorsettings/users/UserPreference;Lcom/android/vendorsettings/users/UserPreference;)I
 
     move-result v0
 

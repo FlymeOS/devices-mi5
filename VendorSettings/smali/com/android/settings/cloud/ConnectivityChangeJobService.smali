@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/ConnectivityChangeJobService;
+.class public Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;
 .super Landroid/app/job/JobService;
 .source "ConnectivityChangeJobService.java"
 
@@ -19,13 +19,13 @@
 
     .prologue
     .line 21
-    const-class v0, Lcom/android/settings/cloud/ConnectivityChangeJobService;
+    const-class v0, Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/ConnectivityChangeJobService;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -49,7 +49,7 @@
     .line 83
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/cloud/CloudSettingsService;
+    const-class v1, Lcom/android/vendorsettings/cloud/CloudSettingsService;
 
     invoke-direct {v0, p2, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -79,7 +79,7 @@
     invoke-virtual {p1, v1, v2, v3, v0}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
 
     .line 93
-    sget-object v0, Lcom/android/settings/cloud/ConnectivityChangeJobService;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;->TAG:Ljava/lang/String;
 
     const-string v1, "request appcontrol list update"
 
@@ -94,7 +94,7 @@
 
     .prologue
     .line 101
-    sget-object v0, Lcom/android/settings/cloud/ConnectivityChangeJobService;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;->TAG:Ljava/lang/String;
 
     const-string v1, "setSchedule:"
 
@@ -116,7 +116,7 @@
 
     new-instance v3, Landroid/content/ComponentName;
 
-    const-class v4, Lcom/android/settings/cloud/ConnectivityChangeJobService;
+    const-class v4, Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;
 
     invoke-direct {v3, p0, v4}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -150,7 +150,7 @@
 
     .prologue
     .line 54
-    iget-wide v0, p0, Lcom/android/settings/cloud/ConnectivityChangeJobService;->SR:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;->SR:J
 
     const-wide/16 v2, 0x0
 
@@ -168,7 +168,7 @@
 
     move-result-wide v0
 
-    iget-wide v2, p0, Lcom/android/settings/cloud/ConnectivityChangeJobService;->SR:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;->SR:J
 
     sub-long/2addr v0, v2
 
@@ -201,7 +201,7 @@
 
     .prologue
     .line 72
-    invoke-static {p0}, Lcom/android/settings/cloud/a/c;->isWifiConnected(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/vendorsettings/cloud/a/c;->isWifiConnected(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -229,7 +229,7 @@
     const/4 v4, 0x0
 
     .line 28
-    sget-object v0, Lcom/android/settings/cloud/ConnectivityChangeJobService;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -258,32 +258,32 @@
     .line 29
     const-string v0, "alarm"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/cloud/ConnectivityChangeJobService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/app/AlarmManager;
 
-    iput-object v0, p0, Lcom/android/settings/cloud/ConnectivityChangeJobService;->SS:Landroid/app/AlarmManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;->SS:Landroid/app/AlarmManager;
 
     .line 30
     const-string v0, "last_pending_intent_time"
 
-    invoke-static {v0, p0}, Lcom/android/settings/cloud/a/c;->a(Ljava/lang/String;Landroid/content/Context;)J
+    invoke-static {v0, p0}, Lcom/android/vendorsettings/cloud/a/c;->a(Ljava/lang/String;Landroid/content/Context;)J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/settings/cloud/ConnectivityChangeJobService;->SR:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;->SR:J
 
     .line 31
-    invoke-direct {p0}, Lcom/android/settings/cloud/ConnectivityChangeJobService;->ol()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;->ol()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 32
-    invoke-virtual {p0, p1, v4}, Lcom/android/settings/cloud/ConnectivityChangeJobService;->jobFinished(Landroid/app/job/JobParameters;Z)V
+    invoke-virtual {p0, p1, v4}, Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;->jobFinished(Landroid/app/job/JobParameters;Z)V
 
     .line 41
     :goto_0
@@ -291,16 +291,16 @@
 
     .line 36
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/cloud/ConnectivityChangeJobService;->om()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;->om()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 37
-    iget-object v0, p0, Lcom/android/settings/cloud/ConnectivityChangeJobService;->SS:Landroid/app/AlarmManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;->SS:Landroid/app/AlarmManager;
 
-    invoke-direct {p0, v0, p0}, Lcom/android/settings/cloud/ConnectivityChangeJobService;->a(Landroid/app/AlarmManager;Landroid/content/Context;)V
+    invoke-direct {p0, v0, p0}, Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;->a(Landroid/app/AlarmManager;Landroid/content/Context;)V
 
     .line 38
     const-string v0, "last_pending_intent_time"
@@ -313,11 +313,11 @@
 
     move-result-wide v2
 
-    invoke-static {v0, v2, v3, p0}, Lcom/android/settings/cloud/a/c;->a(Ljava/lang/String;JLandroid/content/Context;)V
+    invoke-static {v0, v2, v3, p0}, Lcom/android/vendorsettings/cloud/a/c;->a(Ljava/lang/String;JLandroid/content/Context;)V
 
     .line 40
     :cond_1
-    invoke-virtual {p0, p1, v4}, Lcom/android/settings/cloud/ConnectivityChangeJobService;->jobFinished(Landroid/app/job/JobParameters;Z)V
+    invoke-virtual {p0, p1, v4}, Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;->jobFinished(Landroid/app/job/JobParameters;Z)V
 
     goto :goto_0
 .end method
@@ -327,7 +327,7 @@
 
     .prologue
     .line 46
-    sget-object v0, Lcom/android/settings/cloud/ConnectivityChangeJobService;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/cloud/ConnectivityChangeJobService;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

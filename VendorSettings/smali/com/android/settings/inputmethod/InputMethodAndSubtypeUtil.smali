@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;
+.class Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;
 .super Ljava/lang/Object;
 .source "InputMethodAndSubtypeUtil.java"
 
@@ -21,7 +21,7 @@
 
     invoke-direct {v0, v1}, Landroid/text/TextUtils$SimpleStringSplitter;-><init>(C)V
 
-    sput-object v0, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->agi:Landroid/text/TextUtils$SimpleStringSplitter;
+    sput-object v0, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->agi:Landroid/text/TextUtils$SimpleStringSplitter;
 
     .line 52
     new-instance v0, Landroid/text/TextUtils$SimpleStringSplitter;
@@ -30,7 +30,7 @@
 
     invoke-direct {v0, v1}, Landroid/text/TextUtils$SimpleStringSplitter;-><init>(C)V
 
-    sput-object v0, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->agj:Landroid/text/TextUtils$SimpleStringSplitter;
+    sput-object v0, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->agj:Landroid/text/TextUtils$SimpleStringSplitter;
 
     return-void
 .end method
@@ -117,7 +117,7 @@
 
     .prologue
     .line 137
-    invoke-static {p0}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->e(Landroid/content/ContentResolver;)Ljava/util/HashMap;
+    invoke-static {p0}, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->e(Landroid/content/ContentResolver;)Ljava/util/HashMap;
 
     move-result-object v0
 
@@ -125,7 +125,7 @@
     invoke-virtual {v0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 140
-    invoke-static {v0}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->d(Ljava/util/HashMap;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->d(Ljava/util/HashMap;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -138,12 +138,12 @@
     return-void
 .end method
 
-.method static a(Lcom/android/settings/SettingsPreferenceFragment;Landroid/content/ContentResolver;Ljava/util/List;Ljava/util/Map;)V
+.method static a(Lcom/android/vendorsettings/SettingsPreferenceFragment;Landroid/content/ContentResolver;Ljava/util/List;Ljava/util/Map;)V
     .locals 6
 
     .prologue
     .line 290
-    invoke-static {p1}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->e(Landroid/content/ContentResolver;)Ljava/util/HashMap;
+    invoke-static {p1}, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->e(Landroid/content/ContentResolver;)Ljava/util/HashMap;
 
     move-result-object v1
 
@@ -172,7 +172,7 @@
     move-result-object v3
 
     .line 295
-    invoke-virtual {p0, v3}, Lcom/android/settings/SettingsPreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -226,19 +226,19 @@
 
     .line 305
     :cond_1
-    invoke-static {p0, p2, v3, v4}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->a(Lcom/android/settings/SettingsPreferenceFragment;Ljava/util/List;Ljava/lang/String;Z)V
+    invoke-static {p0, p2, v3, v4}, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->a(Lcom/android/vendorsettings/SettingsPreferenceFragment;Ljava/util/List;Ljava/lang/String;Z)V
 
     goto :goto_0
 
     .line 308
     :cond_2
-    invoke-static {p0, p2, v1}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->a(Lcom/android/settings/SettingsPreferenceFragment;Ljava/util/List;Ljava/util/HashMap;)V
+    invoke-static {p0, p2, v1}, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->a(Lcom/android/vendorsettings/SettingsPreferenceFragment;Ljava/util/List;Ljava/util/HashMap;)V
 
     .line 309
     return-void
 .end method
 
-.method static a(Lcom/android/settings/SettingsPreferenceFragment;Landroid/content/ContentResolver;Ljava/util/List;Z)V
+.method static a(Lcom/android/vendorsettings/SettingsPreferenceFragment;Landroid/content/ContentResolver;Ljava/util/List;Z)V
     .locals 19
 
     .prologue
@@ -252,17 +252,17 @@
     move-result-object v2
 
     .line 165
-    invoke-static/range {p1 .. p1}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->c(Landroid/content/ContentResolver;)I
+    invoke-static/range {p1 .. p1}, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->c(Landroid/content/ContentResolver;)I
 
     move-result v9
 
     .line 166
-    invoke-static/range {p1 .. p1}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->e(Landroid/content/ContentResolver;)Ljava/util/HashMap;
+    invoke-static/range {p1 .. p1}, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->e(Landroid/content/ContentResolver;)Ljava/util/HashMap;
 
     move-result-object v10
 
     .line 168
-    invoke-static/range {p1 .. p1}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->f(Landroid/content/ContentResolver;)Ljava/util/HashSet;
+    invoke-static/range {p1 .. p1}, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->f(Landroid/content/ContentResolver;)Ljava/util/HashSet;
 
     move-result-object v11
 
@@ -300,7 +300,7 @@
     .line 173
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v13}, Lcom/android/settings/SettingsPreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v0, v13}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -334,19 +334,19 @@
     .line 184
     if-nez p3, :cond_1
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->bB(Landroid/content/Context;)Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;
+    invoke-static {v2}, Lcom/android/vendorsettings/inputmethod/InputMethodSettingValuesWrapper;->bB(Landroid/content/Context;)Lcom/android/vendorsettings/inputmethod/InputMethodSettingValuesWrapper;
 
     move-result-object v2
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v6
 
-    invoke-virtual {v2, v1, v6}, Lcom/android/settings/inputmethod/InputMethodSettingValuesWrapper;->a(Landroid/view/inputmethod/InputMethodInfo;Landroid/content/Context;)Z
+    invoke-virtual {v2, v1, v6}, Lcom/android/vendorsettings/inputmethod/InputMethodSettingValuesWrapper;->a(Landroid/view/inputmethod/InputMethodInfo;Landroid/content/Context;)Z
 
     move-result v2
 
@@ -435,7 +435,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3}, Lcom/android/settings/SettingsPreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v0, v3}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -572,19 +572,19 @@
 
     .line 253
     :cond_d
-    invoke-static {v10}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->d(Ljava/util/HashMap;)Ljava/lang/String;
+    invoke-static {v10}, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->d(Ljava/util/HashMap;)Ljava/lang/String;
 
     move-result-object v1
 
     .line 255
-    invoke-static {v11}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->a(Ljava/util/HashSet;)Ljava/lang/String;
+    invoke-static {v11}, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->a(Ljava/util/HashSet;)Ljava/lang/String;
 
     move-result-object v2
 
     .line 268
     if-nez v3, :cond_e
 
-    invoke-static/range {p1 .. p1}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->d(Landroid/content/ContentResolver;)Z
+    invoke-static/range {p1 .. p1}, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->d(Landroid/content/ContentResolver;)Z
 
     move-result v3
 
@@ -596,7 +596,7 @@
 
     move-object/from16 v0, p1
 
-    invoke-static {v0, v3}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->a(Landroid/content/ContentResolver;I)V
+    invoke-static {v0, v3}, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->a(Landroid/content/ContentResolver;I)V
 
     .line 275
     :cond_f
@@ -648,12 +648,12 @@
     goto :goto_4
 .end method
 
-.method static a(Lcom/android/settings/SettingsPreferenceFragment;Ljava/util/List;Ljava/lang/String;Z)V
+.method static a(Lcom/android/vendorsettings/SettingsPreferenceFragment;Ljava/util/List;Ljava/lang/String;Z)V
     .locals 7
 
     .prologue
     .line 314
-    invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v3
 
@@ -750,12 +750,12 @@
     return-void
 .end method
 
-.method private static a(Lcom/android/settings/SettingsPreferenceFragment;Ljava/util/List;Ljava/util/HashMap;)V
+.method private static a(Lcom/android/vendorsettings/SettingsPreferenceFragment;Ljava/util/List;Ljava/util/HashMap;)V
     .locals 9
 
     .prologue
     .line 333
-    invoke-virtual {p0}, Lcom/android/settings/SettingsPreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v4
 
@@ -891,14 +891,14 @@
 
     .line 118
     :cond_1
-    sget-object v1, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->agi:Landroid/text/TextUtils$SimpleStringSplitter;
+    sget-object v1, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->agi:Landroid/text/TextUtils$SimpleStringSplitter;
 
     invoke-virtual {v1, p0}, Landroid/text/TextUtils$SimpleStringSplitter;->setString(Ljava/lang/String;)V
 
     .line 119
     :cond_2
     :goto_0
-    sget-object v1, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->agi:Landroid/text/TextUtils$SimpleStringSplitter;
+    sget-object v1, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->agi:Landroid/text/TextUtils$SimpleStringSplitter;
 
     invoke-virtual {v1}, Landroid/text/TextUtils$SimpleStringSplitter;->hasNext()Z
 
@@ -907,19 +907,19 @@
     if-eqz v1, :cond_0
 
     .line 120
-    sget-object v1, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->agi:Landroid/text/TextUtils$SimpleStringSplitter;
+    sget-object v1, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->agi:Landroid/text/TextUtils$SimpleStringSplitter;
 
     invoke-virtual {v1}, Landroid/text/TextUtils$SimpleStringSplitter;->next()Ljava/lang/String;
 
     move-result-object v1
 
     .line 121
-    sget-object v2, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->agj:Landroid/text/TextUtils$SimpleStringSplitter;
+    sget-object v2, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->agj:Landroid/text/TextUtils$SimpleStringSplitter;
 
     invoke-virtual {v2, v1}, Landroid/text/TextUtils$SimpleStringSplitter;->setString(Ljava/lang/String;)V
 
     .line 122
-    sget-object v1, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->agj:Landroid/text/TextUtils$SimpleStringSplitter;
+    sget-object v1, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->agj:Landroid/text/TextUtils$SimpleStringSplitter;
 
     invoke-virtual {v1}, Landroid/text/TextUtils$SimpleStringSplitter;->hasNext()Z
 
@@ -933,7 +933,7 @@
     invoke-direct {v1}, Ljava/util/HashSet;-><init>()V
 
     .line 125
-    sget-object v2, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->agj:Landroid/text/TextUtils$SimpleStringSplitter;
+    sget-object v2, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->agj:Landroid/text/TextUtils$SimpleStringSplitter;
 
     invoke-virtual {v2}, Landroid/text/TextUtils$SimpleStringSplitter;->next()Ljava/lang/String;
 
@@ -941,7 +941,7 @@
 
     .line 126
     :goto_1
-    sget-object v3, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->agj:Landroid/text/TextUtils$SimpleStringSplitter;
+    sget-object v3, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->agj:Landroid/text/TextUtils$SimpleStringSplitter;
 
     invoke-virtual {v3}, Landroid/text/TextUtils$SimpleStringSplitter;->hasNext()Z
 
@@ -950,7 +950,7 @@
     if-eqz v3, :cond_3
 
     .line 127
-    sget-object v3, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->agj:Landroid/text/TextUtils$SimpleStringSplitter;
+    sget-object v3, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->agj:Landroid/text/TextUtils$SimpleStringSplitter;
 
     invoke-virtual {v3}, Landroid/text/TextUtils$SimpleStringSplitter;->next()Ljava/lang/String;
 
@@ -1092,7 +1092,7 @@
 
     .prologue
     .line 94
-    invoke-static {p0}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->c(Landroid/content/ContentResolver;)I
+    invoke-static {p0}, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->c(Landroid/content/ContentResolver;)I
 
     move-result v0
 
@@ -1123,7 +1123,7 @@
     move-result-object v0
 
     .line 109
-    invoke-static {v0}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->be(Ljava/lang/String;)Ljava/util/HashMap;
+    invoke-static {v0}, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->be(Ljava/lang/String;)Ljava/util/HashMap;
 
     move-result-object v0
 
@@ -1159,13 +1159,13 @@
 
     .line 153
     :cond_1
-    sget-object v2, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->agi:Landroid/text/TextUtils$SimpleStringSplitter;
+    sget-object v2, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->agi:Landroid/text/TextUtils$SimpleStringSplitter;
 
     invoke-virtual {v2, v1}, Landroid/text/TextUtils$SimpleStringSplitter;->setString(Ljava/lang/String;)V
 
     .line 154
     :goto_0
-    sget-object v1, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->agi:Landroid/text/TextUtils$SimpleStringSplitter;
+    sget-object v1, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->agi:Landroid/text/TextUtils$SimpleStringSplitter;
 
     invoke-virtual {v1}, Landroid/text/TextUtils$SimpleStringSplitter;->hasNext()Z
 
@@ -1174,7 +1174,7 @@
     if-eqz v1, :cond_0
 
     .line 155
-    sget-object v1, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->agi:Landroid/text/TextUtils$SimpleStringSplitter;
+    sget-object v1, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->agi:Landroid/text/TextUtils$SimpleStringSplitter;
 
     invoke-virtual {v1}, Landroid/text/TextUtils$SimpleStringSplitter;->next()Ljava/lang/String;
 

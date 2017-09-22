@@ -1,19 +1,19 @@
-.class Lcom/android/settings/wifi/G;
+.class Lcom/android/vendorsettings/wifi/G;
 .super Landroid/os/Handler;
 .source "MiuiWifiService.java"
 
 
 # instance fields
-.field final synthetic aBf:Lcom/android/settings/wifi/MiuiWifiService;
+.field final synthetic aBf:Lcom/android/vendorsettings/wifi/MiuiWifiService;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/wifi/MiuiWifiService;Landroid/os/Looper;)V
+.method public constructor <init>(Lcom/android/vendorsettings/wifi/MiuiWifiService;Landroid/os/Looper;)V
     .locals 0
 
     .prologue
     .line 338
-    iput-object p1, p0, Lcom/android/settings/wifi/G;->aBf:Lcom/android/settings/wifi/MiuiWifiService;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/G;->aBf:Lcom/android/vendorsettings/wifi/MiuiWifiService;
 
     .line 339
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
@@ -41,43 +41,43 @@
 
     .line 346
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/wifi/G;->aBf:Lcom/android/settings/wifi/MiuiWifiService;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/G;->aBf:Lcom/android/vendorsettings/wifi/MiuiWifiService;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/MiuiWifiService;->a(Lcom/android/settings/wifi/MiuiWifiService;)Lcom/android/settings/wifi/ak;
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/MiuiWifiService;->a(Lcom/android/vendorsettings/wifi/MiuiWifiService;)Lcom/android/vendorsettings/wifi/ak;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/ak;->yl()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/ak;->yl()V
 
     .line 347
-    iget-object v0, p0, Lcom/android/settings/wifi/G;->aBf:Lcom/android/settings/wifi/MiuiWifiService;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/G;->aBf:Lcom/android/vendorsettings/wifi/MiuiWifiService;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/MiuiWifiService;->b(Lcom/android/settings/wifi/MiuiWifiService;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/MiuiWifiService;->b(Lcom/android/vendorsettings/wifi/MiuiWifiService;)V
 
     goto :goto_0
 
     .line 351
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/wifi/G;->aBf:Lcom/android/settings/wifi/MiuiWifiService;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/G;->aBf:Lcom/android/vendorsettings/wifi/MiuiWifiService;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/MiuiWifiService;->a(Lcom/android/settings/wifi/MiuiWifiService;)Lcom/android/settings/wifi/ak;
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/MiuiWifiService;->a(Lcom/android/vendorsettings/wifi/MiuiWifiService;)Lcom/android/vendorsettings/wifi/ak;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/ak;->yk()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/ak;->yk()V
 
     .line 352
-    iget-object v0, p0, Lcom/android/settings/wifi/G;->aBf:Lcom/android/settings/wifi/MiuiWifiService;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/G;->aBf:Lcom/android/vendorsettings/wifi/MiuiWifiService;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/MiuiWifiService;->b(Lcom/android/settings/wifi/MiuiWifiService;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/MiuiWifiService;->b(Lcom/android/vendorsettings/wifi/MiuiWifiService;)V
 
     goto :goto_0
 
     .line 356
     :pswitch_3
-    iget-object v0, p0, Lcom/android/settings/wifi/G;->aBf:Lcom/android/settings/wifi/MiuiWifiService;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/G;->aBf:Lcom/android/vendorsettings/wifi/MiuiWifiService;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/MiuiWifiService;->b(Lcom/android/settings/wifi/MiuiWifiService;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/MiuiWifiService;->b(Lcom/android/vendorsettings/wifi/MiuiWifiService;)V
 
     goto :goto_0
 
@@ -85,13 +85,13 @@
     :pswitch_4
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    check-cast v0, Lcom/android/settings/wifi/openwifi/q;
+    check-cast v0, Lcom/android/vendorsettings/wifi/openwifi/q;
 
     .line 361
     if-eqz v0, :cond_1
 
     .line 362
-    invoke-virtual {v0}, Lcom/android/settings/wifi/openwifi/q;->yY()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/openwifi/q;->yY()Z
 
     move-result v1
 
@@ -99,25 +99,25 @@
     if-nez v1, :cond_1
 
     .line 364
-    iget-object v1, p0, Lcom/android/settings/wifi/G;->aBf:Lcom/android/settings/wifi/MiuiWifiService;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/G;->aBf:Lcom/android/vendorsettings/wifi/MiuiWifiService;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/openwifi/q;->yU()Landroid/net/Uri;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/openwifi/q;->yU()Landroid/net/Uri;
 
     move-result-object v2
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/openwifi/q;->getSsid()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/openwifi/q;->getSsid()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/openwifi/q;->getBssid()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/openwifi/q;->getBssid()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/openwifi/q;->getIntent()Landroid/content/Intent;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/openwifi/q;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    invoke-static {v1, v2, v3, v4, v0}, Lcom/android/settings/wifi/openwifi/l;->a(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Landroid/content/Intent;)V
+    invoke-static {v1, v2, v3, v4, v0}, Lcom/android/vendorsettings/wifi/openwifi/l;->a(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -126,27 +126,27 @@
     :pswitch_5
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    check-cast v0, Lcom/android/settings/wifi/openwifi/l;
+    check-cast v0, Lcom/android/vendorsettings/wifi/openwifi/l;
 
     .line 374
     if-eqz v0, :cond_0
 
     .line 375
-    iget-object v1, p0, Lcom/android/settings/wifi/G;->aBf:Lcom/android/settings/wifi/MiuiWifiService;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/G;->aBf:Lcom/android/vendorsettings/wifi/MiuiWifiService;
 
-    invoke-static {v1}, Lcom/android/settings/wifi/MiuiWifiService;->c(Lcom/android/settings/wifi/MiuiWifiService;)Ljava/util/ArrayList;
+    invoke-static {v1}, Lcom/android/vendorsettings/wifi/MiuiWifiService;->c(Lcom/android/vendorsettings/wifi/MiuiWifiService;)Ljava/util/ArrayList;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/wifi/openwifi/l;->h(Ljava/util/ArrayList;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/wifi/openwifi/l;->h(Ljava/util/ArrayList;)V
 
     goto :goto_0
 
     .line 380
     :pswitch_6
-    iget-object v0, p0, Lcom/android/settings/wifi/G;->aBf:Lcom/android/settings/wifi/MiuiWifiService;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/G;->aBf:Lcom/android/vendorsettings/wifi/MiuiWifiService;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/openwifi/l;->cG(Landroid/content/Context;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/openwifi/l;->cG(Landroid/content/Context;)V
 
     goto :goto_0
 

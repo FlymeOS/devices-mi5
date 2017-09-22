@@ -1,19 +1,19 @@
-.class Lcom/android/settings/voice/e;
+.class Lcom/android/vendorsettings/voice/e;
 .super Landroid/widget/ArrayAdapter;
 .source "VoiceInputListPreference.java"
 
 
 # instance fields
-.field final synthetic avc:Lcom/android/settings/voice/VoiceInputListPreference;
+.field final synthetic avc:Lcom/android/vendorsettings/voice/VoiceInputListPreference;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/voice/VoiceInputListPreference;Landroid/content/Context;[Ljava/lang/CharSequence;)V
+.method public constructor <init>(Lcom/android/vendorsettings/voice/VoiceInputListPreference;Landroid/content/Context;[Ljava/lang/CharSequence;)V
     .locals 2
 
     .prologue
     .line 136
-    iput-object p1, p0, Lcom/android/settings/voice/e;->avc:Lcom/android/settings/voice/VoiceInputListPreference;
+    iput-object p1, p0, Lcom/android/vendorsettings/voice/e;->avc:Lcom/android/vendorsettings/voice/VoiceInputListPreference;
 
     .line 137
     const v0, 0x10900e6
@@ -48,7 +48,7 @@
     move-result-object v0
 
     .line 154
-    invoke-virtual {p0, p1}, Lcom/android/settings/voice/e;->isEnabled(I)Z
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/voice/e;->isEnabled(I)Z
 
     move-result v1
 
@@ -63,9 +63,9 @@
 
     .prologue
     .line 148
-    iget-object v0, p0, Lcom/android/settings/voice/e;->avc:Lcom/android/settings/voice/VoiceInputListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/voice/e;->avc:Lcom/android/vendorsettings/voice/VoiceInputListPreference;
 
-    invoke-static {v0}, Lcom/android/settings/voice/VoiceInputListPreference;->a(Lcom/android/settings/voice/VoiceInputListPreference;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/vendorsettings/voice/VoiceInputListPreference;->a(Lcom/android/vendorsettings/voice/VoiceInputListPreference;)Ljava/util/List;
 
     move-result-object v0
 

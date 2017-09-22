@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/ScreenPaperModeUpdateService;
+.class public Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;
 .super Landroid/app/job/JobService;
 .source "ScreenPaperModeUpdateService.java"
 
@@ -17,23 +17,23 @@
     const/4 v3, 0x1
 
     .line 24
-    const-class v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;
+    const-class v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->TAG:Ljava/lang/String;
 
     .line 31
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     .line 33
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "com.shuqi.controller"
 
@@ -44,7 +44,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 34
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "com.duokan.fiction"
 
@@ -55,7 +55,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 35
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "com.duokan.reader"
 
@@ -66,7 +66,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 36
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "com.duokan.hdreader"
 
@@ -77,7 +77,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 37
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "com.baidu.yuedu"
 
@@ -88,7 +88,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 38
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "com.qq.reader"
 
@@ -99,7 +99,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 39
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "qsbk.app"
 
@@ -110,7 +110,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 40
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "com.chaozh.iReaderFree"
 
@@ -121,7 +121,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 41
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "cn.htjyb.reader"
 
@@ -132,7 +132,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 42
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "com.esbook.reader"
 
@@ -143,7 +143,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 43
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "com.ushaqi.zhuishushenqi"
 
@@ -154,7 +154,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 44
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "one.hh.oneclient"
 
@@ -165,7 +165,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 45
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "com.baidu.wenku"
 
@@ -176,7 +176,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 46
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "com.mybook66"
 
@@ -187,7 +187,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 47
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "com.hunter.kuaikan"
 
@@ -198,7 +198,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 48
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "com.qidian.QDReader"
 
@@ -209,7 +209,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 49
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "com.ophone.reader.ui"
 
@@ -220,7 +220,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 50
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "com.nd.android.pandareader"
 
@@ -231,7 +231,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 51
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "com.sogou.novel"
 
@@ -242,7 +242,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 52
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "cn.filesearch.xs"
 
@@ -253,7 +253,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 53
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "com.chaozh.iReaderFree15"
 
@@ -264,7 +264,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 54
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     const-string v1, "com.anyview"
 
@@ -298,7 +298,7 @@
     move-result-object v1
 
     .line 85
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->ZQ:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->entrySet()Ljava/util/Set;
 
@@ -363,7 +363,7 @@
     const/4 v1, 0x0
 
     .line 96
-    invoke-static {p0}, Lcom/android/settings/display/d;->bd(Landroid/content/Context;)J
+    invoke-static {p0}, Lcom/android/vendorsettings/display/d;->bd(Landroid/content/Context;)J
 
     move-result-wide v2
 
@@ -397,7 +397,7 @@
 
     const-string v3, "5cdd8678-cddf-4269-ab73-48387445bba7"
 
-    invoke-static {p0, v0, v2, v3}, Lcom/android/settings/display/t;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, v0, v2, v3}, Lcom/android/vendorsettings/display/t;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -446,7 +446,7 @@
     move-result-wide v4
 
     .line 121
-    invoke-static {p0, v4, v5}, Lcom/android/settings/display/d;->b(Landroid/content/Context;J)V
+    invoke-static {p0, v4, v5}, Lcom/android/vendorsettings/display/d;->b(Landroid/content/Context;J)V
 
     .line 122
     invoke-static {p0}, Landroid/provider/MiuiSettings$System;->getScreenPaperModePkgList(Landroid/content/Context;)Ljava/util/HashMap;
@@ -572,7 +572,7 @@
     .line 144
     :cond_5
     :try_start_2
-    invoke-static {p0}, Lcom/android/settings/display/d;->bc(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/android/vendorsettings/display/d;->bc(Landroid/content/Context;)V
 
     .line 145
     invoke-static {p0, v3}, Landroid/provider/MiuiSettings$System;->setScreenPaperModePkgList(Landroid/content/Context;Ljava/util/HashMap;)V
@@ -594,7 +594,7 @@
     if-eqz p1, :cond_0
 
     .line 60
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -664,7 +664,7 @@
     if-eqz v1, :cond_1
 
     .line 64
-    invoke-direct {p0}, Lcom/android/settings/display/ScreenPaperModeUpdateService;->pM()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->pM()V
 
     .line 72
     :cond_0
@@ -682,7 +682,7 @@
     if-eqz v0, :cond_0
 
     .line 66
-    invoke-virtual {p0}, Lcom/android/settings/display/ScreenPaperModeUpdateService;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -694,14 +694,14 @@
 
     if-nez v0, :cond_0
 
-    invoke-static {p0}, Lcom/android/settings/wifi/aC;->isWifiConnected(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/vendorsettings/wifi/aC;->isWifiConnected(Landroid/content/Context;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 68
-    invoke-direct {p0}, Lcom/android/settings/display/ScreenPaperModeUpdateService;->pN()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->pN()V
 
     goto :goto_0
 .end method
@@ -711,7 +711,7 @@
 
     .prologue
     .line 78
-    sget-object v0, Lcom/android/settings/display/ScreenPaperModeUpdateService;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/display/ScreenPaperModeUpdateService;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 

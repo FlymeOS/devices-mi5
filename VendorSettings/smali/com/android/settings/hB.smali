@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hB;
+.class Lcom/android/vendorsettings/hB;
 .super Ljava/lang/Object;
 .source "SettingsFragment.java"
 
@@ -22,12 +22,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/hw;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/hw;)V
     .locals 0
 
     .prologue
     .line 488
-    invoke-direct {p0}, Lcom/android/settings/hB;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/hB;-><init>()V
 
     return-void
 .end method

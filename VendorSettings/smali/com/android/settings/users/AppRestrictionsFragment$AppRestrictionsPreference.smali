@@ -1,4 +1,4 @@
-.class Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;
+.class Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;
 .super Landroid/preference/SwitchPreference;
 .source "AppRestrictionsFragment.java"
 
@@ -30,26 +30,26 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->mChildren:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->mChildren:Ljava/util/List;
 
     .line 162
     const v0, 0x7f0400cf
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->setLayoutResource(I)V
 
     .line 163
-    iput-object p2, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atr:Landroid/view/View$OnClickListener;
+    iput-object p2, p0, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atr:Landroid/view/View$OnClickListener;
 
     .line 164
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;Z)V
+.method static synthetic a(Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;Z)V
     .locals 0
 
     .prologue
     .line 152
-    invoke-direct {p0, p1}, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->bg(Z)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->bg(Z)V
 
     return-void
 .end method
@@ -59,48 +59,48 @@
 
     .prologue
     .line 167
-    iput-boolean p1, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atq:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atq:Z
 
     .line 168
     return-void
 .end method
 
-.method static synthetic d(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;)Landroid/view/View$OnClickListener;
+.method static synthetic d(Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;)Landroid/view/View$OnClickListener;
     .locals 1
 
     .prologue
     .line 152
-    iget-object v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atr:Landroid/view/View$OnClickListener;
+    iget-object v0, p0, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atr:Landroid/view/View$OnClickListener;
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;)Ljava/util/ArrayList;
+.method static synthetic e(Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;)Ljava/util/ArrayList;
     .locals 1
 
     .prologue
     .line 152
-    iget-object v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->ats:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->ats:Ljava/util/ArrayList;
 
     return-object v0
 .end method
 
-.method static synthetic f(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;)Z
+.method static synthetic f(Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;)Z
     .locals 1
 
     .prologue
     .line 152
-    iget-boolean v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atq:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atq:Z
 
     return v0
 .end method
 
-.method static synthetic g(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;)Ljava/util/List;
+.method static synthetic g(Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;)Ljava/util/List;
     .locals 1
 
     .prologue
     .line 152
-    iget-object v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->mChildren:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->mChildren:Ljava/util/List;
 
     return-object v0
 .end method
@@ -112,7 +112,7 @@
 
     .prologue
     .line 175
-    iput-boolean p1, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atu:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atu:Z
 
     .line 176
     return-void
@@ -123,7 +123,7 @@
 
     .prologue
     .line 191
-    iput-boolean p1, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->att:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->att:Z
 
     .line 192
     return-void
@@ -134,7 +134,7 @@
 
     .prologue
     .line 171
-    iput-object p1, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->ats:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->ats:Ljava/util/ArrayList;
 
     .line 172
     return-void
@@ -145,7 +145,7 @@
 
     .prologue
     .line 179
-    iget-boolean v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atu:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atu:Z
 
     return v0
 .end method
@@ -171,7 +171,7 @@
     move-result-object v4
 
     .line 203
-    iget-boolean v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atq:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atq:Z
 
     if-eqz v0, :cond_3
 
@@ -187,7 +187,7 @@
 
     move-result-object v0
 
-    iget-boolean v5, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atq:Z
+    iget-boolean v5, p0, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atq:Z
 
     if-eqz v5, :cond_0
 
@@ -197,7 +197,7 @@
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 206
-    iget-object v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atr:Landroid/view/View$OnClickListener;
+    iget-object v0, p0, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atr:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v4, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -212,7 +212,7 @@
     move-result-object v0
 
     .line 210
-    iget-object v2, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atr:Landroid/view/View$OnClickListener;
+    iget-object v2, p0, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->atr:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -229,7 +229,7 @@
     check-cast v0, Landroid/view/ViewGroup;
 
     .line 214
-    invoke-virtual {p0}, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->isImmutable()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->isImmutable()Z
 
     move-result v2
 
@@ -255,7 +255,7 @@
     check-cast v0, Landroid/widget/Switch;
 
     .line 217
-    invoke-virtual {p0}, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->isImmutable()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->isImmutable()Z
 
     move-result v2
 
@@ -276,9 +276,9 @@
     invoke-virtual {v0, v3}, Landroid/widget/Switch;->setFocusable(Z)V
 
     .line 221
-    new-instance v1, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference$1;
+    new-instance v1, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference$1;
 
-    invoke-direct {v1, p0, v0}, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference$1;-><init>(Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;Landroid/widget/Switch;)V
+    invoke-direct {v1, p0, v0}, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference$1;-><init>(Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;Landroid/widget/Switch;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Switch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
@@ -304,7 +304,7 @@
 
     .prologue
     .line 183
-    iget-object v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->ats:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->ats:Ljava/util/ArrayList;
 
     return-object v0
 .end method
@@ -314,7 +314,7 @@
 
     .prologue
     .line 187
-    iget-boolean v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$AppRestrictionsPreference;->att:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/users/AppRestrictionsFragment$AppRestrictionsPreference;->att:Z
 
     return v0
 .end method

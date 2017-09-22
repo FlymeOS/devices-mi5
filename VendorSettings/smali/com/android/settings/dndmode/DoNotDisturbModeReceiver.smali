@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;
+.class public Lcom/android/vendorsettings/dndmode/DoNotDisturbModeReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "DoNotDisturbModeReceiver.java"
 
@@ -46,16 +46,16 @@
     sparse-switch v3, :sswitch_data_0
 
     .line 92
-    new-instance v2, Lcom/android/settings/dndmode/b;
+    new-instance v2, Lcom/android/vendorsettings/dndmode/b;
 
     invoke-static {p1}, Landroid/provider/MiuiSettings$AntiSpam;->getQuietRepeatType(Landroid/content/Context;)I
 
     move-result v3
 
-    invoke-direct {v2, v3}, Lcom/android/settings/dndmode/b;-><init>(I)V
+    invoke-direct {v2, v3}, Lcom/android/vendorsettings/dndmode/b;-><init>(I)V
 
     .line 94
-    invoke-virtual {v2}, Lcom/android/settings/dndmode/b;->pU()Z
+    invoke-virtual {v2}, Lcom/android/vendorsettings/dndmode/b;->pU()Z
 
     move-result v2
 
@@ -71,7 +71,7 @@
 
     .line 86
     :sswitch_1
-    invoke-static {v2}, Lcom/android/settings/dndmode/n;->a(Ljava/util/Calendar;)Z
+    invoke-static {v2}, Lcom/android/vendorsettings/dndmode/n;->a(Ljava/util/Calendar;)Z
 
     move-result v2
 
@@ -100,7 +100,7 @@
     move-result-wide v0
 
     .line 104
-    invoke-direct {p0, p1}, Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;->bq(Landroid/content/Context;)Z
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/dndmode/DoNotDisturbModeReceiver;->bq(Landroid/content/Context;)Z
 
     move-result v2
 
@@ -137,7 +137,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/m;->bW(I)J
+    invoke-static {v0}, Lcom/android/vendorsettings/dndmode/m;->bW(I)J
 
     move-result-wide v0
 
@@ -153,7 +153,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/m;->bW(I)J
+    invoke-static {v0}, Lcom/android/vendorsettings/dndmode/m;->bW(I)J
 
     move-result-wide v0
 
@@ -211,7 +211,7 @@
     if-eqz v1, :cond_1
 
     .line 28
-    invoke-static {p1}, Lcom/android/settings/dndmode/m;->bv(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/vendorsettings/dndmode/m;->bv(Landroid/content/Context;)V
 
     .line 29
     const-string v1, "android.intent.action.BOOT_COMPLETED"
@@ -223,7 +223,7 @@
     if-eqz v1, :cond_1
 
     .line 31
-    invoke-static {p1}, Lcom/android/settings/dndmode/m;->bw(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/dndmode/m;->bw(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -243,7 +243,7 @@
 
     if-lez v1, :cond_1
 
-    invoke-direct {p0, p1}, Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;->bq(Landroid/content/Context;)Z
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/dndmode/DoNotDisturbModeReceiver;->bq(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -257,7 +257,7 @@
     invoke-static {p1, v7, v1}, Landroid/provider/MiuiSettings$AntiSpam;->setQuietMode(Landroid/content/Context;ZI)V
 
     .line 36
-    invoke-direct {p0, p1}, Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;->bs(Landroid/content/Context;)J
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/dndmode/DoNotDisturbModeReceiver;->bs(Landroid/content/Context;)J
 
     move-result-wide v2
 
@@ -309,7 +309,7 @@
 
     if-lez v1, :cond_1
 
-    invoke-direct {p0, p1}, Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;->br(Landroid/content/Context;)Z
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/dndmode/DoNotDisturbModeReceiver;->br(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -323,7 +323,7 @@
     invoke-static {p1, v6, v1}, Landroid/provider/MiuiSettings$AntiSpam;->setQuietMode(Landroid/content/Context;ZI)V
 
     .line 43
-    invoke-direct {p0, p1}, Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;->bt(Landroid/content/Context;)J
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/dndmode/DoNotDisturbModeReceiver;->bt(Landroid/content/Context;)J
 
     move-result-wide v2
 
@@ -348,13 +348,13 @@
 
     if-eqz v0, :cond_3
 
-    invoke-static {p1}, Lcom/android/settings/dndmode/m;->bw(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/dndmode/m;->bw(Landroid/content/Context;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    invoke-direct {p0, p1}, Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;->bq(Landroid/content/Context;)Z
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/dndmode/DoNotDisturbModeReceiver;->bq(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -368,7 +368,7 @@
     invoke-static {p1, v7, v0}, Landroid/provider/MiuiSettings$AntiSpam;->setQuietMode(Landroid/content/Context;ZI)V
 
     .line 62
-    invoke-direct {p0, p1}, Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;->bs(Landroid/content/Context;)J
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/dndmode/DoNotDisturbModeReceiver;->bs(Landroid/content/Context;)J
 
     move-result-wide v0
 
@@ -394,13 +394,13 @@
     if-eqz v0, :cond_3
 
     .line 67
-    invoke-static {p1}, Lcom/android/settings/dndmode/m;->bw(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/dndmode/m;->bw(Landroid/content/Context;)Z
 
     move-result v0
 
     if-nez v0, :cond_7
 
-    invoke-direct {p0, p1}, Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;->br(Landroid/content/Context;)Z
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/dndmode/DoNotDisturbModeReceiver;->br(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -414,7 +414,7 @@
     invoke-static {p1, v6, v0}, Landroid/provider/MiuiSettings$AntiSpam;->setQuietMode(Landroid/content/Context;ZI)V
 
     .line 70
-    invoke-direct {p0, p1}, Lcom/android/settings/dndmode/DoNotDisturbModeReceiver;->bt(Landroid/content/Context;)J
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/dndmode/DoNotDisturbModeReceiver;->bt(Landroid/content/Context;)J
 
     move-result-wide v0
 
@@ -422,7 +422,7 @@
 
     .line 73
     :cond_7
-    invoke-static {p1}, Lcom/android/settings/dndmode/m;->bv(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/vendorsettings/dndmode/m;->bv(Landroid/content/Context;)V
 
     goto :goto_1
 .end method

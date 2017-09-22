@@ -1,4 +1,4 @@
-.class Lcom/android/settings/Y;
+.class Lcom/android/vendorsettings/Y;
 .super Ljava/lang/Object;
 .source "BandMode.java"
 
@@ -18,10 +18,10 @@
     .line 99
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/Y;->cl:I
+    iput v0, p0, Lcom/android/vendorsettings/Y;->cl:I
 
     .line 102
-    iput p1, p0, Lcom/android/settings/Y;->cl:I
+    iput p1, p0, Lcom/android/vendorsettings/Y;->cl:I
 
     .line 103
     return-void
@@ -34,7 +34,7 @@
 
     .prologue
     .line 106
-    iget v0, p0, Lcom/android/settings/Y;->cl:I
+    iget v0, p0, Lcom/android/vendorsettings/Y;->cl:I
 
     return v0
 .end method
@@ -44,9 +44,9 @@
 
     .prologue
     .line 110
-    iget v0, p0, Lcom/android/settings/Y;->cl:I
+    iget v0, p0, Lcom/android/vendorsettings/Y;->cl:I
 
-    invoke-static {}, Lcom/android/settings/BandMode;->V()[Ljava/lang/String;
+    invoke-static {}, Lcom/android/vendorsettings/BandMode;->V()[Ljava/lang/String;
 
     move-result-object v1
 
@@ -64,7 +64,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/Y;->cl:I
+    iget v1, p0, Lcom/android/vendorsettings/Y;->cl:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -79,11 +79,11 @@
     return-object v0
 
     :cond_0
-    invoke-static {}, Lcom/android/settings/BandMode;->V()[Ljava/lang/String;
+    invoke-static {}, Lcom/android/vendorsettings/BandMode;->V()[Ljava/lang/String;
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/Y;->cl:I
+    iget v1, p0, Lcom/android/vendorsettings/Y;->cl:I
 
     aget-object v0, v0, v1
 

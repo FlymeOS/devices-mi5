@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/bluetooth/Utils$1;
+.class final Lcom/android/vendorsettings/bluetooth/Utils$1;
 .super Ljava/lang/Object;
 .source "Utils.java"
 
@@ -24,7 +24,7 @@
 
     .prologue
     .line 135
-    invoke-static {p1, p2, p3}, Lcom/android/settings/bluetooth/Utils;->f(Landroid/content/Context;Ljava/lang/String;I)V
+    invoke-static {p1, p2, p3}, Lcom/android/vendorsettings/bluetooth/Utils;->f(Landroid/content/Context;Ljava/lang/String;I)V
 
     .line 136
     return-void

@@ -1,12 +1,12 @@
-.class public Lcom/android/settings/applications/ManageApplicationsFragment;
-.super Lcom/android/settings/BaseFragment;
+.class public Lcom/android/vendorsettings/applications/ManageApplicationsFragment;
+.super Lcom/android/vendorsettings/BaseFragment;
 .source "ManageApplicationsFragment.java"
 
 
 # instance fields
-.field private HF:Lcom/android/settings/applications/ApplicationsContainer$TabInfo;
+.field private HF:Lcom/android/vendorsettings/applications/ApplicationsContainer$TabInfo;
 
-.field private Km:Lcom/android/settings/applications/ApplicationsContainer;
+.field private Km:Lcom/android/vendorsettings/applications/ApplicationsContainer;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     .prologue
     .line 13
-    invoke-direct {p0}, Lcom/android/settings/BaseFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/BaseFragment;-><init>()V
 
     return-void
 .end method
@@ -27,12 +27,12 @@
 
     .prologue
     .line 19
-    invoke-super {p0, p1}, Lcom/android/settings/BaseFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/BaseFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 20
     sget v0, Lmiui/R$style;->Theme_Light_Settings_NoTitle:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/ManageApplicationsFragment;->setThemeRes(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/ManageApplicationsFragment;->setThemeRes(I)V
 
     .line 21
     return-void
@@ -45,7 +45,7 @@
     const/4 v1, 0x0
 
     .line 25
-    invoke-virtual {p0}, Lcom/android/settings/applications/ManageApplicationsFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ManageApplicationsFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -56,7 +56,7 @@
     move-result v2
 
     .line 26
-    invoke-virtual {p0}, Lcom/android/settings/applications/ManageApplicationsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ManageApplicationsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -64,7 +64,7 @@
 
     move-result-object v0
 
-    const-class v3, Lcom/android/settings/applications/ApplicationsContainer;
+    const-class v3, Lcom/android/vendorsettings/applications/ApplicationsContainer;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -74,14 +74,14 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/ApplicationsContainer;
+    check-cast v0, Lcom/android/vendorsettings/applications/ApplicationsContainer;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ManageApplicationsFragment;->Km:Lcom/android/settings/applications/ApplicationsContainer;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ManageApplicationsFragment;->Km:Lcom/android/vendorsettings/applications/ApplicationsContainer;
 
     .line 28
-    iget-object v0, p0, Lcom/android/settings/applications/ManageApplicationsFragment;->Km:Lcom/android/settings/applications/ApplicationsContainer;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ManageApplicationsFragment;->Km:Lcom/android/vendorsettings/applications/ApplicationsContainer;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/ApplicationsContainer;->kc()Ljava/util/ArrayList;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/ApplicationsContainer;->kc()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -102,28 +102,28 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/ApplicationsContainer$TabInfo;
+    check-cast v0, Lcom/android/vendorsettings/applications/ApplicationsContainer$TabInfo;
 
     .line 30
-    iget v4, v0, Lcom/android/settings/applications/ApplicationsContainer$TabInfo;->HT:I
+    iget v4, v0, Lcom/android/vendorsettings/applications/ApplicationsContainer$TabInfo;->HT:I
 
     if-ne v4, v2, :cond_0
 
     .line 31
-    iput-object v0, p0, Lcom/android/settings/applications/ManageApplicationsFragment;->HF:Lcom/android/settings/applications/ApplicationsContainer$TabInfo;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ManageApplicationsFragment;->HF:Lcom/android/vendorsettings/applications/ApplicationsContainer$TabInfo;
 
     goto :goto_0
 
     .line 35
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/applications/ManageApplicationsFragment;->HF:Lcom/android/settings/applications/ApplicationsContainer$TabInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ManageApplicationsFragment;->HF:Lcom/android/vendorsettings/applications/ApplicationsContainer$TabInfo;
 
     if-eqz v0, :cond_2
 
     .line 36
-    iget-object v0, p0, Lcom/android/settings/applications/ManageApplicationsFragment;->HF:Lcom/android/settings/applications/ApplicationsContainer$TabInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ManageApplicationsFragment;->HF:Lcom/android/vendorsettings/applications/ApplicationsContainer$TabInfo;
 
-    invoke-virtual {v0, p1, p2, v1}, Lcom/android/settings/applications/ApplicationsContainer$TabInfo;->b(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/view/View;)Landroid/view/View;
+    invoke-virtual {v0, p1, p2, v1}, Lcom/android/vendorsettings/applications/ApplicationsContainer$TabInfo;->b(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/view/View;)Landroid/view/View;
 
     move-result-object v0
 

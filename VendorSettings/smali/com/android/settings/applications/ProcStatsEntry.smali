@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/applications/ProcStatsEntry;
+.class public final Lcom/android/vendorsettings/applications/ProcStatsEntry;
 .super Ljava/lang/Object;
 .source "ProcStatsEntry.java"
 
@@ -52,14 +52,14 @@
     .line 34
     const/4 v0, 0x0
 
-    sput-boolean v0, Lcom/android/settings/applications/ProcStatsEntry;->DEBUG:Z
+    sput-boolean v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->DEBUG:Z
 
     .line 290
-    new-instance v0, Lcom/android/settings/applications/ProcStatsEntry$1;
+    new-instance v0, Lcom/android/vendorsettings/applications/ProcStatsEntry$1;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/ProcStatsEntry$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/applications/ProcStatsEntry$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/ProcStatsEntry;->CREATOR:Landroid/os/Parcelable$Creator;
+    sput-object v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
@@ -76,7 +76,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
 
     .line 52
     new-instance v0, Landroid/util/ArrayMap;
@@ -85,31 +85,31 @@
 
     invoke-direct {v0, v1}, Landroid/util/ArrayMap;-><init>(I)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
 
     .line 87
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     .line 88
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mUid:I
+    iput v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mUid:I
 
     .line 89
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     .line 90
-    iget-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->readStringList(Ljava/util/List;)V
 
@@ -118,63 +118,63 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lu:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lu:J
 
     .line 92
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lv:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lv:J
 
     .line 93
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lw:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lw:J
 
     .line 94
     invoke-virtual {p1}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lx:D
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lx:D
 
     .line 95
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Ly:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Ly:J
 
     .line 96
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lz:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lz:J
 
     .line 97
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->LA:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LA:J
 
     .line 98
     invoke-virtual {p1}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->LB:D
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LB:D
 
     .line 99
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->LC:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LC:Ljava/lang/String;
 
     .line 100
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -185,7 +185,7 @@
     if-lez v1, :cond_0
 
     .line 102
-    iget-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
 
     invoke-virtual {v0, v1}, Landroid/util/ArrayMap;->ensureCapacity(I)V
 
@@ -206,12 +206,12 @@
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
     .line 106
-    sget-object v4, Lcom/android/settings/applications/ProcStatsEntry$Service;->CREATOR:Landroid/os/Parcelable$Creator;
+    sget-object v4, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-virtual {p1, v3, v4}, Landroid/os/Parcel;->readTypedList(Ljava/util/List;Landroid/os/Parcelable$Creator;)V
 
     .line 107
-    iget-object v4, p0, Lcom/android/settings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
 
     invoke-virtual {v4, v2, v3}, Landroid/util/ArrayMap;->append(Ljava/lang/Object;Ljava/lang/Object;)V
 
@@ -239,7 +239,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
 
     .line 52
     new-instance v0, Landroid/util/ArrayMap;
@@ -248,7 +248,7 @@
 
     invoke-direct {v0, v1}, Landroid/util/ArrayMap;-><init>(I)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
 
     .line 57
     invoke-static {p1, p3, v2, v3}, Lcom/android/internal/app/ProcessStats;->computeProcessData(Lcom/android/internal/app/ProcessStats$ProcessState;Lcom/android/internal/app/ProcessStats$ProcessDataCollection;J)V
@@ -259,27 +259,27 @@
     .line 59
     iget-object v0, p1, Lcom/android/internal/app/ProcessStats$ProcessState;->mPackage:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     .line 60
     iget v0, p1, Lcom/android/internal/app/ProcessStats$ProcessState;->mUid:I
 
-    iput v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mUid:I
+    iput v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mUid:I
 
     .line 61
     iget-object v0, p1, Lcom/android/internal/app/ProcessStats$ProcessState;->mName:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     .line 62
-    iget-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 63
     iget-wide v0, p3, Lcom/android/internal/app/ProcessStats$ProcessDataCollection;->totalTime:J
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lu:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lu:J
 
     .line 64
     if-eqz p5, :cond_1
@@ -287,7 +287,7 @@
     iget-wide v0, p3, Lcom/android/internal/app/ProcessStats$ProcessDataCollection;->avgUss:J
 
     :goto_0
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lv:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lv:J
 
     .line 65
     if-eqz p5, :cond_2
@@ -295,25 +295,25 @@
     iget-wide v0, p3, Lcom/android/internal/app/ProcessStats$ProcessDataCollection;->maxUss:J
 
     :goto_1
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lw:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lw:J
 
     .line 66
-    iget-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lv:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lv:J
 
     long-to-double v0, v0
 
-    iget-wide v2, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lu:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lu:J
 
     long-to-double v2, v2
 
     mul-double/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lx:D
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lx:D
 
     .line 67
     iget-wide v0, p4, Lcom/android/internal/app/ProcessStats$ProcessDataCollection;->totalTime:J
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Ly:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Ly:J
 
     .line 68
     if-eqz p5, :cond_3
@@ -321,7 +321,7 @@
     iget-wide v0, p4, Lcom/android/internal/app/ProcessStats$ProcessDataCollection;->avgUss:J
 
     :goto_2
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lz:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lz:J
 
     .line 69
     if-eqz p5, :cond_4
@@ -329,23 +329,23 @@
     iget-wide v0, p4, Lcom/android/internal/app/ProcessStats$ProcessDataCollection;->maxUss:J
 
     :goto_3
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->LA:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LA:J
 
     .line 70
-    iget-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lz:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lz:J
 
     long-to-double v0, v0
 
-    iget-wide v2, p0, Lcom/android/settings/applications/ProcStatsEntry;->Ly:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Ly:J
 
     long-to-double v2, v2
 
     mul-double/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->LB:D
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LB:D
 
     .line 71
-    sget-boolean v0, Lcom/android/settings/applications/ProcStatsEntry;->DEBUG:Z
+    sget-boolean v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
@@ -373,7 +373,7 @@
 
     move-result-object v1
 
-    iget-wide v2, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lu:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lu:J
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -385,7 +385,7 @@
 
     move-result-object v1
 
-    iget-wide v2, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lv:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lv:J
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -397,7 +397,7 @@
 
     move-result-object v1
 
-    iget-wide v2, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lx:D
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lx:D
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -450,7 +450,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
 
     .line 52
     new-instance v0, Landroid/util/ArrayMap;
@@ -459,30 +459,30 @@
 
     invoke-direct {v0, v1}, Landroid/util/ArrayMap;-><init>(I)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
 
     .line 76
-    iput-object p1, p0, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     .line 77
-    iput p2, p0, Lcom/android/settings/applications/ProcStatsEntry;->mUid:I
+    iput p2, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mUid:I
 
     .line 78
-    iput-object p3, p0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iput-object p3, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     .line 79
-    iput-wide p4, p0, Lcom/android/settings/applications/ProcStatsEntry;->Ly:J
+    iput-wide p4, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Ly:J
 
-    iput-wide p4, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lu:J
+    iput-wide p4, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lu:J
 
     .line 80
-    iput-wide p6, p0, Lcom/android/settings/applications/ProcStatsEntry;->LA:J
+    iput-wide p6, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LA:J
 
-    iput-wide p6, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lz:J
+    iput-wide p6, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lz:J
 
-    iput-wide p6, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lw:J
+    iput-wide p6, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lw:J
 
-    iput-wide p6, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lv:J
+    iput-wide p6, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lv:J
 
     .line 81
     long-to-double v0, p4
@@ -491,12 +491,12 @@
 
     mul-double/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->LB:D
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LB:D
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lx:D
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lx:D
 
     .line 82
-    sget-boolean v0, Lcom/android/settings/applications/ProcStatsEntry;->DEBUG:Z
+    sget-boolean v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
@@ -522,7 +522,7 @@
 
     move-result-object v1
 
-    iget-wide v2, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lu:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lu:J
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -534,7 +534,7 @@
 
     move-result-object v1
 
-    iget-wide v2, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lv:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lv:J
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -546,7 +546,7 @@
 
     move-result-object v1
 
-    iget-wide v2, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lx:D
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lx:D
 
     invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -574,12 +574,12 @@
 
     move-object/from16 v0, p0
 
-    iput-object v2, v0, Lcom/android/settings/applications/ProcStatsEntry;->LC:Ljava/lang/String;
+    iput-object v2, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LC:Ljava/lang/String;
 
     .line 121
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -590,7 +590,7 @@
     if-ne v2, v3, :cond_2
 
     .line 122
-    sget-boolean v2, Lcom/android/settings/applications/ProcStatsEntry;->DEBUG:Z
+    sget-boolean v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->DEBUG:Z
 
     if-eqz v2, :cond_0
 
@@ -608,7 +608,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iget-object v4, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -622,7 +622,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
 
     const/4 v5, 0x0
 
@@ -646,7 +646,7 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
 
     const/4 v3, 0x0
 
@@ -658,7 +658,7 @@
 
     move-object/from16 v0, p0
 
-    iput-object v2, v0, Lcom/android/settings/applications/ProcStatsEntry;->LC:Ljava/lang/String;
+    iput-object v2, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LC:Ljava/lang/String;
 
     .line 251
     :cond_1
@@ -672,7 +672,7 @@
     :goto_1
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/android/settings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
+    iget-object v3, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -685,7 +685,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
+    iget-object v4, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -700,7 +700,7 @@
     .line 131
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/android/settings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
+    iget-object v3, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -710,7 +710,7 @@
 
     move-object/from16 v0, p0
 
-    iput-object v2, v0, Lcom/android/settings/applications/ProcStatsEntry;->LC:Ljava/lang/String;
+    iput-object v2, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LC:Ljava/lang/String;
 
     goto :goto_0
 
@@ -734,7 +734,7 @@
     :goto_2
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -749,7 +749,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v9}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -759,7 +759,7 @@
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Lcom/android/settings/applications/ProcStatsEntry;->mUid:I
+    iget v4, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mUid:I
 
     invoke-virtual {v3, v2, v4}, Lcom/android/internal/app/ProcessMap;->get(Ljava/lang/String;I)Ljava/lang/Object;
 
@@ -791,7 +791,7 @@
     check-cast v4, Lcom/android/internal/app/ProcessStats$PackageState;
 
     .line 143
-    sget-boolean v2, Lcom/android/settings/applications/ProcStatsEntry;->DEBUG:Z
+    sget-boolean v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->DEBUG:Z
 
     if-eqz v2, :cond_5
 
@@ -809,7 +809,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iget-object v5, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -856,7 +856,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v9}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -876,7 +876,7 @@
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Lcom/android/settings/applications/ProcStatsEntry;->mUid:I
+    iget v4, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mUid:I
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -890,7 +890,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iget-object v4, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -916,7 +916,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iget-object v3, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -942,7 +942,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iget-object v4, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -956,7 +956,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v9}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -976,7 +976,7 @@
 
     move-object/from16 v0, p0
 
-    iget v4, v0, Lcom/android/settings/applications/ProcStatsEntry;->mUid:I
+    iget v4, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mUid:I
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -992,7 +992,7 @@
 
     .line 156
     :cond_7
-    new-instance v2, Lcom/android/settings/applications/ProcStatsEntry;
+    new-instance v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;
 
     iget-object v4, v4, Lcom/android/internal/app/ProcessStats$PackageState;->mPackageName:Ljava/lang/String;
 
@@ -1002,7 +1002,7 @@
 
     move/from16 v7, p6
 
-    invoke-direct/range {v2 .. v7}, Lcom/android/settings/applications/ProcStatsEntry;-><init>(Lcom/android/internal/app/ProcessStats$ProcessState;Ljava/lang/String;Lcom/android/internal/app/ProcessStats$ProcessDataCollection;Lcom/android/internal/app/ProcessStats$ProcessDataCollection;Z)V
+    invoke-direct/range {v2 .. v7}, Lcom/android/vendorsettings/applications/ProcStatsEntry;-><init>(Lcom/android/internal/app/ProcessStats$ProcessState;Ljava/lang/String;Lcom/android/internal/app/ProcessStats$ProcessDataCollection;Lcom/android/internal/app/ProcessStats$ProcessDataCollection;Z)V
 
     invoke-virtual {v12, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -1038,9 +1038,9 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/applications/ProcStatsEntry;
+    check-cast v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;
 
-    iget-wide v4, v2, Lcom/android/settings/applications/ProcStatsEntry;->LB:D
+    iget-wide v4, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LB:D
 
     const/4 v2, 0x1
 
@@ -1048,9 +1048,9 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/applications/ProcStatsEntry;
+    check-cast v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;
 
-    iget-wide v2, v2, Lcom/android/settings/applications/ProcStatsEntry;->LB:D
+    iget-wide v2, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LB:D
 
     const-wide/high16 v6, 0x4008000000000000L    # 3.0
 
@@ -1061,7 +1061,7 @@
     if-lez v2, :cond_b
 
     .line 164
-    sget-boolean v2, Lcom/android/settings/applications/ProcStatsEntry;->DEBUG:Z
+    sget-boolean v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->DEBUG:Z
 
     if-eqz v2, :cond_a
 
@@ -1079,7 +1079,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iget-object v4, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1097,9 +1097,9 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/applications/ProcStatsEntry;
+    check-cast v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;
 
-    iget-object v2, v2, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iget-object v2, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1117,9 +1117,9 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/applications/ProcStatsEntry;
+    check-cast v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;
 
-    iget-wide v6, v2, Lcom/android/settings/applications/ProcStatsEntry;->LB:D
+    iget-wide v6, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LB:D
 
     invoke-virtual {v4, v6, v7}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -1137,9 +1137,9 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/applications/ProcStatsEntry;
+    check-cast v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;
 
-    iget-object v2, v2, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iget-object v2, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1157,9 +1157,9 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/applications/ProcStatsEntry;
+    check-cast v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;
 
-    iget-wide v6, v2, Lcom/android/settings/applications/ProcStatsEntry;->LB:D
+    iget-wide v6, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LB:D
 
     invoke-virtual {v4, v6, v7}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -1179,13 +1179,13 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/applications/ProcStatsEntry;
+    check-cast v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;
 
-    iget-object v2, v2, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iget-object v2, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iput-object v2, v0, Lcom/android/settings/applications/ProcStatsEntry;->LC:Ljava/lang/String;
+    iput-object v2, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LC:Ljava/lang/String;
 
     goto/16 :goto_0
 
@@ -1197,9 +1197,9 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/applications/ProcStatsEntry;
+    check-cast v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;
 
-    iget-wide v14, v2, Lcom/android/settings/applications/ProcStatsEntry;->LB:D
+    iget-wide v14, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LB:D
 
     .line 175
     const-wide/16 v4, -0x1
@@ -1228,10 +1228,10 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/applications/ProcStatsEntry;
+    check-cast v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;
 
     .line 179
-    iget-wide v10, v2, Lcom/android/settings/applications/ProcStatsEntry;->LB:D
+    iget-wide v10, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LB:D
 
     const-wide/high16 v16, 0x4000000000000000L    # 2.0
 
@@ -1242,7 +1242,7 @@
     if-gez v3, :cond_c
 
     .line 180
-    sget-boolean v3, Lcom/android/settings/applications/ProcStatsEntry;->DEBUG:Z
+    sget-boolean v3, Lcom/android/vendorsettings/applications/ProcStatsEntry;->DEBUG:Z
 
     if-eqz v3, :cond_1e
 
@@ -1260,7 +1260,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iget-object v7, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1272,7 +1272,7 @@
 
     move-result-object v4
 
-    iget-object v7, v2, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iget-object v7, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1284,7 +1284,7 @@
 
     move-result-object v4
 
-    iget-wide v10, v2, Lcom/android/settings/applications/ProcStatsEntry;->LB:D
+    iget-wide v10, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LB:D
 
     invoke-virtual {v4, v10, v11}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
@@ -1321,7 +1321,7 @@
     .line 186
     :cond_c
     :try_start_0
-    iget-object v3, v2, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iget-object v3, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -1337,7 +1337,7 @@
     if-nez v4, :cond_e
 
     .line 188
-    sget-boolean v3, Lcom/android/settings/applications/ProcStatsEntry;->DEBUG:Z
+    sget-boolean v3, Lcom/android/vendorsettings/applications/ProcStatsEntry;->DEBUG:Z
 
     if-eqz v3, :cond_d
 
@@ -1355,7 +1355,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iget-object v7, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1367,7 +1367,7 @@
 
     move-result-object v4
 
-    iget-object v7, v2, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iget-object v7, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1402,7 +1402,7 @@
     if-eqz v3, :cond_14
 
     .line 193
-    iget-wide v10, v2, Lcom/android/settings/applications/ProcStatsEntry;->Ly:J
+    iget-wide v10, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Ly:J
 
     .line 194
     if-eqz v6, :cond_f
@@ -1413,7 +1413,7 @@
 
     .line 195
     :cond_f
-    sget-boolean v3, Lcom/android/settings/applications/ProcStatsEntry;->DEBUG:Z
+    sget-boolean v3, Lcom/android/vendorsettings/applications/ProcStatsEntry;->DEBUG:Z
 
     if-eqz v3, :cond_10
 
@@ -1431,7 +1431,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iget-object v7, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1443,7 +1443,7 @@
 
     move-result-object v4
 
-    iget-object v7, v2, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iget-object v7, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1482,7 +1482,7 @@
 
     .line 201
     :cond_12
-    sget-boolean v3, Lcom/android/settings/applications/ProcStatsEntry;->DEBUG:Z
+    sget-boolean v3, Lcom/android/vendorsettings/applications/ProcStatsEntry;->DEBUG:Z
 
     if-eqz v3, :cond_11
 
@@ -1500,7 +1500,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iget-object v7, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1512,7 +1512,7 @@
 
     move-result-object v4
 
-    iget-object v7, v2, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iget-object v7, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1553,7 +1553,7 @@
     move-exception v3
 
     .line 212
-    sget-boolean v3, Lcom/android/settings/applications/ProcStatsEntry;->DEBUG:Z
+    sget-boolean v3, Lcom/android/vendorsettings/applications/ProcStatsEntry;->DEBUG:Z
 
     if-eqz v3, :cond_13
 
@@ -1571,7 +1571,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iget-object v7, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1583,7 +1583,7 @@
 
     move-result-object v4
 
-    iget-object v2, v2, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iget-object v2, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1615,7 +1615,7 @@
 
     .line 207
     :try_start_1
-    sget-boolean v3, Lcom/android/settings/applications/ProcStatsEntry;->DEBUG:Z
+    sget-boolean v3, Lcom/android/vendorsettings/applications/ProcStatsEntry;->DEBUG:Z
 
     if-eqz v3, :cond_15
 
@@ -1633,7 +1633,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iget-object v7, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1645,7 +1645,7 @@
 
     move-result-object v4
 
-    iget-object v7, v2, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iget-object v7, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1682,7 +1682,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
+    iget-object v4, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
 
     invoke-virtual {v4}, Landroid/util/ArrayMap;->size()I
 
@@ -1696,7 +1696,7 @@
     .line 218
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/android/settings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
+    iget-object v3, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
 
     invoke-virtual {v3, v10}, Landroid/util/ArrayMap;->valueAt(I)Ljava/lang/Object;
 
@@ -1711,11 +1711,11 @@
 
     move-result-object v4
 
-    check-cast v4, Lcom/android/settings/applications/ProcStatsEntry$Service;
+    check-cast v4, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;
 
-    iget-object v4, v4, Lcom/android/settings/applications/ProcStatsEntry$Service;->mPackage:Ljava/lang/String;
+    iget-object v4, v4, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mPackage:Ljava/lang/String;
 
-    iget-object v13, v2, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iget-object v13, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     invoke-virtual {v4, v13}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1749,10 +1749,10 @@
 
     move-result-object v3
 
-    check-cast v3, Lcom/android/settings/applications/ProcStatsEntry$Service;
+    check-cast v3, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;
 
     .line 228
-    iget-wide v0, v3, Lcom/android/settings/applications/ProcStatsEntry$Service;->mDuration:J
+    iget-wide v0, v3, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mDuration:J
 
     move-wide/from16 v16, v0
 
@@ -1761,7 +1761,7 @@
     if-lez v16, :cond_1c
 
     .line 229
-    sget-boolean v4, Lcom/android/settings/applications/ProcStatsEntry;->DEBUG:Z
+    sget-boolean v4, Lcom/android/vendorsettings/applications/ProcStatsEntry;->DEBUG:Z
 
     if-eqz v4, :cond_18
 
@@ -1779,7 +1779,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v10, v0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iget-object v10, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1791,7 +1791,7 @@
 
     move-result-object v7
 
-    iget-object v10, v2, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iget-object v10, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1803,7 +1803,7 @@
 
     move-result-object v7
 
-    iget-object v10, v3, Lcom/android/settings/applications/ProcStatsEntry$Service;->mName:Ljava/lang/String;
+    iget-object v10, v3, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mName:Ljava/lang/String;
 
     invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1815,7 +1815,7 @@
 
     move-result-object v7
 
-    iget-wide v10, v3, Lcom/android/settings/applications/ProcStatsEntry$Service;->mDuration:J
+    iget-wide v10, v3, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mDuration:J
 
     invoke-virtual {v7, v10, v11}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
@@ -1829,7 +1829,7 @@
 
     .line 232
     :cond_18
-    iget-wide v10, v3, Lcom/android/settings/applications/ProcStatsEntry$Service;->mDuration:J
+    iget-wide v10, v3, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mDuration:J
 
     .line 237
     :cond_19
@@ -1838,7 +1838,7 @@
     if-lez v3, :cond_1d
 
     .line 238
-    sget-boolean v3, Lcom/android/settings/applications/ProcStatsEntry;->DEBUG:Z
+    sget-boolean v3, Lcom/android/vendorsettings/applications/ProcStatsEntry;->DEBUG:Z
 
     if-eqz v3, :cond_1a
 
@@ -1856,7 +1856,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iget-object v7, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1868,7 +1868,7 @@
 
     move-result-object v4
 
-    iget-object v7, v2, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iget-object v7, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1892,11 +1892,11 @@
 
     .line 240
     :cond_1a
-    iget-object v2, v2, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iget-object v2, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iput-object v2, v0, Lcom/android/settings/applications/ProcStatsEntry;->LC:Ljava/lang/String;
+    iput-object v2, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LC:Ljava/lang/String;
 
     move v3, v6
 
@@ -1923,7 +1923,7 @@
 
     .line 243
     :cond_1d
-    sget-boolean v3, Lcom/android/settings/applications/ProcStatsEntry;->DEBUG:Z
+    sget-boolean v3, Lcom/android/vendorsettings/applications/ProcStatsEntry;->DEBUG:Z
 
     if-eqz v3, :cond_1e
 
@@ -1941,7 +1941,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iget-object v7, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1953,7 +1953,7 @@
 
     move-result-object v4
 
-    iget-object v2, v2, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iget-object v2, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -2009,13 +2009,13 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/android/settings/applications/ProcStatsEntry;
+    check-cast v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;
 
-    iget-object v2, v2, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iget-object v2, v2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    iput-object v2, v0, Lcom/android/settings/applications/ProcStatsEntry;->LC:Ljava/lang/String;
+    iput-object v2, v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LC:Ljava/lang/String;
 
     goto/16 :goto_0
 .end method
@@ -2025,7 +2025,7 @@
 
     .prologue
     .line 254
-    iget-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
 
     iget-object v1, p1, Lcom/android/internal/app/ProcessStats$ServiceState;->mPackage:Ljava/lang/String;
 
@@ -2044,7 +2044,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 257
-    iget-object v1, p0, Lcom/android/settings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
 
     iget-object v2, p1, Lcom/android/internal/app/ProcessStats$ServiceState;->mPackage:Ljava/lang/String;
 
@@ -2052,9 +2052,9 @@
 
     .line 259
     :cond_0
-    new-instance v1, Lcom/android/settings/applications/ProcStatsEntry$Service;
+    new-instance v1, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;
 
-    invoke-direct {v1, p1}, Lcom/android/settings/applications/ProcStatsEntry$Service;-><init>(Lcom/android/internal/app/ProcessStats$ServiceState;)V
+    invoke-direct {v1, p1}, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;-><init>(Lcom/android/internal/app/ProcessStats$ServiceState;)V
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -2067,7 +2067,7 @@
 
     .prologue
     .line 113
-    iget-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -2090,72 +2090,72 @@
 
     .prologue
     .line 269
-    iget-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mPackage:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 270
-    iget v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mUid:I
+    iget v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mUid:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 271
-    iget-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mName:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 272
-    iget-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lt:Ljava/util/ArrayList;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeStringList(Ljava/util/List;)V
 
     .line 273
-    iget-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lu:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lu:J
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 274
-    iget-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lv:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lv:J
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 275
-    iget-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lw:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lw:J
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 276
-    iget-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lx:D
+    iget-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lx:D
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V
 
     .line 277
-    iget-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Ly:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Ly:J
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 278
-    iget-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->Lz:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->Lz:J
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 279
-    iget-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->LA:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LA:J
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 280
-    iget-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->LB:D
+    iget-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LB:D
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V
 
     .line 281
-    iget-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->LC:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LC:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 282
-    iget-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
 
     invoke-virtual {v0}, Landroid/util/ArrayMap;->size()I
 
@@ -2173,7 +2173,7 @@
     if-ge v1, v2, :cond_0
 
     .line 285
-    iget-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
 
     invoke-virtual {v0, v1}, Landroid/util/ArrayMap;->keyAt(I)Ljava/lang/Object;
 
@@ -2184,7 +2184,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 286
-    iget-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry;->mServices:Landroid/util/ArrayMap;
 
     invoke-virtual {v0, v1}, Landroid/util/ArrayMap;->valueAt(I)Ljava/lang/Object;
 

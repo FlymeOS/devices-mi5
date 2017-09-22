@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/bootloader/d;
+.class public Lcom/android/vendorsettings/bootloader/d;
 .super Ljava/lang/Object;
 .source "Utils.java"
 
@@ -20,12 +20,12 @@
     .line 69
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/bootloader/d;->SA:I
+    iput v0, p0, Lcom/android/vendorsettings/bootloader/d;->SA:I
 
     .line 70
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/bootloader/d;->SB:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/bootloader/d;->SB:Ljava/lang/String;
 
     .line 71
     return-void

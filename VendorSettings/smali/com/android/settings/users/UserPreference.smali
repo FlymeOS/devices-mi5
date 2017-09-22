@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/users/UserPreference;
+.class public Lcom/android/vendorsettings/users/UserPreference;
 .super Landroid/preference/Preference;
 .source "UserPreference.java"
 
@@ -23,11 +23,11 @@
 
     .prologue
     .line 35
-    new-instance v0, Lcom/android/settings/users/UserPreference$1;
+    new-instance v0, Lcom/android/vendorsettings/users/UserPreference$1;
 
-    invoke-direct {v0}, Lcom/android/settings/users/UserPreference$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/users/UserPreference$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/users/UserPreference;->aul:Ljava/util/Comparator;
+    sput-object v0, Lcom/android/vendorsettings/users/UserPreference;->aul:Ljava/util/Comparator;
 
     return-void
 .end method
@@ -42,12 +42,12 @@
     .line 52
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/users/UserPreference;->aun:I
+    iput v0, p0, Lcom/android/vendorsettings/users/UserPreference;->aun:I
 
     .line 53
     const/16 v0, -0xa
 
-    iput v0, p0, Lcom/android/settings/users/UserPreference;->mUserId:I
+    iput v0, p0, Lcom/android/vendorsettings/users/UserPreference;->mUserId:I
 
     .line 65
     if-nez p5, :cond_0
@@ -58,28 +58,28 @@
     :cond_0
     const v0, 0x7f0400f1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/users/UserPreference;->setWidgetLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/users/UserPreference;->setWidgetLayoutResource(I)V
 
     .line 68
     :cond_1
-    iput-object p5, p0, Lcom/android/settings/users/UserPreference;->nV:Landroid/view/View$OnClickListener;
+    iput-object p5, p0, Lcom/android/vendorsettings/users/UserPreference;->nV:Landroid/view/View$OnClickListener;
 
     .line 69
-    iput-object p4, p0, Lcom/android/settings/users/UserPreference;->aum:Landroid/view/View$OnClickListener;
+    iput-object p4, p0, Lcom/android/vendorsettings/users/UserPreference;->aum:Landroid/view/View$OnClickListener;
 
     .line 70
-    iput p3, p0, Lcom/android/settings/users/UserPreference;->mUserId:I
+    iput p3, p0, Lcom/android/vendorsettings/users/UserPreference;->mUserId:I
 
     .line 71
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/users/UserPreference;)I
+.method static synthetic a(Lcom/android/vendorsettings/users/UserPreference;)I
     .locals 1
 
     .prologue
     .line 31
-    invoke-direct {p0}, Lcom/android/settings/users/UserPreference;->getSerialNumber()I
+    invoke-direct {p0}, Lcom/android/vendorsettings/users/UserPreference;->getSerialNumber()I
 
     move-result v0
 
@@ -91,7 +91,7 @@
 
     .prologue
     .line 106
-    iget v0, p0, Lcom/android/settings/users/UserPreference;->mUserId:I
+    iget v0, p0, Lcom/android/vendorsettings/users/UserPreference;->mUserId:I
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -107,12 +107,12 @@
 
     .line 107
     :cond_0
-    iget v0, p0, Lcom/android/settings/users/UserPreference;->aun:I
+    iget v0, p0, Lcom/android/vendorsettings/users/UserPreference;->aun:I
 
     if-gez v0, :cond_3
 
     .line 109
-    iget v0, p0, Lcom/android/settings/users/UserPreference;->mUserId:I
+    iget v0, p0, Lcom/android/vendorsettings/users/UserPreference;->mUserId:I
 
     const/16 v1, -0xa
 
@@ -125,7 +125,7 @@
 
     .line 111
     :cond_1
-    iget v0, p0, Lcom/android/settings/users/UserPreference;->mUserId:I
+    iget v0, p0, Lcom/android/vendorsettings/users/UserPreference;->mUserId:I
 
     const/16 v1, -0xb
 
@@ -138,7 +138,7 @@
 
     .line 114
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/users/UserPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/users/UserPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -150,26 +150,26 @@
 
     check-cast v0, Landroid/os/UserManager;
 
-    iget v1, p0, Lcom/android/settings/users/UserPreference;->mUserId:I
+    iget v1, p0, Lcom/android/vendorsettings/users/UserPreference;->mUserId:I
 
     invoke-virtual {v0, v1}, Landroid/os/UserManager;->getUserSerialNumber(I)I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/users/UserPreference;->aun:I
+    iput v0, p0, Lcom/android/vendorsettings/users/UserPreference;->aun:I
 
     .line 116
-    iget v0, p0, Lcom/android/settings/users/UserPreference;->aun:I
+    iget v0, p0, Lcom/android/vendorsettings/users/UserPreference;->aun:I
 
     if-gez v0, :cond_3
 
-    iget v0, p0, Lcom/android/settings/users/UserPreference;->mUserId:I
+    iget v0, p0, Lcom/android/vendorsettings/users/UserPreference;->mUserId:I
 
     goto :goto_0
 
     .line 118
     :cond_3
-    iget v0, p0, Lcom/android/settings/users/UserPreference;->aun:I
+    iget v0, p0, Lcom/android/vendorsettings/users/UserPreference;->aun:I
 
     goto :goto_0
 .end method
@@ -181,7 +181,7 @@
 
     .prologue
     .line 122
-    iget v0, p0, Lcom/android/settings/users/UserPreference;->mUserId:I
+    iget v0, p0, Lcom/android/vendorsettings/users/UserPreference;->mUserId:I
 
     return v0
 .end method
@@ -193,7 +193,7 @@
     const/16 v5, 0x8
 
     .line 75
-    invoke-virtual {p0}, Lcom/android/settings/users/UserPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/users/UserPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -230,7 +230,7 @@
     if-eqz v3, :cond_0
 
     .line 80
-    iget-object v4, p0, Lcom/android/settings/users/UserPreference;->nV:Landroid/view/View$OnClickListener;
+    iget-object v4, p0, Lcom/android/vendorsettings/users/UserPreference;->nV:Landroid/view/View$OnClickListener;
 
     if-eqz v4, :cond_2
 
@@ -243,7 +243,7 @@
     if-nez v0, :cond_2
 
     .line 82
-    iget-object v0, p0, Lcom/android/settings/users/UserPreference;->nV:Landroid/view/View$OnClickListener;
+    iget-object v0, p0, Lcom/android/vendorsettings/users/UserPreference;->nV:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v3, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -263,12 +263,12 @@
     if-eqz v0, :cond_1
 
     .line 91
-    iget-object v1, p0, Lcom/android/settings/users/UserPreference;->aum:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/android/vendorsettings/users/UserPreference;->aum:Landroid/view/View$OnClickListener;
 
     if-eqz v1, :cond_3
 
     .line 92
-    iget-object v1, p0, Lcom/android/settings/users/UserPreference;->aum:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/android/vendorsettings/users/UserPreference;->aum:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -276,7 +276,7 @@
     invoke-virtual {v0, p0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 94
-    iget-object v0, p0, Lcom/android/settings/users/UserPreference;->nV:Landroid/view/View$OnClickListener;
+    iget-object v0, p0, Lcom/android/vendorsettings/users/UserPreference;->nV:Landroid/view/View$OnClickListener;
 
     if-eqz v0, :cond_1
 

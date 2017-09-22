@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/em;
+.class public Lcom/android/vendorsettings/em;
 .super Ljava/lang/Object;
 .source "MiuiDeviceNameEditFragment.java"
 
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 68
-    iput p1, p0, Lcom/android/settings/em;->qw:I
+    iput p1, p0, Lcom/android/vendorsettings/em;->qw:I
 
     .line 69
     return-void
@@ -32,7 +32,7 @@
 
     .prologue
     .line 73
-    iget v0, p0, Lcom/android/settings/em;->qw:I
+    iget v0, p0, Lcom/android/vendorsettings/em;->qw:I
 
     invoke-virtual {p4}, Ljava/lang/Object;->toString()Ljava/lang/String;
 

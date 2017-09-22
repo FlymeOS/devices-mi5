@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;
+.class public Lcom/android/vendorsettings/deviceinfo/PercentageBarChart$Entry;
 .super Ljava/lang/Object;
 .source "PercentageBarChart.java"
 
@@ -23,13 +23,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 53
-    iput p1, p0, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;->order:I
+    iput p1, p0, Lcom/android/vendorsettings/deviceinfo/PercentageBarChart$Entry;->order:I
 
     .line 54
-    iput p2, p0, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;->VO:F
+    iput p2, p0, Lcom/android/vendorsettings/deviceinfo/PercentageBarChart$Entry;->VO:F
 
     .line 55
-    iput-object p3, p0, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;->paint:Landroid/graphics/Paint;
+    iput-object p3, p0, Lcom/android/vendorsettings/deviceinfo/PercentageBarChart$Entry;->paint:Landroid/graphics/Paint;
 
     .line 56
     return-void
@@ -37,14 +37,14 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;)I
+.method public a(Lcom/android/vendorsettings/deviceinfo/PercentageBarChart$Entry;)I
     .locals 2
 
     .prologue
     .line 60
-    iget v0, p0, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;->order:I
+    iget v0, p0, Lcom/android/vendorsettings/deviceinfo/PercentageBarChart$Entry;->order:I
 
-    iget v1, p1, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;->order:I
+    iget v1, p1, Lcom/android/vendorsettings/deviceinfo/PercentageBarChart$Entry;->order:I
 
     sub-int/2addr v0, v1
 
@@ -56,9 +56,9 @@
 
     .prologue
     .line 47
-    check-cast p1, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;
+    check-cast p1, Lcom/android/vendorsettings/deviceinfo/PercentageBarChart$Entry;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;->a(Lcom/android/settings/deviceinfo/PercentageBarChart$Entry;)I
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/deviceinfo/PercentageBarChart$Entry;->a(Lcom/android/vendorsettings/deviceinfo/PercentageBarChart$Entry;)I
 
     move-result v0
 

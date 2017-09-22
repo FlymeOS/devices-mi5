@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dR;
+.class Lcom/android/vendorsettings/dR;
 .super Ljava/lang/Object;
 .source "MasterClear.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic pL:Lcom/android/settings/MasterClear;
+.field final synthetic pL:Lcom/android/vendorsettings/MasterClear;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MasterClear;)V
+.method constructor <init>(Lcom/android/vendorsettings/MasterClear;)V
     .locals 0
 
     .prologue
     .line 160
-    iput-object p1, p0, Lcom/android/settings/dR;->pL:Lcom/android/settings/MasterClear;
+    iput-object p1, p0, Lcom/android/vendorsettings/dR;->pL:Lcom/android/vendorsettings/MasterClear;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 164
-    iget-object v0, p0, Lcom/android/settings/dR;->pL:Lcom/android/settings/MasterClear;
+    iget-object v0, p0, Lcom/android/vendorsettings/dR;->pL:Lcom/android/vendorsettings/MasterClear;
 
-    invoke-static {v0}, Lcom/android/settings/MasterClear;->b(Lcom/android/settings/MasterClear;)Landroid/widget/CheckBox;
+    invoke-static {v0}, Lcom/android/vendorsettings/MasterClear;->b(Lcom/android/vendorsettings/MasterClear;)Landroid/widget/CheckBox;
 
     move-result-object v0
 

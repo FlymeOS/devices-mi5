@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloudbackup/f;
+.class public Lcom/android/vendorsettings/cloudbackup/f;
 .super Ljava/lang/Object;
 .source "SettingsCloudBackupImpl.java"
 
@@ -134,7 +134,7 @@
     .line 39
     const-string v0, "weiboAccount"
 
-    invoke-direct {p0, p1}, Lcom/android/settings/cloudbackup/f;->aU(Landroid/content/Context;)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/cloudbackup/f;->aU(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -143,11 +143,11 @@
     .line 40
     const-string v0, "NotificationFilter"
 
-    invoke-static {p1}, Lcom/android/settings/cloudbackup/c;->aR(Landroid/content/Context;)Lorg/json/JSONObject;
+    invoke-static {p1}, Lcom/android/vendorsettings/cloudbackup/c;->aR(Landroid/content/Context;)Lorg/json/JSONObject;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
+    invoke-static {v1}, Lcom/android/vendorsettings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v1
 
@@ -156,11 +156,11 @@
     .line 42
     const-string v0, "StatusBar"
 
-    invoke-static {p1}, Lcom/android/settings/cloudbackup/h;->aR(Landroid/content/Context;)Lorg/json/JSONObject;
+    invoke-static {p1}, Lcom/android/vendorsettings/cloudbackup/h;->aR(Landroid/content/Context;)Lorg/json/JSONObject;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
+    invoke-static {v1}, Lcom/android/vendorsettings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v1
 
@@ -169,11 +169,11 @@
     .line 44
     const-string v0, "DoNotDisturb"
 
-    invoke-static {p1}, Lcom/android/settings/cloudbackup/b;->aR(Landroid/content/Context;)Lorg/json/JSONObject;
+    invoke-static {p1}, Lcom/android/vendorsettings/cloudbackup/b;->aR(Landroid/content/Context;)Lorg/json/JSONObject;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
+    invoke-static {v1}, Lcom/android/vendorsettings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v1
 
@@ -182,11 +182,11 @@
     .line 46
     const-string v0, "AdvanceSettings"
 
-    invoke-static {p1}, Lcom/android/settings/cloudbackup/a;->aR(Landroid/content/Context;)Lorg/json/JSONObject;
+    invoke-static {p1}, Lcom/android/vendorsettings/cloudbackup/a;->aR(Landroid/content/Context;)Lorg/json/JSONObject;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
+    invoke-static {v1}, Lcom/android/vendorsettings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v1
 
@@ -195,11 +195,11 @@
     .line 48
     const-string v0, "ScreenKeySettings"
 
-    invoke-static {p1}, Lcom/android/settings/cloudbackup/e;->aR(Landroid/content/Context;)Lorg/json/JSONObject;
+    invoke-static {p1}, Lcom/android/vendorsettings/cloudbackup/e;->aR(Landroid/content/Context;)Lorg/json/JSONObject;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
+    invoke-static {v1}, Lcom/android/vendorsettings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v1
 
@@ -208,18 +208,18 @@
     .line 50
     const-string v0, "SoundAndVibrateSettings"
 
-    invoke-static {p1}, Lcom/android/settings/cloudbackup/g;->aR(Landroid/content/Context;)Lorg/json/JSONObject;
+    invoke-static {p1}, Lcom/android/vendorsettings/cloudbackup/g;->aR(Landroid/content/Context;)Lorg/json/JSONObject;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
+    invoke-static {v1}, Lcom/android/vendorsettings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v1
 
     invoke-virtual {p2, v0, v1}, Lcom/xiaomi/settingsdk/backup/data/DataPackage;->addKeyJson(Ljava/lang/String;Lorg/json/JSONObject;)V
 
     .line 53
-    invoke-static {p1, p2}, Lcom/android/settings/cloudbackup/d;->a(Landroid/content/Context;Lcom/xiaomi/settingsdk/backup/data/DataPackage;)V
+    invoke-static {p1, p2}, Lcom/android/vendorsettings/cloudbackup/d;->a(Landroid/content/Context;Lcom/xiaomi/settingsdk/backup/data/DataPackage;)V
 
     .line 55
     const-string v0, "SettingsSettingsCloudBackup"
@@ -265,11 +265,11 @@
 
     check-cast v0, Lorg/json/JSONObject;
 
-    invoke-static {v0}, Lcom/android/settings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
+    invoke-static {v0}, Lcom/android/vendorsettings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Lcom/android/settings/cloudbackup/c;->b(Landroid/content/Context;Lorg/json/JSONObject;)V
+    invoke-static {p1, v0}, Lcom/android/vendorsettings/cloudbackup/c;->b(Landroid/content/Context;Lorg/json/JSONObject;)V
 
     .line 74
     :cond_0
@@ -294,11 +294,11 @@
 
     check-cast v0, Lorg/json/JSONObject;
 
-    invoke-static {v0}, Lcom/android/settings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
+    invoke-static {v0}, Lcom/android/vendorsettings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Lcom/android/settings/cloudbackup/h;->b(Landroid/content/Context;Lorg/json/JSONObject;)V
+    invoke-static {p1, v0}, Lcom/android/vendorsettings/cloudbackup/h;->b(Landroid/content/Context;Lorg/json/JSONObject;)V
 
     .line 78
     :cond_1
@@ -323,11 +323,11 @@
 
     check-cast v0, Lorg/json/JSONObject;
 
-    invoke-static {v0}, Lcom/android/settings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
+    invoke-static {v0}, Lcom/android/vendorsettings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Lcom/android/settings/cloudbackup/b;->b(Landroid/content/Context;Lorg/json/JSONObject;)V
+    invoke-static {p1, v0}, Lcom/android/vendorsettings/cloudbackup/b;->b(Landroid/content/Context;Lorg/json/JSONObject;)V
 
     .line 82
     :cond_2
@@ -352,11 +352,11 @@
 
     check-cast v0, Lorg/json/JSONObject;
 
-    invoke-static {v0}, Lcom/android/settings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
+    invoke-static {v0}, Lcom/android/vendorsettings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Lcom/android/settings/cloudbackup/a;->b(Landroid/content/Context;Lorg/json/JSONObject;)V
+    invoke-static {p1, v0}, Lcom/android/vendorsettings/cloudbackup/a;->b(Landroid/content/Context;Lorg/json/JSONObject;)V
 
     .line 86
     :cond_3
@@ -381,11 +381,11 @@
 
     check-cast v0, Lorg/json/JSONObject;
 
-    invoke-static {v0}, Lcom/android/settings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
+    invoke-static {v0}, Lcom/android/vendorsettings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Lcom/android/settings/cloudbackup/e;->b(Landroid/content/Context;Lorg/json/JSONObject;)V
+    invoke-static {p1, v0}, Lcom/android/vendorsettings/cloudbackup/e;->b(Landroid/content/Context;Lorg/json/JSONObject;)V
 
     .line 90
     :cond_4
@@ -410,15 +410,15 @@
 
     check-cast v0, Lorg/json/JSONObject;
 
-    invoke-static {v0}, Lcom/android/settings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
+    invoke-static {v0}, Lcom/android/vendorsettings/cloudbackup/f;->e(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Lcom/android/settings/cloudbackup/g;->b(Landroid/content/Context;Lorg/json/JSONObject;)V
+    invoke-static {p1, v0}, Lcom/android/vendorsettings/cloudbackup/g;->b(Landroid/content/Context;Lorg/json/JSONObject;)V
 
     .line 94
     :cond_5
-    invoke-static {p1, p2}, Lcom/android/settings/cloudbackup/d;->b(Landroid/content/Context;Lcom/xiaomi/settingsdk/backup/data/DataPackage;)V
+    invoke-static {p1, p2}, Lcom/android/vendorsettings/cloudbackup/d;->b(Landroid/content/Context;Lcom/xiaomi/settingsdk/backup/data/DataPackage;)V
 
     .line 96
     invoke-static {p2}, Lcom/xiaomi/settingsdk/backup/SettingsBackupHelper;->restoreFiles(Lcom/xiaomi/settingsdk/backup/data/DataPackage;)V

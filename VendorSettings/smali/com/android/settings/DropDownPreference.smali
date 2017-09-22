@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/DropDownPreference;
+.class public Lcom/android/vendorsettings/DropDownPreference;
 .super Landroid/preference/Preference;
 .source "DropDownPreference.java"
 
@@ -14,7 +14,7 @@
 
 .field private final mm:Ljava/util/ArrayList;
 
-.field private mn:Lcom/android/settings/cO;
+.field private mn:Lcom/android/vendorsettings/cO;
 
 
 # direct methods
@@ -25,7 +25,7 @@
     .line 42
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/DropDownPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/DropDownPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 43
     return-void
@@ -45,71 +45,71 @@
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Lcom/android/settings/DropDownPreference;->mm:Ljava/util/ArrayList;
+    iput-object v1, p0, Lcom/android/vendorsettings/DropDownPreference;->mm:Ljava/util/ArrayList;
 
     .line 39
     const/4 v1, -0x1
 
-    iput v1, p0, Lcom/android/settings/DropDownPreference;->mSelectedPosition:I
+    iput v1, p0, Lcom/android/vendorsettings/DropDownPreference;->mSelectedPosition:I
 
     .line 47
-    iput-object p1, p0, Lcom/android/settings/DropDownPreference;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/DropDownPreference;->mContext:Landroid/content/Context;
 
     .line 48
     new-instance v1, Landroid/widget/ArrayAdapter;
 
-    iget-object v2, p0, Lcom/android/settings/DropDownPreference;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/vendorsettings/DropDownPreference;->mContext:Landroid/content/Context;
 
     sget v3, Lmiui/R$layout;->simple_spinner_dropdown_item:I
 
     invoke-direct {v1, v2, v3}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;I)V
 
-    iput-object v1, p0, Lcom/android/settings/DropDownPreference;->mk:Landroid/widget/ArrayAdapter;
+    iput-object v1, p0, Lcom/android/vendorsettings/DropDownPreference;->mk:Landroid/widget/ArrayAdapter;
 
     .line 51
     new-instance v1, Landroid/widget/Spinner;
 
-    iget-object v2, p0, Lcom/android/settings/DropDownPreference;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/vendorsettings/DropDownPreference;->mContext:Landroid/content/Context;
 
     invoke-direct {v1, v2}, Landroid/widget/Spinner;-><init>(Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/android/settings/DropDownPreference;->ml:Landroid/widget/Spinner;
+    iput-object v1, p0, Lcom/android/vendorsettings/DropDownPreference;->ml:Landroid/widget/Spinner;
 
     .line 53
-    iget-object v1, p0, Lcom/android/settings/DropDownPreference;->ml:Landroid/widget/Spinner;
+    iget-object v1, p0, Lcom/android/vendorsettings/DropDownPreference;->ml:Landroid/widget/Spinner;
 
     const/4 v2, 0x4
 
     invoke-virtual {v1, v2}, Landroid/widget/Spinner;->setVisibility(I)V
 
     .line 54
-    iget-object v1, p0, Lcom/android/settings/DropDownPreference;->ml:Landroid/widget/Spinner;
+    iget-object v1, p0, Lcom/android/vendorsettings/DropDownPreference;->ml:Landroid/widget/Spinner;
 
-    iget-object v2, p0, Lcom/android/settings/DropDownPreference;->mk:Landroid/widget/ArrayAdapter;
+    iget-object v2, p0, Lcom/android/vendorsettings/DropDownPreference;->mk:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v1, v2}, Landroid/widget/Spinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
     .line 55
-    iget-object v1, p0, Lcom/android/settings/DropDownPreference;->ml:Landroid/widget/Spinner;
+    iget-object v1, p0, Lcom/android/vendorsettings/DropDownPreference;->ml:Landroid/widget/Spinner;
 
-    new-instance v2, Lcom/android/settings/cM;
+    new-instance v2, Lcom/android/vendorsettings/cM;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/cM;-><init>(Lcom/android/settings/DropDownPreference;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/cM;-><init>(Lcom/android/vendorsettings/DropDownPreference;)V
 
     invoke-virtual {v1, v2}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 66
-    invoke-virtual {p0, v0}, Lcom/android/settings/DropDownPreference;->setPersistent(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/DropDownPreference;->setPersistent(Z)V
 
     .line 67
-    new-instance v1, Lcom/android/settings/cN;
+    new-instance v1, Lcom/android/vendorsettings/cN;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/cN;-><init>(Lcom/android/settings/DropDownPreference;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/cN;-><init>(Lcom/android/vendorsettings/DropDownPreference;)V
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/DropDownPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/DropDownPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 76
-    sget-object v1, Lcom/android/settings/gt;->wx:[I
+    sget-object v1, Lcom/android/vendorsettings/gt;->wx:[I
 
     invoke-virtual {p1, p2, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -147,7 +147,7 @@
 
     aget-object v4, v1, v0
 
-    invoke-virtual {p0, v3, v4}, Lcom/android/settings/DropDownPreference;->b(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-virtual {p0, v3, v4}, Lcom/android/vendorsettings/DropDownPreference;->b(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 80
     add-int/lit8 v0, v0, 0x1
@@ -159,12 +159,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/DropDownPreference;)Landroid/widget/Spinner;
+.method static synthetic a(Lcom/android/vendorsettings/DropDownPreference;)Landroid/widget/Spinner;
     .locals 1
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->ml:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->ml:Landroid/widget/Spinner;
 
     return-object v0
 .end method
@@ -176,7 +176,7 @@
 
     .prologue
     .line 121
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -186,18 +186,18 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0, p2}, Lcom/android/settings/DropDownPreference;->b(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-virtual {p0, v0, p2}, Lcom/android/vendorsettings/DropDownPreference;->b(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 122
     return-void
 .end method
 
-.method public a(Lcom/android/settings/cO;)V
+.method public a(Lcom/android/vendorsettings/cO;)V
     .locals 0
 
     .prologue
     .line 91
-    iput-object p1, p0, Lcom/android/settings/DropDownPreference;->mn:Lcom/android/settings/cO;
+    iput-object p1, p0, Lcom/android/vendorsettings/DropDownPreference;->mn:Lcom/android/vendorsettings/cO;
 
     .line 92
     return-void
@@ -208,12 +208,12 @@
 
     .prologue
     .line 125
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->mk:Landroid/widget/ArrayAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->mk:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v0, p1}, Landroid/widget/ArrayAdapter;->add(Ljava/lang/Object;)V
 
     .line 126
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->mm:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->mm:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -226,12 +226,12 @@
 
     .prologue
     .line 134
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->mk:Landroid/widget/ArrayAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->mk:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v0}, Landroid/widget/ArrayAdapter;->clear()V
 
     .line 135
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->mm:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->mm:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -246,7 +246,7 @@
     .line 99
     if-eqz p2, :cond_1
 
-    iget v0, p0, Lcom/android/settings/DropDownPreference;->mSelectedPosition:I
+    iget v0, p0, Lcom/android/vendorsettings/DropDownPreference;->mSelectedPosition:I
 
     if-ne p1, v0, :cond_1
 
@@ -257,20 +257,20 @@
 
     .line 102
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->mm:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->mm:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
     .line 103
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->mn:Lcom/android/settings/cO;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->mn:Lcom/android/vendorsettings/cO;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->mn:Lcom/android/settings/cO;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->mn:Lcom/android/vendorsettings/cO;
 
-    invoke-interface {v0, p1, v1}, Lcom/android/settings/cO;->b(ILjava/lang/Object;)Z
+    invoke-interface {v0, p1, v1}, Lcom/android/vendorsettings/cO;->b(ILjava/lang/Object;)Z
 
     move-result v0
 
@@ -278,21 +278,21 @@
 
     .line 106
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->ml:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->ml:Landroid/widget/Spinner;
 
     invoke-virtual {v0, p1}, Landroid/widget/Spinner;->setSelection(I)V
 
     .line 107
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->ml:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->ml:Landroid/widget/Spinner;
 
     invoke-virtual {v0}, Landroid/widget/Spinner;->getSelectedItemPosition()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/DropDownPreference;->mSelectedPosition:I
+    iput v0, p0, Lcom/android/vendorsettings/DropDownPreference;->mSelectedPosition:I
 
     .line 108
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->mk:Landroid/widget/ArrayAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->mk:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v0, p1}, Landroid/widget/ArrayAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -300,7 +300,7 @@
 
     check-cast v0, Ljava/lang/CharSequence;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/DropDownPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/DropDownPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 109
     if-nez v1, :cond_3
@@ -309,7 +309,7 @@
 
     .line 110
     :goto_1
-    invoke-virtual {p0, v0}, Lcom/android/settings/DropDownPreference;->notifyDependencyChange(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/DropDownPreference;->notifyDependencyChange(Z)V
 
     goto :goto_0
 
@@ -325,7 +325,7 @@
 
     .prologue
     .line 130
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->mk:Landroid/widget/ArrayAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->mk:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v0}, Landroid/widget/ArrayAdapter;->getCount()I
 
@@ -339,7 +339,7 @@
 
     .prologue
     .line 114
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->mm:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->mm:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->indexOf(Ljava/lang/Object;)I
 
@@ -351,7 +351,7 @@
     if-le v0, v1, :cond_0
 
     .line 116
-    invoke-virtual {p0, v0}, Lcom/android/settings/DropDownPreference;->setSelectedItem(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/DropDownPreference;->setSelectedItem(I)V
 
     .line 118
     :cond_0
@@ -368,7 +368,7 @@
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
     .line 141
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->ml:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->ml:Landroid/widget/Spinner;
 
     invoke-virtual {v0}, Landroid/widget/Spinner;->getParent()Landroid/view/ViewParent;
 
@@ -386,7 +386,7 @@
 
     .line 142
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->ml:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->ml:Landroid/widget/Spinner;
 
     invoke-virtual {v0}, Landroid/widget/Spinner;->getParent()Landroid/view/ViewParent;
 
@@ -395,7 +395,7 @@
     if-eqz v0, :cond_1
 
     .line 143
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->ml:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->ml:Landroid/widget/Spinner;
 
     invoke-virtual {v0}, Landroid/widget/Spinner;->getParent()Landroid/view/ViewParent;
 
@@ -403,7 +403,7 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iget-object v1, p0, Lcom/android/settings/DropDownPreference;->ml:Landroid/widget/Spinner;
+    iget-object v1, p0, Lcom/android/vendorsettings/DropDownPreference;->ml:Landroid/widget/Spinner;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
@@ -412,12 +412,12 @@
     check-cast p1, Landroid/view/ViewGroup;
 
     .line 146
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->ml:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->ml:Landroid/widget/Spinner;
 
     invoke-virtual {p1, v0, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;I)V
 
     .line 147
-    iget-object v0, p0, Lcom/android/settings/DropDownPreference;->ml:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/DropDownPreference;->ml:Landroid/widget/Spinner;
 
     invoke-virtual {v0}, Landroid/widget/Spinner;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -427,7 +427,7 @@
     iput v2, v0, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     .line 149
-    iget-object v1, p0, Lcom/android/settings/DropDownPreference;->ml:Landroid/widget/Spinner;
+    iget-object v1, p0, Lcom/android/vendorsettings/DropDownPreference;->ml:Landroid/widget/Spinner;
 
     invoke-virtual {v1, v0}, Landroid/widget/Spinner;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -441,7 +441,7 @@
     .line 95
     const/4 v0, 0x0
 
-    invoke-virtual {p0, p1, v0}, Lcom/android/settings/DropDownPreference;->g(IZ)V
+    invoke-virtual {p0, p1, v0}, Lcom/android/vendorsettings/DropDownPreference;->g(IZ)V
 
     .line 96
     return-void

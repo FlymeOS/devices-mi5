@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/CryptKeeperConfirm;
-.super Lcom/android/settings/InstrumentedFragment;
+.class public Lcom/android/vendorsettings/CryptKeeperConfirm;
+.super Lcom/android/vendorsettings/InstrumentedFragment;
 .source "CryptKeeperConfirm.java"
 
 
@@ -17,14 +17,14 @@
 
     .prologue
     .line 42
-    invoke-direct {p0}, Lcom/android/settings/InstrumentedFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/InstrumentedFragment;-><init>()V
 
     .line 100
-    new-instance v0, Lcom/android/settings/bm;
+    new-instance v0, Lcom/android/vendorsettings/bm;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/bm;-><init>(Lcom/android/settings/CryptKeeperConfirm;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/bm;-><init>(Lcom/android/vendorsettings/CryptKeeperConfirm;)V
 
-    iput-object v0, p0, Lcom/android/settings/CryptKeeperConfirm;->gE:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/CryptKeeperConfirm;->gE:Landroid/view/View$OnClickListener;
 
     return-void
 .end method
@@ -34,7 +34,7 @@
 
     .prologue
     .line 152
-    iget-object v0, p0, Lcom/android/settings/CryptKeeperConfirm;->gC:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/CryptKeeperConfirm;->gC:Landroid/view/View;
 
     const v1, 0x7f130088
 
@@ -44,12 +44,12 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/CryptKeeperConfirm;->gD:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/vendorsettings/CryptKeeperConfirm;->gD:Landroid/widget/Button;
 
     .line 153
-    iget-object v0, p0, Lcom/android/settings/CryptKeeperConfirm;->gD:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/CryptKeeperConfirm;->gD:Landroid/widget/Button;
 
-    iget-object v1, p0, Lcom/android/settings/CryptKeeperConfirm;->gE:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/android/vendorsettings/CryptKeeperConfirm;->gE:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -72,13 +72,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/CryptKeeperConfirm;->gC:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/CryptKeeperConfirm;->gC:Landroid/view/View;
 
     .line 160
-    invoke-direct {p0}, Lcom/android/settings/CryptKeeperConfirm;->bm()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/CryptKeeperConfirm;->bm()V
 
     .line 161
-    iget-object v0, p0, Lcom/android/settings/CryptKeeperConfirm;->gC:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/CryptKeeperConfirm;->gC:Landroid/view/View;
 
     return-object v0
 .end method

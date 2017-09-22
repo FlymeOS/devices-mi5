@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/fingerprint/q;
+.class public interface abstract Lcom/android/vendorsettings/fingerprint/q;
 .super Ljava/lang/Object;
 .source "FingerprintEnrollSidecar.java"
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/ax;
+.class Lcom/android/vendorsettings/wifi/ax;
 .super Ljava/lang/Object;
 .source "WifiSettingsForSetupWizard.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aEc:Lcom/android/settings/wifi/aw;
+.field final synthetic aEc:Lcom/android/vendorsettings/wifi/aw;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/aw;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/aw;)V
     .locals 0
 
     .prologue
     .line 64
-    iput-object p1, p0, Lcom/android/settings/wifi/ax;->aEc:Lcom/android/settings/wifi/aw;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/ax;->aEc:Lcom/android/vendorsettings/wifi/aw;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 67
-    iget-object v0, p0, Lcom/android/settings/wifi/ax;->aEc:Lcom/android/settings/wifi/aw;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/ax;->aEc:Lcom/android/vendorsettings/wifi/aw;
 
-    iget-object v0, v0, Lcom/android/settings/wifi/aw;->je:Landroid/net/wifi/WifiManager;
+    iget-object v0, v0, Lcom/android/vendorsettings/wifi/aw;->je:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->isWifiEnabled()Z
 
@@ -41,9 +41,9 @@
     if-eqz v0, :cond_0
 
     .line 68
-    iget-object v0, p0, Lcom/android/settings/wifi/ax;->aEc:Lcom/android/settings/wifi/aw;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/ax;->aEc:Lcom/android/vendorsettings/wifi/aw;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/aw;->yw()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/aw;->yw()V
 
     .line 70
     :cond_0

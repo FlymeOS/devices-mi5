@@ -1,20 +1,20 @@
-.class public Lcom/android/settings/applications/AppOpsState;
+.class public Lcom/android/vendorsettings/applications/AppOpsState;
 .super Ljava/lang/Object;
 .source "AppOpsState.java"
 
 
 # static fields
-.field public static final FJ:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+.field public static final FJ:Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
-.field public static final FK:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+.field public static final FK:Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
-.field public static final FL:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+.field public static final FL:Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
-.field public static final FM:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+.field public static final FM:Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
-.field public static final FN:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+.field public static final FN:Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
-.field public static final FO:[Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+.field public static final FO:[Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
 .field public static final FP:Ljava/util/Comparator;
 
@@ -45,7 +45,7 @@
     const/4 v2, 0x7
 
     .line 99
-    new-instance v0, Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    new-instance v0, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     new-array v1, v2, [I
 
@@ -55,12 +55,12 @@
 
     fill-array-data v2, :array_1
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/applications/AppOpsState$OpsTemplate;-><init>([I[Z)V
+    invoke-direct {v0, v1, v2}, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;-><init>([I[Z)V
 
-    sput-object v0, Lcom/android/settings/applications/AppOpsState;->FJ:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sput-object v0, Lcom/android/vendorsettings/applications/AppOpsState;->FJ:Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     .line 116
-    new-instance v0, Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    new-instance v0, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     new-array v1, v3, [I
 
@@ -70,12 +70,12 @@
 
     fill-array-data v2, :array_3
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/applications/AppOpsState$OpsTemplate;-><init>([I[Z)V
+    invoke-direct {v0, v1, v2}, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;-><init>([I[Z)V
 
-    sput-object v0, Lcom/android/settings/applications/AppOpsState;->FK:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sput-object v0, Lcom/android/vendorsettings/applications/AppOpsState;->FK:Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     .line 135
-    new-instance v0, Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    new-instance v0, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     new-array v1, v4, [I
 
@@ -85,12 +85,12 @@
 
     fill-array-data v2, :array_5
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/applications/AppOpsState$OpsTemplate;-><init>([I[Z)V
+    invoke-direct {v0, v1, v2}, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;-><init>([I[Z)V
 
-    sput-object v0, Lcom/android/settings/applications/AppOpsState;->FL:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sput-object v0, Lcom/android/vendorsettings/applications/AppOpsState;->FL:Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     .line 156
-    new-instance v0, Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    new-instance v0, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     const/16 v1, 0xe
 
@@ -104,12 +104,12 @@
 
     fill-array-data v2, :array_7
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/applications/AppOpsState$OpsTemplate;-><init>([I[Z)V
+    invoke-direct {v0, v1, v2}, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;-><init>([I[Z)V
 
-    sput-object v0, Lcom/android/settings/applications/AppOpsState;->FM:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sput-object v0, Lcom/android/vendorsettings/applications/AppOpsState;->FM:Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     .line 186
-    new-instance v0, Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    new-instance v0, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     new-array v1, v5, [I
 
@@ -119,53 +119,53 @@
 
     fill-array-data v2, :array_9
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/applications/AppOpsState$OpsTemplate;-><init>([I[Z)V
+    invoke-direct {v0, v1, v2}, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;-><init>([I[Z)V
 
-    sput-object v0, Lcom/android/settings/applications/AppOpsState;->FN:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sput-object v0, Lcom/android/vendorsettings/applications/AppOpsState;->FN:Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     .line 209
     const/4 v0, 0x5
 
-    new-array v0, v0, [Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    new-array v0, v0, [Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     const/4 v1, 0x0
 
-    sget-object v2, Lcom/android/settings/applications/AppOpsState;->FJ:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sget-object v2, Lcom/android/vendorsettings/applications/AppOpsState;->FJ:Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x1
 
-    sget-object v2, Lcom/android/settings/applications/AppOpsState;->FK:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sget-object v2, Lcom/android/vendorsettings/applications/AppOpsState;->FK:Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x2
 
-    sget-object v2, Lcom/android/settings/applications/AppOpsState;->FL:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sget-object v2, Lcom/android/vendorsettings/applications/AppOpsState;->FL:Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x3
 
-    sget-object v2, Lcom/android/settings/applications/AppOpsState;->FM:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sget-object v2, Lcom/android/vendorsettings/applications/AppOpsState;->FM:Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x4
 
-    sget-object v2, Lcom/android/settings/applications/AppOpsState;->FN:Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sget-object v2, Lcom/android/vendorsettings/applications/AppOpsState;->FN:Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/applications/AppOpsState;->FO:[Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    sput-object v0, Lcom/android/vendorsettings/applications/AppOpsState;->FO:[Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     .line 423
-    new-instance v0, Lcom/android/settings/applications/AppOpsState$1;
+    new-instance v0, Lcom/android/vendorsettings/applications/AppOpsState$1;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/AppOpsState$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/applications/AppOpsState$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/AppOpsState;->FP:Ljava/util/Comparator;
+    sput-object v0, Lcom/android/vendorsettings/applications/AppOpsState;->FP:Ljava/util/Comparator;
 
     return-void
 
@@ -322,7 +322,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 56
-    iput-object p1, p0, Lcom/android/settings/applications/AppOpsState;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/AppOpsState;->mContext:Landroid/content/Context;
 
     .line 57
     const-string v0, "appops"
@@ -333,14 +333,14 @@
 
     check-cast v0, Landroid/app/AppOpsManager;
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppOpsState;->mAppOps:Landroid/app/AppOpsManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsState;->mAppOps:Landroid/app/AppOpsManager;
 
     .line 58
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppOpsState;->i:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsState;->i:Landroid/content/pm/PackageManager;
 
     .line 59
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -353,7 +353,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppOpsState;->FH:[Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsState;->FH:[Ljava/lang/CharSequence;
 
     .line 60
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -366,13 +366,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppOpsState;->FI:[Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsState;->FI:[Ljava/lang/CharSequence;
 
     .line 61
     return-void
 .end method
 
-.method private a(Landroid/content/Context;Ljava/util/HashMap;Ljava/lang/String;Landroid/content/pm/ApplicationInfo;)Lcom/android/settings/applications/AppOpsState$AppEntry;
+.method private a(Landroid/content/Context;Ljava/util/HashMap;Ljava/lang/String;Landroid/content/pm/ApplicationInfo;)Lcom/android/vendorsettings/applications/AppOpsState$AppEntry;
     .locals 3
 
     .prologue
@@ -381,7 +381,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/AppOpsState$AppEntry;
+    check-cast v0, Lcom/android/vendorsettings/applications/AppOpsState$AppEntry;
 
     .line 476
     if-nez v0, :cond_1
@@ -391,7 +391,7 @@
 
     .line 479
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/applications/AppOpsState;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppOpsState;->i:Landroid/content/pm/PackageManager;
 
     const/16 v1, 0x2200
 
@@ -403,12 +403,12 @@
 
     .line 487
     :cond_0
-    new-instance v0, Lcom/android/settings/applications/AppOpsState$AppEntry;
+    new-instance v0, Lcom/android/vendorsettings/applications/AppOpsState$AppEntry;
 
-    invoke-direct {v0, p0, p4}, Lcom/android/settings/applications/AppOpsState$AppEntry;-><init>(Lcom/android/settings/applications/AppOpsState;Landroid/content/pm/ApplicationInfo;)V
+    invoke-direct {v0, p0, p4}, Lcom/android/vendorsettings/applications/AppOpsState$AppEntry;-><init>(Lcom/android/vendorsettings/applications/AppOpsState;Landroid/content/pm/ApplicationInfo;)V
 
     .line 488
-    invoke-virtual {v0, p1}, Lcom/android/settings/applications/AppOpsState$AppEntry;->am(Landroid/content/Context;)V
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/applications/AppOpsState$AppEntry;->am(Landroid/content/Context;)V
 
     .line 489
     invoke-virtual {p2, p3, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -451,7 +451,7 @@
     goto :goto_0
 .end method
 
-.method private a(Ljava/util/List;Landroid/app/AppOpsManager$PackageOps;Lcom/android/settings/applications/AppOpsState$AppEntry;Landroid/app/AppOpsManager$OpEntry;ZI)V
+.method private a(Ljava/util/List;Landroid/app/AppOpsManager$PackageOps;Lcom/android/vendorsettings/applications/AppOpsState$AppEntry;Landroid/app/AppOpsManager$OpEntry;ZI)V
     .locals 8
 
     .prologue
@@ -481,17 +481,17 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+    check-cast v0, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;
 
     .line 447
-    invoke-virtual {v0}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->jJ()Lcom/android/settings/applications/AppOpsState$AppEntry;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->jJ()Lcom/android/vendorsettings/applications/AppOpsState$AppEntry;
 
     move-result-object v1
 
     if-ne v1, p3, :cond_2
 
     .line 448
-    invoke-virtual {v0}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->getTime()J
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->getTime()J
 
     move-result-wide v4
 
@@ -516,7 +516,7 @@
     if-ne v1, v2, :cond_2
 
     .line 453
-    invoke-virtual {v0, p4}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->a(Landroid/app/AppOpsManager$OpEntry;)V
+    invoke-virtual {v0, p4}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->a(Landroid/app/AppOpsManager$OpEntry;)V
 
     .line 467
     :goto_2
@@ -540,7 +540,7 @@
 
     move-result v0
 
-    invoke-virtual {p3, v0}, Lcom/android/settings/applications/AppOpsState$AppEntry;->aB(I)Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+    invoke-virtual {p3, v0}, Lcom/android/vendorsettings/applications/AppOpsState$AppEntry;->aB(I)Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;
 
     move-result-object v0
 
@@ -548,15 +548,15 @@
     if-eqz v0, :cond_3
 
     .line 460
-    invoke-virtual {v0, p4}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;->a(Landroid/app/AppOpsManager$OpEntry;)V
+    invoke-virtual {v0, p4}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;->a(Landroid/app/AppOpsManager$OpEntry;)V
 
     goto :goto_2
 
     .line 463
     :cond_3
-    new-instance v0, Lcom/android/settings/applications/AppOpsState$AppOpEntry;
+    new-instance v0, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;
 
-    invoke-direct {v0, p2, p4, p3, p6}, Lcom/android/settings/applications/AppOpsState$AppOpEntry;-><init>(Landroid/app/AppOpsManager$PackageOps;Landroid/app/AppOpsManager$OpEntry;Lcom/android/settings/applications/AppOpsState$AppEntry;I)V
+    invoke-direct {v0, p2, p4, p3, p6}, Lcom/android/vendorsettings/applications/AppOpsState$AppOpEntry;-><init>(Landroid/app/AppOpsManager$PackageOps;Landroid/app/AppOpsManager$OpEntry;Lcom/android/vendorsettings/applications/AppOpsState$AppEntry;I)V
 
     .line 466
     invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -566,7 +566,7 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/applications/AppOpsState$OpsTemplate;)Ljava/util/List;
+.method public a(Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;)Ljava/util/List;
     .locals 2
 
     .prologue
@@ -575,21 +575,21 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, p1, v0, v1}, Lcom/android/settings/applications/AppOpsState;->a(Lcom/android/settings/applications/AppOpsState$OpsTemplate;ILjava/lang/String;)Ljava/util/List;
+    invoke-virtual {p0, p1, v0, v1}, Lcom/android/vendorsettings/applications/AppOpsState;->a(Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;ILjava/lang/String;)Ljava/util/List;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public a(Lcom/android/settings/applications/AppOpsState$OpsTemplate;ILjava/lang/String;)Ljava/util/List;
+.method public a(Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;ILjava/lang/String;)Ljava/util/List;
     .locals 29
 
     .prologue
     .line 495
     move-object/from16 v0, p0
 
-    iget-object v0, v0, Lcom/android/settings/applications/AppOpsState;->mContext:Landroid/content/Context;
+    iget-object v0, v0, Lcom/android/vendorsettings/applications/AppOpsState;->mContext:Landroid/content/Context;
 
     move-object/from16 v23, v0
 
@@ -626,7 +626,7 @@
     :goto_0
     move-object/from16 v0, p1
 
-    iget-object v6, v0, Lcom/android/settings/applications/AppOpsState$OpsTemplate;->Ga:[I
+    iget-object v6, v0, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;->Ga:[I
 
     array-length v6, v6
 
@@ -635,7 +635,7 @@
     .line 504
     move-object/from16 v0, p1
 
-    iget-object v6, v0, Lcom/android/settings/applications/AppOpsState$OpsTemplate;->Gb:[Z
+    iget-object v6, v0, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;->Gb:[Z
 
     aget-boolean v6, v6, v4
 
@@ -644,7 +644,7 @@
     .line 505
     move-object/from16 v0, p1
 
-    iget-object v6, v0, Lcom/android/settings/applications/AppOpsState$OpsTemplate;->Ga:[I
+    iget-object v6, v0, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;->Ga:[I
 
     aget v6, v6, v4
 
@@ -671,7 +671,7 @@
     .line 508
     move-object/from16 v0, p1
 
-    iget-object v6, v0, Lcom/android/settings/applications/AppOpsState$OpsTemplate;->Ga:[I
+    iget-object v6, v0, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;->Ga:[I
 
     aget v6, v6, v4
 
@@ -686,7 +686,7 @@
     .line 509
     move-object/from16 v0, p1
 
-    iget-object v6, v0, Lcom/android/settings/applications/AppOpsState$OpsTemplate;->Ga:[I
+    iget-object v6, v0, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;->Ga:[I
 
     aget v6, v6, v4
 
@@ -705,11 +705,11 @@
     .line 516
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/applications/AppOpsState;->mAppOps:Landroid/app/AppOpsManager;
+    iget-object v4, v0, Lcom/android/vendorsettings/applications/AppOpsState;->mAppOps:Landroid/app/AppOpsManager;
 
     move-object/from16 v0, p1
 
-    iget-object v6, v0, Lcom/android/settings/applications/AppOpsState$OpsTemplate;->Ga:[I
+    iget-object v6, v0, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;->Ga:[I
 
     move/from16 v0, p2
 
@@ -757,7 +757,7 @@
 
     move-object/from16 v2, v24
 
-    invoke-direct {v0, v1, v2, v4, v7}, Lcom/android/settings/applications/AppOpsState;->a(Landroid/content/Context;Ljava/util/HashMap;Ljava/lang/String;Landroid/content/pm/ApplicationInfo;)Lcom/android/settings/applications/AppOpsState$AppEntry;
+    invoke-direct {v0, v1, v2, v4, v7}, Lcom/android/vendorsettings/applications/AppOpsState;->a(Landroid/content/Context;Ljava/util/HashMap;Ljava/lang/String;Landroid/content/pm/ApplicationInfo;)Lcom/android/vendorsettings/applications/AppOpsState$AppEntry;
 
     move-result-object v7
 
@@ -776,11 +776,11 @@
     :cond_3
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/applications/AppOpsState;->mAppOps:Landroid/app/AppOpsManager;
+    iget-object v4, v0, Lcom/android/vendorsettings/applications/AppOpsState;->mAppOps:Landroid/app/AppOpsManager;
 
     move-object/from16 v0, p1
 
-    iget-object v6, v0, Lcom/android/settings/applications/AppOpsState$OpsTemplate;->Ga:[I
+    iget-object v6, v0, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;->Ga:[I
 
     invoke-virtual {v4, v6}, Landroid/app/AppOpsManager;->getPackagesForOps([I)Ljava/util/List;
 
@@ -831,7 +831,7 @@
     :goto_5
     move-object/from16 v4, p0
 
-    invoke-direct/range {v4 .. v10}, Lcom/android/settings/applications/AppOpsState;->a(Ljava/util/List;Landroid/app/AppOpsManager$PackageOps;Lcom/android/settings/applications/AppOpsState$AppEntry;Landroid/app/AppOpsManager$OpEntry;ZI)V
+    invoke-direct/range {v4 .. v10}, Lcom/android/vendorsettings/applications/AppOpsState;->a(Ljava/util/List;Landroid/app/AppOpsManager$PackageOps;Lcom/android/vendorsettings/applications/AppOpsState$AppEntry;Landroid/app/AppOpsManager$OpEntry;ZI)V
 
     .line 528
     add-int/lit8 v4, v12, 0x1
@@ -868,7 +868,7 @@
     :try_start_0
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lcom/android/settings/applications/AppOpsState;->i:Landroid/content/pm/PackageManager;
+    iget-object v6, v0, Lcom/android/vendorsettings/applications/AppOpsState;->i:Landroid/content/pm/PackageManager;
 
     const/16 v7, 0x1000
 
@@ -918,7 +918,7 @@
 
     move-object/from16 v2, v24
 
-    invoke-direct {v0, v1, v2, v6, v7}, Lcom/android/settings/applications/AppOpsState;->a(Landroid/content/Context;Ljava/util/HashMap;Ljava/lang/String;Landroid/content/pm/ApplicationInfo;)Lcom/android/settings/applications/AppOpsState$AppEntry;
+    invoke-direct {v0, v1, v2, v6, v7}, Lcom/android/vendorsettings/applications/AppOpsState;->a(Landroid/content/Context;Ljava/util/HashMap;Ljava/lang/String;Landroid/content/pm/ApplicationInfo;)Lcom/android/vendorsettings/applications/AppOpsState$AppEntry;
 
     move-result-object v28
 
@@ -958,7 +958,7 @@
     .line 547
     move-object/from16 v0, p0
 
-    iget-object v6, v0, Lcom/android/settings/applications/AppOpsState;->i:Landroid/content/pm/PackageManager;
+    iget-object v6, v0, Lcom/android/vendorsettings/applications/AppOpsState;->i:Landroid/content/pm/PackageManager;
 
     const/4 v7, 0x0
 
@@ -1081,7 +1081,7 @@
 
     move-object/from16 v0, v28
 
-    invoke-virtual {v0, v6}, Lcom/android/settings/applications/AppOpsState$AppEntry;->aA(I)Z
+    invoke-virtual {v0, v6}, Lcom/android/vendorsettings/applications/AppOpsState$AppEntry;->aA(I)Z
 
     move-result v6
 
@@ -1168,7 +1168,7 @@
 
     move-object v12, v7
 
-    invoke-direct/range {v8 .. v14}, Lcom/android/settings/applications/AppOpsState;->a(Ljava/util/List;Landroid/app/AppOpsManager$PackageOps;Lcom/android/settings/applications/AppOpsState$AppEntry;Landroid/app/AppOpsManager$OpEntry;ZI)V
+    invoke-direct/range {v8 .. v14}, Lcom/android/vendorsettings/applications/AppOpsState;->a(Ljava/util/List;Landroid/app/AppOpsManager$PackageOps;Lcom/android/vendorsettings/applications/AppOpsState$AppEntry;Landroid/app/AppOpsManager$OpEntry;ZI)V
 
     move-object/from16 v7, v19
 
@@ -1192,7 +1192,7 @@
 
     .line 596
     :cond_11
-    sget-object v4, Lcom/android/settings/applications/AppOpsState;->FP:Ljava/util/Comparator;
+    sget-object v4, Lcom/android/vendorsettings/applications/AppOpsState;->FP:Ljava/util/Comparator;
 
     invoke-static {v5, v4}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 

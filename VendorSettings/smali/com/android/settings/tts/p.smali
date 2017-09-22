@@ -1,4 +1,4 @@
-.class Lcom/android/settings/tts/p;
+.class Lcom/android/vendorsettings/tts/p;
 .super Ljava/lang/Object;
 .source "TtsEngineSettingsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic asZ:Lcom/android/settings/tts/l;
+.field final synthetic asZ:Lcom/android/vendorsettings/tts/l;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/tts/l;)V
+.method constructor <init>(Lcom/android/vendorsettings/tts/l;)V
     .locals 0
 
     .prologue
     .line 262
-    iput-object p1, p0, Lcom/android/settings/tts/p;->asZ:Lcom/android/settings/tts/l;
+    iput-object p1, p0, Lcom/android/vendorsettings/tts/p;->asZ:Lcom/android/vendorsettings/tts/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -54,7 +54,7 @@
 
     check-cast p2, Landroid/util/Pair;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/tts/p;->a(Landroid/util/Pair;Landroid/util/Pair;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/tts/p;->a(Landroid/util/Pair;Landroid/util/Pair;)I
 
     move-result v0
 

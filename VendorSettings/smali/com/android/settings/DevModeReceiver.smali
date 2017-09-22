@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/DevModeReceiver;
+.class public Lcom/android/vendorsettings/DevModeReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "DevModeReceiver.java"
 

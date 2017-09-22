@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fQ;
+.class Lcom/android/vendorsettings/fQ;
 .super Ljava/lang/Object;
 .source "NotificationAppListSettings.java"
 
@@ -9,16 +9,16 @@
 # instance fields
 .field private final sCollator:Ljava/text/Collator;
 
-.field final synthetic vh:Lcom/android/settings/fO;
+.field final synthetic vh:Lcom/android/vendorsettings/fO;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fO;)V
+.method constructor <init>(Lcom/android/vendorsettings/fO;)V
     .locals 1
 
     .prologue
     .line 159
-    iput-object p1, p0, Lcom/android/settings/fQ;->vh:Lcom/android/settings/fO;
+    iput-object p1, p0, Lcom/android/vendorsettings/fQ;->vh:Lcom/android/vendorsettings/fO;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,25 +27,25 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fQ;->sCollator:Ljava/text/Collator;
+    iput-object v0, p0, Lcom/android/vendorsettings/fQ;->sCollator:Ljava/text/Collator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lcom/android/settings/fU;Lcom/android/settings/fU;)I
+.method public a(Lcom/android/vendorsettings/fU;Lcom/android/vendorsettings/fU;)I
     .locals 3
 
     .prologue
     .line 164
-    iget-object v0, p0, Lcom/android/settings/fQ;->sCollator:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/vendorsettings/fQ;->sCollator:Ljava/text/Collator;
 
-    invoke-static {p1}, Lcom/android/settings/fU;->b(Lcom/android/settings/fU;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/android/vendorsettings/fU;->b(Lcom/android/vendorsettings/fU;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {p2}, Lcom/android/settings/fU;->b(Lcom/android/settings/fU;)Ljava/lang/String;
+    invoke-static {p2}, Lcom/android/vendorsettings/fU;->b(Lcom/android/vendorsettings/fU;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -61,11 +61,11 @@
 
     .prologue
     .line 159
-    check-cast p1, Lcom/android/settings/fU;
+    check-cast p1, Lcom/android/vendorsettings/fU;
 
-    check-cast p2, Lcom/android/settings/fU;
+    check-cast p2, Lcom/android/vendorsettings/fU;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/fQ;->a(Lcom/android/settings/fU;Lcom/android/settings/fU;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/fQ;->a(Lcom/android/vendorsettings/fU;Lcom/android/vendorsettings/fU;)I
 
     move-result v0
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fr;
+.class public Lcom/android/vendorsettings/fr;
 .super Ljava/lang/Object;
 .source "MiuiSettings.java"
 

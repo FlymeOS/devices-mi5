@@ -1,4 +1,4 @@
-.class Lcom/android/settings/display/D;
+.class Lcom/android/vendorsettings/display/D;
 .super Ljava/lang/Object;
 .source "PaperModeSetAppsFragment.java"
 
@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field final synthetic Zt:Lcom/android/settings/display/C;
+.field final synthetic Zt:Lcom/android/vendorsettings/display/C;
 
 .field private final sCollator:Ljava/text/Collator;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/display/C;)V
+.method constructor <init>(Lcom/android/vendorsettings/display/C;)V
     .locals 1
 
     .prologue
     .line 174
-    iput-object p1, p0, Lcom/android/settings/display/D;->Zt:Lcom/android/settings/display/C;
+    iput-object p1, p0, Lcom/android/vendorsettings/display/D;->Zt:Lcom/android/vendorsettings/display/C;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,25 +27,25 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/display/D;->sCollator:Ljava/text/Collator;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/D;->sCollator:Ljava/text/Collator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lcom/android/settings/display/E;Lcom/android/settings/display/E;)I
+.method public a(Lcom/android/vendorsettings/display/E;Lcom/android/vendorsettings/display/E;)I
     .locals 3
 
     .prologue
     .line 179
-    iget-object v0, p0, Lcom/android/settings/display/D;->sCollator:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/D;->sCollator:Ljava/text/Collator;
 
-    invoke-virtual {p1}, Lcom/android/settings/display/E;->getTitle()Ljava/lang/CharSequence;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/display/E;->getTitle()Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    invoke-virtual {p2}, Lcom/android/settings/display/E;->getTitle()Ljava/lang/CharSequence;
+    invoke-virtual {p2}, Lcom/android/vendorsettings/display/E;->getTitle()Ljava/lang/CharSequence;
 
     move-result-object v2
 
@@ -61,11 +61,11 @@
 
     .prologue
     .line 174
-    check-cast p1, Lcom/android/settings/display/E;
+    check-cast p1, Lcom/android/vendorsettings/display/E;
 
-    check-cast p2, Lcom/android/settings/display/E;
+    check-cast p2, Lcom/android/vendorsettings/display/E;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/display/D;->a(Lcom/android/settings/display/E;Lcom/android/settings/display/E;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/display/D;->a(Lcom/android/vendorsettings/display/E;Lcom/android/vendorsettings/display/E;)I
 
     move-result v0
 

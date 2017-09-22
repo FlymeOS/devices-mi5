@@ -4,10 +4,10 @@
     <miui.preference.ValuePreference android:persistent="false" android:title="@string/battery_status_title" android:key="battery_status" />
     <miui.preference.ValuePreference android:persistent="false" android:title="@string/battery_level_title" android:key="battery_level" />
     <PreferenceScreen android:persistent="false" android:title="@string/sim_status_title" android:key="sim_status">
-        <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings.deviceinfo.SimStatus" />
+        <intent android:targetPackage="com.android.vendorsettings" android:targetClass="com.android.vendorsettings.deviceinfo.SimStatus" />
     </PreferenceScreen>
     <PreferenceScreen android:persistent="false" android:title="@string/imei_information_title" android:key="imei_info">
-        <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings.deviceinfo.ImeiInformation" />
+        <intent android:targetPackage="com.android.vendorsettings" android:targetClass="com.android.vendorsettings.deviceinfo.ImeiInformation" />
     </PreferenceScreen>
     <miui.preference.ValuePreference android:persistent="false" android:title="@string/wifi_advanced_ip_address_title" android:key="wifi_ip_address" />
     <miui.preference.ValuePreference android:persistent="false" android:title="@string/status_wifi_mac_address" android:key="wifi_mac_address" />

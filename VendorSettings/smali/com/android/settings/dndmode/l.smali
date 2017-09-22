@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dndmode/l;
+.class Lcom/android/vendorsettings/dndmode/l;
 .super Ljava/lang/Object;
 .source "DoNotDisturbModeFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aaD:Lcom/android/settings/dndmode/k;
+.field final synthetic aaD:Lcom/android/vendorsettings/dndmode/k;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dndmode/k;)V
+.method constructor <init>(Lcom/android/vendorsettings/dndmode/k;)V
     .locals 0
 
     .prologue
     .line 43
-    iput-object p1, p0, Lcom/android/settings/dndmode/l;->aaD:Lcom/android/settings/dndmode/k;
+    iput-object p1, p0, Lcom/android/vendorsettings/dndmode/l;->aaD:Lcom/android/vendorsettings/dndmode/k;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Lcom/android/settings/dndmode/l;->aaD:Lcom/android/settings/dndmode/k;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/l;->aaD:Lcom/android/vendorsettings/dndmode/k;
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/k;->a(Lcom/android/settings/dndmode/k;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/dndmode/k;->a(Lcom/android/vendorsettings/dndmode/k;)V
 
     .line 47
     return-void

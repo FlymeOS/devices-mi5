@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dq;
+.class Lcom/android/vendorsettings/dq;
 .super Ljava/lang/Object;
 .source "HomeSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic nW:Lcom/android/settings/HomeSettings;
+.field final synthetic nW:Lcom/android/vendorsettings/HomeSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/HomeSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/HomeSettings;)V
     .locals 0
 
     .prologue
     .line 98
-    iput-object p1, p0, Lcom/android/settings/dq;->nW:Lcom/android/settings/HomeSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/dq;->nW:Lcom/android/vendorsettings/HomeSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,9 +41,9 @@
     move-result v0
 
     .line 102
-    iget-object v1, p0, Lcom/android/settings/dq;->nW:Lcom/android/settings/HomeSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/dq;->nW:Lcom/android/vendorsettings/HomeSettings;
 
-    invoke-static {v1}, Lcom/android/settings/HomeSettings;->b(Lcom/android/settings/HomeSettings;)Ljava/util/ArrayList;
+    invoke-static {v1}, Lcom/android/vendorsettings/HomeSettings;->b(Lcom/android/vendorsettings/HomeSettings;)Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -51,17 +51,17 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/du;
+    check-cast v0, Lcom/android/vendorsettings/du;
 
     .line 103
-    iget-boolean v1, v0, Lcom/android/settings/du;->oa:Z
+    iget-boolean v1, v0, Lcom/android/vendorsettings/du;->oa:Z
 
     if-nez v1, :cond_0
 
     .line 104
-    iget-object v1, p0, Lcom/android/settings/dq;->nW:Lcom/android/settings/HomeSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/dq;->nW:Lcom/android/vendorsettings/HomeSettings;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/HomeSettings;->a(Lcom/android/settings/du;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/HomeSettings;->a(Lcom/android/vendorsettings/du;)V
 
     .line 106
     :cond_0

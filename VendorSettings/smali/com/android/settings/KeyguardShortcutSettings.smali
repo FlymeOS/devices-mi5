@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/KeyguardShortcutSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/KeyguardShortcutSettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "KeyguardShortcutSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 12
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -21,7 +21,7 @@
     const/4 v1, 0x0
 
     .line 60
-    invoke-virtual {p0}, Lcom/android/settings/KeyguardShortcutSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeyguardShortcutSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -79,7 +79,7 @@
 
     .prologue
     .line 23
-    const-class v0, Lcom/android/settings/KeyguardShortcutSettings;
+    const-class v0, Lcom/android/vendorsettings/KeyguardShortcutSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
@@ -118,7 +118,7 @@
     move-result v0
 
     .line 79
-    invoke-virtual {p0}, Lcom/android/settings/KeyguardShortcutSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeyguardShortcutSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -129,7 +129,7 @@
     .line 97
     :cond_0
     :goto_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -155,7 +155,7 @@
     move-result v0
 
     .line 83
-    invoke-virtual {p0}, Lcom/android/settings/KeyguardShortcutSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeyguardShortcutSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -194,7 +194,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/KeyguardShortcutSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/vendorsettings/KeyguardShortcutSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 
@@ -229,7 +229,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/KeyguardShortcutSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/vendorsettings/KeyguardShortcutSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 .end method
@@ -243,10 +243,10 @@
     const/4 v5, 0x0
 
     .line 28
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 30
-    invoke-virtual {p0}, Lcom/android/settings/KeyguardShortcutSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeyguardShortcutSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -260,10 +260,10 @@
     :cond_0
     const v0, 0x7f080051
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/KeyguardShortcutSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/KeyguardShortcutSettings;->addPreferencesFromResource(I)V
 
     .line 35
-    invoke-virtual {p0}, Lcom/android/settings/KeyguardShortcutSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeyguardShortcutSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
@@ -286,7 +286,7 @@
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
     .line 39
-    invoke-virtual {p0}, Lcom/android/settings/KeyguardShortcutSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeyguardShortcutSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -299,7 +299,7 @@
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 41
-    invoke-virtual {p0}, Lcom/android/settings/KeyguardShortcutSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeyguardShortcutSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -326,7 +326,7 @@
     move-result-object v2
 
     .line 47
-    invoke-virtual {p0}, Lcom/android/settings/KeyguardShortcutSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeyguardShortcutSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -346,14 +346,14 @@
     const-string v0, "com.xiaomi.smarthome"
 
     :goto_0
-    invoke-direct {p0, v0}, Lcom/android/settings/KeyguardShortcutSettings;->I(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/KeyguardShortcutSettings;->I(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v1, v0}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 52
-    invoke-virtual {p0}, Lcom/android/settings/KeyguardShortcutSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeyguardShortcutSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -373,7 +373,7 @@
     const-string v0, "com.android.camera"
 
     :goto_1
-    invoke-direct {p0, v0}, Lcom/android/settings/KeyguardShortcutSettings;->I(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/KeyguardShortcutSettings;->I(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

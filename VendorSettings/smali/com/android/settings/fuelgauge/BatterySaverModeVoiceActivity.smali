@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/fuelgauge/BatterySaverModeVoiceActivity;
-.super Lcom/android/settings/f/a;
+.class public Lcom/android/vendorsettings/fuelgauge/BatterySaverModeVoiceActivity;
+.super Lcom/android/vendorsettings/f/a;
 .source "BatterySaverModeVoiceActivity.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/f/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/f/a;-><init>()V
 
     return-void
 .end method
@@ -34,7 +34,7 @@
     .line 38
     const-string v0, "power"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fuelgauge/BatterySaverModeVoiceActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fuelgauge/BatterySaverModeVoiceActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -56,7 +56,7 @@
     if-eqz v0, :cond_0
 
     .line 41
-    invoke-virtual {p0, v3}, Lcom/android/settings/fuelgauge/BatterySaverModeVoiceActivity;->g(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/fuelgauge/BatterySaverModeVoiceActivity;->g(Ljava/lang/CharSequence;)V
 
     .line 49
     :goto_0
@@ -73,7 +73,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 44
-    invoke-virtual {p0, v3}, Lcom/android/settings/fuelgauge/BatterySaverModeVoiceActivity;->h(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/fuelgauge/BatterySaverModeVoiceActivity;->h(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 

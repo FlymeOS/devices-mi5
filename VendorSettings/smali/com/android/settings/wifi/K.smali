@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/K;
+.class Lcom/android/vendorsettings/wifi/K;
 .super Ljava/lang/Object;
 .source "MiuiWifiSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aBv:Lcom/android/settings/wifi/MiuiWifiSettings;
+.field final synthetic aBv:Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/MiuiWifiSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/MiuiWifiSettings;)V
     .locals 0
 
     .prologue
     .line 892
-    iput-object p1, p0, Lcom/android/settings/wifi/K;->aBv:Lcom/android/settings/wifi/MiuiWifiSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/K;->aBv:Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,18 +30,18 @@
 
     .prologue
     .line 895
-    iget-object v0, p0, Lcom/android/settings/wifi/K;->aBv:Lcom/android/settings/wifi/MiuiWifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/K;->aBv:Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/wifi/MiuiWifiSettings;->b(Lcom/android/settings/wifi/MiuiWifiSettings;Z)Z
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/wifi/MiuiWifiSettings;->b(Lcom/android/vendorsettings/wifi/MiuiWifiSettings;Z)Z
 
     .line 896
-    iget-object v0, p0, Lcom/android/settings/wifi/K;->aBv:Lcom/android/settings/wifi/MiuiWifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/K;->aBv:Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/wifi/MiuiWifiSettings;->a(Lcom/android/settings/wifi/MiuiWifiSettings;Lcom/android/b/e/a;)Lcom/android/b/e/a;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/wifi/MiuiWifiSettings;->a(Lcom/android/vendorsettings/wifi/MiuiWifiSettings;Lcom/android/b/e/a;)Lcom/android/b/e/a;
 
     .line 897
     return-void

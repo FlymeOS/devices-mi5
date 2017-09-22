@@ -1,19 +1,19 @@
-.class Lcom/android/settings/wifi/H;
+.class Lcom/android/vendorsettings/wifi/H;
 .super Landroid/content/BroadcastReceiver;
 .source "MiuiWifiSettings.java"
 
 
 # instance fields
-.field final synthetic aBv:Lcom/android/settings/wifi/MiuiWifiSettings;
+.field final synthetic aBv:Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/MiuiWifiSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/MiuiWifiSettings;)V
     .locals 0
 
     .prologue
     .line 176
-    iput-object p1, p0, Lcom/android/settings/wifi/H;->aBv:Lcom/android/settings/wifi/MiuiWifiSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/H;->aBv:Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -43,9 +43,9 @@
     if-eqz v1, :cond_1
 
     .line 181
-    iget-object v0, p0, Lcom/android/settings/wifi/H;->aBv:Lcom/android/settings/wifi/MiuiWifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/H;->aBv:Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/wifi/MiuiWifiSettings;->bD(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/wifi/MiuiWifiSettings;->bD(Z)V
 
     .line 185
     :cond_0
@@ -62,16 +62,16 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/wifi/H;->aBv:Lcom/android/settings/wifi/MiuiWifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/H;->aBv:Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
-    iget-boolean v0, v0, Lcom/android/settings/wifi/MiuiWifiSettings;->uG:Z
+    iget-boolean v0, v0, Lcom/android/vendorsettings/wifi/MiuiWifiSettings;->uG:Z
 
     if-nez v0, :cond_0
 
     .line 183
-    iget-object v0, p0, Lcom/android/settings/wifi/H;->aBv:Lcom/android/settings/wifi/MiuiWifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/H;->aBv:Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/MiuiWifiSettings;->getListView()Landroid/widget/ListView;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/MiuiWifiSettings;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 

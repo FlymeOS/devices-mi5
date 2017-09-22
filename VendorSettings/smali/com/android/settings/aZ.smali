@@ -1,31 +1,31 @@
-.class Lcom/android/settings/aZ;
+.class Lcom/android/vendorsettings/aZ;
 .super Landroid/os/AsyncTask;
 .source "CredentialStorage.java"
 
 
 # instance fields
-.field final synthetic fZ:Lcom/android/settings/CredentialStorage;
+.field final synthetic fZ:Lcom/android/vendorsettings/CredentialStorage;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/CredentialStorage;)V
+.method private constructor <init>(Lcom/android/vendorsettings/CredentialStorage;)V
     .locals 0
 
     .prologue
     .line 368
-    iput-object p1, p0, Lcom/android/settings/aZ;->fZ:Lcom/android/settings/CredentialStorage;
+    iput-object p1, p0, Lcom/android/vendorsettings/aZ;->fZ:Lcom/android/vendorsettings/CredentialStorage;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/CredentialStorage;Lcom/android/settings/aW;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/CredentialStorage;Lcom/android/vendorsettings/aW;)V
     .locals 0
 
     .prologue
     .line 368
-    invoke-direct {p0, p1}, Lcom/android/settings/aZ;-><init>(Lcom/android/settings/CredentialStorage;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/aZ;-><init>(Lcom/android/vendorsettings/CredentialStorage;)V
 
     return-void
 .end method
@@ -39,11 +39,11 @@
     const/4 v2, 0x0
 
     .line 373
-    iget-object v0, p0, Lcom/android/settings/aZ;->fZ:Lcom/android/settings/CredentialStorage;
+    iget-object v0, p0, Lcom/android/vendorsettings/aZ;->fZ:Lcom/android/vendorsettings/CredentialStorage;
 
     const-string v1, "user"
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/CredentialStorage;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/CredentialStorage;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -80,8 +80,8 @@
     check-cast v0, Landroid/content/pm/UserInfo;
 
     .line 375
-    # getter for: Lcom/android/settings/CredentialStorage;->fU:[I
-    invoke-static {}, Lcom/android/settings/CredentialStorage;->access$400()[I
+    # getter for: Lcom/android/vendorsettings/CredentialStorage;->fU:[I
+    invoke-static {}, Lcom/android/vendorsettings/CredentialStorage;->access$400()[I
 
     move-result-object v4
 
@@ -95,9 +95,9 @@
     aget v6, v4, v1
 
     .line 376
-    iget-object v7, p0, Lcom/android/settings/aZ;->fZ:Lcom/android/settings/CredentialStorage;
+    iget-object v7, p0, Lcom/android/vendorsettings/aZ;->fZ:Lcom/android/vendorsettings/CredentialStorage;
 
-    invoke-static {v7}, Lcom/android/settings/CredentialStorage;->a(Lcom/android/settings/CredentialStorage;)Landroid/security/KeyStore;
+    invoke-static {v7}, Lcom/android/vendorsettings/CredentialStorage;->a(Lcom/android/vendorsettings/CredentialStorage;)Landroid/security/KeyStore;
 
     move-result-object v7
 
@@ -117,7 +117,7 @@
     .line 382
     :cond_1
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/aZ;->fZ:Lcom/android/settings/CredentialStorage;
+    iget-object v0, p0, Lcom/android/vendorsettings/aZ;->fZ:Lcom/android/vendorsettings/CredentialStorage;
 
     invoke-static {v0}, Landroid/security/KeyChain;->bind(Landroid/content/Context;)Landroid/security/KeyChain$KeyChainConnection;
     :try_end_0
@@ -211,7 +211,7 @@
     .line 368
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/aZ;->doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/aZ;->doInBackground([Ljava/lang/Void;)Ljava/lang/Boolean;
 
     move-result-object v0
 
@@ -232,7 +232,7 @@
     if-eqz v0, :cond_0
 
     .line 398
-    iget-object v0, p0, Lcom/android/settings/aZ;->fZ:Lcom/android/settings/CredentialStorage;
+    iget-object v0, p0, Lcom/android/vendorsettings/aZ;->fZ:Lcom/android/vendorsettings/CredentialStorage;
 
     const v1, 0x7f0c07f3
 
@@ -244,16 +244,16 @@
 
     .line 404
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/aZ;->fZ:Lcom/android/settings/CredentialStorage;
+    iget-object v0, p0, Lcom/android/vendorsettings/aZ;->fZ:Lcom/android/vendorsettings/CredentialStorage;
 
-    invoke-virtual {v0}, Lcom/android/settings/CredentialStorage;->finish()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/CredentialStorage;->finish()V
 
     .line 405
     return-void
 
     .line 401
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/aZ;->fZ:Lcom/android/settings/CredentialStorage;
+    iget-object v0, p0, Lcom/android/vendorsettings/aZ;->fZ:Lcom/android/vendorsettings/CredentialStorage;
 
     const v1, 0x7f0c07f4
 
@@ -273,7 +273,7 @@
     .line 368
     check-cast p1, Ljava/lang/Boolean;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/aZ;->onPostExecute(Ljava/lang/Boolean;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/aZ;->onPostExecute(Ljava/lang/Boolean;)V
 
     return-void
 .end method

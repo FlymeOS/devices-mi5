@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/ResetAppsHelper$1;
+.class Lcom/android/vendorsettings/applications/ResetAppsHelper$1;
 .super Ljava/lang/Object;
 .source "ResetAppsHelper.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ME:Lcom/android/settings/applications/ResetAppsHelper;
+.field final synthetic ME:Lcom/android/vendorsettings/applications/ResetAppsHelper;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/ResetAppsHelper;)V
+.method constructor <init>(Lcom/android/vendorsettings/applications/ResetAppsHelper;)V
     .locals 0
 
     .prologue
     .line 108
-    iput-object p1, p0, Lcom/android/settings/applications/ResetAppsHelper$1;->ME:Lcom/android/settings/applications/ResetAppsHelper;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper$1;->ME:Lcom/android/vendorsettings/applications/ResetAppsHelper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,9 +34,9 @@
     const/4 v2, 0x0
 
     .line 111
-    iget-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper$1;->ME:Lcom/android/settings/applications/ResetAppsHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper$1;->ME:Lcom/android/vendorsettings/applications/ResetAppsHelper;
 
-    invoke-static {v0}, Lcom/android/settings/applications/ResetAppsHelper;->a(Lcom/android/settings/applications/ResetAppsHelper;)Landroid/content/pm/PackageManager;
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/ResetAppsHelper;->a(Lcom/android/vendorsettings/applications/ResetAppsHelper;)Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
@@ -65,9 +65,9 @@
 
     .line 116
     :try_start_0
-    iget-object v4, p0, Lcom/android/settings/applications/ResetAppsHelper$1;->ME:Lcom/android/settings/applications/ResetAppsHelper;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper$1;->ME:Lcom/android/vendorsettings/applications/ResetAppsHelper;
 
-    invoke-static {v4}, Lcom/android/settings/applications/ResetAppsHelper;->b(Lcom/android/settings/applications/ResetAppsHelper;)Landroid/app/INotificationManager;
+    invoke-static {v4}, Lcom/android/vendorsettings/applications/ResetAppsHelper;->b(Lcom/android/vendorsettings/applications/ResetAppsHelper;)Landroid/app/INotificationManager;
 
     move-result-object v4
 
@@ -88,9 +88,9 @@
     if-nez v4, :cond_0
 
     .line 120
-    iget-object v4, p0, Lcom/android/settings/applications/ResetAppsHelper$1;->ME:Lcom/android/settings/applications/ResetAppsHelper;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper$1;->ME:Lcom/android/vendorsettings/applications/ResetAppsHelper;
 
-    invoke-static {v4}, Lcom/android/settings/applications/ResetAppsHelper;->a(Lcom/android/settings/applications/ResetAppsHelper;)Landroid/content/pm/PackageManager;
+    invoke-static {v4}, Lcom/android/vendorsettings/applications/ResetAppsHelper;->a(Lcom/android/vendorsettings/applications/ResetAppsHelper;)Landroid/content/pm/PackageManager;
 
     move-result-object v4
 
@@ -105,9 +105,9 @@
     if-ne v4, v5, :cond_0
 
     .line 122
-    iget-object v4, p0, Lcom/android/settings/applications/ResetAppsHelper$1;->ME:Lcom/android/settings/applications/ResetAppsHelper;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper$1;->ME:Lcom/android/vendorsettings/applications/ResetAppsHelper;
 
-    invoke-static {v4}, Lcom/android/settings/applications/ResetAppsHelper;->a(Lcom/android/settings/applications/ResetAppsHelper;)Landroid/content/pm/PackageManager;
+    invoke-static {v4}, Lcom/android/vendorsettings/applications/ResetAppsHelper;->a(Lcom/android/vendorsettings/applications/ResetAppsHelper;)Landroid/content/pm/PackageManager;
 
     move-result-object v4
 
@@ -126,9 +126,9 @@
     .line 129
     :cond_1
     :try_start_1
-    iget-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper$1;->ME:Lcom/android/settings/applications/ResetAppsHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper$1;->ME:Lcom/android/vendorsettings/applications/ResetAppsHelper;
 
-    invoke-static {v0}, Lcom/android/settings/applications/ResetAppsHelper;->c(Lcom/android/settings/applications/ResetAppsHelper;)Landroid/content/pm/IPackageManager;
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/ResetAppsHelper;->c(Lcom/android/vendorsettings/applications/ResetAppsHelper;)Landroid/content/pm/IPackageManager;
 
     move-result-object v0
 
@@ -142,18 +142,18 @@
 
     .line 132
     :goto_2
-    iget-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper$1;->ME:Lcom/android/settings/applications/ResetAppsHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper$1;->ME:Lcom/android/vendorsettings/applications/ResetAppsHelper;
 
-    invoke-static {v0}, Lcom/android/settings/applications/ResetAppsHelper;->d(Lcom/android/settings/applications/ResetAppsHelper;)Landroid/app/AppOpsManager;
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/ResetAppsHelper;->d(Lcom/android/vendorsettings/applications/ResetAppsHelper;)Landroid/app/AppOpsManager;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/app/AppOpsManager;->resetAllModes()V
 
     .line 133
-    iget-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper$1;->ME:Lcom/android/settings/applications/ResetAppsHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper$1;->ME:Lcom/android/vendorsettings/applications/ResetAppsHelper;
 
-    invoke-static {v0}, Lcom/android/settings/applications/ResetAppsHelper;->e(Lcom/android/settings/applications/ResetAppsHelper;)Landroid/net/NetworkPolicyManager;
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/ResetAppsHelper;->e(Lcom/android/vendorsettings/applications/ResetAppsHelper;)Landroid/net/NetworkPolicyManager;
 
     move-result-object v0
 
@@ -184,9 +184,9 @@
     if-ne v6, v3, :cond_2
 
     .line 139
-    iget-object v6, p0, Lcom/android/settings/applications/ResetAppsHelper$1;->ME:Lcom/android/settings/applications/ResetAppsHelper;
+    iget-object v6, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper$1;->ME:Lcom/android/vendorsettings/applications/ResetAppsHelper;
 
-    invoke-static {v6}, Lcom/android/settings/applications/ResetAppsHelper;->e(Lcom/android/settings/applications/ResetAppsHelper;)Landroid/net/NetworkPolicyManager;
+    invoke-static {v6}, Lcom/android/vendorsettings/applications/ResetAppsHelper;->e(Lcom/android/vendorsettings/applications/ResetAppsHelper;)Landroid/net/NetworkPolicyManager;
 
     move-result-object v6
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/SystemAppSettings$ViewHolder;
+.class public Lcom/android/vendorsettings/applications/SystemAppSettings$ViewHolder;
 .super Ljava/lang/Object;
 .source "SystemAppSettings.java"
 

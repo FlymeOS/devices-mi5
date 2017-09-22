@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/AppStateWriteSettingsBridge$1;
+.class final Lcom/android/vendorsettings/applications/AppStateWriteSettingsBridge$1;
 .super Ljava/lang/Object;
 .source "AppStateWriteSettingsBridge.java"
 

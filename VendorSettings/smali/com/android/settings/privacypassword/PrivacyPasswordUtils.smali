@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/privacypassword/PrivacyPasswordUtils;
+.class public Lcom/android/vendorsettings/privacypassword/PrivacyPasswordUtils;
 .super Ljava/lang/Object;
 .source "PrivacyPasswordUtils.java"
 
@@ -19,7 +19,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->aot:[C
+    sput-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordUtils;->aot:[C
 
     return-void
 
@@ -201,9 +201,9 @@
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     .line 81
-    new-instance v1, Lcom/android/settings/privacypassword/PrivacyPasswordUtils$1;
+    new-instance v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordUtils$1;
 
-    invoke-direct {v1, p0, p1}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils$1;-><init>(Lmiui/security/SecurityManager;Ljava/lang/String;)V
+    invoke-direct {v1, p0, p1}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordUtils$1;-><init>(Lmiui/security/SecurityManager;Ljava/lang/String;)V
 
     const-wide/16 v2, 0x7d0
 
@@ -387,11 +387,11 @@
 
     .prologue
     .line 153
-    invoke-static {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->j([B)[B
+    invoke-static {p0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordUtils;->j([B)[B
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->i([B)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordUtils;->i([B)Ljava/lang/String;
 
     move-result-object v0
 
@@ -421,7 +421,7 @@
     .line 161
     add-int/lit8 v4, v0, 0x1
 
-    sget-object v5, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->aot:[C
+    sget-object v5, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordUtils;->aot:[C
 
     aget-byte v6, p0, v1
 
@@ -436,7 +436,7 @@
     .line 162
     add-int/lit8 v0, v4, 0x1
 
-    sget-object v5, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->aot:[C
+    sget-object v5, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordUtils;->aot:[C
 
     aget-byte v6, p0, v1
 
@@ -465,7 +465,7 @@
 
     .prologue
     .line 167
-    invoke-static {}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->tL()Ljava/security/MessageDigest;
+    invoke-static {}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordUtils;->tL()Ljava/security/MessageDigest;
 
     move-result-object v0
 

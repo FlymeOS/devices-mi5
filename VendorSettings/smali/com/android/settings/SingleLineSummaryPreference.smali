@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/SingleLineSummaryPreference;
+.class public Lcom/android/vendorsettings/SingleLineSummaryPreference;
 .super Landroid/preference/Preference;
 .source "SingleLineSummaryPreference.java"
 

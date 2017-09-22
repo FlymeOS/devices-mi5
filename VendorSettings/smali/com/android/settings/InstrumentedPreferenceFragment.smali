@@ -1,4 +1,4 @@
-.class public abstract Lcom/android/settings/InstrumentedPreferenceFragment;
+.class public abstract Lcom/android/vendorsettings/InstrumentedPreferenceFragment;
 .super Lmiui/preference/PreferenceFragment;
 .source "InstrumentedPreferenceFragment.java"
 
@@ -24,11 +24,11 @@
     invoke-super {p0}, Lmiui/preference/PreferenceFragment;->onPause()V
 
     .line 44
-    invoke-virtual {p0}, Lcom/android/settings/InstrumentedPreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/InstrumentedPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/InstrumentedPreferenceFragment;->z()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/InstrumentedPreferenceFragment;->z()I
 
     move-result v1
 
@@ -46,11 +46,11 @@
     invoke-super {p0}, Lmiui/preference/PreferenceFragment;->onResume()V
 
     .line 38
-    invoke-virtual {p0}, Lcom/android/settings/InstrumentedPreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/InstrumentedPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/InstrumentedPreferenceFragment;->z()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/InstrumentedPreferenceFragment;->z()I
 
     move-result v1
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/e/a;
+.class public Lcom/android/vendorsettings/e/a;
 .super Ljava/lang/Object;
 .source "VirtualSimUtilsReflect.java"
 
@@ -11,7 +11,7 @@
     const/4 v1, 0x0
 
     .line 26
-    invoke-static {}, Lcom/android/settings/e/a;->tZ()Ljava/lang/Class;
+    invoke-static {}, Lcom/android/vendorsettings/e/a;->tZ()Ljava/lang/Class;
 
     move-result-object v0
 
@@ -96,7 +96,7 @@
     const/4 v1, 0x0
 
     .line 40
-    invoke-static {}, Lcom/android/settings/e/a;->tZ()Ljava/lang/Class;
+    invoke-static {}, Lcom/android/vendorsettings/e/a;->tZ()Ljava/lang/Class;
 
     move-result-object v0
 

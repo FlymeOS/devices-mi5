@@ -1,4 +1,4 @@
-.class Lcom/android/settings/aq;
+.class Lcom/android/vendorsettings/aq;
 .super Ljava/lang/Object;
 .source "ChildrenModeSettings.java"
 
@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic dl:Lcom/android/settings/ChildrenModeSettings;
+.field final synthetic dl:Lcom/android/vendorsettings/ChildrenModeSettings;
 
 .field private final p:Ljava/util/HashMap;
 
@@ -15,12 +15,12 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ChildrenModeSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/ChildrenModeSettings;)V
     .locals 1
 
     .prologue
     .line 51
-    iput-object p1, p0, Lcom/android/settings/aq;->dl:Lcom/android/settings/ChildrenModeSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/aq;->dl:Lcom/android/vendorsettings/ChildrenModeSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,14 +29,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/aq;->sCollator:Ljava/text/Collator;
+    iput-object v0, p0, Lcom/android/vendorsettings/aq;->sCollator:Ljava/text/Collator;
 
     .line 53
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/aq;->p:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/vendorsettings/aq;->p:Ljava/util/HashMap;
 
     return-void
 .end method
@@ -46,7 +46,7 @@
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/android/settings/aq;->p:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/vendorsettings/aq;->p:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -58,9 +58,9 @@
     if-nez v0, :cond_0
 
     .line 64
-    iget-object v0, p0, Lcom/android/settings/aq;->dl:Lcom/android/settings/ChildrenModeSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/aq;->dl:Lcom/android/vendorsettings/ChildrenModeSettings;
 
-    invoke-static {v0}, Lcom/android/settings/ChildrenModeSettings;->a(Lcom/android/settings/ChildrenModeSettings;)Landroid/content/pm/PackageManager;
+    invoke-static {v0}, Lcom/android/vendorsettings/ChildrenModeSettings;->a(Lcom/android/vendorsettings/ChildrenModeSettings;)Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
@@ -69,7 +69,7 @@
     move-result-object v0
 
     .line 65
-    iget-object v1, p0, Lcom/android/settings/aq;->p:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/vendorsettings/aq;->p:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -85,13 +85,13 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/aq;->sCollator:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/vendorsettings/aq;->sCollator:Ljava/text/Collator;
 
-    invoke-direct {p0, p1}, Lcom/android/settings/aq;->a(Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/aq;->a(Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    invoke-direct {p0, p2}, Lcom/android/settings/aq;->a(Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;
+    invoke-direct {p0, p2}, Lcom/android/vendorsettings/aq;->a(Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;
 
     move-result-object v2
 
@@ -111,7 +111,7 @@
 
     check-cast p2, Landroid/content/pm/ApplicationInfo;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/aq;->compare(Landroid/content/pm/ApplicationInfo;Landroid/content/pm/ApplicationInfo;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/aq;->compare(Landroid/content/pm/ApplicationInfo;Landroid/content/pm/ApplicationInfo;)I
 
     move-result v0
 

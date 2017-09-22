@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/privacypassword/XiaomiAccountUtils$1;
+.class final Lcom/android/vendorsettings/privacypassword/XiaomiAccountUtils$1;
 .super Ljava/lang/Object;
 .source "XiaomiAccountUtils.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic aow:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+.field final synthetic aow:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 
 .field final synthetic val$activity:Landroid/app/Activity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/privacypassword/PrivacyPasswordManager;Landroid/app/Activity;)V
+.method constructor <init>(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;Landroid/app/Activity;)V
     .locals 0
 
     .prologue
     .line 41
-    iput-object p1, p0, Lcom/android/settings/privacypassword/XiaomiAccountUtils$1;->aow:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iput-object p1, p0, Lcom/android/vendorsettings/privacypassword/XiaomiAccountUtils$1;->aow:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 
-    iput-object p2, p0, Lcom/android/settings/privacypassword/XiaomiAccountUtils$1;->val$activity:Landroid/app/Activity;
+    iput-object p2, p0, Lcom/android/vendorsettings/privacypassword/XiaomiAccountUtils$1;->val$activity:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,20 +51,20 @@
     if-eqz v0, :cond_0
 
     .line 48
-    iget-object v0, p0, Lcom/android/settings/privacypassword/XiaomiAccountUtils$1;->aow:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/XiaomiAccountUtils$1;->aow:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 
-    iget-object v1, p0, Lcom/android/settings/privacypassword/XiaomiAccountUtils$1;->val$activity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/android/vendorsettings/privacypassword/XiaomiAccountUtils$1;->val$activity:Landroid/app/Activity;
 
-    invoke-static {v1}, Lcom/android/settings/privacypassword/XiaomiAccountUtils;->cc(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/vendorsettings/privacypassword/XiaomiAccountUtils;->cc(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->bk(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->bk(Ljava/lang/String;)V
 
     .line 49
-    iget-object v0, p0, Lcom/android/settings/privacypassword/XiaomiAccountUtils$1;->val$activity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/XiaomiAccountUtils$1;->val$activity:Landroid/app/Activity;
 
-    iget-object v1, p0, Lcom/android/settings/privacypassword/XiaomiAccountUtils$1;->val$activity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/android/vendorsettings/privacypassword/XiaomiAccountUtils$1;->val$activity:Landroid/app/Activity;
 
     invoke-virtual {v1}, Landroid/app/Activity;->getResources()Landroid/content/res/Resources;
 
@@ -90,11 +90,11 @@
 
     .line 51
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/privacypassword/XiaomiAccountUtils$1;->aow:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/XiaomiAccountUtils$1;->aow:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->bk(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->bk(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

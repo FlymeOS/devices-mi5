@@ -1,26 +1,26 @@
-.class Lcom/android/settings/co;
+.class Lcom/android/vendorsettings/co;
 .super Landroid/widget/BaseAdapter;
 .source "DeviceAdminSettings.java"
 
 
 # instance fields
-.field final synthetic lm:Lcom/android/settings/DeviceAdminSettings;
+.field final synthetic lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
 .field final mInflater:Landroid/view/LayoutInflater;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DeviceAdminSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/DeviceAdminSettings;)V
     .locals 2
 
     .prologue
     .line 183
-    iput-object p1, p0, Lcom/android/settings/co;->lm:Lcom/android/settings/DeviceAdminSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/co;->lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 184
-    invoke-virtual {p1}, Lcom/android/settings/DeviceAdminSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/DeviceAdminSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -32,7 +32,7 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    iput-object v0, p0, Lcom/android/settings/co;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/vendorsettings/co;->mInflater:Landroid/view/LayoutInflater;
 
     .line 186
     return-void
@@ -43,7 +43,7 @@
 
     .prologue
     .line 315
-    iget-object v0, p0, Lcom/android/settings/co;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/vendorsettings/co;->mInflater:Landroid/view/LayoutInflater;
 
     const v1, 0x7f040065
 
@@ -54,9 +54,9 @@
     move-result-object v1
 
     .line 316
-    new-instance v2, Lcom/android/settings/cp;
+    new-instance v2, Lcom/android/vendorsettings/cp;
 
-    invoke-direct {v2}, Lcom/android/settings/cp;-><init>()V
+    invoke-direct {v2}, Lcom/android/vendorsettings/cp;-><init>()V
 
     .line 317
     const v0, 0x7f130060
@@ -67,7 +67,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, v2, Lcom/android/settings/cp;->icon:Landroid/widget/ImageView;
+    iput-object v0, v2, Lcom/android/vendorsettings/cp;->icon:Landroid/widget/ImageView;
 
     .line 318
     const v0, 0x7f130054
@@ -78,7 +78,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v2, Lcom/android/settings/cp;->ln:Landroid/widget/TextView;
+    iput-object v0, v2, Lcom/android/vendorsettings/cp;->ln:Landroid/widget/TextView;
 
     .line 319
     const v0, 0x7f1300d5
@@ -89,7 +89,7 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    iput-object v0, v2, Lcom/android/settings/cp;->lo:Landroid/widget/CheckBox;
+    iput-object v0, v2, Lcom/android/vendorsettings/cp;->lo:Landroid/widget/CheckBox;
 
     .line 320
     const v0, 0x7f1300d4
@@ -100,7 +100,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v2, Lcom/android/settings/cp;->lp:Landroid/widget/TextView;
+    iput-object v0, v2, Lcom/android/vendorsettings/cp;->lp:Landroid/widget/TextView;
 
     .line 321
     invoke-virtual {v1, v2}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
@@ -114,9 +114,9 @@
 
     .prologue
     .line 326
-    iget-object v0, p0, Lcom/android/settings/co;->lm:Lcom/android/settings/DeviceAdminSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/co;->lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/DeviceAdminSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/DeviceAdminSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -125,7 +125,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/cp;
+    check-cast v0, Lcom/android/vendorsettings/cp;
 
     .line 328
     invoke-virtual {v1}, Landroid/app/Activity;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -143,9 +143,9 @@
 
     new-instance v4, Landroid/os/UserHandle;
 
-    iget-object v5, p0, Lcom/android/settings/co;->lm:Lcom/android/settings/DeviceAdminSettings;
+    iget-object v5, p0, Lcom/android/vendorsettings/co;->lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
-    invoke-static {v5, p2}, Lcom/android/settings/DeviceAdminSettings;->b(Lcom/android/settings/DeviceAdminSettings;Landroid/app/admin/DeviceAdminInfo;)I
+    invoke-static {v5, p2}, Lcom/android/vendorsettings/DeviceAdminSettings;->b(Lcom/android/vendorsettings/DeviceAdminSettings;Landroid/app/admin/DeviceAdminInfo;)I
 
     move-result v5
 
@@ -156,12 +156,12 @@
     move-result-object v2
 
     .line 331
-    iget-object v3, v0, Lcom/android/settings/cp;->icon:Landroid/widget/ImageView;
+    iget-object v3, v0, Lcom/android/vendorsettings/cp;->icon:Landroid/widget/ImageView;
 
     invoke-virtual {v3, v2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 332
-    iget-object v2, v0, Lcom/android/settings/cp;->ln:Landroid/widget/TextView;
+    iget-object v2, v0, Lcom/android/vendorsettings/cp;->ln:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/app/Activity;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -174,24 +174,24 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 333
-    iget-object v2, v0, Lcom/android/settings/cp;->lo:Landroid/widget/CheckBox;
+    iget-object v2, v0, Lcom/android/vendorsettings/cp;->lo:Landroid/widget/CheckBox;
 
-    iget-object v3, p0, Lcom/android/settings/co;->lm:Lcom/android/settings/DeviceAdminSettings;
+    iget-object v3, p0, Lcom/android/vendorsettings/co;->lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
-    invoke-static {v3, p2}, Lcom/android/settings/DeviceAdminSettings;->a(Lcom/android/settings/DeviceAdminSettings;Landroid/app/admin/DeviceAdminInfo;)Z
+    invoke-static {v3, p2}, Lcom/android/vendorsettings/DeviceAdminSettings;->a(Lcom/android/vendorsettings/DeviceAdminSettings;Landroid/app/admin/DeviceAdminInfo;)Z
 
     move-result v3
 
     invoke-virtual {v2, v3}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     .line 334
-    invoke-direct {p0, p2}, Lcom/android/settings/co;->isEnabled(Ljava/lang/Object;)Z
+    invoke-direct {p0, p2}, Lcom/android/vendorsettings/co;->isEnabled(Ljava/lang/Object;)Z
 
     move-result v2
 
     .line 336
     :try_start_0
-    iget-object v3, v0, Lcom/android/settings/cp;->lp:Landroid/widget/TextView;
+    iget-object v3, v0, Lcom/android/vendorsettings/cp;->lp:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/app/Activity;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -207,22 +207,22 @@
 
     .line 339
     :goto_0
-    iget-object v1, v0, Lcom/android/settings/cp;->lo:Landroid/widget/CheckBox;
+    iget-object v1, v0, Lcom/android/vendorsettings/cp;->lo:Landroid/widget/CheckBox;
 
     invoke-virtual {v1, v2}, Landroid/widget/CheckBox;->setEnabled(Z)V
 
     .line 340
-    iget-object v1, v0, Lcom/android/settings/cp;->ln:Landroid/widget/TextView;
+    iget-object v1, v0, Lcom/android/vendorsettings/cp;->ln:Landroid/widget/TextView;
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setEnabled(Z)V
 
     .line 341
-    iget-object v1, v0, Lcom/android/settings/cp;->lp:Landroid/widget/TextView;
+    iget-object v1, v0, Lcom/android/vendorsettings/cp;->lp:Landroid/widget/TextView;
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setEnabled(Z)V
 
     .line 342
-    iget-object v0, v0, Lcom/android/settings/cp;->icon:Landroid/widget/ImageView;
+    iget-object v0, v0, Lcom/android/vendorsettings/cp;->icon:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setEnabled(Z)V
 
@@ -257,17 +257,17 @@
     check-cast p1, Landroid/app/admin/DeviceAdminInfo;
 
     .line 285
-    iget-object v1, p0, Lcom/android/settings/co;->lm:Lcom/android/settings/DeviceAdminSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/co;->lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
-    invoke-static {v1, p1}, Lcom/android/settings/DeviceAdminSettings;->a(Lcom/android/settings/DeviceAdminSettings;Landroid/app/admin/DeviceAdminInfo;)Z
+    invoke-static {v1, p1}, Lcom/android/vendorsettings/DeviceAdminSettings;->a(Lcom/android/vendorsettings/DeviceAdminSettings;Landroid/app/admin/DeviceAdminInfo;)Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/android/settings/co;->lm:Lcom/android/settings/DeviceAdminSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/co;->lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
-    invoke-static {v1, p1}, Lcom/android/settings/DeviceAdminSettings;->b(Lcom/android/settings/DeviceAdminSettings;Landroid/app/admin/DeviceAdminInfo;)I
+    invoke-static {v1, p1}, Lcom/android/vendorsettings/DeviceAdminSettings;->b(Lcom/android/vendorsettings/DeviceAdminSettings;Landroid/app/admin/DeviceAdminInfo;)I
 
     move-result v1
 
@@ -277,17 +277,17 @@
 
     if-ne v1, v2, :cond_2
 
-    iget-object v1, p0, Lcom/android/settings/co;->lm:Lcom/android/settings/DeviceAdminSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/co;->lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
-    invoke-static {v1, p1}, Lcom/android/settings/DeviceAdminSettings;->c(Lcom/android/settings/DeviceAdminSettings;Landroid/app/admin/DeviceAdminInfo;)Z
+    invoke-static {v1, p1}, Lcom/android/vendorsettings/DeviceAdminSettings;->c(Lcom/android/vendorsettings/DeviceAdminSettings;Landroid/app/admin/DeviceAdminInfo;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/co;->lm:Lcom/android/settings/DeviceAdminSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/co;->lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
-    invoke-static {v1, p1}, Lcom/android/settings/DeviceAdminSettings;->d(Lcom/android/settings/DeviceAdminSettings;Landroid/app/admin/DeviceAdminInfo;)Z
+    invoke-static {v1, p1}, Lcom/android/vendorsettings/DeviceAdminSettings;->d(Lcom/android/vendorsettings/DeviceAdminSettings;Landroid/app/admin/DeviceAdminInfo;)Z
 
     move-result v1
 
@@ -295,9 +295,9 @@
 
     .line 290
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/co;->lm:Lcom/android/settings/DeviceAdminSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/co;->lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
-    invoke-static {v1, p1}, Lcom/android/settings/DeviceAdminSettings;->e(Lcom/android/settings/DeviceAdminSettings;Landroid/app/admin/DeviceAdminInfo;)Z
+    invoke-static {v1, p1}, Lcom/android/vendorsettings/DeviceAdminSettings;->e(Lcom/android/vendorsettings/DeviceAdminSettings;Landroid/app/admin/DeviceAdminInfo;)Z
 
     move-result v1
 
@@ -329,9 +329,9 @@
 
     .line 195
     .line 196
-    iget-object v1, p0, Lcom/android/settings/co;->lm:Lcom/android/settings/DeviceAdminSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/co;->lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
-    invoke-static {v1}, Lcom/android/settings/DeviceAdminSettings;->a(Lcom/android/settings/DeviceAdminSettings;)Landroid/util/SparseArray;
+    invoke-static {v1}, Lcom/android/vendorsettings/DeviceAdminSettings;->a(Lcom/android/vendorsettings/DeviceAdminSettings;)Landroid/util/SparseArray;
 
     move-result-object v1
 
@@ -348,9 +348,9 @@
     if-ge v1, v3, :cond_0
 
     .line 198
-    iget-object v0, p0, Lcom/android/settings/co;->lm:Lcom/android/settings/DeviceAdminSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/co;->lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
-    invoke-static {v0}, Lcom/android/settings/DeviceAdminSettings;->a(Lcom/android/settings/DeviceAdminSettings;)Landroid/util/SparseArray;
+    invoke-static {v0}, Lcom/android/vendorsettings/DeviceAdminSettings;->a(Lcom/android/vendorsettings/DeviceAdminSettings;)Landroid/util/SparseArray;
 
     move-result-object v0
 
@@ -396,9 +396,9 @@
 
     .line 219
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/co;->lm:Lcom/android/settings/DeviceAdminSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/co;->lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
-    invoke-static {v0}, Lcom/android/settings/DeviceAdminSettings;->a(Lcom/android/settings/DeviceAdminSettings;)Landroid/util/SparseArray;
+    invoke-static {v0}, Lcom/android/vendorsettings/DeviceAdminSettings;->a(Lcom/android/vendorsettings/DeviceAdminSettings;)Landroid/util/SparseArray;
 
     move-result-object v0
 
@@ -416,9 +416,9 @@
     if-ge v1, v2, :cond_1
 
     .line 223
-    iget-object v0, p0, Lcom/android/settings/co;->lm:Lcom/android/settings/DeviceAdminSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/co;->lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
-    invoke-static {v0}, Lcom/android/settings/DeviceAdminSettings;->a(Lcom/android/settings/DeviceAdminSettings;)Landroid/util/SparseArray;
+    invoke-static {v0}, Lcom/android/vendorsettings/DeviceAdminSettings;->a(Lcom/android/vendorsettings/DeviceAdminSettings;)Landroid/util/SparseArray;
 
     move-result-object v0
 
@@ -464,9 +464,9 @@
     if-nez p1, :cond_5
 
     .line 234
-    iget-object v0, p0, Lcom/android/settings/co;->lm:Lcom/android/settings/DeviceAdminSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/co;->lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/DeviceAdminSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/DeviceAdminSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -475,9 +475,9 @@
     move-result-object v0
 
     .line 235
-    iget-object v2, p0, Lcom/android/settings/co;->lm:Lcom/android/settings/DeviceAdminSettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/co;->lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
-    invoke-static {v2}, Lcom/android/settings/DeviceAdminSettings;->a(Lcom/android/settings/DeviceAdminSettings;)Landroid/util/SparseArray;
+    invoke-static {v2}, Lcom/android/vendorsettings/DeviceAdminSettings;->a(Lcom/android/vendorsettings/DeviceAdminSettings;)Landroid/util/SparseArray;
 
     move-result-object v2
 
@@ -514,9 +514,9 @@
 
     .line 242
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/co;->lm:Lcom/android/settings/DeviceAdminSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/co;->lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
-    invoke-static {v0}, Lcom/android/settings/DeviceAdminSettings;->a(Lcom/android/settings/DeviceAdminSettings;)Landroid/util/SparseArray;
+    invoke-static {v0}, Lcom/android/vendorsettings/DeviceAdminSettings;->a(Lcom/android/vendorsettings/DeviceAdminSettings;)Landroid/util/SparseArray;
 
     move-result-object v0
 
@@ -550,7 +550,7 @@
 
     .prologue
     .line 269
-    invoke-virtual {p0, p1}, Lcom/android/settings/co;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/co;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -575,7 +575,7 @@
 
     .prologue
     .line 298
-    invoke-virtual {p0, p1}, Lcom/android/settings/co;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/co;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -588,7 +588,7 @@
     if-nez p2, :cond_0
 
     .line 301
-    invoke-direct {p0, p3}, Lcom/android/settings/co;->a(Landroid/view/ViewGroup;)Landroid/view/View;
+    invoke-direct {p0, p3}, Lcom/android/vendorsettings/co;->a(Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p2
 
@@ -596,7 +596,7 @@
     :cond_0
     check-cast v0, Landroid/app/admin/DeviceAdminInfo;
 
-    invoke-direct {p0, p2, v0}, Lcom/android/settings/co;->a(Landroid/view/View;Landroid/app/admin/DeviceAdminInfo;)V
+    invoke-direct {p0, p2, v0}, Lcom/android/vendorsettings/co;->a(Landroid/view/View;Landroid/app/admin/DeviceAdminInfo;)V
 
     .line 311
     :goto_0
@@ -607,9 +607,9 @@
     if-nez p2, :cond_2
 
     .line 306
-    iget-object v1, p0, Lcom/android/settings/co;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v1, p0, Lcom/android/vendorsettings/co;->mInflater:Landroid/view/LayoutInflater;
 
-    invoke-static {v1, p3}, Lcom/android/settings/iC;->a(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
+    invoke-static {v1, p3}, Lcom/android/vendorsettings/iC;->a(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p2
 
@@ -656,12 +656,12 @@
 
     .prologue
     .line 275
-    invoke-virtual {p0, p1}, Lcom/android/settings/co;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/co;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
     .line 276
-    invoke-direct {p0, v0}, Lcom/android/settings/co;->isEnabled(Ljava/lang/Object;)Z
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/co;->isEnabled(Ljava/lang/Object;)Z
 
     move-result v0
 

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/AppDomainsPreference;
-.super Lcom/android/settings/accessibility/ListDialogPreference;
+.class public Lcom/android/vendorsettings/applications/AppDomainsPreference;
+.super Lcom/android/vendorsettings/accessibility/ListDialogPreference;
 .source "AppDomainsPreference.java"
 
 
@@ -13,17 +13,17 @@
 
     .prologue
     .line 31
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/accessibility/ListDialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/accessibility/ListDialogPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 33
     const v0, 0x7f04000b
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppDomainsPreference;->setDialogLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/AppDomainsPreference;->setDialogLayoutResource(I)V
 
     .line 34
     const v0, 0x7f04000c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppDomainsPreference;->au(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/AppDomainsPreference;->au(I)V
 
     .line 35
     return-void
@@ -41,10 +41,10 @@
     array-length v0, p1
 
     :goto_0
-    iput v0, p0, Lcom/android/settings/applications/AppDomainsPreference;->Ff:I
+    iput v0, p0, Lcom/android/vendorsettings/applications/AppDomainsPreference;->Ff:I
 
     .line 40
-    invoke-super {p0, p1}, Lcom/android/settings/accessibility/ListDialogPreference;->a([Ljava/lang/CharSequence;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/accessibility/ListDialogPreference;->a([Ljava/lang/CharSequence;)V
 
     .line 41
     return-void
@@ -61,7 +61,7 @@
 
     .prologue
     .line 60
-    invoke-virtual {p0, p2}, Lcom/android/settings/applications/AppDomainsPreference;->at(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, p2}, Lcom/android/vendorsettings/applications/AppDomainsPreference;->at(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -92,12 +92,12 @@
     const/4 v3, 0x1
 
     .line 45
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppDomainsPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppDomainsPreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
     .line 46
-    iget v0, p0, Lcom/android/settings/applications/AppDomainsPreference;->Ff:I
+    iget v0, p0, Lcom/android/vendorsettings/applications/AppDomainsPreference;->Ff:I
 
     if-nez v0, :cond_0
 
@@ -114,12 +114,12 @@
 
     .line 51
     :cond_0
-    invoke-super {p0}, Lcom/android/settings/accessibility/ListDialogPreference;->getSummary()Ljava/lang/CharSequence;
+    invoke-super {p0}, Lcom/android/vendorsettings/accessibility/ListDialogPreference;->getSummary()Ljava/lang/CharSequence;
 
     move-result-object v2
 
     .line 52
-    iget v0, p0, Lcom/android/settings/applications/AppDomainsPreference;->Ff:I
+    iget v0, p0, Lcom/android/vendorsettings/applications/AppDomainsPreference;->Ff:I
 
     if-ne v0, v3, :cond_1
 

@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/cloud/d;
+.class final Lcom/android/vendorsettings/cloud/d;
 .super Ljava/lang/Object;
 .source "CloudJobService.java"
 
@@ -28,7 +28,7 @@
 
     check-cast p2, Ljava/lang/String;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/cloud/d;->compare(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/cloud/d;->compare(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v0
 

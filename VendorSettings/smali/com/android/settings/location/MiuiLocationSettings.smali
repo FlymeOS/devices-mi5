@@ -1,20 +1,20 @@
-.class public Lcom/android/settings/location/MiuiLocationSettings;
-.super Lcom/android/settings/location/LocationSettingsBase;
+.class public Lcom/android/vendorsettings/location/MiuiLocationSettings;
+.super Lcom/android/vendorsettings/location/LocationSettingsBase;
 .source "MiuiLocationSettings.java"
 
 # interfaces
 .implements Landroid/preference/Preference$OnPreferenceChangeListener;
-.implements Lcom/android/settings/location/RadioButtonPreference$OnClickListener;
+.implements Lcom/android/vendorsettings/location/RadioButtonPreference$OnClickListener;
 
 
 # instance fields
 .field private Cn:Z
 
-.field private agZ:Lcom/android/settings/location/RadioButtonPreference;
+.field private agZ:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-.field private aha:Lcom/android/settings/location/RadioButtonPreference;
+.field private aha:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-.field private ahb:Lcom/android/settings/location/RadioButtonPreference;
+.field private ahb:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
 .field private ahe:Landroid/preference/Preference;
 
@@ -45,23 +45,23 @@
 
     .prologue
     .line 101
-    invoke-direct {p0}, Lcom/android/settings/location/LocationSettingsBase;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/location/LocationSettingsBase;-><init>()V
 
     .line 102
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->Cn:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->Cn:Z
 
     .line 103
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/location/MiuiLocationSettings;)Landroid/location/LocationManager;
+.method static synthetic a(Lcom/android/vendorsettings/location/MiuiLocationSettings;)Landroid/location/LocationManager;
     .locals 1
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahp:Landroid/location/LocationManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahp:Landroid/location/LocationManager;
 
     return-object v0
 .end method
@@ -80,25 +80,25 @@
     check-cast v0, Landroid/preference/PreferenceCategory;
 
     .line 298
-    new-instance v1, Lcom/android/settings/location/SettingsInjector;
+    new-instance v1, Lcom/android/vendorsettings/location/SettingsInjector;
 
-    invoke-direct {v1, p1}, Lcom/android/settings/location/SettingsInjector;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, p1}, Lcom/android/vendorsettings/location/SettingsInjector;-><init>(Landroid/content/Context;)V
 
     .line 299
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
     move-result v2
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/location/SettingsInjector;->cs(I)Ljava/util/List;
+    invoke-virtual {v1, v2}, Lcom/android/vendorsettings/location/SettingsInjector;->cs(I)Ljava/util/List;
 
     move-result-object v2
 
     .line 301
-    new-instance v3, Lcom/android/settings/location/MiuiLocationSettings$5;
+    new-instance v3, Lcom/android/vendorsettings/location/MiuiLocationSettings$5;
 
-    invoke-direct {v3, p0, v1}, Lcom/android/settings/location/MiuiLocationSettings$5;-><init>(Lcom/android/settings/location/MiuiLocationSettings;Lcom/android/settings/location/SettingsInjector;)V
+    invoke-direct {v3, p0, v1}, Lcom/android/vendorsettings/location/MiuiLocationSettings$5;-><init>(Lcom/android/vendorsettings/location/MiuiLocationSettings;Lcom/android/vendorsettings/location/SettingsInjector;)V
 
-    iput-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->mReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     .line 311
     new-instance v1, Landroid/content/IntentFilter;
@@ -116,7 +116,7 @@
     invoke-virtual {v1, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 314
-    iget-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p1, v3, v1}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -128,7 +128,7 @@
     if-lez v1, :cond_0
 
     .line 317
-    invoke-direct {p0, v2, v0}, Lcom/android/settings/location/MiuiLocationSettings;->a(Ljava/util/List;Landroid/preference/PreferenceGroup;)V
+    invoke-direct {p0, v2, v0}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->a(Ljava/util/List;Landroid/preference/PreferenceGroup;)V
 
     .line 322
     :goto_0
@@ -141,7 +141,7 @@
     goto :goto_0
 .end method
 
-.method private a(Lcom/android/settings/location/RadioButtonPreference;)V
+.method private a(Lcom/android/vendorsettings/location/RadioButtonPreference;)V
     .locals 3
 
     .prologue
@@ -150,7 +150,7 @@
     const/4 v1, 0x0
 
     .line 419
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->agZ:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->agZ:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
     if-nez v0, :cond_1
 
@@ -164,88 +164,88 @@
     if-nez p1, :cond_2
 
     .line 423
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->agZ:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->agZ:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/location/RadioButtonPreference;->setChecked(Z)V
 
     .line 424
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->aha:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aha:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/location/RadioButtonPreference;->setChecked(Z)V
 
     .line 425
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahb:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahb:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/location/RadioButtonPreference;->setChecked(Z)V
 
     goto :goto_0
 
     .line 426
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->agZ:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->agZ:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
     if-ne p1, v0, :cond_3
 
     .line 427
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->agZ:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->agZ:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/location/RadioButtonPreference;->setChecked(Z)V
 
     .line 428
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->aha:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aha:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/location/RadioButtonPreference;->setChecked(Z)V
 
     .line 429
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahb:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahb:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/location/RadioButtonPreference;->setChecked(Z)V
 
     goto :goto_0
 
     .line 430
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->aha:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aha:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
     if-ne p1, v0, :cond_4
 
     .line 431
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->agZ:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->agZ:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/location/RadioButtonPreference;->setChecked(Z)V
 
     .line 432
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->aha:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aha:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/location/RadioButtonPreference;->setChecked(Z)V
 
     .line 433
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahb:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahb:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/location/RadioButtonPreference;->setChecked(Z)V
 
     goto :goto_0
 
     .line 434
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahb:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahb:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
     if-ne p1, v0, :cond_0
 
     .line 435
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->agZ:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->agZ:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/location/RadioButtonPreference;->setChecked(Z)V
 
     .line 436
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->aha:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aha:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/location/RadioButtonPreference;->setChecked(Z)V
 
     .line 437
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahb:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahb:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/location/RadioButtonPreference;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/location/RadioButtonPreference;->setChecked(Z)V
 
     goto :goto_0
 .end method
@@ -255,9 +255,9 @@
 
     .prologue
     .line 143
-    new-instance v0, Lcom/android/settings/location/MiuiLocationSettings$1;
+    new-instance v0, Lcom/android/vendorsettings/location/MiuiLocationSettings$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/location/MiuiLocationSettings$1;-><init>(Lcom/android/settings/location/MiuiLocationSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/location/MiuiLocationSettings$1;-><init>(Lcom/android/vendorsettings/location/MiuiLocationSettings;)V
 
     invoke-static {p1, v0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -289,12 +289,12 @@
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/location/MiuiLocationSettings;)Landroid/preference/CheckBoxPreference;
+.method static synthetic b(Lcom/android/vendorsettings/location/MiuiLocationSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->aho:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aho:Landroid/preference/CheckBoxPreference;
 
     return-object v0
 .end method
@@ -308,7 +308,7 @@
     const/4 v2, 0x0
 
     .line 156
-    invoke-virtual {p0}, Lcom/android/settings/location/MiuiLocationSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -322,26 +322,26 @@
     :cond_0
     const v0, 0x7f080059
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/location/MiuiLocationSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->addPreferencesFromResource(I)V
 
     .line 161
-    invoke-virtual {p0}, Lcom/android/settings/location/MiuiLocationSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v3
 
     .line 162
     const-string v0, "location_toggle"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/location/MiuiLocationSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahl:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahl:Landroid/preference/CheckBoxPreference;
 
     .line 163
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahl:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahl:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -352,19 +352,19 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
 
     .line 166
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
 
-    new-instance v4, Lcom/android/settings/location/MiuiLocationSettings$2;
+    new-instance v4, Lcom/android/vendorsettings/location/MiuiLocationSettings$2;
 
-    invoke-direct {v4, p0}, Lcom/android/settings/location/MiuiLocationSettings$2;-><init>(Lcom/android/settings/location/MiuiLocationSettings;)V
+    invoke-direct {v4, p0}, Lcom/android/vendorsettings/location/MiuiLocationSettings$2;-><init>(Lcom/android/vendorsettings/location/MiuiLocationSettings;)V
 
     invoke-virtual {v0, v4}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 178
-    invoke-virtual {p0}, Lcom/android/settings/location/MiuiLocationSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
@@ -374,22 +374,22 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->aht:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aht:Z
 
     .line 179
-    iget-boolean v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->aht:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aht:Z
 
     if-nez v0, :cond_4
 
     .line 180
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
 
     invoke-virtual {v3, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 181
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
 
     .line 191
     :goto_0
@@ -408,7 +408,7 @@
     move v0, v1
 
     :goto_1
-    iput-boolean v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahq:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahq:Z
 
     .line 192
     const-string v0, "assisted_gps"
@@ -419,7 +419,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahm:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahm:Landroid/preference/CheckBoxPreference;
 
     .line 193
     const-string v0, "agps_roaming"
@@ -430,18 +430,18 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->aho:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aho:Landroid/preference/CheckBoxPreference;
 
     .line 194
-    iget-object v4, p0, Lcom/android/settings/location/MiuiLocationSettings;->aho:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aho:Landroid/preference/CheckBoxPreference;
 
-    invoke-static {}, Lcom/android/settings/fy;->gg()Lcom/android/settings/fy;
+    invoke-static {}, Lcom/android/vendorsettings/fy;->gg()Lcom/android/vendorsettings/fy;
 
     move-result-object v0
 
-    iget-object v5, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahp:Landroid/location/LocationManager;
+    iget-object v5, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahp:Landroid/location/LocationManager;
 
-    invoke-virtual {v0, v5}, Lcom/android/settings/fy;->a(Landroid/location/LocationManager;)I
+    invoke-virtual {v0, v5}, Lcom/android/vendorsettings/fy;->a(Landroid/location/LocationManager;)I
 
     move-result v0
 
@@ -459,39 +459,39 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahn:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahn:Landroid/preference/Preference;
 
     .line 196
-    iget-boolean v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahq:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahq:Z
 
     if-nez v0, :cond_7
 
     .line 197
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahm:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahm:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 198
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahn:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahn:Landroid/preference/Preference;
 
     invoke-virtual {v3, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 199
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->aho:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aho:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 206
     :cond_1
     :goto_3
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahm:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahm:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_3
 
     .line 207
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahm:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahm:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/location/MiuiLocationSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -510,17 +510,17 @@
 
     .line 211
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/location/MiuiLocationSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-direct {p0, v0, v3}, Lcom/android/settings/location/MiuiLocationSettings;->a(Landroid/content/Context;Landroid/preference/PreferenceScreen;)V
+    invoke-direct {p0, v0, v3}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->a(Landroid/content/Context;Landroid/preference/PreferenceScreen;)V
 
     .line 212
-    invoke-virtual {p0, v1}, Lcom/android/settings/location/MiuiLocationSettings;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->setHasOptionsMenu(Z)V
 
     .line 213
-    invoke-virtual {p0}, Lcom/android/settings/location/MiuiLocationSettings;->rJ()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->rJ()V
 
     .line 215
     return-object v3
@@ -533,9 +533,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/location/RadioButtonPreference;
+    check-cast v0, Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    iput-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->agZ:Lcom/android/settings/location/RadioButtonPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->agZ:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
     .line 184
     const-string v0, "battery_saving"
@@ -544,9 +544,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/location/RadioButtonPreference;
+    check-cast v0, Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    iput-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->aha:Lcom/android/settings/location/RadioButtonPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aha:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
     .line 185
     const-string v0, "sensors_only"
@@ -555,24 +555,24 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/location/RadioButtonPreference;
+    check-cast v0, Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    iput-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahb:Lcom/android/settings/location/RadioButtonPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahb:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
     .line 186
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->agZ:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->agZ:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/location/RadioButtonPreference;->a(Lcom/android/settings/location/RadioButtonPreference$OnClickListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/location/RadioButtonPreference;->a(Lcom/android/vendorsettings/location/RadioButtonPreference$OnClickListener;)V
 
     .line 187
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->aha:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aha:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/location/RadioButtonPreference;->a(Lcom/android/settings/location/RadioButtonPreference$OnClickListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/location/RadioButtonPreference;->a(Lcom/android/vendorsettings/location/RadioButtonPreference$OnClickListener;)V
 
     .line 188
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahb:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahb:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/location/RadioButtonPreference;->a(Lcom/android/settings/location/RadioButtonPreference$OnClickListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/location/RadioButtonPreference;->a(Lcom/android/vendorsettings/location/RadioButtonPreference$OnClickListener;)V
 
     goto/16 :goto_0
 
@@ -599,7 +599,7 @@
     if-eqz v0, :cond_8
 
     .line 201
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->aho:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aho:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -616,7 +616,7 @@
     if-eqz v0, :cond_1
 
     .line 203
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahn:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahn:Landroid/preference/Preference;
 
     invoke-virtual {v3, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -635,7 +635,7 @@
     return v0
 .end method
 
-.method public b(Lcom/android/settings/location/RadioButtonPreference;)V
+.method public b(Lcom/android/vendorsettings/location/RadioButtonPreference;)V
     .locals 2
 
     .prologue
@@ -643,7 +643,7 @@
     const/4 v0, 0x0
 
     .line 408
-    iget-object v1, p0, Lcom/android/settings/location/MiuiLocationSettings;->agZ:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->agZ:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
     if-ne p1, v1, :cond_1
 
@@ -653,14 +653,14 @@
     .line 415
     :cond_0
     :goto_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/location/MiuiLocationSettings;->cr(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->cr(I)V
 
     .line 416
     return-void
 
     .line 410
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/location/MiuiLocationSettings;->aha:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aha:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
     if-ne p1, v1, :cond_2
 
@@ -671,7 +671,7 @@
 
     .line 412
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahb:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahb:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
     if-ne p1, v1, :cond_0
 
@@ -686,7 +686,7 @@
 
     .prologue
     .line 108
-    const-class v0, Lcom/android/settings/location/MiuiLocationSettings;
+    const-class v0, Lcom/android/vendorsettings/location/MiuiLocationSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -712,7 +712,7 @@
 
     .line 335
     :goto_0
-    iget-object v4, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahl:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahl:Landroid/preference/CheckBoxPreference;
 
     if-nez p2, :cond_3
 
@@ -722,7 +722,7 @@
     invoke-virtual {v4, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 337
-    iget-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahl:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahl:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -731,34 +731,34 @@
     if-eq v0, v3, :cond_1
 
     .line 339
-    iget-boolean v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->Cn:Z
+    iget-boolean v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->Cn:Z
 
     if-eqz v3, :cond_0
 
     .line 340
-    iget-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahl:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahl:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3, v5}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 342
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahl:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahl:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 343
-    iget-boolean v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->Cn:Z
+    iget-boolean v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->Cn:Z
 
     if-eqz v3, :cond_1
 
     .line 344
-    iget-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahl:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahl:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 348
     :cond_1
-    iget-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
 
     if-nez v3, :cond_4
 
@@ -787,20 +787,20 @@
     if-eqz p1, :cond_5
 
     .line 374
-    iget-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahs:Landroid/content/SharedPreferences$Editor;
+    iget-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahs:Landroid/content/SharedPreferences$Editor;
 
     const-string v4, "last_mode"
 
     invoke-interface {v3, v4, p1}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
     .line 375
-    iget-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahs:Landroid/content/SharedPreferences$Editor;
+    iget-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahs:Landroid/content/SharedPreferences$Editor;
 
     invoke-interface {v3}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
     .line 378
     :cond_5
-    iget-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
 
     if-eqz v0, :cond_6
 
@@ -818,77 +818,77 @@
 
     .line 381
     :goto_5
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->agZ:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->agZ:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/location/RadioButtonPreference;->setEnabled(Z)V
 
     .line 382
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->aha:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aha:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/location/RadioButtonPreference;->setEnabled(Z)V
 
     .line 383
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahb:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahb:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/location/RadioButtonPreference;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/location/RadioButtonPreference;->setEnabled(Z)V
 
     goto :goto_2
 
     .line 354
     :pswitch_0
-    iget-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
 
     const v4, 0x7f0c0511
 
     invoke-virtual {v3, v4}, Landroid/preference/Preference;->setSummary(I)V
 
     .line 355
-    invoke-direct {p0, v5}, Lcom/android/settings/location/MiuiLocationSettings;->a(Lcom/android/settings/location/RadioButtonPreference;)V
+    invoke-direct {p0, v5}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->a(Lcom/android/vendorsettings/location/RadioButtonPreference;)V
 
     goto :goto_3
 
     .line 358
     :pswitch_1
-    iget-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
 
     const v4, 0x7f0c0510
 
     invoke-virtual {v3, v4}, Landroid/preference/Preference;->setSummary(I)V
 
     .line 359
-    iget-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahb:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahb:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-direct {p0, v3}, Lcom/android/settings/location/MiuiLocationSettings;->a(Lcom/android/settings/location/RadioButtonPreference;)V
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->a(Lcom/android/vendorsettings/location/RadioButtonPreference;)V
 
     goto :goto_3
 
     .line 362
     :pswitch_2
-    iget-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
 
     const v4, 0x7f0c050f
 
     invoke-virtual {v3, v4}, Landroid/preference/Preference;->setSummary(I)V
 
     .line 363
-    iget-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->aha:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aha:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-direct {p0, v3}, Lcom/android/settings/location/MiuiLocationSettings;->a(Lcom/android/settings/location/RadioButtonPreference;)V
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->a(Lcom/android/vendorsettings/location/RadioButtonPreference;)V
 
     goto :goto_3
 
     .line 366
     :pswitch_3
-    iget-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahe:Landroid/preference/Preference;
 
     const v4, 0x7f0c050e
 
     invoke-virtual {v3, v4}, Landroid/preference/Preference;->setSummary(I)V
 
     .line 367
-    iget-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->agZ:Lcom/android/settings/location/RadioButtonPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->agZ:Lcom/android/vendorsettings/location/RadioButtonPreference;
 
-    invoke-direct {p0, v3}, Lcom/android/settings/location/MiuiLocationSettings;->a(Lcom/android/settings/location/RadioButtonPreference;)V
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->a(Lcom/android/vendorsettings/location/RadioButtonPreference;)V
 
     goto :goto_3
 
@@ -923,10 +923,10 @@
     const/4 v2, 0x0
 
     .line 113
-    invoke-super {p0, p1}, Lcom/android/settings/location/LocationSettingsBase;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/location/LocationSettingsBase;->onCreate(Landroid/os/Bundle;)V
 
     .line 114
-    invoke-virtual {p0}, Lcom/android/settings/location/MiuiLocationSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -938,10 +938,10 @@
 
     check-cast v0, Landroid/location/LocationManager;
 
-    iput-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahp:Landroid/location/LocationManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahp:Landroid/location/LocationManager;
 
     .line 115
-    invoke-virtual {p0}, Lcom/android/settings/location/MiuiLocationSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -951,16 +951,16 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahr:Landroid/content/SharedPreferences;
+    iput-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahr:Landroid/content/SharedPreferences;
 
     .line 116
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahr:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahr:Landroid/content/SharedPreferences;
 
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahs:Landroid/content/SharedPreferences$Editor;
+    iput-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahs:Landroid/content/SharedPreferences$Editor;
 
     .line 117
     sget-boolean v0, Lmiui/os/Build;->IS_CTS_BUILD:Z
@@ -972,7 +972,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, p0, v0, v2, v1}, Lcom/android/settings/location/MiuiLocationSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
+    invoke-virtual {p0, p0, v0, v2, v1}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
 
     .line 120
     :cond_0
@@ -985,11 +985,11 @@
     .prologue
     .line 132
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/location/MiuiLocationSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/location/MiuiLocationSettings;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
     :try_end_0
@@ -997,15 +997,15 @@
 
     .line 136
     :goto_0
-    invoke-super {p0}, Lcom/android/settings/location/LocationSettingsBase;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/location/LocationSettingsBase;->onPause()V
 
     .line 137
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->Cn:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->Cn:Z
 
     .line 138
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahl:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahl:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
@@ -1050,11 +1050,11 @@
     if-eqz v0, :cond_2
 
     .line 396
-    iget-object v2, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahr:Landroid/content/SharedPreferences;
+    iget-object v2, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahr:Landroid/content/SharedPreferences;
 
     const-string v3, "last_mode"
 
-    iget-boolean v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->aht:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aht:Z
 
     if-eqz v0, :cond_1
 
@@ -1065,7 +1065,7 @@
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/location/MiuiLocationSettings;->cr(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->cr(I)V
 
     :goto_2
     move v0, v1
@@ -1081,7 +1081,7 @@
 
     .line 400
     :cond_2
-    invoke-virtual {p0, v1}, Lcom/android/settings/location/MiuiLocationSettings;->cr(I)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->cr(I)V
 
     goto :goto_2
 .end method
@@ -1097,17 +1097,17 @@
     const/4 v4, 0x0
 
     .line 220
-    invoke-virtual {p0}, Lcom/android/settings/location/MiuiLocationSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v5
 
     .line 221
-    iget-object v2, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahm:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahm:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v2, :cond_4
 
     .line 222
-    iget-object v2, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahm:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahm:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -1201,7 +1201,7 @@
     :goto_0
     const-string v2, "assisted_gps_enabled"
 
-    iget-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahm:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahm:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -1290,12 +1290,12 @@
 
     .line 250
     :cond_4
-    iget-object v2, p0, Lcom/android/settings/location/MiuiLocationSettings;->aho:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aho:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v2, :cond_6
 
     .line 251
-    iget-object v2, p0, Lcom/android/settings/location/MiuiLocationSettings;->aho:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->aho:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -1306,7 +1306,7 @@
     .line 252
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/location/MiuiLocationSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1314,9 +1314,9 @@
 
     const/high16 v2, 0x1040000
 
-    new-instance v3, Lcom/android/settings/location/MiuiLocationSettings$4;
+    new-instance v3, Lcom/android/vendorsettings/location/MiuiLocationSettings$4;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/location/MiuiLocationSettings$4;-><init>(Lcom/android/settings/location/MiuiLocationSettings;)V
+    invoke-direct {v3, p0}, Lcom/android/vendorsettings/location/MiuiLocationSettings$4;-><init>(Lcom/android/vendorsettings/location/MiuiLocationSettings;)V
 
     invoke-virtual {v0, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1324,9 +1324,9 @@
 
     const v2, 0x104000a
 
-    new-instance v3, Lcom/android/settings/location/MiuiLocationSettings$3;
+    new-instance v3, Lcom/android/vendorsettings/location/MiuiLocationSettings$3;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/location/MiuiLocationSettings$3;-><init>(Lcom/android/settings/location/MiuiLocationSettings;)V
+    invoke-direct {v3, p0}, Lcom/android/vendorsettings/location/MiuiLocationSettings$3;-><init>(Lcom/android/vendorsettings/location/MiuiLocationSettings;)V
 
     invoke-virtual {v0, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1334,7 +1334,7 @@
 
     const v2, 0x7f0c10bd
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/location/MiuiLocationSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1344,7 +1344,7 @@
 
     const v2, 0x7f0c10be
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/location/MiuiLocationSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1364,19 +1364,19 @@
 
     .line 276
     :cond_5
-    invoke-static {}, Lcom/android/settings/fy;->gg()Lcom/android/settings/fy;
+    invoke-static {}, Lcom/android/vendorsettings/fy;->gg()Lcom/android/vendorsettings/fy;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/location/MiuiLocationSettings;->ahp:Landroid/location/LocationManager;
+    iget-object v3, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->ahp:Landroid/location/LocationManager;
 
-    invoke-virtual {v2, v3, v0}, Lcom/android/settings/fy;->a(Landroid/location/LocationManager;I)V
+    invoke-virtual {v2, v3, v0}, Lcom/android/vendorsettings/fy;->a(Landroid/location/LocationManager;I)V
 
     goto :goto_1
 
     .line 279
     :cond_6
-    invoke-super {p0, p1, p2}, Lcom/android/settings/location/LocationSettingsBase;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/location/LocationSettingsBase;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v1
 
@@ -1411,15 +1411,15 @@
 
     .prologue
     .line 124
-    invoke-super {p0}, Lcom/android/settings/location/LocationSettingsBase;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/location/LocationSettingsBase;->onResume()V
 
     .line 125
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/location/MiuiLocationSettings;->Cn:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings;->Cn:Z
 
     .line 126
-    invoke-direct {p0}, Lcom/android/settings/location/MiuiLocationSettings;->hu()Landroid/preference/PreferenceScreen;
+    invoke-direct {p0}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->hu()Landroid/preference/PreferenceScreen;
 
     .line 127
     return-void

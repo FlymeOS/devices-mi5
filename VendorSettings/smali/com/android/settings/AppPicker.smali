@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/AppPicker;
+.class public Lcom/android/vendorsettings/AppPicker;
 .super Lmiui/app/ListActivity;
 .source "AppPicker.java"
 
@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private bi:Lcom/android/settings/F;
+.field private bi:Lcom/android/vendorsettings/F;
 
 .field private bj:Ljava/lang/String;
 
@@ -21,11 +21,11 @@
 
     .prologue
     .line 171
-    new-instance v0, Lcom/android/settings/E;
+    new-instance v0, Lcom/android/vendorsettings/E;
 
-    invoke-direct {v0}, Lcom/android/settings/E;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/E;-><init>()V
 
-    sput-object v0, Lcom/android/settings/AppPicker;->bl:Ljava/util/Comparator;
+    sput-object v0, Lcom/android/vendorsettings/AppPicker;->bl:Ljava/util/Comparator;
 
     return-void
 .end method
@@ -46,27 +46,27 @@
 
     .prologue
     .line 42
-    sget-object v0, Lcom/android/settings/AppPicker;->bl:Ljava/util/Comparator;
+    sget-object v0, Lcom/android/vendorsettings/AppPicker;->bl:Ljava/util/Comparator;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/AppPicker;)Z
+.method static synthetic a(Lcom/android/vendorsettings/AppPicker;)Z
     .locals 1
 
     .prologue
     .line 42
-    iget-boolean v0, p0, Lcom/android/settings/AppPicker;->bk:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/AppPicker;->bk:Z
 
     return v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/AppPicker;)Ljava/lang/String;
+.method static synthetic b(Lcom/android/vendorsettings/AppPicker;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/android/settings/AppPicker;->bj:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/AppPicker;->bj:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -81,7 +81,7 @@
     invoke-super {p0, p1}, Lmiui/app/ListActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 56
-    invoke-virtual {p0}, Lcom/android/settings/AppPicker;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AppPicker;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -91,10 +91,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/AppPicker;->bj:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/AppPicker;->bj:Ljava/lang/String;
 
     .line 57
-    invoke-virtual {p0}, Lcom/android/settings/AppPicker;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AppPicker;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -106,26 +106,26 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/AppPicker;->bk:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/AppPicker;->bk:Z
 
     .line 59
-    new-instance v0, Lcom/android/settings/F;
+    new-instance v0, Lcom/android/vendorsettings/F;
 
-    invoke-direct {v0, p0, p0}, Lcom/android/settings/F;-><init>(Lcom/android/settings/AppPicker;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p0}, Lcom/android/vendorsettings/F;-><init>(Lcom/android/vendorsettings/AppPicker;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/AppPicker;->bi:Lcom/android/settings/F;
+    iput-object v0, p0, Lcom/android/vendorsettings/AppPicker;->bi:Lcom/android/vendorsettings/F;
 
     .line 60
-    iget-object v0, p0, Lcom/android/settings/AppPicker;->bi:Lcom/android/settings/F;
+    iget-object v0, p0, Lcom/android/vendorsettings/AppPicker;->bi:Lcom/android/vendorsettings/F;
 
-    invoke-virtual {v0}, Lcom/android/settings/F;->getCount()I
+    invoke-virtual {v0}, Lcom/android/vendorsettings/F;->getCount()I
 
     move-result v0
 
     if-gtz v0, :cond_0
 
     .line 61
-    invoke-virtual {p0}, Lcom/android/settings/AppPicker;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AppPicker;->finish()V
 
     .line 65
     :goto_0
@@ -133,9 +133,9 @@
 
     .line 63
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/AppPicker;->bi:Lcom/android/settings/F;
+    iget-object v0, p0, Lcom/android/vendorsettings/AppPicker;->bi:Lcom/android/vendorsettings/F;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/AppPicker;->setListAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/AppPicker;->setListAdapter(Landroid/widget/ListAdapter;)V
 
     goto :goto_0
 .end method
@@ -145,13 +145,13 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/android/settings/AppPicker;->bi:Lcom/android/settings/F;
+    iget-object v0, p0, Lcom/android/vendorsettings/AppPicker;->bi:Lcom/android/vendorsettings/F;
 
-    invoke-virtual {v0, p3}, Lcom/android/settings/F;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {v0, p3}, Lcom/android/vendorsettings/F;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/G;
+    check-cast v0, Lcom/android/vendorsettings/G;
 
     .line 80
     new-instance v1, Landroid/content/Intent;
@@ -159,11 +159,11 @@
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
     .line 81
-    iget-object v2, v0, Lcom/android/settings/G;->bp:Landroid/content/pm/ApplicationInfo;
+    iget-object v2, v0, Lcom/android/vendorsettings/G;->bp:Landroid/content/pm/ApplicationInfo;
 
     if-eqz v2, :cond_0
 
-    iget-object v0, v0, Lcom/android/settings/G;->bp:Landroid/content/pm/ApplicationInfo;
+    iget-object v0, v0, Lcom/android/vendorsettings/G;->bp:Landroid/content/pm/ApplicationInfo;
 
     iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
@@ -173,10 +173,10 @@
     :cond_0
     const/4 v0, -0x1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/AppPicker;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/AppPicker;->setResult(ILandroid/content/Intent;)V
 
     .line 83
-    invoke-virtual {p0}, Lcom/android/settings/AppPicker;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AppPicker;->finish()V
 
     .line 84
     return-void

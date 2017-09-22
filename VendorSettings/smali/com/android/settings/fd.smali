@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fd;
+.class Lcom/android/vendorsettings/fd;
 .super Ljava/lang/Object;
 .source "MiuiSecurityFingerprintSettings.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic sl:Ljava/util/Map;
 
-.field final synthetic sp:Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;
+.field final synthetic sp:Lcom/android/vendorsettings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;Ljava/util/Map;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;Ljava/util/Map;)V
     .locals 0
 
     .prologue
     .line 143
-    iput-object p1, p0, Lcom/android/settings/fd;->sp:Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/fd;->sp:Lcom/android/vendorsettings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;
 
-    iput-object p2, p0, Lcom/android/settings/fd;->sl:Ljava/util/Map;
+    iput-object p2, p0, Lcom/android/vendorsettings/fd;->sl:Ljava/util/Map;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
 
     check-cast p2, Ljava/lang/String;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/fd;->compare(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/fd;->compare(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v0
 
@@ -51,7 +51,7 @@
     .prologue
     .line 147
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/fd;->sl:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/vendorsettings/fd;->sl:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -63,7 +63,7 @@
 
     move-result-wide v2
 
-    iget-object v0, p0, Lcom/android/settings/fd;->sl:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/vendorsettings/fd;->sl:Ljava/util/Map;
 
     invoke-interface {v0, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

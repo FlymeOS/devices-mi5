@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bX;
+.class Lcom/android/vendorsettings/bX;
 .super Ljava/lang/Object;
 .source "DevelopmentSettings.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic kD:Lcom/android/settings/DevelopmentSettings;
+.field final synthetic kD:Lcom/android/vendorsettings/DevelopmentSettings;
 
 .field final synthetic kG:Ljava/lang/Boolean;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DevelopmentSettings;Ljava/lang/Boolean;)V
+.method constructor <init>(Lcom/android/vendorsettings/DevelopmentSettings;Ljava/lang/Boolean;)V
     .locals 0
 
     .prologue
     .line 1907
-    iput-object p1, p0, Lcom/android/settings/bX;->kD:Lcom/android/settings/DevelopmentSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/bX;->kD:Lcom/android/vendorsettings/DevelopmentSettings;
 
-    iput-object p2, p0, Lcom/android/settings/bX;->kG:Ljava/lang/Boolean;
+    iput-object p2, p0, Lcom/android/vendorsettings/bX;->kG:Ljava/lang/Boolean;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,7 +36,7 @@
     .line 1910
     const-string v0, "persist.sys.miui_optimization"
 
-    iget-object v1, p0, Lcom/android/settings/bX;->kG:Ljava/lang/Boolean;
+    iget-object v1, p0, Lcom/android/vendorsettings/bX;->kG:Ljava/lang/Boolean;
 
     invoke-virtual {v1}, Ljava/lang/Boolean;->toString()Ljava/lang/String;
 
@@ -57,9 +57,9 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 1913
-    iget-object v1, p0, Lcom/android/settings/bX;->kD:Lcom/android/settings/DevelopmentSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/bX;->kD:Lcom/android/vendorsettings/DevelopmentSettings;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/DevelopmentSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/DevelopmentSettings;->startActivity(Landroid/content/Intent;)V
 
     .line 1914
     return-void

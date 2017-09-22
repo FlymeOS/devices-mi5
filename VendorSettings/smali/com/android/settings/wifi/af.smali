@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/af;
+.class Lcom/android/vendorsettings/wifi/af;
 .super Ljava/lang/Object;
 .source "WifiConfigActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aCi:Lcom/android/settings/wifi/WifiConfigActivity;
+.field final synthetic aCi:Lcom/android/vendorsettings/wifi/WifiConfigActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiConfigActivity;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/WifiConfigActivity;)V
     .locals 0
 
     .prologue
     .line 41
-    iput-object p1, p0, Lcom/android/settings/wifi/af;->aCi:Lcom/android/settings/wifi/WifiConfigActivity;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/af;->aCi:Lcom/android/vendorsettings/wifi/WifiConfigActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/wifi/af;->aCi:Lcom/android/settings/wifi/WifiConfigActivity;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/af;->aCi:Lcom/android/vendorsettings/wifi/WifiConfigActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiConfigActivity;->finish()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/WifiConfigActivity;->finish()V
 
     .line 45
     return-void

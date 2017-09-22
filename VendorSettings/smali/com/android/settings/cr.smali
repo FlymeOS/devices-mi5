@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/cr;
-.super Lcom/android/settings/msim/a;
+.class public Lcom/android/vendorsettings/cr;
+.super Lcom/android/vendorsettings/msim/a;
 .source "DeviceUtils.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 28
-    invoke-direct {p0}, Lcom/android/settings/msim/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/msim/a;-><init>()V
 
     .line 30
     return-void
@@ -138,13 +138,13 @@
     check-cast v0, Landroid/net/wifi/WifiDevice;
 
     .line 71
-    new-instance v3, Lcom/android/settings/wifi/n;
+    new-instance v3, Lcom/android/vendorsettings/wifi/n;
 
     iget-object v4, v0, Landroid/net/wifi/WifiDevice;->deviceName:Ljava/lang/String;
 
     iget-object v0, v0, Landroid/net/wifi/WifiDevice;->deviceAddress:Ljava/lang/String;
 
-    invoke-direct {v3, v4, v0}, Lcom/android/settings/wifi/n;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v3, v4, v0}, Lcom/android/vendorsettings/wifi/n;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 72
     invoke-interface {v1, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z

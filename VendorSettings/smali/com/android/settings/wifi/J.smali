@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/J;
+.class Lcom/android/vendorsettings/wifi/J;
 .super Ljava/lang/Object;
 .source "MiuiWifiSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aBv:Lcom/android/settings/wifi/MiuiWifiSettings;
+.field final synthetic aBv:Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/MiuiWifiSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/MiuiWifiSettings;)V
     .locals 0
 
     .prologue
     .line 266
-    iput-object p1, p0, Lcom/android/settings/wifi/J;->aBv:Lcom/android/settings/wifi/MiuiWifiSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/J;->aBv:Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,9 +33,9 @@
     invoke-static {}, Lcom/xiaomi/mistatistic/sdk/MiStatInterface;->recordPageEnd()V
 
     .line 270
-    iget-object v0, p0, Lcom/android/settings/wifi/J;->aBv:Lcom/android/settings/wifi/MiuiWifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/J;->aBv:Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/MiuiWifiSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/MiuiWifiSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

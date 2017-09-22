@@ -1,4 +1,4 @@
-.class Lcom/android/settings/aa;
+.class Lcom/android/vendorsettings/aa;
 .super Ljava/lang/Object;
 .source "BaseEditFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic cn:Lcom/android/settings/BaseEditFragment;
+.field final synthetic cn:Lcom/android/vendorsettings/BaseEditFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/BaseEditFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/BaseEditFragment;)V
     .locals 0
 
     .prologue
     .line 50
-    iput-object p1, p0, Lcom/android/settings/aa;->cn:Lcom/android/settings/BaseEditFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/aa;->cn:Lcom/android/vendorsettings/BaseEditFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 54
-    iget-object v0, p0, Lcom/android/settings/aa;->cn:Lcom/android/settings/BaseEditFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/aa;->cn:Lcom/android/vendorsettings/BaseEditFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/BaseEditFragment;->X()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/BaseEditFragment;->X()V
 
     .line 55
     return-void

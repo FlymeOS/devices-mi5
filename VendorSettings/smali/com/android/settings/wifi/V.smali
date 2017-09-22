@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/wifi/V;
-.super Lcom/android/settings/ag;
+.class public Lcom/android/vendorsettings/wifi/V;
+.super Lcom/android/vendorsettings/ag;
 .source "TetherStatusController.java"
 
 
@@ -17,24 +17,24 @@
 
     .prologue
     .line 25
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/ag;-><init>(Landroid/content/Context;Landroid/widget/TextView;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/ag;-><init>(Landroid/content/Context;Landroid/widget/TextView;)V
 
     .line 17
-    new-instance v0, Lcom/android/settings/wifi/W;
+    new-instance v0, Lcom/android/vendorsettings/wifi/W;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/wifi/W;-><init>(Lcom/android/settings/wifi/V;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/wifi/W;-><init>(Lcom/android/vendorsettings/wifi/V;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/V;->mReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/V;->mReceiver:Landroid/content/BroadcastReceiver;
 
     .line 26
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/V;->mIntentFilter:Landroid/content/IntentFilter;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/V;->mIntentFilter:Landroid/content/IntentFilter;
 
     .line 27
-    iget-object v0, p0, Lcom/android/settings/wifi/V;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/V;->mIntentFilter:Landroid/content/IntentFilter;
 
     const-string v1, "android.net.conn.TETHER_STATE_CHANGED"
 
@@ -51,14 +51,14 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Lcom/android/settings/wifi/V;->cw:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/V;->cw:Landroid/widget/TextView;
 
     if-eqz v0, :cond_0
 
     .line 47
-    iget-object v1, p0, Lcom/android/settings/wifi/V;->cw:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/V;->cw:Landroid/widget/TextView;
 
-    iget-object v0, p0, Lcom/android/settings/wifi/V;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/V;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/android/b/g;->cK(Landroid/content/Context;)Z
 
@@ -87,21 +87,21 @@
 
     .prologue
     .line 38
-    iget-boolean v0, p0, Lcom/android/settings/wifi/V;->Rf:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/wifi/V;->Rf:Z
 
     if-eqz v0, :cond_0
 
     .line 39
-    iget-object v0, p0, Lcom/android/settings/wifi/V;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/V;->mContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/V;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/V;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 40
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/wifi/V;->Rf:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/wifi/V;->Rf:Z
 
     .line 42
     :cond_0
@@ -113,18 +113,18 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/android/settings/wifi/V;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/V;->mContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/V;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/V;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    iget-object v2, p0, Lcom/android/settings/wifi/V;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v2, p0, Lcom/android/vendorsettings/wifi/V;->mIntentFilter:Landroid/content/IntentFilter;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 33
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/wifi/V;->Rf:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/wifi/V;->Rf:Z
 
     .line 34
     return-void

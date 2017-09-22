@@ -5,7 +5,7 @@
         <CheckBoxPreference android:persistent="false" android:title="@string/user_experience_program_title" android:key="user_experience_program" android:summary="@string/user_experience_program_summary" android:defaultValue="true" />
         <CheckBoxPreference android:persistent="false" android:title="@string/upload_debug_log_title" android:key="upload_debug_log" android:summary="@string/upload_debug_log_summary" android:defaultValue="true" />
         <Preference android:title="@string/ad_service" android:key="ad_control_settings">
-            <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings.ad.AdServiceSettings" />
+            <intent android:targetPackage="com.android.vendorsettings" android:targetClass="com.android.vendorsettings.ad.AdServiceSettings" />
         </Preference>
     </PreferenceCategory>
 </PreferenceScreen>

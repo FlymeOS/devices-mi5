@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ConfirmDeviceCredentialActivity;
+.class public Lcom/android/vendorsettings/ConfirmDeviceCredentialActivity;
 .super Landroid/app/Activity;
 .source "ConfirmDeviceCredentialActivity.java"
 
@@ -13,13 +13,13 @@
 
     .prologue
     .line 31
-    const-class v0, Lcom/android/settings/ConfirmDeviceCredentialActivity;
+    const-class v0, Lcom/android/vendorsettings/ConfirmDeviceCredentialActivity;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/ConfirmDeviceCredentialActivity;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/ConfirmDeviceCredentialActivity;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -46,7 +46,7 @@
     .line 35
     const-string v1, "com.android.settings"
 
-    const-class v2, Lcom/android/settings/ConfirmDeviceCredentialActivity;
+    const-class v2, Lcom/android/vendorsettings/ConfirmDeviceCredentialActivity;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -85,7 +85,7 @@
 
     .line 76
     :goto_0
-    sget-object v3, Lcom/android/settings/ConfirmDeviceCredentialActivity;->TAG:Ljava/lang/String;
+    sget-object v3, Lcom/android/vendorsettings/ConfirmDeviceCredentialActivity;->TAG:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -113,10 +113,10 @@
     move v1, v2
 
     :cond_0
-    invoke-virtual {p0, v1}, Lcom/android/settings/ConfirmDeviceCredentialActivity;->setResult(I)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/ConfirmDeviceCredentialActivity;->setResult(I)V
 
     .line 78
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmDeviceCredentialActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ConfirmDeviceCredentialActivity;->finish()V
 
     .line 79
     return-void
@@ -138,7 +138,7 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 57
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmDeviceCredentialActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ConfirmDeviceCredentialActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -160,9 +160,9 @@
     if-nez p1, :cond_0
 
     .line 63
-    new-instance v0, Lcom/android/settings/aH;
+    new-instance v0, Lcom/android/vendorsettings/aH;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/aH;-><init>(Landroid/app/Activity;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/aH;-><init>(Landroid/app/Activity;)V
 
     .line 64
     const/4 v2, 0x0
@@ -171,14 +171,14 @@
 
     move v5, v1
 
-    invoke-virtual/range {v0 .. v6}, Lcom/android/settings/aH;->a(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZZ)Z
+    invoke-virtual/range {v0 .. v6}, Lcom/android/vendorsettings/aH;->a(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZZ)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 66
-    sget-object v0, Lcom/android/settings/ConfirmDeviceCredentialActivity;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/ConfirmDeviceCredentialActivity;->TAG:Ljava/lang/String;
 
     const-string v1, "No pattern, password or PIN set."
 
@@ -187,10 +187,10 @@
     .line 67
     const/4 v0, -0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ConfirmDeviceCredentialActivity;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ConfirmDeviceCredentialActivity;->setResult(I)V
 
     .line 68
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmDeviceCredentialActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ConfirmDeviceCredentialActivity;->finish()V
 
     .line 71
     :cond_0

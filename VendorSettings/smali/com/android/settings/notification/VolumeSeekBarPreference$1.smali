@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/VolumeSeekBarPreference$1;
+.class Lcom/android/vendorsettings/notification/VolumeSeekBarPreference$1;
 .super Ljava/lang/Object;
 .source "VolumeSeekBarPreference.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic akw:Lcom/android/settings/notification/VolumeSeekBarPreference;
+.field final synthetic akw:Lcom/android/vendorsettings/notification/VolumeSeekBarPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/VolumeSeekBarPreference;)V
+.method constructor <init>(Lcom/android/vendorsettings/notification/VolumeSeekBarPreference;)V
     .locals 0
 
     .prologue
     .line 88
-    iput-object p1, p0, Lcom/android/settings/notification/VolumeSeekBarPreference$1;->akw:Lcom/android/settings/notification/VolumeSeekBarPreference;
+    iput-object p1, p0, Lcom/android/vendorsettings/notification/VolumeSeekBarPreference$1;->akw:Lcom/android/vendorsettings/notification/VolumeSeekBarPreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,22 +46,22 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Lcom/android/settings/notification/VolumeSeekBarPreference$1;->akw:Lcom/android/settings/notification/VolumeSeekBarPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/VolumeSeekBarPreference$1;->akw:Lcom/android/vendorsettings/notification/VolumeSeekBarPreference;
 
-    invoke-static {v0}, Lcom/android/settings/notification/VolumeSeekBarPreference;->a(Lcom/android/settings/notification/VolumeSeekBarPreference;)Lcom/android/settings/notification/VolumeSeekBarPreference$Callback;
+    invoke-static {v0}, Lcom/android/vendorsettings/notification/VolumeSeekBarPreference;->a(Lcom/android/vendorsettings/notification/VolumeSeekBarPreference;)Lcom/android/vendorsettings/notification/VolumeSeekBarPreference$Callback;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 92
-    iget-object v0, p0, Lcom/android/settings/notification/VolumeSeekBarPreference$1;->akw:Lcom/android/settings/notification/VolumeSeekBarPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/VolumeSeekBarPreference$1;->akw:Lcom/android/vendorsettings/notification/VolumeSeekBarPreference;
 
-    invoke-static {v0}, Lcom/android/settings/notification/VolumeSeekBarPreference;->a(Lcom/android/settings/notification/VolumeSeekBarPreference;)Lcom/android/settings/notification/VolumeSeekBarPreference$Callback;
+    invoke-static {v0}, Lcom/android/vendorsettings/notification/VolumeSeekBarPreference;->a(Lcom/android/vendorsettings/notification/VolumeSeekBarPreference;)Lcom/android/vendorsettings/notification/VolumeSeekBarPreference$Callback;
 
     move-result-object v0
 
-    invoke-interface {v0, p1}, Lcom/android/settings/notification/VolumeSeekBarPreference$Callback;->onSampleStarting(Landroid/preference/SeekBarVolumizer;)V
+    invoke-interface {v0, p1}, Lcom/android/vendorsettings/notification/VolumeSeekBarPreference$Callback;->onSampleStarting(Landroid/preference/SeekBarVolumizer;)V
 
     .line 94
     :cond_0

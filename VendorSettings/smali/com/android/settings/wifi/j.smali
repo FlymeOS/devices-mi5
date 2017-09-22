@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/j;
+.class public Lcom/android/vendorsettings/wifi/j;
 .super Ljava/lang/Object;
 .source "MiuiConfigCaptivePortal.java"
 
@@ -41,7 +41,7 @@
     if-nez v2, :cond_1
 
     :cond_0
-    invoke-static {v0}, Lcom/android/settings/wifi/j;->isCnFromOperator(Ljava/lang/String;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/j;->isCnFromOperator(Ljava/lang/String;)Z
 
     move-result v0
 

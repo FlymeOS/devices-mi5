@@ -1,13 +1,13 @@
-.class public Lcom/android/settings/MiuiWirelessSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/MiuiWirelessSettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "MiuiWirelessSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/search/k;
+.implements Lcom/android/vendorsettings/search/k;
 
 
 # static fields
-.field public static final ig:Lcom/android/settings/search/l;
+.field public static final ig:Lcom/android/vendorsettings/search/l;
 
 
 # instance fields
@@ -27,17 +27,17 @@
 
 .field private ud:[Ljava/lang/String;
 
-.field private uj:Lcom/android/settings/n;
+.field private uj:Lcom/android/vendorsettings/n;
 
 .field private uk:Landroid/preference/CheckBoxPreference;
 
-.field private ul:Lcom/android/settings/nfc/NfcEnabler;
+.field private ul:Lcom/android/vendorsettings/nfc/NfcEnabler;
 
 .field private um:Landroid/nfc/NfcAdapter;
 
-.field private un:Lcom/android/settings/fV;
+.field private un:Lcom/android/vendorsettings/fV;
 
-.field private uo:Lcom/android/settings/nfc/NfcSeRoute;
+.field private uo:Lcom/android/vendorsettings/nfc/NfcSeRoute;
 
 .field private up:Ljava/util/HashSet;
 
@@ -68,11 +68,11 @@
 
     .prologue
     .line 930
-    new-instance v0, Lcom/android/settings/fC;
+    new-instance v0, Lcom/android/vendorsettings/fC;
 
-    invoke-direct {v0}, Lcom/android/settings/fC;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/fC;-><init>()V
 
-    sput-object v0, Lcom/android/settings/MiuiWirelessSettings;->ig:Lcom/android/settings/search/l;
+    sput-object v0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ig:Lcom/android/vendorsettings/search/l;
 
     return-void
 .end method
@@ -82,33 +82,33 @@
 
     .prologue
     .line 77
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 112
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->up:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->up:Ljava/util/HashSet;
 
     .line 119
     new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uu:Ljava/util/concurrent/atomic/AtomicReference;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uu:Ljava/util/concurrent/atomic/AtomicReference;
 
     .line 130
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uc:I
+    iput v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uc:I
 
     .line 142
-    new-instance v0, Lcom/android/settings/fA;
+    new-instance v0, Lcom/android/vendorsettings/fA;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/fA;-><init>(Lcom/android/settings/MiuiWirelessSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/fA;-><init>(Lcom/android/vendorsettings/MiuiWirelessSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uB:Landroid/bluetooth/BluetoothProfile$ServiceListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uB:Landroid/bluetooth/BluetoothProfile$ServiceListener;
 
     .line 152
     return-void
@@ -123,19 +123,19 @@
     .line 914
     const-string v0, "connectivity"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/ConnectivityManager;
 
     .line 916
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 918
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
@@ -147,7 +147,7 @@
     if-eqz v0, :cond_0
 
     .line 921
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c04f1
 
@@ -159,7 +159,7 @@
 
     .line 924
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     const-string v1, ""
 
@@ -175,10 +175,10 @@
     const/4 v4, 0x0
 
     .line 292
-    iput p1, p0, Lcom/android/settings/MiuiWirelessSettings;->uc:I
+    iput p1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uc:I
 
     .line 293
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -196,11 +196,11 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 295
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->ud:[Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ud:[Ljava/lang/String;
 
     aget-object v1, v1, v4
 
-    iget-object v2, p0, Lcom/android/settings/MiuiWirelessSettings;->ud:[Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ud:[Ljava/lang/String;
 
     const/4 v3, 0x1
 
@@ -211,12 +211,12 @@
     .line 296
     const-string v1, "TETHER_TYPE"
 
-    iget v2, p0, Lcom/android/settings/MiuiWirelessSettings;->uc:I
+    iget v2, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uc:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 297
-    invoke-virtual {p0, v0, v4}, Lcom/android/settings/MiuiWirelessSettings;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v4}, Lcom/android/vendorsettings/MiuiWirelessSettings;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 301
     :goto_0
@@ -224,7 +224,7 @@
 
     .line 299
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/MiuiWirelessSettings;->gd()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->gd()V
 
     goto :goto_0
 .end method
@@ -287,32 +287,32 @@
     goto :goto_2
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiWirelessSettings;)Ljava/util/concurrent/atomic/AtomicReference;
+.method static synthetic a(Lcom/android/vendorsettings/MiuiWirelessSettings;)Ljava/util/concurrent/atomic/AtomicReference;
     .locals 1
 
     .prologue
     .line 77
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uu:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uu:Ljava/util/concurrent/atomic/AtomicReference;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiWirelessSettings;Ljava/lang/String;)V
+.method static synthetic a(Lcom/android/vendorsettings/MiuiWirelessSettings;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 77
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiWirelessSettings;->log(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/MiuiWirelessSettings;->log(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiWirelessSettings;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
+.method static synthetic a(Lcom/android/vendorsettings/MiuiWirelessSettings;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 77
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/MiuiWirelessSettings;->a([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/vendorsettings/MiuiWirelessSettings;->a([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
     return-void
 .end method
@@ -322,41 +322,41 @@
 
     .prologue
     .line 784
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/MiuiWirelessSettings;->b([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/vendorsettings/MiuiWirelessSettings;->b([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 785
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/MiuiWirelessSettings;->c([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/vendorsettings/MiuiWirelessSettings;->c([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 786
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiWirelessSettings;Z)Z
+.method static synthetic a(Lcom/android/vendorsettings/MiuiWirelessSettings;Z)Z
     .locals 0
 
     .prologue
     .line 77
-    iput-boolean p1, p0, Lcom/android/settings/MiuiWirelessSettings;->ux:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ux:Z
 
     return p1
 .end method
 
-.method static synthetic b(Lcom/android/settings/MiuiWirelessSettings;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic b(Lcom/android/vendorsettings/MiuiWirelessSettings;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
     .prologue
     .line 77
-    iput-object p1, p0, Lcom/android/settings/MiuiWirelessSettings;->uC:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uC:Ljava/lang/String;
 
     return-object p1
 .end method
 
-.method static synthetic b(Lcom/android/settings/MiuiWirelessSettings;)V
+.method static synthetic b(Lcom/android/vendorsettings/MiuiWirelessSettings;)V
     .locals 0
 
     .prologue
     .line 77
-    invoke-direct {p0}, Lcom/android/settings/MiuiWirelessSettings;->updateState()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->updateState()V
 
     return-void
 .end method
@@ -368,18 +368,18 @@
     .line 790
     const-string v0, "connectivity"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/ConnectivityManager;
 
     .line 792
-    iget-boolean v1, p0, Lcom/android/settings/MiuiWirelessSettings;->uw:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uw:Z
 
     if-eqz v1, :cond_1
 
-    iget-boolean v1, p0, Lcom/android/settings/MiuiWirelessSettings;->ux:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ux:Z
 
     if-nez v1, :cond_1
 
@@ -402,7 +402,7 @@
     aget-object v7, p1, v4
 
     .line 795
-    iget-object v8, p0, Lcom/android/settings/MiuiWirelessSettings;->us:[Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->us:[Ljava/lang/String;
 
     array-length v9, v8
 
@@ -471,7 +471,7 @@
     aget-object v7, p2, v3
 
     .line 805
-    iget-object v8, p0, Lcom/android/settings/MiuiWirelessSettings;->us:[Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->us:[Ljava/lang/String;
 
     array-length v9, v8
 
@@ -528,7 +528,7 @@
     aget-object v7, p3, v3
 
     .line 811
-    iget-object v8, p0, Lcom/android/settings/MiuiWirelessSettings;->us:[Ljava/lang/String;
+    iget-object v8, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->us:[Ljava/lang/String;
 
     array-length v9, v8
 
@@ -575,21 +575,21 @@
     if-eqz v4, :cond_a
 
     .line 816
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c04ed
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
     .line 817
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 818
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x1
 
@@ -607,7 +607,7 @@
     if-nez v5, :cond_b
 
     .line 821
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c04ec
 
@@ -615,14 +615,14 @@
 
     .line 825
     :goto_8
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 826
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
@@ -632,7 +632,7 @@
 
     .line 823
     :cond_b
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c04f1
 
@@ -645,21 +645,21 @@
     if-eqz v2, :cond_d
 
     .line 828
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c04f1
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
     .line 829
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 830
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
@@ -669,26 +669,26 @@
 
     .line 831
     :cond_d
-    iget-boolean v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ux:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ux:Z
 
     if-eqz v0, :cond_e
 
     .line 832
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c04ee
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
     .line 833
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 834
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
@@ -698,21 +698,21 @@
 
     .line 836
     :cond_e
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c04ef
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
     .line 837
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 838
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
@@ -721,12 +721,12 @@
     goto :goto_7
 .end method
 
-.method static synthetic b(Lcom/android/settings/MiuiWirelessSettings;Z)Z
+.method static synthetic b(Lcom/android/vendorsettings/MiuiWirelessSettings;Z)Z
     .locals 0
 
     .prologue
     .line 77
-    iput-boolean p1, p0, Lcom/android/settings/MiuiWirelessSettings;->uw:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uw:Z
 
     return p1
 .end method
@@ -753,7 +753,7 @@
     aget-object v6, p3, v4
 
     .line 846
-    iget-object v7, p0, Lcom/android/settings/MiuiWirelessSettings;->ut:[Ljava/lang/String;
+    iget-object v7, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ut:[Ljava/lang/String;
 
     array-length v8, v7
 
@@ -816,12 +816,12 @@
     if-ne v4, v0, :cond_4
 
     .line 855
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 856
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c013f
 
@@ -836,12 +836,12 @@
     if-ne v4, v0, :cond_5
 
     .line 858
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 859
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c013e
 
@@ -851,7 +851,7 @@
 
     .line 861
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uu:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uu:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -873,12 +873,12 @@
     if-eqz v4, :cond_9
 
     .line 864
-    iget-object v4, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 865
-    iget-object v4, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
@@ -905,12 +905,12 @@
 
     aput-object v0, v1, v3
 
-    invoke-virtual {p0, v2, v1}, Lcom/android/settings/MiuiWirelessSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v2, v1}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 871
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setSummary(Ljava/lang/CharSequence;)V
 
@@ -921,7 +921,7 @@
     if-ne v0, v1, :cond_7
 
     .line 873
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c04f4
 
@@ -934,7 +934,7 @@
     if-eqz v2, :cond_8
 
     .line 876
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c04f8
 
@@ -944,7 +944,7 @@
 
     .line 878
     :cond_8
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c04f3
 
@@ -954,17 +954,17 @@
 
     .line 881
     :cond_9
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 882
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 883
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c04f7
 
@@ -973,22 +973,22 @@
     goto/16 :goto_2
 .end method
 
-.method static synthetic c(Lcom/android/settings/MiuiWirelessSettings;)Z
+.method static synthetic c(Lcom/android/vendorsettings/MiuiWirelessSettings;)Z
     .locals 1
 
     .prologue
     .line 77
-    iget-boolean v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uv:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uv:Z
 
     return v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/MiuiWirelessSettings;Z)Z
+.method static synthetic c(Lcom/android/vendorsettings/MiuiWirelessSettings;Z)Z
     .locals 0
 
     .prologue
     .line 77
-    iput-boolean p1, p0, Lcom/android/settings/MiuiWirelessSettings;->uv:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uv:Z
 
     return p1
 .end method
@@ -1000,7 +1000,7 @@
     const/4 v3, 0x1
 
     .line 889
-    iget v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uc:I
+    iget v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uc:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -1024,20 +1024,20 @@
     if-ne v1, v2, :cond_0
 
     .line 894
-    iput-boolean v3, p0, Lcom/android/settings/MiuiWirelessSettings;->uv:Z
+    iput-boolean v3, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uv:Z
 
     .line 895
     invoke-virtual {v0}, Landroid/bluetooth/BluetoothAdapter;->enable()Z
 
     .line 896
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c013e
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setSummary(I)V
 
     .line 897
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
@@ -1047,7 +1047,7 @@
 
     .line 899
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uu:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uu:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -1062,7 +1062,7 @@
 
     .line 901
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c04f3
 
@@ -1072,7 +1072,7 @@
 
     .line 905
     :pswitch_1
-    invoke-direct {p0, v3}, Lcom/android/settings/MiuiWirelessSettings;->P(Z)V
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/MiuiWirelessSettings;->P(Z)V
 
     goto :goto_0
 
@@ -1106,7 +1106,7 @@
     .line 773
     const-string v0, "connectivity"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1128,7 +1128,7 @@
     move-result-object v0
 
     .line 779
-    invoke-direct {p0, v1, v2, v0}, Lcom/android/settings/MiuiWirelessSettings;->a([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-direct {p0, v1, v2, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->a([Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 780
     return-void
@@ -1151,7 +1151,7 @@
 
     .prologue
     .line 204
-    const-class v0, Lcom/android/settings/WirelessSettings;
+    const-class v0, Lcom/android/vendorsettings/WirelessSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1173,15 +1173,15 @@
     .line 305
     const-string v0, "onManageMobilePlanClick:"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->log(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->log(Ljava/lang/String;)V
 
     .line 306
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uC:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uC:Ljava/lang/String;
 
     .line 307
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1190,14 +1190,14 @@
     move-result-object v0
 
     .line 309
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->mCm:Landroid/net/ConnectivityManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->mCm:Landroid/net/ConnectivityManager;
 
     invoke-virtual {v1}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
     move-result-object v1
 
     .line 310
-    iget-object v2, p0, Lcom/android/settings/MiuiWirelessSettings;->uz:Landroid/telephony/TelephonyManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uz:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v2}, Landroid/telephony/TelephonyManager;->hasIccCard()Z
 
@@ -1215,7 +1215,7 @@
     invoke-direct {v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 313
-    iget-object v2, p0, Lcom/android/settings/MiuiWirelessSettings;->uz:Landroid/telephony/TelephonyManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uz:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v2, v1}, Landroid/telephony/TelephonyManager;->getCarrierPackageNamesForIntent(Landroid/content/Intent;)Ljava/util/List;
 
@@ -1255,7 +1255,7 @@
     invoke-virtual {v1, v0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 320
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiWirelessSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiWirelessSettings;->startActivity(Landroid/content/Intent;)V
 
     .line 366
     :cond_1
@@ -1264,7 +1264,7 @@
 
     .line 324
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->mCm:Landroid/net/ConnectivityManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->mCm:Landroid/net/ConnectivityManager;
 
     invoke-virtual {v1}, Landroid/net/ConnectivityManager;->getMobileProvisioningUrl()Ljava/lang/String;
 
@@ -1300,13 +1300,13 @@
 
     .line 332
     :try_start_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 362
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uC:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uC:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1325,7 +1325,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->uC:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uC:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1335,10 +1335,10 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->log(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->log(Ljava/lang/String;)V
 
     .line 364
-    invoke-virtual {p0, v4}, Lcom/android/settings/MiuiWirelessSettings;->showDialog(I)V
+    invoke-virtual {p0, v4}, Lcom/android/vendorsettings/MiuiWirelessSettings;->showDialog(I)V
 
     goto :goto_0
 
@@ -1373,7 +1373,7 @@
 
     .line 338
     :cond_3
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->uz:Landroid/telephony/TelephonyManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uz:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v1}, Landroid/telephony/TelephonyManager;->getSimOperatorName()Ljava/lang/String;
 
@@ -1387,7 +1387,7 @@
     if-eqz v2, :cond_5
 
     .line 342
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->uz:Landroid/telephony/TelephonyManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uz:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v1}, Landroid/telephony/TelephonyManager;->getNetworkOperatorName()Ljava/lang/String;
 
@@ -1407,7 +1407,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uC:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uC:Ljava/lang/String;
 
     goto :goto_1
 
@@ -1421,7 +1421,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uC:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uC:Ljava/lang/String;
 
     goto :goto_1
 
@@ -1435,13 +1435,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uC:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uC:Ljava/lang/String;
 
     goto :goto_1
 
     .line 355
     :cond_6
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->uz:Landroid/telephony/TelephonyManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uz:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v1}, Landroid/telephony/TelephonyManager;->hasIccCard()Z
 
@@ -1456,7 +1456,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uC:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uC:Ljava/lang/String;
 
     goto/16 :goto_1
 
@@ -1468,7 +1468,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uC:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uC:Ljava/lang/String;
 
     goto/16 :goto_1
 .end method
@@ -1496,23 +1496,23 @@
     move-result-object v0
 
     .line 761
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->uj:Lcom/android/settings/n;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uj:Lcom/android/vendorsettings/n;
 
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
 
-    iget-object v2, p0, Lcom/android/settings/MiuiWirelessSettings;->uk:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v2
 
-    invoke-virtual {v1, v0, v2}, Lcom/android/settings/n;->a(ZZ)V
+    invoke-virtual {v1, v0, v2}, Lcom/android/vendorsettings/n;->a(ZZ)V
 
     .line 764
     :cond_0
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 765
     return-void
@@ -1529,7 +1529,7 @@
     const/4 v6, 0x0
 
     .line 413
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 414
     if-eqz p1, :cond_0
@@ -1541,7 +1541,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uC:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uC:Ljava/lang/String;
 
     .line 417
     :cond_0
@@ -1555,7 +1555,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->uC:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uC:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1565,50 +1565,50 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->log(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->log(Ljava/lang/String;)V
 
     .line 419
     const-string v0, "connectivity"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/ConnectivityManager;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->mCm:Landroid/net/ConnectivityManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->mCm:Landroid/net/ConnectivityManager;
 
     .line 420
     const-string v0, "phone"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/telephony/TelephonyManager;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uz:Landroid/telephony/TelephonyManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uz:Landroid/telephony/TelephonyManager;
 
     .line 421
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->i:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->i:Landroid/content/pm/PackageManager;
 
     .line 422
     const-string v0, "user"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/os/UserManager;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->aN:Landroid/os/UserManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->aN:Landroid/os/UserManager;
 
     .line 425
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1627,7 +1627,7 @@
     if-ge v0, v2, :cond_1
 
     .line 427
-    iget-object v2, p0, Lcom/android/settings/MiuiWirelessSettings;->up:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->up:Ljava/util/HashSet;
 
     aget-object v3, v1, v0
 
@@ -1642,7 +1642,7 @@
     :cond_1
     const v0, 0x7f0800c5
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->addPreferencesFromResource(I)V
 
     .line 433
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
@@ -1656,25 +1656,25 @@
 
     .line 436
     :goto_1
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v10
 
     .line 437
     const-string v0, "toggle_airplane"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uk:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uk:Landroid/preference/CheckBoxPreference;
 
     .line 438
     const-string v0, "toggle_nfc"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1683,7 +1683,7 @@
     .line 439
     const-string v1, "android_beam_settings"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -1692,7 +1692,7 @@
     .line 440
     const-string v2, "nfc_payment"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -1701,7 +1701,7 @@
     .line 441
     const-string v3, "toggle_nsd"
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -1710,20 +1710,20 @@
     .line 443
     const-string v4, "se_route"
 
-    invoke-virtual {p0, v4}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v4}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
     check-cast v4, Landroid/preference/ListPreference;
 
     .line 446
-    new-instance v5, Lcom/android/settings/n;
+    new-instance v5, Lcom/android/vendorsettings/n;
 
-    iget-object v11, p0, Lcom/android/settings/MiuiWirelessSettings;->uk:Landroid/preference/CheckBoxPreference;
+    iget-object v11, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uk:Landroid/preference/CheckBoxPreference;
 
-    invoke-direct {v5, v10, v11}, Lcom/android/settings/n;-><init>(Landroid/content/Context;Landroid/preference/CheckBoxPreference;)V
+    invoke-direct {v5, v10, v11}, Lcom/android/vendorsettings/n;-><init>(Landroid/content/Context;Landroid/preference/CheckBoxPreference;)V
 
-    iput-object v5, p0, Lcom/android/settings/MiuiWirelessSettings;->uj:Lcom/android/settings/n;
+    iput-object v5, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uj:Lcom/android/vendorsettings/n;
 
     .line 449
     const-string v5, "support_se_route"
@@ -1735,26 +1735,26 @@
     if-eqz v5, :cond_1b
 
     .line 450
-    new-instance v5, Lcom/android/settings/nfc/NfcEnabler;
+    new-instance v5, Lcom/android/vendorsettings/nfc/NfcEnabler;
 
-    invoke-direct {v5, v10, v0, v1, v4}, Lcom/android/settings/nfc/NfcEnabler;-><init>(Landroid/content/Context;Landroid/preference/CheckBoxPreference;Landroid/preference/PreferenceScreen;Landroid/preference/ListPreference;)V
+    invoke-direct {v5, v10, v0, v1, v4}, Lcom/android/vendorsettings/nfc/NfcEnabler;-><init>(Landroid/content/Context;Landroid/preference/CheckBoxPreference;Landroid/preference/PreferenceScreen;Landroid/preference/ListPreference;)V
 
-    iput-object v5, p0, Lcom/android/settings/MiuiWirelessSettings;->ul:Lcom/android/settings/nfc/NfcEnabler;
+    iput-object v5, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ul:Lcom/android/vendorsettings/nfc/NfcEnabler;
 
     .line 456
     :goto_2
     const-string v5, "wifi_calling_settings"
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v5}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v5
 
     check-cast v5, Landroid/preference/PreferenceScreen;
 
-    iput-object v5, p0, Lcom/android/settings/MiuiWirelessSettings;->uA:Landroid/preference/PreferenceScreen;
+    iput-object v5, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uA:Landroid/preference/PreferenceScreen;
 
     .line 459
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v5
 
@@ -1774,7 +1774,7 @@
     .line 466
     if-nez v7, :cond_1c
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -1792,7 +1792,7 @@
     :goto_3
     if-eqz v3, :cond_2
 
-    iget-object v11, p0, Lcom/android/settings/MiuiWirelessSettings;->aN:Landroid/os/UserManager;
+    iget-object v11, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->aN:Landroid/os/UserManager;
 
     const-string v12, "no_config_mobile_networks"
 
@@ -1804,14 +1804,14 @@
 
     .line 470
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v3
 
     .line 471
     const-string v11, "wimax_settings"
 
-    invoke-virtual {p0, v11}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v11}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v11
 
@@ -1837,7 +1837,7 @@
     :cond_4
     const-string v3, "vpn_settings"
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -1849,7 +1849,7 @@
     :cond_5
     if-nez v7, :cond_6
 
-    iget-object v3, p0, Lcom/android/settings/MiuiWirelessSettings;->aN:Landroid/os/UserManager;
+    iget-object v3, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->aN:Landroid/os/UserManager;
 
     const-string v11, "no_config_vpn"
 
@@ -1863,7 +1863,7 @@
     :cond_6
     const-string v3, "vpn_settings"
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/MiuiWirelessSettings;->U(Ljava/lang/String;)V
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/MiuiWirelessSettings;->U(Ljava/lang/String;)V
 
     .line 491
     :cond_7
@@ -1893,7 +1893,7 @@
     :cond_9
     const-string v3, "toggle_nfc"
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -1904,7 +1904,7 @@
     .line 498
     const-string v3, "android_beam_settings"
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -1918,24 +1918,24 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/MiuiWirelessSettings;->um:Landroid/nfc/NfcAdapter;
+    iput-object v3, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->um:Landroid/nfc/NfcAdapter;
 
     .line 506
-    iget-object v3, p0, Lcom/android/settings/MiuiWirelessSettings;->um:Landroid/nfc/NfcAdapter;
+    iget-object v3, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->um:Landroid/nfc/NfcAdapter;
 
     if-nez v3, :cond_1f
 
     .line 510
     const-string v3, "nfc_category"
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
     check-cast v3, Landroid/preference/PreferenceCategory;
 
     .line 511
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v5
 
@@ -1949,7 +1949,7 @@
     invoke-virtual {v5, v4}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 515
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -1963,7 +1963,7 @@
     if-nez v0, :cond_b
 
     .line 517
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -1971,7 +1971,7 @@
 
     .line 520
     :cond_b
-    iput-object v9, p0, Lcom/android/settings/MiuiWirelessSettings;->ul:Lcom/android/settings/nfc/NfcEnabler;
+    iput-object v9, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ul:Lcom/android/vendorsettings/nfc/NfcEnabler;
 
     move-object v0, v9
 
@@ -1987,7 +1987,7 @@
 
     .line 537
     :cond_c
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -1997,17 +1997,17 @@
     :cond_d
     if-nez v7, :cond_e
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/iC;->Z(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/iC;->Z(Landroid/content/Context;)Z
 
     move-result v0
 
     if-nez v0, :cond_e
 
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->aN:Landroid/os/UserManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->aN:Landroid/os/UserManager;
 
     const-string v1, "no_config_mobile_networks"
 
@@ -2021,16 +2021,16 @@
     :cond_e
     const-string v0, "mobile_network_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->U(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->U(Ljava/lang/String;)V
 
     .line 546
     const-string v0, "manage_mobile_plan"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->U(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->U(Ljava/lang/String;)V
 
     .line 550
     :cond_f
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -2051,7 +2051,7 @@
     .line 556
     const-string v0, "manage_mobile_plan"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -2061,11 +2061,11 @@
     .line 558
     const-string v0, "manage_mobile_plan"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->U(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->U(Ljava/lang/String;)V
 
     .line 563
     :cond_10
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->i:Landroid/content/pm/PackageManager;
 
     const-string v1, "android.hardware.type.television"
 
@@ -2078,13 +2078,13 @@
     .line 564
     const-string v0, "toggle_airplane"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->U(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->U(Ljava/lang/String;)V
 
     .line 568
     :cond_11
     const-string v0, "proxy_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -2098,7 +2098,7 @@
     check-cast v0, Landroid/app/admin/DevicePolicyManager;
 
     .line 572
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
@@ -2119,29 +2119,29 @@
     .line 576
     const-string v0, "usb_tether_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     .line 577
     const-string v0, "enable_bluetooth_tethering"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     .line 579
     const-string v0, "connectivity"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -2152,17 +2152,17 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->us:[Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->us:[Ljava/lang/String;
 
     .line 582
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getTetherableBluetoothRegexs()[Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ut:[Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ut:[Ljava/lang/String;
 
     .line 584
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->us:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->us:[Ljava/lang/String;
 
     array-length v0, v0
 
@@ -2172,7 +2172,7 @@
 
     .line 585
     :goto_7
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->ut:[Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ut:[Ljava/lang/String;
 
     array-length v1, v1
 
@@ -2190,7 +2190,7 @@
     if-eqz v2, :cond_12
 
     .line 589
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -2198,7 +2198,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/MiuiWirelessSettings;->uB:Landroid/bluetooth/BluetoothProfile$ServiceListener;
+    iget-object v4, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uB:Landroid/bluetooth/BluetoothProfile$ServiceListener;
 
     const/4 v5, 0x5
 
@@ -2208,7 +2208,7 @@
     :cond_12
     if-eqz v0, :cond_13
 
-    invoke-static {}, Lcom/android/settings/iC;->iu()Z
+    invoke-static {}, Lcom/android/vendorsettings/iC;->iu()Z
 
     move-result v0
 
@@ -2216,11 +2216,11 @@
 
     .line 594
     :cond_13
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -2232,17 +2232,17 @@
 
     .line 598
     :cond_15
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 609
     :goto_9
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -2271,21 +2271,21 @@
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/MiuiWirelessSettings;->log(Ljava/lang/String;)V
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/MiuiWirelessSettings;->log(Ljava/lang/String;)V
 
     .line 616
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/b/a;->aW(Landroid/content/Context;)V
+    invoke-static {v1}, Lcom/android/vendorsettings/b/a;->aW(Landroid/content/Context;)V
 
     .line 618
     if-eqz v0, :cond_27
 
     .line 619
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->i:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->i:Landroid/content/pm/PackageManager;
 
     const-string v2, "com.android.cellbroadcastreceiver"
 
@@ -2300,15 +2300,15 @@
     .line 623
     const-string v0, "CMAS app disabled"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->log(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->log(Ljava/lang/String;)V
 
     move v0, v6
 
     .line 627
     :cond_16
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->i:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->i:Landroid/content/pm/PackageManager;
 
-    invoke-static {v1}, Lcom/android/settings/b/a;->c(Landroid/content/pm/PackageManager;)Z
+    invoke-static {v1}, Lcom/android/vendorsettings/b/a;->c(Landroid/content/pm/PackageManager;)Z
 
     move-result v1
 
@@ -2317,7 +2317,7 @@
     .line 629
     const-string v0, "CMAS app ncc broadcast enabled"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->log(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->log(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2332,7 +2332,7 @@
 
     if-eqz v0, :cond_17
 
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->aN:Landroid/os/UserManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->aN:Landroid/os/UserManager;
 
     const-string v1, "no_config_cell_broadcasts"
 
@@ -2344,14 +2344,14 @@
 
     .line 644
     :cond_17
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
     .line 645
     const-string v1, "cell_broadcast_settings"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -2362,7 +2362,7 @@
 
     .line 650
     :cond_18
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -2382,7 +2382,7 @@
     .line 653
     const-string v0, "wfd_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -2406,7 +2406,7 @@
     if-nez v1, :cond_19
 
     .line 658
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -2424,11 +2424,11 @@
 
     .line 452
     :cond_1b
-    new-instance v5, Lcom/android/settings/nfc/NfcEnabler;
+    new-instance v5, Lcom/android/vendorsettings/nfc/NfcEnabler;
 
-    invoke-direct {v5, v10, v0, v1, v9}, Lcom/android/settings/nfc/NfcEnabler;-><init>(Landroid/content/Context;Landroid/preference/CheckBoxPreference;Landroid/preference/PreferenceScreen;Landroid/preference/ListPreference;)V
+    invoke-direct {v5, v10, v0, v1, v9}, Lcom/android/vendorsettings/nfc/NfcEnabler;-><init>(Landroid/content/Context;Landroid/preference/CheckBoxPreference;Landroid/preference/PreferenceScreen;Landroid/preference/ListPreference;)V
 
-    iput-object v5, p0, Lcom/android/settings/MiuiWirelessSettings;->ul:Lcom/android/settings/nfc/NfcEnabler;
+    iput-object v5, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ul:Lcom/android/vendorsettings/nfc/NfcEnabler;
 
     goto/16 :goto_2
 
@@ -2456,7 +2456,7 @@
     :cond_1e
     const-string v3, "wimax_settings"
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -2469,7 +2469,7 @@
 
     .line 523
     :cond_1f
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
@@ -2482,12 +2482,12 @@
     if-eqz v0, :cond_28
 
     .line 525
-    new-instance v0, Lcom/android/settings/nfc/PaymentBackend;
+    new-instance v0, Lcom/android/vendorsettings/nfc/PaymentBackend;
 
-    invoke-direct {v0, v10}, Lcom/android/settings/nfc/PaymentBackend;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v10}, Lcom/android/vendorsettings/nfc/PaymentBackend;-><init>(Landroid/content/Context;)V
 
     .line 526
-    invoke-virtual {v0}, Lcom/android/settings/nfc/PaymentBackend;->rX()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/nfc/PaymentBackend;->rX()Ljava/util/List;
 
     move-result-object v0
 
@@ -2502,19 +2502,19 @@
     if-eqz v1, :cond_20
 
     .line 529
-    new-instance v1, Lcom/android/settings/nfc/NfcSeRoute;
+    new-instance v1, Lcom/android/vendorsettings/nfc/NfcSeRoute;
 
-    iget-object v3, p0, Lcom/android/settings/MiuiWirelessSettings;->um:Landroid/nfc/NfcAdapter;
+    iget-object v3, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->um:Landroid/nfc/NfcAdapter;
 
-    invoke-direct {v1, v10, v3, v4}, Lcom/android/settings/nfc/NfcSeRoute;-><init>(Landroid/content/Context;Landroid/nfc/NfcAdapter;Landroid/preference/ListPreference;)V
+    invoke-direct {v1, v10, v3, v4}, Lcom/android/vendorsettings/nfc/NfcSeRoute;-><init>(Landroid/content/Context;Landroid/nfc/NfcAdapter;Landroid/preference/ListPreference;)V
 
-    iput-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->uo:Lcom/android/settings/nfc/NfcSeRoute;
+    iput-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uo:Lcom/android/vendorsettings/nfc/NfcSeRoute;
 
     goto/16 :goto_5
 
     .line 531
     :cond_20
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -2542,7 +2542,7 @@
 
     .line 600
     :cond_24
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uu:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uu:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -2560,7 +2560,7 @@
     if-eqz v0, :cond_25
 
     .line 602
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v8}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -2568,7 +2568,7 @@
 
     .line 604
     :cond_25
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v6}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -2628,13 +2628,13 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->log(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->log(Ljava/lang/String;)V
 
     .line 371
     packed-switch p1, :pswitch_data_0
 
     .line 388
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreateDialog(I)Landroid/app/Dialog;
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreateDialog(I)Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -2645,13 +2645,13 @@
     :pswitch_0
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->uC:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uC:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -2665,9 +2665,9 @@
 
     const v1, 0x104000a
 
-    new-instance v2, Lcom/android/settings/fB;
+    new-instance v2, Lcom/android/vendorsettings/fB;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/fB;-><init>(Lcom/android/settings/MiuiWirelessSettings;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/fB;-><init>(Lcom/android/vendorsettings/MiuiWirelessSettings;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -2693,7 +2693,7 @@
 
     .prologue
     .line 403
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onDestroy()V
 
     .line 405
     invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
@@ -2706,7 +2706,7 @@
     .line 407
     const/4 v2, 0x5
 
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uu:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uu:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -2726,44 +2726,44 @@
 
     .prologue
     .line 733
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPause()V
 
     .line 735
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uj:Lcom/android/settings/n;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uj:Lcom/android/vendorsettings/n;
 
-    invoke-virtual {v0}, Lcom/android/settings/n;->pause()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/n;->pause()V
 
     .line 736
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ul:Lcom/android/settings/nfc/NfcEnabler;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ul:Lcom/android/vendorsettings/nfc/NfcEnabler;
 
     if-eqz v0, :cond_0
 
     .line 737
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ul:Lcom/android/settings/nfc/NfcEnabler;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ul:Lcom/android/vendorsettings/nfc/NfcEnabler;
 
-    invoke-virtual {v0}, Lcom/android/settings/nfc/NfcEnabler;->pause()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/nfc/NfcEnabler;->pause()V
 
     .line 739
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->un:Lcom/android/settings/fV;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->un:Lcom/android/vendorsettings/fV;
 
     if-eqz v0, :cond_1
 
     .line 740
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->un:Lcom/android/settings/fV;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->un:Lcom/android/vendorsettings/fV;
 
-    invoke-virtual {v0}, Lcom/android/settings/fV;->pause()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/fV;->pause()V
 
     .line 743
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uo:Lcom/android/settings/nfc/NfcSeRoute;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uo:Lcom/android/vendorsettings/nfc/NfcSeRoute;
 
     if-eqz v0, :cond_2
 
     .line 744
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uo:Lcom/android/settings/nfc/NfcSeRoute;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uo:Lcom/android/vendorsettings/nfc/NfcSeRoute;
 
-    invoke-virtual {v0}, Lcom/android/settings/nfc/NfcSeRoute;->pause()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/nfc/NfcSeRoute;->pause()V
 
     .line 747
     :cond_2
@@ -2799,19 +2799,19 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->log(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->log(Ljava/lang/String;)V
 
     .line 216
     const-string v0, "connectivity"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/ConnectivityManager;
 
     .line 219
-    iget-object v3, p0, Lcom/android/settings/MiuiWirelessSettings;->uk:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uk:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v3, :cond_0
 
@@ -2836,7 +2836,7 @@
 
     invoke-direct {v0, v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/MiuiWirelessSettings;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/MiuiWirelessSettings;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 277
     :goto_0
@@ -2846,19 +2846,19 @@
     :cond_0
     const-string v3, "manage_mobile_plan"
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
     if-ne p2, v3, :cond_2
 
     .line 227
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->gl()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->gl()V
 
     .line 277
     :cond_1
     :goto_1
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v1
 
@@ -2868,7 +2868,7 @@
     :cond_2
     const-string v3, "wfd_settings"
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
@@ -2882,7 +2882,7 @@
     invoke-direct {v0, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 231
-    iget-object v2, p0, Lcom/android/settings/MiuiWirelessSettings;->i:Landroid/content/pm/PackageManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->i:Landroid/content/pm/PackageManager;
 
     const/high16 v3, 0x10000
 
@@ -2893,7 +2893,7 @@
     if-eqz v2, :cond_1
 
     .line 232
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -2901,29 +2901,29 @@
     :cond_3
     const-string v3, "cell_broadcast_settings"
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v3
 
     if-ne p2, v3, :cond_4
 
     .line 237
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/b/a;->b(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/b/a;->b(Landroid/app/Activity;)V
 
     goto :goto_0
 
     .line 239
     :cond_4
-    iget-object v3, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v3, :cond_7
 
     .line 240
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uq:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -2933,13 +2933,13 @@
     if-eqz v0, :cond_5
 
     .line 242
-    invoke-direct {p0, v1}, Lcom/android/settings/MiuiWirelessSettings;->Y(I)V
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/MiuiWirelessSettings;->Y(I)V
 
     goto :goto_1
 
     .line 244
     :cond_5
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -2950,26 +2950,26 @@
     if-eqz v2, :cond_6
 
     .line 245
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-static {v2, v1}, Lcom/android/settings/TetherService;->g(Landroid/content/Context;I)V
+    invoke-static {v2, v1}, Lcom/android/vendorsettings/TetherService;->g(Landroid/content/Context;I)V
 
     .line 247
     :cond_6
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->P(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->P(Z)V
 
     goto :goto_1
 
     .line 249
     :cond_7
-    iget-object v3, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v3, :cond_1
 
     .line 250
-    iget-object v3, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v3}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -2979,13 +2979,13 @@
     if-eqz v3, :cond_8
 
     .line 252
-    invoke-direct {p0, v4}, Lcom/android/settings/MiuiWirelessSettings;->Y(I)V
+    invoke-direct {p0, v4}, Lcom/android/vendorsettings/MiuiWirelessSettings;->Y(I)V
 
     goto :goto_1
 
     .line 254
     :cond_8
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -2996,11 +2996,11 @@
     if-eqz v3, :cond_9
 
     .line 255
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    invoke-static {v3, v4}, Lcom/android/settings/TetherService;->g(Landroid/content/Context;I)V
+    invoke-static {v3, v4}, Lcom/android/vendorsettings/TetherService;->g(Landroid/content/Context;I)V
 
     .line 259
     :cond_9
@@ -3009,9 +3009,9 @@
     move-result-object v3
 
     .line 260
-    iget-object v4, p0, Lcom/android/settings/MiuiWirelessSettings;->ut:[Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ut:[Ljava/lang/String;
 
-    invoke-static {v3, v4}, Lcom/android/settings/MiuiWirelessSettings;->a([Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v4}, Lcom/android/vendorsettings/MiuiWirelessSettings;->a([Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -3026,7 +3026,7 @@
 
     .line 266
     :goto_2
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uu:Ljava/util/concurrent/atomic/AtomicReference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uu:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -3044,7 +3044,7 @@
     if-eqz v1, :cond_b
 
     .line 269
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c04f8
 
@@ -3054,7 +3054,7 @@
 
     .line 271
     :cond_b
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ur:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c04f7
 
@@ -3073,48 +3073,48 @@
 
     .prologue
     .line 665
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 667
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uj:Lcom/android/settings/n;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uj:Lcom/android/vendorsettings/n;
 
-    invoke-virtual {v0}, Lcom/android/settings/n;->resume()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/n;->resume()V
 
     .line 668
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ul:Lcom/android/settings/nfc/NfcEnabler;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ul:Lcom/android/vendorsettings/nfc/NfcEnabler;
 
     if-eqz v0, :cond_0
 
     .line 669
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ul:Lcom/android/settings/nfc/NfcEnabler;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ul:Lcom/android/vendorsettings/nfc/NfcEnabler;
 
-    invoke-virtual {v0}, Lcom/android/settings/nfc/NfcEnabler;->resume()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/nfc/NfcEnabler;->resume()V
 
     .line 671
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->un:Lcom/android/settings/fV;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->un:Lcom/android/vendorsettings/fV;
 
     if-eqz v0, :cond_1
 
     .line 672
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->un:Lcom/android/settings/fV;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->un:Lcom/android/vendorsettings/fV;
 
-    invoke-virtual {v0}, Lcom/android/settings/fV;->resume()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/fV;->resume()V
 
     .line 675
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uo:Lcom/android/settings/nfc/NfcSeRoute;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uo:Lcom/android/vendorsettings/nfc/NfcSeRoute;
 
     if-eqz v0, :cond_2
 
     .line 676
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uo:Lcom/android/settings/nfc/NfcSeRoute;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uo:Lcom/android/vendorsettings/nfc/NfcSeRoute;
 
-    invoke-virtual {v0}, Lcom/android/settings/nfc/NfcSeRoute;->resume()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/nfc/NfcSeRoute;->resume()V
 
     .line 681
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -3126,22 +3126,22 @@
     if-eqz v1, :cond_3
 
     .line 683
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/MiuiWirelessSettings;->uA:Landroid/preference/PreferenceScreen;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uA:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 684
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->uA:Landroid/preference/PreferenceScreen;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uA:Landroid/preference/PreferenceScreen;
 
     invoke-static {v0}, Lcom/android/ims/ImsManager;->getWfcMode(Landroid/content/Context;)I
 
     move-result v2
 
-    invoke-static {v0, v2}, Lcom/android/settings/WifiCallingSettings;->i(Landroid/content/Context;I)I
+    invoke-static {v0, v2}, Lcom/android/vendorsettings/WifiCallingSettings;->i(Landroid/content/Context;I)I
 
     move-result v0
 
@@ -3155,7 +3155,7 @@
     :cond_3
     const-string v0, "wifi_calling_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiWirelessSettings;->U(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->U(Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -3165,10 +3165,10 @@
 
     .prologue
     .line 693
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 695
-    iget-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uC:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uC:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -3179,7 +3179,7 @@
     .line 696
     const-string v0, "mManageMobilePlanMessage"
 
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->uC:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uC:Ljava/lang/String;
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -3193,7 +3193,7 @@
 
     .prologue
     .line 702
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onStart()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onStart()V
 
     .line 703
     const-string v0, "shared"
@@ -3206,19 +3206,19 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiWirelessSettings;->ux:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->ux:Z
 
     .line 704
-    new-instance v0, Lcom/android/settings/fD;
+    new-instance v0, Lcom/android/vendorsettings/fD;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/fD;-><init>(Lcom/android/settings/MiuiWirelessSettings;Lcom/android/settings/fA;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/fD;-><init>(Lcom/android/vendorsettings/MiuiWirelessSettings;Lcom/android/vendorsettings/fA;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uy:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uy:Landroid/content/BroadcastReceiver;
 
     .line 706
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -3230,7 +3230,7 @@
     invoke-direct {v1, v2}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
     .line 708
-    iget-object v2, p0, Lcom/android/settings/MiuiWirelessSettings;->uy:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uy:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v2, v1}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -3247,7 +3247,7 @@
     invoke-virtual {v2, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 712
-    iget-object v3, p0, Lcom/android/settings/MiuiWirelessSettings;->uy:Landroid/content/BroadcastReceiver;
+    iget-object v3, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uy:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v3, v2}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -3272,7 +3272,7 @@
     invoke-virtual {v2, v3}, Landroid/content/IntentFilter;->addDataScheme(Ljava/lang/String;)V
 
     .line 718
-    iget-object v3, p0, Lcom/android/settings/MiuiWirelessSettings;->uy:Landroid/content/BroadcastReceiver;
+    iget-object v3, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uy:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v3, v2}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -3287,7 +3287,7 @@
     invoke-virtual {v2, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 722
-    iget-object v3, p0, Lcom/android/settings/MiuiWirelessSettings;->uy:Landroid/content/BroadcastReceiver;
+    iget-object v3, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uy:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v3, v2}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -3295,13 +3295,13 @@
     if-eqz v1, :cond_0
 
     .line 725
-    iget-object v2, p0, Lcom/android/settings/MiuiWirelessSettings;->uy:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uy:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v2, v0, v1}, Landroid/content/BroadcastReceiver;->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
 
     .line 728
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/MiuiWirelessSettings;->updateState()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->updateState()V
 
     .line 729
     return-void
@@ -3312,21 +3312,21 @@
 
     .prologue
     .line 751
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onStop()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onStop()V
 
     .line 752
-    invoke-virtual {p0}, Lcom/android/settings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MiuiWirelessSettings;->uy:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uy:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 753
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiWirelessSettings;->uy:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiWirelessSettings;->uy:Landroid/content/BroadcastReceiver;
 
     .line 754
     return-void

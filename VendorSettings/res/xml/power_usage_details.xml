@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
-    <com.android.settings.applications.LayoutPreference android:layout="@layout/two_buttons_panel" android:selectable="false" android:key="two_buttons" />
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.vendorsettings">
+    <com.android.vendorsettings.applications.LayoutPreference android:layout="@layout/two_buttons_panel" android:selectable="false" android:key="two_buttons" />
     <PreferenceCategory android:title="@string/controls_subtitle" android:key="controls_parent">
         <Preference android:title="@string/high_power_apps" android:key="high_power" />
     </PreferenceCategory>

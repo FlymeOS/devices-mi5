@@ -1,19 +1,19 @@
-.class Lcom/android/settings/fingerprint/A;
+.class Lcom/android/vendorsettings/fingerprint/A;
 .super Landroid/os/Handler;
 .source "FingerprintSettings.java"
 
 
 # instance fields
-.field final synthetic acr:Lcom/android/settings/fingerprint/x;
+.field final synthetic acr:Lcom/android/vendorsettings/fingerprint/x;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fingerprint/x;)V
+.method constructor <init>(Lcom/android/vendorsettings/fingerprint/x;)V
     .locals 0
 
     .prologue
     .line 177
-    iput-object p1, p0, Lcom/android/settings/fingerprint/A;->acr:Lcom/android/settings/fingerprint/x;
+    iput-object p1, p0, Lcom/android/vendorsettings/fingerprint/A;->acr:Lcom/android/vendorsettings/fingerprint/x;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -38,44 +38,44 @@
 
     .line 182
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/fingerprint/A;->acr:Lcom/android/settings/fingerprint/x;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/A;->acr:Lcom/android/vendorsettings/fingerprint/x;
 
     iget v1, p1, Landroid/os/Message;->arg1:I
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/fingerprint/x;->cb(I)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/fingerprint/x;->cb(I)V
 
     .line 183
-    iget-object v0, p0, Lcom/android/settings/fingerprint/A;->acr:Lcom/android/settings/fingerprint/x;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/A;->acr:Lcom/android/vendorsettings/fingerprint/x;
 
-    invoke-static {v0}, Lcom/android/settings/fingerprint/x;->b(Lcom/android/settings/fingerprint/x;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/fingerprint/x;->b(Lcom/android/vendorsettings/fingerprint/x;)V
 
     goto :goto_0
 
     .line 186
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/fingerprint/A;->acr:Lcom/android/settings/fingerprint/x;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/A;->acr:Lcom/android/vendorsettings/fingerprint/x;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/fingerprint/x;->a(Lcom/android/settings/fingerprint/x;Landroid/os/CancellationSignal;)Landroid/os/CancellationSignal;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/fingerprint/x;->a(Lcom/android/vendorsettings/fingerprint/x;Landroid/os/CancellationSignal;)Landroid/os/CancellationSignal;
 
     .line 187
-    iget-object v0, p0, Lcom/android/settings/fingerprint/A;->acr:Lcom/android/settings/fingerprint/x;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/A;->acr:Lcom/android/vendorsettings/fingerprint/x;
 
     iget v1, p1, Landroid/os/Message;->arg1:I
 
-    invoke-static {v0, v1}, Lcom/android/settings/fingerprint/x;->a(Lcom/android/settings/fingerprint/x;I)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/fingerprint/x;->a(Lcom/android/vendorsettings/fingerprint/x;I)V
 
     .line 188
-    iget-object v0, p0, Lcom/android/settings/fingerprint/A;->acr:Lcom/android/settings/fingerprint/x;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/A;->acr:Lcom/android/vendorsettings/fingerprint/x;
 
-    invoke-static {v0}, Lcom/android/settings/fingerprint/x;->c(Lcom/android/settings/fingerprint/x;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/fingerprint/x;->c(Lcom/android/vendorsettings/fingerprint/x;)V
 
     goto :goto_0
 
     .line 194
     :pswitch_3
-    iget-object v1, p0, Lcom/android/settings/fingerprint/A;->acr:Lcom/android/settings/fingerprint/x;
+    iget-object v1, p0, Lcom/android/vendorsettings/fingerprint/A;->acr:Lcom/android/vendorsettings/fingerprint/x;
 
     iget v2, p1, Landroid/os/Message;->arg1:I
 
@@ -83,7 +83,7 @@
 
     check-cast v0, Ljava/lang/CharSequence;
 
-    invoke-virtual {v1, v2, v0}, Lcom/android/settings/fingerprint/x;->c(ILjava/lang/CharSequence;)V
+    invoke-virtual {v1, v2, v0}, Lcom/android/vendorsettings/fingerprint/x;->c(ILjava/lang/CharSequence;)V
 
     goto :goto_0
 

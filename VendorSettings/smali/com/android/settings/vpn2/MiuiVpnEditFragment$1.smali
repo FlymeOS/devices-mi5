@@ -1,4 +1,4 @@
-.class Lcom/android/settings/vpn2/MiuiVpnEditFragment$1;
+.class Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1;
 .super Ljava/lang/Object;
 .source "MiuiVpnEditFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic avI:Lcom/android/settings/vpn2/MiuiVpnEditFragment;
+.field final synthetic avI:Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/vpn2/MiuiVpnEditFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;)V
     .locals 0
 
     .prologue
     .line 192
-    iput-object p1, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment$1;->avI:Lcom/android/settings/vpn2/MiuiVpnEditFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1;->avI:Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,9 +32,9 @@
     .line 195
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    iget-object v1, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment$1;->avI:Lcom/android/settings/vpn2/MiuiVpnEditFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1;->avI:Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;
 
-    invoke-virtual {v1}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -50,9 +50,9 @@
 
     const v1, 0x104000a
 
-    new-instance v2, Lcom/android/settings/vpn2/MiuiVpnEditFragment$1$1;
+    new-instance v2, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/vpn2/MiuiVpnEditFragment$1$1;-><init>(Lcom/android/settings/vpn2/MiuiVpnEditFragment$1;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1$1;-><init>(Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -72,9 +72,9 @@
     move-result-object v0
 
     .line 206
-    new-instance v1, Lcom/android/settings/vpn2/MiuiVpnEditFragment$1$2;
+    new-instance v1, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1$2;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/vpn2/MiuiVpnEditFragment$1$2;-><init>(Lcom/android/settings/vpn2/MiuiVpnEditFragment$1;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1$2;-><init>(Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 

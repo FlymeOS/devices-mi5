@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/ScreenEffect;
+.class public Lcom/android/vendorsettings/display/ScreenEffect;
 .super Lmiui/preference/PreferenceActivity;
 .source "ScreenEffect.java"
 
@@ -27,9 +27,9 @@
 
 .field private ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
-.field private ZK:Lcom/android/settings/display/L;
+.field private ZK:Lcom/android/vendorsettings/display/L;
 
-.field private ZL:Lcom/android/settings/display/K;
+.field private ZL:Lcom/android/vendorsettings/display/K;
 
 .field private mHandlerThread:Landroid/os/HandlerThread;
 
@@ -62,14 +62,14 @@
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lcom/android/settings/display/ScreenEffect;->ZC:[Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/display/ScreenEffect;->ZC:[Ljava/lang/String;
 
     .line 75
     new-array v0, v4, [I
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/display/ScreenEffect;->ZD:[I
+    sput-object v0, Lcom/android/vendorsettings/display/ScreenEffect;->ZD:[I
 
     .line 84
     const-string v0, "screen_standard_mode"
@@ -78,14 +78,14 @@
 
     move-result v0
 
-    sput v0, Lcom/android/settings/display/ScreenEffect;->ZE:I
+    sput v0, Lcom/android/vendorsettings/display/ScreenEffect;->ZE:I
 
     .line 87
     new-array v0, v4, [I
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/android/settings/display/ScreenEffect;->ZF:[I
+    sput-object v0, Lcom/android/vendorsettings/display/ScreenEffect;->ZF:[I
 
     .line 93
     new-array v0, v3, [Ljava/lang/String;
@@ -98,14 +98,14 @@
 
     aput-object v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/display/ScreenEffect;->ZG:[Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/display/ScreenEffect;->ZG:[Ljava/lang/String;
 
     .line 98
     new-array v0, v3, [I
 
     fill-array-data v0, :array_2
 
-    sput-object v0, Lcom/android/settings/display/ScreenEffect;->ZH:[I
+    sput-object v0, Lcom/android/vendorsettings/display/ScreenEffect;->ZH:[I
 
     return-void
 
@@ -145,7 +145,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     .line 412
     return-void
@@ -186,32 +186,32 @@
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/display/ScreenEffect;)Landroid/widget/Toast;
+.method static synthetic a(Lcom/android/vendorsettings/display/ScreenEffect;)Landroid/widget/Toast;
     .locals 1
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->Sv:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->Sv:Landroid/widget/Toast;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/display/ScreenEffect;I)V
+.method static synthetic a(Lcom/android/vendorsettings/display/ScreenEffect;I)V
     .locals 0
 
     .prologue
     .line 52
-    invoke-direct {p0, p1}, Lcom/android/settings/display/ScreenEffect;->bT(I)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/display/ScreenEffect;->bT(I)V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/display/ScreenEffect;I)V
+.method static synthetic b(Lcom/android/vendorsettings/display/ScreenEffect;I)V
     .locals 0
 
     .prologue
     .line 52
-    invoke-direct {p0, p1}, Lcom/android/settings/display/ScreenEffect;->setScreenSaturation(I)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/display/ScreenEffect;->setScreenSaturation(I)V
 
     return-void
 .end method
@@ -223,7 +223,7 @@
     const/4 v2, 0x1
 
     .line 283
-    invoke-virtual {p0}, Lcom/android/settings/display/ScreenEffect;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ScreenEffect;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -233,7 +233,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/display/I;
+    check-cast v0, Lcom/android/vendorsettings/display/I;
 
     .line 285
     if-nez v0, :cond_0
@@ -247,7 +247,7 @@
     if-ne p1, v2, :cond_1
 
     .line 290
-    invoke-virtual {v0, v2}, Lcom/android/settings/display/I;->setEnabled(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/display/I;->setEnabled(Z)V
 
     goto :goto_0
 
@@ -255,10 +255,10 @@
     :cond_1
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/display/I;->setEnabled(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/display/I;->setEnabled(Z)V
 
     .line 293
-    invoke-virtual {v0, v2}, Lcom/android/settings/display/I;->setLevel(I)V
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/display/I;->setLevel(I)V
 
     goto :goto_0
 .end method
@@ -268,7 +268,7 @@
 
     .prologue
     .line 344
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v0}, Lmiui/hareware/display/DisplayFeatureManager;->getColorPrefer()I
 
@@ -277,7 +277,7 @@
     if-eq v0, p1, :cond_0
 
     .line 345
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v0, p1}, Lmiui/hareware/display/DisplayFeatureManager;->setColorPrefer(I)V
 
@@ -301,7 +301,7 @@
     const/4 v3, 0x0
 
     .line 356
-    iget v2, p0, Lcom/android/settings/display/ScreenEffect;->ZI:I
+    iget v2, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZI:I
 
     if-ne v2, p1, :cond_0
 
@@ -311,10 +311,10 @@
 
     .line 359
     :cond_0
-    iput p1, p0, Lcom/android/settings/display/ScreenEffect;->ZI:I
+    iput p1, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZI:I
 
     .line 361
-    iget v2, p0, Lcom/android/settings/display/ScreenEffect;->ZI:I
+    iget v2, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZI:I
 
     packed-switch v2, :pswitch_data_0
 
@@ -322,14 +322,14 @@
 
     .line 363
     :pswitch_0
-    iget-object v2, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v2, v3}, Lmiui/hareware/display/DisplayFeatureManager;->setScreenGamut(I)V
 
     .line 364
-    iget-object v2, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
-    sget v3, Lcom/android/settings/display/ScreenEffect;->ZE:I
+    sget v3, Lcom/android/vendorsettings/display/ScreenEffect;->ZE:I
 
     if-ne v3, v4, :cond_1
 
@@ -337,12 +337,12 @@
     invoke-virtual {v2, v0}, Lmiui/hareware/display/DisplayFeatureManager;->setScreenSaturation(I)V
 
     .line 366
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v0, v4}, Lmiui/hareware/display/DisplayFeatureManager;->setScreenCabc(I)V
 
     .line 367
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v0, v4}, Lmiui/hareware/display/DisplayFeatureManager;->setAdEnable(Z)V
 
@@ -356,27 +356,27 @@
 
     .line 371
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v0, v3}, Lmiui/hareware/display/DisplayFeatureManager;->setScreenGamut(I)V
 
     .line 372
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v0, v5}, Lmiui/hareware/display/DisplayFeatureManager;->setColorPrefer(I)V
 
     .line 373
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v0, v1}, Lmiui/hareware/display/DisplayFeatureManager;->setScreenSaturation(I)V
 
     .line 374
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v0, v3}, Lmiui/hareware/display/DisplayFeatureManager;->setScreenCabc(I)V
 
     .line 375
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v0, v3}, Lmiui/hareware/display/DisplayFeatureManager;->setAdEnable(Z)V
 
@@ -384,27 +384,27 @@
 
     .line 379
     :pswitch_2
-    iget-object v1, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v1, v5}, Lmiui/hareware/display/DisplayFeatureManager;->setColorPrefer(I)V
 
     .line 380
-    iget-object v1, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v1, v0}, Lmiui/hareware/display/DisplayFeatureManager;->setScreenSaturation(I)V
 
     .line 381
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v0, v4}, Lmiui/hareware/display/DisplayFeatureManager;->setScreenGamut(I)V
 
     .line 382
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v0, v3}, Lmiui/hareware/display/DisplayFeatureManager;->setScreenCabc(I)V
 
     .line 383
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v0, v3}, Lmiui/hareware/display/DisplayFeatureManager;->setAdEnable(Z)V
 
@@ -421,12 +421,12 @@
     .end packed-switch
 .end method
 
-.method static synthetic c(Lcom/android/settings/display/ScreenEffect;I)V
+.method static synthetic c(Lcom/android/vendorsettings/display/ScreenEffect;I)V
     .locals 0
 
     .prologue
     .line 52
-    invoke-direct {p0, p1}, Lcom/android/settings/display/ScreenEffect;->bU(I)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/display/ScreenEffect;->bU(I)V
 
     return-void
 .end method
@@ -436,7 +436,7 @@
 
     .prologue
     .line 236
-    invoke-virtual {p0}, Lcom/android/settings/display/ScreenEffect;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ScreenEffect;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -470,11 +470,11 @@
     .line 177
     const-string v0, "persist.sys.display_prefer"
 
-    sget-object v1, Lcom/android/settings/display/ScreenEffect;->ZF:[I
+    sget-object v1, Lcom/android/vendorsettings/display/ScreenEffect;->ZF:[I
 
     const/4 v2, 0x2
 
-    invoke-direct {p0, v0, v1, v2}, Lcom/android/settings/display/ScreenEffect;->a(Ljava/lang/String;[II)I
+    invoke-direct {p0, v0, v1, v2}, Lcom/android/vendorsettings/display/ScreenEffect;->a(Ljava/lang/String;[II)I
 
     move-result v0
 
@@ -483,37 +483,37 @@
 
     const v2, 0x7f0c0eef
 
-    invoke-direct {p0, v1, v2}, Lcom/android/settings/display/ScreenEffect;->o(Ljava/lang/String;I)Landroid/preference/PreferenceCategory;
+    invoke-direct {p0, v1, v2}, Lcom/android/vendorsettings/display/ScreenEffect;->o(Ljava/lang/String;I)Landroid/preference/PreferenceCategory;
 
     move-result-object v1
 
     .line 181
-    new-instance v2, Lcom/android/settings/display/I;
+    new-instance v2, Lcom/android/vendorsettings/display/I;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/display/I;-><init>(Landroid/content/Context;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/display/I;-><init>(Landroid/content/Context;)V
 
     .line 182
     const-string v3, "screen_color_level"
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/display/I;->setKey(Ljava/lang/String;)V
+    invoke-virtual {v2, v3}, Lcom/android/vendorsettings/display/I;->setKey(Ljava/lang/String;)V
 
     .line 183
     const v3, 0x7f0a00a2
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/display/I;->bP(I)V
+    invoke-virtual {v2, v3}, Lcom/android/vendorsettings/display/I;->bP(I)V
 
     .line 184
     const/4 v3, 0x0
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/display/I;->setPersistent(Z)V
+    invoke-virtual {v2, v3}, Lcom/android/vendorsettings/display/I;->setPersistent(Z)V
 
     .line 185
     add-int/lit8 v0, v0, -0x1
 
-    invoke-virtual {v2, v0}, Lcom/android/settings/display/I;->setLevel(I)V
+    invoke-virtual {v2, v0}, Lcom/android/vendorsettings/display/I;->setLevel(I)V
 
     .line 186
-    invoke-virtual {v2, p0}, Lcom/android/settings/display/I;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v2, p0}, Lcom/android/vendorsettings/display/I;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 187
     invoke-virtual {v1, v2}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
@@ -533,12 +533,12 @@
 
     const v2, 0x7f0c0ef3
 
-    invoke-direct {p0, v0, v2}, Lcom/android/settings/display/ScreenEffect;->o(Ljava/lang/String;I)Landroid/preference/PreferenceCategory;
+    invoke-direct {p0, v0, v2}, Lcom/android/vendorsettings/display/ScreenEffect;->o(Ljava/lang/String;I)Landroid/preference/PreferenceCategory;
 
     move-result-object v3
 
     .line 193
-    invoke-virtual {p0}, Lcom/android/settings/display/ScreenEffect;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ScreenEffect;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -549,7 +549,7 @@
     move-result-object v4
 
     .line 195
-    invoke-virtual {p0}, Lcom/android/settings/display/ScreenEffect;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ScreenEffect;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -560,11 +560,11 @@
     move-result-object v5
 
     .line 198
-    invoke-virtual {p0}, Lcom/android/settings/display/ScreenEffect;->pI()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ScreenEffect;->pI()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/display/ScreenEffect;->ZI:I
+    iput v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZI:I
 
     move v0, v1
 
@@ -575,13 +575,13 @@
     if-ge v0, v2, :cond_2
 
     .line 201
-    sget v2, Lcom/android/settings/display/ScreenEffect;->ZE:I
+    sget v2, Lcom/android/vendorsettings/display/ScreenEffect;->ZE:I
 
     if-nez v2, :cond_0
 
     const-string v2, "screen_optimize_standard"
 
-    sget-object v6, Lcom/android/settings/display/ScreenEffect;->ZC:[Ljava/lang/String;
+    sget-object v6, Lcom/android/vendorsettings/display/ScreenEffect;->ZC:[Ljava/lang/String;
 
     aget-object v6, v6, v0
 
@@ -599,49 +599,49 @@
 
     .line 205
     :cond_0
-    new-instance v6, Lcom/android/settings/display/G;
+    new-instance v6, Lcom/android/vendorsettings/display/G;
 
-    invoke-direct {v6, p0}, Lcom/android/settings/display/G;-><init>(Landroid/content/Context;)V
+    invoke-direct {v6, p0}, Lcom/android/vendorsettings/display/G;-><init>(Landroid/content/Context;)V
 
     .line 206
-    sget-object v2, Lcom/android/settings/display/ScreenEffect;->ZC:[Ljava/lang/String;
+    sget-object v2, Lcom/android/vendorsettings/display/ScreenEffect;->ZC:[Ljava/lang/String;
 
     aget-object v2, v2, v0
 
-    invoke-virtual {v6, v2}, Lcom/android/settings/display/G;->setKey(Ljava/lang/String;)V
+    invoke-virtual {v6, v2}, Lcom/android/vendorsettings/display/G;->setKey(Ljava/lang/String;)V
 
     .line 207
     aget-object v2, v4, v0
 
-    invoke-virtual {v6, v2}, Lcom/android/settings/display/G;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v6, v2}, Lcom/android/vendorsettings/display/G;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 208
     aget-object v2, v5, v0
 
-    invoke-virtual {v6, v2}, Lcom/android/settings/display/G;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v6, v2}, Lcom/android/vendorsettings/display/G;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 209
-    invoke-virtual {v6, v1}, Lcom/android/settings/display/G;->setPersistent(Z)V
+    invoke-virtual {v6, v1}, Lcom/android/vendorsettings/display/G;->setPersistent(Z)V
 
     .line 210
-    invoke-virtual {v6, p0}, Lcom/android/settings/display/G;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v6, p0}, Lcom/android/vendorsettings/display/G;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 211
     invoke-virtual {v3, v6}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
     .line 212
-    sget-object v2, Lcom/android/settings/display/ScreenEffect;->ZD:[I
+    sget-object v2, Lcom/android/vendorsettings/display/ScreenEffect;->ZD:[I
 
     aget v2, v2, v0
 
-    iget v7, p0, Lcom/android/settings/display/ScreenEffect;->ZI:I
+    iget v7, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZI:I
 
     if-ne v2, v7, :cond_1
 
     const/4 v2, 0x1
 
     :goto_2
-    invoke-virtual {v6, v2}, Lcom/android/settings/display/G;->setChecked(Z)V
+    invoke-virtual {v6, v2}, Lcom/android/vendorsettings/display/G;->setChecked(Z)V
 
     goto :goto_1
 
@@ -664,11 +664,11 @@
     .line 218
     const-string v0, "persist.sys.display_ce"
 
-    sget-object v2, Lcom/android/settings/display/ScreenEffect;->ZH:[I
+    sget-object v2, Lcom/android/vendorsettings/display/ScreenEffect;->ZH:[I
 
     sget v3, Lmiui/hareware/display/DisplayFeatureManager;->DEFAULT_SCREEN_SATURATION:I
 
-    invoke-direct {p0, v0, v2, v3}, Lcom/android/settings/display/ScreenEffect;->a(Ljava/lang/String;[II)I
+    invoke-direct {p0, v0, v2, v3}, Lcom/android/vendorsettings/display/ScreenEffect;->a(Ljava/lang/String;[II)I
 
     move-result v3
 
@@ -677,12 +677,12 @@
 
     const v2, 0x7f0c0ef0
 
-    invoke-direct {p0, v0, v2}, Lcom/android/settings/display/ScreenEffect;->o(Ljava/lang/String;I)Landroid/preference/PreferenceCategory;
+    invoke-direct {p0, v0, v2}, Lcom/android/vendorsettings/display/ScreenEffect;->o(Ljava/lang/String;I)Landroid/preference/PreferenceCategory;
 
     move-result-object v4
 
     .line 222
-    invoke-virtual {p0}, Lcom/android/settings/display/ScreenEffect;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ScreenEffect;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -701,27 +701,27 @@
     if-ge v0, v2, :cond_1
 
     .line 225
-    new-instance v6, Lcom/android/settings/display/G;
+    new-instance v6, Lcom/android/vendorsettings/display/G;
 
-    invoke-direct {v6, p0}, Lcom/android/settings/display/G;-><init>(Landroid/content/Context;)V
+    invoke-direct {v6, p0}, Lcom/android/vendorsettings/display/G;-><init>(Landroid/content/Context;)V
 
     .line 226
-    sget-object v2, Lcom/android/settings/display/ScreenEffect;->ZG:[Ljava/lang/String;
+    sget-object v2, Lcom/android/vendorsettings/display/ScreenEffect;->ZG:[Ljava/lang/String;
 
     aget-object v2, v2, v0
 
-    invoke-virtual {v6, v2}, Lcom/android/settings/display/G;->setKey(Ljava/lang/String;)V
+    invoke-virtual {v6, v2}, Lcom/android/vendorsettings/display/G;->setKey(Ljava/lang/String;)V
 
     .line 227
     aget-object v2, v5, v0
 
-    invoke-virtual {v6, v2}, Lcom/android/settings/display/G;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v6, v2}, Lcom/android/vendorsettings/display/G;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 228
-    invoke-virtual {v6, v1}, Lcom/android/settings/display/G;->setPersistent(Z)V
+    invoke-virtual {v6, v1}, Lcom/android/vendorsettings/display/G;->setPersistent(Z)V
 
     .line 229
-    sget-object v2, Lcom/android/settings/display/ScreenEffect;->ZH:[I
+    sget-object v2, Lcom/android/vendorsettings/display/ScreenEffect;->ZH:[I
 
     aget v2, v2, v0
 
@@ -730,10 +730,10 @@
     const/4 v2, 0x1
 
     :goto_1
-    invoke-virtual {v6, v2}, Lcom/android/settings/display/G;->setChecked(Z)V
+    invoke-virtual {v6, v2}, Lcom/android/vendorsettings/display/G;->setChecked(Z)V
 
     .line 230
-    invoke-virtual {v6, p0}, Lcom/android/settings/display/G;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v6, p0}, Lcom/android/vendorsettings/display/G;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 231
     invoke-virtual {v4, v6}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
@@ -759,7 +759,7 @@
 
     .prologue
     .line 350
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v0}, Lmiui/hareware/display/DisplayFeatureManager;->getScreenSaturation()I
 
@@ -768,7 +768,7 @@
     if-eq v0, p1, :cond_0
 
     .line 351
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v0, p1}, Lmiui/hareware/display/DisplayFeatureManager;->setScreenSaturation(I)V
 
@@ -782,7 +782,7 @@
 
     .prologue
     .line 268
-    invoke-virtual {p0}, Lcom/android/settings/display/ScreenEffect;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ScreenEffect;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -813,13 +813,13 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/display/G;
+    check-cast v1, Lcom/android/vendorsettings/display/G;
 
     .line 275
     if-eqz v1, :cond_0
 
     .line 276
-    invoke-virtual {v1}, Lcom/android/settings/display/G;->getKey()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/display/G;->getKey()Ljava/lang/String;
 
     move-result-object v4
 
@@ -827,7 +827,7 @@
 
     move-result v4
 
-    invoke-virtual {v1, v4}, Lcom/android/settings/display/G;->setChecked(Z)V
+    invoke-virtual {v1, v4}, Lcom/android/vendorsettings/display/G;->setChecked(Z)V
 
     .line 272
     :cond_0
@@ -860,56 +860,56 @@
 
     invoke-direct {v0, v1}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/display/ScreenEffect;->mHandlerThread:Landroid/os/HandlerThread;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->mHandlerThread:Landroid/os/HandlerThread;
 
     .line 121
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->mHandlerThread:Landroid/os/HandlerThread;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->mHandlerThread:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
     .line 122
-    new-instance v0, Lcom/android/settings/display/L;
+    new-instance v0, Lcom/android/vendorsettings/display/L;
 
-    iget-object v1, p0, Lcom/android/settings/display/ScreenEffect;->mHandlerThread:Landroid/os/HandlerThread;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/ScreenEffect;->mHandlerThread:Landroid/os/HandlerThread;
 
     invoke-virtual {v1}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/display/L;-><init>(Lcom/android/settings/display/ScreenEffect;Landroid/os/Looper;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/display/L;-><init>(Lcom/android/vendorsettings/display/ScreenEffect;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZK:Lcom/android/settings/display/L;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZK:Lcom/android/vendorsettings/display/L;
 
     .line 124
     const v0, 0x7f04012a
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/ScreenEffect;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/ScreenEffect;->setContentView(I)V
 
     .line 126
     const v0, 0x7f1300e6
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/ScreenEffect;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/ScreenEffect;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/display/J;
+    new-instance v1, Lcom/android/vendorsettings/display/J;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/display/J;-><init>(Lcom/android/settings/display/ScreenEffect;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/display/J;-><init>(Lcom/android/vendorsettings/display/ScreenEffect;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 133
     const v0, 0x7f080081
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/ScreenEffect;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/ScreenEffect;->addPreferencesFromResource(I)V
 
     .line 135
-    invoke-direct {p0}, Lcom/android/settings/display/ScreenEffect;->pF()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/ScreenEffect;->pF()V
 
     .line 137
     const v0, 0x7f130061
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/ScreenEffect;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/ScreenEffect;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -925,7 +925,7 @@
     if-eqz v1, :cond_1
 
     .line 139
-    invoke-virtual {p0}, Lcom/android/settings/display/ScreenEffect;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ScreenEffect;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -938,12 +938,12 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 140
-    invoke-direct {p0}, Lcom/android/settings/display/ScreenEffect;->pG()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/ScreenEffect;->pG()V
 
     .line 141
-    iget v0, p0, Lcom/android/settings/display/ScreenEffect;->ZI:I
+    iget v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZI:I
 
-    invoke-direct {p0, v0}, Lcom/android/settings/display/ScreenEffect;->bS(I)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/display/ScreenEffect;->bS(I)V
 
     .line 148
     :goto_0
@@ -956,7 +956,7 @@
     if-eqz v0, :cond_0
 
     .line 149
-    invoke-virtual {p0}, Lcom/android/settings/display/ScreenEffect;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ScreenEffect;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -970,26 +970,26 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/display/ScreenEffect;->Sv:Landroid/widget/Toast;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->Sv:Landroid/widget/Toast;
 
     .line 153
-    new-instance v0, Lcom/android/settings/display/K;
+    new-instance v0, Lcom/android/vendorsettings/display/K;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/display/K;-><init>(Lcom/android/settings/display/ScreenEffect;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/display/K;-><init>(Lcom/android/vendorsettings/display/ScreenEffect;)V
 
-    iput-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZL:Lcom/android/settings/display/K;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZL:Lcom/android/vendorsettings/display/K;
 
     .line 154
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZL:Lcom/android/settings/display/K;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZL:Lcom/android/vendorsettings/display/K;
 
-    invoke-virtual {v0}, Lcom/android/settings/display/K;->register()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/display/K;->register()V
 
     .line 155
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZL:Lcom/android/settings/display/K;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZL:Lcom/android/vendorsettings/display/K;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/display/K;->onChange(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/display/K;->onChange(Z)V
 
     .line 157
     :cond_0
@@ -997,7 +997,7 @@
 
     .line 143
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/display/ScreenEffect;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ScreenEffect;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1010,7 +1010,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 145
-    invoke-direct {p0}, Lcom/android/settings/display/ScreenEffect;->pH()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/ScreenEffect;->pH()V
 
     goto :goto_0
 .end method
@@ -1020,18 +1020,18 @@
 
     .prologue
     .line 169
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZL:Lcom/android/settings/display/K;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZL:Lcom/android/vendorsettings/display/K;
 
     if-eqz v0, :cond_0
 
     .line 170
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->ZL:Lcom/android/settings/display/K;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZL:Lcom/android/vendorsettings/display/K;
 
-    invoke-virtual {v0}, Lcom/android/settings/display/K;->unregister()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/display/K;->unregister()V
 
     .line 172
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->mHandlerThread:Landroid/os/HandlerThread;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->mHandlerThread:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->quit()Z
 
@@ -1050,12 +1050,12 @@
     invoke-super {p0}, Lmiui/preference/PreferenceActivity;->onPause()V
 
     .line 162
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->Sv:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->Sv:Landroid/widget/Toast;
 
     if-eqz v0, :cond_0
 
     .line 163
-    iget-object v0, p0, Lcom/android/settings/display/ScreenEffect;->Sv:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenEffect;->Sv:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->cancel()V
 
@@ -1110,34 +1110,34 @@
 
     .line 329
     :goto_0
-    iget-object v6, p0, Lcom/android/settings/display/ScreenEffect;->ZK:Lcom/android/settings/display/L;
+    iget-object v6, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZK:Lcom/android/vendorsettings/display/L;
 
-    iget-object v7, p0, Lcom/android/settings/display/ScreenEffect;->ZK:Lcom/android/settings/display/L;
+    iget-object v7, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZK:Lcom/android/vendorsettings/display/L;
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v8
 
-    invoke-virtual {v7, v3, v8}, Lcom/android/settings/display/L;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v7, v3, v8}, Lcom/android/vendorsettings/display/L;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v7
 
-    invoke-virtual {v6, v7}, Lcom/android/settings/display/L;->sendMessage(Landroid/os/Message;)Z
+    invoke-virtual {v6, v7}, Lcom/android/vendorsettings/display/L;->sendMessage(Landroid/os/Message;)Z
 
     .line 331
     if-ne v3, v4, :cond_0
 
     .line 332
-    invoke-direct {p0, v1}, Lcom/android/settings/display/ScreenEffect;->bS(I)V
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/display/ScreenEffect;->bS(I)V
 
     .line 335
     :cond_0
-    instance-of v1, p1, Lcom/android/settings/display/G;
+    instance-of v1, p1, Lcom/android/vendorsettings/display/G;
 
     if-eqz v1, :cond_1
 
     .line 336
-    invoke-direct {p0, v0, v5}, Lcom/android/settings/display/ScreenEffect;->w(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v5}, Lcom/android/vendorsettings/display/ScreenEffect;->w(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 338
     const/4 v2, 0x0
@@ -1252,7 +1252,7 @@
     const/4 v1, 0x2
 
     .line 246
-    sget v0, Lcom/android/settings/display/ScreenEffect;->ZE:I
+    sget v0, Lcom/android/vendorsettings/display/ScreenEffect;->ZE:I
 
     if-nez v0, :cond_1
 
@@ -1260,7 +1260,7 @@
 
     .line 248
     :goto_0
-    iget-object v2, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v2}, Lmiui/hareware/display/DisplayFeatureManager;->isAdEnable()Z
 
@@ -1284,7 +1284,7 @@
 
     .line 250
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v2}, Lmiui/hareware/display/DisplayFeatureManager;->getScreenGamut()I
 
@@ -1292,7 +1292,7 @@
 
     if-eqz v2, :cond_3
 
-    iget-object v2, p0, Lcom/android/settings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/display/ScreenEffect;->ZJ:Lmiui/hareware/display/DisplayFeatureManager;
 
     invoke-virtual {v2}, Lmiui/hareware/display/DisplayFeatureManager;->getScreenSaturation()I
 

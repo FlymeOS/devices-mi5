@@ -1,4 +1,4 @@
-.class Lcom/android/settings/az;
+.class Lcom/android/vendorsettings/az;
 .super Ljava/lang/Object;
 .source "ChooseLockPassword.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic eg:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+.field final synthetic eg:Lcom/android/vendorsettings/ChooseLockPassword$ChooseLockPasswordFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/ChooseLockPassword$ChooseLockPasswordFragment;)V
     .locals 0
 
     .prologue
     .line 292
-    iput-object p1, p0, Lcom/android/settings/az;->eg:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/az;->eg:Lcom/android/vendorsettings/ChooseLockPassword$ChooseLockPasswordFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 300
-    iget-object v0, p0, Lcom/android/settings/az;->eg:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/az;->eg:Lcom/android/vendorsettings/ChooseLockPassword$ChooseLockPasswordFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->a(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/vendorsettings/ChooseLockPassword$ChooseLockPasswordFragment;->a(Lcom/android/vendorsettings/ChooseLockPassword$ChooseLockPasswordFragment;)Landroid/widget/TextView;
 
     move-result-object v0
 
@@ -74,9 +74,9 @@
 
     .prologue
     .line 308
-    iget-object v0, p0, Lcom/android/settings/az;->eg:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/az;->eg:Lcom/android/vendorsettings/ChooseLockPassword$ChooseLockPasswordFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->aA()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/ChooseLockPassword$ChooseLockPasswordFragment;->aA()V
 
     .line 309
     return-void
@@ -87,9 +87,9 @@
 
     .prologue
     .line 295
-    iget-object v0, p0, Lcom/android/settings/az;->eg:Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/az;->eg:Lcom/android/vendorsettings/ChooseLockPassword$ChooseLockPasswordFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;->a(Lcom/android/settings/ChooseLockPassword$ChooseLockPasswordFragment;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/vendorsettings/ChooseLockPassword$ChooseLockPasswordFragment;->a(Lcom/android/vendorsettings/ChooseLockPassword$ChooseLockPasswordFragment;)Landroid/widget/TextView;
 
     move-result-object v0
 

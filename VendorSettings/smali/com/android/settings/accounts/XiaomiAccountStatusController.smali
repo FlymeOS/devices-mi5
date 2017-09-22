@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/accounts/XiaomiAccountStatusController;
-.super Lcom/android/settings/ag;
+.class public Lcom/android/vendorsettings/accounts/XiaomiAccountStatusController;
+.super Lcom/android/vendorsettings/ag;
 .source "XiaomiAccountStatusController.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 20
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/ag;-><init>(Landroid/content/Context;Landroid/widget/TextView;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/ag;-><init>(Landroid/content/Context;Landroid/widget/TextView;)V
 
     .line 21
     return-void
@@ -22,7 +22,7 @@
 
     .prologue
     .line 25
-    iget-object v0, p0, Lcom/android/settings/accounts/XiaomiAccountStatusController;->cw:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/XiaomiAccountStatusController;->cw:Landroid/widget/TextView;
 
     if-nez v0, :cond_0
 
@@ -32,7 +32,7 @@
 
     .line 28
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/accounts/XiaomiAccountStatusController;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/XiaomiAccountStatusController;->mContext:Landroid/content/Context;
 
     const-string v1, "account"
 
@@ -43,7 +43,7 @@
     check-cast v0, Landroid/accounts/AccountManager;
 
     .line 29
-    iget-object v1, p0, Lcom/android/settings/accounts/XiaomiAccountStatusController;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/accounts/XiaomiAccountStatusController;->mContext:Landroid/content/Context;
 
     invoke-static {v1}, Lmiui/accounts/ExtraAccountManager;->getXiaomiAccount(Landroid/content/Context;)Landroid/accounts/Account;
 
@@ -70,7 +70,7 @@
     if-nez v2, :cond_1
 
     .line 34
-    iget-object v1, p0, Lcom/android/settings/accounts/XiaomiAccountStatusController;->cw:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/vendorsettings/accounts/XiaomiAccountStatusController;->cw:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -78,7 +78,7 @@
 
     .line 36
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/accounts/XiaomiAccountStatusController;->cw:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/XiaomiAccountStatusController;->cw:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -86,7 +86,7 @@
 
     .line 39
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/accounts/XiaomiAccountStatusController;->cw:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/XiaomiAccountStatusController;->cw:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ah;
+.class public Lcom/android/vendorsettings/ah;
 .super Ljava/lang/Object;
 .source "BaseSettingsController.java"
 

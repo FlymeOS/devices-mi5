@@ -1,4 +1,4 @@
-.class Lcom/android/settings/es;
+.class Lcom/android/vendorsettings/es;
 .super Ljava/lang/Object;
 .source "MiuiFingerprintDetailFragment.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic mQ:Lcom/android/settings/de;
+.field final synthetic mQ:Lcom/android/vendorsettings/de;
 
-.field final synthetic re:Lcom/android/settings/MiuiFingerprintDetailFragment;
+.field final synthetic re:Lcom/android/vendorsettings/MiuiFingerprintDetailFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiFingerprintDetailFragment;Lcom/android/settings/de;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiFingerprintDetailFragment;Lcom/android/vendorsettings/de;)V
     .locals 0
 
     .prologue
     .line 78
-    iput-object p1, p0, Lcom/android/settings/es;->re:Lcom/android/settings/MiuiFingerprintDetailFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/es;->re:Lcom/android/vendorsettings/MiuiFingerprintDetailFragment;
 
-    iput-object p2, p0, Lcom/android/settings/es;->mQ:Lcom/android/settings/de;
+    iput-object p2, p0, Lcom/android/vendorsettings/es;->mQ:Lcom/android/vendorsettings/de;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,26 +39,26 @@
     if-ne p2, v0, :cond_0
 
     .line 82
-    new-instance v0, Lcom/android/settings/cZ;
+    new-instance v0, Lcom/android/vendorsettings/cZ;
 
-    iget-object v1, p0, Lcom/android/settings/es;->re:Lcom/android/settings/MiuiFingerprintDetailFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/es;->re:Lcom/android/vendorsettings/MiuiFingerprintDetailFragment;
 
-    invoke-virtual {v1}, Lcom/android/settings/MiuiFingerprintDetailFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/MiuiFingerprintDetailFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/cZ;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/cZ;-><init>(Landroid/content/Context;)V
 
     .line 83
-    iget-object v1, p0, Lcom/android/settings/es;->re:Lcom/android/settings/MiuiFingerprintDetailFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/es;->re:Lcom/android/vendorsettings/MiuiFingerprintDetailFragment;
 
-    invoke-static {v1}, Lcom/android/settings/MiuiFingerprintDetailFragment;->a(Lcom/android/settings/MiuiFingerprintDetailFragment;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/vendorsettings/MiuiFingerprintDetailFragment;->a(Lcom/android/vendorsettings/MiuiFingerprintDetailFragment;)Ljava/lang/String;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/es;->mQ:Lcom/android/settings/de;
+    iget-object v2, p0, Lcom/android/vendorsettings/es;->mQ:Lcom/android/vendorsettings/de;
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/cZ;->a(Ljava/lang/String;Lcom/android/settings/de;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/vendorsettings/cZ;->a(Ljava/lang/String;Lcom/android/vendorsettings/de;)V
 
     .line 85
     :cond_0

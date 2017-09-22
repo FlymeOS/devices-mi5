@@ -1,4 +1,4 @@
-.class Lcom/android/settings/backup/v;
+.class Lcom/android/vendorsettings/backup/v;
 .super Ljava/lang/Object;
 .source "SettingsAgent.java"
 
@@ -8,30 +8,30 @@
 
 .field private Py:Ljava/io/File;
 
-.field private Qc:Lcom/android/settings/backup/j;
+.field private Qc:Lcom/android/vendorsettings/backup/j;
 
-.field final synthetic Qd:Lcom/android/settings/backup/t;
+.field final synthetic Qd:Lcom/android/vendorsettings/backup/t;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/backup/t;)V
+.method private constructor <init>(Lcom/android/vendorsettings/backup/t;)V
     .locals 0
 
     .prologue
     .line 181
-    iput-object p1, p0, Lcom/android/settings/backup/v;->Qd:Lcom/android/settings/backup/t;
+    iput-object p1, p0, Lcom/android/vendorsettings/backup/v;->Qd:Lcom/android/vendorsettings/backup/t;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/backup/t;Lcom/android/settings/backup/u;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/backup/t;Lcom/android/vendorsettings/backup/u;)V
     .locals 0
 
     .prologue
     .line 181
-    invoke-direct {p0, p1}, Lcom/android/settings/backup/v;-><init>(Lcom/android/settings/backup/t;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/backup/v;-><init>(Lcom/android/vendorsettings/backup/t;)V
 
     return-void
 .end method
@@ -47,9 +47,9 @@
     .line 187
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/android/settings/backup/v;->Qd:Lcom/android/settings/backup/t;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/v;->Qd:Lcom/android/vendorsettings/backup/t;
 
-    iget-object v1, v1, Lcom/android/settings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
+    iget-object v1, v1, Lcom/android/vendorsettings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
 
     invoke-virtual {v1}, Lmiui/app/backup/FullBackupAgent;->getCacheDir()Ljava/io/File;
 
@@ -59,10 +59,10 @@
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/backup/v;->Py:Ljava/io/File;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/v;->Py:Ljava/io/File;
 
     .line 188
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Py:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Py:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -71,45 +71,45 @@
     if-nez v0, :cond_0
 
     .line 189
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Py:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Py:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
     .line 192
     :cond_0
-    new-instance v0, Lcom/android/settings/backup/j;
+    new-instance v0, Lcom/android/vendorsettings/backup/j;
 
-    iget-object v1, p0, Lcom/android/settings/backup/v;->Qd:Lcom/android/settings/backup/t;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/v;->Qd:Lcom/android/vendorsettings/backup/t;
 
-    iget-object v1, v1, Lcom/android/settings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
+    iget-object v1, v1, Lcom/android/vendorsettings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
 
-    invoke-direct {v0, v1}, Lcom/android/settings/backup/j;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/backup/j;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/backup/v;->Qc:Lcom/android/settings/backup/j;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/v;->Qc:Lcom/android/vendorsettings/backup/j;
 
     .line 193
-    invoke-static {}, Lcom/android/settings/backup/SettingProtos$Settings;->mz()Lcom/android/settings/backup/p;
+    invoke-static {}, Lcom/android/vendorsettings/backup/SettingProtos$Settings;->mz()Lcom/android/vendorsettings/backup/p;
 
     move-result-object v1
 
     .line 194
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Qc:Lcom/android/settings/backup/j;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Qc:Lcom/android/vendorsettings/backup/j;
 
-    invoke-virtual {v0}, Lcom/android/settings/backup/j;->lL()Ljava/util/Vector;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/backup/j;->lL()Ljava/util/Vector;
 
     move-result-object v0
 
     .line 195
-    iget-object v2, p0, Lcom/android/settings/backup/v;->Qc:Lcom/android/settings/backup/j;
+    iget-object v2, p0, Lcom/android/vendorsettings/backup/v;->Qc:Lcom/android/vendorsettings/backup/j;
 
-    invoke-virtual {v2}, Lcom/android/settings/backup/j;->lM()Ljava/util/Vector;
+    invoke-virtual {v2}, Lcom/android/vendorsettings/backup/j;->lM()Ljava/util/Vector;
 
     move-result-object v2
 
     .line 196
-    iget-object v3, p0, Lcom/android/settings/backup/v;->Qc:Lcom/android/settings/backup/j;
+    iget-object v3, p0, Lcom/android/vendorsettings/backup/v;->Qc:Lcom/android/vendorsettings/backup/j;
 
-    invoke-virtual {v3}, Lcom/android/settings/backup/j;->lK()Ljava/util/Vector;
+    invoke-virtual {v3}, Lcom/android/vendorsettings/backup/j;->lK()Ljava/util/Vector;
 
     move-result-object v3
 
@@ -134,9 +134,9 @@
 
     .line 199
     :try_start_0
-    iget-object v5, p0, Lcom/android/settings/backup/v;->Qc:Lcom/android/settings/backup/j;
+    iget-object v5, p0, Lcom/android/vendorsettings/backup/v;->Qc:Lcom/android/vendorsettings/backup/j;
 
-    invoke-virtual {v5, v0}, Lcom/android/settings/backup/j;->aw(Ljava/lang/String;)Lcom/android/settings/backup/SettingProtos$SystemSetting;
+    invoke-virtual {v5, v0}, Lcom/android/vendorsettings/backup/j;->aw(Ljava/lang/String;)Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;
 
     move-result-object v0
 
@@ -144,7 +144,7 @@
     if-eqz v0, :cond_1
 
     .line 201
-    invoke-virtual {v1, v0}, Lcom/android/settings/backup/p;->b(Lcom/android/settings/backup/SettingProtos$SystemSetting;)Lcom/android/settings/backup/p;
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/backup/p;->b(Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;)Lcom/android/vendorsettings/backup/p;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -185,9 +185,9 @@
 
     .line 209
     :try_start_1
-    iget-object v4, p0, Lcom/android/settings/backup/v;->Qc:Lcom/android/settings/backup/j;
+    iget-object v4, p0, Lcom/android/vendorsettings/backup/v;->Qc:Lcom/android/vendorsettings/backup/j;
 
-    invoke-virtual {v4, v0}, Lcom/android/settings/backup/j;->ax(Ljava/lang/String;)Lcom/android/settings/backup/SettingProtos$SecureSetting;
+    invoke-virtual {v4, v0}, Lcom/android/vendorsettings/backup/j;->ax(Ljava/lang/String;)Lcom/android/vendorsettings/backup/SettingProtos$SecureSetting;
 
     move-result-object v0
 
@@ -195,7 +195,7 @@
     if-eqz v0, :cond_3
 
     .line 211
-    invoke-virtual {v1, v0}, Lcom/android/settings/backup/p;->d(Lcom/android/settings/backup/SettingProtos$SecureSetting;)Lcom/android/settings/backup/p;
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/backup/p;->d(Lcom/android/vendorsettings/backup/SettingProtos$SecureSetting;)Lcom/android/vendorsettings/backup/p;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -231,25 +231,25 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/backup/SettingProtos$LockSetting;
+    check-cast v0, Lcom/android/vendorsettings/backup/SettingProtos$LockSetting;
 
     .line 218
-    invoke-virtual {v1, v0}, Lcom/android/settings/backup/p;->d(Lcom/android/settings/backup/SettingProtos$LockSetting;)Lcom/android/settings/backup/p;
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/backup/p;->d(Lcom/android/vendorsettings/backup/SettingProtos$LockSetting;)Lcom/android/vendorsettings/backup/p;
 
     goto :goto_2
 
     .line 220
     :cond_5
-    invoke-static {}, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;->nb()Lcom/android/settings/backup/y;
+    invoke-static {}, Lcom/android/vendorsettings/backup/SyncRootProtos$SyncRoot;->nb()Lcom/android/vendorsettings/backup/y;
 
     move-result-object v0
 
     .line 221
-    invoke-virtual {v1}, Lcom/android/settings/backup/p;->mF()Lcom/android/settings/backup/SettingProtos$Settings;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/backup/p;->mF()Lcom/android/vendorsettings/backup/SettingProtos$Settings;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/y;->f(Lcom/android/settings/backup/SettingProtos$Settings;)Lcom/android/settings/backup/y;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/backup/y;->f(Lcom/android/vendorsettings/backup/SettingProtos$Settings;)Lcom/android/vendorsettings/backup/y;
 
     .line 222
     const/4 v2, 0x0
@@ -268,11 +268,11 @@
 
     .line 225
     :try_start_3
-    invoke-virtual {v0}, Lcom/android/settings/backup/y;->nh()Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/backup/y;->nh()Lcom/android/vendorsettings/backup/SyncRootProtos$SyncRoot;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;->writeTo(Ljava/io/OutputStream;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/backup/SyncRootProtos$SyncRoot;->writeTo(Ljava/io/OutputStream;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
@@ -284,7 +284,7 @@
 
     .line 233
     :cond_6
-    sget-object v1, Lcom/android/settings/backup/h;->PM:[Lcom/android/settings/backup/A;
+    sget-object v1, Lcom/android/vendorsettings/backup/h;->PM:[Lcom/android/vendorsettings/backup/A;
 
     array-length v2, v1
 
@@ -296,11 +296,11 @@
     aget-object v3, v1, v0
 
     .line 234
-    iget-object v4, p0, Lcom/android/settings/backup/v;->Qd:Lcom/android/settings/backup/t;
+    iget-object v4, p0, Lcom/android/vendorsettings/backup/v;->Qd:Lcom/android/vendorsettings/backup/t;
 
-    iget-object v4, v4, Lcom/android/settings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
+    iget-object v4, v4, Lcom/android/vendorsettings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
 
-    iget-object v3, v3, Lcom/android/settings/backup/A;->Qh:Ljava/lang/String;
+    iget-object v3, v3, Lcom/android/vendorsettings/backup/A;->Qh:Ljava/lang/String;
 
     invoke-virtual {v4, v3}, Lmiui/app/backup/FullBackupAgent;->addAttachedFile(Ljava/lang/String;)V
 
@@ -326,52 +326,52 @@
 
     .line 237
     :cond_8
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Qc:Lcom/android/settings/backup/j;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Qc:Lcom/android/vendorsettings/backup/j;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/j;->ba(I)Ljava/io/File;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/backup/j;->ba(I)Ljava/io/File;
 
     move-result-object v7
 
     .line 238
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Qc:Lcom/android/settings/backup/j;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Qc:Lcom/android/vendorsettings/backup/j;
 
     const/4 v1, 0x2
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/j;->ba(I)Ljava/io/File;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/backup/j;->ba(I)Ljava/io/File;
 
     move-result-object v8
 
     .line 239
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Qc:Lcom/android/settings/backup/j;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Qc:Lcom/android/vendorsettings/backup/j;
 
     const/4 v1, 0x4
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/j;->ba(I)Ljava/io/File;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/backup/j;->ba(I)Ljava/io/File;
 
     move-result-object v9
 
     .line 240
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Qc:Lcom/android/settings/backup/j;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Qc:Lcom/android/vendorsettings/backup/j;
 
     const/16 v1, 0x8
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/j;->ba(I)Ljava/io/File;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/backup/j;->ba(I)Ljava/io/File;
 
     move-result-object v10
 
     .line 241
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Qc:Lcom/android/settings/backup/j;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Qc:Lcom/android/vendorsettings/backup/j;
 
     const/16 v1, 0x10
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/j;->ba(I)Ljava/io/File;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/backup/j;->ba(I)Ljava/io/File;
 
     move-result-object v11
 
     .line 242
-    new-instance v0, Lcom/android/settings/backup/i;
+    new-instance v0, Lcom/android/vendorsettings/backup/i;
 
     invoke-virtual {v7}, Ljava/io/File;->getName()Ljava/lang/String;
 
@@ -393,23 +393,23 @@
 
     move-result-object v5
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/backup/i;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/backup/i;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 244
     new-instance v1, Ljava/io/File;
 
-    iget-object v2, p0, Lcom/android/settings/backup/v;->Py:Ljava/io/File;
+    iget-object v2, p0, Lcom/android/vendorsettings/backup/v;->Py:Ljava/io/File;
 
     const-string v3, "settings_descript.xml"
 
     invoke-direct {v1, v2, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/i;->c(Ljava/io/File;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/backup/i;->c(Ljava/io/File;)V
 
     .line 245
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Qd:Lcom/android/settings/backup/t;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Qd:Lcom/android/vendorsettings/backup/t;
 
-    iget-object v0, v0, Lcom/android/settings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
+    iget-object v0, v0, Lcom/android/vendorsettings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
 
     invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -418,9 +418,9 @@
     invoke-virtual {v0, v1}, Lmiui/app/backup/FullBackupAgent;->addAttachedFile(Ljava/lang/String;)V
 
     .line 246
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Qd:Lcom/android/settings/backup/t;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Qd:Lcom/android/vendorsettings/backup/t;
 
-    iget-object v0, v0, Lcom/android/settings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
+    iget-object v0, v0, Lcom/android/vendorsettings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
 
     invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -429,9 +429,9 @@
     invoke-virtual {v0, v1}, Lmiui/app/backup/FullBackupAgent;->addAttachedFile(Ljava/lang/String;)V
 
     .line 247
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Qd:Lcom/android/settings/backup/t;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Qd:Lcom/android/vendorsettings/backup/t;
 
-    iget-object v0, v0, Lcom/android/settings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
+    iget-object v0, v0, Lcom/android/vendorsettings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
 
     invoke-virtual {v9}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -440,9 +440,9 @@
     invoke-virtual {v0, v1}, Lmiui/app/backup/FullBackupAgent;->addAttachedFile(Ljava/lang/String;)V
 
     .line 248
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Qd:Lcom/android/settings/backup/t;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Qd:Lcom/android/vendorsettings/backup/t;
 
-    iget-object v0, v0, Lcom/android/settings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
+    iget-object v0, v0, Lcom/android/vendorsettings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
 
     invoke-virtual {v10}, Ljava/io/File;->getCanonicalPath()Ljava/lang/String;
 
@@ -451,9 +451,9 @@
     invoke-virtual {v0, v1}, Lmiui/app/backup/FullBackupAgent;->addAttachedFile(Ljava/lang/String;)V
 
     .line 249
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Qd:Lcom/android/settings/backup/t;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Qd:Lcom/android/vendorsettings/backup/t;
 
-    iget-object v0, v0, Lcom/android/settings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
+    iget-object v0, v0, Lcom/android/vendorsettings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
 
     invoke-virtual {v11}, Ljava/io/File;->getCanonicalPath()Ljava/lang/String;
 
@@ -482,7 +482,7 @@
     .line 312
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/android/settings/backup/v;->Py:Ljava/io/File;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/v;->Py:Ljava/io/File;
 
     invoke-direct {v0, v1, p2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
@@ -580,7 +580,7 @@
     .line 325
     :cond_2
     :try_start_6
-    iget-object v2, p0, Lcom/android/settings/backup/v;->PT:Ljava/util/HashMap;
+    iget-object v2, p0, Lcom/android/vendorsettings/backup/v;->PT:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/io/File;->getName()Ljava/lang/String;
 
@@ -854,7 +854,7 @@
     .line 254
     new-instance v6, Ljava/io/File;
 
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Py:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Py:Ljava/io/File;
 
     const-string v1, "settings_descript.xml"
 
@@ -903,15 +903,15 @@
     const/4 v2, 0x0
 
     .line 264
-    new-instance v0, Lcom/android/settings/backup/j;
+    new-instance v0, Lcom/android/vendorsettings/backup/j;
 
-    iget-object v1, p0, Lcom/android/settings/backup/v;->Qd:Lcom/android/settings/backup/t;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/v;->Qd:Lcom/android/vendorsettings/backup/t;
 
-    iget-object v1, v1, Lcom/android/settings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
+    iget-object v1, v1, Lcom/android/vendorsettings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
 
-    invoke-direct {v0, v1}, Lcom/android/settings/backup/j;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/backup/j;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/backup/v;->Qc:Lcom/android/settings/backup/j;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/v;->Qc:Lcom/android/vendorsettings/backup/j;
 
     .line 267
     :try_start_0
@@ -927,7 +927,7 @@
 
     .line 268
     :try_start_1
-    invoke-static {v1}, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;->a(Ljava/io/InputStream;)Lcom/android/settings/backup/SyncRootProtos$SyncRoot;
+    invoke-static {v1}, Lcom/android/vendorsettings/backup/SyncRootProtos$SyncRoot;->a(Ljava/io/InputStream;)Lcom/android/vendorsettings/backup/SyncRootProtos$SyncRoot;
 
     move-result-object v0
 
@@ -935,7 +935,7 @@
     if-eqz v0, :cond_0
 
     .line 271
-    invoke-virtual {v0}, Lcom/android/settings/backup/SyncRootProtos$SyncRoot;->na()Lcom/android/settings/backup/SettingProtos$Settings;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/backup/SyncRootProtos$SyncRoot;->na()Lcom/android/vendorsettings/backup/SettingProtos$Settings;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -962,7 +962,7 @@
     .line 276
     :cond_2
     :try_start_2
-    invoke-virtual {v2}, Lcom/android/settings/backup/SettingProtos$Settings;->mw()Ljava/util/List;
+    invoke-virtual {v2}, Lcom/android/vendorsettings/backup/SettingProtos$Settings;->mw()Ljava/util/List;
 
     move-result-object v0
 
@@ -981,15 +981,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/backup/SettingProtos$SystemSetting;
+    check-cast v0, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 278
     :try_start_3
-    iget-object v4, p0, Lcom/android/settings/backup/v;->Qc:Lcom/android/settings/backup/j;
+    iget-object v4, p0, Lcom/android/vendorsettings/backup/v;->Qc:Lcom/android/vendorsettings/backup/j;
 
-    invoke-virtual {v4, v0}, Lcom/android/settings/backup/j;->a(Lcom/android/settings/backup/SettingProtos$SystemSetting;)Landroid/net/Uri;
+    invoke-virtual {v4, v0}, Lcom/android/vendorsettings/backup/j;->a(Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;)Landroid/net/Uri;
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
@@ -1028,7 +1028,7 @@
     .line 283
     :cond_4
     :try_start_5
-    invoke-virtual {v2}, Lcom/android/settings/backup/SettingProtos$Settings;->mx()Ljava/util/List;
+    invoke-virtual {v2}, Lcom/android/vendorsettings/backup/SettingProtos$Settings;->mx()Ljava/util/List;
 
     move-result-object v0
 
@@ -1047,15 +1047,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/backup/SettingProtos$SecureSetting;
+    check-cast v0, Lcom/android/vendorsettings/backup/SettingProtos$SecureSetting;
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     .line 285
     :try_start_6
-    iget-object v4, p0, Lcom/android/settings/backup/v;->Qc:Lcom/android/settings/backup/j;
+    iget-object v4, p0, Lcom/android/vendorsettings/backup/v;->Qc:Lcom/android/vendorsettings/backup/j;
 
-    invoke-virtual {v4, v0}, Lcom/android/settings/backup/j;->a(Lcom/android/settings/backup/SettingProtos$SecureSetting;)Landroid/net/Uri;
+    invoke-virtual {v4, v0}, Lcom/android/vendorsettings/backup/j;->a(Lcom/android/vendorsettings/backup/SettingProtos$SecureSetting;)Landroid/net/Uri;
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_1
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
@@ -1078,7 +1078,7 @@
 
     .line 290
     :cond_5
-    invoke-virtual {v2}, Lcom/android/settings/backup/SettingProtos$Settings;->my()Ljava/util/List;
+    invoke-virtual {v2}, Lcom/android/vendorsettings/backup/SettingProtos$Settings;->my()Ljava/util/List;
 
     move-result-object v0
 
@@ -1097,15 +1097,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/backup/SettingProtos$LockSetting;
+    check-cast v0, Lcom/android/vendorsettings/backup/SettingProtos$LockSetting;
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
     .line 292
     :try_start_8
-    iget-object v3, p0, Lcom/android/settings/backup/v;->Qc:Lcom/android/settings/backup/j;
+    iget-object v3, p0, Lcom/android/vendorsettings/backup/v;->Qc:Lcom/android/vendorsettings/backup/j;
 
-    invoke-virtual {v3, v0}, Lcom/android/settings/backup/j;->a(Lcom/android/settings/backup/SettingProtos$LockSetting;)Z
+    invoke-virtual {v3, v0}, Lcom/android/vendorsettings/backup/j;->a(Lcom/android/vendorsettings/backup/SettingProtos$LockSetting;)Z
     :try_end_8
     .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_2
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
@@ -1141,14 +1141,14 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/backup/v;->PT:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/v;->PT:Ljava/util/HashMap;
 
     .line 304
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/android/settings/backup/v;->Qd:Lcom/android/settings/backup/t;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/v;->Qd:Lcom/android/vendorsettings/backup/t;
 
-    iget-object v1, v1, Lcom/android/settings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
+    iget-object v1, v1, Lcom/android/vendorsettings/backup/t;->PL:Lmiui/app/backup/FullBackupAgent;
 
     invoke-virtual {v1}, Lmiui/app/backup/FullBackupAgent;->getCacheDir()Ljava/io/File;
 
@@ -1158,10 +1158,10 @@
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/backup/v;->Py:Ljava/io/File;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/v;->Py:Ljava/io/File;
 
     .line 305
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Py:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Py:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -1170,7 +1170,7 @@
     if-nez v0, :cond_8
 
     .line 306
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Py:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Py:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
@@ -1194,29 +1194,29 @@
 
     .prologue
     .line 350
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Qc:Lcom/android/settings/backup/j;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Qc:Lcom/android/vendorsettings/backup/j;
 
-    iget-object v1, p0, Lcom/android/settings/backup/v;->PT:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/v;->PT:Ljava/util/HashMap;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/j;->b(Ljava/util/HashMap;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/backup/j;->b(Ljava/util/HashMap;)V
 
     .line 351
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Qc:Lcom/android/settings/backup/j;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Qc:Lcom/android/vendorsettings/backup/j;
 
-    invoke-virtual {v0}, Lcom/android/settings/backup/j;->lN()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/backup/j;->lN()V
 
     .line 352
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Qc:Lcom/android/settings/backup/j;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Qc:Lcom/android/vendorsettings/backup/j;
 
-    invoke-virtual {v0}, Lcom/android/settings/backup/j;->lO()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/backup/j;->lO()V
 
     .line 353
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Py:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Py:Ljava/io/File;
 
     if-eqz v0, :cond_0
 
     .line 354
-    iget-object v0, p0, Lcom/android/settings/backup/v;->Py:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/v;->Py:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 

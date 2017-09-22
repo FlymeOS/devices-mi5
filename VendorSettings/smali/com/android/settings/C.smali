@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/C;
+.class final Lcom/android/vendorsettings/C;
 .super Ljava/lang/Object;
 .source "AppListPreference.java"
 
@@ -19,7 +19,7 @@
 
 
 # virtual methods
-.method public a(Landroid/os/Parcel;)Lcom/android/settings/AppListPreference$SavedState;
+.method public a(Landroid/os/Parcel;)Lcom/android/vendorsettings/AppListPreference$SavedState;
     .locals 5
 
     .prologue
@@ -57,9 +57,9 @@
     move-result-object v3
 
     .line 202
-    new-instance v4, Lcom/android/settings/AppListPreference$SavedState;
+    new-instance v4, Lcom/android/vendorsettings/AppListPreference$SavedState;
 
-    invoke-direct {v4, v1, v2, v0, v3}, Lcom/android/settings/AppListPreference$SavedState;-><init>([Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZLandroid/os/Parcelable;)V
+    invoke-direct {v4, v1, v2, v0, v3}, Lcom/android/vendorsettings/AppListPreference$SavedState;-><init>([Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZLandroid/os/Parcelable;)V
 
     return-object v4
 
@@ -75,19 +75,19 @@
 
     .prologue
     .line 195
-    invoke-virtual {p0, p1}, Lcom/android/settings/C;->a(Landroid/os/Parcel;)Lcom/android/settings/AppListPreference$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/C;->a(Landroid/os/Parcel;)Lcom/android/vendorsettings/AppListPreference$SavedState;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public f(I)[Lcom/android/settings/AppListPreference$SavedState;
+.method public f(I)[Lcom/android/vendorsettings/AppListPreference$SavedState;
     .locals 1
 
     .prologue
     .line 207
-    new-array v0, p1, [Lcom/android/settings/AppListPreference$SavedState;
+    new-array v0, p1, [Lcom/android/vendorsettings/AppListPreference$SavedState;
 
     return-object v0
 .end method
@@ -97,7 +97,7 @@
 
     .prologue
     .line 195
-    invoke-virtual {p0, p1}, Lcom/android/settings/C;->f(I)[Lcom/android/settings/AppListPreference$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/C;->f(I)[Lcom/android/vendorsettings/AppListPreference$SavedState;
 
     move-result-object v0
 

@@ -1,10 +1,10 @@
-.class Lcom/android/settings/hJ;
+.class Lcom/android/vendorsettings/hJ;
 .super Landroid/widget/BaseAdapter;
 .source "SmsDefaultDialog.java"
 
 
 # instance fields
-.field final synthetic As:Lcom/android/settings/SmsDefaultDialog;
+.field final synthetic As:Lcom/android/vendorsettings/SmsDefaultDialog;
 
 .field private final D:Ljava/util/List;
 
@@ -12,26 +12,26 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/SmsDefaultDialog;)V
+.method public constructor <init>(Lcom/android/vendorsettings/SmsDefaultDialog;)V
     .locals 3
 
     .prologue
     const/4 v1, 0x0
 
     .line 158
-    iput-object p1, p0, Lcom/android/settings/hJ;->As:Lcom/android/settings/SmsDefaultDialog;
+    iput-object p1, p0, Lcom/android/vendorsettings/hJ;->As:Lcom/android/vendorsettings/SmsDefaultDialog;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 159
-    invoke-direct {p0}, Lcom/android/settings/hJ;->getItems()Ljava/util/List;
+    invoke-direct {p0}, Lcom/android/vendorsettings/hJ;->getItems()Ljava/util/List;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/hJ;->D:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/vendorsettings/hJ;->D:Ljava/util/List;
 
     .line 160
-    invoke-direct {p0}, Lcom/android/settings/hJ;->hZ()I
+    invoke-direct {p0}, Lcom/android/vendorsettings/hJ;->hZ()I
 
     move-result v0
 
@@ -39,16 +39,16 @@
     if-lez v0, :cond_0
 
     .line 163
-    iget-object v2, p0, Lcom/android/settings/hJ;->D:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/vendorsettings/hJ;->D:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hK;
+    check-cast v0, Lcom/android/vendorsettings/hK;
 
     .line 164
-    iget-object v2, p0, Lcom/android/settings/hJ;->D:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/vendorsettings/hJ;->D:Ljava/util/List;
 
     invoke-interface {v2, v1, v0}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
@@ -56,7 +56,7 @@
 
     .line 167
     :cond_0
-    iput v0, p0, Lcom/android/settings/hJ;->aY:I
+    iput v0, p0, Lcom/android/vendorsettings/hJ;->aY:I
 
     .line 168
     return-void
@@ -67,9 +67,9 @@
 
     .prologue
     .line 228
-    iget-object v0, p0, Lcom/android/settings/hJ;->As:Lcom/android/settings/SmsDefaultDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/hJ;->As:Lcom/android/vendorsettings/SmsDefaultDialog;
 
-    invoke-virtual {v0}, Lcom/android/settings/SmsDefaultDialog;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/SmsDefaultDialog;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -79,7 +79,7 @@
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     .line 231
-    iget-object v0, p0, Lcom/android/settings/hJ;->As:Lcom/android/settings/SmsDefaultDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/hJ;->As:Lcom/android/vendorsettings/SmsDefaultDialog;
 
     invoke-static {v0}, Lcom/android/internal/telephony/SmsApplication;->getApplicationCollection(Landroid/content/Context;)Ljava/util/Collection;
 
@@ -118,7 +118,7 @@
     if-eqz v4, :cond_0
 
     .line 236
-    new-instance v5, Lcom/android/settings/hK;
+    new-instance v5, Lcom/android/vendorsettings/hK;
 
     invoke-virtual {v4, v1}, Landroid/content/pm/ApplicationInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
@@ -132,7 +132,7 @@
 
     move-result-object v4
 
-    invoke-direct {v5, p0, v6, v4, v0}, Lcom/android/settings/hK;-><init>(Lcom/android/settings/hJ;Ljava/lang/String;Landroid/graphics/drawable/Drawable;Ljava/lang/String;)V
+    invoke-direct {v5, p0, v6, v4, v0}, Lcom/android/vendorsettings/hK;-><init>(Lcom/android/vendorsettings/hJ;Ljava/lang/String;Landroid/graphics/drawable/Drawable;Ljava/lang/String;)V
 
     invoke-interface {v2, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_0
@@ -156,7 +156,7 @@
 
     .prologue
     .line 250
-    iget-object v0, p0, Lcom/android/settings/hJ;->As:Lcom/android/settings/SmsDefaultDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/hJ;->As:Lcom/android/vendorsettings/SmsDefaultDialog;
 
     const/4 v1, 0x1
 
@@ -185,7 +185,7 @@
     move v1, v0
 
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/hJ;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/hJ;->D:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -194,15 +194,15 @@
     if-ge v1, v0, :cond_1
 
     .line 256
-    iget-object v0, p0, Lcom/android/settings/hJ;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/hJ;->D:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hK;
+    check-cast v0, Lcom/android/vendorsettings/hK;
 
-    iget-object v0, v0, Lcom/android/settings/hK;->At:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/vendorsettings/hK;->At:Ljava/lang/String;
 
     invoke-static {v0, v2}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -236,17 +236,17 @@
 
     .prologue
     .line 209
-    invoke-virtual {p0, p1}, Lcom/android/settings/hJ;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/hJ;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hK;
+    check-cast v0, Lcom/android/vendorsettings/hK;
 
     .line 210
     if-eqz v0, :cond_0
 
     .line 211
-    iget-object v0, v0, Lcom/android/settings/hK;->At:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/vendorsettings/hK;->At:Ljava/lang/String;
 
     .line 213
     :goto_0
@@ -263,7 +263,7 @@
 
     .prologue
     .line 223
-    iget v0, p0, Lcom/android/settings/hJ;->aY:I
+    iget v0, p0, Lcom/android/vendorsettings/hJ;->aY:I
 
     if-ne p1, v0, :cond_0
 
@@ -283,11 +283,11 @@
 
     .prologue
     .line 172
-    iget-object v0, p0, Lcom/android/settings/hJ;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/hJ;->D:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/hJ;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/hJ;->D:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -307,11 +307,11 @@
 
     .prologue
     .line 177
-    iget-object v0, p0, Lcom/android/settings/hJ;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/hJ;->D:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/hJ;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/hJ;->D:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -319,13 +319,13 @@
 
     if-ge p1, v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/hJ;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/hJ;->D:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hK;
+    check-cast v0, Lcom/android/vendorsettings/hK;
 
     :goto_0
     return-object v0
@@ -355,16 +355,16 @@
     const/4 v4, 0x0
 
     .line 187
-    invoke-virtual {p0, p1}, Lcom/android/settings/hJ;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/hJ;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hK;
+    check-cast v0, Lcom/android/vendorsettings/hK;
 
     .line 188
-    iget-object v1, p0, Lcom/android/settings/hJ;->As:Lcom/android/settings/SmsDefaultDialog;
+    iget-object v1, p0, Lcom/android/vendorsettings/hJ;->As:Lcom/android/vendorsettings/SmsDefaultDialog;
 
-    invoke-virtual {v1}, Lcom/android/settings/SmsDefaultDialog;->getLayoutInflater()Landroid/view/LayoutInflater;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/SmsDefaultDialog;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v1
 
@@ -385,12 +385,12 @@
     check-cast v1, Landroid/widget/TextView;
 
     .line 191
-    iget-object v3, v0, Lcom/android/settings/hK;->label:Ljava/lang/String;
+    iget-object v3, v0, Lcom/android/vendorsettings/hK;->label:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 192
-    iget v1, p0, Lcom/android/settings/hJ;->aY:I
+    iget v1, p0, Lcom/android/vendorsettings/hJ;->aY:I
 
     if-ne p1, v1, :cond_0
 
@@ -412,7 +412,7 @@
     check-cast v1, Landroid/widget/ImageView;
 
     .line 198
-    iget-object v0, v0, Lcom/android/settings/hK;->icon:Landroid/graphics/drawable/Drawable;
+    iget-object v0, v0, Lcom/android/vendorsettings/hK;->icon:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 

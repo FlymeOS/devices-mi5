@@ -1,19 +1,19 @@
-.class Lcom/android/settings/af;
+.class Lcom/android/vendorsettings/af;
 .super Landroid/content/BroadcastReceiver;
 .source "BasePreferenceFragment.java"
 
 
 # instance fields
-.field final synthetic cv:Lcom/android/settings/BasePreferenceFragment;
+.field final synthetic cv:Lcom/android/vendorsettings/BasePreferenceFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/BasePreferenceFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/BasePreferenceFragment;)V
     .locals 0
 
     .prologue
     .line 163
-    iput-object p1, p0, Lcom/android/settings/af;->cv:Lcom/android/settings/BasePreferenceFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/af;->cv:Lcom/android/vendorsettings/BasePreferenceFragment;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -50,9 +50,9 @@
 
     .line 169
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/af;->cv:Lcom/android/settings/BasePreferenceFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/af;->cv:Lcom/android/vendorsettings/BasePreferenceFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/BasePreferenceFragment;->ab()Lcom/android/settings/fq;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/BasePreferenceFragment;->ab()Lcom/android/vendorsettings/fq;
 
     move-result-object v0
 
@@ -60,7 +60,7 @@
     if-eqz v0, :cond_1
 
     .line 171
-    invoke-virtual {v0}, Lcom/android/settings/fq;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/fq;->notifyDataSetChanged()V
 
     .line 174
     :cond_1

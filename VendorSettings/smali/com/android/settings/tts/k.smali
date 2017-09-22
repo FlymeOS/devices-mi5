@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/tts/k;
+.class public interface abstract Lcom/android/vendorsettings/tts/k;
 .super Ljava/lang/Object;
 .source "TtsEnginePreference.java"
 

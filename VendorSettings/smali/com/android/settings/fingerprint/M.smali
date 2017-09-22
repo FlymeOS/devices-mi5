@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/fingerprint/M;
+.class public interface abstract Lcom/android/vendorsettings/fingerprint/M;
 .super Ljava/lang/Object;
 .source "FingerprintUiHelper.java"
 

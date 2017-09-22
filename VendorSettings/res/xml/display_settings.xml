@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen android:title="@string/display_settings"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.vendorsettings">
     <PreferenceCategory android:title="@string/screen" />
-    <Preference android:title="@string/brightness" android:key="brightness" android:fragment="com.android.settings.display.BrightnessFragment" />
-    <com.android.settings.display.ResolutionListPreference android:persistent="false" android:entries="@array/screen_resolution_entries" android:title="@string/screen_resolution_title" android:key="screen_resolution" android:summary="@string/screen_resolution_summary" android:positiveButtonText="@string/screen_resolution_confirm" android:entryValues="@array/screen_resolution_values" />
-    <miui.preference.ValuePreference android:title="@string/screen_paper_mode_title" android:key="screen_paper_mode" android:summary="@string/screen_paper_mode_summary" android:fragment="com.android.settings.display.PaperModeFragment" />
+    <Preference android:title="@string/brightness" android:key="brightness" android:fragment="com.android.vendorsettings.display.BrightnessFragment" />
+    <com.android.vendorsettings.display.ResolutionListPreference android:persistent="false" android:entries="@array/screen_resolution_entries" android:title="@string/screen_resolution_title" android:key="screen_resolution" android:summary="@string/screen_resolution_summary" android:positiveButtonText="@string/screen_resolution_confirm" android:entryValues="@array/screen_resolution_values" />
+    <miui.preference.ValuePreference android:title="@string/screen_paper_mode_title" android:key="screen_paper_mode" android:summary="@string/screen_paper_mode_summary" android:fragment="com.android.vendorsettings.display.PaperModeFragment" />
     <Preference android:title="@string/screen_effect" android:key="screen_effect">
-        <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings.display.ScreenEffect" />
+        <intent android:targetPackage="com.android.vendorsettings" android:targetClass="com.android.vendorsettings.display.ScreenEffect" />
     </Preference>
     <PreferenceCategory android:title="@string/touch_title" android:key="touch_category">
         <CheckBoxPreference android:persistent="false" android:title="@string/touch_sensitive_title" android:key="touch_sensitive" android:summary="@string/touch_sensitive_summary" />
@@ -15,13 +15,13 @@
     <PreferenceCategory android:title="@string/title_font_current2" android:key="font_settings_cat">
         <miui.preference.ValuePreference android:title="@string/title_font_current2" android:key="font_settings" />
         <miui.preference.ValuePreference android:title="@string/title_layout_current2" android:key="page_layout_settings">
-            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.Settings$PageLayoutActivity" />
+            <intent android:targetPackage="com.android.vendorsettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.vendorsettings.Settings$PageLayoutActivity" />
         </miui.preference.ValuePreference>
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/system" />
-    <com.android.settings.WarnedListPreference android:entries="@array/miui_entries_font_size" android:title="@string/title_font_size" android:key="font_size" android:summary="@string/summary_font_size" android:dialogTitle="@string/dialog_title_font_size" android:entryValues="@array/entryvalues_font_size" />
+    <com.android.vendorsettings.WarnedListPreference android:entries="@array/miui_entries_font_size" android:title="@string/title_font_size" android:key="font_size" android:summary="@string/summary_font_size" android:dialogTitle="@string/dialog_title_font_size" android:entryValues="@array/entryvalues_font_size" />
     <ListPreference android:persistent="false" android:entries="@array/screen_timeout_entries" android:title="@string/screen_timeout" android:key="screen_timeout" android:summary="@string/screen_timeout_summary" android:entryValues="@array/screen_timeout_values" />
-    <PreferenceScreen android:title="@string/screensaver_settings_title" android:key="screensaver" android:fragment="com.android.settings.DreamSettings" />
+    <PreferenceScreen android:title="@string/screensaver_settings_title" android:key="screensaver" android:fragment="com.android.vendorsettings.DreamSettings" />
     <CheckBoxPreference android:persistent="false" android:title="@string/lift_to_wake_title" android:key="lift_to_wake" />
     <CheckBoxPreference android:persistent="false" android:title="@string/tap_to_wake" android:key="tap_to_wake" android:summary="@string/tap_to_wake_summary" />
     <CheckBoxPreference android:persistent="false" android:title="@string/doze_title" android:key="doze" android:summary="@string/doze_summary" />

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;
+.class public Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;
 .super Landroid/preference/PreferenceCategory;
 .source "MiuiStorageVolumePreferenceCategory.java"
 
@@ -10,7 +10,7 @@
 
 .field private final Vr:Landroid/os/storage/StorageManager;
 
-.field private Vs:Lcom/android/settings/deviceinfo/UsageBarPreference;
+.field private Vs:Lcom/android/vendorsettings/deviceinfo/UsageBarPreference;
 
 .field private Vt:Landroid/preference/Preference;
 
@@ -38,51 +38,51 @@
     .line 40
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vp:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vp:Z
 
     .line 73
-    iput-object p2, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vq:Landroid/os/storage/VolumeInfo;
+    iput-object p2, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vq:Landroid/os/storage/VolumeInfo;
 
     .line 74
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->mResources:Landroid/content/res/Resources;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->mResources:Landroid/content/res/Resources;
 
     .line 75
     invoke-static {p1}, Landroid/os/storage/StorageManager;->from(Landroid/content/Context;)Landroid/os/storage/StorageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vr:Landroid/os/storage/StorageManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vr:Landroid/os/storage/StorageManager;
 
     .line 76
-    iput-object p3, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vv:Landroid/os/storage/DiskInfo;
+    iput-object p3, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vv:Landroid/os/storage/DiskInfo;
 
     .line 77
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vv:Landroid/os/storage/DiskInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vv:Landroid/os/storage/DiskInfo;
 
     invoke-virtual {v0}, Landroid/os/storage/DiskInfo;->isSd()Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vp:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vp:Z
 
     .line 79
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vv:Landroid/os/storage/DiskInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vv:Landroid/os/storage/DiskInfo;
 
     invoke-virtual {v0}, Landroid/os/storage/DiskInfo;->getDescription()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 80
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;Landroid/os/storage/VolumeInfo;Landroid/os/storage/DiskInfo;)Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;
+.method public static a(Landroid/content/Context;Landroid/os/storage/VolumeInfo;Landroid/os/storage/DiskInfo;)Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;
     .locals 1
 
     .prologue
@@ -94,9 +94,9 @@
     if-nez v0, :cond_0
 
     .line 64
-    new-instance v0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;
+    new-instance v0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;-><init>(Landroid/content/Context;Landroid/os/storage/VolumeInfo;Landroid/os/storage/DiskInfo;)V
+    invoke-direct {v0, p0, p1, p2}, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;-><init>(Landroid/content/Context;Landroid/os/storage/VolumeInfo;Landroid/os/storage/DiskInfo;)V
 
     .line 66
     :goto_0
@@ -115,18 +115,18 @@
     const/4 v6, 0x0
 
     .line 229
-    iput-wide p1, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vx:J
+    iput-wide p1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vx:J
 
     .line 230
     sub-long v0, p1, p3
 
     .line 231
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vs:Lcom/android/settings/deviceinfo/UsageBarPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vs:Lcom/android/vendorsettings/deviceinfo/UsageBarPreference;
 
-    invoke-virtual {v2}, Lcom/android/settings/deviceinfo/UsageBarPreference;->clear()V
+    invoke-virtual {v2}, Lcom/android/vendorsettings/deviceinfo/UsageBarPreference;->clear()V
 
     .line 232
-    iget-wide v2, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vx:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vx:J
 
     const-wide/16 v4, 0x0
 
@@ -135,7 +135,7 @@
     if-lez v2, :cond_0
 
     .line 233
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vs:Lcom/android/settings/deviceinfo/UsageBarPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vs:Lcom/android/vendorsettings/deviceinfo/UsageBarPreference;
 
     long-to-float v0, v0
 
@@ -145,12 +145,12 @@
 
     const/high16 v1, -0x10000
 
-    invoke-virtual {v2, v6, v0, v1}, Lcom/android/settings/deviceinfo/UsageBarPreference;->b(IFI)V
+    invoke-virtual {v2, v6, v0, v1}, Lcom/android/vendorsettings/deviceinfo/UsageBarPreference;->b(IFI)V
 
     .line 234
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vs:Lcom/android/settings/deviceinfo/UsageBarPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vs:Lcom/android/vendorsettings/deviceinfo/UsageBarPreference;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->mResources:Landroid/content/res/Resources;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->mResources:Landroid/content/res/Resources;
 
     const v2, 0x7f0c0d50
 
@@ -158,7 +158,7 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    invoke-direct {p0, p3, p4}, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->h(J)Ljava/lang/String;
+    invoke-direct {p0, p3, p4}, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->h(J)Ljava/lang/String;
 
     move-result-object v4
 
@@ -166,7 +166,7 @@
 
     const/4 v4, 0x1
 
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->h(J)Ljava/lang/String;
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->h(J)Ljava/lang/String;
 
     move-result-object v5
 
@@ -176,13 +176,13 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/deviceinfo/UsageBarPreference;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/deviceinfo/UsageBarPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 237
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vs:Lcom/android/settings/deviceinfo/UsageBarPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vs:Lcom/android/vendorsettings/deviceinfo/UsageBarPreference;
 
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/UsageBarPreference;->commit()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/deviceinfo/UsageBarPreference;->commit()V
 
     .line 238
     return-void
@@ -193,7 +193,7 @@
 
     .prologue
     .line 248
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -220,17 +220,17 @@
 
     .line 146
     .line 148
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vq:Landroid/os/storage/VolumeInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vq:Landroid/os/storage/VolumeInfo;
 
     invoke-virtual {v0}, Landroid/os/storage/VolumeInfo;->getState()I
 
     move-result v2
 
     .line 150
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->getContext()Landroid/content/Context;
 
     .line 152
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
 
     invoke-virtual {v0, v3}, Landroid/preference/Preference;->setEnabled(Z)V
 
@@ -241,12 +241,12 @@
 
     .line 155
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
 
     invoke-virtual {v0, v3}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 157
-    iget-boolean v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vp:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vp:Z
 
     if-eqz v0, :cond_6
 
@@ -258,25 +258,25 @@
 
     .line 165
     :goto_0
-    iget-object v3, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
 
     invoke-virtual {v3, v1}, Landroid/preference/Preference;->setTitle(I)V
 
     .line 166
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
 
     invoke-virtual {v1, v0}, Landroid/preference/Preference;->setSummary(I)V
 
     .line 204
     :cond_1
     :goto_1
-    iget-boolean v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->uw:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->uw:Z
 
     if-eqz v0, :cond_c
 
     const-string v0, "mtp"
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vw:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vw:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -286,7 +286,7 @@
 
     const-string v0, "ptp"
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vw:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vw:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -296,7 +296,7 @@
 
     .line 206
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
 
     invoke-virtual {v0, v5}, Landroid/preference/Preference;->setEnabled(Z)V
 
@@ -307,9 +307,9 @@
 
     .line 208
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->mResources:Landroid/content/res/Resources;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->mResources:Landroid/content/res/Resources;
 
     const v2, 0x7f0c0444
 
@@ -321,19 +321,19 @@
 
     .line 212
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
 
     if-eqz v0, :cond_5
 
     .line 213
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
 
     invoke-virtual {v0, v5}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 214
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->mResources:Landroid/content/res/Resources;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->mResources:Landroid/content/res/Resources;
 
     const v2, 0x7f0c0444
 
@@ -367,12 +367,12 @@
 
     .line 170
     :cond_8
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
 
     invoke-virtual {v0, v3}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 172
-    iget-boolean v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vp:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vp:Z
 
     if-eqz v0, :cond_9
 
@@ -381,9 +381,9 @@
 
     .line 180
     :goto_3
-    iget-object v3, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
 
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->mResources:Landroid/content/res/Resources;
+    iget-object v4, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->mResources:Landroid/content/res/Resources;
 
     invoke-virtual {v4, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -392,9 +392,9 @@
     invoke-virtual {v3, v1}, Landroid/preference/Preference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 181
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
 
-    iget-object v3, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->mResources:Landroid/content/res/Resources;
+    iget-object v3, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->mResources:Landroid/content/res/Resources;
 
     invoke-virtual {v3, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -404,19 +404,19 @@
 
     .line 198
     :goto_4
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vs:Lcom/android/settings/deviceinfo/UsageBarPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vs:Lcom/android/vendorsettings/deviceinfo/UsageBarPreference;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
     .line 199
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
 
     if-eqz v0, :cond_1
 
     .line 200
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
     goto/16 :goto_1
 
@@ -431,12 +431,12 @@
 
     .line 184
     :cond_a
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
 
     invoke-virtual {v0, v5}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 186
-    iget-boolean v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vp:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vp:Z
 
     if-eqz v0, :cond_b
 
@@ -445,9 +445,9 @@
 
     .line 194
     :goto_5
-    iget-object v3, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
 
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->mResources:Landroid/content/res/Resources;
+    iget-object v4, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->mResources:Landroid/content/res/Resources;
 
     invoke-virtual {v4, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -456,9 +456,9 @@
     invoke-virtual {v3, v1}, Landroid/preference/Preference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 195
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
 
-    iget-object v3, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->mResources:Landroid/content/res/Resources;
+    iget-object v3, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->mResources:Landroid/content/res/Resources;
 
     invoke-virtual {v3, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -479,14 +479,14 @@
 
     .line 216
     :cond_c
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
 
     if-eqz v0, :cond_5
 
     .line 217
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
 
     invoke-virtual {v1}, Landroid/preference/Preference;->isEnabled()Z
 
@@ -495,12 +495,12 @@
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 219
-    iget-boolean v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vp:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vp:Z
 
     if-eqz v0, :cond_d
 
     .line 220
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
 
     const v1, 0x7f0c0441
 
@@ -510,7 +510,7 @@
 
     .line 222
     :cond_d
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
 
     const v1, 0x7f0c1144
 
@@ -526,7 +526,7 @@
 
     .prologue
     .line 256
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
 
     if-ne p1, v0, :cond_0
 
@@ -546,7 +546,7 @@
 
     .prologue
     .line 260
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
 
     if-ne p1, v0, :cond_0
 
@@ -566,41 +566,41 @@
 
     .prologue
     .line 84
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
     .line 86
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->removeAll()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->removeAll()V
 
     .line 88
-    new-instance v0, Lcom/android/settings/deviceinfo/UsageBarPreference;
+    new-instance v0, Lcom/android/vendorsettings/deviceinfo/UsageBarPreference;
 
-    invoke-direct {v0, v2}, Lcom/android/settings/deviceinfo/UsageBarPreference;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v2}, Lcom/android/vendorsettings/deviceinfo/UsageBarPreference;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vs:Lcom/android/settings/deviceinfo/UsageBarPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vs:Lcom/android/vendorsettings/deviceinfo/UsageBarPreference;
 
     .line 89
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vs:Lcom/android/settings/deviceinfo/UsageBarPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vs:Lcom/android/vendorsettings/deviceinfo/UsageBarPreference;
 
     const/4 v1, -0x2
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/deviceinfo/UsageBarPreference;->setOrder(I)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/deviceinfo/UsageBarPreference;->setOrder(I)V
 
     .line 90
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vs:Lcom/android/settings/deviceinfo/UsageBarPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vs:Lcom/android/vendorsettings/deviceinfo/UsageBarPreference;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
     .line 93
     new-instance v0, Landroid/preference/Preference;
 
     invoke-direct {v0, v2}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
 
     .line 102
-    iget-boolean v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vp:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vp:Z
 
     if-eqz v0, :cond_1
 
@@ -612,29 +612,29 @@
 
     .line 110
     :goto_0
-    iget-object v3, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
+    iget-object v3, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
 
     invoke-virtual {v3, v1}, Landroid/preference/Preference;->setTitle(I)V
 
     .line 111
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
 
     invoke-virtual {v1, v0}, Landroid/preference/Preference;->setSummary(I)V
 
     .line 113
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vt:Landroid/preference/Preference;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
     .line 116
     new-instance v0, Landroid/preference/Preference;
 
     invoke-direct {v0, v2}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
 
     .line 119
-    iget-boolean v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vp:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vp:Z
 
     if-eqz v0, :cond_2
 
@@ -646,22 +646,22 @@
 
     .line 127
     :goto_1
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
+    iget-object v2, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
 
     invoke-virtual {v2, v1}, Landroid/preference/Preference;->setTitle(I)V
 
     .line 128
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
 
     invoke-virtual {v1, v0}, Landroid/preference/Preference;->setSummary(I)V
 
     .line 130
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vu:Landroid/preference/Preference;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
     .line 133
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vq:Landroid/os/storage/VolumeInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vq:Landroid/os/storage/VolumeInfo;
 
     invoke-virtual {v0}, Landroid/os/storage/VolumeInfo;->isMountedReadable()Z
 
@@ -670,7 +670,7 @@
     if-eqz v0, :cond_0
 
     .line 134
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vq:Landroid/os/storage/VolumeInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vq:Landroid/os/storage/VolumeInfo;
 
     invoke-virtual {v0}, Landroid/os/storage/VolumeInfo;->getPath()Ljava/io/File;
 
@@ -687,11 +687,11 @@
     move-result-wide v0
 
     .line 137
-    invoke-direct {p0, v0, v1, v2, v3}, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->b(JJ)V
+    invoke-direct {p0, v0, v1, v2, v3}, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->b(JJ)V
 
     .line 139
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->oY()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->oY()V
 
     .line 140
     return-void
@@ -720,7 +720,7 @@
 
     .prologue
     .line 252
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vq:Landroid/os/storage/VolumeInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->Vq:Landroid/os/storage/VolumeInfo;
 
     return-object v0
 .end method

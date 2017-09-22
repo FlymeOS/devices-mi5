@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/AccountSettings$2;
+.class Lcom/android/vendorsettings/accounts/AccountSettings$2;
 .super Ljava/lang/Object;
 .source "AccountSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic DS:Lcom/android/settings/accounts/AccountSettings;
+.field final synthetic DS:Lcom/android/vendorsettings/accounts/AccountSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accounts/AccountSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/accounts/AccountSettings;)V
     .locals 0
 
     .prologue
     .line 438
-    iput-object p1, p0, Lcom/android/settings/accounts/AccountSettings$2;->DS:Lcom/android/settings/accounts/AccountSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/accounts/AccountSettings$2;->DS:Lcom/android/vendorsettings/accounts/AccountSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,12 +25,12 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/accounts/AccountSettings$AccountPreference;Lcom/android/settings/accounts/AccountSettings$AccountPreference;)I
+.method public a(Lcom/android/vendorsettings/accounts/AccountSettings$AccountPreference;Lcom/android/vendorsettings/accounts/AccountSettings$AccountPreference;)I
     .locals 2
 
     .prologue
     .line 441
-    invoke-static {p1}, Lcom/android/settings/accounts/AccountSettings$AccountPreference;->a(Lcom/android/settings/accounts/AccountSettings$AccountPreference;)Ljava/lang/CharSequence;
+    invoke-static {p1}, Lcom/android/vendorsettings/accounts/AccountSettings$AccountPreference;->a(Lcom/android/vendorsettings/accounts/AccountSettings$AccountPreference;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -38,7 +38,7 @@
 
     move-result-object v0
 
-    invoke-static {p2}, Lcom/android/settings/accounts/AccountSettings$AccountPreference;->a(Lcom/android/settings/accounts/AccountSettings$AccountPreference;)Ljava/lang/CharSequence;
+    invoke-static {p2}, Lcom/android/vendorsettings/accounts/AccountSettings$AccountPreference;->a(Lcom/android/vendorsettings/accounts/AccountSettings$AccountPreference;)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -58,11 +58,11 @@
 
     .prologue
     .line 438
-    check-cast p1, Lcom/android/settings/accounts/AccountSettings$AccountPreference;
+    check-cast p1, Lcom/android/vendorsettings/accounts/AccountSettings$AccountPreference;
 
-    check-cast p2, Lcom/android/settings/accounts/AccountSettings$AccountPreference;
+    check-cast p2, Lcom/android/vendorsettings/accounts/AccountSettings$AccountPreference;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/accounts/AccountSettings$2;->a(Lcom/android/settings/accounts/AccountSettings$AccountPreference;Lcom/android/settings/accounts/AccountSettings$AccountPreference;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/accounts/AccountSettings$2;->a(Lcom/android/vendorsettings/accounts/AccountSettings$AccountPreference;Lcom/android/vendorsettings/accounts/AccountSettings$AccountPreference;)I
 
     move-result v0
 

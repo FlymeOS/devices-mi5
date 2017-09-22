@@ -1,19 +1,19 @@
-.class final Lcom/android/settings/dJ;
+.class final Lcom/android/vendorsettings/dJ;
 .super Landroid/text/style/ClickableSpan;
 .source "LinkifyUtils.java"
 
 
 # instance fields
-.field final synthetic oT:Lcom/android/settings/dK;
+.field final synthetic oT:Lcom/android/vendorsettings/dK;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dK;)V
+.method constructor <init>(Lcom/android/vendorsettings/dK;)V
     .locals 0
 
     .prologue
     .line 68
-    iput-object p1, p0, Lcom/android/settings/dJ;->oT:Lcom/android/settings/dK;
+    iput-object p1, p0, Lcom/android/vendorsettings/dJ;->oT:Lcom/android/vendorsettings/dK;
 
     invoke-direct {p0}, Landroid/text/style/ClickableSpan;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 71
-    iget-object v0, p0, Lcom/android/settings/dJ;->oT:Lcom/android/settings/dK;
+    iget-object v0, p0, Lcom/android/vendorsettings/dJ;->oT:Lcom/android/vendorsettings/dK;
 
-    invoke-interface {v0}, Lcom/android/settings/dK;->onClick()V
+    invoke-interface {v0}, Lcom/android/vendorsettings/dK;->onClick()V
 
     .line 72
     return-void

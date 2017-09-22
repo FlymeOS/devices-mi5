@@ -1,4 +1,4 @@
-.class Lcom/android/settings/c;
+.class Lcom/android/vendorsettings/c;
 .super Ljava/lang/Object;
 .source "AccessControlFragment.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic g:Lcom/android/settings/AccessControlFragment;
+.field final synthetic g:Lcom/android/vendorsettings/AccessControlFragment;
 
 .field final synthetic h:Landroid/preference/CheckBoxPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/AccessControlFragment;Landroid/preference/CheckBoxPreference;)V
+.method constructor <init>(Lcom/android/vendorsettings/AccessControlFragment;Landroid/preference/CheckBoxPreference;)V
     .locals 0
 
     .prologue
     .line 118
-    iput-object p1, p0, Lcom/android/settings/c;->g:Lcom/android/settings/AccessControlFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/c;->g:Lcom/android/vendorsettings/AccessControlFragment;
 
-    iput-object p2, p0, Lcom/android/settings/c;->h:Landroid/preference/CheckBoxPreference;
+    iput-object p2, p0, Lcom/android/vendorsettings/c;->h:Landroid/preference/CheckBoxPreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,16 +36,16 @@
     const/4 v1, 0x1
 
     .line 121
-    iget-object v0, p0, Lcom/android/settings/c;->g:Lcom/android/settings/AccessControlFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/c;->g:Lcom/android/vendorsettings/AccessControlFragment;
 
-    invoke-static {v0}, Lcom/android/settings/AccessControlFragment;->b(Lcom/android/settings/AccessControlFragment;)Landroid/security/ChooseLockSettingsHelper;
+    invoke-static {v0}, Lcom/android/vendorsettings/AccessControlFragment;->b(Lcom/android/vendorsettings/AccessControlFragment;)Landroid/security/ChooseLockSettingsHelper;
 
     move-result-object v0
 
     invoke-virtual {v0, v1}, Landroid/security/ChooseLockSettingsHelper;->setPrivacyModeEnabled(Z)V
 
     .line 122
-    iget-object v0, p0, Lcom/android/settings/c;->h:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/c;->h:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 

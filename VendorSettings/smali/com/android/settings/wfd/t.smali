@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wfd/t;
+.class Lcom/android/vendorsettings/wfd/t;
 .super Ljava/lang/Object;
 .source "WifiDisplaySettings.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic awy:Lcom/android/settings/wfd/WifiDisplaySettings;
+.field final synthetic awy:Lcom/android/vendorsettings/wfd/WifiDisplaySettings;
 
 .field final synthetic val$enable:Z
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wfd/WifiDisplaySettings;Z)V
+.method constructor <init>(Lcom/android/vendorsettings/wfd/WifiDisplaySettings;Z)V
     .locals 0
 
     .prologue
     .line 538
-    iput-object p1, p0, Lcom/android/settings/wfd/t;->awy:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/wfd/t;->awy:Lcom/android/vendorsettings/wfd/WifiDisplaySettings;
 
-    iput-boolean p2, p0, Lcom/android/settings/wfd/t;->val$enable:Z
+    iput-boolean p2, p0, Lcom/android/vendorsettings/wfd/t;->val$enable:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +46,7 @@
 
     move-result-object v2
 
-    iget-boolean v0, p0, Lcom/android/settings/wfd/t;->val$enable:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/wfd/t;->val$enable:Z
 
     if-eqz v0, :cond_0
 

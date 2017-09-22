@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bu;
+.class Lcom/android/vendorsettings/bu;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ih:Lcom/android/settings/DataUsageSummary;
+.field final synthetic ih:Lcom/android/vendorsettings/DataUsageSummary;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary;)V
+.method constructor <init>(Lcom/android/vendorsettings/DataUsageSummary;)V
     .locals 0
 
     .prologue
     .line 1495
-    iput-object p1, p0, Lcom/android/settings/bu;->ih:Lcom/android/settings/DataUsageSummary;
+    iput-object p1, p0, Lcom/android/vendorsettings/bu;->ih:Lcom/android/vendorsettings/DataUsageSummary;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,21 +32,21 @@
     const/4 v1, 0x0
 
     .line 1516
-    iget-object v0, p0, Lcom/android/settings/bu;->ih:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/vendorsettings/bu;->ih:Lcom/android/vendorsettings/DataUsageSummary;
 
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary;->u(Lcom/android/settings/DataUsageSummary;)Lcom/android/settings/bO;
+    invoke-static {v0}, Lcom/android/vendorsettings/DataUsageSummary;->u(Lcom/android/vendorsettings/DataUsageSummary;)Lcom/android/vendorsettings/bO;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/bO;->isEmpty()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/bO;->isEmpty()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/bu;->ih:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/vendorsettings/bu;->ih:Lcom/android/vendorsettings/DataUsageSummary;
 
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary;->v(Lcom/android/settings/DataUsageSummary;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/DataUsageSummary;->v(Lcom/android/vendorsettings/DataUsageSummary;)Z
 
     move-result v0
 
@@ -56,9 +56,9 @@
 
     .line 1517
     :goto_0
-    iget-object v2, p0, Lcom/android/settings/bu;->ih:Lcom/android/settings/DataUsageSummary;
+    iget-object v2, p0, Lcom/android/vendorsettings/bu;->ih:Lcom/android/vendorsettings/DataUsageSummary;
 
-    invoke-static {v2}, Lcom/android/settings/DataUsageSummary;->w(Lcom/android/settings/DataUsageSummary;)Landroid/widget/TextView;
+    invoke-static {v2}, Lcom/android/vendorsettings/DataUsageSummary;->w(Lcom/android/vendorsettings/DataUsageSummary;)Landroid/widget/TextView;
 
     move-result-object v4
 
@@ -70,9 +70,9 @@
     invoke-virtual {v4, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 1518
-    iget-object v2, p0, Lcom/android/settings/bu;->ih:Lcom/android/settings/DataUsageSummary;
+    iget-object v2, p0, Lcom/android/vendorsettings/bu;->ih:Lcom/android/vendorsettings/DataUsageSummary;
 
-    invoke-static {v2}, Lcom/android/settings/DataUsageSummary;->x(Lcom/android/settings/DataUsageSummary;)Landroid/view/View;
+    invoke-static {v2}, Lcom/android/vendorsettings/DataUsageSummary;->x(Lcom/android/vendorsettings/DataUsageSummary;)Landroid/view/View;
 
     move-result-object v2
 
@@ -110,9 +110,9 @@
 
     .prologue
     .line 1503
-    iget-object v0, p0, Lcom/android/settings/bu;->ih:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/vendorsettings/bu;->ih:Lcom/android/vendorsettings/DataUsageSummary;
 
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary;->t(Lcom/android/settings/DataUsageSummary;)Landroid/net/NetworkPolicyManager;
+    invoke-static {v0}, Lcom/android/vendorsettings/DataUsageSummary;->t(Lcom/android/vendorsettings/DataUsageSummary;)Landroid/net/NetworkPolicyManager;
 
     move-result-object v0
 
@@ -123,16 +123,16 @@
     move-result-object v0
 
     .line 1505
-    iget-object v1, p0, Lcom/android/settings/bu;->ih:Lcom/android/settings/DataUsageSummary;
+    iget-object v1, p0, Lcom/android/vendorsettings/bu;->ih:Lcom/android/vendorsettings/DataUsageSummary;
 
-    invoke-static {v1}, Lcom/android/settings/DataUsageSummary;->u(Lcom/android/settings/DataUsageSummary;)Lcom/android/settings/bO;
+    invoke-static {v1}, Lcom/android/vendorsettings/DataUsageSummary;->u(Lcom/android/vendorsettings/DataUsageSummary;)Lcom/android/vendorsettings/bO;
 
     move-result-object v1
 
-    invoke-virtual {v1, p2, v0}, Lcom/android/settings/bO;->a(Landroid/net/NetworkStats;[I)V
+    invoke-virtual {v1, p2, v0}, Lcom/android/vendorsettings/bO;->a(Landroid/net/NetworkStats;[I)V
 
     .line 1506
-    invoke-direct {p0}, Lcom/android/settings/bu;->bx()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/bu;->bx()V
 
     .line 1507
     return-void
@@ -143,21 +143,21 @@
 
     .prologue
     .line 1498
-    new-instance v0, Lcom/android/settings/d/h;
+    new-instance v0, Lcom/android/vendorsettings/d/h;
 
-    iget-object v1, p0, Lcom/android/settings/bu;->ih:Lcom/android/settings/DataUsageSummary;
+    iget-object v1, p0, Lcom/android/vendorsettings/bu;->ih:Lcom/android/vendorsettings/DataUsageSummary;
 
-    invoke-virtual {v1}, Lcom/android/settings/DataUsageSummary;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/DataUsageSummary;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/bu;->ih:Lcom/android/settings/DataUsageSummary;
+    iget-object v2, p0, Lcom/android/vendorsettings/bu;->ih:Lcom/android/vendorsettings/DataUsageSummary;
 
-    invoke-static {v2}, Lcom/android/settings/DataUsageSummary;->p(Lcom/android/settings/DataUsageSummary;)Landroid/net/INetworkStatsSession;
+    invoke-static {v2}, Lcom/android/vendorsettings/DataUsageSummary;->p(Lcom/android/vendorsettings/DataUsageSummary;)Landroid/net/INetworkStatsSession;
 
     move-result-object v2
 
-    invoke-direct {v0, v1, v2, p2}, Lcom/android/settings/d/h;-><init>(Landroid/content/Context;Landroid/net/INetworkStatsSession;Landroid/os/Bundle;)V
+    invoke-direct {v0, v1, v2, p2}, Lcom/android/vendorsettings/d/h;-><init>(Landroid/content/Context;Landroid/net/INetworkStatsSession;Landroid/os/Bundle;)V
 
     return-object v0
 .end method
@@ -169,7 +169,7 @@
     .line 1495
     check-cast p2, Landroid/net/NetworkStats;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/bu;->a(Landroid/content/Loader;Landroid/net/NetworkStats;)V
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/bu;->a(Landroid/content/Loader;Landroid/net/NetworkStats;)V
 
     return-void
 .end method
@@ -179,9 +179,9 @@
 
     .prologue
     .line 1511
-    iget-object v0, p0, Lcom/android/settings/bu;->ih:Lcom/android/settings/DataUsageSummary;
+    iget-object v0, p0, Lcom/android/vendorsettings/bu;->ih:Lcom/android/vendorsettings/DataUsageSummary;
 
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary;->u(Lcom/android/settings/DataUsageSummary;)Lcom/android/settings/bO;
+    invoke-static {v0}, Lcom/android/vendorsettings/DataUsageSummary;->u(Lcom/android/vendorsettings/DataUsageSummary;)Lcom/android/vendorsettings/bO;
 
     move-result-object v0
 
@@ -191,10 +191,10 @@
 
     new-array v2, v2, [I
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/bO;->a(Landroid/net/NetworkStats;[I)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/vendorsettings/bO;->a(Landroid/net/NetworkStats;[I)V
 
     .line 1512
-    invoke-direct {p0}, Lcom/android/settings/bu;->bx()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/bu;->bx()V
 
     .line 1513
     return-void

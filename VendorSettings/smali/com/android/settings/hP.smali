@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hP;
+.class Lcom/android/vendorsettings/hP;
 .super Ljava/lang/Object;
 .source "StatusBarStyleFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic AL:Lcom/android/settings/StatusBarStyleFragment;
+.field final synthetic AL:Lcom/android/vendorsettings/StatusBarStyleFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/StatusBarStyleFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/StatusBarStyleFragment;)V
     .locals 0
 
     .prologue
     .line 34
-    iput-object p1, p0, Lcom/android/settings/hP;->AL:Lcom/android/settings/StatusBarStyleFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/hP;->AL:Lcom/android/vendorsettings/StatusBarStyleFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/android/settings/hP;->AL:Lcom/android/settings/StatusBarStyleFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/hP;->AL:Lcom/android/vendorsettings/StatusBarStyleFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/StatusBarStyleFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/StatusBarStyleFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

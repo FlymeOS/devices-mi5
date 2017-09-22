@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dZ;
+.class public Lcom/android/vendorsettings/dZ;
 .super Lmiui/preference/RadioButtonPreference;
 .source "MiuiApnPreference.java"
 
@@ -18,7 +18,7 @@
     .line 25
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/dZ;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/dZ;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 26
     return-void
@@ -34,12 +34,12 @@
     .line 17
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/dZ;->pZ:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/dZ;->pZ:Z
 
     .line 21
     const v0, 0x7f0400f6
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dZ;->setWidgetLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dZ;->setWidgetLayoutResource(I)V
 
     .line 22
     return-void
@@ -52,7 +52,7 @@
 
     .prologue
     .line 45
-    iput-boolean p1, p0, Lcom/android/settings/dZ;->pZ:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/dZ;->pZ:Z
 
     .line 46
     return-void
@@ -86,7 +86,7 @@
 
     .prologue
     .line 37
-    invoke-virtual {p0}, Lcom/android/settings/dZ;->getKey()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dZ;->getKey()Ljava/lang/String;
 
     move-result-object v0
 
@@ -113,12 +113,12 @@
     .line 40
     const-string v0, "DISABLE_EDITOR"
 
-    iget-boolean v2, p0, Lcom/android/settings/dZ;->pZ:Z
+    iget-boolean v2, p0, Lcom/android/vendorsettings/dZ;->pZ:Z
 
     invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 41
-    invoke-virtual {p0}, Lcom/android/settings/dZ;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dZ;->getContext()Landroid/content/Context;
 
     move-result-object v0
 

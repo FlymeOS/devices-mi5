@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiTestingSettings;
-.super Lcom/android/settings/TestingSettings;
+.class public Lcom/android/vendorsettings/MiuiTestingSettings;
+.super Lcom/android/vendorsettings/TestingSettings;
 .source "MiuiTestingSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 4
-    invoke-direct {p0}, Lcom/android/settings/TestingSettings;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/TestingSettings;-><init>()V
 
     return-void
 .end method

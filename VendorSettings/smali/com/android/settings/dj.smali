@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dj;
+.class public Lcom/android/vendorsettings/dj;
 .super Ljava/lang/Object;
 .source "GestureWakeupHelper.java"
 

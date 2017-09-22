@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/nfc/HowItWorks;
+.class public Lcom/android/vendorsettings/nfc/HowItWorks;
 .super Landroid/app/Activity;
 .source "HowItWorks.java"
 
@@ -26,21 +26,21 @@
     .line 13
     const v0, 0x7f0400c1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/nfc/HowItWorks;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/nfc/HowItWorks;->setContentView(I)V
 
     .line 16
     const v0, 0x7f13016b
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/nfc/HowItWorks;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/nfc/HowItWorks;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
     .line 17
-    new-instance v1, Lcom/android/settings/nfc/HowItWorks$1;
+    new-instance v1, Lcom/android/vendorsettings/nfc/HowItWorks$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/nfc/HowItWorks$1;-><init>(Lcom/android/settings/nfc/HowItWorks;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/nfc/HowItWorks$1;-><init>(Lcom/android/vendorsettings/nfc/HowItWorks;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -53,7 +53,7 @@
 
     .prologue
     .line 27
-    invoke-virtual {p0}, Lcom/android/settings/nfc/HowItWorks;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/nfc/HowItWorks;->finish()V
 
     .line 28
     const/4 v0, 0x1

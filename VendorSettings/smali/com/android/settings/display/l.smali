@@ -1,3 +1,3 @@
-.class synthetic Lcom/android/settings/display/l;
+.class synthetic Lcom/android/vendorsettings/display/l;
 .super Ljava/lang/Object;
 .source "FontStatusController.java"

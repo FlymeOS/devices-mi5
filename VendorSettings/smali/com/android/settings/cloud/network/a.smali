@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/network/a;
+.class public Lcom/android/vendorsettings/cloud/network/a;
 .super Ljava/lang/Object;
 .source "CloudAppControlDownloadInfo.java"
 
@@ -31,11 +31,11 @@
 
     .prologue
     .line 11
-    iget-object v0, p0, Lcom/android/settings/cloud/network/a;->TJ:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/network/a;->TJ:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/android/settings/cloud/network/a;->TK:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/cloud/network/a;->TK:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lcom/android/settings/cloud/network/Connection;->r(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/cloud/network/Connection;->r(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -57,7 +57,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/cloud/network/a;->TJ:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/cloud/network/a;->TJ:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -69,7 +69,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/cloud/network/a;->TK:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/cloud/network/a;->TK:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -81,7 +81,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/cloud/network/a;->TL:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/cloud/network/a;->TL:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -93,7 +93,7 @@
 
     move-result-object v0
 
-    iget-wide v2, p0, Lcom/android/settings/cloud/network/a;->TM:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/cloud/network/a;->TM:J
 
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 

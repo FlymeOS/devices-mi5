@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/UserDictionarySettings;
-.super Lcom/android/settings/BaseListFragment;
+.class public Lcom/android/vendorsettings/UserDictionarySettings;
+.super Lcom/android/vendorsettings/BaseListFragment;
 .source "UserDictionarySettings.java"
 
 
@@ -41,7 +41,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/UserDictionarySettings;->BX:[Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/UserDictionarySettings;->BX:[Ljava/lang/String;
 
     return-void
 .end method
@@ -51,7 +51,7 @@
 
     .prologue
     .line 58
-    invoke-direct {p0}, Lcom/android/settings/BaseListFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/BaseListFragment;-><init>()V
 
     .line 265
     return-void
@@ -71,13 +71,13 @@
     if-eqz v0, :cond_0
 
     .line 164
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     sget-object v1, Landroid/provider/UserDictionary$Words;->CONTENT_URI:Landroid/net/Uri;
 
-    sget-object v2, Lcom/android/settings/UserDictionarySettings;->BX:[Ljava/lang/String;
+    sget-object v2, Lcom/android/vendorsettings/UserDictionarySettings;->BX:[Ljava/lang/String;
 
     const-string v3, "locale is null"
 
@@ -99,13 +99,13 @@
 
     .line 169
     :goto_1
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     sget-object v1, Landroid/provider/UserDictionary$Words;->CONTENT_URI:Landroid/net/Uri;
 
-    sget-object v2, Lcom/android/settings/UserDictionarySettings;->BX:[Ljava/lang/String;
+    sget-object v2, Lcom/android/vendorsettings/UserDictionarySettings;->BX:[Ljava/lang/String;
 
     const-string v3, "locale=?"
 
@@ -194,7 +194,7 @@
     const/4 v0, 0x0
 
     .line 233
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/vendorsettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
     if-nez v1, :cond_1
 
@@ -205,12 +205,12 @@
 
     .line 234
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/vendorsettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v1, p1}, Landroid/database/Cursor;->moveToPosition(I)Z
 
     .line 236
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/vendorsettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v1}, Landroid/database/Cursor;->isAfterLast()Z
 
@@ -219,9 +219,9 @@
     if-nez v1, :cond_0
 
     .line 238
-    iget-object v0, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/vendorsettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
     const-string v2, "word"
 
@@ -243,7 +243,7 @@
     const/4 v0, 0x0
 
     .line 243
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/vendorsettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
     if-nez v1, :cond_1
 
@@ -254,12 +254,12 @@
 
     .line 244
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/vendorsettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v1, p1}, Landroid/database/Cursor;->moveToPosition(I)Z
 
     .line 246
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/vendorsettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v1}, Landroid/database/Cursor;->isAfterLast()Z
 
@@ -268,9 +268,9 @@
     if-nez v1, :cond_0
 
     .line 248
-    iget-object v0, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/vendorsettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
     const-string v2, "shortcut"
 
@@ -292,15 +292,15 @@
     const/4 v7, 0x2
 
     .line 176
-    new-instance v0, Lcom/android/settings/iA;
+    new-instance v0, Lcom/android/vendorsettings/iA;
 
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     const v2, 0x7f04018e
 
-    iget-object v3, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
     new-array v4, v7, [Ljava/lang/String;
 
@@ -322,7 +322,7 @@
 
     move-object v6, p0
 
-    invoke-direct/range {v0 .. v6}, Lcom/android/settings/iA;-><init>(Landroid/content/Context;ILandroid/database/Cursor;[Ljava/lang/String;[ILcom/android/settings/UserDictionarySettings;)V
+    invoke-direct/range {v0 .. v6}, Lcom/android/vendorsettings/iA;-><init>(Landroid/content/Context;ILandroid/database/Cursor;[Ljava/lang/String;[ILcom/android/vendorsettings/UserDictionarySettings;)V
 
     return-object v0
 
@@ -369,19 +369,19 @@
     .line 225
     const-string v0, "locale"
 
-    iget-object v1, p0, Lcom/android/settings/UserDictionarySettings;->BY:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/UserDictionarySettings;->BY:Ljava/lang/String;
 
     invoke-virtual {v2, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 226
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hn;
+    check-cast v0, Lcom/android/vendorsettings/hn;
 
     .line 227
-    const-class v1, Lcom/android/settings/inputmethod/UserDictionaryAddWordFragment;
+    const-class v1, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordFragment;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -391,7 +391,7 @@
 
     move-object v5, v4
 
-    invoke-virtual/range {v0 .. v6}, Lcom/android/settings/hn;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lcom/android/vendorsettings/hn;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     .line 230
     return-void
@@ -430,10 +430,10 @@
     const/4 v1, 0x0
 
     .line 115
-    invoke-super {p0, p1}, Lcom/android/settings/BaseListFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/BaseListFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 117
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/UserDictionarySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -448,7 +448,7 @@
 
     .line 121
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/UserDictionarySettings;->getArguments()Landroid/os/Bundle;
 
     move-result-object v2
 
@@ -466,17 +466,17 @@
     .line 134
     :cond_0
     :goto_2
-    iput-object v0, p0, Lcom/android/settings/UserDictionarySettings;->BY:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/UserDictionarySettings;->BY:Ljava/lang/String;
 
     .line 135
-    invoke-direct {p0, v0}, Lcom/android/settings/UserDictionarySettings;->X(Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/UserDictionarySettings;->X(Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
+    iput-object v0, p0, Lcom/android/vendorsettings/UserDictionarySettings;->mCursor:Landroid/database/Cursor;
 
     .line 136
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/UserDictionarySettings;->getView()Landroid/view/View;
 
     move-result-object v0
 
@@ -494,12 +494,12 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 139
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/UserDictionarySettings;->getListView()Landroid/widget/ListView;
 
     move-result-object v1
 
     .line 140
-    invoke-direct {p0}, Lcom/android/settings/UserDictionarySettings;->it()Landroid/widget/ListAdapter;
+    invoke-direct {p0}, Lcom/android/vendorsettings/UserDictionarySettings;->it()Landroid/widget/ListAdapter;
 
     move-result-object v2
 
@@ -512,7 +512,7 @@
     invoke-virtual {v1, v0}, Landroid/widget/ListView;->setEmptyView(Landroid/view/View;)V
 
     .line 144
-    invoke-virtual {p0, v4}, Lcom/android/settings/UserDictionarySettings;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v4}, Lcom/android/vendorsettings/UserDictionarySettings;->setHasOptionsMenu(Z)V
 
     .line 149
     return-void
@@ -552,7 +552,7 @@
 
     .prologue
     .line 89
-    invoke-super {p0, p1}, Lcom/android/settings/BaseListFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/BaseListFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 92
     return-void
@@ -593,12 +593,12 @@
 
     .prologue
     .line 184
-    invoke-direct {p0, p3}, Lcom/android/settings/UserDictionarySettings;->ap(I)Ljava/lang/String;
+    invoke-direct {p0, p3}, Lcom/android/vendorsettings/UserDictionarySettings;->ap(I)Ljava/lang/String;
 
     move-result-object v0
 
     .line 185
-    invoke-direct {p0, p3}, Lcom/android/settings/UserDictionarySettings;->aq(I)Ljava/lang/String;
+    invoke-direct {p0, p3}, Lcom/android/vendorsettings/UserDictionarySettings;->aq(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -606,7 +606,7 @@
     if-eqz v0, :cond_0
 
     .line 187
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/UserDictionarySettings;->j(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/UserDictionarySettings;->j(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 189
     :cond_0
@@ -629,14 +629,14 @@
     if-ne v1, v0, :cond_0
 
     .line 205
-    invoke-direct {p0, v2, v2}, Lcom/android/settings/UserDictionarySettings;->j(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v2, v2}, Lcom/android/vendorsettings/UserDictionarySettings;->j(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 210
     :goto_0
     return v0
 
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/settings/BaseListFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/BaseListFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -648,10 +648,10 @@
 
     .prologue
     .line 97
-    invoke-super {p0}, Lcom/android/settings/BaseListFragment;->onStart()V
+    invoke-super {p0}, Lcom/android/vendorsettings/BaseListFragment;->onStart()V
 
     .line 98
-    invoke-virtual {p0}, Lcom/android/settings/UserDictionarySettings;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/UserDictionarySettings;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 

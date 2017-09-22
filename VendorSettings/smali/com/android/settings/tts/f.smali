@@ -1,4 +1,4 @@
-.class Lcom/android/settings/tts/f;
+.class Lcom/android/vendorsettings/tts/f;
 .super Ljava/lang/Object;
 .source "TtsEnginePreference.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic asO:Lcom/android/settings/tts/e;
+.field final synthetic asO:Lcom/android/vendorsettings/tts/e;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/tts/e;)V
+.method constructor <init>(Lcom/android/vendorsettings/tts/e;)V
     .locals 0
 
     .prologue
     .line 94
-    iput-object p1, p0, Lcom/android/settings/tts/f;->asO:Lcom/android/settings/tts/e;
+    iput-object p1, p0, Lcom/android/vendorsettings/tts/f;->asO:Lcom/android/vendorsettings/tts/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/android/settings/tts/f;->asO:Lcom/android/settings/tts/e;
+    iget-object v0, p0, Lcom/android/vendorsettings/tts/f;->asO:Lcom/android/vendorsettings/tts/e;
 
-    invoke-static {v0, p1, p2}, Lcom/android/settings/tts/e;->a(Lcom/android/settings/tts/e;Landroid/widget/CompoundButton;Z)V
+    invoke-static {v0, p1, p2}, Lcom/android/vendorsettings/tts/e;->a(Lcom/android/vendorsettings/tts/e;Landroid/widget/CompoundButton;Z)V
 
     .line 98
     return-void

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/CheckableLayout;
+.class public Lcom/android/vendorsettings/display/CheckableLayout;
 .super Landroid/widget/LinearLayout;
 .source "CheckableLayout.java"
 
@@ -21,7 +21,7 @@
     .line 10
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/display/CheckableLayout;->mChecked:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/display/CheckableLayout;->mChecked:Z
 
     .line 14
     return-void
@@ -37,7 +37,7 @@
     invoke-direct {p0, p1, p2, v0}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 10
-    iput-boolean v0, p0, Lcom/android/settings/display/CheckableLayout;->mChecked:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/display/CheckableLayout;->mChecked:Z
 
     .line 18
     return-void
@@ -53,7 +53,7 @@
     .line 10
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/display/CheckableLayout;->mChecked:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/display/CheckableLayout;->mChecked:Z
 
     .line 22
     return-void
@@ -66,7 +66,7 @@
 
     .prologue
     .line 40
-    iget-boolean v0, p0, Lcom/android/settings/display/CheckableLayout;->mChecked:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/display/CheckableLayout;->mChecked:Z
 
     return v0
 .end method
@@ -76,20 +76,20 @@
 
     .prologue
     .line 26
-    iget-boolean v0, p0, Lcom/android/settings/display/CheckableLayout;->mChecked:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/display/CheckableLayout;->mChecked:Z
 
     if-eq v0, p1, :cond_1
 
     .line 27
-    iput-boolean p1, p0, Lcom/android/settings/display/CheckableLayout;->mChecked:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/display/CheckableLayout;->mChecked:Z
 
     .line 28
-    invoke-virtual {p0}, Lcom/android/settings/display/CheckableLayout;->refreshDrawableState()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/CheckableLayout;->refreshDrawableState()V
 
     .line 29
     const/4 v0, 0x0
 
-    invoke-virtual {p0}, Lcom/android/settings/display/CheckableLayout;->getChildCount()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/CheckableLayout;->getChildCount()I
 
     move-result v2
 
@@ -99,7 +99,7 @@
     if-ge v1, v2, :cond_1
 
     .line 30
-    invoke-virtual {p0, v1}, Lcom/android/settings/display/CheckableLayout;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/display/CheckableLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -131,14 +131,14 @@
 
     .prologue
     .line 45
-    iget-boolean v0, p0, Lcom/android/settings/display/CheckableLayout;->mChecked:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/display/CheckableLayout;->mChecked:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
     :goto_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/CheckableLayout;->setChecked(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/CheckableLayout;->setChecked(Z)V
 
     .line 46
     return-void

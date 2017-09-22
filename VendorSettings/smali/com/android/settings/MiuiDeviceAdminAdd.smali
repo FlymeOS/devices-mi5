@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/MiuiDeviceAdminAdd;
+.class public Lcom/android/vendorsettings/MiuiDeviceAdminAdd;
 .super Landroid/app/Activity;
 .source "MiuiDeviceAdminAdd.java"
 
@@ -24,14 +24,14 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 29
-    const-class v0, Lcom/android/settings/DeviceAdminAddFragment;
+    const-class v0, Lcom/android/vendorsettings/DeviceAdminAddFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v1
 
     .line 30
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceAdminAdd;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceAdminAdd;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v2
 

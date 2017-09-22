@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/hk;
+.class public Lcom/android/vendorsettings/hk;
 .super Landroid/preference/EditTextPreference;
 .source "SelectableEditTextPreference.java"
 
@@ -18,7 +18,7 @@
     invoke-super {p0, p1}, Landroid/preference/EditTextPreference;->onBindDialogView(Landroid/view/View;)V
 
     .line 52
-    invoke-virtual {p0}, Lcom/android/settings/hk;->getEditText()Landroid/widget/EditText;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/hk;->getEditText()Landroid/widget/EditText;
 
     move-result-object v2
 
@@ -50,7 +50,7 @@
     if-nez v3, :cond_0
 
     .line 56
-    iget v3, p0, Lcom/android/settings/hk;->yW:I
+    iget v3, p0, Lcom/android/vendorsettings/hk;->yW:I
 
     packed-switch v3, :pswitch_data_0
 

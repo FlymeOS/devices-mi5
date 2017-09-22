@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fuelgauge/PowerModeSettings$1;
+.class Lcom/android/vendorsettings/fuelgauge/PowerModeSettings$1;
 .super Ljava/lang/Object;
 .source "PowerModeSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic afj:Lcom/android/settings/fuelgauge/PowerModeSettings;
+.field final synthetic afj:Lcom/android/vendorsettings/fuelgauge/PowerModeSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fuelgauge/PowerModeSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/fuelgauge/PowerModeSettings;)V
     .locals 0
 
     .prologue
     .line 47
-    iput-object p1, p0, Lcom/android/settings/fuelgauge/PowerModeSettings$1;->afj:Lcom/android/settings/fuelgauge/PowerModeSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/fuelgauge/PowerModeSettings$1;->afj:Lcom/android/vendorsettings/fuelgauge/PowerModeSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerModeSettings$1;->afj:Lcom/android/settings/fuelgauge/PowerModeSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/PowerModeSettings$1;->afj:Lcom/android/vendorsettings/fuelgauge/PowerModeSettings;
 
-    invoke-static {v0}, Lcom/android/settings/fuelgauge/PowerModeSettings;->a(Lcom/android/settings/fuelgauge/PowerModeSettings;)[Ljava/lang/CharSequence;
+    invoke-static {v0}, Lcom/android/vendorsettings/fuelgauge/PowerModeSettings;->a(Lcom/android/vendorsettings/fuelgauge/PowerModeSettings;)[Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -43,9 +43,9 @@
     if-ltz p2, :cond_0
 
     .line 50
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerModeSettings$1;->afj:Lcom/android/settings/fuelgauge/PowerModeSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/PowerModeSettings$1;->afj:Lcom/android/vendorsettings/fuelgauge/PowerModeSettings;
 
-    invoke-static {v0}, Lcom/android/settings/fuelgauge/PowerModeSettings;->a(Lcom/android/settings/fuelgauge/PowerModeSettings;)[Ljava/lang/CharSequence;
+    invoke-static {v0}, Lcom/android/vendorsettings/fuelgauge/PowerModeSettings;->a(Lcom/android/vendorsettings/fuelgauge/PowerModeSettings;)[Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -61,9 +61,9 @@
     invoke-static {v1, v0}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 52
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/PowerModeSettings$1;->afj:Lcom/android/settings/fuelgauge/PowerModeSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/PowerModeSettings$1;->afj:Lcom/android/vendorsettings/fuelgauge/PowerModeSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/fuelgauge/PowerModeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/fuelgauge/PowerModeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -79,18 +79,18 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 55
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/PowerModeSettings$1;->afj:Lcom/android/settings/fuelgauge/PowerModeSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/PowerModeSettings$1;->afj:Lcom/android/vendorsettings/fuelgauge/PowerModeSettings;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/fuelgauge/PowerModeSettings;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/fuelgauge/PowerModeSettings;->sendBroadcast(Landroid/content/Intent;)V
 
     .line 57
     :cond_0
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
     .line 58
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerModeSettings$1;->afj:Lcom/android/settings/fuelgauge/PowerModeSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/PowerModeSettings$1;->afj:Lcom/android/vendorsettings/fuelgauge/PowerModeSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/fuelgauge/PowerModeSettings;->finish()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/fuelgauge/PowerModeSettings;->finish()V
 
     .line 59
     return-void

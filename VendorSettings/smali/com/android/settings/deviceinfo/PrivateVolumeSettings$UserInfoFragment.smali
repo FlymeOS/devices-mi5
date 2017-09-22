@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/deviceinfo/PrivateVolumeSettings$UserInfoFragment;
+.class public Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$UserInfoFragment;
 .super Landroid/app/DialogFragment;
 .source "PrivateVolumeSettings.java"
 
@@ -21,12 +21,12 @@
 
     .prologue
     .line 847
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$UserInfoFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$UserInfoFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     .line 849
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$UserInfoFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$UserInfoFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -37,7 +37,7 @@
     move-result-object v1
 
     .line 850
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$UserInfoFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$UserInfoFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v2
 
@@ -55,7 +55,7 @@
     .line 853
     const v0, 0x7f0c047e
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$UserInfoFragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$UserInfoFragment;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 

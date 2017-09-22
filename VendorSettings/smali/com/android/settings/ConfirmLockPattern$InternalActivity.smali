@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ConfirmLockPattern$InternalActivity;
-.super Lcom/android/settings/ConfirmLockPattern;
+.class public Lcom/android/vendorsettings/ConfirmLockPattern$InternalActivity;
+.super Lcom/android/vendorsettings/ConfirmLockPattern;
 .source "ConfirmLockPattern.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 75
-    invoke-direct {p0}, Lcom/android/settings/ConfirmLockPattern;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/ConfirmLockPattern;-><init>()V
 
     return-void
 .end method

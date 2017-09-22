@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/dndmode/Alarm;
+.class public final Lcom/android/vendorsettings/dndmode/Alarm;
 .super Ljava/lang/Object;
 .source "Alarm.java"
 
@@ -13,7 +13,7 @@
 # instance fields
 .field public ZX:I
 
-.field public ZY:Lcom/android/settings/dndmode/b;
+.field public ZY:Lcom/android/vendorsettings/dndmode/b;
 
 .field public ZZ:Landroid/net/Uri;
 
@@ -42,11 +42,11 @@
 
     .prologue
     .line 21
-    new-instance v0, Lcom/android/settings/dndmode/a;
+    new-instance v0, Lcom/android/vendorsettings/dndmode/a;
 
-    invoke-direct {v0}, Lcom/android/settings/dndmode/a;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/dndmode/a;-><init>()V
 
-    sput-object v0, Lcom/android/settings/dndmode/Alarm;->CREATOR:Landroid/os/Parcelable$Creator;
+    sput-object v0, Lcom/android/vendorsettings/dndmode/Alarm;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
@@ -65,10 +65,10 @@
     .line 223
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/dndmode/Alarm;->id:I
+    iput v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->id:I
 
     .line 224
-    iput-boolean v5, p0, Lcom/android/settings/dndmode/Alarm;->enabled:Z
+    iput-boolean v5, p0, Lcom/android/vendorsettings/dndmode/Alarm;->enabled:Z
 
     .line 225
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
@@ -89,7 +89,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/dndmode/Alarm;->hour:I
+    iput v1, p0, Lcom/android/vendorsettings/dndmode/Alarm;->hour:I
 
     .line 228
     const/16 v1, 0xc
@@ -98,7 +98,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/dndmode/Alarm;->minutes:I
+    iput v1, p0, Lcom/android/vendorsettings/dndmode/Alarm;->minutes:I
 
     .line 229
     const/16 v1, 0xd
@@ -107,17 +107,17 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/dndmode/Alarm;->ZX:I
+    iput v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->ZX:I
 
     .line 230
-    iput-boolean v5, p0, Lcom/android/settings/dndmode/Alarm;->vibrate:Z
+    iput-boolean v5, p0, Lcom/android/vendorsettings/dndmode/Alarm;->vibrate:Z
 
     .line 231
-    new-instance v0, Lcom/android/settings/dndmode/b;
+    new-instance v0, Lcom/android/vendorsettings/dndmode/b;
 
-    invoke-direct {v0, v4}, Lcom/android/settings/dndmode/b;-><init>(I)V
+    invoke-direct {v0, v4}, Lcom/android/vendorsettings/dndmode/b;-><init>(I)V
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/Alarm;->ZY:Lcom/android/settings/dndmode/b;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->ZY:Lcom/android/vendorsettings/dndmode/b;
 
     .line 232
     const/4 v0, 0x4
@@ -126,15 +126,15 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/Alarm;->ZZ:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->ZZ:Landroid/net/Uri;
 
     .line 233
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/Alarm;->label:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->label:Ljava/lang/String;
 
     .line 234
-    iput-boolean v4, p0, Lcom/android/settings/dndmode/Alarm;->aab:Z
+    iput-boolean v4, p0, Lcom/android/vendorsettings/dndmode/Alarm;->aab:Z
 
     .line 235
     return-void
@@ -156,7 +156,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/dndmode/Alarm;->id:I
+    iput v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->id:I
 
     .line 208
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -168,46 +168,46 @@
     move v0, v1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/dndmode/Alarm;->enabled:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->enabled:Z
 
     .line 209
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/dndmode/Alarm;->hour:I
+    iput v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->hour:I
 
     .line 210
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/dndmode/Alarm;->minutes:I
+    iput v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->minutes:I
 
     .line 211
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/dndmode/Alarm;->ZX:I
+    iput v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->ZX:I
 
     .line 212
-    new-instance v0, Lcom/android/settings/dndmode/b;
+    new-instance v0, Lcom/android/vendorsettings/dndmode/b;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v3
 
-    invoke-direct {v0, v3}, Lcom/android/settings/dndmode/b;-><init>(I)V
+    invoke-direct {v0, v3}, Lcom/android/vendorsettings/dndmode/b;-><init>(I)V
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/Alarm;->ZY:Lcom/android/settings/dndmode/b;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->ZY:Lcom/android/vendorsettings/dndmode/b;
 
     .line 213
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v4
 
-    iput-wide v4, p0, Lcom/android/settings/dndmode/Alarm;->time:J
+    iput-wide v4, p0, Lcom/android/vendorsettings/dndmode/Alarm;->time:J
 
     .line 214
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -219,14 +219,14 @@
     move v0, v1
 
     :goto_1
-    iput-boolean v0, p0, Lcom/android/settings/dndmode/Alarm;->vibrate:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->vibrate:Z
 
     .line 215
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/Alarm;->label:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->label:Ljava/lang/String;
 
     .line 216
     const/4 v0, 0x0
@@ -237,7 +237,7 @@
 
     check-cast v0, Landroid/net/Uri;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/Alarm;->ZZ:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->ZZ:Landroid/net/Uri;
 
     .line 217
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -249,7 +249,7 @@
     move v0, v1
 
     :goto_2
-    iput-boolean v0, p0, Lcom/android/settings/dndmode/Alarm;->aaa:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->aaa:Z
 
     .line 218
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -259,7 +259,7 @@
     if-ne v0, v1, :cond_3
 
     :goto_3
-    iput-boolean v1, p0, Lcom/android/settings/dndmode/Alarm;->aab:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/dndmode/Alarm;->aab:Z
 
     .line 219
     return-void
@@ -308,7 +308,7 @@
     const/4 v0, 0x0
 
     .line 251
-    instance-of v1, p1, Lcom/android/settings/dndmode/Alarm;
+    instance-of v1, p1, Lcom/android/vendorsettings/dndmode/Alarm;
 
     if-nez v1, :cond_1
 
@@ -319,12 +319,12 @@
 
     .line 252
     :cond_1
-    check-cast p1, Lcom/android/settings/dndmode/Alarm;
+    check-cast p1, Lcom/android/vendorsettings/dndmode/Alarm;
 
     .line 253
-    iget v1, p0, Lcom/android/settings/dndmode/Alarm;->id:I
+    iget v1, p0, Lcom/android/vendorsettings/dndmode/Alarm;->id:I
 
-    iget v2, p1, Lcom/android/settings/dndmode/Alarm;->id:I
+    iget v2, p1, Lcom/android/vendorsettings/dndmode/Alarm;->id:I
 
     if-ne v1, v2, :cond_0
 
@@ -338,7 +338,7 @@
 
     .prologue
     .line 246
-    iget v0, p0, Lcom/android/settings/dndmode/Alarm;->id:I
+    iget v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->id:I
 
     return v0
 .end method
@@ -352,12 +352,12 @@
     const/4 v2, 0x0
 
     .line 37
-    iget v0, p0, Lcom/android/settings/dndmode/Alarm;->id:I
+    iget v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->id:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 38
-    iget-boolean v0, p0, Lcom/android/settings/dndmode/Alarm;->enabled:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->enabled:Z
 
     if-eqz v0, :cond_0
 
@@ -367,36 +367,36 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 39
-    iget v0, p0, Lcom/android/settings/dndmode/Alarm;->hour:I
+    iget v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->hour:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 40
-    iget v0, p0, Lcom/android/settings/dndmode/Alarm;->minutes:I
+    iget v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->minutes:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 41
-    iget v0, p0, Lcom/android/settings/dndmode/Alarm;->ZX:I
+    iget v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->ZX:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 42
-    iget-object v0, p0, Lcom/android/settings/dndmode/Alarm;->ZY:Lcom/android/settings/dndmode/b;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->ZY:Lcom/android/vendorsettings/dndmode/b;
 
-    invoke-virtual {v0}, Lcom/android/settings/dndmode/b;->pS()I
+    invoke-virtual {v0}, Lcom/android/vendorsettings/dndmode/b;->pS()I
 
     move-result v0
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 43
-    iget-wide v4, p0, Lcom/android/settings/dndmode/Alarm;->time:J
+    iget-wide v4, p0, Lcom/android/vendorsettings/dndmode/Alarm;->time:J
 
     invoke-virtual {p1, v4, v5}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 44
-    iget-boolean v0, p0, Lcom/android/settings/dndmode/Alarm;->vibrate:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->vibrate:Z
 
     if-eqz v0, :cond_1
 
@@ -406,17 +406,17 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 45
-    iget-object v0, p0, Lcom/android/settings/dndmode/Alarm;->label:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->label:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 46
-    iget-object v0, p0, Lcom/android/settings/dndmode/Alarm;->ZZ:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->ZZ:Landroid/net/Uri;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 47
-    iget-boolean v0, p0, Lcom/android/settings/dndmode/Alarm;->aaa:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->aaa:Z
 
     if-eqz v0, :cond_2
 
@@ -426,7 +426,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 48
-    iget-boolean v0, p0, Lcom/android/settings/dndmode/Alarm;->aab:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/dndmode/Alarm;->aab:Z
 
     if-eqz v0, :cond_3
 

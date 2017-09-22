@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/CloudJobService;
+.class public Lcom/android/vendorsettings/cloud/CloudJobService;
 .super Landroid/app/job/JobService;
 .source "CloudJobService.java"
 
@@ -23,20 +23,20 @@
 
     .prologue
     .line 96
-    const-class v0, Lcom/android/settings/cloud/CloudJobService;
+    const-class v0, Lcom/android/vendorsettings/cloud/CloudJobService;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/CloudJobService;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/cloud/CloudJobService;->TAG:Ljava/lang/String;
 
     .line 97
     invoke-static {}, Ljava/util/concurrent/Executors;->newSingleThreadExecutor()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/CloudJobService;->THREAD_POOL_EXECUTOR:Ljava/util/concurrent/Executor;
+    sput-object v0, Lcom/android/vendorsettings/cloud/CloudJobService;->THREAD_POOL_EXECUTOR:Ljava/util/concurrent/Executor;
 
     .line 100
     new-instance v0, Ljava/io/File;
@@ -49,7 +49,7 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/android/settings/cloud/CloudJobService;->DEBUG:Z
+    sput-boolean v0, Lcom/android/vendorsettings/cloud/CloudJobService;->DEBUG:Z
 
     .line 102
     const-string v0, "content://com.android.settings.cloud.CloudSettings/cloud_all_data/update_cache"
@@ -58,7 +58,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/CloudJobService;->SF:Landroid/net/Uri;
+    sput-object v0, Lcom/android/vendorsettings/cloud/CloudJobService;->SF:Landroid/net/Uri;
 
     return-void
 .end method
@@ -73,13 +73,13 @@
     .line 101
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/cloud/CloudJobService;->SE:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/cloud/CloudJobService;->SE:Z
 
     .line 105
     return-void
 .end method
 
-.method private static a(Lcom/android/settings/cloud/network/Connection;)Lcom/android/settings/cloud/network/b;
+.method private static a(Lcom/android/vendorsettings/cloud/network/Connection;)Lcom/android/vendorsettings/cloud/network/b;
     .locals 4
 
     .prologue
@@ -87,7 +87,7 @@
     if-nez p0, :cond_0
 
     .line 192
-    sget-object v0, Lcom/android/settings/cloud/CloudJobService;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/cloud/CloudJobService;->TAG:Ljava/lang/String;
 
     const-string v1, "Get parameter error: connection null"
 
@@ -102,11 +102,11 @@
 
     .line 195
     :cond_0
-    new-instance v0, Lcom/android/settings/cloud/network/b;
+    new-instance v0, Lcom/android/vendorsettings/cloud/network/b;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/cloud/network/b;-><init>(Lcom/android/settings/cloud/network/Connection;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/cloud/network/b;-><init>(Lcom/android/vendorsettings/cloud/network/Connection;)V
 
     .line 196
     const-string v1, "d"
@@ -119,14 +119,14 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v0, v1, v2}, Lcom/android/vendorsettings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/vendorsettings/cloud/network/b;
 
     .line 198
     const-string v1, "c"
 
-    sget-object v2, Lcom/android/settings/cloud/a/a;->Uo:Ljava/lang/String;
+    sget-object v2, Lcom/android/vendorsettings/cloud/a/a;->Uo:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v0, v1, v2}, Lcom/android/vendorsettings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/vendorsettings/cloud/network/b;
 
     .line 199
     const-string v1, "r"
@@ -135,7 +135,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v0, v1, v2}, Lcom/android/vendorsettings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/vendorsettings/cloud/network/b;
 
     .line 200
     const-string v1, "l"
@@ -148,7 +148,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v0, v1, v2}, Lcom/android/vendorsettings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/vendorsettings/cloud/network/b;
 
     .line 201
     const-string v1, "v"
@@ -173,16 +173,16 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v0, v1, v2}, Lcom/android/vendorsettings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/vendorsettings/cloud/network/b;
 
     .line 203
     const-string v1, "t"
 
-    invoke-static {}, Lcom/android/settings/cloud/CloudJobService;->od()Ljava/lang/String;
+    invoke-static {}, Lcom/android/vendorsettings/cloud/CloudJobService;->od()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v0, v1, v2}, Lcom/android/vendorsettings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/vendorsettings/cloud/network/b;
 
     .line 204
     const-string v1, "a"
@@ -191,7 +191,7 @@
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v3, Lcom/android/settings/cloud/a/a;->ANDROID_ID:Ljava/lang/String;
+    sget-object v3, Lcom/android/vendorsettings/cloud/a/a;->ANDROID_ID:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -223,33 +223,33 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v0, v1, v2}, Lcom/android/vendorsettings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/vendorsettings/cloud/network/b;
 
     .line 207
     const-string v1, "e"
 
-    sget-object v2, Lcom/android/settings/cloud/a/a;->Uq:Ljava/lang/String;
+    sget-object v2, Lcom/android/vendorsettings/cloud/a/a;->Uq:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {v0, v1, v2}, Lcom/android/vendorsettings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/vendorsettings/cloud/network/b;
 
     goto/16 :goto_0
 .end method
 
-.method private static a(Lcom/android/settings/cloud/network/b;Ljava/lang/String;)Ljava/lang/String;
+.method private static a(Lcom/android/vendorsettings/cloud/network/b;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
 
     .prologue
     .line 212
     new-instance v2, Ljava/util/TreeMap;
 
-    new-instance v0, Lcom/android/settings/cloud/d;
+    new-instance v0, Lcom/android/vendorsettings/cloud/d;
 
-    invoke-direct {v0}, Lcom/android/settings/cloud/d;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/cloud/d;-><init>()V
 
     invoke-direct {v2, v0}, Ljava/util/TreeMap;-><init>(Ljava/util/Comparator;)V
 
     .line 218
-    invoke-virtual {p0}, Lcom/android/settings/cloud/network/b;->oG()Ljava/util/TreeMap;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/cloud/network/b;->oG()Ljava/util/TreeMap;
 
     move-result-object v0
 
@@ -339,7 +339,7 @@
     move-result-object v0
 
     .line 233
-    invoke-static {v0}, Lcom/android/settings/cloud/CloudJobService;->getBytes(Ljava/lang/String;)[B
+    invoke-static {v0}, Lcom/android/vendorsettings/cloud/CloudJobService;->getBytes(Ljava/lang/String;)[B
 
     move-result-object v0
 
@@ -355,7 +355,7 @@
     invoke-direct {v1, v0}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
 
     .line 235
-    invoke-static {v1}, Lcom/android/settings/cloud/CloudJobService;->getMd5Digest(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/vendorsettings/cloud/CloudJobService;->getMd5Digest(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -363,7 +363,7 @@
     return-object v0
 .end method
 
-.method private static a(Lcom/android/settings/cloud/network/b;Ljava/util/Map;)V
+.method private static a(Lcom/android/vendorsettings/cloud/network/b;Ljava/util/Map;)V
     .locals 3
 
     .prologue
@@ -422,7 +422,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/vendorsettings/cloud/network/b;
 
     goto :goto_0
 
@@ -432,22 +432,22 @@
 
     const-string v1, "21da76da-224c-2313-ac60-abcd70139283"
 
-    invoke-static {p0, v1}, Lcom/android/settings/cloud/CloudJobService;->a(Lcom/android/settings/cloud/network/b;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, v1}, Lcom/android/vendorsettings/cloud/CloudJobService;->a(Lcom/android/vendorsettings/cloud/network/b;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/cloud/network/b;->s(Ljava/lang/String;Ljava/lang/String;)Lcom/android/vendorsettings/cloud/network/b;
 
     .line 178
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/cloud/CloudJobService;Z)Z
+.method static synthetic a(Lcom/android/vendorsettings/cloud/CloudJobService;Z)Z
     .locals 0
 
     .prologue
     .line 51
-    iput-boolean p1, p0, Lcom/android/settings/cloud/CloudJobService;->SE:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/cloud/CloudJobService;->SE:Z
 
     return p1
 .end method
@@ -477,7 +477,7 @@
 
     const-string v2, "last_update_cloud_all_data_version"
 
-    invoke-static {v2, p0}, Lcom/android/settings/cloud/a/c;->a(Ljava/lang/String;Landroid/content/Context;)J
+    invoke-static {v2, p0}, Lcom/android/vendorsettings/cloud/a/c;->a(Ljava/lang/String;Landroid/content/Context;)J
 
     move-result-wide v2
 
@@ -510,13 +510,13 @@
 
     new-instance v2, Landroid/content/ComponentName;
 
-    const-class v3, Lcom/android/settings/cloud/CloudJobService;
+    const-class v3, Lcom/android/vendorsettings/cloud/CloudJobService;
 
     invoke-direct {v2, p0, v3}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     invoke-direct {v1, v4, v2}, Landroid/app/job/JobInfo$Builder;-><init>(ILandroid/content/ComponentName;)V
 
-    sget-boolean v2, Lcom/android/settings/cloud/CloudJobService;->DEBUG:Z
+    sget-boolean v2, Lcom/android/vendorsettings/cloud/CloudJobService;->DEBUG:Z
 
     if-eqz v2, :cond_0
 
@@ -553,7 +553,7 @@
 
     .prologue
     .line 51
-    invoke-static {p0}, Lcom/android/settings/cloud/CloudJobService;->aI(Landroid/content/Context;)Ljava/util/Map;
+    invoke-static {p0}, Lcom/android/vendorsettings/cloud/CloudJobService;->aI(Landroid/content/Context;)Ljava/util/Map;
 
     move-result-object v0
 
@@ -565,29 +565,29 @@
 
     .prologue
     .line 51
-    sget-object v0, Lcom/android/settings/cloud/CloudJobService;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/cloud/CloudJobService;->TAG:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/cloud/network/Connection;)Lcom/android/settings/cloud/network/b;
+.method static synthetic b(Lcom/android/vendorsettings/cloud/network/Connection;)Lcom/android/vendorsettings/cloud/network/b;
     .locals 1
 
     .prologue
     .line 51
-    invoke-static {p0}, Lcom/android/settings/cloud/CloudJobService;->a(Lcom/android/settings/cloud/network/Connection;)Lcom/android/settings/cloud/network/b;
+    invoke-static {p0}, Lcom/android/vendorsettings/cloud/CloudJobService;->a(Lcom/android/vendorsettings/cloud/network/Connection;)Lcom/android/vendorsettings/cloud/network/b;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/cloud/network/b;Ljava/util/Map;)V
+.method static synthetic b(Lcom/android/vendorsettings/cloud/network/b;Ljava/util/Map;)V
     .locals 0
 
     .prologue
     .line 51
-    invoke-static {p0, p1}, Lcom/android/settings/cloud/CloudJobService;->a(Lcom/android/settings/cloud/network/b;Ljava/util/Map;)V
+    invoke-static {p0, p1}, Lcom/android/vendorsettings/cloud/CloudJobService;->a(Lcom/android/vendorsettings/cloud/network/b;Ljava/util/Map;)V
 
     return-void
 .end method
@@ -635,7 +635,7 @@
     move-result-object v0
 
     .line 242
-    invoke-static {p0}, Lcom/android/settings/cloud/CloudJobService;->getBytes(Ljava/lang/String;)[B
+    invoke-static {p0}, Lcom/android/vendorsettings/cloud/CloudJobService;->getBytes(Ljava/lang/String;)[B
 
     move-result-object v1
 
@@ -722,7 +722,7 @@
 
     .prologue
     .line 51
-    sget-boolean v0, Lcom/android/settings/cloud/CloudJobService;->DEBUG:Z
+    sget-boolean v0, Lcom/android/vendorsettings/cloud/CloudJobService;->DEBUG:Z
 
     return v0
 .end method
@@ -732,7 +732,7 @@
 
     .prologue
     .line 51
-    sget-object v0, Lcom/android/settings/cloud/CloudJobService;->SF:Landroid/net/Uri;
+    sget-object v0, Lcom/android/vendorsettings/cloud/CloudJobService;->SF:Landroid/net/Uri;
 
     return-object v0
 .end method
@@ -760,27 +760,27 @@
 
     move-result-object v2
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/cloud/CloudJobService;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/cloud/CloudJobService;->sendBroadcast(Landroid/content/Intent;)V
 
     .line 59
-    new-instance v2, Lcom/android/settings/cloud/j;
+    new-instance v2, Lcom/android/vendorsettings/cloud/j;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/cloud/j;-><init>(Landroid/content/Context;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/cloud/j;-><init>(Landroid/content/Context;)V
 
     .line 61
     const/4 v3, 0x1
 
     :try_start_0
-    invoke-virtual {v2, v3}, Lcom/android/settings/cloud/j;->setPriority(I)V
+    invoke-virtual {v2, v3}, Lcom/android/vendorsettings/cloud/j;->setPriority(I)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 64
     :goto_0
-    invoke-virtual {v2}, Lcom/android/settings/cloud/j;->start()V
+    invoke-virtual {v2}, Lcom/android/vendorsettings/cloud/j;->start()V
 
     .line 66
-    sget-object v2, Lcom/android/settings/cloud/CloudJobService;->TAG:Ljava/lang/String;
+    sget-object v2, Lcom/android/vendorsettings/cloud/CloudJobService;->TAG:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -807,21 +807,21 @@
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 67
-    invoke-static {p0}, Lcom/android/settings/cloud/a/c;->aQ(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/vendorsettings/cloud/a/c;->aQ(Landroid/content/Context;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
     .line 68
-    invoke-static {p0}, Lcom/android/settings/cloud/a/c;->isWifiConnected(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/vendorsettings/cloud/a/c;->isWifiConnected(Landroid/content/Context;)Z
 
     move-result v2
 
     .line 69
     const-string v3, "last_update_cloud_all_data_time"
 
-    invoke-static {v3, p0}, Lcom/android/settings/cloud/a/c;->a(Ljava/lang/String;Landroid/content/Context;)J
+    invoke-static {v3, p0}, Lcom/android/vendorsettings/cloud/a/c;->a(Ljava/lang/String;Landroid/content/Context;)J
 
     move-result-wide v4
 
@@ -853,31 +853,31 @@
 
     .line 75
     :cond_1
-    sget-object v2, Lcom/android/settings/cloud/CloudJobService;->TAG:Ljava/lang/String;
+    sget-object v2, Lcom/android/vendorsettings/cloud/CloudJobService;->TAG:Ljava/lang/String;
 
     const-string v3, "Need to update"
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 76
-    iget-boolean v2, p0, Lcom/android/settings/cloud/CloudJobService;->SE:Z
+    iget-boolean v2, p0, Lcom/android/vendorsettings/cloud/CloudJobService;->SE:Z
 
     if-nez v2, :cond_0
 
     .line 77
-    iput-boolean v1, p0, Lcom/android/settings/cloud/CloudJobService;->SE:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/cloud/CloudJobService;->SE:Z
 
     .line 78
-    new-instance v2, Lcom/android/settings/cloud/e;
+    new-instance v2, Lcom/android/vendorsettings/cloud/e;
 
-    invoke-direct {v2, p0, p1}, Lcom/android/settings/cloud/e;-><init>(Lcom/android/settings/cloud/CloudJobService;Landroid/app/job/JobParameters;)V
+    invoke-direct {v2, p0, p1}, Lcom/android/vendorsettings/cloud/e;-><init>(Lcom/android/vendorsettings/cloud/CloudJobService;Landroid/app/job/JobParameters;)V
 
     .line 79
-    sget-object v3, Lcom/android/settings/cloud/CloudJobService;->THREAD_POOL_EXECUTOR:Ljava/util/concurrent/Executor;
+    sget-object v3, Lcom/android/vendorsettings/cloud/CloudJobService;->THREAD_POOL_EXECUTOR:Ljava/util/concurrent/Executor;
 
     new-array v0, v0, [Ljava/lang/Void;
 
-    invoke-virtual {v2, v3, v0}, Lcom/android/settings/cloud/e;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v2, v3, v0}, Lcom/android/vendorsettings/cloud/e;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     move v0, v1
 
@@ -898,7 +898,7 @@
     const/4 v3, 0x0
 
     .line 88
-    sget-object v0, Lcom/android/settings/cloud/CloudJobService;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/cloud/CloudJobService;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -925,7 +925,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 89
-    iput-boolean v3, p0, Lcom/android/settings/cloud/CloudJobService;->SE:Z
+    iput-boolean v3, p0, Lcom/android/vendorsettings/cloud/CloudJobService;->SE:Z
 
     .line 90
     return v3

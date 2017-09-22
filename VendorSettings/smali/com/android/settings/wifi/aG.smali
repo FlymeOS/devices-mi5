@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/aG;
+.class Lcom/android/vendorsettings/wifi/aG;
 .super Ljava/lang/Object;
 .source "WifiStatusTest.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aEB:Lcom/android/settings/wifi/WifiStatusTest;
+.field final synthetic aEB:Lcom/android/vendorsettings/wifi/WifiStatusTest;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiStatusTest;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/WifiStatusTest;)V
     .locals 0
 
     .prologue
     .line 172
-    iput-object p1, p0, Lcom/android/settings/wifi/aG;->aEB:Lcom/android/settings/wifi/WifiStatusTest;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/aG;->aEB:Lcom/android/vendorsettings/wifi/WifiStatusTest;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 174
-    iget-object v0, p0, Lcom/android/settings/wifi/aG;->aEB:Lcom/android/settings/wifi/WifiStatusTest;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/aG;->aEB:Lcom/android/vendorsettings/wifi/WifiStatusTest;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/WifiStatusTest;->b(Lcom/android/settings/wifi/WifiStatusTest;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/WifiStatusTest;->b(Lcom/android/vendorsettings/wifi/WifiStatusTest;)V
 
     .line 175
     return-void

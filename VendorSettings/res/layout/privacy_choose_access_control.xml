@@ -14,7 +14,7 @@
             </LinearLayout>
         </RelativeLayout>
         <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
-            <com.android.settings.LockPatternView android:layout_gravity="center" android:id="@id/choose__lockPattern" style="@style/SecurityLockPatternView" />
+            <com.android.vendorsettings.LockPatternView android:layout_gravity="center" android:id="@id/choose__lockPattern" style="@style/SecurityLockPatternView" />
         </FrameLayout>
     </LinearLayout>
     <include layout="@layout/privacy_password_choose_lock_pattern_button" />

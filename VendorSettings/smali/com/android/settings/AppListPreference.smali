@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/AppListPreference;
+.class public Lcom/android/vendorsettings/AppListPreference;
 .super Landroid/preference/ListPreference;
 .source "AppListPreference.java"
 
@@ -20,7 +20,7 @@
     .line 51
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/AppListPreference;->aW:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/AppListPreference;->aW:Z
 
     .line 86
     return-void
@@ -36,7 +36,7 @@
     .line 51
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/AppListPreference;->aW:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/AppListPreference;->aW:Z
 
     .line 82
     return-void
@@ -49,14 +49,14 @@
 
     .prologue
     .line 135
-    invoke-virtual {p0}, Lcom/android/settings/AppListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AppListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v1
 
     .line 136
     if-eqz v1, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/settings/AppListPreference;->aW:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/AppListPreference;->aW:Z
 
     if-eqz v0, :cond_1
 
@@ -79,23 +79,23 @@
 
     .line 139
     :goto_1
-    new-instance v0, Lcom/android/settings/B;
+    new-instance v0, Lcom/android/vendorsettings/B;
 
-    invoke-virtual {p0}, Lcom/android/settings/AppListPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AppListPreference;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
     const v3, 0x7f040015
 
-    invoke-virtual {p0}, Lcom/android/settings/AppListPreference;->getEntries()[Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AppListPreference;->getEntries()[Ljava/lang/CharSequence;
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/android/settings/AppListPreference;->aV:[Landroid/graphics/drawable/Drawable;
+    iget-object v5, p0, Lcom/android/vendorsettings/AppListPreference;->aV:[Landroid/graphics/drawable/Drawable;
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v6}, Lcom/android/settings/B;-><init>(Lcom/android/settings/AppListPreference;Landroid/content/Context;I[Ljava/lang/CharSequence;[Landroid/graphics/drawable/Drawable;I)V
+    invoke-direct/range {v0 .. v6}, Lcom/android/vendorsettings/B;-><init>(Lcom/android/vendorsettings/AppListPreference;Landroid/content/Context;I[Ljava/lang/CharSequence;[Landroid/graphics/drawable/Drawable;I)V
 
     return-object v0
 
@@ -107,7 +107,7 @@
 
     .line 138
     :cond_2
-    invoke-virtual {p0, v1}, Lcom/android/settings/AppListPreference;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/AppListPreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v6
 
@@ -123,7 +123,7 @@
     const/4 v1, 0x0
 
     .line 94
-    invoke-virtual {p0}, Lcom/android/settings/AppListPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AppListPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -134,7 +134,7 @@
     .line 95
     array-length v2, p1
 
-    iget-boolean v0, p0, Lcom/android/settings/AppListPreference;->aW:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/AppListPreference;->aW:Z
 
     if-eqz v0, :cond_1
 
@@ -241,12 +241,12 @@
 
     .line 115
     :cond_2
-    iget-boolean v0, p0, Lcom/android/settings/AppListPreference;->aW:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/AppListPreference;->aW:Z
 
     if-eqz v0, :cond_3
 
     .line 116
-    invoke-virtual {p0}, Lcom/android/settings/AppListPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AppListPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -268,7 +268,7 @@
     invoke-interface {v6, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 119
-    invoke-virtual {p0}, Lcom/android/settings/AppListPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AppListPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -294,7 +294,7 @@
 
     check-cast v0, [Ljava/lang/CharSequence;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/AppListPreference;->setEntries([Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/AppListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
     .line 123
     invoke-interface {v6}, Ljava/util/List;->size()I
@@ -309,7 +309,7 @@
 
     check-cast v0, [Ljava/lang/CharSequence;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/AppListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/AppListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
 
     .line 125
     invoke-interface {v7}, Ljava/util/List;->size()I
@@ -324,13 +324,13 @@
 
     check-cast v0, [Landroid/graphics/drawable/Drawable;
 
-    iput-object v0, p0, Lcom/android/settings/AppListPreference;->aV:[Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/android/vendorsettings/AppListPreference;->aV:[Landroid/graphics/drawable/Drawable;
 
     .line 127
     if-eq v2, v3, :cond_4
 
     .line 128
-    invoke-virtual {p0, v2}, Lcom/android/settings/AppListPreference;->setValueIndex(I)V
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/AppListPreference;->setValueIndex(I)V
 
     .line 132
     :goto_3
@@ -340,7 +340,7 @@
     :cond_4
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/AppListPreference;->setValue(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/AppListPreference;->setValue(Ljava/lang/String;)V
 
     goto :goto_3
 .end method
@@ -350,7 +350,7 @@
 
     .prologue
     .line 89
-    iput-boolean p1, p0, Lcom/android/settings/AppListPreference;->aW:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/AppListPreference;->aW:Z
 
     .line 90
     return-void
@@ -361,7 +361,7 @@
 
     .prologue
     .line 145
-    invoke-virtual {p0}, Lcom/android/settings/AppListPreference;->J()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AppListPreference;->J()Landroid/widget/ListAdapter;
 
     move-result-object v0
 
@@ -379,27 +379,27 @@
 
     .prologue
     .line 157
-    instance-of v0, p1, Lcom/android/settings/AppListPreference$SavedState;
+    instance-of v0, p1, Lcom/android/vendorsettings/AppListPreference$SavedState;
 
     if-eqz v0, :cond_0
 
     .line 158
-    check-cast p1, Lcom/android/settings/AppListPreference$SavedState;
+    check-cast p1, Lcom/android/vendorsettings/AppListPreference$SavedState;
 
     .line 159
-    iget-boolean v0, p1, Lcom/android/settings/AppListPreference$SavedState;->bc:Z
+    iget-boolean v0, p1, Lcom/android/vendorsettings/AppListPreference$SavedState;->bc:Z
 
-    iput-boolean v0, p0, Lcom/android/settings/AppListPreference;->aW:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/AppListPreference;->aW:Z
 
     .line 160
-    iget-object v0, p1, Lcom/android/settings/AppListPreference$SavedState;->ba:[Ljava/lang/CharSequence;
+    iget-object v0, p1, Lcom/android/vendorsettings/AppListPreference$SavedState;->ba:[Ljava/lang/CharSequence;
 
-    iget-object v1, p1, Lcom/android/settings/AppListPreference$SavedState;->bb:Ljava/lang/CharSequence;
+    iget-object v1, p1, Lcom/android/vendorsettings/AppListPreference$SavedState;->bb:Ljava/lang/CharSequence;
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/AppListPreference;->a([Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/AppListPreference;->a([Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
 
     .line 161
-    iget-object v0, p1, Lcom/android/settings/AppListPreference$SavedState;->bd:Landroid/os/Parcelable;
+    iget-object v0, p1, Lcom/android/vendorsettings/AppListPreference$SavedState;->bd:Landroid/os/Parcelable;
 
     invoke-super {p0, v0}, Landroid/preference/ListPreference;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
@@ -424,19 +424,19 @@
     move-result-object v0
 
     .line 152
-    new-instance v1, Lcom/android/settings/AppListPreference$SavedState;
+    new-instance v1, Lcom/android/vendorsettings/AppListPreference$SavedState;
 
-    invoke-virtual {p0}, Lcom/android/settings/AppListPreference;->getEntryValues()[Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AppListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lcom/android/settings/AppListPreference;->getValue()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AppListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v3
 
-    iget-boolean v4, p0, Lcom/android/settings/AppListPreference;->aW:Z
+    iget-boolean v4, p0, Lcom/android/vendorsettings/AppListPreference;->aW:Z
 
-    invoke-direct {v1, v2, v3, v4, v0}, Lcom/android/settings/AppListPreference$SavedState;-><init>([Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZLandroid/os/Parcelable;)V
+    invoke-direct {v1, v2, v3, v4, v0}, Lcom/android/vendorsettings/AppListPreference$SavedState;-><init>([Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZLandroid/os/Parcelable;)V
 
     return-object v1
 .end method

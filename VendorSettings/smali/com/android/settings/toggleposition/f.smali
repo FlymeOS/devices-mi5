@@ -1,19 +1,19 @@
-.class Lcom/android/settings/toggleposition/f;
+.class Lcom/android/vendorsettings/toggleposition/f;
 .super Landroid/animation/AnimatorListenerAdapter;
 .source "DragGridView.java"
 
 
 # instance fields
-.field final synthetic arV:Lcom/android/settings/toggleposition/DragGridView;
+.field final synthetic arV:Lcom/android/vendorsettings/toggleposition/DragGridView;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/toggleposition/DragGridView;)V
+.method constructor <init>(Lcom/android/vendorsettings/toggleposition/DragGridView;)V
     .locals 0
 
     .prologue
     .line 547
-    iput-object p1, p0, Lcom/android/settings/toggleposition/f;->arV:Lcom/android/settings/toggleposition/DragGridView;
+    iput-object p1, p0, Lcom/android/vendorsettings/toggleposition/f;->arV:Lcom/android/vendorsettings/toggleposition/DragGridView;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -27,11 +27,11 @@
 
     .prologue
     .line 555
-    iget-object v0, p0, Lcom/android/settings/toggleposition/f;->arV:Lcom/android/settings/toggleposition/DragGridView;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/f;->arV:Lcom/android/vendorsettings/toggleposition/DragGridView;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/android/settings/toggleposition/DragGridView;->b(Lcom/android/settings/toggleposition/DragGridView;Z)Z
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/toggleposition/DragGridView;->b(Lcom/android/vendorsettings/toggleposition/DragGridView;Z)Z
 
     .line 556
     return-void
@@ -42,11 +42,11 @@
 
     .prologue
     .line 550
-    iget-object v0, p0, Lcom/android/settings/toggleposition/f;->arV:Lcom/android/settings/toggleposition/DragGridView;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/f;->arV:Lcom/android/vendorsettings/toggleposition/DragGridView;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/toggleposition/DragGridView;->b(Lcom/android/settings/toggleposition/DragGridView;Z)Z
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/toggleposition/DragGridView;->b(Lcom/android/vendorsettings/toggleposition/DragGridView;Z)Z
 
     .line 551
     return-void

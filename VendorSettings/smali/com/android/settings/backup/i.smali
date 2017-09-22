@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/backup/i;
+.class public Lcom/android/vendorsettings/backup/i;
 .super Ljava/lang/Object;
 .source "RingtoneDescript.java"
 
@@ -37,19 +37,19 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 31
-    iput-object p1, p0, Lcom/android/settings/backup/i;->PN:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/backup/i;->PN:Ljava/lang/String;
 
     .line 32
-    iput-object p2, p0, Lcom/android/settings/backup/i;->PO:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/vendorsettings/backup/i;->PO:Ljava/lang/String;
 
     .line 33
-    iput-object p3, p0, Lcom/android/settings/backup/i;->PP:Ljava/lang/String;
+    iput-object p3, p0, Lcom/android/vendorsettings/backup/i;->PP:Ljava/lang/String;
 
     .line 34
-    iput-object p4, p0, Lcom/android/settings/backup/i;->PQ:Ljava/lang/String;
+    iput-object p4, p0, Lcom/android/vendorsettings/backup/i;->PQ:Ljava/lang/String;
 
     .line 35
-    iput-object p5, p0, Lcom/android/settings/backup/i;->PR:Ljava/lang/String;
+    iput-object p5, p0, Lcom/android/vendorsettings/backup/i;->PR:Ljava/lang/String;
 
     .line 36
     return-void
@@ -64,37 +64,37 @@
     .line 54
     const-string v0, "ringtone"
 
-    iget-object v1, p0, Lcom/android/settings/backup/i;->PN:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/i;->PN:Ljava/lang/String;
 
-    invoke-virtual {p0, p1, v0, v1}, Lcom/android/settings/backup/i;->a(Lorg/xmlpull/v1/XmlSerializer;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, v0, v1}, Lcom/android/vendorsettings/backup/i;->a(Lorg/xmlpull/v1/XmlSerializer;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 55
     const-string v0, "notification"
 
-    iget-object v1, p0, Lcom/android/settings/backup/i;->PO:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/i;->PO:Ljava/lang/String;
 
-    invoke-virtual {p0, p1, v0, v1}, Lcom/android/settings/backup/i;->a(Lorg/xmlpull/v1/XmlSerializer;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, v0, v1}, Lcom/android/vendorsettings/backup/i;->a(Lorg/xmlpull/v1/XmlSerializer;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 56
     const-string v0, "alarm"
 
-    iget-object v1, p0, Lcom/android/settings/backup/i;->PP:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/i;->PP:Ljava/lang/String;
 
-    invoke-virtual {p0, p1, v0, v1}, Lcom/android/settings/backup/i;->a(Lorg/xmlpull/v1/XmlSerializer;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, v0, v1}, Lcom/android/vendorsettings/backup/i;->a(Lorg/xmlpull/v1/XmlSerializer;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 57
     const-string v0, "sms"
 
-    iget-object v1, p0, Lcom/android/settings/backup/i;->PQ:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/i;->PQ:Ljava/lang/String;
 
-    invoke-virtual {p0, p1, v0, v1}, Lcom/android/settings/backup/i;->a(Lorg/xmlpull/v1/XmlSerializer;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, v0, v1}, Lcom/android/vendorsettings/backup/i;->a(Lorg/xmlpull/v1/XmlSerializer;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 58
     const-string v0, "sms_received"
 
-    iget-object v1, p0, Lcom/android/settings/backup/i;->PR:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/i;->PR:Ljava/lang/String;
 
-    invoke-virtual {p0, p1, v0, v1}, Lcom/android/settings/backup/i;->a(Lorg/xmlpull/v1/XmlSerializer;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, v0, v1}, Lcom/android/vendorsettings/backup/i;->a(Lorg/xmlpull/v1/XmlSerializer;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 59
     return-void
@@ -168,7 +168,7 @@
     invoke-interface {v0, v3, v4}, Lorg/xmlpull/v1/XmlSerializer;->startTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
     .line 71
-    invoke-virtual {p0, v0}, Lcom/android/settings/backup/i;->a(Lorg/xmlpull/v1/XmlSerializer;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/backup/i;->a(Lorg/xmlpull/v1/XmlSerializer;)V
 
     .line 72
     const-string v3, ""
@@ -186,17 +186,17 @@
     move-result-object v2
 
     .line 75
-    iput-object p1, p0, Lcom/android/settings/backup/i;->PS:Ljava/io/File;
+    iput-object p1, p0, Lcom/android/vendorsettings/backup/i;->PS:Ljava/io/File;
 
     .line 76
-    iget-object v0, p0, Lcom/android/settings/backup/i;->PS:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/i;->PS:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->createNewFile()Z
 
     .line 77
     new-instance v0, Ljava/io/FileWriter;
 
-    iget-object v3, p0, Lcom/android/settings/backup/i;->PS:Ljava/io/File;
+    iget-object v3, p0, Lcom/android/vendorsettings/backup/i;->PS:Ljava/io/File;
 
     invoke-direct {v0, v3}, Ljava/io/FileWriter;-><init>(Ljava/io/File;)V
     :try_end_0
@@ -384,7 +384,7 @@
 
     .line 106
     :cond_1
-    iput-object p1, p0, Lcom/android/settings/backup/i;->PS:Ljava/io/File;
+    iput-object p1, p0, Lcom/android/vendorsettings/backup/i;->PS:Ljava/io/File;
 
     .line 109
     :try_start_0
@@ -478,7 +478,7 @@
     move-result-object v4
 
     .line 128
-    invoke-virtual {p0, v3, v4}, Lcom/android/settings/backup/i;->p(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, v3, v4}, Lcom/android/vendorsettings/backup/i;->p(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
     .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_3 .. :try_end_3} :catch_6
@@ -613,7 +613,7 @@
     if-eqz v0, :cond_1
 
     .line 40
-    iput-object p2, p0, Lcom/android/settings/backup/i;->PN:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/vendorsettings/backup/i;->PN:Ljava/lang/String;
 
     .line 50
     :cond_0
@@ -631,7 +631,7 @@
     if-eqz v0, :cond_2
 
     .line 42
-    iput-object p2, p0, Lcom/android/settings/backup/i;->PO:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/vendorsettings/backup/i;->PO:Ljava/lang/String;
 
     goto :goto_0
 
@@ -646,7 +646,7 @@
     if-eqz v0, :cond_3
 
     .line 44
-    iput-object p2, p0, Lcom/android/settings/backup/i;->PP:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/vendorsettings/backup/i;->PP:Ljava/lang/String;
 
     goto :goto_0
 
@@ -661,7 +661,7 @@
     if-eqz v0, :cond_4
 
     .line 46
-    iput-object p2, p0, Lcom/android/settings/backup/i;->PQ:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/vendorsettings/backup/i;->PQ:Ljava/lang/String;
 
     goto :goto_0
 
@@ -676,7 +676,7 @@
     if-eqz v0, :cond_0
 
     .line 48
-    iput-object p2, p0, Lcom/android/settings/backup/i;->PR:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/vendorsettings/backup/i;->PR:Ljava/lang/String;
 
     goto :goto_0
 .end method

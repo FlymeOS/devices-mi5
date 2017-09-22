@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment$1;
+.class Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment$1;
 .super Ljava/lang/Object;
 .source "RunningServiceDetails.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic NY:Landroid/content/ComponentName;
 
-.field final synthetic NZ:Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;
+.field final synthetic NZ:Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;Landroid/content/ComponentName;)V
+.method constructor <init>(Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment;Landroid/content/ComponentName;)V
     .locals 0
 
     .prologue
     .line 622
-    iput-object p1, p0, Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment$1;->NZ:Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment$1;->NZ:Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment;
 
-    iput-object p2, p0, Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment$1;->NY:Landroid/content/ComponentName;
+    iput-object p2, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment$1;->NY:Landroid/content/ComponentName;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,15 +34,15 @@
 
     .prologue
     .line 624
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment$1;->NZ:Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment$1;->NZ:Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;->lw()Lcom/android/settings/applications/RunningServiceDetails;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment;->lw()Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment$1;->NY:Landroid/content/ComponentName;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment$1;->NY:Landroid/content/ComponentName;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/RunningServiceDetails;->c(Landroid/content/ComponentName;)Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/applications/RunningServiceDetails;->c(Landroid/content/ComponentName;)Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;
 
     move-result-object v0
 
@@ -52,7 +52,7 @@
     .line 626
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->av(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->av(Z)V
 
     .line 628
     :cond_0

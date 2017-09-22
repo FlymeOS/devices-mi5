@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/push/k;
+.class public Lcom/android/vendorsettings/cloud/push/k;
 .super Ljava/lang/Object;
 .source "ExistCompatibility.java"
 
@@ -36,7 +36,7 @@
 
     .prologue
     .line 56
-    iput-boolean p1, p0, Lcom/android/settings/cloud/push/k;->Uj:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/cloud/push/k;->Uj:Z
 
     .line 57
     return-void
@@ -47,7 +47,7 @@
 
     .prologue
     .line 44
-    iput-object p1, p0, Lcom/android/settings/cloud/push/k;->Ui:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/cloud/push/k;->Ui:Ljava/lang/String;
 
     .line 45
     return-void
@@ -58,7 +58,7 @@
 
     .prologue
     .line 64
-    iput-object p1, p0, Lcom/android/settings/cloud/push/k;->Uk:Ljava/util/Set;
+    iput-object p1, p0, Lcom/android/vendorsettings/cloud/push/k;->Uk:Ljava/util/Set;
 
     .line 65
     return-void
@@ -69,7 +69,7 @@
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/android/settings/cloud/push/k;->Uh:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/push/k;->Uh:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -79,7 +79,7 @@
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/android/settings/cloud/push/k;->mPackageName:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/push/k;->mPackageName:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -89,7 +89,7 @@
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/android/settings/cloud/push/k;->mTitle:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/push/k;->mTitle:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -99,7 +99,7 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lcom/android/settings/cloud/push/k;->Ui:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/push/k;->Ui:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -109,7 +109,7 @@
 
     .prologue
     .line 52
-    iget-boolean v0, p0, Lcom/android/settings/cloud/push/k;->Uj:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/cloud/push/k;->Uj:Z
 
     return v0
 .end method
@@ -119,7 +119,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/android/settings/cloud/push/k;->Uk:Ljava/util/Set;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/push/k;->Uk:Ljava/util/Set;
 
     return-object v0
 .end method
@@ -129,7 +129,7 @@
 
     .prologue
     .line 32
-    iput-object p1, p0, Lcom/android/settings/cloud/push/k;->Uh:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/cloud/push/k;->Uh:Ljava/lang/String;
 
     .line 33
     return-void
@@ -140,7 +140,7 @@
 
     .prologue
     .line 24
-    iput-object p1, p0, Lcom/android/settings/cloud/push/k;->mPackageName:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/cloud/push/k;->mPackageName:Ljava/lang/String;
 
     .line 25
     return-void
@@ -151,7 +151,7 @@
 
     .prologue
     .line 36
-    iput-object p1, p0, Lcom/android/settings/cloud/push/k;->mTitle:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/cloud/push/k;->mTitle:Ljava/lang/String;
 
     .line 37
     return-void
@@ -172,7 +172,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/cloud/push/k;->mPackageName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/cloud/push/k;->mPackageName:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -184,7 +184,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/cloud/push/k;->Uh:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/cloud/push/k;->Uh:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -196,7 +196,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/cloud/push/k;->mTitle:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/cloud/push/k;->mTitle:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -208,7 +208,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/cloud/push/k;->Ui:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/cloud/push/k;->Ui:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -220,7 +220,7 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/android/settings/cloud/push/k;->Uj:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/cloud/push/k;->Uj:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -232,7 +232,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/cloud/push/k;->Uk:Ljava/util/Set;
+    iget-object v1, p0, Lcom/android/vendorsettings/cloud/push/k;->Uk:Ljava/util/Set;
 
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bJ;
+.class Lcom/android/vendorsettings/bJ;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic is:Lcom/android/settings/DataUsageSummary$ConfirmRestrictFragment;
+.field final synthetic is:Lcom/android/vendorsettings/DataUsageSummary$ConfirmRestrictFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary$ConfirmRestrictFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/DataUsageSummary$ConfirmRestrictFragment;)V
     .locals 0
 
     .prologue
     .line 2332
-    iput-object p1, p0, Lcom/android/settings/bJ;->is:Lcom/android/settings/DataUsageSummary$ConfirmRestrictFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/bJ;->is:Lcom/android/vendorsettings/DataUsageSummary$ConfirmRestrictFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 2335
-    iget-object v0, p0, Lcom/android/settings/bJ;->is:Lcom/android/settings/DataUsageSummary$ConfirmRestrictFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/bJ;->is:Lcom/android/vendorsettings/DataUsageSummary$ConfirmRestrictFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/DataUsageSummary$ConfirmRestrictFragment;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/DataUsageSummary$ConfirmRestrictFragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/DataUsageSummary;
+    check-cast v0, Lcom/android/vendorsettings/DataUsageSummary;
 
     .line 2336
     if-eqz v0, :cond_0
@@ -44,7 +44,7 @@
     .line 2337
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/DataUsageSummary;->setRestrictBackground(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/DataUsageSummary;->setRestrictBackground(Z)V
 
     .line 2339
     :cond_0

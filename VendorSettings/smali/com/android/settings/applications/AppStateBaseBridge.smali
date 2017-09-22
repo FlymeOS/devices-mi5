@@ -1,4 +1,4 @@
-.class public abstract Lcom/android/settings/applications/AppStateBaseBridge;
+.class public abstract Lcom/android/vendorsettings/applications/AppStateBaseBridge;
 .super Ljava/lang/Object;
 .source "AppStateBaseBridge.java"
 
@@ -11,15 +11,15 @@
 
 .field protected final Gs:Lcom/android/b/a/w;
 
-.field protected final Gt:Lcom/android/settings/applications/AppStateBaseBridge$Callback;
+.field protected final Gt:Lcom/android/vendorsettings/applications/AppStateBaseBridge$Callback;
 
-.field protected final Gu:Lcom/android/settings/applications/AppStateBaseBridge$BackgroundHandler;
+.field protected final Gu:Lcom/android/vendorsettings/applications/AppStateBaseBridge$BackgroundHandler;
 
-.field protected final Gv:Lcom/android/settings/applications/AppStateBaseBridge$MainHandler;
+.field protected final Gv:Lcom/android/vendorsettings/applications/AppStateBaseBridge$MainHandler;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/b/a/a;Lcom/android/settings/applications/AppStateBaseBridge$Callback;)V
+.method public constructor <init>(Lcom/android/b/a/a;Lcom/android/vendorsettings/applications/AppStateBaseBridge$Callback;)V
     .locals 3
 
     .prologue
@@ -29,44 +29,44 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 40
-    iput-object p1, p0, Lcom/android/settings/applications/AppStateBaseBridge;->Gr:Lcom/android/b/a/a;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/AppStateBaseBridge;->Gr:Lcom/android/b/a/a;
 
     .line 41
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateBaseBridge;->Gr:Lcom/android/b/a/a;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStateBaseBridge;->Gr:Lcom/android/b/a/a;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateBaseBridge;->Gr:Lcom/android/b/a/a;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStateBaseBridge;->Gr:Lcom/android/b/a/a;
 
     invoke-virtual {v0, p0}, Lcom/android/b/a/a;->a(Lcom/android/b/a/s;)Lcom/android/b/a/w;
 
     move-result-object v0
 
     :goto_0
-    iput-object v0, p0, Lcom/android/settings/applications/AppStateBaseBridge;->Gs:Lcom/android/b/a/w;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStateBaseBridge;->Gs:Lcom/android/b/a/w;
 
     .line 42
-    iput-object p2, p0, Lcom/android/settings/applications/AppStateBaseBridge;->Gt:Lcom/android/settings/applications/AppStateBaseBridge$Callback;
+    iput-object p2, p0, Lcom/android/vendorsettings/applications/AppStateBaseBridge;->Gt:Lcom/android/vendorsettings/applications/AppStateBaseBridge$Callback;
 
     .line 46
-    new-instance v0, Lcom/android/settings/applications/AppStateBaseBridge$BackgroundHandler;
+    new-instance v0, Lcom/android/vendorsettings/applications/AppStateBaseBridge$BackgroundHandler;
 
-    iget-object v2, p0, Lcom/android/settings/applications/AppStateBaseBridge;->Gr:Lcom/android/b/a/a;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStateBaseBridge;->Gr:Lcom/android/b/a/a;
 
     invoke-virtual {v2}, Lcom/android/b/a/a;->zf()Landroid/os/Looper;
 
     move-result-object v2
 
-    invoke-direct {v0, p0, v2}, Lcom/android/settings/applications/AppStateBaseBridge$BackgroundHandler;-><init>(Lcom/android/settings/applications/AppStateBaseBridge;Landroid/os/Looper;)V
+    invoke-direct {v0, p0, v2}, Lcom/android/vendorsettings/applications/AppStateBaseBridge$BackgroundHandler;-><init>(Lcom/android/vendorsettings/applications/AppStateBaseBridge;Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStateBaseBridge;->Gu:Lcom/android/settings/applications/AppStateBaseBridge$BackgroundHandler;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStateBaseBridge;->Gu:Lcom/android/vendorsettings/applications/AppStateBaseBridge$BackgroundHandler;
 
     .line 47
-    new-instance v0, Lcom/android/settings/applications/AppStateBaseBridge$MainHandler;
+    new-instance v0, Lcom/android/vendorsettings/applications/AppStateBaseBridge$MainHandler;
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/applications/AppStateBaseBridge$MainHandler;-><init>(Lcom/android/settings/applications/AppStateBaseBridge;Lcom/android/settings/applications/AppStateBaseBridge$1;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/applications/AppStateBaseBridge$MainHandler;-><init>(Lcom/android/vendorsettings/applications/AppStateBaseBridge;Lcom/android/vendorsettings/applications/AppStateBaseBridge$1;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStateBaseBridge;->Gv:Lcom/android/settings/applications/AppStateBaseBridge$MainHandler;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStateBaseBridge;->Gv:Lcom/android/vendorsettings/applications/AppStateBaseBridge$MainHandler;
 
     .line 48
     return-void
@@ -112,13 +112,13 @@
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateBaseBridge;->Gu:Lcom/android/settings/applications/AppStateBaseBridge$BackgroundHandler;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStateBaseBridge;->Gu:Lcom/android/vendorsettings/applications/AppStateBaseBridge$BackgroundHandler;
 
     const/4 v1, 0x2
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, p2, v2, p1}, Lcom/android/settings/applications/AppStateBaseBridge$BackgroundHandler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {v0, v1, p2, v2, p1}, Lcom/android/vendorsettings/applications/AppStateBaseBridge$BackgroundHandler;->obtainMessage(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v0
 
@@ -157,11 +157,11 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateBaseBridge;->Gu:Lcom/android/settings/applications/AppStateBaseBridge$BackgroundHandler;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStateBaseBridge;->Gu:Lcom/android/vendorsettings/applications/AppStateBaseBridge$BackgroundHandler;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/AppStateBaseBridge$BackgroundHandler;->sendEmptyMessage(I)Z
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/applications/AppStateBaseBridge$BackgroundHandler;->sendEmptyMessage(I)Z
 
     .line 75
     return-void
@@ -175,11 +175,11 @@
 
     .prologue
     .line 69
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateBaseBridge;->Gu:Lcom/android/settings/applications/AppStateBaseBridge$BackgroundHandler;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStateBaseBridge;->Gu:Lcom/android/vendorsettings/applications/AppStateBaseBridge$BackgroundHandler;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/AppStateBaseBridge$BackgroundHandler;->sendEmptyMessage(I)Z
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/applications/AppStateBaseBridge$BackgroundHandler;->sendEmptyMessage(I)Z
 
     .line 70
     return-void
@@ -190,7 +190,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateBaseBridge;->Gs:Lcom/android/b/a/w;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStateBaseBridge;->Gs:Lcom/android/b/a/w;
 
     invoke-virtual {v0}, Lcom/android/b/a/w;->pause()V
 
@@ -203,7 +203,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateBaseBridge;->Gs:Lcom/android/b/a/w;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStateBaseBridge;->Gs:Lcom/android/b/a/w;
 
     invoke-virtual {v0}, Lcom/android/b/a/w;->release()V
 
@@ -216,14 +216,14 @@
 
     .prologue
     .line 51
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateBaseBridge;->Gu:Lcom/android/settings/applications/AppStateBaseBridge$BackgroundHandler;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStateBaseBridge;->Gu:Lcom/android/vendorsettings/applications/AppStateBaseBridge$BackgroundHandler;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/AppStateBaseBridge$BackgroundHandler;->sendEmptyMessage(I)Z
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/applications/AppStateBaseBridge$BackgroundHandler;->sendEmptyMessage(I)Z
 
     .line 52
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateBaseBridge;->Gs:Lcom/android/b/a/w;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStateBaseBridge;->Gs:Lcom/android/b/a/w;
 
     invoke-virtual {v0}, Lcom/android/b/a/w;->resume()V
 

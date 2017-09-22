@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dn;
+.class public Lcom/android/vendorsettings/dn;
 .super Ljava/lang/Object;
 .source "HelpUtils.java"
 
@@ -15,18 +15,18 @@
 
     .prologue
     .line 43
-    const-class v0, Lcom/android/settings/dn;
+    const-class v0, Lcom/android/vendorsettings/dn;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/dn;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/dn;->TAG:Ljava/lang/String;
 
     .line 66
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/settings/dn;->nI:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/dn;->nI:Ljava/lang/String;
 
     return-void
 .end method
@@ -64,7 +64,7 @@
     invoke-virtual {v1, v0, v2}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     .line 191
-    sget-object v0, Lcom/android/settings/dn;->nI:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/dn;->nI:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
@@ -91,12 +91,12 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/dn;->nI:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/dn;->nI:Ljava/lang/String;
 
     .line 200
     const-string v0, "version"
 
-    sget-object v2, Lcom/android/settings/dn;->nI:Ljava/lang/String;
+    sget-object v2, Lcom/android/vendorsettings/dn;->nI:Ljava/lang/String;
 
     invoke-virtual {v1, v0, v2}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
     :try_end_0
@@ -115,7 +115,7 @@
     move-exception v0
 
     .line 204
-    sget-object v2, Lcom/android/settings/dn;->TAG:Ljava/lang/String;
+    sget-object v2, Lcom/android/vendorsettings/dn;->TAG:Ljava/lang/String;
 
     const-string v3, "Invalid package name for context"
 
@@ -127,7 +127,7 @@
     :cond_0
     const-string v0, "version"
 
-    sget-object v2, Lcom/android/settings/dn;->nI:Ljava/lang/String;
+    sget-object v2, Lcom/android/vendorsettings/dn;->nI:Ljava/lang/String;
 
     invoke-virtual {v1, v0, v2}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
@@ -218,7 +218,7 @@
 
     move-result-object v1
 
-    invoke-static {p0, v0, v1, p3}, Lcom/android/settings/dn;->a(Landroid/app/Activity;Landroid/view/MenuItem;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p0, v0, v1, p3}, Lcom/android/vendorsettings/dn;->a(Landroid/app/Activity;Landroid/view/MenuItem;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -241,7 +241,7 @@
     move-result-object v0
 
     .line 74
-    invoke-static {p0, v0, p2, p3}, Lcom/android/settings/dn;->a(Landroid/app/Activity;Landroid/view/MenuItem;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p0, v0, p2, p3}, Lcom/android/vendorsettings/dn;->a(Landroid/app/Activity;Landroid/view/MenuItem;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -291,7 +291,7 @@
 
     .line 110
     :cond_1
-    invoke-static {p0, p2, p3}, Lcom/android/settings/dn;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-static {p0, p2, p3}, Lcom/android/vendorsettings/dn;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v2
 
@@ -299,9 +299,9 @@
     if-eqz v2, :cond_2
 
     .line 115
-    new-instance v3, Lcom/android/settings/do;
+    new-instance v3, Lcom/android/vendorsettings/do;
 
-    invoke-direct {v3, p0, v2}, Lcom/android/settings/do;-><init>(Landroid/app/Activity;Landroid/content/Intent;)V
+    invoke-direct {v3, p0, v2}, Lcom/android/vendorsettings/do;-><init>(Landroid/app/Activity;Landroid/content/Intent;)V
 
     invoke-interface {p1, v3}, Landroid/view/MenuItem;->setOnMenuItemClickListener(Landroid/view/MenuItem$OnMenuItemClickListener;)Landroid/view/MenuItem;
 
@@ -359,7 +359,7 @@
     move-result-object v1
 
     .line 143
-    invoke-static {p0, v1, p2}, Lcom/android/settings/dn;->a(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/String;)V
+    invoke-static {p0, v1, p2}, Lcom/android/vendorsettings/dn;->a(Landroid/content/Context;Landroid/content/Intent;Ljava/lang/String;)V
 
     .line 144
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -395,7 +395,7 @@
 
     move-result-object v0
 
-    invoke-static {p0, v0, p2}, Lcom/android/settings/dn;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-static {p0, v0, p2}, Lcom/android/vendorsettings/dn;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
     :try_end_0
     .catch Ljava/net/URISyntaxException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -412,7 +412,7 @@
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Lcom/android/settings/dn;->a(Landroid/content/Context;Landroid/net/Uri;)Landroid/net/Uri;
+    invoke-static {p0, v0}, Lcom/android/vendorsettings/dn;->a(Landroid/content/Context;Landroid/net/Uri;)Landroid/net/Uri;
 
     move-result-object v1
 

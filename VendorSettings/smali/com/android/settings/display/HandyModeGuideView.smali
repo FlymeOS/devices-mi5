@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/HandyModeGuideView;
+.class public Lcom/android/vendorsettings/display/HandyModeGuideView;
 .super Landroid/view/View;
 .source "HandyModeGuideView.java"
 
@@ -25,7 +25,7 @@
     .line 36
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/display/HandyModeGuideView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/display/HandyModeGuideView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 37
     return-void
@@ -38,7 +38,7 @@
     .line 40
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/display/HandyModeGuideView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/vendorsettings/display/HandyModeGuideView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 41
     return-void
@@ -58,7 +58,7 @@
 
     invoke-direct {v0, v1}, Landroid/graphics/Paint;-><init>(I)V
 
-    iput-object v0, p0, Lcom/android/settings/display/HandyModeGuideView;->mPaint:Landroid/graphics/Paint;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mPaint:Landroid/graphics/Paint;
 
     .line 33
     const/4 v0, 0x2
@@ -71,10 +71,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
 
     .line 46
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -85,7 +85,7 @@
     move-result v0
 
     .line 47
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -96,7 +96,7 @@
     move-result v1
 
     .line 48
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -107,7 +107,7 @@
     move-result v2
 
     .line 49
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -126,30 +126,30 @@
 
     invoke-direct {v4, v0, v1, v2, v3}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    iput-object v4, p0, Lcom/android/settings/display/HandyModeGuideView;->Yv:Landroid/graphics/Rect;
+    iput-object v4, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->Yv:Landroid/graphics/Rect;
 
     .line 52
-    iget-object v0, p0, Lcom/android/settings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
 
-    new-instance v1, Lcom/android/settings/display/p;
+    new-instance v1, Lcom/android/vendorsettings/display/p;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/display/p;-><init>(Lcom/android/settings/display/HandyModeGuideView;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/display/p;-><init>(Lcom/android/vendorsettings/display/HandyModeGuideView;)V
 
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     .line 88
-    iget-object v0, p0, Lcom/android/settings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
 
-    new-instance v1, Lcom/android/settings/display/r;
+    new-instance v1, Lcom/android/vendorsettings/display/r;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/display/r;-><init>(Lcom/android/settings/display/HandyModeGuideView;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/display/r;-><init>(Lcom/android/vendorsettings/display/HandyModeGuideView;)V
 
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
     .line 99
-    iget-object v0, p0, Lcom/android/settings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
 
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -164,7 +164,7 @@
     invoke-virtual {v0, v2, v3}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     .line 100
-    iget-object v0, p0, Lcom/android/settings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->start()V
 
@@ -191,13 +191,13 @@
     const/4 v0, 0x0
 
     .line 118
-    iget v2, p0, Lcom/android/settings/display/HandyModeGuideView;->mState:I
+    iget v2, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mState:I
 
     packed-switch v2, :pswitch_data_0
 
     .line 129
     :goto_0
-    iget-boolean v2, p0, Lcom/android/settings/display/HandyModeGuideView;->Yw:Z
+    iget-boolean v2, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->Yw:Z
 
     if-eqz v2, :cond_0
 
@@ -205,7 +205,7 @@
 
     .line 131
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/display/HandyModeGuideView;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mContext:Landroid/content/Context;
 
     invoke-static {v2}, Lmiui/util/HandyModeUtils;->getInstance(Landroid/content/Context;)Lmiui/util/HandyModeUtils;
 
@@ -222,9 +222,9 @@
     sub-float/2addr v1, v0
 
     .line 133
-    iget-object v0, p0, Lcom/android/settings/display/HandyModeGuideView;->mPaint:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mPaint:Landroid/graphics/Paint;
 
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -240,18 +240,18 @@
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
     .line 135
-    iget-boolean v0, p0, Lcom/android/settings/display/HandyModeGuideView;->Yx:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->Yx:Z
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/display/HandyModeGuideView;->Yv:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->Yv:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->left:I
 
     int-to-float v0, v0
 
     :goto_1
-    iget-object v2, p0, Lcom/android/settings/display/HandyModeGuideView;->Yv:Landroid/graphics/Rect;
+    iget-object v2, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->Yv:Landroid/graphics/Rect;
 
     iget v2, v2, Landroid/graphics/Rect;->bottom:I
 
@@ -260,9 +260,9 @@
     invoke-virtual {p1, v1, v1, v0, v2}, Landroid/graphics/Canvas;->scale(FFFF)V
 
     .line 136
-    iget-object v0, p0, Lcom/android/settings/display/HandyModeGuideView;->Yv:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->Yv:Landroid/graphics/Rect;
 
-    iget-object v1, p0, Lcom/android/settings/display/HandyModeGuideView;->mPaint:Landroid/graphics/Paint;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mPaint:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->drawRect(Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
@@ -274,7 +274,7 @@
 
     .line 120
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
@@ -296,7 +296,7 @@
 
     .line 135
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/display/HandyModeGuideView;->Yv:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->Yv:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->right:I
 
@@ -322,7 +322,7 @@
     const/high16 v4, 0x3f800000    # 1.0f
 
     .line 141
-    iget-object v0, p0, Lcom/android/settings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
@@ -335,7 +335,7 @@
     move-result v1
 
     .line 143
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -346,7 +346,7 @@
     move-result v6
 
     .line 144
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -357,7 +357,7 @@
     move-result v3
 
     .line 145
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -368,7 +368,7 @@
     move-result v0
 
     .line 146
-    iget-boolean v2, p0, Lcom/android/settings/display/HandyModeGuideView;->Yx:Z
+    iget-boolean v2, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->Yx:Z
 
     if-eqz v2, :cond_0
 
@@ -376,7 +376,7 @@
 
     .line 150
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -387,7 +387,7 @@
     move-result v7
 
     .line 151
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeGuideView;->getWidth()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getWidth()I
 
     move-result v2
 
@@ -396,7 +396,7 @@
     int-to-float v2, v2
 
     .line 153
-    iget v8, p0, Lcom/android/settings/display/HandyModeGuideView;->mState:I
+    iget v8, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mState:I
 
     packed-switch v8, :pswitch_data_0
 
@@ -413,7 +413,7 @@
     if-lez v3, :cond_1
 
     .line 174
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -445,12 +445,12 @@
     or-int/2addr v2, v3
 
     .line 178
-    iget-object v3, p0, Lcom/android/settings/display/HandyModeGuideView;->mPaint:Landroid/graphics/Paint;
+    iget-object v3, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v3, v2}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 179
-    iget-object v2, p0, Lcom/android/settings/display/HandyModeGuideView;->mPaint:Landroid/graphics/Paint;
+    iget-object v2, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mPaint:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0, v7, v1, v2}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
@@ -467,7 +467,7 @@
     sub-float v3, v6, v3
 
     .line 157
-    iget-boolean v4, p0, Lcom/android/settings/display/HandyModeGuideView;->Yw:Z
+    iget-boolean v4, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->Yw:Z
 
     if-eqz v4, :cond_4
 
@@ -481,7 +481,7 @@
 
     .line 162
     :pswitch_1
-    iget-boolean v6, p0, Lcom/android/settings/display/HandyModeGuideView;->Yw:Z
+    iget-boolean v6, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->Yw:Z
 
     if-eqz v6, :cond_2
 
@@ -512,7 +512,7 @@
     add-float/2addr v1, v3
 
     .line 169
-    iget-boolean v3, p0, Lcom/android/settings/display/HandyModeGuideView;->Yw:Z
+    iget-boolean v3, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->Yw:Z
 
     if-nez v3, :cond_3
 
@@ -559,12 +559,12 @@
     invoke-super {p0}, Landroid/view/View;->onDetachedFromWindow()V
 
     .line 112
-    iget-object v0, p0, Lcom/android/settings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->removeAllListeners()V
 
     .line 113
-    iget-object v0, p0, Lcom/android/settings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->removeAllUpdateListeners()V
 
@@ -577,10 +577,10 @@
 
     .prologue
     .line 105
-    invoke-direct {p0, p1}, Lcom/android/settings/display/HandyModeGuideView;->a(Landroid/graphics/Canvas;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/display/HandyModeGuideView;->a(Landroid/graphics/Canvas;)V
 
     .line 106
-    invoke-direct {p0, p1}, Lcom/android/settings/display/HandyModeGuideView;->b(Landroid/graphics/Canvas;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/display/HandyModeGuideView;->b(Landroid/graphics/Canvas;)V
 
     .line 107
     return-void
@@ -591,7 +591,7 @@
 
     .prologue
     .line 185
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeGuideView;->getBackground()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getBackground()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
@@ -599,7 +599,7 @@
 
     move-result v0
 
-    invoke-virtual {p0}, Lcom/android/settings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -609,7 +609,7 @@
 
     move-result v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/display/HandyModeGuideView;->setMeasuredDimension(II)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/display/HandyModeGuideView;->setMeasuredDimension(II)V
 
     .line 187
     return-void

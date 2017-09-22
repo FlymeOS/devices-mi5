@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/PinnedHeaderListFragment;
+.class public Lcom/android/vendorsettings/PinnedHeaderListFragment;
 .super Lmiui/app/ListFragment;
 .source "PinnedHeaderListFragment.java"
 

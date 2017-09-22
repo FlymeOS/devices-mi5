@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloudbackup/c;
+.class public Lcom/android/vendorsettings/cloudbackup/c;
 .super Ljava/lang/Object;
 .source "NotificationFilterCloudBackupHelper.java"
 
@@ -18,7 +18,7 @@
     invoke-direct {v4}, Lorg/json/JSONObject;-><init>()V
 
     .line 34
-    invoke-static {p0}, Lcom/android/settings/cloudbackup/c;->aT(Landroid/content/Context;)Ljava/util/ArrayList;
+    invoke-static {p0}, Lcom/android/vendorsettings/cloudbackup/c;->aT(Landroid/content/Context;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -245,7 +245,7 @@
 
     .line 67
     :cond_1
-    invoke-static {p0}, Lcom/android/settings/cloudbackup/c;->aT(Landroid/content/Context;)Ljava/util/ArrayList;
+    invoke-static {p0}, Lcom/android/vendorsettings/cloudbackup/c;->aT(Landroid/content/Context;)Ljava/util/ArrayList;
 
     move-result-object v0
 

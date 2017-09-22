@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/PermissionsSummaryHelper;
+.class public Lcom/android/vendorsettings/applications/PermissionsSummaryHelper;
 .super Ljava/lang/Object;
 .source "PermissionsSummaryHelper.java"
 
@@ -15,14 +15,14 @@
     return-void
 .end method
 
-.method private static a(Landroid/content/Context;Ljava/lang/String;Landroid/content/Intent;Lcom/android/settings/applications/PermissionsSummaryHelper$PermissionsResultCallback;)Landroid/content/BroadcastReceiver;
+.method private static a(Landroid/content/Context;Ljava/lang/String;Landroid/content/Intent;Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$PermissionsResultCallback;)Landroid/content/BroadcastReceiver;
     .locals 2
 
     .prologue
     .line 45
-    new-instance v0, Lcom/android/settings/applications/PermissionsSummaryHelper$1;
+    new-instance v0, Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$1;
 
-    invoke-direct {v0, p3}, Lcom/android/settings/applications/PermissionsSummaryHelper$1;-><init>(Lcom/android/settings/applications/PermissionsSummaryHelper$PermissionsResultCallback;)V
+    invoke-direct {v0, p3}, Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$1;-><init>(Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$PermissionsResultCallback;)V
 
     .line 58
     new-instance v1, Landroid/content/IntentFilter;
@@ -48,7 +48,7 @@
     return-object v0
 .end method
 
-.method public static a(Landroid/content/Context;Ljava/lang/String;Lcom/android/settings/applications/PermissionsSummaryHelper$PermissionsResultCallback;)Landroid/content/BroadcastReceiver;
+.method public static a(Landroid/content/Context;Ljava/lang/String;Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$PermissionsResultCallback;)Landroid/content/BroadcastReceiver;
     .locals 2
 
     .prologue
@@ -67,7 +67,7 @@
     .line 34
     const-string v1, "com.android.settings.PERM_COUNT_RESPONSE"
 
-    invoke-static {p0, v1, v0, p2}, Lcom/android/settings/applications/PermissionsSummaryHelper;->a(Landroid/content/Context;Ljava/lang/String;Landroid/content/Intent;Lcom/android/settings/applications/PermissionsSummaryHelper$PermissionsResultCallback;)Landroid/content/BroadcastReceiver;
+    invoke-static {p0, v1, v0, p2}, Lcom/android/vendorsettings/applications/PermissionsSummaryHelper;->a(Landroid/content/Context;Ljava/lang/String;Landroid/content/Intent;Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$PermissionsResultCallback;)Landroid/content/BroadcastReceiver;
 
     move-result-object v0
 

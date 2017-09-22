@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/BootloaderApplyActivity;
+.class public Lcom/android/vendorsettings/BootloaderApplyActivity;
 .super Lmiui/app/Activity;
 .source "BootloaderApplyActivity.java"
 
@@ -33,33 +33,33 @@
     .line 44
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cO:I
+    iput v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cO:I
 
     .line 46
     const/4 v0, 0x5
 
-    iput v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cP:I
+    iput v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cP:I
 
     .line 68
-    new-instance v0, Lcom/android/settings/ak;
+    new-instance v0, Lcom/android/vendorsettings/ak;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/ak;-><init>(Lcom/android/settings/BootloaderApplyActivity;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/ak;-><init>(Lcom/android/vendorsettings/BootloaderApplyActivity;)V
 
-    iput-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->mHandler:Landroid/os/Handler;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/BootloaderApplyActivity;)I
+.method static synthetic a(Lcom/android/vendorsettings/BootloaderApplyActivity;)I
     .locals 1
 
     .prologue
     .line 28
-    iget v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cP:I
+    iget v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cP:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cP:I
+    iput v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cP:I
 
     return v0
 .end method
@@ -81,7 +81,7 @@
     :pswitch_0
     const v0, 0x7f0c115b
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/BootloaderApplyActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/BootloaderApplyActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -91,7 +91,7 @@
     :pswitch_1
     const v0, 0x7f0c115c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/BootloaderApplyActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/BootloaderApplyActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -101,7 +101,7 @@
     :pswitch_2
     const v0, 0x7f0c115d
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/BootloaderApplyActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/BootloaderApplyActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -111,7 +111,7 @@
     :pswitch_3
     const v0, 0x7f0c115e
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/BootloaderApplyActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/BootloaderApplyActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -121,7 +121,7 @@
     :pswitch_4
     const v0, 0x7f0c115f
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/BootloaderApplyActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/BootloaderApplyActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -147,7 +147,7 @@
     .line 149
     const/4 v0, 0x0
 
-    invoke-static {v0}, Lcom/android/settings/BootloaderApplyActivity;->setEnabled(Z)V
+    invoke-static {v0}, Lcom/android/vendorsettings/BootloaderApplyActivity;->setEnabled(Z)V
 
     .line 150
     return-void
@@ -160,7 +160,7 @@
     .line 153
     const/4 v0, 0x1
 
-    invoke-static {v0}, Lcom/android/settings/BootloaderApplyActivity;->setEnabled(Z)V
+    invoke-static {v0}, Lcom/android/vendorsettings/BootloaderApplyActivity;->setEnabled(Z)V
 
     .line 154
     return-void
@@ -217,42 +217,42 @@
     return v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/BootloaderApplyActivity;)I
+.method static synthetic b(Lcom/android/vendorsettings/BootloaderApplyActivity;)I
     .locals 1
 
     .prologue
     .line 28
-    iget v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cO:I
+    iget v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cO:I
 
     return v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/BootloaderApplyActivity;)I
+.method static synthetic c(Lcom/android/vendorsettings/BootloaderApplyActivity;)I
     .locals 1
 
     .prologue
     .line 28
-    iget v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cP:I
+    iget v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cP:I
 
     return v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/BootloaderApplyActivity;)Landroid/widget/Button;
+.method static synthetic d(Lcom/android/vendorsettings/BootloaderApplyActivity;)Landroid/widget/Button;
     .locals 1
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cM:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cM:Landroid/widget/Button;
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/BootloaderApplyActivity;)Landroid/os/Handler;
+.method static synthetic e(Lcom/android/vendorsettings/BootloaderApplyActivity;)Landroid/os/Handler;
     .locals 1
 
     .prologue
     .line 28
-    iget-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -317,13 +317,13 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/BootloaderApplyActivity;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/BootloaderApplyActivity;->setResult(ILandroid/content/Intent;)V
 
     .line 159
     invoke-super {p0}, Lmiui/app/Activity;->finish()V
 
     .line 160
-    invoke-virtual {p0, v2, v2}, Lcom/android/settings/BootloaderApplyActivity;->overridePendingTransition(II)V
+    invoke-virtual {p0, v2, v2}, Lcom/android/vendorsettings/BootloaderApplyActivity;->overridePendingTransition(II)V
 
     .line 161
     return-void
@@ -362,74 +362,74 @@
 
     .line 110
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v4}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 112
-    invoke-direct {p0}, Lcom/android/settings/BootloaderApplyActivity;->ah()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/BootloaderApplyActivity;->ah()V
 
     .line 114
-    invoke-virtual {p0}, Lcom/android/settings/BootloaderApplyActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/BootloaderApplyActivity;->finish()V
 
     goto :goto_0
 
     .line 117
     :pswitch_1
-    iget v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cO:I
+    iget v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cO:I
 
     if-ne v0, v3, :cond_0
 
     .line 118
-    iget-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v4}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 120
-    invoke-direct {p0}, Lcom/android/settings/BootloaderApplyActivity;->ai()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/BootloaderApplyActivity;->ai()V
 
     .line 122
-    invoke-virtual {p0}, Lcom/android/settings/BootloaderApplyActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/BootloaderApplyActivity;->finish()V
 
     goto :goto_0
 
     .line 124
     :cond_0
-    iget v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cO:I
+    iget v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cO:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cO:I
+    iput v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cO:I
 
     .line 125
-    iput v3, p0, Lcom/android/settings/BootloaderApplyActivity;->cP:I
+    iput v3, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cP:I
 
     .line 127
-    iget-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cK:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cK:Landroid/widget/TextView;
 
-    iget v1, p0, Lcom/android/settings/BootloaderApplyActivity;->cO:I
+    iget v1, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cO:I
 
-    iget-object v2, p0, Lcom/android/settings/BootloaderApplyActivity;->cN:Ljava/lang/CharSequence;
+    iget-object v2, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cN:Ljava/lang/CharSequence;
 
-    invoke-direct {p0, v1, v2}, Lcom/android/settings/BootloaderApplyActivity;->a(ILjava/lang/CharSequence;)Ljava/lang/String;
+    invoke-direct {p0, v1, v2}, Lcom/android/vendorsettings/BootloaderApplyActivity;->a(ILjava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 129
-    iget v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cO:I
+    iget v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cO:I
 
     if-ne v0, v3, :cond_1
 
     .line 130
-    iget-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cM:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cM:Landroid/widget/Button;
 
     const v1, 0x7f0c1156
 
     new-array v2, v6, [Ljava/lang/Object;
 
-    iget v3, p0, Lcom/android/settings/BootloaderApplyActivity;->cP:I
+    iget v3, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cP:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -437,7 +437,7 @@
 
     aput-object v3, v2, v5
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/BootloaderApplyActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v1, v2}, Lcom/android/vendorsettings/BootloaderApplyActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -445,17 +445,17 @@
 
     .line 136
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cM:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cM:Landroid/widget/Button;
 
     invoke-virtual {v0, v5}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 138
-    iget-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v4}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 139
-    iget-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->mHandler:Landroid/os/Handler;
 
     const-wide/16 v2, 0x3e8
 
@@ -465,13 +465,13 @@
 
     .line 133
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cM:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cM:Landroid/widget/Button;
 
     const v1, 0x7f0c1159
 
     new-array v2, v6, [Ljava/lang/Object;
 
-    iget v3, p0, Lcom/android/settings/BootloaderApplyActivity;->cP:I
+    iget v3, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cP:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -479,7 +479,7 @@
 
     aput-object v3, v2, v5
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/BootloaderApplyActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v1, v2}, Lcom/android/vendorsettings/BootloaderApplyActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -509,66 +509,66 @@
     .line 51
     const v0, 0x7f04002c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/BootloaderApplyActivity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/BootloaderApplyActivity;->setContentView(I)V
 
     .line 53
     const v0, 0x7f130062
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/BootloaderApplyActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/BootloaderApplyActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cK:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cK:Landroid/widget/TextView;
 
     .line 55
     const v0, 0x7f130063
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/BootloaderApplyActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/BootloaderApplyActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cL:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cL:Landroid/widget/Button;
 
     .line 56
-    iget-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cL:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cL:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 57
     const v0, 0x7f130064
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/BootloaderApplyActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/BootloaderApplyActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cM:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cM:Landroid/widget/Button;
 
     .line 58
-    iget-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cM:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cM:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 60
-    iget-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cK:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cK:Landroid/widget/TextView;
 
-    iget v1, p0, Lcom/android/settings/BootloaderApplyActivity;->cO:I
+    iget v1, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cO:I
 
-    iget-object v2, p0, Lcom/android/settings/BootloaderApplyActivity;->cN:Ljava/lang/CharSequence;
+    iget-object v2, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cN:Ljava/lang/CharSequence;
 
-    invoke-direct {p0, v1, v2}, Lcom/android/settings/BootloaderApplyActivity;->a(ILjava/lang/CharSequence;)Ljava/lang/String;
+    invoke-direct {p0, v1, v2}, Lcom/android/vendorsettings/BootloaderApplyActivity;->a(ILjava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 62
-    iget-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cM:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cM:Landroid/widget/Button;
 
     const v1, 0x7f0c1159
 
@@ -576,7 +576,7 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    iget v3, p0, Lcom/android/settings/BootloaderApplyActivity;->cP:I
+    iget v3, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cP:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -584,19 +584,19 @@
 
     aput-object v3, v2, v4
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/BootloaderApplyActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v1, v2}, Lcom/android/vendorsettings/BootloaderApplyActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
     .line 63
-    iget-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->cM:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->cM:Landroid/widget/Button;
 
     invoke-virtual {v0, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 65
-    iget-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->mHandler:Landroid/os/Handler;
 
     const/16 v1, 0x64
 
@@ -613,7 +613,7 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Lcom/android/settings/BootloaderApplyActivity;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/BootloaderApplyActivity;->mHandler:Landroid/os/Handler;
 
     const/16 v1, 0x64
 

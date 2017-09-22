@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/dashboard/b;
+.class final Lcom/android/vendorsettings/dashboard/b;
 .super Ljava/lang/Object;
 .source "DashboardTile.java"
 
@@ -19,12 +19,12 @@
 
 
 # virtual methods
-.method public br(I)[Lcom/android/settings/dashboard/DashboardTile;
+.method public br(I)[Lcom/android/vendorsettings/dashboard/DashboardTile;
     .locals 1
 
     .prologue
     .line 198
-    new-array v0, p1, [Lcom/android/settings/dashboard/DashboardTile;
+    new-array v0, p1, [Lcom/android/vendorsettings/dashboard/DashboardTile;
 
     return-object v0
 .end method
@@ -34,21 +34,21 @@
 
     .prologue
     .line 193
-    invoke-virtual {p0, p1}, Lcom/android/settings/dashboard/b;->l(Landroid/os/Parcel;)Lcom/android/settings/dashboard/DashboardTile;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/dashboard/b;->l(Landroid/os/Parcel;)Lcom/android/vendorsettings/dashboard/DashboardTile;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public l(Landroid/os/Parcel;)Lcom/android/settings/dashboard/DashboardTile;
+.method public l(Landroid/os/Parcel;)Lcom/android/vendorsettings/dashboard/DashboardTile;
     .locals 1
 
     .prologue
     .line 195
-    new-instance v0, Lcom/android/settings/dashboard/DashboardTile;
+    new-instance v0, Lcom/android/vendorsettings/dashboard/DashboardTile;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/dashboard/DashboardTile;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/vendorsettings/dashboard/DashboardTile;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 193
-    invoke-virtual {p0, p1}, Lcom/android/settings/dashboard/b;->br(I)[Lcom/android/settings/dashboard/DashboardTile;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/dashboard/b;->br(I)[Lcom/android/vendorsettings/dashboard/DashboardTile;
 
     move-result-object v0
 

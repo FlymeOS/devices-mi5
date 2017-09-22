@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/ProcStatsData$MemInfo;
+.class public Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;
 .super Ljava/lang/Object;
 .source "ProcStatsData.java"
 
@@ -42,16 +42,16 @@
 
     new-array v0, v0, [D
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Ln:[D
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Ln:[D
 
     .line 330
-    iput-wide p3, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lb:J
+    iput-wide p3, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lb:J
 
     .line 331
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/settings/applications/ProcStatsData$MemInfo;->a(Landroid/content/Context;Lcom/android/internal/app/ProcessStats$TotalMemoryUseCollection;J)V
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->a(Landroid/content/Context;Lcom/android/internal/app/ProcessStats$TotalMemoryUseCollection;J)V
 
     .line 333
-    iget-wide v0, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lp:D
+    iget-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lp:D
 
     mul-double/2addr v0, v8
 
@@ -60,7 +60,7 @@
     div-double/2addr v0, v2
 
     .line 334
-    iget-wide v2, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lo:D
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lo:D
 
     mul-double/2addr v2, v8
 
@@ -71,19 +71,19 @@
     .line 335
     add-double v4, v0, v2
 
-    iput-wide v4, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lr:D
+    iput-wide v4, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lr:D
 
     .line 336
-    iget-wide v4, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Ll:D
+    iget-wide v4, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Ll:D
 
-    iget-wide v6, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lr:D
+    iget-wide v6, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lr:D
 
     div-double/2addr v4, v6
 
-    iput-wide v4, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Ls:D
+    iput-wide v4, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Ls:D
 
     .line 337
-    iget-wide v4, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Ls:D
+    iget-wide v4, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Ls:D
 
     long-to-double v6, p3
 
@@ -91,21 +91,21 @@
 
     mul-double/2addr v4, v8
 
-    iput-wide v4, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lq:D
+    iput-wide v4, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lq:D
 
     .line 339
-    iget-wide v4, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Ls:D
+    iget-wide v4, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Ls:D
 
     mul-double/2addr v0, v4
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lj:D
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lj:D
 
     .line 340
-    iget-wide v0, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Ls:D
+    iget-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Ls:D
 
     mul-double/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lk:D
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lk:D
 
     .line 354
     new-instance v1, Landroid/app/ActivityManager$MemoryInfo;
@@ -128,26 +128,26 @@
 
     long-to-double v4, v4
 
-    iget-wide v6, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lk:D
+    iget-wide v6, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lk:D
 
     cmpl-double v0, v4, v6
 
     if-ltz v0, :cond_0
 
     .line 358
-    iput-wide v2, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lj:D
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lj:D
 
     .line 359
     const-wide/16 v0, 0x0
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lk:D
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lk:D
 
     .line 360
-    iget-wide v0, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lk:D
+    iget-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lk:D
 
     double-to-long v0, v0
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lm:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lm:J
 
     .line 366
     :goto_0
@@ -155,7 +155,7 @@
 
     .line 362
     :cond_0
-    iget-wide v2, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lj:D
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lj:D
 
     iget-wide v4, v1, Landroid/app/ActivityManager$MemoryInfo;->hiddenAppThreshold:J
 
@@ -163,10 +163,10 @@
 
     add-double/2addr v2, v4
 
-    iput-wide v2, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lj:D
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lj:D
 
     .line 363
-    iget-wide v2, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lk:D
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lk:D
 
     iget-wide v4, v1, Landroid/app/ActivityManager$MemoryInfo;->hiddenAppThreshold:J
 
@@ -174,22 +174,22 @@
 
     sub-double/2addr v2, v4
 
-    iput-wide v2, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lk:D
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lk:D
 
     .line 364
     iget-wide v0, v1, Landroid/app/ActivityManager$MemoryInfo;->hiddenAppThreshold:J
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lm:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lm:J
 
     goto :goto_0
 .end method
 
-.method synthetic constructor <init>(Landroid/content/Context;Lcom/android/internal/app/ProcessStats$TotalMemoryUseCollection;JLcom/android/settings/applications/ProcStatsData$1;)V
+.method synthetic constructor <init>(Landroid/content/Context;Lcom/android/internal/app/ProcessStats$TotalMemoryUseCollection;JLcom/android/vendorsettings/applications/ProcStatsData$1;)V
     .locals 1
 
     .prologue
     .line 314
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/settings/applications/ProcStatsData$MemInfo;-><init>(Landroid/content/Context;Lcom/android/internal/app/ProcessStats$TotalMemoryUseCollection;J)V
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;-><init>(Landroid/content/Context;Lcom/android/internal/app/ProcessStats$TotalMemoryUseCollection;J)V
 
     return-void
 .end method
@@ -213,7 +213,7 @@
 
     long-to-double v0, v0
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Ll:D
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Ll:D
 
     .line 373
     iget-wide v0, p2, Lcom/android/internal/app/ProcessStats$TotalMemoryUseCollection;->sysMemFreeWeight:D
@@ -222,7 +222,7 @@
 
     add-double/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lo:D
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lo:D
 
     .line 374
     iget-wide v0, p2, Lcom/android/internal/app/ProcessStats$TotalMemoryUseCollection;->sysMemKernelWeight:D
@@ -235,7 +235,7 @@
 
     add-double/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lp:D
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lp:D
 
     .line 376
     const/4 v0, 0x0
@@ -251,7 +251,7 @@
     if-ne v0, v1, :cond_0
 
     .line 379
-    iget-object v1, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Ln:[D
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Ln:[D
 
     const-wide/16 v2, 0x0
 
@@ -265,7 +265,7 @@
 
     .line 381
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Ln:[D
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Ln:[D
 
     iget-object v2, p2, Lcom/android/internal/app/ProcessStats$TotalMemoryUseCollection;->processStateWeight:[D
 
@@ -279,7 +279,7 @@
     if-lt v0, v1, :cond_1
 
     .line 383
-    iget-wide v2, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lo:D
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lo:D
 
     iget-object v1, p2, Lcom/android/internal/app/ProcessStats$TotalMemoryUseCollection;->processStateWeight:[D
 
@@ -287,13 +287,13 @@
 
     add-double/2addr v2, v4
 
-    iput-wide v2, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lo:D
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lo:D
 
     goto :goto_1
 
     .line 385
     :cond_1
-    iget-wide v2, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lp:D
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lp:D
 
     iget-object v1, p2, Lcom/android/internal/app/ProcessStats$TotalMemoryUseCollection;->processStateWeight:[D
 
@@ -301,7 +301,7 @@
 
     add-double/2addr v2, v4
 
-    iput-wide v2, p0, Lcom/android/settings/applications/ProcStatsData$MemInfo;->Lp:D
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;->Lp:D
 
     goto :goto_1
 

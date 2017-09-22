@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/privacypassword/XiaomiAccountUtils;
+.class public Lcom/android/vendorsettings/privacypassword/XiaomiAccountUtils;
 .super Ljava/lang/Object;
 .source "XiaomiAccountUtils.java"
 
@@ -14,7 +14,7 @@
     return-void
 .end method
 
-.method public static a(Landroid/app/Activity;Landroid/os/Bundle;Lcom/android/settings/privacypassword/PrivacyPasswordManager;)V
+.method public static a(Landroid/app/Activity;Landroid/os/Bundle;Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;)V
     .locals 8
 
     .prologue
@@ -32,9 +32,9 @@
 
     const-string v2, "passportapi"
 
-    new-instance v6, Lcom/android/settings/privacypassword/XiaomiAccountUtils$1;
+    new-instance v6, Lcom/android/vendorsettings/privacypassword/XiaomiAccountUtils$1;
 
-    invoke-direct {v6, p2, p0}, Lcom/android/settings/privacypassword/XiaomiAccountUtils$1;-><init>(Lcom/android/settings/privacypassword/PrivacyPasswordManager;Landroid/app/Activity;)V
+    invoke-direct {v6, p2, p0}, Lcom/android/vendorsettings/privacypassword/XiaomiAccountUtils$1;-><init>(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;Landroid/app/Activity;)V
 
     move-object v4, p1
 
@@ -120,7 +120,7 @@
 
     .prologue
     .line 35
-    invoke-static {p0}, Lcom/android/settings/privacypassword/XiaomiAccountUtils;->cc(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/vendorsettings/privacypassword/XiaomiAccountUtils;->cc(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -143,7 +143,7 @@
 
     .prologue
     .line 62
-    invoke-static {p0}, Lcom/android/settings/privacypassword/XiaomiAccountUtils;->cc(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/vendorsettings/privacypassword/XiaomiAccountUtils;->cc(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -158,7 +158,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->h([B)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordUtils;->h([B)Ljava/lang/String;
 
     move-result-object v0
 

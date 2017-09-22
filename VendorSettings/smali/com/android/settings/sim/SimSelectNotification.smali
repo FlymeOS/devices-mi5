@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/sim/SimSelectNotification;
+.class public Lcom/android/vendorsettings/sim/SimSelectNotification;
 .super Landroid/content/BroadcastReceiver;
 .source "SimSelectNotification.java"
 
@@ -69,7 +69,7 @@
     .line 127
     new-instance v0, Landroid/content/Intent;
 
-    const-class v2, Lcom/android/settings/Settings$SimSettingsActivity;
+    const-class v2, Lcom/android/vendorsettings/Settings$SimSettingsActivity;
 
     invoke-direct {v0, p1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -197,7 +197,7 @@
 
     .line 57
     :cond_2
-    invoke-static {p1}, Lcom/android/settings/sim/SimSelectNotification;->ci(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/vendorsettings/sim/SimSelectNotification;->ci(Landroid/content/Context;)V
 
     .line 60
     const-string v1, "ss"
@@ -354,7 +354,7 @@
 
     .line 101
     :cond_8
-    invoke-direct {p0, p1}, Lcom/android/settings/sim/SimSelectNotification;->ch(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/sim/SimSelectNotification;->ch(Landroid/content/Context;)V
 
     .line 103
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -366,7 +366,7 @@
     .line 105
     new-instance v1, Landroid/content/Intent;
 
-    const-class v3, Lcom/android/settings/sim/SimDialogActivity;
+    const-class v3, Lcom/android/vendorsettings/sim/SimDialogActivity;
 
     invoke-direct {v1, p1, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -374,14 +374,14 @@
     invoke-virtual {v1, v9}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 107
-    sget-object v3, Lcom/android/settings/sim/SimDialogActivity;->apy:Ljava/lang/String;
+    sget-object v3, Lcom/android/vendorsettings/sim/SimDialogActivity;->apy:Ljava/lang/String;
 
     const/4 v4, 0x3
 
     invoke-virtual {v1, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 108
-    sget-object v3, Lcom/android/settings/sim/SimDialogActivity;->apx:Ljava/lang/String;
+    sget-object v3, Lcom/android/vendorsettings/sim/SimDialogActivity;->apx:Ljava/lang/String;
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -407,7 +407,7 @@
     .line 112
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/sim/SimDialogActivity;
+    const-class v1, Lcom/android/vendorsettings/sim/SimDialogActivity;
 
     invoke-direct {v0, p1, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -415,7 +415,7 @@
     invoke-virtual {v0, v9}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 114
-    sget-object v1, Lcom/android/settings/sim/SimDialogActivity;->apy:Ljava/lang/String;
+    sget-object v1, Lcom/android/vendorsettings/sim/SimDialogActivity;->apy:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 

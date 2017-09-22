@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/MiuiBluetoothSettings$2;
+.class Lcom/android/vendorsettings/bluetooth/MiuiBluetoothSettings$2;
 .super Ljava/lang/Object;
 .source "MiuiBluetoothSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Sk:Lcom/android/settings/bluetooth/MiuiBluetoothSettings;
+.field final synthetic Sk:Lcom/android/vendorsettings/bluetooth/MiuiBluetoothSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/MiuiBluetoothSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/bluetooth/MiuiBluetoothSettings;)V
     .locals 0
 
     .prologue
     .line 133
-    iput-object p1, p0, Lcom/android/settings/bluetooth/MiuiBluetoothSettings$2;->Sk:Lcom/android/settings/bluetooth/MiuiBluetoothSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/bluetooth/MiuiBluetoothSettings$2;->Sk:Lcom/android/vendorsettings/bluetooth/MiuiBluetoothSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,11 +44,11 @@
     invoke-virtual {v4, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 138
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothSettings$2;->Sk:Lcom/android/settings/bluetooth/MiuiBluetoothSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/MiuiBluetoothSettings$2;->Sk:Lcom/android/vendorsettings/bluetooth/MiuiBluetoothSettings;
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/MiuiBluetoothSettings$2;->Sk:Lcom/android/settings/bluetooth/MiuiBluetoothSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/bluetooth/MiuiBluetoothSettings$2;->Sk:Lcom/android/vendorsettings/bluetooth/MiuiBluetoothSettings;
 
-    const-class v2, Lcom/android/settings/MiuiDeviceNameEditFragment;
+    const-class v2, Lcom/android/vendorsettings/MiuiDeviceNameEditFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -56,7 +56,7 @@
 
     move v5, v3
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/bluetooth/MiuiBluetoothSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/vendorsettings/bluetooth/MiuiBluetoothSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     .line 140
     const/4 v0, 0x1

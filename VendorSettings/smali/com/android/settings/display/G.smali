@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/G;
+.class public Lcom/android/vendorsettings/display/G;
 .super Lmiui/preference/RadioButtonPreference;
 .source "RadioButtonPreference.java"
 
@@ -17,7 +17,7 @@
     .line 38
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/display/G;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/display/G;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 39
     return-void
@@ -31,7 +31,7 @@
     invoke-direct {p0, p1, p2}, Lmiui/preference/RadioButtonPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 34
-    invoke-direct {p0}, Lcom/android/settings/display/G;->init()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/G;->init()V
 
     .line 35
     return-void
@@ -42,21 +42,21 @@
 
     .prologue
     .line 42
-    invoke-direct {p0}, Lcom/android/settings/display/G;->pD()Landroid/content/res/ColorStateList;
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/G;->pD()Landroid/content/res/ColorStateList;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/display/G;->Zv:Landroid/content/res/ColorStateList;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/G;->Zv:Landroid/content/res/ColorStateList;
 
     .line 43
     const v0, 0x7f0400e7
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/G;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/G;->setLayoutResource(I)V
 
     .line 44
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/G;->setWidgetLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/G;->setWidgetLayoutResource(I)V
 
     .line 45
     return-void
@@ -80,7 +80,7 @@
     aput v1, v0, v7
 
     .line 74
-    invoke-virtual {p0}, Lcom/android/settings/display/G;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/G;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -89,7 +89,7 @@
     move-result-object v1
 
     .line 75
-    invoke-virtual {p0}, Lcom/android/settings/display/G;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/G;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -166,7 +166,7 @@
     invoke-super {p0, p1}, Lmiui/preference/RadioButtonPreference;->onBindView(Landroid/view/View;)V
 
     .line 50
-    invoke-virtual {p0}, Lcom/android/settings/display/G;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/G;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -218,7 +218,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 59
-    iget-object v1, p0, Lcom/android/settings/display/G;->Zu:Landroid/content/res/ColorStateList;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/G;->Zu:Landroid/content/res/ColorStateList;
 
     if-nez v1, :cond_0
 
@@ -227,11 +227,11 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/display/G;->Zu:Landroid/content/res/ColorStateList;
+    iput-object v1, p0, Lcom/android/vendorsettings/display/G;->Zu:Landroid/content/res/ColorStateList;
 
     .line 62
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/display/G;->Zu:Landroid/content/res/ColorStateList;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/G;->Zu:Landroid/content/res/ColorStateList;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getDrawableState()[I
 
@@ -246,13 +246,13 @@
     move-result v2
 
     .line 63
-    invoke-virtual {p0}, Lcom/android/settings/display/G;->isEnabled()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/G;->isEnabled()Z
 
     move-result v1
 
     if-eqz v1, :cond_4
 
-    iget-object v1, p0, Lcom/android/settings/display/G;->Zv:Landroid/content/res/ColorStateList;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/G;->Zv:Landroid/content/res/ColorStateList;
 
     :goto_1
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
@@ -289,7 +289,7 @@
 
     .line 63
     :cond_4
-    iget-object v1, p0, Lcom/android/settings/display/G;->Zv:Landroid/content/res/ColorStateList;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/G;->Zv:Landroid/content/res/ColorStateList;
 
     invoke-virtual {v1, v2}, Landroid/content/res/ColorStateList;->withAlpha(I)Landroid/content/res/ColorStateList;
 

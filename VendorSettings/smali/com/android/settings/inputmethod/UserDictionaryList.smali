@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/inputmethod/UserDictionaryList;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/inputmethod/UserDictionaryList;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "UserDictionaryList.java"
 
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 43
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -239,7 +239,7 @@
     .line 186
     new-instance v0, Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryList;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/UserDictionaryList;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -271,7 +271,7 @@
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setIntent(Landroid/content/Intent;)V
 
     .line 199
-    const-class v1, Lcom/android/settings/UserDictionarySettings;
+    const-class v1, Lcom/android/vendorsettings/UserDictionarySettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -295,7 +295,7 @@
     .line 192
     const v2, 0x7f0c0638
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/inputmethod/UserDictionaryList;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/inputmethod/UserDictionaryList;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -320,7 +320,7 @@
 
     .line 194
     :cond_1
-    invoke-static {p1}, Lcom/android/settings/iC;->Y(Ljava/lang/String;)Ljava/util/Locale;
+    invoke-static {p1}, Lcom/android/vendorsettings/iC;->Y(Ljava/lang/String;)Ljava/util/Locale;
 
     move-result-object v2
 
@@ -338,7 +338,7 @@
 
     .prologue
     .line 156
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryList;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/UserDictionaryList;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -346,17 +346,17 @@
     invoke-virtual {p1}, Landroid/preference/PreferenceGroup;->removeAll()V
 
     .line 158
-    invoke-static {v1}, Lcom/android/settings/inputmethod/UserDictionaryList;->bF(Landroid/content/Context;)Ljava/util/TreeSet;
+    invoke-static {v1}, Lcom/android/vendorsettings/inputmethod/UserDictionaryList;->bF(Landroid/content/Context;)Ljava/util/TreeSet;
 
     move-result-object v0
 
     .line 160
-    iget-object v2, p0, Lcom/android/settings/inputmethod/UserDictionaryList;->BY:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/inputmethod/UserDictionaryList;->BY:Ljava/lang/String;
 
     if-eqz v2, :cond_0
 
     .line 163
-    iget-object v2, p0, Lcom/android/settings/inputmethod/UserDictionaryList;->BY:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/inputmethod/UserDictionaryList;->BY:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/util/TreeSet;->add(Ljava/lang/Object;)Z
 
@@ -386,7 +386,7 @@
     .line 172
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/inputmethod/UserDictionaryList;->a(Ljava/lang/String;Landroid/app/Activity;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/inputmethod/UserDictionaryList;->a(Ljava/lang/String;Landroid/app/Activity;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -416,7 +416,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 175
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/inputmethod/UserDictionaryList;->a(Ljava/lang/String;Landroid/app/Activity;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/inputmethod/UserDictionaryList;->a(Ljava/lang/String;Landroid/app/Activity;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -430,7 +430,7 @@
 
     .prologue
     .line 50
-    const-class v0, Lcom/android/settings/inputmethod/UserDictionaryList;
+    const-class v0, Lcom/android/vendorsettings/inputmethod/UserDictionaryList;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -446,10 +446,10 @@
     const/4 v1, 0x0
 
     .line 76
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 78
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryList;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/UserDictionaryList;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -464,7 +464,7 @@
 
     .line 82
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryList;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/UserDictionaryList;->getArguments()Landroid/os/Bundle;
 
     move-result-object v2
 
@@ -482,7 +482,7 @@
     .line 94
     :cond_0
     :goto_2
-    iput-object v0, p0, Lcom/android/settings/inputmethod/UserDictionaryList;->BY:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/inputmethod/UserDictionaryList;->BY:Ljava/lang/String;
 
     .line 95
     return-void
@@ -522,14 +522,14 @@
 
     .prologue
     .line 60
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 61
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryList;->getPreferenceManager()Landroid/preference/PreferenceManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/UserDictionaryList;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryList;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/UserDictionaryList;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -537,7 +537,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/inputmethod/UserDictionaryList;->setPreferenceScreen(Landroid/preference/PreferenceScreen;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/inputmethod/UserDictionaryList;->setPreferenceScreen(Landroid/preference/PreferenceScreen;)V
 
     .line 64
     return-void
@@ -548,14 +548,14 @@
 
     .prologue
     .line 205
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 206
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryList;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/UserDictionaryList;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/inputmethod/UserDictionaryList;->e(Landroid/preference/PreferenceGroup;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/inputmethod/UserDictionaryList;->e(Landroid/preference/PreferenceGroup;)V
 
     .line 207
     return-void
@@ -566,10 +566,10 @@
 
     .prologue
     .line 69
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onStart()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onStart()V
 
     .line 70
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryList;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/UserDictionaryList;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 

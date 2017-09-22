@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fs;
+.class public Lcom/android/vendorsettings/fs;
 .super Ljava/lang/Object;
 .source "MiuiSettingsCompatibilityHelper.java"
 

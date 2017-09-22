@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/notification/OtherSoundSettings$7;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/vendorsettings/notification/OtherSoundSettings$7;
+.super Lcom/android/vendorsettings/search/a;
 .source "OtherSoundSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 256
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/search/a;-><init>()V
 
     return-void
 .end method
@@ -56,7 +56,7 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 267
-    invoke-static {}, Lcom/android/settings/notification/OtherSoundSettings;->su()[Lcom/android/settings/notification/SettingPref;
+    invoke-static {}, Lcom/android/vendorsettings/notification/OtherSoundSettings;->su()[Lcom/android/vendorsettings/notification/SettingPref;
 
     move-result-object v2
 
@@ -70,14 +70,14 @@
     aget-object v4, v2, v0
 
     .line 268
-    invoke-virtual {v4, p1}, Lcom/android/settings/notification/SettingPref;->bN(Landroid/content/Context;)Z
+    invoke-virtual {v4, p1}, Lcom/android/vendorsettings/notification/SettingPref;->bN(Landroid/content/Context;)Z
 
     move-result v5
 
     if-nez v5, :cond_0
 
     .line 269
-    invoke-virtual {v4}, Lcom/android/settings/notification/SettingPref;->getKey()Ljava/lang/String;
+    invoke-virtual {v4}, Lcom/android/vendorsettings/notification/SettingPref;->getKey()Ljava/lang/String;
 
     move-result-object v4
 

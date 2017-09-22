@@ -1,11 +1,11 @@
-.class public Lcom/android/settings/inputmethod/SpellCheckersSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "SpellCheckersSettings.java"
 
 # interfaces
 .implements Landroid/preference/Preference$OnPreferenceClickListener;
-.implements Lcom/android/settings/inputmethod/SpellCheckerPreference$OnRadioButtonPreferenceListener;
-.implements Lcom/android/settings/widget/I;
+.implements Lcom/android/vendorsettings/inputmethod/SpellCheckerPreference$OnRadioButtonPreferenceListener;
+.implements Lcom/android/vendorsettings/widget/I;
 
 
 # static fields
@@ -23,7 +23,7 @@
 
 .field private mDialog:Landroid/app/AlertDialog;
 
-.field private me:Lcom/android/settings/widget/SwitchBar;
+.field private me:Lcom/android/vendorsettings/widget/SwitchBar;
 
 
 # direct methods
@@ -32,13 +32,13 @@
 
     .prologue
     .line 44
-    const-class v0, Lcom/android/settings/inputmethod/SpellCheckersSettings;
+    const-class v0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -48,22 +48,22 @@
 
     .prologue
     .line 41
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 52
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/inputmethod/SpellCheckersSettings;)Landroid/view/textservice/TextServicesManager;
+.method static synthetic a(Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;)Landroid/view/textservice/TextServicesManager;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
 
     return-object v0
 .end method
@@ -89,7 +89,7 @@
     .line 147
     const v0, 0x7f0c0648
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -97,7 +97,7 @@
 
     .line 149
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -123,23 +123,23 @@
 
     .prologue
     .line 246
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
 
     invoke-virtual {v0, p1}, Landroid/view/textservice/TextServicesManager;->setCurrentSpellChecker(Landroid/view/textservice/SpellCheckerInfo;)V
 
     .line 250
-    invoke-direct {p0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->rD()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->rD()V
 
     .line 251
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/inputmethod/SpellCheckersSettings;Landroid/view/textservice/SpellCheckerInfo;)V
+.method static synthetic a(Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;Landroid/view/textservice/SpellCheckerInfo;)V
     .locals 0
 
     .prologue
     .line 41
-    invoke-direct {p0, p1}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->a(Landroid/view/textservice/SpellCheckerInfo;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->a(Landroid/view/textservice/SpellCheckerInfo;)V
 
     return-void
 .end method
@@ -149,25 +149,25 @@
 
     .prologue
     .line 41
-    invoke-static {p0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->cq(I)I
+    invoke-static {p0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->cq(I)I
 
     move-result v0
 
     return v0
 .end method
 
-.method private b(Lcom/android/settings/inputmethod/SpellCheckerPreference;)V
+.method private b(Lcom/android/vendorsettings/inputmethod/SpellCheckerPreference;)V
     .locals 7
 
     .prologue
     const/4 v6, 0x1
 
     .line 222
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
@@ -176,20 +176,20 @@
     if-eqz v0, :cond_0
 
     .line 223
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 225
     :cond_0
-    invoke-virtual {p1}, Lcom/android/settings/inputmethod/SpellCheckerPreference;->rB()Landroid/view/textservice/SpellCheckerInfo;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/inputmethod/SpellCheckerPreference;->rB()Landroid/view/textservice/SpellCheckerInfo;
 
     move-result-object v0
 
     .line 226
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -207,13 +207,13 @@
 
     const/4 v4, 0x0
 
-    invoke-virtual {p1}, Lcom/android/settings/inputmethod/SpellCheckerPreference;->getTitle()Ljava/lang/CharSequence;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/inputmethod/SpellCheckerPreference;->getTitle()Ljava/lang/CharSequence;
 
     move-result-object v5
 
     aput-object v5, v3, v4
 
-    invoke-virtual {p0, v2, v3}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v2, v3}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -225,18 +225,18 @@
     .line 230
     const v2, 0x104000a
 
-    new-instance v3, Lcom/android/settings/inputmethod/SpellCheckersSettings$2;
+    new-instance v3, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings$2;
 
-    invoke-direct {v3, p0, v0}, Lcom/android/settings/inputmethod/SpellCheckersSettings$2;-><init>(Lcom/android/settings/inputmethod/SpellCheckersSettings;Landroid/view/textservice/SpellCheckerInfo;)V
+    invoke-direct {v3, p0, v0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings$2;-><init>(Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;Landroid/view/textservice/SpellCheckerInfo;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 236
     const/high16 v0, 0x1040000
 
-    new-instance v2, Lcom/android/settings/inputmethod/SpellCheckersSettings$3;
+    new-instance v2, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings$3;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/inputmethod/SpellCheckersSettings$3;-><init>(Lcom/android/settings/inputmethod/SpellCheckersSettings;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings$3;-><init>(Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;)V
 
     invoke-virtual {v1, v0, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -245,10 +245,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
 
     .line 242
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
@@ -256,12 +256,12 @@
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/inputmethod/SpellCheckersSettings;)V
+.method static synthetic b(Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;)V
     .locals 0
 
     .prologue
     .line 41
-    invoke-direct {p0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->rD()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->rD()V
 
     return-void
 .end method
@@ -293,17 +293,17 @@
     const/4 v1, 0x0
 
     .line 82
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
     .line 83
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
     .line 84
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agJ:[Landroid/view/textservice/SpellCheckerInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agJ:[Landroid/view/textservice/SpellCheckerInfo;
 
     if-nez v0, :cond_0
 
@@ -314,20 +314,20 @@
     if-ge v1, v0, :cond_1
 
     .line 86
-    iget-object v4, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agJ:[Landroid/view/textservice/SpellCheckerInfo;
+    iget-object v4, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agJ:[Landroid/view/textservice/SpellCheckerInfo;
 
     aget-object v4, v4, v1
 
     .line 87
-    new-instance v5, Lcom/android/settings/inputmethod/SpellCheckerPreference;
+    new-instance v5, Lcom/android/vendorsettings/inputmethod/SpellCheckerPreference;
 
-    invoke-direct {v5, v3, v4, p0}, Lcom/android/settings/inputmethod/SpellCheckerPreference;-><init>(Landroid/content/Context;Landroid/view/textservice/SpellCheckerInfo;Lcom/android/settings/inputmethod/SpellCheckerPreference$OnRadioButtonPreferenceListener;)V
+    invoke-direct {v5, v3, v4, p0}, Lcom/android/vendorsettings/inputmethod/SpellCheckerPreference;-><init>(Landroid/content/Context;Landroid/view/textservice/SpellCheckerInfo;Lcom/android/vendorsettings/inputmethod/SpellCheckerPreference$OnRadioButtonPreferenceListener;)V
 
     .line 88
     invoke-virtual {v2, v5}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 89
-    invoke-static {v5}, Lcom/android/settings/inputmethod/InputMethodAndSubtypeUtil;->l(Landroid/preference/Preference;)V
+    invoke-static {v5}, Lcom/android/vendorsettings/inputmethod/InputMethodAndSubtypeUtil;->l(Landroid/preference/Preference;)V
 
     .line 85
     add-int/lit8 v1, v1, 0x1
@@ -336,7 +336,7 @@
 
     .line 84
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agJ:[Landroid/view/textservice/SpellCheckerInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agJ:[Landroid/view/textservice/SpellCheckerInfo;
 
     array-length v0, v0
 
@@ -354,16 +354,16 @@
     const/4 v2, 0x0
 
     .line 115
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
 
     invoke-virtual {v0}, Landroid/view/textservice/TextServicesManager;->getCurrentSpellChecker()Landroid/view/textservice/SpellCheckerInfo;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agI:Landroid/view/textservice/SpellCheckerInfo;
+    iput-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agI:Landroid/view/textservice/SpellCheckerInfo;
 
     .line 117
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agI:Landroid/view/textservice/SpellCheckerInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agI:Landroid/view/textservice/SpellCheckerInfo;
 
     if-nez v0, :cond_1
 
@@ -373,37 +373,37 @@
 
     .line 121
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
 
     invoke-virtual {v0}, Landroid/view/textservice/TextServicesManager;->isSpellCheckerEnabled()Z
 
     move-result v4
 
     .line 122
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->me:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->me:Lcom/android/vendorsettings/widget/SwitchBar;
 
-    invoke-virtual {v0, v4}, Lcom/android/settings/widget/SwitchBar;->setChecked(Z)V
+    invoke-virtual {v0, v4}, Lcom/android/vendorsettings/widget/SwitchBar;->setChecked(Z)V
 
     .line 124
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
 
     invoke-virtual {v0, v2}, Landroid/view/textservice/TextServicesManager;->getCurrentSpellCheckerSubtype(Z)Landroid/view/textservice/SpellCheckerSubtype;
 
     move-result-object v0
 
     .line 126
-    iget-object v1, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agH:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agH:Landroid/preference/Preference;
 
-    iget-object v3, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agI:Landroid/view/textservice/SpellCheckerInfo;
+    iget-object v3, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agI:Landroid/view/textservice/SpellCheckerInfo;
 
-    invoke-direct {p0, v3, v0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->a(Landroid/view/textservice/SpellCheckerInfo;Landroid/view/textservice/SpellCheckerSubtype;)Ljava/lang/CharSequence;
+    invoke-direct {p0, v3, v0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->a(Landroid/view/textservice/SpellCheckerInfo;Landroid/view/textservice/SpellCheckerSubtype;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     invoke-virtual {v1, v0}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 128
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v5
 
@@ -427,24 +427,24 @@
     invoke-virtual {v0, v4}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 133
-    instance-of v1, v0, Lcom/android/settings/inputmethod/SpellCheckerPreference;
+    instance-of v1, v0, Lcom/android/vendorsettings/inputmethod/SpellCheckerPreference;
 
     if-eqz v1, :cond_2
 
     .line 134
-    check-cast v0, Lcom/android/settings/inputmethod/SpellCheckerPreference;
+    check-cast v0, Lcom/android/vendorsettings/inputmethod/SpellCheckerPreference;
 
     .line 135
-    invoke-virtual {v0}, Lcom/android/settings/inputmethod/SpellCheckerPreference;->rB()Landroid/view/textservice/SpellCheckerInfo;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/inputmethod/SpellCheckerPreference;->rB()Landroid/view/textservice/SpellCheckerInfo;
 
     move-result-object v1
 
     .line 136
-    iget-object v7, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agI:Landroid/view/textservice/SpellCheckerInfo;
+    iget-object v7, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agI:Landroid/view/textservice/SpellCheckerInfo;
 
     if-eqz v7, :cond_3
 
-    iget-object v7, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agI:Landroid/view/textservice/SpellCheckerInfo;
+    iget-object v7, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agI:Landroid/view/textservice/SpellCheckerInfo;
 
     invoke-virtual {v7}, Landroid/view/textservice/SpellCheckerInfo;->getId()Ljava/lang/String;
 
@@ -463,7 +463,7 @@
     const/4 v1, 0x1
 
     :goto_1
-    invoke-virtual {v0, v1}, Lcom/android/settings/inputmethod/SpellCheckerPreference;->setSelected(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/inputmethod/SpellCheckerPreference;->setSelected(Z)V
 
     .line 130
     :cond_2
@@ -487,11 +487,11 @@
     const/4 v0, 0x0
 
     .line 178
-    iget-object v1, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
+    iget-object v1, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
+    iget-object v1, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v1}, Landroid/app/AlertDialog;->isShowing()Z
 
@@ -500,20 +500,20 @@
     if-eqz v1, :cond_0
 
     .line 179
-    iget-object v1, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
+    iget-object v1, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v1}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 181
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
 
     invoke-virtual {v1}, Landroid/view/textservice/TextServicesManager;->getCurrentSpellChecker()Landroid/view/textservice/SpellCheckerInfo;
 
     move-result-object v3
 
     .line 182
-    iget-object v1, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
 
     invoke-virtual {v1, v0}, Landroid/view/textservice/TextServicesManager;->getCurrentSpellCheckerSubtype(Z)Landroid/view/textservice/SpellCheckerSubtype;
 
@@ -522,7 +522,7 @@
     .line 184
     new-instance v5, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -546,7 +546,7 @@
     .line 188
     const/4 v1, 0x0
 
-    invoke-direct {p0, v3, v1}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->a(Landroid/view/textservice/SpellCheckerInfo;Landroid/view/textservice/SpellCheckerSubtype;)Ljava/lang/CharSequence;
+    invoke-direct {p0, v3, v1}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->a(Landroid/view/textservice/SpellCheckerInfo;Landroid/view/textservice/SpellCheckerSubtype;)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -566,12 +566,12 @@
     move-result-object v8
 
     .line 192
-    invoke-static {v2}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->cp(I)I
+    invoke-static {v2}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->cp(I)I
 
     move-result v0
 
     .line 193
-    invoke-direct {p0, v3, v8}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->a(Landroid/view/textservice/SpellCheckerInfo;Landroid/view/textservice/SpellCheckerSubtype;)Ljava/lang/CharSequence;
+    invoke-direct {p0, v3, v8}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->a(Landroid/view/textservice/SpellCheckerInfo;Landroid/view/textservice/SpellCheckerSubtype;)Ljava/lang/CharSequence;
 
     move-result-object v9
 
@@ -596,9 +596,9 @@
 
     .line 198
     :cond_1
-    new-instance v0, Lcom/android/settings/inputmethod/SpellCheckersSettings$1;
+    new-instance v0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings$1;
 
-    invoke-direct {v0, p0, v3}, Lcom/android/settings/inputmethod/SpellCheckersSettings$1;-><init>(Lcom/android/settings/inputmethod/SpellCheckersSettings;Landroid/view/textservice/SpellCheckerInfo;)V
+    invoke-direct {v0, p0, v3}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings$1;-><init>(Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;Landroid/view/textservice/SpellCheckerInfo;)V
 
     invoke-virtual {v5, v7, v1, v0}, Landroid/app/AlertDialog$Builder;->setSingleChoiceItems([Ljava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -607,10 +607,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
 
     .line 218
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->mDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
@@ -630,23 +630,23 @@
 
     .prologue
     .line 110
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
 
     invoke-virtual {v0, p2}, Landroid/view/textservice/TextServicesManager;->setSpellCheckerEnabled(Z)V
 
     .line 111
-    invoke-direct {p0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->rD()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->rD()V
 
     .line 112
     return-void
 .end method
 
-.method public a(Lcom/android/settings/inputmethod/SpellCheckerPreference;)V
+.method public a(Lcom/android/vendorsettings/inputmethod/SpellCheckerPreference;)V
     .locals 2
 
     .prologue
     .line 164
-    invoke-virtual {p1}, Lcom/android/settings/inputmethod/SpellCheckerPreference;->rB()Landroid/view/textservice/SpellCheckerInfo;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/inputmethod/SpellCheckerPreference;->rB()Landroid/view/textservice/SpellCheckerInfo;
 
     move-result-object v1
 
@@ -670,7 +670,7 @@
     if-eqz v0, :cond_1
 
     .line 168
-    invoke-direct {p0, v1}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->a(Landroid/view/textservice/SpellCheckerInfo;)V
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->a(Landroid/view/textservice/SpellCheckerInfo;)V
 
     .line 172
     :goto_1
@@ -684,7 +684,7 @@
 
     .line 170
     :cond_1
-    invoke-direct {p0, p1}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->b(Lcom/android/settings/inputmethod/SpellCheckerPreference;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->b(Lcom/android/vendorsettings/inputmethod/SpellCheckerPreference;)V
 
     goto :goto_1
 .end method
@@ -694,7 +694,7 @@
 
     .prologue
     .line 59
-    const-class v0, Lcom/android/settings/inputmethod/SpellCheckersSettings;
+    const-class v0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -708,58 +708,58 @@
 
     .prologue
     .line 69
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 71
     const v0, 0x7f0800a1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->addPreferencesFromResource(I)V
 
     .line 72
     const-string v0, "spellchecker_language"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agH:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agH:Landroid/preference/Preference;
 
     .line 73
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agH:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agH:Landroid/preference/Preference;
 
     invoke-virtual {v0, p0}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 75
     const-string v0, "textservices"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/view/textservice/TextServicesManager;
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
 
     .line 76
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
 
     invoke-virtual {v0}, Landroid/view/textservice/TextServicesManager;->getCurrentSpellChecker()Landroid/view/textservice/SpellCheckerInfo;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agI:Landroid/view/textservice/SpellCheckerInfo;
+    iput-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agI:Landroid/view/textservice/SpellCheckerInfo;
 
     .line 77
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agK:Landroid/view/textservice/TextServicesManager;
 
     invoke-virtual {v0}, Landroid/view/textservice/TextServicesManager;->getEnabledSpellCheckers()[Landroid/view/textservice/SpellCheckerInfo;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agJ:[Landroid/view/textservice/SpellCheckerInfo;
+    iput-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agJ:[Landroid/view/textservice/SpellCheckerInfo;
 
     .line 78
-    invoke-direct {p0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->rC()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->rC()V
 
     .line 79
     return-void
@@ -770,12 +770,12 @@
 
     .prologue
     .line 104
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPause()V
 
     .line 105
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->me:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->me:Lcom/android/vendorsettings/widget/SwitchBar;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/widget/SwitchBar;->b(Lcom/android/settings/widget/I;)V
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/widget/SwitchBar;->b(Lcom/android/vendorsettings/widget/I;)V
 
     .line 106
     return-void
@@ -786,12 +786,12 @@
 
     .prologue
     .line 155
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->agH:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->agH:Landroid/preference/Preference;
 
     if-ne p1, v0, :cond_0
 
     .line 156
-    invoke-direct {p0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->rE()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->rE()V
 
     .line 157
     const/4 v0, 0x1
@@ -811,33 +811,33 @@
 
     .prologue
     .line 95
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 96
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hn;
+    check-cast v0, Lcom/android/vendorsettings/hn;
 
-    invoke-virtual {v0}, Lcom/android/settings/hn;->hD()Lcom/android/settings/widget/SwitchBar;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/hn;->hD()Lcom/android/vendorsettings/widget/SwitchBar;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->me:Lcom/android/settings/widget/SwitchBar;
+    iput-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->me:Lcom/android/vendorsettings/widget/SwitchBar;
 
     .line 97
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->me:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->me:Lcom/android/vendorsettings/widget/SwitchBar;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/SwitchBar;->show()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/widget/SwitchBar;->show()V
 
     .line 98
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings;->me:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->me:Lcom/android/vendorsettings/widget/SwitchBar;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/widget/SwitchBar;->a(Lcom/android/settings/widget/I;)V
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/widget/SwitchBar;->a(Lcom/android/vendorsettings/widget/I;)V
 
     .line 99
-    invoke-direct {p0}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->rD()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->rD()V
 
     .line 100
     return-void

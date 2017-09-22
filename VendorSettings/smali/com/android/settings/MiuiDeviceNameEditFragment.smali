@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiDeviceNameEditFragment;
-.super Lcom/android/settings/BaseEditFragment;
+.class public Lcom/android/vendorsettings/MiuiDeviceNameEditFragment;
+.super Lcom/android/vendorsettings/BaseEditFragment;
 .source "MiuiDeviceNameEditFragment.java"
 
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 16
-    invoke-direct {p0}, Lcom/android/settings/BaseEditFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/BaseEditFragment;-><init>()V
 
     .line 66
     return-void
@@ -26,7 +26,7 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceNameEditFragment;->qv:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceNameEditFragment;->qv:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -38,7 +38,7 @@
 
     .line 44
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceNameEditFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceNameEditFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -48,7 +48,7 @@
 
     .line 48
     :goto_0
-    invoke-super {p0}, Lcom/android/settings/BaseEditFragment;->X()V
+    invoke-super {p0}, Lcom/android/vendorsettings/BaseEditFragment;->X()V
 
     .line 49
     return-void
@@ -58,7 +58,7 @@
     move-exception v0
 
     .line 46
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceNameEditFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceNameEditFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -97,7 +97,7 @@
 
     .prologue
     .line 53
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceNameEditFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceNameEditFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -115,7 +115,7 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceNameEditFragment;->qv:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceNameEditFragment;->qv:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -125,7 +125,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceNameEditFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceNameEditFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -163,10 +163,10 @@
 
     check-cast v0, Landroid/widget/EditText;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiDeviceNameEditFragment;->qv:Landroid/widget/EditText;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceNameEditFragment;->qv:Landroid/widget/EditText;
 
     .line 30
-    iget-object v0, p0, Lcom/android/settings/MiuiDeviceNameEditFragment;->qv:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiDeviceNameEditFragment;->qv:Landroid/widget/EditText;
 
     const/4 v1, 0x1
 
@@ -174,18 +174,18 @@
 
     const/4 v2, 0x0
 
-    new-instance v3, Lcom/android/settings/em;
+    new-instance v3, Lcom/android/vendorsettings/em;
 
     const/16 v4, 0x5b
 
-    invoke-direct {v3, v4}, Lcom/android/settings/em;-><init>(I)V
+    invoke-direct {v3, v4}, Lcom/android/vendorsettings/em;-><init>(I)V
 
     aput-object v3, v1, v2
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
     .line 33
-    invoke-virtual {p0}, Lcom/android/settings/MiuiDeviceNameEditFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiDeviceNameEditFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -194,7 +194,7 @@
     move-result-object v0
 
     .line 34
-    iget-object v1, p0, Lcom/android/settings/MiuiDeviceNameEditFragment;->qv:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiDeviceNameEditFragment;->qv:Landroid/widget/EditText;
 
     invoke-virtual {v1, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
@@ -206,7 +206,7 @@
     if-nez v1, :cond_0
 
     .line 36
-    iget-object v1, p0, Lcom/android/settings/MiuiDeviceNameEditFragment;->qv:Landroid/widget/EditText;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiDeviceNameEditFragment;->qv:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 

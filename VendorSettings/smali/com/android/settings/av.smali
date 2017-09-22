@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/av;
+.class public Lcom/android/vendorsettings/av;
 .super Landroid/app/DialogFragment;
 .source "ChooseLockGeneric.java"
 
@@ -14,14 +14,14 @@
     return-void
 .end method
 
-.method public static a(ILjava/lang/String;)Lcom/android/settings/av;
+.method public static a(ILjava/lang/String;)Lcom/android/vendorsettings/av;
     .locals 3
 
     .prologue
     .line 604
-    new-instance v0, Lcom/android/settings/av;
+    new-instance v0, Lcom/android/vendorsettings/av;
 
-    invoke-direct {v0}, Lcom/android/settings/av;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/av;-><init>()V
 
     .line 606
     new-instance v1, Landroid/os/Bundle;
@@ -39,7 +39,7 @@
     invoke-virtual {v1, v2, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 609
-    invoke-virtual {v0, v1}, Lcom/android/settings/av;->setArguments(Landroid/os/Bundle;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/av;->setArguments(Landroid/os/Bundle;)V
 
     .line 610
     return-object v0
@@ -52,14 +52,14 @@
 
     .prologue
     .line 623
-    invoke-virtual {p0}, Lcom/android/settings/av;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/av;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
     .line 625
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/av;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/av;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -83,9 +83,9 @@
 
     const v2, 0x7f0c024e
 
-    new-instance v3, Lcom/android/settings/ax;
+    new-instance v3, Lcom/android/vendorsettings/ax;
 
-    invoke-direct {v3, p0, v0}, Lcom/android/settings/ax;-><init>(Lcom/android/settings/av;Landroid/os/Bundle;)V
+    invoke-direct {v3, p0, v0}, Lcom/android/vendorsettings/ax;-><init>(Lcom/android/vendorsettings/av;Landroid/os/Bundle;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -93,9 +93,9 @@
 
     const v1, 0x7f0c01a6
 
-    new-instance v2, Lcom/android/settings/aw;
+    new-instance v2, Lcom/android/vendorsettings/aw;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/aw;-><init>(Lcom/android/settings/av;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/aw;-><init>(Lcom/android/vendorsettings/av;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment;
+.class public Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment;
 .super Landroid/app/DialogFragment;
 .source "StorageSettings.java"
 
@@ -29,17 +29,17 @@
     invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 376
-    new-instance v1, Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment;
+    new-instance v1, Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment;
 
-    invoke-direct {v1}, Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment;-><init>()V
+    invoke-direct {v1}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment;-><init>()V
 
     .line 377
-    invoke-virtual {v1, v0}, Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment;->setArguments(Landroid/os/Bundle;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment;->setArguments(Landroid/os/Bundle;)V
 
     .line 378
     const/4 v0, 0x0
 
-    invoke-virtual {v1, p0, v0}, Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment;->setTargetFragment(Landroid/app/Fragment;I)V
+    invoke-virtual {v1, p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment;->setTargetFragment(Landroid/app/Fragment;I)V
 
     .line 379
     invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
@@ -48,7 +48,7 @@
 
     const-string v2, "volume_unmounted"
 
-    invoke-virtual {v1, v0, v2}, Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v1, v0, v2}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     .line 380
     return-void
@@ -61,7 +61,7 @@
 
     .prologue
     .line 384
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -75,7 +75,7 @@
     check-cast v0, Landroid/os/storage/StorageManager;
 
     .line 387
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v2
 
@@ -98,7 +98,7 @@
     .line 391
     const v3, 0x7f0c046e
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v3
 
@@ -127,9 +127,9 @@
     .line 394
     const v3, 0x7f0c044f
 
-    new-instance v4, Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment$1;
+    new-instance v4, Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment$1;
 
-    invoke-direct {v4, p0, v1, v0}, Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment$1;-><init>(Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment;Landroid/content/Context;Landroid/os/storage/VolumeInfo;)V
+    invoke-direct {v4, p0, v1, v0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment$1;-><init>(Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment;Landroid/content/Context;Landroid/os/storage/VolumeInfo;)V
 
     invoke-virtual {v2, v3, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

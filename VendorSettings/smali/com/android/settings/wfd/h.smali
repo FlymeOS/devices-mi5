@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wfd/h;
+.class Lcom/android/vendorsettings/wfd/h;
 .super Ljava/lang/Object;
 .source "WifiDisplaySettings.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic awB:Landroid/hardware/display/WifiDisplay;
 
-.field final synthetic awy:Lcom/android/settings/wfd/WifiDisplaySettings;
+.field final synthetic awy:Lcom/android/vendorsettings/wfd/WifiDisplaySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wfd/WifiDisplaySettings;Landroid/hardware/display/WifiDisplay;)V
+.method constructor <init>(Lcom/android/vendorsettings/wfd/WifiDisplaySettings;Landroid/hardware/display/WifiDisplay;)V
     .locals 0
 
     .prologue
     .line 605
-    iput-object p1, p0, Lcom/android/settings/wfd/h;->awy:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/wfd/h;->awy:Lcom/android/vendorsettings/wfd/WifiDisplaySettings;
 
-    iput-object p2, p0, Lcom/android/settings/wfd/h;->awB:Landroid/hardware/display/WifiDisplay;
+    iput-object p2, p0, Lcom/android/vendorsettings/wfd/h;->awB:Landroid/hardware/display/WifiDisplay;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,13 +34,13 @@
 
     .prologue
     .line 608
-    iget-object v0, p0, Lcom/android/settings/wfd/h;->awy:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wfd/h;->awy:Lcom/android/vendorsettings/wfd/WifiDisplaySettings;
 
-    invoke-static {v0}, Lcom/android/settings/wfd/WifiDisplaySettings;->a(Lcom/android/settings/wfd/WifiDisplaySettings;)Landroid/hardware/display/DisplayManager;
+    invoke-static {v0}, Lcom/android/vendorsettings/wfd/WifiDisplaySettings;->a(Lcom/android/vendorsettings/wfd/WifiDisplaySettings;)Landroid/hardware/display/DisplayManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/wfd/h;->awB:Landroid/hardware/display/WifiDisplay;
+    iget-object v1, p0, Lcom/android/vendorsettings/wfd/h;->awB:Landroid/hardware/display/WifiDisplay;
 
     invoke-virtual {v1}, Landroid/hardware/display/WifiDisplay;->getDeviceAddress()Ljava/lang/String;
 

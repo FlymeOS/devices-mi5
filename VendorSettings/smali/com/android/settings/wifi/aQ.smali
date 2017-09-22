@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/aQ;
+.class Lcom/android/vendorsettings/wifi/aQ;
 .super Ljava/lang/Object;
 .source "WpsDialog.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aEJ:Lcom/android/settings/wifi/WpsDialog;
+.field final synthetic aEJ:Lcom/android/vendorsettings/wifi/WpsDialog;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WpsDialog;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/WpsDialog;)V
     .locals 0
 
     .prologue
     .line 172
-    iput-object p1, p0, Lcom/android/settings/wifi/aQ;->aEJ:Lcom/android/settings/wifi/WpsDialog;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/aQ;->aEJ:Lcom/android/vendorsettings/wifi/WpsDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 175
-    iget-object v0, p0, Lcom/android/settings/wifi/aQ;->aEJ:Lcom/android/settings/wifi/WpsDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/aQ;->aEJ:Lcom/android/vendorsettings/wifi/WpsDialog;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WpsDialog;->dismiss()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/WpsDialog;->dismiss()V
 
     .line 176
     return-void

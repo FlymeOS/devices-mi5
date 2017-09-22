@@ -1,23 +1,23 @@
-.class Lcom/android/settings/location/MiuiLocationSettings$5;
+.class Lcom/android/vendorsettings/location/MiuiLocationSettings$5;
 .super Landroid/content/BroadcastReceiver;
 .source "MiuiLocationSettings.java"
 
 
 # instance fields
-.field final synthetic ahu:Lcom/android/settings/location/MiuiLocationSettings;
+.field final synthetic ahu:Lcom/android/vendorsettings/location/MiuiLocationSettings;
 
-.field final synthetic ahv:Lcom/android/settings/location/SettingsInjector;
+.field final synthetic ahv:Lcom/android/vendorsettings/location/SettingsInjector;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/location/MiuiLocationSettings;Lcom/android/settings/location/SettingsInjector;)V
+.method constructor <init>(Lcom/android/vendorsettings/location/MiuiLocationSettings;Lcom/android/vendorsettings/location/SettingsInjector;)V
     .locals 0
 
     .prologue
     .line 301
-    iput-object p1, p0, Lcom/android/settings/location/MiuiLocationSettings$5;->ahu:Lcom/android/settings/location/MiuiLocationSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings$5;->ahu:Lcom/android/vendorsettings/location/MiuiLocationSettings;
 
-    iput-object p2, p0, Lcom/android/settings/location/MiuiLocationSettings$5;->ahv:Lcom/android/settings/location/SettingsInjector;
+    iput-object p2, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings$5;->ahv:Lcom/android/vendorsettings/location/SettingsInjector;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -66,9 +66,9 @@
 
     .line 307
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings$5;->ahv:Lcom/android/settings/location/SettingsInjector;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings$5;->ahv:Lcom/android/vendorsettings/location/SettingsInjector;
 
-    invoke-virtual {v0}, Lcom/android/settings/location/SettingsInjector;->rM()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/location/SettingsInjector;->rM()V
 
     .line 308
     return-void

@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/notification/ZenModeEventRuleSettings$3;
+.class final Lcom/android/vendorsettings/notification/ZenModeEventRuleSettings$3;
 .super Ljava/lang/Object;
 .source "ZenModeEventRuleSettings.java"
 
@@ -19,14 +19,14 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/notification/ZenModeEventRuleSettings$CalendarInfo;Lcom/android/settings/notification/ZenModeEventRuleSettings$CalendarInfo;)I
+.method public a(Lcom/android/vendorsettings/notification/ZenModeEventRuleSettings$CalendarInfo;Lcom/android/vendorsettings/notification/ZenModeEventRuleSettings$CalendarInfo;)I
     .locals 2
 
     .prologue
     .line 223
-    iget-object v0, p1, Lcom/android/settings/notification/ZenModeEventRuleSettings$CalendarInfo;->name:Ljava/lang/String;
+    iget-object v0, p1, Lcom/android/vendorsettings/notification/ZenModeEventRuleSettings$CalendarInfo;->name:Ljava/lang/String;
 
-    iget-object v1, p2, Lcom/android/settings/notification/ZenModeEventRuleSettings$CalendarInfo;->name:Ljava/lang/String;
+    iget-object v1, p2, Lcom/android/vendorsettings/notification/ZenModeEventRuleSettings$CalendarInfo;->name:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I
 
@@ -40,11 +40,11 @@
 
     .prologue
     .line 220
-    check-cast p1, Lcom/android/settings/notification/ZenModeEventRuleSettings$CalendarInfo;
+    check-cast p1, Lcom/android/vendorsettings/notification/ZenModeEventRuleSettings$CalendarInfo;
 
-    check-cast p2, Lcom/android/settings/notification/ZenModeEventRuleSettings$CalendarInfo;
+    check-cast p2, Lcom/android/vendorsettings/notification/ZenModeEventRuleSettings$CalendarInfo;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/notification/ZenModeEventRuleSettings$3;->a(Lcom/android/settings/notification/ZenModeEventRuleSettings$CalendarInfo;Lcom/android/settings/notification/ZenModeEventRuleSettings$CalendarInfo;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/notification/ZenModeEventRuleSettings$3;->a(Lcom/android/vendorsettings/notification/ZenModeEventRuleSettings$CalendarInfo;Lcom/android/vendorsettings/notification/ZenModeEventRuleSettings$CalendarInfo;)I
 
     move-result v0
 

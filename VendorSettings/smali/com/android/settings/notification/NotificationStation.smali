@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/notification/NotificationStation;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/notification/NotificationStation;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "NotificationStation.java"
 
 
@@ -14,7 +14,7 @@
 
 .field private ajL:Landroid/service/notification/NotificationListenerService;
 
-.field private ajM:Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter;
+.field private ajM:Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter;
 
 .field private final ajN:Ljava/util/Comparator;
 
@@ -29,13 +29,13 @@
 
     .prologue
     .line 59
-    const-class v0, Lcom/android/settings/notification/NotificationStation;
+    const-class v0, Lcom/android/vendorsettings/notification/NotificationStation;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/notification/NotificationStation;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/notification/NotificationStation;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -45,49 +45,49 @@
 
     .prologue
     .line 58
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 78
-    new-instance v0, Lcom/android/settings/notification/NotificationStation$1;
+    new-instance v0, Lcom/android/vendorsettings/notification/NotificationStation$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/notification/NotificationStation$1;-><init>(Lcom/android/settings/notification/NotificationStation;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/notification/NotificationStation$1;-><init>(Lcom/android/vendorsettings/notification/NotificationStation;)V
 
-    iput-object v0, p0, Lcom/android/settings/notification/NotificationStation;->ajK:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/NotificationStation;->ajK:Ljava/lang/Runnable;
 
     .line 85
-    new-instance v0, Lcom/android/settings/notification/NotificationStation$2;
+    new-instance v0, Lcom/android/vendorsettings/notification/NotificationStation$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/notification/NotificationStation$2;-><init>(Lcom/android/settings/notification/NotificationStation;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/notification/NotificationStation$2;-><init>(Lcom/android/vendorsettings/notification/NotificationStation;)V
 
-    iput-object v0, p0, Lcom/android/settings/notification/NotificationStation;->ajL:Landroid/service/notification/NotificationListenerService;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/NotificationStation;->ajL:Landroid/service/notification/NotificationListenerService;
 
     .line 105
-    new-instance v0, Lcom/android/settings/notification/NotificationStation$3;
+    new-instance v0, Lcom/android/vendorsettings/notification/NotificationStation$3;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/notification/NotificationStation$3;-><init>(Lcom/android/settings/notification/NotificationStation;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/notification/NotificationStation$3;-><init>(Lcom/android/vendorsettings/notification/NotificationStation;)V
 
-    iput-object v0, p0, Lcom/android/settings/notification/NotificationStation;->ajN:Ljava/util/Comparator;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/NotificationStation;->ajN:Ljava/util/Comparator;
 
     .line 299
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/notification/NotificationStation;)V
+.method static synthetic a(Lcom/android/vendorsettings/notification/NotificationStation;)V
     .locals 0
 
     .prologue
     .line 58
-    invoke-direct {p0}, Lcom/android/settings/notification/NotificationStation;->re()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/NotificationStation;->re()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/notification/NotificationStation;Ljava/lang/String;)V
+.method static synthetic a(Lcom/android/vendorsettings/notification/NotificationStation;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 58
-    invoke-direct {p0, p1}, Lcom/android/settings/notification/NotificationStation;->bi(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/notification/NotificationStation;->bi(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -100,12 +100,12 @@
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/notification/NotificationStation;)Ljava/lang/Runnable;
+.method static synthetic b(Lcom/android/vendorsettings/notification/NotificationStation;)Ljava/lang/Runnable;
     .locals 1
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationStation;->ajK:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/NotificationStation;->ajK:Ljava/lang/Runnable;
 
     return-object v0
 .end method
@@ -116,7 +116,7 @@
     .prologue
     .line 272
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationStation;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/NotificationStation;->i:Landroid/content/pm/PackageManager;
 
     const/16 v1, 0x2000
 
@@ -127,7 +127,7 @@
     .line 274
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/notification/NotificationStation;->i:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/NotificationStation;->i:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v1, v0}, Landroid/content/pm/PackageManager;->getApplicationLabel(Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;
     :try_end_0
@@ -145,7 +145,7 @@
     move-exception v0
 
     .line 276
-    sget-object v1, Lcom/android/settings/notification/NotificationStation;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/android/vendorsettings/notification/NotificationStation;->TAG:Ljava/lang/String;
 
     const-string v2, "Cannot load package name"
 
@@ -174,7 +174,7 @@
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
     .line 350
-    iget-object v1, p0, Lcom/android/settings/notification/NotificationStation;->i:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/NotificationStation;->i:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->resolveActivity(Landroid/content/pm/PackageManager;)Landroid/content/ComponentName;
 
@@ -183,7 +183,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     .line 351
-    invoke-virtual {p0, v0}, Lcom/android/settings/notification/NotificationStation;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/notification/NotificationStation;->startActivity(Landroid/content/Intent;)V
 
     .line 352
     return-void
@@ -196,7 +196,7 @@
     const/4 v1, 0x0
 
     .line 282
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/notification/NotificationStation;->s(Ljava/lang/String;I)Landroid/content/res/Resources;
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/notification/NotificationStation;->s(Ljava/lang/String;I)Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -227,7 +227,7 @@
     move-exception v2
 
     .line 291
-    sget-object v3, Lcom/android/settings/notification/NotificationStation;->TAG:Ljava/lang/String;
+    sget-object v3, Lcom/android/vendorsettings/notification/NotificationStation;->TAG:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -287,7 +287,7 @@
 
     .prologue
     .line 58
-    invoke-static {p0, p1}, Lcom/android/settings/notification/NotificationStation;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {p0, p1}, Lcom/android/vendorsettings/notification/NotificationStation;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     return-void
 .end method
@@ -297,7 +297,7 @@
 
     .prologue
     .line 170
-    invoke-direct {p0}, Lcom/android/settings/notification/NotificationStation;->st()Ljava/util/List;
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/NotificationStation;->st()Ljava/util/List;
 
     move-result-object v0
 
@@ -323,24 +323,24 @@
 
     aput-object v4, v2, v3
 
-    invoke-static {v1, v2}, Lcom/android/settings/notification/NotificationStation;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v1, v2}, Lcom/android/vendorsettings/notification/NotificationStation;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 173
-    iget-object v1, p0, Lcom/android/settings/notification/NotificationStation;->ajM:Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/NotificationStation;->ajM:Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter;
 
-    invoke-virtual {v1}, Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter;->clear()V
+    invoke-virtual {v1}, Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter;->clear()V
 
     .line 174
-    iget-object v1, p0, Lcom/android/settings/notification/NotificationStation;->ajM:Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/NotificationStation;->ajM:Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter;->addAll(Ljava/util/Collection;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter;->addAll(Ljava/util/Collection;)V
 
     .line 175
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationStation;->ajM:Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/NotificationStation;->ajM:Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter;
 
-    iget-object v1, p0, Lcom/android/settings/notification/NotificationStation;->ajN:Ljava/util/Comparator;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/NotificationStation;->ajN:Ljava/util/Comparator;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter;->sort(Ljava/util/Comparator;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter;->sort(Ljava/util/Comparator;)V
 
     .line 177
     :cond_0
@@ -366,7 +366,7 @@
     .line 248
     :cond_0
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationStation;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/NotificationStation;->i:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/pm/PackageManager;->getResourcesForApplicationAsUser(Ljava/lang/String;I)Landroid/content/res/Resources;
     :try_end_0
@@ -383,7 +383,7 @@
     move-exception v0
 
     .line 250
-    sget-object v1, Lcom/android/settings/notification/NotificationStation;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/android/vendorsettings/notification/NotificationStation;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -412,7 +412,7 @@
 
     .line 254
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationStation;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/NotificationStation;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -434,11 +434,11 @@
     :try_start_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/notification/NotificationStation;->ajJ:Landroid/app/INotificationManager;
+    iget-object v2, v0, Lcom/android/vendorsettings/notification/NotificationStation;->ajJ:Landroid/app/INotificationManager;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/android/settings/notification/NotificationStation;->mContext:Landroid/content/Context;
+    iget-object v3, v0, Lcom/android/vendorsettings/notification/NotificationStation;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -451,11 +451,11 @@
     .line 190
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/notification/NotificationStation;->ajJ:Landroid/app/INotificationManager;
+    iget-object v2, v0, Lcom/android/vendorsettings/notification/NotificationStation;->ajJ:Landroid/app/INotificationManager;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/android/settings/notification/NotificationStation;->mContext:Landroid/content/Context;
+    iget-object v3, v0, Lcom/android/vendorsettings/notification/NotificationStation;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -515,30 +515,30 @@
     aget-object v3, v10, v4
 
     .line 199
-    new-instance v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;
+    new-instance v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;
 
     const/4 v13, 0x0
 
-    invoke-direct {v12, v13}, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;-><init>(Lcom/android/settings/notification/NotificationStation$1;)V
+    invoke-direct {v12, v13}, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;-><init>(Lcom/android/vendorsettings/notification/NotificationStation$1;)V
 
     .line 200
     invoke-virtual {v3}, Landroid/service/notification/StatusBarNotification;->getPackageName()Ljava/lang/String;
 
     move-result-object v13
 
-    iput-object v13, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->pkg:Ljava/lang/String;
+    iput-object v13, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->pkg:Ljava/lang/String;
 
     .line 201
     invoke-virtual {v3}, Landroid/service/notification/StatusBarNotification;->getUserId()I
 
     move-result v13
 
-    iput v13, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->user:I
+    iput v13, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->user:I
 
     .line 202
-    iget-object v13, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->pkg:Ljava/lang/String;
+    iget-object v13, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->pkg:Ljava/lang/String;
 
-    iget v14, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->user:I
+    iget v14, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->user:I
 
     invoke-virtual {v3}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
 
@@ -548,35 +548,35 @@
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v13, v14, v15}, Lcom/android/settings/notification/NotificationStation;->c(Ljava/lang/String;II)Landroid/graphics/drawable/Drawable;
+    invoke-direct {v0, v13, v14, v15}, Lcom/android/vendorsettings/notification/NotificationStation;->c(Ljava/lang/String;II)Landroid/graphics/drawable/Drawable;
 
     move-result-object v13
 
-    iput-object v13, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v13, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->icon:Landroid/graphics/drawable/Drawable;
 
     .line 203
-    iget-object v13, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->pkg:Ljava/lang/String;
+    iget-object v13, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->pkg:Ljava/lang/String;
 
-    iget v14, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->user:I
+    iget v14, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->user:I
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v13, v14}, Lcom/android/settings/notification/NotificationStation;->t(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable;
+    invoke-direct {v0, v13, v14}, Lcom/android/vendorsettings/notification/NotificationStation;->t(Ljava/lang/String;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v13
 
-    iput-object v13, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->ajP:Landroid/graphics/drawable/Drawable;
+    iput-object v13, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->ajP:Landroid/graphics/drawable/Drawable;
 
     .line 204
-    iget-object v13, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->pkg:Ljava/lang/String;
+    iget-object v13, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->pkg:Ljava/lang/String;
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v13}, Lcom/android/settings/notification/NotificationStation;->bh(Ljava/lang/String;)Ljava/lang/CharSequence;
+    invoke-direct {v0, v13}, Lcom/android/vendorsettings/notification/NotificationStation;->bh(Ljava/lang/String;)Ljava/lang/CharSequence;
 
     move-result-object v13
 
-    iput-object v13, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->ajQ:Ljava/lang/CharSequence;
+    iput-object v13, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->ajQ:Ljava/lang/CharSequence;
 
     .line 205
     invoke-virtual {v3}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
@@ -600,16 +600,16 @@
 
     move-result-object v13
 
-    iput-object v13, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
+    iput-object v13, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
 
     .line 208
-    iget-object v13, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
+    iget-object v13, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
 
     if-eqz v13, :cond_0
 
     const-string v13, ""
 
-    iget-object v14, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
+    iget-object v14, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
 
     invoke-virtual {v13, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -631,17 +631,17 @@
 
     move-result-object v13
 
-    iput-object v13, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
+    iput-object v13, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
 
     .line 213
     :cond_1
-    iget-object v13, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
+    iget-object v13, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
 
     if-eqz v13, :cond_2
 
     const-string v13, ""
 
-    iget-object v14, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
+    iget-object v14, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
 
     invoke-virtual {v13, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -657,17 +657,17 @@
 
     iget-object v13, v13, Landroid/app/Notification;->tickerText:Ljava/lang/CharSequence;
 
-    iput-object v13, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
+    iput-object v13, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
 
     .line 217
     :cond_3
-    iget-object v13, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
+    iget-object v13, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
 
     if-eqz v13, :cond_4
 
     const-string v13, ""
 
-    iget-object v14, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
+    iget-object v14, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
 
     invoke-virtual {v13, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -677,9 +677,9 @@
 
     .line 218
     :cond_4
-    iget-object v13, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->ajQ:Ljava/lang/CharSequence;
+    iget-object v13, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->ajQ:Ljava/lang/CharSequence;
 
-    iput-object v13, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
+    iput-object v13, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
 
     .line 220
     :cond_5
@@ -687,7 +687,7 @@
 
     move-result-wide v14
 
-    iput-wide v14, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->timestamp:J
+    iput-wide v14, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->timestamp:J
 
     .line 221
     invoke-virtual {v3}, Landroid/service/notification/StatusBarNotification;->getNotification()Landroid/app/Notification;
@@ -696,7 +696,7 @@
 
     iget v3, v3, Landroid/app/Notification;->priority:I
 
-    iput v3, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->priority:I
+    iput v3, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->priority:I
 
     .line 222
     const-string v3, "   [%d] %s: %s"
@@ -707,7 +707,7 @@
 
     const/4 v14, 0x0
 
-    iget-wide v0, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->timestamp:J
+    iget-wide v0, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->timestamp:J
 
     move-wide/from16 v16, v0
 
@@ -719,17 +719,17 @@
 
     const/4 v14, 0x1
 
-    iget-object v15, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->pkg:Ljava/lang/String;
+    iget-object v15, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->pkg:Ljava/lang/String;
 
     aput-object v15, v13, v14
 
     const/4 v14, 0x2
 
-    iget-object v15, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
+    iget-object v15, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->title:Ljava/lang/CharSequence;
 
     aput-object v15, v13, v14
 
-    invoke-static {v3, v13}, Lcom/android/settings/notification/NotificationStation;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v3, v13}, Lcom/android/vendorsettings/notification/NotificationStation;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 224
     if-ne v10, v7, :cond_8
@@ -737,16 +737,16 @@
     const/4 v3, 0x1
 
     :goto_2
-    iput-boolean v3, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->active:Z
+    iput-boolean v3, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->active:Z
 
     .line 226
-    iget v3, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->user:I
+    iget v3, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->user:I
 
     const/4 v13, -0x1
 
     if-eq v3, v13, :cond_6
 
-    iget v3, v12, Lcom/android/settings/notification/NotificationStation$HistoricalNotificationInfo;->user:I
+    iget v3, v12, Lcom/android/vendorsettings/notification/NotificationStation$HistoricalNotificationInfo;->user:I
 
     if-ne v3, v6, :cond_7
 
@@ -783,7 +783,7 @@
     move-exception v2
 
     .line 235
-    sget-object v3, Lcom/android/settings/notification/NotificationStation;->TAG:Ljava/lang/String;
+    sget-object v3, Lcom/android/vendorsettings/notification/NotificationStation;->TAG:Ljava/lang/String;
 
     const-string v4, "Cannot load Notifications: "
 
@@ -805,7 +805,7 @@
 
     .line 262
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/notification/NotificationStation;->i:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/NotificationStation;->i:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v1, p1}, Landroid/content/pm/PackageManager;->getApplicationIcon(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     :try_end_0
@@ -822,7 +822,7 @@
     move-exception v1
 
     .line 264
-    sget-object v2, Lcom/android/settings/notification/NotificationStation;->TAG:Ljava/lang/String;
+    sget-object v2, Lcom/android/vendorsettings/notification/NotificationStation;->TAG:Ljava/lang/String;
 
     const-string v3, "Cannot get application icon"
 
@@ -838,7 +838,7 @@
 
     .prologue
     .line 116
-    const-class v0, Lcom/android/settings/notification/NotificationStation;
+    const-class v0, Lcom/android/vendorsettings/notification/NotificationStation;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -862,30 +862,30 @@
 
     aput-object p1, v1, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/notification/NotificationStation;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/notification/NotificationStation;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 153
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 155
-    invoke-virtual {p0}, Lcom/android/settings/notification/NotificationStation;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/notification/NotificationStation;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
     .line 156
-    invoke-static {v0, v2}, Lcom/android/settings/iC;->a(Landroid/view/View;Z)V
+    invoke-static {v0, v2}, Lcom/android/vendorsettings/iC;->a(Landroid/view/View;Z)V
 
     .line 158
-    new-instance v1, Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter;
+    new-instance v1, Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter;
 
-    iget-object v2, p0, Lcom/android/settings/notification/NotificationStation;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/vendorsettings/notification/NotificationStation;->mContext:Landroid/content/Context;
 
-    invoke-direct {v1, p0, v2}, Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter;-><init>(Lcom/android/settings/notification/NotificationStation;Landroid/content/Context;)V
+    invoke-direct {v1, p0, v2}, Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter;-><init>(Lcom/android/vendorsettings/notification/NotificationStation;Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/android/settings/notification/NotificationStation;->ajM:Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter;
+    iput-object v1, p0, Lcom/android/vendorsettings/notification/NotificationStation;->ajM:Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter;
 
     .line 159
-    iget-object v1, p0, Lcom/android/settings/notification/NotificationStation;->ajM:Lcom/android/settings/notification/NotificationStation$NotificationHistoryAdapter;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/NotificationStation;->ajM:Lcom/android/vendorsettings/notification/NotificationStation$NotificationHistoryAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
@@ -916,22 +916,22 @@
 
     aput-object v3, v1, v2
 
-    invoke-static {v0, v1}, Lcom/android/settings/notification/NotificationStation;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/notification/NotificationStation;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 122
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onAttach(Landroid/app/Activity;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onAttach(Landroid/app/Activity;)V
 
     .line 123
-    iput-object p1, p0, Lcom/android/settings/notification/NotificationStation;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/notification/NotificationStation;->mContext:Landroid/content/Context;
 
     .line 124
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationStation;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/NotificationStation;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/NotificationStation;->i:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/NotificationStation;->i:Landroid/content/pm/PackageManager;
 
     .line 125
     const-string v0, "notification"
@@ -944,17 +944,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/NotificationStation;->ajJ:Landroid/app/INotificationManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/NotificationStation;->ajJ:Landroid/app/INotificationManager;
 
     .line 128
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationStation;->ajL:Landroid/service/notification/NotificationListenerService;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/NotificationStation;->ajL:Landroid/service/notification/NotificationListenerService;
 
-    iget-object v1, p0, Lcom/android/settings/notification/NotificationStation;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/NotificationStation;->mContext:Landroid/content/Context;
 
     new-instance v2, Landroid/content/ComponentName;
 
-    iget-object v3, p0, Lcom/android/settings/notification/NotificationStation;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/vendorsettings/notification/NotificationStation;->mContext:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -987,7 +987,7 @@
     move-exception v0
 
     .line 131
-    sget-object v1, Lcom/android/settings/notification/NotificationStation;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/android/vendorsettings/notification/NotificationStation;->TAG:Ljava/lang/String;
 
     const-string v2, "Cannot register listener"
 
@@ -1002,7 +1002,7 @@
     .prologue
     .line 138
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationStation;->ajL:Landroid/service/notification/NotificationListenerService;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/NotificationStation;->ajL:Landroid/service/notification/NotificationListenerService;
 
     invoke-virtual {v0}, Landroid/service/notification/NotificationListenerService;->unregisterAsSystemService()V
     :try_end_0
@@ -1010,7 +1010,7 @@
 
     .line 142
     :goto_0
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDetach()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onDetach()V
 
     .line 143
     return-void
@@ -1020,7 +1020,7 @@
     move-exception v0
 
     .line 140
-    sget-object v1, Lcom/android/settings/notification/NotificationStation;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/android/vendorsettings/notification/NotificationStation;->TAG:Ljava/lang/String;
 
     const-string v2, "Cannot unregister listener"
 
@@ -1040,13 +1040,13 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-static {v0, v1}, Lcom/android/settings/notification/NotificationStation;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/notification/NotificationStation;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 165
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 166
-    invoke-direct {p0}, Lcom/android/settings/notification/NotificationStation;->re()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/NotificationStation;->re()V
 
     .line 167
     return-void

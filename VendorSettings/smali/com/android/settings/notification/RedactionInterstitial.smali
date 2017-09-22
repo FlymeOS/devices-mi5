@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/notification/RedactionInterstitial;
-.super Lcom/android/settings/hn;
+.class public Lcom/android/vendorsettings/notification/RedactionInterstitial;
+.super Lcom/android/vendorsettings/hn;
 .source "RedactionInterstitial.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 35
-    invoke-direct {p0}, Lcom/android/settings/hn;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/hn;-><init>()V
 
     .line 83
     return-void
@@ -20,7 +20,7 @@
 
     .prologue
     .line 35
-    invoke-static {p0}, Lcom/android/settings/notification/RedactionInterstitial;->bP(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/vendorsettings/notification/RedactionInterstitial;->bP(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -32,7 +32,7 @@
 
     .prologue
     .line 35
-    invoke-static {p0}, Lcom/android/settings/notification/RedactionInterstitial;->bO(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/vendorsettings/notification/RedactionInterstitial;->bO(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -122,7 +122,7 @@
     .line 39
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/hn;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/vendorsettings/hn;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -131,7 +131,7 @@
     .line 40
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;
+    const-class v2, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -148,7 +148,7 @@
 
     .prologue
     .line 46
-    const-class v0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;
+    const-class v0, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

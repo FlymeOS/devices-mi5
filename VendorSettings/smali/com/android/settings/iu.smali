@@ -1,4 +1,4 @@
-.class Lcom/android/settings/iu;
+.class Lcom/android/vendorsettings/iu;
 .super Ljava/lang/Object;
 .source "UsageStatsActivity.java"
 

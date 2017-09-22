@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/PrivacyModeDialog;
+.class public Lcom/android/vendorsettings/PrivacyModeDialog;
 .super Landroid/app/Activity;
 .source "PrivacyModeDialog.java"
 
@@ -29,7 +29,7 @@
     .line 33
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/PrivacyModeDialog;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/PrivacyModeDialog;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -50,9 +50,9 @@
     .line 36
     const v1, 0x104000a
 
-    new-instance v2, Lcom/android/settings/gf;
+    new-instance v2, Lcom/android/vendorsettings/gf;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/gf;-><init>(Lcom/android/settings/PrivacyModeDialog;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/gf;-><init>(Lcom/android/vendorsettings/PrivacyModeDialog;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -69,13 +69,13 @@
     move-result-object v0
 
     .line 46
-    new-instance v1, Lcom/android/settings/gg;
+    new-instance v1, Lcom/android/vendorsettings/gg;
 
-    invoke-virtual {p0}, Lcom/android/settings/PrivacyModeDialog;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/PrivacyModeDialog;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-direct {v1, p0, v2, v0}, Lcom/android/settings/gg;-><init>(Lcom/android/settings/PrivacyModeDialog;Landroid/content/Context;Landroid/app/Dialog;)V
+    invoke-direct {v1, p0, v2, v0}, Lcom/android/vendorsettings/gg;-><init>(Lcom/android/vendorsettings/PrivacyModeDialog;Landroid/content/Context;Landroid/app/Dialog;)V
 
     .line 47
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
@@ -111,7 +111,7 @@
     .line 21
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/PrivacyModeDialog;->showDialog(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/PrivacyModeDialog;->showDialog(I)V
 
     .line 22
     return-void
@@ -127,7 +127,7 @@
     .line 26
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/PrivacyModeDialog;->setVisible(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/PrivacyModeDialog;->setVisible(Z)V
 
     .line 27
     return-void

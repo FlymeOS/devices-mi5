@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/SeekBarPreference;
+.class public Lcom/android/vendorsettings/SeekBarPreference;
 .super Landroid/preference/Preference;
 .source "SeekBarPreference.java"
 
@@ -24,7 +24,7 @@
     .line 35
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/SeekBarPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/SeekBarPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 36
     return-void
@@ -37,7 +37,7 @@
     .line 31
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/SeekBarPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/vendorsettings/SeekBarPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 32
     return-void
@@ -53,7 +53,7 @@
     .line 27
     const v0, 0x7f040136
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SeekBarPreference;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SeekBarPreference;->setLayoutResource(I)V
 
     .line 28
     return-void
@@ -66,7 +66,7 @@
 
     .prologue
     .line 89
-    iput-boolean p1, p0, Lcom/android/settings/SeekBarPreference;->yV:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/SeekBarPreference;->yV:Z
 
     .line 90
     return-void
@@ -77,7 +77,7 @@
 
     .prologue
     .line 113
-    iget v0, p0, Lcom/android/settings/SeekBarPreference;->mProgress:I
+    iget v0, p0, Lcom/android/vendorsettings/SeekBarPreference;->mProgress:I
 
     return v0
 .end method
@@ -97,12 +97,12 @@
 
     .prologue
     .line 97
-    iget v0, p0, Lcom/android/settings/SeekBarPreference;->qw:I
+    iget v0, p0, Lcom/android/vendorsettings/SeekBarPreference;->qw:I
 
     if-le p1, v0, :cond_2
 
     .line 98
-    iget v0, p0, Lcom/android/settings/SeekBarPreference;->qw:I
+    iget v0, p0, Lcom/android/vendorsettings/SeekBarPreference;->qw:I
 
     .line 100
     :goto_0
@@ -113,21 +113,21 @@
 
     .line 103
     :cond_0
-    iget v1, p0, Lcom/android/settings/SeekBarPreference;->mProgress:I
+    iget v1, p0, Lcom/android/vendorsettings/SeekBarPreference;->mProgress:I
 
     if-eq v0, v1, :cond_1
 
     .line 104
-    iput v0, p0, Lcom/android/settings/SeekBarPreference;->mProgress:I
+    iput v0, p0, Lcom/android/vendorsettings/SeekBarPreference;->mProgress:I
 
     .line 105
-    invoke-virtual {p0, v0}, Lcom/android/settings/SeekBarPreference;->persistInt(I)Z
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SeekBarPreference;->persistInt(I)Z
 
     .line 106
     if-eqz p2, :cond_1
 
     .line 107
-    invoke-virtual {p0}, Lcom/android/settings/SeekBarPreference;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SeekBarPreference;->notifyChanged()V
 
     .line 110
     :cond_1
@@ -159,17 +159,17 @@
     invoke-virtual {v0, p0}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
 
     .line 44
-    iget v1, p0, Lcom/android/settings/SeekBarPreference;->qw:I
+    iget v1, p0, Lcom/android/vendorsettings/SeekBarPreference;->qw:I
 
     invoke-virtual {v0, v1}, Landroid/widget/SeekBar;->setMax(I)V
 
     .line 45
-    iget v1, p0, Lcom/android/settings/SeekBarPreference;->mProgress:I
+    iget v1, p0, Lcom/android/vendorsettings/SeekBarPreference;->mProgress:I
 
     invoke-virtual {v0, v1}, Landroid/widget/SeekBar;->setProgress(I)V
 
     .line 46
-    invoke-virtual {p0}, Lcom/android/settings/SeekBarPreference;->isEnabled()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SeekBarPreference;->isEnabled()Z
 
     move-result v1
 
@@ -221,13 +221,13 @@
 
     .line 70
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/SeekBarPreference;->getProgress()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SeekBarPreference;->getProgress()I
 
     move-result v1
 
     add-int/lit8 v1, v1, 0x1
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/SeekBarPreference;->setProgress(I)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/SeekBarPreference;->setProgress(I)V
 
     .line 78
     :goto_0
@@ -240,13 +240,13 @@
     if-ne p2, v1, :cond_2
 
     .line 74
-    invoke-virtual {p0}, Lcom/android/settings/SeekBarPreference;->getProgress()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SeekBarPreference;->getProgress()I
 
     move-result v1
 
     add-int/lit8 v1, v1, -0x1
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/SeekBarPreference;->setProgress(I)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/SeekBarPreference;->setProgress(I)V
 
     goto :goto_0
 
@@ -264,17 +264,17 @@
     .line 134
     if-eqz p3, :cond_1
 
-    iget-boolean v0, p0, Lcom/android/settings/SeekBarPreference;->yU:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/SeekBarPreference;->yU:Z
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/settings/SeekBarPreference;->yV:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/SeekBarPreference;->yV:Z
 
     if-eqz v0, :cond_1
 
     .line 135
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/SeekBarPreference;->syncProgress(Landroid/widget/SeekBar;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/SeekBarPreference;->syncProgress(Landroid/widget/SeekBar;)V
 
     .line 137
     :cond_1
@@ -290,7 +290,7 @@
 
     move-result-object v0
 
-    const-class v1, Lcom/android/settings/SeekBarPreference$SavedState;
+    const-class v1, Lcom/android/vendorsettings/SeekBarPreference$SavedState;
 
     invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -307,27 +307,27 @@
 
     .line 182
     :cond_0
-    check-cast p1, Lcom/android/settings/SeekBarPreference$SavedState;
+    check-cast p1, Lcom/android/vendorsettings/SeekBarPreference$SavedState;
 
     .line 183
-    invoke-virtual {p1}, Lcom/android/settings/SeekBarPreference$SavedState;->getSuperState()Landroid/os/Parcelable;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/SeekBarPreference$SavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v0
 
     invoke-super {p0, v0}, Landroid/preference/Preference;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     .line 184
-    iget v0, p1, Lcom/android/settings/SeekBarPreference$SavedState;->progress:I
+    iget v0, p1, Lcom/android/vendorsettings/SeekBarPreference$SavedState;->progress:I
 
-    iput v0, p0, Lcom/android/settings/SeekBarPreference;->mProgress:I
+    iput v0, p0, Lcom/android/vendorsettings/SeekBarPreference;->mProgress:I
 
     .line 185
-    iget v0, p1, Lcom/android/settings/SeekBarPreference$SavedState;->max:I
+    iget v0, p1, Lcom/android/vendorsettings/SeekBarPreference$SavedState;->max:I
 
-    iput v0, p0, Lcom/android/settings/SeekBarPreference;->qw:I
+    iput v0, p0, Lcom/android/vendorsettings/SeekBarPreference;->qw:I
 
     .line 186
-    invoke-virtual {p0}, Lcom/android/settings/SeekBarPreference;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SeekBarPreference;->notifyChanged()V
 
     goto :goto_0
 .end method
@@ -342,7 +342,7 @@
     move-result-object v0
 
     .line 161
-    invoke-virtual {p0}, Lcom/android/settings/SeekBarPreference;->isPersistent()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SeekBarPreference;->isPersistent()Z
 
     move-result v1
 
@@ -354,19 +354,19 @@
 
     .line 167
     :cond_0
-    new-instance v1, Lcom/android/settings/SeekBarPreference$SavedState;
+    new-instance v1, Lcom/android/vendorsettings/SeekBarPreference$SavedState;
 
-    invoke-direct {v1, v0}, Lcom/android/settings/SeekBarPreference$SavedState;-><init>(Landroid/os/Parcelable;)V
+    invoke-direct {v1, v0}, Lcom/android/vendorsettings/SeekBarPreference$SavedState;-><init>(Landroid/os/Parcelable;)V
 
     .line 168
-    iget v0, p0, Lcom/android/settings/SeekBarPreference;->mProgress:I
+    iget v0, p0, Lcom/android/vendorsettings/SeekBarPreference;->mProgress:I
 
-    iput v0, v1, Lcom/android/settings/SeekBarPreference$SavedState;->progress:I
+    iput v0, v1, Lcom/android/vendorsettings/SeekBarPreference$SavedState;->progress:I
 
     .line 169
-    iget v0, p0, Lcom/android/settings/SeekBarPreference;->qw:I
+    iget v0, p0, Lcom/android/vendorsettings/SeekBarPreference;->qw:I
 
-    iput v0, v1, Lcom/android/settings/SeekBarPreference$SavedState;->max:I
+    iput v0, v1, Lcom/android/vendorsettings/SeekBarPreference$SavedState;->max:I
 
     move-object v0, v1
 
@@ -381,14 +381,14 @@
     .line 56
     if-eqz p1, :cond_0
 
-    iget v0, p0, Lcom/android/settings/SeekBarPreference;->mProgress:I
+    iget v0, p0, Lcom/android/vendorsettings/SeekBarPreference;->mProgress:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SeekBarPreference;->getPersistedInt(I)I
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SeekBarPreference;->getPersistedInt(I)I
 
     move-result v0
 
     :goto_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/SeekBarPreference;->setProgress(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SeekBarPreference;->setProgress(I)V
 
     .line 58
     return-void
@@ -411,7 +411,7 @@
     .line 141
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/SeekBarPreference;->yU:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/SeekBarPreference;->yU:Z
 
     .line 142
     return-void
@@ -424,19 +424,19 @@
     .line 146
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/SeekBarPreference;->yU:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/SeekBarPreference;->yU:Z
 
     .line 147
     invoke-virtual {p1}, Landroid/widget/SeekBar;->getProgress()I
 
     move-result v0
 
-    iget v1, p0, Lcom/android/settings/SeekBarPreference;->mProgress:I
+    iget v1, p0, Lcom/android/vendorsettings/SeekBarPreference;->mProgress:I
 
     if-eq v0, v1, :cond_0
 
     .line 148
-    invoke-virtual {p0, p1}, Lcom/android/settings/SeekBarPreference;->syncProgress(Landroid/widget/SeekBar;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/SeekBarPreference;->syncProgress(Landroid/widget/SeekBar;)V
 
     .line 150
     :cond_0
@@ -448,15 +448,15 @@
 
     .prologue
     .line 82
-    iget v0, p0, Lcom/android/settings/SeekBarPreference;->qw:I
+    iget v0, p0, Lcom/android/vendorsettings/SeekBarPreference;->qw:I
 
     if-eq p1, v0, :cond_0
 
     .line 83
-    iput p1, p0, Lcom/android/settings/SeekBarPreference;->qw:I
+    iput p1, p0, Lcom/android/vendorsettings/SeekBarPreference;->qw:I
 
     .line 84
-    invoke-virtual {p0}, Lcom/android/settings/SeekBarPreference;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SeekBarPreference;->notifyChanged()V
 
     .line 86
     :cond_0
@@ -470,7 +470,7 @@
     .line 93
     const/4 v0, 0x1
 
-    invoke-virtual {p0, p1, v0}, Lcom/android/settings/SeekBarPreference;->h(IZ)V
+    invoke-virtual {p0, p1, v0}, Lcom/android/vendorsettings/SeekBarPreference;->h(IZ)V
 
     .line 94
     return-void
@@ -486,7 +486,7 @@
     move-result v0
 
     .line 122
-    iget v1, p0, Lcom/android/settings/SeekBarPreference;->mProgress:I
+    iget v1, p0, Lcom/android/vendorsettings/SeekBarPreference;->mProgress:I
 
     if-eq v0, v1, :cond_0
 
@@ -495,7 +495,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/SeekBarPreference;->callChangeListener(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/SeekBarPreference;->callChangeListener(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -504,7 +504,7 @@
     .line 124
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/SeekBarPreference;->h(IZ)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/SeekBarPreference;->h(IZ)V
 
     .line 129
     :cond_0
@@ -513,7 +513,7 @@
 
     .line 126
     :cond_1
-    iget v0, p0, Lcom/android/settings/SeekBarPreference;->mProgress:I
+    iget v0, p0, Lcom/android/vendorsettings/SeekBarPreference;->mProgress:I
 
     invoke-virtual {p1, v0}, Landroid/widget/SeekBar;->setProgress(I)V
 

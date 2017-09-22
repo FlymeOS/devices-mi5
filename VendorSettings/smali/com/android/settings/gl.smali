@@ -1,4 +1,4 @@
-.class public abstract Lcom/android/settings/gl;
+.class public abstract Lcom/android/vendorsettings/gl;
 .super Landroid/preference/PreferenceCategory;
 .source "ProgressCategoryBase.java"
 
@@ -11,7 +11,7 @@
     .line 25
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/gl;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/gl;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 26
     return-void
@@ -24,7 +24,7 @@
     .line 29
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/gl;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/vendorsettings/gl;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 30
     return-void

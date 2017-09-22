@@ -1,9 +1,9 @@
-.class public Lcom/android/settings/deviceinfo/StorageSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/deviceinfo/StorageSettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "StorageSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/search/k;
+.implements Lcom/android/vendorsettings/search/k;
 
 
 # static fields
@@ -13,7 +13,7 @@
 
 .field static final Xb:[I
 
-.field public static final ig:Lcom/android/settings/search/l;
+.field public static final ig:Lcom/android/vendorsettings/search/l;
 
 
 # instance fields
@@ -25,7 +25,7 @@
 
 .field private Xc:Landroid/preference/PreferenceCategory;
 
-.field private Xd:Lcom/android/settings/deviceinfo/StorageSummaryPreference;
+.field private Xd:Lcom/android/vendorsettings/deviceinfo/StorageSummaryPreference;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     move-result v0
 
-    sput v0, Lcom/android/settings/deviceinfo/StorageSettings;->WZ:I
+    sput v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->WZ:I
 
     .line 67
     const-string v0, "#fff4511e"
@@ -49,7 +49,7 @@
 
     move-result v0
 
-    sput v0, Lcom/android/settings/deviceinfo/StorageSettings;->Xa:I
+    sput v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Xa:I
 
     .line 69
     const/4 v0, 0x5
@@ -106,14 +106,14 @@
 
     aput v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/deviceinfo/StorageSettings;->Xb:[I
+    sput-object v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Xb:[I
 
     .line 449
-    new-instance v0, Lcom/android/settings/deviceinfo/StorageSettings$2;
+    new-instance v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$2;
 
-    invoke-direct {v0}, Lcom/android/settings/deviceinfo/StorageSettings$2;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$2;-><init>()V
 
-    sput-object v0, Lcom/android/settings/deviceinfo/StorageSettings;->ig:Lcom/android/settings/search/l;
+    sput-object v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->ig:Lcom/android/vendorsettings/search/l;
 
     return-void
 .end method
@@ -123,25 +123,25 @@
 
     .prologue
     .line 60
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 118
-    new-instance v0, Lcom/android/settings/deviceinfo/StorageSettings$1;
+    new-instance v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/deviceinfo/StorageSettings$1;-><init>(Lcom/android/settings/deviceinfo/StorageSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$1;-><init>(Lcom/android/vendorsettings/deviceinfo/StorageSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/StorageSettings;->Wj:Landroid/os/storage/StorageEventListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Wj:Landroid/os/storage/StorageEventListener;
 
     .line 407
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/deviceinfo/StorageSettings;)V
+.method static synthetic a(Lcom/android/vendorsettings/deviceinfo/StorageSettings;)V
     .locals 0
 
     .prologue
     .line 60
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/StorageSettings;->refresh()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->refresh()V
 
     return-void
 .end method
@@ -184,7 +184,7 @@
 
     .prologue
     .line 60
-    invoke-static {p0}, Lcom/android/settings/deviceinfo/StorageSettings;->a(Landroid/os/storage/VolumeInfo;)Z
+    invoke-static {p0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->a(Landroid/os/storage/VolumeInfo;)Z
 
     move-result v0
 
@@ -196,12 +196,12 @@
 
     .prologue
     .line 138
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/deviceinfo/StorageSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v9
 
     .line 140
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/deviceinfo/StorageSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
@@ -210,25 +210,25 @@
     .line 141
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/deviceinfo/StorageSettings;->Wl:Landroid/preference/PreferenceCategory;
+    iget-object v2, v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Wl:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v2}, Landroid/preference/PreferenceCategory;->removeAll()V
 
     .line 142
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/deviceinfo/StorageSettings;->Xc:Landroid/preference/PreferenceCategory;
+    iget-object v2, v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Xc:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v2}, Landroid/preference/PreferenceCategory;->removeAll()V
 
     .line 144
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/deviceinfo/StorageSettings;->Wl:Landroid/preference/PreferenceCategory;
+    iget-object v2, v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Wl:Landroid/preference/PreferenceCategory;
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/android/settings/deviceinfo/StorageSettings;->Xd:Lcom/android/settings/deviceinfo/StorageSummaryPreference;
+    iget-object v3, v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Xd:Lcom/android/vendorsettings/deviceinfo/StorageSummaryPreference;
 
     invoke-virtual {v2, v3}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -244,7 +244,7 @@
     .line 150
     move-object/from16 v0, p0
 
-    iget-object v7, v0, Lcom/android/settings/deviceinfo/StorageSettings;->Vr:Landroid/os/storage/StorageManager;
+    iget-object v7, v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Vr:Landroid/os/storage/StorageManager;
 
     invoke-virtual {v7}, Landroid/os/storage/StorageManager;->getVolumes()Ljava/util/List;
 
@@ -293,11 +293,11 @@
     if-ne v8, v11, :cond_1
 
     .line 155
-    sget-object v11, Lcom/android/settings/deviceinfo/StorageSettings;->Xb:[I
+    sget-object v11, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Xb:[I
 
     add-int/lit8 v8, v3, 0x1
 
-    sget-object v12, Lcom/android/settings/deviceinfo/StorageSettings;->Xb:[I
+    sget-object v12, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Xb:[I
 
     array-length v12, v12
 
@@ -308,11 +308,11 @@
     .line 156
     move-object/from16 v0, p0
 
-    iget-object v11, v0, Lcom/android/settings/deviceinfo/StorageSettings;->Wl:Landroid/preference/PreferenceCategory;
+    iget-object v11, v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Wl:Landroid/preference/PreferenceCategory;
 
-    new-instance v12, Lcom/android/settings/deviceinfo/StorageVolumePreference;
+    new-instance v12, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;
 
-    invoke-direct {v12, v9, v2, v3}, Lcom/android/settings/deviceinfo/StorageVolumePreference;-><init>(Landroid/content/Context;Landroid/os/storage/VolumeInfo;I)V
+    invoke-direct {v12, v9, v2, v3}, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;-><init>(Landroid/content/Context;Landroid/os/storage/VolumeInfo;I)V
 
     invoke-virtual {v11, v12}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -378,13 +378,13 @@
     .line 164
     move-object/from16 v0, p0
 
-    iget-object v8, v0, Lcom/android/settings/deviceinfo/StorageSettings;->Xc:Landroid/preference/PreferenceCategory;
+    iget-object v8, v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Xc:Landroid/preference/PreferenceCategory;
 
-    new-instance v11, Lcom/android/settings/deviceinfo/StorageVolumePreference;
+    new-instance v11, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;
 
-    sget v12, Lcom/android/settings/deviceinfo/StorageSettings;->WZ:I
+    sget v12, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->WZ:I
 
-    invoke-direct {v11, v9, v2, v12}, Lcom/android/settings/deviceinfo/StorageVolumePreference;-><init>(Landroid/content/Context;Landroid/os/storage/VolumeInfo;I)V
+    invoke-direct {v11, v9, v2, v12}, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;-><init>(Landroid/content/Context;Landroid/os/storage/VolumeInfo;I)V
 
     invoke-virtual {v8, v11}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -403,7 +403,7 @@
     :cond_3
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/deviceinfo/StorageSettings;->Vr:Landroid/os/storage/StorageManager;
+    iget-object v2, v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Vr:Landroid/os/storage/StorageManager;
 
     invoke-virtual {v2}, Landroid/os/storage/StorageManager;->getVolumeRecords()Ljava/util/List;
 
@@ -439,7 +439,7 @@
 
     move-object/from16 v0, p0
 
-    iget-object v8, v0, Lcom/android/settings/deviceinfo/StorageSettings;->Vr:Landroid/os/storage/StorageManager;
+    iget-object v8, v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Vr:Landroid/os/storage/StorageManager;
 
     invoke-virtual {v2}, Landroid/os/storage/VolumeRecord;->getFsUuid()Ljava/lang/String;
 
@@ -462,7 +462,7 @@
     invoke-virtual {v8}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
 
     .line 177
-    sget v10, Lcom/android/settings/deviceinfo/StorageSettings;->WZ:I
+    sget v10, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->WZ:I
 
     invoke-virtual {v8, v10}, Landroid/graphics/drawable/Drawable;->setTint(I)V
 
@@ -496,7 +496,7 @@
     .line 184
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/deviceinfo/StorageSettings;->Wl:Landroid/preference/PreferenceCategory;
+    iget-object v2, v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Wl:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v2, v10}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -506,7 +506,7 @@
     :cond_5
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/deviceinfo/StorageSettings;->Vr:Landroid/os/storage/StorageManager;
+    iget-object v2, v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Vr:Landroid/os/storage/StorageManager;
 
     invoke-virtual {v2}, Landroid/os/storage/StorageManager;->getDisks()Ljava/util/List;
 
@@ -576,7 +576,7 @@
     .line 197
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/deviceinfo/StorageSettings;->Xc:Landroid/preference/PreferenceCategory;
+    iget-object v2, v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Xc:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v2, v8}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -584,7 +584,7 @@
 
     .line 201
     :cond_7
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/deviceinfo/StorageSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -597,13 +597,13 @@
     .line 202
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/android/settings/deviceinfo/StorageSettings;->Xd:Lcom/android/settings/deviceinfo/StorageSummaryPreference;
+    iget-object v3, v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Xd:Lcom/android/vendorsettings/deviceinfo/StorageSummaryPreference;
 
     const v6, 0x7f0c0464
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v6}, Lcom/android/settings/deviceinfo/StorageSettings;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {v0, v6}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v6
 
@@ -627,12 +627,12 @@
 
     move-result-object v2
 
-    invoke-virtual {v3, v2}, Lcom/android/settings/deviceinfo/StorageSummaryPreference;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v3, v2}, Lcom/android/vendorsettings/deviceinfo/StorageSummaryPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 204
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/deviceinfo/StorageSettings;->Xd:Lcom/android/settings/deviceinfo/StorageSummaryPreference;
+    iget-object v2, v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Xd:Lcom/android/vendorsettings/deviceinfo/StorageSummaryPreference;
 
     const v3, 0x7f0c0466
 
@@ -650,16 +650,16 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v3, v6}, Lcom/android/settings/deviceinfo/StorageSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v0, v3, v6}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/deviceinfo/StorageSummaryPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v2, v3}, Lcom/android/vendorsettings/deviceinfo/StorageSummaryPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 207
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/deviceinfo/StorageSettings;->Wl:Landroid/preference/PreferenceCategory;
+    iget-object v2, v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Wl:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v2}, Landroid/preference/PreferenceCategory;->getPreferenceCount()I
 
@@ -668,13 +668,13 @@
     if-lez v2, :cond_8
 
     .line 208
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/deviceinfo/StorageSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/android/settings/deviceinfo/StorageSettings;->Wl:Landroid/preference/PreferenceCategory;
+    iget-object v3, v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Wl:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
@@ -682,7 +682,7 @@
     :cond_8
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/deviceinfo/StorageSettings;->Xc:Landroid/preference/PreferenceCategory;
+    iget-object v2, v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Xc:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v2}, Landroid/preference/PreferenceCategory;->getPreferenceCount()I
 
@@ -691,13 +691,13 @@
     if-lez v2, :cond_9
 
     .line 211
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/deviceinfo/StorageSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/android/settings/deviceinfo/StorageSettings;->Xc:Landroid/preference/PreferenceCategory;
+    iget-object v3, v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Xc:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
@@ -715,7 +715,7 @@
     invoke-virtual {v7, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 221
-    const-class v2, Lcom/android/settings/deviceinfo/PrivateVolumeSettings;
+    const-class v2, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
@@ -729,10 +729,10 @@
 
     move-object/from16 v3, p0
 
-    invoke-virtual/range {v2 .. v7}, Lcom/android/settings/deviceinfo/StorageSettings;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
+    invoke-virtual/range {v2 .. v7}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
 
     .line 225
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/deviceinfo/StorageSettings;->finish()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->finish()V
 
     .line 228
     return-void
@@ -755,7 +755,7 @@
 
     .prologue
     .line 86
-    const-class v0, Lcom/android/settings/deviceinfo/StorageSettings;
+    const-class v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -769,10 +769,10 @@
 
     .prologue
     .line 101
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 103
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/StorageSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -785,53 +785,53 @@
 
     check-cast v0, Landroid/os/storage/StorageManager;
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/StorageSettings;->Vr:Landroid/os/storage/StorageManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Vr:Landroid/os/storage/StorageManager;
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageSettings;->Vr:Landroid/os/storage/StorageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Vr:Landroid/os/storage/StorageManager;
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/StorageSettings;->Wj:Landroid/os/storage/StorageEventListener;
+    iget-object v2, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Wj:Landroid/os/storage/StorageEventListener;
 
     invoke-virtual {v0, v2}, Landroid/os/storage/StorageManager;->registerListener(Landroid/os/storage/StorageEventListener;)V
 
     .line 108
     const v0, 0x7f080031
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->addPreferencesFromResource(I)V
 
     .line 110
     const-string v0, "storage_internal"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/StorageSettings;->Wl:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Wl:Landroid/preference/PreferenceCategory;
 
     .line 111
     const-string v0, "storage_external"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/StorageSettings;->Xc:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Xc:Landroid/preference/PreferenceCategory;
 
     .line 113
-    new-instance v0, Lcom/android/settings/deviceinfo/StorageSummaryPreference;
+    new-instance v0, Lcom/android/vendorsettings/deviceinfo/StorageSummaryPreference;
 
-    invoke-direct {v0, v1}, Lcom/android/settings/deviceinfo/StorageSummaryPreference;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/deviceinfo/StorageSummaryPreference;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/StorageSettings;->Xd:Lcom/android/settings/deviceinfo/StorageSummaryPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Xd:Lcom/android/vendorsettings/deviceinfo/StorageSummaryPreference;
 
     .line 115
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageSettings;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->setHasOptionsMenu(Z)V
 
     .line 116
     return-void
@@ -842,12 +842,12 @@
 
     .prologue
     .line 239
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPause()V
 
     .line 240
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageSettings;->Vr:Landroid/os/storage/StorageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Vr:Landroid/os/storage/StorageManager;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/StorageSettings;->Wj:Landroid/os/storage/StorageEventListener;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Wj:Landroid/os/storage/StorageEventListener;
 
     invoke-virtual {v0, v1}, Landroid/os/storage/StorageManager;->unregisterListener(Landroid/os/storage/StorageEventListener;)V
 
@@ -871,12 +871,12 @@
     move-result-object v0
 
     .line 246
-    instance-of v1, p2, Lcom/android/settings/deviceinfo/StorageVolumePreference;
+    instance-of v1, p2, Lcom/android/vendorsettings/deviceinfo/StorageVolumePreference;
 
     if-eqz v1, :cond_5
 
     .line 248
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/StorageSettings;->Vr:Landroid/os/storage/StorageManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Vr:Landroid/os/storage/StorageManager;
 
     invoke-virtual {v1, v0}, Landroid/os/storage/StorageManager;->findVolumeById(Ljava/lang/String;)Landroid/os/storage/VolumeInfo;
 
@@ -894,7 +894,7 @@
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment;->b(Landroid/app/Fragment;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment;->b(Landroid/app/Fragment;Ljava/lang/String;)V
 
     move v4, v6
 
@@ -920,7 +920,7 @@
 
     move-result-object v0
 
-    invoke-static {p0, v1, v0}, Lcom/android/settings/deviceinfo/StorageSettings$DiskInitFragment;->a(Landroid/app/Fragment;ILjava/lang/String;)V
+    invoke-static {p0, v1, v0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$DiskInitFragment;->a(Landroid/app/Fragment;ILjava/lang/String;)V
 
     move v4, v6
 
@@ -950,7 +950,7 @@
     invoke-virtual {v5, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 261
-    const-class v0, Lcom/android/settings/deviceinfo/PrivateVolumeSettings;
+    const-class v0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
@@ -960,7 +960,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/deviceinfo/StorageSettings;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
 
     move v4, v6
 
@@ -987,7 +987,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->startActivity(Landroid/content/Intent;)V
 
     move v4, v6
 
@@ -1010,7 +1010,7 @@
     invoke-virtual {v5, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 272
-    const-class v0, Lcom/android/settings/deviceinfo/PublicVolumeSettings;
+    const-class v0, Lcom/android/vendorsettings/deviceinfo/PublicVolumeSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
@@ -1020,7 +1020,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/deviceinfo/StorageSettings;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
 
     move v4, v6
 
@@ -1040,7 +1040,7 @@
     .line 280
     const v1, 0x7f0c0470
 
-    invoke-static {p0, v1, v0}, Lcom/android/settings/deviceinfo/StorageSettings$DiskInitFragment;->a(Landroid/app/Fragment;ILjava/lang/String;)V
+    invoke-static {p0, v1, v0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$DiskInitFragment;->a(Landroid/app/Fragment;ILjava/lang/String;)V
 
     move v4, v6
 
@@ -1059,7 +1059,7 @@
     invoke-virtual {v5, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 287
-    const-class v0, Lcom/android/settings/deviceinfo/PrivateVolumeForget;
+    const-class v0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeForget;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
@@ -1071,7 +1071,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/deviceinfo/StorageSettings;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
 
     move v4, v6
 
@@ -1084,17 +1084,17 @@
 
     .prologue
     .line 232
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 233
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageSettings;->Vr:Landroid/os/storage/StorageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Vr:Landroid/os/storage/StorageManager;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/StorageSettings;->Wj:Landroid/os/storage/StorageEventListener;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->Wj:Landroid/os/storage/StorageEventListener;
 
     invoke-virtual {v0, v1}, Landroid/os/storage/StorageManager;->registerListener(Landroid/os/storage/StorageEventListener;)V
 
     .line 234
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/StorageSettings;->refresh()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings;->refresh()V
 
     .line 235
     return-void

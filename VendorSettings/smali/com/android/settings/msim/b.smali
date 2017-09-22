@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/msim/b;
+.class public Lcom/android/vendorsettings/msim/b;
 .super Ljava/lang/Object;
 .source "MSimUtils.java"
 
@@ -28,7 +28,7 @@
 
     check-cast p2, Lmiui/telephony/SubscriptionInfo;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/msim/b;->compare(Lmiui/telephony/SubscriptionInfo;Lmiui/telephony/SubscriptionInfo;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/msim/b;->compare(Lmiui/telephony/SubscriptionInfo;Lmiui/telephony/SubscriptionInfo;)I
 
     move-result v0
 

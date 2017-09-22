@@ -1,31 +1,31 @@
-.class Lcom/android/settings/hf;
+.class Lcom/android/vendorsettings/hf;
 .super Landroid/os/AsyncTask;
 .source "SearchUpdator.java"
 
 
 # instance fields
-.field final synthetic yG:Lcom/android/settings/hd;
+.field final synthetic yG:Lcom/android/vendorsettings/hd;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/hd;)V
+.method private constructor <init>(Lcom/android/vendorsettings/hd;)V
     .locals 0
 
     .prologue
     .line 70
-    iput-object p1, p0, Lcom/android/settings/hf;->yG:Lcom/android/settings/hd;
+    iput-object p1, p0, Lcom/android/vendorsettings/hf;->yG:Lcom/android/vendorsettings/hd;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/hd;Lcom/android/settings/he;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/hd;Lcom/android/vendorsettings/he;)V
     .locals 0
 
     .prologue
     .line 70
-    invoke-direct {p0, p1}, Lcom/android/settings/hf;-><init>(Lcom/android/settings/hd;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/hf;-><init>(Lcom/android/vendorsettings/hd;)V
 
     return-void
 .end method
@@ -37,15 +37,15 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Lcom/android/settings/hf;->yG:Lcom/android/settings/hd;
+    iget-object v0, p0, Lcom/android/vendorsettings/hf;->yG:Lcom/android/vendorsettings/hd;
 
-    iget-object v1, p0, Lcom/android/settings/hf;->yG:Lcom/android/settings/hd;
+    iget-object v1, p0, Lcom/android/vendorsettings/hf;->yG:Lcom/android/vendorsettings/hd;
 
-    invoke-static {v1}, Lcom/android/settings/hd;->a(Lcom/android/settings/hd;)Landroid/content/Context;
+    invoke-static {v1}, Lcom/android/vendorsettings/hd;->a(Lcom/android/vendorsettings/hd;)Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/hd;->a(Lcom/android/settings/hd;Landroid/content/Context;)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/hd;->a(Lcom/android/vendorsettings/hd;Landroid/content/Context;)V
 
     .line 74
     const/4 v0, 0x0
@@ -60,7 +60,7 @@
     .line 70
     check-cast p1, [Landroid/content/Intent;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/hf;->a([Landroid/content/Intent;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/hf;->a([Landroid/content/Intent;)Ljava/lang/Void;
 
     move-result-object v0
 

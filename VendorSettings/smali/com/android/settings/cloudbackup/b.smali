@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloudbackup/b;
+.class public Lcom/android/vendorsettings/cloudbackup/b;
 .super Ljava/lang/Object;
 .source "DoNotDisturbCloudbackupHelper.java"
 
@@ -162,7 +162,7 @@
     if-eqz v0, :cond_7
 
     .line 70
-    invoke-static {p0}, Lcom/android/settings/dndmode/m;->bv(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/android/vendorsettings/dndmode/m;->bv(Landroid/content/Context;)V
 
     .line 76
     :cond_4
@@ -226,7 +226,7 @@
 
     .line 72
     :cond_7
-    invoke-static {p0}, Lcom/android/settings/dndmode/m;->bx(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/android/vendorsettings/dndmode/m;->bx(Landroid/content/Context;)V
 
     goto :goto_1
 .end method

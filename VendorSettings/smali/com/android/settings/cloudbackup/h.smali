@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloudbackup/h;
+.class public Lcom/android/vendorsettings/cloudbackup/h;
 .super Ljava/lang/Object;
 .source "StatusBarCloudBackupHelper.java"
 
@@ -95,7 +95,7 @@
 
     const/4 v2, 0x1
 
-    invoke-static {p0, v2}, Lcom/android/settings/cloudbackup/h;->j(Landroid/content/Context;Z)Lorg/json/JSONArray;
+    invoke-static {p0, v2}, Lcom/android/vendorsettings/cloudbackup/h;->j(Landroid/content/Context;Z)Lorg/json/JSONArray;
 
     move-result-object v2
 
@@ -106,7 +106,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {p0, v2}, Lcom/android/settings/cloudbackup/h;->j(Landroid/content/Context;Z)Lorg/json/JSONArray;
+    invoke-static {p0, v2}, Lcom/android/vendorsettings/cloudbackup/h;->j(Landroid/content/Context;Z)Lorg/json/JSONArray;
 
     move-result-object v2
 
@@ -208,7 +208,7 @@
 
     const/4 v1, 0x1
 
-    invoke-static {p0, v0, v1}, Lcom/android/settings/cloudbackup/h;->a(Landroid/content/Context;Lorg/json/JSONArray;Z)V
+    invoke-static {p0, v0, v1}, Lcom/android/vendorsettings/cloudbackup/h;->a(Landroid/content/Context;Lorg/json/JSONArray;Z)V
 
     .line 72
     const-string v0, "CKPageToggleOrder"
@@ -219,7 +219,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {p0, v0, v1}, Lcom/android/settings/cloudbackup/h;->a(Landroid/content/Context;Lorg/json/JSONArray;Z)V
+    invoke-static {p0, v0, v1}, Lcom/android/vendorsettings/cloudbackup/h;->a(Landroid/content/Context;Lorg/json/JSONArray;Z)V
 
     .line 75
     const-string v0, "CKNotificationIcon"

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/CarrierClearableEditText;
+.class public Lcom/android/vendorsettings/CarrierClearableEditText;
 .super Lmiui/widget/ClearableEditText;
 .source "CarrierClearableEditText.java"
 
@@ -11,7 +11,7 @@
     .line 11
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/CarrierClearableEditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/CarrierClearableEditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 12
     return-void

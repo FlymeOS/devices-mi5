@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/d/b;
+.class public Lcom/android/vendorsettings/d/b;
 .super Landroid/content/AsyncTaskLoader;
 .source "ChartDataLoader.java"
 
@@ -18,10 +18,10 @@
     invoke-direct {p0, p1}, Landroid/content/AsyncTaskLoader;-><init>(Landroid/content/Context;)V
 
     .line 61
-    iput-object p2, p0, Lcom/android/settings/d/b;->ahR:Landroid/net/INetworkStatsSession;
+    iput-object p2, p0, Lcom/android/vendorsettings/d/b;->ahR:Landroid/net/INetworkStatsSession;
 
     .line 62
-    iput-object p3, p0, Lcom/android/settings/d/b;->mArgs:Landroid/os/Bundle;
+    iput-object p3, p0, Lcom/android/vendorsettings/d/b;->mArgs:Landroid/os/Bundle;
 
     .line 63
     return-void
@@ -32,7 +32,7 @@
 
     .prologue
     .line 135
-    iget-object v0, p0, Lcom/android/settings/d/b;->ahR:Landroid/net/INetworkStatsSession;
+    iget-object v0, p0, Lcom/android/vendorsettings/d/b;->ahR:Landroid/net/INetworkStatsSession;
 
     const/4 v4, 0x0
 
@@ -64,21 +64,21 @@
     goto :goto_0
 .end method
 
-.method public static a(Landroid/net/NetworkTemplate;Lcom/android/settings/DataUsageSummary$AppItem;)Landroid/os/Bundle;
+.method public static a(Landroid/net/NetworkTemplate;Lcom/android/vendorsettings/DataUsageSummary$AppItem;)Landroid/os/Bundle;
     .locals 1
 
     .prologue
     .line 48
     const/16 v0, 0xa
 
-    invoke-static {p0, p1, v0}, Lcom/android/settings/d/b;->a(Landroid/net/NetworkTemplate;Lcom/android/settings/DataUsageSummary$AppItem;I)Landroid/os/Bundle;
+    invoke-static {p0, p1, v0}, Lcom/android/vendorsettings/d/b;->a(Landroid/net/NetworkTemplate;Lcom/android/vendorsettings/DataUsageSummary$AppItem;I)Landroid/os/Bundle;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static a(Landroid/net/NetworkTemplate;Lcom/android/settings/DataUsageSummary$AppItem;I)Landroid/os/Bundle;
+.method public static a(Landroid/net/NetworkTemplate;Lcom/android/vendorsettings/DataUsageSummary$AppItem;I)Landroid/os/Bundle;
     .locals 2
 
     .prologue
@@ -106,7 +106,7 @@
     return-object v0
 .end method
 
-.method private b(Landroid/net/NetworkTemplate;Lcom/android/settings/DataUsageSummary$AppItem;I)Lcom/android/settings/d/a;
+.method private b(Landroid/net/NetworkTemplate;Lcom/android/vendorsettings/DataUsageSummary$AppItem;I)Lcom/android/vendorsettings/d/a;
     .locals 10
 
     .prologue
@@ -115,24 +115,24 @@
     const-wide/32 v8, 0x36ee80
 
     .line 88
-    new-instance v2, Lcom/android/settings/d/a;
+    new-instance v2, Lcom/android/vendorsettings/d/a;
 
-    invoke-direct {v2}, Lcom/android/settings/d/a;-><init>()V
+    invoke-direct {v2}, Lcom/android/vendorsettings/d/a;-><init>()V
 
     .line 89
-    iget-object v0, p0, Lcom/android/settings/d/b;->ahR:Landroid/net/INetworkStatsSession;
+    iget-object v0, p0, Lcom/android/vendorsettings/d/b;->ahR:Landroid/net/INetworkStatsSession;
 
     invoke-interface {v0, p1, p3}, Landroid/net/INetworkStatsSession;->getHistoryForNetwork(Landroid/net/NetworkTemplate;I)Landroid/net/NetworkStatsHistory;
 
     move-result-object v0
 
-    iput-object v0, v2, Lcom/android/settings/d/a;->ahN:Landroid/net/NetworkStatsHistory;
+    iput-object v0, v2, Lcom/android/vendorsettings/d/a;->ahN:Landroid/net/NetworkStatsHistory;
 
     .line 91
     if-eqz p2, :cond_1
 
     .line 93
-    iget-object v0, p2, Lcom/android/settings/DataUsageSummary$AppItem;->ik:Landroid/util/SparseBooleanArray;
+    iget-object v0, p2, Lcom/android/vendorsettings/DataUsageSummary$AppItem;->ik:Landroid/util/SparseBooleanArray;
 
     invoke-virtual {v0}, Landroid/util/SparseBooleanArray;->size()I
 
@@ -145,31 +145,31 @@
     if-ge v0, v3, :cond_0
 
     .line 95
-    iget-object v4, p2, Lcom/android/settings/DataUsageSummary$AppItem;->ik:Landroid/util/SparseBooleanArray;
+    iget-object v4, p2, Lcom/android/vendorsettings/DataUsageSummary$AppItem;->ik:Landroid/util/SparseBooleanArray;
 
     invoke-virtual {v4, v0}, Landroid/util/SparseBooleanArray;->keyAt(I)I
 
     move-result v4
 
     .line 96
-    iget-object v5, v2, Lcom/android/settings/d/a;->ahP:Landroid/net/NetworkStatsHistory;
+    iget-object v5, v2, Lcom/android/vendorsettings/d/a;->ahP:Landroid/net/NetworkStatsHistory;
 
-    invoke-direct {p0, p1, v4, v1, v5}, Lcom/android/settings/d/b;->a(Landroid/net/NetworkTemplate;IILandroid/net/NetworkStatsHistory;)Landroid/net/NetworkStatsHistory;
+    invoke-direct {p0, p1, v4, v1, v5}, Lcom/android/vendorsettings/d/b;->a(Landroid/net/NetworkTemplate;IILandroid/net/NetworkStatsHistory;)Landroid/net/NetworkStatsHistory;
 
     move-result-object v5
 
-    iput-object v5, v2, Lcom/android/settings/d/a;->ahP:Landroid/net/NetworkStatsHistory;
+    iput-object v5, v2, Lcom/android/vendorsettings/d/a;->ahP:Landroid/net/NetworkStatsHistory;
 
     .line 98
     const/4 v5, 0x1
 
-    iget-object v6, v2, Lcom/android/settings/d/a;->ahQ:Landroid/net/NetworkStatsHistory;
+    iget-object v6, v2, Lcom/android/vendorsettings/d/a;->ahQ:Landroid/net/NetworkStatsHistory;
 
-    invoke-direct {p0, p1, v4, v5, v6}, Lcom/android/settings/d/b;->a(Landroid/net/NetworkTemplate;IILandroid/net/NetworkStatsHistory;)Landroid/net/NetworkStatsHistory;
+    invoke-direct {p0, p1, v4, v5, v6}, Lcom/android/vendorsettings/d/b;->a(Landroid/net/NetworkTemplate;IILandroid/net/NetworkStatsHistory;)Landroid/net/NetworkStatsHistory;
 
     move-result-object v4
 
-    iput-object v4, v2, Lcom/android/settings/d/a;->ahQ:Landroid/net/NetworkStatsHistory;
+    iput-object v4, v2, Lcom/android/vendorsettings/d/a;->ahQ:Landroid/net/NetworkStatsHistory;
 
     .line 94
     add-int/lit8 v0, v0, 0x1
@@ -183,7 +183,7 @@
     .line 103
     new-instance v0, Landroid/net/NetworkStatsHistory;
 
-    iget-object v1, v2, Lcom/android/settings/d/a;->ahQ:Landroid/net/NetworkStatsHistory;
+    iget-object v1, v2, Lcom/android/vendorsettings/d/a;->ahQ:Landroid/net/NetworkStatsHistory;
 
     invoke-virtual {v1}, Landroid/net/NetworkStatsHistory;->getBucketDuration()J
 
@@ -191,19 +191,19 @@
 
     invoke-direct {v0, v4, v5}, Landroid/net/NetworkStatsHistory;-><init>(J)V
 
-    iput-object v0, v2, Lcom/android/settings/d/a;->ahO:Landroid/net/NetworkStatsHistory;
+    iput-object v0, v2, Lcom/android/vendorsettings/d/a;->ahO:Landroid/net/NetworkStatsHistory;
 
     .line 104
-    iget-object v0, v2, Lcom/android/settings/d/a;->ahO:Landroid/net/NetworkStatsHistory;
+    iget-object v0, v2, Lcom/android/vendorsettings/d/a;->ahO:Landroid/net/NetworkStatsHistory;
 
-    iget-object v1, v2, Lcom/android/settings/d/a;->ahP:Landroid/net/NetworkStatsHistory;
+    iget-object v1, v2, Lcom/android/vendorsettings/d/a;->ahP:Landroid/net/NetworkStatsHistory;
 
     invoke-virtual {v0, v1}, Landroid/net/NetworkStatsHistory;->recordEntireHistory(Landroid/net/NetworkStatsHistory;)V
 
     .line 105
-    iget-object v0, v2, Lcom/android/settings/d/a;->ahO:Landroid/net/NetworkStatsHistory;
+    iget-object v0, v2, Lcom/android/vendorsettings/d/a;->ahO:Landroid/net/NetworkStatsHistory;
 
-    iget-object v1, v2, Lcom/android/settings/d/a;->ahQ:Landroid/net/NetworkStatsHistory;
+    iget-object v1, v2, Lcom/android/vendorsettings/d/a;->ahQ:Landroid/net/NetworkStatsHistory;
 
     invoke-virtual {v0, v1}, Landroid/net/NetworkStatsHistory;->recordEntireHistory(Landroid/net/NetworkStatsHistory;)V
 
@@ -218,21 +218,21 @@
 
     invoke-direct {v0, v8, v9}, Landroid/net/NetworkStatsHistory;-><init>(J)V
 
-    iput-object v0, v2, Lcom/android/settings/d/a;->ahP:Landroid/net/NetworkStatsHistory;
+    iput-object v0, v2, Lcom/android/vendorsettings/d/a;->ahP:Landroid/net/NetworkStatsHistory;
 
     .line 108
     new-instance v0, Landroid/net/NetworkStatsHistory;
 
     invoke-direct {v0, v8, v9}, Landroid/net/NetworkStatsHistory;-><init>(J)V
 
-    iput-object v0, v2, Lcom/android/settings/d/a;->ahQ:Landroid/net/NetworkStatsHistory;
+    iput-object v0, v2, Lcom/android/vendorsettings/d/a;->ahQ:Landroid/net/NetworkStatsHistory;
 
     .line 109
     new-instance v0, Landroid/net/NetworkStatsHistory;
 
     invoke-direct {v0, v8, v9}, Landroid/net/NetworkStatsHistory;-><init>(J)V
 
-    iput-object v0, v2, Lcom/android/settings/d/a;->ahO:Landroid/net/NetworkStatsHistory;
+    iput-object v0, v2, Lcom/android/vendorsettings/d/a;->ahO:Landroid/net/NetworkStatsHistory;
 
     goto :goto_1
 .end method
@@ -244,7 +244,7 @@
 
     .prologue
     .line 39
-    invoke-virtual {p0}, Lcom/android/settings/d/b;->rQ()Lcom/android/settings/d/a;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/d/b;->rQ()Lcom/android/vendorsettings/d/a;
 
     move-result-object v0
 
@@ -259,7 +259,7 @@
     invoke-super {p0}, Landroid/content/AsyncTaskLoader;->onReset()V
 
     .line 125
-    invoke-virtual {p0}, Lcom/android/settings/d/b;->cancelLoad()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/d/b;->cancelLoad()Z
 
     .line 126
     return-void
@@ -273,7 +273,7 @@
     invoke-super {p0}, Landroid/content/AsyncTaskLoader;->onStartLoading()V
 
     .line 68
-    invoke-virtual {p0}, Lcom/android/settings/d/b;->forceLoad()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/d/b;->forceLoad()V
 
     .line 69
     return-void
@@ -287,18 +287,18 @@
     invoke-super {p0}, Landroid/content/AsyncTaskLoader;->onStopLoading()V
 
     .line 119
-    invoke-virtual {p0}, Lcom/android/settings/d/b;->cancelLoad()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/d/b;->cancelLoad()Z
 
     .line 120
     return-void
 .end method
 
-.method public rQ()Lcom/android/settings/d/a;
+.method public rQ()Lcom/android/vendorsettings/d/a;
     .locals 4
 
     .prologue
     .line 73
-    iget-object v0, p0, Lcom/android/settings/d/b;->mArgs:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/android/vendorsettings/d/b;->mArgs:Landroid/os/Bundle;
 
     const-string v1, "template"
 
@@ -309,7 +309,7 @@
     check-cast v0, Landroid/net/NetworkTemplate;
 
     .line 74
-    iget-object v1, p0, Lcom/android/settings/d/b;->mArgs:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/android/vendorsettings/d/b;->mArgs:Landroid/os/Bundle;
 
     const-string v2, "app"
 
@@ -317,10 +317,10 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/DataUsageSummary$AppItem;
+    check-cast v1, Lcom/android/vendorsettings/DataUsageSummary$AppItem;
 
     .line 75
-    iget-object v2, p0, Lcom/android/settings/d/b;->mArgs:Landroid/os/Bundle;
+    iget-object v2, p0, Lcom/android/vendorsettings/d/b;->mArgs:Landroid/os/Bundle;
 
     const-string v3, "fields"
 
@@ -330,7 +330,7 @@
 
     .line 78
     :try_start_0
-    invoke-direct {p0, v0, v1, v2}, Lcom/android/settings/d/b;->b(Landroid/net/NetworkTemplate;Lcom/android/settings/DataUsageSummary$AppItem;I)Lcom/android/settings/d/a;
+    invoke-direct {p0, v0, v1, v2}, Lcom/android/vendorsettings/d/b;->b(Landroid/net/NetworkTemplate;Lcom/android/vendorsettings/DataUsageSummary$AppItem;I)Lcom/android/vendorsettings/d/a;
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 

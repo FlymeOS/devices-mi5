@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/sim/SimPreferenceDialog;
+.class public Lcom/android/vendorsettings/sim/SimPreferenceDialog;
 .super Landroid/app/Activity;
 .source "SimPreferenceDialog.java"
 
@@ -38,63 +38,63 @@
     .line 55
     const-string v0, "sim_name"
 
-    iput-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apL:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apL:Ljava/lang/String;
 
     .line 56
     const-string v0, "tint_pos"
 
-    iput-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apM:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apM:Ljava/lang/String;
 
     .line 187
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/sim/SimPreferenceDialog;I)I
+.method static synthetic a(Lcom/android/vendorsettings/sim/SimPreferenceDialog;I)I
     .locals 0
 
     .prologue
     .line 44
-    iput p1, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apI:I
+    iput p1, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apI:I
 
     return p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/sim/SimPreferenceDialog;)Landroid/telephony/SubscriptionInfo;
+.method static synthetic a(Lcom/android/vendorsettings/sim/SimPreferenceDialog;)Landroid/telephony/SubscriptionInfo;
     .locals 1
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apF:Landroid/telephony/SubscriptionInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apF:Landroid/telephony/SubscriptionInfo;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/sim/SimPreferenceDialog;)Landroid/telephony/SubscriptionManager;
+.method static synthetic b(Lcom/android/vendorsettings/sim/SimPreferenceDialog;)Landroid/telephony/SubscriptionManager;
     .locals 1
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/sim/SimPreferenceDialog;)[I
+.method static synthetic c(Lcom/android/vendorsettings/sim/SimPreferenceDialog;)[I
     .locals 1
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apG:[I
+    iget-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apG:[I
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/sim/SimPreferenceDialog;)I
+.method static synthetic d(Lcom/android/vendorsettings/sim/SimPreferenceDialog;)I
     .locals 1
 
     .prologue
     .line 44
-    iget v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apI:I
+    iget v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apI:I
 
     return v0
 .end method
@@ -108,14 +108,14 @@
     const/4 v3, 0x0
 
     .line 104
-    iget-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
     .line 105
-    iget-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apK:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apK:Landroid/view/View;
 
     const v1, 0x7f130150
 
@@ -126,7 +126,7 @@
     check-cast v0, Landroid/widget/EditText;
 
     .line 106
-    iget-object v1, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apF:Landroid/telephony/SubscriptionInfo;
+    iget-object v1, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apF:Landroid/telephony/SubscriptionInfo;
 
     invoke-virtual {v1}, Landroid/telephony/SubscriptionInfo;->getDisplayName()Ljava/lang/CharSequence;
 
@@ -135,7 +135,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
     .line 108
-    iget-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apK:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apK:Landroid/view/View;
 
     const v1, 0x7f130151
 
@@ -146,20 +146,20 @@
     check-cast v0, Landroid/widget/Spinner;
 
     .line 109
-    new-instance v1, Lcom/android/settings/sim/SimPreferenceDialog$SelectColorAdapter;
+    new-instance v1, Lcom/android/vendorsettings/sim/SimPreferenceDialog$SelectColorAdapter;
 
-    iget-object v2, p0, Lcom/android/settings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
 
     const v5, 0x7f04013a
 
-    iget-object v6, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apH:[Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apH:[Ljava/lang/String;
 
-    invoke-direct {v1, p0, v2, v5, v6}, Lcom/android/settings/sim/SimPreferenceDialog$SelectColorAdapter;-><init>(Lcom/android/settings/sim/SimPreferenceDialog;Landroid/content/Context;I[Ljava/lang/String;)V
+    invoke-direct {v1, p0, v2, v5, v6}, Lcom/android/vendorsettings/sim/SimPreferenceDialog$SelectColorAdapter;-><init>(Lcom/android/vendorsettings/sim/SimPreferenceDialog;Landroid/content/Context;I[Ljava/lang/String;)V
 
     .line 111
     const v2, 0x1090009
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/sim/SimPreferenceDialog$SelectColorAdapter;->setDropDownViewResource(I)V
+    invoke-virtual {v1, v2}, Lcom/android/vendorsettings/sim/SimPreferenceDialog$SelectColorAdapter;->setDropDownViewResource(I)V
 
     .line 112
     invoke-virtual {v0, v1}, Landroid/widget/Spinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
@@ -168,18 +168,18 @@
 
     .line 114
     :goto_0
-    iget-object v2, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apG:[I
+    iget-object v2, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apG:[I
 
     array-length v2, v2
 
     if-ge v1, v2, :cond_0
 
     .line 115
-    iget-object v2, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apG:[I
+    iget-object v2, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apG:[I
 
     aget v2, v2, v1
 
-    iget-object v5, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apF:Landroid/telephony/SubscriptionInfo;
+    iget-object v5, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apF:Landroid/telephony/SubscriptionInfo;
 
     invoke-virtual {v5}, Landroid/telephony/SubscriptionInfo;->getIconTint()I
 
@@ -191,18 +191,18 @@
     invoke-virtual {v0, v1}, Landroid/widget/Spinner;->setSelection(I)V
 
     .line 117
-    iput v1, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apI:I
+    iput v1, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apI:I
 
     .line 122
     :cond_0
-    new-instance v1, Lcom/android/settings/sim/SimPreferenceDialog$1;
+    new-instance v1, Lcom/android/vendorsettings/sim/SimPreferenceDialog$1;
 
-    invoke-direct {v1, p0, v0}, Lcom/android/settings/sim/SimPreferenceDialog$1;-><init>(Lcom/android/settings/sim/SimPreferenceDialog;Landroid/widget/Spinner;)V
+    invoke-direct {v1, p0, v0}, Lcom/android/vendorsettings/sim/SimPreferenceDialog$1;-><init>(Lcom/android/vendorsettings/sim/SimPreferenceDialog;Landroid/widget/Spinner;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 135
-    iget-object v1, p0, Lcom/android/settings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
 
     const-string v2, "phone"
 
@@ -213,7 +213,7 @@
     check-cast v1, Landroid/telephony/TelephonyManager;
 
     .line 137
-    iget-object v2, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apK:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apK:Landroid/view/View;
 
     const v5, 0x7f130153
 
@@ -224,7 +224,7 @@
     check-cast v2, Landroid/widget/TextView;
 
     .line 138
-    iget-object v5, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apF:Landroid/telephony/SubscriptionInfo;
+    iget-object v5, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apF:Landroid/telephony/SubscriptionInfo;
 
     invoke-virtual {v5}, Landroid/telephony/SubscriptionInfo;->getSubscriptionId()I
 
@@ -250,7 +250,7 @@
 
     .line 146
     :goto_1
-    iget-object v2, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apF:Landroid/telephony/SubscriptionInfo;
+    iget-object v2, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apF:Landroid/telephony/SubscriptionInfo;
 
     invoke-virtual {v2}, Landroid/telephony/SubscriptionInfo;->getSubscriptionId()I
 
@@ -261,7 +261,7 @@
     move-result-object v2
 
     .line 148
-    iget-object v1, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apK:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apK:Landroid/view/View;
 
     const v5, 0x7f130152
 
@@ -282,7 +282,7 @@
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 152
-    iget-object v1, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apJ:Landroid/app/AlertDialog$Builder;
+    iget-object v1, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apJ:Landroid/app/AlertDialog$Builder;
 
     const v2, 0x7f0c09fd
 
@@ -294,7 +294,7 @@
 
     new-array v4, v4, [Ljava/lang/Object;
 
-    iget-object v5, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apF:Landroid/telephony/SubscriptionInfo;
+    iget-object v5, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apF:Landroid/telephony/SubscriptionInfo;
 
     invoke-virtual {v5}, Landroid/telephony/SubscriptionInfo;->getSimSlotIndex()I
 
@@ -315,29 +315,29 @@
     invoke-virtual {v1, v2}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     .line 155
-    iget-object v1, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apJ:Landroid/app/AlertDialog$Builder;
+    iget-object v1, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apJ:Landroid/app/AlertDialog$Builder;
 
     const v2, 0x7f0c01a7
 
-    new-instance v3, Lcom/android/settings/sim/SimPreferenceDialog$2;
+    new-instance v3, Lcom/android/vendorsettings/sim/SimPreferenceDialog$2;
 
-    invoke-direct {v3, p0, v0}, Lcom/android/settings/sim/SimPreferenceDialog$2;-><init>(Lcom/android/settings/sim/SimPreferenceDialog;Landroid/widget/Spinner;)V
+    invoke-direct {v3, p0, v0}, Lcom/android/vendorsettings/sim/SimPreferenceDialog$2;-><init>(Lcom/android/vendorsettings/sim/SimPreferenceDialog;Landroid/widget/Spinner;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 176
-    iget-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apJ:Landroid/app/AlertDialog$Builder;
+    iget-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apJ:Landroid/app/AlertDialog$Builder;
 
     const v1, 0x7f0c01a6
 
-    new-instance v2, Lcom/android/settings/sim/SimPreferenceDialog$3;
+    new-instance v2, Lcom/android/vendorsettings/sim/SimPreferenceDialog$3;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/sim/SimPreferenceDialog$3;-><init>(Lcom/android/settings/sim/SimPreferenceDialog;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/sim/SimPreferenceDialog$3;-><init>(Lcom/android/vendorsettings/sim/SimPreferenceDialog;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 184
-    iget-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apJ:Landroid/app/AlertDialog$Builder;
+    iget-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apJ:Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
@@ -366,7 +366,7 @@
 
     .line 149
     :cond_3
-    iget-object v2, p0, Lcom/android/settings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2, v7}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
@@ -385,10 +385,10 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 61
-    iput-object p0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
+    iput-object p0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
 
     .line 62
-    invoke-virtual {p0}, Lcom/android/settings/sim/SimPreferenceDialog;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -405,30 +405,30 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->mSlotId:I
+    iput v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->mSlotId:I
 
     .line 64
-    iget-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/telephony/SubscriptionManager;->from(Landroid/content/Context;)Landroid/telephony/SubscriptionManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
 
     .line 65
-    iget-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
 
-    iget v1, p0, Lcom/android/settings/sim/SimPreferenceDialog;->mSlotId:I
+    iget v1, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->mSlotId:I
 
     invoke-virtual {v0, v1}, Landroid/telephony/SubscriptionManager;->getActiveSubscriptionInfoForSimSlotIndex(I)Landroid/telephony/SubscriptionInfo;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apF:Landroid/telephony/SubscriptionInfo;
+    iput-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apF:Landroid/telephony/SubscriptionInfo;
 
     .line 66
-    iget-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -440,10 +440,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apG:[I
+    iput-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apG:[I
 
     .line 67
-    iget-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -455,24 +455,24 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apH:[Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apH:[Ljava/lang/String;
 
     .line 68
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apI:I
+    iput v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apI:I
 
     .line 70
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    iget-object v1, p0, Lcom/android/settings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apJ:Landroid/app/AlertDialog$Builder;
+    iput-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apJ:Landroid/app/AlertDialog$Builder;
 
     .line 71
-    iget-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->mContext:Landroid/content/Context;
 
     const-string v1, "layout_inflater"
 
@@ -491,17 +491,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apK:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apK:Landroid/view/View;
 
     .line 74
-    iget-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apJ:Landroid/app/AlertDialog$Builder;
+    iget-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apJ:Landroid/app/AlertDialog$Builder;
 
-    iget-object v1, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apK:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apK:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setView(Landroid/view/View;)Landroid/app/AlertDialog$Builder;
 
     .line 76
-    invoke-direct {p0, p1}, Lcom/android/settings/sim/SimPreferenceDialog;->i(Landroid/os/Bundle;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->i(Landroid/os/Bundle;)V
 
     .line 77
     return-void
@@ -522,7 +522,7 @@
     move-result v1
 
     .line 95
-    iget-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apK:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apK:Landroid/view/View;
 
     const v2, 0x7f130151
 
@@ -536,10 +536,10 @@
     invoke-virtual {v0, v1}, Landroid/widget/Spinner;->setSelection(I)V
 
     .line 97
-    iput v1, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apI:I
+    iput v1, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apI:I
 
     .line 99
-    iget-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apK:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apK:Landroid/view/View;
 
     const v1, 0x7f130150
 
@@ -569,12 +569,12 @@
     .line 81
     const-string v0, "tint_pos"
 
-    iget v1, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apI:I
+    iget v1, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apI:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 83
-    iget-object v0, p0, Lcom/android/settings/sim/SimPreferenceDialog;->apK:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/sim/SimPreferenceDialog;->apK:Landroid/view/View;
 
     const v1, 0x7f130150
 

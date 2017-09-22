@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/bootloader/BootloaderStatusActivity;
+.class public Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;
 .super Lmiui/app/Activity;
 .source "BootloaderStatusActivity.java"
 
@@ -24,13 +24,13 @@
 
     .prologue
     .line 23
-    const-class v0, Lcom/android/settings/bootloader/BootloaderStatusActivity;
+    const-class v0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -45,33 +45,33 @@
     .line 35
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->Su:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->Su:Z
 
     .line 36
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->Sv:Landroid/widget/Toast;
+    iput-object v0, p0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->Sv:Landroid/widget/Toast;
 
     .line 104
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/bootloader/BootloaderStatusActivity;)V
+.method static synthetic a(Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;)V
     .locals 0
 
     .prologue
     .line 20
-    invoke-direct {p0}, Lcom/android/settings/bootloader/BootloaderStatusActivity;->oc()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->oc()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/bootloader/BootloaderStatusActivity;ILjava/lang/String;)V
+.method static synthetic a(Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;ILjava/lang/String;)V
     .locals 0
 
     .prologue
     .line 20
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/bootloader/BootloaderStatusActivity;->d(ILjava/lang/String;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->d(ILjava/lang/String;)V
 
     return-void
 .end method
@@ -81,17 +81,17 @@
 
     .prologue
     .line 20
-    sget-object v0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->TAG:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/bootloader/BootloaderStatusActivity;)Landroid/widget/Button;
+.method static synthetic b(Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;)Landroid/widget/Button;
     .locals 1
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->St:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->St:Landroid/widget/Button;
 
     return-object v0
 .end method
@@ -105,20 +105,20 @@
     const/4 v3, 0x1
 
     .line 80
-    iget-boolean v1, p0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->Su:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->Su:Z
 
     if-nez v1, :cond_0
 
-    iput-boolean v3, p0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->Su:Z
+    iput-boolean v3, p0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->Su:Z
 
     .line 81
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->Sv:Landroid/widget/Toast;
+    iget-object v1, p0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->Sv:Landroid/widget/Toast;
 
     if-eqz v1, :cond_1
 
     .line 82
-    iget-object v1, p0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->Sv:Landroid/widget/Toast;
+    iget-object v1, p0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->Sv:Landroid/widget/Toast;
 
     invoke-virtual {v1}, Landroid/widget/Toast;->cancel()V
 
@@ -135,7 +135,7 @@
     .line 100
     :cond_2
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/bootloader/BootloaderStatusActivity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -145,10 +145,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->Sv:Landroid/widget/Toast;
+    iput-object v0, p0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->Sv:Landroid/widget/Toast;
 
     .line 101
-    iget-object v0, p0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->Sv:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->Sv:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
@@ -195,7 +195,7 @@
     if-ne p1, v0, :cond_6
 
     .line 96
-    invoke-virtual {p0}, Lcom/android/settings/bootloader/BootloaderStatusActivity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -203,10 +203,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->Sv:Landroid/widget/Toast;
+    iput-object v0, p0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->Sv:Landroid/widget/Toast;
 
     .line 97
-    iget-object v0, p0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->Sv:Landroid/widget/Toast;
+    iget-object v0, p0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->Sv:Landroid/widget/Toast;
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
@@ -229,22 +229,22 @@
     const/4 v2, 0x0
 
     .line 60
-    invoke-static {p0}, Lcom/android/settings/bootloader/Utils;->aB(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/vendorsettings/bootloader/Utils;->aB(Landroid/content/Context;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
     .line 61
-    iget-boolean v0, p0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->Su:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->Su:Z
 
     if-eqz v0, :cond_0
 
     .line 62
-    iput-boolean v2, p0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->Su:Z
+    iput-boolean v2, p0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->Su:Z
 
     .line 63
-    invoke-static {p0, p0}, Lcom/android/settings/bootloader/Utils;->a(Landroid/content/Context;Landroid/accounts/AccountManagerCallback;)V
+    invoke-static {p0, p0}, Lcom/android/vendorsettings/bootloader/Utils;->a(Landroid/content/Context;Landroid/accounts/AccountManagerCallback;)V
 
     .line 77
     :goto_0
@@ -252,13 +252,13 @@
 
     .line 66
     :cond_0
-    invoke-direct {p0, v4, v3}, Lcom/android/settings/bootloader/BootloaderStatusActivity;->d(ILjava/lang/String;)V
+    invoke-direct {p0, v4, v3}, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->d(ILjava/lang/String;)V
 
     goto :goto_0
 
     .line 69
     :cond_1
-    invoke-static {p0}, Lcom/android/settings/bootloader/Utils;->isNetworkConnected(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/vendorsettings/bootloader/Utils;->isNetworkConnected(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -267,18 +267,18 @@
     .line 70
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0, v3}, Lcom/android/settings/bootloader/BootloaderStatusActivity;->d(ILjava/lang/String;)V
+    invoke-direct {p0, v0, v3}, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->d(ILjava/lang/String;)V
 
     goto :goto_0
 
     .line 73
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->St:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->St:Landroid/widget/Button;
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 74
-    iget-object v0, p0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->St:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->St:Landroid/widget/Button;
 
     const v1, 0x33708090
 
@@ -287,18 +287,18 @@
     .line 75
     const/4 v0, 0x6
 
-    invoke-direct {p0, v0, v3}, Lcom/android/settings/bootloader/BootloaderStatusActivity;->d(ILjava/lang/String;)V
+    invoke-direct {p0, v0, v3}, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->d(ILjava/lang/String;)V
 
     .line 76
-    new-instance v0, Lcom/android/settings/bootloader/b;
+    new-instance v0, Lcom/android/vendorsettings/bootloader/b;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/bootloader/b;-><init>(Lcom/android/settings/bootloader/BootloaderStatusActivity;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/bootloader/b;-><init>(Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;)V
 
     new-array v1, v4, [Landroid/content/Context;
 
     aput-object p0, v1, v2
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/bootloader/b;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/bootloader/b;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     goto :goto_0
 .end method
@@ -336,7 +336,7 @@
     :cond_0
     const v0, 0x7f04002e
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/bootloader/BootloaderStatusActivity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->setContentView(I)V
 
     .line 57
     :goto_0
@@ -346,25 +346,25 @@
     :cond_1
     const v0, 0x7f04002d
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/bootloader/BootloaderStatusActivity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->setContentView(I)V
 
     .line 49
     const v0, 0x7f130066
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/bootloader/BootloaderStatusActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->St:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->St:Landroid/widget/Button;
 
     .line 50
-    iget-object v0, p0, Lcom/android/settings/bootloader/BootloaderStatusActivity;->St:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->St:Landroid/widget/Button;
 
-    new-instance v1, Lcom/android/settings/bootloader/a;
+    new-instance v1, Lcom/android/vendorsettings/bootloader/a;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/bootloader/a;-><init>(Lcom/android/settings/bootloader/BootloaderStatusActivity;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/bootloader/a;-><init>(Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -410,7 +410,7 @@
     .line 141
     const/4 v0, 0x0
 
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/bootloader/BootloaderStatusActivity;->d(ILjava/lang/String;)V
+    invoke-direct {p0, v1, v0}, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->d(ILjava/lang/String;)V
 
     .line 145
     :goto_1
@@ -435,7 +435,7 @@
 
     .line 143
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/bootloader/BootloaderStatusActivity;->oc()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->oc()V
 
     goto :goto_1
 .end method

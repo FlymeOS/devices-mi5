@@ -1,4 +1,4 @@
-.class Lcom/android/settings/gH;
+.class Lcom/android/vendorsettings/gH;
 .super Ljava/lang/Object;
 .source "RadioInfo.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic xZ:Lcom/android/settings/RadioInfo;
+.field final synthetic xZ:Lcom/android/vendorsettings/RadioInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RadioInfo;)V
+.method constructor <init>(Lcom/android/vendorsettings/RadioInfo;)V
     .locals 0
 
     .prologue
     .line 1201
-    iput-object p1, p0, Lcom/android/settings/gH;->xZ:Lcom/android/settings/RadioInfo;
+    iput-object p1, p0, Lcom/android/vendorsettings/gH;->xZ:Lcom/android/vendorsettings/RadioInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,9 +38,9 @@
 
     .line 1205
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/gH;->xZ:Lcom/android/settings/RadioInfo;
+    iget-object v1, p0, Lcom/android/vendorsettings/gH;->xZ:Lcom/android/vendorsettings/RadioInfo;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/RadioInfo;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/RadioInfo;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -53,7 +53,7 @@
     move-exception v0
 
     .line 1207
-    iget-object v1, p0, Lcom/android/settings/gH;->xZ:Lcom/android/settings/RadioInfo;
+    iget-object v1, p0, Lcom/android/vendorsettings/gH;->xZ:Lcom/android/vendorsettings/RadioInfo;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -73,7 +73,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lcom/android/settings/RadioInfo;->a(Lcom/android/settings/RadioInfo;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/RadioInfo;->a(Lcom/android/vendorsettings/RadioInfo;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

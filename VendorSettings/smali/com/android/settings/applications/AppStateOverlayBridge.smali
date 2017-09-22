@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/AppStateOverlayBridge;
-.super Lcom/android/settings/applications/AppStateAppOpsBridge;
+.class public Lcom/android/vendorsettings/applications/AppStateOverlayBridge;
+.super Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;
 .source "AppStateOverlayBridge.java"
 
 
@@ -25,26 +25,26 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/applications/AppStateOverlayBridge;->GC:[Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/applications/AppStateOverlayBridge;->GC:[Ljava/lang/String;
 
     .line 76
-    new-instance v0, Lcom/android/settings/applications/AppStateOverlayBridge$1;
+    new-instance v0, Lcom/android/vendorsettings/applications/AppStateOverlayBridge$1;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/AppStateOverlayBridge$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/applications/AppStateOverlayBridge$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/AppStateOverlayBridge;->GD:Lcom/android/b/a/p;
+    sput-object v0, Lcom/android/vendorsettings/applications/AppStateOverlayBridge;->GD:Lcom/android/b/a/p;
 
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lcom/android/b/a/a;Lcom/android/settings/applications/AppStateBaseBridge$Callback;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/android/b/a/a;Lcom/android/vendorsettings/applications/AppStateBaseBridge$Callback;)V
     .locals 6
 
     .prologue
     .line 42
     const/16 v4, 0x18
 
-    sget-object v5, Lcom/android/settings/applications/AppStateOverlayBridge;->GC:[Ljava/lang/String;
+    sget-object v5, Lcom/android/vendorsettings/applications/AppStateOverlayBridge;->GC:[Ljava/lang/String;
 
     move-object v0, p0
 
@@ -54,7 +54,7 @@
 
     move-object v3, p3
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/applications/AppStateAppOpsBridge;-><init>(Landroid/content/Context;Lcom/android/b/a/a;Lcom/android/settings/applications/AppStateBaseBridge$Callback;I[Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;-><init>(Landroid/content/Context;Lcom/android/b/a/a;Lcom/android/vendorsettings/applications/AppStateBaseBridge$Callback;I[Ljava/lang/String;)V
 
     .line 43
     return-void
@@ -67,7 +67,7 @@
 
     .prologue
     .line 47
-    invoke-virtual {p0, p2, p3}, Lcom/android/settings/applications/AppStateOverlayBridge;->i(Ljava/lang/String;I)Lcom/android/settings/applications/AppStateOverlayBridge$OverlayState;
+    invoke-virtual {p0, p2, p3}, Lcom/android/vendorsettings/applications/AppStateOverlayBridge;->i(Ljava/lang/String;I)Lcom/android/vendorsettings/applications/AppStateOverlayBridge$OverlayState;
 
     move-result-object v0
 
@@ -77,19 +77,19 @@
     return-void
 .end method
 
-.method public i(Ljava/lang/String;I)Lcom/android/settings/applications/AppStateOverlayBridge$OverlayState;
+.method public i(Ljava/lang/String;I)Lcom/android/vendorsettings/applications/AppStateOverlayBridge$OverlayState;
     .locals 2
 
     .prologue
     .line 51
-    invoke-super {p0, p1, p2}, Lcom/android/settings/applications/AppStateAppOpsBridge;->g(Ljava/lang/String;I)Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->g(Ljava/lang/String;I)Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;
 
     move-result-object v0
 
     .line 52
-    new-instance v1, Lcom/android/settings/applications/AppStateOverlayBridge$OverlayState;
+    new-instance v1, Lcom/android/vendorsettings/applications/AppStateOverlayBridge$OverlayState;
 
-    invoke-direct {v1, v0}, Lcom/android/settings/applications/AppStateOverlayBridge$OverlayState;-><init>(Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;)V
+    invoke-direct {v1, v0}, Lcom/android/vendorsettings/applications/AppStateOverlayBridge$OverlayState;-><init>(Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;)V
 
     return-object v1
 .end method
@@ -99,7 +99,7 @@
 
     .prologue
     .line 57
-    invoke-super {p0}, Lcom/android/settings/applications/AppStateAppOpsBridge;->jO()I
+    invoke-super {p0}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->jO()I
 
     move-result v0
 
@@ -111,7 +111,7 @@
 
     .prologue
     .line 62
-    invoke-super {p0}, Lcom/android/settings/applications/AppStateAppOpsBridge;->jP()I
+    invoke-super {p0}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->jP()I
 
     move-result v0
 

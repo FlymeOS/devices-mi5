@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/deviceinfo/PrivateVolumeSettings$OtherInfoFragment;
+.class public Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$OtherInfoFragment;
 .super Landroid/app/DialogFragment;
 .source "PrivateVolumeSettings.java"
 
@@ -21,12 +21,12 @@
 
     .prologue
     .line 810
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$OtherInfoFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$OtherInfoFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     .line 812
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$OtherInfoFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$OtherInfoFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -37,7 +37,7 @@
     move-result-object v2
 
     .line 813
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$OtherInfoFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$OtherInfoFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -57,7 +57,7 @@
     .line 816
     const v1, 0x7f0c047d
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$OtherInfoFragment;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$OtherInfoFragment;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -78,9 +78,9 @@
     .line 819
     const v1, 0x7f0c0457
 
-    new-instance v2, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$OtherInfoFragment$1;
+    new-instance v2, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$OtherInfoFragment$1;
 
-    invoke-direct {v2, p0, v0}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$OtherInfoFragment$1;-><init>(Lcom/android/settings/deviceinfo/PrivateVolumeSettings$OtherInfoFragment;Landroid/content/Intent;)V
+    invoke-direct {v2, p0, v0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$OtherInfoFragment$1;-><init>(Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$OtherInfoFragment;Landroid/content/Intent;)V
 
     invoke-virtual {v3, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

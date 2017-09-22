@@ -1,19 +1,19 @@
-.class final Lcom/android/settings/sound/d;
+.class final Lcom/android/vendorsettings/sound/d;
 .super Ljava/lang/Thread;
 .source "AsyncMediaPlayer.java"
 
 
 # instance fields
-.field final synthetic aqd:Lcom/android/settings/sound/a;
+.field final synthetic aqd:Lcom/android/vendorsettings/sound/a;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sound/a;)V
+.method constructor <init>(Lcom/android/vendorsettings/sound/a;)V
     .locals 1
 
     .prologue
     .line 138
-    iput-object p1, p0, Lcom/android/settings/sound/d;->aqd:Lcom/android/settings/sound/a;
+    iput-object p1, p0, Lcom/android/vendorsettings/sound/d;->aqd:Lcom/android/vendorsettings/sound/a;
 
     .line 139
     const-string v0, "AsyncMediaPlayer-Thread"
@@ -33,9 +33,9 @@
     .line 144
     .line 146
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/sound/d;->aqd:Lcom/android/settings/sound/a;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/d;->aqd:Lcom/android/vendorsettings/sound/a;
 
-    invoke-static {v0}, Lcom/android/settings/sound/a;->a(Lcom/android/settings/sound/a;)Ljava/util/LinkedList;
+    invoke-static {v0}, Lcom/android/vendorsettings/sound/a;->a(Lcom/android/vendorsettings/sound/a;)Ljava/util/LinkedList;
 
     move-result-object v1
 
@@ -43,9 +43,9 @@
 
     .line 148
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/sound/d;->aqd:Lcom/android/settings/sound/a;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/d;->aqd:Lcom/android/vendorsettings/sound/a;
 
-    invoke-static {v0}, Lcom/android/settings/sound/a;->a(Lcom/android/settings/sound/a;)Ljava/util/LinkedList;
+    invoke-static {v0}, Lcom/android/vendorsettings/sound/a;->a(Lcom/android/vendorsettings/sound/a;)Ljava/util/LinkedList;
 
     move-result-object v0
 
@@ -53,7 +53,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/sound/c;
+    check-cast v0, Lcom/android/vendorsettings/sound/c;
 
     .line 149
     monitor-exit v1
@@ -61,15 +61,15 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 151
-    iget v1, v0, Lcom/android/settings/sound/c;->code:I
+    iget v1, v0, Lcom/android/vendorsettings/sound/c;->code:I
 
     packed-switch v1, :pswitch_data_0
 
     .line 166
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/sound/d;->aqd:Lcom/android/settings/sound/a;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/d;->aqd:Lcom/android/vendorsettings/sound/a;
 
-    invoke-static {v0}, Lcom/android/settings/sound/a;->a(Lcom/android/settings/sound/a;)Ljava/util/LinkedList;
+    invoke-static {v0}, Lcom/android/vendorsettings/sound/a;->a(Lcom/android/vendorsettings/sound/a;)Ljava/util/LinkedList;
 
     move-result-object v1
 
@@ -77,9 +77,9 @@
 
     .line 167
     :try_start_1
-    iget-object v0, p0, Lcom/android/settings/sound/d;->aqd:Lcom/android/settings/sound/a;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/d;->aqd:Lcom/android/vendorsettings/sound/a;
 
-    invoke-static {v0}, Lcom/android/settings/sound/a;->a(Lcom/android/settings/sound/a;)Ljava/util/LinkedList;
+    invoke-static {v0}, Lcom/android/vendorsettings/sound/a;->a(Lcom/android/vendorsettings/sound/a;)Ljava/util/LinkedList;
 
     move-result-object v0
 
@@ -90,11 +90,11 @@
     if-nez v0, :cond_0
 
     .line 168
-    iget-object v0, p0, Lcom/android/settings/sound/d;->aqd:Lcom/android/settings/sound/a;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/d;->aqd:Lcom/android/vendorsettings/sound/a;
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v2}, Lcom/android/settings/sound/a;->a(Lcom/android/settings/sound/a;Lcom/android/settings/sound/d;)Lcom/android/settings/sound/d;
+    invoke-static {v0, v2}, Lcom/android/vendorsettings/sound/a;->a(Lcom/android/vendorsettings/sound/a;Lcom/android/vendorsettings/sound/d;)Lcom/android/vendorsettings/sound/d;
 
     .line 169
     monitor-exit v1
@@ -116,25 +116,25 @@
 
     .line 154
     :pswitch_0
-    iget-object v1, p0, Lcom/android/settings/sound/d;->aqd:Lcom/android/settings/sound/a;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/d;->aqd:Lcom/android/vendorsettings/sound/a;
 
-    invoke-static {v1, v0}, Lcom/android/settings/sound/a;->a(Lcom/android/settings/sound/a;Lcom/android/settings/sound/c;)V
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/sound/a;->a(Lcom/android/vendorsettings/sound/a;Lcom/android/vendorsettings/sound/c;)V
 
     goto :goto_1
 
     .line 158
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/sound/d;->aqd:Lcom/android/settings/sound/a;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/d;->aqd:Lcom/android/vendorsettings/sound/a;
 
-    invoke-static {v0}, Lcom/android/settings/sound/a;->b(Lcom/android/settings/sound/a;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/sound/a;->b(Lcom/android/vendorsettings/sound/a;)V
 
     goto :goto_1
 
     .line 162
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/sound/d;->aqd:Lcom/android/settings/sound/a;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/d;->aqd:Lcom/android/vendorsettings/sound/a;
 
-    invoke-static {v0}, Lcom/android/settings/sound/a;->c(Lcom/android/settings/sound/a;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/sound/a;->c(Lcom/android/vendorsettings/sound/a;)V
 
     goto :goto_1
 

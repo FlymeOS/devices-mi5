@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/search/l;
+.class public interface abstract Lcom/android/vendorsettings/search/l;
 .super Ljava/lang/Object;
 .source "Indexable.java"
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ringtone/MultiRingtoneSettingUtils;
+.class public Lcom/android/vendorsettings/ringtone/MultiRingtoneSettingUtils;
 .super Ljava/lang/Object;
 .source "MultiRingtoneSettingUtils.java"
 

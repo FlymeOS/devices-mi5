@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/iz;
+.class public Lcom/android/vendorsettings/iz;
 .super Ljava/lang/Object;
 .source "UserAdapter.java"
 
@@ -20,10 +20,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 52
-    iput-object p1, p0, Lcom/android/settings/iz;->BW:Landroid/os/UserHandle;
+    iput-object p1, p0, Lcom/android/vendorsettings/iz;->BW:Landroid/os/UserHandle;
 
     .line 53
-    iget-object v0, p0, Lcom/android/settings/iz;->BW:Landroid/os/UserHandle;
+    iget-object v0, p0, Lcom/android/vendorsettings/iz;->BW:Landroid/os/UserHandle;
 
     invoke-virtual {v0}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -47,7 +47,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/iz;->mName:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/iz;->mName:Ljava/lang/String;
 
     .line 57
     const v0, 0x1080338
@@ -58,11 +58,11 @@
 
     .line 68
     :goto_0
-    invoke-static {p3, v0}, Lcom/android/settings/iz;->a(Landroid/content/Context;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
+    invoke-static {p3, v0}, Lcom/android/vendorsettings/iz;->a(Landroid/content/Context;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/iz;->mIcon:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/android/vendorsettings/iz;->mIcon:Landroid/graphics/drawable/Drawable;
 
     .line 69
     return-void
@@ -71,7 +71,7 @@
     :cond_0
     iget-object v1, v0, Landroid/content/pm/UserInfo;->name:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/android/settings/iz;->mName:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/iz;->mName:Ljava/lang/String;
 
     .line 61
     iget v1, v0, Landroid/content/pm/UserInfo;->id:I
@@ -118,29 +118,29 @@
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Lcom/android/settings/c/a;->a(Landroid/content/Context;Landroid/graphics/Bitmap;)Lcom/android/settings/c/a;
+    invoke-static {p0, v0}, Lcom/android/vendorsettings/c/a;->a(Landroid/content/Context;Landroid/graphics/Bitmap;)Lcom/android/vendorsettings/c/a;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/iz;)Landroid/os/UserHandle;
+.method static synthetic b(Lcom/android/vendorsettings/iz;)Landroid/os/UserHandle;
     .locals 1
 
     .prologue
     .line 46
-    iget-object v0, p0, Lcom/android/settings/iz;->BW:Landroid/os/UserHandle;
+    iget-object v0, p0, Lcom/android/vendorsettings/iz;->BW:Landroid/os/UserHandle;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/iz;)Landroid/graphics/drawable/Drawable;
+.method static synthetic c(Lcom/android/vendorsettings/iz;)Landroid/graphics/drawable/Drawable;
     .locals 1
 
     .prologue
     .line 46
-    iget-object v0, p0, Lcom/android/settings/iz;->mIcon:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/android/vendorsettings/iz;->mIcon:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method

@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/notification/OtherSoundSettings$3;
-.super Lcom/android/settings/notification/SettingPref;
+.class final Lcom/android/vendorsettings/notification/OtherSoundSettings$3;
+.super Lcom/android/vendorsettings/notification/SettingPref;
 .source "OtherSoundSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 93
-    invoke-direct/range {p0 .. p5}, Lcom/android/settings/notification/SettingPref;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
+    invoke-direct/range {p0 .. p5}, Lcom/android/vendorsettings/notification/SettingPref;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
 
     return-void
 .end method
@@ -37,7 +37,7 @@
 
     .line 102
     :goto_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/notification/SettingPref;->r(Landroid/content/Context;I)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/notification/SettingPref;->r(Landroid/content/Context;I)Z
 
     move-result v0
 

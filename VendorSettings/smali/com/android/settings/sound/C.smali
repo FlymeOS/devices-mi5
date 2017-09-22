@@ -1,19 +1,19 @@
-.class Lcom/android/settings/sound/C;
+.class Lcom/android/vendorsettings/sound/C;
 .super Landroid/content/BroadcastReceiver;
 .source "RingerVolumeFragment.java"
 
 
 # instance fields
-.field final synthetic aqV:Lcom/android/settings/sound/RingerVolumeFragment;
+.field final synthetic aqV:Lcom/android/vendorsettings/sound/RingerVolumeFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sound/RingerVolumeFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/sound/RingerVolumeFragment;)V
     .locals 0
 
     .prologue
     .line 183
-    iput-object p1, p0, Lcom/android/settings/sound/C;->aqV:Lcom/android/settings/sound/RingerVolumeFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/sound/C;->aqV:Lcom/android/vendorsettings/sound/RingerVolumeFragment;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -53,15 +53,15 @@
     if-ltz v0, :cond_0
 
     .line 189
-    iget-object v1, p0, Lcom/android/settings/sound/C;->aqV:Lcom/android/settings/sound/RingerVolumeFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/C;->aqV:Lcom/android/vendorsettings/sound/RingerVolumeFragment;
 
-    invoke-static {v1}, Lcom/android/settings/sound/RingerVolumeFragment;->b(Lcom/android/settings/sound/RingerVolumeFragment;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->b(Lcom/android/vendorsettings/sound/RingerVolumeFragment;)Landroid/os/Handler;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/sound/C;->aqV:Lcom/android/settings/sound/RingerVolumeFragment;
+    iget-object v2, p0, Lcom/android/vendorsettings/sound/C;->aqV:Lcom/android/vendorsettings/sound/RingerVolumeFragment;
 
-    invoke-static {v2}, Lcom/android/settings/sound/RingerVolumeFragment;->b(Lcom/android/settings/sound/RingerVolumeFragment;)Landroid/os/Handler;
+    invoke-static {v2}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->b(Lcom/android/vendorsettings/sound/RingerVolumeFragment;)Landroid/os/Handler;
 
     move-result-object v2
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fingerprint/v;
+.class Lcom/android/vendorsettings/fingerprint/v;
 .super Ljava/lang/Object;
 .source "FingerprintLocationAnimationView.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic acj:Lcom/android/settings/fingerprint/FingerprintLocationAnimationView;
+.field final synthetic acj:Lcom/android/vendorsettings/fingerprint/FingerprintLocationAnimationView;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fingerprint/FingerprintLocationAnimationView;)V
+.method constructor <init>(Lcom/android/vendorsettings/fingerprint/FingerprintLocationAnimationView;)V
     .locals 0
 
     .prologue
     .line 172
-    iput-object p1, p0, Lcom/android/settings/fingerprint/v;->acj:Lcom/android/settings/fingerprint/FingerprintLocationAnimationView;
+    iput-object p1, p0, Lcom/android/vendorsettings/fingerprint/v;->acj:Lcom/android/vendorsettings/fingerprint/FingerprintLocationAnimationView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 175
-    iget-object v0, p0, Lcom/android/settings/fingerprint/v;->acj:Lcom/android/settings/fingerprint/FingerprintLocationAnimationView;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/v;->acj:Lcom/android/vendorsettings/fingerprint/FingerprintLocationAnimationView;
 
-    invoke-static {v0}, Lcom/android/settings/fingerprint/FingerprintLocationAnimationView;->c(Lcom/android/settings/fingerprint/FingerprintLocationAnimationView;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/fingerprint/FingerprintLocationAnimationView;->c(Lcom/android/vendorsettings/fingerprint/FingerprintLocationAnimationView;)V
 
     .line 176
     return-void

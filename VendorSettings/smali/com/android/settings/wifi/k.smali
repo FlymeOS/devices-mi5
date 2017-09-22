@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/k;
+.class Lcom/android/vendorsettings/wifi/k;
 .super Ljava/lang/Object;
 .source "MiuiSavedAccessPointsWifiSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aAz:Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;
+.field final synthetic aAz:Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;)V
     .locals 0
 
     .prologue
     .line 89
-    iput-object p1, p0, Lcom/android/settings/wifi/k;->aAz:Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/k;->aAz:Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,12 +25,12 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/wifi/S;Lcom/android/settings/wifi/S;)I
+.method public a(Lcom/android/vendorsettings/wifi/S;Lcom/android/vendorsettings/wifi/S;)I
     .locals 3
 
     .prologue
     .line 92
-    instance-of v0, p1, Lcom/android/settings/wifi/S;
+    instance-of v0, p1, Lcom/android/vendorsettings/wifi/S;
 
     if-nez v0, :cond_1
 
@@ -44,7 +44,7 @@
 
     .line 95
     :cond_1
-    instance-of v0, p2, Lcom/android/settings/wifi/S;
+    instance-of v0, p2, Lcom/android/vendorsettings/wifi/S;
 
     if-nez v0, :cond_2
 
@@ -55,14 +55,14 @@
 
     .line 98
     :cond_2
-    invoke-virtual {p1}, Lcom/android/settings/wifi/S;->wP()Lcom/android/b/e/a;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/wifi/S;->wP()Lcom/android/b/e/a;
 
     move-result-object v0
 
     iget-object v1, v0, Lcom/android/b/e/a;->ssid:Ljava/lang/String;
 
     .line 99
-    invoke-virtual {p2}, Lcom/android/settings/wifi/S;->wP()Lcom/android/b/e/a;
+    invoke-virtual {p2}, Lcom/android/vendorsettings/wifi/S;->wP()Lcom/android/b/e/a;
 
     move-result-object v0
 
@@ -89,11 +89,11 @@
 
     .prologue
     .line 89
-    check-cast p1, Lcom/android/settings/wifi/S;
+    check-cast p1, Lcom/android/vendorsettings/wifi/S;
 
-    check-cast p2, Lcom/android/settings/wifi/S;
+    check-cast p2, Lcom/android/vendorsettings/wifi/S;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/wifi/k;->a(Lcom/android/settings/wifi/S;Lcom/android/settings/wifi/S;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/wifi/k;->a(Lcom/android/vendorsettings/wifi/S;Lcom/android/vendorsettings/wifi/S;)I
 
     move-result v0
 

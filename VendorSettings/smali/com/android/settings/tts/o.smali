@@ -1,19 +1,19 @@
-.class Lcom/android/settings/tts/o;
+.class Lcom/android/vendorsettings/tts/o;
 .super Landroid/content/BroadcastReceiver;
 .source "TtsEngineSettingsFragment.java"
 
 
 # instance fields
-.field final synthetic asZ:Lcom/android/settings/tts/l;
+.field final synthetic asZ:Lcom/android/vendorsettings/tts/l;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/tts/l;)V
+.method constructor <init>(Lcom/android/vendorsettings/tts/l;)V
     .locals 0
 
     .prologue
     .line 88
-    iput-object p1, p0, Lcom/android/settings/tts/o;->asZ:Lcom/android/settings/tts/l;
+    iput-object p1, p0, Lcom/android/vendorsettings/tts/o;->asZ:Lcom/android/vendorsettings/tts/l;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -40,9 +40,9 @@
     if-eqz v0, :cond_0
 
     .line 93
-    iget-object v0, p0, Lcom/android/settings/tts/o;->asZ:Lcom/android/settings/tts/l;
+    iget-object v0, p0, Lcom/android/vendorsettings/tts/o;->asZ:Lcom/android/vendorsettings/tts/l;
 
-    invoke-static {v0}, Lcom/android/settings/tts/l;->b(Lcom/android/settings/tts/l;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/tts/l;->b(Lcom/android/vendorsettings/tts/l;)V
 
     .line 95
     :cond_0

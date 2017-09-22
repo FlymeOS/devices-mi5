@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/FluencyModeListPreference;
+.class public Lcom/android/vendorsettings/display/FluencyModeListPreference;
 .super Landroid/preference/ListPreference;
 .source "FluencyModeListPreference.java"
 
@@ -10,7 +10,7 @@
 
 .field private Yf:[Ljava/lang/String;
 
-.field private Yg:Lcom/android/settings/display/i;
+.field private Yg:Lcom/android/vendorsettings/display/i;
 
 .field private Yh:I
 
@@ -25,7 +25,7 @@
     .line 39
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/display/FluencyModeListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/display/FluencyModeListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 40
     return-void
@@ -39,11 +39,11 @@
     invoke-direct {p0, p1, p2}, Landroid/preference/ListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 44
-    new-instance v0, Lcom/android/settings/display/i;
+    new-instance v0, Lcom/android/vendorsettings/display/i;
 
-    invoke-direct {v0, p0, p1}, Lcom/android/settings/display/i;-><init>(Lcom/android/settings/display/FluencyModeListPreference;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p1}, Lcom/android/vendorsettings/display/i;-><init>(Lcom/android/vendorsettings/display/FluencyModeListPreference;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/display/FluencyModeListPreference;->Yg:Lcom/android/settings/display/i;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->Yg:Lcom/android/vendorsettings/display/i;
 
     .line 45
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -57,7 +57,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/display/FluencyModeListPreference;->Yd:[Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->Yd:[Ljava/lang/String;
 
     .line 47
     const v1, 0x7f0a00ce
@@ -66,7 +66,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/display/FluencyModeListPreference;->Ye:[Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->Ye:[Ljava/lang/String;
 
     .line 48
     const v1, 0x7f0a00cf
@@ -75,74 +75,74 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/display/FluencyModeListPreference;->Yf:[Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->Yf:[Ljava/lang/String;
 
     .line 49
-    iget-object v0, p0, Lcom/android/settings/display/FluencyModeListPreference;->Yd:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->Yd:[Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/FluencyModeListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/FluencyModeListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
 
     .line 50
-    invoke-direct {p0}, Lcom/android/settings/display/FluencyModeListPreference;->getStatus()I
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/FluencyModeListPreference;->getStatus()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/display/FluencyModeListPreference;->mStatus:I
+    iput v0, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->mStatus:I
 
     .line 51
-    iget v0, p0, Lcom/android/settings/display/FluencyModeListPreference;->mStatus:I
+    iget v0, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->mStatus:I
 
-    iput v0, p0, Lcom/android/settings/display/FluencyModeListPreference;->Yh:I
+    iput v0, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->Yh:I
 
     .line 52
-    iget-object v0, p0, Lcom/android/settings/display/FluencyModeListPreference;->Yd:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->Yd:[Ljava/lang/String;
 
-    iget v1, p0, Lcom/android/settings/display/FluencyModeListPreference;->mStatus:I
+    iget v1, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->mStatus:I
 
     aget-object v0, v0, v1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/FluencyModeListPreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/FluencyModeListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 53
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/display/FluencyModeListPreference;I)I
+.method static synthetic a(Lcom/android/vendorsettings/display/FluencyModeListPreference;I)I
     .locals 0
 
     .prologue
     .line 24
-    iput p1, p0, Lcom/android/settings/display/FluencyModeListPreference;->Yh:I
+    iput p1, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->Yh:I
 
     return p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/display/FluencyModeListPreference;)[Ljava/lang/String;
+.method static synthetic a(Lcom/android/vendorsettings/display/FluencyModeListPreference;)[Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/android/settings/display/FluencyModeListPreference;->Yd:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->Yd:[Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/display/FluencyModeListPreference;)I
+.method static synthetic b(Lcom/android/vendorsettings/display/FluencyModeListPreference;)I
     .locals 1
 
     .prologue
     .line 24
-    iget v0, p0, Lcom/android/settings/display/FluencyModeListPreference;->mStatus:I
+    iget v0, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->mStatus:I
 
     return v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/display/FluencyModeListPreference;I)V
+.method static synthetic b(Lcom/android/vendorsettings/display/FluencyModeListPreference;I)V
     .locals 0
 
     .prologue
     .line 24
-    invoke-direct {p0, p1}, Lcom/android/settings/display/FluencyModeListPreference;->showDialog(I)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/display/FluencyModeListPreference;->showDialog(I)V
 
     return-void
 .end method
@@ -164,7 +164,7 @@
     .line 213
     :cond_0
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/display/FluencyModeListPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/FluencyModeListPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -199,22 +199,22 @@
     goto :goto_0
 .end method
 
-.method static synthetic c(Lcom/android/settings/display/FluencyModeListPreference;I)V
+.method static synthetic c(Lcom/android/vendorsettings/display/FluencyModeListPreference;I)V
     .locals 0
 
     .prologue
     .line 24
-    invoke-direct {p0, p1}, Lcom/android/settings/display/FluencyModeListPreference;->bE(I)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/display/FluencyModeListPreference;->bE(I)V
 
     return-void
 .end method
 
-.method static synthetic c(Lcom/android/settings/display/FluencyModeListPreference;)[Ljava/lang/String;
+.method static synthetic c(Lcom/android/vendorsettings/display/FluencyModeListPreference;)[Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/android/settings/display/FluencyModeListPreference;->Ye:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->Ye:[Ljava/lang/String;
 
     return-object v0
 .end method
@@ -250,13 +250,13 @@
     .line 132
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/display/FluencyModeListPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/FluencyModeListPreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    iget-object v1, p0, Lcom/android/settings/display/FluencyModeListPreference;->Yd:[Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->Yd:[Ljava/lang/String;
 
     aget-object v1, v1, p1
 
@@ -270,7 +270,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/display/FluencyModeListPreference;->Yf:[Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->Yf:[Ljava/lang/String;
 
     aget-object v1, v1, p1
 
@@ -280,9 +280,9 @@
 
     const v1, 0x7f0c10d3
 
-    new-instance v2, Lcom/android/settings/display/h;
+    new-instance v2, Lcom/android/vendorsettings/display/h;
 
-    invoke-direct {v2, p0, p1}, Lcom/android/settings/display/h;-><init>(Lcom/android/settings/display/FluencyModeListPreference;I)V
+    invoke-direct {v2, p0, p1}, Lcom/android/vendorsettings/display/h;-><init>(Lcom/android/vendorsettings/display/FluencyModeListPreference;I)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -290,17 +290,17 @@
 
     const v1, 0x1040009
 
-    new-instance v2, Lcom/android/settings/display/g;
+    new-instance v2, Lcom/android/vendorsettings/display/g;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/display/g;-><init>(Lcom/android/settings/display/FluencyModeListPreference;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/display/g;-><init>(Lcom/android/vendorsettings/display/FluencyModeListPreference;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/display/f;
+    new-instance v1, Lcom/android/vendorsettings/display/f;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/display/f;-><init>(Lcom/android/settings/display/FluencyModeListPreference;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/display/f;-><init>(Lcom/android/vendorsettings/display/FluencyModeListPreference;)V
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)Landroid/app/AlertDialog$Builder;
 
@@ -321,13 +321,13 @@
     const/4 v3, 0x0
 
     .line 111
-    iget-object v0, p0, Lcom/android/settings/display/FluencyModeListPreference;->Yg:Lcom/android/settings/display/i;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->Yg:Lcom/android/vendorsettings/display/i;
 
-    iget v1, p0, Lcom/android/settings/display/FluencyModeListPreference;->mStatus:I
+    iget v1, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->mStatus:I
 
-    new-instance v2, Lcom/android/settings/display/e;
+    new-instance v2, Lcom/android/vendorsettings/display/e;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/display/e;-><init>(Lcom/android/settings/display/FluencyModeListPreference;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/display/e;-><init>(Lcom/android/vendorsettings/display/FluencyModeListPreference;)V
 
     invoke-virtual {p1, v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setSingleChoiceItems(Landroid/widget/ListAdapter;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -349,7 +349,7 @@
 
     move-result-object v0
 
-    const-class v1, Lcom/android/settings/display/FluencyModeListPreference$SavedState;
+    const-class v1, Lcom/android/vendorsettings/display/FluencyModeListPreference$SavedState;
 
     invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -368,31 +368,31 @@
 
     .line 71
     :cond_2
-    check-cast p1, Lcom/android/settings/display/FluencyModeListPreference$SavedState;
+    check-cast p1, Lcom/android/vendorsettings/display/FluencyModeListPreference$SavedState;
 
     .line 72
-    invoke-virtual {p1}, Lcom/android/settings/display/FluencyModeListPreference$SavedState;->getSuperState()Landroid/os/Parcelable;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/display/FluencyModeListPreference$SavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v0
 
     invoke-super {p0, v0}, Landroid/preference/ListPreference;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     .line 73
-    iget v0, p1, Lcom/android/settings/display/FluencyModeListPreference$SavedState;->value:I
+    iget v0, p1, Lcom/android/vendorsettings/display/FluencyModeListPreference$SavedState;->value:I
 
-    iput v0, p0, Lcom/android/settings/display/FluencyModeListPreference;->Yh:I
+    iput v0, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->Yh:I
 
     .line 74
-    iget v0, p0, Lcom/android/settings/display/FluencyModeListPreference;->mStatus:I
+    iget v0, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->mStatus:I
 
-    iget v1, p0, Lcom/android/settings/display/FluencyModeListPreference;->Yh:I
+    iget v1, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->Yh:I
 
     if-eq v0, v1, :cond_1
 
     .line 75
-    iget v0, p0, Lcom/android/settings/display/FluencyModeListPreference;->Yh:I
+    iget v0, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->Yh:I
 
-    invoke-direct {p0, v0}, Lcom/android/settings/display/FluencyModeListPreference;->showDialog(I)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/display/FluencyModeListPreference;->showDialog(I)V
 
     goto :goto_0
 .end method
@@ -407,14 +407,14 @@
     move-result-object v0
 
     .line 58
-    new-instance v1, Lcom/android/settings/display/FluencyModeListPreference$SavedState;
+    new-instance v1, Lcom/android/vendorsettings/display/FluencyModeListPreference$SavedState;
 
-    invoke-direct {v1, v0}, Lcom/android/settings/display/FluencyModeListPreference$SavedState;-><init>(Landroid/os/Parcelable;)V
+    invoke-direct {v1, v0}, Lcom/android/vendorsettings/display/FluencyModeListPreference$SavedState;-><init>(Landroid/os/Parcelable;)V
 
     .line 59
-    iget v0, p0, Lcom/android/settings/display/FluencyModeListPreference;->Yh:I
+    iget v0, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference;->Yh:I
 
-    iput v0, v1, Lcom/android/settings/display/FluencyModeListPreference$SavedState;->value:I
+    iput v0, v1, Lcom/android/vendorsettings/display/FluencyModeListPreference$SavedState;->value:I
 
     .line 60
     return-object v1

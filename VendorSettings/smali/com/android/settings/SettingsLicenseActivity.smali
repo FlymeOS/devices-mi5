@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/SettingsLicenseActivity;
+.class public Lcom/android/vendorsettings/SettingsLicenseActivity;
 .super Landroid/app/Activity;
 .source "SettingsLicenseActivity.java"
 
@@ -30,7 +30,7 @@
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     .line 82
-    invoke-virtual {p0}, Lcom/android/settings/SettingsLicenseActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SettingsLicenseActivity;->finish()V
 
     .line 83
     return-void
@@ -69,7 +69,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 47
-    invoke-direct {p0}, Lcom/android/settings/SettingsLicenseActivity;->hQ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsLicenseActivity;->hQ()V
 
     .line 77
     :goto_0
@@ -129,7 +129,7 @@
     invoke-static {v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 54
-    invoke-direct {p0}, Lcom/android/settings/SettingsLicenseActivity;->hQ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsLicenseActivity;->hQ()V
 
     goto :goto_0
 
@@ -148,10 +148,10 @@
 
     .line 71
     :try_start_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/SettingsLicenseActivity;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/SettingsLicenseActivity;->startActivity(Landroid/content/Intent;)V
 
     .line 72
-    invoke-virtual {p0}, Lcom/android/settings/SettingsLicenseActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SettingsLicenseActivity;->finish()V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -169,7 +169,7 @@
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     .line 75
-    invoke-direct {p0}, Lcom/android/settings/SettingsLicenseActivity;->hQ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsLicenseActivity;->hQ()V
 
     goto :goto_0
 .end method

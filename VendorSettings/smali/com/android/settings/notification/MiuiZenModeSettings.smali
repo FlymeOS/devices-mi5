@@ -1,9 +1,9 @@
-.class public Lcom/android/settings/notification/MiuiZenModeSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/notification/MiuiZenModeSettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "MiuiZenModeSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/search/k;
+.implements Lcom/android/vendorsettings/search/k;
 
 
 # instance fields
@@ -11,7 +11,7 @@
 
 .field private aay:Landroid/preference/CheckBoxPreference;
 
-.field private final aiV:Lcom/android/settings/notification/MiuiZenModeSettings$SettingsObserver;
+.field private final aiV:Lcom/android/vendorsettings/notification/MiuiZenModeSettings$SettingsObserver;
 
 .field private aiW:Landroid/os/SystemVibrator;
 
@@ -21,9 +21,9 @@
 
 .field private aiZ:Landroid/preference/CheckBoxPreference;
 
-.field private aja:Lcom/android/settings/dndmode/LabelPreference;
+.field private aja:Lcom/android/vendorsettings/dndmode/LabelPreference;
 
-.field private ajb:Lcom/android/settings/dndmode/LabelPreference;
+.field private ajb:Lcom/android/vendorsettings/dndmode/LabelPreference;
 
 .field private ajc:Landroid/preference/PreferenceCategory;
 
@@ -40,42 +40,42 @@
 
     .prologue
     .line 62
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 74
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mHandler:Landroid/os/Handler;
 
     .line 75
-    new-instance v0, Lcom/android/settings/notification/MiuiZenModeSettings$SettingsObserver;
+    new-instance v0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$SettingsObserver;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/notification/MiuiZenModeSettings$SettingsObserver;-><init>(Lcom/android/settings/notification/MiuiZenModeSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$SettingsObserver;-><init>(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aiV:Lcom/android/settings/notification/MiuiZenModeSettings$SettingsObserver;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aiV:Lcom/android/vendorsettings/notification/MiuiZenModeSettings$SettingsObserver;
 
     .line 261
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/notification/MiuiZenModeSettings;)Landroid/content/Context;
+.method static synthetic a(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)Landroid/content/Context;
     .locals 1
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/notification/MiuiZenModeSettings;)Landroid/service/notification/ZenModeConfig;
+.method static synthetic b(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)Landroid/service/notification/ZenModeConfig;
     .locals 1
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     return-object v0
 .end method
@@ -214,58 +214,58 @@
     goto :goto_2
 .end method
 
-.method static synthetic c(Lcom/android/settings/notification/MiuiZenModeSettings;)Landroid/os/Handler;
+.method static synthetic c(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)Landroid/os/Handler;
     .locals 1
 
     .prologue
     .line 62
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/notification/MiuiZenModeSettings;)Landroid/content/ContentResolver;
+.method static synthetic d(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)Landroid/content/ContentResolver;
     .locals 1
 
     .prologue
     .line 62
-    invoke-virtual {p0}, Lcom/android/settings/notification/MiuiZenModeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/notification/MiuiZenModeSettings;)Landroid/content/ContentResolver;
+.method static synthetic e(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)Landroid/content/ContentResolver;
     .locals 1
 
     .prologue
     .line 62
-    invoke-virtual {p0}, Lcom/android/settings/notification/MiuiZenModeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic f(Lcom/android/settings/notification/MiuiZenModeSettings;)Landroid/content/ContentResolver;
+.method static synthetic f(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)Landroid/content/ContentResolver;
     .locals 1
 
     .prologue
     .line 62
-    invoke-virtual {p0}, Lcom/android/settings/notification/MiuiZenModeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic g(Lcom/android/settings/notification/MiuiZenModeSettings;)V
+.method static synthetic g(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)V
     .locals 0
 
     .prologue
     .line 62
-    invoke-direct {p0}, Lcom/android/settings/notification/MiuiZenModeSettings;->pV()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->pV()V
 
     return-void
 .end method
@@ -275,9 +275,9 @@
 
     .prologue
     .line 189
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aiY:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aiY:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
 
     invoke-static {v1}, Landroid/provider/MiuiSettings$AntiSpam;->isQuietModeEnable(Landroid/content/Context;)Z
 
@@ -286,13 +286,13 @@
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 190
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/app/ExtraNotificationManager;->getZenModeConfig(Landroid/content/Context;)Landroid/service/notification/ZenModeConfig;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     .line 191
     sget-boolean v0, Lmiui/os/Build;->IS_TABLET:Z
@@ -300,7 +300,7 @@
     if-nez v0, :cond_0
 
     .line 193
-    invoke-virtual {p0}, Lcom/android/settings/notification/MiuiZenModeSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -311,7 +311,7 @@
     move-result-object v0
 
     .line 194
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget v1, v1, Landroid/service/notification/ZenModeConfig;->allowCallsFrom:I
 
@@ -320,7 +320,7 @@
     if-ne v1, v2, :cond_1
 
     .line 195
-    invoke-virtual {p0}, Lcom/android/settings/notification/MiuiZenModeSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -332,9 +332,9 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
+    iget-object v4, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
 
-    invoke-static {v4}, Lcom/android/settings/notification/MiuiZenModeSettings;->bI(Landroid/content/Context;)I
+    invoke-static {v4}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->bI(Landroid/content/Context;)I
 
     move-result v4
 
@@ -350,20 +350,20 @@
 
     .line 200
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aja:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aja:Lcom/android/vendorsettings/dndmode/LabelPreference;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
 
     .line 202
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/notification/MiuiZenModeSettings;->sg()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->sg()V
 
     .line 203
     return-void
 
     .line 198
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget v1, v1, Landroid/service/notification/ZenModeConfig;->allowCallsFrom:I
 
@@ -377,28 +377,28 @@
 
     .prologue
     .line 206
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowCalls:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowMessages:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowEvents:Z
 
     if-eqz v0, :cond_0
 
     .line 207
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->ajb:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->ajb:Lcom/android/vendorsettings/dndmode/LabelPreference;
 
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
 
     const v2, 0x7f0c0bbf
 
@@ -406,7 +406,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
 
     .line 223
     :goto_0
@@ -414,28 +414,28 @@
 
     .line 208
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowCalls:Z
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowMessages:Z
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowEvents:Z
 
     if-eqz v0, :cond_1
 
     .line 209
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->ajb:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->ajb:Lcom/android/vendorsettings/dndmode/LabelPreference;
 
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
 
     const v2, 0x7f0c0bc0
 
@@ -443,34 +443,34 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 210
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowCalls:Z
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowMessages:Z
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowEvents:Z
 
     if-eqz v0, :cond_2
 
     .line 211
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->ajb:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->ajb:Lcom/android/vendorsettings/dndmode/LabelPreference;
 
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
 
     const v2, 0x7f0c0bc1
 
@@ -478,34 +478,34 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 212
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowCalls:Z
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowMessages:Z
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowEvents:Z
 
     if-nez v0, :cond_3
 
     .line 213
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->ajb:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->ajb:Lcom/android/vendorsettings/dndmode/LabelPreference;
 
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
 
     const v2, 0x7f0c0bc2
 
@@ -513,34 +513,34 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 214
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowCalls:Z
 
     if-nez v0, :cond_4
 
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowMessages:Z
 
     if-nez v0, :cond_4
 
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowEvents:Z
 
     if-eqz v0, :cond_4
 
     .line 215
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->ajb:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->ajb:Lcom/android/vendorsettings/dndmode/LabelPreference;
 
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
 
     const v2, 0x7f0c0bc3
 
@@ -548,34 +548,34 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
 
     goto/16 :goto_0
 
     .line 216
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowCalls:Z
 
     if-eqz v0, :cond_5
 
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowMessages:Z
 
     if-nez v0, :cond_5
 
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowEvents:Z
 
     if-nez v0, :cond_5
 
     .line 217
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->ajb:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->ajb:Lcom/android/vendorsettings/dndmode/LabelPreference;
 
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
 
     const v2, 0x7f0c0bc4
 
@@ -583,34 +583,34 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
 
     goto/16 :goto_0
 
     .line 218
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowCalls:Z
 
     if-nez v0, :cond_6
 
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowMessages:Z
 
     if-eqz v0, :cond_6
 
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v0, v0, Landroid/service/notification/ZenModeConfig;->allowEvents:Z
 
     if-nez v0, :cond_6
 
     .line 219
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->ajb:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->ajb:Lcom/android/vendorsettings/dndmode/LabelPreference;
 
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
 
     const v2, 0x7f0c0bc5
 
@@ -618,15 +618,15 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
 
     goto/16 :goto_0
 
     .line 221
     :cond_6
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->ajb:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->ajb:Lcom/android/vendorsettings/dndmode/LabelPreference;
 
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
 
     const v2, 0x7f0c0bc6
 
@@ -634,7 +634,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
 
     goto/16 :goto_0
 .end method
@@ -646,7 +646,7 @@
 
     .prologue
     .line 92
-    const-class v0, Lcom/android/settings/notification/MiuiZenModeSettings;
+    const-class v0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -660,44 +660,44 @@
 
     .prologue
     .line 97
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 98
     const v0, 0x7f0800cb
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/notification/MiuiZenModeSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->addPreferencesFromResource(I)V
 
     .line 99
-    invoke-virtual {p0}, Lcom/android/settings/notification/MiuiZenModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
 
     .line 100
-    invoke-virtual {p0}, Lcom/android/settings/notification/MiuiZenModeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aiX:Landroid/preference/PreferenceScreen;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aiX:Landroid/preference/PreferenceScreen;
 
     .line 101
     new-instance v0, Landroid/os/SystemVibrator;
 
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Landroid/os/SystemVibrator;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aiW:Landroid/os/SystemVibrator;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aiW:Landroid/os/SystemVibrator;
 
     .line 102
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/app/ExtraNotificationManager;->getZenModeConfig(Landroid/content/Context;)Landroid/service/notification/ZenModeConfig;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     .line 103
     const-string v0, "ZenModeSettings"
@@ -712,7 +712,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v2, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -725,7 +725,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aiX:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aiX:Landroid/preference/PreferenceScreen;
 
     const-string v1, "key_do_not_disturb_mode"
 
@@ -735,19 +735,19 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aiY:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aiY:Landroid/preference/CheckBoxPreference;
 
     .line 107
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aiY:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aiY:Landroid/preference/CheckBoxPreference;
 
-    new-instance v1, Lcom/android/settings/notification/MiuiZenModeSettings$1;
+    new-instance v1, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/notification/MiuiZenModeSettings$1;-><init>(Lcom/android/settings/notification/MiuiZenModeSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$1;-><init>(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)V
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 118
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aiX:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aiX:Landroid/preference/PreferenceScreen;
 
     const-string v1, "key_auto_setting_group"
 
@@ -757,10 +757,10 @@
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->ajc:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->ajc:Landroid/preference/PreferenceCategory;
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->ajc:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->ajc:Landroid/preference/PreferenceCategory;
 
     const-string v1, "key_auto_button"
 
@@ -770,12 +770,12 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aay:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aay:Landroid/preference/CheckBoxPreference;
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aay:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aay:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
 
     invoke-static {v1}, Landroid/provider/MiuiSettings$AntiSpam;->isAutoTimerOfQuietModeEnable(Landroid/content/Context;)Z
 
@@ -784,16 +784,16 @@
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 121
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aay:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aay:Landroid/preference/CheckBoxPreference;
 
-    new-instance v1, Lcom/android/settings/notification/MiuiZenModeSettings$2;
+    new-instance v1, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$2;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/notification/MiuiZenModeSettings$2;-><init>(Lcom/android/settings/notification/MiuiZenModeSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$2;-><init>(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)V
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 143
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aiX:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aiX:Landroid/preference/PreferenceScreen;
 
     const-string v1, "alarm_use"
 
@@ -803,10 +803,10 @@
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->ajd:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->ajd:Landroid/preference/PreferenceCategory;
 
     .line 145
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->ajd:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->ajd:Landroid/preference/PreferenceCategory;
 
     const-string v1, "vip"
 
@@ -814,9 +814,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/dndmode/LabelPreference;
+    check-cast v0, Lcom/android/vendorsettings/dndmode/LabelPreference;
 
-    iput-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aja:Lcom/android/settings/dndmode/LabelPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aja:Lcom/android/vendorsettings/dndmode/LabelPreference;
 
     .line 146
     sget-boolean v0, Lmiui/os/Build;->IS_TABLET:Z
@@ -824,17 +824,17 @@
     if-nez v0, :cond_0
 
     .line 147
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aja:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aja:Lcom/android/vendorsettings/dndmode/LabelPreference;
 
-    new-instance v1, Lcom/android/settings/notification/MiuiZenModeSettings$3;
+    new-instance v1, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$3;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/notification/MiuiZenModeSettings$3;-><init>(Lcom/android/settings/notification/MiuiZenModeSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$3;-><init>(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)V
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/LabelPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/dndmode/LabelPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 161
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->ajd:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->ajd:Landroid/preference/PreferenceCategory;
 
     const-string v1, "alarm_content"
 
@@ -842,21 +842,21 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/dndmode/LabelPreference;
+    check-cast v0, Lcom/android/vendorsettings/dndmode/LabelPreference;
 
-    iput-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->ajb:Lcom/android/settings/dndmode/LabelPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->ajb:Lcom/android/vendorsettings/dndmode/LabelPreference;
 
     .line 162
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->ajb:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->ajb:Lcom/android/vendorsettings/dndmode/LabelPreference;
 
-    new-instance v1, Lcom/android/settings/notification/MiuiZenModeSettings$4;
+    new-instance v1, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$4;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/notification/MiuiZenModeSettings$4;-><init>(Lcom/android/settings/notification/MiuiZenModeSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$4;-><init>(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)V
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/LabelPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/dndmode/LabelPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 174
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->ajd:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->ajd:Landroid/preference/PreferenceCategory;
 
     const-string v1, "repeat"
 
@@ -866,12 +866,12 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aiZ:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aiZ:Landroid/preference/CheckBoxPreference;
 
     .line 175
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aiZ:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aiZ:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->mContext:Landroid/content/Context;
 
     invoke-static {v1}, Landroid/provider/MiuiSettings$AntiSpam;->isRepeatedCallActionEnable(Landroid/content/Context;)Z
 
@@ -880,25 +880,25 @@
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 176
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aiZ:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aiZ:Landroid/preference/CheckBoxPreference;
 
-    new-instance v1, Lcom/android/settings/notification/MiuiZenModeSettings$5;
+    new-instance v1, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$5;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/notification/MiuiZenModeSettings$5;-><init>(Lcom/android/settings/notification/MiuiZenModeSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$5;-><init>(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)V
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 184
-    invoke-direct {p0}, Lcom/android/settings/notification/MiuiZenModeSettings;->pV()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->pV()V
 
     .line 185
     return-void
 
     .line 157
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->ajd:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->ajd:Landroid/preference/PreferenceCategory;
 
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aja:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aja:Lcom/android/vendorsettings/dndmode/LabelPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
@@ -910,12 +910,12 @@
 
     .prologue
     .line 234
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPause()V
 
     .line 235
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aiV:Lcom/android/settings/notification/MiuiZenModeSettings$SettingsObserver;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aiV:Lcom/android/vendorsettings/notification/MiuiZenModeSettings$SettingsObserver;
 
-    invoke-virtual {v0}, Lcom/android/settings/notification/MiuiZenModeSettings$SettingsObserver;->unregister()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$SettingsObserver;->unregister()V
 
     .line 236
     return-void
@@ -926,15 +926,15 @@
 
     .prologue
     .line 227
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 228
-    invoke-direct {p0}, Lcom/android/settings/notification/MiuiZenModeSettings;->pV()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->pV()V
 
     .line 229
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings;->aiV:Lcom/android/settings/notification/MiuiZenModeSettings$SettingsObserver;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->aiV:Lcom/android/vendorsettings/notification/MiuiZenModeSettings$SettingsObserver;
 
-    invoke-virtual {v0}, Lcom/android/settings/notification/MiuiZenModeSettings$SettingsObserver;->register()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$SettingsObserver;->register()V
 
     .line 230
     return-void

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ChooseLockGeneric$InternalActivity;
-.super Lcom/android/settings/ChooseLockGeneric;
+.class public Lcom/android/vendorsettings/ChooseLockGeneric$InternalActivity;
+.super Lcom/android/vendorsettings/ChooseLockGeneric;
 .source "ChooseLockGeneric.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 73
-    invoke-direct {p0}, Lcom/android/settings/ChooseLockGeneric;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/ChooseLockGeneric;-><init>()V
 
     return-void
 .end method

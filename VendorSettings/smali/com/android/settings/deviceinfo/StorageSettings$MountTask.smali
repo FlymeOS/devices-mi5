@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/deviceinfo/StorageSettings$MountTask;
+.class public Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;
 .super Landroid/os/AsyncTask;
 .source "StorageSettings.java"
 
@@ -26,10 +26,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->mContext:Landroid/content/Context;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;->mContext:Landroid/content/Context;
 
     .line 303
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;->mContext:Landroid/content/Context;
 
     const-class v1, Landroid/os/storage/StorageManager;
 
@@ -39,14 +39,14 @@
 
     check-cast v0, Landroid/os/storage/StorageManager;
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->Vr:Landroid/os/storage/StorageManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;->Vr:Landroid/os/storage/StorageManager;
 
     .line 304
     invoke-virtual {p2}, Landroid/os/storage/VolumeInfo;->getId()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->VY:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;->VY:Ljava/lang/String;
 
     .line 307
     invoke-virtual {p2}, Landroid/os/storage/VolumeInfo;->getDisk()Landroid/os/storage/DiskInfo;
@@ -57,7 +57,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->mDescription:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;->mDescription:Ljava/lang/String;
 
     .line 308
     return-void
@@ -77,15 +77,15 @@
     if-nez p1, :cond_0
 
     .line 323
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;->mContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;->mContext:Landroid/content/Context;
 
     const v2, 0x7f0c0467
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->mDescription:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;->mDescription:Ljava/lang/String;
 
     aput-object v4, v3, v5
 
@@ -117,7 +117,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->VY:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;->VY:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -130,15 +130,15 @@
     invoke-static {v0, v1, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     .line 327
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;->mContext:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;->mContext:Landroid/content/Context;
 
     const v2, 0x7f0c0468
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->mDescription:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;->mDescription:Ljava/lang/String;
 
     aput-object v4, v3, v5
 
@@ -162,7 +162,7 @@
     .line 295
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->g([Ljava/lang/Void;)Ljava/lang/Exception;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;->g([Ljava/lang/Void;)Ljava/lang/Exception;
 
     move-result-object v0
 
@@ -175,9 +175,9 @@
     .prologue
     .line 313
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->Vr:Landroid/os/storage/StorageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;->Vr:Landroid/os/storage/StorageManager;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->VY:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;->VY:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/os/storage/StorageManager;->mount(Ljava/lang/String;)V
     :try_end_0
@@ -204,7 +204,7 @@
     .line 295
     check-cast p1, Ljava/lang/Exception;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/deviceinfo/StorageSettings$MountTask;->a(Ljava/lang/Exception;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$MountTask;->a(Ljava/lang/Exception;)V
 
     return-void
 .end method

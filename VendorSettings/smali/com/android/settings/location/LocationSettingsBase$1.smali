@@ -1,19 +1,19 @@
-.class Lcom/android/settings/location/LocationSettingsBase$1;
+.class Lcom/android/vendorsettings/location/LocationSettingsBase$1;
 .super Landroid/content/BroadcastReceiver;
 .source "LocationSettingsBase.java"
 
 
 # instance fields
-.field final synthetic ahk:Lcom/android/settings/location/LocationSettingsBase;
+.field final synthetic ahk:Lcom/android/vendorsettings/location/LocationSettingsBase;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/location/LocationSettingsBase;)V
+.method constructor <init>(Lcom/android/vendorsettings/location/LocationSettingsBase;)V
     .locals 0
 
     .prologue
     .line 54
-    iput-object p1, p0, Lcom/android/settings/location/LocationSettingsBase$1;->ahk:Lcom/android/settings/location/LocationSettingsBase;
+    iput-object p1, p0, Lcom/android/vendorsettings/location/LocationSettingsBase$1;->ahk:Lcom/android/vendorsettings/location/LocationSettingsBase;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -62,9 +62,9 @@
 
     .line 60
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/location/LocationSettingsBase$1;->ahk:Lcom/android/settings/location/LocationSettingsBase;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/LocationSettingsBase$1;->ahk:Lcom/android/vendorsettings/location/LocationSettingsBase;
 
-    invoke-virtual {v0}, Lcom/android/settings/location/LocationSettingsBase;->rJ()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/location/LocationSettingsBase;->rJ()V
 
     .line 61
     return-void

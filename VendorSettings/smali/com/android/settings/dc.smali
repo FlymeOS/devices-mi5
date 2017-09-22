@@ -1,23 +1,23 @@
-.class Lcom/android/settings/dc;
+.class Lcom/android/vendorsettings/dc;
 .super Landroid/hardware/fingerprint/FingerprintManager$AuthenticationCallback;
 .source "FingerprintHelper.java"
 
 
 # instance fields
-.field final synthetic mP:Lcom/android/settings/cZ;
+.field final synthetic mP:Lcom/android/vendorsettings/cZ;
 
-.field final synthetic mR:Lcom/android/settings/dd;
+.field final synthetic mR:Lcom/android/vendorsettings/dd;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/cZ;Lcom/android/settings/dd;)V
+.method constructor <init>(Lcom/android/vendorsettings/cZ;Lcom/android/vendorsettings/dd;)V
     .locals 0
 
     .prologue
     .line 130
-    iput-object p1, p0, Lcom/android/settings/dc;->mP:Lcom/android/settings/cZ;
+    iput-object p1, p0, Lcom/android/vendorsettings/dc;->mP:Lcom/android/vendorsettings/cZ;
 
-    iput-object p2, p0, Lcom/android/settings/dc;->mR:Lcom/android/settings/dd;
+    iput-object p2, p0, Lcom/android/vendorsettings/dc;->mR:Lcom/android/vendorsettings/dd;
 
     invoke-direct {p0}, Landroid/hardware/fingerprint/FingerprintManager$AuthenticationCallback;-><init>()V
 
@@ -56,9 +56,9 @@
     invoke-super {p0}, Landroid/hardware/fingerprint/FingerprintManager$AuthenticationCallback;->onAuthenticationFailed()V
 
     .line 151
-    iget-object v0, p0, Lcom/android/settings/dc;->mR:Lcom/android/settings/dd;
+    iget-object v0, p0, Lcom/android/vendorsettings/dc;->mR:Lcom/android/vendorsettings/dd;
 
-    invoke-interface {v0}, Lcom/android/settings/dd;->onFailed()V
+    invoke-interface {v0}, Lcom/android/vendorsettings/dd;->onFailed()V
 
     .line 152
     return-void
@@ -72,9 +72,9 @@
     invoke-super {p0, p1, p2}, Landroid/hardware/fingerprint/FingerprintManager$AuthenticationCallback;->onAuthenticationHelp(ILjava/lang/CharSequence;)V
 
     .line 139
-    iget-object v0, p0, Lcom/android/settings/dc;->mR:Lcom/android/settings/dd;
+    iget-object v0, p0, Lcom/android/vendorsettings/dc;->mR:Lcom/android/vendorsettings/dd;
 
-    invoke-interface {v0}, Lcom/android/settings/dd;->onFailed()V
+    invoke-interface {v0}, Lcom/android/vendorsettings/dd;->onFailed()V
 
     .line 140
     return-void
@@ -88,7 +88,7 @@
     invoke-super {p0, p1}, Landroid/hardware/fingerprint/FingerprintManager$AuthenticationCallback;->onAuthenticationSucceeded(Landroid/hardware/fingerprint/FingerprintManager$AuthenticationResult;)V
 
     .line 145
-    iget-object v0, p0, Lcom/android/settings/dc;->mR:Lcom/android/settings/dd;
+    iget-object v0, p0, Lcom/android/vendorsettings/dc;->mR:Lcom/android/vendorsettings/dd;
 
     invoke-virtual {p1}, Landroid/hardware/fingerprint/FingerprintManager$AuthenticationResult;->getFingerprint()Landroid/hardware/fingerprint/Fingerprint;
 
@@ -98,7 +98,7 @@
 
     move-result v1
 
-    invoke-interface {v0, v1}, Lcom/android/settings/dd;->G(I)V
+    invoke-interface {v0, v1}, Lcom/android/vendorsettings/dd;->G(I)V
 
     .line 146
     return-void

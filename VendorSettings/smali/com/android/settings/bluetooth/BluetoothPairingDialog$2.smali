@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/BluetoothPairingDialog$2;
+.class Lcom/android/vendorsettings/bluetooth/BluetoothPairingDialog$2;
 .super Ljava/lang/Object;
 .source "BluetoothPairingDialog.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic QN:Lcom/android/settings/bluetooth/BluetoothPairingDialog;
+.field final synthetic QN:Lcom/android/vendorsettings/bluetooth/BluetoothPairingDialog;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothPairingDialog;)V
+.method constructor <init>(Lcom/android/vendorsettings/bluetooth/BluetoothPairingDialog;)V
     .locals 0
 
     .prologue
     .line 223
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialog$2;->QN:Lcom/android/settings/bluetooth/BluetoothPairingDialog;
+    iput-object p1, p0, Lcom/android/vendorsettings/bluetooth/BluetoothPairingDialog$2;->QN:Lcom/android/vendorsettings/bluetooth/BluetoothPairingDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,9 +33,9 @@
     if-eqz p2, :cond_0
 
     .line 227
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialog$2;->QN:Lcom/android/settings/bluetooth/BluetoothPairingDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/BluetoothPairingDialog$2;->QN:Lcom/android/vendorsettings/bluetooth/BluetoothPairingDialog;
 
-    invoke-static {v0}, Lcom/android/settings/bluetooth/BluetoothPairingDialog;->a(Lcom/android/settings/bluetooth/BluetoothPairingDialog;)Landroid/bluetooth/BluetoothDevice;
+    invoke-static {v0}, Lcom/android/vendorsettings/bluetooth/BluetoothPairingDialog;->a(Lcom/android/vendorsettings/bluetooth/BluetoothPairingDialog;)Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v0
 
@@ -49,9 +49,9 @@
 
     .line 229
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothPairingDialog$2;->QN:Lcom/android/settings/bluetooth/BluetoothPairingDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/BluetoothPairingDialog$2;->QN:Lcom/android/vendorsettings/bluetooth/BluetoothPairingDialog;
 
-    invoke-static {v0}, Lcom/android/settings/bluetooth/BluetoothPairingDialog;->a(Lcom/android/settings/bluetooth/BluetoothPairingDialog;)Landroid/bluetooth/BluetoothDevice;
+    invoke-static {v0}, Lcom/android/vendorsettings/bluetooth/BluetoothPairingDialog;->a(Lcom/android/vendorsettings/bluetooth/BluetoothPairingDialog;)Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v0
 

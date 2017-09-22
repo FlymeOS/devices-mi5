@@ -1,10 +1,10 @@
-.class Lcom/android/settings/display/C;
+.class Lcom/android/vendorsettings/display/C;
 .super Lmiui/os/AsyncTaskWithProgress;
 .source "PaperModeSetAppsFragment.java"
 
 
 # instance fields
-.field final synthetic Zq:Lcom/android/settings/display/PaperModeSetAppsFragment;
+.field final synthetic Zq:Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;
 
 .field private Zr:Ljava/util/List;
 
@@ -16,14 +16,14 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/display/PaperModeSetAppsFragment;Landroid/app/FragmentManager;Ljava/util/List;)V
+.method constructor <init>(Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;Landroid/app/FragmentManager;Ljava/util/List;)V
     .locals 1
 
     .prologue
     .line 146
-    iput-object p1, p0, Lcom/android/settings/display/C;->Zq:Lcom/android/settings/display/PaperModeSetAppsFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/display/C;->Zq:Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;
 
-    iput-object p3, p0, Lcom/android/settings/display/C;->dm:Ljava/util/List;
+    iput-object p3, p0, Lcom/android/vendorsettings/display/C;->dm:Ljava/util/List;
 
     invoke-direct {p0, p2}, Lmiui/os/AsyncTaskWithProgress;-><init>(Landroid/app/FragmentManager;)V
 
@@ -32,21 +32,21 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/display/C;->Zr:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/C;->Zr:Ljava/util/List;
 
     .line 148
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/display/C;->Zs:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/C;->Zs:Ljava/util/List;
 
     .line 174
-    new-instance v0, Lcom/android/settings/display/D;
+    new-instance v0, Lcom/android/vendorsettings/display/D;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/display/D;-><init>(Lcom/android/settings/display/C;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/display/D;-><init>(Lcom/android/vendorsettings/display/C;)V
 
-    iput-object v0, p0, Lcom/android/settings/display/C;->n:Ljava/util/Comparator;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/C;->n:Ljava/util/Comparator;
 
     return-void
 .end method
@@ -60,7 +60,7 @@
     .line 146
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/display/C;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/display/C;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
 
@@ -72,17 +72,17 @@
 
     .prologue
     .line 158
-    iget-object v0, p0, Lcom/android/settings/display/C;->Zr:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/C;->Zr:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 159
-    iget-object v0, p0, Lcom/android/settings/display/C;->Zs:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/C;->Zs:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 160
-    iget-object v0, p0, Lcom/android/settings/display/C;->dm:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/C;->dm:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -103,9 +103,9 @@
     check-cast v0, Landroid/content/pm/ApplicationInfo;
 
     .line 161
-    iget-object v1, p0, Lcom/android/settings/display/C;->Zq:Lcom/android/settings/display/PaperModeSetAppsFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/C;->Zq:Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;
 
-    invoke-static {v1}, Lcom/android/settings/display/PaperModeSetAppsFragment;->c(Lcom/android/settings/display/PaperModeSetAppsFragment;)Ljava/util/HashMap;
+    invoke-static {v1}, Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;->c(Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;)Ljava/util/HashMap;
 
     move-result-object v1
 
@@ -117,9 +117,9 @@
 
     if-eqz v1, :cond_1
 
-    iget-object v1, p0, Lcom/android/settings/display/C;->Zq:Lcom/android/settings/display/PaperModeSetAppsFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/C;->Zq:Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;
 
-    invoke-static {v1}, Lcom/android/settings/display/PaperModeSetAppsFragment;->c(Lcom/android/settings/display/PaperModeSetAppsFragment;)Ljava/util/HashMap;
+    invoke-static {v1}, Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;->c(Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;)Ljava/util/HashMap;
 
     move-result-object v1
 
@@ -138,21 +138,21 @@
     if-eqz v1, :cond_1
 
     .line 163
-    iget-object v1, p0, Lcom/android/settings/display/C;->Zr:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/C;->Zr:Ljava/util/List;
 
-    new-instance v3, Lcom/android/settings/display/E;
+    new-instance v3, Lcom/android/vendorsettings/display/E;
 
-    iget-object v4, p0, Lcom/android/settings/display/C;->Zq:Lcom/android/settings/display/PaperModeSetAppsFragment;
+    iget-object v4, p0, Lcom/android/vendorsettings/display/C;->Zq:Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;
 
-    iget-object v5, p0, Lcom/android/settings/display/C;->Zq:Lcom/android/settings/display/PaperModeSetAppsFragment;
+    iget-object v5, p0, Lcom/android/vendorsettings/display/C;->Zq:Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;
 
-    invoke-static {v5}, Lcom/android/settings/display/PaperModeSetAppsFragment;->d(Lcom/android/settings/display/PaperModeSetAppsFragment;)Landroid/content/Context;
+    invoke-static {v5}, Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;->d(Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;)Landroid/content/Context;
 
     move-result-object v5
 
     const/4 v6, 0x1
 
-    invoke-direct {v3, v4, v5, v0, v6}, Lcom/android/settings/display/E;-><init>(Lcom/android/settings/display/PaperModeSetAppsFragment;Landroid/content/Context;Landroid/content/pm/ApplicationInfo;Z)V
+    invoke-direct {v3, v4, v5, v0, v6}, Lcom/android/vendorsettings/display/E;-><init>(Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;Landroid/content/Context;Landroid/content/pm/ApplicationInfo;Z)V
 
     invoke-interface {v1, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -166,7 +166,7 @@
 
     if-eqz v1, :cond_2
 
-    sget-object v1, Lcom/android/settings/AccessControlSetApp;->o:Ljava/util/HashSet;
+    sget-object v1, Lcom/android/vendorsettings/AccessControlSetApp;->o:Ljava/util/HashSet;
 
     iget-object v3, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
@@ -178,21 +178,21 @@
 
     .line 166
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/display/C;->Zs:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/C;->Zs:Ljava/util/List;
 
-    new-instance v3, Lcom/android/settings/display/E;
+    new-instance v3, Lcom/android/vendorsettings/display/E;
 
-    iget-object v4, p0, Lcom/android/settings/display/C;->Zq:Lcom/android/settings/display/PaperModeSetAppsFragment;
+    iget-object v4, p0, Lcom/android/vendorsettings/display/C;->Zq:Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;
 
-    iget-object v5, p0, Lcom/android/settings/display/C;->Zq:Lcom/android/settings/display/PaperModeSetAppsFragment;
+    iget-object v5, p0, Lcom/android/vendorsettings/display/C;->Zq:Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;
 
-    invoke-static {v5}, Lcom/android/settings/display/PaperModeSetAppsFragment;->d(Lcom/android/settings/display/PaperModeSetAppsFragment;)Landroid/content/Context;
+    invoke-static {v5}, Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;->d(Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;)Landroid/content/Context;
 
     move-result-object v5
 
     const/4 v6, 0x0
 
-    invoke-direct {v3, v4, v5, v0, v6}, Lcom/android/settings/display/E;-><init>(Lcom/android/settings/display/PaperModeSetAppsFragment;Landroid/content/Context;Landroid/content/pm/ApplicationInfo;Z)V
+    invoke-direct {v3, v4, v5, v0, v6}, Lcom/android/vendorsettings/display/E;-><init>(Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;Landroid/content/Context;Landroid/content/pm/ApplicationInfo;Z)V
 
     invoke-interface {v1, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -200,16 +200,16 @@
 
     .line 169
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/display/C;->Zr:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/C;->Zr:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/android/settings/display/C;->n:Ljava/util/Comparator;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/C;->n:Ljava/util/Comparator;
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     .line 170
-    iget-object v0, p0, Lcom/android/settings/display/C;->Zs:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/C;->Zs:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/android/settings/display/C;->n:Ljava/util/Comparator;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/C;->n:Ljava/util/Comparator;
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -226,7 +226,7 @@
     .line 146
     check-cast p1, Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/display/C;->onPostExecute(Ljava/lang/Void;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/display/C;->onPostExecute(Ljava/lang/Void;)V
 
     return-void
 .end method
@@ -239,13 +239,13 @@
     invoke-super {p0, p1}, Lmiui/os/AsyncTaskWithProgress;->onPostExecute(Ljava/lang/Object;)V
 
     .line 153
-    iget-object v0, p0, Lcom/android/settings/display/C;->Zq:Lcom/android/settings/display/PaperModeSetAppsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/C;->Zq:Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;
 
-    iget-object v1, p0, Lcom/android/settings/display/C;->Zr:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/C;->Zr:Ljava/util/List;
 
-    iget-object v2, p0, Lcom/android/settings/display/C;->Zs:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/vendorsettings/display/C;->Zs:Ljava/util/List;
 
-    invoke-static {v0, v1, v2}, Lcom/android/settings/display/PaperModeSetAppsFragment;->a(Lcom/android/settings/display/PaperModeSetAppsFragment;Ljava/util/List;Ljava/util/List;)V
+    invoke-static {v0, v1, v2}, Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;->a(Lcom/android/vendorsettings/display/PaperModeSetAppsFragment;Ljava/util/List;Ljava/util/List;)V
 
     .line 154
     return-void

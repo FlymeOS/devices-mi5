@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/aH;
+.class public final Lcom/android/vendorsettings/aH;
 .super Ljava/lang/Object;
 .source "ChooseLockSettingsHelper.java"
 
@@ -20,14 +20,14 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 43
-    iput-object p1, p0, Lcom/android/settings/aH;->mActivity:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/android/vendorsettings/aH;->mActivity:Landroid/app/Activity;
 
     .line 44
     new-instance v0, Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-direct {v0, p1}, Lcom/android/internal/widget/LockPatternUtils;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/aH;->dC:Lcom/android/internal/widget/LockPatternUtils;
+    iput-object v0, p0, Lcom/android/vendorsettings/aH;->dC:Lcom/android/internal/widget/LockPatternUtils;
 
     .line 45
     return-void
@@ -38,10 +38,10 @@
 
     .prologue
     .line 48
-    invoke-direct {p0, p1}, Lcom/android/settings/aH;-><init>(Landroid/app/Activity;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/aH;-><init>(Landroid/app/Activity;)V
 
     .line 49
-    iput-object p2, p0, Lcom/android/settings/aH;->bR:Landroid/app/Fragment;
+    iput-object p2, p0, Lcom/android/vendorsettings/aH;->bR:Landroid/app/Fragment;
 
     .line 50
     return-void
@@ -111,12 +111,12 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 161
-    iget-object v1, p0, Lcom/android/settings/aH;->bR:Landroid/app/Fragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/aH;->bR:Landroid/app/Fragment;
 
     if-eqz v1, :cond_0
 
     .line 162
-    iget-object v1, p0, Lcom/android/settings/aH;->bR:Landroid/app/Fragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/aH;->bR:Landroid/app/Fragment;
 
     invoke-virtual {v1, v0, p1}, Landroid/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
 
@@ -128,7 +128,7 @@
 
     .line 164
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/aH;->mActivity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/android/vendorsettings/aH;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v1, v0, p1}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
 
@@ -143,14 +143,14 @@
     const/4 v0, 0x0
 
     .line 122
-    iget-object v1, p0, Lcom/android/settings/aH;->mActivity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/android/vendorsettings/aH;->mActivity:Landroid/app/Activity;
 
-    invoke-static {v1}, Lcom/android/settings/iC;->v(Landroid/content/Context;)I
+    invoke-static {v1}, Lcom/android/vendorsettings/iC;->v(Landroid/content/Context;)I
 
     move-result v1
 
     .line 124
-    iget-object v2, p0, Lcom/android/settings/aH;->dC:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v2, p0, Lcom/android/vendorsettings/aH;->dC:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v2, v1}, Lcom/android/internal/widget/LockPatternUtils;->getKeyguardStoredPasswordQuality(I)I
 
@@ -169,7 +169,7 @@
     if-eqz p7, :cond_1
 
     :cond_0
-    const-class v5, Lcom/android/settings/ConfirmLockPattern$InternalActivity;
+    const-class v5, Lcom/android/vendorsettings/ConfirmLockPattern$InternalActivity;
 
     :goto_1
     move-object v0, p0
@@ -188,14 +188,14 @@
 
     move-wide/from16 v8, p8
 
-    invoke-direct/range {v0 .. v9}, Lcom/android/settings/aH;->a(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/Class;ZZJ)Z
+    invoke-direct/range {v0 .. v9}, Lcom/android/vendorsettings/aH;->a(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/Class;ZZJ)Z
 
     move-result v0
 
     goto :goto_0
 
     :cond_1
-    const-class v5, Lcom/android/settings/ConfirmLockPattern;
+    const-class v5, Lcom/android/vendorsettings/ConfirmLockPattern;
 
     goto :goto_1
 
@@ -206,7 +206,7 @@
     if-eqz p7, :cond_3
 
     :cond_2
-    const-class v5, Lcom/android/settings/ConfirmLockPassword$InternalActivity;
+    const-class v5, Lcom/android/vendorsettings/ConfirmLockPassword$InternalActivity;
 
     :goto_2
     move-object v0, p0
@@ -225,14 +225,14 @@
 
     move-wide/from16 v8, p8
 
-    invoke-direct/range {v0 .. v9}, Lcom/android/settings/aH;->a(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/Class;ZZJ)Z
+    invoke-direct/range {v0 .. v9}, Lcom/android/vendorsettings/aH;->a(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/Class;ZZJ)Z
 
     move-result v0
 
     goto :goto_0
 
     :cond_3
-    const-class v5, Lcom/android/settings/ConfirmLockPassword;
+    const-class v5, Lcom/android/vendorsettings/ConfirmLockPassword;
 
     goto :goto_2
 
@@ -275,7 +275,7 @@
 
     move-wide/from16 v8, p5
 
-    invoke-direct/range {v0 .. v9}, Lcom/android/settings/aH;->a(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZZZJ)Z
+    invoke-direct/range {v0 .. v9}, Lcom/android/vendorsettings/aH;->a(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZZZJ)Z
 
     move-result v0
 
@@ -305,7 +305,7 @@
 
     move/from16 v6, p6
 
-    invoke-direct/range {v0 .. v9}, Lcom/android/settings/aH;->a(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZZZJ)Z
+    invoke-direct/range {v0 .. v9}, Lcom/android/vendorsettings/aH;->a(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZZZJ)Z
 
     move-result v0
 
@@ -331,7 +331,7 @@
 
     move v5, p3
 
-    invoke-virtual/range {v0 .. v6}, Lcom/android/settings/aH;->a(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZZ)Z
+    invoke-virtual/range {v0 .. v6}, Lcom/android/vendorsettings/aH;->a(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZZ)Z
 
     move-result v0
 
@@ -343,7 +343,7 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/android/settings/aH;->dC:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v0, p0, Lcom/android/vendorsettings/aH;->dC:Lcom/android/internal/widget/LockPatternUtils;
 
     return-object v0
 .end method
@@ -367,7 +367,7 @@
 
     move v6, v5
 
-    invoke-virtual/range {v0 .. v6}, Lcom/android/settings/aH;->a(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZZ)Z
+    invoke-virtual/range {v0 .. v6}, Lcom/android/vendorsettings/aH;->a(ILjava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZZ)Z
 
     move-result v0
 

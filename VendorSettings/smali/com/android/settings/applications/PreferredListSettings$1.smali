@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/PreferredListSettings$1;
+.class Lcom/android/vendorsettings/applications/PreferredListSettings$1;
 .super Ljava/lang/Object;
 .source "PreferredListSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic KR:Lcom/android/settings/applications/PreferredListSettings;
+.field final synthetic KR:Lcom/android/vendorsettings/applications/PreferredListSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/PreferredListSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/applications/PreferredListSettings;)V
     .locals 0
 
     .prologue
     .line 280
-    iput-object p1, p0, Lcom/android/settings/applications/PreferredListSettings$1;->KR:Lcom/android/settings/applications/PreferredListSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/PreferredListSettings$1;->KR:Lcom/android/vendorsettings/applications/PreferredListSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,9 +32,9 @@
     const/4 v2, 0x0
 
     .line 283
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredListSettings$1;->KR:Lcom/android/settings/applications/PreferredListSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/PreferredListSettings$1;->KR:Lcom/android/vendorsettings/applications/PreferredListSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/PreferredListSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/PreferredListSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v3
 
@@ -61,9 +61,9 @@
     .line 288
     if-eqz v4, :cond_1
 
-    iget-object v5, p0, Lcom/android/settings/applications/PreferredListSettings$1;->KR:Lcom/android/settings/applications/PreferredListSettings;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/PreferredListSettings$1;->KR:Lcom/android/vendorsettings/applications/PreferredListSettings;
 
-    invoke-static {v5}, Lcom/android/settings/applications/PreferredListSettings;->a(Lcom/android/settings/applications/PreferredListSettings;)Ljava/lang/String;
+    invoke-static {v5}, Lcom/android/vendorsettings/applications/PreferredListSettings;->a(Lcom/android/vendorsettings/applications/PreferredListSettings;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -89,17 +89,17 @@
     if-ne v4, v1, :cond_2
 
     .line 293
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredListSettings$1;->KR:Lcom/android/settings/applications/PreferredListSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/PreferredListSettings$1;->KR:Lcom/android/vendorsettings/applications/PreferredListSettings;
 
-    invoke-static {v0}, Lcom/android/settings/applications/PreferredListSettings;->b(Lcom/android/settings/applications/PreferredListSettings;)Landroid/content/pm/PackageManager;
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/PreferredListSettings;->b(Lcom/android/vendorsettings/applications/PreferredListSettings;)Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
     const-string v4, "com.android.browser"
 
-    iget-object v5, p0, Lcom/android/settings/applications/PreferredListSettings$1;->KR:Lcom/android/settings/applications/PreferredListSettings;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/PreferredListSettings$1;->KR:Lcom/android/vendorsettings/applications/PreferredListSettings;
 
-    invoke-virtual {v5}, Lcom/android/settings/applications/PreferredListSettings;->getUserId()I
+    invoke-virtual {v5}, Lcom/android/vendorsettings/applications/PreferredListSettings;->getUserId()I
 
     move-result v5
 
@@ -152,9 +152,9 @@
     if-nez v0, :cond_0
 
     .line 301
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredListSettings$1;->KR:Lcom/android/settings/applications/PreferredListSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/PreferredListSettings$1;->KR:Lcom/android/vendorsettings/applications/PreferredListSettings;
 
-    invoke-static {v0}, Lcom/android/settings/applications/PreferredListSettings;->b(Lcom/android/settings/applications/PreferredListSettings;)Landroid/content/pm/PackageManager;
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/PreferredListSettings;->b(Lcom/android/vendorsettings/applications/PreferredListSettings;)Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
@@ -164,7 +164,7 @@
 
     .line 305
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredListSettings$1;->KR:Lcom/android/settings/applications/PreferredListSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/PreferredListSettings$1;->KR:Lcom/android/vendorsettings/applications/PreferredListSettings;
 
     invoke-static {v0}, Landroid/telecom/TelecomManager;->from(Landroid/content/Context;)Landroid/telecom/TelecomManager;
 
@@ -177,14 +177,14 @@
     .line 306
     const-string v0, "com.android.mms"
 
-    iget-object v1, p0, Lcom/android/settings/applications/PreferredListSettings$1;->KR:Lcom/android/settings/applications/PreferredListSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/PreferredListSettings$1;->KR:Lcom/android/vendorsettings/applications/PreferredListSettings;
 
     invoke-static {v0, v1}, Lcom/android/internal/telephony/SmsApplication;->setDefaultApplication(Ljava/lang/String;Landroid/content/Context;)V
 
     .line 307
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredListSettings$1;->KR:Lcom/android/settings/applications/PreferredListSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/PreferredListSettings$1;->KR:Lcom/android/vendorsettings/applications/PreferredListSettings;
 
-    invoke-static {v0}, Lcom/android/settings/applications/PreferredListSettings;->c(Lcom/android/settings/applications/PreferredListSettings;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/PreferredListSettings;->c(Lcom/android/vendorsettings/applications/PreferredListSettings;)V
 
     .line 308
     return-void

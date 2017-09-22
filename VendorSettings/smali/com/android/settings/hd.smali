@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/hd;
+.class public Lcom/android/vendorsettings/hd;
 .super Ljava/lang/Object;
 .source "SearchUpdator.java"
 
 
 # static fields
-.field private static yF:Lcom/android/settings/hd;
+.field private static yF:Lcom/android/vendorsettings/hd;
 
 
 # instance fields
@@ -12,9 +12,9 @@
 
 .field private mContext:Landroid/content/Context;
 
-.field private yC:Lcom/android/settings/hg;
+.field private yC:Lcom/android/vendorsettings/hg;
 
-.field private yD:Lcom/android/settings/hf;
+.field private yD:Lcom/android/vendorsettings/hf;
 
 .field private yE:I
 
@@ -30,19 +30,19 @@
     .line 47
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/hd;->yE:I
+    iput v0, p0, Lcom/android/vendorsettings/hd;->yE:I
 
     .line 51
-    iput-object p1, p0, Lcom/android/settings/hd;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/hd;->mContext:Landroid/content/Context;
 
     .line 52
-    iget-object v0, p0, Lcom/android/settings/hd;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/hd;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/hd;->mContentResolver:Landroid/content/ContentResolver;
+    iput-object v0, p0, Lcom/android/vendorsettings/hd;->mContentResolver:Landroid/content/ContentResolver;
 
     .line 53
     return-void
@@ -57,7 +57,7 @@
     .line 190
     .line 192
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/hd;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/hd;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "content://com.xiaomi.providers.appindex/functions"
 
@@ -79,7 +79,7 @@
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v8, p0, Lcom/android/settings/hd;->mContext:Landroid/content/Context;
+    iget-object v8, p0, Lcom/android/vendorsettings/hd;->mContext:Landroid/content/Context;
 
     invoke-virtual {v8}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -220,30 +220,30 @@
     goto :goto_2
 .end method
 
-.method public static declared-synchronized S(Landroid/content/Context;)Lcom/android/settings/hd;
+.method public static declared-synchronized S(Landroid/content/Context;)Lcom/android/vendorsettings/hd;
     .locals 2
 
     .prologue
     .line 56
-    const-class v1, Lcom/android/settings/hd;
+    const-class v1, Lcom/android/vendorsettings/hd;
 
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/hd;->yF:Lcom/android/settings/hd;
+    sget-object v0, Lcom/android/vendorsettings/hd;->yF:Lcom/android/vendorsettings/hd;
 
     if-nez v0, :cond_0
 
     .line 57
-    new-instance v0, Lcom/android/settings/hd;
+    new-instance v0, Lcom/android/vendorsettings/hd;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/hd;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/hd;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/android/settings/hd;->yF:Lcom/android/settings/hd;
+    sput-object v0, Lcom/android/vendorsettings/hd;->yF:Lcom/android/vendorsettings/hd;
 
     .line 59
     :cond_0
-    sget-object v0, Lcom/android/settings/hd;->yF:Lcom/android/settings/hd;
+    sget-object v0, Lcom/android/vendorsettings/hd;->yF:Lcom/android/vendorsettings/hd;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -278,7 +278,7 @@
     .line 149
     const-string v0, "1100"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/hd;->P(Ljava/lang/String;)J
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/hd;->P(Ljava/lang/String;)J
 
     move-result-wide v0
 
@@ -296,7 +296,7 @@
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/hd;->ac(I)I
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/hd;->ac(I)I
 
     move-result v5
 
@@ -304,12 +304,12 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/hd;->a(Landroid/content/Context;JLjava/lang/String;I)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/hd;->a(Landroid/content/Context;JLjava/lang/String;I)V
 
     .line 150
     const-string v0, "0700"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/hd;->P(Ljava/lang/String;)J
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/hd;->P(Ljava/lang/String;)J
 
     move-result-wide v0
 
@@ -327,7 +327,7 @@
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/hd;->ac(I)I
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/hd;->ac(I)I
 
     move-result v5
 
@@ -335,12 +335,12 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/hd;->a(Landroid/content/Context;JLjava/lang/String;I)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/hd;->a(Landroid/content/Context;JLjava/lang/String;I)V
 
     .line 151
     const-string v0, "0600"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/hd;->P(Ljava/lang/String;)J
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/hd;->P(Ljava/lang/String;)J
 
     move-result-wide v0
 
@@ -358,7 +358,7 @@
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/hd;->ac(I)I
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/hd;->ac(I)I
 
     move-result v5
 
@@ -366,7 +366,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/hd;->a(Landroid/content/Context;JLjava/lang/String;I)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/hd;->a(Landroid/content/Context;JLjava/lang/String;I)V
 
     .line 158
     :goto_0
@@ -379,7 +379,7 @@
     .line 159
     const-string v0, "1550"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/hd;->P(Ljava/lang/String;)J
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/hd;->P(Ljava/lang/String;)J
 
     move-result-wide v0
 
@@ -387,7 +387,7 @@
 
     const-string v2, "1550"
 
-    invoke-direct {p0, p1, v0, v1, v2}, Lcom/android/settings/hd;->a(Landroid/content/Context;JLjava/lang/String;)V
+    invoke-direct {p0, p1, v0, v1, v2}, Lcom/android/vendorsettings/hd;->a(Landroid/content/Context;JLjava/lang/String;)V
 
     .line 164
     :goto_1
@@ -397,7 +397,7 @@
     :cond_0
     const-string v0, "1100"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/hd;->P(Ljava/lang/String;)J
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/hd;->P(Ljava/lang/String;)J
 
     move-result-wide v0
 
@@ -415,7 +415,7 @@
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/hd;->ac(I)I
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/hd;->ac(I)I
 
     move-result v5
 
@@ -423,12 +423,12 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/hd;->a(Landroid/content/Context;JLjava/lang/String;I)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/hd;->a(Landroid/content/Context;JLjava/lang/String;I)V
 
     .line 154
     const-string v0, "0700"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/hd;->P(Ljava/lang/String;)J
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/hd;->P(Ljava/lang/String;)J
 
     move-result-wide v0
 
@@ -446,7 +446,7 @@
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/hd;->ac(I)I
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/hd;->ac(I)I
 
     move-result v5
 
@@ -454,12 +454,12 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/hd;->a(Landroid/content/Context;JLjava/lang/String;I)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/hd;->a(Landroid/content/Context;JLjava/lang/String;I)V
 
     .line 155
     const-string v0, "0600"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/hd;->P(Ljava/lang/String;)J
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/hd;->P(Ljava/lang/String;)J
 
     move-result-wide v0
 
@@ -477,7 +477,7 @@
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/hd;->ac(I)I
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/hd;->ac(I)I
 
     move-result v5
 
@@ -485,7 +485,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/hd;->a(Landroid/content/Context;JLjava/lang/String;I)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/hd;->a(Landroid/content/Context;JLjava/lang/String;I)V
 
     goto :goto_0
 
@@ -493,7 +493,7 @@
     :cond_1
     const-string v0, "1550"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/hd;->P(Ljava/lang/String;)J
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/hd;->P(Ljava/lang/String;)J
 
     move-result-wide v0
 
@@ -501,27 +501,27 @@
 
     const-string v2, "1550"
 
-    invoke-direct {p0, p1, v0, v1, v2}, Lcom/android/settings/hd;->a(Landroid/content/Context;JLjava/lang/String;)V
+    invoke-direct {p0, p1, v0, v1, v2}, Lcom/android/vendorsettings/hd;->a(Landroid/content/Context;JLjava/lang/String;)V
 
     goto :goto_1
 .end method
 
-.method static synthetic a(Lcom/android/settings/hd;I)I
+.method static synthetic a(Lcom/android/vendorsettings/hd;I)I
     .locals 0
 
     .prologue
     .line 30
-    iput p1, p0, Lcom/android/settings/hd;->yE:I
+    iput p1, p0, Lcom/android/vendorsettings/hd;->yE:I
 
     return p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/hd;)Landroid/content/Context;
+.method static synthetic a(Lcom/android/vendorsettings/hd;)Landroid/content/Context;
     .locals 1
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/android/settings/hd;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/hd;->mContext:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -573,7 +573,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/hd;->a(Ljava/lang/String;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/hd;->a(Ljava/lang/String;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 225
     return-void
@@ -593,7 +593,7 @@
     if-ne p5, v0, :cond_0
 
     .line 210
-    iget p5, p0, Lcom/android/settings/hd;->yE:I
+    iget p5, p0, Lcom/android/vendorsettings/hd;->yE:I
 
     :cond_0
     move v6, v7
@@ -656,7 +656,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/hd;->a(Ljava/lang/String;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/hd;->a(Ljava/lang/String;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 213
     :goto_1
@@ -710,7 +710,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/hd;->a(Ljava/lang/String;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/hd;->a(Ljava/lang/String;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -719,22 +719,22 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/hd;Landroid/content/Context;)V
+.method static synthetic a(Lcom/android/vendorsettings/hd;Landroid/content/Context;)V
     .locals 0
 
     .prologue
     .line 30
-    invoke-direct {p0, p1}, Lcom/android/settings/hd;->T(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/hd;->T(Landroid/content/Context;)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/hd;Landroid/content/Context;Landroid/content/Intent;)V
+.method static synthetic a(Lcom/android/vendorsettings/hd;Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
 
     .prologue
     .line 30
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/hd;->e(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/hd;->e(Landroid/content/Context;Landroid/content/Intent;)V
 
     return-void
 .end method
@@ -768,7 +768,7 @@
 
     .line 232
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/hd;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/hd;->mContentResolver:Landroid/content/ContentResolver;
 
     if-eqz v0, :cond_1
 
@@ -786,7 +786,7 @@
 
     .line 234
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/hd;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/hd;->mContentResolver:Landroid/content/ContentResolver;
 
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -832,7 +832,7 @@
 
     .line 102
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/hd;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/hd;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -1069,22 +1069,22 @@
     goto :goto_2
 .end method
 
-.method static synthetic b(Lcom/android/settings/hd;)I
+.method static synthetic b(Lcom/android/vendorsettings/hd;)I
     .locals 1
 
     .prologue
     .line 30
-    iget v0, p0, Lcom/android/settings/hd;->yE:I
+    iget v0, p0, Lcom/android/vendorsettings/hd;->yE:I
 
     return v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/hd;I)I
+.method static synthetic b(Lcom/android/vendorsettings/hd;I)I
     .locals 1
 
     .prologue
     .line 30
-    invoke-direct {p0, p1}, Lcom/android/settings/hd;->ac(I)I
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/hd;->ac(I)I
 
     move-result v0
 
@@ -1141,11 +1141,11 @@
     if-eqz v0, :cond_3
 
     :cond_1
-    invoke-static {}, Lcom/android/settings/fy;->gg()Lcom/android/settings/fy;
+    invoke-static {}, Lcom/android/vendorsettings/fy;->gg()Lcom/android/vendorsettings/fy;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/fy;->L(Landroid/content/Context;)Z
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/fy;->L(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -1154,7 +1154,7 @@
     .line 171
     const-string v0, "0000"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/hd;->P(Ljava/lang/String;)J
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/hd;->P(Ljava/lang/String;)J
 
     move-result-wide v0
 
@@ -1176,7 +1176,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/hd;->a(Landroid/content/Context;JLjava/lang/String;I)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/hd;->a(Landroid/content/Context;JLjava/lang/String;I)V
 
     .line 186
     :cond_2
@@ -1187,7 +1187,7 @@
     :cond_3
     const-string v0, "0000"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/hd;->P(Ljava/lang/String;)J
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/hd;->P(Ljava/lang/String;)J
 
     move-result-wide v0
 
@@ -1209,7 +1209,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/hd;->a(Landroid/content/Context;JLjava/lang/String;I)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/hd;->a(Landroid/content/Context;JLjava/lang/String;I)V
 
     goto :goto_0
 .end method
@@ -1223,13 +1223,13 @@
     const/4 v2, 0x1
 
     .line 79
-    iget-object v0, p0, Lcom/android/settings/hd;->yC:Lcom/android/settings/hg;
+    iget-object v0, p0, Lcom/android/vendorsettings/hd;->yC:Lcom/android/vendorsettings/hg;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/hd;->yC:Lcom/android/settings/hg;
+    iget-object v0, p0, Lcom/android/vendorsettings/hd;->yC:Lcom/android/vendorsettings/hg;
 
-    invoke-virtual {v0}, Lcom/android/settings/hg;->getStatus()Landroid/os/AsyncTask$Status;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/hg;->getStatus()Landroid/os/AsyncTask$Status;
 
     move-result-object v0
 
@@ -1238,22 +1238,22 @@
     if-eq v0, v1, :cond_0
 
     .line 80
-    iget-object v0, p0, Lcom/android/settings/hd;->yC:Lcom/android/settings/hg;
+    iget-object v0, p0, Lcom/android/vendorsettings/hd;->yC:Lcom/android/vendorsettings/hg;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/hg;->cancel(Z)Z
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/hg;->cancel(Z)Z
 
     .line 82
     :cond_0
-    new-instance v0, Lcom/android/settings/hg;
+    new-instance v0, Lcom/android/vendorsettings/hg;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/hg;-><init>(Lcom/android/settings/hd;Lcom/android/settings/he;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/hg;-><init>(Lcom/android/vendorsettings/hd;Lcom/android/vendorsettings/he;)V
 
-    iput-object v0, p0, Lcom/android/settings/hd;->yC:Lcom/android/settings/hg;
+    iput-object v0, p0, Lcom/android/vendorsettings/hd;->yC:Lcom/android/vendorsettings/hg;
 
     .line 83
-    iget-object v0, p0, Lcom/android/settings/hd;->yC:Lcom/android/settings/hg;
+    iget-object v0, p0, Lcom/android/vendorsettings/hd;->yC:Lcom/android/vendorsettings/hg;
 
     new-array v1, v2, [Landroid/content/Intent;
 
@@ -1261,7 +1261,7 @@
 
     aput-object p1, v1, v2
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/hg;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/hg;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 84
     return-void
@@ -1272,13 +1272,13 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/android/settings/hd;->yD:Lcom/android/settings/hf;
+    iget-object v0, p0, Lcom/android/vendorsettings/hd;->yD:Lcom/android/vendorsettings/hf;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/hd;->yD:Lcom/android/settings/hf;
+    iget-object v0, p0, Lcom/android/vendorsettings/hd;->yD:Lcom/android/vendorsettings/hf;
 
-    invoke-virtual {v0}, Lcom/android/settings/hf;->getStatus()Landroid/os/AsyncTask$Status;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/hf;->getStatus()Landroid/os/AsyncTask$Status;
 
     move-result-object v0
 
@@ -1287,30 +1287,30 @@
     if-eq v0, v1, :cond_0
 
     .line 64
-    iget-object v0, p0, Lcom/android/settings/hd;->yD:Lcom/android/settings/hf;
+    iget-object v0, p0, Lcom/android/vendorsettings/hd;->yD:Lcom/android/vendorsettings/hf;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/hf;->cancel(Z)Z
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/hf;->cancel(Z)Z
 
     .line 66
     :cond_0
-    new-instance v0, Lcom/android/settings/hf;
+    new-instance v0, Lcom/android/vendorsettings/hf;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/hf;-><init>(Lcom/android/settings/hd;Lcom/android/settings/he;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/hf;-><init>(Lcom/android/vendorsettings/hd;Lcom/android/vendorsettings/he;)V
 
-    iput-object v0, p0, Lcom/android/settings/hd;->yD:Lcom/android/settings/hf;
+    iput-object v0, p0, Lcom/android/vendorsettings/hd;->yD:Lcom/android/vendorsettings/hf;
 
     .line 67
-    iget-object v0, p0, Lcom/android/settings/hd;->yD:Lcom/android/settings/hf;
+    iget-object v0, p0, Lcom/android/vendorsettings/hd;->yD:Lcom/android/vendorsettings/hf;
 
     const/4 v1, 0x0
 
     new-array v1, v1, [Landroid/content/Intent;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/hf;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/hf;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 68
     return-void

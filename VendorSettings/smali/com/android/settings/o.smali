@@ -1,19 +1,19 @@
-.class Lcom/android/settings/o;
+.class Lcom/android/vendorsettings/o;
 .super Landroid/os/Handler;
 .source "AirplaneModeEnabler.java"
 
 
 # instance fields
-.field final synthetic O:Lcom/android/settings/n;
+.field final synthetic O:Lcom/android/vendorsettings/n;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/n;)V
+.method constructor <init>(Lcom/android/vendorsettings/n;)V
     .locals 0
 
     .prologue
     .line 47
-    iput-object p1, p0, Lcom/android/settings/o;->O:Lcom/android/settings/n;
+    iput-object p1, p0, Lcom/android/vendorsettings/o;->O:Lcom/android/vendorsettings/n;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -37,9 +37,9 @@
 
     .line 52
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/o;->O:Lcom/android/settings/n;
+    iget-object v0, p0, Lcom/android/vendorsettings/o;->O:Lcom/android/vendorsettings/n;
 
-    invoke-static {v0}, Lcom/android/settings/n;->a(Lcom/android/settings/n;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/n;->a(Lcom/android/vendorsettings/n;)V
 
     goto :goto_0
 

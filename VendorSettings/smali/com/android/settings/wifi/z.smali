@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/z;
+.class Lcom/android/vendorsettings/wifi/z;
 .super Ljava/lang/Object;
 .source "MiuiWifiDetailFragment.java"
 
@@ -7,24 +7,24 @@
 
 
 # instance fields
-.field final synthetic aAM:Lcom/android/settings/wifi/MiuiWifiDetailFragment;
+.field final synthetic aAM:Lcom/android/vendorsettings/wifi/MiuiWifiDetailFragment;
 
-.field final synthetic aAP:Lcom/android/settings/d/f;
+.field final synthetic aAP:Lcom/android/vendorsettings/d/f;
 
 .field final synthetic iy:Landroid/net/NetworkTemplate;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/MiuiWifiDetailFragment;Lcom/android/settings/d/f;Landroid/net/NetworkTemplate;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/MiuiWifiDetailFragment;Lcom/android/vendorsettings/d/f;Landroid/net/NetworkTemplate;)V
     .locals 0
 
     .prologue
     .line 279
-    iput-object p1, p0, Lcom/android/settings/wifi/z;->aAM:Lcom/android/settings/wifi/MiuiWifiDetailFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/z;->aAM:Lcom/android/vendorsettings/wifi/MiuiWifiDetailFragment;
 
-    iput-object p2, p0, Lcom/android/settings/wifi/z;->aAP:Lcom/android/settings/d/f;
+    iput-object p2, p0, Lcom/android/vendorsettings/wifi/z;->aAP:Lcom/android/vendorsettings/d/f;
 
-    iput-object p3, p0, Lcom/android/settings/wifi/z;->iy:Landroid/net/NetworkTemplate;
+    iput-object p3, p0, Lcom/android/vendorsettings/wifi/z;->iy:Landroid/net/NetworkTemplate;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,11 +38,11 @@
 
     .prologue
     .line 283
-    iget-object v0, p0, Lcom/android/settings/wifi/z;->aAP:Lcom/android/settings/d/f;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/z;->aAP:Lcom/android/vendorsettings/d/f;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/z;->iy:Landroid/net/NetworkTemplate;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/z;->iy:Landroid/net/NetworkTemplate;
 
-    invoke-virtual {v0, v1, p2}, Lcom/android/settings/d/f;->a(Landroid/net/NetworkTemplate;Z)V
+    invoke-virtual {v0, v1, p2}, Lcom/android/vendorsettings/d/f;->a(Landroid/net/NetworkTemplate;Z)V
 
     .line 284
     return-void

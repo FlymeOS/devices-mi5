@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/dK;
+.class public interface abstract Lcom/android/vendorsettings/dK;
 .super Ljava/lang/Object;
 .source "LinkifyUtils.java"
 

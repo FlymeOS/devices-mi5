@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/deviceinfo/PrivateVolumeForget;
-.super Lcom/android/settings/InstrumentedFragment;
+.class public Lcom/android/vendorsettings/deviceinfo/PrivateVolumeForget;
+.super Lcom/android/vendorsettings/InstrumentedFragment;
 .source "PrivateVolumeForget.java"
 
 
@@ -15,25 +15,25 @@
 
     .prologue
     .line 40
-    invoke-direct {p0}, Lcom/android/settings/InstrumentedFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/InstrumentedFragment;-><init>()V
 
     .line 68
-    new-instance v0, Lcom/android/settings/deviceinfo/PrivateVolumeForget$1;
+    new-instance v0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeForget$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/deviceinfo/PrivateVolumeForget$1;-><init>(Lcom/android/settings/deviceinfo/PrivateVolumeForget;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeForget$1;-><init>(Lcom/android/vendorsettings/deviceinfo/PrivateVolumeForget;)V
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/PrivateVolumeForget;->VQ:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeForget;->VQ:Landroid/view/View$OnClickListener;
 
     .line 75
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/deviceinfo/PrivateVolumeForget;)Landroid/os/storage/VolumeRecord;
+.method static synthetic a(Lcom/android/vendorsettings/deviceinfo/PrivateVolumeForget;)Landroid/os/storage/VolumeRecord;
     .locals 1
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/PrivateVolumeForget;->VP:Landroid/os/storage/VolumeRecord;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeForget;->VP:Landroid/os/storage/VolumeRecord;
 
     return-object v0
 .end method
@@ -47,7 +47,7 @@
     const/4 v6, 0x0
 
     .line 53
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/PrivateVolumeForget;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeForget;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -60,7 +60,7 @@
     check-cast v0, Landroid/os/storage/StorageManager;
 
     .line 54
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/PrivateVolumeForget;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeForget;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/PrivateVolumeForget;->VP:Landroid/os/storage/VolumeRecord;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeForget;->VP:Landroid/os/storage/VolumeRecord;
 
     .line 57
     const v0, 0x7f04015c
@@ -105,7 +105,7 @@
     .line 61
     const v3, 0x7f0c0473
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/deviceinfo/PrivateVolumeForget;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeForget;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v3
 
@@ -113,7 +113,7 @@
 
     new-array v4, v4, [Ljava/lang/CharSequence;
 
-    iget-object v5, p0, Lcom/android/settings/deviceinfo/PrivateVolumeForget;->VP:Landroid/os/storage/VolumeRecord;
+    iget-object v5, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeForget;->VP:Landroid/os/storage/VolumeRecord;
 
     invoke-virtual {v5}, Landroid/os/storage/VolumeRecord;->getNickname()Ljava/lang/String;
 
@@ -128,7 +128,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 63
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/PrivateVolumeForget;->VQ:Landroid/view/View$OnClickListener;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeForget;->VQ:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v1, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

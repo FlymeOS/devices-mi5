@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fR;
+.class public Lcom/android/vendorsettings/fR;
 .super Landroid/widget/BaseAdapter;
 .source "NotificationAppListSettings.java"
 
@@ -8,25 +8,25 @@
 
 .field mClickListener:Landroid/view/View$OnClickListener;
 
-.field final synthetic vg:Lcom/android/settings/NotificationAppListSettings;
+.field final synthetic vg:Lcom/android/vendorsettings/NotificationAppListSettings;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/NotificationAppListSettings;)V
+.method public constructor <init>(Lcom/android/vendorsettings/NotificationAppListSettings;)V
     .locals 1
 
     .prologue
     .line 281
-    iput-object p1, p0, Lcom/android/settings/fR;->vg:Lcom/android/settings/NotificationAppListSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/fR;->vg:Lcom/android/vendorsettings/NotificationAppListSettings;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 363
-    new-instance v0, Lcom/android/settings/fS;
+    new-instance v0, Lcom/android/vendorsettings/fS;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/fS;-><init>(Lcom/android/settings/fR;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/fS;-><init>(Lcom/android/vendorsettings/fR;)V
 
-    iput-object v0, p0, Lcom/android/settings/fR;->mClickListener:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/fR;->mClickListener:Landroid/view/View$OnClickListener;
 
     .line 282
     return-void
@@ -34,18 +34,18 @@
 
 
 # virtual methods
-.method public Z(I)Lcom/android/settings/fU;
+.method public Z(I)Lcom/android/vendorsettings/fU;
     .locals 1
 
     .prologue
     .line 310
-    iget-object v0, p0, Lcom/android/settings/fR;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/fR;->D:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/fU;
+    check-cast v0, Lcom/android/vendorsettings/fU;
 
     return-object v0
 .end method
@@ -55,7 +55,7 @@
 
     .prologue
     .line 295
-    iget-object v0, p0, Lcom/android/settings/fR;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/fR;->D:Ljava/util/List;
 
     if-nez v0, :cond_0
 
@@ -65,7 +65,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/fR;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/fR;->D:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -79,7 +79,7 @@
 
     .prologue
     .line 280
-    invoke-virtual {p0, p1}, Lcom/android/settings/fR;->Z(I)Lcom/android/settings/fU;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/fR;->Z(I)Lcom/android/vendorsettings/fU;
 
     move-result-object v0
 
@@ -101,15 +101,15 @@
 
     .prologue
     .line 300
-    iget-object v0, p0, Lcom/android/settings/fR;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/fR;->D:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/fU;
+    check-cast v0, Lcom/android/vendorsettings/fU;
 
-    invoke-static {v0}, Lcom/android/settings/fU;->c(Lcom/android/settings/fU;)I
+    invoke-static {v0}, Lcom/android/vendorsettings/fU;->c(Lcom/android/vendorsettings/fU;)I
 
     move-result v0
 
@@ -125,16 +125,16 @@
     const/4 v4, 0x0
 
     .line 320
-    iget-object v0, p0, Lcom/android/settings/fR;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/fR;->D:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/fU;
+    check-cast v0, Lcom/android/vendorsettings/fU;
 
     .line 322
-    invoke-static {v0}, Lcom/android/settings/fU;->c(Lcom/android/settings/fU;)I
+    invoke-static {v0}, Lcom/android/vendorsettings/fU;->c(Lcom/android/vendorsettings/fU;)I
 
     move-result v1
 
@@ -144,14 +144,14 @@
     if-nez p2, :cond_1
 
     .line 324
-    new-instance v2, Lcom/android/settings/fT;
+    new-instance v2, Lcom/android/vendorsettings/fT;
 
-    invoke-direct {v2, p0, v4}, Lcom/android/settings/fT;-><init>(Lcom/android/settings/fR;Lcom/android/settings/fN;)V
+    invoke-direct {v2, p0, v4}, Lcom/android/vendorsettings/fT;-><init>(Lcom/android/vendorsettings/fR;Lcom/android/vendorsettings/fN;)V
 
     .line 325
-    iget-object v1, p0, Lcom/android/settings/fR;->vg:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/fR;->vg:Lcom/android/vendorsettings/NotificationAppListSettings;
 
-    invoke-static {v1}, Lcom/android/settings/NotificationAppListSettings;->g(Lcom/android/settings/NotificationAppListSettings;)Landroid/view/LayoutInflater;
+    invoke-static {v1}, Lcom/android/vendorsettings/NotificationAppListSettings;->g(Lcom/android/vendorsettings/NotificationAppListSettings;)Landroid/view/LayoutInflater;
 
     move-result-object v1
 
@@ -170,7 +170,7 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    iput-object v1, v2, Lcom/android/settings/fT;->icon:Landroid/widget/ImageView;
+    iput-object v1, v2, Lcom/android/vendorsettings/fT;->icon:Landroid/widget/ImageView;
 
     .line 327
     const v1, 0x1020016
@@ -181,7 +181,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iput-object v1, v2, Lcom/android/settings/fT;->title:Landroid/widget/TextView;
+    iput-object v1, v2, Lcom/android/vendorsettings/fT;->title:Landroid/widget/TextView;
 
     .line 328
     const v1, 0x1020010
@@ -192,7 +192,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iput-object v1, v2, Lcom/android/settings/fT;->summary:Landroid/widget/TextView;
+    iput-object v1, v2, Lcom/android/vendorsettings/fT;->summary:Landroid/widget/TextView;
 
     .line 329
     invoke-virtual {p2, v2}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
@@ -201,7 +201,7 @@
 
     .line 334
     :goto_0
-    invoke-static {v0}, Lcom/android/settings/fU;->d(Lcom/android/settings/fU;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/fU;->d(Lcom/android/vendorsettings/fU;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -212,7 +212,7 @@
     if-eqz v2, :cond_2
 
     .line 335
-    iget-object v2, v1, Lcom/android/settings/fT;->summary:Landroid/widget/TextView;
+    iget-object v2, v1, Lcom/android/vendorsettings/fT;->summary:Landroid/widget/TextView;
 
     const/16 v3, 0x8
 
@@ -220,24 +220,24 @@
 
     .line 342
     :goto_1
-    iget-object v2, p0, Lcom/android/settings/fR;->vg:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/fR;->vg:Lcom/android/vendorsettings/NotificationAppListSettings;
 
-    invoke-static {v2}, Lcom/android/settings/NotificationAppListSettings;->h(Lcom/android/settings/NotificationAppListSettings;)Lcom/android/settings/q;
+    invoke-static {v2}, Lcom/android/vendorsettings/NotificationAppListSettings;->h(Lcom/android/vendorsettings/NotificationAppListSettings;)Lcom/android/vendorsettings/q;
 
     move-result-object v2
 
-    iget-object v3, v1, Lcom/android/settings/fT;->icon:Landroid/widget/ImageView;
+    iget-object v3, v1, Lcom/android/vendorsettings/fT;->icon:Landroid/widget/ImageView;
 
-    invoke-virtual {v0}, Lcom/android/settings/fU;->Q()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/fU;->Q()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-virtual {v2, v3, v4}, Lcom/android/settings/q;->a(Landroid/widget/ImageView;Ljava/lang/String;)Z
+    invoke-virtual {v2, v3, v4}, Lcom/android/vendorsettings/q;->a(Landroid/widget/ImageView;Ljava/lang/String;)Z
 
     .line 343
-    iget-object v1, v1, Lcom/android/settings/fT;->title:Landroid/widget/TextView;
+    iget-object v1, v1, Lcom/android/vendorsettings/fT;->title:Landroid/widget/TextView;
 
-    invoke-static {v0}, Lcom/android/settings/fU;->b(Lcom/android/settings/fU;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/fU;->b(Lcom/android/vendorsettings/fU;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -249,7 +249,7 @@
     invoke-virtual {p2, v1, v0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 345
-    iget-object v0, p0, Lcom/android/settings/fR;->mClickListener:Landroid/view/View$OnClickListener;
+    iget-object v0, p0, Lcom/android/vendorsettings/fR;->mClickListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -264,22 +264,22 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/fT;
+    check-cast v1, Lcom/android/vendorsettings/fT;
 
     goto :goto_0
 
     .line 338
     :cond_2
-    iget-object v2, v1, Lcom/android/settings/fT;->summary:Landroid/widget/TextView;
+    iget-object v2, v1, Lcom/android/vendorsettings/fT;->summary:Landroid/widget/TextView;
 
-    invoke-static {v0}, Lcom/android/settings/fU;->d(Lcom/android/settings/fU;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/fU;->d(Lcom/android/vendorsettings/fU;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 339
-    iget-object v2, v1, Lcom/android/settings/fT;->summary:Landroid/widget/TextView;
+    iget-object v2, v1, Lcom/android/vendorsettings/fT;->summary:Landroid/widget/TextView;
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setVisibility(I)V
 
@@ -287,7 +287,7 @@
 
     .line 347
     :cond_3
-    invoke-static {v0}, Lcom/android/settings/fU;->c(Lcom/android/settings/fU;)I
+    invoke-static {v0}, Lcom/android/vendorsettings/fU;->c(Lcom/android/vendorsettings/fU;)I
 
     move-result v1
 
@@ -299,14 +299,14 @@
     if-nez p2, :cond_4
 
     .line 349
-    new-instance v2, Lcom/android/settings/fT;
+    new-instance v2, Lcom/android/vendorsettings/fT;
 
-    invoke-direct {v2, p0, v4}, Lcom/android/settings/fT;-><init>(Lcom/android/settings/fR;Lcom/android/settings/fN;)V
+    invoke-direct {v2, p0, v4}, Lcom/android/vendorsettings/fT;-><init>(Lcom/android/vendorsettings/fR;Lcom/android/vendorsettings/fN;)V
 
     .line 350
-    iget-object v1, p0, Lcom/android/settings/fR;->vg:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/fR;->vg:Lcom/android/vendorsettings/NotificationAppListSettings;
 
-    invoke-static {v1}, Lcom/android/settings/NotificationAppListSettings;->g(Lcom/android/settings/NotificationAppListSettings;)Landroid/view/LayoutInflater;
+    invoke-static {v1}, Lcom/android/vendorsettings/NotificationAppListSettings;->g(Lcom/android/vendorsettings/NotificationAppListSettings;)Landroid/view/LayoutInflater;
 
     move-result-object v1
 
@@ -325,7 +325,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    iput-object v1, v2, Lcom/android/settings/fT;->bK:Landroid/widget/TextView;
+    iput-object v1, v2, Lcom/android/vendorsettings/fT;->bK:Landroid/widget/TextView;
 
     .line 352
     invoke-virtual {p2, v5}, Landroid/view/View;->setEnabled(Z)V
@@ -337,9 +337,9 @@
 
     .line 357
     :goto_3
-    iget-object v1, v1, Lcom/android/settings/fT;->bK:Landroid/widget/TextView;
+    iget-object v1, v1, Lcom/android/vendorsettings/fT;->bK:Landroid/widget/TextView;
 
-    invoke-static {v0}, Lcom/android/settings/fU;->b(Lcom/android/settings/fU;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/fU;->b(Lcom/android/vendorsettings/fU;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -353,7 +353,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/fT;
+    check-cast v1, Lcom/android/vendorsettings/fT;
 
     goto :goto_3
 .end method
@@ -373,7 +373,7 @@
 
     .prologue
     .line 290
-    iput-object p1, p0, Lcom/android/settings/fR;->D:Ljava/util/List;
+    iput-object p1, p0, Lcom/android/vendorsettings/fR;->D:Ljava/util/List;
 
     .line 291
     return-void

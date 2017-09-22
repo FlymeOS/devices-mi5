@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/Settings$ZonePickerActivity;
-.super Lcom/android/settings/Settings;
+.class public Lcom/android/vendorsettings/Settings$ZonePickerActivity;
+.super Lcom/android/vendorsettings/Settings;
 .source "Settings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 137
-    invoke-direct {p0}, Lcom/android/settings/Settings;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/Settings;-><init>()V
 
     return-void
 .end method

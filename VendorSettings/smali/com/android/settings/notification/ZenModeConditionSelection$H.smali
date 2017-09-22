@@ -1,10 +1,10 @@
-.class final Lcom/android/settings/notification/ZenModeConditionSelection$H;
+.class final Lcom/android/vendorsettings/notification/ZenModeConditionSelection$H;
 .super Landroid/os/Handler;
 .source "ZenModeConditionSelection.java"
 
 
 # instance fields
-.field final synthetic akR:Lcom/android/settings/notification/ZenModeConditionSelection;
+.field final synthetic akR:Lcom/android/vendorsettings/notification/ZenModeConditionSelection;
 
 
 # virtual methods
@@ -19,7 +19,7 @@
 
     if-ne v0, v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/notification/ZenModeConditionSelection$H;->akR:Lcom/android/settings/notification/ZenModeConditionSelection;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/ZenModeConditionSelection$H;->akR:Lcom/android/vendorsettings/notification/ZenModeConditionSelection;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -27,7 +27,7 @@
 
     check-cast v0, [Landroid/service/notification/Condition;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/notification/ZenModeConditionSelection;->a([Landroid/service/notification/Condition;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/notification/ZenModeConditionSelection;->a([Landroid/service/notification/Condition;)V
 
     .line 163
     :cond_0

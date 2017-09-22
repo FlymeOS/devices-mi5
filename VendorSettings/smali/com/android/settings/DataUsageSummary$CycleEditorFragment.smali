@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/DataUsageSummary$CycleEditorFragment;
+.class public Lcom/android/vendorsettings/DataUsageSummary$CycleEditorFragment;
 .super Landroid/app/DialogFragment;
 .source "DataUsageSummary.java"
 
@@ -14,12 +14,12 @@
     return-void
 .end method
 
-.method public static A(Lcom/android/settings/DataUsageSummary;)V
+.method public static A(Lcom/android/vendorsettings/DataUsageSummary;)V
     .locals 3
 
     .prologue
     .line 2093
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary;->isAdded()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DataUsageSummary;->isAdded()Z
 
     move-result v0
 
@@ -38,33 +38,33 @@
     .line 2096
     const-string v1, "template"
 
-    invoke-static {p0}, Lcom/android/settings/DataUsageSummary;->y(Lcom/android/settings/DataUsageSummary;)Landroid/net/NetworkTemplate;
+    invoke-static {p0}, Lcom/android/vendorsettings/DataUsageSummary;->y(Lcom/android/vendorsettings/DataUsageSummary;)Landroid/net/NetworkTemplate;
 
     move-result-object v2
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 2098
-    new-instance v1, Lcom/android/settings/DataUsageSummary$CycleEditorFragment;
+    new-instance v1, Lcom/android/vendorsettings/DataUsageSummary$CycleEditorFragment;
 
-    invoke-direct {v1}, Lcom/android/settings/DataUsageSummary$CycleEditorFragment;-><init>()V
+    invoke-direct {v1}, Lcom/android/vendorsettings/DataUsageSummary$CycleEditorFragment;-><init>()V
 
     .line 2099
-    invoke-virtual {v1, v0}, Lcom/android/settings/DataUsageSummary$CycleEditorFragment;->setArguments(Landroid/os/Bundle;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/DataUsageSummary$CycleEditorFragment;->setArguments(Landroid/os/Bundle;)V
 
     .line 2100
     const/4 v0, 0x0
 
-    invoke-virtual {v1, p0, v0}, Lcom/android/settings/DataUsageSummary$CycleEditorFragment;->setTargetFragment(Landroid/app/Fragment;I)V
+    invoke-virtual {v1, p0, v0}, Lcom/android/vendorsettings/DataUsageSummary$CycleEditorFragment;->setTargetFragment(Landroid/app/Fragment;I)V
 
     .line 2101
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DataUsageSummary;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
     const-string v2, "cycleEditor"
 
-    invoke-virtual {v1, v0, v2}, Lcom/android/settings/DataUsageSummary$CycleEditorFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v1, v0, v2}, Lcom/android/vendorsettings/DataUsageSummary$CycleEditorFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -78,19 +78,19 @@
     const/4 v8, 0x1
 
     .line 2106
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary$CycleEditorFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DataUsageSummary$CycleEditorFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     .line 2107
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary$CycleEditorFragment;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DataUsageSummary$CycleEditorFragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v5
 
-    check-cast v5, Lcom/android/settings/DataUsageSummary;
+    check-cast v5, Lcom/android/vendorsettings/DataUsageSummary;
 
     .line 2108
-    invoke-static {v5}, Lcom/android/settings/DataUsageSummary;->z(Lcom/android/settings/DataUsageSummary;)Lcom/android/settings/d/f;
+    invoke-static {v5}, Lcom/android/vendorsettings/DataUsageSummary;->z(Lcom/android/vendorsettings/DataUsageSummary;)Lcom/android/vendorsettings/d/f;
 
     move-result-object v3
 
@@ -129,7 +129,7 @@
     check-cast v2, Landroid/widget/NumberPicker;
 
     .line 2116
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary$CycleEditorFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DataUsageSummary$CycleEditorFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -142,7 +142,7 @@
     check-cast v4, Landroid/net/NetworkTemplate;
 
     .line 2117
-    invoke-virtual {v3, v4}, Lcom/android/settings/d/f;->e(Landroid/net/NetworkTemplate;)I
+    invoke-virtual {v3, v4}, Lcom/android/vendorsettings/d/f;->e(Landroid/net/NetworkTemplate;)I
 
     move-result v1
 
@@ -171,11 +171,11 @@
     .line 2127
     const v7, 0x7f0c08f6
 
-    new-instance v0, Lcom/android/settings/bM;
+    new-instance v0, Lcom/android/vendorsettings/bM;
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/bM;-><init>(Lcom/android/settings/DataUsageSummary$CycleEditorFragment;Landroid/widget/NumberPicker;Lcom/android/settings/d/f;Landroid/net/NetworkTemplate;Lcom/android/settings/DataUsageSummary;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/bM;-><init>(Lcom/android/vendorsettings/DataUsageSummary$CycleEditorFragment;Landroid/widget/NumberPicker;Lcom/android/vendorsettings/d/f;Landroid/net/NetworkTemplate;Lcom/android/vendorsettings/DataUsageSummary;)V
 
     invoke-virtual {v6, v7, v0}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

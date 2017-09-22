@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ResetNetwork;
-.super Lcom/android/settings/InstrumentedFragment;
+.class public Lcom/android/vendorsettings/ResetNetwork;
+.super Lcom/android/vendorsettings/InstrumentedFragment;
 .source "ResetNetwork.java"
 
 
@@ -21,34 +21,34 @@
 
     .prologue
     .line 62
-    invoke-direct {p0}, Lcom/android/settings/InstrumentedFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/InstrumentedFragment;-><init>()V
 
     .line 119
-    new-instance v0, Lcom/android/settings/gW;
+    new-instance v0, Lcom/android/vendorsettings/gW;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/gW;-><init>(Lcom/android/settings/ResetNetwork;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/gW;-><init>(Lcom/android/vendorsettings/ResetNetwork;)V
 
-    iput-object v0, p0, Lcom/android/settings/ResetNetwork;->gK:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->gK:Landroid/view/View$OnClickListener;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/ResetNetwork;)V
+.method static synthetic a(Lcom/android/vendorsettings/ResetNetwork;)V
     .locals 0
 
     .prologue
     .line 62
-    invoke-direct {p0}, Lcom/android/settings/ResetNetwork;->eD()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/ResetNetwork;->eD()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/ResetNetwork;I)Z
+.method static synthetic a(Lcom/android/vendorsettings/ResetNetwork;I)Z
     .locals 1
 
     .prologue
     .line 62
-    invoke-direct {p0, p1}, Lcom/android/settings/ResetNetwork;->s(I)Z
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/ResetNetwork;->s(I)Z
 
     move-result v0
 
@@ -67,11 +67,11 @@
     invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
 
     .line 105
-    iget-object v0, p0, Lcom/android/settings/ResetNetwork;->yh:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->yh:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/ResetNetwork;->yh:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->yh:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -80,14 +80,14 @@
     if-lez v0, :cond_0
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/ResetNetwork;->yi:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->yi:Landroid/widget/Spinner;
 
     invoke-virtual {v0}, Landroid/widget/Spinner;->getSelectedItemPosition()I
 
     move-result v0
 
     .line 107
-    iget-object v1, p0, Lcom/android/settings/ResetNetwork;->yh:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/vendorsettings/ResetNetwork;->yh:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -106,13 +106,13 @@
 
     .line 110
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/ResetNetwork;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ResetNetwork;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hn;
+    check-cast v0, Lcom/android/vendorsettings/hn;
 
-    const-class v1, Lcom/android/settings/ResetNetworkConfirm;
+    const-class v1, Lcom/android/vendorsettings/ResetNetworkConfirm;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -124,7 +124,7 @@
 
     move-object v5, v4
 
-    invoke-virtual/range {v0 .. v6}, Lcom/android/settings/hn;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lcom/android/vendorsettings/hn;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     .line 112
     return-void
@@ -139,7 +139,7 @@
     const/4 v3, 0x0
 
     .line 142
-    iget-object v0, p0, Lcom/android/settings/ResetNetwork;->gC:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->gC:Landroid/view/View;
 
     const v1, 0x7f13027a
 
@@ -149,10 +149,10 @@
 
     check-cast v0, Landroid/widget/Spinner;
 
-    iput-object v0, p0, Lcom/android/settings/ResetNetwork;->yi:Landroid/widget/Spinner;
+    iput-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->yi:Landroid/widget/Spinner;
 
     .line 144
-    invoke-virtual {p0}, Lcom/android/settings/ResetNetwork;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ResetNetwork;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -164,14 +164,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ResetNetwork;->yh:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->yh:Ljava/util/List;
 
     .line 145
-    iget-object v0, p0, Lcom/android/settings/ResetNetwork;->yh:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->yh:Ljava/util/List;
 
     if-eqz v0, :cond_7
 
-    iget-object v0, p0, Lcom/android/settings/ResetNetwork;->yh:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->yh:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -226,7 +226,7 @@
 
     .line 159
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/ResetNetwork;->yh:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->yh:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -236,7 +236,7 @@
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
     .line 161
-    iget-object v0, p0, Lcom/android/settings/ResetNetwork;->yh:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->yh:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -381,7 +381,7 @@
     :cond_6
     new-instance v0, Landroid/widget/ArrayAdapter;
 
-    invoke-virtual {p0}, Lcom/android/settings/ResetNetwork;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ResetNetwork;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -395,23 +395,23 @@
     invoke-virtual {v0, v1}, Landroid/widget/ArrayAdapter;->setDropDownViewResource(I)V
 
     .line 182
-    iget-object v1, p0, Lcom/android/settings/ResetNetwork;->yi:Landroid/widget/Spinner;
+    iget-object v1, p0, Lcom/android/vendorsettings/ResetNetwork;->yi:Landroid/widget/Spinner;
 
     invoke-virtual {v1, v0}, Landroid/widget/Spinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
     .line 183
-    iget-object v0, p0, Lcom/android/settings/ResetNetwork;->yi:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->yi:Landroid/widget/Spinner;
 
     invoke-virtual {v0, v2}, Landroid/widget/Spinner;->setSelection(I)V
 
     .line 184
-    iget-object v0, p0, Lcom/android/settings/ResetNetwork;->yi:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->yi:Landroid/widget/Spinner;
 
     invoke-virtual {v0, v3}, Landroid/widget/Spinner;->setVisibility(I)V
 
     .line 188
     :goto_2
-    iget-object v0, p0, Lcom/android/settings/ResetNetwork;->gC:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->gC:Landroid/view/View;
 
     const v1, 0x7f13027b
 
@@ -421,12 +421,12 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/ResetNetwork;->gH:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->gH:Landroid/widget/Button;
 
     .line 189
-    iget-object v0, p0, Lcom/android/settings/ResetNetwork;->gH:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->gH:Landroid/widget/Button;
 
-    iget-object v1, p0, Lcom/android/settings/ResetNetwork;->gK:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/android/vendorsettings/ResetNetwork;->gK:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -435,7 +435,7 @@
 
     .line 186
     :cond_7
-    iget-object v0, p0, Lcom/android/settings/ResetNetwork;->yi:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->yi:Landroid/widget/Spinner;
 
     invoke-virtual {v0, v10}, Landroid/widget/Spinner;->setVisibility(I)V
 
@@ -452,7 +452,7 @@
 
     .prologue
     .line 81
-    invoke-virtual {p0}, Lcom/android/settings/ResetNetwork;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ResetNetwork;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -461,13 +461,13 @@
     move-result-object v0
 
     .line 82
-    new-instance v1, Lcom/android/settings/aH;
+    new-instance v1, Lcom/android/vendorsettings/aH;
 
-    invoke-virtual {p0}, Lcom/android/settings/ResetNetwork;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ResetNetwork;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-direct {v1, v2, p0}, Lcom/android/settings/aH;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
+    invoke-direct {v1, v2, p0}, Lcom/android/vendorsettings/aH;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
 
     const v2, 0x7f0c04ca
 
@@ -475,7 +475,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v1, p1, v0}, Lcom/android/settings/aH;->b(ILjava/lang/CharSequence;)Z
+    invoke-virtual {v1, p1, v0}, Lcom/android/vendorsettings/aH;->b(ILjava/lang/CharSequence;)Z
 
     move-result v0
 
@@ -489,7 +489,7 @@
 
     .prologue
     .line 88
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/InstrumentedFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/vendorsettings/InstrumentedFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 90
     const/16 v0, 0x37
@@ -507,13 +507,13 @@
     if-ne p2, v0, :cond_1
 
     .line 97
-    invoke-direct {p0}, Lcom/android/settings/ResetNetwork;->eD()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/ResetNetwork;->eD()V
 
     goto :goto_0
 
     .line 99
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/ResetNetwork;->eE()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/ResetNetwork;->eE()V
 
     goto :goto_0
 .end method
@@ -535,7 +535,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/ResetNetwork;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ResetNetwork;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -571,13 +571,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ResetNetwork;->gC:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->gC:Landroid/view/View;
 
     .line 203
-    invoke-direct {p0}, Lcom/android/settings/ResetNetwork;->eE()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/ResetNetwork;->eE()V
 
     .line 204
-    iget-object v0, p0, Lcom/android/settings/ResetNetwork;->gC:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/ResetNetwork;->gC:Landroid/view/View;
 
     goto :goto_0
 .end method

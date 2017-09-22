@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/bluetooth/LocalBluetoothPreferences$1;
+.class final Lcom/android/vendorsettings/bluetooth/LocalBluetoothPreferences$1;
 .super Ljava/lang/Object;
 .source "LocalBluetoothPreferences.java"
 
@@ -16,7 +16,7 @@
 
     .prologue
     .line 140
-    iput-object p1, p0, Lcom/android/settings/bluetooth/LocalBluetoothPreferences$1;->val$context:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/bluetooth/LocalBluetoothPreferences$1;->val$context:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 142
-    iget-object v0, p0, Lcom/android/settings/bluetooth/LocalBluetoothPreferences$1;->val$context:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/LocalBluetoothPreferences$1;->val$context:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->aw(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    invoke-static {v0}, Lcom/android/vendorsettings/bluetooth/LocalBluetoothPreferences;->aw(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
 

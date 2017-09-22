@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/SimStatus$4;
+.class Lcom/android/vendorsettings/deviceinfo/SimStatus$4;
 .super Ljava/lang/Object;
 .source "SimStatus.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic WJ:Lcom/android/settings/deviceinfo/SimStatus;
+.field final synthetic WJ:Lcom/android/vendorsettings/deviceinfo/SimStatus;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/SimStatus;)V
+.method constructor <init>(Lcom/android/vendorsettings/deviceinfo/SimStatus;)V
     .locals 0
 
     .prologue
     .line 467
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/SimStatus$4;->WJ:Lcom/android/settings/deviceinfo/SimStatus;
+    iput-object p1, p0, Lcom/android/vendorsettings/deviceinfo/SimStatus$4;->WJ:Lcom/android/vendorsettings/deviceinfo/SimStatus;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,9 +32,9 @@
     .line 470
     new-instance v0, Landroid/view/View;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/SimStatus$4;->WJ:Lcom/android/settings/deviceinfo/SimStatus;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/SimStatus$4;->WJ:Lcom/android/vendorsettings/deviceinfo/SimStatus;
 
-    invoke-static {v1}, Lcom/android/settings/deviceinfo/SimStatus;->i(Lcom/android/settings/deviceinfo/SimStatus;)Landroid/widget/TabHost;
+    invoke-static {v1}, Lcom/android/vendorsettings/deviceinfo/SimStatus;->i(Lcom/android/vendorsettings/deviceinfo/SimStatus;)Landroid/widget/TabHost;
 
     move-result-object v1
 

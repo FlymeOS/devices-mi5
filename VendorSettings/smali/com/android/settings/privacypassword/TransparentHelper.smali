@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/privacypassword/TransparentHelper;
+.class public Lcom/android/vendorsettings/privacypassword/TransparentHelper;
 .super Landroid/preference/PreferenceActivity;
 .source "TransparentHelper.java"
 
@@ -45,7 +45,7 @@
     .line 25
     const-string v1, ":android:show_fragment"
 
-    const-class v2, Lcom/android/settings/privacypassword/TransparentHelper$TransparentHelperFragment;
+    const-class v2, Lcom/android/vendorsettings/privacypassword/TransparentHelper$TransparentHelperFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -69,7 +69,7 @@
 
     .prologue
     .line 32
-    const-class v0, Lcom/android/settings/privacypassword/TransparentHelper$TransparentHelperFragment;
+    const-class v0, Lcom/android/vendorsettings/privacypassword/TransparentHelper$TransparentHelperFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

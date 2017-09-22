@@ -1,4 +1,4 @@
-.class Lcom/android/settings/iB;
+.class Lcom/android/vendorsettings/iB;
 .super Ljava/lang/Object;
 .source "UserDictionarySettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Cb:Lcom/android/settings/iA;
+.field final synthetic Cb:Lcom/android/vendorsettings/iA;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/iA;)V
+.method constructor <init>(Lcom/android/vendorsettings/iA;)V
     .locals 0
 
     .prologue
     .line 269
-    iput-object p1, p0, Lcom/android/settings/iB;->Cb:Lcom/android/settings/iA;
+    iput-object p1, p0, Lcom/android/vendorsettings/iB;->Cb:Lcom/android/vendorsettings/iA;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

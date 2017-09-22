@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/cloud/i;
+.class public final Lcom/android/vendorsettings/cloud/i;
 .super Ljava/lang/Object;
 .source "Constants.java"
 
@@ -19,7 +19,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/i;->TH:Landroid/net/Uri;
+    sput-object v0, Lcom/android/vendorsettings/cloud/i;->TH:Landroid/net/Uri;
 
     return-void
 .end method

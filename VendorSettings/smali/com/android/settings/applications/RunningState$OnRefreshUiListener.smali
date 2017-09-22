@@ -1,4 +1,4 @@
-.class interface abstract Lcom/android/settings/applications/RunningState$OnRefreshUiListener;
+.class interface abstract Lcom/android/vendorsettings/applications/RunningState$OnRefreshUiListener;
 .super Ljava/lang/Object;
 .source "RunningState.java"
 

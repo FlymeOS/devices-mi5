@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/LockSecureAfterTimeout;
+.class public Lcom/android/vendorsettings/LockSecureAfterTimeout;
 .super Lmiui/preference/PreferenceActivity;
 .source "LockSecureAfterTimeout.java"
 
@@ -18,28 +18,28 @@
     invoke-direct {p0}, Lmiui/preference/PreferenceActivity;-><init>()V
 
     .line 13
-    new-instance v0, Lcom/android/settings/dP;
+    new-instance v0, Lcom/android/vendorsettings/dP;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/dP;-><init>(Lcom/android/settings/LockSecureAfterTimeout;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/dP;-><init>(Lcom/android/vendorsettings/LockSecureAfterTimeout;)V
 
-    iput-object v0, p0, Lcom/android/settings/LockSecureAfterTimeout;->pG:Landroid/preference/Preference$OnPreferenceChangeListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/LockSecureAfterTimeout;->pG:Landroid/preference/Preference$OnPreferenceChangeListener;
 
     .line 26
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/LockSecureAfterTimeout;->pH:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/vendorsettings/LockSecureAfterTimeout;->pH:Ljava/util/List;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/LockSecureAfterTimeout;)Ljava/util/List;
+.method static synthetic a(Lcom/android/vendorsettings/LockSecureAfterTimeout;)Ljava/util/List;
     .locals 1
 
     .prologue
     .line 12
-    iget-object v0, p0, Lcom/android/settings/LockSecureAfterTimeout;->pH:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/LockSecureAfterTimeout;->pH:Ljava/util/List;
 
     return-object v0
 .end method
@@ -58,10 +58,10 @@
     .line 32
     const v0, 0x7f08005b
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/LockSecureAfterTimeout;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/LockSecureAfterTimeout;->addPreferencesFromResource(I)V
 
     .line 33
-    invoke-virtual {p0}, Lcom/android/settings/LockSecureAfterTimeout;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/LockSecureAfterTimeout;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -74,7 +74,7 @@
     move-result-wide v4
 
     .line 36
-    invoke-virtual {p0}, Lcom/android/settings/LockSecureAfterTimeout;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/LockSecureAfterTimeout;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -85,7 +85,7 @@
     move-result-object v3
 
     .line 37
-    invoke-virtual {p0}, Lcom/android/settings/LockSecureAfterTimeout;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/LockSecureAfterTimeout;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -122,12 +122,12 @@
     invoke-virtual {v7, v1}, Lmiui/preference/RadioButtonPreference;->setPersistent(Z)V
 
     .line 44
-    iget-object v2, p0, Lcom/android/settings/LockSecureAfterTimeout;->pG:Landroid/preference/Preference$OnPreferenceChangeListener;
+    iget-object v2, p0, Lcom/android/vendorsettings/LockSecureAfterTimeout;->pG:Landroid/preference/Preference$OnPreferenceChangeListener;
 
     invoke-virtual {v7, v2}, Lmiui/preference/RadioButtonPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 45
-    invoke-virtual {p0}, Lcom/android/settings/LockSecureAfterTimeout;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/LockSecureAfterTimeout;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
@@ -152,7 +152,7 @@
     invoke-virtual {v7, v2}, Lmiui/preference/RadioButtonPreference;->setChecked(Z)V
 
     .line 47
-    iget-object v2, p0, Lcom/android/settings/LockSecureAfterTimeout;->pH:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/vendorsettings/LockSecureAfterTimeout;->pH:Ljava/util/List;
 
     invoke-interface {v2, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 

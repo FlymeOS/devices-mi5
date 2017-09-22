@@ -1,4 +1,4 @@
-.class Lcom/android/settings/P;
+.class Lcom/android/vendorsettings/P;
 .super Ljava/lang/Object;
 .source "AutoDisableScreenButtonsAppListSettings.java"
 
@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field final synthetic bH:Lcom/android/settings/O;
+.field final synthetic bH:Lcom/android/vendorsettings/O;
 
 .field private final sCollator:Ljava/text/Collator;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/O;)V
+.method constructor <init>(Lcom/android/vendorsettings/O;)V
     .locals 1
 
     .prologue
     .line 167
-    iput-object p1, p0, Lcom/android/settings/P;->bH:Lcom/android/settings/O;
+    iput-object p1, p0, Lcom/android/vendorsettings/P;->bH:Lcom/android/vendorsettings/O;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,25 +27,25 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/P;->sCollator:Ljava/text/Collator;
+    iput-object v0, p0, Lcom/android/vendorsettings/P;->sCollator:Ljava/text/Collator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lcom/android/settings/V;Lcom/android/settings/V;)I
+.method public a(Lcom/android/vendorsettings/V;Lcom/android/vendorsettings/V;)I
     .locals 3
 
     .prologue
     .line 172
-    iget-object v0, p0, Lcom/android/settings/P;->sCollator:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/vendorsettings/P;->sCollator:Ljava/text/Collator;
 
-    invoke-static {p1}, Lcom/android/settings/V;->b(Lcom/android/settings/V;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/android/vendorsettings/V;->b(Lcom/android/vendorsettings/V;)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {p2}, Lcom/android/settings/V;->b(Lcom/android/settings/V;)Ljava/lang/String;
+    invoke-static {p2}, Lcom/android/vendorsettings/V;->b(Lcom/android/vendorsettings/V;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -61,11 +61,11 @@
 
     .prologue
     .line 167
-    check-cast p1, Lcom/android/settings/V;
+    check-cast p1, Lcom/android/vendorsettings/V;
 
-    check-cast p2, Lcom/android/settings/V;
+    check-cast p2, Lcom/android/vendorsettings/V;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/P;->a(Lcom/android/settings/V;Lcom/android/settings/V;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/P;->a(Lcom/android/vendorsettings/V;Lcom/android/vendorsettings/V;)I
 
     move-result v0
 

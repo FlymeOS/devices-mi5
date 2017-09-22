@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/users/EditUserInfoController$OnContentChangedCallback;
+.class public interface abstract Lcom/android/vendorsettings/users/EditUserInfoController$OnContentChangedCallback;
 .super Ljava/lang/Object;
 .source "EditUserInfoController.java"
 

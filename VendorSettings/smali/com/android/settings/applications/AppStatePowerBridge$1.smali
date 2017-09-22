@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/AppStatePowerBridge$1;
+.class final Lcom/android/vendorsettings/applications/AppStatePowerBridge$1;
 .super Ljava/lang/Object;
 .source "AppStatePowerBridge.java"
 

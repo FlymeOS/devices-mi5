@@ -1,10 +1,10 @@
-.class final Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;
+.class final Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;
 .super Landroid/os/Handler;
 .source "SettingsInjector.java"
 
 
 # instance fields
-.field final synthetic ahB:Lcom/android/settings/location/SettingsInjector;
+.field final synthetic ahB:Lcom/android/vendorsettings/location/SettingsInjector;
 
 .field private ahF:Ljava/util/Set;
 
@@ -16,12 +16,12 @@
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/location/SettingsInjector;)V
+.method private constructor <init>(Lcom/android/vendorsettings/location/SettingsInjector;)V
     .locals 1
 
     .prologue
     .line 313
-    iput-object p1, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahB:Lcom/android/settings/location/SettingsInjector;
+    iput-object p1, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahB:Lcom/android/vendorsettings/location/SettingsInjector;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -30,31 +30,31 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahF:Ljava/util/Set;
+    iput-object v0, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahF:Ljava/util/Set;
 
     .line 324
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahG:Ljava/util/Set;
+    iput-object v0, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahG:Ljava/util/Set;
 
     .line 331
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahH:Ljava/util/Set;
+    iput-object v0, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahH:Ljava/util/Set;
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/location/SettingsInjector;Lcom/android/settings/location/SettingsInjector$1;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/location/SettingsInjector;Lcom/android/vendorsettings/location/SettingsInjector$1;)V
     .locals 0
 
     .prologue
     .line 313
-    invoke-direct {p0, p1}, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;-><init>(Lcom/android/settings/location/SettingsInjector;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;-><init>(Lcom/android/vendorsettings/location/SettingsInjector;)V
 
     return-void
 .end method
@@ -145,7 +145,7 @@
     .line 368
     :cond_1
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahG:Ljava/util/Set;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahG:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->size()I
 
@@ -153,7 +153,7 @@
 
     if-gtz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahH:Ljava/util/Set;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahH:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->size()I
 
@@ -211,7 +211,7 @@
 
     .line 344
     :pswitch_0
-    iput-boolean v8, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahI:Z
+    iput-boolean v8, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahI:Z
 
     goto :goto_0
 
@@ -219,23 +219,23 @@
     :pswitch_1
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    check-cast v0, Lcom/android/settings/location/SettingsInjector$Setting;
+    check-cast v0, Lcom/android/vendorsettings/location/SettingsInjector$Setting;
 
     .line 348
-    invoke-virtual {v0}, Lcom/android/settings/location/SettingsInjector$Setting;->rP()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/location/SettingsInjector$Setting;->rP()V
 
     .line 349
-    iget-object v1, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahG:Ljava/util/Set;
+    iget-object v1, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahG:Ljava/util/Set;
 
     invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
     .line 350
-    iget-object v1, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahH:Ljava/util/Set;
+    iget-object v1, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahH:Ljava/util/Set;
 
     invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
     .line 351
-    invoke-virtual {p0, v6, v0}, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->removeMessages(ILjava/lang/Object;)V
+    invoke-virtual {p0, v6, v0}, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->removeMessages(ILjava/lang/Object;)V
 
     goto :goto_0
 
@@ -243,15 +243,15 @@
     :pswitch_2
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    check-cast v0, Lcom/android/settings/location/SettingsInjector$Setting;
+    check-cast v0, Lcom/android/vendorsettings/location/SettingsInjector$Setting;
 
     .line 355
-    iget-object v1, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahG:Ljava/util/Set;
+    iget-object v1, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahG:Ljava/util/Set;
 
     invoke-interface {v1, v0}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
     .line 356
-    iget-object v1, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahH:Ljava/util/Set;
+    iget-object v1, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahH:Ljava/util/Set;
 
     invoke-interface {v1, v0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
@@ -279,7 +279,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0}, Lcom/android/settings/location/SettingsInjector$Setting;->rO()J
+    invoke-virtual {v0}, Lcom/android/vendorsettings/location/SettingsInjector$Setting;->rO()J
 
     move-result-wide v4
 
@@ -307,11 +307,11 @@
 
     .line 379
     :cond_4
-    iget-boolean v0, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahI:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahI:Z
 
     if-eqz v0, :cond_6
 
-    iget-object v0, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahF:Ljava/util/Set;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahF:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->isEmpty()Z
 
@@ -319,7 +319,7 @@
 
     if-eqz v0, :cond_6
 
-    iget-object v0, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahG:Ljava/util/Set;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahG:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->isEmpty()Z
 
@@ -327,7 +327,7 @@
 
     if-eqz v0, :cond_6
 
-    iget-object v0, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahH:Ljava/util/Set;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahH:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->isEmpty()Z
 
@@ -379,11 +379,11 @@
 
     .line 385
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahF:Ljava/util/Set;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahF:Ljava/util/Set;
 
-    iget-object v1, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahB:Lcom/android/settings/location/SettingsInjector;
+    iget-object v1, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahB:Lcom/android/vendorsettings/location/SettingsInjector;
 
-    invoke-static {v1}, Lcom/android/settings/location/SettingsInjector;->b(Lcom/android/settings/location/SettingsInjector;)Ljava/util/Set;
+    invoke-static {v1}, Lcom/android/vendorsettings/location/SettingsInjector;->b(Lcom/android/vendorsettings/location/SettingsInjector;)Ljava/util/Set;
 
     move-result-object v1
 
@@ -392,11 +392,11 @@
     .line 386
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahI:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahI:Z
 
     .line 390
     :cond_6
-    iget-object v0, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahF:Ljava/util/Set;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahF:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -459,28 +459,28 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/location/SettingsInjector$Setting;
+    check-cast v0, Lcom/android/vendorsettings/location/SettingsInjector$Setting;
 
     .line 398
     invoke-interface {v1}, Ljava/util/Iterator;->remove()V
 
     .line 401
-    invoke-virtual {v0}, Lcom/android/settings/location/SettingsInjector$Setting;->rN()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/location/SettingsInjector$Setting;->rN()V
 
     .line 402
-    iget-object v1, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahG:Ljava/util/Set;
+    iget-object v1, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahG:Ljava/util/Set;
 
     invoke-interface {v1, v0}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 406
-    invoke-virtual {p0, v6, v0}, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
+    invoke-virtual {p0, v6, v0}, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object v1
 
     .line 407
     const-wide/16 v2, 0x3e8
 
-    invoke-virtual {p0, v1, v2, v3}, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
+    invoke-virtual {p0, v1, v2, v3}, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
     .line 409
     const-string v1, "SettingsInjector"
@@ -560,7 +560,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahF:Ljava/util/Set;
+    iget-object v1, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahF:Ljava/util/Set;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -572,7 +572,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahG:Ljava/util/Set;
+    iget-object v1, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahG:Ljava/util/Set;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -584,7 +584,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahH:Ljava/util/Set;
+    iget-object v1, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahH:Ljava/util/Set;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -596,7 +596,7 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/android/settings/location/SettingsInjector$StatusLoadingHandler;->ahI:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/location/SettingsInjector$StatusLoadingHandler;->ahI:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 

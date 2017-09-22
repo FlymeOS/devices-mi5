@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/users/RestrictionUtils;
+.class public Lcom/android/vendorsettings/users/RestrictionUtils;
 .super Ljava/lang/Object;
 .source "RestrictionUtils.java"
 
@@ -27,7 +27,7 @@
 
     aput-object v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/users/RestrictionUtils;->auc:[Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/users/RestrictionUtils;->auc:[Ljava/lang/String;
 
     .line 40
     new-array v0, v3, [I
@@ -36,7 +36,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/users/RestrictionUtils;->aud:[I
+    sput-object v0, Lcom/android/vendorsettings/users/RestrictionUtils;->aud:[I
 
     .line 47
     new-array v0, v3, [I
@@ -45,7 +45,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/users/RestrictionUtils;->aue:[I
+    sput-object v0, Lcom/android/vendorsettings/users/RestrictionUtils;->aue:[I
 
     return-void
 .end method
@@ -191,7 +191,7 @@
 
     .line 65
     :goto_0
-    sget-object v2, Lcom/android/settings/users/RestrictionUtils;->auc:[Ljava/lang/String;
+    sget-object v2, Lcom/android/vendorsettings/users/RestrictionUtils;->auc:[Ljava/lang/String;
 
     array-length v2, v2
 
@@ -200,11 +200,11 @@
     .line 66
     new-instance v7, Landroid/content/RestrictionEntry;
 
-    sget-object v2, Lcom/android/settings/users/RestrictionUtils;->auc:[Ljava/lang/String;
+    sget-object v2, Lcom/android/vendorsettings/users/RestrictionUtils;->auc:[Ljava/lang/String;
 
     aget-object v8, v2, v0
 
-    sget-object v2, Lcom/android/settings/users/RestrictionUtils;->auc:[Ljava/lang/String;
+    sget-object v2, Lcom/android/vendorsettings/users/RestrictionUtils;->auc:[Ljava/lang/String;
 
     aget-object v2, v2, v0
 
@@ -220,7 +220,7 @@
     invoke-direct {v7, v8, v2}, Landroid/content/RestrictionEntry;-><init>(Ljava/lang/String;Z)V
 
     .line 69
-    sget-object v2, Lcom/android/settings/users/RestrictionUtils;->aud:[I
+    sget-object v2, Lcom/android/vendorsettings/users/RestrictionUtils;->aud:[I
 
     aget v2, v2, v0
 
@@ -231,7 +231,7 @@
     invoke-virtual {v7, v2}, Landroid/content/RestrictionEntry;->setTitle(Ljava/lang/String;)V
 
     .line 70
-    sget-object v2, Lcom/android/settings/users/RestrictionUtils;->aue:[I
+    sget-object v2, Lcom/android/vendorsettings/users/RestrictionUtils;->aue:[I
 
     aget v2, v2, v0
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dashboard/g;
+.class Lcom/android/vendorsettings/dashboard/g;
 .super Ljava/lang/Object;
 .source "SearchResultsSummary.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic UZ:Lcom/android/settings/dashboard/e;
+.field final synthetic UZ:Lcom/android/vendorsettings/dashboard/e;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dashboard/e;)V
+.method constructor <init>(Lcom/android/vendorsettings/dashboard/e;)V
     .locals 0
 
     .prologue
     .line 224
-    iput-object p1, p0, Lcom/android/settings/dashboard/g;->UZ:Lcom/android/settings/dashboard/e;
+    iput-object p1, p0, Lcom/android/vendorsettings/dashboard/g;->UZ:Lcom/android/vendorsettings/dashboard/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,13 +43,13 @@
 
     .line 234
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/dashboard/g;->UZ:Lcom/android/settings/dashboard/e;
+    iget-object v1, p0, Lcom/android/vendorsettings/dashboard/g;->UZ:Lcom/android/vendorsettings/dashboard/e;
 
-    invoke-static {v1}, Lcom/android/settings/dashboard/e;->c(Lcom/android/settings/dashboard/e;)Lcom/android/settings/dashboard/k;
+    invoke-static {v1}, Lcom/android/vendorsettings/dashboard/e;->c(Lcom/android/vendorsettings/dashboard/e;)Lcom/android/vendorsettings/dashboard/k;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/dashboard/k;->a(Lcom/android/settings/dashboard/k;)Landroid/database/Cursor;
+    invoke-static {v1}, Lcom/android/vendorsettings/dashboard/k;->a(Lcom/android/vendorsettings/dashboard/k;)Landroid/database/Cursor;
 
     move-result-object v1
 
@@ -57,31 +57,31 @@
     invoke-interface {v1, v0}, Landroid/database/Cursor;->moveToPosition(I)Z
 
     .line 237
-    iget-object v0, p0, Lcom/android/settings/dashboard/g;->UZ:Lcom/android/settings/dashboard/e;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/g;->UZ:Lcom/android/vendorsettings/dashboard/e;
 
     const/4 v2, 0x1
 
-    invoke-static {v0, v2}, Lcom/android/settings/dashboard/e;->c(Lcom/android/settings/dashboard/e;Z)Z
+    invoke-static {v0, v2}, Lcom/android/vendorsettings/dashboard/e;->c(Lcom/android/vendorsettings/dashboard/e;Z)Z
 
     .line 238
-    iget-object v0, p0, Lcom/android/settings/dashboard/g;->UZ:Lcom/android/settings/dashboard/e;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/g;->UZ:Lcom/android/vendorsettings/dashboard/e;
 
     invoke-interface {v1, v3}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/dashboard/e;->a(Lcom/android/settings/dashboard/e;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/dashboard/e;->a(Lcom/android/vendorsettings/dashboard/e;Ljava/lang/String;)Ljava/lang/String;
 
     .line 239
-    iget-object v0, p0, Lcom/android/settings/dashboard/g;->UZ:Lcom/android/settings/dashboard/e;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/g;->UZ:Lcom/android/vendorsettings/dashboard/e;
 
-    invoke-static {v0}, Lcom/android/settings/dashboard/e;->e(Lcom/android/settings/dashboard/e;)Landroid/widget/SearchView;
+    invoke-static {v0}, Lcom/android/vendorsettings/dashboard/e;->e(Lcom/android/vendorsettings/dashboard/e;)Landroid/widget/SearchView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/dashboard/g;->UZ:Lcom/android/settings/dashboard/e;
+    iget-object v1, p0, Lcom/android/vendorsettings/dashboard/g;->UZ:Lcom/android/vendorsettings/dashboard/e;
 
-    invoke-static {v1}, Lcom/android/settings/dashboard/e;->d(Lcom/android/settings/dashboard/e;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/vendorsettings/dashboard/e;->d(Lcom/android/vendorsettings/dashboard/e;)Ljava/lang/String;
 
     move-result-object v1
 

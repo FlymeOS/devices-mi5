@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/HotspotOffReceiver;
+.class public Lcom/android/vendorsettings/HotspotOffReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "HotspotOffReceiver.java"
 
@@ -54,7 +54,7 @@
     .line 23
     const/4 v0, 0x0
 
-    invoke-static {p1, v0}, Lcom/android/settings/TetherService;->g(Landroid/content/Context;I)V
+    invoke-static {p1, v0}, Lcom/android/vendorsettings/TetherService;->g(Landroid/content/Context;I)V
 
     .line 26
     :cond_0

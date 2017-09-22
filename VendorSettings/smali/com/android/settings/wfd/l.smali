@@ -1,19 +1,19 @@
-.class Lcom/android/settings/wfd/l;
+.class Lcom/android/vendorsettings/wfd/l;
 .super Landroid/media/MediaRouter$SimpleCallback;
 .source "WifiDisplaySettings.java"
 
 
 # instance fields
-.field final synthetic awy:Lcom/android/settings/wfd/WifiDisplaySettings;
+.field final synthetic awy:Lcom/android/vendorsettings/wfd/WifiDisplaySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wfd/WifiDisplaySettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/wfd/WifiDisplaySettings;)V
     .locals 0
 
     .prologue
     .line 648
-    iput-object p1, p0, Lcom/android/settings/wfd/l;->awy:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/wfd/l;->awy:Lcom/android/vendorsettings/wfd/WifiDisplaySettings;
 
     invoke-direct {p0}, Landroid/media/MediaRouter$SimpleCallback;-><init>()V
 
@@ -27,11 +27,11 @@
 
     .prologue
     .line 651
-    iget-object v0, p0, Lcom/android/settings/wfd/l;->awy:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wfd/l;->awy:Lcom/android/vendorsettings/wfd/WifiDisplaySettings;
 
     const/4 v1, 0x2
 
-    invoke-static {v0, v1}, Lcom/android/settings/wfd/WifiDisplaySettings;->f(Lcom/android/settings/wfd/WifiDisplaySettings;I)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/wfd/WifiDisplaySettings;->f(Lcom/android/vendorsettings/wfd/WifiDisplaySettings;I)V
 
     .line 652
     return-void
@@ -42,11 +42,11 @@
 
     .prologue
     .line 656
-    iget-object v0, p0, Lcom/android/settings/wfd/l;->awy:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wfd/l;->awy:Lcom/android/vendorsettings/wfd/WifiDisplaySettings;
 
     const/4 v1, 0x2
 
-    invoke-static {v0, v1}, Lcom/android/settings/wfd/WifiDisplaySettings;->f(Lcom/android/settings/wfd/WifiDisplaySettings;I)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/wfd/WifiDisplaySettings;->f(Lcom/android/vendorsettings/wfd/WifiDisplaySettings;I)V
 
     .line 657
     return-void
@@ -57,11 +57,11 @@
 
     .prologue
     .line 661
-    iget-object v0, p0, Lcom/android/settings/wfd/l;->awy:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wfd/l;->awy:Lcom/android/vendorsettings/wfd/WifiDisplaySettings;
 
     const/4 v1, 0x2
 
-    invoke-static {v0, v1}, Lcom/android/settings/wfd/WifiDisplaySettings;->f(Lcom/android/settings/wfd/WifiDisplaySettings;I)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/wfd/WifiDisplaySettings;->f(Lcom/android/vendorsettings/wfd/WifiDisplaySettings;I)V
 
     .line 662
     return-void
@@ -72,11 +72,11 @@
 
     .prologue
     .line 666
-    iget-object v0, p0, Lcom/android/settings/wfd/l;->awy:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wfd/l;->awy:Lcom/android/vendorsettings/wfd/WifiDisplaySettings;
 
     const/4 v1, 0x2
 
-    invoke-static {v0, v1}, Lcom/android/settings/wfd/WifiDisplaySettings;->f(Lcom/android/settings/wfd/WifiDisplaySettings;I)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/wfd/WifiDisplaySettings;->f(Lcom/android/vendorsettings/wfd/WifiDisplaySettings;I)V
 
     .line 667
     return-void
@@ -87,11 +87,11 @@
 
     .prologue
     .line 671
-    iget-object v0, p0, Lcom/android/settings/wfd/l;->awy:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wfd/l;->awy:Lcom/android/vendorsettings/wfd/WifiDisplaySettings;
 
     const/4 v1, 0x2
 
-    invoke-static {v0, v1}, Lcom/android/settings/wfd/WifiDisplaySettings;->f(Lcom/android/settings/wfd/WifiDisplaySettings;I)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/wfd/WifiDisplaySettings;->f(Lcom/android/vendorsettings/wfd/WifiDisplaySettings;I)V
 
     .line 672
     return-void

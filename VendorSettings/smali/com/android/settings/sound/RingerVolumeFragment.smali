@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/sound/RingerVolumeFragment;
-.super Lcom/android/settings/BaseFragment;
+.class public Lcom/android/vendorsettings/sound/RingerVolumeFragment;
+.super Lcom/android/vendorsettings/BaseFragment;
 .source "RingerVolumeFragment.java"
 
 # interfaces
@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field private aqL:[Lcom/android/settings/sound/E;
+.field private aqL:[Lcom/android/vendorsettings/sound/E;
 
 .field private final aqN:[I
 
@@ -46,28 +46,28 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/sound/RingerVolumeFragment;->aqM:[I
+    sput-object v0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqM:[I
 
     .line 79
     new-array v0, v1, [I
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/android/settings/sound/RingerVolumeFragment;->aqO:[I
+    sput-object v0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqO:[I
 
     .line 88
     new-array v0, v1, [I
 
     fill-array-data v0, :array_2
 
-    sput-object v0, Lcom/android/settings/sound/RingerVolumeFragment;->aqP:[I
+    sput-object v0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqP:[I
 
     .line 97
     new-array v0, v1, [I
 
     fill-array-data v0, :array_3
 
-    sput-object v0, Lcom/android/settings/sound/RingerVolumeFragment;->aqQ:[I
+    sput-object v0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqQ:[I
 
     return-void
 
@@ -121,7 +121,7 @@
 
     .prologue
     .line 47
-    invoke-direct {p0}, Lcom/android/settings/BaseFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/BaseFragment;-><init>()V
 
     .line 70
     const/4 v0, 0x6
@@ -130,32 +130,32 @@
 
     fill-array-data v0, :array_0
 
-    iput-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqN:[I
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqN:[I
 
     .line 106
-    sget-object v0, Lcom/android/settings/sound/RingerVolumeFragment;->aqP:[I
+    sget-object v0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqP:[I
 
     array-length v0, v0
 
     new-array v0, v0, [Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqR:[Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqR:[Landroid/widget/ImageView;
 
     .line 107
-    sget-object v0, Lcom/android/settings/sound/RingerVolumeFragment;->aqM:[I
+    sget-object v0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqM:[I
 
     array-length v0, v0
 
     new-array v0, v0, [Lmiui/widget/SeekBar;
 
-    iput-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqS:[Lmiui/widget/SeekBar;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqS:[Lmiui/widget/SeekBar;
 
     .line 109
-    new-instance v0, Lcom/android/settings/sound/A;
+    new-instance v0, Lcom/android/vendorsettings/sound/A;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/sound/A;-><init>(Lcom/android/settings/sound/RingerVolumeFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/sound/A;-><init>(Lcom/android/vendorsettings/sound/RingerVolumeFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->mHandler:Landroid/os/Handler;
 
     .line 355
     return-void
@@ -174,22 +174,22 @@
     .end array-data
 .end method
 
-.method static synthetic a(Lcom/android/settings/sound/RingerVolumeFragment;)V
+.method static synthetic a(Lcom/android/vendorsettings/sound/RingerVolumeFragment;)V
     .locals 0
 
     .prologue
     .line 47
-    invoke-direct {p0}, Lcom/android/settings/sound/RingerVolumeFragment;->uu()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->uu()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/sound/RingerVolumeFragment;I)V
+.method static synthetic a(Lcom/android/vendorsettings/sound/RingerVolumeFragment;I)V
     .locals 0
 
     .prologue
     .line 47
-    invoke-direct {p0, p1}, Lcom/android/settings/sound/RingerVolumeFragment;->cM(I)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->cM(I)V
 
     return-void
 .end method
@@ -199,27 +199,27 @@
 
     .prologue
     .line 47
-    sget-object v0, Lcom/android/settings/sound/RingerVolumeFragment;->aqO:[I
+    sget-object v0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqO:[I
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/sound/RingerVolumeFragment;)Landroid/os/Handler;
+.method static synthetic b(Lcom/android/vendorsettings/sound/RingerVolumeFragment;)Landroid/os/Handler;
     .locals 1
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/sound/RingerVolumeFragment;)Landroid/net/Uri;
+.method static synthetic c(Lcom/android/vendorsettings/sound/RingerVolumeFragment;)Landroid/net/Uri;
     .locals 1
 
     .prologue
     .line 47
-    invoke-direct {p0}, Lcom/android/settings/sound/RingerVolumeFragment;->sz()Landroid/net/Uri;
+    invoke-direct {p0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->sz()Landroid/net/Uri;
 
     move-result-object v0
 
@@ -231,19 +231,19 @@
 
     .prologue
     .line 252
-    sget-object v0, Lcom/android/settings/sound/RingerVolumeFragment;->aqO:[I
+    sget-object v0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqO:[I
 
     aget v1, v0, p1
 
     .line 253
-    iget-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->mAudioManager:Landroid/media/AudioManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->mAudioManager:Landroid/media/AudioManager;
 
     invoke-virtual {v0, v1}, Landroid/media/AudioManager;->isStreamMute(I)Z
 
     move-result v0
 
     .line 255
-    iget-object v2, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqR:[Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqR:[Landroid/widget/ImageView;
 
     aget-object v2, v2, p1
 
@@ -256,7 +256,7 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v2, p0, Lcom/android/settings/sound/RingerVolumeFragment;->mAudioManager:Landroid/media/AudioManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->mAudioManager:Landroid/media/AudioManager;
 
     const/4 v3, 0x0
 
@@ -267,7 +267,7 @@
     if-eqz v2, :cond_2
 
     .line 258
-    iget-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqR:[Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqR:[Landroid/widget/ImageView;
 
     aget-object v0, v0, p1
 
@@ -278,25 +278,25 @@
     .line 265
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqS:[Lmiui/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqS:[Lmiui/widget/SeekBar;
 
     aget-object v0, v0, p1
 
     if-eqz v0, :cond_1
 
     .line 266
-    iget-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->mAudioManager:Landroid/media/AudioManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->mAudioManager:Landroid/media/AudioManager;
 
     invoke-virtual {v0, v1}, Landroid/media/AudioManager;->getStreamVolume(I)I
 
     move-result v0
 
     .line 267
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqL:[Lcom/android/settings/sound/E;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqL:[Lcom/android/vendorsettings/sound/E;
 
     aget-object v1, v1, p1
 
-    iget-object v2, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqS:[Lmiui/widget/SeekBar;
+    iget-object v2, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqS:[Lmiui/widget/SeekBar;
 
     aget-object v2, v2, p1
 
@@ -304,22 +304,22 @@
 
     move-result v2
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/sound/E;->cO(I)I
+    invoke-virtual {v1, v2}, Lcom/android/vendorsettings/sound/E;->cO(I)I
 
     move-result v1
 
     if-eq v0, v1, :cond_1
 
     .line 268
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqS:[Lmiui/widget/SeekBar;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqS:[Lmiui/widget/SeekBar;
 
     aget-object v1, v1, p1
 
-    iget-object v2, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqL:[Lcom/android/settings/sound/E;
+    iget-object v2, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqL:[Lcom/android/vendorsettings/sound/E;
 
     aget-object v2, v2, p1
 
-    invoke-virtual {v2, v0}, Lcom/android/settings/sound/E;->cN(I)I
+    invoke-virtual {v2, v0}, Lcom/android/vendorsettings/sound/E;->cN(I)I
 
     move-result v0
 
@@ -331,13 +331,13 @@
 
     .line 261
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqR:[Landroid/widget/ImageView;
+    iget-object v2, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqR:[Landroid/widget/ImageView;
 
     aget-object v2, v2, p1
 
     if-eqz v0, :cond_3
 
-    sget-object v0, Lcom/android/settings/sound/RingerVolumeFragment;->aqP:[I
+    sget-object v0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqP:[I
 
     aget v0, v0, p1
 
@@ -347,7 +347,7 @@
     goto :goto_0
 
     :cond_3
-    sget-object v0, Lcom/android/settings/sound/RingerVolumeFragment;->aqQ:[I
+    sget-object v0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqQ:[I
 
     aget v0, v0, p1
 
@@ -364,28 +364,28 @@
     const/4 v0, 0x0
 
     :goto_0
-    sget-object v1, Lcom/android/settings/sound/RingerVolumeFragment;->aqM:[I
+    sget-object v1, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqM:[I
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_1
 
     .line 313
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqL:[Lcom/android/settings/sound/E;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqL:[Lcom/android/vendorsettings/sound/E;
 
     aget-object v1, v1, v0
 
     if-eqz v1, :cond_0
 
     .line 314
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqL:[Lcom/android/settings/sound/E;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqL:[Lcom/android/vendorsettings/sound/E;
 
     aget-object v1, v1, v0
 
-    invoke-virtual {v1}, Lcom/android/settings/sound/E;->stop()V
+    invoke-virtual {v1}, Lcom/android/vendorsettings/sound/E;->stop()V
 
     .line 315
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqL:[Lcom/android/settings/sound/E;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqL:[Lcom/android/vendorsettings/sound/E;
 
     aput-object v2, v1, v0
 
@@ -397,50 +397,50 @@
 
     .line 318
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqT:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqT:Landroid/content/BroadcastReceiver;
 
     if-eqz v0, :cond_2
 
     .line 319
-    invoke-virtual {p0}, Lcom/android/settings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqT:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqT:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 320
-    iput-object v2, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqT:Landroid/content/BroadcastReceiver;
+    iput-object v2, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqT:Landroid/content/BroadcastReceiver;
 
     .line 322
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqU:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqU:Landroid/content/BroadcastReceiver;
 
     if-eqz v0, :cond_3
 
     .line 323
-    invoke-virtual {p0}, Lcom/android/settings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqU:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqU:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 324
-    iput-object v2, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqU:Landroid/content/BroadcastReceiver;
+    iput-object v2, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqU:Landroid/content/BroadcastReceiver;
 
     .line 326
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->mHandler:Landroid/os/Handler;
 
     const/16 v1, 0x65
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 327
-    iget-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->mHandler:Landroid/os/Handler;
 
     const/16 v1, 0x66
 
@@ -465,7 +465,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -508,14 +508,14 @@
     const/4 v0, 0x0
 
     :goto_0
-    sget-object v1, Lcom/android/settings/sound/RingerVolumeFragment;->aqO:[I
+    sget-object v1, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqO:[I
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_0
 
     .line 247
-    invoke-direct {p0, v0}, Lcom/android/settings/sound/RingerVolumeFragment;->cM(I)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->cM(I)V
 
     .line 246
     add-int/lit8 v0, v0, 0x1
@@ -546,12 +546,12 @@
     return-object v0
 .end method
 
-.method protected a(Lcom/android/settings/sound/E;)V
+.method protected a(Lcom/android/vendorsettings/sound/E;)V
     .locals 4
 
     .prologue
     .line 292
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqL:[Lcom/android/settings/sound/E;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqL:[Lcom/android/vendorsettings/sound/E;
 
     array-length v2, v1
 
@@ -567,7 +567,7 @@
 
     if-eq v3, p1, :cond_0
 
-    invoke-virtual {v3}, Lcom/android/settings/sound/E;->stopSample()V
+    invoke-virtual {v3}, Lcom/android/vendorsettings/sound/E;->stopSample()V
 
     .line 292
     :cond_0
@@ -614,10 +614,10 @@
 
     .prologue
     .line 307
-    invoke-direct {p0}, Lcom/android/settings/sound/RingerVolumeFragment;->cleanup()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->cleanup()V
 
     .line 308
-    invoke-super {p0}, Lcom/android/settings/BaseFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/vendorsettings/BaseFragment;->onDestroy()V
 
     .line 309
     return-void
@@ -665,7 +665,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 348
-    invoke-super {p0, p1}, Lcom/android/settings/BaseFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/BaseFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -674,7 +674,7 @@
 
     .line 344
     :pswitch_0
-    invoke-virtual {p0}, Lcom/android/settings/sound/RingerVolumeFragment;->us()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->us()V
 
     .line 345
     const/4 v0, 0x1
@@ -695,7 +695,7 @@
 
     .prologue
     .line 299
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqL:[Lcom/android/settings/sound/E;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqL:[Lcom/android/vendorsettings/sound/E;
 
     array-length v2, v1
 
@@ -707,7 +707,7 @@
     aget-object v3, v1, v0
 
     .line 300
-    invoke-virtual {v3}, Lcom/android/settings/sound/E;->stopSample()V
+    invoke-virtual {v3}, Lcom/android/vendorsettings/sound/E;->stopSample()V
 
     .line 299
     add-int/lit8 v0, v0, 0x1
@@ -716,7 +716,7 @@
 
     .line 302
     :cond_0
-    invoke-super {p0}, Lcom/android/settings/BaseFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/BaseFragment;->onPause()V
 
     .line 303
     return-void
@@ -729,19 +729,19 @@
     const/16 v9, 0x8
 
     .line 135
-    invoke-super {p0, p1, p2}, Lcom/android/settings/BaseFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/BaseFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 136
-    sget-object v0, Lcom/android/settings/sound/RingerVolumeFragment;->aqM:[I
+    sget-object v0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqM:[I
 
     array-length v0, v0
 
-    new-array v0, v0, [Lcom/android/settings/sound/E;
+    new-array v0, v0, [Lcom/android/vendorsettings/sound/E;
 
-    iput-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqL:[Lcom/android/settings/sound/E;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqL:[Lcom/android/vendorsettings/sound/E;
 
     .line 138
-    invoke-virtual {p0}, Lcom/android/settings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -753,7 +753,7 @@
 
     check-cast v0, Landroid/media/AudioManager;
 
-    iput-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->mAudioManager:Landroid/media/AudioManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->mAudioManager:Landroid/media/AudioManager;
 
     .line 140
     const/4 v0, 0x0
@@ -761,14 +761,14 @@
     move v6, v0
 
     :goto_0
-    sget-object v0, Lcom/android/settings/sound/RingerVolumeFragment;->aqM:[I
+    sget-object v0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqM:[I
 
     array-length v0, v0
 
     if-ge v6, v0, :cond_1
 
     .line 141
-    sget-object v0, Lcom/android/settings/sound/RingerVolumeFragment;->aqM:[I
+    sget-object v0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqM:[I
 
     aget v0, v0, v6
 
@@ -791,12 +791,12 @@
     check-cast v3, Lmiui/widget/SeekBar;
 
     .line 144
-    iget-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqS:[Lmiui/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqS:[Lmiui/widget/SeekBar;
 
     aput-object v3, v0, v6
 
     .line 145
-    sget-object v0, Lcom/android/settings/sound/RingerVolumeFragment;->aqO:[I
+    sget-object v0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqO:[I
 
     aget v0, v0, v6
 
@@ -805,25 +805,25 @@
     if-ne v0, v1, :cond_0
 
     .line 146
-    iget-object v8, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqL:[Lcom/android/settings/sound/E;
+    iget-object v8, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqL:[Lcom/android/vendorsettings/sound/E;
 
-    new-instance v0, Lcom/android/settings/sound/E;
+    new-instance v0, Lcom/android/vendorsettings/sound/E;
 
-    invoke-virtual {p0}, Lcom/android/settings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    sget-object v1, Lcom/android/settings/sound/RingerVolumeFragment;->aqO:[I
+    sget-object v1, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqO:[I
 
     aget v4, v1, v6
 
-    invoke-direct {p0}, Lcom/android/settings/sound/RingerVolumeFragment;->sz()Landroid/net/Uri;
+    invoke-direct {p0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->sz()Landroid/net/Uri;
 
     move-result-object v5
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/sound/E;-><init>(Lcom/android/settings/sound/RingerVolumeFragment;Landroid/content/Context;Lmiui/widget/SeekBar;ILandroid/net/Uri;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/sound/E;-><init>(Lcom/android/vendorsettings/sound/RingerVolumeFragment;Landroid/content/Context;Lmiui/widget/SeekBar;ILandroid/net/Uri;)V
 
     aput-object v0, v8, v6
 
@@ -838,7 +838,7 @@
     check-cast v0, Landroid/widget/ImageView;
 
     .line 155
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqR:[Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqR:[Landroid/widget/ImageView;
 
     aput-object v0, v1, v6
 
@@ -851,7 +851,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqN:[I
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqN:[I
 
     aget v1, v1, v6
 
@@ -866,19 +866,19 @@
 
     .line 149
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqL:[Lcom/android/settings/sound/E;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqL:[Lcom/android/vendorsettings/sound/E;
 
-    new-instance v1, Lcom/android/settings/sound/E;
+    new-instance v1, Lcom/android/vendorsettings/sound/E;
 
-    invoke-virtual {p0}, Lcom/android/settings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    sget-object v4, Lcom/android/settings/sound/RingerVolumeFragment;->aqO:[I
+    sget-object v4, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqO:[I
 
     aget v4, v4, v6
 
-    invoke-direct {v1, p0, v2, v3, v4}, Lcom/android/settings/sound/E;-><init>(Lcom/android/settings/sound/RingerVolumeFragment;Landroid/content/Context;Lmiui/widget/SeekBar;I)V
+    invoke-direct {v1, p0, v2, v3, v4}, Lcom/android/vendorsettings/sound/E;-><init>(Lcom/android/vendorsettings/sound/RingerVolumeFragment;Landroid/content/Context;Lmiui/widget/SeekBar;I)V
 
     aput-object v1, v0, v6
 
@@ -886,10 +886,10 @@
 
     .line 162
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/sound/RingerVolumeFragment;->uu()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->uu()V
 
     .line 165
-    iget-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqT:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqT:Landroid/content/BroadcastReceiver;
 
     if-nez v0, :cond_2
 
@@ -904,24 +904,24 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 168
-    new-instance v1, Lcom/android/settings/sound/B;
+    new-instance v1, Lcom/android/vendorsettings/sound/B;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/sound/B;-><init>(Lcom/android/settings/sound/RingerVolumeFragment;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/sound/B;-><init>(Lcom/android/vendorsettings/sound/RingerVolumeFragment;)V
 
-    iput-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqT:Landroid/content/BroadcastReceiver;
+    iput-object v1, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqT:Landroid/content/BroadcastReceiver;
 
     .line 177
-    invoke-virtual {p0}, Lcom/android/settings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqT:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqT:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 180
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqU:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqU:Landroid/content/BroadcastReceiver;
 
     if-nez v0, :cond_3
 
@@ -936,28 +936,28 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 183
-    new-instance v1, Lcom/android/settings/sound/C;
+    new-instance v1, Lcom/android/vendorsettings/sound/C;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/sound/C;-><init>(Lcom/android/settings/sound/RingerVolumeFragment;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/sound/C;-><init>(Lcom/android/vendorsettings/sound/RingerVolumeFragment;)V
 
-    iput-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqU:Landroid/content/BroadcastReceiver;
+    iput-object v1, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqU:Landroid/content/BroadcastReceiver;
 
     .line 195
-    invoke-virtual {p0}, Lcom/android/settings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqU:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqU:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 200
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/iC;->Y(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/iC;->Y(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -1030,7 +1030,7 @@
     .line 219
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1058,9 +1058,9 @@
 
     const v1, 0x104000a
 
-    new-instance v2, Lcom/android/settings/sound/D;
+    new-instance v2, Lcom/android/vendorsettings/sound/D;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/sound/D;-><init>(Lcom/android/settings/sound/RingerVolumeFragment;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/sound/D;-><init>(Lcom/android/vendorsettings/sound/RingerVolumeFragment;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1086,32 +1086,32 @@
     const/4 v0, 0x0
 
     :goto_0
-    sget-object v1, Lcom/android/settings/sound/RingerVolumeFragment;->aqM:[I
+    sget-object v1, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqM:[I
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_1
 
     .line 236
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqL:[Lcom/android/settings/sound/E;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqL:[Lcom/android/vendorsettings/sound/E;
 
     aget-object v1, v1, v0
 
     if-eqz v1, :cond_0
 
     .line 237
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqL:[Lcom/android/settings/sound/E;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqL:[Lcom/android/vendorsettings/sound/E;
 
     aget-object v1, v1, v0
 
-    invoke-virtual {v1}, Lcom/android/settings/sound/E;->stopSample()V
+    invoke-virtual {v1}, Lcom/android/vendorsettings/sound/E;->stopSample()V
 
     .line 238
-    iget-object v1, p0, Lcom/android/settings/sound/RingerVolumeFragment;->aqL:[Lcom/android/settings/sound/E;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqL:[Lcom/android/vendorsettings/sound/E;
 
     aget-object v1, v1, v0
 
-    invoke-virtual {v1}, Lcom/android/settings/sound/E;->uv()V
+    invoke-virtual {v1}, Lcom/android/vendorsettings/sound/E;->uv()V
 
     .line 235
     :cond_0
@@ -1121,7 +1121,7 @@
 
     .line 242
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/sound/RingerVolumeFragment;->uu()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->uu()V
 
     .line 243
     return-void

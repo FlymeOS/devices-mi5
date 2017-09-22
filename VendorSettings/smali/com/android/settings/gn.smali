@@ -1,19 +1,19 @@
-.class Lcom/android/settings/gn;
+.class Lcom/android/vendorsettings/gn;
 .super Landroid/database/ContentObserver;
 .source "ProvisionObserverService.java"
 
 
 # instance fields
-.field final synthetic we:Lcom/android/settings/gm;
+.field final synthetic we:Lcom/android/vendorsettings/gm;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/gm;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/vendorsettings/gm;Landroid/os/Handler;)V
     .locals 0
 
     .prologue
     .line 19
-    iput-object p1, p0, Lcom/android/settings/gn;->we:Lcom/android/settings/gm;
+    iput-object p1, p0, Lcom/android/vendorsettings/gn;->we:Lcom/android/vendorsettings/gm;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/android/settings/gn;->we:Lcom/android/settings/gm;
+    iget-object v0, p0, Lcom/android/vendorsettings/gn;->we:Lcom/android/vendorsettings/gm;
 
-    invoke-virtual {v0}, Lcom/android/settings/gm;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/gm;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -45,9 +45,9 @@
     if-eqz v0, :cond_0
 
     .line 24
-    iget-object v0, p0, Lcom/android/settings/gn;->we:Lcom/android/settings/gm;
+    iget-object v0, p0, Lcom/android/vendorsettings/gn;->we:Lcom/android/vendorsettings/gm;
 
-    invoke-static {v0}, Lcom/android/settings/gm;->a(Lcom/android/settings/gm;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/gm;->a(Lcom/android/vendorsettings/gm;)V
 
     .line 26
     :cond_0

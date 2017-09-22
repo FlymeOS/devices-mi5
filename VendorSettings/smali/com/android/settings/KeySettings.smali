@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/KeySettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/KeySettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "KeySettings.java"
 
 # interfaces
@@ -46,7 +46,7 @@
 
     .prologue
     .line 36
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -60,7 +60,7 @@
     const/4 v1, 0x1
 
     .line 328
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -71,11 +71,11 @@
     move-result v0
 
     .line 332
-    iget-object v3, p0, Lcom/android/settings/KeySettings;->oo:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/KeySettings;->oo:Landroid/preference/ListPreference;
 
     if-eqz v0, :cond_8
 
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oo:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oo:Landroid/preference/ListPreference;
 
     invoke-virtual {v0}, Landroid/preference/ListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
@@ -91,9 +91,9 @@
     invoke-virtual {v3, v0}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 335
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oo:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oo:Landroid/preference/ListPreference;
 
-    iget-object v3, p0, Lcom/android/settings/KeySettings;->oo:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/KeySettings;->oo:Landroid/preference/ListPreference;
 
     invoke-virtual {v3}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -102,7 +102,7 @@
     invoke-virtual {v0, v3}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 337
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -115,7 +115,7 @@
     move-result v0
 
     .line 341
-    iget-object v3, p0, Lcom/android/settings/KeySettings;->os:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/KeySettings;->os:Landroid/preference/ListPreference;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -124,9 +124,9 @@
     invoke-virtual {v3, v0}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 342
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->os:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->os:Landroid/preference/ListPreference;
 
-    iget-object v3, p0, Lcom/android/settings/KeySettings;->os:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/KeySettings;->os:Landroid/preference/ListPreference;
 
     invoke-virtual {v3}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -135,31 +135,31 @@
     invoke-virtual {v0, v3}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 344
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->et()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->et()V
 
     .line 345
     const-string v0, "screen_key_long_press_app_switch"
 
-    iget-object v3, p0, Lcom/android/settings/KeySettings;->op:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/KeySettings;->op:Landroid/preference/ListPreference;
 
-    invoke-virtual {p0, v0, v3}, Lcom/android/settings/KeySettings;->b(Ljava/lang/String;Landroid/preference/ListPreference;)V
+    invoke-virtual {p0, v0, v3}, Lcom/android/vendorsettings/KeySettings;->b(Ljava/lang/String;Landroid/preference/ListPreference;)V
 
     .line 346
     const-string v0, "screen_key_long_press_home"
 
-    iget-object v3, p0, Lcom/android/settings/KeySettings;->oq:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/KeySettings;->oq:Landroid/preference/ListPreference;
 
-    invoke-virtual {p0, v0, v3}, Lcom/android/settings/KeySettings;->b(Ljava/lang/String;Landroid/preference/ListPreference;)V
+    invoke-virtual {p0, v0, v3}, Lcom/android/vendorsettings/KeySettings;->b(Ljava/lang/String;Landroid/preference/ListPreference;)V
 
     .line 347
     const-string v0, "screen_key_long_press_back"
 
-    iget-object v3, p0, Lcom/android/settings/KeySettings;->or:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/KeySettings;->or:Landroid/preference/ListPreference;
 
-    invoke-virtual {p0, v0, v3}, Lcom/android/settings/KeySettings;->b(Ljava/lang/String;Landroid/preference/ListPreference;)V
+    invoke-virtual {p0, v0, v3}, Lcom/android/vendorsettings/KeySettings;->b(Ljava/lang/String;Landroid/preference/ListPreference;)V
 
     .line 349
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->ou:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ou:Landroid/preference/ListPreference;
 
     if-eqz v0, :cond_0
 
@@ -173,14 +173,14 @@
     move-result-object v0
 
     .line 351
-    iget-object v3, p0, Lcom/android/settings/KeySettings;->ou:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/KeySettings;->ou:Landroid/preference/ListPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 352
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->ou:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ou:Landroid/preference/ListPreference;
 
-    iget-object v3, p0, Lcom/android/settings/KeySettings;->ou:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/KeySettings;->ou:Landroid/preference/ListPreference;
 
     invoke-virtual {v3}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -190,12 +190,12 @@
 
     .line 355
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oB:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oB:Landroid/preference/ListPreference;
 
     if-eqz v0, :cond_1
 
     .line 356
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -208,7 +208,7 @@
     move-result v0
 
     .line 360
-    iget-object v3, p0, Lcom/android/settings/KeySettings;->oB:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/KeySettings;->oB:Landroid/preference/ListPreference;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -217,9 +217,9 @@
     invoke-virtual {v3, v0}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 361
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oB:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oB:Landroid/preference/ListPreference;
 
-    iget-object v3, p0, Lcom/android/settings/KeySettings;->oB:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/KeySettings;->oB:Landroid/preference/ListPreference;
 
     invoke-virtual {v3}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -229,14 +229,14 @@
 
     .line 364
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->ov:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ov:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_2
 
     .line 365
-    iget-object v3, p0, Lcom/android/settings/KeySettings;->ov:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/KeySettings;->ov:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -255,12 +255,12 @@
 
     .line 369
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->ow:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ow:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_3
 
     .line 370
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -271,7 +271,7 @@
     move-result v0
 
     .line 373
-    iget-object v3, p0, Lcom/android/settings/KeySettings;->ow:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/KeySettings;->ow:Landroid/preference/CheckBoxPreference;
 
     if-ne v0, v1, :cond_a
 
@@ -282,12 +282,12 @@
 
     .line 375
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->ox:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ox:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_4
 
     .line 376
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -298,7 +298,7 @@
     move-result v0
 
     .line 379
-    iget-object v3, p0, Lcom/android/settings/KeySettings;->ox:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/KeySettings;->ox:Landroid/preference/CheckBoxPreference;
 
     if-ne v0, v1, :cond_b
 
@@ -307,14 +307,14 @@
 
     .line 382
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oy:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oy:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_5
 
     .line 383
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oy:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oy:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->ev()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->ev()Z
 
     move-result v1
 
@@ -322,14 +322,14 @@
 
     .line 385
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oz:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oz:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_6
 
     .line 386
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oz:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oz:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->eu()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->eu()Z
 
     move-result v1
 
@@ -337,14 +337,14 @@
 
     .line 388
     :cond_6
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oA:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oA:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_7
 
     .line 389
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oA:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oA:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->ew()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->ew()Z
 
     move-result v1
 
@@ -356,7 +356,7 @@
 
     .line 332
     :cond_8
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oo:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oo:Landroid/preference/ListPreference;
 
     invoke-virtual {v0}, Landroid/preference/ListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
@@ -400,7 +400,7 @@
 
     .line 400
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -412,7 +412,7 @@
     if-eqz p1, :cond_0
 
     .line 402
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -446,7 +446,7 @@
 
     .line 417
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -505,7 +505,7 @@
 
     .line 431
     :goto_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/KeySettings;->g(Ljava/util/List;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/KeySettings;->g(Ljava/util/List;)V
 
     .line 432
     return-void
@@ -545,7 +545,7 @@
     invoke-virtual {p2, v0}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 275
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -602,14 +602,14 @@
     const/4 v2, 0x0
 
     .line 286
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->ot:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ot:Landroid/preference/ListPreference;
 
     invoke-virtual {v0}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
     move-result-object v3
 
     .line 287
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->ot:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ot:Landroid/preference/ListPreference;
 
     invoke-virtual {v0}, Landroid/preference/ListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
@@ -674,7 +674,7 @@
 
     .line 298
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -712,18 +712,18 @@
     if-ne v0, v1, :cond_2
 
     .line 304
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->on:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->on:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 314
     :cond_2
     :goto_2
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->ot:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->ot:Landroid/preference/ListPreference;
 
     new-array v0, v2, [Ljava/lang/CharSequence;
 
@@ -736,7 +736,7 @@
     invoke-virtual {v1, v0}, Landroid/preference/ListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
     .line 315
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->ot:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->ot:Landroid/preference/ListPreference;
 
     new-array v0, v2, [Ljava/lang/CharSequence;
 
@@ -749,7 +749,7 @@
     invoke-virtual {v1, v0}, Landroid/preference/ListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
 
     .line 317
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -763,14 +763,14 @@
     if-eqz v0, :cond_3
 
     .line 321
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->ot:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->ot:Landroid/preference/ListPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 322
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->ot:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ot:Landroid/preference/ListPreference;
 
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->ot:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->ot:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -793,7 +793,7 @@
     if-nez v0, :cond_2
 
     .line 309
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -819,11 +819,11 @@
     invoke-virtual {v3, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 311
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->on:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->on:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
@@ -837,7 +837,7 @@
     const/4 v1, 0x0
 
     .line 394
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -888,7 +888,7 @@
     const/4 v1, 0x0
 
     .line 407
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 
@@ -916,7 +916,7 @@
     const/4 v0, 0x1
 
     .line 411
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -988,7 +988,7 @@
 
     .line 440
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1009,7 +1009,7 @@
 
     .prologue
     .line 85
-    const-class v0, Lcom/android/settings/KeySettings;
+    const-class v0, Lcom/android/vendorsettings/KeySettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1029,15 +1029,15 @@
     const/4 v3, 0x0
 
     .line 90
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 92
     const v0, 0x7f080050
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/KeySettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/KeySettings;->addPreferencesFromResource(I)V
 
     .line 94
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1166,7 +1166,7 @@
 
     .line 113
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
@@ -1305,22 +1305,22 @@
     :cond_7
     const-string v0, "under_keyguard"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/KeySettings;->on:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/KeySettings;->on:Landroid/preference/Preference;
 
     .line 149
     const-string v0, "long_press_volume_down"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/KeySettings;->ot:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ot:Landroid/preference/ListPreference;
 
     .line 150
     const-string v0, "support_camera_quick_snap"
@@ -1349,7 +1349,7 @@
 
     .line 157
     :cond_8
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1387,22 +1387,22 @@
     if-ne v0, v1, :cond_9
 
     .line 163
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->on:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->on:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 168
     :cond_9
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->ot:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ot:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 169
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->ot:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->ot:Landroid/preference/ListPreference;
 
     new-array v0, v3, [Ljava/lang/CharSequence;
 
@@ -1415,7 +1415,7 @@
     invoke-virtual {v1, v0}, Landroid/preference/ListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
     .line 170
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->ot:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->ot:Landroid/preference/ListPreference;
 
     new-array v0, v3, [Ljava/lang/CharSequence;
 
@@ -1430,37 +1430,37 @@
     .line 172
     const-string v0, "menu_press"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/KeySettings;->oo:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oo:Landroid/preference/ListPreference;
 
     .line 173
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oo:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oo:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 175
     const-string v0, "menu_long_press"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/KeySettings;->op:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/KeySettings;->op:Landroid/preference/ListPreference;
 
     .line 176
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->op:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->op:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 177
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->op:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->op:Landroid/preference/ListPreference;
 
     new-array v0, v3, [Ljava/lang/CharSequence;
 
@@ -1473,7 +1473,7 @@
     invoke-virtual {v1, v0}, Landroid/preference/ListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
     .line 178
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->op:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->op:Landroid/preference/ListPreference;
 
     new-array v0, v3, [Ljava/lang/CharSequence;
 
@@ -1519,75 +1519,75 @@
     .line 187
     const-string v2, "home_long_press"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
     check-cast v2, Landroid/preference/ListPreference;
 
-    iput-object v2, p0, Lcom/android/settings/KeySettings;->oq:Landroid/preference/ListPreference;
+    iput-object v2, p0, Lcom/android/vendorsettings/KeySettings;->oq:Landroid/preference/ListPreference;
 
     .line 188
-    iget-object v2, p0, Lcom/android/settings/KeySettings;->oq:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/KeySettings;->oq:Landroid/preference/ListPreference;
 
     invoke-virtual {v2, v0}, Landroid/preference/ListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
     .line 189
-    iget-object v2, p0, Lcom/android/settings/KeySettings;->oq:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/KeySettings;->oq:Landroid/preference/ListPreference;
 
     invoke-virtual {v2, v1}, Landroid/preference/ListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
 
     .line 190
-    iget-object v2, p0, Lcom/android/settings/KeySettings;->oq:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/KeySettings;->oq:Landroid/preference/ListPreference;
 
     invoke-virtual {v2, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 192
     const-string v2, "back_long_press"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
     check-cast v2, Landroid/preference/ListPreference;
 
-    iput-object v2, p0, Lcom/android/settings/KeySettings;->or:Landroid/preference/ListPreference;
+    iput-object v2, p0, Lcom/android/vendorsettings/KeySettings;->or:Landroid/preference/ListPreference;
 
     .line 193
-    iget-object v2, p0, Lcom/android/settings/KeySettings;->or:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/KeySettings;->or:Landroid/preference/ListPreference;
 
     invoke-virtual {v2, v0}, Landroid/preference/ListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
     .line 194
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->or:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->or:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
 
     .line 195
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->or:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->or:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 197
     const-string v0, "screen_key_long_press_timeout"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/KeySettings;->os:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/KeySettings;->os:Landroid/preference/ListPreference;
 
     .line 198
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->os:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->os:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 200
     const-string v0, "key_position_cat"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1611,10 +1611,10 @@
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/KeySettings;->ou:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ou:Landroid/preference/ListPreference;
 
     .line 203
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->ou:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ou:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -1622,24 +1622,24 @@
     :goto_4
     const-string v0, "pref_button_light"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/KeySettings;->ov:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ov:Landroid/preference/CheckBoxPreference;
 
     .line 209
     const-string v0, "button_light_timeout"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/KeySettings;->oB:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oB:Landroid/preference/ListPreference;
 
     .line 211
     const-string v0, "support_button_light"
@@ -1651,7 +1651,7 @@
     if-nez v0, :cond_f
 
     .line 212
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -1667,31 +1667,31 @@
     if-eqz v0, :cond_c
 
     .line 215
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->ov:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->ov:Landroid/preference/CheckBoxPreference;
 
     if-eqz v1, :cond_a
 
     .line 216
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->ov:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->ov:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
     .line 217
-    iput-object v9, p0, Lcom/android/settings/KeySettings;->ov:Landroid/preference/CheckBoxPreference;
+    iput-object v9, p0, Lcom/android/vendorsettings/KeySettings;->ov:Landroid/preference/CheckBoxPreference;
 
     .line 219
     :cond_a
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->oB:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->oB:Landroid/preference/ListPreference;
 
     if-eqz v1, :cond_b
 
     .line 220
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->oB:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->oB:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
     .line 221
-    iput-object v9, p0, Lcom/android/settings/KeySettings;->oB:Landroid/preference/ListPreference;
+    iput-object v9, p0, Lcom/android/vendorsettings/KeySettings;->oB:Landroid/preference/ListPreference;
 
     .line 223
     :cond_b
@@ -1702,7 +1702,7 @@
     if-nez v1, :cond_c
 
     .line 224
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -1713,7 +1713,7 @@
     :goto_5
     const-string v0, "convenience_key"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1729,7 +1729,7 @@
     if-nez v1, :cond_10
 
     .line 235
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -1748,11 +1748,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/KeySettings;->jb:Landroid/view/IWindowManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/KeySettings;->jb:Landroid/view/IWindowManager;
 
     .line 249
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->jb:Landroid/view/IWindowManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->jb:Landroid/view/IWindowManager;
 
     invoke-interface {v0}, Landroid/view/IWindowManager;->hasNavigationBar()Z
 
@@ -1761,7 +1761,7 @@
     .line 250
     const-string v0, "screen_button_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/KeySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1771,7 +1771,7 @@
     if-nez v1, :cond_11
 
     .line 252
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -1785,7 +1785,7 @@
 
     .line 205
     :cond_e
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -1795,12 +1795,12 @@
 
     .line 228
     :cond_f
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oB:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oB:Landroid/preference/ListPreference;
 
     if-eqz v0, :cond_c
 
     .line 229
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oB:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oB:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -1818,7 +1818,7 @@
 
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    iput-object v1, p0, Lcom/android/settings/KeySettings;->ow:Landroid/preference/CheckBoxPreference;
+    iput-object v1, p0, Lcom/android/vendorsettings/KeySettings;->ow:Landroid/preference/CheckBoxPreference;
 
     .line 238
     const-string v1, "pref_single_key_use"
@@ -1831,29 +1831,29 @@
 
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    iput-object v1, p0, Lcom/android/settings/KeySettings;->ox:Landroid/preference/CheckBoxPreference;
+    iput-object v1, p0, Lcom/android/vendorsettings/KeySettings;->ox:Landroid/preference/CheckBoxPreference;
 
     .line 239
     sget-boolean v1, Lmiui/os/Build;->IS_STABLE_VERSION:Z
 
     if-eqz v1, :cond_d
 
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->ox:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->ox:Landroid/preference/CheckBoxPreference;
 
     if-eqz v1, :cond_d
 
     .line 240
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->ox:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->ox:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
     .line 241
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->ow:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ow:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v9}, Landroid/preference/CheckBoxPreference;->setDependency(Ljava/lang/String;)V
 
     .line 242
-    iput-object v9, p0, Lcom/android/settings/KeySettings;->ox:Landroid/preference/CheckBoxPreference;
+    iput-object v9, p0, Lcom/android/vendorsettings/KeySettings;->ox:Landroid/preference/CheckBoxPreference;
 
     goto :goto_6
 
@@ -1870,10 +1870,10 @@
 
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    iput-object v1, p0, Lcom/android/settings/KeySettings;->oy:Landroid/preference/CheckBoxPreference;
+    iput-object v1, p0, Lcom/android/vendorsettings/KeySettings;->oy:Landroid/preference/CheckBoxPreference;
 
     .line 255
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->oy:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->oy:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -1888,10 +1888,10 @@
 
     check-cast v1, Landroid/preference/CheckBoxPreference;
 
-    iput-object v1, p0, Lcom/android/settings/KeySettings;->oz:Landroid/preference/CheckBoxPreference;
+    iput-object v1, p0, Lcom/android/vendorsettings/KeySettings;->oz:Landroid/preference/CheckBoxPreference;
 
     .line 257
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->oz:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->oz:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -1906,10 +1906,10 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/KeySettings;->oA:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oA:Landroid/preference/CheckBoxPreference;
 
     .line 259
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oA:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oA:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
     :try_end_1
@@ -1929,7 +1929,7 @@
 
     .prologue
     .line 485
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->os:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->os:Landroid/preference/ListPreference;
 
     if-ne p1, v0, :cond_1
 
@@ -1937,14 +1937,14 @@
     check-cast p2, Ljava/lang/String;
 
     .line 487
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->os:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->os:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p2}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 488
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->os:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->os:Landroid/preference/ListPreference;
 
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->os:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->os:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -1953,7 +1953,7 @@
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 489
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1978,7 +1978,7 @@
 
     .line 494
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->ou:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ou:Landroid/preference/ListPreference;
 
     if-ne p1, v0, :cond_2
 
@@ -1991,14 +1991,14 @@
     invoke-static {v0, p2}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 497
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->ou:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ou:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p2}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 498
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->ou:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ou:Landroid/preference/ListPreference;
 
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->ou:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->ou:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -2010,7 +2010,7 @@
 
     .line 500
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oo:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oo:Landroid/preference/ListPreference;
 
     if-ne p1, v0, :cond_3
 
@@ -2018,14 +2018,14 @@
     check-cast p2, Ljava/lang/String;
 
     .line 502
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oo:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oo:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p2}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 503
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oo:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oo:Landroid/preference/ListPreference;
 
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->oo:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->oo:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -2034,13 +2034,13 @@
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 504
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     const-string v1, "screen_key_press_app_switch"
 
-    iget-object v2, p0, Lcom/android/settings/KeySettings;->oo:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/KeySettings;->oo:Landroid/preference/ListPreference;
 
     invoke-virtual {v2}, Landroid/preference/ListPreference;->getEntryValues()[Ljava/lang/CharSequence;
 
@@ -2060,7 +2060,7 @@
 
     .line 509
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->op:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->op:Landroid/preference/ListPreference;
 
     if-ne p1, v0, :cond_4
 
@@ -2068,14 +2068,14 @@
     check-cast p2, Ljava/lang/String;
 
     .line 511
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->op:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->op:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p2}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 512
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->op:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->op:Landroid/preference/ListPreference;
 
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->op:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->op:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -2084,7 +2084,7 @@
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 513
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -2096,7 +2096,7 @@
 
     .line 518
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oq:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oq:Landroid/preference/ListPreference;
 
     if-ne p1, v0, :cond_5
 
@@ -2104,14 +2104,14 @@
     check-cast p2, Ljava/lang/String;
 
     .line 520
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oq:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oq:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p2}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 521
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oq:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oq:Landroid/preference/ListPreference;
 
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->oq:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->oq:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -2120,7 +2120,7 @@
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 522
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -2132,7 +2132,7 @@
 
     .line 527
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->or:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->or:Landroid/preference/ListPreference;
 
     if-ne p1, v0, :cond_6
 
@@ -2140,14 +2140,14 @@
     check-cast p2, Ljava/lang/String;
 
     .line 529
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->or:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->or:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p2}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 530
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->or:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->or:Landroid/preference/ListPreference;
 
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->or:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->or:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -2156,7 +2156,7 @@
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 531
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -2168,7 +2168,7 @@
 
     .line 536
     :cond_6
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oB:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oB:Landroid/preference/ListPreference;
 
     if-ne p1, v0, :cond_7
 
@@ -2176,14 +2176,14 @@
     check-cast p2, Ljava/lang/String;
 
     .line 538
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oB:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oB:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p2}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 539
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oB:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oB:Landroid/preference/ListPreference;
 
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->oB:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->oB:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -2192,7 +2192,7 @@
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 540
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -2212,7 +2212,7 @@
 
     .line 545
     :cond_7
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->ot:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ot:Landroid/preference/ListPreference;
 
     if-ne p1, v0, :cond_0
 
@@ -2220,14 +2220,14 @@
     check-cast p2, Ljava/lang/String;
 
     .line 547
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->ot:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ot:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p2}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 548
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->ot:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->ot:Landroid/preference/ListPreference;
 
-    iget-object v1, p0, Lcom/android/settings/KeySettings;->ot:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/KeySettings;->ot:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -2236,7 +2236,7 @@
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 549
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -2256,19 +2256,19 @@
     const/4 v1, 0x0
 
     .line 449
-    iget-object v2, p0, Lcom/android/settings/KeySettings;->ov:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/KeySettings;->ov:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v2, :cond_2
 
     .line 450
-    iget-object v2, p0, Lcom/android/settings/KeySettings;->ov:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/KeySettings;->ov:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v2
 
     .line 451
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -2282,7 +2282,7 @@
     .line 480
     :cond_0
     :goto_1
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -2296,19 +2296,19 @@
 
     .line 453
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/KeySettings;->ow:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/KeySettings;->ow:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v2, :cond_4
 
     .line 454
-    iget-object v2, p0, Lcom/android/settings/KeySettings;->ow:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/KeySettings;->ow:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v2
 
     .line 455
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -2328,12 +2328,12 @@
 
     .line 458
     :cond_4
-    iget-object v2, p0, Lcom/android/settings/KeySettings;->oy:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/KeySettings;->oy:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v2, :cond_6
 
     .line 459
-    iget-object v2, p0, Lcom/android/settings/KeySettings;->oy:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/KeySettings;->oy:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -2342,7 +2342,7 @@
     .line 460
     if-eqz v2, :cond_5
 
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -2380,10 +2380,10 @@
     invoke-virtual {v0, v3}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     .line 465
-    invoke-virtual {p0, v0}, Lcom/android/settings/KeySettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/KeySettings;->startActivity(Landroid/content/Intent;)V
 
     .line 466
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -2405,59 +2405,59 @@
 
     .line 468
     :cond_5
-    invoke-virtual {p0, v2}, Lcom/android/settings/KeySettings;->A(Z)V
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/KeySettings;->A(Z)V
 
     goto :goto_1
 
     .line 469
     :cond_6
-    iget-object v2, p0, Lcom/android/settings/KeySettings;->oz:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/KeySettings;->oz:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v2, :cond_7
 
     .line 470
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oz:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oz:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/KeySettings;->C(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/KeySettings;->C(Z)V
 
     goto :goto_1
 
     .line 471
     :cond_7
-    iget-object v2, p0, Lcom/android/settings/KeySettings;->oA:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/KeySettings;->oA:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v2, :cond_8
 
     .line 472
-    iget-object v0, p0, Lcom/android/settings/KeySettings;->oA:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/KeySettings;->oA:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/KeySettings;->B(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/KeySettings;->B(Z)V
 
     goto/16 :goto_1
 
     .line 473
     :cond_8
-    iget-object v2, p0, Lcom/android/settings/KeySettings;->ox:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/KeySettings;->ox:Landroid/preference/CheckBoxPreference;
 
     if-ne p2, v2, :cond_0
 
     .line 474
-    iget-object v2, p0, Lcom/android/settings/KeySettings;->ox:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/KeySettings;->ox:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v2
 
     .line 475
-    invoke-virtual {p0}, Lcom/android/settings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/KeySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -2481,12 +2481,12 @@
 
     .prologue
     .line 268
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 269
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lcom/android/settings/KeySettings;->updateState(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/KeySettings;->updateState(Z)V
 
     .line 270
     return-void

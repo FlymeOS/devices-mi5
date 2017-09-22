@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/aB;
+.class Lcom/android/vendorsettings/wifi/aB;
 .super Ljava/lang/Object;
 .source "WifiSetupActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aEi:Lcom/android/settings/wifi/az;
+.field final synthetic aEi:Lcom/android/vendorsettings/wifi/az;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/az;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/az;)V
     .locals 0
 
     .prologue
     .line 263
-    iput-object p1, p0, Lcom/android/settings/wifi/aB;->aEi:Lcom/android/settings/wifi/az;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/aB;->aEi:Lcom/android/vendorsettings/wifi/az;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,18 +30,18 @@
 
     .prologue
     .line 266
-    iget-object v0, p0, Lcom/android/settings/wifi/aB;->aEi:Lcom/android/settings/wifi/az;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/aB;->aEi:Lcom/android/vendorsettings/wifi/az;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/az;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/az;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/wifi/WifiSetupActivity;
+    check-cast v0, Lcom/android/vendorsettings/wifi/WifiSetupActivity;
 
     .line 267
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/wifi/WifiSetupActivity;->cf(I)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/wifi/WifiSetupActivity;->cf(I)V
 
     .line 268
     return-void

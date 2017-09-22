@@ -1,19 +1,19 @@
-.class Lcom/android/settings/fv;
+.class Lcom/android/vendorsettings/fv;
 .super Landroid/content/BroadcastReceiver;
 .source "MiuiTetherSettings.java"
 
 
 # instance fields
-.field final synthetic ue:Lcom/android/settings/MiuiTetherSettings;
+.field final synthetic ue:Lcom/android/vendorsettings/MiuiTetherSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiTetherSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiTetherSettings;)V
     .locals 0
 
     .prologue
     .line 135
-    iput-object p1, p0, Lcom/android/settings/fv;->ue:Lcom/android/settings/MiuiTetherSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/fv;->ue:Lcom/android/vendorsettings/MiuiTetherSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -71,9 +71,9 @@
     check-cast v0, Ljava/lang/String;
 
     .line 145
-    iget-object v4, p0, Lcom/android/settings/fv;->ue:Lcom/android/settings/MiuiTetherSettings;
+    iget-object v4, p0, Lcom/android/vendorsettings/fv;->ue:Lcom/android/vendorsettings/MiuiTetherSettings;
 
-    invoke-static {v4}, Lcom/android/settings/MiuiTetherSettings;->a(Lcom/android/settings/MiuiTetherSettings;)[Ljava/lang/String;
+    invoke-static {v4}, Lcom/android/vendorsettings/MiuiTetherSettings;->a(Lcom/android/vendorsettings/MiuiTetherSettings;)[Ljava/lang/String;
 
     move-result-object v4
 
@@ -102,9 +102,9 @@
 
     .line 151
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/fv;->ue:Lcom/android/settings/MiuiTetherSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fv;->ue:Lcom/android/vendorsettings/MiuiTetherSettings;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiTetherSettings;->b(Lcom/android/settings/MiuiTetherSettings;)Landroid/preference/Preference;
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiTetherSettings;->b(Lcom/android/vendorsettings/MiuiTetherSettings;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -118,24 +118,24 @@
     :cond_1
     if-eqz v1, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/fv;->ue:Lcom/android/settings/MiuiTetherSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fv;->ue:Lcom/android/vendorsettings/MiuiTetherSettings;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiTetherSettings;->c(Lcom/android/settings/MiuiTetherSettings;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiTetherSettings;->c(Lcom/android/vendorsettings/MiuiTetherSettings;)Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
     .line 155
-    iget-object v0, p0, Lcom/android/settings/fv;->ue:Lcom/android/settings/MiuiTetherSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fv;->ue:Lcom/android/vendorsettings/MiuiTetherSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiTetherSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/MiuiTetherSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/fv;->ue:Lcom/android/settings/MiuiTetherSettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/fv;->ue:Lcom/android/vendorsettings/MiuiTetherSettings;
 
-    invoke-static {v2}, Lcom/android/settings/MiuiTetherSettings;->b(Lcom/android/settings/MiuiTetherSettings;)Landroid/preference/Preference;
+    invoke-static {v2}, Lcom/android/vendorsettings/MiuiTetherSettings;->b(Lcom/android/vendorsettings/MiuiTetherSettings;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -143,23 +143,23 @@
 
     .line 161
     :goto_3
-    iget-object v0, p0, Lcom/android/settings/fv;->ue:Lcom/android/settings/MiuiTetherSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fv;->ue:Lcom/android/vendorsettings/MiuiTetherSettings;
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiTetherSettings;->a(Lcom/android/settings/MiuiTetherSettings;Z)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/MiuiTetherSettings;->a(Lcom/android/vendorsettings/MiuiTetherSettings;Z)V
 
     goto :goto_2
 
     .line 157
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/fv;->ue:Lcom/android/settings/MiuiTetherSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fv;->ue:Lcom/android/vendorsettings/MiuiTetherSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiTetherSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/MiuiTetherSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/fv;->ue:Lcom/android/settings/MiuiTetherSettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/fv;->ue:Lcom/android/vendorsettings/MiuiTetherSettings;
 
-    invoke-static {v2}, Lcom/android/settings/MiuiTetherSettings;->b(Lcom/android/settings/MiuiTetherSettings;)Landroid/preference/Preference;
+    invoke-static {v2}, Lcom/android/vendorsettings/MiuiTetherSettings;->b(Lcom/android/vendorsettings/MiuiTetherSettings;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -169,11 +169,11 @@
 
     .line 163
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/fv;->ue:Lcom/android/settings/MiuiTetherSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fv;->ue:Lcom/android/vendorsettings/MiuiTetherSettings;
 
-    iget-object v1, p0, Lcom/android/settings/fv;->ue:Lcom/android/settings/MiuiTetherSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/fv;->ue:Lcom/android/vendorsettings/MiuiTetherSettings;
 
-    invoke-static {v1}, Lcom/android/settings/MiuiTetherSettings;->d(Lcom/android/settings/MiuiTetherSettings;)Landroid/preference/CheckBoxPreference;
+    invoke-static {v1}, Lcom/android/vendorsettings/MiuiTetherSettings;->d(Lcom/android/vendorsettings/MiuiTetherSettings;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v1
 
@@ -181,7 +181,7 @@
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiTetherSettings;->a(Lcom/android/settings/MiuiTetherSettings;Z)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/MiuiTetherSettings;->a(Lcom/android/vendorsettings/MiuiTetherSettings;Z)V
 
     goto :goto_2
 

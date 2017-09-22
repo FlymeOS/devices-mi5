@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/widget/SettingsAppWidgetProvider;
+.class public Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;
 .super Landroid/appwidget/AppWidgetProvider;
 .source "SettingsAppWidgetProvider.java"
 
@@ -14,15 +14,15 @@
 
 .field private static final azj:[I
 
-.field private static final azk:Lcom/android/settings/widget/C;
+.field private static final azk:Lcom/android/vendorsettings/widget/C;
 
-.field private static final azl:Lcom/android/settings/widget/C;
+.field private static final azl:Lcom/android/vendorsettings/widget/C;
 
-.field private static final azm:Lcom/android/settings/widget/C;
+.field private static final azm:Lcom/android/vendorsettings/widget/C;
 
-.field private static final azn:Lcom/android/settings/widget/C;
+.field private static final azn:Lcom/android/vendorsettings/widget/C;
 
-.field private static azo:Lcom/android/settings/widget/B;
+.field private static azo:Lcom/android/vendorsettings/widget/B;
 
 
 # direct methods
@@ -43,59 +43,59 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azf:Landroid/content/ComponentName;
+    sput-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azf:Landroid/content/ComponentName;
 
     .line 58
-    sput-object v3, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azg:Lcom/android/b/b/Q;
+    sput-object v3, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azg:Lcom/android/b/b/Q;
 
     .line 81
     new-array v0, v4, [I
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azh:[I
+    sput-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azh:[I
 
     .line 87
     new-array v0, v4, [I
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azi:[I
+    sput-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azi:[I
 
     .line 93
     new-array v0, v4, [I
 
     fill-array-data v0, :array_2
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azj:[I
+    sput-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azj:[I
 
     .line 104
-    new-instance v0, Lcom/android/settings/widget/F;
+    new-instance v0, Lcom/android/vendorsettings/widget/F;
 
-    invoke-direct {v0, v3}, Lcom/android/settings/widget/F;-><init>(Lcom/android/settings/widget/w;)V
+    invoke-direct {v0, v3}, Lcom/android/vendorsettings/widget/F;-><init>(Lcom/android/vendorsettings/widget/w;)V
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azk:Lcom/android/settings/widget/C;
+    sput-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azk:Lcom/android/vendorsettings/widget/C;
 
     .line 105
-    new-instance v0, Lcom/android/settings/widget/x;
+    new-instance v0, Lcom/android/vendorsettings/widget/x;
 
-    invoke-direct {v0, v3}, Lcom/android/settings/widget/x;-><init>(Lcom/android/settings/widget/w;)V
+    invoke-direct {v0, v3}, Lcom/android/vendorsettings/widget/x;-><init>(Lcom/android/vendorsettings/widget/w;)V
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azl:Lcom/android/settings/widget/C;
+    sput-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azl:Lcom/android/vendorsettings/widget/C;
 
     .line 106
-    new-instance v0, Lcom/android/settings/widget/z;
+    new-instance v0, Lcom/android/vendorsettings/widget/z;
 
-    invoke-direct {v0, v3}, Lcom/android/settings/widget/z;-><init>(Lcom/android/settings/widget/w;)V
+    invoke-direct {v0, v3}, Lcom/android/vendorsettings/widget/z;-><init>(Lcom/android/vendorsettings/widget/w;)V
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azm:Lcom/android/settings/widget/C;
+    sput-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azm:Lcom/android/vendorsettings/widget/C;
 
     .line 107
-    new-instance v0, Lcom/android/settings/widget/D;
+    new-instance v0, Lcom/android/vendorsettings/widget/D;
 
-    invoke-direct {v0, v3}, Lcom/android/settings/widget/D;-><init>(Lcom/android/settings/widget/w;)V
+    invoke-direct {v0, v3}, Lcom/android/vendorsettings/widget/D;-><init>(Lcom/android/vendorsettings/widget/w;)V
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azn:Lcom/android/settings/widget/C;
+    sput-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azn:Lcom/android/vendorsettings/widget/C;
 
     return-void
 
@@ -149,7 +149,7 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 788
-    const-class v1, Lcom/android/settings/widget/SettingsAppWidgetProvider;
+    const-class v1, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;
 
     invoke-virtual {v0, p0, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -197,7 +197,7 @@
 
     .prologue
     .line 51
-    sput-object p0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azg:Lcom/android/b/b/Q;
+    sput-object p0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azg:Lcom/android/b/b/Q;
 
     return-object p0
 .end method
@@ -217,27 +217,27 @@
     const/4 v4, 0x0
 
     .line 728
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azk:Lcom/android/settings/widget/C;
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azk:Lcom/android/vendorsettings/widget/C;
 
-    invoke-virtual {v0, p1, p0}, Lcom/android/settings/widget/C;->a(Landroid/content/Context;Landroid/widget/RemoteViews;)V
+    invoke-virtual {v0, p1, p0}, Lcom/android/vendorsettings/widget/C;->a(Landroid/content/Context;Landroid/widget/RemoteViews;)V
 
     .line 729
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azl:Lcom/android/settings/widget/C;
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azl:Lcom/android/vendorsettings/widget/C;
 
-    invoke-virtual {v0, p1, p0}, Lcom/android/settings/widget/C;->a(Landroid/content/Context;Landroid/widget/RemoteViews;)V
+    invoke-virtual {v0, p1, p0}, Lcom/android/vendorsettings/widget/C;->a(Landroid/content/Context;Landroid/widget/RemoteViews;)V
 
     .line 730
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azm:Lcom/android/settings/widget/C;
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azm:Lcom/android/vendorsettings/widget/C;
 
-    invoke-virtual {v0, p1, p0}, Lcom/android/settings/widget/C;->a(Landroid/content/Context;Landroid/widget/RemoteViews;)V
+    invoke-virtual {v0, p1, p0}, Lcom/android/vendorsettings/widget/C;->a(Landroid/content/Context;Landroid/widget/RemoteViews;)V
 
     .line 731
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azn:Lcom/android/settings/widget/C;
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azn:Lcom/android/vendorsettings/widget/C;
 
-    invoke-virtual {v0, p1, p0}, Lcom/android/settings/widget/C;->a(Landroid/content/Context;Landroid/widget/RemoteViews;)V
+    invoke-virtual {v0, p1, p0}, Lcom/android/vendorsettings/widget/C;->a(Landroid/content/Context;Landroid/widget/RemoteViews;)V
 
     .line 733
-    invoke-static {p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->cs(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->cs(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -278,7 +278,7 @@
 
     .line 742
     :cond_0
-    invoke-static {p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->cr(Landroid/content/Context;)I
+    invoke-static {p1}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->cr(Landroid/content/Context;)I
 
     move-result v1
 
@@ -424,7 +424,7 @@
 
     .prologue
     .line 51
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azh:[I
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azh:[I
 
     return-object v0
 .end method
@@ -434,7 +434,7 @@
 
     .prologue
     .line 51
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azi:[I
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azi:[I
 
     return-object v0
 .end method
@@ -444,12 +444,12 @@
 
     .prologue
     .line 653
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azo:Lcom/android/settings/widget/B;
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azo:Lcom/android/vendorsettings/widget/B;
 
     if-nez v0, :cond_0
 
     .line 654
-    new-instance v0, Lcom/android/settings/widget/B;
+    new-instance v0, Lcom/android/vendorsettings/widget/B;
 
     new-instance v1, Landroid/os/Handler;
 
@@ -459,14 +459,14 @@
 
     move-result-object v2
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/widget/B;-><init>(Landroid/os/Handler;Landroid/content/Context;)V
+    invoke-direct {v0, v1, v2}, Lcom/android/vendorsettings/widget/B;-><init>(Landroid/os/Handler;Landroid/content/Context;)V
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azo:Lcom/android/settings/widget/B;
+    sput-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azo:Lcom/android/vendorsettings/widget/B;
 
     .line 656
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azo:Lcom/android/settings/widget/B;
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azo:Lcom/android/vendorsettings/widget/B;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/B;->wM()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/widget/B;->wM()V
 
     .line 658
     :cond_0
@@ -493,7 +493,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {p0, v2}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->A(Landroid/content/Context;I)Landroid/app/PendingIntent;
+    invoke-static {p0, v2}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->A(Landroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object v2
 
@@ -504,7 +504,7 @@
 
     const/4 v2, 0x1
 
-    invoke-static {p0, v2}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->A(Landroid/content/Context;I)Landroid/app/PendingIntent;
+    invoke-static {p0, v2}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->A(Landroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object v2
 
@@ -515,7 +515,7 @@
 
     const/4 v2, 0x2
 
-    invoke-static {p0, v2}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->A(Landroid/content/Context;I)Landroid/app/PendingIntent;
+    invoke-static {p0, v2}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->A(Landroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object v2
 
@@ -526,7 +526,7 @@
 
     const/4 v2, 0x3
 
-    invoke-static {p0, v2}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->A(Landroid/content/Context;I)Landroid/app/PendingIntent;
+    invoke-static {p0, v2}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->A(Landroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object v2
 
@@ -537,14 +537,14 @@
 
     const/4 v2, 0x4
 
-    invoke-static {p0, v2}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->A(Landroid/content/Context;I)Landroid/app/PendingIntent;
+    invoke-static {p0, v2}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->A(Landroid/content/Context;I)Landroid/app/PendingIntent;
 
     move-result-object v2
 
     invoke-virtual {v0, v1, v2}, Landroid/widget/RemoteViews;->setOnClickPendingIntent(ILandroid/app/PendingIntent;)V
 
     .line 704
-    invoke-static {v0, p0}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->a(Landroid/widget/RemoteViews;Landroid/content/Context;)V
+    invoke-static {v0, p0}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->a(Landroid/widget/RemoteViews;Landroid/content/Context;)V
 
     .line 705
     return-object v0
@@ -555,7 +555,7 @@
 
     .prologue
     .line 714
-    invoke-static {p0}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->cp(Landroid/content/Context;)Landroid/widget/RemoteViews;
+    invoke-static {p0}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->cp(Landroid/content/Context;)Landroid/widget/RemoteViews;
 
     move-result-object v0
 
@@ -565,12 +565,12 @@
     move-result-object v1
 
     .line 717
-    sget-object v2, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azf:Landroid/content/ComponentName;
+    sget-object v2, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azf:Landroid/content/ComponentName;
 
     invoke-virtual {v1, v2, v0}, Landroid/appwidget/AppWidgetManager;->updateAppWidget(Landroid/content/ComponentName;Landroid/widget/RemoteViews;)V
 
     .line 718
-    invoke-static {p0}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->co(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->co(Landroid/content/Context;)V
 
     .line 719
     return-void
@@ -925,7 +925,7 @@
 
     .prologue
     .line 51
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azj:[I
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azj:[I
 
     return-object v0
 .end method
@@ -935,7 +935,7 @@
 
     .prologue
     .line 51
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azg:Lcom/android/b/b/Q;
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azg:Lcom/android/b/b/Q;
 
     return-object v0
 .end method
@@ -947,19 +947,19 @@
 
     .prologue
     .line 678
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azo:Lcom/android/settings/widget/B;
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azo:Lcom/android/vendorsettings/widget/B;
 
     if-eqz v0, :cond_0
 
     .line 679
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azo:Lcom/android/settings/widget/B;
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azo:Lcom/android/vendorsettings/widget/B;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/B;->stopObserving()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/widget/B;->stopObserving()V
 
     .line 680
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azo:Lcom/android/settings/widget/B;
+    sput-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azo:Lcom/android/vendorsettings/widget/B;
 
     .line 682
     :cond_0
@@ -971,7 +971,7 @@
 
     .prologue
     .line 673
-    invoke-static {p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->co(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->co(Landroid/content/Context;)V
 
     .line 674
     return-void
@@ -999,14 +999,14 @@
     if-eqz v1, :cond_2
 
     .line 807
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azk:Lcom/android/settings/widget/C;
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azk:Lcom/android/vendorsettings/widget/C;
 
-    invoke-virtual {v0, p1, p2}, Lcom/android/settings/widget/C;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-virtual {v0, p1, p2}, Lcom/android/vendorsettings/widget/C;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
 
     .line 836
     :cond_0
     :goto_0
-    invoke-static {p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->cq(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->cq(Landroid/content/Context;)V
 
     .line 837
     :cond_1
@@ -1023,9 +1023,9 @@
     if-eqz v1, :cond_3
 
     .line 809
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azl:Lcom/android/settings/widget/C;
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azl:Lcom/android/vendorsettings/widget/C;
 
-    invoke-virtual {v0, p1, p2}, Lcom/android/settings/widget/C;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-virtual {v0, p1, p2}, Lcom/android/vendorsettings/widget/C;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -1040,9 +1040,9 @@
     if-eqz v1, :cond_4
 
     .line 811
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azm:Lcom/android/settings/widget/C;
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azm:Lcom/android/vendorsettings/widget/C;
 
-    invoke-virtual {v0, p1, p2}, Lcom/android/settings/widget/C;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-virtual {v0, p1, p2}, Lcom/android/vendorsettings/widget/C;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -1057,9 +1057,9 @@
     if-eqz v0, :cond_5
 
     .line 813
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azn:Lcom/android/settings/widget/C;
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azn:Lcom/android/vendorsettings/widget/C;
 
-    invoke-virtual {v0, p1, p2}, Lcom/android/settings/widget/C;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-virtual {v0, p1, p2}, Lcom/android/vendorsettings/widget/C;->onActualStateChange(Landroid/content/Context;Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -1091,9 +1091,9 @@
     if-nez v0, :cond_6
 
     .line 818
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azk:Lcom/android/settings/widget/C;
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azk:Lcom/android/vendorsettings/widget/C;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/widget/C;->toggleState(Landroid/content/Context;)V
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/widget/C;->toggleState(Landroid/content/Context;)V
 
     goto :goto_0
 
@@ -1104,7 +1104,7 @@
     if-ne v0, v1, :cond_7
 
     .line 820
-    invoke-direct {p0, p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->ct(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->ct(Landroid/content/Context;)V
 
     goto :goto_0
 
@@ -1115,9 +1115,9 @@
     if-ne v0, v1, :cond_8
 
     .line 822
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azn:Lcom/android/settings/widget/C;
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azn:Lcom/android/vendorsettings/widget/C;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/widget/C;->toggleState(Landroid/content/Context;)V
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/widget/C;->toggleState(Landroid/content/Context;)V
 
     goto :goto_0
 
@@ -1128,9 +1128,9 @@
     if-ne v0, v1, :cond_9
 
     .line 824
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azm:Lcom/android/settings/widget/C;
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azm:Lcom/android/vendorsettings/widget/C;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/widget/C;->toggleState(Landroid/content/Context;)V
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/widget/C;->toggleState(Landroid/content/Context;)V
 
     goto :goto_0
 
@@ -1141,9 +1141,9 @@
     if-ne v0, v1, :cond_0
 
     .line 826
-    sget-object v0, Lcom/android/settings/widget/SettingsAppWidgetProvider;->azl:Lcom/android/settings/widget/C;
+    sget-object v0, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->azl:Lcom/android/vendorsettings/widget/C;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/widget/C;->toggleState(Landroid/content/Context;)V
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/widget/C;->toggleState(Landroid/content/Context;)V
 
     goto :goto_0
 .end method
@@ -1153,7 +1153,7 @@
 
     .prologue
     .line 664
-    invoke-static {p1}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->cp(Landroid/content/Context;)Landroid/widget/RemoteViews;
+    invoke-static {p1}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->cp(Landroid/content/Context;)Landroid/widget/RemoteViews;
 
     move-result-object v1
 

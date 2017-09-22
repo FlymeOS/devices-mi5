@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "PrivacyPasswordSetting.java"
 
 
 # instance fields
-.field private anb:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+.field private anb:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 
 .field private final aor:Landroid/preference/Preference$OnPreferenceClickListener;
 
@@ -15,24 +15,24 @@
 
     .prologue
     .line 34
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 55
-    new-instance v0, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment$1;
+    new-instance v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment$1;-><init>(Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment$1;-><init>(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->aor:Landroid/preference/Preference$OnPreferenceClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->aor:Landroid/preference/Preference$OnPreferenceClickListener;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;)Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+.method static synthetic a(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;)Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
     .locals 1
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->anb:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->anb:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 
     return-object v0
 .end method
@@ -44,7 +44,7 @@
 
     .prologue
     .line 108
-    const-class v0, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;
+    const-class v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -60,7 +60,7 @@
     const/4 v0, -0x1
 
     .line 83
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 84
     packed-switch p1, :pswitch_data_0
@@ -77,11 +77,11 @@
     .line 87
     new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    const-class v2, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -95,13 +95,13 @@
     .line 89
     const v1, 0x46db1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 
     .line 91
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->finish()V
 
     goto :goto_0
 
@@ -112,20 +112,20 @@
     .line 96
     new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;
+    const-class v2, Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 97
-    invoke-virtual {p0, v0}, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->startActivity(Landroid/content/Intent;)V
 
     .line 99
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->finish()V
 
     goto :goto_0
 
@@ -145,17 +145,17 @@
 
     .prologue
     .line 44
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 45
-    invoke-static {}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->tJ()Z
+    invoke-static {}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordUtils;->tJ()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 46
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -167,10 +167,10 @@
     :cond_0
     const v0, 0x7f080078
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->addPreferencesFromResource(I)V
 
     .line 49
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -178,26 +178,26 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->bW(Landroid/content/Context;)Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    invoke-static {v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->bW(Landroid/content/Context;)Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->anb:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->anb:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 
     .line 50
     const-string v0, "privacy_password_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     .line 51
-    iget-object v1, p0, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->aor:Landroid/preference/Preference$OnPreferenceClickListener;
+    iget-object v1, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->aor:Landroid/preference/Preference$OnPreferenceClickListener;
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 52
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -214,17 +214,17 @@
 
     .prologue
     .line 113
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
-    instance-of v0, v0, Lcom/android/settings/SettingsPreferenceFragment;
+    instance-of v0, v0, Lcom/android/vendorsettings/SettingsPreferenceFragment;
 
     if-eqz v0, :cond_0
 
@@ -234,15 +234,15 @@
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
     .line 118
-    new-instance v1, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment$2;
+    new-instance v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment$2;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment$2;-><init>(Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment$2;-><init>(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     .line 127
     :cond_0
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDetach()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onDetach()V
 
     .line 128
     return-void

@@ -24,15 +24,15 @@
             </LinearLayout>
             <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/provision_input_item_bg" android:layout_marginTop="0.0dip" style="@style/wifi_spinner_item">
                 <TextView android:text="@string/wifi_security" style="@style/Provision.InputTextView" />
-                <com.android.settings.ProvisionSpinner android:entries="@array/wifi_security" android:id="@id/security" android:background="@drawable/provision_spinner_bg" android:visibility="gone" android:prompt="@string/wifi_security" style="@style/wifi_spinner_item_content" />
-                <com.android.settings.ProvisionSpinner android:entries="@array/mi2_wifi_security" android:id="@id/mi2_security" android:background="@drawable/provision_spinner_bg" android:visibility="gone" android:prompt="@string/wifi_security" style="@style/wifi_spinner_item_content" />
+                <com.android.vendorsettings.ProvisionSpinner android:entries="@array/wifi_security" android:id="@id/security" android:background="@drawable/provision_spinner_bg" android:visibility="gone" android:prompt="@string/wifi_security" style="@style/wifi_spinner_item_content" />
+                <com.android.vendorsettings.ProvisionSpinner android:entries="@array/mi2_wifi_security" android:id="@id/mi2_security" android:background="@drawable/provision_spinner_bg" android:visibility="gone" android:prompt="@string/wifi_security" style="@style/wifi_spinner_item_content" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout android:id="@id/security_fields" android:visibility="gone" style="@style/wifi_section">
             <LinearLayout android:id="@id/eap" android:visibility="gone" style="@style/wifi_section">
                 <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/l_method" android:background="@drawable/provision_input_item_bg" android:visibility="gone" android:layout_marginTop="0.0dip" style="@style/wifi_spinner_item">
                     <TextView android:text="@string/wifi_eap_method" style="@style/Provision.InputTextView" />
-                    <com.android.settings.ProvisionSpinner android:entries="@array/wifi_eap_method" android:id="@id/method" android:background="@drawable/provision_spinner_bg" android:prompt="@string/wifi_eap_method" style="@style/wifi_spinner_item_content" />
+                    <com.android.vendorsettings.ProvisionSpinner android:entries="@array/wifi_eap_method" android:id="@id/method" android:background="@drawable/provision_spinner_bg" android:prompt="@string/wifi_eap_method" style="@style/wifi_spinner_item_content" />
                 </LinearLayout>
                 <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/l_phase2" android:background="@drawable/provision_input_item_bg" android:visibility="gone" android:layout_marginTop="0.0dip" style="@style/wifi_spinner_item">
                     <TextView android:text="@string/please_select_phase2" style="@style/Provision.InputTextView" />
@@ -71,7 +71,7 @@
                 <TextView android:id="@id/wapi_user_certificate_text" android:visibility="gone" android:text="@string/wifi_wapi_user_cert" style="@style/wifi_spinner_item_label" />
                 <Spinner android:id="@id/wapi_user_cert" android:visibility="gone" android:prompt="@string/wifi_wapi_user_cert" style="@style/wifi_spinner_item_content" />
                 <Spinner android:id="@id/wapi_certificate_spinner" android:layout_height="0.0dip" style="@style/wifi_spinner_item_content" />
-                <com.android.settings.ProvisionSpinner android:entries="@array/wifi_wapi_key_type" android:id="@id/cfg_wapi_key_type_spinner" android:background="@drawable/provision_spinner_bg" android:layout_height="0.0dip" style="@style/wifi_spinner_item_content" />
+                <com.android.vendorsettings.ProvisionSpinner android:entries="@array/wifi_wapi_key_type" android:id="@id/cfg_wapi_key_type_spinner" android:background="@drawable/provision_spinner_bg" android:layout_height="0.0dip" style="@style/wifi_spinner_item_content" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout android:id="@id/wifi_advanced_toggle" android:visibility="gone" style="@style/miui_wifi_item">
@@ -80,7 +80,7 @@
         <LinearLayout android:orientation="vertical" android:id="@id/wifi_advanced_fields" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
             <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/proxy_settings_fields" android:background="@drawable/provision_input_item_bg" android:visibility="gone" android:layout_marginTop="0.0dip" style="@style/wifi_spinner_item">
                 <TextView android:textColor="@color/provision_input_title" android:id="@id/proxy_settings_title" android:text="@string/proxy_settings_title" style="@style/Provision.InputTextView" />
-                <com.android.settings.ProvisionSpinner android:entries="@array/wifi_proxy_settings" android:id="@id/proxy_settings" android:background="@drawable/provision_spinner_bg" android:prompt="@string/proxy_settings_title" style="@style/wifi_spinner_item_content" />
+                <com.android.vendorsettings.ProvisionSpinner android:entries="@array/wifi_proxy_settings" android:id="@id/proxy_settings" android:background="@drawable/provision_spinner_bg" android:prompt="@string/proxy_settings_title" style="@style/wifi_spinner_item_content" />
             </LinearLayout>
             <LinearLayout android:id="@id/proxy_warning_limited_support" android:background="@null" android:visibility="gone" style="@style/input_item_horizontal">
                 <TextView android:visibility="gone" style="@style/wifi_item_label" />
@@ -102,7 +102,7 @@
             </LinearLayout>
             <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ip_fields" android:background="@drawable/provision_input_item_bg" android:visibility="gone" android:layout_marginTop="0.0dip" style="@style/wifi_spinner_item">
                 <TextView android:text="@string/wifi_ip_settings" style="@style/Provision.InputTextView" />
-                <com.android.settings.ProvisionSpinner android:entries="@array/wifi_ip_settings" android:id="@id/ip_settings" android:background="@drawable/provision_spinner_bg" android:prompt="@string/wifi_ip_settings" style="@style/wifi_spinner_item_content" />
+                <com.android.vendorsettings.ProvisionSpinner android:entries="@array/wifi_ip_settings" android:id="@id/ip_settings" android:background="@drawable/provision_spinner_bg" android:prompt="@string/wifi_ip_settings" style="@style/wifi_spinner_item_content" />
             </LinearLayout>
             <LinearLayout android:id="@id/staticip" android:visibility="gone" android:layout_marginTop="0.0dip" style="@style/wifi_section">
                 <LinearLayout android:background="@drawable/provision_input_item_bg" style="@style/input_item_horizontal">

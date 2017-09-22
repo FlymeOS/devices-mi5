@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/msim/StatusSim;
+.class public Lcom/android/vendorsettings/msim/StatusSim;
 .super Lmiui/app/Activity;
 .source "StatusSim.java"
 
@@ -19,7 +19,7 @@
 
     .prologue
     .line 45
-    invoke-virtual {p0}, Lcom/android/settings/msim/StatusSim;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/StatusSim;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 
@@ -34,7 +34,7 @@
     move-result-object v1
 
     .line 48
-    invoke-virtual {p0, p2}, Lcom/android/settings/msim/StatusSim;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, p2}, Lcom/android/vendorsettings/msim/StatusSim;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -70,26 +70,26 @@
     const/4 v5, 0x0
 
     .line 28
-    invoke-virtual {p0}, Lcom/android/settings/msim/StatusSim;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/StatusSim;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v1
 
     .line 29
-    invoke-virtual {p0}, Lcom/android/settings/msim/StatusSim;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/StatusSim;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
     invoke-virtual {v1, p0, v0}, Lmiui/app/ActionBar;->setFragmentViewPagerMode(Landroid/content/Context;Landroid/app/FragmentManager;)V
 
     .line 31
-    const-class v2, Lcom/android/settings/msim/SimFragment;
+    const-class v2, Lcom/android/vendorsettings/msim/SimFragment;
 
     .line 32
-    invoke-static {}, Lcom/android/settings/fy;->gg()Lcom/android/settings/fy;
+    invoke-static {}, Lcom/android/vendorsettings/fy;->gg()Lcom/android/vendorsettings/fy;
 
     move-result-object v0
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/fy;->J(Landroid/content/Context;)Ljava/util/ArrayList;
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/fy;->J(Landroid/content/Context;)Ljava/util/ArrayList;
 
     move-result-object v3
 
@@ -103,7 +103,7 @@
     if-ge v0, v4, :cond_0
 
     .line 34
-    invoke-virtual {p0}, Lcom/android/settings/msim/StatusSim;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/StatusSim;->finish()V
 
     .line 41
     :goto_0
@@ -123,7 +123,7 @@
 
     move-result v0
 
-    invoke-direct {p0, v2, v4, v5, v0}, Lcom/android/settings/msim/StatusSim;->a(Ljava/lang/Class;III)Landroid/app/ActionBar$Tab;
+    invoke-direct {p0, v2, v4, v5, v0}, Lcom/android/vendorsettings/msim/StatusSim;->a(Ljava/lang/Class;III)Landroid/app/ActionBar$Tab;
 
     move-result-object v4
 
@@ -140,7 +140,7 @@
 
     move-result v0
 
-    invoke-direct {p0, v2, v5, v6, v0}, Lcom/android/settings/msim/StatusSim;->a(Ljava/lang/Class;III)Landroid/app/ActionBar$Tab;
+    invoke-direct {p0, v2, v5, v6, v0}, Lcom/android/vendorsettings/msim/StatusSim;->a(Ljava/lang/Class;III)Landroid/app/ActionBar$Tab;
 
     .line 40
     invoke-virtual {v1, v4}, Lmiui/app/ActionBar;->selectTab(Landroid/app/ActionBar$Tab;)V
@@ -158,7 +158,7 @@
     invoke-super {p0, p1}, Lmiui/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 24
-    invoke-direct {p0}, Lcom/android/settings/msim/StatusSim;->kd()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/msim/StatusSim;->kd()V
 
     .line 25
     return-void

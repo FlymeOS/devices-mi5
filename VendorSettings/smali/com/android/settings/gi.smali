@@ -1,5 +1,5 @@
-.class Lcom/android/settings/gi;
-.super Lcom/android/settings/search/a;
+.class Lcom/android/vendorsettings/gi;
+.super Lcom/android/vendorsettings/search/a;
 .source "PrivacySettings.java"
 
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 232
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/search/a;-><init>()V
 
     .line 234
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
@@ -25,7 +25,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/gi;->vW:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/gi;->vW:Z
 
     .line 235
     return-void
@@ -49,7 +49,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 244
-    iget-boolean v1, p0, Lcom/android/settings/gi;->vW:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/gi;->vW:Z
 
     if-nez v1, :cond_0
 
@@ -84,7 +84,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 258
-    invoke-static {p1, v0}, Lcom/android/settings/PrivacySettings;->b(Landroid/content/Context;Ljava/util/Collection;)V
+    invoke-static {p1, v0}, Lcom/android/vendorsettings/PrivacySettings;->b(Landroid/content/Context;Ljava/util/Collection;)V
 
     .line 259
     return-object v0

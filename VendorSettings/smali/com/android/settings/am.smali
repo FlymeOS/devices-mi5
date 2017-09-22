@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/am;
+.class public Lcom/android/vendorsettings/am;
 .super Landroid/preference/Preference;
 .source "CancellablePreference.java"
 
@@ -9,16 +9,16 @@
 # instance fields
 .field private cR:Z
 
-.field private cS:Lcom/android/settings/an;
+.field private cS:Lcom/android/vendorsettings/an;
 
 
 # virtual methods
-.method public a(Lcom/android/settings/an;)V
+.method public a(Lcom/android/vendorsettings/an;)V
     .locals 0
 
     .prologue
     .line 46
-    iput-object p1, p0, Lcom/android/settings/am;->cS:Lcom/android/settings/an;
+    iput-object p1, p0, Lcom/android/vendorsettings/am;->cS:Lcom/android/vendorsettings/an;
 
     .line 47
     return-void
@@ -29,10 +29,10 @@
 
     .prologue
     .line 41
-    iput-boolean p1, p0, Lcom/android/settings/am;->cR:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/am;->cR:Z
 
     .line 42
-    invoke-virtual {p0}, Lcom/android/settings/am;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/am;->notifyChanged()V
 
     .line 43
     return-void
@@ -55,7 +55,7 @@
     check-cast v0, Landroid/widget/ImageView;
 
     .line 54
-    iget-boolean v1, p0, Lcom/android/settings/am;->cR:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/am;->cR:Z
 
     if-eqz v1, :cond_0
 
@@ -82,14 +82,14 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/android/settings/am;->cS:Lcom/android/settings/an;
+    iget-object v0, p0, Lcom/android/vendorsettings/am;->cS:Lcom/android/vendorsettings/an;
 
     if-eqz v0, :cond_0
 
     .line 61
-    iget-object v0, p0, Lcom/android/settings/am;->cS:Lcom/android/settings/an;
+    iget-object v0, p0, Lcom/android/vendorsettings/am;->cS:Lcom/android/vendorsettings/an;
 
-    invoke-interface {v0, p0}, Lcom/android/settings/an;->a(Lcom/android/settings/am;)V
+    invoke-interface {v0, p0}, Lcom/android/vendorsettings/an;->a(Lcom/android/vendorsettings/am;)V
 
     .line 63
     :cond_0

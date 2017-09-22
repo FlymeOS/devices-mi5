@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dndmode/LabelPreference;
+.class public Lcom/android/vendorsettings/dndmode/LabelPreference;
 .super Landroid/preference/Preference;
 .source "LabelPreference.java"
 
@@ -23,7 +23,7 @@
     .line 40
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/dndmode/LabelPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/dndmode/LabelPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 41
     return-void
@@ -41,7 +41,7 @@
     invoke-direct {p0, p1, p2}, Landroid/preference/Preference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 29
-    sget-object v0, Lcom/android/settings/gt;->ww:[I
+    sget-object v0, Lcom/android/vendorsettings/gt;->ww:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -52,14 +52,14 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/dndmode/LabelPreference;->mLabel:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/dndmode/LabelPreference;->mLabel:Ljava/lang/String;
 
     .line 32
     invoke-virtual {v0, v3}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/dndmode/LabelPreference;->aaE:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/dndmode/LabelPreference;->aaE:Ljava/lang/String;
 
     .line 33
     const/4 v1, 0x2
@@ -68,7 +68,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/dndmode/LabelPreference;->mSummary:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/dndmode/LabelPreference;->mSummary:Ljava/lang/String;
 
     .line 34
     const/4 v1, 0x3
@@ -77,7 +77,7 @@
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/android/settings/dndmode/LabelPreference;->aaF:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/dndmode/LabelPreference;->aaF:Z
 
     .line 35
     const/4 v1, 0x4
@@ -86,7 +86,7 @@
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/android/settings/dndmode/LabelPreference;->aaG:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/dndmode/LabelPreference;->aaG:Z
 
     .line 36
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
@@ -140,14 +140,14 @@
     check-cast v3, Landroid/widget/TextView;
 
     .line 55
-    iget-boolean v4, p0, Lcom/android/settings/dndmode/LabelPreference;->aaG:Z
+    iget-boolean v4, p0, Lcom/android/vendorsettings/dndmode/LabelPreference;->aaG:Z
 
     if-nez v4, :cond_0
 
     .line 56
-    new-instance v4, Lcom/android/settings/dndmode/o;
+    new-instance v4, Lcom/android/vendorsettings/dndmode/o;
 
-    invoke-direct {v4, p0, v0}, Lcom/android/settings/dndmode/o;-><init>(Lcom/android/settings/dndmode/LabelPreference;Landroid/widget/LinearLayout;)V
+    invoke-direct {v4, p0, v0}, Lcom/android/vendorsettings/dndmode/o;-><init>(Lcom/android/vendorsettings/dndmode/LabelPreference;Landroid/widget/LinearLayout;)V
 
     invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->post(Ljava/lang/Runnable;)Z
 
@@ -156,12 +156,12 @@
     if-eqz v1, :cond_2
 
     .line 67
-    iget-object v0, p0, Lcom/android/settings/dndmode/LabelPreference;->mLabel:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/LabelPreference;->mLabel:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 68
-    iget-boolean v0, p0, Lcom/android/settings/dndmode/LabelPreference;->aaF:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/dndmode/LabelPreference;->aaF:Z
 
     if-nez v0, :cond_1
 
@@ -170,14 +170,14 @@
 
     .line 71
     :cond_1
-    iget-boolean v0, p0, Lcom/android/settings/dndmode/LabelPreference;->aaG:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/dndmode/LabelPreference;->aaG:Z
 
     if-nez v0, :cond_2
 
     .line 72
-    new-instance v0, Lcom/android/settings/dndmode/p;
+    new-instance v0, Lcom/android/vendorsettings/dndmode/p;
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/dndmode/p;-><init>(Lcom/android/settings/dndmode/LabelPreference;Landroid/widget/TextView;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/dndmode/p;-><init>(Lcom/android/vendorsettings/dndmode/LabelPreference;Landroid/widget/TextView;)V
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->post(Ljava/lang/Runnable;)Z
 
@@ -185,7 +185,7 @@
     :cond_2
     if-eqz v2, :cond_3
 
-    iget-object v0, p0, Lcom/android/settings/dndmode/LabelPreference;->aaE:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/LabelPreference;->aaE:Ljava/lang/String;
 
     if-eqz v0, :cond_3
 
@@ -195,7 +195,7 @@
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 85
-    iget-object v0, p0, Lcom/android/settings/dndmode/LabelPreference;->aaE:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/LabelPreference;->aaE:Ljava/lang/String;
 
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -203,12 +203,12 @@
     :cond_3
     if-eqz v3, :cond_4
 
-    iget-object v0, p0, Lcom/android/settings/dndmode/LabelPreference;->mSummary:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/LabelPreference;->mSummary:Ljava/lang/String;
 
     if-eqz v0, :cond_4
 
     .line 88
-    iget-object v0, p0, Lcom/android/settings/dndmode/LabelPreference;->mSummary:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/LabelPreference;->mSummary:Ljava/lang/String;
 
     invoke-virtual {v3, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -235,7 +235,7 @@
     .line 45
     const v0, 0x7f04006d
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/LabelPreference;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dndmode/LabelPreference;->setLayoutResource(I)V
 
     .line 46
     invoke-super {p0, p1}, Landroid/preference/Preference;->onCreateView(Landroid/view/ViewGroup;)Landroid/view/View;
@@ -250,7 +250,7 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/android/settings/dndmode/LabelPreference;->mLabel:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/LabelPreference;->mLabel:Ljava/lang/String;
 
     invoke-static {v0, p1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -259,10 +259,10 @@
     if-nez v0, :cond_0
 
     .line 98
-    iput-object p1, p0, Lcom/android/settings/dndmode/LabelPreference;->mLabel:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/dndmode/LabelPreference;->mLabel:Ljava/lang/String;
 
     .line 99
-    invoke-virtual {p0}, Lcom/android/settings/dndmode/LabelPreference;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dndmode/LabelPreference;->notifyChanged()V
 
     .line 101
     :cond_0

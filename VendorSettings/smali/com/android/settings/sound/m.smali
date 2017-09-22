@@ -1,4 +1,4 @@
-.class Lcom/android/settings/sound/m;
+.class Lcom/android/vendorsettings/sound/m;
 .super Ljava/lang/Object;
 .source "AudioSettingsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aqt:Lcom/android/settings/sound/k;
+.field final synthetic aqt:Lcom/android/vendorsettings/sound/k;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sound/k;)V
+.method constructor <init>(Lcom/android/vendorsettings/sound/k;)V
     .locals 0
 
     .prologue
     .line 247
-    iput-object p1, p0, Lcom/android/settings/sound/m;->aqt:Lcom/android/settings/sound/k;
+    iput-object p1, p0, Lcom/android/vendorsettings/sound/m;->aqt:Lcom/android/vendorsettings/sound/k;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,11 +37,11 @@
     .line 251
     const-string v0, "android.intent.extra.ringtone.SHOW_DEFAULT"
 
-    iget-object v2, p0, Lcom/android/settings/sound/m;->aqt:Lcom/android/settings/sound/k;
+    iget-object v2, p0, Lcom/android/vendorsettings/sound/m;->aqt:Lcom/android/vendorsettings/sound/k;
 
-    iget-object v2, v2, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v2, v2, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-static {v2}, Lcom/android/settings/sound/AudioSettingsFragment;->c(Lcom/android/settings/sound/AudioSettingsFragment;)Z
+    invoke-static {v2}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->c(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Z
 
     move-result v2
 
@@ -50,11 +50,11 @@
     .line 252
     const-string v0, "android.intent.extra.ringtone.SHOW_SILENT"
 
-    iget-object v2, p0, Lcom/android/settings/sound/m;->aqt:Lcom/android/settings/sound/k;
+    iget-object v2, p0, Lcom/android/vendorsettings/sound/m;->aqt:Lcom/android/vendorsettings/sound/k;
 
-    iget-object v2, v2, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v2, v2, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-static {v2}, Lcom/android/settings/sound/AudioSettingsFragment;->d(Lcom/android/settings/sound/AudioSettingsFragment;)Z
+    invoke-static {v2}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->d(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Z
 
     move-result v2
 
@@ -63,11 +63,11 @@
     .line 253
     const-string v0, "android.intent.extra.ringtone.TYPE"
 
-    iget-object v2, p0, Lcom/android/settings/sound/m;->aqt:Lcom/android/settings/sound/k;
+    iget-object v2, p0, Lcom/android/vendorsettings/sound/m;->aqt:Lcom/android/vendorsettings/sound/k;
 
-    iget-object v2, v2, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v2, v2, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-static {v2}, Lcom/android/settings/sound/AudioSettingsFragment;->b(Lcom/android/settings/sound/AudioSettingsFragment;)I
+    invoke-static {v2}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->b(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)I
 
     move-result v2
 
@@ -76,11 +76,11 @@
     .line 254
     const-string v0, "android.intent.extra.ringtone.TITLE"
 
-    iget-object v2, p0, Lcom/android/settings/sound/m;->aqt:Lcom/android/settings/sound/k;
+    iget-object v2, p0, Lcom/android/vendorsettings/sound/m;->aqt:Lcom/android/vendorsettings/sound/k;
 
-    iget-object v2, v2, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v2, v2, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-virtual {v2}, Lcom/android/settings/sound/AudioSettingsFragment;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {v2}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v2
 
@@ -98,11 +98,11 @@
     invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 257
-    iget-object v0, p0, Lcom/android/settings/sound/m;->aqt:Lcom/android/settings/sound/k;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/m;->aqt:Lcom/android/vendorsettings/sound/k;
 
-    iget-object v0, v0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v0, v0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/sound/AudioSettingsFragment;->b(Lcom/android/settings/sound/AudioSettingsFragment;)I
+    invoke-static {v0}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->b(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)I
 
     move-result v0
 
@@ -119,11 +119,11 @@
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 272
-    iget-object v0, p0, Lcom/android/settings/sound/m;->aqt:Lcom/android/settings/sound/k;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/m;->aqt:Lcom/android/vendorsettings/sound/k;
 
-    iget-object v0, v0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v0, v0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/sound/AudioSettingsFragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->startActivity(Landroid/content/Intent;)V
 
     .line 273
     return-void

@@ -2,6 +2,6 @@
 <preference-headers
   xmlns:android="http://schemas.android.com/apk/res/android">
     <header android:icon="@drawable/ic_ringtone_settings" android:id="@id/ringtone_settings" android:title="@string/ringtone_title">
-        <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings.sound.RingtoneActivity" />
+        <intent android:targetPackage="com.android.vendorsettings" android:targetClass="com.android.vendorsettings.sound.RingtoneActivity" />
     </header>
 </preference-headers>

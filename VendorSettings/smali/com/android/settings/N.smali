@@ -1,19 +1,19 @@
-.class Lcom/android/settings/N;
+.class Lcom/android/vendorsettings/N;
 .super Landroid/content/BroadcastReceiver;
 .source "AutoDisableScreenButtonsAppListSettings.java"
 
 
 # instance fields
-.field final synthetic bG:Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;
+.field final synthetic bG:Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;)V
     .locals 0
 
     .prologue
     .line 150
-    iput-object p1, p0, Lcom/android/settings/N;->bG:Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/N;->bG:Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 153
-    iget-object v0, p0, Lcom/android/settings/N;->bG:Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/N;->bG:Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;
 
-    invoke-static {v0}, Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;->a(Lcom/android/settings/AutoDisableScreenButtonsAppListSettings;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;->a(Lcom/android/vendorsettings/AutoDisableScreenButtonsAppListSettings;)V
 
     .line 154
     return-void

@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/ConfirmGalleryLockPattern;
-.super Lcom/android/settings/ConfirmLockPattern;
+.class public Lcom/android/vendorsettings/ConfirmGalleryLockPattern;
+.super Lcom/android/vendorsettings/ConfirmLockPattern;
 .source "ConfirmGalleryLockPattern.java"
 
 
 # instance fields
-.field private fh:Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;
+.field private fh:Lcom/android/vendorsettings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 22
-    invoke-direct {p0}, Lcom/android/settings/ConfirmLockPattern;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/ConfirmLockPattern;-><init>()V
 
     .line 55
     return-void
@@ -28,7 +28,7 @@
     .line 32
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/ConfirmLockPattern;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/vendorsettings/ConfirmLockPattern;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -37,7 +37,7 @@
     .line 33
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;
+    const-class v2, Lcom/android/vendorsettings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -54,7 +54,7 @@
 
     .prologue
     .line 51
-    const-class v0, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;
+    const-class v0, Lcom/android/vendorsettings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -83,9 +83,9 @@
 
     .prologue
     .line 39
-    check-cast p1, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;
+    check-cast p1, Lcom/android/vendorsettings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;
 
-    iput-object p1, p0, Lcom/android/settings/ConfirmGalleryLockPattern;->fh:Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/ConfirmGalleryLockPattern;->fh:Lcom/android/vendorsettings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;
 
     .line 40
     return-void
@@ -106,19 +106,19 @@
 
     .prologue
     .line 44
-    invoke-super {p0, p1}, Lcom/android/settings/ConfirmLockPattern;->onNewIntent(Landroid/content/Intent;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/ConfirmLockPattern;->onNewIntent(Landroid/content/Intent;)V
 
     .line 45
-    iget-object v0, p0, Lcom/android/settings/ConfirmGalleryLockPattern;->fh:Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/ConfirmGalleryLockPattern;->fh:Lcom/android/vendorsettings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->f(Landroid/content/Intent;)V
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->f(Landroid/content/Intent;)V
 
     .line 46
-    iget-object v0, p0, Lcom/android/settings/ConfirmGalleryLockPattern;->fh:Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/ConfirmGalleryLockPattern;->fh:Lcom/android/vendorsettings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;
 
-    sget-object v1, Lcom/android/settings/ConfirmLockPattern$Stage;->fP:Lcom/android/settings/ConfirmLockPattern$Stage;
+    sget-object v1, Lcom/android/vendorsettings/ConfirmLockPattern$Stage;->fP:Lcom/android/vendorsettings/ConfirmLockPattern$Stage;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->a(Lcom/android/settings/ConfirmLockPattern$Stage;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/ConfirmGalleryLockPattern$ConfirmGalleryLockFragment;->a(Lcom/android/vendorsettings/ConfirmLockPattern$Stage;)V
 
     .line 47
     return-void

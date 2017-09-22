@@ -1,4 +1,4 @@
-.class synthetic Lcom/android/settings/aP;
+.class synthetic Lcom/android/vendorsettings/aP;
 .super Ljava/lang/Object;
 .source "ConfirmLockPattern.java"
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 302
-    invoke-static {}, Lcom/android/settings/ConfirmLockPattern$Stage;->values()[Lcom/android/settings/ConfirmLockPattern$Stage;
+    invoke-static {}, Lcom/android/vendorsettings/ConfirmLockPattern$Stage;->values()[Lcom/android/vendorsettings/ConfirmLockPattern$Stage;
 
     move-result-object v0
 
@@ -21,12 +21,12 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/aP;->eW:[I
+    sput-object v0, Lcom/android/vendorsettings/aP;->eW:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/aP;->eW:[I
+    sget-object v0, Lcom/android/vendorsettings/aP;->eW:[I
 
-    sget-object v1, Lcom/android/settings/ConfirmLockPattern$Stage;->fP:Lcom/android/settings/ConfirmLockPattern$Stage;
+    sget-object v1, Lcom/android/vendorsettings/ConfirmLockPattern$Stage;->fP:Lcom/android/vendorsettings/ConfirmLockPattern$Stage;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -40,9 +40,9 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/aP;->eW:[I
+    sget-object v0, Lcom/android/vendorsettings/aP;->eW:[I
 
-    sget-object v1, Lcom/android/settings/ConfirmLockPattern$Stage;->fQ:Lcom/android/settings/ConfirmLockPattern$Stage;
+    sget-object v1, Lcom/android/vendorsettings/ConfirmLockPattern$Stage;->fQ:Lcom/android/vendorsettings/ConfirmLockPattern$Stage;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -56,9 +56,9 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/aP;->eW:[I
+    sget-object v0, Lcom/android/vendorsettings/aP;->eW:[I
 
-    sget-object v1, Lcom/android/settings/ConfirmLockPattern$Stage;->fR:Lcom/android/settings/ConfirmLockPattern$Stage;
+    sget-object v1, Lcom/android/vendorsettings/ConfirmLockPattern$Stage;->fR:Lcom/android/vendorsettings/ConfirmLockPattern$Stage;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 

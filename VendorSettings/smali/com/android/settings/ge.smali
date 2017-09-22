@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/ge;
+.class final Lcom/android/vendorsettings/ge;
 .super Ljava/lang/Object;
 .source "PointerSpeedPreference.java"
 
@@ -19,12 +19,12 @@
 
 
 # virtual methods
-.method public aa(I)[Lcom/android/settings/PointerSpeedPreference$SavedState;
+.method public aa(I)[Lcom/android/vendorsettings/PointerSpeedPreference$SavedState;
     .locals 1
 
     .prologue
     .line 180
-    new-array v0, p1, [Lcom/android/settings/PointerSpeedPreference$SavedState;
+    new-array v0, p1, [Lcom/android/vendorsettings/PointerSpeedPreference$SavedState;
 
     return-object v0
 .end method
@@ -34,21 +34,21 @@
 
     .prologue
     .line 173
-    invoke-virtual {p0, p1}, Lcom/android/settings/ge;->d(Landroid/os/Parcel;)Lcom/android/settings/PointerSpeedPreference$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/ge;->d(Landroid/os/Parcel;)Lcom/android/vendorsettings/PointerSpeedPreference$SavedState;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public d(Landroid/os/Parcel;)Lcom/android/settings/PointerSpeedPreference$SavedState;
+.method public d(Landroid/os/Parcel;)Lcom/android/vendorsettings/PointerSpeedPreference$SavedState;
     .locals 1
 
     .prologue
     .line 176
-    new-instance v0, Lcom/android/settings/PointerSpeedPreference$SavedState;
+    new-instance v0, Lcom/android/vendorsettings/PointerSpeedPreference$SavedState;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/PointerSpeedPreference$SavedState;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/vendorsettings/PointerSpeedPreference$SavedState;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 173
-    invoke-virtual {p0, p1}, Lcom/android/settings/ge;->aa(I)[Lcom/android/settings/PointerSpeedPreference$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/ge;->aa(I)[Lcom/android/vendorsettings/PointerSpeedPreference$SavedState;
 
     move-result-object v0
 

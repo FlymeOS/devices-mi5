@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/cy;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/vendorsettings/cy;
+.super Lcom/android/vendorsettings/search/a;
 .source "DisplaySettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 622
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/search/a;-><init>()V
 
     return-void
 .end method
@@ -75,7 +75,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/DisplaySettings;->c(Landroid/content/res/Resources;)Z
+    invoke-static {v1}, Lcom/android/vendorsettings/DisplaySettings;->c(Landroid/content/res/Resources;)Z
 
     move-result v1
 
@@ -88,8 +88,8 @@
 
     .line 646
     :cond_1
-    # invokes: Lcom/android/settings/DisplaySettings;->r(Landroid/content/Context;)Z
-    invoke-static {p1}, Lcom/android/settings/DisplaySettings;->access$200(Landroid/content/Context;)Z
+    # invokes: Lcom/android/vendorsettings/DisplaySettings;->r(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/DisplaySettings;->access$200(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -102,7 +102,7 @@
 
     .line 649
     :cond_2
-    invoke-static {p1}, Lcom/android/settings/DisplaySettings;->t(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/DisplaySettings;->t(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -132,7 +132,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/DisplaySettings;->d(Landroid/content/res/Resources;)Z
+    invoke-static {v1}, Lcom/android/vendorsettings/DisplaySettings;->d(Landroid/content/res/Resources;)Z
 
     move-result v1
 

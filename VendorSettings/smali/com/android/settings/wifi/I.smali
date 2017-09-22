@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/I;
+.class Lcom/android/vendorsettings/wifi/I;
 .super Ljava/lang/Object;
 .source "MiuiWifiSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aBv:Lcom/android/settings/wifi/MiuiWifiSettings;
+.field final synthetic aBv:Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/MiuiWifiSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/MiuiWifiSettings;)V
     .locals 0
 
     .prologue
     .line 246
-    iput-object p1, p0, Lcom/android/settings/wifi/I;->aBv:Lcom/android/settings/wifi/MiuiWifiSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/I;->aBv:Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,9 +49,9 @@
     invoke-static {}, Lcom/xiaomi/mistatistic/sdk/MiStatInterface;->recordPageEnd()V
 
     .line 261
-    iget-object v0, p0, Lcom/android/settings/wifi/I;->aBv:Lcom/android/settings/wifi/MiuiWifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/I;->aBv:Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/MiuiWifiSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/MiuiWifiSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -60,16 +60,16 @@
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setResult(I)V
 
     .line 262
-    iget-object v0, p0, Lcom/android/settings/wifi/I;->aBv:Lcom/android/settings/wifi/MiuiWifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/I;->aBv:Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/wifi/MiuiWifiSettings;->a(Lcom/android/settings/wifi/MiuiWifiSettings;Z)Z
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/wifi/MiuiWifiSettings;->a(Lcom/android/vendorsettings/wifi/MiuiWifiSettings;Z)Z
 
     .line 263
-    iget-object v0, p0, Lcom/android/settings/wifi/I;->aBv:Lcom/android/settings/wifi/MiuiWifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/I;->aBv:Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/MiuiWifiSettings;->finish()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/MiuiWifiSettings;->finish()V
 
     .line 264
     return-void

@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/ActiveNetworkScorerDialog;
+.class public final Lcom/android/vendorsettings/ActiveNetworkScorerDialog;
 .super Lcom/android/internal/app/AlertActivity;
 .source "ActiveNetworkScorerDialog.java"
 
@@ -49,7 +49,7 @@
 
     .line 77
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/ActiveNetworkScorerDialog;->w:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->w:Ljava/lang/String;
 
     invoke-static {p0, v2}, Landroid/net/NetworkScorerAppManager;->getScorer(Landroid/content/Context;Ljava/lang/String;)Landroid/net/NetworkScorerAppManager$NetworkScorerAppData;
 
@@ -71,7 +71,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ActiveNetworkScorerDialog;->w:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->w:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -102,7 +102,7 @@
 
     iget-object v4, v3, Landroid/net/NetworkScorerAppManager$NetworkScorerAppData;->mPackageName:Ljava/lang/String;
 
-    iget-object v5, p0, Lcom/android/settings/ActiveNetworkScorerDialog;->w:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->w:Ljava/lang/String;
 
     invoke-static {v4, v5}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -123,7 +123,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ActiveNetworkScorerDialog;->w:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->w:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -144,7 +144,7 @@
     .line 87
     const/4 v1, -0x1
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/ActiveNetworkScorerDialog;->setResult(I)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->setResult(I)V
 
     goto :goto_0
 
@@ -153,12 +153,12 @@
     iget-object v2, v2, Landroid/net/NetworkScorerAppManager$NetworkScorerAppData;->mScorerName:Ljava/lang/CharSequence;
 
     .line 93
-    iget-object v4, p0, Lcom/android/settings/ActiveNetworkScorerDialog;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
+    iget-object v4, p0, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->mAlertParams:Lcom/android/internal/app/AlertController$AlertParams;
 
     .line 94
     const v5, 0x7f0c0502
 
-    invoke-virtual {p0, v5}, Lcom/android/settings/ActiveNetworkScorerDialog;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v5}, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v5
 
@@ -180,7 +180,7 @@
 
     aput-object v0, v6, v1
 
-    invoke-virtual {p0, v5, v6}, Lcom/android/settings/ActiveNetworkScorerDialog;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v5, v6}, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -190,7 +190,7 @@
     :goto_1
     const v0, 0x7f0c00d2
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ActiveNetworkScorerDialog;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -199,7 +199,7 @@
     .line 103
     const v0, 0x7f0c00d3
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ActiveNetworkScorerDialog;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -212,7 +212,7 @@
     iput-object p0, v4, Lcom/android/internal/app/AlertController$AlertParams;->mNegativeButtonListener:Landroid/content/DialogInterface$OnClickListener;
 
     .line 106
-    invoke-virtual {p0}, Lcom/android/settings/ActiveNetworkScorerDialog;->setupAlert()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->setupAlert()V
 
     move v0, v1
 
@@ -227,7 +227,7 @@
 
     aput-object v2, v5, v0
 
-    invoke-virtual {p0, v3, v5}, Lcom/android/settings/ActiveNetworkScorerDialog;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v3, v5}, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -254,14 +254,14 @@
     :pswitch_0
     const-string v0, "network_score"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ActiveNetworkScorerDialog;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/NetworkScoreManager;
 
     .line 63
-    iget-object v1, p0, Lcom/android/settings/ActiveNetworkScorerDialog;->w:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->w:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/net/NetworkScoreManager;->setActiveScorer(Ljava/lang/String;)Z
 
@@ -272,7 +272,7 @@
     .line 64
     const/4 v0, -0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ActiveNetworkScorerDialog;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->setResult(I)V
 
     goto :goto_0
 
@@ -293,7 +293,7 @@
     invoke-super {p0, p1}, Lcom/android/internal/app/AlertActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 49
-    invoke-virtual {p0}, Lcom/android/settings/ActiveNetworkScorerDialog;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -304,17 +304,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ActiveNetworkScorerDialog;->w:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->w:Ljava/lang/String;
 
     .line 52
-    invoke-direct {p0}, Lcom/android/settings/ActiveNetworkScorerDialog;->j()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->j()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 53
-    invoke-virtual {p0}, Lcom/android/settings/ActiveNetworkScorerDialog;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ActiveNetworkScorerDialog;->finish()V
 
     .line 55
     :cond_0

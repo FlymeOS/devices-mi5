@@ -1,4 +1,4 @@
-.class Lcom/android/settings/aS;
+.class Lcom/android/vendorsettings/aS;
 .super Ljava/lang/Object;
 .source "ConfirmLockPattern.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic fO:Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;
+.field final synthetic fO:Lcom/android/vendorsettings/ConfirmLockPattern$ConfirmLockPatternFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/ConfirmLockPattern$ConfirmLockPatternFragment;)V
     .locals 0
 
     .prologue
     .line 346
-    iput-object p1, p0, Lcom/android/settings/aS;->fO:Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/aS;->fO:Lcom/android/vendorsettings/ConfirmLockPattern$ConfirmLockPatternFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 348
-    iget-object v0, p0, Lcom/android/settings/aS;->fO:Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/aS;->fO:Lcom/android/vendorsettings/ConfirmLockPattern$ConfirmLockPatternFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;->a(Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;)Lcom/android/settings/LockPatternView;
+    invoke-static {v0}, Lcom/android/vendorsettings/ConfirmLockPattern$ConfirmLockPatternFragment;->a(Lcom/android/vendorsettings/ConfirmLockPattern$ConfirmLockPatternFragment;)Lcom/android/vendorsettings/LockPatternView;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/LockPatternView;->clearPattern()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/LockPatternView;->clearPattern()V
 
     .line 349
     return-void

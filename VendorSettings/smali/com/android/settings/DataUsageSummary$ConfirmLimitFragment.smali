@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/DataUsageSummary$ConfirmLimitFragment;
+.class public Lcom/android/vendorsettings/DataUsageSummary$ConfirmLimitFragment;
 .super Landroid/app/DialogFragment;
 .source "DataUsageSummary.java"
 
@@ -14,7 +14,7 @@
     return-void
 .end method
 
-.method public static A(Lcom/android/settings/DataUsageSummary;)V
+.method public static A(Lcom/android/vendorsettings/DataUsageSummary;)V
     .locals 10
 
     .prologue
@@ -23,7 +23,7 @@
     const v6, 0x7f0c08fa
 
     .line 2026
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary;->isAdded()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DataUsageSummary;->isAdded()Z
 
     move-result v0
 
@@ -36,15 +36,15 @@
 
     .line 2028
     :cond_1
-    invoke-static {p0}, Lcom/android/settings/DataUsageSummary;->z(Lcom/android/settings/DataUsageSummary;)Lcom/android/settings/d/f;
+    invoke-static {p0}, Lcom/android/vendorsettings/DataUsageSummary;->z(Lcom/android/vendorsettings/DataUsageSummary;)Lcom/android/vendorsettings/d/f;
 
     move-result-object v0
 
-    invoke-static {p0}, Lcom/android/settings/DataUsageSummary;->y(Lcom/android/settings/DataUsageSummary;)Landroid/net/NetworkTemplate;
+    invoke-static {p0}, Lcom/android/vendorsettings/DataUsageSummary;->y(Lcom/android/vendorsettings/DataUsageSummary;)Landroid/net/NetworkTemplate;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/d/f;->b(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/d/f;->b(Landroid/net/NetworkTemplate;)Landroid/net/NetworkPolicy;
 
     move-result-object v0
 
@@ -52,7 +52,7 @@
     if-eqz v0, :cond_0
 
     .line 2031
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DataUsageSummary;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -68,7 +68,7 @@
     float-to-long v4, v0
 
     .line 2037
-    invoke-static {p0}, Lcom/android/settings/DataUsageSummary;->g(Lcom/android/settings/DataUsageSummary;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/vendorsettings/DataUsageSummary;->g(Lcom/android/vendorsettings/DataUsageSummary;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -108,26 +108,26 @@
     invoke-virtual {v3, v2, v0, v1}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
 
     .line 2055
-    new-instance v0, Lcom/android/settings/DataUsageSummary$ConfirmLimitFragment;
+    new-instance v0, Lcom/android/vendorsettings/DataUsageSummary$ConfirmLimitFragment;
 
-    invoke-direct {v0}, Lcom/android/settings/DataUsageSummary$ConfirmLimitFragment;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/DataUsageSummary$ConfirmLimitFragment;-><init>()V
 
     .line 2056
-    invoke-virtual {v0, v3}, Lcom/android/settings/DataUsageSummary$ConfirmLimitFragment;->setArguments(Landroid/os/Bundle;)V
+    invoke-virtual {v0, v3}, Lcom/android/vendorsettings/DataUsageSummary$ConfirmLimitFragment;->setArguments(Landroid/os/Bundle;)V
 
     .line 2057
     const/4 v1, 0x0
 
-    invoke-virtual {v0, p0, v1}, Lcom/android/settings/DataUsageSummary$ConfirmLimitFragment;->setTargetFragment(Landroid/app/Fragment;I)V
+    invoke-virtual {v0, p0, v1}, Lcom/android/vendorsettings/DataUsageSummary$ConfirmLimitFragment;->setTargetFragment(Landroid/app/Fragment;I)V
 
     .line 2058
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DataUsageSummary;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
     const-string v2, "confirmLimit"
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/DataUsageSummary$ConfirmLimitFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/vendorsettings/DataUsageSummary$ConfirmLimitFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -155,7 +155,7 @@
 
     .line 2044
     :cond_3
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary;->y(Ljava/lang/String;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/DataUsageSummary;->y(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -207,12 +207,12 @@
 
     .prologue
     .line 2063
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary$ConfirmLimitFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DataUsageSummary$ConfirmLimitFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     .line 2065
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary$ConfirmLimitFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DataUsageSummary$ConfirmLimitFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -223,7 +223,7 @@
     move-result-object v1
 
     .line 2066
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary$ConfirmLimitFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DataUsageSummary$ConfirmLimitFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v2
 
@@ -249,9 +249,9 @@
     .line 2072
     const v0, 0x104000a
 
-    new-instance v1, Lcom/android/settings/bI;
+    new-instance v1, Lcom/android/vendorsettings/bI;
 
-    invoke-direct {v1, p0, v2, v3}, Lcom/android/settings/bI;-><init>(Lcom/android/settings/DataUsageSummary$ConfirmLimitFragment;J)V
+    invoke-direct {v1, p0, v2, v3}, Lcom/android/vendorsettings/bI;-><init>(Lcom/android/vendorsettings/DataUsageSummary$ConfirmLimitFragment;J)V
 
     invoke-virtual {v4, v0, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

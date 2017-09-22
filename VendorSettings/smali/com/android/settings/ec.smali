@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/ec;
+.class final Lcom/android/vendorsettings/ec;
 .super Ljava/lang/Object;
 .source "MiuiAppPicker.java"
 
@@ -23,23 +23,23 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ec;->bm:Ljava/text/Collator;
+    iput-object v0, p0, Lcom/android/vendorsettings/ec;->bm:Ljava/text/Collator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lcom/android/settings/ee;Lcom/android/settings/ee;)I
+.method public final a(Lcom/android/vendorsettings/ee;Lcom/android/vendorsettings/ee;)I
     .locals 3
 
     .prologue
     .line 147
-    iget-object v0, p0, Lcom/android/settings/ec;->bm:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/vendorsettings/ec;->bm:Ljava/text/Collator;
 
-    iget-object v1, p1, Lcom/android/settings/ee;->label:Ljava/lang/CharSequence;
+    iget-object v1, p1, Lcom/android/vendorsettings/ee;->label:Ljava/lang/CharSequence;
 
-    iget-object v2, p2, Lcom/android/settings/ee;->label:Ljava/lang/CharSequence;
+    iget-object v2, p2, Lcom/android/vendorsettings/ee;->label:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1, v2}, Ljava/text/Collator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
@@ -53,11 +53,11 @@
 
     .prologue
     .line 144
-    check-cast p1, Lcom/android/settings/ee;
+    check-cast p1, Lcom/android/vendorsettings/ee;
 
-    check-cast p2, Lcom/android/settings/ee;
+    check-cast p2, Lcom/android/vendorsettings/ee;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/ec;->a(Lcom/android/settings/ee;Lcom/android/settings/ee;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/ec;->a(Lcom/android/vendorsettings/ee;Lcom/android/vendorsettings/ee;)I
 
     move-result v0
 

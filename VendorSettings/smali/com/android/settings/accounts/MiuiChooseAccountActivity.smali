@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/accounts/MiuiChooseAccountActivity;
+.class public Lcom/android/vendorsettings/accounts/MiuiChooseAccountActivity;
 .super Lmiui/preference/PreferenceActivity;
 .source "MiuiChooseAccountActivity.java"
 
@@ -22,7 +22,7 @@
 
     .line 39
     .line 40
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiChooseAccountActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/MiuiChooseAccountActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -48,7 +48,7 @@
     const v2, 0x1020002
 
     .line 29
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiChooseAccountActivity;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/MiuiChooseAccountActivity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
@@ -57,15 +57,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/accounts/ChooseAccountFragment;
+    check-cast v0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;
 
     .line 32
     if-nez v0, :cond_0
 
     .line 33
-    new-instance v0, Lcom/android/settings/accounts/ChooseAccountFragment;
+    new-instance v0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;
 
-    invoke-direct {v0}, Lcom/android/settings/accounts/ChooseAccountFragment;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;-><init>()V
 
     .line 34
     invoke-virtual {v1}, Landroid/app/FragmentManager;->beginTransaction()Landroid/app/FragmentTransaction;
@@ -90,14 +90,14 @@
 
     .prologue
     .line 49
-    invoke-direct {p0}, Lcom/android/settings/accounts/MiuiChooseAccountActivity;->jl()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/MiuiChooseAccountActivity;->jl()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 50
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiChooseAccountActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/MiuiChooseAccountActivity;->finish()V
 
     .line 52
     :cond_0
@@ -109,7 +109,7 @@
 
     .prologue
     .line 21
-    invoke-direct {p0}, Lcom/android/settings/accounts/MiuiChooseAccountActivity;->jl()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/MiuiChooseAccountActivity;->jl()Z
 
     move-result v0
 
@@ -118,14 +118,14 @@
     .line 22
     const v0, 0x7f0d00ab
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/MiuiChooseAccountActivity;->setTheme(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accounts/MiuiChooseAccountActivity;->setTheme(I)V
 
     .line 24
     :cond_0
     invoke-super {p0, p1}, Lmiui/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 25
-    invoke-direct {p0}, Lcom/android/settings/accounts/MiuiChooseAccountActivity;->jr()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/MiuiChooseAccountActivity;->jr()V
 
     .line 26
     return-void
@@ -136,7 +136,7 @@
 
     .prologue
     .line 56
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiChooseAccountActivity;->onBackPressed()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/MiuiChooseAccountActivity;->onBackPressed()V
 
     .line 57
     const/4 v0, 0x1

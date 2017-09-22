@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fl;
+.class Lcom/android/vendorsettings/fl;
 .super Ljava/lang/Object;
 .source "MiuiSecurityTrustedCredentials.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic sT:Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
+.field final synthetic sT:Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;)V
     .locals 0
 
     .prologue
     .line 465
-    iput-object p1, p0, Lcom/android/settings/fl;->sT:Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/fl;->sT:Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -1,19 +1,19 @@
-.class Lcom/android/settings/applications/IconLoader$1;
+.class Lcom/android/vendorsettings/applications/IconLoader$1;
 .super Landroid/os/Handler;
 .source "IconLoader.java"
 
 
 # instance fields
-.field final synthetic Is:Lcom/android/settings/applications/IconLoader;
+.field final synthetic Is:Lcom/android/vendorsettings/applications/IconLoader;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/IconLoader;)V
+.method constructor <init>(Lcom/android/vendorsettings/applications/IconLoader;)V
     .locals 0
 
     .prologue
     .line 32
-    iput-object p1, p0, Lcom/android/settings/applications/IconLoader$1;->Is:Lcom/android/settings/applications/IconLoader;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/IconLoader$1;->Is:Lcom/android/vendorsettings/applications/IconLoader;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -36,13 +36,13 @@
     .line 36
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    check-cast v0, Lcom/android/settings/applications/IconLoader$IconItem;
+    check-cast v0, Lcom/android/vendorsettings/applications/IconLoader$IconItem;
 
     .line 37
     if-eqz v0, :cond_0
 
     .line 38
-    invoke-virtual {v0}, Lcom/android/settings/applications/IconLoader$IconItem;->kw()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/IconLoader$IconItem;->kw()V
 
     .line 41
     :cond_0

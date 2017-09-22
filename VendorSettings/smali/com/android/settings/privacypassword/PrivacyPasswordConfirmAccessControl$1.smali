@@ -1,4 +1,4 @@
-.class Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$1;
+.class Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$1;
 .super Ljava/lang/Object;
 .source "PrivacyPasswordConfirmAccessControl.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aoi:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl;
+.field final synthetic aoi:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl;)V
+.method constructor <init>(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl;)V
     .locals 0
 
     .prologue
     .line 121
-    iput-object p1, p0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$1;->aoi:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl;
+    iput-object p1, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$1;->aoi:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 124
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$1;->aoi:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$1;->aoi:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl;
 
-    invoke-static {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl;->a(Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl;)Lcom/android/settings/LockPatternView;
+    invoke-static {v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl;->a(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl;)Lcom/android/vendorsettings/LockPatternView;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/LockPatternView;->clearPattern()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/LockPatternView;->clearPattern()V
 
     .line 125
     return-void

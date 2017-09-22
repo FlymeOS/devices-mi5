@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bH;
+.class Lcom/android/vendorsettings/bH;
 .super Ljava/lang/Object;
 .source "DataUsageSummary.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic io:Lcom/android/settings/DataUsageSummary$ConfirmDataDisableFragment;
+.field final synthetic io:Lcom/android/vendorsettings/DataUsageSummary$ConfirmDataDisableFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DataUsageSummary$ConfirmDataDisableFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/DataUsageSummary$ConfirmDataDisableFragment;)V
     .locals 0
 
     .prologue
     .line 2291
-    iput-object p1, p0, Lcom/android/settings/bH;->io:Lcom/android/settings/DataUsageSummary$ConfirmDataDisableFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/bH;->io:Lcom/android/vendorsettings/DataUsageSummary$ConfirmDataDisableFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,23 +30,23 @@
 
     .prologue
     .line 2294
-    iget-object v0, p0, Lcom/android/settings/bH;->io:Lcom/android/settings/DataUsageSummary$ConfirmDataDisableFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/bH;->io:Lcom/android/vendorsettings/DataUsageSummary$ConfirmDataDisableFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/DataUsageSummary$ConfirmDataDisableFragment;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/DataUsageSummary$ConfirmDataDisableFragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/DataUsageSummary;
+    check-cast v0, Lcom/android/vendorsettings/DataUsageSummary;
 
     .line 2295
     if-eqz v0, :cond_0
 
     .line 2297
-    sget v1, Lcom/android/settings/DataUsageSummary$ConfirmDataDisableFragment;->mSubId:I
+    sget v1, Lcom/android/vendorsettings/DataUsageSummary$ConfirmDataDisableFragment;->mSubId:I
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/android/settings/DataUsageSummary;->a(Lcom/android/settings/DataUsageSummary;IZ)V
+    invoke-static {v0, v1, v2}, Lcom/android/vendorsettings/DataUsageSummary;->a(Lcom/android/vendorsettings/DataUsageSummary;IZ)V
 
     .line 2299
     :cond_0

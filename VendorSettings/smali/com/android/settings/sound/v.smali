@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/sound/v;
+.class public interface abstract Lcom/android/vendorsettings/sound/v;
 .super Ljava/lang/Object;
 .source "BatchMediaPlayer.java"
 

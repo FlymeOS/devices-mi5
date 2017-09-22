@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/deviceinfo/Status;
-.super Lcom/android/settings/dA;
+.class public Lcom/android/vendorsettings/deviceinfo/Status;
+.super Lcom/android/vendorsettings/dA;
 .source "Status.java"
 
 
@@ -75,7 +75,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/deviceinfo/Status;->WK:[Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/deviceinfo/Status;->WK:[Ljava/lang/String;
 
     return-void
 .end method
@@ -85,31 +85,31 @@
 
     .prologue
     .line 60
-    invoke-direct {p0}, Lcom/android/settings/dA;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/dA;-><init>()V
 
     .line 131
-    new-instance v0, Lcom/android/settings/deviceinfo/Status$1;
+    new-instance v0, Lcom/android/vendorsettings/deviceinfo/Status$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/deviceinfo/Status$1;-><init>(Lcom/android/settings/deviceinfo/Status;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/deviceinfo/Status$1;-><init>(Lcom/android/vendorsettings/deviceinfo/Status;)V
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/Status;->zm:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->zm:Landroid/content/BroadcastReceiver;
 
     .line 148
-    new-instance v0, Lcom/android/settings/deviceinfo/Status$2;
+    new-instance v0, Lcom/android/vendorsettings/deviceinfo/Status$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/deviceinfo/Status$2;-><init>(Lcom/android/settings/deviceinfo/Status;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/deviceinfo/Status$2;-><init>(Lcom/android/vendorsettings/deviceinfo/Status;)V
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WW:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WW:Landroid/content/BroadcastReceiver;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/deviceinfo/Status;)Landroid/preference/Preference;
+.method static synthetic a(Lcom/android/vendorsettings/deviceinfo/Status;)Landroid/preference/Preference;
     .locals 1
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WQ:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WQ:Landroid/preference/Preference;
 
     return-object v0
 .end method
@@ -119,7 +119,7 @@
 
     .prologue
     .line 286
-    invoke-virtual {p0, p1}, Lcom/android/settings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -127,7 +127,7 @@
     if-eqz v0, :cond_0
 
     .line 288
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/Status;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/Status;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -143,17 +143,17 @@
 
     .prologue
     .line 60
-    sget-object v0, Lcom/android/settings/deviceinfo/Status;->WK:[Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/deviceinfo/Status;->WK:[Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/deviceinfo/Status;)Landroid/preference/Preference;
+.method static synthetic b(Lcom/android/vendorsettings/deviceinfo/Status;)Landroid/preference/Preference;
     .locals 1
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WP:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WP:Landroid/preference/Preference;
 
     return-object v0
 .end method
@@ -202,12 +202,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic c(Lcom/android/settings/deviceinfo/Status;)Landroid/os/Handler;
+.method static synthetic c(Lcom/android/vendorsettings/deviceinfo/Status;)Landroid/os/Handler;
     .locals 1
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -239,7 +239,7 @@
 
     .prologue
     .line 163
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WL:Landroid/net/ConnectivityManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WL:Landroid/net/ConnectivityManager;
 
     const/4 v1, 0x6
 
@@ -265,14 +265,14 @@
 
     .prologue
     .line 326
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WU:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WU:Landroid/preference/Preference;
 
     if-eqz v0, :cond_0
 
     .line 327
     const-string v0, "net.wimax.mac.address"
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/Status;->WN:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WN:Ljava/lang/String;
 
     invoke-static {v0, v1}, Landroid/os/SystemProperties;->get(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -281,7 +281,7 @@
     .line 330
     const-string v1, "wimax_mac_address"
 
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/deviceinfo/Status;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v1, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 332
     :cond_0
@@ -293,7 +293,7 @@
 
     .prologue
     .line 335
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->je:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->je:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->getConnectionInfo()Landroid/net/wifi/WifiInfo;
 
@@ -315,7 +315,7 @@
     if-nez v2, :cond_1
 
     :goto_1
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/deviceinfo/Status;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v1, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 342
     return-void
@@ -330,7 +330,7 @@
 
     .line 339
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WN:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WN:Ljava/lang/String;
 
     goto :goto_1
 .end method
@@ -340,9 +340,9 @@
 
     .prologue
     .line 345
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WL:Landroid/net/ConnectivityManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WL:Landroid/net/ConnectivityManager;
 
-    invoke-static {v0}, Lcom/android/settings/iC;->a(Landroid/net/ConnectivityManager;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/iC;->a(Landroid/net/ConnectivityManager;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -352,7 +352,7 @@
     .line 349
     const-string v1, "wifi_ip_address"
 
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/deviceinfo/Status;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v1, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 355
     :goto_0
@@ -362,9 +362,9 @@
     :cond_0
     const-string v0, "wifi_ip_address"
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/Status;->WN:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WN:Ljava/lang/String;
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/deviceinfo/Status;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/deviceinfo/Status;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -381,7 +381,7 @@
     .line 359
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/Status;->WR:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WR:Landroid/preference/Preference;
 
     if-eqz v1, :cond_0
 
@@ -407,7 +407,7 @@
     if-nez v2, :cond_2
 
     :goto_1
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/deviceinfo/Status;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v1, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 371
     :cond_0
@@ -421,7 +421,7 @@
 
     .line 368
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WN:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WN:Ljava/lang/String;
 
     goto :goto_1
 .end method
@@ -466,7 +466,7 @@
 
     move-result-object v2
 
-    invoke-direct {p0, v1}, Lcom/android/settings/deviceinfo/Status;->bw(I)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/deviceinfo/Status;->bw(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -480,7 +480,7 @@
 
     move-result-object v1
 
-    invoke-direct {p0, v0}, Lcom/android/settings/deviceinfo/Status;->bw(I)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->bw(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -507,18 +507,18 @@
     if-eqz v0, :cond_0
 
     .line 313
-    iget-object p2, p0, Lcom/android/settings/deviceinfo/Status;->WM:Ljava/lang/String;
+    iget-object p2, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WM:Ljava/lang/String;
 
     .line 316
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 319
-    invoke-virtual {p0, p1}, Lcom/android/settings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -566,17 +566,17 @@
 
     .line 390
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/Status;->WO:Landroid/preference/Preference;
+    iget-object v2, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WO:Landroid/preference/Preference;
 
     invoke-virtual {v2}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/deviceinfo/Status;->q(J)Ljava/lang/String;
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/deviceinfo/Status;->q(J)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {p0, v2, v0}, Lcom/android/settings/deviceinfo/Status;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v2, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 391
     return-void
@@ -589,105 +589,105 @@
     const/4 v2, 0x0
 
     .line 168
-    invoke-super {p0, p1}, Lcom/android/settings/dA;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/dA;->onCreate(Landroid/os/Bundle;)V
 
     .line 170
-    new-instance v0, Lcom/android/settings/deviceinfo/Status$MyHandler;
+    new-instance v0, Lcom/android/vendorsettings/deviceinfo/Status$MyHandler;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/deviceinfo/Status$MyHandler;-><init>(Lcom/android/settings/deviceinfo/Status;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/deviceinfo/Status$MyHandler;-><init>(Lcom/android/vendorsettings/deviceinfo/Status;)V
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/Status;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->mHandler:Landroid/os/Handler;
 
     .line 172
     const-string v0, "connectivity"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/Status;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/ConnectivityManager;
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WL:Landroid/net/ConnectivityManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WL:Landroid/net/ConnectivityManager;
 
     .line 173
     const-string v0, "wifi"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/Status;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/wifi/WifiManager;
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/Status;->je:Landroid/net/wifi/WifiManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->je:Landroid/net/wifi/WifiManager;
 
     .line 175
     const v0, 0x7f080030
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/Status;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->addPreferencesFromResource(I)V
 
     .line 176
     const-string v0, "battery_level"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WQ:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WQ:Landroid/preference/Preference;
 
     .line 177
     const-string v0, "battery_status"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WP:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WP:Landroid/preference/Preference;
 
     .line 178
     const-string v0, "bt_address"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WR:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WR:Landroid/preference/Preference;
 
     .line 179
     const-string v0, "wifi_mac_address"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WT:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WT:Landroid/preference/Preference;
 
     .line 180
     const-string v0, "wimax_mac_address"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WU:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WU:Landroid/preference/Preference;
 
     .line 181
     const-string v0, "wifi_ip_address"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WS:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WS:Landroid/preference/Preference;
 
     .line 183
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/Status;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/Status;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/Status;->mRes:Landroid/content/res/Resources;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->mRes:Landroid/content/res/Resources;
 
     .line 184
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->mRes:Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->mRes:Landroid/content/res/Resources;
 
     const v1, 0x7f0c00d9
 
@@ -695,10 +695,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WM:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WM:Ljava/lang/String;
 
     .line 185
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->mRes:Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->mRes:Landroid/content/res/Resources;
 
     const v1, 0x7f0c042b
 
@@ -706,55 +706,55 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WN:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WN:Ljava/lang/String;
 
     .line 188
     const-string v0, "up_time"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WO:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WO:Landroid/preference/Preference;
 
     .line 190
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/Status;->pf()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/deviceinfo/Status;->pf()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 191
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/Status;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/Status;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/Status;->WR:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WR:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 192
-    iput-object v2, p0, Lcom/android/settings/deviceinfo/Status;->WR:Landroid/preference/Preference;
+    iput-object v2, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WR:Landroid/preference/Preference;
 
     .line 195
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/Status;->pg()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/deviceinfo/Status;->pg()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
     .line 196
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/Status;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/Status;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/Status;->WU:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WU:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 197
-    iput-object v2, p0, Lcom/android/settings/deviceinfo/Status;->WU:Landroid/preference/Preference;
+    iput-object v2, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WU:Landroid/preference/Preference;
 
     .line 200
     :cond_1
@@ -762,10 +762,10 @@
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WV:Landroid/content/IntentFilter;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WV:Landroid/content/IntentFilter;
 
     .line 201
-    sget-object v1, Lcom/android/settings/deviceinfo/Status;->WK:[Ljava/lang/String;
+    sget-object v1, Lcom/android/vendorsettings/deviceinfo/Status;->WK:[Ljava/lang/String;
 
     array-length v2, v1
 
@@ -777,7 +777,7 @@
     aget-object v3, v1, v0
 
     .line 202
-    iget-object v4, p0, Lcom/android/settings/deviceinfo/Status;->WV:Landroid/content/IntentFilter;
+    iget-object v4, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WV:Landroid/content/IntentFilter;
 
     invoke-virtual {v4, v3}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
@@ -788,7 +788,7 @@
 
     .line 205
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/Status;->pl()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/Status;->pl()V
 
     .line 207
     sget-object v0, Landroid/os/Build;->SERIAL:Ljava/lang/String;
@@ -807,7 +807,7 @@
     .line 209
     const-string v1, "serial_number"
 
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/deviceinfo/Status;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v1, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 215
     :goto_1
@@ -820,22 +820,22 @@
     .line 216
     const-string v0, "sim_status"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/deviceinfo/Status;->aT(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->aT(Ljava/lang/String;)V
 
     .line 217
     const-string v0, "imei_info"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/deviceinfo/Status;->aT(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->aT(Ljava/lang/String;)V
 
     .line 222
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/Status;->getListView()Landroid/widget/ListView;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/Status;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/deviceinfo/Status$3;
+    new-instance v1, Lcom/android/vendorsettings/deviceinfo/Status$3;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/deviceinfo/Status$3;-><init>(Lcom/android/settings/deviceinfo/Status;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/deviceinfo/Status$3;-><init>(Lcom/android/vendorsettings/deviceinfo/Status;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setOnItemLongClickListener(Landroid/widget/AdapterView$OnItemLongClickListener;)V
 
@@ -856,7 +856,7 @@
     .line 251
     const-string v1, "serialno"
 
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/deviceinfo/Status;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v1, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 256
     :goto_2
@@ -866,7 +866,7 @@
     :cond_4
     const-string v0, "serial_number"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/deviceinfo/Status;->aT(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->aT(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -874,7 +874,7 @@
     :cond_5
     const-string v0, "serialno"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/deviceinfo/Status;->aT(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->aT(Ljava/lang/String;)V
 
     goto :goto_2
 .end method
@@ -884,20 +884,20 @@
 
     .prologue
     .line 274
-    invoke-super {p0}, Lcom/android/settings/dA;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/dA;->onPause()V
 
     .line 276
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->zm:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->zm:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/Status;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 277
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WW:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WW:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/Status;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/Status;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 278
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->mHandler:Landroid/os/Handler;
 
     const/16 v1, 0x1f4
 
@@ -912,21 +912,21 @@
 
     .prologue
     .line 265
-    invoke-super {p0}, Lcom/android/settings/dA;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/dA;->onResume()V
 
     .line 266
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->WW:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WW:Landroid/content/BroadcastReceiver;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/Status;->WV:Landroid/content/IntentFilter;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/Status;->WV:Landroid/content/IntentFilter;
 
     const-string v2, "android.permission.CHANGE_NETWORK_STATE"
 
     const/4 v3, 0x0
 
-    invoke-virtual {p0, v0, v1, v2, v3}, Lcom/android/settings/deviceinfo/Status;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
+    invoke-virtual {p0, v0, v1, v2, v3}, Lcom/android/vendorsettings/deviceinfo/Status;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;Ljava/lang/String;Landroid/os/Handler;)Landroid/content/Intent;
 
     .line 268
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->zm:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->zm:Landroid/content/BroadcastReceiver;
 
     new-instance v1, Landroid/content/IntentFilter;
 
@@ -934,10 +934,10 @@
 
     invoke-direct {v1, v2}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/deviceinfo/Status;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/deviceinfo/Status;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 269
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status;->mHandler:Landroid/os/Handler;
 
     const/16 v1, 0x1f4
 
@@ -952,16 +952,16 @@
 
     .prologue
     .line 374
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/Status;->ph()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/deviceinfo/Status;->ph()V
 
     .line 375
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/Status;->pi()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/deviceinfo/Status;->pi()V
 
     .line 376
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/Status;->pk()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/deviceinfo/Status;->pk()V
 
     .line 377
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/Status;->pj()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/deviceinfo/Status;->pj()V
 
     .line 378
     return-void

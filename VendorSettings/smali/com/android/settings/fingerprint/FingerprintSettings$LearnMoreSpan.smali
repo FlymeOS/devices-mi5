@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fingerprint/FingerprintSettings$LearnMoreSpan;
+.class Lcom/android/vendorsettings/fingerprint/FingerprintSettings$LearnMoreSpan;
 .super Landroid/text/style/URLSpan;
 .source "FingerprintSettings.java"
 
@@ -21,7 +21,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/fingerprint/FingerprintSettings$LearnMoreSpan;->acz:Landroid/graphics/Typeface;
+    sput-object v0, Lcom/android/vendorsettings/fingerprint/FingerprintSettings$LearnMoreSpan;->acz:Landroid/graphics/Typeface;
 
     return-void
 .end method
@@ -85,9 +85,9 @@
     move-result v5
 
     .line 740
-    new-instance v7, Lcom/android/settings/fingerprint/FingerprintSettings$LearnMoreSpan;
+    new-instance v7, Lcom/android/vendorsettings/fingerprint/FingerprintSettings$LearnMoreSpan;
 
-    invoke-direct {v7, p1}, Lcom/android/settings/fingerprint/FingerprintSettings$LearnMoreSpan;-><init>(Ljava/lang/String;)V
+    invoke-direct {v7, p1}, Lcom/android/vendorsettings/fingerprint/FingerprintSettings$LearnMoreSpan;-><init>(Ljava/lang/String;)V
 
     .line 741
     invoke-virtual {v2, v7}, Landroid/text/SpannableString;->getSpanFlags(Ljava/lang/Object;)I
@@ -118,7 +118,7 @@
     move-result-object v0
 
     .line 717
-    invoke-virtual {p0}, Lcom/android/settings/fingerprint/FingerprintSettings$LearnMoreSpan;->getURL()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fingerprint/FingerprintSettings$LearnMoreSpan;->getURL()Ljava/lang/String;
 
     move-result-object v1
 
@@ -130,7 +130,7 @@
 
     move-result-object v2
 
-    invoke-static {v0, v1, v2}, Lcom/android/settings/dn;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-static {v0, v1, v2}, Lcom/android/vendorsettings/dn;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v1
 
@@ -195,7 +195,7 @@
     invoke-virtual {p1, v0}, Landroid/text/TextPaint;->setUnderlineText(Z)V
 
     .line 730
-    sget-object v0, Lcom/android/settings/fingerprint/FingerprintSettings$LearnMoreSpan;->acz:Landroid/graphics/Typeface;
+    sget-object v0, Lcom/android/vendorsettings/fingerprint/FingerprintSettings$LearnMoreSpan;->acz:Landroid/graphics/Typeface;
 
     invoke-virtual {p1, v0}, Landroid/text/TextPaint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 

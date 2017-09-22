@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/display/j;
+.class final Lcom/android/vendorsettings/display/j;
 .super Ljava/lang/Object;
 .source "FluencyModeListPreference.java"
 
@@ -19,12 +19,12 @@
 
 
 # virtual methods
-.method public bF(I)[Lcom/android/settings/display/FluencyModeListPreference$SavedState;
+.method public bF(I)[Lcom/android/vendorsettings/display/FluencyModeListPreference$SavedState;
     .locals 1
 
     .prologue
     .line 104
-    new-array v0, p1, [Lcom/android/settings/display/FluencyModeListPreference$SavedState;
+    new-array v0, p1, [Lcom/android/vendorsettings/display/FluencyModeListPreference$SavedState;
 
     return-object v0
 .end method
@@ -34,21 +34,21 @@
 
     .prologue
     .line 98
-    invoke-virtual {p0, p1}, Lcom/android/settings/display/j;->n(Landroid/os/Parcel;)Lcom/android/settings/display/FluencyModeListPreference$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/display/j;->n(Landroid/os/Parcel;)Lcom/android/vendorsettings/display/FluencyModeListPreference$SavedState;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public n(Landroid/os/Parcel;)Lcom/android/settings/display/FluencyModeListPreference$SavedState;
+.method public n(Landroid/os/Parcel;)Lcom/android/vendorsettings/display/FluencyModeListPreference$SavedState;
     .locals 1
 
     .prologue
     .line 100
-    new-instance v0, Lcom/android/settings/display/FluencyModeListPreference$SavedState;
+    new-instance v0, Lcom/android/vendorsettings/display/FluencyModeListPreference$SavedState;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/display/FluencyModeListPreference$SavedState;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/vendorsettings/display/FluencyModeListPreference$SavedState;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 98
-    invoke-virtual {p0, p1}, Lcom/android/settings/display/j;->bF(I)[Lcom/android/settings/display/FluencyModeListPreference$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/display/j;->bF(I)[Lcom/android/vendorsettings/display/FluencyModeListPreference$SavedState;
 
     move-result-object v0
 

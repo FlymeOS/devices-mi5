@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/R;
+.class public Lcom/android/vendorsettings/wifi/R;
 .super Ljava/lang/Object;
 .source "QRCodeUtils.java"
 
@@ -217,7 +217,7 @@
 
     move-result-object v1
 
-    invoke-static {p0, v1}, Lcom/android/settings/wifi/ak;->f(Landroid/content/Context;Landroid/net/wifi/WifiConfiguration;)Landroid/net/wifi/WifiConfiguration;
+    invoke-static {p0, v1}, Lcom/android/vendorsettings/wifi/ak;->f(Landroid/content/Context;Landroid/net/wifi/WifiConfiguration;)Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v1
 
@@ -225,11 +225,11 @@
     if-nez v1, :cond_2
 
     .line 33
-    invoke-static {}, Lcom/android/settings/wifi/ai;->yg()Lcom/android/settings/wifi/ai;
+    invoke-static {}, Lcom/android/vendorsettings/wifi/ai;->yg()Lcom/android/vendorsettings/wifi/ai;
 
     move-result-object v1
 
-    invoke-virtual {v1, v3}, Lcom/android/settings/wifi/ai;->ce(Ljava/lang/String;)Landroid/net/wifi/WifiConfiguration;
+    invoke-virtual {v1, v3}, Lcom/android/vendorsettings/wifi/ai;->ce(Ljava/lang/String;)Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v1
 
@@ -281,7 +281,7 @@
 
     .line 47
     :cond_4
-    invoke-static {v2, v0, v3}, Lcom/android/settings/wifi/R;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v0, v3}, Lcom/android/vendorsettings/wifi/R;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -293,7 +293,7 @@
 
     .prologue
     .line 95
-    invoke-static {p0, p1}, Lcom/android/settings/wifi/R;->a(Landroid/content/Context;Lcom/android/b/e/a;)Ljava/lang/String;
+    invoke-static {p0, p1}, Lcom/android/vendorsettings/wifi/R;->a(Landroid/content/Context;Lcom/android/b/e/a;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -312,7 +312,7 @@
     return-object v0
 
     :cond_0
-    invoke-static {p0, v0}, Lcom/android/settings/wifi/R;->B(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Bitmap;
+    invoke-static {p0, v0}, Lcom/android/vendorsettings/wifi/R;->B(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
@@ -370,7 +370,7 @@
 
     .prologue
     .line 52
-    invoke-static {p1}, Lcom/android/settings/wifi/ac;->a(Landroid/net/wifi/WifiConfiguration;)I
+    invoke-static {p1}, Lcom/android/vendorsettings/wifi/ac;->a(Landroid/net/wifi/WifiConfiguration;)I
 
     move-result v0
 
@@ -452,7 +452,7 @@
     .line 70
     :cond_3
     :goto_2
-    invoke-static {v0, v1, v2}, Lcom/android/settings/wifi/R;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Lcom/android/vendorsettings/wifi/R;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -501,7 +501,7 @@
 
     .prologue
     .line 86
-    invoke-static {p0, p1}, Lcom/android/settings/wifi/R;->d(Landroid/content/Context;Landroid/net/wifi/WifiConfiguration;)Ljava/lang/String;
+    invoke-static {p0, p1}, Lcom/android/vendorsettings/wifi/R;->d(Landroid/content/Context;Landroid/net/wifi/WifiConfiguration;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -520,7 +520,7 @@
     return-object v0
 
     :cond_0
-    invoke-static {p0, v0}, Lcom/android/settings/wifi/R;->B(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Bitmap;
+    invoke-static {p0, v0}, Lcom/android/vendorsettings/wifi/R;->B(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 

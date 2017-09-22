@@ -1,4 +1,4 @@
-.class Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$3;
+.class Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$3;
 .super Ljava/lang/Object;
 .source "PrivacyPasswordChooseAccessControl.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+.field final synthetic anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;)V
+.method constructor <init>(Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;)V
     .locals 0
 
     .prologue
     .line 179
-    iput-object p1, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$3;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iput-object p1, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$3;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 183
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl$3;->anu:Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl$3;->anu:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;
 
-    invoke-virtual {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->finish()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordChooseAccessControl;->finish()V
 
     .line 184
     return-void

@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/notification/ZenModeSettings$1;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/vendorsettings/notification/ZenModeSettings$1;
+.super Lcom/android/vendorsettings/search/a;
 .source "ZenModeSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 116
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/search/a;-><init>()V
 
     return-void
 .end method
@@ -21,7 +21,7 @@
 
     .prologue
     .line 120
-    invoke-static {p1}, Lcom/android/settings/notification/ZenModeSettings;->bT(Landroid/content/Context;)Landroid/util/SparseArray;
+    invoke-static {p1}, Lcom/android/vendorsettings/notification/ZenModeSettings;->bT(Landroid/content/Context;)Landroid/util/SparseArray;
 
     move-result-object v2
 
@@ -49,9 +49,9 @@
     if-ge v1, v3, :cond_0
 
     .line 125
-    new-instance v6, Lcom/android/settings/search/n;
+    new-instance v6, Lcom/android/vendorsettings/search/n;
 
-    invoke-direct {v6, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v6, p1}, Lcom/android/vendorsettings/search/n;-><init>(Landroid/content/Context;)V
 
     .line 126
     invoke-virtual {v2, v1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
@@ -60,7 +60,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    iput-object v0, v6, Lcom/android/settings/search/n;->key:Ljava/lang/String;
+    iput-object v0, v6, Lcom/android/vendorsettings/search/n;->key:Ljava/lang/String;
 
     .line 127
     invoke-virtual {v2, v1}, Landroid/util/SparseArray;->keyAt(I)I
@@ -71,7 +71,7 @@
 
     move-result-object v0
 
-    iput-object v0, v6, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v0, v6, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
     .line 128
     const v0, 0x7f0c0a4b
@@ -80,7 +80,7 @@
 
     move-result-object v0
 
-    iput-object v0, v6, Lcom/android/settings/search/n;->apu:Ljava/lang/String;
+    iput-object v0, v6, Lcom/android/vendorsettings/search/n;->apu:Ljava/lang/String;
 
     .line 129
     invoke-interface {v4, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -107,7 +107,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 137
-    invoke-static {p1}, Lcom/android/settings/notification/ZenModeSettingsBase;->bU(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/notification/ZenModeSettingsBase;->bU(Landroid/content/Context;)Z
 
     move-result v1
 

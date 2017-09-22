@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/p2p/n;
+.class Lcom/android/vendorsettings/wifi/p2p/n;
 .super Ljava/lang/Object;
 .source "WifiP2pSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aGv:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+.field final synthetic aGv:Lcom/android/vendorsettings/wifi/p2p/WifiP2pSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/p2p/WifiP2pSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/p2p/WifiP2pSettings;)V
     .locals 0
 
     .prologue
     .line 658
-    iput-object p1, p0, Lcom/android/settings/wifi/p2p/n;->aGv:Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/p2p/n;->aGv:Lcom/android/vendorsettings/wifi/p2p/WifiP2pSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

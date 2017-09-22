@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hR;
+.class Lcom/android/vendorsettings/hR;
 .super Ljava/lang/Object;
 .source "TetherService.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic AS:Landroid/bluetooth/BluetoothAdapter;
 
-.field final synthetic AT:Lcom/android/settings/TetherService;
+.field final synthetic AT:Lcom/android/vendorsettings/TetherService;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/TetherService;Landroid/bluetooth/BluetoothAdapter;)V
+.method constructor <init>(Lcom/android/vendorsettings/TetherService;Landroid/bluetooth/BluetoothAdapter;)V
     .locals 0
 
     .prologue
     .line 188
-    iput-object p1, p0, Lcom/android/settings/hR;->AT:Lcom/android/settings/TetherService;
+    iput-object p1, p0, Lcom/android/vendorsettings/hR;->AT:Lcom/android/vendorsettings/TetherService;
 
-    iput-object p2, p0, Lcom/android/settings/hR;->AS:Landroid/bluetooth/BluetoothAdapter;
+    iput-object p2, p0, Lcom/android/vendorsettings/hR;->AS:Landroid/bluetooth/BluetoothAdapter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,7 +43,7 @@
     invoke-virtual {v0, v1}, Landroid/bluetooth/BluetoothPan;->setBluetoothTethering(Z)V
 
     .line 195
-    iget-object v0, p0, Lcom/android/settings/hR;->AS:Landroid/bluetooth/BluetoothAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/hR;->AS:Landroid/bluetooth/BluetoothAdapter;
 
     const/4 v1, 0x5
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/RunningState$ServiceProcessComparator;
+.class Lcom/android/vendorsettings/applications/RunningState$ServiceProcessComparator;
 .super Ljava/lang/Object;
 .source "RunningState.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic OG:Lcom/android/settings/applications/RunningState;
+.field final synthetic OG:Lcom/android/vendorsettings/applications/RunningState;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/RunningState;)V
+.method constructor <init>(Lcom/android/vendorsettings/applications/RunningState;)V
     .locals 0
 
     .prologue
     .line 751
-    iput-object p1, p0, Lcom/android/settings/applications/RunningState$ServiceProcessComparator;->OG:Lcom/android/settings/applications/RunningState;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/RunningState$ServiceProcessComparator;->OG:Lcom/android/vendorsettings/applications/RunningState;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/applications/RunningState$ProcessItem;Lcom/android/settings/applications/RunningState$ProcessItem;)I
+.method public a(Lcom/android/vendorsettings/applications/RunningState$ProcessItem;Lcom/android/vendorsettings/applications/RunningState$ProcessItem;)I
     .locals 6
 
     .prologue
@@ -34,18 +34,18 @@
     const/4 v0, -0x1
 
     .line 753
-    iget v2, p1, Lcom/android/settings/applications/RunningState$ProcessItem;->mUserId:I
+    iget v2, p1, Lcom/android/vendorsettings/applications/RunningState$ProcessItem;->mUserId:I
 
-    iget v3, p2, Lcom/android/settings/applications/RunningState$ProcessItem;->mUserId:I
+    iget v3, p2, Lcom/android/vendorsettings/applications/RunningState$ProcessItem;->mUserId:I
 
     if-eq v2, v3, :cond_3
 
     .line 754
-    iget v2, p1, Lcom/android/settings/applications/RunningState$ProcessItem;->mUserId:I
+    iget v2, p1, Lcom/android/vendorsettings/applications/RunningState$ProcessItem;->mUserId:I
 
-    iget-object v3, p0, Lcom/android/settings/applications/RunningState$ServiceProcessComparator;->OG:Lcom/android/settings/applications/RunningState;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/RunningState$ServiceProcessComparator;->OG:Lcom/android/vendorsettings/applications/RunningState;
 
-    iget v3, v3, Lcom/android/settings/applications/RunningState;->Nj:I
+    iget v3, v3, Lcom/android/vendorsettings/applications/RunningState;->Nj:I
 
     if-ne v2, v3, :cond_1
 
@@ -56,11 +56,11 @@
 
     .line 755
     :cond_1
-    iget v2, p2, Lcom/android/settings/applications/RunningState$ProcessItem;->mUserId:I
+    iget v2, p2, Lcom/android/vendorsettings/applications/RunningState$ProcessItem;->mUserId:I
 
-    iget-object v3, p0, Lcom/android/settings/applications/RunningState$ServiceProcessComparator;->OG:Lcom/android/settings/applications/RunningState;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/RunningState$ServiceProcessComparator;->OG:Lcom/android/vendorsettings/applications/RunningState;
 
-    iget v3, v3, Lcom/android/settings/applications/RunningState;->Nj:I
+    iget v3, v3, Lcom/android/vendorsettings/applications/RunningState;->Nj:I
 
     if-ne v2, v3, :cond_2
 
@@ -70,9 +70,9 @@
 
     .line 756
     :cond_2
-    iget v2, p1, Lcom/android/settings/applications/RunningState$ProcessItem;->mUserId:I
+    iget v2, p1, Lcom/android/vendorsettings/applications/RunningState$ProcessItem;->mUserId:I
 
-    iget v3, p2, Lcom/android/settings/applications/RunningState$ProcessItem;->mUserId:I
+    iget v3, p2, Lcom/android/vendorsettings/applications/RunningState$ProcessItem;->mUserId:I
 
     if-lt v2, v3, :cond_0
 
@@ -82,14 +82,14 @@
 
     .line 758
     :cond_3
-    iget-boolean v2, p1, Lcom/android/settings/applications/RunningState$ProcessItem;->Pg:Z
+    iget-boolean v2, p1, Lcom/android/vendorsettings/applications/RunningState$ProcessItem;->Pg:Z
 
-    iget-boolean v3, p2, Lcom/android/settings/applications/RunningState$ProcessItem;->Pg:Z
+    iget-boolean v3, p2, Lcom/android/vendorsettings/applications/RunningState$ProcessItem;->Pg:Z
 
     if-eq v2, v3, :cond_4
 
     .line 760
-    iget-boolean v2, p1, Lcom/android/settings/applications/RunningState$ProcessItem;->Pg:Z
+    iget-boolean v2, p1, Lcom/android/vendorsettings/applications/RunningState$ProcessItem;->Pg:Z
 
     if-nez v2, :cond_0
 
@@ -99,14 +99,14 @@
 
     .line 762
     :cond_4
-    iget-boolean v2, p1, Lcom/android/settings/applications/RunningState$ProcessItem;->mIsSystem:Z
+    iget-boolean v2, p1, Lcom/android/vendorsettings/applications/RunningState$ProcessItem;->mIsSystem:Z
 
-    iget-boolean v3, p2, Lcom/android/settings/applications/RunningState$ProcessItem;->mIsSystem:Z
+    iget-boolean v3, p2, Lcom/android/vendorsettings/applications/RunningState$ProcessItem;->mIsSystem:Z
 
     if-eq v2, v3, :cond_6
 
     .line 764
-    iget-boolean v2, p1, Lcom/android/settings/applications/RunningState$ProcessItem;->mIsSystem:Z
+    iget-boolean v2, p1, Lcom/android/vendorsettings/applications/RunningState$ProcessItem;->mIsSystem:Z
 
     if-eqz v2, :cond_5
 
@@ -122,18 +122,18 @@
 
     .line 766
     :cond_6
-    iget-wide v2, p1, Lcom/android/settings/applications/RunningState$ProcessItem;->OP:J
+    iget-wide v2, p1, Lcom/android/vendorsettings/applications/RunningState$ProcessItem;->OP:J
 
-    iget-wide v4, p2, Lcom/android/settings/applications/RunningState$ProcessItem;->OP:J
+    iget-wide v4, p2, Lcom/android/vendorsettings/applications/RunningState$ProcessItem;->OP:J
 
     cmp-long v2, v2, v4
 
     if-eqz v2, :cond_7
 
     .line 769
-    iget-wide v2, p1, Lcom/android/settings/applications/RunningState$ProcessItem;->OP:J
+    iget-wide v2, p1, Lcom/android/vendorsettings/applications/RunningState$ProcessItem;->OP:J
 
-    iget-wide v4, p2, Lcom/android/settings/applications/RunningState$ProcessItem;->OP:J
+    iget-wide v4, p2, Lcom/android/vendorsettings/applications/RunningState$ProcessItem;->OP:J
 
     cmp-long v2, v2, v4
 
@@ -155,11 +155,11 @@
 
     .prologue
     .line 751
-    check-cast p1, Lcom/android/settings/applications/RunningState$ProcessItem;
+    check-cast p1, Lcom/android/vendorsettings/applications/RunningState$ProcessItem;
 
-    check-cast p2, Lcom/android/settings/applications/RunningState$ProcessItem;
+    check-cast p2, Lcom/android/vendorsettings/applications/RunningState$ProcessItem;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/applications/RunningState$ServiceProcessComparator;->a(Lcom/android/settings/applications/RunningState$ProcessItem;Lcom/android/settings/applications/RunningState$ProcessItem;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/applications/RunningState$ServiceProcessComparator;->a(Lcom/android/vendorsettings/applications/RunningState$ProcessItem;Lcom/android/vendorsettings/applications/RunningState$ProcessItem;)I
 
     move-result v0
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fingerprint/K;
+.class public Lcom/android/vendorsettings/fingerprint/K;
 .super Landroid/hardware/fingerprint/FingerprintManager$AuthenticationCallback;
 .source "FingerprintUiHelper.java"
 
@@ -6,7 +6,7 @@
 # instance fields
 .field private acA:Landroid/widget/TextView;
 
-.field private acB:Lcom/android/settings/fingerprint/M;
+.field private acB:Lcom/android/vendorsettings/fingerprint/M;
 
 .field private acC:Ljava/lang/Runnable;
 
@@ -18,7 +18,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/widget/ImageView;Landroid/widget/TextView;Lcom/android/settings/fingerprint/M;)V
+.method public constructor <init>(Landroid/widget/ImageView;Landroid/widget/TextView;Lcom/android/vendorsettings/fingerprint/M;)V
     .locals 2
 
     .prologue
@@ -26,11 +26,11 @@
     invoke-direct {p0}, Landroid/hardware/fingerprint/FingerprintManager$AuthenticationCallback;-><init>()V
 
     .line 107
-    new-instance v0, Lcom/android/settings/fingerprint/L;
+    new-instance v0, Lcom/android/vendorsettings/fingerprint/L;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/fingerprint/L;-><init>(Lcom/android/settings/fingerprint/K;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/fingerprint/L;-><init>(Lcom/android/vendorsettings/fingerprint/K;)V
 
-    iput-object v0, p0, Lcom/android/settings/fingerprint/K;->acC:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->acC:Ljava/lang/Runnable;
 
     .line 42
     invoke-virtual {p1}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
@@ -45,27 +45,27 @@
 
     check-cast v0, Landroid/hardware/fingerprint/FingerprintManager;
 
-    iput-object v0, p0, Lcom/android/settings/fingerprint/K;->dD:Landroid/hardware/fingerprint/FingerprintManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->dD:Landroid/hardware/fingerprint/FingerprintManager;
 
     .line 43
-    iput-object p1, p0, Lcom/android/settings/fingerprint/K;->mIcon:Landroid/widget/ImageView;
+    iput-object p1, p0, Lcom/android/vendorsettings/fingerprint/K;->mIcon:Landroid/widget/ImageView;
 
     .line 44
-    iput-object p2, p0, Lcom/android/settings/fingerprint/K;->acA:Landroid/widget/TextView;
+    iput-object p2, p0, Lcom/android/vendorsettings/fingerprint/K;->acA:Landroid/widget/TextView;
 
     .line 45
-    iput-object p3, p0, Lcom/android/settings/fingerprint/K;->acB:Lcom/android/settings/fingerprint/M;
+    iput-object p3, p0, Lcom/android/vendorsettings/fingerprint/K;->acB:Lcom/android/vendorsettings/fingerprint/M;
 
     .line 46
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/fingerprint/K;)Landroid/widget/TextView;
+.method static synthetic a(Lcom/android/vendorsettings/fingerprint/K;)Landroid/widget/TextView;
     .locals 1
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/android/settings/fingerprint/K;->acA:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->acA:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -75,7 +75,7 @@
 
     .prologue
     .line 69
-    iget-object v1, p0, Lcom/android/settings/fingerprint/K;->mIcon:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/android/vendorsettings/fingerprint/K;->mIcon:Landroid/widget/ImageView;
 
     if-eqz p1, :cond_0
 
@@ -85,9 +85,9 @@
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 70
-    iget-object v0, p0, Lcom/android/settings/fingerprint/K;->acB:Lcom/android/settings/fingerprint/M;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->acB:Lcom/android/vendorsettings/fingerprint/M;
 
-    invoke-interface {v0, p1}, Lcom/android/settings/fingerprint/M;->aR(Z)V
+    invoke-interface {v0, p1}, Lcom/android/vendorsettings/fingerprint/M;->aR(Z)V
 
     .line 71
     return-void
@@ -99,12 +99,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic b(Lcom/android/settings/fingerprint/K;)Landroid/widget/ImageView;
+.method static synthetic b(Lcom/android/vendorsettings/fingerprint/K;)Landroid/widget/ImageView;
     .locals 1
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/android/settings/fingerprint/K;->mIcon:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->mIcon:Landroid/widget/ImageView;
 
     return-object v0
 .end method
@@ -114,7 +114,7 @@
 
     .prologue
     .line 97
-    invoke-direct {p0}, Lcom/android/settings/fingerprint/K;->qK()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/fingerprint/K;->qK()Z
 
     move-result v0
 
@@ -126,28 +126,28 @@
 
     .line 101
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/fingerprint/K;->mIcon:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->mIcon:Landroid/widget/ImageView;
 
     const v1, 0x7f020111
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 102
-    iget-object v0, p0, Lcom/android/settings/fingerprint/K;->acA:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->acA:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 103
-    iget-object v0, p0, Lcom/android/settings/fingerprint/K;->acA:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->acA:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/fingerprint/K;->acC:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/vendorsettings/fingerprint/K;->acC:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     .line 104
-    iget-object v0, p0, Lcom/android/settings/fingerprint/K;->acA:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->acA:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/fingerprint/K;->acC:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/vendorsettings/fingerprint/K;->acC:Ljava/lang/Runnable;
 
     const-wide/16 v2, 0x514
 
@@ -161,11 +161,11 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/android/settings/fingerprint/K;->mCancellationSignal:Landroid/os/CancellationSignal;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->mCancellationSignal:Landroid/os/CancellationSignal;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/fingerprint/K;->mCancellationSignal:Landroid/os/CancellationSignal;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->mCancellationSignal:Landroid/os/CancellationSignal;
 
     invoke-virtual {v0}, Landroid/os/CancellationSignal;->isCanceled()Z
 
@@ -191,12 +191,12 @@
 
     .prologue
     .line 75
-    invoke-direct {p0, p2}, Lcom/android/settings/fingerprint/K;->e(Ljava/lang/CharSequence;)V
+    invoke-direct {p0, p2}, Lcom/android/vendorsettings/fingerprint/K;->e(Ljava/lang/CharSequence;)V
 
     .line 76
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/fingerprint/K;->aQ(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/fingerprint/K;->aQ(Z)V
 
     .line 77
     return-void
@@ -207,7 +207,7 @@
 
     .prologue
     .line 86
-    iget-object v0, p0, Lcom/android/settings/fingerprint/K;->mIcon:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->mIcon:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getResources()Landroid/content/res/Resources;
 
@@ -219,7 +219,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/fingerprint/K;->e(Ljava/lang/CharSequence;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/fingerprint/K;->e(Ljava/lang/CharSequence;)V
 
     .line 88
     return-void
@@ -230,7 +230,7 @@
 
     .prologue
     .line 81
-    invoke-direct {p0, p2}, Lcom/android/settings/fingerprint/K;->e(Ljava/lang/CharSequence;)V
+    invoke-direct {p0, p2}, Lcom/android/vendorsettings/fingerprint/K;->e(Ljava/lang/CharSequence;)V
 
     .line 82
     return-void
@@ -241,16 +241,16 @@
 
     .prologue
     .line 92
-    iget-object v0, p0, Lcom/android/settings/fingerprint/K;->mIcon:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->mIcon:Landroid/widget/ImageView;
 
     const v1, 0x7f020112
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 93
-    iget-object v0, p0, Lcom/android/settings/fingerprint/K;->acB:Lcom/android/settings/fingerprint/M;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->acB:Lcom/android/vendorsettings/fingerprint/M;
 
-    invoke-interface {v0}, Lcom/android/settings/fingerprint/M;->qL()V
+    invoke-interface {v0}, Lcom/android/vendorsettings/fingerprint/M;->qL()V
 
     .line 94
     return-void
@@ -263,7 +263,7 @@
     const/4 v1, 0x0
 
     .line 49
-    iget-object v0, p0, Lcom/android/settings/fingerprint/K;->dD:Landroid/hardware/fingerprint/FingerprintManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->dD:Landroid/hardware/fingerprint/FingerprintManager;
 
     invoke-virtual {v0}, Landroid/hardware/fingerprint/FingerprintManager;->getEnrolledFingerprints()Ljava/util/List;
 
@@ -280,12 +280,12 @@
 
     invoke-direct {v0}, Landroid/os/CancellationSignal;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/fingerprint/K;->mCancellationSignal:Landroid/os/CancellationSignal;
+    iput-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->mCancellationSignal:Landroid/os/CancellationSignal;
 
     .line 51
-    iget-object v0, p0, Lcom/android/settings/fingerprint/K;->dD:Landroid/hardware/fingerprint/FingerprintManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->dD:Landroid/hardware/fingerprint/FingerprintManager;
 
-    iget-object v2, p0, Lcom/android/settings/fingerprint/K;->mCancellationSignal:Landroid/os/CancellationSignal;
+    iget-object v2, p0, Lcom/android/vendorsettings/fingerprint/K;->mCancellationSignal:Landroid/os/CancellationSignal;
 
     const/4 v3, 0x0
 
@@ -298,10 +298,10 @@
     .line 52
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lcom/android/settings/fingerprint/K;->aQ(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/fingerprint/K;->aQ(Z)V
 
     .line 53
-    iget-object v0, p0, Lcom/android/settings/fingerprint/K;->mIcon:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->mIcon:Landroid/widget/ImageView;
 
     const v1, 0x7f020110
 
@@ -317,19 +317,19 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/fingerprint/K;->mCancellationSignal:Landroid/os/CancellationSignal;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->mCancellationSignal:Landroid/os/CancellationSignal;
 
     if-eqz v0, :cond_0
 
     .line 59
-    iget-object v0, p0, Lcom/android/settings/fingerprint/K;->mCancellationSignal:Landroid/os/CancellationSignal;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->mCancellationSignal:Landroid/os/CancellationSignal;
 
     invoke-virtual {v0}, Landroid/os/CancellationSignal;->cancel()V
 
     .line 60
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/fingerprint/K;->mCancellationSignal:Landroid/os/CancellationSignal;
+    iput-object v0, p0, Lcom/android/vendorsettings/fingerprint/K;->mCancellationSignal:Landroid/os/CancellationSignal;
 
     .line 62
     :cond_0

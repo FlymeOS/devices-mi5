@@ -1,4 +1,4 @@
-.class Lcom/android/settings/users/RestrictedProfileSettings$1;
+.class Lcom/android/vendorsettings/users/RestrictedProfileSettings$1;
 .super Ljava/lang/Object;
 .source "RestrictedProfileSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aub:Lcom/android/settings/users/RestrictedProfileSettings;
+.field final synthetic aub:Lcom/android/vendorsettings/users/RestrictedProfileSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/RestrictedProfileSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/users/RestrictedProfileSettings;)V
     .locals 0
 
     .prologue
     .line 126
-    iput-object p1, p0, Lcom/android/settings/users/RestrictedProfileSettings$1;->aub:Lcom/android/settings/users/RestrictedProfileSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/users/RestrictedProfileSettings$1;->aub:Lcom/android/vendorsettings/users/RestrictedProfileSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 128
-    iget-object v0, p0, Lcom/android/settings/users/RestrictedProfileSettings$1;->aub:Lcom/android/settings/users/RestrictedProfileSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/users/RestrictedProfileSettings$1;->aub:Lcom/android/vendorsettings/users/RestrictedProfileSettings;
 
-    invoke-static {v0}, Lcom/android/settings/users/RestrictedProfileSettings;->a(Lcom/android/settings/users/RestrictedProfileSettings;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/users/RestrictedProfileSettings;->a(Lcom/android/vendorsettings/users/RestrictedProfileSettings;)V
 
     .line 129
     return-void

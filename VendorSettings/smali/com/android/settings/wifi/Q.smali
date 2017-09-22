@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/Q;
+.class public Lcom/android/vendorsettings/wifi/Q;
 .super Landroid/preference/Preference;
 .source "OtherAccessPoint.java"
 

@@ -1,10 +1,10 @@
-.class Lcom/android/settings/applications/ApplicationsContainer$2;
+.class Lcom/android/vendorsettings/applications/ApplicationsContainer$2;
 .super Landroid/os/AsyncTask;
 .source "ApplicationsContainer.java"
 
 
 # instance fields
-.field final synthetic HB:Lcom/android/settings/applications/ApplicationsContainer;
+.field final synthetic HB:Lcom/android/vendorsettings/applications/ApplicationsContainer;
 
 .field final synthetic HC:Landroid/app/INotificationManager;
 
@@ -16,20 +16,20 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/ApplicationsContainer;Landroid/content/pm/PackageManager;Landroid/app/INotificationManager;Landroid/net/NetworkPolicyManager;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/vendorsettings/applications/ApplicationsContainer;Landroid/content/pm/PackageManager;Landroid/app/INotificationManager;Landroid/net/NetworkPolicyManager;Landroid/os/Handler;)V
     .locals 0
 
     .prologue
     .line 946
-    iput-object p1, p0, Lcom/android/settings/applications/ApplicationsContainer$2;->HB:Lcom/android/settings/applications/ApplicationsContainer;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/ApplicationsContainer$2;->HB:Lcom/android/vendorsettings/applications/ApplicationsContainer;
 
-    iput-object p2, p0, Lcom/android/settings/applications/ApplicationsContainer$2;->val$pm:Landroid/content/pm/PackageManager;
+    iput-object p2, p0, Lcom/android/vendorsettings/applications/ApplicationsContainer$2;->val$pm:Landroid/content/pm/PackageManager;
 
-    iput-object p3, p0, Lcom/android/settings/applications/ApplicationsContainer$2;->HC:Landroid/app/INotificationManager;
+    iput-object p3, p0, Lcom/android/vendorsettings/applications/ApplicationsContainer$2;->HC:Landroid/app/INotificationManager;
 
-    iput-object p4, p0, Lcom/android/settings/applications/ApplicationsContainer$2;->HD:Landroid/net/NetworkPolicyManager;
+    iput-object p4, p0, Lcom/android/vendorsettings/applications/ApplicationsContainer$2;->HD:Landroid/net/NetworkPolicyManager;
 
-    iput-object p5, p0, Lcom/android/settings/applications/ApplicationsContainer$2;->yc:Landroid/os/Handler;
+    iput-object p5, p0, Lcom/android/vendorsettings/applications/ApplicationsContainer$2;->yc:Landroid/os/Handler;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -45,7 +45,7 @@
     .line 946
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/ApplicationsContainer$2;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/applications/ApplicationsContainer$2;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
 
@@ -63,7 +63,7 @@
     const/4 v2, 0x0
 
     .line 948
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsContainer$2;->val$pm:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ApplicationsContainer$2;->val$pm:Landroid/content/pm/PackageManager;
 
     const/16 v1, 0x200
 
@@ -90,7 +90,7 @@
 
     .line 954
     :try_start_0
-    iget-object v4, p0, Lcom/android/settings/applications/ApplicationsContainer$2;->HC:Landroid/app/INotificationManager;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/ApplicationsContainer$2;->HC:Landroid/app/INotificationManager;
 
     iget-object v5, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
@@ -104,7 +104,7 @@
 
     .line 958
     :goto_1
-    iget-object v4, p0, Lcom/android/settings/applications/ApplicationsContainer$2;->val$pm:Landroid/content/pm/PackageManager;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/ApplicationsContainer$2;->val$pm:Landroid/content/pm/PackageManager;
 
     iget-object v5, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
@@ -116,7 +116,7 @@
     if-nez v4, :cond_0
 
     .line 961
-    iget-object v4, p0, Lcom/android/settings/applications/ApplicationsContainer$2;->val$pm:Landroid/content/pm/PackageManager;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/ApplicationsContainer$2;->val$pm:Landroid/content/pm/PackageManager;
 
     iget-object v5, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
@@ -129,7 +129,7 @@
     if-ne v4, v5, :cond_0
 
     .line 963
-    iget-object v4, p0, Lcom/android/settings/applications/ApplicationsContainer$2;->val$pm:Landroid/content/pm/PackageManager;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/ApplicationsContainer$2;->val$pm:Landroid/content/pm/PackageManager;
 
     iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
@@ -155,7 +155,7 @@
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
     .line 974
-    iget-object v1, p0, Lcom/android/settings/applications/ApplicationsContainer$2;->val$pm:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/ApplicationsContainer$2;->val$pm:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v1, v0, v3, v9}, Landroid/content/pm/PackageManager;->getPreferredActivities(Ljava/util/List;Ljava/util/List;Ljava/lang/String;)I
 
@@ -170,7 +170,7 @@
     if-ge v1, v0, :cond_2
 
     .line 978
-    iget-object v4, p0, Lcom/android/settings/applications/ApplicationsContainer$2;->val$pm:Landroid/content/pm/PackageManager;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/ApplicationsContainer$2;->val$pm:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v3, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -193,7 +193,7 @@
 
     .line 980
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsContainer$2;->HD:Landroid/net/NetworkPolicyManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ApplicationsContainer$2;->HD:Landroid/net/NetworkPolicyManager;
 
     invoke-virtual {v0, v8}, Landroid/net/NetworkPolicyManager;->getUidsWithPolicy(I)[I
 
@@ -210,7 +210,7 @@
     aget v4, v1, v0
 
     .line 984
-    iget-object v5, p0, Lcom/android/settings/applications/ApplicationsContainer$2;->HD:Landroid/net/NetworkPolicyManager;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/ApplicationsContainer$2;->HD:Landroid/net/NetworkPolicyManager;
 
     invoke-virtual {v5, v4, v2}, Landroid/net/NetworkPolicyManager;->setUidPolicy(II)V
 
@@ -221,11 +221,11 @@
 
     .line 986
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsContainer$2;->yc:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ApplicationsContainer$2;->yc:Landroid/os/Handler;
 
-    new-instance v1, Lcom/android/settings/applications/ApplicationsContainer$2$1;
+    new-instance v1, Lcom/android/vendorsettings/applications/ApplicationsContainer$2$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/applications/ApplicationsContainer$2$1;-><init>(Lcom/android/settings/applications/ApplicationsContainer$2;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/applications/ApplicationsContainer$2$1;-><init>(Lcom/android/vendorsettings/applications/ApplicationsContainer$2;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

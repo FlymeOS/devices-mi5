@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/wifi/AdvancedWifiSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "AdvancedWifiSettings.java"
 
 # interfaces
@@ -12,7 +12,7 @@
 
 .field private azV:Landroid/net/NetworkScoreManager;
 
-.field private azW:Lcom/android/settings/AppListSwitchPreference;
+.field private azW:Lcom/android/vendorsettings/AppListSwitchPreference;
 
 .field private azX:Landroid/app/Dialog;
 
@@ -33,14 +33,14 @@
 
     .prologue
     .line 64
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 86
-    new-instance v0, Lcom/android/settings/wifi/d;
+    new-instance v0, Lcom/android/vendorsettings/wifi/d;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/wifi/d;-><init>(Lcom/android/settings/wifi/AdvancedWifiSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/wifi/d;-><init>(Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->mReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     return-void
 .end method
@@ -53,7 +53,7 @@
     if-eqz p2, :cond_2
 
     .line 346
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -64,11 +64,11 @@
     move-result-object v1
 
     .line 347
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/iC;->Z(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/iC;->Z(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -78,7 +78,7 @@
 
     .line 349
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -161,12 +161,12 @@
     goto :goto_2
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/AdvancedWifiSettings;)V
+.method static synthetic a(Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;)V
     .locals 0
 
     .prologue
     .line 64
-    invoke-direct {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->wS()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->wS()V
 
     return-void
 .end method
@@ -176,7 +176,7 @@
 
     .prologue
     .line 365
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -245,15 +245,15 @@
 
     .line 340
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->azW:Lcom/android/settings/AppListSwitchPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->azW:Lcom/android/vendorsettings/AppListSwitchPreference;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->azV:Landroid/net/NetworkScoreManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->azV:Landroid/net/NetworkScoreManager;
 
     invoke-virtual {v1}, Landroid/net/NetworkScoreManager;->getActiveScorerPackage()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v2, v1}, Lcom/android/settings/AppListSwitchPreference;->a([Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v2, v1}, Lcom/android/vendorsettings/AppListSwitchPreference;->a([Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
 
     .line 342
     return-void
@@ -291,7 +291,7 @@
     .line 197
     const-string v1, "install_credentials"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -303,20 +303,20 @@
 
     .line 205
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     .line 206
     const-string v0, "wifi_assistant"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/AppListSwitchPreference;
+    check-cast v0, Lcom/android/vendorsettings/AppListSwitchPreference;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->azW:Lcom/android/settings/AppListSwitchPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->azW:Lcom/android/vendorsettings/AppListSwitchPreference;
 
     .line 207
     invoke-static {v1}, Landroid/net/NetworkScorerAppManager;->getAllValidScorers(Landroid/content/Context;)Ljava/util/Collection;
@@ -337,26 +337,26 @@
     if-nez v4, :cond_9
 
     .line 210
-    iget-object v4, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->azW:Lcom/android/settings/AppListSwitchPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->azW:Lcom/android/vendorsettings/AppListSwitchPreference;
 
-    invoke-virtual {v4, p0}, Lcom/android/settings/AppListSwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v4, p0}, Lcom/android/vendorsettings/AppListSwitchPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 211
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->b(Ljava/util/Collection;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->b(Ljava/util/Collection;)V
 
     .line 216
     :cond_1
     :goto_0
     new-instance v0, Landroid/content/Intent;
 
-    const-class v4, Lcom/android/settings/Settings$WifiP2pSettingsActivity;
+    const-class v4, Lcom/android/vendorsettings/Settings$WifiP2pSettingsActivity;
 
     invoke-direct {v0, v1, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 218
     const-string v4, "wifi_direct"
 
-    invoke-virtual {p0, v4}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v4}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -366,14 +366,14 @@
     .line 242
     const-string v0, "frequency_band"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
     .line 244
-    iget-object v4, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->je:Landroid/net/wifi/WifiManager;
+    iget-object v4, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->je:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v4}, Landroid/net/wifi/WifiManager;->isDualBandSupported()Z
 
@@ -385,7 +385,7 @@
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 246
-    iget-object v4, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->je:Landroid/net/wifi/WifiManager;
+    iget-object v4, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->je:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v4}, Landroid/net/wifi/WifiManager;->getFrequencyBand()I
 
@@ -404,14 +404,14 @@
     invoke-virtual {v0, v5}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 249
-    invoke-direct {p0, v0, v4}, Lcom/android/settings/wifi/AdvancedWifiSettings;->b(Landroid/preference/Preference;I)V
+    invoke-direct {p0, v0, v4}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->b(Landroid/preference/Preference;I)V
 
     .line 260
     :cond_2
     :goto_1
     const-string v0, "sleep_policy"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -421,7 +421,7 @@
     if-eqz v0, :cond_4
 
     .line 262
-    invoke-static {v1}, Lcom/android/settings/iC;->Z(Landroid/content/Context;)Z
+    invoke-static {v1}, Lcom/android/vendorsettings/iC;->Z(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -437,7 +437,7 @@
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 266
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -458,13 +458,13 @@
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 271
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/wifi/AdvancedWifiSettings;->a(Landroid/preference/Preference;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->a(Landroid/preference/Preference;Ljava/lang/String;)V
 
     .line 275
     :cond_4
     const-string v0, "priority_type"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -479,7 +479,7 @@
     if-eqz v1, :cond_d
 
     .line 279
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -504,7 +504,7 @@
     :goto_3
     const-string v0, "connect_type"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -519,7 +519,7 @@
     if-eqz v1, :cond_e
 
     .line 291
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -551,7 +551,7 @@
     :goto_4
     const-string v0, "select_ssid_type"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -566,7 +566,7 @@
     if-eqz v1, :cond_f
 
     .line 303
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -598,7 +598,7 @@
     :goto_5
     const-string v0, "dialog_remind_type"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -613,7 +613,7 @@
     if-eqz v1, :cond_11
 
     .line 316
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -638,14 +638,14 @@
     :goto_7
     const-string v0, "wifi_scan_always_available"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
     .line 327
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -665,16 +665,16 @@
 
     .line 212
     :cond_9
-    iget-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->azW:Lcom/android/settings/AppListSwitchPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->azW:Lcom/android/vendorsettings/AppListSwitchPreference;
 
     if-eqz v0, :cond_1
 
     .line 213
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v4, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->azW:Lcom/android/settings/AppListSwitchPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->azW:Lcom/android/vendorsettings/AppListSwitchPreference;
 
     invoke-virtual {v0, v4}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -695,7 +695,7 @@
     if-eqz v0, :cond_2
 
     .line 256
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v4
 
@@ -713,12 +713,12 @@
     :cond_d
     const-string v0, "priority_type"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->U(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->U(Ljava/lang/String;)V
 
     .line 285
     const-string v0, "priority_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->U(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->U(Ljava/lang/String;)V
 
     goto/16 :goto_3
 
@@ -726,7 +726,7 @@
     :cond_e
     const-string v0, "connect_type"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->U(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->U(Ljava/lang/String;)V
 
     goto/16 :goto_4
 
@@ -734,7 +734,7 @@
     :cond_f
     const-string v0, "select_ssid_type"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->U(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->U(Ljava/lang/String;)V
 
     goto :goto_5
 
@@ -748,7 +748,7 @@
     :cond_11
     const-string v0, "dialog_remind_type"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->U(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->U(Ljava/lang/String;)V
 
     goto :goto_7
 
@@ -768,12 +768,12 @@
     const/4 v4, 0x0
 
     .line 492
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     .line 493
-    iget-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->je:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->je:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->getConnectionInfo()Landroid/net/wifi/WifiInfo;
 
@@ -782,7 +782,7 @@
     .line 495
     const-string v2, "mac_address"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -808,12 +808,12 @@
     .line 501
     const-string v0, "current_ip_address"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
     .line 502
-    invoke-static {v1}, Lcom/android/settings/iC;->aa(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/vendorsettings/iC;->aa(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -857,7 +857,7 @@
     .line 532
     const-string v0, "wapi_cert_install"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -879,7 +879,7 @@
     .line 538
     const-string v0, "wapi_cert_uninstall"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -899,29 +899,29 @@
 
     .prologue
     .line 559
-    new-instance v0, Lcom/android/settings/wifi/X;
+    new-instance v0, Lcom/android/vendorsettings/wifi/X;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/wifi/X;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/wifi/X;-><init>(Landroid/content/Context;)V
 
     .line 560
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/wifi/X;->setMode(I)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/wifi/X;->setMode(I)V
 
     .line 561
     const v1, 0x7f0c0e19
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/wifi/X;->setTitle(I)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/wifi/X;->setTitle(I)V
 
     .line 562
-    iput-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->azX:Landroid/app/Dialog;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->azX:Landroid/app/Dialog;
 
     .line 563
-    invoke-virtual {v0}, Lcom/android/settings/wifi/X;->show()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/X;->show()V
 
     .line 564
     return-void
@@ -932,29 +932,29 @@
 
     .prologue
     .line 567
-    new-instance v0, Lcom/android/settings/wifi/X;
+    new-instance v0, Lcom/android/vendorsettings/wifi/X;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/wifi/X;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/wifi/X;-><init>(Landroid/content/Context;)V
 
     .line 568
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/wifi/X;->setMode(I)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/wifi/X;->setMode(I)V
 
     .line 569
     const v1, 0x7f0c0e1d
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/wifi/X;->setTitle(I)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/wifi/X;->setTitle(I)V
 
     .line 570
-    iput-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->azX:Landroid/app/Dialog;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->azX:Landroid/app/Dialog;
 
     .line 571
-    invoke-virtual {v0}, Lcom/android/settings/wifi/X;->show()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/X;->show()V
 
     .line 572
     return-void
@@ -967,7 +967,7 @@
 
     .prologue
     .line 123
-    const-class v0, Lcom/android/settings/wifi/AdvancedWifiSettings;
+    const-class v0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -981,35 +981,35 @@
 
     .prologue
     .line 139
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 140
     const-string v0, "wifi"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/wifi/WifiManager;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->je:Landroid/net/wifi/WifiManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->je:Landroid/net/wifi/WifiManager;
 
     .line 141
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->mG:Landroid/content/IntentFilter;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->mG:Landroid/content/IntentFilter;
 
     .line 142
-    iget-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->mG:Landroid/content/IntentFilter;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->mG:Landroid/content/IntentFilter;
 
     const-string v1, "android.net.wifi.LINK_CONFIGURATION_CHANGED"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     .line 143
-    iget-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->mG:Landroid/content/IntentFilter;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->mG:Landroid/content/IntentFilter;
 
     const-string v1, "android.net.wifi.STATE_CHANGE"
 
@@ -1018,13 +1018,13 @@
     .line 144
     const-string v0, "network_score"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/NetworkScoreManager;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->azV:Landroid/net/NetworkScoreManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->azV:Landroid/net/NetworkScoreManager;
 
     .line 146
     return-void
@@ -1035,41 +1035,41 @@
 
     .prologue
     .line 128
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 129
     const v0, 0x7f0800be
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->addPreferencesFromResource(I)V
 
     .line 131
     const-string v0, "wapi_cert_install"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->azY:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->azY:Landroid/preference/Preference;
 
     .line 132
     const-string v0, "wapi_cert_uninstall"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->azZ:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->azZ:Landroid/preference/Preference;
 
     .line 133
     const-string v0, "wapi_cert_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->aAa:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->aAa:Landroid/preference/PreferenceCategory;
 
     .line 135
     return-void
@@ -1080,18 +1080,18 @@
 
     .prologue
     .line 171
-    iget-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->azX:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->azX:Landroid/app/Dialog;
 
     if-eqz v0, :cond_0
 
     .line 172
-    iget-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->azX:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->azX:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
     .line 175
     :cond_0
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onDestroy()V
 
     .line 176
     return-void
@@ -1102,14 +1102,14 @@
 
     .prologue
     .line 181
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPause()V
 
     .line 182
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
@@ -1126,7 +1126,7 @@
     const/4 v3, 0x0
 
     .line 405
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -1157,14 +1157,14 @@
     move-result v1
 
     .line 411
-    iget-object v6, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->je:Landroid/net/wifi/WifiManager;
+    iget-object v6, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->je:Landroid/net/wifi/WifiManager;
 
     const/4 v7, 0x1
 
     invoke-virtual {v6, v1, v7}, Landroid/net/wifi/WifiManager;->setFrequencyBand(IZ)V
 
     .line 412
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/wifi/AdvancedWifiSettings;->b(Landroid/preference/Preference;I)V
+    invoke-direct {p0, p1, v1}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->b(Landroid/preference/Preference;I)V
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1187,7 +1187,7 @@
     move-object v1, v0
 
     .line 449
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v6
 
@@ -1200,7 +1200,7 @@
     invoke-static {v6, v7, v8}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 451
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/wifi/AdvancedWifiSettings;->a(Landroid/preference/Preference;Ljava/lang/String;)V
+    invoke-direct {p0, p1, v1}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->a(Landroid/preference/Preference;Ljava/lang/String;)V
     :try_end_1
     .catch Ljava/lang/NumberFormatException; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -1222,7 +1222,7 @@
     move-result v1
 
     .line 462
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -1240,20 +1240,20 @@
     :goto_1
     const-string v1, "wapi_cert_install"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->azY:Landroid/preference/Preference;
+    iput-object v1, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->azY:Landroid/preference/Preference;
 
     .line 486
     const-string v1, "wapi_cert_uninstall"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->azZ:Landroid/preference/Preference;
+    iput-object v1, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->azZ:Landroid/preference/Preference;
 
     move v3, v2
 
@@ -1297,7 +1297,7 @@
     if-nez v1, :cond_4
 
     .line 422
-    iget-object v1, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->azV:Landroid/net/NetworkScoreManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->azV:Landroid/net/NetworkScoreManager;
 
     const/4 v3, 0x0
 
@@ -1328,7 +1328,7 @@
 
     .line 440
     :goto_3
-    invoke-virtual {p0, v2}, Lcom/android/settings/wifi/AdvancedWifiSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_2
 
@@ -1379,7 +1379,7 @@
     if-eqz v1, :cond_8
 
     .line 465
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -1398,7 +1398,7 @@
     .line 468
     const-string v1, "connect_type"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -1431,7 +1431,7 @@
     if-eqz v1, :cond_9
 
     .line 472
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -1450,7 +1450,7 @@
     .line 475
     const-string v1, "select_ssid_type"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
@@ -1490,7 +1490,7 @@
     move-result v1
 
     .line 480
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -1536,7 +1536,7 @@
     if-eqz v1, :cond_2
 
     .line 551
-    invoke-direct {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->wV()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->wV()V
 
     goto :goto_0
 
@@ -1551,7 +1551,7 @@
     if-eqz v0, :cond_0
 
     .line 553
-    invoke-direct {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->wW()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->wW()V
 
     goto :goto_0
 .end method
@@ -1581,7 +1581,7 @@
     if-eqz v1, :cond_1
 
     .line 374
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1615,7 +1615,7 @@
     if-eqz v1, :cond_3
 
     .line 379
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -1657,7 +1657,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/wifi/AdvancedWifiSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 
@@ -1690,7 +1690,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/wifi/AdvancedWifiSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 
@@ -1717,7 +1717,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 394
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1727,7 +1727,7 @@
 
     .line 398
     :cond_6
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v6
 
@@ -1741,10 +1741,10 @@
     const/4 v2, 0x0
 
     .line 150
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 151
-    invoke-direct {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->iW()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->iW()V
 
     .line 153
     const-string v0, "support_wapi"
@@ -1772,53 +1772,53 @@
     if-nez v0, :cond_1
 
     .line 155
-    invoke-direct {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->wT()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->wT()V
 
     .line 156
-    invoke-direct {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->wU()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->wU()V
 
     .line 164
     :cond_0
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    iget-object v2, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->mG:Landroid/content/IntentFilter;
+    iget-object v2, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->mG:Landroid/content/IntentFilter;
 
     invoke-virtual {v0, v1, v2}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 165
-    invoke-direct {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->wS()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->wS()V
 
     .line 166
     return-void
 
     .line 157
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->aAa:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->aAa:Landroid/preference/PreferenceCategory;
 
     if-eqz v0, :cond_0
 
     .line 158
-    invoke-virtual {p0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->aAa:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->aAa:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 159
-    iput-object v2, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->azY:Landroid/preference/Preference;
+    iput-object v2, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->azY:Landroid/preference/Preference;
 
     .line 160
-    iput-object v2, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->azZ:Landroid/preference/Preference;
+    iput-object v2, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->azZ:Landroid/preference/Preference;
 
     .line 161
-    iput-object v2, p0, Lcom/android/settings/wifi/AdvancedWifiSettings;->aAa:Landroid/preference/PreferenceCategory;
+    iput-object v2, p0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->aAa:Landroid/preference/PreferenceCategory;
 
     goto :goto_0
 .end method

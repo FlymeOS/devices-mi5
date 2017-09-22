@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/MiuiSettings$2;
+.class final Lcom/android/vendorsettings/MiuiSettings$2;
 .super Ljava/util/HashMap;
 .source "MiuiSettings.java"
 
@@ -20,7 +20,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/MiuiSettings$2;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/MiuiSettings$2;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 178
     const-string v0, "com.android.settings.category.device"
@@ -29,7 +29,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/MiuiSettings$2;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/MiuiSettings$2;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 179
     const-string v0, "com.android.settings.category.personal"
@@ -38,7 +38,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/MiuiSettings$2;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/MiuiSettings$2;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 180
     const-string v0, "com.android.settings.category.system"
@@ -47,7 +47,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/MiuiSettings$2;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/MiuiSettings$2;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 181
     return-void

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/ZenModePrioritySettings$1;
+.class Lcom/android/vendorsettings/notification/ZenModePrioritySettings$1;
 .super Ljava/lang/Object;
 .source "ZenModePrioritySettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic alj:Lcom/android/settings/notification/ZenModePrioritySettings;
+.field final synthetic alj:Lcom/android/vendorsettings/notification/ZenModePrioritySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/ZenModePrioritySettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/notification/ZenModePrioritySettings;)V
     .locals 0
 
     .prologue
     .line 55
-    iput-object p1, p0, Lcom/android/settings/notification/ZenModePrioritySettings$1;->alj:Lcom/android/settings/notification/ZenModePrioritySettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/notification/ZenModePrioritySettings$1;->alj:Lcom/android/vendorsettings/notification/ZenModePrioritySettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,9 +32,9 @@
     const/4 v0, 0x1
 
     .line 58
-    iget-object v1, p0, Lcom/android/settings/notification/ZenModePrioritySettings$1;->alj:Lcom/android/settings/notification/ZenModePrioritySettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/ZenModePrioritySettings$1;->alj:Lcom/android/vendorsettings/notification/ZenModePrioritySettings;
 
-    invoke-static {v1}, Lcom/android/settings/notification/ZenModePrioritySettings;->a(Lcom/android/settings/notification/ZenModePrioritySettings;)Z
+    invoke-static {v1}, Lcom/android/vendorsettings/notification/ZenModePrioritySettings;->a(Lcom/android/vendorsettings/notification/ZenModePrioritySettings;)Z
 
     move-result v1
 
@@ -54,25 +54,25 @@
     move-result v1
 
     .line 60
-    iget-object v2, p0, Lcom/android/settings/notification/ZenModePrioritySettings$1;->alj:Lcom/android/settings/notification/ZenModePrioritySettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/notification/ZenModePrioritySettings$1;->alj:Lcom/android/vendorsettings/notification/ZenModePrioritySettings;
 
-    iget-object v2, v2, Lcom/android/settings/notification/ZenModePrioritySettings;->mContext:Landroid/content/Context;
+    iget-object v2, v2, Lcom/android/vendorsettings/notification/ZenModePrioritySettings;->mContext:Landroid/content/Context;
 
     const/16 v3, 0xa7
 
     invoke-static {v2, v3, v1}, Lcom/android/internal/logging/MetricsLogger;->action(Landroid/content/Context;IZ)V
 
     .line 61
-    iget-object v2, p0, Lcom/android/settings/notification/ZenModePrioritySettings$1;->alj:Lcom/android/settings/notification/ZenModePrioritySettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/notification/ZenModePrioritySettings$1;->alj:Lcom/android/vendorsettings/notification/ZenModePrioritySettings;
 
-    iget-object v2, v2, Lcom/android/settings/notification/ZenModePrioritySettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v2, v2, Lcom/android/vendorsettings/notification/ZenModePrioritySettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-boolean v2, v2, Landroid/service/notification/ZenModeConfig;->allowReminders:Z
 
     if-eq v1, v2, :cond_0
 
     .line 62
-    sget-boolean v0, Lcom/android/settings/notification/ZenModeSettingsBase;->DEBUG:Z
+    sget-boolean v0, Lcom/android/vendorsettings/notification/ZenModeSettingsBase;->DEBUG:Z
 
     if-eqz v0, :cond_2
 
@@ -100,9 +100,9 @@
 
     .line 63
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModePrioritySettings$1;->alj:Lcom/android/settings/notification/ZenModePrioritySettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenModePrioritySettings$1;->alj:Lcom/android/vendorsettings/notification/ZenModePrioritySettings;
 
-    iget-object v0, v0, Lcom/android/settings/notification/ZenModePrioritySettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, v0, Lcom/android/vendorsettings/notification/ZenModePrioritySettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     invoke-virtual {v0}, Landroid/service/notification/ZenModeConfig;->copy()Landroid/service/notification/ZenModeConfig;
 
@@ -112,9 +112,9 @@
     iput-boolean v1, v0, Landroid/service/notification/ZenModeConfig;->allowReminders:Z
 
     .line 65
-    iget-object v1, p0, Lcom/android/settings/notification/ZenModePrioritySettings$1;->alj:Lcom/android/settings/notification/ZenModePrioritySettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/ZenModePrioritySettings$1;->alj:Lcom/android/vendorsettings/notification/ZenModePrioritySettings;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/notification/ZenModePrioritySettings;->a(Landroid/service/notification/ZenModeConfig;)Z
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/notification/ZenModePrioritySettings;->a(Landroid/service/notification/ZenModeConfig;)Z
 
     move-result v0
 

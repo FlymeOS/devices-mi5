@@ -1,22 +1,22 @@
-.class Lcom/android/settings/notification/NotificationSettings$4;
+.class Lcom/android/vendorsettings/notification/NotificationSettings$4;
 .super Ljava/lang/Object;
 .source "NotificationSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/cO;
+.implements Lcom/android/vendorsettings/cO;
 
 
 # instance fields
-.field final synthetic ajD:Lcom/android/settings/notification/NotificationSettings;
+.field final synthetic ajD:Lcom/android/vendorsettings/notification/NotificationSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/NotificationSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/notification/NotificationSettings;)V
     .locals 0
 
     .prologue
     .line 474
-    iput-object p1, p0, Lcom/android/settings/notification/NotificationSettings$4;->ajD:Lcom/android/settings/notification/NotificationSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/notification/NotificationSettings$4;->ajD:Lcom/android/vendorsettings/notification/NotificationSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,9 +41,9 @@
     move-result v4
 
     .line 478
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings$4;->ajD:Lcom/android/settings/notification/NotificationSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/NotificationSettings$4;->ajD:Lcom/android/vendorsettings/notification/NotificationSettings;
 
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationSettings;->g(Lcom/android/settings/notification/NotificationSettings;)I
+    invoke-static {v0}, Lcom/android/vendorsettings/notification/NotificationSettings;->g(Lcom/android/vendorsettings/notification/NotificationSettings;)I
 
     move-result v0
 
@@ -71,9 +71,9 @@
 
     .line 484
     :goto_2
-    iget-object v5, p0, Lcom/android/settings/notification/NotificationSettings$4;->ajD:Lcom/android/settings/notification/NotificationSettings;
+    iget-object v5, p0, Lcom/android/vendorsettings/notification/NotificationSettings$4;->ajD:Lcom/android/vendorsettings/notification/NotificationSettings;
 
-    invoke-static {v5}, Lcom/android/settings/notification/NotificationSettings;->h(Lcom/android/settings/notification/NotificationSettings;)Landroid/content/ContentResolver;
+    invoke-static {v5}, Lcom/android/vendorsettings/notification/NotificationSettings;->h(Lcom/android/vendorsettings/notification/NotificationSettings;)Landroid/content/ContentResolver;
 
     move-result-object v5
 
@@ -87,9 +87,9 @@
     invoke-static {v5, v6, v0}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 486
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings$4;->ajD:Lcom/android/settings/notification/NotificationSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/NotificationSettings$4;->ajD:Lcom/android/vendorsettings/notification/NotificationSettings;
 
-    invoke-static {v0}, Lcom/android/settings/notification/NotificationSettings;->i(Lcom/android/settings/notification/NotificationSettings;)Landroid/content/ContentResolver;
+    invoke-static {v0}, Lcom/android/vendorsettings/notification/NotificationSettings;->i(Lcom/android/vendorsettings/notification/NotificationSettings;)Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -103,9 +103,9 @@
     invoke-static {v0, v5, v2}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 488
-    iget-object v0, p0, Lcom/android/settings/notification/NotificationSettings$4;->ajD:Lcom/android/settings/notification/NotificationSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/NotificationSettings$4;->ajD:Lcom/android/vendorsettings/notification/NotificationSettings;
 
-    invoke-static {v0, v4}, Lcom/android/settings/notification/NotificationSettings;->a(Lcom/android/settings/notification/NotificationSettings;I)I
+    invoke-static {v0, v4}, Lcom/android/vendorsettings/notification/NotificationSettings;->a(Lcom/android/vendorsettings/notification/NotificationSettings;I)I
 
     goto :goto_0
 

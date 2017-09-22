@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fm;
+.class Lcom/android/vendorsettings/fm;
 .super Ljava/lang/Object;
 .source "MiuiSecurityTrustedCredentials.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic sT:Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
+.field final synthetic sT:Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
 
-.field final synthetic sU:Lcom/android/settings/fh;
+.field final synthetic sU:Lcom/android/vendorsettings/fh;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;Lcom/android/settings/fh;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;Lcom/android/vendorsettings/fh;)V
     .locals 0
 
     .prologue
     .line 472
-    iput-object p1, p0, Lcom/android/settings/fm;->sT:Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/fm;->sT:Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
 
-    iput-object p2, p0, Lcom/android/settings/fm;->sU:Lcom/android/settings/fh;
+    iput-object p2, p0, Lcom/android/vendorsettings/fm;->sU:Lcom/android/vendorsettings/fh;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,24 +37,24 @@
     .line 481
     new-instance v0, Lmiui/app/AlertDialog$Builder;
 
-    iget-object v1, p0, Lcom/android/settings/fm;->sT:Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/fm;->sT:Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;
 
-    invoke-virtual {v1}, Lcom/android/settings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$TrustedCredentialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Lmiui/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 482
-    iget-object v1, p0, Lcom/android/settings/fm;->sU:Lcom/android/settings/fh;
+    iget-object v1, p0, Lcom/android/vendorsettings/fm;->sU:Lcom/android/vendorsettings/fh;
 
-    invoke-static {v1}, Lcom/android/settings/fh;->c(Lcom/android/settings/fh;)Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    invoke-static {v1}, Lcom/android/vendorsettings/fh;->c(Lcom/android/vendorsettings/fh;)Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$Tab;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/fm;->sU:Lcom/android/settings/fh;
+    iget-object v2, p0, Lcom/android/vendorsettings/fm;->sU:Lcom/android/vendorsettings/fh;
 
-    invoke-static {v1, v2}, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->b(Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;Lcom/android/settings/fh;)I
+    invoke-static {v1, v2}, Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$Tab;->b(Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$Tab;Lcom/android/vendorsettings/fh;)I
 
     move-result v1
 
@@ -63,18 +63,18 @@
     .line 483
     const v1, 0x1040013
 
-    new-instance v2, Lcom/android/settings/fn;
+    new-instance v2, Lcom/android/vendorsettings/fn;
 
-    invoke-direct {v2, p0, p1}, Lcom/android/settings/fn;-><init>(Lcom/android/settings/fm;Landroid/content/DialogInterface;)V
+    invoke-direct {v2, p0, p1}, Lcom/android/vendorsettings/fn;-><init>(Lcom/android/vendorsettings/fm;Landroid/content/DialogInterface;)V
 
     invoke-virtual {v0, v1, v2}, Lmiui/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Lmiui/app/AlertDialog$Builder;
 
     .line 491
     const v1, 0x1040009
 
-    new-instance v2, Lcom/android/settings/fo;
+    new-instance v2, Lcom/android/vendorsettings/fo;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/fo;-><init>(Lcom/android/settings/fm;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/fo;-><init>(Lcom/android/vendorsettings/fm;)V
 
     invoke-virtual {v0, v1, v2}, Lmiui/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Lmiui/app/AlertDialog$Builder;
 

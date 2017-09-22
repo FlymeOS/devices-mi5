@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/privacypassword/PrivacyPasswordPreferenceTitle;
+.class public Lcom/android/vendorsettings/privacypassword/PrivacyPasswordPreferenceTitle;
 .super Landroid/preference/Preference;
 .source "PrivacyPasswordPreferenceTitle.java"
 
@@ -11,7 +11,7 @@
     .line 18
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/privacypassword/PrivacyPasswordPreferenceTitle;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordPreferenceTitle;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 19
     return-void
@@ -46,7 +46,7 @@
 
     .prologue
     .line 26
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordPreferenceTitle;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordPreferenceTitle;->getContext()Landroid/content/Context;
 
     move-result-object v0
 

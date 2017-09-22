@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/openwifi/a;
+.class Lcom/android/vendorsettings/wifi/openwifi/a;
 .super Ljava/lang/Object;
 .source "FreeWifiDialog.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aFw:Lcom/android/settings/wifi/openwifi/FreeWifiDialog;
+.field final synthetic aFw:Lcom/android/vendorsettings/wifi/openwifi/FreeWifiDialog;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/openwifi/FreeWifiDialog;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/openwifi/FreeWifiDialog;)V
     .locals 0
 
     .prologue
     .line 57
-    iput-object p1, p0, Lcom/android/settings/wifi/openwifi/a;->aFw:Lcom/android/settings/wifi/openwifi/FreeWifiDialog;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/openwifi/a;->aFw:Lcom/android/vendorsettings/wifi/openwifi/FreeWifiDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/a;->aFw:Lcom/android/settings/wifi/openwifi/FreeWifiDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/openwifi/a;->aFw:Lcom/android/vendorsettings/wifi/openwifi/FreeWifiDialog;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/openwifi/FreeWifiDialog;->finish()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/openwifi/FreeWifiDialog;->finish()V
 
     .line 61
     return-void

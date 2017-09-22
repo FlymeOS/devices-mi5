@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/voice/d;
-.super Lcom/android/settings/voice/b;
+.class public Lcom/android/vendorsettings/voice/d;
+.super Lcom/android/vendorsettings/voice/b;
 .source "VoiceInputHelper.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 88
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/voice/b;-><init>(Landroid/content/pm/PackageManager;Landroid/content/pm/ServiceInfo;Ljava/lang/String;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/vendorsettings/voice/b;-><init>(Landroid/content/pm/PackageManager;Landroid/content/pm/ServiceInfo;Ljava/lang/String;)V
 
     .line 89
     return-void

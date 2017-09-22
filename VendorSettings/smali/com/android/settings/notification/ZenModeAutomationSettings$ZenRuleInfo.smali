@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/ZenModeAutomationSettings$ZenRuleInfo;
+.class Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$ZenRuleInfo;
 .super Ljava/lang/Object;
 .source "ZenModeAutomationSettings.java"
 
@@ -20,12 +20,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/notification/ZenModeAutomationSettings$1;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$1;)V
     .locals 0
 
     .prologue
     .line 332
-    invoke-direct {p0}, Lcom/android/settings/notification/ZenModeAutomationSettings$ZenRuleInfo;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$ZenRuleInfo;-><init>()V
 
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hy;
+.class Lcom/android/vendorsettings/hy;
 .super Ljava/lang/Object;
 .source "SettingsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic zQ:Lcom/android/settings/hx;
+.field final synthetic zQ:Lcom/android/vendorsettings/hx;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/hx;)V
+.method constructor <init>(Lcom/android/vendorsettings/hx;)V
     .locals 0
 
     .prologue
     .line 180
-    iput-object p1, p0, Lcom/android/settings/hy;->zQ:Lcom/android/settings/hx;
+    iput-object p1, p0, Lcom/android/vendorsettings/hy;->zQ:Lcom/android/vendorsettings/hx;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,11 +35,11 @@
     if-ne p2, v0, :cond_0
 
     .line 184
-    iget-object v0, p0, Lcom/android/settings/hy;->zQ:Lcom/android/settings/hx;
+    iget-object v0, p0, Lcom/android/vendorsettings/hy;->zQ:Lcom/android/vendorsettings/hx;
 
-    iget-object v0, v0, Lcom/android/settings/hx;->zP:Lcom/android/settings/SettingsFragment;
+    iget-object v0, v0, Lcom/android/vendorsettings/hx;->zP:Lcom/android/vendorsettings/SettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/SettingsFragment;->i(Lcom/android/settings/SettingsFragment;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/SettingsFragment;->i(Lcom/android/vendorsettings/SettingsFragment;)V
 
     .line 185
     const/4 v0, 0x1

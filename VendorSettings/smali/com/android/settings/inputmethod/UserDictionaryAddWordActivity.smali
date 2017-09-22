@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/inputmethod/UserDictionaryAddWordActivity;
+.class public Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordActivity;
 .super Landroid/app/Activity;
 .source "UserDictionaryAddWordActivity.java"
 
 
 # instance fields
-.field private agO:Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+.field private agO:Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordContents;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     .prologue
     .line 76
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -88,10 +88,10 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/inputmethod/UserDictionaryAddWordActivity;->b(ILandroid/os/Bundle;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordActivity;->b(ILandroid/os/Bundle;)V
 
     .line 93
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordActivity;->finish()V
 
     .line 94
     return-void
@@ -107,17 +107,17 @@
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
     .line 98
-    iget-object v1, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordActivity;->agO:Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+    iget-object v1, p0, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordActivity;->agO:Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordContents;
 
-    invoke-virtual {v1, p0, v0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;->a(Landroid/content/Context;Landroid/os/Bundle;)I
+    invoke-virtual {v1, p0, v0}, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordContents;->a(Landroid/content/Context;Landroid/os/Bundle;)I
 
     move-result v1
 
     .line 99
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordActivity;->b(ILandroid/os/Bundle;)V
+    invoke-direct {p0, v1, v0}, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordActivity;->b(ILandroid/os/Bundle;)V
 
     .line 100
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordActivity;->finish()V
 
     .line 101
     return-void
@@ -133,10 +133,10 @@
     .line 43
     const v0, 0x7f04018c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordActivity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordActivity;->setContentView(I)V
 
     .line 44
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -176,9 +176,9 @@
 
     .line 67
     :cond_0
-    new-instance v0, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+    new-instance v0, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordContents;
 
-    invoke-virtual {p0}, Lcom/android/settings/inputmethod/UserDictionaryAddWordActivity;->getWindow()Landroid/view/Window;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordActivity;->getWindow()Landroid/view/Window;
 
     move-result-object v2
 
@@ -186,9 +186,9 @@
 
     move-result-object v2
 
-    invoke-direct {v0, v2, v1}, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;-><init>(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-direct {v0, v2, v1}, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordContents;-><init>(Landroid/view/View;Landroid/os/Bundle;)V
 
-    iput-object v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordActivity;->agO:Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+    iput-object v0, p0, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordActivity;->agO:Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordContents;
 
     .line 68
     return-void
@@ -240,9 +240,9 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/android/settings/inputmethod/UserDictionaryAddWordActivity;->agO:Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordActivity;->agO:Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordContents;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/inputmethod/UserDictionaryAddWordContents;->h(Landroid/os/Bundle;)V
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/inputmethod/UserDictionaryAddWordContents;->h(Landroid/os/Bundle;)V
 
     .line 73
     return-void

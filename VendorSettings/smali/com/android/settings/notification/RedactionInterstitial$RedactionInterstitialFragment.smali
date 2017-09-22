@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "RedactionInterstitial.java"
 
 # interfaces
@@ -20,7 +20,7 @@
 
     .prologue
     .line 83
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -34,7 +34,7 @@
     const/4 v2, 0x0
 
     .line 133
-    invoke-virtual {p0}, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -50,7 +50,7 @@
 
     .line 135
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -74,7 +74,7 @@
     .line 140
     if-eqz v2, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->akf:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;->akf:Landroid/widget/RadioButton;
 
     invoke-virtual {v0}, Landroid/widget/RadioButton;->isEnabled()Z
 
@@ -87,7 +87,7 @@
 
     .line 147
     :goto_1
-    iget-object v1, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->ake:Landroid/widget/RadioGroup;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;->ake:Landroid/widget/RadioGroup;
 
     invoke-virtual {v1, v0}, Landroid/widget/RadioGroup;->check(I)V
 
@@ -102,7 +102,7 @@
 
     .line 142
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->akg:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;->akg:Landroid/widget/RadioButton;
 
     invoke-virtual {v0}, Landroid/widget/RadioButton;->isEnabled()Z
 
@@ -128,7 +128,7 @@
 
     .prologue
     .line 97
-    const-class v0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;
+    const-class v0, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -162,7 +162,7 @@
 
     .line 155
     :goto_1
-    invoke-virtual {p0}, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v4
 
@@ -176,7 +176,7 @@
     invoke-static {v4, v5, v3}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 157
-    invoke-virtual {p0}, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -236,10 +236,10 @@
 
     .prologue
     .line 128
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 129
-    invoke-direct {p0}, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->sv()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;->sv()V
 
     .line 130
     return-void
@@ -252,7 +252,7 @@
     const/4 v1, 0x0
 
     .line 110
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 111
     const v0, 0x7f130274
@@ -263,7 +263,7 @@
 
     check-cast v0, Landroid/widget/RadioGroup;
 
-    iput-object v0, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->ake:Landroid/widget/RadioGroup;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;->ake:Landroid/widget/RadioGroup;
 
     .line 112
     const v0, 0x7f130276
@@ -274,7 +274,7 @@
 
     check-cast v0, Landroid/widget/RadioButton;
 
-    iput-object v0, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->akf:Landroid/widget/RadioButton;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;->akf:Landroid/widget/RadioButton;
 
     .line 113
     const v0, 0x7f130275
@@ -285,31 +285,31 @@
 
     check-cast v0, Landroid/widget/RadioButton;
 
-    iput-object v0, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->akg:Landroid/widget/RadioButton;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;->akg:Landroid/widget/RadioButton;
 
     .line 115
-    iget-object v0, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->ake:Landroid/widget/RadioGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;->ake:Landroid/widget/RadioGroup;
 
     invoke-virtual {v0, p0}, Landroid/widget/RadioGroup;->setOnCheckedChangeListener(Landroid/widget/RadioGroup$OnCheckedChangeListener;)V
 
     .line 118
-    invoke-virtual {p0}, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/notification/RedactionInterstitial;->bM(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/notification/RedactionInterstitial;->bM(Landroid/content/Context;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->akf:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;->akf:Landroid/widget/RadioButton;
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setEnabled(Z)V
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->akg:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;->akg:Landroid/widget/RadioButton;
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setEnabled(Z)V
 
@@ -320,18 +320,18 @@
 
     .line 121
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/notification/RedactionInterstitial;->R(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/notification/RedactionInterstitial;->R(Landroid/content/Context;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 122
-    iget-object v0, p0, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->akf:Landroid/widget/RadioButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;->akf:Landroid/widget/RadioButton;
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setEnabled(Z)V
 

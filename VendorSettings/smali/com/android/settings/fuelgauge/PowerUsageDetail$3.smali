@@ -1,19 +1,19 @@
-.class Lcom/android/settings/fuelgauge/PowerUsageDetail$3;
+.class Lcom/android/vendorsettings/fuelgauge/PowerUsageDetail$3;
 .super Landroid/content/BroadcastReceiver;
 .source "PowerUsageDetail.java"
 
 
 # instance fields
-.field final synthetic afA:Lcom/android/settings/fuelgauge/PowerUsageDetail;
+.field final synthetic afA:Lcom/android/vendorsettings/fuelgauge/PowerUsageDetail;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fuelgauge/PowerUsageDetail;)V
+.method constructor <init>(Lcom/android/vendorsettings/fuelgauge/PowerUsageDetail;)V
     .locals 0
 
     .prologue
     .line 700
-    iput-object p1, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail$3;->afA:Lcom/android/settings/fuelgauge/PowerUsageDetail;
+    iput-object p1, p0, Lcom/android/vendorsettings/fuelgauge/PowerUsageDetail$3;->afA:Lcom/android/vendorsettings/fuelgauge/PowerUsageDetail;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -27,13 +27,13 @@
 
     .prologue
     .line 703
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail$3;->afA:Lcom/android/settings/fuelgauge/PowerUsageDetail;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/PowerUsageDetail$3;->afA:Lcom/android/vendorsettings/fuelgauge/PowerUsageDetail;
 
-    invoke-static {v0}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->a(Lcom/android/settings/fuelgauge/PowerUsageDetail;)Landroid/widget/Button;
+    invoke-static {v0}, Lcom/android/vendorsettings/fuelgauge/PowerUsageDetail;->a(Lcom/android/vendorsettings/fuelgauge/PowerUsageDetail;)Landroid/widget/Button;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerUsageDetail$3;->getResultCode()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/PowerUsageDetail$3;->getResultCode()I
 
     move-result v0
 

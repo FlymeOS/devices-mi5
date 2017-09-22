@@ -1,4 +1,4 @@
-.class Lcom/android/settings/cl;
+.class Lcom/android/vendorsettings/cl;
 .super Ljava/lang/Object;
 .source "DeviceAdminAddFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic lg:Lcom/android/settings/DeviceAdminAddFragment;
+.field final synthetic lg:Lcom/android/vendorsettings/DeviceAdminAddFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DeviceAdminAddFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/DeviceAdminAddFragment;)V
     .locals 0
 
     .prologue
     .line 210
-    iput-object p1, p0, Lcom/android/settings/cl;->lg:Lcom/android/settings/DeviceAdminAddFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/cl;->lg:Lcom/android/vendorsettings/DeviceAdminAddFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,47 +32,47 @@
     const/4 v4, -0x1
 
     .line 212
-    iget-object v0, p0, Lcom/android/settings/cl;->lg:Lcom/android/settings/DeviceAdminAddFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/cl;->lg:Lcom/android/vendorsettings/DeviceAdminAddFragment;
 
-    iget-boolean v0, v0, Lcom/android/settings/DeviceAdminAddFragment;->kU:Z
+    iget-boolean v0, v0, Lcom/android/vendorsettings/DeviceAdminAddFragment;->kU:Z
 
     if-eqz v0, :cond_1
 
     .line 214
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/cl;->lg:Lcom/android/settings/DeviceAdminAddFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/cl;->lg:Lcom/android/vendorsettings/DeviceAdminAddFragment;
 
-    iget-object v0, v0, Lcom/android/settings/DeviceAdminAddFragment;->ds:Landroid/app/admin/DevicePolicyManager;
+    iget-object v0, v0, Lcom/android/vendorsettings/DeviceAdminAddFragment;->ds:Landroid/app/admin/DevicePolicyManager;
 
-    iget-object v1, p0, Lcom/android/settings/cl;->lg:Lcom/android/settings/DeviceAdminAddFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/cl;->lg:Lcom/android/vendorsettings/DeviceAdminAddFragment;
 
-    iget-object v1, v1, Lcom/android/settings/DeviceAdminAddFragment;->kH:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v1, v1, Lcom/android/vendorsettings/DeviceAdminAddFragment;->kH:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v1}, Landroid/app/admin/DeviceAdminInfo;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/cl;->lg:Lcom/android/settings/DeviceAdminAddFragment;
+    iget-object v2, p0, Lcom/android/vendorsettings/cl;->lg:Lcom/android/vendorsettings/DeviceAdminAddFragment;
 
-    iget-boolean v2, v2, Lcom/android/settings/DeviceAdminAddFragment;->kV:Z
+    iget-boolean v2, v2, Lcom/android/vendorsettings/DeviceAdminAddFragment;->kV:Z
 
     invoke-virtual {v0, v1, v2}, Landroid/app/admin/DevicePolicyManager;->setActiveAdmin(Landroid/content/ComponentName;Z)V
 
     .line 215
-    iget-object v0, p0, Lcom/android/settings/cl;->lg:Lcom/android/settings/DeviceAdminAddFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/cl;->lg:Lcom/android/vendorsettings/DeviceAdminAddFragment;
 
     const/4 v1, -0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/DeviceAdminAddFragment;->setResult(I)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/DeviceAdminAddFragment;->setResult(I)V
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 225
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/cl;->lg:Lcom/android/settings/DeviceAdminAddFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/cl;->lg:Lcom/android/vendorsettings/DeviceAdminAddFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/DeviceAdminAddFragment;->finish()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/DeviceAdminAddFragment;->finish()V
 
     .line 254
     :goto_1
@@ -95,9 +95,9 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/cl;->lg:Lcom/android/settings/DeviceAdminAddFragment;
+    iget-object v3, p0, Lcom/android/vendorsettings/cl;->lg:Lcom/android/vendorsettings/DeviceAdminAddFragment;
 
-    iget-object v3, v3, Lcom/android/settings/DeviceAdminAddFragment;->kH:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v3, v3, Lcom/android/vendorsettings/DeviceAdminAddFragment;->kH:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v3}, Landroid/app/admin/DeviceAdminInfo;->getComponent()Landroid/content/ComponentName;
 
@@ -114,13 +114,13 @@
     invoke-static {v1, v2, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     .line 221
-    iget-object v0, p0, Lcom/android/settings/cl;->lg:Lcom/android/settings/DeviceAdminAddFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/cl;->lg:Lcom/android/vendorsettings/DeviceAdminAddFragment;
 
-    iget-object v0, v0, Lcom/android/settings/DeviceAdminAddFragment;->ds:Landroid/app/admin/DevicePolicyManager;
+    iget-object v0, v0, Lcom/android/vendorsettings/DeviceAdminAddFragment;->ds:Landroid/app/admin/DevicePolicyManager;
 
-    iget-object v1, p0, Lcom/android/settings/cl;->lg:Lcom/android/settings/DeviceAdminAddFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/cl;->lg:Lcom/android/vendorsettings/DeviceAdminAddFragment;
 
-    iget-object v1, v1, Lcom/android/settings/DeviceAdminAddFragment;->kH:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v1, v1, Lcom/android/vendorsettings/DeviceAdminAddFragment;->kH:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v1}, Landroid/app/admin/DeviceAdminInfo;->getComponent()Landroid/content/ComponentName;
 
@@ -133,9 +133,9 @@
     if-eqz v0, :cond_0
 
     .line 222
-    iget-object v0, p0, Lcom/android/settings/cl;->lg:Lcom/android/settings/DeviceAdminAddFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/cl;->lg:Lcom/android/vendorsettings/DeviceAdminAddFragment;
 
-    invoke-virtual {v0, v4}, Lcom/android/settings/DeviceAdminAddFragment;->setResult(I)V
+    invoke-virtual {v0, v4}, Lcom/android/vendorsettings/DeviceAdminAddFragment;->setResult(I)V
 
     goto :goto_0
 
@@ -152,25 +152,25 @@
 
     .line 233
     :goto_2
-    iget-object v0, p0, Lcom/android/settings/cl;->lg:Lcom/android/settings/DeviceAdminAddFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/cl;->lg:Lcom/android/vendorsettings/DeviceAdminAddFragment;
 
-    iget-object v0, v0, Lcom/android/settings/DeviceAdminAddFragment;->ds:Landroid/app/admin/DevicePolicyManager;
+    iget-object v0, v0, Lcom/android/vendorsettings/DeviceAdminAddFragment;->ds:Landroid/app/admin/DevicePolicyManager;
 
-    iget-object v1, p0, Lcom/android/settings/cl;->lg:Lcom/android/settings/DeviceAdminAddFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/cl;->lg:Lcom/android/vendorsettings/DeviceAdminAddFragment;
 
-    iget-object v1, v1, Lcom/android/settings/DeviceAdminAddFragment;->kH:Landroid/app/admin/DeviceAdminInfo;
+    iget-object v1, v1, Lcom/android/vendorsettings/DeviceAdminAddFragment;->kH:Landroid/app/admin/DeviceAdminInfo;
 
     invoke-virtual {v1}, Landroid/app/admin/DeviceAdminInfo;->getComponent()Landroid/content/ComponentName;
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/DeviceAdminAddFragment$3$1;
+    new-instance v2, Lcom/android/vendorsettings/DeviceAdminAddFragment$3$1;
 
-    iget-object v3, p0, Lcom/android/settings/cl;->lg:Lcom/android/settings/DeviceAdminAddFragment;
+    iget-object v3, p0, Lcom/android/vendorsettings/cl;->lg:Lcom/android/vendorsettings/DeviceAdminAddFragment;
 
-    iget-object v3, v3, Lcom/android/settings/DeviceAdminAddFragment;->mHandler:Landroid/os/Handler;
+    iget-object v3, v3, Lcom/android/vendorsettings/DeviceAdminAddFragment;->mHandler:Landroid/os/Handler;
 
-    invoke-direct {v2, p0, v3}, Lcom/android/settings/DeviceAdminAddFragment$3$1;-><init>(Lcom/android/settings/cl;Landroid/os/Handler;)V
+    invoke-direct {v2, p0, v3}, Lcom/android/vendorsettings/DeviceAdminAddFragment$3$1;-><init>(Lcom/android/vendorsettings/cl;Landroid/os/Handler;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/admin/DevicePolicyManager;->getRemoveWarning(Landroid/content/ComponentName;Landroid/os/RemoteCallback;)V
 

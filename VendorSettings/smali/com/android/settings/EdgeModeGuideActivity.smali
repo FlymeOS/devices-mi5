@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/EdgeModeGuideActivity;
+.class public Lcom/android/vendorsettings/EdgeModeGuideActivity;
 .super Lmiui/preference/PreferenceActivity;
 .source "EdgeModeGuideActivity.java"
 
@@ -33,7 +33,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/EdgeModeGuideActivity;->mp:[I
+    sput-object v0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mp:[I
 
     return-void
 
@@ -55,31 +55,31 @@
     invoke-direct {p0}, Lmiui/preference/PreferenceActivity;-><init>()V
 
     .line 53
-    new-instance v0, Lcom/android/settings/cP;
+    new-instance v0, Lcom/android/vendorsettings/cP;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/cP;-><init>(Lcom/android/settings/EdgeModeGuideActivity;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/cP;-><init>(Lcom/android/vendorsettings/EdgeModeGuideActivity;)V
 
-    iput-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mHandler:Landroid/os/Handler;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/EdgeModeGuideActivity;)Landroid/widget/VideoView;
+.method static synthetic a(Lcom/android/vendorsettings/EdgeModeGuideActivity;)Landroid/widget/VideoView;
     .locals 1
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mu:Landroid/widget/VideoView;
+    iget-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mu:Landroid/widget/VideoView;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/EdgeModeGuideActivity;)Landroid/os/Handler;
+.method static synthetic b(Lcom/android/vendorsettings/EdgeModeGuideActivity;)Landroid/os/Handler;
     .locals 1
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -93,13 +93,13 @@
     .line 149
     const v0, 0x7f1300e7
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/EdgeModeGuideActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/VideoView;
 
-    iput-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mu:Landroid/widget/VideoView;
+    iput-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mu:Landroid/widget/VideoView;
 
     .line 150
     new-instance v0, Ljava/lang/StringBuilder;
@@ -112,7 +112,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeGuideActivity;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
 
@@ -137,7 +137,7 @@
     move-result-object v0
 
     .line 151
-    iget v1, p0, Lcom/android/settings/EdgeModeGuideActivity;->mq:I
+    iget v1, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mq:I
 
     if-ne v1, v2, :cond_1
 
@@ -152,7 +152,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeGuideActivity;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
 
@@ -179,7 +179,7 @@
     .line 157
     :cond_0
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/EdgeModeGuideActivity;->mu:Landroid/widget/VideoView;
+    iget-object v1, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mu:Landroid/widget/VideoView;
 
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -188,21 +188,21 @@
     invoke-virtual {v1, v0}, Landroid/widget/VideoView;->setVideoURI(Landroid/net/Uri;)V
 
     .line 158
-    iget-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mu:Landroid/widget/VideoView;
+    iget-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mu:Landroid/widget/VideoView;
 
-    new-instance v1, Lcom/android/settings/cR;
+    new-instance v1, Lcom/android/vendorsettings/cR;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/cR;-><init>(Lcom/android/settings/EdgeModeGuideActivity;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/cR;-><init>(Lcom/android/vendorsettings/EdgeModeGuideActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/VideoView;->setOnCompletionListener(Landroid/media/MediaPlayer$OnCompletionListener;)V
 
     .line 164
-    iget-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mu:Landroid/widget/VideoView;
+    iget-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mu:Landroid/widget/VideoView;
 
     invoke-virtual {v0, v2}, Landroid/widget/VideoView;->setZOrderOnTop(Z)V
 
     .line 165
-    iget-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mu:Landroid/widget/VideoView;
+    iget-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mu:Landroid/widget/VideoView;
 
     invoke-virtual {v0}, Landroid/widget/VideoView;->start()V
 
@@ -211,7 +211,7 @@
 
     .line 153
     :cond_1
-    iget v1, p0, Lcom/android/settings/EdgeModeGuideActivity;->mq:I
+    iget v1, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mq:I
 
     if-nez v1, :cond_0
 
@@ -226,7 +226,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeGuideActivity;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
 
@@ -262,14 +262,14 @@
     const/4 v2, 0x0
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mr:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mr:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_0
 
     .line 107
-    iget-object v3, p0, Lcom/android/settings/EdgeModeGuideActivity;->mr:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mr:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -288,14 +288,14 @@
 
     .line 110
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mt:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mt:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_1
 
     .line 111
-    iget-object v3, p0, Lcom/android/settings/EdgeModeGuideActivity;->mt:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mt:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -314,14 +314,14 @@
 
     .line 114
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->ms:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->ms:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_2
 
     .line 115
-    iget-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->ms:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->ms:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -373,15 +373,15 @@
     .line 64
     const v0, 0x7f040070
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/EdgeModeGuideActivity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->setContentView(I)V
 
     .line 65
     const v0, 0x7f08003c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/EdgeModeGuideActivity;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->addPreferencesFromResource(I)V
 
     .line 66
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeGuideActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -399,25 +399,25 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mq:I
+    iput v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mq:I
 
     .line 71
     :cond_0
     const v0, 0x7f130061
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/EdgeModeGuideActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeGuideActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    sget-object v2, Lcom/android/settings/EdgeModeGuideActivity;->mp:[I
+    sget-object v2, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mp:[I
 
-    iget v3, p0, Lcom/android/settings/EdgeModeGuideActivity;->mq:I
+    iget v3, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mq:I
 
     aget v2, v2, v3
 
@@ -430,18 +430,18 @@
     .line 72
     const v0, 0x7f1300e6
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/EdgeModeGuideActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/cQ;
+    new-instance v1, Lcom/android/vendorsettings/cQ;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/cQ;-><init>(Lcom/android/settings/EdgeModeGuideActivity;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/cQ;-><init>(Lcom/android/vendorsettings/EdgeModeGuideActivity;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 79
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeGuideActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -454,7 +454,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mr:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mr:Landroid/preference/CheckBoxPreference;
 
     .line 81
     const-string v0, "edge_mode_back"
@@ -465,7 +465,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->ms:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->ms:Landroid/preference/CheckBoxPreference;
 
     .line 82
     const-string v0, "edge_mode_clean"
@@ -476,64 +476,64 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mt:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mt:Landroid/preference/CheckBoxPreference;
 
     .line 84
-    iget v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mq:I
+    iget v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mq:I
 
     const/4 v2, 0x2
 
     if-eq v0, v2, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mr:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mr:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_1
 
     .line 85
-    iget-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mr:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mr:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 86
-    iput-object v4, p0, Lcom/android/settings/EdgeModeGuideActivity;->mr:Landroid/preference/CheckBoxPreference;
+    iput-object v4, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mr:Landroid/preference/CheckBoxPreference;
 
     .line 88
     :cond_1
-    iget v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mq:I
+    iget v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mq:I
 
     const/4 v2, 0x1
 
     if-eq v0, v2, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mt:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mt:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_2
 
     .line 89
-    iget-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mt:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mt:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 90
-    iput-object v4, p0, Lcom/android/settings/EdgeModeGuideActivity;->mt:Landroid/preference/CheckBoxPreference;
+    iput-object v4, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mt:Landroid/preference/CheckBoxPreference;
 
     .line 92
     :cond_2
-    iget v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mq:I
+    iget v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mq:I
 
     if-eqz v0, :cond_3
 
-    iget-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->ms:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->ms:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_3
 
     .line 93
-    iget-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->ms:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->ms:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 94
-    iput-object v4, p0, Lcom/android/settings/EdgeModeGuideActivity;->ms:Landroid/preference/CheckBoxPreference;
+    iput-object v4, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->ms:Landroid/preference/CheckBoxPreference;
 
     .line 96
     :cond_3
@@ -563,13 +563,13 @@
     if-eqz v3, :cond_3
 
     .line 124
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
     const-string v4, "edge_handgrip_photo"
 
-    iget-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mr:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mr:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -585,7 +585,7 @@
     .line 135
     :cond_0
     :goto_1
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -595,7 +595,7 @@
 
     move-result v0
 
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -607,7 +607,7 @@
 
     or-int/2addr v0, v3
 
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -625,7 +625,7 @@
 
     .line 142
     :goto_2
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -636,7 +636,7 @@
     .line 143
     const-string v0, "input"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/EdgeModeGuideActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -648,7 +648,7 @@
     const/4 v2, 0x2
 
     :cond_1
-    invoke-static {v0, v2}, Lcom/android/settings/fs;->a(Landroid/hardware/input/InputManager;I)V
+    invoke-static {v0, v2}, Lcom/android/vendorsettings/fs;->a(Landroid/hardware/input/InputManager;I)V
 
     .line 145
     invoke-super {p0, p1, p2}, Lmiui/preference/PreferenceActivity;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
@@ -674,13 +674,13 @@
     if-eqz v3, :cond_5
 
     .line 127
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
     const-string v4, "edge_handgrip_clean"
 
-    iget-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->mt:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->mt:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -711,13 +711,13 @@
     if-eqz v0, :cond_0
 
     .line 130
-    invoke-virtual {p0}, Lcom/android/settings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
     const-string v4, "edge_handgrip_back"
 
-    iget-object v0, p0, Lcom/android/settings/EdgeModeGuideActivity;->ms:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/EdgeModeGuideActivity;->ms:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -752,10 +752,10 @@
     invoke-super {p0}, Lmiui/preference/PreferenceActivity;->onResume()V
 
     .line 101
-    invoke-direct {p0}, Lcom/android/settings/EdgeModeGuideActivity;->dK()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->dK()V
 
     .line 102
-    invoke-direct {p0}, Lcom/android/settings/EdgeModeGuideActivity;->init()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->init()V
 
     .line 103
     return-void

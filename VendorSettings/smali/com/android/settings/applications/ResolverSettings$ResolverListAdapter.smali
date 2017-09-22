@@ -1,33 +1,33 @@
-.class Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;
+.class Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;
 .super Landroid/widget/BaseAdapter;
 .source "ResolverSettings.java"
 
 
 # instance fields
-.field final synthetic MO:Lcom/android/settings/applications/ResolverSettings;
+.field final synthetic MO:Lcom/android/vendorsettings/applications/ResolverSettings;
 
 .field private MP:Landroid/util/SparseArray;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/applications/ResolverSettings;)V
+.method private constructor <init>(Lcom/android/vendorsettings/applications/ResolverSettings;)V
     .locals 0
 
     .prologue
     .line 138
-    iput-object p1, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/settings/applications/ResolverSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/vendorsettings/applications/ResolverSettings;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/applications/ResolverSettings;Lcom/android/settings/applications/ResolverSettings$1;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/applications/ResolverSettings;Lcom/android/vendorsettings/applications/ResolverSettings$1;)V
     .locals 0
 
     .prologue
     .line 138
-    invoke-direct {p0, p1}, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;-><init>(Lcom/android/settings/applications/ResolverSettings;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;-><init>(Lcom/android/vendorsettings/applications/ResolverSettings;)V
 
     return-void
 .end method
@@ -42,46 +42,46 @@
     if-eq p1, p2, :cond_0
 
     .line 195
-    iget-object v0, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/settings/applications/ResolverSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/vendorsettings/applications/ResolverSettings;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->aV(I)Landroid/content/pm/ResolveInfo;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->aV(I)Landroid/content/pm/ResolveInfo;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/applications/ResolverSettings;->a(Lcom/android/settings/applications/ResolverSettings;Landroid/content/pm/ResolveInfo;)Landroid/content/ComponentName;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/applications/ResolverSettings;->a(Lcom/android/vendorsettings/applications/ResolverSettings;Landroid/content/pm/ResolveInfo;)Landroid/content/ComponentName;
 
     move-result-object v1
 
     .line 196
-    iget-object v0, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/settings/applications/ResolverSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/vendorsettings/applications/ResolverSettings;
 
-    invoke-virtual {p0, p2}, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->aV(I)Landroid/content/pm/ResolveInfo;
+    invoke-virtual {p0, p2}, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->aV(I)Landroid/content/pm/ResolveInfo;
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lcom/android/settings/applications/ResolverSettings;->a(Lcom/android/settings/applications/ResolverSettings;Landroid/content/pm/ResolveInfo;)Landroid/content/ComponentName;
+    invoke-static {v0, v2}, Lcom/android/vendorsettings/applications/ResolverSettings;->a(Lcom/android/vendorsettings/applications/ResolverSettings;Landroid/content/pm/ResolveInfo;)Landroid/content/ComponentName;
 
     move-result-object v0
 
     .line 197
-    iget-object v2, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/settings/applications/ResolverSettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/vendorsettings/applications/ResolverSettings;
 
-    invoke-static {v2}, Lcom/android/settings/applications/ResolverSettings;->e(Lcom/android/settings/applications/ResolverSettings;)Ljava/util/List;
+    invoke-static {v2}, Lcom/android/vendorsettings/applications/ResolverSettings;->e(Lcom/android/vendorsettings/applications/ResolverSettings;)Ljava/util/List;
 
     move-result-object v2
 
     invoke-interface {v2, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     .line 198
-    iget-object v2, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/settings/applications/ResolverSettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/vendorsettings/applications/ResolverSettings;
 
-    invoke-static {v2}, Lcom/android/settings/applications/ResolverSettings;->e(Lcom/android/settings/applications/ResolverSettings;)Ljava/util/List;
+    invoke-static {v2}, Lcom/android/vendorsettings/applications/ResolverSettings;->e(Lcom/android/vendorsettings/applications/ResolverSettings;)Ljava/util/List;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/settings/applications/ResolverSettings;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/vendorsettings/applications/ResolverSettings;
 
-    invoke-static {v3}, Lcom/android/settings/applications/ResolverSettings;->f(Lcom/android/settings/applications/ResolverSettings;)Ljava/util/Map;
+    invoke-static {v3}, Lcom/android/vendorsettings/applications/ResolverSettings;->f(Lcom/android/vendorsettings/applications/ResolverSettings;)Ljava/util/Map;
 
     move-result-object v3
 
@@ -98,18 +98,18 @@
     invoke-interface {v2, v0, v1}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
     .line 199
-    iget-object v0, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/settings/applications/ResolverSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/vendorsettings/applications/ResolverSettings;
 
-    invoke-static {v0}, Lcom/android/settings/applications/ResolverSettings;->g(Lcom/android/settings/applications/ResolverSettings;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/ResolverSettings;->g(Lcom/android/vendorsettings/applications/ResolverSettings;)V
 
     .line 200
-    iget-object v0, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/settings/applications/ResolverSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/vendorsettings/applications/ResolverSettings;
 
-    invoke-static {v0}, Lcom/android/settings/applications/ResolverSettings;->h(Lcom/android/settings/applications/ResolverSettings;)Landroid/util/SparseArray;
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/ResolverSettings;->h(Lcom/android/vendorsettings/applications/ResolverSettings;)Landroid/util/SparseArray;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->d(Landroid/util/SparseArray;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->d(Landroid/util/SparseArray;)V
 
     .line 202
     :cond_0
@@ -123,7 +123,7 @@
     .line 149
     if-ltz p1, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->MP:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->MP:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->size()I
 
@@ -131,9 +131,9 @@
 
     if-ge p1, v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->MP:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->MP:Landroid/util/SparseArray;
 
-    iget-object v1, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->MP:Landroid/util/SparseArray;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->MP:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p1}, Landroid/util/SparseArray;->keyAt(I)I
 
@@ -159,10 +159,10 @@
 
     .prologue
     .line 205
-    iput-object p1, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->MP:Landroid/util/SparseArray;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->MP:Landroid/util/SparseArray;
 
     .line 206
-    invoke-virtual {p0}, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->notifyDataSetChanged()V
 
     .line 207
     return-void
@@ -173,7 +173,7 @@
 
     .prologue
     .line 144
-    iget-object v0, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->MP:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->MP:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->size()I
 
@@ -187,7 +187,7 @@
 
     .prologue
     .line 138
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->aV(I)Landroid/content/pm/ResolveInfo;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->aV(I)Landroid/content/pm/ResolveInfo;
 
     move-result-object v0
 
@@ -199,7 +199,7 @@
 
     .prologue
     .line 155
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->aV(I)Landroid/content/pm/ResolveInfo;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->aV(I)Landroid/content/pm/ResolveInfo;
 
     move-result-object v0
 
@@ -229,9 +229,9 @@
     if-nez p2, :cond_0
 
     .line 163
-    iget-object v0, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/settings/applications/ResolverSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/vendorsettings/applications/ResolverSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/ResolverSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/ResolverSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -248,24 +248,24 @@
     move-result-object p2
 
     .line 164
-    new-instance v0, Lcom/android/settings/applications/ResolverSettings$ViewHolder;
+    new-instance v0, Lcom/android/vendorsettings/applications/ResolverSettings$ViewHolder;
 
-    invoke-direct {v0, p2}, Lcom/android/settings/applications/ResolverSettings$ViewHolder;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, p2}, Lcom/android/vendorsettings/applications/ResolverSettings$ViewHolder;-><init>(Landroid/view/View;)V
 
     .line 165
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 168
-    iget-object v0, v0, Lcom/android/settings/applications/ResolverSettings$ViewHolder;->icon:Landroid/widget/ImageView;
+    iget-object v0, v0, Lcom/android/vendorsettings/applications/ResolverSettings$ViewHolder;->icon:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
     .line 169
-    iget-object v1, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/settings/applications/ResolverSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/vendorsettings/applications/ResolverSettings;
 
-    invoke-static {v1}, Lcom/android/settings/applications/ResolverSettings;->b(Lcom/android/settings/applications/ResolverSettings;)I
+    invoke-static {v1}, Lcom/android/vendorsettings/applications/ResolverSettings;->b(Lcom/android/vendorsettings/applications/ResolverSettings;)I
 
     move-result v1
 
@@ -275,7 +275,7 @@
 
     .line 173
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->aV(I)Landroid/content/pm/ResolveInfo;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->aV(I)Landroid/content/pm/ResolveInfo;
 
     move-result-object v1
 
@@ -287,17 +287,17 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/ResolverSettings$ViewHolder;
+    check-cast v0, Lcom/android/vendorsettings/applications/ResolverSettings$ViewHolder;
 
     .line 176
-    iget-object v2, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/settings/applications/ResolverSettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/vendorsettings/applications/ResolverSettings;
 
-    invoke-static {v2}, Lcom/android/settings/applications/ResolverSettings;->c(Lcom/android/settings/applications/ResolverSettings;)Landroid/content/pm/PackageManager;
+    invoke-static {v2}, Lcom/android/vendorsettings/applications/ResolverSettings;->c(Lcom/android/vendorsettings/applications/ResolverSettings;)Landroid/content/pm/PackageManager;
 
     move-result-object v2
 
     .line 177
-    iget-object v3, v0, Lcom/android/settings/applications/ResolverSettings$ViewHolder;->text:Landroid/widget/TextView;
+    iget-object v3, v0, Lcom/android/vendorsettings/applications/ResolverSettings$ViewHolder;->text:Landroid/widget/TextView;
 
     invoke-virtual {v1, v2}, Landroid/content/pm/ResolveInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
@@ -306,11 +306,11 @@
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 178
-    iget-object v3, v0, Lcom/android/settings/applications/ResolverSettings$ViewHolder;->icon:Landroid/widget/ImageView;
+    iget-object v3, v0, Lcom/android/vendorsettings/applications/ResolverSettings$ViewHolder;->icon:Landroid/widget/ImageView;
 
-    iget-object v4, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/settings/applications/ResolverSettings;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;->MO:Lcom/android/vendorsettings/applications/ResolverSettings;
 
-    invoke-virtual {v4}, Lcom/android/settings/applications/ResolverSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v4}, Lcom/android/vendorsettings/applications/ResolverSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -323,11 +323,11 @@
     invoke-virtual {v3, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 180
-    iget-object v0, v0, Lcom/android/settings/applications/ResolverSettings$ViewHolder;->MR:Landroid/view/View;
+    iget-object v0, v0, Lcom/android/vendorsettings/applications/ResolverSettings$ViewHolder;->MR:Landroid/view/View;
 
-    new-instance v1, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter$1;
+    new-instance v1, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter$1;
 
-    invoke-direct {v1, p0, p1}, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter$1;-><init>(Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;I)V
+    invoke-direct {v1, p0, p1}, Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter$1;-><init>(Lcom/android/vendorsettings/applications/ResolverSettings$ResolverListAdapter;I)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 

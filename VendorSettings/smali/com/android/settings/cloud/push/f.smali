@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/push/f;
+.class public Lcom/android/vendorsettings/cloud/push/f;
 .super Ljava/lang/Object;
 .source "CloudManager.java"
 
@@ -29,7 +29,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/cloud/push/l;
+    check-cast v0, Lcom/android/vendorsettings/cloud/push/l;
 
     .line 71
     new-instance v3, Landroid/content/ContentValues;
@@ -39,7 +39,7 @@
     .line 72
     const-string v4, "c_package_name"
 
-    invoke-virtual {v0}, Lcom/android/settings/cloud/push/l;->getPackageName()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cloud/push/l;->getPackageName()Ljava/lang/String;
 
     move-result-object v5
 
@@ -48,14 +48,14 @@
     .line 73
     const-string v4, "c_message"
 
-    invoke-virtual {v0}, Lcom/android/settings/cloud/push/l;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cloud/push/l;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v3, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 75
-    invoke-virtual {v0}, Lcom/android/settings/cloud/push/l;->oI()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cloud/push/l;->oI()Z
 
     move-result v4
 
@@ -74,7 +74,7 @@
 
     .line 83
     :goto_1
-    invoke-virtual {v0}, Lcom/android/settings/cloud/push/l;->oJ()Ljava/util/Set;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cloud/push/l;->oJ()Ljava/util/Set;
 
     move-result-object v0
 
@@ -157,7 +157,7 @@
 
     .line 95
     :cond_2
-    sget-object v0, Lcom/android/settings/cloud/push/d;->CONTENT_URI:Landroid/net/Uri;
+    sget-object v0, Lcom/android/vendorsettings/cloud/push/d;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-virtual {v1, v0, v3}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
 
@@ -180,7 +180,7 @@
     move-result-object v0
 
     .line 24
-    sget-object v1, Lcom/android/settings/cloud/push/d;->CONTENT_URI:Landroid/net/Uri;
+    sget-object v1, Lcom/android/vendorsettings/cloud/push/d;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-virtual {v0, v1, v2, v2}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
 
@@ -201,7 +201,7 @@
     move-result-object v0
 
     .line 29
-    sget-object v1, Lcom/android/settings/cloud/push/e;->CONTENT_URI:Landroid/net/Uri;
+    sget-object v1, Lcom/android/vendorsettings/cloud/push/e;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-virtual {v0, v1, v2, v2}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
 
@@ -235,7 +235,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/cloud/push/m;
+    check-cast v0, Lcom/android/vendorsettings/cloud/push/m;
 
     .line 103
     new-instance v3, Landroid/content/ContentValues;
@@ -245,7 +245,7 @@
     .line 104
     const-string v4, "c_package_name"
 
-    invoke-virtual {v0}, Lcom/android/settings/cloud/push/m;->getPackageName()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cloud/push/m;->getPackageName()Ljava/lang/String;
 
     move-result-object v5
 
@@ -254,14 +254,14 @@
     .line 105
     const-string v4, "c_message"
 
-    invoke-virtual {v0}, Lcom/android/settings/cloud/push/m;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cloud/push/m;->getMessage()Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v3, v4, v5}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 107
-    invoke-virtual {v0}, Lcom/android/settings/cloud/push/m;->oI()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cloud/push/m;->oI()Z
 
     move-result v4
 
@@ -280,7 +280,7 @@
 
     .line 115
     :goto_1
-    invoke-virtual {v0}, Lcom/android/settings/cloud/push/m;->oJ()Ljava/util/Set;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cloud/push/m;->oJ()Ljava/util/Set;
 
     move-result-object v0
 
@@ -363,7 +363,7 @@
 
     .line 127
     :cond_2
-    sget-object v0, Lcom/android/settings/cloud/push/e;->CONTENT_URI:Landroid/net/Uri;
+    sget-object v0, Lcom/android/vendorsettings/cloud/push/e;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-virtual {v1, v0, v3}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
 

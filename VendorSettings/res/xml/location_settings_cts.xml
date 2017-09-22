@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen android:title="@string/location_settings_title" android:key="location_settings" settings:keywords="@string/keywords_location"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.vendorsettings">
     <CheckBoxPreference android:persistent="true" android:title="@string/location_access_title" android:key="location_toggle" android:summary="@string/location_access_summary" />
     <Preference android:title="@string/location_mode_title" android:key="location_mode" android:summary="@string/location_mode_location_off_title" settings:keywords="@string/keywords_location_mode" />
     <PreferenceCategory android:title="@string/managed_profile_location_category" android:key="managed_profile_location_category">

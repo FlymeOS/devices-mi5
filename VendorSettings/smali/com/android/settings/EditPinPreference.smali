@@ -1,10 +1,10 @@
-.class Lcom/android/settings/EditPinPreference;
+.class Lcom/android/vendorsettings/EditPinPreference;
 .super Landroid/preference/EditTextPreference;
 .source "EditPinPreference.java"
 
 
 # instance fields
-.field private mw:Lcom/android/settings/cS;
+.field private mw:Lcom/android/vendorsettings/cS;
 
 
 # direct methods
@@ -32,12 +32,12 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/cS;)V
+.method public a(Lcom/android/vendorsettings/cS;)V
     .locals 0
 
     .prologue
     .line 47
-    iput-object p1, p0, Lcom/android/settings/EditPinPreference;->mw:Lcom/android/settings/cS;
+    iput-object p1, p0, Lcom/android/vendorsettings/EditPinPreference;->mw:Lcom/android/vendorsettings/cS;
 
     .line 48
     return-void
@@ -48,7 +48,7 @@
 
     .prologue
     .line 63
-    invoke-virtual {p0}, Lcom/android/settings/EditPinPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EditPinPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -77,7 +77,7 @@
 
     .prologue
     .line 76
-    invoke-virtual {p0}, Lcom/android/settings/EditPinPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EditPinPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -94,7 +94,7 @@
     :cond_0
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/EditPinPreference;->showDialog(Landroid/os/Bundle;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/EditPinPreference;->showDialog(Landroid/os/Bundle;)V
 
     .line 80
     :cond_1
@@ -109,7 +109,7 @@
     invoke-super {p0, p1}, Landroid/preference/EditTextPreference;->onBindDialogView(Landroid/view/View;)V
 
     .line 54
-    invoke-virtual {p0}, Lcom/android/settings/EditPinPreference;->getEditText()Landroid/widget/EditText;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EditPinPreference;->getEditText()Landroid/widget/EditText;
 
     move-result-object v0
 
@@ -134,14 +134,14 @@
     invoke-super {p0, p1}, Landroid/preference/EditTextPreference;->onDialogClosed(Z)V
 
     .line 70
-    iget-object v0, p0, Lcom/android/settings/EditPinPreference;->mw:Lcom/android/settings/cS;
+    iget-object v0, p0, Lcom/android/vendorsettings/EditPinPreference;->mw:Lcom/android/vendorsettings/cS;
 
     if-eqz v0, :cond_0
 
     .line 71
-    iget-object v0, p0, Lcom/android/settings/EditPinPreference;->mw:Lcom/android/settings/cS;
+    iget-object v0, p0, Lcom/android/vendorsettings/EditPinPreference;->mw:Lcom/android/vendorsettings/cS;
 
-    invoke-interface {v0, p0, p1}, Lcom/android/settings/cS;->a(Lcom/android/settings/EditPinPreference;Z)V
+    invoke-interface {v0, p0, p1}, Lcom/android/vendorsettings/cS;->a(Lcom/android/vendorsettings/EditPinPreference;Z)V
 
     .line 73
     :cond_0

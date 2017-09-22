@@ -1,9 +1,9 @@
-.class Lcom/android/settings/widget/u;
+.class Lcom/android/vendorsettings/widget/u;
 .super Landroid/widget/FrameLayout;
 .source "ScreenView.java"
 
 # interfaces
-.implements Lcom/android/settings/widget/p;
+.implements Lcom/android/vendorsettings/widget/p;
 
 
 # instance fields
@@ -25,14 +25,14 @@
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->dispatchDraw(Landroid/graphics/Canvas;)V
 
     .line 2203
-    iget-object v0, p0, Lcom/android/settings/widget/u;->azd:Landroid/graphics/NinePatch;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/u;->azd:Landroid/graphics/NinePatch;
 
     if-eqz v0, :cond_0
 
     .line 2204
-    iget-object v0, p0, Lcom/android/settings/widget/u;->azd:Landroid/graphics/NinePatch;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/u;->azd:Landroid/graphics/NinePatch;
 
-    iget-object v1, p0, Lcom/android/settings/widget/u;->aze:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/android/vendorsettings/widget/u;->aze:Landroid/graphics/Rect;
 
     invoke-virtual {v0, p1, v1}, Landroid/graphics/NinePatch;->draw(Landroid/graphics/Canvas;Landroid/graphics/Rect;)V
 
@@ -46,17 +46,17 @@
 
     .prologue
     .line 2224
-    invoke-virtual {p0}, Lcom/android/settings/widget/u;->getMeasuredWidth()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/u;->getMeasuredWidth()I
 
     move-result v0
 
-    iget-object v1, p0, Lcom/android/settings/widget/u;->mPadding:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/android/vendorsettings/widget/u;->mPadding:Landroid/graphics/Rect;
 
     iget v1, v1, Landroid/graphics/Rect;->left:I
 
     sub-int/2addr v0, v1
 
-    iget-object v1, p0, Lcom/android/settings/widget/u;->mPadding:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/android/vendorsettings/widget/u;->mPadding:Landroid/graphics/Rect;
 
     iget v1, v1, Landroid/graphics/Rect;->right:I
 
@@ -70,7 +70,7 @@
 
     .prologue
     .line 2196
-    iget-object v0, p0, Lcom/android/settings/widget/u;->azc:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/u;->azc:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
 
@@ -95,16 +95,16 @@
     invoke-super/range {p0 .. p5}, Landroid/widget/FrameLayout;->onLayout(ZIIII)V
 
     .line 2212
-    iget-object v0, p0, Lcom/android/settings/widget/u;->azd:Landroid/graphics/NinePatch;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/u;->azd:Landroid/graphics/NinePatch;
 
     if-eqz v0, :cond_0
 
     .line 2213
-    iget-object v0, p0, Lcom/android/settings/widget/u;->aze:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/u;->aze:Landroid/graphics/Rect;
 
     sub-int v1, p5, p3
 
-    iget-object v2, p0, Lcom/android/settings/widget/u;->mPadding:Landroid/graphics/Rect;
+    iget-object v2, p0, Lcom/android/vendorsettings/widget/u;->mPadding:Landroid/graphics/Rect;
 
     iget v2, v2, Landroid/graphics/Rect;->bottom:I
 
@@ -113,13 +113,13 @@
     iput v1, v0, Landroid/graphics/Rect;->bottom:I
 
     .line 2214
-    iget-object v0, p0, Lcom/android/settings/widget/u;->aze:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/u;->aze:Landroid/graphics/Rect;
 
-    iget-object v1, p0, Lcom/android/settings/widget/u;->aze:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/android/vendorsettings/widget/u;->aze:Landroid/graphics/Rect;
 
     iget v1, v1, Landroid/graphics/Rect;->bottom:I
 
-    iget-object v2, p0, Lcom/android/settings/widget/u;->azd:Landroid/graphics/NinePatch;
+    iget-object v2, p0, Lcom/android/vendorsettings/widget/u;->azd:Landroid/graphics/NinePatch;
 
     invoke-virtual {v2}, Landroid/graphics/NinePatch;->getHeight()I
 
@@ -139,9 +139,9 @@
 
     .prologue
     .line 2219
-    iget-object v0, p0, Lcom/android/settings/widget/u;->aze:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/u;->aze:Landroid/graphics/Rect;
 
-    iget-object v1, p0, Lcom/android/settings/widget/u;->mPadding:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/android/vendorsettings/widget/u;->mPadding:Landroid/graphics/Rect;
 
     iget v1, v1, Landroid/graphics/Rect;->left:I
 
@@ -150,9 +150,9 @@
     iput v1, v0, Landroid/graphics/Rect;->left:I
 
     .line 2220
-    iget-object v0, p0, Lcom/android/settings/widget/u;->aze:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/u;->aze:Landroid/graphics/Rect;
 
-    iget-object v1, p0, Lcom/android/settings/widget/u;->mPadding:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/android/vendorsettings/widget/u;->mPadding:Landroid/graphics/Rect;
 
     iget v1, v1, Landroid/graphics/Rect;->left:I
 

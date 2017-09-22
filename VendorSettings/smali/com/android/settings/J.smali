@@ -1,4 +1,4 @@
-.class Lcom/android/settings/J;
+.class Lcom/android/vendorsettings/J;
 .super Ljava/lang/Object;
 .source "AppWidgetLoader.java"
 
@@ -9,16 +9,16 @@
 # instance fields
 .field br:Ljava/text/Collator;
 
-.field final synthetic bs:Lcom/android/settings/I;
+.field final synthetic bs:Lcom/android/vendorsettings/I;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/I;)V
+.method constructor <init>(Lcom/android/vendorsettings/I;)V
     .locals 1
 
     .prologue
     .line 160
-    iput-object p1, p0, Lcom/android/settings/J;->bs:Lcom/android/settings/I;
+    iput-object p1, p0, Lcom/android/vendorsettings/J;->bs:Lcom/android/vendorsettings/I;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,25 +27,25 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/J;->br:Ljava/text/Collator;
+    iput-object v0, p0, Lcom/android/vendorsettings/J;->br:Ljava/text/Collator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lcom/android/settings/L;Lcom/android/settings/L;)I
+.method public a(Lcom/android/vendorsettings/L;Lcom/android/vendorsettings/L;)I
     .locals 3
 
     .prologue
     .line 164
-    iget-object v0, p0, Lcom/android/settings/J;->br:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/vendorsettings/J;->br:Ljava/text/Collator;
 
-    invoke-interface {p1}, Lcom/android/settings/L;->getLabel()Ljava/lang/CharSequence;
+    invoke-interface {p1}, Lcom/android/vendorsettings/L;->getLabel()Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    invoke-interface {p2}, Lcom/android/settings/L;->getLabel()Ljava/lang/CharSequence;
+    invoke-interface {p2}, Lcom/android/vendorsettings/L;->getLabel()Ljava/lang/CharSequence;
 
     move-result-object v2
 
@@ -61,11 +61,11 @@
 
     .prologue
     .line 160
-    check-cast p1, Lcom/android/settings/L;
+    check-cast p1, Lcom/android/vendorsettings/L;
 
-    check-cast p2, Lcom/android/settings/L;
+    check-cast p2, Lcom/android/vendorsettings/L;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/J;->a(Lcom/android/settings/L;Lcom/android/settings/L;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/J;->a(Lcom/android/vendorsettings/L;Lcom/android/vendorsettings/L;)I
 
     move-result v0
 

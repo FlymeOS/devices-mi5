@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hF;
+.class Lcom/android/vendorsettings/hF;
 .super Ljava/lang/Object;
 .source "SettingsPreferenceFragment.java"
 
@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic Ab:Lcom/android/settings/SettingsPreferenceFragment;
+.field final synthetic Ab:Lcom/android/vendorsettings/SettingsPreferenceFragment;
 
 .field final synthetic Ac:Landroid/widget/ListView;
 
@@ -17,18 +17,18 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SettingsPreferenceFragment;Landroid/widget/ListView;ILandroid/graphics/drawable/Drawable;)V
+.method constructor <init>(Lcom/android/vendorsettings/SettingsPreferenceFragment;Landroid/widget/ListView;ILandroid/graphics/drawable/Drawable;)V
     .locals 0
 
     .prologue
     .line 335
-    iput-object p1, p0, Lcom/android/settings/hF;->Ab:Lcom/android/settings/SettingsPreferenceFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/hF;->Ab:Lcom/android/vendorsettings/SettingsPreferenceFragment;
 
-    iput-object p2, p0, Lcom/android/settings/hF;->Ac:Landroid/widget/ListView;
+    iput-object p2, p0, Lcom/android/vendorsettings/hF;->Ac:Landroid/widget/ListView;
 
-    iput p3, p0, Lcom/android/settings/hF;->val$position:I
+    iput p3, p0, Lcom/android/vendorsettings/hF;->val$position:I
 
-    iput-object p4, p0, Lcom/android/settings/hF;->nN:Landroid/graphics/drawable/Drawable;
+    iput-object p4, p0, Lcom/android/vendorsettings/hF;->nN:Landroid/graphics/drawable/Drawable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,18 +42,18 @@
 
     .prologue
     .line 338
-    iget-object v0, p0, Lcom/android/settings/hF;->Ac:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/hF;->Ac:Landroid/widget/ListView;
 
-    iget v1, p0, Lcom/android/settings/hF;->val$position:I
+    iget v1, p0, Lcom/android/vendorsettings/hF;->val$position:I
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setSelection(I)V
 
     .line 339
-    iget-object v0, p0, Lcom/android/settings/hF;->Ac:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/hF;->Ac:Landroid/widget/ListView;
 
-    new-instance v1, Lcom/android/settings/hG;
+    new-instance v1, Lcom/android/vendorsettings/hG;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/hG;-><init>(Lcom/android/settings/hF;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/hG;-><init>(Lcom/android/vendorsettings/hF;)V
 
     const-wide/16 v2, 0x258
 

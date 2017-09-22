@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/gj;
+.class public Lcom/android/vendorsettings/gj;
 .super Landroid/app/DialogFragment;
 .source "ProfileSelectDialog.java"
 
@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field private vX:Lcom/android/settings/dashboard/DashboardTile;
+.field private vX:Lcom/android/vendorsettings/dashboard/DashboardTile;
 
 
 # direct methods
@@ -21,14 +21,14 @@
     return-void
 .end method
 
-.method public static a(Landroid/app/FragmentManager;Lcom/android/settings/dashboard/DashboardTile;)V
+.method public static a(Landroid/app/FragmentManager;Lcom/android/vendorsettings/dashboard/DashboardTile;)V
     .locals 3
 
     .prologue
     .line 38
-    new-instance v0, Lcom/android/settings/gj;
+    new-instance v0, Lcom/android/vendorsettings/gj;
 
-    invoke-direct {v0}, Lcom/android/settings/gj;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/gj;-><init>()V
 
     .line 39
     new-instance v1, Landroid/os/Bundle;
@@ -41,12 +41,12 @@
     invoke-virtual {v1, v2, p1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 41
-    invoke-virtual {v0, v1}, Lcom/android/settings/gj;->setArguments(Landroid/os/Bundle;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/gj;->setArguments(Landroid/os/Bundle;)V
 
     .line 42
     const-string v1, "select_profile"
 
-    invoke-virtual {v0, p0, v1}, Lcom/android/settings/gj;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v0, p0, v1}, Lcom/android/vendorsettings/gj;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     .line 43
     return-void
@@ -59,9 +59,9 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/android/settings/gj;->vX:Lcom/android/settings/dashboard/DashboardTile;
+    iget-object v0, p0, Lcom/android/vendorsettings/gj;->vX:Lcom/android/vendorsettings/dashboard/DashboardTile;
 
-    iget-object v0, v0, Lcom/android/settings/dashboard/DashboardTile;->UK:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/vendorsettings/dashboard/DashboardTile;->UK:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -70,13 +70,13 @@
     check-cast v0, Landroid/os/UserHandle;
 
     .line 66
-    invoke-virtual {p0}, Lcom/android/settings/gj;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/gj;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/gj;->vX:Lcom/android/settings/dashboard/DashboardTile;
+    iget-object v2, p0, Lcom/android/vendorsettings/gj;->vX:Lcom/android/vendorsettings/dashboard/DashboardTile;
 
-    iget-object v2, v2, Lcom/android/settings/dashboard/DashboardTile;->intent:Landroid/content/Intent;
+    iget-object v2, v2, Lcom/android/vendorsettings/dashboard/DashboardTile;->intent:Landroid/content/Intent;
 
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->startActivityAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)V
 
@@ -92,7 +92,7 @@
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 48
-    invoke-virtual {p0}, Lcom/android/settings/gj;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/gj;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -102,9 +102,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/dashboard/DashboardTile;
+    check-cast v0, Lcom/android/vendorsettings/dashboard/DashboardTile;
 
-    iput-object v0, p0, Lcom/android/settings/gj;->vX:Lcom/android/settings/dashboard/DashboardTile;
+    iput-object v0, p0, Lcom/android/vendorsettings/gj;->vX:Lcom/android/vendorsettings/dashboard/DashboardTile;
 
     .line 49
     return-void
@@ -115,7 +115,7 @@
 
     .prologue
     .line 53
-    invoke-virtual {p0}, Lcom/android/settings/gj;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/gj;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -129,11 +129,11 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/gj;->vX:Lcom/android/settings/dashboard/DashboardTile;
+    iget-object v3, p0, Lcom/android/vendorsettings/gj;->vX:Lcom/android/vendorsettings/dashboard/DashboardTile;
 
-    iget-object v3, v3, Lcom/android/settings/dashboard/DashboardTile;->UK:Ljava/util/ArrayList;
+    iget-object v3, v3, Lcom/android/vendorsettings/dashboard/DashboardTile;->UK:Ljava/util/ArrayList;
 
-    invoke-static {v2, v0, v3}, Lcom/android/settings/iC;->a(Landroid/os/UserManager;Landroid/content/Context;Ljava/util/List;)Lcom/android/settings/iy;
+    invoke-static {v2, v0, v3}, Lcom/android/vendorsettings/iC;->a(Landroid/os/UserManager;Landroid/content/Context;Ljava/util/List;)Lcom/android/vendorsettings/iy;
 
     move-result-object v0
 

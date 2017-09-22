@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/notification/MiuiZenModeSettings$SettingsObserver;
+.class final Lcom/android/vendorsettings/notification/MiuiZenModeSettings$SettingsObserver;
 .super Landroid/database/ContentObserver;
 .source "MiuiZenModeSettings.java"
 
@@ -8,19 +8,19 @@
 
 .field private final aal:Landroid/net/Uri;
 
-.field final synthetic aje:Lcom/android/settings/notification/MiuiZenModeSettings;
+.field final synthetic aje:Lcom/android/vendorsettings/notification/MiuiZenModeSettings;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/notification/MiuiZenModeSettings;)V
+.method public constructor <init>(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)V
     .locals 1
 
     .prologue
     .line 265
-    iput-object p1, p0, Lcom/android/settings/notification/MiuiZenModeSettings$SettingsObserver;->aje:Lcom/android/settings/notification/MiuiZenModeSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$SettingsObserver;->aje:Lcom/android/vendorsettings/notification/MiuiZenModeSettings;
 
     .line 266
-    invoke-static {p1}, Lcom/android/settings/notification/MiuiZenModeSettings;->c(Lcom/android/settings/notification/MiuiZenModeSettings;)Landroid/os/Handler;
+    invoke-static {p1}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->c(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -33,7 +33,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings$SettingsObserver;->aak:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$SettingsObserver;->aak:Landroid/net/Uri;
 
     .line 263
     const-string v0, "zen_mode_config_etag"
@@ -42,7 +42,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings$SettingsObserver;->aal:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$SettingsObserver;->aal:Landroid/net/Uri;
 
     .line 267
     return-void
@@ -58,9 +58,9 @@
     invoke-super {p0, p1, p2}, Landroid/database/ContentObserver;->onChange(ZLandroid/net/Uri;)V
 
     .line 281
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings$SettingsObserver;->aje:Lcom/android/settings/notification/MiuiZenModeSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$SettingsObserver;->aje:Lcom/android/vendorsettings/notification/MiuiZenModeSettings;
 
-    invoke-static {v0}, Lcom/android/settings/notification/MiuiZenModeSettings;->g(Lcom/android/settings/notification/MiuiZenModeSettings;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->g(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)V
 
     .line 282
     return-void
@@ -73,26 +73,26 @@
     const/4 v3, 0x0
 
     .line 270
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings$SettingsObserver;->aje:Lcom/android/settings/notification/MiuiZenModeSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$SettingsObserver;->aje:Lcom/android/vendorsettings/notification/MiuiZenModeSettings;
 
-    invoke-static {v0}, Lcom/android/settings/notification/MiuiZenModeSettings;->d(Lcom/android/settings/notification/MiuiZenModeSettings;)Landroid/content/ContentResolver;
+    invoke-static {v0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->d(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings$SettingsObserver;->aak:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$SettingsObserver;->aak:Landroid/net/Uri;
 
     const/4 v2, -0x1
 
     invoke-virtual {v0, v1, v3, p0, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;I)V
 
     .line 271
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings$SettingsObserver;->aje:Lcom/android/settings/notification/MiuiZenModeSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$SettingsObserver;->aje:Lcom/android/vendorsettings/notification/MiuiZenModeSettings;
 
-    invoke-static {v0}, Lcom/android/settings/notification/MiuiZenModeSettings;->e(Lcom/android/settings/notification/MiuiZenModeSettings;)Landroid/content/ContentResolver;
+    invoke-static {v0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->e(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/notification/MiuiZenModeSettings$SettingsObserver;->aal:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$SettingsObserver;->aal:Landroid/net/Uri;
 
     invoke-virtual {v0, v1, v3, p0}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
@@ -105,9 +105,9 @@
 
     .prologue
     .line 275
-    iget-object v0, p0, Lcom/android/settings/notification/MiuiZenModeSettings$SettingsObserver;->aje:Lcom/android/settings/notification/MiuiZenModeSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/MiuiZenModeSettings$SettingsObserver;->aje:Lcom/android/vendorsettings/notification/MiuiZenModeSettings;
 
-    invoke-static {v0}, Lcom/android/settings/notification/MiuiZenModeSettings;->f(Lcom/android/settings/notification/MiuiZenModeSettings;)Landroid/content/ContentResolver;
+    invoke-static {v0}, Lcom/android/vendorsettings/notification/MiuiZenModeSettings;->f(Lcom/android/vendorsettings/notification/MiuiZenModeSettings;)Landroid/content/ContentResolver;
 
     move-result-object v0
 

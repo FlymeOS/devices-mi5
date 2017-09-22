@@ -1,19 +1,19 @@
-.class Lcom/android/settings/applications/AppStorageSettings$3;
+.class Lcom/android/vendorsettings/applications/AppStorageSettings$3;
 .super Landroid/os/Handler;
 .source "AppStorageSettings.java"
 
 
 # instance fields
-.field final synthetic Hh:Lcom/android/settings/applications/AppStorageSettings;
+.field final synthetic Hh:Lcom/android/vendorsettings/applications/AppStorageSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/AppStorageSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/applications/AppStorageSettings;)V
     .locals 0
 
     .prologue
     .line 457
-    iput-object p1, p0, Lcom/android/settings/applications/AppStorageSettings$3;->Hh:Lcom/android/settings/applications/AppStorageSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings$3;->Hh:Lcom/android/vendorsettings/applications/AppStorageSettings;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 459
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings$3;->Hh:Lcom/android/settings/applications/AppStorageSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings$3;->Hh:Lcom/android/vendorsettings/applications/AppStorageSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/AppStorageSettings;->getView()Landroid/view/View;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->getView()Landroid/view/View;
 
     move-result-object v0
 
@@ -50,25 +50,25 @@
 
     .line 464
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings$3;->Hh:Lcom/android/settings/applications/AppStorageSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings$3;->Hh:Lcom/android/vendorsettings/applications/AppStorageSettings;
 
-    invoke-static {v0, p1}, Lcom/android/settings/applications/AppStorageSettings;->a(Lcom/android/settings/applications/AppStorageSettings;Landroid/os/Message;)V
+    invoke-static {v0, p1}, Lcom/android/vendorsettings/applications/AppStorageSettings;->a(Lcom/android/vendorsettings/applications/AppStorageSettings;Landroid/os/Message;)V
 
     goto :goto_0
 
     .line 468
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings$3;->Hh:Lcom/android/settings/applications/AppStorageSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings$3;->Hh:Lcom/android/vendorsettings/applications/AppStorageSettings;
 
-    iget-object v0, v0, Lcom/android/settings/applications/AppStorageSettings;->Fh:Lcom/android/b/a/a;
+    iget-object v0, v0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fh:Lcom/android/b/a/a;
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings$3;->Hh:Lcom/android/settings/applications/AppStorageSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings$3;->Hh:Lcom/android/vendorsettings/applications/AppStorageSettings;
 
-    iget-object v1, v1, Lcom/android/settings/applications/AppStorageSettings;->mPackageName:Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/vendorsettings/applications/AppStorageSettings;->mPackageName:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/settings/applications/AppStorageSettings$3;->Hh:Lcom/android/settings/applications/AppStorageSettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings$3;->Hh:Lcom/android/vendorsettings/applications/AppStorageSettings;
 
-    iget v2, v2, Lcom/android/settings/applications/AppStorageSettings;->mUserId:I
+    iget v2, v2, Lcom/android/vendorsettings/applications/AppStorageSettings;->mUserId:I
 
     invoke-virtual {v0, v1, v2}, Lcom/android/b/a/a;->w(Ljava/lang/String;I)V
 

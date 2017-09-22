@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/bluetooth/LocalBluetoothPreferences;
+.class final Lcom/android/vendorsettings/bluetooth/LocalBluetoothPreferences;
 .super Ljava/lang/Object;
 .source "LocalBluetoothPreferences.java"
 
@@ -20,7 +20,7 @@
 
     .prologue
     .line 132
-    invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    invoke-static {p0}, Lcom/android/vendorsettings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -45,7 +45,7 @@
 
     .prologue
     .line 60
-    invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    invoke-static {p0}, Lcom/android/vendorsettings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -69,9 +69,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/bluetooth/LocalBluetoothPreferences$1;
+    new-instance v1, Lcom/android/vendorsettings/bluetooth/LocalBluetoothPreferences$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences$1;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/bluetooth/LocalBluetoothPreferences$1;-><init>(Landroid/content/Context;)V
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
 
@@ -84,7 +84,7 @@
 
     .prologue
     .line 32
-    invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    invoke-static {p0}, Lcom/android/vendorsettings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -96,7 +96,7 @@
 
     .prologue
     .line 161
-    invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    invoke-static {p0}, Lcom/android/vendorsettings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -161,7 +161,7 @@
     const/4 v1, 0x1
 
     .line 66
-    invoke-static {p0}, Lcom/android/settings/bluetooth/Utils;->ax(Landroid/content/Context;)Lcom/android/b/b/R;
+    invoke-static {p0}, Lcom/android/vendorsettings/bluetooth/Utils;->ax(Landroid/content/Context;)Lcom/android/b/b/R;
 
     move-result-object v2
 
@@ -226,7 +226,7 @@
     move-result-wide v4
 
     .line 85
-    invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    invoke-static {p0}, Lcom/android/vendorsettings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v3
 
@@ -343,7 +343,7 @@
 
     .prologue
     .line 123
-    invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    invoke-static {p0}, Lcom/android/vendorsettings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -377,7 +377,7 @@
 
     .prologue
     .line 152
-    invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    invoke-static {p0}, Lcom/android/vendorsettings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -411,7 +411,7 @@
 
     .prologue
     .line 156
-    invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    invoke-static {p0}, Lcom/android/vendorsettings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -447,7 +447,7 @@
 
     .prologue
     .line 167
-    invoke-static {p0}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    invoke-static {p0}, Lcom/android/vendorsettings/bluetooth/LocalBluetoothPreferences;->getSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
 

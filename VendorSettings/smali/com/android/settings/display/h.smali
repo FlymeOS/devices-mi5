@@ -1,4 +1,4 @@
-.class Lcom/android/settings/display/h;
+.class Lcom/android/vendorsettings/display/h;
 .super Ljava/lang/Object;
 .source "FluencyModeListPreference.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic Yi:Lcom/android/settings/display/FluencyModeListPreference;
+.field final synthetic Yi:Lcom/android/vendorsettings/display/FluencyModeListPreference;
 
 .field final synthetic Yj:I
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/display/FluencyModeListPreference;I)V
+.method constructor <init>(Lcom/android/vendorsettings/display/FluencyModeListPreference;I)V
     .locals 0
 
     .prologue
     .line 136
-    iput-object p1, p0, Lcom/android/settings/display/h;->Yi:Lcom/android/settings/display/FluencyModeListPreference;
+    iput-object p1, p0, Lcom/android/vendorsettings/display/h;->Yi:Lcom/android/vendorsettings/display/FluencyModeListPreference;
 
-    iput p2, p0, Lcom/android/settings/display/h;->Yj:I
+    iput p2, p0, Lcom/android/vendorsettings/display/h;->Yj:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,11 +34,11 @@
 
     .prologue
     .line 139
-    iget-object v0, p0, Lcom/android/settings/display/h;->Yi:Lcom/android/settings/display/FluencyModeListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/h;->Yi:Lcom/android/vendorsettings/display/FluencyModeListPreference;
 
-    iget v1, p0, Lcom/android/settings/display/h;->Yj:I
+    iget v1, p0, Lcom/android/vendorsettings/display/h;->Yj:I
 
-    invoke-static {v0, v1}, Lcom/android/settings/display/FluencyModeListPreference;->c(Lcom/android/settings/display/FluencyModeListPreference;I)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/display/FluencyModeListPreference;->c(Lcom/android/vendorsettings/display/FluencyModeListPreference;I)V
 
     .line 140
     return-void

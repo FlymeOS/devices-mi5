@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/ResolutionListPreference;
+.class public Lcom/android/vendorsettings/display/ResolutionListPreference;
 .super Landroid/preference/ListPreference;
 .source "ResolutionListPreference.java"
 
@@ -11,7 +11,7 @@
     .line 23
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/display/ResolutionListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/display/ResolutionListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 24
     return-void
@@ -40,7 +40,7 @@
     if-ne p2, v0, :cond_0
 
     .line 53
-    invoke-virtual {p0}, Lcom/android/settings/display/ResolutionListPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ResolutionListPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -74,7 +74,7 @@
 
     .prologue
     .line 28
-    invoke-virtual {p0}, Lcom/android/settings/display/ResolutionListPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ResolutionListPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -93,24 +93,24 @@
     move-result-object v0
 
     .line 30
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/ResolutionListPreference;->setValue(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/ResolutionListPreference;->setValue(Ljava/lang/String;)V
 
     .line 32
     invoke-super {p0, p1}, Landroid/preference/ListPreference;->onPrepareDialogBuilder(Landroid/app/AlertDialog$Builder;)V
 
     .line 34
-    invoke-virtual {p0}, Lcom/android/settings/display/ResolutionListPreference;->getEntries()[Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ResolutionListPreference;->getEntries()[Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/display/H;
+    new-instance v2, Lcom/android/vendorsettings/display/H;
 
-    invoke-direct {v2, p0, v0}, Lcom/android/settings/display/H;-><init>(Lcom/android/settings/display/ResolutionListPreference;Ljava/lang/String;)V
+    invoke-direct {v2, p0, v0}, Lcom/android/vendorsettings/display/H;-><init>(Lcom/android/vendorsettings/display/ResolutionListPreference;Ljava/lang/String;)V
 
     invoke-virtual {p1, v1, v2}, Landroid/app/AlertDialog$Builder;->setItems([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 46
-    invoke-virtual {p0}, Lcom/android/settings/display/ResolutionListPreference;->getPositiveButtonText()Ljava/lang/CharSequence;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ResolutionListPreference;->getPositiveButtonText()Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -133,7 +133,7 @@
     invoke-super {p0, p1}, Landroid/preference/ListPreference;->showDialog(Landroid/os/Bundle;)V
 
     .line 64
-    invoke-virtual {p0}, Lcom/android/settings/display/ResolutionListPreference;->getDialog()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ResolutionListPreference;->getDialog()Landroid/app/Dialog;
 
     move-result-object v0
 

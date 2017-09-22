@@ -26,7 +26,7 @@
     <string name="connected_via_wfa">Connected via Wi‑Fi assistant</string>
     <string name="connected_via_passpoint">Connected via %1$s</string>
     <string name="available_via_passpoint">Available via %1$s</string>
-    <string name="settings_package">com.android.settings</string>
+    <string name="settings_package">com.android.vendorsettings</string>
     <string name="certinstaller_package">com.android.certinstaller</string>
     <string name="wifi_connected_no_internet">Connected, no Internet</string>
     <string name="bluetooth_disconnected">Disconnected</string>
@@ -205,10 +205,10 @@
     <string name="input_method_selector_always_show_value">1</string>
     <string name="input_method_selector_always_hide_value">2</string>
     <string name="input_method_selector_visibility_default_value">0</string>
-    <string name="category_key_wireless">com.android.settings.category.wireless</string>
-    <string name="category_key_device">com.android.settings.category.device</string>
-    <string name="category_key_personal">com.android.settings.category.personal</string>
-    <string name="category_key_system">com.android.settings.category.system</string>
+    <string name="category_key_wireless">com.android.vendorsettings.category.wireless</string>
+    <string name="category_key_device">com.android.vendorsettings.category.device</string>
+    <string name="category_key_personal">com.android.vendorsettings.category.personal</string>
+    <string name="category_key_system">com.android.vendorsettings.category.system</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
     <string name="create">Create</string>

@@ -1,4 +1,4 @@
-.class public abstract Lcom/android/settings/f/a;
+.class public abstract Lcom/android/vendorsettings/f/a;
 .super Landroid/app/Activity;
 .source "VoiceSettingsActivity.java"
 
@@ -24,22 +24,22 @@
 
     .prologue
     .line 67
-    invoke-virtual {p0}, Lcom/android/settings/f/a;->getVoiceInteractor()Landroid/app/VoiceInteractor;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/f/a;->getVoiceInteractor()Landroid/app/VoiceInteractor;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 68
-    invoke-virtual {p0}, Lcom/android/settings/f/a;->getVoiceInteractor()Landroid/app/VoiceInteractor;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/f/a;->getVoiceInteractor()Landroid/app/VoiceInteractor;
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/f/b;
+    new-instance v1, Lcom/android/vendorsettings/f/b;
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, p0, p1, v2}, Lcom/android/settings/f/b;-><init>(Lcom/android/settings/f/a;Ljava/lang/CharSequence;Landroid/os/Bundle;)V
+    invoke-direct {v1, p0, p1, v2}, Lcom/android/vendorsettings/f/b;-><init>(Lcom/android/vendorsettings/f/a;Ljava/lang/CharSequence;Landroid/os/Bundle;)V
 
     invoke-virtual {v0, v1}, Landroid/app/VoiceInteractor;->submitRequest(Landroid/app/VoiceInteractor$Request;)Z
 
@@ -53,14 +53,14 @@
 
     .prologue
     .line 81
-    invoke-virtual {p0}, Lcom/android/settings/f/a;->getVoiceInteractor()Landroid/app/VoiceInteractor;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/f/a;->getVoiceInteractor()Landroid/app/VoiceInteractor;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 82
-    invoke-virtual {p0}, Lcom/android/settings/f/a;->getVoiceInteractor()Landroid/app/VoiceInteractor;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/f/a;->getVoiceInteractor()Landroid/app/VoiceInteractor;
 
     move-result-object v0
 
@@ -85,25 +85,25 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 44
-    invoke-virtual {p0}, Lcom/android/settings/f/a;->isVoiceInteractionRoot()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/f/a;->isVoiceInteractionRoot()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 46
-    invoke-virtual {p0}, Lcom/android/settings/f/a;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/f/a;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/f/a;->b(Landroid/content/Intent;)Z
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/f/a;->b(Landroid/content/Intent;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 48
-    invoke-virtual {p0}, Lcom/android/settings/f/a;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/f/a;->finish()V
 
     .line 54
     :cond_0
@@ -119,7 +119,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 52
-    invoke-virtual {p0}, Lcom/android/settings/f/a;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/f/a;->finish()V
 
     goto :goto_0
 .end method

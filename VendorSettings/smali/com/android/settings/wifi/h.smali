@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/wifi/h;
+.class final Lcom/android/vendorsettings/wifi/h;
 .super Ljava/lang/Object;
 .source "MiuiAccessPointPreference.java"
 
@@ -19,12 +19,12 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/wifi/a;Lcom/android/settings/wifi/a;)I
+.method public a(Lcom/android/vendorsettings/wifi/a;Lcom/android/vendorsettings/wifi/a;)I
     .locals 3
 
     .prologue
     .line 218
-    instance-of v0, p1, Lcom/android/settings/wifi/a;
+    instance-of v0, p1, Lcom/android/vendorsettings/wifi/a;
 
     if-nez v0, :cond_1
 
@@ -38,7 +38,7 @@
 
     .line 221
     :cond_1
-    instance-of v0, p2, Lcom/android/settings/wifi/a;
+    instance-of v0, p2, Lcom/android/vendorsettings/wifi/a;
 
     if-nez v0, :cond_2
 
@@ -49,14 +49,14 @@
 
     .line 224
     :cond_2
-    invoke-virtual {p1}, Lcom/android/settings/wifi/a;->wP()Lcom/android/b/e/a;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/wifi/a;->wP()Lcom/android/b/e/a;
 
     move-result-object v0
 
     iget-object v1, v0, Lcom/android/b/e/a;->ssid:Ljava/lang/String;
 
     .line 225
-    invoke-virtual {p2}, Lcom/android/settings/wifi/a;->wP()Lcom/android/b/e/a;
+    invoke-virtual {p2}, Lcom/android/vendorsettings/wifi/a;->wP()Lcom/android/b/e/a;
 
     move-result-object v0
 
@@ -83,11 +83,11 @@
 
     .prologue
     .line 215
-    check-cast p1, Lcom/android/settings/wifi/a;
+    check-cast p1, Lcom/android/vendorsettings/wifi/a;
 
-    check-cast p2, Lcom/android/settings/wifi/a;
+    check-cast p2, Lcom/android/vendorsettings/wifi/a;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/wifi/h;->a(Lcom/android/settings/wifi/a;Lcom/android/settings/wifi/a;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/wifi/h;->a(Lcom/android/vendorsettings/wifi/a;Lcom/android/vendorsettings/wifi/a;)I
 
     move-result v0
 

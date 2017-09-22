@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiMasterClear;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/MiuiMasterClear;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "MiuiMasterClear.java"
 
 
@@ -16,9 +16,9 @@
 
 .field private rt:Landroid/app/Dialog;
 
-.field private ru:Lcom/android/settings/eB;
+.field private ru:Lcom/android/vendorsettings/eB;
 
-.field private rv:Lcom/android/settings/eD;
+.field private rv:Lcom/android/vendorsettings/eD;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     .prologue
     .line 93
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 626
     return-void
@@ -38,7 +38,7 @@
 
     .prologue
     .line 466
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -71,7 +71,7 @@
     .line 473
     const-string v0, "statusbar"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiMasterClear;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiMasterClear;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -91,72 +91,72 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiMasterClear;)Landroid/preference/CheckBoxPreference;
+.method static synthetic a(Lcom/android/vendorsettings/MiuiMasterClear;)Landroid/preference/CheckBoxPreference;
     .locals 1
 
     .prologue
     .line 93
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiMasterClear;Z)V
+.method static synthetic a(Lcom/android/vendorsettings/MiuiMasterClear;Z)V
     .locals 0
 
     .prologue
     .line 93
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiMasterClear;->F(Z)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/MiuiMasterClear;->F(Z)V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/MiuiMasterClear;)V
+.method static synthetic b(Lcom/android/vendorsettings/MiuiMasterClear;)V
     .locals 0
 
     .prologue
     .line 93
-    invoke-direct {p0}, Lcom/android/settings/MiuiMasterClear;->fm()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->fm()V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/MiuiMasterClear;Z)V
+.method static synthetic b(Lcom/android/vendorsettings/MiuiMasterClear;Z)V
     .locals 0
 
     .prologue
     .line 93
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiMasterClear;->G(Z)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/MiuiMasterClear;->G(Z)V
 
     return-void
 .end method
 
-.method static synthetic c(Lcom/android/settings/MiuiMasterClear;)V
+.method static synthetic c(Lcom/android/vendorsettings/MiuiMasterClear;)V
     .locals 0
 
     .prologue
     .line 93
-    invoke-direct {p0}, Lcom/android/settings/MiuiMasterClear;->fn()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->fn()V
 
     return-void
 .end method
 
-.method static synthetic d(Lcom/android/settings/MiuiMasterClear;)V
+.method static synthetic d(Lcom/android/vendorsettings/MiuiMasterClear;)V
     .locals 0
 
     .prologue
     .line 93
-    invoke-direct {p0}, Lcom/android/settings/MiuiMasterClear;->fk()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->fk()V
 
     return-void
 .end method
 
-.method static synthetic e(Lcom/android/settings/MiuiMasterClear;)V
+.method static synthetic e(Lcom/android/vendorsettings/MiuiMasterClear;)V
     .locals 0
 
     .prologue
     .line 93
-    invoke-direct {p0}, Lcom/android/settings/MiuiMasterClear;->eD()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->eD()V
 
     return-void
 .end method
@@ -166,7 +166,7 @@
 
     .prologue
     .line 195
-    invoke-virtual {p0, p1}, Lcom/android/settings/MiuiMasterClear;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/MiuiMasterClear;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -195,11 +195,11 @@
 
     .prologue
     .line 324
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -207,12 +207,12 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_1
 
     .line 325
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -226,7 +226,7 @@
     :goto_0
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -244,9 +244,9 @@
 
     const v1, 0x7f0c0e4f
 
-    new-instance v2, Lcom/android/settings/eA;
+    new-instance v2, Lcom/android/vendorsettings/eA;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/eA;-><init>(Lcom/android/settings/MiuiMasterClear;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/eA;-><init>(Lcom/android/vendorsettings/MiuiMasterClear;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -273,11 +273,11 @@
 
     .line 328
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -326,12 +326,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic f(Lcom/android/settings/MiuiMasterClear;)V
+.method static synthetic f(Lcom/android/vendorsettings/MiuiMasterClear;)V
     .locals 0
 
     .prologue
     .line 93
-    invoke-direct {p0}, Lcom/android/settings/MiuiMasterClear;->fj()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->fj()V
 
     return-void
 .end method
@@ -351,9 +351,9 @@
 
     .prologue
     .line 153
-    new-instance v0, Lcom/android/settings/eB;
+    new-instance v0, Lcom/android/vendorsettings/eB;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -361,18 +361,18 @@
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/eB;-><init>(Lcom/android/settings/MiuiMasterClear;Landroid/content/Context;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/eB;-><init>(Lcom/android/vendorsettings/MiuiMasterClear;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiMasterClear;->ru:Lcom/android/settings/eB;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->ru:Lcom/android/vendorsettings/eB;
 
     .line 155
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->ru:Lcom/android/settings/eB;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->ru:Lcom/android/vendorsettings/eB;
 
     const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/eB;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/eB;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 156
     return-void
@@ -383,9 +383,9 @@
 
     .prologue
     .line 159
-    new-instance v0, Lcom/android/settings/eD;
+    new-instance v0, Lcom/android/vendorsettings/eD;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -393,18 +393,18 @@
 
     move-result-object v1
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/eD;-><init>(Lcom/android/settings/MiuiMasterClear;Landroid/content/Context;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/eD;-><init>(Lcom/android/vendorsettings/MiuiMasterClear;Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rv:Lcom/android/settings/eD;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rv:Lcom/android/vendorsettings/eD;
 
     .line 161
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rv:Lcom/android/settings/eD;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rv:Lcom/android/vendorsettings/eD;
 
     const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/eD;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/eD;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 162
     return-void
@@ -420,14 +420,14 @@
     .line 166
     const v1, 0x7f0c0e3e
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/MiuiMasterClear;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/MiuiMasterClear;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
     .line 167
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -477,7 +477,7 @@
     .line 181
     const v0, 0x7f0c0e40
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiMasterClear;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiMasterClear;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -485,7 +485,7 @@
     :goto_0
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -519,7 +519,7 @@
     .line 184
     const v0, 0x7f0c0e42
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiMasterClear;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiMasterClear;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -535,7 +535,7 @@
     .line 359
     new-instance v0, Landroid/app/Dialog;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -543,10 +543,10 @@
 
     invoke-direct {v0, v1, v2}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rt:Landroid/app/Dialog;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rt:Landroid/app/Dialog;
 
     .line 360
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rt:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rt:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
 
@@ -565,17 +565,17 @@
     move-result-object v0
 
     .line 361
-    iget-object v1, p0, Lcom/android/settings/MiuiMasterClear;->rt:Landroid/app/Dialog;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rt:Landroid/app/Dialog;
 
     invoke-virtual {v1, v0}, Landroid/app/Dialog;->setContentView(Landroid/view/View;)V
 
     .line 362
-    iget-object v1, p0, Lcom/android/settings/MiuiMasterClear;->rt:Landroid/app/Dialog;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rt:Landroid/app/Dialog;
 
     invoke-virtual {v1, v3}, Landroid/app/Dialog;->setCancelable(Z)V
 
     .line 363
-    iget-object v1, p0, Lcom/android/settings/MiuiMasterClear;->rt:Landroid/app/Dialog;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rt:Landroid/app/Dialog;
 
     invoke-virtual {v1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -591,7 +591,7 @@
     iput v2, v1, Landroid/view/WindowManager$LayoutParams;->screenOrientation:I
 
     .line 365
-    iget-object v2, p0, Lcom/android/settings/MiuiMasterClear;->rt:Landroid/app/Dialog;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rt:Landroid/app/Dialog;
 
     invoke-virtual {v2}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -600,7 +600,7 @@
     invoke-virtual {v2, v1}, Landroid/view/Window;->setAttributes(Landroid/view/WindowManager$LayoutParams;)V
 
     .line 366
-    iget-object v1, p0, Lcom/android/settings/MiuiMasterClear;->rt:Landroid/app/Dialog;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rt:Landroid/app/Dialog;
 
     invoke-virtual {v1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -611,7 +611,7 @@
     invoke-virtual {v1, v2}, Landroid/view/Window;->setType(I)V
 
     .line 367
-    iget-object v1, p0, Lcom/android/settings/MiuiMasterClear;->rt:Landroid/app/Dialog;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rt:Landroid/app/Dialog;
 
     invoke-virtual {v1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -622,7 +622,7 @@
     invoke-virtual {v1, v2}, Landroid/view/Window;->addFlags(I)V
 
     .line 368
-    iget-object v1, p0, Lcom/android/settings/MiuiMasterClear;->rt:Landroid/app/Dialog;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rt:Landroid/app/Dialog;
 
     invoke-virtual {v1}, Landroid/app/Dialog;->show()V
 
@@ -646,7 +646,7 @@
     check-cast v0, Landroid/graphics/drawable/AnimatedRotateDrawable;
 
     .line 373
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -663,7 +663,7 @@
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/AnimatedRotateDrawable;->setFramesCount(I)V
 
     .line 375
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -683,13 +683,13 @@
     invoke-virtual {v0}, Landroid/graphics/drawable/AnimatedRotateDrawable;->start()V
 
     .line 379
-    new-instance v0, Lcom/android/settings/eE;
+    new-instance v0, Lcom/android/vendorsettings/eE;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/eE;-><init>(Lcom/android/settings/MiuiMasterClear;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/eE;-><init>(Lcom/android/vendorsettings/MiuiMasterClear;)V
 
     new-array v1, v3, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/eE;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/eE;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 380
     return-void
@@ -706,7 +706,7 @@
     const/4 v1, 0x0
 
     .line 384
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -719,7 +719,7 @@
 
     .line 389
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
 
     if-nez v0, :cond_2
 
@@ -741,7 +741,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/MiuiMasterClear;->rs:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rs:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -754,11 +754,11 @@
     invoke-static {v0, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 391
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -791,7 +791,7 @@
     invoke-virtual {v0, v5}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 396
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -801,7 +801,7 @@
 
     .line 389
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -820,7 +820,7 @@
 
     .line 404
     :cond_4
-    invoke-direct {p0}, Lcom/android/settings/MiuiMasterClear;->fo()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->fo()Z
 
     move-result v0
 
@@ -851,7 +851,7 @@
     invoke-virtual {v0, v5}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 409
-    iget-object v1, p0, Lcom/android/settings/MiuiMasterClear;->rs:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rs:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -862,18 +862,18 @@
     .line 410
     const-string v1, "password"
 
-    iget-object v2, p0, Lcom/android/settings/MiuiMasterClear;->rs:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rs:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 411
     const/4 v1, 0x0
 
-    iput-object v1, p0, Lcom/android/settings/MiuiMasterClear;->rs:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rs:Ljava/lang/String;
 
     .line 413
     :cond_5
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -893,7 +893,7 @@
     invoke-virtual {v0, v5}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 418
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -973,22 +973,22 @@
     return v0
 .end method
 
-.method static synthetic g(Lcom/android/settings/MiuiMasterClear;)V
+.method static synthetic g(Lcom/android/vendorsettings/MiuiMasterClear;)V
     .locals 0
 
     .prologue
     .line 93
-    invoke-direct {p0}, Lcom/android/settings/MiuiMasterClear;->fl()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->fl()V
 
     return-void
 .end method
 
-.method static synthetic h(Lcom/android/settings/MiuiMasterClear;)Landroid/app/Dialog;
+.method static synthetic h(Lcom/android/vendorsettings/MiuiMasterClear;)Landroid/app/Dialog;
     .locals 1
 
     .prologue
     .line 93
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rt:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rt:Landroid/app/Dialog;
 
     return-object v0
 .end method
@@ -998,7 +998,7 @@
 
     .prologue
     .line 133
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1007,13 +1007,13 @@
     move-result-object v0
 
     .line 134
-    new-instance v1, Lcom/android/settings/aH;
+    new-instance v1, Lcom/android/vendorsettings/aH;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-direct {v1, v2, p0}, Lcom/android/settings/aH;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
+    invoke-direct {v1, v2, p0}, Lcom/android/vendorsettings/aH;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
 
     const v2, 0x7f0c04d3
 
@@ -1023,7 +1023,7 @@
 
     const/4 v2, 0x1
 
-    invoke-virtual {v1, p1, v0, v2}, Lcom/android/settings/aH;->a(ILjava/lang/CharSequence;Z)Z
+    invoke-virtual {v1, p1, v0, v2}, Lcom/android/vendorsettings/aH;->a(ILjava/lang/CharSequence;Z)Z
 
     move-result v0
 
@@ -1037,7 +1037,7 @@
 
     .prologue
     .line 123
-    const-class v0, Lcom/android/settings/MiuiMasterClear;
+    const-class v0, Lcom/android/vendorsettings/MiuiMasterClear;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1053,7 +1053,7 @@
     const/4 v1, -0x1
 
     .line 294
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 296
     const/16 v0, 0x38
@@ -1066,7 +1066,7 @@
     .line 298
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiMasterClear;->rr:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rr:Z
 
     .line 320
     :cond_0
@@ -1083,7 +1083,7 @@
     if-ne p2, v1, :cond_0
 
     .line 307
-    invoke-direct {p0}, Lcom/android/settings/MiuiMasterClear;->fo()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->fo()Z
 
     move-result v0
 
@@ -1106,24 +1106,24 @@
     if-nez v1, :cond_2
 
     .line 310
-    invoke-static {}, Lcom/android/settings/a;->e()Ljava/lang/String;
+    invoke-static {}, Lcom/android/vendorsettings/a;->e()Ljava/lang/String;
 
     move-result-object v1
 
     .line 312
     :try_start_0
-    invoke-static {v0, v1}, Lcom/android/settings/a;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/a;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rs:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rs:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 318
     :cond_2
     :goto_1
-    invoke-direct {p0}, Lcom/android/settings/MiuiMasterClear;->fi()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->fi()V
 
     goto :goto_0
 
@@ -1154,10 +1154,10 @@
     const/4 v3, 0x0
 
     .line 205
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 206
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1166,39 +1166,39 @@
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setRequestedOrientation(I)V
 
     .line 207
-    invoke-virtual {p0, v4}, Lcom/android/settings/MiuiMasterClear;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v4}, Lcom/android/vendorsettings/MiuiMasterClear;->setHasOptionsMenu(Z)V
 
     .line 208
     const v0, 0x7f08005f
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiMasterClear;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiMasterClear;->addPreferencesFromResource(I)V
 
     .line 209
     const-string v0, "erase_application"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiMasterClear;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiMasterClear;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
 
     .line 210
     const-string v0, "erase_external_storage"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiMasterClear;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiMasterClear;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
 
     .line 212
     const-string v0, "erase_optional"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiMasterClear;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiMasterClear;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -1214,12 +1214,12 @@
     if-nez v1, :cond_0
 
     .line 214
-    iget-object v1, p0, Lcom/android/settings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
     .line 215
-    iput-object v5, p0, Lcom/android/settings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
+    iput-object v5, p0, Lcom/android/vendorsettings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
 
     .line 218
     :cond_0
@@ -1250,7 +1250,7 @@
 
     if-nez v2, :cond_6
 
-    invoke-direct {p0}, Lcom/android/settings/MiuiMasterClear;->eF()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->eF()Z
 
     move-result v2
 
@@ -1258,25 +1258,25 @@
 
     .line 224
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
     .line 225
-    iput-object v5, p0, Lcom/android/settings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
+    iput-object v5, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
 
     .line 235
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
 
     if-nez v1, :cond_3
 
-    iget-object v1, p0, Lcom/android/settings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
 
     if-nez v1, :cond_3
 
     .line 236
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -1284,7 +1284,7 @@
 
     .line 239
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1298,31 +1298,31 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiMasterClear;->rq:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rq:Z
 
     .line 240
-    iget-boolean v0, p0, Lcom/android/settings/MiuiMasterClear;->rq:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rq:Z
 
     if-eqz v0, :cond_5
 
     .line 241
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_4
 
     .line 242
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 244
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->ro:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_8
 
     .line 245
-    invoke-direct {p0}, Lcom/android/settings/MiuiMasterClear;->fm()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->fm()V
 
     .line 250
     :cond_5
@@ -1334,14 +1334,14 @@
     if-eqz v1, :cond_7
 
     .line 227
-    iget-object v1, p0, Lcom/android/settings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
 
     const v2, 0x7f0c0e55
 
     invoke-virtual {v1, v2}, Landroid/preference/CheckBoxPreference;->setTitle(I)V
 
     .line 228
-    iget-object v1, p0, Lcom/android/settings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rp:Landroid/preference/CheckBoxPreference;
 
     const v2, 0x7f0c0e56
 
@@ -1352,7 +1352,7 @@
 
     const-string v2, "erase_external_no_emulate_sd"
 
-    invoke-direct {p0, v1, v2}, Lcom/android/settings/MiuiMasterClear;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v1, v2}, Lcom/android/vendorsettings/MiuiMasterClear;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -1362,13 +1362,13 @@
 
     const-string v2, "erase_external_no_emulate_sd"
 
-    invoke-direct {p0, v1, v2}, Lcom/android/settings/MiuiMasterClear;->e(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v1, v2}, Lcom/android/vendorsettings/MiuiMasterClear;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 247
     :cond_8
-    invoke-direct {p0}, Lcom/android/settings/MiuiMasterClear;->fn()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->fn()V
 
     goto :goto_1
 .end method
@@ -1399,7 +1399,7 @@
     invoke-interface {v2, v3}, Landroid/view/MenuItem;->setShowAsAction(I)V
 
     .line 257
-    invoke-virtual {p0}, Lcom/android/settings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -1436,40 +1436,40 @@
     const/4 v1, 0x1
 
     .line 437
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rt:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rt:Landroid/app/Dialog;
 
     if-eqz v0, :cond_0
 
     .line 438
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rt:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rt:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
     .line 441
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->ru:Lcom/android/settings/eB;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->ru:Lcom/android/vendorsettings/eB;
 
     if-eqz v0, :cond_1
 
     .line 442
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->ru:Lcom/android/settings/eB;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->ru:Lcom/android/vendorsettings/eB;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/eB;->cancel(Z)Z
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/eB;->cancel(Z)Z
 
     .line 445
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rv:Lcom/android/settings/eD;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rv:Lcom/android/vendorsettings/eD;
 
     if-eqz v0, :cond_2
 
     .line 446
-    iget-object v0, p0, Lcom/android/settings/MiuiMasterClear;->rv:Lcom/android/settings/eD;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rv:Lcom/android/vendorsettings/eD;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/eD;->cancel(Z)Z
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/eD;->cancel(Z)Z
 
     .line 449
     :cond_2
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onDestroy()V
 
     .line 450
     return-void
@@ -1492,10 +1492,10 @@
     .line 275
     const/4 v1, 0x0
 
-    iput-boolean v1, p0, Lcom/android/settings/MiuiMasterClear;->rr:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rr:Z
 
     .line 276
-    invoke-direct {p0}, Lcom/android/settings/MiuiMasterClear;->fh()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->fh()Z
 
     move-result v1
 
@@ -1510,7 +1510,7 @@
     :cond_1
     const/16 v1, 0x37
 
-    invoke-direct {p0, v1}, Lcom/android/settings/MiuiMasterClear;->s(I)Z
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/MiuiMasterClear;->s(I)Z
 
     move-result v1
 
@@ -1524,13 +1524,13 @@
     if-nez v1, :cond_0
 
     .line 285
-    invoke-direct {p0}, Lcom/android/settings/MiuiMasterClear;->fi()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->fi()V
 
     goto :goto_0
 
     .line 288
     :cond_2
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -1542,17 +1542,17 @@
 
     .prologue
     .line 430
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPause()V
 
     .line 431
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiMasterClear;->F(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/MiuiMasterClear;->F(Z)V
 
     .line 432
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiMasterClear;->G(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/MiuiMasterClear;->G(Z)V
 
     .line 433
     return-void
@@ -1563,29 +1563,29 @@
 
     .prologue
     .line 454
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 457
-    iget-boolean v0, p0, Lcom/android/settings/MiuiMasterClear;->rr:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rr:Z
 
     if-eqz v0, :cond_0
 
     .line 458
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiMasterClear;->rr:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/MiuiMasterClear;->rr:Z
 
     .line 459
     const/16 v0, 0x37
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiMasterClear;->s(I)Z
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/MiuiMasterClear;->s(I)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 460
-    invoke-direct {p0}, Lcom/android/settings/MiuiMasterClear;->fi()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiMasterClear;->fi()V
 
     .line 463
     :cond_0

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/RunningServiceDetailsActivity;
+.class public Lcom/android/vendorsettings/applications/RunningServiceDetailsActivity;
 .super Lmiui/preference/PreferenceActivity;
 .source "RunningServiceDetailsActivity.java"
 
@@ -32,7 +32,7 @@
     .line 13
     const-string v1, ":android:show_fragment"
 
-    const-class v2, Lcom/android/settings/applications/RunningServiceDetails;
+    const-class v2, Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

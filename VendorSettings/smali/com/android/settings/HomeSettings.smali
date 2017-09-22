@@ -1,13 +1,13 @@
-.class public Lcom/android/settings/HomeSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/HomeSettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "HomeSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/search/k;
+.implements Lcom/android/vendorsettings/search/k;
 
 
 # static fields
-.field public static final ig:Lcom/android/settings/search/l;
+.field public static final ig:Lcom/android/vendorsettings/search/l;
 
 
 # instance fields
@@ -19,13 +19,13 @@
 
 .field private nP:[Landroid/content/ComponentName;
 
-.field private nQ:Lcom/android/settings/du;
+.field private nQ:Lcom/android/vendorsettings/du;
 
 .field private final nR:Landroid/content/IntentFilter;
 
 .field private nS:Z
 
-.field private nT:Lcom/android/settings/dv;
+.field private nT:Lcom/android/vendorsettings/dv;
 
 .field nU:Landroid/view/View$OnClickListener;
 
@@ -38,11 +38,11 @@
 
     .prologue
     .line 393
-    new-instance v0, Lcom/android/settings/dt;
+    new-instance v0, Lcom/android/vendorsettings/dt;
 
-    invoke-direct {v0}, Lcom/android/settings/dt;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/dt;-><init>()V
 
-    sput-object v0, Lcom/android/settings/HomeSettings;->ig:Lcom/android/settings/search/l;
+    sput-object v0, Lcom/android/vendorsettings/HomeSettings;->ig:Lcom/android/vendorsettings/search/l;
 
     return-void
 .end method
@@ -54,31 +54,31 @@
     const/4 v1, 0x0
 
     .line 92
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 87
-    iput-object v1, p0, Lcom/android/settings/HomeSettings;->nQ:Lcom/android/settings/du;
+    iput-object v1, p0, Lcom/android/vendorsettings/HomeSettings;->nQ:Lcom/android/vendorsettings/du;
 
     .line 90
-    new-instance v0, Lcom/android/settings/dv;
+    new-instance v0, Lcom/android/vendorsettings/dv;
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/dv;-><init>(Lcom/android/settings/HomeSettings;Lcom/android/settings/dq;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/dv;-><init>(Lcom/android/vendorsettings/HomeSettings;Lcom/android/vendorsettings/dq;)V
 
-    iput-object v0, p0, Lcom/android/settings/HomeSettings;->nT:Lcom/android/settings/dv;
+    iput-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->nT:Lcom/android/vendorsettings/dv;
 
     .line 98
-    new-instance v0, Lcom/android/settings/dq;
+    new-instance v0, Lcom/android/vendorsettings/dq;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/dq;-><init>(Lcom/android/settings/HomeSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/dq;-><init>(Lcom/android/vendorsettings/HomeSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/HomeSettings;->nU:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->nU:Landroid/view/View$OnClickListener;
 
     .line 109
-    new-instance v0, Lcom/android/settings/dr;
+    new-instance v0, Lcom/android/vendorsettings/dr;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/dr;-><init>(Lcom/android/settings/HomeSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/dr;-><init>(Lcom/android/vendorsettings/HomeSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/HomeSettings;->nV:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->nV:Landroid/view/View$OnClickListener;
 
     .line 93
     new-instance v0, Landroid/content/IntentFilter;
@@ -87,17 +87,17 @@
 
     invoke-direct {v0, v1}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/HomeSettings;->nR:Landroid/content/IntentFilter;
+    iput-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->nR:Landroid/content/IntentFilter;
 
     .line 94
-    iget-object v0, p0, Lcom/android/settings/HomeSettings;->nR:Landroid/content/IntentFilter;
+    iget-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->nR:Landroid/content/IntentFilter;
 
     const-string v1, "android.intent.category.HOME"
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addCategory(Ljava/lang/String;)V
 
     .line 95
-    iget-object v0, p0, Lcom/android/settings/HomeSettings;->nR:Landroid/content/IntentFilter;
+    iget-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->nR:Landroid/content/IntentFilter;
 
     const-string v1, "android.intent.category.DEFAULT"
 
@@ -127,32 +127,32 @@
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/HomeSettings;)V
+.method static synthetic a(Lcom/android/vendorsettings/HomeSettings;)V
     .locals 0
 
     .prologue
     .line 60
-    invoke-direct {p0}, Lcom/android/settings/HomeSettings;->em()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/HomeSettings;->em()V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/HomeSettings;)Ljava/util/ArrayList;
+.method static synthetic b(Lcom/android/vendorsettings/HomeSettings;)Ljava/util/ArrayList;
     .locals 1
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/android/settings/HomeSettings;->bP:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->bP:Ljava/util/ArrayList;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/HomeSettings;)Lcom/android/settings/du;
+.method static synthetic c(Lcom/android/vendorsettings/HomeSettings;)Lcom/android/vendorsettings/du;
     .locals 1
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/android/settings/HomeSettings;->nQ:Lcom/android/settings/du;
+    iget-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->nQ:Lcom/android/vendorsettings/du;
 
     return-object v0
 .end method
@@ -165,7 +165,7 @@
 
     .line 249
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/HomeSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HomeSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -182,7 +182,7 @@
     .line 251
     iget v1, v1, Landroid/content/pm/ApplicationInfo;->targetSdkVersion:I
 
-    invoke-direct {p0, v1}, Lcom/android/settings/HomeSettings;->J(I)Z
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/HomeSettings;->J(I)Z
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -199,12 +199,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic d(Lcom/android/settings/HomeSettings;)Landroid/content/pm/PackageManager;
+.method static synthetic d(Lcom/android/vendorsettings/HomeSettings;)Landroid/content/pm/PackageManager;
     .locals 1
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/android/settings/HomeSettings;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->i:Landroid/content/pm/PackageManager;
 
     return-object v0
 .end method
@@ -225,22 +225,22 @@
     invoke-direct {v13}, Ljava/util/ArrayList;-><init>()V
 
     .line 182
-    iget-object v2, p0, Lcom/android/settings/HomeSettings;->i:Landroid/content/pm/PackageManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/HomeSettings;->i:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v2, v13}, Landroid/content/pm/PackageManager;->getHomeActivities(Ljava/util/List;)Landroid/content/ComponentName;
 
     move-result-object v14
 
     .line 184
-    invoke-virtual {p0}, Lcom/android/settings/HomeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HomeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
     .line 185
-    iput-object v3, p0, Lcom/android/settings/HomeSettings;->nQ:Lcom/android/settings/du;
+    iput-object v3, p0, Lcom/android/vendorsettings/HomeSettings;->nQ:Lcom/android/vendorsettings/du;
 
     .line 186
-    iget-object v3, p0, Lcom/android/settings/HomeSettings;->bO:Landroid/preference/PreferenceGroup;
+    iget-object v3, p0, Lcom/android/vendorsettings/HomeSettings;->bO:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v3}, Landroid/preference/PreferenceGroup;->removeAll()V
 
@@ -249,7 +249,7 @@
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v3, p0, Lcom/android/settings/HomeSettings;->bP:Ljava/util/ArrayList;
+    iput-object v3, p0, Lcom/android/vendorsettings/HomeSettings;->bP:Ljava/util/ArrayList;
 
     .line 188
     invoke-virtual {v13}, Ljava/util/ArrayList;->size()I
@@ -258,10 +258,10 @@
 
     new-array v3, v3, [Landroid/content/ComponentName;
 
-    iput-object v3, p0, Lcom/android/settings/HomeSettings;->nP:[Landroid/content/ComponentName;
+    iput-object v3, p0, Lcom/android/vendorsettings/HomeSettings;->nP:[Landroid/content/ComponentName;
 
     .line 190
-    invoke-virtual {p0}, Lcom/android/settings/HomeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HomeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -276,7 +276,7 @@
     move-result v3
 
     .line 192
-    invoke-direct {p0}, Lcom/android/settings/HomeSettings;->en()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/HomeSettings;->en()Z
 
     move-result v4
 
@@ -320,20 +320,20 @@
     invoke-direct {v3, v1, v5}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 198
-    iget-object v1, p0, Lcom/android/settings/HomeSettings;->nP:[Landroid/content/ComponentName;
+    iget-object v1, p0, Lcom/android/vendorsettings/HomeSettings;->nP:[Landroid/content/ComponentName;
 
     aput-object v3, v1, v12
 
     .line 200
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/HomeSettings;->i:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/HomeSettings;->i:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v8, v1}, Landroid/content/pm/ActivityInfo;->loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v5
 
     .line 201
-    iget-object v1, p0, Lcom/android/settings/HomeSettings;->i:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/HomeSettings;->i:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v8, v1}, Landroid/content/pm/ActivityInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
@@ -342,18 +342,18 @@
     .line 204
     if-eqz v11, :cond_3
 
-    invoke-direct {p0, v0}, Lcom/android/settings/HomeSettings;->c(Landroid/content/pm/ResolveInfo;)Z
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/HomeSettings;->c(Landroid/content/pm/ResolveInfo;)Z
 
     move-result v0
 
     if-nez v0, :cond_3
 
     .line 205
-    new-instance v0, Lcom/android/settings/du;
+    new-instance v0, Lcom/android/vendorsettings/du;
 
     const/4 v9, 0x0
 
-    invoke-virtual {p0}, Lcom/android/settings/HomeSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HomeSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -367,16 +367,16 @@
 
     move-object v7, p0
 
-    invoke-direct/range {v0 .. v10}, Lcom/android/settings/du;-><init>(Lcom/android/settings/HomeSettings;Landroid/content/Context;Landroid/content/ComponentName;ILandroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Lcom/android/settings/HomeSettings;Landroid/content/pm/ActivityInfo;ZLjava/lang/CharSequence;)V
+    invoke-direct/range {v0 .. v10}, Lcom/android/vendorsettings/du;-><init>(Lcom/android/vendorsettings/HomeSettings;Landroid/content/Context;Landroid/content/ComponentName;ILandroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Lcom/android/vendorsettings/HomeSettings;Landroid/content/pm/ActivityInfo;ZLjava/lang/CharSequence;)V
 
     .line 213
     :goto_2
-    iget-object v1, p0, Lcom/android/settings/HomeSettings;->bP:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/android/vendorsettings/HomeSettings;->bP:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 214
-    iget-object v1, p0, Lcom/android/settings/HomeSettings;->bO:Landroid/preference/PreferenceGroup;
+    iget-object v1, p0, Lcom/android/vendorsettings/HomeSettings;->bO:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->addPreference(Landroid/preference/Preference;)Z
 
@@ -388,7 +388,7 @@
     if-eqz v1, :cond_1
 
     .line 216
-    iput-object v0, p0, Lcom/android/settings/HomeSettings;->nQ:Lcom/android/settings/du;
+    iput-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->nQ:Lcom/android/vendorsettings/du;
 
     .line 218
     :cond_1
@@ -410,7 +410,7 @@
 
     .line 209
     :cond_3
-    new-instance v0, Lcom/android/settings/du;
+    new-instance v0, Lcom/android/vendorsettings/du;
 
     const/4 v9, 0x1
 
@@ -420,7 +420,7 @@
 
     move-object v7, p0
 
-    invoke-direct/range {v0 .. v10}, Lcom/android/settings/du;-><init>(Lcom/android/settings/HomeSettings;Landroid/content/Context;Landroid/content/ComponentName;ILandroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Lcom/android/settings/HomeSettings;Landroid/content/pm/ActivityInfo;ZLjava/lang/CharSequence;)V
+    invoke-direct/range {v0 .. v10}, Lcom/android/vendorsettings/du;-><init>(Lcom/android/vendorsettings/HomeSettings;Landroid/content/Context;Landroid/content/ComponentName;ILandroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Lcom/android/vendorsettings/HomeSettings;Landroid/content/pm/ActivityInfo;ZLjava/lang/CharSequence;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -457,21 +457,21 @@
 
     .line 224
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/HomeSettings;->nQ:Lcom/android/settings/du;
+    iget-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->nQ:Lcom/android/vendorsettings/du;
 
     if-eqz v0, :cond_6
 
     .line 225
-    iget-object v0, p0, Lcom/android/settings/HomeSettings;->nQ:Lcom/android/settings/du;
+    iget-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->nQ:Lcom/android/vendorsettings/du;
 
-    invoke-virtual {v0}, Lcom/android/settings/du;->isEnabled()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/du;->isEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_5
 
     .line 226
-    invoke-virtual {p0}, Lcom/android/settings/HomeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HomeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -485,9 +485,9 @@
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    new-instance v1, Lcom/android/settings/ds;
+    new-instance v1, Lcom/android/vendorsettings/ds;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/ds;-><init>(Lcom/android/settings/HomeSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/ds;-><init>(Lcom/android/vendorsettings/HomeSettings;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -501,14 +501,14 @@
 
     .prologue
     .line 238
-    invoke-virtual {p0}, Lcom/android/settings/HomeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HomeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     .line 239
     const-string v0, "user"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HomeSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/HomeSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -562,46 +562,46 @@
 
 
 # virtual methods
-.method a(Lcom/android/settings/du;)V
+.method a(Lcom/android/vendorsettings/du;)V
     .locals 5
 
     .prologue
     .line 123
-    iget-object v0, p0, Lcom/android/settings/HomeSettings;->nQ:Lcom/android/settings/du;
+    iget-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->nQ:Lcom/android/vendorsettings/du;
 
     if-eqz v0, :cond_0
 
     .line 124
-    iget-object v0, p0, Lcom/android/settings/HomeSettings;->nQ:Lcom/android/settings/du;
+    iget-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->nQ:Lcom/android/vendorsettings/du;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/du;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/du;->setChecked(Z)V
 
     .line 126
     :cond_0
     const/4 v0, 0x1
 
-    invoke-virtual {p1, v0}, Lcom/android/settings/du;->setChecked(Z)V
+    invoke-virtual {p1, v0}, Lcom/android/vendorsettings/du;->setChecked(Z)V
 
     .line 127
-    iput-object p1, p0, Lcom/android/settings/HomeSettings;->nQ:Lcom/android/settings/du;
+    iput-object p1, p0, Lcom/android/vendorsettings/HomeSettings;->nQ:Lcom/android/vendorsettings/du;
 
     .line 129
-    iget-object v0, p0, Lcom/android/settings/HomeSettings;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->i:Landroid/content/pm/PackageManager;
 
-    iget-object v1, p0, Lcom/android/settings/HomeSettings;->nR:Landroid/content/IntentFilter;
+    iget-object v1, p0, Lcom/android/vendorsettings/HomeSettings;->nR:Landroid/content/IntentFilter;
 
     const/high16 v2, 0x100000
 
-    iget-object v3, p0, Lcom/android/settings/HomeSettings;->nP:[Landroid/content/ComponentName;
+    iget-object v3, p0, Lcom/android/vendorsettings/HomeSettings;->nP:[Landroid/content/ComponentName;
 
-    iget-object v4, p1, Lcom/android/settings/du;->nX:Landroid/content/ComponentName;
+    iget-object v4, p1, Lcom/android/vendorsettings/du;->nX:Landroid/content/ComponentName;
 
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/content/pm/PackageManager;->replacePreferredActivity(Landroid/content/IntentFilter;I[Landroid/content/ComponentName;Landroid/content/ComponentName;)V
 
     .line 132
-    invoke-virtual {p0}, Lcom/android/settings/HomeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HomeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -613,7 +613,7 @@
     return-void
 .end method
 
-.method b(Lcom/android/settings/du;)V
+.method b(Lcom/android/vendorsettings/du;)V
     .locals 4
 
     .prologue
@@ -630,7 +630,7 @@
 
     move-result-object v1
 
-    iget-object v2, p1, Lcom/android/settings/du;->oc:Ljava/lang/String;
+    iget-object v2, p1, Lcom/android/vendorsettings/du;->oc:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -657,7 +657,7 @@
     invoke-virtual {v2, v1, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 140
-    iget-boolean v1, p1, Lcom/android/settings/du;->oa:Z
+    iget-boolean v1, p1, Lcom/android/vendorsettings/du;->oa:Z
 
     if-eqz v1, :cond_0
 
@@ -667,7 +667,7 @@
     add-int/lit8 v0, v0, 0xa
 
     .line 141
-    invoke-virtual {p0, v2, v0}, Lcom/android/settings/HomeSettings;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v2, v0}, Lcom/android/vendorsettings/HomeSettings;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 142
     return-void
@@ -678,7 +678,7 @@
 
     .prologue
     .line 119
-    const-class v0, Lcom/android/settings/HomeSettings;
+    const-class v0, Lcom/android/vendorsettings/HomeSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -694,10 +694,10 @@
     const/4 v2, 0x0
 
     .line 146
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 149
-    invoke-direct {p0}, Lcom/android/settings/HomeSettings;->em()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/HomeSettings;->em()V
 
     .line 152
     const/16 v0, 0xa
@@ -705,7 +705,7 @@
     if-le p1, v0, :cond_0
 
     .line 157
-    iget-object v0, p0, Lcom/android/settings/HomeSettings;->nQ:Lcom/android/settings/du;
+    iget-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->nQ:Lcom/android/vendorsettings/du;
 
     if-nez v0, :cond_0
 
@@ -713,7 +713,7 @@
 
     .line 158
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/HomeSettings;->bP:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->bP:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -722,25 +722,25 @@
     if-ge v1, v0, :cond_0
 
     .line 159
-    iget-object v0, p0, Lcom/android/settings/HomeSettings;->bP:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->bP:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/du;
+    check-cast v0, Lcom/android/vendorsettings/du;
 
     .line 160
-    iget-boolean v3, v0, Lcom/android/settings/du;->ob:Z
+    iget-boolean v3, v0, Lcom/android/vendorsettings/du;->ob:Z
 
     if-eqz v3, :cond_3
 
     .line 161
-    invoke-virtual {p0, v0}, Lcom/android/settings/HomeSettings;->a(Lcom/android/settings/du;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/HomeSettings;->a(Lcom/android/vendorsettings/du;)V
 
     .line 171
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/HomeSettings;->bP:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->bP:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -751,19 +751,19 @@
     if-ge v0, v1, :cond_2
 
     .line 172
-    iget-boolean v0, p0, Lcom/android/settings/HomeSettings;->nS:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/HomeSettings;->nS:Z
 
     if-eqz v0, :cond_1
 
     .line 173
-    iput-boolean v2, p0, Lcom/android/settings/HomeSettings;->nS:Z
+    iput-boolean v2, p0, Lcom/android/vendorsettings/HomeSettings;->nS:Z
 
     .line 174
-    invoke-static {}, Lcom/android/settings/hn;->hH()V
+    invoke-static {}, Lcom/android/vendorsettings/hn;->hH()V
 
     .line 176
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/HomeSettings;->hU()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HomeSettings;->hU()V
 
     .line 178
     :cond_2
@@ -785,33 +785,33 @@
     const/4 v1, 0x0
 
     .line 268
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 269
     const v0, 0x7f080049
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HomeSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/HomeSettings;->addPreferencesFromResource(I)V
 
     .line 271
-    invoke-virtual {p0}, Lcom/android/settings/HomeSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HomeSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/HomeSettings;->i:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->i:Landroid/content/pm/PackageManager;
 
     .line 272
     const-string v0, "home"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HomeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/HomeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceGroup;
 
-    iput-object v0, p0, Lcom/android/settings/HomeSettings;->bO:Landroid/preference/PreferenceGroup;
+    iput-object v0, p0, Lcom/android/vendorsettings/HomeSettings;->bO:Landroid/preference/PreferenceGroup;
 
     .line 274
-    invoke-virtual {p0}, Lcom/android/settings/HomeSettings;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HomeSettings;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -829,7 +829,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/HomeSettings;->nS:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/HomeSettings;->nS:Z
 
     .line 276
     return-void
@@ -846,14 +846,14 @@
 
     .prologue
     .line 294
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPause()V
 
     .line 295
-    invoke-virtual {p0}, Lcom/android/settings/HomeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HomeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/HomeSettings;->nT:Lcom/android/settings/dv;
+    iget-object v1, p0, Lcom/android/vendorsettings/HomeSettings;->nT:Lcom/android/vendorsettings/dv;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
@@ -866,7 +866,7 @@
 
     .prologue
     .line 280
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 282
     new-instance v0, Landroid/content/IntentFilter;
@@ -896,16 +896,16 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addDataScheme(Ljava/lang/String;)V
 
     .line 287
-    invoke-virtual {p0}, Lcom/android/settings/HomeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HomeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/HomeSettings;->nT:Lcom/android/settings/dv;
+    iget-object v2, p0, Lcom/android/vendorsettings/HomeSettings;->nT:Lcom/android/vendorsettings/dv;
 
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 289
-    invoke-direct {p0}, Lcom/android/settings/HomeSettings;->em()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/HomeSettings;->em()V
 
     .line 290
     return-void

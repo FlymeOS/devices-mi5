@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/fuelgauge/BatterySettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/fuelgauge/BatterySettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "BatterySettings.java"
 
 # interfaces
@@ -28,28 +28,28 @@
 
     .prologue
     .line 25
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 45
-    new-instance v0, Lcom/android/settings/fuelgauge/BatterySettings$1;
+    new-instance v0, Lcom/android/vendorsettings/fuelgauge/BatterySettings$1;
 
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/fuelgauge/BatterySettings$1;-><init>(Lcom/android/settings/fuelgauge/BatterySettings;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/fuelgauge/BatterySettings$1;-><init>(Lcom/android/vendorsettings/fuelgauge/BatterySettings;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatterySettings;->afc:Landroid/database/ContentObserver;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->afc:Landroid/database/ContentObserver;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/fuelgauge/BatterySettings;)V
+.method static synthetic a(Lcom/android/vendorsettings/fuelgauge/BatterySettings;)V
     .locals 0
 
     .prologue
     .line 25
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/BatterySettings;->qT()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->qT()V
 
     return-void
 .end method
@@ -59,7 +59,7 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
 
     if-eqz v0, :cond_0
 
@@ -73,14 +73,14 @@
     move-result-object v0
 
     .line 61
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 62
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -133,7 +133,7 @@
 
     .prologue
     .line 54
-    const-class v0, Lcom/android/settings/fuelgauge/BatterySettings;
+    const-class v0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -151,84 +151,84 @@
     const/4 v3, 0x0
 
     .line 68
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 69
     const v0, 0x7f08001d
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fuelgauge/BatterySettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->addPreferencesFromResource(I)V
 
     .line 70
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatterySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatterySettings;->mResolver:Landroid/content/ContentResolver;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->mResolver:Landroid/content/ContentResolver;
 
     .line 71
     const-string v0, "power_center"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fuelgauge/BatterySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatterySettings;->afa:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->afa:Landroid/preference/Preference;
 
     .line 72
     const-string v0, "power_hide_mode"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fuelgauge/BatterySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceScreen;
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatterySettings;->afb:Landroid/preference/PreferenceScreen;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->afb:Landroid/preference/PreferenceScreen;
 
     .line 74
     const-string v0, "performance_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fuelgauge/BatterySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeY:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeY:Landroid/preference/PreferenceCategory;
 
     .line 75
     const-string v0, "power_mode"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fuelgauge/BatterySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
 
     .line 76
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
 
     sget-object v1, Landroid/provider/MiuiSettings$System;->POWER_MODE_VALUES:[Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setEntryValues([Ljava/lang/CharSequence;)V
 
     .line 77
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 78
     const-string v0, "fluency_mode"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fuelgauge/BatterySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeZ:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeZ:Landroid/preference/ListPreference;
 
     .line 80
     new-instance v0, Landroid/content/Intent;
@@ -238,7 +238,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 82
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatterySettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -253,16 +253,16 @@
     if-eqz v0, :cond_0
 
     .line 83
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatterySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySettings;->afa:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->afa:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 84
-    iput-object v4, p0, Lcom/android/settings/fuelgauge/BatterySettings;->afa:Landroid/preference/Preference;
+    iput-object v4, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->afa:Landroid/preference/Preference;
 
     .line 87
     :cond_0
@@ -273,7 +273,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 89
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatterySettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -288,16 +288,16 @@
     if-eqz v0, :cond_1
 
     .line 90
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatterySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySettings;->afb:Landroid/preference/PreferenceScreen;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->afb:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 91
-    iput-object v4, p0, Lcom/android/settings/fuelgauge/BatterySettings;->afb:Landroid/preference/PreferenceScreen;
+    iput-object v4, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->afb:Landroid/preference/PreferenceScreen;
 
     .line 94
     :cond_1
@@ -310,16 +310,16 @@
     if-nez v0, :cond_4
 
     .line 95
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatterySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 96
-    iput-object v4, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
+    iput-object v4, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
 
     .line 104
     :goto_0
@@ -330,33 +330,33 @@
     if-nez v0, :cond_2
 
     .line 105
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatterySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeZ:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeZ:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 106
-    iput-object v4, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeZ:Landroid/preference/ListPreference;
+    iput-object v4, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeZ:Landroid/preference/ListPreference;
 
     .line 111
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeZ:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeZ:Landroid/preference/ListPreference;
 
     if-nez v0, :cond_3
 
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
 
     if-nez v0, :cond_3
 
     .line 112
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatterySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeY:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeY:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -366,7 +366,7 @@
 
     .line 98
     :cond_4
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatterySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -376,7 +376,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/fuelgauge/BatterySettings;->afc:Landroid/database/ContentObserver;
+    iget-object v2, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->afc:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1, v3, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
@@ -399,17 +399,17 @@
     if-eqz v0, :cond_0
 
     .line 126
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatterySettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySettings;->afc:Landroid/database/ContentObserver;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->afc:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
     .line 128
     :cond_0
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onDestroy()V
 
     .line 129
     return-void
@@ -442,7 +442,7 @@
     invoke-static {v0, p2}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 165
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySettings;->mResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->mResolver:Landroid/content/ContentResolver;
 
     const-string v1, "power_mode"
 
@@ -456,21 +456,21 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 167
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatterySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/app/Activity;->sendBroadcast(Landroid/content/Intent;)V
 
     .line 169
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p2}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 170
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->aeX:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -505,7 +505,7 @@
     if-eqz v0, :cond_1
 
     .line 136
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/BatterySettings;->qU()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->qU()Z
 
     move-result v0
 
@@ -524,7 +524,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/fuelgauge/BatterySettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     move v0, v6
 
@@ -557,7 +557,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 143
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatterySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -583,7 +583,7 @@
     if-eqz v0, :cond_2
 
     .line 149
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatterySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -610,7 +610,7 @@
     if-eqz v0, :cond_3
 
     .line 153
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatterySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -624,7 +624,7 @@
 
     .line 155
     :cond_3
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -636,10 +636,10 @@
 
     .prologue
     .line 118
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 120
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/BatterySettings;->qT()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySettings;->qT()V
 
     .line 121
     return-void

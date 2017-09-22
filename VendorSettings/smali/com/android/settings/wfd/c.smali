@@ -1,19 +1,19 @@
-.class Lcom/android/settings/wfd/c;
+.class Lcom/android/vendorsettings/wfd/c;
 .super Landroid/preference/Preference;
 .source "WifiDisplaySettings.java"
 
 
 # instance fields
-.field final synthetic awy:Lcom/android/settings/wfd/WifiDisplaySettings;
+.field final synthetic awy:Lcom/android/vendorsettings/wfd/WifiDisplaySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wfd/WifiDisplaySettings;Landroid/content/Context;)V
+.method constructor <init>(Lcom/android/vendorsettings/wfd/WifiDisplaySettings;Landroid/content/Context;)V
     .locals 0
 
     .prologue
     .line 356
-    iput-object p1, p0, Lcom/android/settings/wfd/c;->awy:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/wfd/c;->awy:Lcom/android/vendorsettings/wfd/WifiDisplaySettings;
 
     invoke-direct {p0, p2}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
@@ -30,9 +30,9 @@
     if-nez p1, :cond_0
 
     .line 361
-    iget-object v0, p0, Lcom/android/settings/wfd/c;->awy:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wfd/c;->awy:Lcom/android/vendorsettings/wfd/WifiDisplaySettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/wfd/WifiDisplaySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wfd/WifiDisplaySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -69,9 +69,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
     .line 370
-    new-instance v1, Lcom/android/settings/wfd/d;
+    new-instance v1, Lcom/android/vendorsettings/wfd/d;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/wfd/d;-><init>(Lcom/android/settings/wfd/c;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/wfd/d;-><init>(Lcom/android/vendorsettings/wfd/c;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -90,9 +90,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
     .line 379
-    new-instance v1, Lcom/android/settings/wfd/e;
+    new-instance v1, Lcom/android/vendorsettings/wfd/e;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/wfd/e;-><init>(Lcom/android/settings/wfd/c;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/wfd/e;-><init>(Lcom/android/vendorsettings/wfd/c;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

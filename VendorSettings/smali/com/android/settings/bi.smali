@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bi;
+.class Lcom/android/vendorsettings/bi;
 .super Ljava/lang/Object;
 .source "CryptKeeper.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic gu:Lcom/android/settings/CryptKeeper;
+.field final synthetic gu:Lcom/android/vendorsettings/CryptKeeper;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CryptKeeper;)V
+.method constructor <init>(Lcom/android/vendorsettings/CryptKeeper;)V
     .locals 0
 
     .prologue
     .line 1033
-    iput-object p1, p0, Lcom/android/settings/bi;->gu:Lcom/android/settings/CryptKeeper;
+    iput-object p1, p0, Lcom/android/vendorsettings/bi;->gu:Lcom/android/vendorsettings/CryptKeeper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 1037
-    iget-object v0, p0, Lcom/android/settings/bi;->gu:Lcom/android/settings/CryptKeeper;
+    iget-object v0, p0, Lcom/android/vendorsettings/bi;->gu:Lcom/android/vendorsettings/CryptKeeper;
 
-    invoke-static {v0}, Lcom/android/settings/CryptKeeper;->n(Lcom/android/settings/CryptKeeper;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/CryptKeeper;->n(Lcom/android/vendorsettings/CryptKeeper;)V
 
     .line 1038
     return-void

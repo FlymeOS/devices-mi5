@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/ResolverSettingsActivity;
+.class public Lcom/android/vendorsettings/applications/ResolverSettingsActivity;
 .super Lmiui/app/Activity;
 .source "ResolverSettingsActivity.java"
 
@@ -24,7 +24,7 @@
     invoke-super {p0, p1}, Lmiui/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 17
-    invoke-virtual {p0}, Lcom/android/settings/applications/ResolverSettingsActivity;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ResolverSettingsActivity;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 
@@ -38,14 +38,14 @@
 
     .line 21
     :cond_0
-    const-class v0, Lcom/android/settings/applications/ResolverSettings;
+    const-class v0, Lcom/android/vendorsettings/applications/ResolverSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v1
 
     .line 22
-    invoke-virtual {p0}, Lcom/android/settings/applications/ResolverSettingsActivity;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ResolverSettingsActivity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v2
 

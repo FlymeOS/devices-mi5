@@ -1,4 +1,4 @@
-.class Lcom/android/settings/AppListPreference$SavedState;
+.class Lcom/android/vendorsettings/AppListPreference$SavedState;
 .super Ljava/lang/Object;
 .source "AppListPreference.java"
 
@@ -26,11 +26,11 @@
 
     .prologue
     .line 195
-    new-instance v0, Lcom/android/settings/C;
+    new-instance v0, Lcom/android/vendorsettings/C;
 
-    invoke-direct {v0}, Lcom/android/settings/C;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/C;-><init>()V
 
-    sput-object v0, Lcom/android/settings/AppListPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
+    sput-object v0, Lcom/android/vendorsettings/AppListPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
@@ -43,16 +43,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 176
-    iput-object p1, p0, Lcom/android/settings/AppListPreference$SavedState;->ba:[Ljava/lang/CharSequence;
+    iput-object p1, p0, Lcom/android/vendorsettings/AppListPreference$SavedState;->ba:[Ljava/lang/CharSequence;
 
     .line 177
-    iput-object p2, p0, Lcom/android/settings/AppListPreference$SavedState;->bb:Ljava/lang/CharSequence;
+    iput-object p2, p0, Lcom/android/vendorsettings/AppListPreference$SavedState;->bb:Ljava/lang/CharSequence;
 
     .line 178
-    iput-boolean p3, p0, Lcom/android/settings/AppListPreference$SavedState;->bc:Z
+    iput-boolean p3, p0, Lcom/android/vendorsettings/AppListPreference$SavedState;->bc:Z
 
     .line 179
-    iput-object p4, p0, Lcom/android/settings/AppListPreference$SavedState;->bd:Landroid/os/Parcelable;
+    iput-object p4, p0, Lcom/android/vendorsettings/AppListPreference$SavedState;->bd:Landroid/os/Parcelable;
 
     .line 180
     return-void
@@ -75,17 +75,17 @@
 
     .prologue
     .line 189
-    iget-object v0, p0, Lcom/android/settings/AppListPreference$SavedState;->ba:[Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/vendorsettings/AppListPreference$SavedState;->ba:[Ljava/lang/CharSequence;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeCharSequenceArray([Ljava/lang/CharSequence;)V
 
     .line 190
-    iget-object v0, p0, Lcom/android/settings/AppListPreference$SavedState;->bb:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/vendorsettings/AppListPreference$SavedState;->bb:Ljava/lang/CharSequence;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeCharSequence(Ljava/lang/CharSequence;)V
 
     .line 191
-    iget-boolean v0, p0, Lcom/android/settings/AppListPreference$SavedState;->bc:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/AppListPreference$SavedState;->bc:Z
 
     if-eqz v0, :cond_0
 
@@ -95,7 +95,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 192
-    iget-object v0, p0, Lcom/android/settings/AppListPreference$SavedState;->bd:Landroid/os/Parcelable;
+    iget-object v0, p0, Lcom/android/vendorsettings/AppListPreference$SavedState;->bd:Landroid/os/Parcelable;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/network/Connection;
+.class public Lcom/android/vendorsettings/cloud/network/Connection;
 .super Ljava/lang/Object;
 .source "Connection.java"
 
@@ -8,7 +8,7 @@
 
 .field protected TO:Ljava/net/URL;
 
-.field protected TP:Lcom/android/settings/cloud/network/b;
+.field protected TP:Lcom/android/vendorsettings/cloud/network/b;
 
 .field protected TQ:Z
 
@@ -43,7 +43,7 @@
 
     .line 64
     :goto_0
-    invoke-direct {p0, v0}, Lcom/android/settings/cloud/network/Connection;->a(Ljava/net/URL;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/cloud/network/Connection;->a(Ljava/net/URL;)V
 
     .line 65
     return-void
@@ -80,7 +80,7 @@
     goto :goto_0
 .end method
 
-.method private a(Ljava/lang/String;Ljava/lang/String;ZZLjava/io/OutputStream;)Lcom/android/settings/cloud/network/Connection$NetworkError;
+.method private a(Ljava/lang/String;Ljava/lang/String;ZZLjava/io/OutputStream;)Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
     .locals 7
 
     .prologue
@@ -161,9 +161,9 @@
     .line 271
     :cond_0
     :try_start_3
-    invoke-virtual {p0, v0}, Lcom/android/settings/cloud/network/Connection;->a(Ljava/net/HttpURLConnection;)Ljava/net/HttpURLConnection;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/cloud/network/Connection;->a(Ljava/net/HttpURLConnection;)Ljava/net/HttpURLConnection;
     :try_end_3
-    .catch Lcom/android/settings/cloud/network/Connection$ConnectionException; {:try_start_3 .. :try_end_3} :catch_3
+    .catch Lcom/android/vendorsettings/cloud/network/Connection$ConnectionException; {:try_start_3 .. :try_end_3} :catch_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_6
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
@@ -216,12 +216,12 @@
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/cloud/network/Connection;->bn(I)Lcom/android/settings/cloud/network/Connection$NetworkError;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/cloud/network/Connection;->bn(I)Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
 
     move-result-object v0
 
     .line 289
-    sget-object v1, Lcom/android/settings/cloud/network/Connection$NetworkError;->TT:Lcom/android/settings/cloud/network/Connection$NetworkError;
+    sget-object v1, Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;->TT:Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_7
@@ -319,7 +319,7 @@
     invoke-static {v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 304
-    sget-object v0, Lcom/android/settings/cloud/network/Connection$NetworkError;->TV:Lcom/android/settings/cloud/network/Connection$NetworkError;
+    sget-object v0, Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;->TV:Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_5
 
@@ -374,7 +374,7 @@
     invoke-static {v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 250
-    sget-object v0, Lcom/android/settings/cloud/network/Connection$NetworkError;->TU:Lcom/android/settings/cloud/network/Connection$NetworkError;
+    sget-object v0, Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;->TU:Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
 
     goto :goto_4
 
@@ -454,7 +454,7 @@
     .line 326
     :cond_5
     :goto_6
-    sget-object v0, Lcom/android/settings/cloud/network/Connection$NetworkError;->TV:Lcom/android/settings/cloud/network/Connection$NetworkError;
+    sget-object v0, Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;->TV:Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
 
     goto :goto_4
 
@@ -464,7 +464,7 @@
 
     .line 273
     :try_start_b
-    iget-object v1, v1, Lcom/android/settings/cloud/network/Connection$ConnectionException;->mError:Lcom/android/settings/cloud/network/Connection$NetworkError;
+    iget-object v1, v1, Lcom/android/vendorsettings/cloud/network/Connection$ConnectionException;->mError:Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
     :try_end_b
     .catch Ljava/io/IOException; {:try_start_b .. :try_end_b} :catch_2
     .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_6
@@ -677,30 +677,30 @@
     const/4 v0, 0x0
 
     .line 89
-    iput-boolean v0, p0, Lcom/android/settings/cloud/network/Connection;->TQ:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TQ:Z
 
     .line 90
-    iput-boolean v0, p0, Lcom/android/settings/cloud/network/Connection;->TR:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TR:Z
 
     .line 91
-    iput-boolean v0, p0, Lcom/android/settings/cloud/network/Connection;->TS:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TS:Z
 
     .line 92
-    invoke-virtual {p0, p1}, Lcom/android/settings/cloud/network/Connection;->b(Ljava/net/URL;)Z
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/cloud/network/Connection;->b(Ljava/net/URL;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 93
-    iput-object p1, p0, Lcom/android/settings/cloud/network/Connection;->TO:Ljava/net/URL;
+    iput-object p1, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TO:Ljava/net/URL;
 
     .line 95
     :cond_0
     return-void
 .end method
 
-.method private bn(I)Lcom/android/settings/cloud/network/Connection$NetworkError;
+.method private bn(I)Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
     .locals 3
 
     .prologue
@@ -710,7 +710,7 @@
     if-ne p1, v0, :cond_0
 
     .line 361
-    sget-object v0, Lcom/android/settings/cloud/network/Connection$NetworkError;->TT:Lcom/android/settings/cloud/network/Connection$NetworkError;
+    sget-object v0, Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;->TT:Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
 
     .line 364
     :goto_0
@@ -741,7 +741,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 364
-    sget-object v0, Lcom/android/settings/cloud/network/Connection$NetworkError;->TZ:Lcom/android/settings/cloud/network/Connection$NetworkError;
+    sget-object v0, Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;->TZ:Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
 
     goto :goto_0
 .end method
@@ -847,17 +847,17 @@
 
 
 # virtual methods
-.method protected a(Ljava/io/OutputStream;)Lcom/android/settings/cloud/network/Connection$NetworkError;
+.method protected a(Ljava/io/OutputStream;)Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
     .locals 6
 
     .prologue
     .line 187
-    iget-object v0, p0, Lcom/android/settings/cloud/network/Connection;->TO:Ljava/net/URL;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TO:Ljava/net/URL;
 
     if-nez v0, :cond_0
 
     .line 189
-    sget-object v0, Lcom/android/settings/cloud/network/Connection$NetworkError;->TU:Lcom/android/settings/cloud/network/Connection$NetworkError;
+    sget-object v0, Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;->TU:Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
 
     .line 237
     :goto_0
@@ -865,70 +865,70 @@
 
     .line 192
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/cloud/network/Connection;->TP:Lcom/android/settings/cloud/network/b;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TP:Lcom/android/vendorsettings/cloud/network/b;
 
     if-nez v0, :cond_1
 
     .line 194
-    new-instance v0, Lcom/android/settings/cloud/network/b;
+    new-instance v0, Lcom/android/vendorsettings/cloud/network/b;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/cloud/network/b;-><init>(Lcom/android/settings/cloud/network/Connection;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/cloud/network/b;-><init>(Lcom/android/vendorsettings/cloud/network/Connection;)V
 
-    iput-object v0, p0, Lcom/android/settings/cloud/network/Connection;->TP:Lcom/android/settings/cloud/network/b;
+    iput-object v0, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TP:Lcom/android/vendorsettings/cloud/network/b;
 
     .line 196
     :cond_1
-    iget-boolean v0, p0, Lcom/android/settings/cloud/network/Connection;->TR:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TR:Z
 
     if-eqz v0, :cond_2
 
     .line 197
-    iget-object v0, p0, Lcom/android/settings/cloud/network/Connection;->TP:Lcom/android/settings/cloud/network/b;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TP:Lcom/android/vendorsettings/cloud/network/b;
 
-    invoke-virtual {v0}, Lcom/android/settings/cloud/network/b;->oF()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cloud/network/b;->oF()V
 
     .line 201
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/cloud/network/Connection;->TP:Lcom/android/settings/cloud/network/b;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TP:Lcom/android/vendorsettings/cloud/network/b;
 
     .line 203
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/cloud/network/Connection;->TP:Lcom/android/settings/cloud/network/b;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TP:Lcom/android/vendorsettings/cloud/network/b;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/cloud/network/Connection;->a(Lcom/android/settings/cloud/network/b;)Lcom/android/settings/cloud/network/b;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/cloud/network/Connection;->a(Lcom/android/vendorsettings/cloud/network/b;)Lcom/android/vendorsettings/cloud/network/b;
     :try_end_0
-    .catch Lcom/android/settings/cloud/network/Connection$ConnectionException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/android/vendorsettings/cloud/network/Connection$ConnectionException; {:try_start_0 .. :try_end_0} :catch_0
 
     move-result-object v3
 
     .line 209
-    iget-object v0, p0, Lcom/android/settings/cloud/network/Connection;->TO:Ljava/net/URL;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TO:Ljava/net/URL;
 
     invoke-virtual {v0}, Ljava/net/URL;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     .line 210
-    iget-boolean v1, p0, Lcom/android/settings/cloud/network/Connection;->TQ:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TQ:Z
 
     if-eqz v1, :cond_3
 
     .line 212
-    invoke-virtual {v3}, Lcom/android/settings/cloud/network/b;->isEmpty()Z
+    invoke-virtual {v3}, Lcom/android/vendorsettings/cloud/network/b;->isEmpty()Z
 
     move-result v1
 
     if-nez v1, :cond_3
 
     .line 213
-    iget-object v0, p0, Lcom/android/settings/cloud/network/Connection;->TO:Ljava/net/URL;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TO:Ljava/net/URL;
 
     invoke-virtual {v0}, Ljava/net/URL;->getQuery()Ljava/lang/String;
 
     move-result-object v0
 
     .line 214
-    iget-object v1, p0, Lcom/android/settings/cloud/network/Connection;->TO:Ljava/net/URL;
+    iget-object v1, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TO:Ljava/net/URL;
 
     invoke-virtual {v1}, Ljava/net/URL;->toString()Ljava/lang/String;
 
@@ -956,7 +956,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v3}, Lcom/android/settings/cloud/network/b;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/android/vendorsettings/cloud/network/b;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -972,9 +972,9 @@
     :cond_3
     :goto_1
     :try_start_1
-    invoke-virtual {p0, v0, v3}, Lcom/android/settings/cloud/network/Connection;->a(Ljava/lang/String;Lcom/android/settings/cloud/network/b;)Ljava/lang/String;
+    invoke-virtual {p0, v0, v3}, Lcom/android/vendorsettings/cloud/network/Connection;->a(Ljava/lang/String;Lcom/android/vendorsettings/cloud/network/b;)Ljava/lang/String;
     :try_end_1
-    .catch Lcom/android/settings/cloud/network/Connection$ConnectionException; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Lcom/android/vendorsettings/cloud/network/Connection$ConnectionException; {:try_start_1 .. :try_end_1} :catch_1
 
     move-result-object v1
 
@@ -982,26 +982,26 @@
     const-string v2, ""
 
     .line 233
-    iget-boolean v0, p0, Lcom/android/settings/cloud/network/Connection;->TQ:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TQ:Z
 
     if-nez v0, :cond_4
 
     .line 234
-    invoke-virtual {v3}, Lcom/android/settings/cloud/network/b;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/android/vendorsettings/cloud/network/b;->toString()Ljava/lang/String;
 
     move-result-object v2
 
     .line 237
     :cond_4
-    iget-boolean v3, p0, Lcom/android/settings/cloud/network/Connection;->TQ:Z
+    iget-boolean v3, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TQ:Z
 
-    iget-boolean v4, p0, Lcom/android/settings/cloud/network/Connection;->TS:Z
+    iget-boolean v4, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TS:Z
 
     move-object v0, p0
 
     move-object v5, p1
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/cloud/network/Connection;->a(Ljava/lang/String;Ljava/lang/String;ZZLjava/io/OutputStream;)Lcom/android/settings/cloud/network/Connection$NetworkError;
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/cloud/network/Connection;->a(Ljava/lang/String;Ljava/lang/String;ZZLjava/io/OutputStream;)Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
 
     move-result-object v0
 
@@ -1012,7 +1012,7 @@
     move-exception v0
 
     .line 205
-    iget-object v0, v0, Lcom/android/settings/cloud/network/Connection$ConnectionException;->mError:Lcom/android/settings/cloud/network/Connection$NetworkError;
+    iget-object v0, v0, Lcom/android/vendorsettings/cloud/network/Connection$ConnectionException;->mError:Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
 
     goto :goto_0
 
@@ -1032,7 +1032,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v3}, Lcom/android/settings/cloud/network/b;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Lcom/android/vendorsettings/cloud/network/b;->toString()Ljava/lang/String;
 
     move-result-object v1
 
@@ -1051,12 +1051,12 @@
     move-exception v0
 
     .line 228
-    iget-object v0, v0, Lcom/android/settings/cloud/network/Connection$ConnectionException;->mError:Lcom/android/settings/cloud/network/Connection$NetworkError;
+    iget-object v0, v0, Lcom/android/vendorsettings/cloud/network/Connection$ConnectionException;->mError:Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
 
     goto/16 :goto_0
 .end method
 
-.method protected a(Lcom/android/settings/cloud/network/b;)Lcom/android/settings/cloud/network/b;
+.method protected a(Lcom/android/vendorsettings/cloud/network/b;)Lcom/android/vendorsettings/cloud/network/b;
     .locals 0
 
     .prologue
@@ -1064,7 +1064,7 @@
     return-object p1
 .end method
 
-.method protected a(Ljava/lang/String;Lcom/android/settings/cloud/network/b;)Ljava/lang/String;
+.method protected a(Ljava/lang/String;Lcom/android/vendorsettings/cloud/network/b;)Ljava/lang/String;
     .locals 0
 
     .prologue
@@ -1085,7 +1085,7 @@
 
     .prologue
     .line 110
-    iput-boolean p1, p0, Lcom/android/settings/cloud/network/Connection;->TQ:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TQ:Z
 
     .line 111
     return-void
@@ -1111,7 +1111,7 @@
     goto :goto_0
 .end method
 
-.method public f(Ljava/io/File;)Lcom/android/settings/cloud/network/Connection$NetworkError;
+.method public f(Ljava/io/File;)Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
     .locals 4
 
     .prologue
@@ -1135,7 +1135,7 @@
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 174
-    invoke-virtual {p0, v0}, Lcom/android/settings/cloud/network/Connection;->a(Ljava/io/OutputStream;)Lcom/android/settings/cloud/network/Connection$NetworkError;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/cloud/network/Connection;->a(Ljava/io/OutputStream;)Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
 
     move-result-object v1
 
@@ -1144,7 +1144,7 @@
     invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
 
     .line 177
-    sget-object v0, Lcom/android/settings/cloud/network/Connection$NetworkError;->TT:Lcom/android/settings/cloud/network/Connection$NetworkError;
+    sget-object v0, Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;->TT:Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
 
     if-eq v1, v0, :cond_1
 
@@ -1223,22 +1223,22 @@
 
     .prologue
     .line 98
-    iget-object v0, p0, Lcom/android/settings/cloud/network/Connection;->TN:Lorg/json/JSONObject;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TN:Lorg/json/JSONObject;
 
     return-object v0
 .end method
 
-.method public oD()Lcom/android/settings/cloud/network/b;
+.method public oD()Lcom/android/vendorsettings/cloud/network/b;
     .locals 1
 
     .prologue
     .line 106
-    iget-object v0, p0, Lcom/android/settings/cloud/network/Connection;->TP:Lcom/android/settings/cloud/network/b;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TP:Lcom/android/vendorsettings/cloud/network/b;
 
     return-object v0
 .end method
 
-.method public oE()Lcom/android/settings/cloud/network/Connection$NetworkError;
+.method public oE()Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
     .locals 5
 
     .prologue
@@ -1248,13 +1248,13 @@
     invoke-direct {v1}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
     .line 126
-    invoke-virtual {p0, v1}, Lcom/android/settings/cloud/network/Connection;->a(Ljava/io/OutputStream;)Lcom/android/settings/cloud/network/Connection$NetworkError;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/cloud/network/Connection;->a(Ljava/io/OutputStream;)Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
 
     move-result-object v0
 
     .line 128
     :try_start_0
-    sget-object v2, Lcom/android/settings/cloud/network/Connection$NetworkError;->TT:Lcom/android/settings/cloud/network/Connection$NetworkError;
+    sget-object v2, Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;->TT:Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
 
     if-ne v0, v2, :cond_0
 
@@ -1267,7 +1267,7 @@
 
     invoke-direct {v2, v3}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    iput-object v2, p0, Lcom/android/settings/cloud/network/Connection;->TN:Lorg/json/JSONObject;
+    iput-object v2, p0, Lcom/android/vendorsettings/cloud/network/Connection;->TN:Lorg/json/JSONObject;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1342,7 +1342,7 @@
     invoke-static {v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 135
-    sget-object v0, Lcom/android/settings/cloud/network/Connection$NetworkError;->Ua:Lcom/android/settings/cloud/network/Connection$NetworkError;
+    sget-object v0, Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;->Ua:Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 

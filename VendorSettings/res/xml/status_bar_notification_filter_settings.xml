@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen android:key="root"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.vendorsettings">
     <PreferenceCategory>
         <CheckBoxPreference android:persistent="false" android:title="@string/status_bar_settings_enable_notification" android:key="enable_notification" />
     </PreferenceCategory>

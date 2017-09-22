@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/AccessControlFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/AccessControlFragment;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "AccessControlFragment.java"
 
 
@@ -25,18 +25,18 @@
 
     .prologue
     .line 22
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 40
-    new-instance v0, Lcom/android/settings/b;
+    new-instance v0, Lcom/android/vendorsettings/b;
 
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/b;-><init>(Lcom/android/settings/AccessControlFragment;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/b;-><init>(Lcom/android/vendorsettings/AccessControlFragment;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/AccessControlFragment;->f:Landroid/database/ContentObserver;
+    iput-object v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->f:Landroid/database/ContentObserver;
 
     return-void
 .end method
@@ -54,17 +54,17 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/AccessControlFragment;->d:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->d:Landroid/preference/CheckBoxPreference;
 
     .line 79
-    invoke-virtual {p0}, Lcom/android/settings/AccessControlFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AccessControlFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/AccessControlFragment;->mResolver:Landroid/content/ContentResolver;
+    iput-object v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->mResolver:Landroid/content/ContentResolver;
 
     .line 80
-    iget-object v0, p0, Lcom/android/settings/AccessControlFragment;->mResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->mResolver:Landroid/content/ContentResolver;
 
     const-string v1, "privacy_mode_enabled"
 
@@ -74,7 +74,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/android/settings/AccessControlFragment;->f:Landroid/database/ContentObserver;
+    iget-object v3, p0, Lcom/android/vendorsettings/AccessControlFragment;->f:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
@@ -82,22 +82,22 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/AccessControlFragment;)V
+.method static synthetic a(Lcom/android/vendorsettings/AccessControlFragment;)V
     .locals 0
 
     .prologue
     .line 22
-    invoke-direct {p0}, Lcom/android/settings/AccessControlFragment;->g()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/AccessControlFragment;->g()V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/AccessControlFragment;)Landroid/security/ChooseLockSettingsHelper;
+.method static synthetic b(Lcom/android/vendorsettings/AccessControlFragment;)Landroid/security/ChooseLockSettingsHelper;
     .locals 1
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/android/settings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     return-object v0
 .end method
@@ -107,13 +107,13 @@
 
     .prologue
     .line 87
-    iget-object v0, p0, Lcom/android/settings/AccessControlFragment;->d:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->d:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/AccessControlFragment;->d:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->d:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v1, p0, Lcom/android/vendorsettings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v1}, Landroid/security/ChooseLockSettingsHelper;->isPrivacyModeEnabled()Z
 
@@ -133,7 +133,7 @@
 
     .prologue
     .line 49
-    const-class v0, Lcom/android/settings/AccessControlFragment;
+    const-class v0, Lcom/android/vendorsettings/AccessControlFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -147,7 +147,7 @@
 
     .prologue
     .line 54
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 55
     const-string v0, "is_pad"
@@ -158,26 +158,26 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/AccessControlFragment;->a:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->a:Z
 
     .line 56
     new-instance v0, Landroid/security/ChooseLockSettingsHelper;
 
-    invoke-virtual {p0}, Lcom/android/settings/AccessControlFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AccessControlFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Landroid/security/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/android/settings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iput-object v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     .line 57
     const v0, 0x7f080003
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/AccessControlFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/AccessControlFragment;->addPreferencesFromResource(I)V
 
     .line 58
-    invoke-virtual {p0}, Lcom/android/settings/AccessControlFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AccessControlFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -190,7 +190,7 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/AccessControlFragment;->c:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->c:Landroid/preference/CheckBoxPreference;
 
     .line 61
     const-string v0, "ac_privacy_mode"
@@ -201,10 +201,10 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/AccessControlFragment;->e:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->e:Landroid/preference/CheckBoxPreference;
 
     .line 62
-    invoke-direct {p0, v1}, Lcom/android/settings/AccessControlFragment;->a(Landroid/preference/PreferenceScreen;)V
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/AccessControlFragment;->a(Landroid/preference/PreferenceScreen;)V
 
     .line 64
     const-string v0, "ac_category"
@@ -216,7 +216,7 @@
     check-cast v0, Landroid/preference/PreferenceCategory;
 
     .line 65
-    iget-boolean v2, p0, Lcom/android/settings/AccessControlFragment;->a:Z
+    iget-boolean v2, p0, Lcom/android/vendorsettings/AccessControlFragment;->a:Z
 
     if-eqz v2, :cond_0
 
@@ -250,7 +250,7 @@
     move-result-object v1
 
     .line 71
-    iget-object v3, p0, Lcom/android/settings/AccessControlFragment;->c:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/AccessControlFragment;->c:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
@@ -268,12 +268,12 @@
 
     .prologue
     .line 104
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onDestroy()V
 
     .line 105
-    iget-object v0, p0, Lcom/android/settings/AccessControlFragment;->mResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->mResolver:Landroid/content/ContentResolver;
 
-    iget-object v1, p0, Lcom/android/settings/AccessControlFragment;->f:Landroid/database/ContentObserver;
+    iget-object v1, p0, Lcom/android/vendorsettings/AccessControlFragment;->f:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
@@ -306,7 +306,7 @@
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
     .line 112
-    iget-object v1, p0, Lcom/android/settings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v1, p0, Lcom/android/vendorsettings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v1}, Landroid/security/ChooseLockSettingsHelper;->isPrivacyModeEnabled()Z
 
@@ -321,7 +321,7 @@
     .line 115
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/AccessControlFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AccessControlFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -340,18 +340,18 @@
     .line 118
     const v2, 0x104000a
 
-    new-instance v3, Lcom/android/settings/c;
+    new-instance v3, Lcom/android/vendorsettings/c;
 
-    invoke-direct {v3, p0, v0}, Lcom/android/settings/c;-><init>(Lcom/android/settings/AccessControlFragment;Landroid/preference/CheckBoxPreference;)V
+    invoke-direct {v3, p0, v0}, Lcom/android/vendorsettings/c;-><init>(Lcom/android/vendorsettings/AccessControlFragment;Landroid/preference/CheckBoxPreference;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 125
     const/high16 v0, 0x1040000
 
-    new-instance v2, Lcom/android/settings/d;
+    new-instance v2, Lcom/android/vendorsettings/d;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/d;-><init>(Lcom/android/settings/AccessControlFragment;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/d;-><init>(Lcom/android/vendorsettings/AccessControlFragment;)V
 
     invoke-virtual {v1, v0, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -366,7 +366,7 @@
     .line 174
     :cond_0
     :goto_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -374,7 +374,7 @@
 
     .line 135
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0}, Landroid/security/ChooseLockSettingsHelper;->isACLockEnabled()Z
 
@@ -382,7 +382,7 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0}, Landroid/security/ChooseLockSettingsHelper;->isPasswordForPrivacyModeEnabled()Z
 
@@ -415,7 +415,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 142
-    invoke-virtual {p0}, Lcom/android/settings/AccessControlFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AccessControlFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -425,7 +425,7 @@
 
     .line 144
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0, v2}, Landroid/security/ChooseLockSettingsHelper;->setPrivacyModeEnabled(Z)V
 
@@ -446,7 +446,7 @@
     if-eqz v0, :cond_5
 
     .line 148
-    iget-object v0, p0, Lcom/android/settings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0}, Landroid/security/ChooseLockSettingsHelper;->isACLockEnabled()Z
 
@@ -458,18 +458,18 @@
     .line 150
     new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Lcom/android/settings/AccessControlFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AccessControlFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/ChooseAccessControl;
+    const-class v2, Lcom/android/vendorsettings/ChooseAccessControl;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 151
     const/16 v1, 0x64
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/AccessControlFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/AccessControlFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 
@@ -477,11 +477,11 @@
     :cond_4
     new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Lcom/android/settings/AccessControlFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AccessControlFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/ConfirmAccessControl;
+    const-class v2, Lcom/android/vendorsettings/ConfirmAccessControl;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -493,7 +493,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 156
-    invoke-virtual {p0, v0}, Lcom/android/settings/AccessControlFragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/AccessControlFragment;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -526,7 +526,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 161
-    invoke-virtual {p0, v0}, Lcom/android/settings/AccessControlFragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/AccessControlFragment;->startActivity(Landroid/content/Intent;)V
 
     goto/16 :goto_0
 
@@ -545,7 +545,7 @@
     if-eqz v0, :cond_0
 
     .line 163
-    iget-object v0, p0, Lcom/android/settings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0}, Landroid/security/ChooseLockSettingsHelper;->isPasswordForPrivacyModeEnabled()Z
 
@@ -554,11 +554,11 @@
     .line 164
     new-instance v1, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Lcom/android/settings/AccessControlFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AccessControlFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    const-class v3, Lcom/android/settings/ConfirmAccessControl;
+    const-class v3, Lcom/android/vendorsettings/ConfirmAccessControl;
 
     invoke-direct {v1, v2, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -574,7 +574,7 @@
 
     .line 172
     :goto_1
-    invoke-virtual {p0, v1}, Lcom/android/settings/AccessControlFragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/AccessControlFragment;->startActivity(Landroid/content/Intent;)V
 
     goto/16 :goto_0
 
@@ -594,38 +594,38 @@
 
     .prologue
     .line 92
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 93
-    invoke-direct {p0}, Lcom/android/settings/AccessControlFragment;->g()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/AccessControlFragment;->g()V
 
     .line 94
-    iget-object v0, p0, Lcom/android/settings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0}, Landroid/security/ChooseLockSettingsHelper;->isACLockEnabled()Z
 
     move-result v0
 
     .line 95
-    iget-object v1, p0, Lcom/android/settings/AccessControlFragment;->e:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/AccessControlFragment;->e:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 96
-    iget-boolean v1, p0, Lcom/android/settings/AccessControlFragment;->a:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/AccessControlFragment;->a:Z
 
     if-eqz v1, :cond_0
 
     .line 97
-    iget-object v1, p0, Lcom/android/settings/AccessControlFragment;->c:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/AccessControlFragment;->c:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 99
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/AccessControlFragment;->e:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/AccessControlFragment;->e:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v1, p0, Lcom/android/vendorsettings/AccessControlFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v1}, Landroid/security/ChooseLockSettingsHelper;->isPasswordForPrivacyModeEnabled()Z
 

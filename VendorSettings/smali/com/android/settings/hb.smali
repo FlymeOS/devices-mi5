@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/hb;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/vendorsettings/hb;
+.super Lcom/android/vendorsettings/search/a;
 .source "ScreenPinningSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 203
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/search/a;-><init>()V
 
     return-void
 .end method
@@ -33,38 +33,38 @@
     move-result-object v1
 
     .line 211
-    new-instance v2, Lcom/android/settings/search/n;
+    new-instance v2, Lcom/android/vendorsettings/search/n;
 
-    invoke-direct {v2, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v2, p1}, Lcom/android/vendorsettings/search/n;-><init>(Landroid/content/Context;)V
 
     .line 212
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    iput-object v3, v2, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v3, v2, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
     .line 213
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    iput-object v3, v2, Lcom/android/settings/search/n;->apu:Ljava/lang/String;
+    iput-object v3, v2, Lcom/android/vendorsettings/search/n;->apu:Ljava/lang/String;
 
     .line 214
     invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 216
-    invoke-static {p1}, Lcom/android/settings/ScreenPinningSettings;->R(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/ScreenPinningSettings;->R(Landroid/content/Context;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
     .line 218
-    new-instance v2, Lcom/android/settings/search/n;
+    new-instance v2, Lcom/android/vendorsettings/search/n;
 
-    invoke-direct {v2, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v2, p1}, Lcom/android/vendorsettings/search/n;-><init>(Landroid/content/Context;)V
 
     .line 219
     const v3, 0x7f0c0ac2
@@ -73,14 +73,14 @@
 
     move-result-object v3
 
-    iput-object v3, v2, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v3, v2, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
     .line 220
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v2, Lcom/android/settings/search/n;->apu:Ljava/lang/String;
+    iput-object v1, v2, Lcom/android/vendorsettings/search/n;->apu:Ljava/lang/String;
 
     .line 221
     invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -91,9 +91,9 @@
 
     .line 224
     :cond_0
-    new-instance v2, Lcom/android/settings/search/n;
+    new-instance v2, Lcom/android/vendorsettings/search/n;
 
-    invoke-direct {v2, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v2, p1}, Lcom/android/vendorsettings/search/n;-><init>(Landroid/content/Context;)V
 
     .line 225
     const v3, 0x7f0c0abe
@@ -102,14 +102,14 @@
 
     move-result-object v3
 
-    iput-object v3, v2, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v3, v2, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
     .line 226
     invoke-virtual {v1, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, v2, Lcom/android/settings/search/n;->apu:Ljava/lang/String;
+    iput-object v1, v2, Lcom/android/vendorsettings/search/n;->apu:Ljava/lang/String;
 
     .line 227
     invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z

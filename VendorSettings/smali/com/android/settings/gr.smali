@@ -1,4 +1,4 @@
-.class Lcom/android/settings/gr;
+.class Lcom/android/vendorsettings/gr;
 .super Ljava/lang/Object;
 .source "ProxySelector.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic wq:Lcom/android/settings/ProxySelector;
+.field final synthetic wq:Lcom/android/vendorsettings/ProxySelector;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ProxySelector;)V
+.method constructor <init>(Lcom/android/vendorsettings/ProxySelector;)V
     .locals 0
 
     .prologue
     .line 266
-    iput-object p1, p0, Lcom/android/settings/gr;->wq:Lcom/android/settings/ProxySelector;
+    iput-object p1, p0, Lcom/android/vendorsettings/gr;->wq:Lcom/android/vendorsettings/ProxySelector;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

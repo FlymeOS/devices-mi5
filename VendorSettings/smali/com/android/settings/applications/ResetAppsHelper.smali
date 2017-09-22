@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/ResetAppsHelper;
+.class public Lcom/android/vendorsettings/applications/ResetAppsHelper;
 .super Ljava/lang/Object;
 .source "ResetAppsHelper.java"
 
@@ -32,14 +32,14 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 56
-    iput-object p1, p0, Lcom/android/settings/applications/ResetAppsHelper;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->mContext:Landroid/content/Context;
 
     .line 57
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->i:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->i:Landroid/content/pm/PackageManager;
 
     .line 58
     const-string v0, "package"
@@ -52,7 +52,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->MA:Landroid/content/pm/IPackageManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->MA:Landroid/content/pm/IPackageManager;
 
     .line 59
     const-string v0, "notification"
@@ -65,14 +65,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->MB:Landroid/app/INotificationManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->MB:Landroid/app/INotificationManager;
 
     .line 61
     invoke-static {p1}, Landroid/net/NetworkPolicyManager;->from(Landroid/content/Context;)Landroid/net/NetworkPolicyManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->MC:Landroid/net/NetworkPolicyManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->MC:Landroid/net/NetworkPolicyManager;
 
     .line 62
     const-string v0, "appops"
@@ -83,58 +83,58 @@
 
     check-cast v0, Landroid/app/AppOpsManager;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->MD:Landroid/app/AppOpsManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->MD:Landroid/app/AppOpsManager;
 
     .line 63
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/ResetAppsHelper;)Landroid/content/pm/PackageManager;
+.method static synthetic a(Lcom/android/vendorsettings/applications/ResetAppsHelper;)Landroid/content/pm/PackageManager;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->i:Landroid/content/pm/PackageManager;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/applications/ResetAppsHelper;)Landroid/app/INotificationManager;
+.method static synthetic b(Lcom/android/vendorsettings/applications/ResetAppsHelper;)Landroid/app/INotificationManager;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->MB:Landroid/app/INotificationManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->MB:Landroid/app/INotificationManager;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/applications/ResetAppsHelper;)Landroid/content/pm/IPackageManager;
+.method static synthetic c(Lcom/android/vendorsettings/applications/ResetAppsHelper;)Landroid/content/pm/IPackageManager;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->MA:Landroid/content/pm/IPackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->MA:Landroid/content/pm/IPackageManager;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/applications/ResetAppsHelper;)Landroid/app/AppOpsManager;
+.method static synthetic d(Lcom/android/vendorsettings/applications/ResetAppsHelper;)Landroid/app/AppOpsManager;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->MD:Landroid/app/AppOpsManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->MD:Landroid/app/AppOpsManager;
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/applications/ResetAppsHelper;)Landroid/net/NetworkPolicyManager;
+.method static synthetic e(Lcom/android/vendorsettings/applications/ResetAppsHelper;)Landroid/net/NetworkPolicyManager;
     .locals 1
 
     .prologue
     .line 41
-    iget-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->MC:Landroid/net/NetworkPolicyManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->MC:Landroid/net/NetworkPolicyManager;
 
     return-object v0
 .end method
@@ -146,14 +146,14 @@
 
     .prologue
     .line 85
-    iget-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->Hu:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->Hu:Landroid/app/AlertDialog;
 
     if-nez v0, :cond_0
 
     .line 86
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    iget-object v1, p0, Lcom/android/settings/applications/ResetAppsHelper;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->mContext:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
@@ -191,7 +191,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->Hu:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->Hu:Landroid/app/AlertDialog;
 
     .line 94
     :cond_0
@@ -203,7 +203,7 @@
 
     .prologue
     .line 105
-    iget-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->Hu:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->Hu:Landroid/app/AlertDialog;
 
     if-eq v0, p1, :cond_0
 
@@ -213,9 +213,9 @@
 
     .line 108
     :cond_0
-    new-instance v0, Lcom/android/settings/applications/ResetAppsHelper$1;
+    new-instance v0, Lcom/android/vendorsettings/applications/ResetAppsHelper$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/applications/ResetAppsHelper$1;-><init>(Lcom/android/settings/applications/ResetAppsHelper;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/applications/ResetAppsHelper$1;-><init>(Lcom/android/vendorsettings/applications/ResetAppsHelper;)V
 
     invoke-static {v0}, Landroid/os/AsyncTask;->execute(Ljava/lang/Runnable;)V
 
@@ -227,14 +227,14 @@
 
     .prologue
     .line 98
-    iget-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->Hu:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->Hu:Landroid/app/AlertDialog;
 
     if-ne v0, p1, :cond_0
 
     .line 99
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->Hu:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->Hu:Landroid/app/AlertDialog;
 
     .line 101
     :cond_0
@@ -257,7 +257,7 @@
     if-eqz v0, :cond_0
 
     .line 67
-    invoke-virtual {p0}, Lcom/android/settings/applications/ResetAppsHelper;->kg()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ResetAppsHelper;->kg()V
 
     .line 69
     :cond_0
@@ -269,7 +269,7 @@
 
     .prologue
     .line 72
-    iget-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->Hu:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->Hu:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
@@ -290,19 +290,19 @@
 
     .prologue
     .line 78
-    iget-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->Hu:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->Hu:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
     .line 79
-    iget-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->Hu:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->Hu:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 80
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ResetAppsHelper;->Hu:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ResetAppsHelper;->Hu:Landroid/app/AlertDialog;
 
     .line 82
     :cond_0

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hT;
+.class Lcom/android/vendorsettings/hT;
 .super Ljava/lang/Object;
 .source "TetherSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic AU:Lcom/android/settings/TetherSettings;
+.field final synthetic AU:Lcom/android/vendorsettings/TetherSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/TetherSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/TetherSettings;)V
     .locals 0
 
     .prologue
     .line 282
-    iput-object p1, p0, Lcom/android/settings/hT;->AU:Lcom/android/settings/TetherSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/hT;->AU:Lcom/android/vendorsettings/TetherSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 284
-    iget-object v0, p0, Lcom/android/settings/hT;->AU:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/hT;->AU:Lcom/android/vendorsettings/TetherSettings;
 
-    invoke-static {v0}, Lcom/android/settings/TetherSettings;->a(Lcom/android/settings/TetherSettings;)Ljava/util/concurrent/atomic/AtomicReference;
+    invoke-static {v0}, Lcom/android/vendorsettings/TetherSettings;->a(Lcom/android/vendorsettings/TetherSettings;)Ljava/util/concurrent/atomic/AtomicReference;
 
     move-result-object v0
 
@@ -49,9 +49,9 @@
 
     .prologue
     .line 287
-    iget-object v0, p0, Lcom/android/settings/hT;->AU:Lcom/android/settings/TetherSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/hT;->AU:Lcom/android/vendorsettings/TetherSettings;
 
-    invoke-static {v0}, Lcom/android/settings/TetherSettings;->a(Lcom/android/settings/TetherSettings;)Ljava/util/concurrent/atomic/AtomicReference;
+    invoke-static {v0}, Lcom/android/vendorsettings/TetherSettings;->a(Lcom/android/vendorsettings/TetherSettings;)Ljava/util/concurrent/atomic/AtomicReference;
 
     move-result-object v0
 

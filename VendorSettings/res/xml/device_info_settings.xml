@@ -16,14 +16,14 @@
     <miui.preference.ValuePreference android:title="@string/hardware_version" android:key="hardware_version" />
     <miui.preference.ValuePreference android:title="@string/wifi_type_approval_title" android:key="wifi_type_approval" />
     <PreferenceScreen android:title="@string/device_status" android:key="status_info" android:summary="@string/device_status_summary">
-        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.deviceinfo.Status" />
+        <intent android:targetPackage="com.android.vendorsettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.vendorsettings.deviceinfo.Status" />
     </PreferenceScreen>
     <PreferenceCategory android:key="user">
         <PreferenceScreen android:title="@string/translation_contributors_title" android:key="translation_contributors">
-            <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings.TranslationContributors" />
+            <intent android:targetPackage="com.android.vendorsettings" android:targetClass="com.android.vendorsettings.TranslationContributors" />
         </PreferenceScreen>
         <Preference android:title="@miui:string/user_manual" android:key="user_manual" />
-        <PreferenceScreen android:title="@string/legal_information" android:key="container" android:fragment="com.android.settings.Legal" />
+        <PreferenceScreen android:title="@string/legal_information" android:key="container" android:fragment="com.android.vendorsettings.Legal" />
         <PreferenceScreen android:title="@string/settings_safetylegal_title" android:key="safetylegal">
             <intent android:action="android.settings.SAFETY" />
         </PreferenceScreen>

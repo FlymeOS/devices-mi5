@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hY;
+.class Lcom/android/vendorsettings/hY;
 .super Ljava/lang/Object;
 .source "ToggleArrangementFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Be:Lcom/android/settings/ToggleArrangementFragment;
+.field final synthetic Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ToggleArrangementFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/ToggleArrangementFragment;)V
     .locals 0
 
     .prologue
     .line 99
-    iput-object p1, p0, Lcom/android/settings/hY;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/hY;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 102
-    iget-object v0, p0, Lcom/android/settings/hY;->Be:Lcom/android/settings/ToggleArrangementFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/hY;->Be:Lcom/android/vendorsettings/ToggleArrangementFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ToggleArrangementFragment;->a(Lcom/android/settings/ToggleArrangementFragment;)Lcom/android/settings/hZ;
+    invoke-static {v0}, Lcom/android/vendorsettings/ToggleArrangementFragment;->a(Lcom/android/vendorsettings/ToggleArrangementFragment;)Lcom/android/vendorsettings/hZ;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/hZ;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/hZ;->notifyDataSetChanged()V
 
     .line 103
     return-void

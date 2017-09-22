@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/ProcStatsPackageEntry$1;
+.class final Lcom/android/vendorsettings/applications/ProcStatsPackageEntry$1;
 .super Ljava/lang/Object;
 .source "ProcStatsPackageEntry.java"
 
@@ -19,12 +19,12 @@
 
 
 # virtual methods
-.method public aZ(I)[Lcom/android/settings/applications/ProcStatsPackageEntry;
+.method public aZ(I)[Lcom/android/vendorsettings/applications/ProcStatsPackageEntry;
     .locals 1
 
     .prologue
     .line 159
-    new-array v0, p1, [Lcom/android/settings/applications/ProcStatsPackageEntry;
+    new-array v0, p1, [Lcom/android/vendorsettings/applications/ProcStatsPackageEntry;
 
     return-object v0
 .end method
@@ -34,21 +34,21 @@
 
     .prologue
     .line 153
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/ProcStatsPackageEntry$1;->j(Landroid/os/Parcel;)Lcom/android/settings/applications/ProcStatsPackageEntry;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/applications/ProcStatsPackageEntry$1;->j(Landroid/os/Parcel;)Lcom/android/vendorsettings/applications/ProcStatsPackageEntry;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public j(Landroid/os/Parcel;)Lcom/android/settings/applications/ProcStatsPackageEntry;
+.method public j(Landroid/os/Parcel;)Lcom/android/vendorsettings/applications/ProcStatsPackageEntry;
     .locals 1
 
     .prologue
     .line 155
-    new-instance v0, Lcom/android/settings/applications/ProcStatsPackageEntry;
+    new-instance v0, Lcom/android/vendorsettings/applications/ProcStatsPackageEntry;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/applications/ProcStatsPackageEntry;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/vendorsettings/applications/ProcStatsPackageEntry;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 153
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/ProcStatsPackageEntry$1;->aZ(I)[Lcom/android/settings/applications/ProcStatsPackageEntry;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/applications/ProcStatsPackageEntry$1;->aZ(I)[Lcom/android/vendorsettings/applications/ProcStatsPackageEntry;
 
     move-result-object v0
 

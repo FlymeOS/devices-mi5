@@ -1,31 +1,31 @@
-.class Lcom/android/settings/search/i;
+.class Lcom/android/vendorsettings/search/i;
 .super Landroid/os/AsyncTask;
 .source "Index.java"
 
 
 # instance fields
-.field final synthetic apj:Lcom/android/settings/search/e;
+.field final synthetic apj:Lcom/android/vendorsettings/search/e;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/search/e;)V
+.method private constructor <init>(Lcom/android/vendorsettings/search/e;)V
     .locals 0
 
     .prologue
     .line 1158
-    iput-object p1, p0, Lcom/android/settings/search/i;->apj:Lcom/android/settings/search/e;
+    iput-object p1, p0, Lcom/android/vendorsettings/search/i;->apj:Lcom/android/vendorsettings/search/e;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/search/e;Lcom/android/settings/search/f;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/search/e;Lcom/android/vendorsettings/search/f;)V
     .locals 0
 
     .prologue
     .line 1158
-    invoke-direct {p0, p1}, Lcom/android/settings/search/i;-><init>(Lcom/android/settings/search/e;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/search/i;-><init>(Lcom/android/vendorsettings/search/e;)V
 
     return-void
 .end method
@@ -233,21 +233,21 @@
 
     iget-object v0, v0, Landroid/provider/SearchIndexableData;->className:Ljava/lang/String;
 
-    invoke-direct {p0, p1, v6, v0}, Lcom/android/settings/search/i;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;)I
+    invoke-direct {p0, p1, v6, v0}, Lcom/android/vendorsettings/search/i;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_1
 
     .line 1248
     :cond_2
-    instance-of v6, v0, Lcom/android/settings/search/n;
+    instance-of v6, v0, Lcom/android/vendorsettings/search/n;
 
     if-eqz v6, :cond_0
 
     .line 1249
-    check-cast v0, Lcom/android/settings/search/n;
+    check-cast v0, Lcom/android/vendorsettings/search/n;
 
     .line 1250
-    iget-object v6, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iget-object v6, v0, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
     invoke-static {v6}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -258,9 +258,9 @@
     .line 1251
     const-string v6, "data_title"
 
-    iget-object v0, v0, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
-    invoke-direct {p0, p1, v6, v0}, Lcom/android/settings/search/i;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;)I
+    invoke-direct {p0, p1, v6, v0}, Lcom/android/vendorsettings/search/i;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_1
 
@@ -324,7 +324,7 @@
     .line 1208
     if-nez p5, :cond_0
 
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/search/i;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/search/i;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -392,9 +392,9 @@
 
     .line 1220
     :try_start_0
-    iget-object v2, p0, Lcom/android/settings/search/i;->apj:Lcom/android/settings/search/e;
+    iget-object v2, p0, Lcom/android/vendorsettings/search/i;->apj:Lcom/android/vendorsettings/search/e;
 
-    invoke-static {v2, p1, p2, v0, p4}, Lcom/android/settings/search/e;->a(Lcom/android/settings/search/e;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Landroid/provider/SearchIndexableData;Ljava/util/Map;)V
+    invoke-static {v2, p1, p2, v0, p4}, Lcom/android/vendorsettings/search/e;->a(Lcom/android/vendorsettings/search/e;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Landroid/provider/SearchIndexableData;Ljava/util/Map;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -502,7 +502,7 @@
 
 
 # virtual methods
-.method protected varargs a([Lcom/android/settings/search/h;)Ljava/lang/Void;
+.method protected varargs a([Lcom/android/vendorsettings/search/h;)Ljava/lang/Void;
     .locals 8
 
     .prologue
@@ -513,27 +513,27 @@
     .line 1174
     aget-object v0, p1, v2
 
-    iget-object v3, v0, Lcom/android/settings/search/h;->apk:Ljava/util/List;
+    iget-object v3, v0, Lcom/android/vendorsettings/search/h;->apk:Ljava/util/List;
 
     .line 1175
     aget-object v0, p1, v2
 
-    iget-object v0, v0, Lcom/android/settings/search/h;->apl:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/vendorsettings/search/h;->apl:Ljava/util/List;
 
     .line 1176
     aget-object v1, p1, v2
 
-    iget-object v4, v1, Lcom/android/settings/search/h;->apm:Ljava/util/Map;
+    iget-object v4, v1, Lcom/android/vendorsettings/search/h;->apm:Ljava/util/Map;
 
     .line 1178
     aget-object v1, p1, v2
 
-    iget-boolean v5, v1, Lcom/android/settings/search/h;->apn:Z
+    iget-boolean v5, v1, Lcom/android/vendorsettings/search/h;->apn:Z
 
     .line 1180
-    iget-object v1, p0, Lcom/android/settings/search/i;->apj:Lcom/android/settings/search/e;
+    iget-object v1, p0, Lcom/android/vendorsettings/search/i;->apj:Lcom/android/vendorsettings/search/e;
 
-    invoke-static {v1}, Lcom/android/settings/search/e;->b(Lcom/android/settings/search/e;)Landroid/database/sqlite/SQLiteDatabase;
+    invoke-static {v1}, Lcom/android/vendorsettings/search/e;->b(Lcom/android/vendorsettings/search/e;)Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
@@ -573,7 +573,7 @@
     if-lez v6, :cond_1
 
     .line 1190
-    invoke-direct {p0, v1, v2, v0}, Lcom/android/settings/search/i;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/util/List;)Z
+    invoke-direct {p0, v1, v2, v0}, Lcom/android/vendorsettings/search/i;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/util/List;)Z
 
     .line 1192
     :cond_1
@@ -586,7 +586,7 @@
     move-object v0, p0
 
     .line 1193
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/search/i;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/util/List;Ljava/util/Map;Z)Z
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/search/i;->a(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/util/List;Ljava/util/Map;Z)Z
 
     .line 1196
     :cond_2
@@ -612,9 +612,9 @@
 
     .prologue
     .line 1158
-    check-cast p1, [Lcom/android/settings/search/h;
+    check-cast p1, [Lcom/android/vendorsettings/search/h;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/search/i;->a([Lcom/android/settings/search/h;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/search/i;->a([Lcom/android/vendorsettings/search/h;)Ljava/lang/Void;
 
     move-result-object v0
 
@@ -628,7 +628,7 @@
     .line 1158
     check-cast p1, Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/search/i;->onPostExecute(Ljava/lang/Void;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/search/i;->onPostExecute(Ljava/lang/Void;)V
 
     return-void
 .end method
@@ -641,9 +641,9 @@
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
 
     .line 1169
-    iget-object v0, p0, Lcom/android/settings/search/i;->apj:Lcom/android/settings/search/e;
+    iget-object v0, p0, Lcom/android/vendorsettings/search/i;->apj:Lcom/android/vendorsettings/search/e;
 
-    invoke-static {v0}, Lcom/android/settings/search/e;->a(Lcom/android/settings/search/e;)Ljava/util/concurrent/atomic/AtomicBoolean;
+    invoke-static {v0}, Lcom/android/vendorsettings/search/e;->a(Lcom/android/vendorsettings/search/e;)Ljava/util/concurrent/atomic/AtomicBoolean;
 
     move-result-object v0
 
@@ -663,9 +663,9 @@
     invoke-super {p0}, Landroid/os/AsyncTask;->onPreExecute()V
 
     .line 1163
-    iget-object v0, p0, Lcom/android/settings/search/i;->apj:Lcom/android/settings/search/e;
+    iget-object v0, p0, Lcom/android/vendorsettings/search/i;->apj:Lcom/android/vendorsettings/search/e;
 
-    invoke-static {v0}, Lcom/android/settings/search/e;->a(Lcom/android/settings/search/e;)Ljava/util/concurrent/atomic/AtomicBoolean;
+    invoke-static {v0}, Lcom/android/vendorsettings/search/e;->a(Lcom/android/vendorsettings/search/e;)Ljava/util/concurrent/atomic/AtomicBoolean;
 
     move-result-object v0
 

@@ -1,11 +1,11 @@
-.class public interface abstract Lcom/android/settings/widget/h;
+.class public interface abstract Lcom/android/vendorsettings/widget/h;
 .super Ljava/lang/Object;
 .source "ChartSweepView.java"
 
 
 # virtual methods
-.method public abstract b(Lcom/android/settings/widget/ChartSweepView;Z)V
+.method public abstract b(Lcom/android/vendorsettings/widget/ChartSweepView;Z)V
 .end method
 
-.method public abstract c(Lcom/android/settings/widget/ChartSweepView;)V
+.method public abstract c(Lcom/android/vendorsettings/widget/ChartSweepView;)V
 .end method

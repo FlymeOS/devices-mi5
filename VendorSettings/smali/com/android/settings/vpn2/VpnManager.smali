@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/vpn2/VpnManager;
+.class public Lcom/android/vendorsettings/vpn2/VpnManager;
 .super Ljava/lang/Object;
 .source "VpnManager.java"
 
@@ -26,14 +26,14 @@
     .line 29
     const-string v0, "VpnManager"
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/VpnManager;->TAG:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->TAG:Ljava/lang/String;
 
     .line 33
     invoke-static {}, Landroid/security/KeyStore;->getInstance()Landroid/security/KeyStore;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/VpnManager;->dt:Landroid/security/KeyStore;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->dt:Landroid/security/KeyStore;
 
     .line 34
     const-string v0, "connectivity"
@@ -46,13 +46,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/VpnManager;->awc:Landroid/net/IConnectivityManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->awc:Landroid/net/IConnectivityManager;
 
     .line 38
-    iput-object p1, p0, Lcom/android/settings/vpn2/VpnManager;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->mContext:Landroid/content/Context;
 
     .line 39
-    iget-object v0, p0, Lcom/android/settings/vpn2/VpnManager;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->mContext:Landroid/content/Context;
 
     const-string v1, "user"
 
@@ -62,7 +62,7 @@
 
     check-cast v0, Landroid/os/UserManager;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/VpnManager;->sR:Landroid/os/UserManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->sR:Landroid/os/UserManager;
 
     .line 40
     return-void
@@ -76,7 +76,7 @@
     const/4 v0, 0x0
 
     .line 135
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/VpnManager;->vR()Ljava/util/List;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/vpn2/VpnManager;->vR()Ljava/util/List;
 
     move-result-object v1
 
@@ -183,11 +183,11 @@
     .line 154
     iget-object v0, p1, Lcom/android/internal/net/VpnProfile;->key:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/vpn2/VpnManager;->disconnect(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/vpn2/VpnManager;->disconnect(Ljava/lang/String;)V
 
     .line 158
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/vpn2/VpnManager;->awc:Landroid/net/IConnectivityManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->awc:Landroid/net/IConnectivityManager;
 
     invoke-interface {v0, p1}, Landroid/net/IConnectivityManager;->startLegacyVpn(Lcom/android/internal/net/VpnProfile;)V
     :try_end_0
@@ -224,7 +224,7 @@
     move-result-object v0
 
     .line 53
-    iget-object v1, p0, Lcom/android/settings/vpn2/VpnManager;->dt:Landroid/security/KeyStore;
+    iget-object v1, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->dt:Landroid/security/KeyStore;
 
     invoke-virtual {v1}, Landroid/security/KeyStore;->isUnlocked()Z
 
@@ -238,7 +238,7 @@
 
     .line 58
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/vpn2/VpnManager;->dt:Landroid/security/KeyStore;
+    iget-object v1, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->dt:Landroid/security/KeyStore;
 
     const-string v2, "VPN_"
 
@@ -256,7 +256,7 @@
     aget-object v4, v2, v1
 
     .line 59
-    iget-object v5, p0, Lcom/android/settings/vpn2/VpnManager;->dt:Landroid/security/KeyStore;
+    iget-object v5, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->dt:Landroid/security/KeyStore;
 
     new-instance v6, Ljava/lang/StringBuilder;
 
@@ -311,7 +311,7 @@
     .prologue
     .line 169
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/vpn2/VpnManager;->awc:Landroid/net/IConnectivityManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->awc:Landroid/net/IConnectivityManager;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -333,7 +333,7 @@
     if-eqz v0, :cond_0
 
     .line 171
-    iget-object v0, p0, Lcom/android/settings/vpn2/VpnManager;->awc:Landroid/net/IConnectivityManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->awc:Landroid/net/IConnectivityManager;
 
     const-string v1, "[Legacy VPN]"
 
@@ -357,7 +357,7 @@
     move-exception v0
 
     .line 175
-    iget-object v1, p0, Lcom/android/settings/vpn2/VpnManager;->TAG:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->TAG:Ljava/lang/String;
 
     const-string v2, "Failed to disconnect"
 
@@ -371,7 +371,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/vpn2/VpnManager;->dt:Landroid/security/KeyStore;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->dt:Landroid/security/KeyStore;
 
     const-string v1, "VPN_"
 
@@ -381,7 +381,7 @@
 
     array-length v0, v0
 
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/VpnManager;->vR()Ljava/util/List;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/vpn2/VpnManager;->vR()Ljava/util/List;
 
     move-result-object v1
 
@@ -415,7 +415,7 @@
     invoke-direct {v6}, Landroid/util/SparseArray;-><init>()V
 
     .line 73
-    iget-object v0, p0, Lcom/android/settings/vpn2/VpnManager;->sR:Landroid/os/UserManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->sR:Landroid/os/UserManager;
 
     invoke-virtual {v0}, Landroid/os/UserManager;->getUserProfiles()Ljava/util/List;
 
@@ -451,7 +451,7 @@
 
     .line 78
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/vpn2/VpnManager;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->mContext:Landroid/content/Context;
 
     const-string v1, "appops"
 
@@ -581,7 +581,7 @@
 
     .line 109
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/vpn2/VpnManager;->awc:Landroid/net/IConnectivityManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->awc:Landroid/net/IConnectivityManager;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -599,7 +599,7 @@
 
     .line 117
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/vpn2/VpnManager;->sR:Landroid/os/UserManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->sR:Landroid/os/UserManager;
 
     invoke-virtual {v0}, Landroid/os/UserManager;->getUserProfiles()Ljava/util/List;
 
@@ -623,7 +623,7 @@
     check-cast v0, Landroid/os/UserHandle;
 
     .line 118
-    iget-object v3, p0, Lcom/android/settings/vpn2/VpnManager;->awc:Landroid/net/IConnectivityManager;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/VpnManager;->awc:Landroid/net/IConnectivityManager;
 
     invoke-virtual {v0}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -638,7 +638,7 @@
 
     iget-object v0, v0, Lcom/android/internal/net/VpnConfig;->user:Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/vpn2/VpnManager;->bU(Ljava/lang/String;)Z
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/vpn2/VpnManager;->bU(Ljava/lang/String;)Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

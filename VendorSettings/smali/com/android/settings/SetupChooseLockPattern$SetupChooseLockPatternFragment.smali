@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/SetupChooseLockPattern$SetupChooseLockPatternFragment;
-.super Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;
+.class public Lcom/android/vendorsettings/SetupChooseLockPattern$SetupChooseLockPatternFragment;
+.super Lcom/android/vendorsettings/ChooseLockPattern$ChooseLockPatternFragment;
 .source "SetupChooseLockPattern.java"
 
 # interfaces
@@ -18,7 +18,7 @@
 
     .prologue
     .line 76
-    invoke-direct {p0}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/ChooseLockPattern$ChooseLockPatternFragment;-><init>()V
 
     return-void
 .end method
@@ -45,15 +45,15 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/SetupChooseLockPattern$SetupChooseLockPatternFragment;->Ag:Lcom/android/setupwizardlib/view/NavigationBar;
+    iput-object v1, p0, Lcom/android/vendorsettings/SetupChooseLockPattern$SetupChooseLockPatternFragment;->Ag:Lcom/android/setupwizardlib/view/NavigationBar;
 
     .line 88
-    iget-object v1, p0, Lcom/android/settings/SetupChooseLockPattern$SetupChooseLockPatternFragment;->Ag:Lcom/android/setupwizardlib/view/NavigationBar;
+    iget-object v1, p0, Lcom/android/vendorsettings/SetupChooseLockPattern$SetupChooseLockPatternFragment;->Ag:Lcom/android/setupwizardlib/view/NavigationBar;
 
     invoke-virtual {v1, p0}, Lcom/android/setupwizardlib/view/NavigationBar;->a(Lcom/android/setupwizardlib/view/c;)V
 
     .line 89
-    invoke-virtual {p0}, Lcom/android/settings/SetupChooseLockPattern$SetupChooseLockPatternFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SetupChooseLockPattern$SetupChooseLockPatternFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -67,17 +67,17 @@
     return-object v0
 .end method
 
-.method protected a(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;)V
+.method protected a(Lcom/android/vendorsettings/ChooseLockPattern$ChooseLockPatternFragment$Stage;)V
     .locals 2
 
     .prologue
     .line 127
-    invoke-super {p0, p1}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/ChooseLockPattern$ChooseLockPatternFragment;->a(Lcom/android/vendorsettings/ChooseLockPattern$ChooseLockPatternFragment$Stage;)V
 
     .line 129
-    iget-object v1, p0, Lcom/android/settings/SetupChooseLockPattern$SetupChooseLockPatternFragment;->Ah:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/vendorsettings/SetupChooseLockPattern$SetupChooseLockPatternFragment;->Ah:Landroid/widget/Button;
 
-    sget-object v0, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;->eL:Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment$Stage;
+    sget-object v0, Lcom/android/vendorsettings/ChooseLockPattern$ChooseLockPatternFragment$Stage;->eL:Lcom/android/vendorsettings/ChooseLockPattern$ChooseLockPatternFragment$Stage;
 
     if-ne p1, v0, :cond_0
 
@@ -101,7 +101,7 @@
 
     .prologue
     .line 133
-    invoke-virtual {p0}, Lcom/android/settings/SetupChooseLockPattern$SetupChooseLockPatternFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SetupChooseLockPattern$SetupChooseLockPatternFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -129,7 +129,7 @@
 
     .prologue
     .line 111
-    iget-object v0, p0, Lcom/android/settings/SetupChooseLockPattern$SetupChooseLockPatternFragment;->Ah:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/SetupChooseLockPattern$SetupChooseLockPatternFragment;->Ah:Landroid/widget/Button;
 
     if-ne p1, v0, :cond_0
 
@@ -139,7 +139,7 @@
 
     .line 114
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->onClick(Landroid/view/View;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/ChooseLockPattern$ChooseLockPatternFragment;->onClick(Landroid/view/View;)V
 
     goto :goto_0
 .end method
@@ -157,22 +157,22 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/SetupChooseLockPattern$SetupChooseLockPatternFragment;->Ah:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/vendorsettings/SetupChooseLockPattern$SetupChooseLockPatternFragment;->Ah:Landroid/widget/Button;
 
     .line 96
-    iget-object v0, p0, Lcom/android/settings/SetupChooseLockPattern$SetupChooseLockPatternFragment;->Ah:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/SetupChooseLockPattern$SetupChooseLockPatternFragment;->Ah:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 97
-    invoke-super {p0, p1, p2}, Lcom/android/settings/ChooseLockPattern$ChooseLockPatternFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/ChooseLockPattern$ChooseLockPatternFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 98
-    invoke-virtual {p0}, Lcom/android/settings/SetupChooseLockPattern$SetupChooseLockPatternFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SetupChooseLockPattern$SetupChooseLockPatternFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/hH;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/hH;->a(Landroid/app/Activity;)V
 
     .line 99
     return-void

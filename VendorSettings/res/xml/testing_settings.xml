@@ -4,12 +4,12 @@
     <PreferenceScreen android:title="@string/testing_phone_info" android:key="phone1" />
     <PreferenceScreen android:title="@string/testing_phone_info" android:key="phone2" />
     <PreferenceScreen android:title="@string/battery_info_label">
-        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.BatteryInfo" />
+        <intent android:targetPackage="com.android.vendorsettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.vendorsettings.BatteryInfo" />
     </PreferenceScreen>
     <PreferenceScreen android:title="@string/testing_usage_stats">
-        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.UsageStatsActivity" />
+        <intent android:targetPackage="com.android.vendorsettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.vendorsettings.UsageStatsActivity" />
     </PreferenceScreen>
     <PreferenceScreen android:title="@string/testing_wifi_info">
-        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.wifi.WifiInfo" />
+        <intent android:targetPackage="com.android.vendorsettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.vendorsettings.wifi.WifiInfo" />
     </PreferenceScreen>
 </PreferenceScreen>

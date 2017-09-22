@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/SpellCheckersSettings$2;
+.class Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings$2;
 .super Ljava/lang/Object;
 .source "SpellCheckersSettings.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic agM:Lcom/android/settings/inputmethod/SpellCheckersSettings;
+.field final synthetic agM:Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;
 
 .field final synthetic agN:Landroid/view/textservice/SpellCheckerInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/inputmethod/SpellCheckersSettings;Landroid/view/textservice/SpellCheckerInfo;)V
+.method constructor <init>(Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;Landroid/view/textservice/SpellCheckerInfo;)V
     .locals 0
 
     .prologue
     .line 230
-    iput-object p1, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings$2;->agM:Lcom/android/settings/inputmethod/SpellCheckersSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings$2;->agM:Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;
 
-    iput-object p2, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings$2;->agN:Landroid/view/textservice/SpellCheckerInfo;
+    iput-object p2, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings$2;->agN:Landroid/view/textservice/SpellCheckerInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,11 +34,11 @@
 
     .prologue
     .line 233
-    iget-object v0, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings$2;->agM:Lcom/android/settings/inputmethod/SpellCheckersSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings$2;->agM:Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;
 
-    iget-object v1, p0, Lcom/android/settings/inputmethod/SpellCheckersSettings$2;->agN:Landroid/view/textservice/SpellCheckerInfo;
+    iget-object v1, p0, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings$2;->agN:Landroid/view/textservice/SpellCheckerInfo;
 
-    invoke-static {v0, v1}, Lcom/android/settings/inputmethod/SpellCheckersSettings;->a(Lcom/android/settings/inputmethod/SpellCheckersSettings;Landroid/view/textservice/SpellCheckerInfo;)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;->a(Lcom/android/vendorsettings/inputmethod/SpellCheckersSettings;Landroid/view/textservice/SpellCheckerInfo;)V
 
     .line 234
     return-void

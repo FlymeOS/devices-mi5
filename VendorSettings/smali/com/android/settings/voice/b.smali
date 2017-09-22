@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/voice/b;
+.class public Lcom/android/vendorsettings/voice/b;
 .super Ljava/lang/Object;
 .source "VoiceInputHelper.java"
 
@@ -31,7 +31,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 61
-    iput-object p2, p0, Lcom/android/settings/voice/b;->auV:Landroid/content/pm/ServiceInfo;
+    iput-object p2, p0, Lcom/android/vendorsettings/voice/b;->auV:Landroid/content/pm/ServiceInfo;
 
     .line 62
     new-instance v0, Landroid/content/ComponentName;
@@ -42,16 +42,16 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/voice/b;->componentName:Landroid/content/ComponentName;
+    iput-object v0, p0, Lcom/android/vendorsettings/voice/b;->componentName:Landroid/content/ComponentName;
 
     .line 63
-    iget-object v0, p0, Lcom/android/settings/voice/b;->componentName:Landroid/content/ComponentName;
+    iget-object v0, p0, Lcom/android/vendorsettings/voice/b;->componentName:Landroid/content/ComponentName;
 
     invoke-virtual {v0}, Landroid/content/ComponentName;->flattenToShortString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/voice/b;->key:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/voice/b;->key:Ljava/lang/String;
 
     .line 64
     if-eqz p3, :cond_0
@@ -63,23 +63,23 @@
     invoke-direct {v0, v1, p3}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
-    iput-object v0, p0, Lcom/android/settings/voice/b;->auW:Landroid/content/ComponentName;
+    iput-object v0, p0, Lcom/android/vendorsettings/voice/b;->auW:Landroid/content/ComponentName;
 
     .line 66
     invoke-virtual {p2, p1}, Landroid/content/pm/ServiceInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/voice/b;->label:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/vendorsettings/voice/b;->label:Ljava/lang/CharSequence;
 
     .line 67
-    iget-object v0, p0, Lcom/android/settings/voice/b;->label:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/vendorsettings/voice/b;->label:Ljava/lang/CharSequence;
 
     invoke-interface {v0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/voice/b;->auX:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/voice/b;->auX:Ljava/lang/String;
 
     .line 68
     iget-object v0, p2, Landroid/content/pm/ServiceInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
@@ -88,7 +88,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/voice/b;->appLabel:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/vendorsettings/voice/b;->appLabel:Ljava/lang/CharSequence;
 
     .line 69
     return-void
@@ -107,11 +107,11 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Lcom/android/settings/voice/b;->auX:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/voice/b;->auX:Ljava/lang/String;
 
-    check-cast p1, Lcom/android/settings/voice/b;
+    check-cast p1, Lcom/android/vendorsettings/voice/b;
 
-    iget-object v1, p1, Lcom/android/settings/voice/b;->auX:Ljava/lang/String;
+    iget-object v1, p1, Lcom/android/vendorsettings/voice/b;->auX:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I
 

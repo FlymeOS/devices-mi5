@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fingerprint/H;
+.class Lcom/android/vendorsettings/fingerprint/H;
 .super Ljava/lang/Object;
 .source "FingerprintSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic acx:Lcom/android/settings/fingerprint/G;
+.field final synthetic acx:Lcom/android/vendorsettings/fingerprint/G;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fingerprint/G;)V
+.method constructor <init>(Lcom/android/vendorsettings/fingerprint/G;)V
     .locals 0
 
     .prologue
     .line 575
-    iput-object p1, p0, Lcom/android/settings/fingerprint/H;->acx:Lcom/android/settings/fingerprint/G;
+    iput-object p1, p0, Lcom/android/vendorsettings/fingerprint/H;->acx:Lcom/android/vendorsettings/fingerprint/G;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 578
-    iget-object v0, p0, Lcom/android/settings/fingerprint/H;->acx:Lcom/android/settings/fingerprint/G;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/H;->acx:Lcom/android/vendorsettings/fingerprint/G;
 
-    invoke-static {v0, p1}, Lcom/android/settings/fingerprint/G;->a(Lcom/android/settings/fingerprint/G;Landroid/content/DialogInterface;)V
+    invoke-static {v0, p1}, Lcom/android/vendorsettings/fingerprint/G;->a(Lcom/android/vendorsettings/fingerprint/G;Landroid/content/DialogInterface;)V
 
     .line 579
     return-void

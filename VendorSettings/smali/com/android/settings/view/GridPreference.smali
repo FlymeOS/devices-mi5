@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/view/GridPreference;
+.class public Lcom/android/vendorsettings/view/GridPreference;
 .super Landroid/preference/Preference;
 .source "GridPreference.java"
 
@@ -10,7 +10,7 @@
 
 .field private auM:I
 
-.field private auN:Lcom/android/settings/view/c;
+.field private auN:Lcom/android/vendorsettings/view/c;
 
 .field private mAdapter:Landroid/widget/ListAdapter;
 
@@ -27,7 +27,7 @@
     .line 67
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/view/GridPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/view/GridPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 68
     return-void
@@ -40,7 +40,7 @@
     .line 63
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/view/GridPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/vendorsettings/view/GridPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 64
     return-void
@@ -56,24 +56,24 @@
     .line 19
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/view/GridPreference;->auK:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/view/GridPreference;->auK:Z
 
     .line 20
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/view/GridPreference;->auL:I
+    iput v0, p0, Lcom/android/vendorsettings/view/GridPreference;->auL:I
 
     .line 30
-    new-instance v0, Lcom/android/settings/view/a;
+    new-instance v0, Lcom/android/vendorsettings/view/a;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/view/a;-><init>(Lcom/android/settings/view/GridPreference;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/view/a;-><init>(Lcom/android/vendorsettings/view/GridPreference;)V
 
-    iput-object v0, p0, Lcom/android/settings/view/GridPreference;->mClickListener:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/view/GridPreference;->mClickListener:Landroid/view/View$OnClickListener;
 
     .line 58
     const v0, 0x7f0400ba
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/view/GridPreference;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/view/GridPreference;->setLayoutResource(I)V
 
     .line 59
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -86,18 +86,18 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/view/GridPreference;->auM:I
+    iput v0, p0, Lcom/android/vendorsettings/view/GridPreference;->auM:I
 
     .line 60
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/view/GridPreference;)Lcom/android/settings/view/c;
+.method static synthetic a(Lcom/android/vendorsettings/view/GridPreference;)Lcom/android/vendorsettings/view/c;
     .locals 1
 
     .prologue
     .line 16
-    iget-object v0, p0, Lcom/android/settings/view/GridPreference;->auN:Lcom/android/settings/view/c;
+    iget-object v0, p0, Lcom/android/vendorsettings/view/GridPreference;->auN:Lcom/android/vendorsettings/view/c;
 
     return-object v0
 .end method
@@ -107,7 +107,7 @@
 
     .prologue
     .line 204
-    invoke-direct {p0, p1}, Lcom/android/settings/view/GridPreference;->k(Landroid/view/View;)Landroid/widget/GridLayout;
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/view/GridPreference;->k(Landroid/view/View;)Landroid/widget/GridLayout;
 
     move-result-object v0
 
@@ -126,7 +126,7 @@
 
     .prologue
     .line 187
-    invoke-direct {p0, p1}, Lcom/android/settings/view/GridPreference;->k(Landroid/view/View;)Landroid/widget/GridLayout;
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/view/GridPreference;->k(Landroid/view/View;)Landroid/widget/GridLayout;
 
     move-result-object v2
 
@@ -178,7 +178,7 @@
 
     .prologue
     .line 197
-    invoke-direct {p0, p1}, Lcom/android/settings/view/GridPreference;->k(Landroid/view/View;)Landroid/widget/GridLayout;
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/view/GridPreference;->k(Landroid/view/View;)Landroid/widget/GridLayout;
 
     move-result-object v1
 
@@ -234,12 +234,12 @@
     const/4 v0, 0x0
 
     .line 117
-    invoke-direct {p0, p1}, Lcom/android/settings/view/GridPreference;->k(Landroid/view/View;)Landroid/widget/GridLayout;
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/view/GridPreference;->k(Landroid/view/View;)Landroid/widget/GridLayout;
 
     move-result-object v2
 
     .line 119
-    iget-object v1, p0, Lcom/android/settings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v1, p0, Lcom/android/vendorsettings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
 
     if-eqz v1, :cond_0
 
@@ -259,7 +259,7 @@
 
     .line 124
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v1, p0, Lcom/android/vendorsettings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
 
     invoke-interface {v1}, Landroid/widget/ListAdapter;->getCount()I
 
@@ -287,7 +287,7 @@
     move-result-object v6
 
     .line 131
-    iget-object v7, p0, Lcom/android/settings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v7, p0, Lcom/android/vendorsettings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
 
     invoke-interface {v7, v1, v6, v2}, Landroid/widget/ListAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 
@@ -303,7 +303,7 @@
     invoke-virtual {v6, v8, v7}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 133
-    invoke-direct {p0, v6}, Lcom/android/settings/view/GridPreference;->m(Landroid/view/View;)V
+    invoke-direct {p0, v6}, Lcom/android/vendorsettings/view/GridPreference;->m(Landroid/view/View;)V
 
     .line 129
     add-int/lit8 v1, v1, 0x1
@@ -326,7 +326,7 @@
     if-ge v1, v3, :cond_4
 
     .line 140
-    iget-object v5, p0, Lcom/android/settings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v5, p0, Lcom/android/vendorsettings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
 
     const/4 v6, 0x0
 
@@ -335,13 +335,13 @@
     move-result-object v5
 
     .line 141
-    invoke-direct {p0, v5}, Lcom/android/settings/view/GridPreference;->m(Landroid/view/View;)V
+    invoke-direct {p0, v5}, Lcom/android/vendorsettings/view/GridPreference;->m(Landroid/view/View;)V
 
     .line 142
     invoke-virtual {v2, v5}, Landroid/widget/GridLayout;->addView(Landroid/view/View;)V
 
     .line 143
-    iget-object v6, p0, Lcom/android/settings/view/GridPreference;->mClickListener:Landroid/view/View$OnClickListener;
+    iget-object v6, p0, Lcom/android/vendorsettings/view/GridPreference;->mClickListener:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v5, v6}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -499,7 +499,7 @@
     invoke-direct {v2, v0, v1}, Landroid/widget/GridLayout$LayoutParams;-><init>(Landroid/widget/GridLayout$Spec;Landroid/widget/GridLayout$Spec;)V
 
     .line 176
-    iget v0, p0, Lcom/android/settings/view/GridPreference;->auM:I
+    iget v0, p0, Lcom/android/vendorsettings/view/GridPreference;->auM:I
 
     invoke-virtual {v2, v0}, Landroid/widget/GridLayout$LayoutParams;->setMarginStart(I)V
 
@@ -512,12 +512,12 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/view/c;)V
+.method public a(Lcom/android/vendorsettings/view/c;)V
     .locals 0
 
     .prologue
     .line 105
-    iput-object p1, p0, Lcom/android/settings/view/GridPreference;->auN:Lcom/android/settings/view/c;
+    iput-object p1, p0, Lcom/android/vendorsettings/view/GridPreference;->auN:Lcom/android/vendorsettings/view/c;
 
     .line 106
     return-void
@@ -528,10 +528,10 @@
 
     .prologue
     .line 211
-    iput p1, p0, Lcom/android/settings/view/GridPreference;->auL:I
+    iput p1, p0, Lcom/android/vendorsettings/view/GridPreference;->auL:I
 
     .line 212
-    invoke-virtual {p0}, Lcom/android/settings/view/GridPreference;->update()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/view/GridPreference;->update()V
 
     .line 213
     return-void
@@ -567,30 +567,30 @@
     invoke-virtual {p1, v0, v1, v0, v2}, Landroid/view/View;->setPaddingRelative(IIII)V
 
     .line 76
-    invoke-direct {p0, p1}, Lcom/android/settings/view/GridPreference;->l(Landroid/view/View;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/view/GridPreference;->l(Landroid/view/View;)V
 
     .line 79
-    iget-boolean v0, p0, Lcom/android/settings/view/GridPreference;->auK:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/view/GridPreference;->auK:Z
 
     invoke-super {p0, v0}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 80
-    iget-boolean v0, p0, Lcom/android/settings/view/GridPreference;->auK:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/view/GridPreference;->auK:Z
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/view/GridPreference;->d(Landroid/view/View;Z)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/view/GridPreference;->d(Landroid/view/View;Z)V
 
     .line 83
-    iget v0, p0, Lcom/android/settings/view/GridPreference;->auL:I
+    iget v0, p0, Lcom/android/vendorsettings/view/GridPreference;->auL:I
 
     if-ltz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lcom/android/settings/view/GridPreference;->auL:I
+    iget v0, p0, Lcom/android/vendorsettings/view/GridPreference;->auL:I
 
-    iget-object v1, p0, Lcom/android/settings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v1, p0, Lcom/android/vendorsettings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
 
     invoke-interface {v1}, Landroid/widget/ListAdapter;->getCount()I
 
@@ -601,14 +601,14 @@
     .line 84
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/view/GridPreference;->e(Landroid/view/View;Z)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/view/GridPreference;->e(Landroid/view/View;Z)V
 
     .line 85
-    iget v0, p0, Lcom/android/settings/view/GridPreference;->auL:I
+    iget v0, p0, Lcom/android/vendorsettings/view/GridPreference;->auL:I
 
     const/4 v1, 0x1
 
-    invoke-direct {p0, p1, v0, v1}, Lcom/android/settings/view/GridPreference;->a(Landroid/view/View;IZ)V
+    invoke-direct {p0, p1, v0, v1}, Lcom/android/vendorsettings/view/GridPreference;->a(Landroid/view/View;IZ)V
 
     .line 87
     :cond_0
@@ -620,52 +620,52 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lcom/android/settings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/view/GridPreference;->mDataSetObserver:Landroid/database/DataSetObserver;
+    iget-object v0, p0, Lcom/android/vendorsettings/view/GridPreference;->mDataSetObserver:Landroid/database/DataSetObserver;
 
     if-eqz v0, :cond_0
 
     .line 91
-    iget-object v0, p0, Lcom/android/settings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
 
-    iget-object v1, p0, Lcom/android/settings/view/GridPreference;->mDataSetObserver:Landroid/database/DataSetObserver;
+    iget-object v1, p0, Lcom/android/vendorsettings/view/GridPreference;->mDataSetObserver:Landroid/database/DataSetObserver;
 
     invoke-interface {v0, v1}, Landroid/widget/ListAdapter;->unregisterDataSetObserver(Landroid/database/DataSetObserver;)V
 
     .line 92
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/view/GridPreference;->mDataSetObserver:Landroid/database/DataSetObserver;
+    iput-object v0, p0, Lcom/android/vendorsettings/view/GridPreference;->mDataSetObserver:Landroid/database/DataSetObserver;
 
     .line 95
     :cond_0
-    iput-object p1, p0, Lcom/android/settings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
+    iput-object p1, p0, Lcom/android/vendorsettings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
 
     .line 96
-    iget-object v0, p0, Lcom/android/settings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
 
     if-eqz v0, :cond_1
 
     .line 97
-    new-instance v0, Lcom/android/settings/view/b;
+    new-instance v0, Lcom/android/vendorsettings/view/b;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/view/b;-><init>(Lcom/android/settings/view/GridPreference;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/view/b;-><init>(Lcom/android/vendorsettings/view/GridPreference;)V
 
-    iput-object v0, p0, Lcom/android/settings/view/GridPreference;->mDataSetObserver:Landroid/database/DataSetObserver;
+    iput-object v0, p0, Lcom/android/vendorsettings/view/GridPreference;->mDataSetObserver:Landroid/database/DataSetObserver;
 
     .line 98
-    iget-object v0, p0, Lcom/android/settings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/view/GridPreference;->mAdapter:Landroid/widget/ListAdapter;
 
-    iget-object v1, p0, Lcom/android/settings/view/GridPreference;->mDataSetObserver:Landroid/database/DataSetObserver;
+    iget-object v1, p0, Lcom/android/vendorsettings/view/GridPreference;->mDataSetObserver:Landroid/database/DataSetObserver;
 
     invoke-interface {v0, v1}, Landroid/widget/ListAdapter;->registerDataSetObserver(Landroid/database/DataSetObserver;)V
 
     .line 101
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/view/GridPreference;->update()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/view/GridPreference;->update()V
 
     .line 102
     return-void
@@ -676,10 +676,10 @@
 
     .prologue
     .line 182
-    iput-boolean p1, p0, Lcom/android/settings/view/GridPreference;->auK:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/view/GridPreference;->auK:Z
 
     .line 183
-    invoke-virtual {p0}, Lcom/android/settings/view/GridPreference;->update()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/view/GridPreference;->update()V
 
     .line 184
     return-void
@@ -690,7 +690,7 @@
 
     .prologue
     .line 109
-    invoke-virtual {p0}, Lcom/android/settings/view/GridPreference;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/view/GridPreference;->notifyChanged()V
 
     .line 110
     return-void

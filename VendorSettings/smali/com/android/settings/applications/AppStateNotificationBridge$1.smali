@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/AppStateNotificationBridge$1;
+.class final Lcom/android/vendorsettings/applications/AppStateNotificationBridge$1;
 .super Ljava/lang/Object;
 .source "AppStateNotificationBridge.java"
 
@@ -30,9 +30,9 @@
 
     iget-object v0, p1, Lcom/android/b/a/o;->aIP:Ljava/lang/Object;
 
-    check-cast v0, Lcom/android/settings/notification/NotificationBackend$AppRow;
+    check-cast v0, Lcom/android/vendorsettings/notification/NotificationBackend$AppRow;
 
-    iget-boolean v0, v0, Lcom/android/settings/notification/NotificationBackend$AppRow;->ajh:Z
+    iget-boolean v0, v0, Lcom/android/vendorsettings/notification/NotificationBackend$AppRow;->ajh:Z
 
     if-eqz v0, :cond_0
 

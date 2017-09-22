@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dz;
+.class Lcom/android/vendorsettings/dz;
 .super Ljava/lang/Object;
 .source "IccLockSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic om:Lcom/android/settings/IccLockSettings;
+.field final synthetic om:Lcom/android/vendorsettings/IccLockSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/IccLockSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/IccLockSettings;)V
     .locals 0
 
     .prologue
     .line 509
-    iput-object p1, p0, Lcom/android/settings/dz;->om:Lcom/android/settings/IccLockSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/dz;->om:Lcom/android/vendorsettings/IccLockSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,9 +32,9 @@
     .line 512
     new-instance v0, Landroid/view/View;
 
-    iget-object v1, p0, Lcom/android/settings/dz;->om:Lcom/android/settings/IccLockSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/dz;->om:Lcom/android/vendorsettings/IccLockSettings;
 
-    invoke-static {v1}, Lcom/android/settings/IccLockSettings;->c(Lcom/android/settings/IccLockSettings;)Landroid/widget/TabHost;
+    invoke-static {v1}, Lcom/android/vendorsettings/IccLockSettings;->c(Lcom/android/vendorsettings/IccLockSettings;)Landroid/widget/TabHost;
 
     move-result-object v1
 

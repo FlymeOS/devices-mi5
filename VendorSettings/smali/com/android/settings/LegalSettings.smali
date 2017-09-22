@@ -1,13 +1,13 @@
-.class public Lcom/android/settings/LegalSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/LegalSettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "LegalSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/search/k;
+.implements Lcom/android/vendorsettings/search/k;
 
 
 # static fields
-.field public static final ig:Lcom/android/settings/search/l;
+.field public static final ig:Lcom/android/vendorsettings/search/l;
 
 
 # direct methods
@@ -16,11 +16,11 @@
 
     .prologue
     .line 71
-    new-instance v0, Lcom/android/settings/dH;
+    new-instance v0, Lcom/android/vendorsettings/dH;
 
-    invoke-direct {v0}, Lcom/android/settings/dH;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/dH;-><init>()V
 
-    sput-object v0, Lcom/android/settings/LegalSettings;->ig:Lcom/android/settings/search/l;
+    sput-object v0, Lcom/android/vendorsettings/LegalSettings;->ig:Lcom/android/vendorsettings/search/l;
 
     return-void
 .end method
@@ -30,7 +30,7 @@
 
     .prologue
     .line 37
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -42,7 +42,7 @@
 
     .prologue
     .line 46
-    const-class v0, Lcom/android/settings/LegalSettings;
+    const-class v0, Lcom/android/vendorsettings/LegalSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -58,42 +58,42 @@
     const/4 v3, 0x1
 
     .line 50
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 51
     const v0, 0x7f080001
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/LegalSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/LegalSettings;->addPreferencesFromResource(I)V
 
     .line 53
-    invoke-virtual {p0}, Lcom/android/settings/LegalSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/LegalSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     .line 55
-    invoke-virtual {p0}, Lcom/android/settings/LegalSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/LegalSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
     .line 56
     const-string v2, "terms"
 
-    invoke-static {v0, v1, v2, v3}, Lcom/android/settings/iC;->a(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
+    invoke-static {v0, v1, v2, v3}, Lcom/android/vendorsettings/iC;->a(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
     .line 58
     const-string v2, "license"
 
-    invoke-static {v0, v1, v2, v3}, Lcom/android/settings/iC;->a(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
+    invoke-static {v0, v1, v2, v3}, Lcom/android/vendorsettings/iC;->a(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
     .line 60
     const-string v2, "copyright"
 
-    invoke-static {v0, v1, v2, v3}, Lcom/android/settings/iC;->a(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
+    invoke-static {v0, v1, v2, v3}, Lcom/android/vendorsettings/iC;->a(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
     .line 62
     const-string v2, "webview_license"
 
-    invoke-static {v0, v1, v2, v3}, Lcom/android/settings/iC;->a(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
+    invoke-static {v0, v1, v2, v3}, Lcom/android/vendorsettings/iC;->a(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
     .line 64
     return-void

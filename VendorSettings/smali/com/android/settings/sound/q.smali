@@ -1,4 +1,4 @@
-.class public abstract Lcom/android/settings/sound/q;
+.class public abstract Lcom/android/vendorsettings/sound/q;
 .super Landroid/app/Activity;
 .source "BaseSoundActivity.java"
 
@@ -31,7 +31,7 @@
     if-ne p1, v0, :cond_0
 
     .line 48
-    invoke-virtual {p0}, Lcom/android/settings/sound/q;->getRingtoneType()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/q;->getRingtoneType()I
 
     move-result v1
 
@@ -49,7 +49,7 @@
 
     .line 52
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/sound/q;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/q;->finish()V
 
     .line 53
     return-void
@@ -63,13 +63,13 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 17
-    invoke-virtual {p0}, Lcom/android/settings/sound/q;->ul()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/q;->ul()Landroid/content/Intent;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/sound/q;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/sound/q;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 18
     return-void
@@ -85,7 +85,7 @@
     .line 23
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/sound/q;->setVisible(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/sound/q;->setVisible(Z)V
 
     .line 24
     return-void
@@ -119,7 +119,7 @@
     invoke-virtual {v2, v3, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 32
-    invoke-virtual {p0}, Lcom/android/settings/sound/q;->getRingtoneType()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/q;->getRingtoneType()I
 
     move-result v3
 
@@ -155,11 +155,11 @@
     .line 37
     const-string v0, "android.intent.extra.ringtone.TITLE"
 
-    invoke-virtual {p0}, Lcom/android/settings/sound/q;->um()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/q;->um()I
 
     move-result v1
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/sound/q;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/sound/q;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 

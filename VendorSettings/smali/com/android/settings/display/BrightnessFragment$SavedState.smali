@@ -1,4 +1,4 @@
-.class Lcom/android/settings/display/BrightnessFragment$SavedState;
+.class Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;
 .super Ljava/lang/Object;
 .source "BrightnessFragment.java"
 
@@ -31,11 +31,11 @@
 
     .prologue
     .line 315
-    new-instance v0, Lcom/android/settings/display/c;
+    new-instance v0, Lcom/android/vendorsettings/display/c;
 
-    invoke-direct {v0}, Lcom/android/settings/display/c;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/display/c;-><init>()V
 
-    sput-object v0, Lcom/android/settings/display/BrightnessFragment$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
+    sput-object v0, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
@@ -72,14 +72,14 @@
     move v0, v1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/display/BrightnessFragment$SavedState;->automatic:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->automatic:Z
 
     .line 300
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/display/BrightnessFragment$SavedState;->progress:I
+    iput v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->progress:I
 
     .line 301
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -89,21 +89,21 @@
     if-ne v0, v1, :cond_1
 
     :goto_1
-    iput-boolean v1, p0, Lcom/android/settings/display/BrightnessFragment$SavedState;->oldAutomatic:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->oldAutomatic:Z
 
     .line 302
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/display/BrightnessFragment$SavedState;->oldProgress:I
+    iput v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->oldProgress:I
 
     .line 303
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/display/BrightnessFragment$SavedState;->curBrightness:I
+    iput v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->curBrightness:I
 
     .line 304
     return-void
@@ -142,7 +142,7 @@
     const/4 v2, 0x0
 
     .line 308
-    iget-boolean v0, p0, Lcom/android/settings/display/BrightnessFragment$SavedState;->automatic:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->automatic:Z
 
     if-eqz v0, :cond_0
 
@@ -152,12 +152,12 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 309
-    iget v0, p0, Lcom/android/settings/display/BrightnessFragment$SavedState;->progress:I
+    iget v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->progress:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 310
-    iget-boolean v0, p0, Lcom/android/settings/display/BrightnessFragment$SavedState;->oldAutomatic:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->oldAutomatic:Z
 
     if-eqz v0, :cond_1
 
@@ -165,12 +165,12 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 311
-    iget v0, p0, Lcom/android/settings/display/BrightnessFragment$SavedState;->oldProgress:I
+    iget v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->oldProgress:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 312
-    iget v0, p0, Lcom/android/settings/display/BrightnessFragment$SavedState;->curBrightness:I
+    iget v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->curBrightness:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 

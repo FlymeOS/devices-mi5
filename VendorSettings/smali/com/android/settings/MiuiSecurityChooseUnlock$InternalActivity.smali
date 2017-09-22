@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiSecurityChooseUnlock$InternalActivity;
-.super Lcom/android/settings/MiuiSecurityChooseUnlock;
+.class public Lcom/android/vendorsettings/MiuiSecurityChooseUnlock$InternalActivity;
+.super Lcom/android/vendorsettings/MiuiSecurityChooseUnlock;
 .source "MiuiSecurityChooseUnlock.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 36
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityChooseUnlock;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiSecurityChooseUnlock;-><init>()V
 
     return-void
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/m;
+.class public Lcom/android/vendorsettings/wifi/m;
 .super Ljava/lang/Object;
 .source "MiuiSavedAccessPointsWifiSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aAz:Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;
+.field final synthetic aAz:Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;
 
 
 # direct methods
-.method protected constructor <init>(Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;)V
+.method protected constructor <init>(Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;)V
     .locals 0
 
     .prologue
     .line 165
-    iput-object p1, p0, Lcom/android/settings/wifi/m;->aAz:Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/m;->aAz:Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,22 +44,22 @@
 
     .line 182
     :sswitch_0
-    iget-object v0, p0, Lcom/android/settings/wifi/m;->aAz:Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/m;->aAz:Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;->c(Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;->c(Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;)V
 
     .line 183
-    iget-object v0, p0, Lcom/android/settings/wifi/m;->aAz:Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/m;->aAz:Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;->b(Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;->b(Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;)V
 
     goto :goto_0
 
     .line 186
     :sswitch_1
-    iget-object v0, p0, Lcom/android/settings/wifi/m;->aAz:Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/m;->aAz:Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;->d(Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;->d(Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;)V
 
     goto :goto_0
 
@@ -78,14 +78,14 @@
     const/4 v2, 0x1
 
     .line 168
-    iget-object v0, p0, Lcom/android/settings/wifi/m;->aAz:Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/m;->aAz:Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;
 
-    invoke-static {v0, v2}, Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;->a(Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;Z)V
+    invoke-static {v0, v2}, Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;->a(Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;Z)V
 
     .line 169
-    iget-object v0, p0, Lcom/android/settings/wifi/m;->aAz:Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/m;->aAz:Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;->getMenuInflater()Landroid/view/MenuInflater;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;->getMenuInflater()Landroid/view/MenuInflater;
 
     move-result-object v0
 
@@ -102,11 +102,11 @@
 
     .prologue
     .line 195
-    iget-object v0, p0, Lcom/android/settings/wifi/m;->aAz:Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/m;->aAz:Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;->a(Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;Z)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;->a(Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;Z)V
 
     .line 197
     return-void
@@ -117,9 +117,9 @@
 
     .prologue
     .line 200
-    iget-object v0, p0, Lcom/android/settings/wifi/m;->aAz:Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/m;->aAz:Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;->e(Lcom/android/settings/wifi/MiuiSavedAccessPointsWifiSettings;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;->e(Lcom/android/vendorsettings/wifi/MiuiSavedAccessPointsWifiSettings;)Ljava/util/List;
 
     move-result-object v0
 
@@ -127,9 +127,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/wifi/S;
+    check-cast v0, Lcom/android/vendorsettings/wifi/S;
 
-    invoke-virtual {v0, p5}, Lcom/android/settings/wifi/S;->bG(Z)V
+    invoke-virtual {v0, p5}, Lcom/android/vendorsettings/wifi/S;->bG(Z)V
 
     .line 201
     return-void

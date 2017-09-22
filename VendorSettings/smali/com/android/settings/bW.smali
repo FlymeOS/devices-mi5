@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bW;
+.class Lcom/android/vendorsettings/bW;
 .super Ljava/lang/Object;
 .source "DevelopmentSettings.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic kD:Lcom/android/settings/DevelopmentSettings;
+.field final synthetic kD:Lcom/android/vendorsettings/DevelopmentSettings;
 
 .field final synthetic kG:Ljava/lang/Boolean;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DevelopmentSettings;Ljava/lang/Boolean;)V
+.method constructor <init>(Lcom/android/vendorsettings/DevelopmentSettings;Ljava/lang/Boolean;)V
     .locals 0
 
     .prologue
     .line 1917
-    iput-object p1, p0, Lcom/android/settings/bW;->kD:Lcom/android/settings/DevelopmentSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/bW;->kD:Lcom/android/vendorsettings/DevelopmentSettings;
 
-    iput-object p2, p0, Lcom/android/settings/bW;->kG:Ljava/lang/Boolean;
+    iput-object p2, p0, Lcom/android/vendorsettings/bW;->kG:Ljava/lang/Boolean;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,13 +34,13 @@
 
     .prologue
     .line 1920
-    iget-object v0, p0, Lcom/android/settings/bW;->kD:Lcom/android/settings/DevelopmentSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/bW;->kD:Lcom/android/vendorsettings/DevelopmentSettings;
 
-    invoke-static {v0}, Lcom/android/settings/DevelopmentSettings;->a(Lcom/android/settings/DevelopmentSettings;)Landroid/preference/CheckBoxPreference;
+    invoke-static {v0}, Lcom/android/vendorsettings/DevelopmentSettings;->a(Lcom/android/vendorsettings/DevelopmentSettings;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/android/settings/bW;->kG:Ljava/lang/Boolean;
+    iget-object v0, p0, Lcom/android/vendorsettings/bW;->kG:Ljava/lang/Boolean;
 
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/dndmode/r;
-.super Lcom/android/settings/dndmode/q;
+.class public Lcom/android/vendorsettings/dndmode/r;
+.super Lcom/android/vendorsettings/dndmode/q;
 .source "QuietActivity.java"
 
 # interfaces
@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field private aaK:Lcom/android/settings/dndmode/RadioButtonWithArrow;
+.field private aaK:Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
-.field private aaL:Lcom/android/settings/dndmode/RadioButtonWithArrow;
+.field private aaL:Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
-.field private aaM:Lcom/android/settings/dndmode/RadioButtonWithArrow;
+.field private aaM:Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
 .field private aaN:Landroid/database/ContentObserver;
 
@@ -25,38 +25,38 @@
 
     .prologue
     .line 31
-    invoke-direct {p0}, Lcom/android/settings/dndmode/q;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/dndmode/q;-><init>()V
 
     .line 41
-    new-instance v0, Lcom/android/settings/dndmode/s;
+    new-instance v0, Lcom/android/vendorsettings/dndmode/s;
 
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/dndmode/s;-><init>(Lcom/android/settings/dndmode/r;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/dndmode/s;-><init>(Lcom/android/vendorsettings/dndmode/r;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/r;->aaN:Landroid/database/ContentObserver;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aaN:Landroid/database/ContentObserver;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/dndmode/r;)Lmiui/app/Activity;
+.method static synthetic a(Lcom/android/vendorsettings/dndmode/r;)Lmiui/app/Activity;
     .locals 1
 
     .prologue
     .line 31
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->aav:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aav:Lmiui/app/Activity;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/dndmode/r;I)V
+.method static synthetic a(Lcom/android/vendorsettings/dndmode/r;I)V
     .locals 0
 
     .prologue
     .line 31
-    invoke-direct {p0, p1}, Lcom/android/settings/dndmode/r;->bX(I)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/dndmode/r;->bX(I)V
 
     return-void
 .end method
@@ -70,19 +70,19 @@
     const/4 v1, 0x0
 
     .line 76
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->aaK:Lcom/android/settings/dndmode/RadioButtonWithArrow;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aaK:Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/RadioButtonWithArrow;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;->setChecked(Z)V
 
     .line 77
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->aaL:Lcom/android/settings/dndmode/RadioButtonWithArrow;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aaL:Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/RadioButtonWithArrow;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;->setChecked(Z)V
 
     .line 78
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->aaM:Lcom/android/settings/dndmode/RadioButtonWithArrow;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aaM:Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/RadioButtonWithArrow;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;->setChecked(Z)V
 
     .line 79
     packed-switch p1, :pswitch_data_0
@@ -93,25 +93,25 @@
 
     .line 81
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->aaK:Lcom/android/settings/dndmode/RadioButtonWithArrow;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aaK:Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/dndmode/RadioButtonWithArrow;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;->setChecked(Z)V
 
     goto :goto_0
 
     .line 85
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->aaM:Lcom/android/settings/dndmode/RadioButtonWithArrow;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aaM:Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/dndmode/RadioButtonWithArrow;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;->setChecked(Z)V
 
     goto :goto_0
 
     .line 90
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->aaL:Lcom/android/settings/dndmode/RadioButtonWithArrow;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aaL:Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/dndmode/RadioButtonWithArrow;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;->setChecked(Z)V
 
     goto :goto_0
 
@@ -166,7 +166,7 @@
     .line 116
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->aav:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aav:Lmiui/app/Activity;
 
     invoke-virtual {v0, v1}, Lmiui/app/Activity;->startActivity(Landroid/content/Intent;)V
 
@@ -200,89 +200,89 @@
     const/4 v3, 0x0
 
     .line 54
-    invoke-super {p0, p1}, Lcom/android/settings/dndmode/q;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/dndmode/q;->onCreate(Landroid/os/Bundle;)V
 
     .line 55
     const v0, 0x7f080036
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/r;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dndmode/r;->addPreferencesFromResource(I)V
 
     .line 56
-    invoke-virtual {p0}, Lcom/android/settings/dndmode/r;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dndmode/r;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     check-cast v0, Lmiui/app/Activity;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/r;->aav:Lmiui/app/Activity;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aav:Lmiui/app/Activity;
 
     .line 57
     const-string v0, "off"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/r;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dndmode/r;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/dndmode/RadioButtonWithArrow;
+    check-cast v0, Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/r;->aaK:Lcom/android/settings/dndmode/RadioButtonWithArrow;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aaK:Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
     .line 58
     const-string v0, "silent"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/r;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dndmode/r;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/dndmode/RadioButtonWithArrow;
+    check-cast v0, Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/r;->aaL:Lcom/android/settings/dndmode/RadioButtonWithArrow;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aaL:Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
     .line 59
     const-string v0, "quiet"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/r;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dndmode/r;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/dndmode/RadioButtonWithArrow;
+    check-cast v0, Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/r;->aaM:Lcom/android/settings/dndmode/RadioButtonWithArrow;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aaM:Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
     .line 61
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->aaK:Lcom/android/settings/dndmode/RadioButtonWithArrow;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aaK:Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/dndmode/RadioButtonWithArrow;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 62
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->aaK:Lcom/android/settings/dndmode/RadioButtonWithArrow;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aaK:Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
     const/16 v1, 0x8
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/RadioButtonWithArrow;->bY(I)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;->bY(I)V
 
     .line 63
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->aaL:Lcom/android/settings/dndmode/RadioButtonWithArrow;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aaL:Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/dndmode/RadioButtonWithArrow;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 64
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->aaL:Lcom/android/settings/dndmode/RadioButtonWithArrow;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aaL:Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/dndmode/RadioButtonWithArrow;->b(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;->b(Landroid/view/View$OnClickListener;)V
 
     .line 65
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->aaM:Lcom/android/settings/dndmode/RadioButtonWithArrow;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aaM:Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/dndmode/RadioButtonWithArrow;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 66
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->aaM:Lcom/android/settings/dndmode/RadioButtonWithArrow;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aaM:Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/dndmode/RadioButtonWithArrow;->b(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/dndmode/RadioButtonWithArrow;->b(Landroid/view/View$OnClickListener;)V
 
     .line 68
-    invoke-virtual {p0}, Lcom/android/settings/dndmode/r;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dndmode/r;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -296,12 +296,12 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/dndmode/r;->aaN:Landroid/database/ContentObserver;
+    iget-object v2, p0, Lcom/android/vendorsettings/dndmode/r;->aaN:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1, v3, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
     .line 70
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->aav:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aav:Lmiui/app/Activity;
 
     invoke-virtual {v0}, Lmiui/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -314,7 +314,7 @@
     move-result v0
 
     .line 72
-    invoke-direct {p0, v0}, Lcom/android/settings/dndmode/r;->bX(I)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/dndmode/r;->bX(I)V
 
     .line 73
     return-void
@@ -340,7 +340,7 @@
     if-eqz v0, :cond_1
 
     .line 98
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->aav:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aav:Lmiui/app/Activity;
 
     invoke-static {v0, v2}, Landroid/app/ExtraNotificationManager;->setZenMode(Landroid/content/Context;I)V
 
@@ -364,7 +364,7 @@
     if-eqz v0, :cond_2
 
     .line 100
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->aav:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aav:Lmiui/app/Activity;
 
     const/4 v1, 0x2
 
@@ -387,7 +387,7 @@
     if-eqz v0, :cond_0
 
     .line 102
-    iget-object v0, p0, Lcom/android/settings/dndmode/r;->aav:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/r;->aav:Lmiui/app/Activity;
 
     const/4 v1, 0x1
 

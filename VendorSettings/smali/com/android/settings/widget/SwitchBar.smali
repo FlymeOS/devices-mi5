@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/widget/SwitchBar;
+.class public Lcom/android/vendorsettings/widget/SwitchBar;
 .super Landroid/widget/LinearLayout;
 .source "SwitchBar.java"
 
@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field private azA:Lcom/android/settings/widget/ToggleSwitch;
+.field private azA:Lcom/android/vendorsettings/widget/ToggleSwitch;
 
 .field private azB:Landroid/widget/TextView;
 
@@ -37,7 +37,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/widget/SwitchBar;->azD:[I
+    sput-object v0, Lcom/android/vendorsettings/widget/SwitchBar;->azD:[I
 
     return-void
 
@@ -57,7 +57,7 @@
     .line 66
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/widget/SwitchBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/widget/SwitchBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 67
     return-void
@@ -70,7 +70,7 @@
     .line 70
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/widget/SwitchBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/vendorsettings/widget/SwitchBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 71
     return-void
@@ -83,7 +83,7 @@
     .line 74
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, p3, v0}, Lcom/android/settings/widget/SwitchBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+    invoke-direct {p0, p1, p2, p3, v0}, Lcom/android/vendorsettings/widget/SwitchBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     .line 75
     return-void
@@ -105,7 +105,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azC:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azC:Ljava/util/ArrayList;
 
     .line 80
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
@@ -117,7 +117,7 @@
     invoke-virtual {v0, v1, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     .line 82
-    sget-object v0, Lcom/android/settings/widget/SwitchBar;->azD:[I
+    sget-object v0, Lcom/android/vendorsettings/widget/SwitchBar;->azD:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
@@ -145,16 +145,16 @@
     .line 87
     const v0, 0x7f1302db
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/SwitchBar;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/widget/SwitchBar;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azB:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azB:Landroid/widget/TextView;
 
     .line 88
-    invoke-virtual {p0}, Lcom/android/settings/widget/SwitchBar;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/SwitchBar;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -164,24 +164,24 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/widget/SwitchBar;->mLabel:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->mLabel:Ljava/lang/String;
 
     .line 89
     new-instance v0, Landroid/text/style/TextAppearanceSpan;
 
-    iget-object v3, p0, Lcom/android/settings/widget/SwitchBar;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/vendorsettings/widget/SwitchBar;->mContext:Landroid/content/Context;
 
     const v4, 0x7f0d0053
 
     invoke-direct {v0, v3, v4}, Landroid/text/style/TextAppearanceSpan;-><init>(Landroid/content/Context;I)V
 
-    iput-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azz:Landroid/text/style/TextAppearanceSpan;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azz:Landroid/text/style/TextAppearanceSpan;
 
     .line 90
-    invoke-direct {p0}, Lcom/android/settings/widget/SwitchBar;->wN()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/widget/SwitchBar;->wN()V
 
     .line 91
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azB:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azB:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -195,23 +195,23 @@
     .line 94
     const v0, 0x7f1302dc
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/SwitchBar;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/widget/SwitchBar;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/ToggleSwitch;
+    check-cast v0, Lcom/android/vendorsettings/widget/ToggleSwitch;
 
-    iput-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azA:Lcom/android/settings/widget/ToggleSwitch;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azA:Lcom/android/vendorsettings/widget/ToggleSwitch;
 
     .line 97
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azA:Lcom/android/settings/widget/ToggleSwitch;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azA:Lcom/android/vendorsettings/widget/ToggleSwitch;
 
-    invoke-virtual {v0, v5}, Lcom/android/settings/widget/ToggleSwitch;->setSaveEnabled(Z)V
+    invoke-virtual {v0, v5}, Lcom/android/vendorsettings/widget/ToggleSwitch;->setSaveEnabled(Z)V
 
     .line 98
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azA:Lcom/android/settings/widget/ToggleSwitch;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azA:Lcom/android/vendorsettings/widget/ToggleSwitch;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/ToggleSwitch;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/widget/ToggleSwitch;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
@@ -221,19 +221,19 @@
     invoke-virtual {v0, v2}, Landroid/view/ViewGroup$MarginLayoutParams;->setMarginEnd(I)V
 
     .line 101
-    new-instance v0, Lcom/android/settings/widget/H;
+    new-instance v0, Lcom/android/vendorsettings/widget/H;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/widget/H;-><init>(Lcom/android/settings/widget/SwitchBar;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/widget/H;-><init>(Lcom/android/vendorsettings/widget/SwitchBar;)V
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/SwitchBar;->a(Lcom/android/settings/widget/I;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/widget/SwitchBar;->a(Lcom/android/vendorsettings/widget/I;)V
 
     .line 108
-    invoke-virtual {p0, p0}, Lcom/android/settings/widget/SwitchBar;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-virtual {p0, p0}, Lcom/android/vendorsettings/widget/SwitchBar;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 111
     const/16 v0, 0x8
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/SwitchBar;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/widget/SwitchBar;->setVisibility(I)V
 
     .line 112
     return-void
@@ -244,7 +244,7 @@
 
     .prologue
     .line 126
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->mSummary:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->mSummary:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -253,9 +253,9 @@
     if-eqz v0, :cond_0
 
     .line 127
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azB:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azB:Landroid/widget/TextView;
 
-    iget-object v1, p0, Lcom/android/settings/widget/SwitchBar;->mLabel:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/widget/SwitchBar;->mLabel:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -267,7 +267,7 @@
     :cond_0
     new-instance v0, Landroid/text/SpannableStringBuilder;
 
-    iget-object v1, p0, Lcom/android/settings/widget/SwitchBar;->mLabel:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/widget/SwitchBar;->mLabel:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Landroid/text/SpannableStringBuilder;-><init>(Ljava/lang/CharSequence;)V
 
@@ -283,12 +283,12 @@
     move-result v1
 
     .line 132
-    iget-object v2, p0, Lcom/android/settings/widget/SwitchBar;->mSummary:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/widget/SwitchBar;->mSummary:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
     .line 133
-    iget-object v2, p0, Lcom/android/settings/widget/SwitchBar;->azz:Landroid/text/style/TextAppearanceSpan;
+    iget-object v2, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azz:Landroid/text/style/TextAppearanceSpan;
 
     invoke-virtual {v0}, Landroid/text/SpannableStringBuilder;->length()I
 
@@ -299,7 +299,7 @@
     invoke-virtual {v0, v2, v1, v3, v4}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
     .line 134
-    iget-object v1, p0, Lcom/android/settings/widget/SwitchBar;->azB:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azB:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -308,12 +308,12 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/widget/I;)V
+.method public a(Lcom/android/vendorsettings/widget/I;)V
     .locals 2
 
     .prologue
     .line 201
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azC:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azC:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -332,7 +332,7 @@
 
     .line 204
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azC:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azC:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -340,12 +340,12 @@
     return-void
 .end method
 
-.method public b(Lcom/android/settings/widget/I;)V
+.method public b(Lcom/android/vendorsettings/widget/I;)V
     .locals 2
 
     .prologue
     .line 208
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azC:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azC:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -364,7 +364,7 @@
 
     .line 211
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azC:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azC:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
@@ -377,7 +377,7 @@
 
     .prologue
     .line 115
-    invoke-virtual {p0}, Lcom/android/settings/widget/SwitchBar;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/SwitchBar;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -390,10 +390,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/widget/SwitchBar;->mLabel:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->mLabel:Ljava/lang/String;
 
     .line 117
-    invoke-direct {p0}, Lcom/android/settings/widget/SwitchBar;->wN()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/widget/SwitchBar;->wN()V
 
     .line 118
     return-void
@@ -410,12 +410,12 @@
 
     .prologue
     .line 143
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/SwitchBar;->bv(Z)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/widget/SwitchBar;->bv(Z)V
 
     .line 144
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azA:Lcom/android/settings/widget/ToggleSwitch;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azA:Lcom/android/vendorsettings/widget/ToggleSwitch;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/widget/ToggleSwitch;->bw(Z)V
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/widget/ToggleSwitch;->bw(Z)V
 
     .line 145
     return-void
@@ -426,7 +426,7 @@
 
     .prologue
     .line 189
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azC:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azC:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -441,17 +441,17 @@
     if-ge v1, v2, :cond_0
 
     .line 191
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azC:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azC:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/I;
+    check-cast v0, Lcom/android/vendorsettings/widget/I;
 
-    iget-object v3, p0, Lcom/android/settings/widget/SwitchBar;->azA:Lcom/android/settings/widget/ToggleSwitch;
+    iget-object v3, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azA:Lcom/android/vendorsettings/widget/ToggleSwitch;
 
-    invoke-interface {v0, v3, p1}, Lcom/android/settings/widget/I;->a(Landroid/widget/Switch;Z)V
+    invoke-interface {v0, v3, p1}, Lcom/android/vendorsettings/widget/I;->a(Landroid/widget/Switch;Z)V
 
     .line 190
     add-int/lit8 v0, v1, 0x1
@@ -470,7 +470,7 @@
 
     .prologue
     .line 172
-    invoke-virtual {p0}, Lcom/android/settings/widget/SwitchBar;->isShowing()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/SwitchBar;->isShowing()Z
 
     move-result v0
 
@@ -479,14 +479,14 @@
     .line 173
     const/16 v0, 0x8
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/SwitchBar;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/widget/SwitchBar;->setVisibility(I)V
 
     .line 174
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azA:Lcom/android/settings/widget/ToggleSwitch;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azA:Lcom/android/vendorsettings/widget/ToggleSwitch;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/ToggleSwitch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/widget/ToggleSwitch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 176
     :cond_0
@@ -498,9 +498,9 @@
 
     .prologue
     .line 148
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azA:Lcom/android/settings/widget/ToggleSwitch;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azA:Lcom/android/vendorsettings/widget/ToggleSwitch;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/ToggleSwitch;->isChecked()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/widget/ToggleSwitch;->isChecked()Z
 
     move-result v0
 
@@ -512,7 +512,7 @@
 
     .prologue
     .line 179
-    invoke-virtual {p0}, Lcom/android/settings/widget/SwitchBar;->getVisibility()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/SwitchBar;->getVisibility()I
 
     move-result v0
 
@@ -534,7 +534,7 @@
 
     .prologue
     .line 197
-    invoke-virtual {p0, p2}, Lcom/android/settings/widget/SwitchBar;->bx(Z)V
+    invoke-virtual {p0, p2}, Lcom/android/vendorsettings/widget/SwitchBar;->bx(Z)V
 
     .line 198
     return-void
@@ -545,9 +545,9 @@
 
     .prologue
     .line 184
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azA:Lcom/android/settings/widget/ToggleSwitch;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azA:Lcom/android/vendorsettings/widget/ToggleSwitch;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/ToggleSwitch;->isChecked()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/widget/ToggleSwitch;->isChecked()Z
 
     move-result v0
 
@@ -557,7 +557,7 @@
 
     .line 185
     :goto_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/SwitchBar;->setChecked(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/widget/SwitchBar;->setChecked(Z)V
 
     .line 186
     return-void
@@ -574,51 +574,51 @@
 
     .prologue
     .line 270
-    check-cast p1, Lcom/android/settings/widget/SwitchBar$SavedState;
+    check-cast p1, Lcom/android/vendorsettings/widget/SwitchBar$SavedState;
 
     .line 272
-    invoke-virtual {p1}, Lcom/android/settings/widget/SwitchBar$SavedState;->getSuperState()Landroid/os/Parcelable;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/widget/SwitchBar$SavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v0
 
     invoke-super {p0, v0}, Landroid/widget/LinearLayout;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     .line 274
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azA:Lcom/android/settings/widget/ToggleSwitch;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azA:Lcom/android/vendorsettings/widget/ToggleSwitch;
 
-    iget-boolean v1, p1, Lcom/android/settings/widget/SwitchBar$SavedState;->checked:Z
+    iget-boolean v1, p1, Lcom/android/vendorsettings/widget/SwitchBar$SavedState;->checked:Z
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/ToggleSwitch;->bw(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/widget/ToggleSwitch;->bw(Z)V
 
     .line 275
-    iget-boolean v0, p1, Lcom/android/settings/widget/SwitchBar$SavedState;->checked:Z
+    iget-boolean v0, p1, Lcom/android/vendorsettings/widget/SwitchBar$SavedState;->checked:Z
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/SwitchBar;->bv(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/widget/SwitchBar;->bv(Z)V
 
     .line 276
-    iget-boolean v0, p1, Lcom/android/settings/widget/SwitchBar$SavedState;->visible:Z
+    iget-boolean v0, p1, Lcom/android/vendorsettings/widget/SwitchBar$SavedState;->visible:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x0
 
     :goto_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/widget/SwitchBar;->setVisibility(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/widget/SwitchBar;->setVisibility(I)V
 
     .line 277
-    iget-object v1, p0, Lcom/android/settings/widget/SwitchBar;->azA:Lcom/android/settings/widget/ToggleSwitch;
+    iget-object v1, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azA:Lcom/android/vendorsettings/widget/ToggleSwitch;
 
-    iget-boolean v0, p1, Lcom/android/settings/widget/SwitchBar$SavedState;->visible:Z
+    iget-boolean v0, p1, Lcom/android/vendorsettings/widget/SwitchBar$SavedState;->visible:Z
 
     if-eqz v0, :cond_1
 
     move-object v0, p0
 
     :goto_1
-    invoke-virtual {v1, v0}, Lcom/android/settings/widget/ToggleSwitch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/widget/ToggleSwitch;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 279
-    invoke-virtual {p0}, Lcom/android/settings/widget/SwitchBar;->requestLayout()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/SwitchBar;->requestLayout()V
 
     .line 280
     return-void
@@ -646,25 +646,25 @@
     move-result-object v0
 
     .line 262
-    new-instance v1, Lcom/android/settings/widget/SwitchBar$SavedState;
+    new-instance v1, Lcom/android/vendorsettings/widget/SwitchBar$SavedState;
 
-    invoke-direct {v1, v0}, Lcom/android/settings/widget/SwitchBar$SavedState;-><init>(Landroid/os/Parcelable;)V
+    invoke-direct {v1, v0}, Lcom/android/vendorsettings/widget/SwitchBar$SavedState;-><init>(Landroid/os/Parcelable;)V
 
     .line 263
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azA:Lcom/android/settings/widget/ToggleSwitch;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azA:Lcom/android/vendorsettings/widget/ToggleSwitch;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/ToggleSwitch;->isChecked()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/widget/ToggleSwitch;->isChecked()Z
 
     move-result v0
 
-    iput-boolean v0, v1, Lcom/android/settings/widget/SwitchBar$SavedState;->checked:Z
+    iput-boolean v0, v1, Lcom/android/vendorsettings/widget/SwitchBar$SavedState;->checked:Z
 
     .line 264
-    invoke-virtual {p0}, Lcom/android/settings/widget/SwitchBar;->isShowing()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/SwitchBar;->isShowing()Z
 
     move-result v0
 
-    iput-boolean v0, v1, Lcom/android/settings/widget/SwitchBar$SavedState;->visible:Z
+    iput-boolean v0, v1, Lcom/android/vendorsettings/widget/SwitchBar$SavedState;->visible:Z
 
     .line 265
     return-object v1
@@ -675,12 +675,12 @@
 
     .prologue
     .line 138
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/SwitchBar;->bv(Z)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/widget/SwitchBar;->bv(Z)V
 
     .line 139
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azA:Lcom/android/settings/widget/ToggleSwitch;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azA:Lcom/android/vendorsettings/widget/ToggleSwitch;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/widget/ToggleSwitch;->setChecked(Z)V
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/widget/ToggleSwitch;->setChecked(Z)V
 
     .line 140
     return-void
@@ -694,14 +694,14 @@
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->setEnabled(Z)V
 
     .line 153
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azB:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azB:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setEnabled(Z)V
 
     .line 154
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azA:Lcom/android/settings/widget/ToggleSwitch;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azA:Lcom/android/vendorsettings/widget/ToggleSwitch;
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/widget/ToggleSwitch;->setEnabled(Z)V
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/widget/ToggleSwitch;->setEnabled(Z)V
 
     .line 155
     return-void
@@ -712,18 +712,18 @@
 
     .prologue
     .line 167
-    invoke-virtual {p0}, Lcom/android/settings/widget/SwitchBar;->hide()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/SwitchBar;->hide()V
 
     .line 169
     return-void
 .end method
 
-.method public final wO()Lcom/android/settings/widget/ToggleSwitch;
+.method public final wO()Lcom/android/vendorsettings/widget/ToggleSwitch;
     .locals 1
 
     .prologue
     .line 158
-    iget-object v0, p0, Lcom/android/settings/widget/SwitchBar;->azA:Lcom/android/settings/widget/ToggleSwitch;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/SwitchBar;->azA:Lcom/android/vendorsettings/widget/ToggleSwitch;
 
     return-object v0
 .end method

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dndmode/n;
+.class public Lcom/android/vendorsettings/dndmode/n;
 .super Ljava/lang/Object;
 .source "HolidayHelper.java"
 

@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/widget/K;
+.class public Lcom/android/vendorsettings/widget/K;
 .super Landroid/preference/CheckBoxPreference;
 .source "TogglePreference.java"
 
 
 # instance fields
-.field private azF:Lcom/android/settings/widget/L;
+.field private azF:Lcom/android/vendorsettings/widget/L;
 
 
 # direct methods
@@ -21,12 +21,12 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/widget/L;)V
+.method public a(Lcom/android/vendorsettings/widget/L;)V
     .locals 0
 
     .prologue
     .line 32
-    iput-object p1, p0, Lcom/android/settings/widget/K;->azF:Lcom/android/settings/widget/L;
+    iput-object p1, p0, Lcom/android/vendorsettings/widget/K;->azF:Lcom/android/vendorsettings/widget/L;
 
     .line 33
     return-void
@@ -48,13 +48,13 @@
 
     .prologue
     .line 37
-    iget-object v0, p0, Lcom/android/settings/widget/K;->azF:Lcom/android/settings/widget/L;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/K;->azF:Lcom/android/vendorsettings/widget/L;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/widget/K;->azF:Lcom/android/settings/widget/L;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/K;->azF:Lcom/android/vendorsettings/widget/L;
 
-    invoke-interface {v0, p0, p1}, Lcom/android/settings/widget/L;->a(Lcom/android/settings/widget/K;Z)Z
+    invoke-interface {v0, p0, p1}, Lcom/android/vendorsettings/widget/L;->a(Lcom/android/vendorsettings/widget/K;Z)Z
 
     move-result v0
 

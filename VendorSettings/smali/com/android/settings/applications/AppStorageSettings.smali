@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/AppStorageSettings;
-.super Lcom/android/settings/applications/AppInfoWithHeader;
+.class public Lcom/android/vendorsettings/applications/AppStorageSettings;
+.super Lcom/android/vendorsettings/applications/AppInfoWithHeader;
 .source "AppStorageSettings.java"
 
 # interfaces
@@ -49,9 +49,9 @@
 
 .field private Ha:J
 
-.field private Hb:Lcom/android/settings/applications/AppStorageSettings$ClearCacheObserver;
+.field private Hb:Lcom/android/vendorsettings/applications/AppStorageSettings$ClearCacheObserver;
 
-.field private Hc:Lcom/android/settings/applications/AppStorageSettings$ClearUserDataObserver;
+.field private Hc:Lcom/android/vendorsettings/applications/AppStorageSettings$ClearUserDataObserver;
 
 .field private Hd:Ljava/lang/CharSequence;
 
@@ -70,13 +70,13 @@
 
     .prologue
     .line 57
-    const-class v0, Lcom/android/settings/applications/AppStorageSettings;
+    const-class v0, Lcom/android/vendorsettings/applications/AppStorageSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/applications/AppStorageSettings;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/applications/AppStorageSettings;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -88,42 +88,42 @@
     const-wide/16 v2, -0x1
 
     .line 55
-    invoke-direct {p0}, Lcom/android/settings/applications/AppInfoWithHeader;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/AppInfoWithHeader;-><init>()V
 
     .line 104
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GT:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GT:Z
 
     .line 105
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GU:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GU:Z
 
     .line 107
-    iput-wide v2, p0, Lcom/android/settings/applications/AppStorageSettings;->GV:J
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GV:J
 
     .line 108
-    iput-wide v2, p0, Lcom/android/settings/applications/AppStorageSettings;->GW:J
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GW:J
 
     .line 109
-    iput-wide v2, p0, Lcom/android/settings/applications/AppStorageSettings;->GX:J
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GX:J
 
     .line 110
-    iput-wide v2, p0, Lcom/android/settings/applications/AppStorageSettings;->GY:J
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GY:J
 
     .line 111
-    iput-wide v2, p0, Lcom/android/settings/applications/AppStorageSettings;->GZ:J
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GZ:J
 
     .line 112
-    iput-wide v2, p0, Lcom/android/settings/applications/AppStorageSettings;->Ha:J
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Ha:J
 
     .line 457
-    new-instance v0, Lcom/android/settings/applications/AppStorageSettings$3;
+    new-instance v0, Lcom/android/vendorsettings/applications/AppStorageSettings$3;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/applications/AppStorageSettings$3;-><init>(Lcom/android/settings/applications/AppStorageSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/applications/AppStorageSettings$3;-><init>(Lcom/android/vendorsettings/applications/AppStorageSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->mHandler:Landroid/os/Handler;
 
     .line 509
     return-void
@@ -190,7 +190,7 @@
 
     const/4 v3, 0x0
 
-    invoke-static {p0, p1}, Lcom/android/settings/applications/AppStorageSettings;->b(Lcom/android/b/a/o;Landroid/content/Context;)Ljava/lang/CharSequence;
+    invoke-static {p0, p1}, Lcom/android/vendorsettings/applications/AppStorageSettings;->b(Lcom/android/b/a/o;Landroid/content/Context;)Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -213,32 +213,32 @@
     goto :goto_1
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/AppStorageSettings;)V
+.method static synthetic a(Lcom/android/vendorsettings/applications/AppStorageSettings;)V
     .locals 0
 
     .prologue
     .line 55
-    invoke-direct {p0}, Lcom/android/settings/applications/AppStorageSettings;->kb()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->kb()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/AppStorageSettings;Landroid/os/Message;)V
+.method static synthetic a(Lcom/android/vendorsettings/applications/AppStorageSettings;Landroid/os/Message;)V
     .locals 0
 
     .prologue
     .line 55
-    invoke-direct {p0, p1}, Lcom/android/settings/applications/AppStorageSettings;->b(Landroid/os/Message;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/applications/AppStorageSettings;->b(Landroid/os/Message;)V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/applications/AppStorageSettings;)Landroid/widget/Button;
+.method static synthetic b(Lcom/android/vendorsettings/applications/AppStorageSettings;)Landroid/widget/Button;
     .locals 1
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
 
     return-object v0
 .end method
@@ -286,14 +286,14 @@
     iget v0, p1, Landroid/os/Message;->arg1:I
 
     .line 409
-    iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-object v1, v1, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
     iget-object v1, v1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
     .line 410
-    iget-object v2, p0, Lcom/android/settings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
 
     const v3, 0x7f0c058d
 
@@ -303,7 +303,7 @@
     if-ne v0, v4, :cond_0
 
     .line 412
-    sget-object v0, Lcom/android/settings/applications/AppStorageSettings;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/applications/AppStorageSettings;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -326,11 +326,11 @@
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 413
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Fh:Lcom/android/b/a/a;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fh:Lcom/android/b/a/a;
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings;->mPackageName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->mPackageName:Ljava/lang/String;
 
-    iget v2, p0, Lcom/android/settings/applications/AppStorageSettings;->mUserId:I
+    iget v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->mUserId:I
 
     invoke-virtual {v0, v1, v2}, Lcom/android/b/a/a;->w(Ljava/lang/String;I)V
 
@@ -340,19 +340,19 @@
 
     .line 415
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
 
     invoke-virtual {v0, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
     goto :goto_0
 .end method
 
-.method static synthetic c(Lcom/android/settings/applications/AppStorageSettings;)Landroid/os/Handler;
+.method static synthetic c(Lcom/android/vendorsettings/applications/AppStorageSettings;)Landroid/os/Handler;
     .locals 1
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
@@ -364,7 +364,7 @@
     const v2, 0x7f130066
 
     .line 144
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -374,10 +374,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->He:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->He:Ljava/lang/CharSequence;
 
     .line 145
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -387,52 +387,52 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Hd:Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Hd:Ljava/lang/CharSequence;
 
     .line 148
     const-string v0, "total_size"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GJ:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GJ:Landroid/preference/Preference;
 
     .line 149
     const-string v0, "app_size"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GK:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GK:Landroid/preference/Preference;
 
     .line 150
     const-string v0, "data_size"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GL:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GL:Landroid/preference/Preference;
 
     .line 151
     const-string v0, "external_code_size"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GM:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GM:Landroid/preference/Preference;
 
     .line 152
     const-string v0, "external_data_size"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GN:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GN:Landroid/preference/Preference;
 
     .line 154
     invoke-static {}, Landroid/os/Environment;->isExternalStorageEmulated()Z
@@ -444,19 +444,19 @@
     .line 155
     const-string v0, "storage_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
     .line 156
-    iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings;->GM:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GM:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
     .line 157
-    iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings;->GN:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GN:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
@@ -464,86 +464,86 @@
     :cond_0
     const-string v0, "clear_data_button"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/LayoutPreference;
+    check-cast v0, Lcom/android/vendorsettings/applications/LayoutPreference;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/applications/LayoutPreference;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/applications/LayoutPreference;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
 
     .line 162
     const-string v0, "storage_used"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GR:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GR:Landroid/preference/Preference;
 
     .line 163
     const-string v0, "change_storage_button"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/LayoutPreference;
+    check-cast v0, Lcom/android/vendorsettings/applications/LayoutPreference;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/applications/LayoutPreference;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/applications/LayoutPreference;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GS:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GS:Landroid/widget/Button;
 
     .line 165
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GS:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GS:Landroid/widget/Button;
 
     const v1, 0x7f0c0aef
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(I)V
 
     .line 166
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GS:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GS:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 169
     const-string v0, "cache_size"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GO:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GO:Landroid/preference/Preference;
 
     .line 170
     const-string v0, "clear_cache_button"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/LayoutPreference;
+    check-cast v0, Lcom/android/vendorsettings/applications/LayoutPreference;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/applications/LayoutPreference;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/applications/LayoutPreference;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GQ:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GQ:Landroid/widget/Button;
 
     .line 172
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GQ:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GQ:Landroid/widget/Button;
 
     const v1, 0x7f0c057f
 
@@ -564,7 +564,7 @@
 
     .line 203
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings;->mPackageName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->mPackageName:Ljava/lang/String;
 
     invoke-interface {v0, v1}, Landroid/content/pm/IPackageManager;->isPackageFrozen(Ljava/lang/String;)Z
     :try_end_0
@@ -599,7 +599,7 @@
     const/4 v8, 0x0
 
     .line 234
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v0, v0, Lcom/android/b/a/o;->size:J
 
@@ -609,7 +609,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v0, v0, Lcom/android/b/a/o;->size:J
 
@@ -619,71 +619,71 @@
 
     .line 236
     :cond_0
-    iput-wide v4, p0, Lcom/android/settings/applications/AppStorageSettings;->Ha:J
+    iput-wide v4, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Ha:J
 
-    iput-wide v4, p0, Lcom/android/settings/applications/AppStorageSettings;->GZ:J
+    iput-wide v4, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GZ:J
 
-    iput-wide v4, p0, Lcom/android/settings/applications/AppStorageSettings;->GW:J
+    iput-wide v4, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GW:J
 
-    iput-wide v4, p0, Lcom/android/settings/applications/AppStorageSettings;->GV:J
+    iput-wide v4, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GV:J
 
     .line 237
-    iget-boolean v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GU:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GU:Z
 
     if-nez v0, :cond_1
 
     .line 238
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GK:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GK:Landroid/preference/Preference;
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings;->He:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->He:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 239
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GL:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GL:Landroid/preference/Preference;
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings;->He:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->He:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 240
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GO:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GO:Landroid/preference/Preference;
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings;->He:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->He:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 241
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GJ:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GJ:Landroid/preference/Preference;
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings;->He:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->He:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 243
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
 
     invoke-virtual {v0, v8}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 244
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GQ:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GQ:Landroid/widget/Button;
 
     invoke-virtual {v0, v8}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 294
     :goto_0
-    iget-boolean v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Fg:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fg:Z
 
     if-eqz v0, :cond_2
 
     .line 295
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GQ:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GQ:Landroid/widget/Button;
 
     invoke-virtual {v0, v8}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 296
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
 
     invoke-virtual {v0, v8}, Landroid/widget/Button;->setEnabled(Z)V
 
@@ -693,15 +693,15 @@
 
     .line 247
     :cond_3
-    iput-boolean v9, p0, Lcom/android/settings/applications/AppStorageSettings;->GU:Z
+    iput-boolean v9, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GU:Z
 
     .line 248
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v2, v0, Lcom/android/b/a/o;->codeSize:J
 
     .line 249
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v0, v0, Lcom/android/b/a/o;->dataSize:J
 
@@ -713,14 +713,14 @@
     if-eqz v4, :cond_a
 
     .line 251
-    iget-object v4, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v4, v4, Lcom/android/b/a/o;->externalCodeSize:J
 
     add-long/2addr v2, v4
 
     .line 252
-    iget-object v4, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v4, v4, Lcom/android/b/a/o;->externalDataSize:J
 
@@ -729,19 +729,19 @@
     .line 263
     :cond_4
     :goto_1
-    iget-wide v4, p0, Lcom/android/settings/applications/AppStorageSettings;->GV:J
+    iget-wide v4, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GV:J
 
     cmp-long v4, v4, v2
 
     if-eqz v4, :cond_5
 
     .line 264
-    iput-wide v2, p0, Lcom/android/settings/applications/AppStorageSettings;->GV:J
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GV:J
 
     .line 265
-    iget-object v4, p0, Lcom/android/settings/applications/AppStorageSettings;->GK:Landroid/preference/Preference;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GK:Landroid/preference/Preference;
 
-    invoke-direct {p0, v2, v3}, Lcom/android/settings/applications/AppStorageSettings;->n(J)Ljava/lang/String;
+    invoke-direct {p0, v2, v3}, Lcom/android/vendorsettings/applications/AppStorageSettings;->n(J)Ljava/lang/String;
 
     move-result-object v2
 
@@ -749,19 +749,19 @@
 
     .line 267
     :cond_5
-    iget-wide v2, p0, Lcom/android/settings/applications/AppStorageSettings;->GW:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GW:J
 
     cmp-long v2, v2, v0
 
     if-eqz v2, :cond_6
 
     .line 268
-    iput-wide v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GW:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GW:J
 
     .line 269
-    iget-object v2, p0, Lcom/android/settings/applications/AppStorageSettings;->GL:Landroid/preference/Preference;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GL:Landroid/preference/Preference;
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/applications/AppStorageSettings;->n(J)Ljava/lang/String;
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/applications/AppStorageSettings;->n(J)Ljava/lang/String;
 
     move-result-object v0
 
@@ -769,30 +769,30 @@
 
     .line 271
     :cond_6
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v0, v0, Lcom/android/b/a/o;->cacheSize:J
 
-    iget-object v2, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v2, v2, Lcom/android/b/a/o;->externalCacheSize:J
 
     add-long/2addr v0, v2
 
     .line 272
-    iget-wide v2, p0, Lcom/android/settings/applications/AppStorageSettings;->GZ:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GZ:J
 
     cmp-long v2, v2, v0
 
     if-eqz v2, :cond_7
 
     .line 273
-    iput-wide v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GZ:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GZ:J
 
     .line 274
-    iget-object v2, p0, Lcom/android/settings/applications/AppStorageSettings;->GO:Landroid/preference/Preference;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GO:Landroid/preference/Preference;
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/applications/AppStorageSettings;->n(J)Ljava/lang/String;
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/applications/AppStorageSettings;->n(J)Ljava/lang/String;
 
     move-result-object v3
 
@@ -800,9 +800,9 @@
 
     .line 276
     :cond_7
-    iget-wide v2, p0, Lcom/android/settings/applications/AppStorageSettings;->Ha:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Ha:J
 
-    iget-object v4, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v4, v4, Lcom/android/b/a/o;->size:J
 
@@ -811,20 +811,20 @@
     if-eqz v2, :cond_8
 
     .line 277
-    iget-object v2, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v2, v2, Lcom/android/b/a/o;->size:J
 
-    iput-wide v2, p0, Lcom/android/settings/applications/AppStorageSettings;->Ha:J
+    iput-wide v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Ha:J
 
     .line 278
-    iget-object v2, p0, Lcom/android/settings/applications/AppStorageSettings;->GJ:Landroid/preference/Preference;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GJ:Landroid/preference/Preference;
 
-    iget-object v3, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v4, v3, Lcom/android/b/a/o;->size:J
 
-    invoke-direct {p0, v4, v5}, Lcom/android/settings/applications/AppStorageSettings;->n(J)Ljava/lang/String;
+    invoke-direct {p0, v4, v5}, Lcom/android/vendorsettings/applications/AppStorageSettings;->n(J)Ljava/lang/String;
 
     move-result-object v3
 
@@ -832,11 +832,11 @@
 
     .line 281
     :cond_8
-    iget-object v2, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v2, v2, Lcom/android/b/a/o;->dataSize:J
 
-    iget-object v4, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v4, v4, Lcom/android/b/a/o;->externalDataSize:J
 
@@ -846,13 +846,13 @@
 
     if-lez v2, :cond_9
 
-    iget-boolean v2, p0, Lcom/android/settings/applications/AppStorageSettings;->GT:Z
+    iget-boolean v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GT:Z
 
     if-nez v2, :cond_c
 
     .line 282
     :cond_9
-    iget-object v2, p0, Lcom/android/settings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
 
     invoke-virtual {v2, v8}, Landroid/widget/Button;->setEnabled(Z)V
 
@@ -863,7 +863,7 @@
     if-gtz v0, :cond_d
 
     .line 288
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GQ:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GQ:Landroid/widget/Button;
 
     invoke-virtual {v0, v8}, Landroid/widget/Button;->setEnabled(Z)V
 
@@ -871,9 +871,9 @@
 
     .line 254
     :cond_a
-    iget-wide v4, p0, Lcom/android/settings/applications/AppStorageSettings;->GX:J
+    iget-wide v4, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GX:J
 
-    iget-object v6, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v6, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v6, v6, Lcom/android/b/a/o;->externalCodeSize:J
 
@@ -882,20 +882,20 @@
     if-eqz v4, :cond_b
 
     .line 255
-    iget-object v4, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v4, v4, Lcom/android/b/a/o;->externalCodeSize:J
 
-    iput-wide v4, p0, Lcom/android/settings/applications/AppStorageSettings;->GX:J
+    iput-wide v4, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GX:J
 
     .line 256
-    iget-object v4, p0, Lcom/android/settings/applications/AppStorageSettings;->GM:Landroid/preference/Preference;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GM:Landroid/preference/Preference;
 
-    iget-object v5, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v6, v5, Lcom/android/b/a/o;->externalCodeSize:J
 
-    invoke-direct {p0, v6, v7}, Lcom/android/settings/applications/AppStorageSettings;->n(J)Ljava/lang/String;
+    invoke-direct {p0, v6, v7}, Lcom/android/vendorsettings/applications/AppStorageSettings;->n(J)Ljava/lang/String;
 
     move-result-object v5
 
@@ -903,9 +903,9 @@
 
     .line 258
     :cond_b
-    iget-wide v4, p0, Lcom/android/settings/applications/AppStorageSettings;->GY:J
+    iget-wide v4, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GY:J
 
-    iget-object v6, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v6, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v6, v6, Lcom/android/b/a/o;->externalDataSize:J
 
@@ -914,20 +914,20 @@
     if-eqz v4, :cond_4
 
     .line 259
-    iget-object v4, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v4, v4, Lcom/android/b/a/o;->externalDataSize:J
 
-    iput-wide v4, p0, Lcom/android/settings/applications/AppStorageSettings;->GY:J
+    iput-wide v4, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GY:J
 
     .line 260
-    iget-object v4, p0, Lcom/android/settings/applications/AppStorageSettings;->GN:Landroid/preference/Preference;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GN:Landroid/preference/Preference;
 
-    iget-object v5, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-wide v6, v5, Lcom/android/b/a/o;->externalDataSize:J
 
-    invoke-direct {p0, v6, v7}, Lcom/android/settings/applications/AppStorageSettings;->n(J)Ljava/lang/String;
+    invoke-direct {p0, v6, v7}, Lcom/android/vendorsettings/applications/AppStorageSettings;->n(J)Ljava/lang/String;
 
     move-result-object v5
 
@@ -937,12 +937,12 @@
 
     .line 284
     :cond_c
-    iget-object v2, p0, Lcom/android/settings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
 
     invoke-virtual {v2, v9}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 285
-    iget-object v2, p0, Lcom/android/settings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
 
     invoke-virtual {v2, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -950,12 +950,12 @@
 
     .line 290
     :cond_d
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GQ:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GQ:Landroid/widget/Button;
 
     invoke-virtual {v0, v9}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 291
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GQ:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GQ:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -967,10 +967,10 @@
 
     .prologue
     .line 319
-    invoke-direct {p0}, Lcom/android/settings/applications/AppStorageSettings;->ka()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->ka()V
 
     .line 320
-    invoke-direct {p0}, Lcom/android/settings/applications/AppStorageSettings;->jZ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->jZ()V
 
     .line 321
     return-void
@@ -985,7 +985,7 @@
     const/4 v2, 0x0
 
     .line 327
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -993,7 +993,7 @@
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -1005,9 +1005,9 @@
 
     if-eq v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->jd:Landroid/app/admin/DevicePolicyManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->jd:Landroid/app/admin/DevicePolicyManager;
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings;->mPackageName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->mPackageName:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/app/admin/DevicePolicyManager;->packageHasActiveAdmins(Ljava/lang/String;)Z
 
@@ -1017,26 +1017,26 @@
 
     .line 332
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
 
     invoke-virtual {v0, v3}, Landroid/widget/Button;->setText(I)V
 
     .line 333
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 334
-    iput-boolean v2, p0, Lcom/android/settings/applications/AppStorageSettings;->GT:Z
+    iput-boolean v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GT:Z
 
     .line 344
     :goto_0
-    iget-boolean v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Fg:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fg:Z
 
     if-eqz v0, :cond_1
 
     .line 345
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setEnabled(Z)V
 
@@ -1046,7 +1046,7 @@
 
     .line 336
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -1055,7 +1055,7 @@
     if-eqz v0, :cond_3
 
     .line 337
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
 
     const v1, 0x7f0c05a0
 
@@ -1063,7 +1063,7 @@
 
     .line 341
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1071,7 +1071,7 @@
 
     .line 339
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
 
     invoke-virtual {v0, v3}, Landroid/widget/Button;->setText(I)V
 
@@ -1083,7 +1083,7 @@
 
     .prologue
     .line 350
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1101,7 +1101,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-object v2, v2, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -1161,7 +1161,7 @@
     move-result-object v1
 
     .line 362
-    iget-object v6, p0, Lcom/android/settings/applications/AppStorageSettings;->GR:Landroid/preference/Preference;
+    iget-object v6, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GR:Landroid/preference/Preference;
 
     invoke-virtual {v6}, Landroid/preference/Preference;->getSummary()Ljava/lang/CharSequence;
 
@@ -1200,12 +1200,12 @@
 
     check-cast v0, [Landroid/os/storage/VolumeInfo;
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Hf:[Landroid/os/storage/VolumeInfo;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Hf:[Landroid/os/storage/VolumeInfo;
 
     .line 368
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppStorageSettings;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -1229,7 +1229,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Hg:Landroid/app/AlertDialog$Builder;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Hg:Landroid/app/AlertDialog$Builder;
 
     .line 377
     :goto_1
@@ -1239,17 +1239,17 @@
     :cond_2
     const-string v0, "storage_used"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppStorageSettings;->U(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->U(Ljava/lang/String;)V
 
     .line 374
     const-string v0, "change_storage_button"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppStorageSettings;->U(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->U(Ljava/lang/String;)V
 
     .line 375
     const-string v0, "storage_space"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppStorageSettings;->U(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->U(Ljava/lang/String;)V
 
     goto :goto_1
 .end method
@@ -1261,19 +1261,19 @@
     const/4 v4, 0x0
 
     .line 384
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
 
     invoke-virtual {v0, v4}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 386
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
     iget-object v1, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
     .line 387
-    sget-object v0, Lcom/android/settings/applications/AppStorageSettings;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/applications/AppStorageSettings;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1296,20 +1296,20 @@
     invoke-static {v0, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 388
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Hc:Lcom/android/settings/applications/AppStorageSettings$ClearUserDataObserver;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Hc:Lcom/android/vendorsettings/applications/AppStorageSettings$ClearUserDataObserver;
 
     if-nez v0, :cond_0
 
     .line 389
-    new-instance v0, Lcom/android/settings/applications/AppStorageSettings$ClearUserDataObserver;
+    new-instance v0, Lcom/android/vendorsettings/applications/AppStorageSettings$ClearUserDataObserver;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/applications/AppStorageSettings$ClearUserDataObserver;-><init>(Lcom/android/settings/applications/AppStorageSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/applications/AppStorageSettings$ClearUserDataObserver;-><init>(Lcom/android/vendorsettings/applications/AppStorageSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Hc:Lcom/android/settings/applications/AppStorageSettings$ClearUserDataObserver;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Hc:Lcom/android/vendorsettings/applications/AppStorageSettings$ClearUserDataObserver;
 
     .line 391
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1322,7 +1322,7 @@
     check-cast v0, Landroid/app/ActivityManager;
 
     .line 393
-    iget-object v2, p0, Lcom/android/settings/applications/AppStorageSettings;->Hc:Lcom/android/settings/applications/AppStorageSettings$ClearUserDataObserver;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Hc:Lcom/android/vendorsettings/applications/AppStorageSettings$ClearUserDataObserver;
 
     invoke-virtual {v0, v1, v2}, Landroid/app/ActivityManager;->clearApplicationUserData(Ljava/lang/String;Landroid/content/pm/IPackageDataObserver;)Z
 
@@ -1332,7 +1332,7 @@
     if-nez v0, :cond_1
 
     .line 396
-    sget-object v0, Lcom/android/settings/applications/AppStorageSettings;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/applications/AppStorageSettings;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1357,7 +1357,7 @@
     .line 397
     const/4 v0, 0x2
 
-    invoke-virtual {p0, v0, v4}, Lcom/android/settings/applications/AppStorageSettings;->e(II)V
+    invoke-virtual {p0, v0, v4}, Lcom/android/vendorsettings/applications/AppStorageSettings;->e(II)V
 
     .line 401
     :goto_0
@@ -1365,7 +1365,7 @@
 
     .line 399
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
 
     const v1, 0x7f0c05ae
 
@@ -1386,7 +1386,7 @@
     if-nez v0, :cond_0
 
     .line 228
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Hd:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Hd:Ljava/lang/CharSequence;
 
     invoke-interface {v0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
@@ -1397,7 +1397,7 @@
     return-object v0
 
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1415,7 +1415,7 @@
 
     .prologue
     .line 452
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -1428,7 +1428,7 @@
     if-eqz v0, :cond_0
 
     .line 453
-    invoke-direct {p0}, Lcom/android/settings/applications/AppStorageSettings;->jX()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->jX()V
 
     .line 455
     :cond_0
@@ -1454,13 +1454,13 @@
     :pswitch_0
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1474,7 +1474,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1488,9 +1488,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/applications/AppStorageSettings$1;
+    new-instance v2, Lcom/android/vendorsettings/applications/AppStorageSettings$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/applications/AppStorageSettings$1;-><init>(Lcom/android/settings/applications/AppStorageSettings;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/applications/AppStorageSettings$1;-><init>(Lcom/android/vendorsettings/applications/AppStorageSettings;)V
 
     invoke-virtual {v1, v4, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1512,13 +1512,13 @@
     :pswitch_1
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1532,7 +1532,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1546,9 +1546,9 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/applications/AppStorageSettings$2;
+    new-instance v1, Lcom/android/vendorsettings/applications/AppStorageSettings$2;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/applications/AppStorageSettings$2;-><init>(Lcom/android/settings/applications/AppStorageSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/applications/AppStorageSettings$2;-><init>(Lcom/android/vendorsettings/applications/AppStorageSettings;)V
 
     invoke-virtual {v0, v4, v1}, Landroid/app/AlertDialog$Builder;->setNeutralButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1575,7 +1575,7 @@
 
     .prologue
     .line 126
-    const-class v0, Lcom/android/settings/applications/AppStorageSettings;
+    const-class v0, Lcom/android/vendorsettings/applications/AppStorageSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1589,10 +1589,10 @@
 
     .prologue
     .line 302
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppStorageSettings;->jE()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->jE()Ljava/lang/String;
 
     .line 303
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     if-nez v0, :cond_0
 
@@ -1605,10 +1605,10 @@
 
     .line 306
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/applications/AppStorageSettings;->jX()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->jX()V
 
     .line 308
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1616,7 +1616,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-object v1, v1, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -1625,7 +1625,7 @@
     move-result-object v1
 
     .line 310
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppStorageSettings;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -1638,7 +1638,7 @@
     check-cast v0, Landroid/os/storage/StorageManager;
 
     .line 311
-    iget-object v2, p0, Lcom/android/settings/applications/AppStorageSettings;->GR:Landroid/preference/Preference;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GR:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/os/storage/StorageManager;->getBestVolumeDescription(Landroid/os/storage/VolumeInfo;)Ljava/lang/String;
 
@@ -1647,7 +1647,7 @@
     invoke-virtual {v2, v0}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 313
-    invoke-direct {p0}, Lcom/android/settings/applications/AppStorageSettings;->jY()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->jY()V
 
     .line 315
     const/4 v0, 0x1
@@ -1660,12 +1660,12 @@
 
     .prologue
     .line 211
-    invoke-virtual {p0}, Lcom/android/settings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     .line 214
-    iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings;->Hf:[Landroid/os/storage/VolumeInfo;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Hf:[Landroid/os/storage/VolumeInfo;
 
     aget-object v1, v1, p2
 
@@ -1674,7 +1674,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-object v3, v3, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -1692,7 +1692,7 @@
     .line 218
     new-instance v2, Landroid/content/Intent;
 
-    const-class v3, Lcom/android/settings/deviceinfo/StorageWizardMoveConfirm;
+    const-class v3, Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveConfirm;
 
     invoke-direct {v2, v0, v3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -1708,7 +1708,7 @@
     .line 220
     const-string v0, "android.intent.extra.PACKAGE_NAME"
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-object v1, v1, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -1717,7 +1717,7 @@
     invoke-virtual {v2, v0, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 221
-    invoke-virtual {p0, v2}, Lcom/android/settings/applications/AppStorageSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/applications/AppStorageSettings;->startActivity(Landroid/content/Intent;)V
 
     .line 223
     :cond_0
@@ -1732,29 +1732,29 @@
 
     .prologue
     .line 177
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GQ:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GQ:Landroid/widget/Button;
 
     if-ne p1, v0, :cond_2
 
     .line 179
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Hb:Lcom/android/settings/applications/AppStorageSettings$ClearCacheObserver;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Hb:Lcom/android/vendorsettings/applications/AppStorageSettings$ClearCacheObserver;
 
     if-nez v0, :cond_0
 
     .line 180
-    new-instance v0, Lcom/android/settings/applications/AppStorageSettings$ClearCacheObserver;
+    new-instance v0, Lcom/android/vendorsettings/applications/AppStorageSettings$ClearCacheObserver;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/applications/AppStorageSettings$ClearCacheObserver;-><init>(Lcom/android/settings/applications/AppStorageSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/applications/AppStorageSettings$ClearCacheObserver;-><init>(Lcom/android/vendorsettings/applications/AppStorageSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Hb:Lcom/android/settings/applications/AppStorageSettings$ClearCacheObserver;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Hb:Lcom/android/vendorsettings/applications/AppStorageSettings$ClearCacheObserver;
 
     .line 182
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->i:Landroid/content/pm/PackageManager;
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings;->mPackageName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->mPackageName:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/settings/applications/AppStorageSettings;->Hb:Lcom/android/settings/applications/AppStorageSettings$ClearCacheObserver;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Hb:Lcom/android/vendorsettings/applications/AppStorageSettings$ClearCacheObserver;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/pm/PackageManager;->deleteApplicationCacheFiles(Ljava/lang/String;Landroid/content/pm/IPackageDataObserver;)V
 
@@ -1765,12 +1765,12 @@
 
     .line 183
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GP:Landroid/widget/Button;
 
     if-ne p1, v0, :cond_4
 
     .line 184
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -1779,7 +1779,7 @@
     if-eqz v0, :cond_3
 
     .line 185
-    invoke-static {}, Lcom/android/settings/iC;->iu()Z
+    invoke-static {}, Lcom/android/vendorsettings/iC;->iu()Z
 
     move-result v0
 
@@ -1793,13 +1793,13 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 187
-    iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-object v1, v1, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
     iget-object v1, v1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/settings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fi:Lcom/android/b/a/o;
 
     iget-object v2, v2, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -1810,7 +1810,7 @@
     .line 189
     const/4 v1, 0x2
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/applications/AppStorageSettings;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/applications/AppStorageSettings;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 
@@ -1820,28 +1820,28 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/applications/AppStorageSettings;->e(II)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/applications/AppStorageSettings;->e(II)V
 
     goto :goto_0
 
     .line 194
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->GS:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->GS:Landroid/widget/Button;
 
     if-ne p1, v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Hg:Landroid/app/AlertDialog$Builder;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Hg:Landroid/app/AlertDialog$Builder;
 
     if-eqz v0, :cond_1
 
-    invoke-direct {p0}, Lcom/android/settings/applications/AppStorageSettings;->jW()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->jW()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
     .line 195
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Hg:Landroid/app/AlertDialog$Builder;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Hg:Landroid/app/AlertDialog$Builder;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
@@ -1853,15 +1853,15 @@
 
     .prologue
     .line 131
-    invoke-super {p0, p1}, Lcom/android/settings/applications/AppInfoWithHeader;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/applications/AppInfoWithHeader;->onCreate(Landroid/os/Bundle;)V
 
     .line 133
     const v0, 0x7f080017
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/AppStorageSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->addPreferencesFromResource(I)V
 
     .line 134
-    invoke-direct {p0}, Lcom/android/settings/applications/AppStorageSettings;->jV()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->jV()V
 
     .line 135
     return-void
@@ -1872,14 +1872,14 @@
 
     .prologue
     .line 139
-    invoke-super {p0}, Lcom/android/settings/applications/AppInfoWithHeader;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/applications/AppInfoWithHeader;->onResume()V
 
     .line 140
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings;->Fh:Lcom/android/b/a/a;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->Fh:Lcom/android/b/a/a;
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppStorageSettings;->mPackageName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->mPackageName:Ljava/lang/String;
 
-    iget v2, p0, Lcom/android/settings/applications/AppStorageSettings;->mUserId:I
+    iget v2, p0, Lcom/android/vendorsettings/applications/AppStorageSettings;->mUserId:I
 
     invoke-virtual {v0, v1, v2}, Lcom/android/b/a/a;->w(Ljava/lang/String;I)V
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ex;
+.class Lcom/android/vendorsettings/ex;
 .super Ljava/lang/Object;
 .source "MiuiLocaleSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic rm:Lcom/android/settings/MiuiLocaleSettings;
+.field final synthetic rm:Lcom/android/vendorsettings/MiuiLocaleSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiLocaleSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiLocaleSettings;)V
     .locals 0
 
     .prologue
     .line 105
-    iput-object p1, p0, Lcom/android/settings/ex;->rm:Lcom/android/settings/MiuiLocaleSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/ex;->rm:Lcom/android/vendorsettings/MiuiLocaleSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,18 +31,18 @@
     .prologue
     .line 109
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/ex;->rm:Lcom/android/settings/MiuiLocaleSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/ex;->rm:Lcom/android/vendorsettings/MiuiLocaleSettings;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiLocaleSettings;->b(Lcom/android/settings/MiuiLocaleSettings;)Landroid/app/ProgressDialog;
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiLocaleSettings;->b(Lcom/android/vendorsettings/MiuiLocaleSettings;)Landroid/app/ProgressDialog;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 110
-    iget-object v0, p0, Lcom/android/settings/ex;->rm:Lcom/android/settings/MiuiLocaleSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/ex;->rm:Lcom/android/vendorsettings/MiuiLocaleSettings;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiLocaleSettings;->b(Lcom/android/settings/MiuiLocaleSettings;)Landroid/app/ProgressDialog;
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiLocaleSettings;->b(Lcom/android/vendorsettings/MiuiLocaleSettings;)Landroid/app/ProgressDialog;
 
     move-result-object v0
 
@@ -50,9 +50,9 @@
 
     .line 112
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/ex;->rm:Lcom/android/settings/MiuiLocaleSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/ex;->rm:Lcom/android/vendorsettings/MiuiLocaleSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiLocaleSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/MiuiLocaleSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

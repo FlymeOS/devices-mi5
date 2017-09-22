@@ -1,10 +1,10 @@
-.class Lcom/android/settings/sound/k;
+.class Lcom/android/vendorsettings/sound/k;
 .super Landroid/widget/BaseAdapter;
 .source "AudioSettingsFragment.java"
 
 
 # instance fields
-.field final synthetic aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+.field final synthetic aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
 .field aqq:Ljava/util/List;
 
@@ -18,12 +18,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/sound/AudioSettingsFragment;Landroid/content/Context;)V
+.method public constructor <init>(Lcom/android/vendorsettings/sound/AudioSettingsFragment;Landroid/content/Context;)V
     .locals 1
 
     .prologue
     .line 140
-    iput-object p1, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
@@ -32,33 +32,33 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/sound/k;->aqq:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/k;->aqq:Ljava/util/List;
 
     .line 237
-    new-instance v0, Lcom/android/settings/sound/l;
+    new-instance v0, Lcom/android/vendorsettings/sound/l;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/sound/l;-><init>(Lcom/android/settings/sound/k;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/sound/l;-><init>(Lcom/android/vendorsettings/sound/k;)V
 
-    iput-object v0, p0, Lcom/android/settings/sound/k;->aqr:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/k;->aqr:Landroid/view/View$OnClickListener;
 
     .line 247
-    new-instance v0, Lcom/android/settings/sound/m;
+    new-instance v0, Lcom/android/vendorsettings/sound/m;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/sound/m;-><init>(Lcom/android/settings/sound/k;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/sound/m;-><init>(Lcom/android/vendorsettings/sound/k;)V
 
-    iput-object v0, p0, Lcom/android/settings/sound/k;->aqs:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/k;->aqs:Landroid/view/View$OnClickListener;
 
     .line 141
-    iput-object p2, p0, Lcom/android/settings/sound/k;->mContext:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/vendorsettings/sound/k;->mContext:Landroid/content/Context;
 
     .line 142
-    iget-object v0, p0, Lcom/android/settings/sound/k;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/k;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/sound/k;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/k;->mInflater:Landroid/view/LayoutInflater;
 
     .line 143
     return-void
@@ -72,7 +72,7 @@
     const/4 v0, 0x0
 
     .line 217
-    iget-object v1, p0, Lcom/android/settings/sound/k;->aqq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/k;->aqq:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -91,14 +91,14 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/sound/o;
+    check-cast v0, Lcom/android/vendorsettings/sound/o;
 
     .line 218
     sub-int v3, p1, v1
 
     if-nez v3, :cond_0
 
-    iget-object v3, v0, Lcom/android/settings/sound/o;->aqw:Ljava/util/List;
+    iget-object v3, v0, Lcom/android/vendorsettings/sound/o;->aqw:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->size()I
 
@@ -107,7 +107,7 @@
     if-eqz v3, :cond_0
 
     .line 219
-    iget-object v0, v0, Lcom/android/settings/sound/o;->title:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/vendorsettings/sound/o;->title:Ljava/lang/String;
 
     .line 223
     :goto_1
@@ -115,7 +115,7 @@
 
     .line 221
     :cond_0
-    iget-object v0, v0, Lcom/android/settings/sound/o;->aqw:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/vendorsettings/sound/o;->aqw:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -158,21 +158,21 @@
 
     .prologue
     .line 231
-    invoke-direct {p0, p1}, Lcom/android/settings/sound/k;->cK(I)Z
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/sound/k;->cK(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 232
-    iget-object v0, p0, Lcom/android/settings/sound/k;->aqs:Landroid/view/View$OnClickListener;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/k;->aqs:Landroid/view/View$OnClickListener;
 
     .line 234
     :goto_0
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/sound/k;->aqr:Landroid/view/View$OnClickListener;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/k;->aqr:Landroid/view/View$OnClickListener;
 
     goto :goto_0
 .end method
@@ -184,15 +184,15 @@
 
     .prologue
     .line 277
-    iget-object v0, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/sound/AudioSettingsFragment;->e(Lcom/android/settings/sound/AudioSettingsFragment;)Landroid/media/AudioManager;
+    invoke-static {v0}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->e(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Landroid/media/AudioManager;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-virtual {v1}, Lcom/android/settings/sound/AudioSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -207,9 +207,9 @@
     if-nez v0, :cond_0
 
     .line 278
-    iget-object v0, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/sound/AudioSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -231,9 +231,9 @@
     :cond_0
     if-eqz p1, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/sound/AudioSettingsFragment;->f(Lcom/android/settings/sound/AudioSettingsFragment;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->f(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -244,34 +244,34 @@
     if-eqz v0, :cond_1
 
     .line 281
-    iget-object v0, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/sound/AudioSettingsFragment;->g(Lcom/android/settings/sound/AudioSettingsFragment;)Lcom/android/settings/sound/BatchMediaPlayer;
+    invoke-static {v0}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->g(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Lcom/android/vendorsettings/sound/BatchMediaPlayer;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/sound/BatchMediaPlayer;->stop()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/sound/BatchMediaPlayer;->stop()V
 
     goto :goto_0
 
     .line 283
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/sound/AudioSettingsFragment;->g(Lcom/android/settings/sound/AudioSettingsFragment;)Lcom/android/settings/sound/BatchMediaPlayer;
+    invoke-static {v0}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->g(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Lcom/android/vendorsettings/sound/BatchMediaPlayer;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1}, Lcom/android/settings/sound/BatchMediaPlayer;->bI(Ljava/lang/String;)V
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/sound/BatchMediaPlayer;->bI(Ljava/lang/String;)V
 
     .line 284
-    iget-object v0, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/sound/AudioSettingsFragment;->g(Lcom/android/settings/sound/AudioSettingsFragment;)Lcom/android/settings/sound/BatchMediaPlayer;
+    invoke-static {v0}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->g(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Lcom/android/vendorsettings/sound/BatchMediaPlayer;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/sound/BatchMediaPlayer;->start()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/sound/BatchMediaPlayer;->start()V
 
     goto :goto_0
 .end method
@@ -284,7 +284,7 @@
     const/4 v0, 0x0
 
     .line 148
-    iget-object v1, p0, Lcom/android/settings/sound/k;->aqq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/k;->aqq:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -303,10 +303,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/sound/o;
+    check-cast v0, Lcom/android/vendorsettings/sound/o;
 
     .line 149
-    iget-object v0, v0, Lcom/android/settings/sound/o;->aqw:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/vendorsettings/sound/o;->aqw:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -332,7 +332,7 @@
     const/4 v0, 0x0
 
     .line 157
-    iget-object v1, p0, Lcom/android/settings/sound/k;->aqq:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/k;->aqq:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -351,12 +351,12 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/sound/o;
+    check-cast v0, Lcom/android/vendorsettings/sound/o;
 
     .line 158
     sub-int v3, p1, v1
 
-    iget-object v4, v0, Lcom/android/settings/sound/o;->aqw:Ljava/util/List;
+    iget-object v4, v0, Lcom/android/vendorsettings/sound/o;->aqw:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->size()I
 
@@ -365,7 +365,7 @@
     if-ge v3, v4, :cond_0
 
     .line 159
-    iget-object v0, v0, Lcom/android/settings/sound/o;->aqw:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/vendorsettings/sound/o;->aqw:Ljava/util/List;
 
     sub-int v1, p1, v1
 
@@ -379,7 +379,7 @@
 
     .line 161
     :cond_0
-    iget-object v0, v0, Lcom/android/settings/sound/o;->aqw:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/vendorsettings/sound/o;->aqw:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -423,7 +423,7 @@
     if-nez p2, :cond_0
 
     .line 174
-    iget-object v0, p0, Lcom/android/settings/sound/k;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/k;->mInflater:Landroid/view/LayoutInflater;
 
     const v1, 0x7f040121
 
@@ -435,7 +435,7 @@
 
     .line 176
     :cond_0
-    invoke-direct {p0, p1}, Lcom/android/settings/sound/k;->cJ(I)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/sound/k;->cJ(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -472,7 +472,7 @@
 
     .line 187
     :goto_0
-    invoke-direct {p0, p1}, Lcom/android/settings/sound/k;->cK(I)Z
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/sound/k;->cK(I)Z
 
     move-result v0
 
@@ -483,11 +483,11 @@
 
     .line 192
     :goto_1
-    invoke-virtual {p0, p1}, Lcom/android/settings/sound/k;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/sound/k;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/sound/n;
+    check-cast v0, Lcom/android/vendorsettings/sound/n;
 
     .line 193
     const v1, 0x7f13003d
@@ -522,12 +522,12 @@
     check-cast v3, Landroid/widget/ImageView;
 
     .line 197
-    iget-object v5, v0, Lcom/android/settings/sound/n;->name:Ljava/lang/String;
+    iget-object v5, v0, Lcom/android/vendorsettings/sound/n;->name:Ljava/lang/String;
 
     invoke-virtual {v1, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 198
-    iget-object v1, v0, Lcom/android/settings/sound/n;->aqu:Ljava/lang/String;
+    iget-object v1, v0, Lcom/android/vendorsettings/sound/n;->aqu:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -540,24 +540,24 @@
 
     .line 204
     :goto_2
-    iget-object v1, v0, Lcom/android/settings/sound/n;->aqu:Ljava/lang/String;
+    iget-object v1, v0, Lcom/android/vendorsettings/sound/n;->aqu:Ljava/lang/String;
 
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 205
-    iget-object v1, p0, Lcom/android/settings/sound/k;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/k;->mContext:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v2, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-static {v2}, Lcom/android/settings/sound/AudioSettingsFragment;->b(Lcom/android/settings/sound/AudioSettingsFragment;)I
+    invoke-static {v2}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->b(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)I
 
     move-result v2
 
-    invoke-static {v1, v2}, Lcom/android/settings/sound/p;->y(Landroid/content/Context;I)Ljava/lang/String;
+    invoke-static {v1, v2}, Lcom/android/vendorsettings/sound/p;->y(Landroid/content/Context;I)Ljava/lang/String;
 
     move-result-object v1
 
-    iget-object v2, v0, Lcom/android/settings/sound/n;->path:Ljava/lang/String;
+    iget-object v2, v0, Lcom/android/vendorsettings/sound/n;->path:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -570,12 +570,12 @@
 
     .line 210
     :goto_3
-    iget-object v0, v0, Lcom/android/settings/sound/n;->path:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/vendorsettings/sound/n;->path:Ljava/lang/String;
 
     invoke-virtual {v4, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 211
-    invoke-direct {p0, p1}, Lcom/android/settings/sound/k;->cL(I)Landroid/view/View$OnClickListener;
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/sound/k;->cL(I)Landroid/view/View$OnClickListener;
 
     move-result-object v0
 
@@ -601,7 +601,7 @@
 
     .line 201
     :cond_3
-    iget-object v1, v0, Lcom/android/settings/sound/n;->aqu:Ljava/lang/String;
+    iget-object v1, v0, Lcom/android/vendorsettings/sound/n;->aqu:Ljava/lang/String;
 
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -626,9 +626,9 @@
     const/4 v9, 0x0
 
     .line 299
-    iget-object v0, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/sound/AudioSettingsFragment;->b(Lcom/android/settings/sound/AudioSettingsFragment;)I
+    invoke-static {v0}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->b(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)I
 
     move-result v0
 
@@ -647,29 +647,29 @@
     .line 314
     new-instance v0, Ljava/io/File;
 
-    # getter for: Lcom/android/settings/sound/AudioSettingsFragment;->aqe:Ljava/lang/String;
-    invoke-static {}, Lcom/android/settings/sound/AudioSettingsFragment;->access$700()Ljava/lang/String;
+    # getter for: Lcom/android/vendorsettings/sound/AudioSettingsFragment;->aqe:Ljava/lang/String;
+    invoke-static {}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->access$700()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-direct {v0, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 316
-    new-instance v3, Lcom/android/settings/sound/o;
+    new-instance v3, Lcom/android/vendorsettings/sound/o;
 
-    iget-object v4, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v4, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-direct {v3, v4, v9}, Lcom/android/settings/sound/o;-><init>(Lcom/android/settings/sound/AudioSettingsFragment;Lcom/android/settings/sound/e;)V
+    invoke-direct {v3, v4, v9}, Lcom/android/vendorsettings/sound/o;-><init>(Lcom/android/vendorsettings/sound/AudioSettingsFragment;Lcom/android/vendorsettings/sound/e;)V
 
     .line 317
-    new-instance v4, Lcom/android/settings/sound/n;
+    new-instance v4, Lcom/android/vendorsettings/sound/n;
 
-    iget-object v5, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v5, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-direct {v4, v5, v9}, Lcom/android/settings/sound/n;-><init>(Lcom/android/settings/sound/AudioSettingsFragment;Lcom/android/settings/sound/e;)V
+    invoke-direct {v4, v5, v9}, Lcom/android/vendorsettings/sound/n;-><init>(Lcom/android/vendorsettings/sound/AudioSettingsFragment;Lcom/android/vendorsettings/sound/e;)V
 
     .line 318
-    iget-object v5, p0, Lcom/android/settings/sound/k;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/vendorsettings/sound/k;->mContext:Landroid/content/Context;
 
     const v6, 0x7f0c0092
 
@@ -677,22 +677,22 @@
 
     move-result-object v5
 
-    iput-object v5, v4, Lcom/android/settings/sound/n;->name:Ljava/lang/String;
+    iput-object v5, v4, Lcom/android/vendorsettings/sound/n;->name:Ljava/lang/String;
 
     .line 319
-    iget-object v5, v3, Lcom/android/settings/sound/o;->aqw:Ljava/util/List;
+    iget-object v5, v3, Lcom/android/vendorsettings/sound/o;->aqw:Ljava/util/List;
 
     invoke-interface {v5, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 321
-    new-instance v4, Lcom/android/settings/sound/o;
+    new-instance v4, Lcom/android/vendorsettings/sound/o;
 
-    iget-object v5, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v5, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-direct {v4, v5, v9}, Lcom/android/settings/sound/o;-><init>(Lcom/android/settings/sound/AudioSettingsFragment;Lcom/android/settings/sound/e;)V
+    invoke-direct {v4, v5, v9}, Lcom/android/vendorsettings/sound/o;-><init>(Lcom/android/vendorsettings/sound/AudioSettingsFragment;Lcom/android/vendorsettings/sound/e;)V
 
     .line 322
-    iget-object v5, p0, Lcom/android/settings/sound/k;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/vendorsettings/sound/k;->mContext:Landroid/content/Context;
 
     const v6, 0x7f0c0091
 
@@ -700,7 +700,7 @@
 
     move-result-object v5
 
-    iput-object v5, v4, Lcom/android/settings/sound/o;->title:Ljava/lang/String;
+    iput-object v5, v4, Lcom/android/vendorsettings/sound/o;->title:Ljava/lang/String;
 
     .line 323
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
@@ -730,13 +730,13 @@
     aget-object v7, v5, v0
 
     .line 325
-    iget-object v8, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v8, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
     invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v7
 
-    invoke-static {v8, v7}, Lcom/android/settings/sound/AudioSettingsFragment;->b(Lcom/android/settings/sound/AudioSettingsFragment;Ljava/lang/String;)Lcom/android/settings/sound/n;
+    invoke-static {v8, v7}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->b(Lcom/android/vendorsettings/sound/AudioSettingsFragment;Ljava/lang/String;)Lcom/android/vendorsettings/sound/n;
 
     move-result-object v7
 
@@ -744,7 +744,7 @@
     if-eqz v7, :cond_0
 
     .line 327
-    iget-object v8, v4, Lcom/android/settings/sound/o;->aqw:Ljava/util/List;
+    iget-object v8, v4, Lcom/android/vendorsettings/sound/o;->aqw:Ljava/util/List;
 
     invoke-interface {v8, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -774,11 +774,11 @@
 
     .line 330
     :cond_1
-    iget-object v0, v4, Lcom/android/settings/sound/o;->aqw:Ljava/util/List;
+    iget-object v0, v4, Lcom/android/vendorsettings/sound/o;->aqw:Ljava/util/List;
 
-    iget-object v5, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v5, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-static {v5}, Lcom/android/settings/sound/AudioSettingsFragment;->h(Lcom/android/settings/sound/AudioSettingsFragment;)Ljava/util/Comparator;
+    invoke-static {v5}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->h(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Ljava/util/Comparator;
 
     move-result-object v5
 
@@ -786,23 +786,23 @@
 
     .line 332
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/sound/AudioSettingsFragment;->d(Lcom/android/settings/sound/AudioSettingsFragment;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->d(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
     .line 333
-    new-instance v0, Lcom/android/settings/sound/n;
+    new-instance v0, Lcom/android/vendorsettings/sound/n;
 
-    iget-object v5, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v5, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-direct {v0, v5, v9}, Lcom/android/settings/sound/n;-><init>(Lcom/android/settings/sound/AudioSettingsFragment;Lcom/android/settings/sound/e;)V
+    invoke-direct {v0, v5, v9}, Lcom/android/vendorsettings/sound/n;-><init>(Lcom/android/vendorsettings/sound/AudioSettingsFragment;Lcom/android/vendorsettings/sound/e;)V
 
     .line 334
-    iget-object v5, p0, Lcom/android/settings/sound/k;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/vendorsettings/sound/k;->mContext:Landroid/content/Context;
 
     const v6, 0x7f0c008d
 
@@ -810,25 +810,25 @@
 
     move-result-object v5
 
-    iput-object v5, v0, Lcom/android/settings/sound/n;->name:Ljava/lang/String;
+    iput-object v5, v0, Lcom/android/vendorsettings/sound/n;->name:Ljava/lang/String;
 
     .line 335
     const-string v5, ""
 
-    iput-object v5, v0, Lcom/android/settings/sound/n;->path:Ljava/lang/String;
+    iput-object v5, v0, Lcom/android/vendorsettings/sound/n;->path:Ljava/lang/String;
 
     .line 336
-    iget-object v5, v4, Lcom/android/settings/sound/o;->aqw:Ljava/util/List;
+    iget-object v5, v4, Lcom/android/vendorsettings/sound/o;->aqw:Ljava/util/List;
 
     invoke-interface {v5, v1, v0}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
     .line 339
     :cond_3
-    new-instance v5, Lcom/android/settings/sound/o;
+    new-instance v5, Lcom/android/vendorsettings/sound/o;
 
-    iget-object v0, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-direct {v5, v0, v9}, Lcom/android/settings/sound/o;-><init>(Lcom/android/settings/sound/AudioSettingsFragment;Lcom/android/settings/sound/e;)V
+    invoke-direct {v5, v0, v9}, Lcom/android/vendorsettings/sound/o;-><init>(Lcom/android/vendorsettings/sound/AudioSettingsFragment;Lcom/android/vendorsettings/sound/e;)V
 
     .line 340
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
@@ -858,13 +858,13 @@
     aget-object v1, v2, v0
 
     .line 342
-    iget-object v7, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v7, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
     invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v7, v1}, Lcom/android/settings/sound/AudioSettingsFragment;->b(Lcom/android/settings/sound/AudioSettingsFragment;Ljava/lang/String;)Lcom/android/settings/sound/n;
+    invoke-static {v7, v1}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->b(Lcom/android/vendorsettings/sound/AudioSettingsFragment;Ljava/lang/String;)Lcom/android/vendorsettings/sound/n;
 
     move-result-object v1
 
@@ -872,7 +872,7 @@
     if-eqz v1, :cond_4
 
     .line 344
-    iget-object v7, v5, Lcom/android/settings/sound/o;->aqw:Ljava/util/List;
+    iget-object v7, v5, Lcom/android/vendorsettings/sound/o;->aqw:Ljava/util/List;
 
     invoke-interface {v7, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -884,11 +884,11 @@
 
     .line 347
     :cond_5
-    iget-object v0, v5, Lcom/android/settings/sound/o;->aqw:Ljava/util/List;
+    iget-object v0, v5, Lcom/android/vendorsettings/sound/o;->aqw:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/android/settings/sound/k;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/k;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-static {v1}, Lcom/android/settings/sound/AudioSettingsFragment;->h(Lcom/android/settings/sound/AudioSettingsFragment;)Ljava/util/Comparator;
+    invoke-static {v1}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->h(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)Ljava/util/Comparator;
 
     move-result-object v1
 
@@ -929,7 +929,7 @@
 
     .prologue
     .line 290
-    iget-object v0, p0, Lcom/android/settings/sound/k;->aqq:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/k;->aqq:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
@@ -937,13 +937,13 @@
     if-eqz p1, :cond_0
 
     .line 292
-    iget-object v0, p0, Lcom/android/settings/sound/k;->aqq:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/k;->aqq:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     .line 294
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/sound/k;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/k;->notifyDataSetChanged()V
 
     .line 295
     return-void

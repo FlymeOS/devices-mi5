@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;
-.super Lcom/android/settings/bluetooth/DevicePickerFragment;
+.class public Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;
+.super Lcom/android/vendorsettings/bluetooth/DevicePickerFragment;
 .source "MiuiDevicePickerFragment.java"
 
 
 # instance fields
-.field private Se:Lcom/android/settings/eH;
+.field private Se:Lcom/android/vendorsettings/eH;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 20
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/bluetooth/DevicePickerFragment;-><init>()V
 
     return-void
 .end method
@@ -25,10 +25,10 @@
 
     .prologue
     .line 75
-    invoke-super {p0, p1}, Lcom/android/settings/bluetooth/DevicePickerFragment;->aB(Z)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/bluetooth/DevicePickerFragment;->aB(Z)V
 
     .line 76
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;->invalidateOptionsMenu()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;->invalidateOptionsMenu()V
 
     .line 77
     return-void
@@ -42,9 +42,9 @@
     if-eqz p1, :cond_0
 
     .line 49
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;->Se:Lcom/android/settings/eH;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;->Se:Lcom/android/vendorsettings/eH;
 
-    invoke-virtual {v0}, Lcom/android/settings/eH;->eL()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/eH;->eL()V
 
     .line 53
     :goto_0
@@ -52,9 +52,9 @@
 
     .line 51
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;->Se:Lcom/android/settings/eH;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;->Se:Lcom/android/vendorsettings/eH;
 
-    invoke-virtual {v0}, Lcom/android/settings/eH;->stopAnimation()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/eH;->stopAnimation()V
 
     goto :goto_0
 .end method
@@ -64,12 +64,12 @@
 
     .prologue
     .line 81
-    invoke-super {p0}, Lcom/android/settings/bluetooth/DevicePickerFragment;->nJ()V
+    invoke-super {p0}, Lcom/android/vendorsettings/bluetooth/DevicePickerFragment;->nJ()V
 
     .line 82
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;->setHasOptionsMenu(Z)V
 
     .line 83
     return-void
@@ -80,7 +80,7 @@
 
     .prologue
     .line 86
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;->Rl:Ljava/util/WeakHashMap;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;->Rl:Ljava/util/WeakHashMap;
 
     invoke-virtual {v0}, Ljava/util/WeakHashMap;->entrySet()Ljava/util/Set;
 
@@ -134,13 +134,13 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;
+    check-cast v0, Lcom/android/vendorsettings/bluetooth/BluetoothDevicePreference;
 
     .line 96
     if-eqz v0, :cond_0
 
     .line 97
-    iget-object v1, p0, Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;->Rk:Landroid/preference/PreferenceGroup;
+    iget-object v1, p0, Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;->Rk:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
 
@@ -156,18 +156,18 @@
 
     .prologue
     .line 27
-    new-instance v0, Lcom/android/settings/eH;
+    new-instance v0, Lcom/android/vendorsettings/eH;
 
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/eH;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/eH;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;->Se:Lcom/android/settings/eH;
+    iput-object v0, p0, Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;->Se:Lcom/android/vendorsettings/eH;
 
     .line 28
-    invoke-super {p0, p1}, Lcom/android/settings/bluetooth/DevicePickerFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/bluetooth/DevicePickerFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 29
     return-void
@@ -182,7 +182,7 @@
     const/4 v2, 0x0
 
     .line 33
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;->Qu:Lcom/android/b/b/Q;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;->Qu:Lcom/android/b/b/Q;
 
     if-nez v0, :cond_1
 
@@ -193,7 +193,7 @@
 
     .line 35
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;->Qu:Lcom/android/b/b/Q;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;->Qu:Lcom/android/b/b/Q;
 
     invoke-virtual {v0}, Lcom/android/b/b/Q;->Ad()I
 
@@ -214,9 +214,9 @@
     move-result-object v3
 
     .line 38
-    iget-object v4, p0, Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;->Se:Lcom/android/settings/eH;
+    iget-object v4, p0, Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;->Se:Lcom/android/vendorsettings/eH;
 
-    invoke-virtual {v4}, Lcom/android/settings/eH;->fq()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v4}, Lcom/android/vendorsettings/eH;->fq()Landroid/graphics/drawable/Drawable;
 
     move-result-object v4
 
@@ -232,7 +232,7 @@
     if-nez v0, :cond_0
 
     .line 42
-    invoke-virtual {p0, v2}, Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;->aC(Z)V
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;->aC(Z)V
 
     goto :goto_0
 
@@ -257,7 +257,7 @@
     packed-switch v1, :pswitch_data_0
 
     .line 70
-    invoke-super {p0, p1}, Lcom/android/settings/bluetooth/DevicePickerFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/bluetooth/DevicePickerFragment;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -267,7 +267,7 @@
 
     .line 59
     :pswitch_0
-    iget-object v1, p0, Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;->Qu:Lcom/android/b/b/Q;
+    iget-object v1, p0, Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;->Qu:Lcom/android/b/b/Q;
 
     invoke-virtual {v1}, Lcom/android/b/b/Q;->Ad()I
 
@@ -278,7 +278,7 @@
     if-ne v1, v2, :cond_0
 
     .line 60
-    iget-object v1, p0, Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;->Qu:Lcom/android/b/b/Q;
+    iget-object v1, p0, Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;->Qu:Lcom/android/b/b/Q;
 
     invoke-virtual {v1}, Lcom/android/b/b/Q;->isDiscovering()Z
 
@@ -287,7 +287,7 @@
     if-eqz v1, :cond_1
 
     .line 61
-    iget-object v1, p0, Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;->Qu:Lcom/android/b/b/Q;
+    iget-object v1, p0, Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;->Qu:Lcom/android/b/b/Q;
 
     invoke-virtual {v1}, Lcom/android/b/b/Q;->Ac()V
 
@@ -295,13 +295,13 @@
 
     .line 63
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;->nX()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;->nX()V
 
     .line 64
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;->nM()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;->nM()V
 
     .line 65
-    iget-object v1, p0, Lcom/android/settings/bluetooth/MiuiDevicePickerFragment;->Qu:Lcom/android/b/b/Q;
+    iget-object v1, p0, Lcom/android/vendorsettings/bluetooth/MiuiDevicePickerFragment;->Qu:Lcom/android/b/b/Q;
 
     invoke-virtual {v1, v0}, Lcom/android/b/b/Q;->bR(Z)V
 

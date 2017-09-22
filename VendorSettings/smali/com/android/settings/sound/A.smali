@@ -1,19 +1,19 @@
-.class Lcom/android/settings/sound/A;
+.class Lcom/android/vendorsettings/sound/A;
 .super Landroid/os/Handler;
 .source "RingerVolumeFragment.java"
 
 
 # instance fields
-.field final synthetic aqV:Lcom/android/settings/sound/RingerVolumeFragment;
+.field final synthetic aqV:Lcom/android/vendorsettings/sound/RingerVolumeFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sound/RingerVolumeFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/sound/RingerVolumeFragment;)V
     .locals 0
 
     .prologue
     .line 109
-    iput-object p1, p0, Lcom/android/settings/sound/A;->aqV:Lcom/android/settings/sound/RingerVolumeFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/sound/A;->aqV:Lcom/android/vendorsettings/sound/RingerVolumeFragment;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -34,9 +34,9 @@
     if-ne v0, v1, :cond_1
 
     .line 112
-    iget-object v0, p0, Lcom/android/settings/sound/A;->aqV:Lcom/android/settings/sound/RingerVolumeFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/A;->aqV:Lcom/android/vendorsettings/sound/RingerVolumeFragment;
 
-    invoke-static {v0}, Lcom/android/settings/sound/RingerVolumeFragment;->a(Lcom/android/settings/sound/RingerVolumeFragment;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->a(Lcom/android/vendorsettings/sound/RingerVolumeFragment;)V
 
     .line 121
     :cond_0
@@ -57,8 +57,8 @@
     const/4 v0, 0x0
 
     :goto_0
-    # getter for: Lcom/android/settings/sound/RingerVolumeFragment;->aqO:[I
-    invoke-static {}, Lcom/android/settings/sound/RingerVolumeFragment;->access$100()[I
+    # getter for: Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqO:[I
+    invoke-static {}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->access$100()[I
 
     move-result-object v2
 
@@ -67,8 +67,8 @@
     if-ge v0, v2, :cond_0
 
     .line 116
-    # getter for: Lcom/android/settings/sound/RingerVolumeFragment;->aqO:[I
-    invoke-static {}, Lcom/android/settings/sound/RingerVolumeFragment;->access$100()[I
+    # getter for: Lcom/android/vendorsettings/sound/RingerVolumeFragment;->aqO:[I
+    invoke-static {}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->access$100()[I
 
     move-result-object v2
 
@@ -77,9 +77,9 @@
     if-ne v2, v1, :cond_2
 
     .line 117
-    iget-object v2, p0, Lcom/android/settings/sound/A;->aqV:Lcom/android/settings/sound/RingerVolumeFragment;
+    iget-object v2, p0, Lcom/android/vendorsettings/sound/A;->aqV:Lcom/android/vendorsettings/sound/RingerVolumeFragment;
 
-    invoke-static {v2, v0}, Lcom/android/settings/sound/RingerVolumeFragment;->a(Lcom/android/settings/sound/RingerVolumeFragment;I)V
+    invoke-static {v2, v0}, Lcom/android/vendorsettings/sound/RingerVolumeFragment;->a(Lcom/android/vendorsettings/sound/RingerVolumeFragment;I)V
 
     .line 115
     :cond_2

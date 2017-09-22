@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/sound/H;
+.class public Lcom/android/vendorsettings/sound/H;
 .super Ljava/lang/Object;
 .source "SeekBarVolumizer.java"
 
@@ -17,9 +17,9 @@
 
 .field private arb:D
 
-.field private arg:Lcom/android/settings/sound/VolumeSeekBarPreference;
+.field private arg:Lcom/android/vendorsettings/sound/VolumeSeekBarPreference;
 
-.field private arh:Lcom/android/settings/sound/J;
+.field private arh:Lcom/android/vendorsettings/sound/J;
 
 .field private ari:Landroid/media/Ringtone;
 
@@ -33,7 +33,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/sound/VolumeSeekBarPreference;)V
+.method public constructor <init>(Lcom/android/vendorsettings/sound/VolumeSeekBarPreference;)V
     .locals 4
 
     .prologue
@@ -43,27 +43,27 @@
     .line 52
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/sound/H;->aqX:I
+    iput v0, p0, Lcom/android/vendorsettings/sound/H;->aqX:I
 
     .line 59
-    iput-object p1, p0, Lcom/android/settings/sound/H;->arg:Lcom/android/settings/sound/VolumeSeekBarPreference;
+    iput-object p1, p0, Lcom/android/vendorsettings/sound/H;->arg:Lcom/android/vendorsettings/sound/VolumeSeekBarPreference;
 
     .line 60
-    invoke-virtual {p1}, Lcom/android/settings/sound/VolumeSeekBarPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/sound/VolumeSeekBarPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/sound/H;->mContext:Landroid/content/Context;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/H;->mContext:Landroid/content/Context;
 
     .line 61
-    invoke-virtual {p1}, Lcom/android/settings/sound/VolumeSeekBarPreference;->uB()I
+    invoke-virtual {p1}, Lcom/android/vendorsettings/sound/VolumeSeekBarPreference;->uB()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/sound/H;->akt:I
+    iput v0, p0, Lcom/android/vendorsettings/sound/H;->akt:I
 
     .line 62
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mContext:Landroid/content/Context;
 
     const-string v1, "audio"
 
@@ -73,14 +73,14 @@
 
     check-cast v0, Landroid/media/AudioManager;
 
-    iput-object v0, p0, Lcom/android/settings/sound/H;->mAudioManager:Landroid/media/AudioManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/H;->mAudioManager:Landroid/media/AudioManager;
 
     .line 63
     const-wide/high16 v0, 0x4059000000000000L    # 100.0
 
-    iget-object v2, p0, Lcom/android/settings/sound/H;->mAudioManager:Landroid/media/AudioManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/sound/H;->mAudioManager:Landroid/media/AudioManager;
 
-    iget v3, p0, Lcom/android/settings/sound/H;->akt:I
+    iget v3, p0, Lcom/android/vendorsettings/sound/H;->akt:I
 
     invoke-virtual {v2, v3}, Landroid/media/AudioManager;->getStreamMaxVolume(I)I
 
@@ -90,36 +90,36 @@
 
     div-double/2addr v0, v2
 
-    iput-wide v0, p0, Lcom/android/settings/sound/H;->arb:D
+    iput-wide v0, p0, Lcom/android/vendorsettings/sound/H;->arb:D
 
     .line 64
-    new-instance v0, Lcom/android/settings/sound/J;
+    new-instance v0, Lcom/android/vendorsettings/sound/J;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/sound/J;-><init>(Lcom/android/settings/sound/H;Lcom/android/settings/sound/I;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/sound/J;-><init>(Lcom/android/vendorsettings/sound/H;Lcom/android/vendorsettings/sound/I;)V
 
-    iput-object v0, p0, Lcom/android/settings/sound/H;->arh:Lcom/android/settings/sound/J;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/H;->arh:Lcom/android/vendorsettings/sound/J;
 
     .line 65
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/sound/H;->Qv:Landroid/content/SharedPreferences;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/H;->Qv:Landroid/content/SharedPreferences;
 
     .line 66
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/sound/H;)Landroid/content/Context;
+.method static synthetic a(Lcom/android/vendorsettings/sound/H;)Landroid/content/Context;
     .locals 1
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mContext:Landroid/content/Context;
 
     return-object v0
 .end method
@@ -176,7 +176,7 @@
     if-eqz v0, :cond_0
 
     .line 344
-    iget-object v0, p0, Lcom/android/settings/sound/H;->ari:Landroid/media/Ringtone;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->ari:Landroid/media/Ringtone;
 
     invoke-virtual {v0, p2}, Landroid/media/Ringtone;->setVolume(F)V
 
@@ -214,7 +214,7 @@
     add-float v2, p1, v0
 
     .line 336
-    iget-object v0, p0, Lcom/android/settings/sound/H;->ari:Landroid/media/Ringtone;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->ari:Landroid/media/Ringtone;
 
     invoke-virtual {v0, v2}, Landroid/media/Ringtone;->setVolume(F)V
 
@@ -272,26 +272,26 @@
     const/4 v3, 0x1
 
     .line 208
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
     .line 209
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
     const/4 v1, 0x2
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 210
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 211
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
     invoke-static {p3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -308,22 +308,22 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/sound/H;Z)V
+.method static synthetic a(Lcom/android/vendorsettings/sound/H;Z)V
     .locals 0
 
     .prologue
     .line 40
-    invoke-direct {p0, p1}, Lcom/android/settings/sound/H;->bd(Z)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/sound/H;->bd(Z)V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/sound/H;)I
+.method static synthetic b(Lcom/android/vendorsettings/sound/H;)I
     .locals 1
 
     .prologue
     .line 40
-    iget v0, p0, Lcom/android/settings/sound/H;->akt:I
+    iget v0, p0, Lcom/android/vendorsettings/sound/H;->akt:I
 
     return v0
 .end method
@@ -335,14 +335,14 @@
     const/4 v3, 0x2
 
     .line 248
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
     .line 249
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
     const/4 v2, 0x3
 
@@ -353,14 +353,14 @@
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
     .line 250
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v3}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 251
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
     invoke-static {p3}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -384,7 +384,7 @@
     .line 204
     const-wide/16 v0, 0x0
 
-    invoke-direct {p0, v0, v1, p1}, Lcom/android/settings/sound/H;->a(JZ)V
+    invoke-direct {p0, v0, v1, p1}, Lcom/android/vendorsettings/sound/H;->a(JZ)V
 
     .line 205
     return-void
@@ -409,7 +409,7 @@
     if-eqz p1, :cond_0
 
     .line 218
-    iget-object v0, p0, Lcom/android/settings/sound/H;->Qv:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->Qv:Landroid/content/SharedPreferences;
 
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
@@ -417,7 +417,7 @@
 
     const-string v1, "volume_sample_stream"
 
-    iget v2, p0, Lcom/android/settings/sound/H;->akt:I
+    iget v2, p0, Lcom/android/vendorsettings/sound/H;->akt:I
 
     invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
@@ -427,11 +427,11 @@
 
     .line 221
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/sound/H;->ari:Landroid/media/Ringtone;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->ari:Landroid/media/Ringtone;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/sound/H;->ari:Landroid/media/Ringtone;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->ari:Landroid/media/Ringtone;
 
     invoke-virtual {v0}, Landroid/media/Ringtone;->isPlaying()Z
 
@@ -447,7 +447,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 223
-    iget-object v0, p0, Lcom/android/settings/sound/H;->ari:Landroid/media/Ringtone;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->ari:Landroid/media/Ringtone;
 
     invoke-virtual {v0, v4}, Landroid/media/Ringtone;->setLooping(Z)V
 
@@ -458,7 +458,7 @@
 
     .line 227
     :cond_2
-    iget v0, p0, Lcom/android/settings/sound/H;->akt:I
+    iget v0, p0, Lcom/android/vendorsettings/sound/H;->akt:I
 
     invoke-static {v0, v3}, Landroid/media/AudioSystem;->isStreamActive(II)Z
 
@@ -479,15 +479,15 @@
     .line 231
     const-wide/16 v0, 0xc8
 
-    invoke-direct {p0, v0, v1, v3}, Lcom/android/settings/sound/H;->a(JZ)V
+    invoke-direct {p0, v0, v1, v3}, Lcom/android/vendorsettings/sound/H;->a(JZ)V
 
     goto :goto_0
 
     .line 236
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mContext:Landroid/content/Context;
 
-    invoke-direct {p0}, Lcom/android/settings/sound/H;->ux()Landroid/net/Uri;
+    invoke-direct {p0}, Lcom/android/vendorsettings/sound/H;->ux()Landroid/net/Uri;
 
     move-result-object v1
 
@@ -495,22 +495,22 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/sound/H;->ari:Landroid/media/Ringtone;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/H;->ari:Landroid/media/Ringtone;
 
     .line 237
-    iget-object v0, p0, Lcom/android/settings/sound/H;->ari:Landroid/media/Ringtone;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->ari:Landroid/media/Ringtone;
 
-    iget v1, p0, Lcom/android/settings/sound/H;->akt:I
+    iget v1, p0, Lcom/android/vendorsettings/sound/H;->akt:I
 
     invoke-virtual {v0, v1}, Landroid/media/Ringtone;->setStreamType(I)V
 
     .line 238
-    iget-object v0, p0, Lcom/android/settings/sound/H;->ari:Landroid/media/Ringtone;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->ari:Landroid/media/Ringtone;
 
     invoke-virtual {v0, v4}, Landroid/media/Ringtone;->setLooping(Z)V
 
     .line 240
-    iget-object v0, p0, Lcom/android/settings/sound/H;->ari:Landroid/media/Ringtone;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->ari:Landroid/media/Ringtone;
 
     const-string v1, "startLocalPlayer"
 
@@ -528,7 +528,7 @@
     .line 244
     const-wide/16 v0, 0x0
 
-    invoke-direct {p0, v0, v1, p1}, Lcom/android/settings/sound/H;->b(JZ)V
+    invoke-direct {p0, v0, v1, p1}, Lcom/android/vendorsettings/sound/H;->b(JZ)V
 
     .line 245
     return-void
@@ -546,7 +546,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 257
-    iget-object v0, p0, Lcom/android/settings/sound/H;->ari:Landroid/media/Ringtone;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->ari:Landroid/media/Ringtone;
 
     if-eqz v0, :cond_1
 
@@ -560,50 +560,50 @@
 
     const/16 v2, 0x64
 
-    invoke-direct {p0, v0, v1, v2}, Lcom/android/settings/sound/H;->a(FFI)V
+    invoke-direct {p0, v0, v1, v2}, Lcom/android/vendorsettings/sound/H;->a(FFI)V
 
     .line 261
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/sound/H;->ari:Landroid/media/Ringtone;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->ari:Landroid/media/Ringtone;
 
     invoke-virtual {v0}, Landroid/media/Ringtone;->stop()V
 
     .line 262
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/sound/H;->ari:Landroid/media/Ringtone;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/H;->ari:Landroid/media/Ringtone;
 
     .line 264
     :cond_1
     return-void
 .end method
 
-.method static synthetic c(Lcom/android/settings/sound/H;)Landroid/widget/SeekBar;
+.method static synthetic c(Lcom/android/vendorsettings/sound/H;)Landroid/widget/SeekBar;
     .locals 1
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/android/settings/sound/H;->vI:Landroid/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->vI:Landroid/widget/SeekBar;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/sound/H;)Landroid/media/AudioManager;
+.method static synthetic d(Lcom/android/vendorsettings/sound/H;)Landroid/media/AudioManager;
     .locals 1
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mAudioManager:Landroid/media/AudioManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mAudioManager:Landroid/media/AudioManager;
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/sound/H;)Lcom/android/settings/sound/VolumeSeekBarPreference;
+.method static synthetic e(Lcom/android/vendorsettings/sound/H;)Lcom/android/vendorsettings/sound/VolumeSeekBarPreference;
     .locals 1
 
     .prologue
     .line 40
-    iget-object v0, p0, Lcom/android/settings/sound/H;->arg:Lcom/android/settings/sound/VolumeSeekBarPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->arg:Lcom/android/vendorsettings/sound/VolumeSeekBarPreference;
 
     return-object v0
 .end method
@@ -613,12 +613,12 @@
 
     .prologue
     .line 283
-    iget-object v0, p0, Lcom/android/settings/sound/H;->ari:Landroid/media/Ringtone;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->ari:Landroid/media/Ringtone;
 
     if-eqz v0, :cond_0
 
     .line 284
-    iget-object v0, p0, Lcom/android/settings/sound/H;->ari:Landroid/media/Ringtone;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->ari:Landroid/media/Ringtone;
 
     const/4 v1, 0x0
 
@@ -634,7 +634,7 @@
 
     .prologue
     .line 193
-    iget v0, p0, Lcom/android/settings/sound/H;->akt:I
+    iget v0, p0, Lcom/android/vendorsettings/sound/H;->akt:I
 
     const/4 v1, 0x2
 
@@ -649,7 +649,7 @@
 
     .line 195
     :cond_0
-    iget v0, p0, Lcom/android/settings/sound/H;->akt:I
+    iget v0, p0, Lcom/android/vendorsettings/sound/H;->akt:I
 
     const/4 v1, 0x4
 
@@ -672,7 +672,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/sound/H;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/H;->mContext:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -712,19 +712,19 @@
     const/4 v2, 0x0
 
     .line 267
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
     .line 268
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, v2}, Landroid/os/Handler;->removeMessages(I)V
 
     .line 269
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->obtainMessage(I)Landroid/os/Message;
 
@@ -745,9 +745,9 @@
     const/16 v0, 0x400
 
     .line 275
-    iget v1, p0, Lcom/android/settings/sound/H;->akt:I
+    iget v1, p0, Lcom/android/vendorsettings/sound/H;->akt:I
 
-    iget-object v2, p0, Lcom/android/settings/sound/H;->mAudioManager:Landroid/media/AudioManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/sound/H;->mAudioManager:Landroid/media/AudioManager;
 
     invoke-virtual {v2}, Landroid/media/AudioManager;->getUiSoundsStreamType()I
 
@@ -755,13 +755,13 @@
 
     if-eq v1, v2, :cond_0
 
-    iget v1, p0, Lcom/android/settings/sound/H;->akt:I
+    iget v1, p0, Lcom/android/vendorsettings/sound/H;->akt:I
 
     const/4 v2, 0x3
 
     if-ne v1, v2, :cond_1
 
-    iget v1, p0, Lcom/android/settings/sound/H;->aqX:I
+    iget v1, p0, Lcom/android/vendorsettings/sound/H;->aqX:I
 
     if-nez v1, :cond_1
 
@@ -771,11 +771,11 @@
 
     .line 279
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/sound/H;->mAudioManager:Landroid/media/AudioManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/H;->mAudioManager:Landroid/media/AudioManager;
 
-    iget v2, p0, Lcom/android/settings/sound/H;->akt:I
+    iget v2, p0, Lcom/android/vendorsettings/sound/H;->akt:I
 
-    iget v3, p0, Lcom/android/settings/sound/H;->aqX:I
+    iget v3, p0, Lcom/android/vendorsettings/sound/H;->aqX:I
 
     invoke-virtual {v1, v2, v3, v0}, Landroid/media/AudioManager;->setStreamVolume(III)V
 
@@ -794,13 +794,13 @@
     .line 104
     int-to-double v0, p1
 
-    iget-wide v2, p0, Lcom/android/settings/sound/H;->arb:D
+    iget-wide v2, p0, Lcom/android/vendorsettings/sound/H;->arb:D
 
     div-double/2addr v2, v8
 
     add-double/2addr v0, v2
 
-    iget-wide v2, p0, Lcom/android/settings/sound/H;->arb:D
+    iget-wide v2, p0, Lcom/android/vendorsettings/sound/H;->arb:D
 
     div-double/2addr v0, v2
 
@@ -811,7 +811,7 @@
 
     int-to-double v2, p1
 
-    iget-wide v4, p0, Lcom/android/settings/sound/H;->arb:D
+    iget-wide v4, p0, Lcom/android/vendorsettings/sound/H;->arb:D
 
     div-double/2addr v4, v8
 
@@ -837,7 +837,7 @@
 
     const-wide/high16 v4, 0x4059000000000000L    # 100.0
 
-    iget-wide v6, p0, Lcom/android/settings/sound/H;->arb:D
+    iget-wide v6, p0, Lcom/android/vendorsettings/sound/H;->arb:D
 
     div-double/2addr v6, v8
 
@@ -860,7 +860,7 @@
     .line 114
     int-to-double v0, p1
 
-    iget-wide v2, p0, Lcom/android/settings/sound/H;->arb:D
+    iget-wide v2, p0, Lcom/android/vendorsettings/sound/H;->arb:D
 
     mul-double/2addr v0, v2
 
@@ -890,7 +890,7 @@
 
     .line 297
     :pswitch_0
-    invoke-direct {p0}, Lcom/android/settings/sound/H;->uz()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/sound/H;->uz()V
 
     goto :goto_0
 
@@ -904,7 +904,7 @@
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/sound/H;->bc(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/sound/H;->bc(Z)V
 
     goto :goto_0
 
@@ -918,13 +918,13 @@
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/sound/H;->be(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/sound/H;->be(Z)V
 
     goto :goto_0
 
     .line 306
     :pswitch_3
-    invoke-direct {p0}, Lcom/android/settings/sound/H;->uA()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/sound/H;->uA()V
 
     goto :goto_0
 
@@ -948,26 +948,26 @@
     if-eqz p3, :cond_1
 
     .line 80
-    invoke-virtual {p0, p2}, Lcom/android/settings/sound/H;->cQ(I)I
+    invoke-virtual {p0, p2}, Lcom/android/vendorsettings/sound/H;->cQ(I)I
 
     move-result v0
 
     .line 81
-    iget v1, p0, Lcom/android/settings/sound/H;->aqX:I
+    iget v1, p0, Lcom/android/vendorsettings/sound/H;->aqX:I
 
     if-eq v1, v0, :cond_0
 
     .line 82
-    iput v0, p0, Lcom/android/settings/sound/H;->aqX:I
+    iput v0, p0, Lcom/android/vendorsettings/sound/H;->aqX:I
 
     .line 83
-    invoke-direct {p0}, Lcom/android/settings/sound/H;->uy()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/sound/H;->uy()V
 
     .line 85
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/sound/H;->arg:Lcom/android/settings/sound/VolumeSeekBarPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->arg:Lcom/android/vendorsettings/sound/VolumeSeekBarPreference;
 
-    invoke-virtual {v0, p1, p2, p3}, Lcom/android/settings/sound/VolumeSeekBarPreference;->onProgressChanged(Landroid/widget/SeekBar;IZ)V
+    invoke-virtual {v0, p1, p2, p3}, Lcom/android/vendorsettings/sound/VolumeSeekBarPreference;->onProgressChanged(Landroid/widget/SeekBar;IZ)V
 
     .line 87
     :cond_1
@@ -987,24 +987,24 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/sound/H;->Qv:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->Qv:Landroid/content/SharedPreferences;
 
     const-string v1, "volume_sample_stream"
 
-    iget v2, p0, Lcom/android/settings/sound/H;->akt:I
+    iget v2, p0, Lcom/android/vendorsettings/sound/H;->akt:I
 
     invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
 
     move-result v0
 
-    iget v1, p0, Lcom/android/settings/sound/H;->akt:I
+    iget v1, p0, Lcom/android/vendorsettings/sound/H;->akt:I
 
     if-eq v0, v1, :cond_0
 
     .line 188
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/sound/H;->bd(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/sound/H;->bd(Z)V
 
     .line 190
     :cond_0
@@ -1018,7 +1018,7 @@
     .line 91
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lcom/android/settings/sound/H;->bb(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/sound/H;->bb(Z)V
 
     .line 92
     return-void
@@ -1029,9 +1029,9 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mAudioManager:Landroid/media/AudioManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mAudioManager:Landroid/media/AudioManager;
 
-    iget v1, p0, Lcom/android/settings/sound/H;->akt:I
+    iget v1, p0, Lcom/android/vendorsettings/sound/H;->akt:I
 
     invoke-virtual {v0, v1}, Landroid/media/AudioManager;->isStreamMute(I)Z
 
@@ -1042,7 +1042,7 @@
     .line 97
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/sound/H;->bd(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/sound/H;->bd(Z)V
 
     .line 101
     :goto_0
@@ -1054,7 +1054,7 @@
 
     const/4 v2, 0x1
 
-    invoke-direct {p0, v0, v1, v2}, Lcom/android/settings/sound/H;->b(JZ)V
+    invoke-direct {p0, v0, v1, v2}, Lcom/android/vendorsettings/sound/H;->b(JZ)V
 
     goto :goto_0
 .end method
@@ -1066,19 +1066,19 @@
     .line 170
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lcom/android/settings/sound/H;->bd(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/sound/H;->bd(Z)V
 
     .line 171
-    iget-object v0, p0, Lcom/android/settings/sound/H;->Qv:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->Qv:Landroid/content/SharedPreferences;
 
     invoke-interface {v0, p0}, Landroid/content/SharedPreferences;->unregisterOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
     .line 172
-    iget-object v0, p0, Lcom/android/settings/sound/H;->arh:Lcom/android/settings/sound/J;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->arh:Lcom/android/vendorsettings/sound/J;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/sound/J;->setListening(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/sound/J;->setListening(Z)V
 
     .line 173
     return-void
@@ -1089,7 +1089,7 @@
 
     .prologue
     .line 160
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
     if-nez v0, :cond_0
 
@@ -1112,18 +1112,18 @@
 
     invoke-direct {v1, v0, p0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
 
-    iput-object v1, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iput-object v1, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
     .line 165
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/sound/H;->arh:Lcom/android/settings/sound/J;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->arh:Lcom/android/vendorsettings/sound/J;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/sound/J;->setListening(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/sound/J;->setListening(Z)V
 
     .line 166
-    iget-object v0, p0, Lcom/android/settings/sound/H;->Qv:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->Qv:Landroid/content/SharedPreferences;
 
     invoke-interface {v0, p0}, Landroid/content/SharedPreferences;->registerOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
@@ -1136,34 +1136,34 @@
 
     .prologue
     .line 69
-    iput-object p1, p0, Lcom/android/settings/sound/H;->vI:Landroid/widget/SeekBar;
+    iput-object p1, p0, Lcom/android/vendorsettings/sound/H;->vI:Landroid/widget/SeekBar;
 
     .line 70
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mAudioManager:Landroid/media/AudioManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mAudioManager:Landroid/media/AudioManager;
 
-    iget v1, p0, Lcom/android/settings/sound/H;->akt:I
+    iget v1, p0, Lcom/android/vendorsettings/sound/H;->akt:I
 
     invoke-virtual {v0, v1}, Landroid/media/AudioManager;->getLastAudibleStreamVolume(I)I
 
     move-result v0
 
     .line 71
-    iget-object v1, p0, Lcom/android/settings/sound/H;->arg:Lcom/android/settings/sound/VolumeSeekBarPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/H;->arg:Lcom/android/vendorsettings/sound/VolumeSeekBarPreference;
 
-    invoke-virtual {v1}, Lcom/android/settings/sound/VolumeSeekBarPreference;->getProgress()I
+    invoke-virtual {v1}, Lcom/android/vendorsettings/sound/VolumeSeekBarPreference;->getProgress()I
 
     move-result v1
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/sound/H;->cQ(I)I
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/sound/H;->cQ(I)I
 
     move-result v1
 
     if-eq v1, v0, :cond_0
 
     .line 72
-    iget-object v1, p0, Lcom/android/settings/sound/H;->vI:Landroid/widget/SeekBar;
+    iget-object v1, p0, Lcom/android/vendorsettings/sound/H;->vI:Landroid/widget/SeekBar;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/sound/H;->cR(I)I
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/sound/H;->cR(I)I
 
     move-result v0
 
@@ -1171,7 +1171,7 @@
 
     .line 74
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/sound/H;->vI:Landroid/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->vI:Landroid/widget/SeekBar;
 
     invoke-virtual {v0, p0}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
 
@@ -1184,15 +1184,15 @@
 
     .prologue
     .line 176
-    invoke-virtual {p0}, Lcom/android/settings/sound/H;->pause()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/H;->pause()V
 
     .line 177
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
     .line 178
-    iget-object v0, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
 
@@ -1203,7 +1203,7 @@
     .line 179
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/sound/H;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/vendorsettings/sound/H;->mHandler:Landroid/os/Handler;
 
     .line 181
     :cond_0

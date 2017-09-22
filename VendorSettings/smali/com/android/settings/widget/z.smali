@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/widget/z;
-.super Lcom/android/settings/widget/C;
+.class final Lcom/android/vendorsettings/widget/z;
+.super Lcom/android/vendorsettings/widget/C;
 .source "SettingsAppWidgetProvider.java"
 
 
@@ -15,22 +15,22 @@
     .line 512
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/widget/C;-><init>(Lcom/android/settings/widget/w;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/widget/C;-><init>(Lcom/android/vendorsettings/widget/w;)V
 
     .line 513
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/widget/z;->azq:I
+    iput v0, p0, Lcom/android/vendorsettings/widget/z;->azq:I
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/widget/w;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/widget/w;)V
     .locals 0
 
     .prologue
     .line 512
-    invoke-direct {p0}, Lcom/android/settings/widget/z;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/widget/z;-><init>()V
 
     return-void
 .end method
@@ -45,7 +45,7 @@
     if-eqz p1, :cond_0
 
     .line 521
-    iget v0, p0, Lcom/android/settings/widget/z;->azq:I
+    iget v0, p0, Lcom/android/vendorsettings/widget/z;->azq:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -98,10 +98,10 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/widget/z;->azq:I
+    iput v1, p0, Lcom/android/vendorsettings/widget/z;->azq:I
 
     .line 538
-    iget v1, p0, Lcom/android/settings/widget/z;->azq:I
+    iget v1, p0, Lcom/android/vendorsettings/widget/z;->azq:I
 
     if-nez v1, :cond_0
 
@@ -119,11 +119,11 @@
 
     .prologue
     .line 546
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/z;->getActualState(Landroid/content/Context;)I
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/widget/z;->getActualState(Landroid/content/Context;)I
 
     move-result v0
 
-    invoke-virtual {p0, p1, v0}, Lcom/android/settings/widget/z;->setCurrentState(Landroid/content/Context;I)V
+    invoke-virtual {p0, p1, v0}, Lcom/android/vendorsettings/widget/z;->setCurrentState(Landroid/content/Context;I)V
 
     .line 547
     return-void
@@ -139,15 +139,15 @@
     move-result-object v0
 
     .line 552
-    new-instance v1, Lcom/android/settings/widget/A;
+    new-instance v1, Lcom/android/vendorsettings/widget/A;
 
-    invoke-direct {v1, p0, p1, v0}, Lcom/android/settings/widget/A;-><init>(Lcom/android/settings/widget/z;Landroid/content/Context;Landroid/content/ContentResolver;)V
+    invoke-direct {v1, p0, p1, v0}, Lcom/android/vendorsettings/widget/A;-><init>(Lcom/android/vendorsettings/widget/z;Landroid/content/Context;Landroid/content/ContentResolver;)V
 
     const/4 v0, 0x0
 
     new-array v0, v0, [Ljava/lang/Void;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/widget/A;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/widget/A;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 590
     return-void

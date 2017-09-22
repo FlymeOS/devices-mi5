@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment$2;
+.class Lcom/android/vendorsettings/accessibility/ToggleAccessibilityServicePreferenceFragment$2;
 .super Ljava/lang/Object;
 .source "ToggleAccessibilityServicePreferenceFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Dx:Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
+.field final synthetic Dx:Lcom/android/vendorsettings/accessibility/ToggleAccessibilityServicePreferenceFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/accessibility/ToggleAccessibilityServicePreferenceFragment;)V
     .locals 0
 
     .prologue
     .line 200
-    iput-object p1, p0, Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment$2;->Dx:Lcom/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/accessibility/ToggleAccessibilityServicePreferenceFragment$2;->Dx:Lcom/android/vendorsettings/accessibility/ToggleAccessibilityServicePreferenceFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

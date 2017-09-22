@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/msim/StatusImei;
+.class public Lcom/android/vendorsettings/msim/StatusImei;
 .super Lmiui/app/Activity;
 .source "StatusImei.java"
 
@@ -19,7 +19,7 @@
 
     .prologue
     .line 39
-    invoke-virtual {p0}, Lcom/android/settings/msim/StatusImei;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/StatusImei;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 
@@ -34,7 +34,7 @@
     move-result-object v1
 
     .line 42
-    invoke-virtual {p0, p2}, Lcom/android/settings/msim/StatusImei;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, p2}, Lcom/android/vendorsettings/msim/StatusImei;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -70,31 +70,31 @@
     const/4 v3, 0x0
 
     .line 27
-    invoke-virtual {p0}, Lcom/android/settings/msim/StatusImei;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/StatusImei;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 
     .line 28
-    invoke-virtual {p0}, Lcom/android/settings/msim/StatusImei;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/StatusImei;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
     invoke-virtual {v0, p0, v1}, Lmiui/app/ActionBar;->setFragmentViewPagerMode(Landroid/content/Context;Landroid/app/FragmentManager;)V
 
     .line 30
-    const-class v1, Lcom/android/settings/msim/ImeiFragment;
+    const-class v1, Lcom/android/vendorsettings/msim/ImeiFragment;
 
     .line 32
     const v2, 0x7f0c1048
 
-    invoke-direct {p0, v1, v2, v3, v3}, Lcom/android/settings/msim/StatusImei;->a(Ljava/lang/Class;III)Landroid/app/ActionBar$Tab;
+    invoke-direct {p0, v1, v2, v3, v3}, Lcom/android/vendorsettings/msim/StatusImei;->a(Ljava/lang/Class;III)Landroid/app/ActionBar$Tab;
 
     move-result-object v2
 
     .line 33
     const v3, 0x7f0c1049
 
-    invoke-direct {p0, v1, v3, v4, v4}, Lcom/android/settings/msim/StatusImei;->a(Ljava/lang/Class;III)Landroid/app/ActionBar$Tab;
+    invoke-direct {p0, v1, v3, v4, v4}, Lcom/android/vendorsettings/msim/StatusImei;->a(Ljava/lang/Class;III)Landroid/app/ActionBar$Tab;
 
     .line 34
     invoke-virtual {v0, v2}, Lmiui/app/ActionBar;->selectTab(Landroid/app/ActionBar$Tab;)V
@@ -113,7 +113,7 @@
     invoke-super {p0, p1}, Lmiui/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 23
-    invoke-direct {p0}, Lcom/android/settings/msim/StatusImei;->kd()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/msim/StatusImei;->kd()V
 
     .line 24
     return-void

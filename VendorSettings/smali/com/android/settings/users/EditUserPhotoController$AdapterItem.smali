@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/users/EditUserPhotoController$AdapterItem;
+.class final Lcom/android/vendorsettings/users/EditUserPhotoController$AdapterItem;
 .super Ljava/lang/Object;
 .source "EditUserPhotoController.java"
 
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 337
-    iput-object p1, p0, Lcom/android/settings/users/EditUserPhotoController$AdapterItem;->title:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/users/EditUserPhotoController$AdapterItem;->title:Ljava/lang/String;
 
     .line 338
-    iput p2, p0, Lcom/android/settings/users/EditUserPhotoController$AdapterItem;->id:I
+    iput p2, p0, Lcom/android/vendorsettings/users/EditUserPhotoController$AdapterItem;->id:I
 
     .line 339
     return-void
@@ -34,7 +34,7 @@
 
     .prologue
     .line 343
-    iget-object v0, p0, Lcom/android/settings/users/EditUserPhotoController$AdapterItem;->title:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/users/EditUserPhotoController$AdapterItem;->title:Ljava/lang/String;
 
     return-object v0
 .end method

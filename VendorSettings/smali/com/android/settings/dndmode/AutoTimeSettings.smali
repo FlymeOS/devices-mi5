@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/dndmode/AutoTimeSettings;
+.class public Lcom/android/vendorsettings/dndmode/AutoTimeSettings;
 .super Lmiui/app/Activity;
 .source "AutoTimeSettings.java"
 
 
 # instance fields
-.field private aam:Lcom/android/settings/dndmode/h;
+.field private aam:Lcom/android/vendorsettings/dndmode/h;
 
 
 # direct methods
@@ -48,9 +48,9 @@
     move-result-object v0
 
     .line 41
-    iget-object v1, p0, Lcom/android/settings/dndmode/AutoTimeSettings;->aam:Lcom/android/settings/dndmode/h;
+    iget-object v1, p0, Lcom/android/vendorsettings/dndmode/AutoTimeSettings;->aam:Lcom/android/vendorsettings/dndmode/h;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/dndmode/h;->aX(Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/dndmode/h;->aX(Ljava/lang/String;)V
 
     .line 43
     :cond_0
@@ -67,20 +67,20 @@
     .line 28
     const v0, 0x7f04006c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/AutoTimeSettings;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dndmode/AutoTimeSettings;->setContentView(I)V
 
     .line 29
     if-nez p1, :cond_0
 
     .line 30
-    new-instance v0, Lcom/android/settings/dndmode/h;
+    new-instance v0, Lcom/android/vendorsettings/dndmode/h;
 
-    invoke-direct {v0}, Lcom/android/settings/dndmode/h;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/dndmode/h;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/AutoTimeSettings;->aam:Lcom/android/settings/dndmode/h;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/AutoTimeSettings;->aam:Lcom/android/vendorsettings/dndmode/h;
 
     .line 31
-    invoke-virtual {p0}, Lcom/android/settings/dndmode/AutoTimeSettings;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dndmode/AutoTimeSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -90,7 +90,7 @@
 
     const v1, 0x7f1300df
 
-    iget-object v2, p0, Lcom/android/settings/dndmode/AutoTimeSettings;->aam:Lcom/android/settings/dndmode/h;
+    iget-object v2, p0, Lcom/android/vendorsettings/dndmode/AutoTimeSettings;->aam:Lcom/android/vendorsettings/dndmode/h;
 
     invoke-virtual {v0, v1, v2}, Landroid/app/FragmentTransaction;->add(ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;
 
@@ -104,7 +104,7 @@
 
     .line 33
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/dndmode/AutoTimeSettings;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dndmode/AutoTimeSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -114,9 +114,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/dndmode/h;
+    check-cast v0, Lcom/android/vendorsettings/dndmode/h;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/AutoTimeSettings;->aam:Lcom/android/settings/dndmode/h;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/AutoTimeSettings;->aam:Lcom/android/vendorsettings/dndmode/h;
 
     goto :goto_0
 .end method
@@ -126,13 +126,13 @@
 
     .prologue
     .line 21
-    invoke-virtual {p0}, Lcom/android/settings/dndmode/AutoTimeSettings;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dndmode/AutoTimeSettings;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
     const-string v1, "autoTimeSettingsFragment"
 
-    iget-object v2, p0, Lcom/android/settings/dndmode/AutoTimeSettings;->aam:Lcom/android/settings/dndmode/h;
+    iget-object v2, p0, Lcom/android/vendorsettings/dndmode/AutoTimeSettings;->aam:Lcom/android/vendorsettings/dndmode/h;
 
     invoke-virtual {v0, p1, v1, v2}, Landroid/app/FragmentManager;->putFragment(Landroid/os/Bundle;Ljava/lang/String;Landroid/app/Fragment;)V
 

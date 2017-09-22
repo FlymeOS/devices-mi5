@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/applications/ManageDefaultApps$4;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/vendorsettings/applications/ManageDefaultApps$4;
+.super Lcom/android/vendorsettings/search/a;
 .source "ManageDefaultApps.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 209
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/search/a;-><init>()V
 
     return-void
 .end method
@@ -73,7 +73,7 @@
     move-result v1
 
     .line 225
-    invoke-static {p1}, Lcom/android/settings/applications/DefaultSmsPreference;->an(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/applications/DefaultSmsPreference;->an(Landroid/content/Context;)Z
 
     move-result v2
 
@@ -89,7 +89,7 @@
 
     .line 229
     :cond_1
-    invoke-static {p1}, Lcom/android/settings/applications/DefaultEmergencyPreference;->an(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/applications/DefaultEmergencyPreference;->an(Landroid/content/Context;)Z
 
     move-result v1
 

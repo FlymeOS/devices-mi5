@@ -1,4 +1,4 @@
-.class Lcom/android/settings/eC;
+.class Lcom/android/vendorsettings/eC;
 .super Ljava/lang/Object;
 .source "MiuiMasterClear.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ry:Lcom/android/settings/eB;
+.field final synthetic ry:Lcom/android/vendorsettings/eB;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/eB;)V
+.method constructor <init>(Lcom/android/vendorsettings/eB;)V
     .locals 0
 
     .prologue
     .line 546
-    iput-object p1, p0, Lcom/android/settings/eC;->ry:Lcom/android/settings/eB;
+    iput-object p1, p0, Lcom/android/vendorsettings/eC;->ry:Lcom/android/vendorsettings/eB;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,11 +48,11 @@
     if-eqz v0, :cond_0
 
     .line 554
-    iget-object v0, p0, Lcom/android/settings/eC;->ry:Lcom/android/settings/eB;
+    iget-object v0, p0, Lcom/android/vendorsettings/eC;->ry:Lcom/android/vendorsettings/eB;
 
-    iget-object v0, v0, Lcom/android/settings/eB;->rw:Lcom/android/settings/MiuiMasterClear;
+    iget-object v0, v0, Lcom/android/vendorsettings/eB;->rw:Lcom/android/vendorsettings/MiuiMasterClear;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiMasterClear;->f(Lcom/android/settings/MiuiMasterClear;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiMasterClear;->f(Lcom/android/vendorsettings/MiuiMasterClear;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

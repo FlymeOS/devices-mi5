@@ -1,21 +1,21 @@
-.class Lcom/android/settings/ep;
-.super Lcom/android/settings/ah;
+.class Lcom/android/vendorsettings/ep;
+.super Lcom/android/vendorsettings/ah;
 .source "MiuiDisplaySettings.java"
 
 
 # instance fields
-.field final synthetic qH:Lcom/android/settings/MiuiDisplaySettings;
+.field final synthetic qH:Lcom/android/vendorsettings/MiuiDisplaySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiDisplaySettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiDisplaySettings;)V
     .locals 0
 
     .prologue
     .line 159
-    iput-object p1, p0, Lcom/android/settings/ep;->qH:Lcom/android/settings/MiuiDisplaySettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/ep;->qH:Lcom/android/vendorsettings/MiuiDisplaySettings;
 
-    invoke-direct {p0}, Lcom/android/settings/ah;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/ah;-><init>()V
 
     return-void
 .end method
@@ -27,9 +27,9 @@
 
     .prologue
     .line 162
-    iget-object v0, p0, Lcom/android/settings/ep;->qH:Lcom/android/settings/MiuiDisplaySettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/ep;->qH:Lcom/android/vendorsettings/MiuiDisplaySettings;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiDisplaySettings;->c(Lcom/android/settings/MiuiDisplaySettings;)Lmiui/preference/ValuePreference;
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiDisplaySettings;->c(Lcom/android/vendorsettings/MiuiDisplaySettings;)Lmiui/preference/ValuePreference;
 
     move-result-object v0
 

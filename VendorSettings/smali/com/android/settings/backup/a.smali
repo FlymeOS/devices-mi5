@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/backup/a;
-.super Lcom/android/settings/backup/g;
+.class public Lcom/android/vendorsettings/backup/a;
+.super Lcom/android/vendorsettings/backup/g;
 .source "AccountAgent.java"
 
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 30
-    invoke-direct {p0, p1}, Lcom/android/settings/backup/g;-><init>(Lmiui/app/backup/FullBackupAgent;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/backup/g;-><init>(Lmiui/app/backup/FullBackupAgent;)V
 
     .line 31
     return-void
@@ -32,7 +32,7 @@
     .line 40
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/android/settings/backup/a;->PL:Lmiui/app/backup/FullBackupAgent;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/a;->PL:Lmiui/app/backup/FullBackupAgent;
 
     invoke-virtual {v1}, Lmiui/app/backup/FullBackupAgent;->getCacheDir()Ljava/io/File;
 
@@ -42,10 +42,10 @@
 
     invoke-direct {v0, v1, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/backup/a;->Py:Ljava/io/File;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/a;->Py:Ljava/io/File;
 
     .line 41
-    iget-object v0, p0, Lcom/android/settings/backup/a;->Py:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/a;->Py:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -54,7 +54,7 @@
     if-nez v0, :cond_0
 
     .line 42
-    iget-object v0, p0, Lcom/android/settings/backup/a;->Py:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/a;->Py:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
@@ -62,7 +62,7 @@
     :cond_0
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/android/settings/backup/a;->PL:Lmiui/app/backup/FullBackupAgent;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/a;->PL:Lmiui/app/backup/FullBackupAgent;
 
     invoke-virtual {v1}, Lmiui/app/backup/FullBackupAgent;->getCacheDir()Ljava/io/File;
 
@@ -72,10 +72,10 @@
 
     invoke-direct {v0, v1, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/backup/a;->Py:Ljava/io/File;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/a;->Py:Ljava/io/File;
 
     .line 46
-    iget-object v0, p0, Lcom/android/settings/backup/a;->Py:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/a;->Py:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -84,7 +84,7 @@
     if-nez v0, :cond_1
 
     .line 47
-    iget-object v0, p0, Lcom/android/settings/backup/a;->Py:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/a;->Py:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
@@ -92,7 +92,7 @@
     :cond_1
     new-instance v4, Ljava/io/File;
 
-    iget-object v0, p0, Lcom/android/settings/backup/a;->Py:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/a;->Py:Ljava/io/File;
 
     const-string v1, "accounts.db"
 
@@ -101,7 +101,7 @@
     .line 50
     new-instance v0, Ljava/io/File;
 
-    sget-object v1, Lcom/android/settings/backup/b;->PF:Ljava/lang/String;
+    sget-object v1, Lcom/android/vendorsettings/backup/b;->PF:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
@@ -504,25 +504,25 @@
 
     .prologue
     .line 173
-    new-instance v0, Lcom/android/settings/backup/b;
+    new-instance v0, Lcom/android/vendorsettings/backup/b;
 
-    iget-object v1, p0, Lcom/android/settings/backup/a;->PL:Lmiui/app/backup/FullBackupAgent;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/a;->PL:Lmiui/app/backup/FullBackupAgent;
 
     invoke-virtual {v1}, Lmiui/app/backup/FullBackupAgent;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/backup/b;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/backup/b;-><init>(Landroid/content/Context;)V
 
     .line 174
-    iget-object v1, p0, Lcom/android/settings/backup/a;->Py:Ljava/io/File;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/a;->Py:Ljava/io/File;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/b;->b(Ljava/io/File;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/backup/b;->b(Ljava/io/File;)V
 
     .line 175
     new-instance v1, Ljava/io/File;
 
-    iget-object v2, p0, Lcom/android/settings/backup/a;->Py:Ljava/io/File;
+    iget-object v2, p0, Lcom/android/vendorsettings/backup/a;->Py:Ljava/io/File;
 
     const-string v3, "accounts.db"
 
@@ -536,13 +536,13 @@
     if-eqz v2, :cond_0
 
     .line 177
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/b;->a(Ljava/io/File;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/backup/b;->a(Ljava/io/File;)V
 
     .line 178
-    invoke-virtual {v0}, Lcom/android/settings/backup/b;->lD()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/backup/b;->lD()V
 
     .line 179
-    invoke-virtual {v0}, Lcom/android/settings/backup/b;->lH()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/backup/b;->lH()V
 
     .line 180
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
@@ -575,7 +575,7 @@
     .line 94
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/android/settings/backup/a;->PL:Lmiui/app/backup/FullBackupAgent;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/a;->PL:Lmiui/app/backup/FullBackupAgent;
 
     invoke-virtual {v1}, Lmiui/app/backup/FullBackupAgent;->getCacheDir()Ljava/io/File;
 
@@ -585,10 +585,10 @@
 
     invoke-direct {v0, v1, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/backup/a;->Py:Ljava/io/File;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/a;->Py:Ljava/io/File;
 
     .line 95
-    iget-object v0, p0, Lcom/android/settings/backup/a;->Py:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/a;->Py:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -597,7 +597,7 @@
     if-nez v0, :cond_0
 
     .line 96
-    iget-object v0, p0, Lcom/android/settings/backup/a;->Py:Ljava/io/File;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/a;->Py:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
@@ -605,7 +605,7 @@
     :cond_0
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/android/settings/backup/a;->Py:Ljava/io/File;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/a;->Py:Ljava/io/File;
 
     const-string v3, "accounts.db"
 
@@ -963,7 +963,7 @@
     .line 136
     new-instance v0, Ljava/io/File;
 
-    iget-object v1, p0, Lcom/android/settings/backup/a;->Py:Ljava/io/File;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/a;->Py:Ljava/io/File;
 
     invoke-direct {v0, v1, p3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 

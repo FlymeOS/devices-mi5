@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/dndmode/b;
+.class public final Lcom/android/vendorsettings/dndmode/b;
 .super Ljava/lang/Object;
 .source "Alarm.java"
 
@@ -23,7 +23,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/dndmode/b;->aac:[I
+    sput-object v0, Lcom/android/vendorsettings/dndmode/b;->aac:[I
 
     return-void
 
@@ -49,7 +49,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 290
-    iput p1, p0, Lcom/android/settings/dndmode/b;->aad:I
+    iput p1, p0, Lcom/android/vendorsettings/dndmode/b;->aad:I
 
     .line 291
     return-void
@@ -62,7 +62,7 @@
     const/4 v0, 0x1
 
     .line 353
-    iget v1, p0, Lcom/android/settings/dndmode/b;->aad:I
+    iget v1, p0, Lcom/android/vendorsettings/dndmode/b;->aad:I
 
     shl-int v2, v0, p1
 
@@ -81,14 +81,14 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/dndmode/b;)V
+.method public a(Lcom/android/vendorsettings/dndmode/b;)V
     .locals 1
 
     .prologue
     .line 365
-    iget v0, p1, Lcom/android/settings/dndmode/b;->aad:I
+    iget v0, p1, Lcom/android/vendorsettings/dndmode/b;->aad:I
 
-    iput v0, p0, Lcom/android/settings/dndmode/b;->aad:I
+    iput v0, p0, Lcom/android/vendorsettings/dndmode/b;->aad:I
 
     .line 366
     return-void
@@ -108,7 +108,7 @@
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 297
-    iget v0, p0, Lcom/android/settings/dndmode/b;->aad:I
+    iget v0, p0, Lcom/android/vendorsettings/dndmode/b;->aad:I
 
     if-nez v0, :cond_1
 
@@ -137,7 +137,7 @@
 
     .line 303
     :cond_1
-    iget v0, p0, Lcom/android/settings/dndmode/b;->aad:I
+    iget v0, p0, Lcom/android/vendorsettings/dndmode/b;->aad:I
 
     const/16 v1, 0x7f
 
@@ -158,7 +158,7 @@
 
     .line 308
     :cond_2
-    iget v0, p0, Lcom/android/settings/dndmode/b;->aad:I
+    iget v0, p0, Lcom/android/vendorsettings/dndmode/b;->aad:I
 
     const/16 v1, 0x80
 
@@ -168,7 +168,7 @@
     const v0, 0x7f0c0bbb
 
     .line 310
-    invoke-static {p1}, Lcom/android/settings/dndmode/n;->by(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/dndmode/n;->by(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -191,7 +191,7 @@
 
     .line 317
     :cond_4
-    iget v0, p0, Lcom/android/settings/dndmode/b;->aad:I
+    iget v0, p0, Lcom/android/vendorsettings/dndmode/b;->aad:I
 
     move v1, v0
 
@@ -234,7 +234,7 @@
     if-ge v2, v4, :cond_9
 
     .line 331
-    iget v4, p0, Lcom/android/settings/dndmode/b;->aad:I
+    iget v4, p0, Lcom/android/vendorsettings/dndmode/b;->aad:I
 
     shl-int v5, v6, v2
 
@@ -243,7 +243,7 @@
     if-eqz v4, :cond_7
 
     .line 332
-    sget-object v4, Lcom/android/settings/dndmode/b;->aac:[I
+    sget-object v4, Lcom/android/vendorsettings/dndmode/b;->aac:[I
 
     aget v4, v4, v2
 
@@ -289,7 +289,7 @@
 
     .prologue
     .line 341
-    iget v0, p0, Lcom/android/settings/dndmode/b;->aad:I
+    iget v0, p0, Lcom/android/vendorsettings/dndmode/b;->aad:I
 
     sparse-switch v0, :sswitch_data_0
 
@@ -326,7 +326,7 @@
 
     .prologue
     .line 378
-    iget v0, p0, Lcom/android/settings/dndmode/b;->aad:I
+    iget v0, p0, Lcom/android/vendorsettings/dndmode/b;->aad:I
 
     return v0
 .end method
@@ -347,7 +347,7 @@
     if-ge v0, v3, :cond_0
 
     .line 385
-    invoke-direct {p0, v0}, Lcom/android/settings/dndmode/b;->isSet(I)Z
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/dndmode/b;->isSet(I)Z
 
     move-result v2
 
@@ -385,7 +385,7 @@
     if-ge v2, v6, :cond_3
 
     .line 458
-    iget v4, p0, Lcom/android/settings/dndmode/b;->aad:I
+    iget v4, p0, Lcom/android/vendorsettings/dndmode/b;->aad:I
 
     shl-int v5, v0, v2
 
@@ -443,13 +443,13 @@
     if-eqz p2, :cond_0
 
     .line 358
-    iget v0, p0, Lcom/android/settings/dndmode/b;->aad:I
+    iget v0, p0, Lcom/android/vendorsettings/dndmode/b;->aad:I
 
     shl-int/2addr v1, p1
 
     or-int/2addr v0, v1
 
-    iput v0, p0, Lcom/android/settings/dndmode/b;->aad:I
+    iput v0, p0, Lcom/android/vendorsettings/dndmode/b;->aad:I
 
     .line 362
     :goto_0
@@ -457,7 +457,7 @@
 
     .line 360
     :cond_0
-    iget v0, p0, Lcom/android/settings/dndmode/b;->aad:I
+    iget v0, p0, Lcom/android/vendorsettings/dndmode/b;->aad:I
 
     shl-int/2addr v1, p1
 
@@ -465,7 +465,7 @@
 
     and-int/2addr v0, v1
 
-    iput v0, p0, Lcom/android/settings/dndmode/b;->aad:I
+    iput v0, p0, Lcom/android/vendorsettings/dndmode/b;->aad:I
 
     goto :goto_0
 .end method

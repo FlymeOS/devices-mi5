@@ -1,19 +1,19 @@
-.class Lcom/android/settings/print/i;
+.class Lcom/android/vendorsettings/print/i;
 .super Landroid/widget/Filter;
 .source "PrintServiceSettingsFragment.java"
 
 
 # instance fields
-.field final synthetic amv:Lcom/android/settings/print/h;
+.field final synthetic amv:Lcom/android/vendorsettings/print/h;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/print/h;)V
+.method constructor <init>(Lcom/android/vendorsettings/print/h;)V
     .locals 0
 
     .prologue
     .line 561
-    iput-object p1, p0, Lcom/android/settings/print/i;->amv:Lcom/android/settings/print/h;
+    iput-object p1, p0, Lcom/android/vendorsettings/print/i;->amv:Lcom/android/vendorsettings/print/h;
 
     invoke-direct {p0}, Landroid/widget/Filter;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 564
-    iget-object v0, p0, Lcom/android/settings/print/i;->amv:Lcom/android/settings/print/h;
+    iget-object v0, p0, Lcom/android/vendorsettings/print/i;->amv:Lcom/android/vendorsettings/print/h;
 
-    invoke-static {v0}, Lcom/android/settings/print/h;->a(Lcom/android/settings/print/h;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/vendorsettings/print/h;->a(Lcom/android/vendorsettings/print/h;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -73,9 +73,9 @@
     move-result-object v5
 
     .line 571
-    iget-object v0, p0, Lcom/android/settings/print/i;->amv:Lcom/android/settings/print/h;
+    iget-object v0, p0, Lcom/android/vendorsettings/print/i;->amv:Lcom/android/vendorsettings/print/h;
 
-    invoke-static {v0}, Lcom/android/settings/print/h;->b(Lcom/android/settings/print/h;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/vendorsettings/print/h;->b(Lcom/android/vendorsettings/print/h;)Ljava/util/List;
 
     move-result-object v0
 
@@ -92,9 +92,9 @@
     if-ge v2, v6, :cond_2
 
     .line 573
-    iget-object v0, p0, Lcom/android/settings/print/i;->amv:Lcom/android/settings/print/h;
+    iget-object v0, p0, Lcom/android/vendorsettings/print/i;->amv:Lcom/android/vendorsettings/print/h;
 
-    invoke-static {v0}, Lcom/android/settings/print/h;->b(Lcom/android/settings/print/h;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/vendorsettings/print/h;->b(Lcom/android/vendorsettings/print/h;)Ljava/util/List;
 
     move-result-object v0
 
@@ -164,9 +164,9 @@
 
     .prologue
     .line 587
-    iget-object v0, p0, Lcom/android/settings/print/i;->amv:Lcom/android/settings/print/h;
+    iget-object v0, p0, Lcom/android/vendorsettings/print/i;->amv:Lcom/android/vendorsettings/print/h;
 
-    invoke-static {v0}, Lcom/android/settings/print/h;->a(Lcom/android/settings/print/h;)Ljava/lang/Object;
+    invoke-static {v0}, Lcom/android/vendorsettings/print/h;->a(Lcom/android/vendorsettings/print/h;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -174,14 +174,14 @@
 
     .line 588
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/print/i;->amv:Lcom/android/settings/print/h;
+    iget-object v0, p0, Lcom/android/vendorsettings/print/i;->amv:Lcom/android/vendorsettings/print/h;
 
-    invoke-static {v0, p1}, Lcom/android/settings/print/h;->a(Lcom/android/settings/print/h;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static {v0, p1}, Lcom/android/vendorsettings/print/h;->a(Lcom/android/vendorsettings/print/h;Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     .line 589
-    iget-object v0, p0, Lcom/android/settings/print/i;->amv:Lcom/android/settings/print/h;
+    iget-object v0, p0, Lcom/android/vendorsettings/print/i;->amv:Lcom/android/vendorsettings/print/h;
 
-    invoke-static {v0}, Lcom/android/settings/print/h;->c(Lcom/android/settings/print/h;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/vendorsettings/print/h;->c(Lcom/android/vendorsettings/print/h;)Ljava/util/List;
 
     move-result-object v0
 
@@ -191,15 +191,15 @@
     if-nez p2, :cond_0
 
     .line 591
-    iget-object v0, p0, Lcom/android/settings/print/i;->amv:Lcom/android/settings/print/h;
+    iget-object v0, p0, Lcom/android/vendorsettings/print/i;->amv:Lcom/android/vendorsettings/print/h;
 
-    invoke-static {v0}, Lcom/android/settings/print/h;->c(Lcom/android/settings/print/h;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/vendorsettings/print/h;->c(Lcom/android/vendorsettings/print/h;)Ljava/util/List;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/print/i;->amv:Lcom/android/settings/print/h;
+    iget-object v2, p0, Lcom/android/vendorsettings/print/i;->amv:Lcom/android/vendorsettings/print/h;
 
-    invoke-static {v2}, Lcom/android/settings/print/h;->b(Lcom/android/settings/print/h;)Ljava/util/List;
+    invoke-static {v2}, Lcom/android/vendorsettings/print/h;->b(Lcom/android/vendorsettings/print/h;)Ljava/util/List;
 
     move-result-object v2
 
@@ -212,9 +212,9 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 597
-    iget-object v0, p0, Lcom/android/settings/print/i;->amv:Lcom/android/settings/print/h;
+    iget-object v0, p0, Lcom/android/vendorsettings/print/i;->amv:Lcom/android/vendorsettings/print/h;
 
-    invoke-virtual {v0}, Lcom/android/settings/print/h;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/print/h;->notifyDataSetChanged()V
 
     .line 598
     return-void
@@ -227,9 +227,9 @@
     check-cast v0, Ljava/util/List;
 
     .line 594
-    iget-object v2, p0, Lcom/android/settings/print/i;->amv:Lcom/android/settings/print/h;
+    iget-object v2, p0, Lcom/android/vendorsettings/print/i;->amv:Lcom/android/vendorsettings/print/h;
 
-    invoke-static {v2}, Lcom/android/settings/print/h;->c(Lcom/android/settings/print/h;)Ljava/util/List;
+    invoke-static {v2}, Lcom/android/vendorsettings/print/h;->c(Lcom/android/vendorsettings/print/h;)Ljava/util/List;
 
     move-result-object v2
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/backup/j;
+.class public Lcom/android/vendorsettings/backup/j;
 .super Ljava/lang/Object;
 .source "SettingManager.java"
 
@@ -22,16 +22,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 45
-    iput-object p1, p0, Lcom/android/settings/backup/j;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/backup/j;->mContext:Landroid/content/Context;
 
     .line 46
-    iget-object v0, p0, Lcom/android/settings/backup/j;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/j;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/backup/j;->mResolver:Landroid/content/ContentResolver;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/j;->mResolver:Landroid/content/ContentResolver;
 
     .line 47
     return-void
@@ -196,7 +196,7 @@
     .line 352
     const-string v0, "value"
 
-    invoke-static {p0, p1, v0}, Lcom/android/settings/backup/j;->a(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p1, v0}, Lcom/android/vendorsettings/backup/j;->a(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -224,7 +224,7 @@
     .line 359
     const/4 v0, 0x1
 
-    invoke-static {p0, v1, v0}, Lcom/android/settings/backup/j;->a(Landroid/content/Context;Landroid/net/Uri;Z)Ljava/lang/String;
+    invoke-static {p0, v1, v0}, Lcom/android/vendorsettings/backup/j;->a(Landroid/content/Context;Landroid/net/Uri;Z)Ljava/lang/String;
 
     move-result-object v0
 
@@ -243,7 +243,7 @@
     .line 354
     const-string v0, "_data"
 
-    invoke-static {p0, p1, v0}, Lcom/android/settings/backup/j;->a(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p1, v0}, Lcom/android/vendorsettings/backup/j;->a(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -274,7 +274,7 @@
     .line 322
     const/4 v0, 0x1
 
-    invoke-static {p0, p1, v0}, Lcom/android/settings/backup/j;->a(Landroid/content/Context;Landroid/net/Uri;Z)Ljava/lang/String;
+    invoke-static {p0, p1, v0}, Lcom/android/vendorsettings/backup/j;->a(Landroid/content/Context;Landroid/net/Uri;Z)Ljava/lang/String;
 
     move-result-object v0
 
@@ -286,7 +286,7 @@
 
     .prologue
     .line 52
-    iget-object v0, p0, Lcom/android/settings/backup/j;->PU:Lcom/android/internal/widget/ILockSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/j;->PU:Lcom/android/internal/widget/ILockSettings;
 
     if-nez v0, :cond_0
 
@@ -301,35 +301,35 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/backup/j;->PU:Lcom/android/internal/widget/ILockSettings;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/j;->PU:Lcom/android/internal/widget/ILockSettings;
 
     .line 56
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/backup/j;->PU:Lcom/android/internal/widget/ILockSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/j;->PU:Lcom/android/internal/widget/ILockSettings;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public a(Lcom/android/settings/backup/SettingProtos$SecureSetting;)Landroid/net/Uri;
+.method public a(Lcom/android/vendorsettings/backup/SettingProtos$SecureSetting;)Landroid/net/Uri;
     .locals 3
 
     .prologue
     .line 176
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SecureSetting;->hasName()Z
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SecureSetting;->hasName()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SecureSetting;->getName()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SecureSetting;->getName()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SecureSetting;->getName()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SecureSetting;->getName()Ljava/lang/String;
 
     move-result-object v0
 
@@ -358,14 +358,14 @@
     .line 180
     const-string v1, "name"
 
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SecureSetting;->getName()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SecureSetting;->getName()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 181
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SecureSetting;->hasValue()Z
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SecureSetting;->hasValue()Z
 
     move-result v1
 
@@ -374,7 +374,7 @@
     .line 182
     const-string v1, "value"
 
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SecureSetting;->getValue()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SecureSetting;->getValue()Ljava/lang/String;
 
     move-result-object v2
 
@@ -382,7 +382,7 @@
 
     .line 184
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/backup/j;->mResolver:Landroid/content/ContentResolver;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/j;->mResolver:Landroid/content/ContentResolver;
 
     sget-object v2, Landroid/provider/Settings$Secure;->CONTENT_URI:Landroid/net/Uri;
 
@@ -394,24 +394,24 @@
     return-object v0
 .end method
 
-.method public a(Lcom/android/settings/backup/SettingProtos$SystemSetting;)Landroid/net/Uri;
+.method public a(Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;)Landroid/net/Uri;
     .locals 3
 
     .prologue
     .line 163
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->hasName()Z
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->hasName()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->getName()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->getName()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->getName()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->getName()Ljava/lang/String;
 
     move-result-object v0
 
@@ -440,14 +440,14 @@
     .line 167
     const-string v1, "name"
 
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->getName()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->getName()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 168
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->hasValue()Z
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->hasValue()Z
 
     move-result v1
 
@@ -456,7 +456,7 @@
     .line 169
     const-string v1, "value"
 
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->getValue()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->getValue()Ljava/lang/String;
 
     move-result-object v2
 
@@ -464,7 +464,7 @@
 
     .line 171
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/backup/j;->mResolver:Landroid/content/ContentResolver;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/j;->mResolver:Landroid/content/ContentResolver;
 
     sget-object v2, Landroid/provider/Settings$System;->CONTENT_URI:Landroid/net/Uri;
 
@@ -476,25 +476,25 @@
     return-object v0
 .end method
 
-.method public a(Lcom/android/settings/backup/SettingProtos$LockSetting;)Z
+.method public a(Lcom/android/vendorsettings/backup/SettingProtos$LockSetting;)Z
     .locals 6
 
     .prologue
     const/4 v0, 0x0
 
     .line 189
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$LockSetting;->getName()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$LockSetting;->getName()Ljava/lang/String;
 
     move-result-object v1
 
     .line 190
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$LockSetting;->getValue()J
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$LockSetting;->getValue()J
 
     move-result-wide v2
 
     .line 192
     :try_start_0
-    invoke-direct {p0}, Lcom/android/settings/backup/j;->lJ()Lcom/android/internal/widget/ILockSettings;
+    invoke-direct {p0}, Lcom/android/vendorsettings/backup/j;->lJ()Lcom/android/internal/widget/ILockSettings;
 
     move-result-object v4
 
@@ -521,20 +521,20 @@
     goto :goto_0
 .end method
 
-.method public aw(Ljava/lang/String;)Lcom/android/settings/backup/SettingProtos$SystemSetting;
+.method public aw(Ljava/lang/String;)Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;
     .locals 8
 
     .prologue
     const/4 v6, 0x0
 
     .line 60
-    invoke-static {}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->mN()Lcom/android/settings/backup/r;
+    invoke-static {}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->mN()Lcom/android/vendorsettings/backup/r;
 
     move-result-object v7
 
     .line 64
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/backup/j;->mResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/j;->mResolver:Landroid/content/ContentResolver;
 
     sget-object v1, Landroid/provider/Settings$System;->CONTENT_URI:Landroid/net/Uri;
 
@@ -602,7 +602,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v7, v2}, Lcom/android/settings/backup/r;->aG(Ljava/lang/String;)Lcom/android/settings/backup/r;
+    invoke-virtual {v7, v2}, Lcom/android/vendorsettings/backup/r;->aG(Ljava/lang/String;)Lcom/android/vendorsettings/backup/r;
 
     .line 74
     :cond_0
@@ -632,7 +632,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v7, v2}, Lcom/android/settings/backup/r;->aH(Ljava/lang/String;)Lcom/android/settings/backup/r;
+    invoke-virtual {v7, v2}, Lcom/android/vendorsettings/backup/r;->aH(Ljava/lang/String;)Lcom/android/vendorsettings/backup/r;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -661,7 +661,7 @@
     .line 93
     :cond_2
     :goto_3
-    invoke-virtual {v7}, Lcom/android/settings/backup/r;->mT()Lcom/android/settings/backup/SettingProtos$SystemSetting;
+    invoke-virtual {v7}, Lcom/android/vendorsettings/backup/r;->mT()Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;
 
     move-result-object v0
 
@@ -690,7 +690,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v7, v2}, Lcom/android/settings/backup/r;->aI(Ljava/lang/String;)Lcom/android/settings/backup/r;
+    invoke-virtual {v7, v2}, Lcom/android/vendorsettings/backup/r;->aI(Ljava/lang/String;)Lcom/android/vendorsettings/backup/r;
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
@@ -753,20 +753,20 @@
     goto :goto_2
 .end method
 
-.method public ax(Ljava/lang/String;)Lcom/android/settings/backup/SettingProtos$SecureSetting;
+.method public ax(Ljava/lang/String;)Lcom/android/vendorsettings/backup/SettingProtos$SecureSetting;
     .locals 8
 
     .prologue
     const/4 v6, 0x0
 
     .line 98
-    invoke-static {}, Lcom/android/settings/backup/SettingProtos$SecureSetting;->ml()Lcom/android/settings/backup/n;
+    invoke-static {}, Lcom/android/vendorsettings/backup/SettingProtos$SecureSetting;->ml()Lcom/android/vendorsettings/backup/n;
 
     move-result-object v7
 
     .line 102
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/backup/j;->mResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/j;->mResolver:Landroid/content/ContentResolver;
 
     sget-object v1, Landroid/provider/Settings$Secure;->CONTENT_URI:Landroid/net/Uri;
 
@@ -834,7 +834,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v7, v2}, Lcom/android/settings/backup/n;->aC(Ljava/lang/String;)Lcom/android/settings/backup/n;
+    invoke-virtual {v7, v2}, Lcom/android/vendorsettings/backup/n;->aC(Ljava/lang/String;)Lcom/android/vendorsettings/backup/n;
 
     .line 112
     :cond_0
@@ -864,7 +864,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v7, v2}, Lcom/android/settings/backup/n;->aD(Ljava/lang/String;)Lcom/android/settings/backup/n;
+    invoke-virtual {v7, v2}, Lcom/android/vendorsettings/backup/n;->aD(Ljava/lang/String;)Lcom/android/vendorsettings/backup/n;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -893,7 +893,7 @@
     .line 131
     :cond_2
     :goto_3
-    invoke-virtual {v7}, Lcom/android/settings/backup/n;->mr()Lcom/android/settings/backup/SettingProtos$SecureSetting;
+    invoke-virtual {v7}, Lcom/android/vendorsettings/backup/n;->mr()Lcom/android/vendorsettings/backup/SettingProtos$SecureSetting;
 
     move-result-object v0
 
@@ -922,7 +922,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v7, v2}, Lcom/android/settings/backup/n;->aE(Ljava/lang/String;)Lcom/android/settings/backup/n;
+    invoke-virtual {v7, v2}, Lcom/android/vendorsettings/backup/n;->aE(Ljava/lang/String;)Lcom/android/vendorsettings/backup/n;
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
@@ -990,7 +990,7 @@
 
     .prologue
     .line 260
-    iput-object p1, p0, Lcom/android/settings/backup/j;->PT:Ljava/util/HashMap;
+    iput-object p1, p0, Lcom/android/vendorsettings/backup/j;->PT:Ljava/util/HashMap;
 
     .line 261
     return-void
@@ -1003,7 +1003,7 @@
     const/4 v0, 0x0
 
     .line 368
-    iget-object v1, p0, Lcom/android/settings/backup/j;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/j;->mContext:Landroid/content/Context;
 
     invoke-static {v1, p1}, Landroid/media/ExtraRingtoneManager;->getRingtoneUri(Landroid/content/Context;I)Landroid/net/Uri;
 
@@ -1013,9 +1013,9 @@
     if-eqz v1, :cond_0
 
     .line 371
-    iget-object v2, p0, Lcom/android/settings/backup/j;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/vendorsettings/backup/j;->mContext:Landroid/content/Context;
 
-    invoke-static {v2, v1}, Lcom/android/settings/backup/j;->b(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
+    invoke-static {v2, v1}, Lcom/android/vendorsettings/backup/j;->b(Landroid/content/Context;Landroid/net/Uri;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1075,7 +1075,7 @@
     .line 137
     new-instance v0, Lcom/android/internal/widget/LockPatternUtils;
 
-    iget-object v2, p0, Lcom/android/settings/backup/j;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/vendorsettings/backup/j;->mContext:Landroid/content/Context;
 
     invoke-direct {v0, v2}, Lcom/android/internal/widget/LockPatternUtils;-><init>(Landroid/content/Context;)V
 
@@ -1089,22 +1089,22 @@
     move-result v0
 
     .line 140
-    invoke-static {}, Lcom/android/settings/backup/SettingProtos$LockSetting;->lY()Lcom/android/settings/backup/l;
+    invoke-static {}, Lcom/android/vendorsettings/backup/SettingProtos$LockSetting;->lY()Lcom/android/vendorsettings/backup/l;
 
     move-result-object v2
 
     .line 141
     const-string v3, "lockscreen.password_type"
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/backup/l;->aA(Ljava/lang/String;)Lcom/android/settings/backup/l;
+    invoke-virtual {v2, v3}, Lcom/android/vendorsettings/backup/l;->aA(Ljava/lang/String;)Lcom/android/vendorsettings/backup/l;
 
     .line 142
     int-to-long v4, v0
 
-    invoke-virtual {v2, v4, v5}, Lcom/android/settings/backup/l;->o(J)Lcom/android/settings/backup/l;
+    invoke-virtual {v2, v4, v5}, Lcom/android/vendorsettings/backup/l;->o(J)Lcom/android/vendorsettings/backup/l;
 
     .line 143
-    invoke-virtual {v2}, Lcom/android/settings/backup/l;->mf()Lcom/android/settings/backup/SettingProtos$LockSetting;
+    invoke-virtual {v2}, Lcom/android/vendorsettings/backup/l;->mf()Lcom/android/vendorsettings/backup/SettingProtos$LockSetting;
 
     move-result-object v0
 
@@ -1112,7 +1112,7 @@
 
     .line 145
     :try_start_0
-    invoke-direct {p0}, Lcom/android/settings/backup/j;->lJ()Lcom/android/internal/widget/ILockSettings;
+    invoke-direct {p0}, Lcom/android/vendorsettings/backup/j;->lJ()Lcom/android/internal/widget/ILockSettings;
 
     move-result-object v0
 
@@ -1127,27 +1127,27 @@
     move-result-wide v2
 
     .line 146
-    invoke-static {}, Lcom/android/settings/backup/SettingProtos$LockSetting;->lY()Lcom/android/settings/backup/l;
+    invoke-static {}, Lcom/android/vendorsettings/backup/SettingProtos$LockSetting;->lY()Lcom/android/vendorsettings/backup/l;
 
     move-result-object v0
 
     .line 147
     const-string v4, "lockscreen.password_salt"
 
-    invoke-virtual {v0, v4}, Lcom/android/settings/backup/l;->aA(Ljava/lang/String;)Lcom/android/settings/backup/l;
+    invoke-virtual {v0, v4}, Lcom/android/vendorsettings/backup/l;->aA(Ljava/lang/String;)Lcom/android/vendorsettings/backup/l;
 
     .line 148
-    invoke-virtual {v0, v2, v3}, Lcom/android/settings/backup/l;->o(J)Lcom/android/settings/backup/l;
+    invoke-virtual {v0, v2, v3}, Lcom/android/vendorsettings/backup/l;->o(J)Lcom/android/vendorsettings/backup/l;
 
     .line 149
-    invoke-virtual {v0}, Lcom/android/settings/backup/l;->mf()Lcom/android/settings/backup/SettingProtos$LockSetting;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/backup/l;->mf()Lcom/android/vendorsettings/backup/SettingProtos$LockSetting;
 
     move-result-object v0
 
     invoke-virtual {v1, v0}, Ljava/util/Vector;->add(Ljava/lang/Object;)Z
 
     .line 151
-    invoke-direct {p0}, Lcom/android/settings/backup/j;->lJ()Lcom/android/internal/widget/ILockSettings;
+    invoke-direct {p0}, Lcom/android/vendorsettings/backup/j;->lJ()Lcom/android/internal/widget/ILockSettings;
 
     move-result-object v0
 
@@ -1162,20 +1162,20 @@
     move-result-wide v2
 
     .line 152
-    invoke-static {}, Lcom/android/settings/backup/SettingProtos$LockSetting;->lY()Lcom/android/settings/backup/l;
+    invoke-static {}, Lcom/android/vendorsettings/backup/SettingProtos$LockSetting;->lY()Lcom/android/vendorsettings/backup/l;
 
     move-result-object v0
 
     .line 153
     const-string v4, "lock_pattern_autolock"
 
-    invoke-virtual {v0, v4}, Lcom/android/settings/backup/l;->aA(Ljava/lang/String;)Lcom/android/settings/backup/l;
+    invoke-virtual {v0, v4}, Lcom/android/vendorsettings/backup/l;->aA(Ljava/lang/String;)Lcom/android/vendorsettings/backup/l;
 
     .line 154
-    invoke-virtual {v0, v2, v3}, Lcom/android/settings/backup/l;->o(J)Lcom/android/settings/backup/l;
+    invoke-virtual {v0, v2, v3}, Lcom/android/vendorsettings/backup/l;->o(J)Lcom/android/vendorsettings/backup/l;
 
     .line 155
-    invoke-virtual {v0}, Lcom/android/settings/backup/l;->mf()Lcom/android/settings/backup/SettingProtos$LockSetting;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/backup/l;->mf()Lcom/android/vendorsettings/backup/SettingProtos$LockSetting;
 
     move-result-object v0
 
@@ -1210,7 +1210,7 @@
 
     .line 204
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/backup/j;->mResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/j;->mResolver:Landroid/content/ContentResolver;
 
     sget-object v1, Landroid/provider/Settings$System;->CONTENT_URI:Landroid/net/Uri;
 
@@ -1335,7 +1335,7 @@
 
     .line 235
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/backup/j;->mResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/j;->mResolver:Landroid/content/ContentResolver;
 
     sget-object v1, Landroid/provider/Settings$Secure;->CONTENT_URI:Landroid/net/Uri;
 
@@ -1435,7 +1435,7 @@
     const/16 v7, 0x3e8
 
     .line 264
-    sget-object v2, Lcom/android/settings/backup/h;->PM:[Lcom/android/settings/backup/A;
+    sget-object v2, Lcom/android/vendorsettings/backup/h;->PM:[Lcom/android/vendorsettings/backup/A;
 
     array-length v3, v2
 
@@ -1449,9 +1449,9 @@
     aget-object v4, v2, v1
 
     .line 265
-    iget-object v0, p0, Lcom/android/settings/backup/j;->PT:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/j;->PT:Ljava/util/HashMap;
 
-    iget-object v5, v4, Lcom/android/settings/backup/A;->Qg:Ljava/lang/String;
+    iget-object v5, v4, Lcom/android/vendorsettings/backup/A;->Qg:Ljava/lang/String;
 
     invoke-virtual {v0, v5}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1489,7 +1489,7 @@
     if-eqz v0, :cond_0
 
     .line 273
-    iget-object v0, v4, Lcom/android/settings/backup/A;->Qh:Ljava/lang/String;
+    iget-object v0, v4, Lcom/android/vendorsettings/backup/A;->Qh:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/miui/Shell;->remove(Ljava/lang/String;)Z
 
@@ -1498,19 +1498,19 @@
 
     move-result-object v0
 
-    iget-object v6, v4, Lcom/android/settings/backup/A;->Qh:Ljava/lang/String;
+    iget-object v6, v4, Lcom/android/vendorsettings/backup/A;->Qh:Ljava/lang/String;
 
     invoke-static {v0, v6}, Landroid/miui/Shell;->copy(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 275
-    iget-object v0, v4, Lcom/android/settings/backup/A;->Qh:Ljava/lang/String;
+    iget-object v0, v4, Lcom/android/vendorsettings/backup/A;->Qh:Ljava/lang/String;
 
     const/16 v6, 0x180
 
     invoke-static {v0, v6}, Landroid/miui/Shell;->chmod(Ljava/lang/String;I)Z
 
     .line 276
-    iget-object v0, v4, Lcom/android/settings/backup/A;->Qh:Ljava/lang/String;
+    iget-object v0, v4, Lcom/android/vendorsettings/backup/A;->Qh:Ljava/lang/String;
 
     invoke-static {v0, v7, v7}, Landroid/miui/Shell;->chown(Ljava/lang/String;II)Z
 
@@ -1529,7 +1529,7 @@
 
     .prologue
     .line 282
-    iget-object v0, p0, Lcom/android/settings/backup/j;->PT:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/j;->PT:Ljava/util/HashMap;
 
     const-string v1, "settings_descript.xml"
 
@@ -1565,47 +1565,47 @@
     if-eqz v0, :cond_0
 
     .line 288
-    new-instance v0, Lcom/android/settings/backup/i;
+    new-instance v0, Lcom/android/vendorsettings/backup/i;
 
-    invoke-direct {v0}, Lcom/android/settings/backup/i;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/backup/i;-><init>()V
 
     .line 289
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/i;->d(Ljava/io/File;)Z
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/backup/i;->d(Ljava/io/File;)Z
 
     .line 290
-    iget-object v1, v0, Lcom/android/settings/backup/i;->PN:Ljava/lang/String;
+    iget-object v1, v0, Lcom/android/vendorsettings/backup/i;->PN:Ljava/lang/String;
 
     const/4 v2, 0x1
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/backup/j;->m(Ljava/lang/String;I)V
+    invoke-virtual {p0, v1, v2}, Lcom/android/vendorsettings/backup/j;->m(Ljava/lang/String;I)V
 
     .line 291
-    iget-object v1, v0, Lcom/android/settings/backup/i;->PO:Ljava/lang/String;
+    iget-object v1, v0, Lcom/android/vendorsettings/backup/i;->PO:Ljava/lang/String;
 
     const/4 v2, 0x2
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/backup/j;->m(Ljava/lang/String;I)V
+    invoke-virtual {p0, v1, v2}, Lcom/android/vendorsettings/backup/j;->m(Ljava/lang/String;I)V
 
     .line 292
-    iget-object v1, v0, Lcom/android/settings/backup/i;->PP:Ljava/lang/String;
+    iget-object v1, v0, Lcom/android/vendorsettings/backup/i;->PP:Ljava/lang/String;
 
     const/4 v2, 0x4
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/backup/j;->m(Ljava/lang/String;I)V
+    invoke-virtual {p0, v1, v2}, Lcom/android/vendorsettings/backup/j;->m(Ljava/lang/String;I)V
 
     .line 293
-    iget-object v1, v0, Lcom/android/settings/backup/i;->PQ:Ljava/lang/String;
+    iget-object v1, v0, Lcom/android/vendorsettings/backup/i;->PQ:Ljava/lang/String;
 
     const/16 v2, 0x8
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/backup/j;->m(Ljava/lang/String;I)V
+    invoke-virtual {p0, v1, v2}, Lcom/android/vendorsettings/backup/j;->m(Ljava/lang/String;I)V
 
     .line 294
-    iget-object v0, v0, Lcom/android/settings/backup/i;->PR:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/vendorsettings/backup/i;->PR:Ljava/lang/String;
 
     const/16 v1, 0x10
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/backup/j;->m(Ljava/lang/String;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/backup/j;->m(Ljava/lang/String;I)V
 
     goto :goto_0
 .end method
@@ -1628,7 +1628,7 @@
 
     .line 302
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/backup/j;->PT:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/j;->PT:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1697,7 +1697,7 @@
     if-eqz v0, :cond_3
 
     .line 315
-    iget-object v0, p0, Lcom/android/settings/backup/j;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/backup/j;->mContext:Landroid/content/Context;
 
     invoke-static {v2}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
 

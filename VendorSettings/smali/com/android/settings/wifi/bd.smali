@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/bd;
+.class Lcom/android/vendorsettings/wifi/bd;
 .super Landroid/app/AlertDialog;
 .source "WriteWifiConfigToNfcDialog.java"
 
@@ -50,7 +50,7 @@
 
     .prologue
     .line 55
-    const-class v0, Lcom/android/settings/wifi/bd;
+    const-class v0, Lcom/android/vendorsettings/wifi/bd;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -60,7 +60,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/wifi/bd;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/wifi/bd;->TAG:Ljava/lang/String;
 
     .line 58
     const-string v0, "0123456789ABCDEF"
@@ -69,7 +69,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/wifi/bd;->aFi:[C
+    sput-object v0, Lcom/android/vendorsettings/wifi/bd;->aFi:[C
 
     return-void
 .end method
@@ -82,7 +82,7 @@
     invoke-direct {p0, p1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
 
     .line 82
-    iput-object p1, p0, Lcom/android/settings/wifi/bd;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/bd;->mContext:Landroid/content/Context;
 
     .line 83
     const-string v0, "power"
@@ -101,23 +101,23 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/bd;->mWakeLock:Landroid/os/PowerManager$WakeLock;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
     .line 85
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/bd;->aFk:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aFk:Landroid/os/Handler;
 
     .line 86
-    iput p2, p0, Lcom/android/settings/wifi/bd;->aAG:I
+    iput p2, p0, Lcom/android/vendorsettings/wifi/bd;->aAG:I
 
     .line 87
-    iput p3, p0, Lcom/android/settings/wifi/bd;->aFo:I
+    iput p3, p0, Lcom/android/vendorsettings/wifi/bd;->aFo:I
 
     .line 88
-    iput-object p4, p0, Lcom/android/settings/wifi/bd;->je:Landroid/net/wifi/WifiManager;
+    iput-object p4, p0, Lcom/android/vendorsettings/wifi/bd;->je:Landroid/net/wifi/WifiManager;
 
     .line 89
     return-void
@@ -131,7 +131,7 @@
     invoke-direct {p0, p1}, Landroid/app/AlertDialog;-><init>(Landroid/content/Context;)V
 
     .line 94
-    iput-object p1, p0, Lcom/android/settings/wifi/bd;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/bd;->mContext:Landroid/content/Context;
 
     .line 95
     const-string v0, "power"
@@ -150,14 +150,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/bd;->mWakeLock:Landroid/os/PowerManager$WakeLock;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
     .line 97
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/bd;->aFk:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aFk:Landroid/os/Handler;
 
     .line 98
     const-string v0, "network_id"
@@ -166,7 +166,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/wifi/bd;->aAG:I
+    iput v0, p0, Lcom/android/vendorsettings/wifi/bd;->aAG:I
 
     .line 99
     const-string v0, "security"
@@ -175,21 +175,21 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/wifi/bd;->aFo:I
+    iput v0, p0, Lcom/android/vendorsettings/wifi/bd;->aFo:I
 
     .line 100
-    iput-object p3, p0, Lcom/android/settings/wifi/bd;->je:Landroid/net/wifi/WifiManager;
+    iput-object p3, p0, Lcom/android/vendorsettings/wifi/bd;->je:Landroid/net/wifi/WifiManager;
 
     .line 101
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/bd;)Landroid/widget/ProgressBar;
+.method static synthetic a(Lcom/android/vendorsettings/wifi/bd;)Landroid/widget/ProgressBar;
     .locals 1
 
     .prologue
     .line 50
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->mProgressBar:Landroid/widget/ProgressBar;
 
     return-object v0
 .end method
@@ -220,9 +220,9 @@
     .line 192
     const-string v1, "application/vnd.wfa.wsc"
 
-    iget-object v2, p0, Lcom/android/settings/wifi/bd;->aFn:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/wifi/bd;->aFn:Ljava/lang/String;
 
-    invoke-static {v2}, Lcom/android/settings/wifi/bd;->hexStringToByteArray(Ljava/lang/String;)[B
+    invoke-static {v2}, Lcom/android/vendorsettings/wifi/bd;->hexStringToByteArray(Ljava/lang/String;)[B
 
     move-result-object v2
 
@@ -246,29 +246,29 @@
     invoke-virtual {v0, v2}, Landroid/nfc/tech/Ndef;->writeNdefMessage(Landroid/nfc/NdefMessage;)V
 
     .line 198
-    invoke-virtual {p0}, Lcom/android/settings/wifi/bd;->getOwnerActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/bd;->getOwnerActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/wifi/bf;
+    new-instance v1, Lcom/android/vendorsettings/wifi/bf;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/wifi/bf;-><init>(Lcom/android/settings/wifi/bd;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/wifi/bf;-><init>(Lcom/android/vendorsettings/wifi/bd;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
     .line 204
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->aFl:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aFl:Landroid/widget/TextView;
 
     const v1, 0x7f0c0a42
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/wifi/bd;->a(Landroid/widget/TextView;I)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/wifi/bd;->a(Landroid/widget/TextView;I)V
 
     .line 205
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->dY:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->dY:Landroid/widget/Button;
 
     const v1, 0x104056c
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/wifi/bd;->a(Landroid/widget/TextView;I)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/wifi/bd;->a(Landroid/widget/TextView;I)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catch Landroid/nfc/FormatException; {:try_start_0 .. :try_end_0} :catch_1
@@ -282,12 +282,12 @@
     move-exception v0
 
     .line 207
-    iget-object v1, p0, Lcom/android/settings/wifi/bd;->aFl:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/bd;->aFl:Landroid/widget/TextView;
 
-    invoke-direct {p0, v1, v4}, Lcom/android/settings/wifi/bd;->a(Landroid/widget/TextView;I)V
+    invoke-direct {p0, v1, v4}, Lcom/android/vendorsettings/wifi/bd;->a(Landroid/widget/TextView;I)V
 
     .line 208
-    sget-object v1, Lcom/android/settings/wifi/bd;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/android/vendorsettings/wifi/bd;->TAG:Ljava/lang/String;
 
     const-string v2, "Unable to write Wi-Fi config to NFC tag."
 
@@ -300,12 +300,12 @@
     move-exception v0
 
     .line 211
-    iget-object v1, p0, Lcom/android/settings/wifi/bd;->aFl:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/bd;->aFl:Landroid/widget/TextView;
 
-    invoke-direct {p0, v1, v4}, Lcom/android/settings/wifi/bd;->a(Landroid/widget/TextView;I)V
+    invoke-direct {p0, v1, v4}, Lcom/android/vendorsettings/wifi/bd;->a(Landroid/widget/TextView;I)V
 
     .line 212
-    sget-object v1, Lcom/android/settings/wifi/bd;->TAG:Ljava/lang/String;
+    sget-object v1, Lcom/android/vendorsettings/wifi/bd;->TAG:Ljava/lang/String;
 
     const-string v2, "Unable to write Wi-Fi config to NFC tag."
 
@@ -315,12 +315,12 @@
 
     .line 216
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->aFl:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aFl:Landroid/widget/TextView;
 
-    invoke-direct {p0, v0, v2}, Lcom/android/settings/wifi/bd;->a(Landroid/widget/TextView;I)V
+    invoke-direct {p0, v0, v2}, Lcom/android/vendorsettings/wifi/bd;->a(Landroid/widget/TextView;I)V
 
     .line 217
-    sget-object v0, Lcom/android/settings/wifi/bd;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/wifi/bd;->TAG:Ljava/lang/String;
 
     const-string v1, "Tag is not writable"
 
@@ -330,12 +330,12 @@
 
     .line 220
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->aFl:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aFl:Landroid/widget/TextView;
 
-    invoke-direct {p0, v0, v2}, Lcom/android/settings/wifi/bd;->a(Landroid/widget/TextView;I)V
+    invoke-direct {p0, v0, v2}, Lcom/android/vendorsettings/wifi/bd;->a(Landroid/widget/TextView;I)V
 
     .line 221
-    sget-object v0, Lcom/android/settings/wifi/bd;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/wifi/bd;->TAG:Ljava/lang/String;
 
     const-string v1, "Tag does not support NDEF"
 
@@ -349,13 +349,13 @@
 
     .prologue
     .line 259
-    invoke-virtual {p0}, Lcom/android/settings/wifi/bd;->getOwnerActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/bd;->getOwnerActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/wifi/bh;
+    new-instance v1, Lcom/android/vendorsettings/wifi/bh;
 
-    invoke-direct {v1, p0, p1, p2}, Lcom/android/settings/wifi/bh;-><init>(Lcom/android/settings/wifi/bd;Landroid/widget/TextView;I)V
+    invoke-direct {v1, p0, p1, p2}, Lcom/android/vendorsettings/wifi/bh;-><init>(Lcom/android/vendorsettings/wifi/bd;Landroid/widget/TextView;I)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
@@ -363,22 +363,22 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/bd;Landroid/nfc/Tag;)V
+.method static synthetic a(Lcom/android/vendorsettings/wifi/bd;Landroid/nfc/Tag;)V
     .locals 0
 
     .prologue
     .line 50
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/bd;->a(Landroid/nfc/Tag;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/wifi/bd;->a(Landroid/nfc/Tag;)V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/wifi/bd;)V
+.method static synthetic b(Lcom/android/vendorsettings/wifi/bd;)V
     .locals 0
 
     .prologue
     .line 50
-    invoke-direct {p0}, Lcom/android/settings/wifi/bd;->xh()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/wifi/bd;->xh()V
 
     return-void
 .end method
@@ -410,7 +410,7 @@
     .line 292
     mul-int/lit8 v3, v0, 0x2
 
-    sget-object v4, Lcom/android/settings/wifi/bd;->aFi:[C
+    sget-object v4, Lcom/android/vendorsettings/wifi/bd;->aFi:[C
 
     ushr-int/lit8 v5, v2, 0x4
 
@@ -423,7 +423,7 @@
 
     add-int/lit8 v3, v3, 0x1
 
-    sget-object v4, Lcom/android/settings/wifi/bd;->aFi:[C
+    sget-object v4, Lcom/android/vendorsettings/wifi/bd;->aFi:[C
 
     and-int/lit8 v2, v2, 0xf
 
@@ -515,19 +515,19 @@
     const/4 v1, 0x0
 
     .line 246
-    iget-object v2, p0, Lcom/android/settings/wifi/bd;->aCo:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/vendorsettings/wifi/bd;->aCo:Landroid/widget/TextView;
 
     if-eqz v2, :cond_4
 
     .line 247
-    iget v2, p0, Lcom/android/settings/wifi/bd;->aFo:I
+    iget v2, p0, Lcom/android/vendorsettings/wifi/bd;->aFo:I
 
     if-ne v2, v0, :cond_2
 
     .line 248
-    iget-object v2, p0, Lcom/android/settings/wifi/bd;->aFj:Landroid/widget/Button;
+    iget-object v2, p0, Lcom/android/vendorsettings/wifi/bd;->aFj:Landroid/widget/Button;
 
-    iget-object v3, p0, Lcom/android/settings/wifi/bd;->aCo:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/android/vendorsettings/wifi/bd;->aCo:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->length()I
 
@@ -551,16 +551,16 @@
 
     .line 249
     :cond_2
-    iget v2, p0, Lcom/android/settings/wifi/bd;->aFo:I
+    iget v2, p0, Lcom/android/vendorsettings/wifi/bd;->aFo:I
 
     const/4 v3, 0x2
 
     if-ne v2, v3, :cond_0
 
     .line 250
-    iget-object v2, p0, Lcom/android/settings/wifi/bd;->aFj:Landroid/widget/Button;
+    iget-object v2, p0, Lcom/android/vendorsettings/wifi/bd;->aFj:Landroid/widget/Button;
 
-    iget-object v3, p0, Lcom/android/settings/wifi/bd;->aCo:Landroid/widget/TextView;
+    iget-object v3, p0, Lcom/android/vendorsettings/wifi/bd;->aCo:Landroid/widget/TextView;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->length()I
 
@@ -582,7 +582,7 @@
 
     .line 253
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->aFj:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aFj:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
@@ -612,7 +612,7 @@
 
     .prologue
     .line 227
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->mWakeLock:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->isHeld()Z
 
@@ -621,7 +621,7 @@
     if-eqz v0, :cond_0
 
     .line 228
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->mWakeLock:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->release()V
 
@@ -638,7 +638,7 @@
 
     .prologue
     .line 269
-    iget-object v1, p0, Lcom/android/settings/wifi/bd;->aCo:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/bd;->aCo:Landroid/widget/TextView;
 
     if-eqz p2, :cond_0
 
@@ -670,12 +670,12 @@
     const/4 v5, 0x0
 
     .line 135
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->mWakeLock:Landroid/os/PowerManager$WakeLock;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->mWakeLock:Landroid/os/PowerManager$WakeLock;
 
     invoke-virtual {v0}, Landroid/os/PowerManager$WakeLock;->acquire()V
 
     .line 137
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->aCo:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aCo:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -686,9 +686,9 @@
     move-result-object v0
 
     .line 138
-    iget-object v1, p0, Lcom/android/settings/wifi/bd;->je:Landroid/net/wifi/WifiManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/bd;->je:Landroid/net/wifi/WifiManager;
 
-    iget v2, p0, Lcom/android/settings/wifi/bd;->aAG:I
+    iget v2, p0, Lcom/android/vendorsettings/wifi/bd;->aAG:I
 
     invoke-virtual {v1, v2}, Landroid/net/wifi/WifiManager;->getWpsNfcConfigurationToken(I)Ljava/lang/String;
 
@@ -699,7 +699,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/android/settings/wifi/bd;->byteArrayToHexString([B)Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/vendorsettings/wifi/bd;->byteArrayToHexString([B)Ljava/lang/String;
 
     move-result-object v2
 
@@ -748,10 +748,10 @@
     if-eqz v0, :cond_1
 
     .line 149
-    iput-object v1, p0, Lcom/android/settings/wifi/bd;->aFn:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/wifi/bd;->aFn:Ljava/lang/String;
 
     .line 151
-    invoke-virtual {p0}, Lcom/android/settings/wifi/bd;->getOwnerActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/bd;->getOwnerActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -761,9 +761,9 @@
     move-result-object v1
 
     .line 154
-    new-instance v2, Lcom/android/settings/wifi/be;
+    new-instance v2, Lcom/android/vendorsettings/wifi/be;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/wifi/be;-><init>(Lcom/android/settings/wifi/bd;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/wifi/be;-><init>(Lcom/android/vendorsettings/wifi/bd;)V
 
     const/16 v3, 0x1f
 
@@ -772,22 +772,22 @@
     invoke-virtual {v1, v0, v2, v3, v4}, Landroid/nfc/NfcAdapter;->enableReaderMode(Landroid/app/Activity;Landroid/nfc/NfcAdapter$ReaderCallback;ILandroid/os/Bundle;)V
 
     .line 166
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->aCo:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aCo:Landroid/widget/TextView;
 
     invoke-virtual {v0, v6}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 167
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->aFm:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aFm:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, v6}, Landroid/widget/CheckBox;->setVisibility(I)V
 
     .line 168
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->aFj:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aFj:Landroid/widget/Button;
 
     invoke-virtual {v0, v6}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 169
-    invoke-virtual {p0}, Lcom/android/settings/wifi/bd;->getOwnerActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/bd;->getOwnerActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -800,7 +800,7 @@
     check-cast v0, Landroid/view/inputmethod/InputMethodManager;
 
     .line 171
-    iget-object v1, p0, Lcom/android/settings/wifi/bd;->aCo:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/bd;->aCo:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getWindowToken()Landroid/os/IBinder;
 
@@ -809,14 +809,14 @@
     invoke-virtual {v0, v1, v5}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
     .line 173
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->aFl:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aFl:Landroid/widget/TextView;
 
     const v1, 0x7f0c0a40
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 175
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->mView:Landroid/view/View;
 
     const v1, 0x7f130218
 
@@ -829,7 +829,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setTextAlignment(I)V
 
     .line 176
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->mProgressBar:Landroid/widget/ProgressBar;
 
     invoke-virtual {v0, v5}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
@@ -869,7 +869,7 @@
 
     .line 178
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->aFl:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aFl:Landroid/widget/TextView;
 
     const v1, 0x7f0c0a41
 
@@ -891,7 +891,7 @@
     const/4 v1, 0x0
 
     .line 105
-    invoke-virtual {p0}, Lcom/android/settings/wifi/bd;->getLayoutInflater()Landroid/view/LayoutInflater;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/bd;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v0
 
@@ -901,26 +901,26 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/bd;->mView:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->mView:Landroid/view/View;
 
     .line 107
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->mView:Landroid/view/View;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/bd;->setView(Landroid/view/View;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/bd;->setView(Landroid/view/View;)V
 
     .line 108
-    invoke-virtual {p0, v5}, Lcom/android/settings/wifi/bd;->setInverseBackgroundForced(Z)V
+    invoke-virtual {p0, v5}, Lcom/android/vendorsettings/wifi/bd;->setInverseBackgroundForced(Z)V
 
     .line 109
     const v0, 0x7f0c0a3e
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/bd;->setTitle(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/bd;->setTitle(I)V
 
     .line 110
-    invoke-virtual {p0, v5}, Lcom/android/settings/wifi/bd;->setCancelable(Z)V
+    invoke-virtual {p0, v5}, Lcom/android/vendorsettings/wifi/bd;->setCancelable(Z)V
 
     .line 111
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -936,10 +936,10 @@
 
     check-cast v0, Landroid/content/DialogInterface$OnClickListener;
 
-    invoke-virtual {p0, v3, v2, v0}, Lcom/android/settings/wifi/bd;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
+    invoke-virtual {p0, v3, v2, v0}, Lcom/android/vendorsettings/wifi/bd;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
     .line 113
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -953,10 +953,10 @@
 
     check-cast v1, Landroid/content/DialogInterface$OnClickListener;
 
-    invoke-virtual {p0, v4, v0, v1}, Lcom/android/settings/wifi/bd;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
+    invoke-virtual {p0, v4, v0, v1}, Lcom/android/vendorsettings/wifi/bd;->setButton(ILjava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
     .line 117
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->mView:Landroid/view/View;
 
     const v1, 0x7f13021a
 
@@ -966,10 +966,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/bd;->aCo:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aCo:Landroid/widget/TextView;
 
     .line 118
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->mView:Landroid/view/View;
 
     const v1, 0x7f13037c
 
@@ -979,15 +979,15 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/bd;->aFl:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aFl:Landroid/widget/TextView;
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->aCo:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aCo:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->mView:Landroid/view/View;
 
     const v1, 0x7f13021c
 
@@ -997,15 +997,15 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/bd;->aFm:Landroid/widget/CheckBox;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aFm:Landroid/widget/CheckBox;
 
     .line 121
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->aFm:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aFm:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, p0}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 122
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->mView:Landroid/view/View;
 
     const v1, 0x7f130090
 
@@ -1015,36 +1015,36 @@
 
     check-cast v0, Landroid/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/bd;->mProgressBar:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->mProgressBar:Landroid/widget/ProgressBar;
 
     .line 124
     invoke-super {p0, p1}, Landroid/app/AlertDialog;->onCreate(Landroid/os/Bundle;)V
 
     .line 126
-    invoke-virtual {p0, v3}, Lcom/android/settings/wifi/bd;->getButton(I)Landroid/widget/Button;
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/wifi/bd;->getButton(I)Landroid/widget/Button;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/bd;->aFj:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aFj:Landroid/widget/Button;
 
     .line 127
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->aFj:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aFj:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 128
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->aFj:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aFj:Landroid/widget/Button;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 130
-    invoke-virtual {p0, v4}, Lcom/android/settings/wifi/bd;->getButton(I)Landroid/widget/Button;
+    invoke-virtual {p0, v4}, Lcom/android/vendorsettings/wifi/bd;->getButton(I)Landroid/widget/Button;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/bd;->dY:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->dY:Landroid/widget/Button;
 
     .line 131
     return-void
@@ -1055,11 +1055,11 @@
 
     .prologue
     .line 236
-    iget-object v0, p0, Lcom/android/settings/wifi/bd;->aFk:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/bd;->aFk:Landroid/os/Handler;
 
-    new-instance v1, Lcom/android/settings/wifi/bg;
+    new-instance v1, Lcom/android/vendorsettings/wifi/bg;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/wifi/bg;-><init>(Lcom/android/settings/wifi/bd;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/wifi/bg;-><init>(Lcom/android/vendorsettings/wifi/bd;)V
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -1074,14 +1074,14 @@
     .line 183
     const-string v0, "network_id"
 
-    iget v1, p0, Lcom/android/settings/wifi/bd;->aAG:I
+    iget v1, p0, Lcom/android/vendorsettings/wifi/bd;->aAG:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 184
     const-string v0, "security"
 
-    iget v1, p0, Lcom/android/settings/wifi/bd;->aFo:I
+    iget v1, p0, Lcom/android/vendorsettings/wifi/bd;->aFo:I
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 

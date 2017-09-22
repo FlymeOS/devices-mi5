@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/ProcessStatsDetail$2;
+.class final Lcom/android/vendorsettings/applications/ProcessStatsDetail$2;
 .super Ljava/lang/Object;
 .source "ProcessStatsDetail.java"
 
@@ -19,14 +19,14 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/applications/ProcStatsEntry;Lcom/android/settings/applications/ProcStatsEntry;)I
+.method public a(Lcom/android/vendorsettings/applications/ProcStatsEntry;Lcom/android/vendorsettings/applications/ProcStatsEntry;)I
     .locals 4
 
     .prologue
     .line 230
-    iget-wide v0, p1, Lcom/android/settings/applications/ProcStatsEntry;->LB:D
+    iget-wide v0, p1, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LB:D
 
-    iget-wide v2, p2, Lcom/android/settings/applications/ProcStatsEntry;->LB:D
+    iget-wide v2, p2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LB:D
 
     cmpg-double v0, v0, v2
 
@@ -41,9 +41,9 @@
 
     .line 232
     :cond_0
-    iget-wide v0, p1, Lcom/android/settings/applications/ProcStatsEntry;->LB:D
+    iget-wide v0, p1, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LB:D
 
-    iget-wide v2, p2, Lcom/android/settings/applications/ProcStatsEntry;->LB:D
+    iget-wide v2, p2, Lcom/android/vendorsettings/applications/ProcStatsEntry;->LB:D
 
     cmpl-double v0, v0, v2
 
@@ -66,11 +66,11 @@
 
     .prologue
     .line 227
-    check-cast p1, Lcom/android/settings/applications/ProcStatsEntry;
+    check-cast p1, Lcom/android/vendorsettings/applications/ProcStatsEntry;
 
-    check-cast p2, Lcom/android/settings/applications/ProcStatsEntry;
+    check-cast p2, Lcom/android/vendorsettings/applications/ProcStatsEntry;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/applications/ProcessStatsDetail$2;->a(Lcom/android/settings/applications/ProcStatsEntry;Lcom/android/settings/applications/ProcStatsEntry;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/applications/ProcessStatsDetail$2;->a(Lcom/android/vendorsettings/applications/ProcStatsEntry;Lcom/android/vendorsettings/applications/ProcStatsEntry;)I
 
     move-result v0
 

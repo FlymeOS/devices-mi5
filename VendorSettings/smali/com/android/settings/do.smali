@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/do;
+.class final Lcom/android/vendorsettings/do;
 .super Ljava/lang/Object;
 .source "HelpUtils.java"
 
@@ -18,9 +18,9 @@
 
     .prologue
     .line 115
-    iput-object p1, p0, Lcom/android/settings/do;->val$activity:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/android/vendorsettings/do;->val$activity:Landroid/app/Activity;
 
-    iput-object p2, p0, Lcom/android/settings/do;->nJ:Landroid/content/Intent;
+    iput-object p2, p0, Lcom/android/vendorsettings/do;->nJ:Landroid/content/Intent;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,9 +34,9 @@
 
     .prologue
     .line 118
-    iget-object v0, p0, Lcom/android/settings/do;->val$activity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/do;->val$activity:Landroid/app/Activity;
 
-    iget-object v1, p0, Lcom/android/settings/do;->nJ:Landroid/content/Intent;
+    iget-object v1, p0, Lcom/android/vendorsettings/do;->nJ:Landroid/content/Intent;
 
     const/4 v2, 0x0
 

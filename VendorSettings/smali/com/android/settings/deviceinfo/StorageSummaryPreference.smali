@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/deviceinfo/StorageSummaryPreference;
+.class public Lcom/android/vendorsettings/deviceinfo/StorageSummaryPreference;
 .super Landroid/preference/Preference;
 .source "StorageSummaryPreference.java"
 
@@ -18,17 +18,17 @@
     .line 29
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/deviceinfo/StorageSummaryPreference;->Xj:I
+    iput v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageSummaryPreference;->Xj:I
 
     .line 34
     const v0, 0x7f04015f
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageSummaryPreference;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageSummaryPreference;->setLayoutResource(I)V
 
     .line 35
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/StorageSummaryPreference;->setEnabled(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageSummaryPreference;->setEnabled(Z)V
 
     .line 36
     return-void
@@ -41,7 +41,7 @@
 
     .prologue
     .line 39
-    iput p1, p0, Lcom/android/settings/deviceinfo/StorageSummaryPreference;->Xj:I
+    iput p1, p0, Lcom/android/vendorsettings/deviceinfo/StorageSummaryPreference;->Xj:I
 
     .line 40
     return-void
@@ -61,7 +61,7 @@
     check-cast v0, Landroid/widget/ProgressBar;
 
     .line 45
-    iget v1, p0, Lcom/android/settings/deviceinfo/StorageSummaryPreference;->Xj:I
+    iget v1, p0, Lcom/android/vendorsettings/deviceinfo/StorageSummaryPreference;->Xj:I
 
     const/4 v2, -0x1
 
@@ -73,7 +73,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
     .line 47
-    iget v1, p0, Lcom/android/settings/deviceinfo/StorageSummaryPreference;->Xj:I
+    iget v1, p0, Lcom/android/vendorsettings/deviceinfo/StorageSummaryPreference;->Xj:I
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setProgress(I)V
 

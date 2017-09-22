@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/hc;
+.class public Lcom/android/vendorsettings/hc;
 .super Ljava/lang/Object;
 .source "SearchResultItem.java"
 
@@ -49,7 +49,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 45
-    iput p1, p0, Lcom/android/settings/hc;->type:I
+    iput p1, p0, Lcom/android/vendorsettings/hc;->type:I
 
     .line 46
     return-void
@@ -63,40 +63,40 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 27
-    iput-object p1, p0, Lcom/android/settings/hc;->resourceName:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/hc;->resourceName:Ljava/lang/String;
 
     .line 28
-    iput-object p2, p0, Lcom/android/settings/hc;->category:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/vendorsettings/hc;->category:Ljava/lang/String;
 
     .line 29
-    iput-object p3, p0, Lcom/android/settings/hc;->intentAction:Ljava/lang/String;
+    iput-object p3, p0, Lcom/android/vendorsettings/hc;->intentAction:Ljava/lang/String;
 
     .line 30
-    iput-object p4, p0, Lcom/android/settings/hc;->yw:Ljava/lang/String;
+    iput-object p4, p0, Lcom/android/vendorsettings/hc;->yw:Ljava/lang/String;
 
     .line 31
-    iput-object p5, p0, Lcom/android/settings/hc;->yx:Ljava/lang/String;
+    iput-object p5, p0, Lcom/android/vendorsettings/hc;->yx:Ljava/lang/String;
 
     .line 32
-    iput-object p6, p0, Lcom/android/settings/hc;->description:Ljava/lang/String;
+    iput-object p6, p0, Lcom/android/vendorsettings/hc;->description:Ljava/lang/String;
 
     .line 33
-    iput-object p7, p0, Lcom/android/settings/hc;->yy:Ljava/lang/String;
+    iput-object p7, p0, Lcom/android/vendorsettings/hc;->yy:Ljava/lang/String;
 
     .line 34
-    iput-object p8, p0, Lcom/android/settings/hc;->yz:Ljava/lang/String;
+    iput-object p8, p0, Lcom/android/vendorsettings/hc;->yz:Ljava/lang/String;
 
     .line 35
-    iput-object p9, p0, Lcom/android/settings/hc;->yA:Ljava/lang/String;
+    iput-object p9, p0, Lcom/android/vendorsettings/hc;->yA:Ljava/lang/String;
 
     .line 36
-    iput-object p10, p0, Lcom/android/settings/hc;->yB:Ljava/lang/String;
+    iput-object p10, p0, Lcom/android/vendorsettings/hc;->yB:Ljava/lang/String;
 
     .line 37
-    iput-object p11, p0, Lcom/android/settings/hc;->path:Ljava/lang/String;
+    iput-object p11, p0, Lcom/android/vendorsettings/hc;->path:Ljava/lang/String;
 
     .line 38
-    iput p12, p0, Lcom/android/settings/hc;->type:I
+    iput p12, p0, Lcom/android/vendorsettings/hc;->type:I
 
     .line 39
     return-void
@@ -109,7 +109,7 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/android/settings/hc;->category:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/hc;->category:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -119,7 +119,7 @@
 
     .prologue
     .line 63
-    iget-object v0, p0, Lcom/android/settings/hc;->intentAction:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/hc;->intentAction:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -129,7 +129,7 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Lcom/android/settings/hc;->path:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/hc;->path:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -139,7 +139,7 @@
 
     .prologue
     .line 56
-    iget v0, p0, Lcom/android/settings/hc;->type:I
+    iget v0, p0, Lcom/android/vendorsettings/hc;->type:I
 
     return v0
 .end method
@@ -149,7 +149,7 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/android/settings/hc;->resourceName:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/hc;->resourceName:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -159,7 +159,7 @@
 
     .prologue
     .line 59
-    iget-object v0, p0, Lcom/android/settings/hc;->yw:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/hc;->yw:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -169,7 +169,7 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/android/settings/hc;->yy:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/hc;->yy:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -179,7 +179,7 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/android/settings/hc;->yz:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/hc;->yz:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -189,7 +189,7 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/android/settings/hc;->yA:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/hc;->yA:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -199,7 +199,7 @@
 
     .prologue
     .line 87
-    iget-object v0, p0, Lcom/android/settings/hc;->yB:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/hc;->yB:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -221,7 +221,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/hc;->resourceName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/hc;->resourceName:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -237,7 +237,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/hc;->category:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/hc;->category:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -253,7 +253,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/hc;->intentAction:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/hc;->intentAction:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -269,7 +269,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/hc;->yw:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/hc;->yw:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -285,7 +285,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/hc;->yx:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/hc;->yx:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -301,7 +301,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/hc;->description:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/hc;->description:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -317,7 +317,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/hc;->yy:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/hc;->yy:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -333,7 +333,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/hc;->yz:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/hc;->yz:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -349,7 +349,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/hc;->yA:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/hc;->yA:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -365,7 +365,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/hc;->yB:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/hc;->yB:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -381,7 +381,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/hc;->path:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/hc;->path:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -397,7 +397,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/hc;->type:I
+    iget v1, p0, Lcom/android/vendorsettings/hc;->type:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 

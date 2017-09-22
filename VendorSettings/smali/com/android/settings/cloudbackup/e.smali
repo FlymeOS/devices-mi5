@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloudbackup/e;
+.class public Lcom/android/vendorsettings/cloudbackup/e;
 .super Ljava/lang/Object;
 .source "ScreenKeySettingsCloudBackupHelper.java"
 
@@ -106,14 +106,14 @@
 
     const-string v5, "screen_key_long_press_timeout"
 
-    invoke-static {v3, v4, v2, v5}, Lcom/android/settings/cloudbackup/e;->a(Lorg/json/JSONObject;Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v4, v2, v5}, Lcom/android/vendorsettings/cloudbackup/e;->a(Lorg/json/JSONObject;Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 53
     const-string v2, "screen_buttons_light_timeout"
 
     const-string v5, "screen_buttons_timeout"
 
-    invoke-static {v3, v4, v2, v5}, Lcom/android/settings/cloudbackup/e;->a(Lorg/json/JSONObject;Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v4, v2, v5}, Lcom/android/vendorsettings/cloudbackup/e;->a(Lorg/json/JSONObject;Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 55
     const-string v2, "screen_buttons_turn_on"
@@ -380,7 +380,7 @@
     invoke-static {v3, v5, v0}, Landroid/provider/Settings$System;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 108
-    invoke-static {v4}, Lcom/android/settings/fy;->O(Z)V
+    invoke-static {v4}, Lcom/android/vendorsettings/fy;->O(Z)V
 
     .line 109
     const-string v0, "keyguard_volume_launch_camera"

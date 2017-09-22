@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/widget/J;
+.class final Lcom/android/vendorsettings/widget/J;
 .super Ljava/lang/Object;
 .source "SwitchBar.java"
 
@@ -24,19 +24,19 @@
 
     .prologue
     .line 247
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/J;->r(Landroid/os/Parcel;)Lcom/android/settings/widget/SwitchBar$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/widget/J;->r(Landroid/os/Parcel;)Lcom/android/vendorsettings/widget/SwitchBar$SavedState;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public dx(I)[Lcom/android/settings/widget/SwitchBar$SavedState;
+.method public dx(I)[Lcom/android/vendorsettings/widget/SwitchBar$SavedState;
     .locals 1
 
     .prologue
     .line 253
-    new-array v0, p1, [Lcom/android/settings/widget/SwitchBar$SavedState;
+    new-array v0, p1, [Lcom/android/vendorsettings/widget/SwitchBar$SavedState;
 
     return-object v0
 .end method
@@ -46,23 +46,23 @@
 
     .prologue
     .line 247
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/J;->dx(I)[Lcom/android/settings/widget/SwitchBar$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/widget/J;->dx(I)[Lcom/android/vendorsettings/widget/SwitchBar$SavedState;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public r(Landroid/os/Parcel;)Lcom/android/settings/widget/SwitchBar$SavedState;
+.method public r(Landroid/os/Parcel;)Lcom/android/vendorsettings/widget/SwitchBar$SavedState;
     .locals 2
 
     .prologue
     .line 249
-    new-instance v0, Lcom/android/settings/widget/SwitchBar$SavedState;
+    new-instance v0, Lcom/android/vendorsettings/widget/SwitchBar$SavedState;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p1, v1}, Lcom/android/settings/widget/SwitchBar$SavedState;-><init>(Landroid/os/Parcel;Lcom/android/settings/widget/H;)V
+    invoke-direct {v0, p1, v1}, Lcom/android/vendorsettings/widget/SwitchBar$SavedState;-><init>(Landroid/os/Parcel;Lcom/android/vendorsettings/widget/H;)V
 
     return-object v0
 .end method

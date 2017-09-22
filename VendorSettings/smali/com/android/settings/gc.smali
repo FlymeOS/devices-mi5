@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/gc;
+.class public Lcom/android/vendorsettings/gc;
 .super Ljava/lang/Object;
 .source "PlatformUtils.java"
 

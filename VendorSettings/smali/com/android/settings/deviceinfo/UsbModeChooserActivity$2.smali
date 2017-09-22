@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/UsbModeChooserActivity$2;
+.class Lcom/android/vendorsettings/deviceinfo/UsbModeChooserActivity$2;
 .super Ljava/lang/Object;
 .source "UsbModeChooserActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic XO:Lcom/android/settings/deviceinfo/UsbModeChooserActivity;
+.field final synthetic XO:Lcom/android/vendorsettings/deviceinfo/UsbModeChooserActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/UsbModeChooserActivity;)V
+.method constructor <init>(Lcom/android/vendorsettings/deviceinfo/UsbModeChooserActivity;)V
     .locals 0
 
     .prologue
     .line 91
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/UsbModeChooserActivity$2;->XO:Lcom/android/settings/deviceinfo/UsbModeChooserActivity;
+    iput-object p1, p0, Lcom/android/vendorsettings/deviceinfo/UsbModeChooserActivity$2;->XO:Lcom/android/vendorsettings/deviceinfo/UsbModeChooserActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,18 +37,18 @@
     if-nez v0, :cond_0
 
     .line 95
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbModeChooserActivity$2;->XO:Lcom/android/settings/deviceinfo/UsbModeChooserActivity;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/UsbModeChooserActivity$2;->XO:Lcom/android/vendorsettings/deviceinfo/UsbModeChooserActivity;
 
-    invoke-static {v0, p2}, Lcom/android/settings/deviceinfo/UsbModeChooserActivity;->a(Lcom/android/settings/deviceinfo/UsbModeChooserActivity;I)V
+    invoke-static {v0, p2}, Lcom/android/vendorsettings/deviceinfo/UsbModeChooserActivity;->a(Lcom/android/vendorsettings/deviceinfo/UsbModeChooserActivity;I)V
 
     .line 97
     :cond_0
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
     .line 98
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbModeChooserActivity$2;->XO:Lcom/android/settings/deviceinfo/UsbModeChooserActivity;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/UsbModeChooserActivity$2;->XO:Lcom/android/vendorsettings/deviceinfo/UsbModeChooserActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/UsbModeChooserActivity;->finish()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/deviceinfo/UsbModeChooserActivity;->finish()V
 
     .line 99
     return-void

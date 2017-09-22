@@ -1,9 +1,9 @@
-.class public Lcom/android/settings/fuelgauge/BatterySaverSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "BatterySaverSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/widget/I;
+.implements Lcom/android/vendorsettings/widget/I;
 
 
 # static fields
@@ -13,11 +13,11 @@
 # instance fields
 .field private Cn:Z
 
-.field private final aeO:Lcom/android/settings/fuelgauge/BatterySaverSettings$SettingsObserver;
+.field private final aeO:Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$SettingsObserver;
 
-.field private final aeP:Lcom/android/settings/fuelgauge/BatterySaverSettings$Receiver;
+.field private final aeP:Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$Receiver;
 
-.field private aeQ:Lcom/android/settings/notification/SettingPref;
+.field private aeQ:Lcom/android/vendorsettings/notification/SettingPref;
 
 .field private aeR:Landroid/os/PowerManager;
 
@@ -31,7 +31,7 @@
 
 .field private final mHandler:Landroid/os/Handler;
 
-.field private me:Lcom/android/settings/widget/SwitchBar;
+.field private me:Lcom/android/vendorsettings/widget/SwitchBar;
 
 .field private sZ:Landroid/widget/Switch;
 
@@ -50,7 +50,7 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->DEBUG:Z
+    sput-boolean v0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->DEBUG:Z
 
     return-void
 .end method
@@ -60,67 +60,67 @@
 
     .prologue
     .line 45
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 52
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->mHandler:Landroid/os/Handler;
 
     .line 53
-    new-instance v0, Lcom/android/settings/fuelgauge/BatterySaverSettings$SettingsObserver;
+    new-instance v0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$SettingsObserver;
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->mHandler:Landroid/os/Handler;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->mHandler:Landroid/os/Handler;
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/fuelgauge/BatterySaverSettings$SettingsObserver;-><init>(Lcom/android/settings/fuelgauge/BatterySaverSettings;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$SettingsObserver;-><init>(Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aeO:Lcom/android/settings/fuelgauge/BatterySaverSettings$SettingsObserver;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aeO:Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$SettingsObserver;
 
     .line 54
-    new-instance v0, Lcom/android/settings/fuelgauge/BatterySaverSettings$Receiver;
+    new-instance v0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$Receiver;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/fuelgauge/BatterySaverSettings$Receiver;-><init>(Lcom/android/settings/fuelgauge/BatterySaverSettings;Lcom/android/settings/fuelgauge/BatterySaverSettings$1;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$Receiver;-><init>(Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$1;)V
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aeP:Lcom/android/settings/fuelgauge/BatterySaverSettings$Receiver;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aeP:Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$Receiver;
 
     .line 169
-    new-instance v0, Lcom/android/settings/fuelgauge/BatterySaverSettings$2;
+    new-instance v0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$2;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/fuelgauge/BatterySaverSettings$2;-><init>(Lcom/android/settings/fuelgauge/BatterySaverSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$2;-><init>(Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aeS:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aeS:Ljava/lang/Runnable;
 
     .line 176
-    new-instance v0, Lcom/android/settings/fuelgauge/BatterySaverSettings$3;
+    new-instance v0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$3;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/fuelgauge/BatterySaverSettings$3;-><init>(Lcom/android/settings/fuelgauge/BatterySaverSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$3;-><init>(Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aeT:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aeT:Ljava/lang/Runnable;
 
     .line 209
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/fuelgauge/BatterySaverSettings;)V
+.method static synthetic a(Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;)V
     .locals 0
 
     .prologue
     .line 45
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/BatterySaverSettings;->qS()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->qS()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/fuelgauge/BatterySaverSettings;Z)V
+.method static synthetic a(Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;Z)V
     .locals 0
 
     .prologue
     .line 45
-    invoke-direct {p0, p1}, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aS(Z)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aS(Z)V
 
     return-void
 .end method
@@ -130,7 +130,7 @@
 
     .prologue
     .line 148
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aeR:Landroid/os/PowerManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aeR:Landroid/os/PowerManager;
 
     invoke-virtual {v0, p1}, Landroid/os/PowerManager;->setPowerSaveMode(Z)Z
 
@@ -139,7 +139,7 @@
     if-nez v0, :cond_1
 
     .line 149
-    sget-boolean v0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->DEBUG:Z
+    sget-boolean v0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
@@ -151,9 +151,9 @@
 
     .line 150
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aeS:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aeS:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -167,57 +167,57 @@
 
     .prologue
     .line 45
-    sget-boolean v0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->DEBUG:Z
+    sget-boolean v0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->DEBUG:Z
 
     return v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/fuelgauge/BatterySaverSettings;)Ljava/lang/Runnable;
+.method static synthetic b(Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;)Ljava/lang/Runnable;
     .locals 1
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aeS:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aeS:Ljava/lang/Runnable;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/fuelgauge/BatterySaverSettings;)Landroid/os/Handler;
+.method static synthetic c(Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;)Landroid/os/Handler;
     .locals 1
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->mHandler:Landroid/os/Handler;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/fuelgauge/BatterySaverSettings;)Landroid/content/Context;
+.method static synthetic d(Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;)Landroid/content/Context;
     .locals 1
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->mContext:Landroid/content/Context;
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/fuelgauge/BatterySaverSettings;)Lcom/android/settings/notification/SettingPref;
+.method static synthetic e(Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;)Lcom/android/vendorsettings/notification/SettingPref;
     .locals 1
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aeQ:Lcom/android/settings/notification/SettingPref;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aeQ:Lcom/android/vendorsettings/notification/SettingPref;
 
     return-object v0
 .end method
 
-.method static synthetic f(Lcom/android/settings/fuelgauge/BatterySaverSettings;)Landroid/content/ContentResolver;
+.method static synthetic f(Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;)Landroid/content/ContentResolver;
     .locals 1
 
     .prologue
     .line 45
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatterySaverSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -229,14 +229,14 @@
 
     .prologue
     .line 155
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aeR:Landroid/os/PowerManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aeR:Landroid/os/PowerManager;
 
     invoke-virtual {v0}, Landroid/os/PowerManager;->isPowerSaveMode()Z
 
     move-result v0
 
     .line 156
-    sget-boolean v1, Lcom/android/settings/fuelgauge/BatterySaverSettings;->DEBUG:Z
+    sget-boolean v1, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->DEBUG:Z
 
     if-eqz v1, :cond_0
 
@@ -252,7 +252,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->sZ:Landroid/widget/Switch;
+    iget-object v3, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->sZ:Landroid/widget/Switch;
 
     invoke-virtual {v3}, Landroid/widget/Switch;->isChecked()Z
 
@@ -280,7 +280,7 @@
 
     .line 157
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->sZ:Landroid/widget/Switch;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->sZ:Landroid/widget/Switch;
 
     invoke-virtual {v1}, Landroid/widget/Switch;->isChecked()Z
 
@@ -295,30 +295,30 @@
 
     .line 160
     :cond_2
-    iget-boolean v1, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->Cn:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->Cn:Z
 
     if-eqz v1, :cond_3
 
     .line 161
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->me:Lcom/android/settings/widget/SwitchBar;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->me:Lcom/android/vendorsettings/widget/SwitchBar;
 
-    invoke-virtual {v1, p0}, Lcom/android/settings/widget/SwitchBar;->b(Lcom/android/settings/widget/I;)V
+    invoke-virtual {v1, p0}, Lcom/android/vendorsettings/widget/SwitchBar;->b(Lcom/android/vendorsettings/widget/I;)V
 
     .line 163
     :cond_3
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->sZ:Landroid/widget/Switch;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->sZ:Landroid/widget/Switch;
 
     invoke-virtual {v1, v0}, Landroid/widget/Switch;->setChecked(Z)V
 
     .line 164
-    iget-boolean v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->Cn:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->Cn:Z
 
     if-eqz v0, :cond_1
 
     .line 165
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->me:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->me:Lcom/android/vendorsettings/widget/SwitchBar;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/widget/SwitchBar;->a(Lcom/android/settings/widget/I;)V
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/widget/SwitchBar;->a(Lcom/android/vendorsettings/widget/I;)V
 
     goto :goto_0
 .end method
@@ -330,9 +330,9 @@
 
     .prologue
     .line 138
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aeT:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aeT:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
@@ -340,9 +340,9 @@
     if-eqz p2, :cond_0
 
     .line 140
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aeT:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aeT:Ljava/lang/Runnable;
 
     const-wide/16 v2, 0x1f4
 
@@ -354,7 +354,7 @@
 
     .line 142
     :cond_0
-    sget-boolean v0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->DEBUG:Z
+    sget-boolean v0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->DEBUG:Z
 
     if-eqz v0, :cond_1
 
@@ -368,7 +368,7 @@
     :cond_1
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aS(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aS(Z)V
 
     goto :goto_0
 .end method
@@ -378,7 +378,7 @@
 
     .prologue
     .line 66
-    const-class v0, Lcom/android/settings/fuelgauge/BatterySaverSettings;
+    const-class v0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -394,17 +394,17 @@
     const/4 v2, 0x1
 
     .line 76
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 77
-    iget-boolean v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->mCreated:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->mCreated:Z
 
     if-eqz v0, :cond_0
 
     .line 78
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->me:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->me:Lcom/android/vendorsettings/widget/SwitchBar;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/SwitchBar;->show()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/widget/SwitchBar;->show()V
 
     .line 105
     :goto_0
@@ -412,47 +412,47 @@
 
     .line 81
     :cond_0
-    iput-boolean v2, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->mCreated:Z
+    iput-boolean v2, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->mCreated:Z
 
     .line 82
     const v0, 0x7f08001c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fuelgauge/BatterySaverSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->addPreferencesFromResource(I)V
 
     .line 84
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatterySaverSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->mContext:Landroid/content/Context;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->mContext:Landroid/content/Context;
 
     .line 85
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->mContext:Landroid/content/Context;
 
-    check-cast v0, Lcom/android/settings/hn;
+    check-cast v0, Lcom/android/vendorsettings/hn;
 
-    invoke-virtual {v0}, Lcom/android/settings/hn;->hD()Lcom/android/settings/widget/SwitchBar;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/hn;->hD()Lcom/android/vendorsettings/widget/SwitchBar;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->me:Lcom/android/settings/widget/SwitchBar;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->me:Lcom/android/vendorsettings/widget/SwitchBar;
 
     .line 86
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->me:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->me:Lcom/android/vendorsettings/widget/SwitchBar;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/SwitchBar;->wO()Lcom/android/settings/widget/ToggleSwitch;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/widget/SwitchBar;->wO()Lcom/android/vendorsettings/widget/ToggleSwitch;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->sZ:Landroid/widget/Switch;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->sZ:Landroid/widget/Switch;
 
     .line 87
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->me:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->me:Lcom/android/vendorsettings/widget/SwitchBar;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/SwitchBar;->show()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/widget/SwitchBar;->show()V
 
     .line 89
-    new-instance v0, Lcom/android/settings/fuelgauge/BatterySaverSettings$1;
+    new-instance v0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$1;
 
     const-string v3, "turn_on_automatically"
 
@@ -460,7 +460,7 @@
 
     const/4 v5, 0x0
 
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/BatterySaverSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -472,17 +472,17 @@
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v6}, Lcom/android/settings/fuelgauge/BatterySaverSettings$1;-><init>(Lcom/android/settings/fuelgauge/BatterySaverSettings;ILjava/lang/String;Ljava/lang/String;I[I)V
+    invoke-direct/range {v0 .. v6}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$1;-><init>(Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;ILjava/lang/String;Ljava/lang/String;I[I)V
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aeQ:Lcom/android/settings/notification/SettingPref;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aeQ:Lcom/android/vendorsettings/notification/SettingPref;
 
     .line 102
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aeQ:Lcom/android/settings/notification/SettingPref;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aeQ:Lcom/android/vendorsettings/notification/SettingPref;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/notification/SettingPref;->c(Lcom/android/settings/SettingsPreferenceFragment;)Landroid/preference/Preference;
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/notification/SettingPref;->c(Lcom/android/vendorsettings/SettingsPreferenceFragment;)Landroid/preference/Preference;
 
     .line 104
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->mContext:Landroid/content/Context;
 
     const-string v1, "power"
 
@@ -492,7 +492,7 @@
 
     check-cast v0, Landroid/os/PowerManager;
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aeR:Landroid/os/PowerManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aeR:Landroid/os/PowerManager;
 
     goto :goto_0
 .end method
@@ -502,12 +502,12 @@
 
     .prologue
     .line 109
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroyView()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onDestroyView()V
 
     .line 110
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->me:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->me:Lcom/android/vendorsettings/widget/SwitchBar;
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/SwitchBar;->hide()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/widget/SwitchBar;->hide()V
 
     .line 111
     return-void
@@ -520,30 +520,30 @@
     const/4 v1, 0x0
 
     .line 127
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPause()V
 
     .line 128
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aeO:Lcom/android/settings/fuelgauge/BatterySaverSettings$SettingsObserver;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aeO:Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$SettingsObserver;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/fuelgauge/BatterySaverSettings$SettingsObserver;->setListening(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$SettingsObserver;->setListening(Z)V
 
     .line 129
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aeP:Lcom/android/settings/fuelgauge/BatterySaverSettings$Receiver;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aeP:Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$Receiver;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/fuelgauge/BatterySaverSettings$Receiver;->setListening(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$Receiver;->setListening(Z)V
 
     .line 130
-    iget-boolean v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->Cn:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->Cn:Z
 
     if-eqz v0, :cond_0
 
     .line 131
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->me:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->me:Lcom/android/vendorsettings/widget/SwitchBar;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/widget/SwitchBar;->b(Lcom/android/settings/widget/I;)V
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/widget/SwitchBar;->b(Lcom/android/vendorsettings/widget/I;)V
 
     .line 132
-    iput-boolean v1, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->Cn:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->Cn:Z
 
     .line 134
     :cond_0
@@ -557,34 +557,34 @@
     const/4 v1, 0x1
 
     .line 115
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 116
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aeO:Lcom/android/settings/fuelgauge/BatterySaverSettings$SettingsObserver;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aeO:Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$SettingsObserver;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/fuelgauge/BatterySaverSettings$SettingsObserver;->setListening(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$SettingsObserver;->setListening(Z)V
 
     .line 117
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->aeP:Lcom/android/settings/fuelgauge/BatterySaverSettings$Receiver;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->aeP:Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$Receiver;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/fuelgauge/BatterySaverSettings$Receiver;->setListening(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$Receiver;->setListening(Z)V
 
     .line 118
-    iget-boolean v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->Cn:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->Cn:Z
 
     if-nez v0, :cond_0
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->me:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->me:Lcom/android/vendorsettings/widget/SwitchBar;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/widget/SwitchBar;->a(Lcom/android/settings/widget/I;)V
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/widget/SwitchBar;->a(Lcom/android/vendorsettings/widget/I;)V
 
     .line 120
-    iput-boolean v1, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings;->Cn:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->Cn:Z
 
     .line 122
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/BatterySaverSettings;->qS()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->qS()V
 
     .line 123
     return-void

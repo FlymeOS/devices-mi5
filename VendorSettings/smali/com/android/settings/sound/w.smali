@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/sound/w;
+.class public Lcom/android/vendorsettings/sound/w;
 .super Ljava/lang/Object;
 .source "ExtraFileUtils.java"
 

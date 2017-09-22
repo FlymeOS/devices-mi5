@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/widget/F;
-.super Lcom/android/settings/widget/C;
+.class final Lcom/android/vendorsettings/widget/F;
+.super Lcom/android/vendorsettings/widget/C;
 .source "SettingsAppWidgetProvider.java"
 
 
@@ -11,17 +11,17 @@
     .line 354
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/widget/C;-><init>(Lcom/android/settings/widget/w;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/widget/C;-><init>(Lcom/android/vendorsettings/widget/w;)V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/widget/w;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/widget/w;)V
     .locals 0
 
     .prologue
     .line 354
-    invoke-direct {p0}, Lcom/android/settings/widget/F;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/widget/F;-><init>()V
 
     return-void
 .end method
@@ -116,7 +116,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lcom/android/settings/widget/F;->dw(I)I
+    invoke-static {v0}, Lcom/android/vendorsettings/widget/F;->dw(I)I
 
     move-result v0
 
@@ -172,11 +172,11 @@
     move-result v0
 
     .line 413
-    invoke-static {v0}, Lcom/android/settings/widget/F;->dw(I)I
+    invoke-static {v0}, Lcom/android/vendorsettings/widget/F;->dw(I)I
 
     move-result v0
 
-    invoke-virtual {p0, p1, v0}, Lcom/android/settings/widget/F;->setCurrentState(Landroid/content/Context;I)V
+    invoke-virtual {p0, p1, v0}, Lcom/android/vendorsettings/widget/F;->setCurrentState(Landroid/content/Context;I)V
 
     goto :goto_0
 .end method
@@ -210,15 +210,15 @@
 
     .line 389
     :cond_0
-    new-instance v1, Lcom/android/settings/widget/G;
+    new-instance v1, Lcom/android/vendorsettings/widget/G;
 
-    invoke-direct {v1, p0, v0, p2}, Lcom/android/settings/widget/G;-><init>(Lcom/android/settings/widget/F;Landroid/net/wifi/WifiManager;Z)V
+    invoke-direct {v1, p0, v0, p2}, Lcom/android/vendorsettings/widget/G;-><init>(Lcom/android/vendorsettings/widget/F;Landroid/net/wifi/WifiManager;Z)V
 
     const/4 v0, 0x0
 
     new-array v0, v0, [Ljava/lang/Void;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/widget/G;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/widget/G;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     goto :goto_0
 .end method

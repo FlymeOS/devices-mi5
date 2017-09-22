@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/TranslationContributors;
+.class public Lcom/android/vendorsettings/TranslationContributors;
 .super Lmiui/app/Activity;
 .source "TranslationContributors.java"
 
@@ -28,7 +28,7 @@
 
     .line 41
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/TranslationContributors;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/TranslationContributors;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -187,12 +187,12 @@
     invoke-super {p0, p1}, Lmiui/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 23
-    invoke-virtual {p0}, Lcom/android/settings/TranslationContributors;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/TranslationContributors;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 
     .line 24
-    invoke-virtual {p0}, Lcom/android/settings/TranslationContributors;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/TranslationContributors;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -212,17 +212,17 @@
     .line 27
     const v0, 0x7f04017f
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/TranslationContributors;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/TranslationContributors;->setContentView(I)V
 
     .line 29
-    invoke-direct {p0}, Lcom/android/settings/TranslationContributors;->im()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/TranslationContributors;->im()Ljava/lang/String;
 
     move-result-object v1
 
     .line 30
     const v0, 0x7f1302e2
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/TranslationContributors;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/TranslationContributors;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -234,7 +234,7 @@
     .line 33
     const v0, 0x7f1302e1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/TranslationContributors;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/TranslationContributors;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 

@@ -1,19 +1,19 @@
-.class Lcom/android/settings/users/UserSettings$1;
+.class Lcom/android/vendorsettings/users/UserSettings$1;
 .super Landroid/os/Handler;
 .source "UserSettings.java"
 
 
 # instance fields
-.field final synthetic auA:Lcom/android/settings/users/UserSettings;
+.field final synthetic auA:Lcom/android/vendorsettings/users/UserSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/UserSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/users/UserSettings;)V
     .locals 0
 
     .prologue
     .line 151
-    iput-object p1, p0, Lcom/android/settings/users/UserSettings$1;->auA:Lcom/android/settings/users/UserSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/users/UserSettings$1;->auA:Lcom/android/vendorsettings/users/UserSettings;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -37,31 +37,31 @@
 
     .line 156
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/users/UserSettings$1;->auA:Lcom/android/settings/users/UserSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/users/UserSettings$1;->auA:Lcom/android/vendorsettings/users/UserSettings;
 
-    invoke-static {v0}, Lcom/android/settings/users/UserSettings;->a(Lcom/android/settings/users/UserSettings;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/users/UserSettings;->a(Lcom/android/vendorsettings/users/UserSettings;)V
 
     goto :goto_0
 
     .line 159
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/users/UserSettings$1;->auA:Lcom/android/settings/users/UserSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/users/UserSettings$1;->auA:Lcom/android/vendorsettings/users/UserSettings;
 
     iget v1, p1, Landroid/os/Message;->arg1:I
 
-    invoke-static {v0, v1}, Lcom/android/settings/users/UserSettings;->a(Lcom/android/settings/users/UserSettings;I)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/users/UserSettings;->a(Lcom/android/vendorsettings/users/UserSettings;I)V
 
     goto :goto_0
 
     .line 162
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/users/UserSettings$1;->auA:Lcom/android/settings/users/UserSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/users/UserSettings$1;->auA:Lcom/android/vendorsettings/users/UserSettings;
 
     iget v1, p1, Landroid/os/Message;->arg1:I
 
     const/4 v2, 0x1
 
-    invoke-static {v0, v1, v2}, Lcom/android/settings/users/UserSettings;->a(Lcom/android/settings/users/UserSettings;IZ)V
+    invoke-static {v0, v1, v2}, Lcom/android/vendorsettings/users/UserSettings;->a(Lcom/android/vendorsettings/users/UserSettings;IZ)V
 
     goto :goto_0
 

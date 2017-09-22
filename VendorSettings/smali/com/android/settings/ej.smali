@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ej;
+.class Lcom/android/vendorsettings/ej;
 .super Ljava/lang/Object;
 .source "MiuiCryptKeeperSettings.java"
 
@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field final synthetic ql:Lcom/android/settings/MiuiCryptKeeperSettings;
+.field final synthetic ql:Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
 
 .field final synthetic val$password:Ljava/lang/String;
 
@@ -15,16 +15,16 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiCryptKeeperSettings;ILjava/lang/String;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiCryptKeeperSettings;ILjava/lang/String;)V
     .locals 0
 
     .prologue
     .line 245
-    iput-object p1, p0, Lcom/android/settings/ej;->ql:Lcom/android/settings/MiuiCryptKeeperSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/ej;->ql:Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
 
-    iput p2, p0, Lcom/android/settings/ej;->val$type:I
+    iput p2, p0, Lcom/android/vendorsettings/ej;->val$type:I
 
-    iput-object p3, p0, Lcom/android/settings/ej;->val$password:Ljava/lang/String;
+    iput-object p3, p0, Lcom/android/vendorsettings/ej;->val$password:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
     const/4 v1, 0x0
 
     .line 248
-    invoke-static {}, Lcom/android/settings/iC;->iu()Z
+    invoke-static {}, Lcom/android/vendorsettings/iC;->iu()Z
 
     move-result v2
 
@@ -56,9 +56,9 @@
     :cond_0
     new-instance v2, Lcom/android/internal/widget/LockPatternUtils;
 
-    iget-object v3, p0, Lcom/android/settings/ej;->ql:Lcom/android/settings/MiuiCryptKeeperSettings;
+    iget-object v3, p0, Lcom/android/vendorsettings/ej;->ql:Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
 
-    invoke-virtual {v3}, Lcom/android/settings/MiuiCryptKeeperSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v3}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -87,9 +87,9 @@
 
     .line 276
     :cond_1
-    iget-object v3, p0, Lcom/android/settings/ej;->ql:Lcom/android/settings/MiuiCryptKeeperSettings;
+    iget-object v3, p0, Lcom/android/vendorsettings/ej;->ql:Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
 
-    invoke-virtual {v3}, Lcom/android/settings/MiuiCryptKeeperSettings;->getContext()Landroid/content/Context;
+    invoke-virtual {v3}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
@@ -112,13 +112,13 @@
     .line 281
     new-instance v0, Landroid/content/Intent;
 
-    iget-object v1, p0, Lcom/android/settings/ej;->ql:Lcom/android/settings/MiuiCryptKeeperSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/ej;->ql:Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/MiuiCryptKeeperSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/CryptKeeperConfirm$Blank;
+    const-class v2, Lcom/android/vendorsettings/CryptKeeperConfirm$Blank;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -130,14 +130,14 @@
     .line 283
     const-string v2, "type"
 
-    iget v3, p0, Lcom/android/settings/ej;->val$type:I
+    iget v3, p0, Lcom/android/vendorsettings/ej;->val$type:I
 
     invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 284
     const-string v2, "password"
 
-    iget-object v3, p0, Lcom/android/settings/ej;->val$password:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/ej;->val$password:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -145,9 +145,9 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
     .line 286
-    iget-object v1, p0, Lcom/android/settings/ej;->ql:Lcom/android/settings/MiuiCryptKeeperSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/ej;->ql:Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/MiuiCryptKeeperSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->startActivity(Landroid/content/Intent;)V
 
     .line 290
     :try_start_0

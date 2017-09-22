@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/privacypassword/BussinessSpecificationInfo;
+.class public Lcom/android/vendorsettings/privacypassword/BussinessSpecificationInfo;
 .super Ljava/lang/Object;
 .source "BussinessSpecificationInfo.java"
 
@@ -26,22 +26,22 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 13
-    iput p1, p0, Lcom/android/settings/privacypassword/BussinessSpecificationInfo;->amN:I
+    iput p1, p0, Lcom/android/vendorsettings/privacypassword/BussinessSpecificationInfo;->amN:I
 
     .line 14
-    iput p2, p0, Lcom/android/settings/privacypassword/BussinessSpecificationInfo;->amO:I
+    iput p2, p0, Lcom/android/vendorsettings/privacypassword/BussinessSpecificationInfo;->amO:I
 
     .line 15
-    iput p3, p0, Lcom/android/settings/privacypassword/BussinessSpecificationInfo;->amP:I
+    iput p3, p0, Lcom/android/vendorsettings/privacypassword/BussinessSpecificationInfo;->amP:I
 
     .line 16
-    iput-object p4, p0, Lcom/android/settings/privacypassword/BussinessSpecificationInfo;->amQ:Ljava/lang/String;
+    iput-object p4, p0, Lcom/android/vendorsettings/privacypassword/BussinessSpecificationInfo;->amQ:Ljava/lang/String;
 
     .line 17
-    iput-boolean p5, p0, Lcom/android/settings/privacypassword/BussinessSpecificationInfo;->amR:Z
+    iput-boolean p5, p0, Lcom/android/vendorsettings/privacypassword/BussinessSpecificationInfo;->amR:Z
 
     .line 18
-    iput-object p6, p0, Lcom/android/settings/privacypassword/BussinessSpecificationInfo;->intentAction:Ljava/lang/String;
+    iput-object p6, p0, Lcom/android/vendorsettings/privacypassword/BussinessSpecificationInfo;->intentAction:Ljava/lang/String;
 
     .line 19
     return-void

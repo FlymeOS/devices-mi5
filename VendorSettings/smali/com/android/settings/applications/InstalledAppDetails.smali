@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/InstalledAppDetails;
-.super Lcom/android/settings/applications/AppInfoBase;
+.class public Lcom/android/vendorsettings/applications/InstalledAppDetails;
+.super Lcom/android/vendorsettings/applications/AppInfoBase;
 .source "InstalledAppDetails.java"
 
 # interfaces
@@ -10,7 +10,7 @@
 # instance fields
 .field private Fb:Landroid/content/BroadcastReceiver;
 
-.field private final Fc:Lcom/android/settings/applications/PermissionsSummaryHelper$PermissionsResultCallback;
+.field private final Fc:Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$PermissionsResultCallback;
 
 .field private IA:Landroid/widget/Button;
 
@@ -28,7 +28,7 @@
 
 .field private IH:Z
 
-.field private final II:Lcom/android/settings/notification/NotificationBackend;
+.field private final II:Lcom/android/vendorsettings/notification/NotificationBackend;
 
 .field private IJ:Landroid/preference/Preference;
 
@@ -36,9 +36,9 @@
 
 .field private IL:Lcom/android/internal/os/BatterySipper;
 
-.field protected IM:Lcom/android/settings/applications/ProcStatsData;
+.field protected IM:Lcom/android/vendorsettings/applications/ProcStatsData;
 
-.field protected IN:Lcom/android/settings/applications/ProcStatsPackageEntry;
+.field protected IN:Lcom/android/vendorsettings/applications/ProcStatsPackageEntry;
 
 .field private final IO:Landroid/app/LoaderManager$LoaderCallbacks;
 
@@ -48,7 +48,7 @@
 
 .field private Iw:Z
 
-.field private Ix:Lcom/android/settings/applications/LayoutPreference;
+.field private Ix:Lcom/android/vendorsettings/applications/LayoutPreference;
 
 .field private Iy:Landroid/widget/Button;
 
@@ -56,7 +56,7 @@
 
 .field private gP:Landroid/net/INetworkStatsSession;
 
-.field private hC:Lcom/android/settings/d/a;
+.field private hC:Lcom/android/vendorsettings/d/a;
 
 .field private mInitialized:Z
 
@@ -67,92 +67,92 @@
 
     .prologue
     .line 101
-    invoke-direct {p0}, Lcom/android/settings/applications/AppInfoBase;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/AppInfoBase;-><init>()V
 
     .line 130
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iv:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iv:Ljava/util/HashSet;
 
     .line 136
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iz:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iz:Z
 
     .line 147
-    new-instance v0, Lcom/android/settings/notification/NotificationBackend;
+    new-instance v0, Lcom/android/vendorsettings/notification/NotificationBackend;
 
-    invoke-direct {v0}, Lcom/android/settings/notification/NotificationBackend;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/notification/NotificationBackend;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->II:Lcom/android/settings/notification/NotificationBackend;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->II:Lcom/android/vendorsettings/notification/NotificationBackend;
 
     .line 937
-    new-instance v0, Lcom/android/settings/applications/InstalledAppDetails$5;
+    new-instance v0, Lcom/android/vendorsettings/applications/InstalledAppDetails$5;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/applications/InstalledAppDetails$5;-><init>(Lcom/android/settings/applications/InstalledAppDetails;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails$5;-><init>(Lcom/android/vendorsettings/applications/InstalledAppDetails;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IO:Landroid/app/LoaderManager$LoaderCallbacks;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IO:Landroid/app/LoaderManager$LoaderCallbacks;
 
     .line 956
-    new-instance v0, Lcom/android/settings/applications/InstalledAppDetails$6;
+    new-instance v0, Lcom/android/vendorsettings/applications/InstalledAppDetails$6;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/applications/InstalledAppDetails$6;-><init>(Lcom/android/settings/applications/InstalledAppDetails;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails$6;-><init>(Lcom/android/vendorsettings/applications/InstalledAppDetails;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IP:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IP:Landroid/content/BroadcastReceiver;
 
     .line 963
-    new-instance v0, Lcom/android/settings/applications/InstalledAppDetails$7;
+    new-instance v0, Lcom/android/vendorsettings/applications/InstalledAppDetails$7;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/applications/InstalledAppDetails$7;-><init>(Lcom/android/settings/applications/InstalledAppDetails;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails$7;-><init>(Lcom/android/vendorsettings/applications/InstalledAppDetails;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fc:Lcom/android/settings/applications/PermissionsSummaryHelper$PermissionsResultCallback;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fc:Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$PermissionsResultCallback;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/InstalledAppDetails;Landroid/content/BroadcastReceiver;)Landroid/content/BroadcastReceiver;
+.method static synthetic a(Lcom/android/vendorsettings/applications/InstalledAppDetails;Landroid/content/BroadcastReceiver;)Landroid/content/BroadcastReceiver;
     .locals 0
 
     .prologue
     .line 101
-    iput-object p1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fb:Landroid/content/BroadcastReceiver;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fb:Landroid/content/BroadcastReceiver;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/InstalledAppDetails;)Landroid/preference/Preference;
+.method static synthetic a(Lcom/android/vendorsettings/applications/InstalledAppDetails;)Landroid/preference/Preference;
     .locals 1
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IG:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IG:Landroid/preference/Preference;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/InstalledAppDetails;Lcom/android/internal/os/BatterySipper;)Lcom/android/internal/os/BatterySipper;
+.method static synthetic a(Lcom/android/vendorsettings/applications/InstalledAppDetails;Lcom/android/internal/os/BatterySipper;)Lcom/android/internal/os/BatterySipper;
     .locals 0
 
     .prologue
     .line 101
-    iput-object p1, p0, Lcom/android/settings/applications/InstalledAppDetails;->IL:Lcom/android/internal/os/BatterySipper;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IL:Lcom/android/internal/os/BatterySipper;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/InstalledAppDetails;Lcom/android/settings/d/a;)Lcom/android/settings/d/a;
+.method static synthetic a(Lcom/android/vendorsettings/applications/InstalledAppDetails;Lcom/android/vendorsettings/d/a;)Lcom/android/vendorsettings/d/a;
     .locals 0
 
     .prologue
     .line 101
-    iput-object p1, p0, Lcom/android/settings/applications/InstalledAppDetails;->hC:Lcom/android/settings/d/a;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->hC:Lcom/android/vendorsettings/d/a;
 
     return-object p1
 .end method
 
-.method public static a(Lcom/android/b/a/o;Landroid/content/Context;Lcom/android/settings/notification/NotificationBackend;)Ljava/lang/CharSequence;
+.method public static a(Lcom/android/b/a/o;Landroid/content/Context;Lcom/android/vendorsettings/notification/NotificationBackend;)Ljava/lang/CharSequence;
     .locals 2
 
     .prologue
@@ -163,19 +163,19 @@
 
     iget-object v1, p0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
-    invoke-virtual {p2, v0, v1}, Lcom/android/settings/notification/NotificationBackend;->a(Landroid/content/pm/PackageManager;Landroid/content/pm/ApplicationInfo;)Lcom/android/settings/notification/NotificationBackend$AppRow;
+    invoke-virtual {p2, v0, v1}, Lcom/android/vendorsettings/notification/NotificationBackend;->a(Landroid/content/pm/PackageManager;Landroid/content/pm/ApplicationInfo;)Lcom/android/vendorsettings/notification/NotificationBackend$AppRow;
 
     move-result-object v0
 
     .line 813
-    invoke-static {v0, p1}, Lcom/android/settings/applications/InstalledAppDetails;->a(Lcom/android/settings/notification/NotificationBackend$AppRow;Landroid/content/Context;)Ljava/lang/CharSequence;
+    invoke-static {v0, p1}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->a(Lcom/android/vendorsettings/notification/NotificationBackend$AppRow;Landroid/content/Context;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public static a(Lcom/android/settings/notification/NotificationBackend$AppRow;Landroid/content/Context;)Ljava/lang/CharSequence;
+.method public static a(Lcom/android/vendorsettings/notification/NotificationBackend$AppRow;Landroid/content/Context;)Ljava/lang/CharSequence;
     .locals 7
 
     .prologue
@@ -186,7 +186,7 @@
     const/4 v4, 0x0
 
     .line 817
-    iget-boolean v0, p0, Lcom/android/settings/notification/NotificationBackend$AppRow;->ajh:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/notification/NotificationBackend$AppRow;->ajh:Z
 
     if-eqz v0, :cond_0
 
@@ -208,7 +208,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 821
-    iget-boolean v1, p0, Lcom/android/settings/notification/NotificationBackend$AppRow;->aji:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/notification/NotificationBackend$AppRow;->aji:Z
 
     if-eqz v1, :cond_1
 
@@ -223,7 +223,7 @@
 
     .line 824
     :cond_1
-    iget-boolean v1, p0, Lcom/android/settings/notification/NotificationBackend$AppRow;->ajk:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/notification/NotificationBackend$AppRow;->ajk:Z
 
     if-eqz v1, :cond_2
 
@@ -238,7 +238,7 @@
 
     .line 827
     :cond_2
-    iget-boolean v1, p0, Lcom/android/settings/notification/NotificationBackend$AppRow;->ajj:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/notification/NotificationBackend$AppRow;->ajj:Z
 
     if-nez v1, :cond_3
 
@@ -454,32 +454,32 @@
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/InstalledAppDetails;Ljava/lang/String;)V
+.method static synthetic a(Lcom/android/vendorsettings/applications/InstalledAppDetails;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 101
-    invoke-direct {p0, p1}, Lcom/android/settings/applications/InstalledAppDetails;->forceStopPackage(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->forceStopPackage(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/InstalledAppDetails;Ljava/lang/String;ZZ)V
+.method static synthetic a(Lcom/android/vendorsettings/applications/InstalledAppDetails;Ljava/lang/String;ZZ)V
     .locals 0
 
     .prologue
     .line 101
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/applications/InstalledAppDetails;->a(Ljava/lang/String;ZZ)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->a(Ljava/lang/String;ZZ)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/InstalledAppDetails;Z)V
+.method static synthetic a(Lcom/android/vendorsettings/applications/InstalledAppDetails;Z)V
     .locals 0
 
     .prologue
     .line 101
-    invoke-direct {p0, p1}, Lcom/android/settings/applications/InstalledAppDetails;->an(Z)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->an(Z)V
 
     return-void
 .end method
@@ -498,7 +498,7 @@
     .line 703
     const-string v0, "package"
 
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v1, v1, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -509,7 +509,7 @@
     .line 704
     const-string v0, "uid"
 
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v1, v1, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -523,11 +523,11 @@
     invoke-virtual {v2, v0, v6}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 707
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hn;
+    check-cast v0, Lcom/android/vendorsettings/hn;
 
     .line 708
     invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -540,7 +540,7 @@
 
     move-object v5, p0
 
-    invoke-virtual/range {v0 .. v6}, Lcom/android/settings/hn;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lcom/android/vendorsettings/hn;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     .line 709
     return-void
@@ -588,10 +588,10 @@
     .line 643
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v1, v0}, Lcom/android/settings/applications/InstalledAppDetails;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v1, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 644
-    iput-boolean p3, p0, Lcom/android/settings/applications/InstalledAppDetails;->IH:Z
+    iput-boolean p3, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IH:Z
 
     .line 645
     return-void
@@ -609,9 +609,9 @@
     const/4 v1, 0x0
 
     .line 172
-    iget-object v2, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iv:Ljava/util/HashSet;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iv:Ljava/util/HashSet;
 
-    iget-object v3, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v3, v3, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -623,11 +623,11 @@
 
     if-nez v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/applications/InstalledAppDetails;->i:Landroid/content/pm/PackageManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->i:Landroid/content/pm/PackageManager;
 
-    iget-object v3, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
 
-    invoke-static {v2, v3}, Lcom/android/settings/iC;->a(Landroid/content/pm/PackageManager;Landroid/content/pm/PackageInfo;)Z
+    invoke-static {v2, v3}, Lcom/android/vendorsettings/iC;->a(Landroid/content/pm/PackageManager;Landroid/content/pm/PackageInfo;)Z
 
     move-result v2
 
@@ -645,7 +645,7 @@
 
     .line 176
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v1, v1, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -653,7 +653,7 @@
 
     if-eqz v1, :cond_2
 
-    invoke-direct {p0}, Lcom/android/settings/applications/InstalledAppDetails;->kx()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->kx()Z
 
     move-result v1
 
@@ -678,12 +678,12 @@
 
     .prologue
     .line 661
-    iget-boolean v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fg:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fg:Z
 
     if-eqz v0, :cond_0
 
     .line 662
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IA:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IA:Landroid/widget/Button;
 
     const/4 v1, 0x0
 
@@ -695,12 +695,12 @@
 
     .line 664
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IA:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IA:Landroid/widget/Button;
 
     invoke-virtual {v0, p1}, Landroid/widget/Button;->setEnabled(Z)V
 
     .line 665
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IA:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IA:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -714,14 +714,14 @@
     const/4 v2, 0x1
 
     .line 253
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->sR:Landroid/os/UserManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->sR:Landroid/os/UserManager;
 
     invoke-virtual {v0}, Landroid/os/UserManager;->getUsers()Ljava/util/List;
 
     move-result-object v1
 
     .line 254
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -806,7 +806,7 @@
 
     .prologue
     .line 797
-    invoke-static {p0}, Lcom/android/settings/DataUsageSummary;->g(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/vendorsettings/DataUsageSummary;->g(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -823,7 +823,7 @@
 
     .line 800
     :cond_0
-    invoke-static {p0}, Lcom/android/settings/DataUsageSummary;->h(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/vendorsettings/DataUsageSummary;->h(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -845,12 +845,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic b(Lcom/android/settings/applications/InstalledAppDetails;)Lcom/android/internal/os/BatteryStatsHelper;
+.method static synthetic b(Lcom/android/vendorsettings/applications/InstalledAppDetails;)Lcom/android/internal/os/BatteryStatsHelper;
     .locals 1
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IK:Lcom/android/internal/os/BatteryStatsHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IK:Lcom/android/internal/os/BatteryStatsHelper;
 
     return-object v0
 .end method
@@ -860,22 +860,22 @@
 
     .prologue
     .line 450
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Ix:Lcom/android/settings/applications/LayoutPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Ix:Lcom/android/vendorsettings/applications/LayoutPreference;
 
     const v1, 0x7f13001f
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/LayoutPreference;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/applications/LayoutPreference;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
     .line 454
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v2, v0, Lcom/android/b/a/o;->label:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -888,7 +888,7 @@
     iget-object v0, p1, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
 
     :goto_0
-    invoke-static {v1, v2, v3, v0}, Lcom/android/settings/applications/InstalledAppDetails;->a(Landroid/view/View;Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;)V
+    invoke-static {v1, v2, v3, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->a(Landroid/view/View;Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;)V
 
     .line 456
     return-void
@@ -900,44 +900,44 @@
     goto :goto_0
 .end method
 
-.method static synthetic c(Lcom/android/settings/applications/InstalledAppDetails;)Landroid/net/INetworkStatsSession;
+.method static synthetic c(Lcom/android/vendorsettings/applications/InstalledAppDetails;)Landroid/net/INetworkStatsSession;
     .locals 1
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->gP:Landroid/net/INetworkStatsSession;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->gP:Landroid/net/INetworkStatsSession;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/applications/InstalledAppDetails;)Ljava/lang/CharSequence;
+.method static synthetic d(Lcom/android/vendorsettings/applications/InstalledAppDetails;)Ljava/lang/CharSequence;
     .locals 1
 
     .prologue
     .line 101
-    invoke-direct {p0}, Lcom/android/settings/applications/InstalledAppDetails;->kB()Ljava/lang/CharSequence;
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->kB()Ljava/lang/CharSequence;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/applications/InstalledAppDetails;)Landroid/preference/Preference;
+.method static synthetic e(Lcom/android/vendorsettings/applications/InstalledAppDetails;)Landroid/preference/Preference;
     .locals 1
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IF:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IF:Landroid/preference/Preference;
 
     return-object v0
 .end method
 
-.method static synthetic f(Lcom/android/settings/applications/InstalledAppDetails;)Landroid/preference/Preference;
+.method static synthetic f(Lcom/android/vendorsettings/applications/InstalledAppDetails;)Landroid/preference/Preference;
     .locals 1
 
     .prologue
     .line 101
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->ID:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->ID:Landroid/preference/Preference;
 
     return-object v0
 .end method
@@ -947,7 +947,7 @@
 
     .prologue
     .line 648
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -963,7 +963,7 @@
     invoke-virtual {v0, p1}, Landroid/app/ActivityManager;->forceStopPackage(Ljava/lang/String;)V
 
     .line 651
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -974,12 +974,12 @@
     move-result v0
 
     .line 652
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fh:Lcom/android/b/a/a;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fh:Lcom/android/b/a/a;
 
     invoke-virtual {v1, p1, v0}, Lcom/android/b/a/a;->A(Ljava/lang/String;I)V
 
     .line 653
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fh:Lcom/android/b/a/a;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fh:Lcom/android/b/a/a;
 
     invoke-virtual {v1, p1, v0}, Lcom/android/b/a/a;->u(Ljava/lang/String;I)Lcom/android/b/a/o;
 
@@ -989,11 +989,11 @@
     if-eqz v0, :cond_0
 
     .line 655
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     .line 657
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/applications/InstalledAppDetails;->kC()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->kC()V
 
     .line 658
     return-void
@@ -1008,17 +1008,17 @@
     const/4 v6, 0x0
 
     .line 551
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IL:Lcom/android/internal/os/BatterySipper;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IL:Lcom/android/internal/os/BatterySipper;
 
     if-eqz v0, :cond_0
 
     .line 552
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IJ:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IJ:Landroid/preference/Preference;
 
     invoke-virtual {v0, v7}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 553
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IK:Lcom/android/internal/os/BatteryStatsHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IK:Lcom/android/internal/os/BatteryStatsHelper;
 
     invoke-virtual {v0}, Lcom/android/internal/os/BatteryStatsHelper;->getStats()Landroid/os/BatteryStats;
 
@@ -1029,11 +1029,11 @@
     move-result v0
 
     .line 555
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->IL:Lcom/android/internal/os/BatterySipper;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IL:Lcom/android/internal/os/BatterySipper;
 
     iget-wide v2, v1, Lcom/android/internal/os/BatterySipper;->totalPowerMah:D
 
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->IK:Lcom/android/internal/os/BatteryStatsHelper;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IK:Lcom/android/internal/os/BatteryStatsHelper;
 
     invoke-virtual {v1}, Lcom/android/internal/os/BatteryStatsHelper;->getTotalPower()D
 
@@ -1052,7 +1052,7 @@
     double-to-int v0, v0
 
     .line 557
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->IJ:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IJ:Landroid/preference/Preference;
 
     const v2, 0x7f0c0b3e
 
@@ -1064,7 +1064,7 @@
 
     aput-object v0, v3, v6
 
-    invoke-virtual {p0, v2, v3}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v2, v3}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1076,16 +1076,16 @@
 
     .line 559
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IJ:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IJ:Landroid/preference/Preference;
 
     invoke-virtual {v0, v6}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 560
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IJ:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IJ:Landroid/preference/Preference;
 
     const v1, 0x7f0c0b3f
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1099,14 +1099,14 @@
 
     .prologue
     .line 565
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->hC:Lcom/android/settings/d/a;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->hC:Lcom/android/vendorsettings/d/a;
 
     if-eqz v0, :cond_1
 
     .line 566
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->hC:Lcom/android/settings/d/a;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->hC:Lcom/android/vendorsettings/d/a;
 
-    iget-object v0, v0, Lcom/android/settings/d/a;->ahO:Landroid/net/NetworkStatsHistory;
+    iget-object v0, v0, Lcom/android/vendorsettings/d/a;->ahO:Landroid/net/NetworkStatsHistory;
 
     invoke-virtual {v0}, Landroid/net/NetworkStatsHistory;->getTotalBytes()J
 
@@ -1122,7 +1122,7 @@
     .line 568
     const v0, 0x7f0c0b61
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1132,7 +1132,7 @@
 
     .line 570
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1153,9 +1153,9 @@
 
     const/4 v0, 0x1
 
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->hC:Lcom/android/settings/d/a;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->hC:Lcom/android/vendorsettings/d/a;
 
-    iget-object v1, v1, Lcom/android/settings/d/a;->ahO:Landroid/net/NetworkStatsHistory;
+    iget-object v1, v1, Lcom/android/vendorsettings/d/a;->ahO:Landroid/net/NetworkStatsHistory;
 
     invoke-virtual {v1}, Landroid/net/NetworkStatsHistory;->getStart()J
 
@@ -1169,7 +1169,7 @@
 
     aput-object v1, v4, v0
 
-    invoke-virtual {p0, v3, v4}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v3, v4}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1179,7 +1179,7 @@
     :cond_1
     const v0, 0x7f0c05c2
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1197,9 +1197,9 @@
     const/4 v3, 0x0
 
     .line 670
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->jd:Landroid/app/admin/DevicePolicyManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->jd:Landroid/app/admin/DevicePolicyManager;
 
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
 
     iget-object v1, v1, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
 
@@ -1210,7 +1210,7 @@
     if-eqz v0, :cond_0
 
     .line 672
-    invoke-direct {p0, v6}, Lcom/android/settings/applications/InstalledAppDetails;->an(Z)V
+    invoke-direct {p0, v6}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->an(Z)V
 
     .line 686
     :goto_0
@@ -1218,7 +1218,7 @@
 
     .line 673
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -1231,7 +1231,7 @@
     if-nez v0, :cond_1
 
     .line 676
-    invoke-direct {p0, v5}, Lcom/android/settings/applications/InstalledAppDetails;->an(Z)V
+    invoke-direct {p0, v5}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->an(Z)V
 
     goto :goto_0
 
@@ -1243,7 +1243,7 @@
 
     const-string v2, "package"
 
-    iget-object v4, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v4, v4, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -1260,7 +1260,7 @@
 
     new-array v2, v5, [Ljava/lang/String;
 
-    iget-object v4, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v4, v4, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -1273,7 +1273,7 @@
     .line 681
     const-string v0, "android.intent.extra.UID"
 
-    iget-object v2, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v2, v2, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -1284,7 +1284,7 @@
     .line 682
     const-string v0, "android.intent.extra.user_handle"
 
-    iget-object v2, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v2, v2, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -1297,13 +1297,13 @@
     invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 683
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     sget-object v2, Landroid/os/UserHandle;->CURRENT:Landroid/os/UserHandle;
 
-    iget-object v4, p0, Lcom/android/settings/applications/InstalledAppDetails;->IP:Landroid/content/BroadcastReceiver;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IP:Landroid/content/BroadcastReceiver;
 
     move-object v5, v3
 
@@ -1330,7 +1330,7 @@
     .line 691
     const-string v1, "android.intent.extra.PACKAGE_NAME"
 
-    iget-object v2, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v2, v2, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -1347,7 +1347,7 @@
 
     .line 694
     :try_start_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/InstalledAppDetails;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1374,7 +1374,7 @@
 
     .prologue
     .line 188
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -1404,7 +1404,7 @@
     const/4 v1, 0x0
 
     .line 193
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -1421,17 +1421,17 @@
     if-eqz v3, :cond_5
 
     .line 196
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iy:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iy:Landroid/widget/Button;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/applications/InstalledAppDetails;->a(Landroid/widget/Button;)Z
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->a(Landroid/widget/Button;)Z
 
     move-result v0
 
     .line 208
     :goto_1
-    iget-object v4, p0, Lcom/android/settings/applications/InstalledAppDetails;->jd:Landroid/app/admin/DevicePolicyManager;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->jd:Landroid/app/admin/DevicePolicyManager;
 
-    iget-object v5, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
 
     iget-object v5, v5, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
 
@@ -1445,11 +1445,11 @@
 
     .line 212
     :cond_0
-    iget-object v4, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
 
     iget-object v4, v4, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
 
-    invoke-direct {p0, v4}, Lcom/android/settings/applications/InstalledAppDetails;->ao(Ljava/lang/String;)Z
+    invoke-direct {p0, v4}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->ao(Ljava/lang/String;)Z
 
     move-result v4
 
@@ -1461,9 +1461,9 @@
     :cond_1
     if-eqz v0, :cond_9
 
-    iget-object v4, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iv:Ljava/util/HashSet;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iv:Ljava/util/HashSet;
 
-    iget-object v5, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
 
     iget-object v5, v5, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
 
@@ -1481,13 +1481,13 @@
     .line 240
     :cond_2
     :goto_2
-    iget-boolean v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fg:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fg:Z
 
     if-eqz v0, :cond_8
 
     .line 244
     :goto_3
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iy:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iy:Landroid/widget/Button;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
@@ -1495,7 +1495,7 @@
     if-eqz v1, :cond_3
 
     .line 247
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iy:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iy:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1511,7 +1511,7 @@
 
     .line 198
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
 
     iget-object v0, v0, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -1523,7 +1523,7 @@
 
     if-nez v0, :cond_a
 
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->sR:Landroid/os/UserManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->sR:Landroid/os/UserManager;
 
     invoke-virtual {v0}, Landroid/os/UserManager;->getUsers()Ljava/util/List;
 
@@ -1541,7 +1541,7 @@
 
     .line 204
     :goto_4
-    iget-object v4, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iy:Landroid/widget/Button;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iy:Landroid/widget/Button;
 
     const v5, 0x7f0c0588
 
@@ -1556,7 +1556,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 227
-    iget-object v3, p0, Lcom/android/settings/applications/InstalledAppDetails;->i:Landroid/content/pm/PackageManager;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->i:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v3, v0}, Landroid/content/pm/PackageManager;->getHomeActivities(Ljava/util/List;)Landroid/content/ComponentName;
 
@@ -1566,7 +1566,7 @@
     if-nez v0, :cond_7
 
     .line 231
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iv:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iv:Ljava/util/HashSet;
 
     invoke-virtual {v0}, Ljava/util/HashSet;->size()I
 
@@ -1580,7 +1580,7 @@
 
     .line 235
     :cond_7
-    iget-object v3, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
 
     iget-object v3, v3, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
 
@@ -1621,20 +1621,20 @@
     .line 367
     const-string v0, "header_view"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/InstalledAppDetails;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/LayoutPreference;
+    check-cast v0, Lcom/android/vendorsettings/applications/LayoutPreference;
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Ix:Lcom/android/settings/applications/LayoutPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Ix:Lcom/android/vendorsettings/applications/LayoutPreference;
 
     .line 370
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Ix:Lcom/android/settings/applications/LayoutPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Ix:Lcom/android/vendorsettings/applications/LayoutPreference;
 
     const v1, 0x7f130116
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/LayoutPreference;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/applications/LayoutPreference;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -1647,10 +1647,10 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IA:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IA:Landroid/widget/Button;
 
     .line 372
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IA:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IA:Landroid/widget/Button;
 
     const v2, 0x7f0c0582
 
@@ -1665,10 +1665,10 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iy:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iy:Landroid/widget/Button;
 
     .line 374
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IA:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IA:Landroid/widget/Button;
 
     const/4 v1, 0x0
 
@@ -1689,7 +1689,7 @@
 
     .line 461
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->i:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/pm/PackageManager;->checkSignatures(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0
@@ -1743,13 +1743,13 @@
     :pswitch_0
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1763,9 +1763,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/applications/InstalledAppDetails$1;
+    new-instance v2, Lcom/android/vendorsettings/applications/InstalledAppDetails$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/applications/InstalledAppDetails$1;-><init>(Lcom/android/settings/applications/InstalledAppDetails;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails$1;-><init>(Lcom/android/vendorsettings/applications/InstalledAppDetails;)V
 
     invoke-virtual {v1, v6, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1785,13 +1785,13 @@
     :pswitch_1
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1805,9 +1805,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/applications/InstalledAppDetails$2;
+    new-instance v2, Lcom/android/vendorsettings/applications/InstalledAppDetails$2;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/applications/InstalledAppDetails$2;-><init>(Lcom/android/settings/applications/InstalledAppDetails;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails$2;-><init>(Lcom/android/vendorsettings/applications/InstalledAppDetails;)V
 
     invoke-virtual {v1, v6, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1827,13 +1827,13 @@
     :pswitch_2
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1847,7 +1847,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1861,9 +1861,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/applications/InstalledAppDetails$3;
+    new-instance v2, Lcom/android/vendorsettings/applications/InstalledAppDetails$3;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/applications/InstalledAppDetails$3;-><init>(Lcom/android/settings/applications/InstalledAppDetails;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails$3;-><init>(Lcom/android/vendorsettings/applications/InstalledAppDetails;)V
 
     invoke-virtual {v1, v5, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1883,13 +1883,13 @@
     :pswitch_3
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
     invoke-direct {v1, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1903,7 +1903,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1917,9 +1917,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/applications/InstalledAppDetails$4;
+    new-instance v2, Lcom/android/vendorsettings/applications/InstalledAppDetails$4;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/applications/InstalledAppDetails$4;-><init>(Lcom/android/settings/applications/InstalledAppDetails;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails$4;-><init>(Lcom/android/vendorsettings/applications/InstalledAppDetails;)V
 
     invoke-virtual {v1, v5, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1950,7 +1950,7 @@
 
     .prologue
     .line 164
-    const-class v0, Lcom/android/settings/applications/InstalledAppDetails;
+    const-class v0, Lcom/android/vendorsettings/applications/InstalledAppDetails;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1970,10 +1970,10 @@
     const/4 v2, 0x0
 
     .line 475
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->jE()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->jE()Ljava/lang/String;
 
     .line 476
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     if-nez v0, :cond_1
 
@@ -1984,7 +1984,7 @@
 
     .line 480
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
 
     if-eqz v0, :cond_0
 
@@ -1994,12 +1994,12 @@
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
     .line 486
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->i:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v0, v4}, Landroid/content/pm/PackageManager;->getHomeActivities(Ljava/util/List;)Landroid/content/ComponentName;
 
     .line 487
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iv:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iv:Ljava/util/HashSet;
 
     invoke-virtual {v0}, Ljava/util/HashSet;->clear()V
 
@@ -2026,7 +2026,7 @@
     iget-object v5, v5, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
 
     .line 491
-    iget-object v6, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iv:Ljava/util/HashSet;
+    iget-object v6, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iv:Ljava/util/HashSet;
 
     invoke-virtual {v6, v5}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -2046,14 +2046,14 @@
     move-result-object v0
 
     .line 497
-    invoke-direct {p0, v0, v5}, Lcom/android/settings/applications/InstalledAppDetails;->l(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, v0, v5}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->l(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v5
 
     if-eqz v5, :cond_2
 
     .line 498
-    iget-object v5, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iv:Ljava/util/HashSet;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iv:Ljava/util/HashSet;
 
     invoke-virtual {v5, v0}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -2067,99 +2067,99 @@
 
     .line 503
     :cond_3
-    invoke-direct {p0}, Lcom/android/settings/applications/InstalledAppDetails;->kC()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->kC()V
 
     .line 504
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/applications/InstalledAppDetails;->b(Landroid/content/pm/PackageInfo;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->b(Landroid/content/pm/PackageInfo;)V
 
     .line 505
-    invoke-direct {p0}, Lcom/android/settings/applications/InstalledAppDetails;->ky()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->ky()V
 
     .line 508
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     .line 509
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->IC:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IC:Landroid/preference/Preference;
 
-    iget-object v4, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
-    invoke-static {v4, v0}, Lcom/android/settings/applications/AppStorageSettings;->a(Lcom/android/b/a/o;Landroid/content/Context;)Ljava/lang/CharSequence;
+    invoke-static {v4, v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->a(Lcom/android/b/a/o;Landroid/content/Context;)Ljava/lang/CharSequence;
 
     move-result-object v4
 
     invoke-virtual {v1, v4}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 510
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fb:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fb:Landroid/content/BroadcastReceiver;
 
     if-eqz v1, :cond_4
 
     .line 511
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    iget-object v4, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fb:Landroid/content/BroadcastReceiver;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fb:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v4}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 513
     :cond_4
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    iget-object v4, p0, Lcom/android/settings/applications/InstalledAppDetails;->mPackageName:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->mPackageName:Ljava/lang/String;
 
-    iget-object v5, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fc:Lcom/android/settings/applications/PermissionsSummaryHelper$PermissionsResultCallback;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fc:Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$PermissionsResultCallback;
 
-    invoke-static {v1, v4, v5}, Lcom/android/settings/applications/PermissionsSummaryHelper;->a(Landroid/content/Context;Ljava/lang/String;Lcom/android/settings/applications/PermissionsSummaryHelper$PermissionsResultCallback;)Landroid/content/BroadcastReceiver;
+    invoke-static {v1, v4, v5}, Lcom/android/vendorsettings/applications/PermissionsSummaryHelper;->a(Landroid/content/Context;Ljava/lang/String;Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$PermissionsResultCallback;)Landroid/content/BroadcastReceiver;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fb:Landroid/content/BroadcastReceiver;
+    iput-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fb:Landroid/content/BroadcastReceiver;
 
     .line 515
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->IE:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IE:Landroid/preference/Preference;
 
-    iget-object v4, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
-    iget-object v5, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fk:Landroid/hardware/usb/IUsbManager;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fk:Landroid/hardware/usb/IUsbManager;
 
-    iget-object v6, p0, Lcom/android/settings/applications/InstalledAppDetails;->i:Landroid/content/pm/PackageManager;
+    iget-object v6, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->i:Landroid/content/pm/PackageManager;
 
-    invoke-static {v4, v5, v6, v0}, Lcom/android/settings/iC;->a(Lcom/android/b/a/o;Landroid/hardware/usb/IUsbManager;Landroid/content/pm/PackageManager;Landroid/content/Context;)Ljava/lang/CharSequence;
+    invoke-static {v4, v5, v6, v0}, Lcom/android/vendorsettings/iC;->a(Lcom/android/b/a/o;Landroid/hardware/usb/IUsbManager;Landroid/content/pm/PackageManager;Landroid/content/Context;)Ljava/lang/CharSequence;
 
     move-result-object v4
 
     invoke-virtual {v1, v4}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 517
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->IB:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IB:Landroid/preference/Preference;
 
-    iget-object v4, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
-    iget-object v5, p0, Lcom/android/settings/applications/InstalledAppDetails;->II:Lcom/android/settings/notification/NotificationBackend;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->II:Lcom/android/vendorsettings/notification/NotificationBackend;
 
-    invoke-static {v4, v0, v5}, Lcom/android/settings/applications/InstalledAppDetails;->a(Lcom/android/b/a/o;Landroid/content/Context;Lcom/android/settings/notification/NotificationBackend;)Ljava/lang/CharSequence;
+    invoke-static {v4, v0, v5}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->a(Lcom/android/b/a/o;Landroid/content/Context;Lcom/android/vendorsettings/notification/NotificationBackend;)Ljava/lang/CharSequence;
 
     move-result-object v4
 
     invoke-virtual {v1, v4}, Landroid/preference/Preference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 519
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->IF:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IF:Landroid/preference/Preference;
 
     if-eqz v1, :cond_5
 
     .line 520
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->IF:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IF:Landroid/preference/Preference;
 
-    invoke-direct {p0}, Lcom/android/settings/applications/InstalledAppDetails;->kB()Ljava/lang/CharSequence;
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->kB()Ljava/lang/CharSequence;
 
     move-result-object v4
 
@@ -2167,18 +2167,18 @@
 
     .line 523
     :cond_5
-    invoke-direct {p0}, Lcom/android/settings/applications/InstalledAppDetails;->kA()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->kA()V
 
     .line 525
-    iget-boolean v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->mInitialized:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->mInitialized:Z
 
     if-nez v1, :cond_8
 
     .line 527
-    iput-boolean v3, p0, Lcom/android/settings/applications/InstalledAppDetails;->mInitialized:Z
+    iput-boolean v3, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->mInitialized:Z
 
     .line 528
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -2191,7 +2191,7 @@
     move v2, v3
 
     :cond_6
-    iput-boolean v2, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iw:Z
+    iput-boolean v2, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iw:Z
 
     :cond_7
     move v2, v3
@@ -2206,7 +2206,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v1, v1, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -2219,7 +2219,7 @@
     move-result-object v0
 
     .line 536
-    iget-boolean v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iw:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iw:Z
 
     if-nez v1, :cond_7
 
@@ -2256,10 +2256,10 @@
     const/4 v2, 0x0
 
     .line 331
-    invoke-super {p0, p1}, Lcom/android/settings/applications/AppInfoBase;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/applications/AppInfoBase;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 332
-    iget-boolean v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mFinishing:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->mFinishing:Z
 
     if-eqz v0, :cond_0
 
@@ -2269,66 +2269,66 @@
 
     .line 335
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/applications/InstalledAppDetails;->kz()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->kz()V
 
     .line 337
     const-string v0, "notification_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/InstalledAppDetails;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IB:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IB:Landroid/preference/Preference;
 
     .line 338
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IB:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IB:Landroid/preference/Preference;
 
     invoke-virtual {v0, p0}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 339
     const-string v0, "storage_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/InstalledAppDetails;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IC:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IC:Landroid/preference/Preference;
 
     .line 340
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IC:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IC:Landroid/preference/Preference;
 
     invoke-virtual {v0, p0}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 341
     const-string v0, "permission_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/InstalledAppDetails;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->ID:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->ID:Landroid/preference/Preference;
 
     .line 342
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->ID:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->ID:Landroid/preference/Preference;
 
     invoke-virtual {v0, p0}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 343
     const-string v0, "data_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/InstalledAppDetails;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IF:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IF:Landroid/preference/Preference;
 
     .line 344
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IF:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IF:Landroid/preference/Preference;
 
     if-eqz v0, :cond_1
 
     .line 345
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IF:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IF:Landroid/preference/Preference;
 
     invoke-virtual {v0, p0}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
@@ -2336,58 +2336,58 @@
     :cond_1
     const-string v0, "battery"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/InstalledAppDetails;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IJ:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IJ:Landroid/preference/Preference;
 
     .line 348
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IJ:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IJ:Landroid/preference/Preference;
 
     invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
 
     .line 349
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IJ:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IJ:Landroid/preference/Preference;
 
     invoke-virtual {v0, p0}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 350
     const-string v0, "memory"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/InstalledAppDetails;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IG:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IG:Landroid/preference/Preference;
 
     .line 351
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IG:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IG:Landroid/preference/Preference;
 
     invoke-virtual {v0, p0}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 353
     const-string v0, "preferred_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/InstalledAppDetails;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IE:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IE:Landroid/preference/Preference;
 
     .line 354
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
     if-eqz v0, :cond_4
 
     .line 355
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -2399,7 +2399,7 @@
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -2409,7 +2409,7 @@
 
     .line 357
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IE:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IE:Landroid/preference/Preference;
 
     invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
 
@@ -2417,7 +2417,7 @@
 
     .line 359
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IE:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IE:Landroid/preference/Preference;
 
     invoke-virtual {v0, p0}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
@@ -2425,7 +2425,7 @@
 
     .line 362
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IE:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IE:Landroid/preference/Preference;
 
     invoke-virtual {v0, v2}, Landroid/preference/Preference;->setEnabled(Z)V
 
@@ -2441,22 +2441,22 @@
     const/4 v4, 0x1
 
     .line 426
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/applications/AppInfoBase;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/vendorsettings/applications/AppInfoBase;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 427
     if-nez p1, :cond_1
 
     .line 428
-    iget-boolean v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IH:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IH:Z
 
     if-eqz v0, :cond_0
 
     .line 429
-    iput-boolean v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->IH:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IH:Z
 
     .line 431
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -2464,7 +2464,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v1, v1, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -2484,15 +2484,15 @@
     if-nez v0, :cond_0
 
     .line 435
-    new-instance v1, Lcom/android/settings/applications/InstalledAppDetails$DisableChanger;
+    new-instance v1, Lcom/android/vendorsettings/applications/InstalledAppDetails$DisableChanger;
 
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
     const/4 v2, 0x3
 
-    invoke-direct {v1, p0, v0, v2}, Lcom/android/settings/applications/InstalledAppDetails$DisableChanger;-><init>(Lcom/android/settings/applications/InstalledAppDetails;Landroid/content/pm/ApplicationInfo;I)V
+    invoke-direct {v1, p0, v0, v2}, Lcom/android/vendorsettings/applications/InstalledAppDetails$DisableChanger;-><init>(Lcom/android/vendorsettings/applications/InstalledAppDetails;Landroid/content/pm/ApplicationInfo;I)V
 
     const/4 v0, 0x1
 
@@ -2506,21 +2506,21 @@
 
     aput-object v0, v2, v3
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/applications/InstalledAppDetails$DisableChanger;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v1, v2}, Lcom/android/vendorsettings/applications/InstalledAppDetails$DisableChanger;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 442
     :cond_0
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->jF()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->jF()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
     .line 443
-    invoke-virtual {p0, v4, v4}, Lcom/android/settings/applications/InstalledAppDetails;->c(ZZ)V
+    invoke-virtual {p0, v4, v4}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->c(ZZ)V
 
     .line 446
     :cond_1
@@ -2542,19 +2542,19 @@
     const/4 v3, 0x0
 
     .line 716
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
     iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
     .line 717
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iy:Landroid/widget/Button;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iy:Landroid/widget/Button;
 
     if-ne p1, v1, :cond_5
 
     .line 718
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v1, v1, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -2565,7 +2565,7 @@
     if-eqz v1, :cond_3
 
     .line 719
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -2573,21 +2573,21 @@
 
     if-eqz v0, :cond_2
 
-    invoke-direct {p0}, Lcom/android/settings/applications/InstalledAppDetails;->kx()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->kx()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
     .line 720
-    iget-boolean v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iz:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iz:Z
 
     if-eqz v0, :cond_1
 
     .line 721
     const/4 v0, 0x3
 
-    invoke-virtual {p0, v0, v3}, Lcom/android/settings/applications/InstalledAppDetails;->e(II)V
+    invoke-virtual {p0, v0, v3}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->e(II)V
 
     .line 739
     :cond_0
@@ -2598,19 +2598,19 @@
     :cond_1
     const/4 v0, 0x2
 
-    invoke-virtual {p0, v0, v3}, Lcom/android/settings/applications/InstalledAppDetails;->e(II)V
+    invoke-virtual {p0, v0, v3}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->e(II)V
 
     goto :goto_0
 
     .line 726
     :cond_2
-    new-instance v1, Lcom/android/settings/applications/InstalledAppDetails$DisableChanger;
+    new-instance v1, Lcom/android/vendorsettings/applications/InstalledAppDetails$DisableChanger;
 
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
-    invoke-direct {v1, p0, v0, v3}, Lcom/android/settings/applications/InstalledAppDetails$DisableChanger;-><init>(Lcom/android/settings/applications/InstalledAppDetails;Landroid/content/pm/ApplicationInfo;I)V
+    invoke-direct {v1, p0, v0, v3}, Lcom/android/vendorsettings/applications/InstalledAppDetails$DisableChanger;-><init>(Lcom/android/vendorsettings/applications/InstalledAppDetails;Landroid/content/pm/ApplicationInfo;I)V
 
     new-array v2, v4, [Ljava/lang/Object;
 
@@ -2620,13 +2620,13 @@
 
     aput-object v0, v2, v3
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/applications/InstalledAppDetails$DisableChanger;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v1, v2}, Lcom/android/vendorsettings/applications/InstalledAppDetails$DisableChanger;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     goto :goto_0
 
     .line 730
     :cond_3
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v1, v1, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -2639,24 +2639,24 @@
     if-nez v1, :cond_4
 
     .line 731
-    invoke-direct {p0, v0, v4, v3}, Lcom/android/settings/applications/InstalledAppDetails;->a(Ljava/lang/String;ZZ)V
+    invoke-direct {p0, v0, v4, v3}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->a(Ljava/lang/String;ZZ)V
 
     goto :goto_0
 
     .line 733
     :cond_4
-    invoke-direct {p0, v0, v3, v3}, Lcom/android/settings/applications/InstalledAppDetails;->a(Ljava/lang/String;ZZ)V
+    invoke-direct {p0, v0, v3, v3}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->a(Ljava/lang/String;ZZ)V
 
     goto :goto_0
 
     .line 735
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IA:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IA:Landroid/widget/Button;
 
     if-ne p1, v0, :cond_0
 
     .line 736
-    invoke-virtual {p0, v4, v3}, Lcom/android/settings/applications/InstalledAppDetails;->e(II)V
+    invoke-virtual {p0, v4, v3}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->e(II)V
 
     goto :goto_0
 .end method
@@ -2668,18 +2668,18 @@
     const/4 v2, 0x1
 
     .line 271
-    invoke-super {p0, p1}, Lcom/android/settings/applications/AppInfoBase;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/applications/AppInfoBase;->onCreate(Landroid/os/Bundle;)V
 
     .line 273
-    invoke-virtual {p0, v2}, Lcom/android/settings/applications/InstalledAppDetails;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->setHasOptionsMenu(Z)V
 
     .line 274
     const v0, 0x7f08004c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/InstalledAppDetails;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->addPreferencesFromResource(I)V
 
     .line 276
-    invoke-static {}, Lcom/android/settings/iC;->isBandwidthControlEnabled()Z
+    invoke-static {}, Lcom/android/vendorsettings/iC;->isBandwidthControlEnabled()Z
 
     move-result v0
 
@@ -2702,7 +2702,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->gP:Landroid/net/INetworkStatsSession;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->gP:Landroid/net/INetworkStatsSession;
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2710,13 +2710,13 @@
     :goto_0
     new-instance v0, Lcom/android/internal/os/BatteryStatsHelper;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1, v2}, Lcom/android/internal/os/BatteryStatsHelper;-><init>(Landroid/content/Context;Z)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IK:Lcom/android/internal/os/BatteryStatsHelper;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IK:Lcom/android/internal/os/BatteryStatsHelper;
 
     .line 288
     return-void
@@ -2736,7 +2736,7 @@
     :cond_0
     const-string v0, "data_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/InstalledAppDetails;->U(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->U(Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -2778,32 +2778,32 @@
 
     .prologue
     .line 321
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->gP:Landroid/net/INetworkStatsSession;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->gP:Landroid/net/INetworkStatsSession;
 
     invoke-static {v0}, Landroid/net/TrafficStats;->closeQuietly(Landroid/net/INetworkStatsSession;)V
 
     .line 322
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fb:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fb:Landroid/content/BroadcastReceiver;
 
     if-eqz v0, :cond_0
 
     .line 323
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fb:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fb:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 324
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fb:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fb:Landroid/content/BroadcastReceiver;
 
     .line 327
     :cond_0
-    invoke-super {p0}, Lcom/android/settings/applications/AppInfoBase;->onDestroy()V
+    invoke-super {p0}, Lcom/android/vendorsettings/applications/AppInfoBase;->onDestroy()V
 
     .line 328
     return-void
@@ -2825,7 +2825,7 @@
     packed-switch v1, :pswitch_data_0
 
     .line 421
-    invoke-super {p0, p1}, Lcom/android/settings/applications/AppInfoBase;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/applications/AppInfoBase;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -2834,13 +2834,13 @@
 
     .line 413
     :pswitch_0
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v1, v1, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
     iget-object v1, v1, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
-    invoke-direct {p0, v1, v0, v2}, Lcom/android/settings/applications/InstalledAppDetails;->a(Ljava/lang/String;ZZ)V
+    invoke-direct {p0, v1, v0, v2}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->a(Ljava/lang/String;ZZ)V
 
     goto :goto_0
 
@@ -2848,7 +2848,7 @@
     :pswitch_1
     const/4 v1, 0x4
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/applications/InstalledAppDetails;->e(II)V
+    invoke-virtual {p0, v1, v2}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->e(II)V
 
     goto :goto_0
 
@@ -2867,7 +2867,7 @@
 
     .prologue
     .line 315
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getLoaderManager()Landroid/app/LoaderManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getLoaderManager()Landroid/app/LoaderManager;
 
     move-result-object v0
 
@@ -2876,7 +2876,7 @@
     invoke-virtual {v0, v1}, Landroid/app/LoaderManager;->destroyLoader(I)V
 
     .line 316
-    invoke-super {p0}, Lcom/android/settings/applications/AppInfoBase;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/applications/AppInfoBase;->onPause()V
 
     .line 317
     return-void
@@ -2891,20 +2891,20 @@
     const/4 v6, 0x1
 
     .line 743
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IC:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IC:Landroid/preference/Preference;
 
     if-ne p1, v0, :cond_0
 
     .line 744
-    const-class v0, Lcom/android/settings/applications/AppStorageSettings;
+    const-class v0, Lcom/android/vendorsettings/applications/AppStorageSettings;
 
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->IC:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IC:Landroid/preference/Preference;
 
     invoke-virtual {v1}, Landroid/preference/Preference;->getTitle()Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/applications/InstalledAppDetails;->a(Ljava/lang/Class;Ljava/lang/CharSequence;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->a(Ljava/lang/Class;Ljava/lang/CharSequence;)V
 
     .line 770
     :goto_0
@@ -2912,81 +2912,81 @@
 
     .line 745
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IB:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IB:Landroid/preference/Preference;
 
     if-ne p1, v0, :cond_1
 
     .line 746
-    const-class v0, Lcom/android/settings/notification/AppNotificationSettings;
+    const-class v0, Lcom/android/vendorsettings/notification/AppNotificationSettings;
 
     const v1, 0x7f0c0a5e
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/applications/InstalledAppDetails;->a(Ljava/lang/Class;Ljava/lang/CharSequence;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->a(Ljava/lang/Class;Ljava/lang/CharSequence;)V
 
     goto :goto_0
 
     .line 748
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->ID:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->ID:Landroid/preference/Preference;
 
     if-ne p1, v0, :cond_2
 
     .line 749
-    invoke-direct {p0}, Lcom/android/settings/applications/InstalledAppDetails;->kD()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->kD()V
 
     goto :goto_0
 
     .line 750
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IE:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IE:Landroid/preference/Preference;
 
     if-ne p1, v0, :cond_3
 
     .line 751
-    const-class v0, Lcom/android/settings/applications/AppLaunchSettings;
+    const-class v0, Lcom/android/vendorsettings/applications/AppLaunchSettings;
 
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->IE:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IE:Landroid/preference/Preference;
 
     invoke-virtual {v1}, Landroid/preference/Preference;->getTitle()Ljava/lang/CharSequence;
 
     move-result-object v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/applications/InstalledAppDetails;->a(Ljava/lang/Class;Ljava/lang/CharSequence;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->a(Ljava/lang/Class;Ljava/lang/CharSequence;)V
 
     goto :goto_0
 
     .line 752
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IG:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IG:Landroid/preference/Preference;
 
     if-ne p1, v0, :cond_4
 
     .line 753
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hn;
+    check-cast v0, Lcom/android/vendorsettings/hn;
 
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->IM:Lcom/android/settings/applications/ProcStatsData;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IM:Lcom/android/vendorsettings/applications/ProcStatsData;
 
-    invoke-virtual {v1}, Lcom/android/settings/applications/ProcStatsData;->la()Lcom/android/settings/applications/ProcStatsData$MemInfo;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/applications/ProcStatsData;->la()Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/applications/InstalledAppDetails;->IN:Lcom/android/settings/applications/ProcStatsPackageEntry;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IN:Lcom/android/vendorsettings/applications/ProcStatsPackageEntry;
 
-    invoke-static {v0, v1, v2}, Lcom/android/settings/applications/ProcessStatsBase;->a(Lcom/android/settings/hn;Lcom/android/settings/applications/ProcStatsData$MemInfo;Lcom/android/settings/applications/ProcStatsPackageEntry;)V
+    invoke-static {v0, v1, v2}, Lcom/android/vendorsettings/applications/ProcessStatsBase;->a(Lcom/android/vendorsettings/hn;Lcom/android/vendorsettings/applications/ProcStatsData$MemInfo;Lcom/android/vendorsettings/applications/ProcStatsPackageEntry;)V
 
     goto :goto_0
 
     .line 755
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IF:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IF:Landroid/preference/Preference;
 
     if-ne p1, v0, :cond_5
 
@@ -2998,7 +2998,7 @@
     .line 757
     const-string v0, "showAppImmediatePkg"
 
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v1, v1, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -3007,14 +3007,14 @@
     invoke-virtual {v2, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 760
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hn;
+    check-cast v0, Lcom/android/vendorsettings/hn;
 
     .line 761
-    const-class v1, Lcom/android/settings/DataUsageSummary;
+    const-class v1, Lcom/android/vendorsettings/DataUsageSummary;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -3024,47 +3024,47 @@
 
     const v4, 0x7f0c0aec
 
-    invoke-virtual {p0, v4}, Lcom/android/settings/applications/InstalledAppDetails;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
     move-object v5, p0
 
-    invoke-virtual/range {v0 .. v6}, Lcom/android/settings/hn;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lcom/android/vendorsettings/hn;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     goto :goto_0
 
     .line 763
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->IJ:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IJ:Landroid/preference/Preference;
 
     if-ne p1, v0, :cond_6
 
     .line 764
-    new-instance v2, Lcom/android/settings/fuelgauge/BatteryEntry;
+    new-instance v2, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lcom/android/settings/applications/InstalledAppDetails;->sR:Landroid/os/UserManager;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->sR:Landroid/os/UserManager;
 
-    iget-object v5, p0, Lcom/android/settings/applications/InstalledAppDetails;->IL:Lcom/android/internal/os/BatterySipper;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IL:Lcom/android/internal/os/BatterySipper;
 
-    invoke-direct {v2, v0, v3, v4, v5}, Lcom/android/settings/fuelgauge/BatteryEntry;-><init>(Landroid/content/Context;Landroid/os/Handler;Landroid/os/UserManager;Lcom/android/internal/os/BatterySipper;)V
+    invoke-direct {v2, v0, v3, v4, v5}, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;-><init>(Landroid/content/Context;Landroid/os/Handler;Landroid/os/UserManager;Lcom/android/internal/os/BatterySipper;)V
 
     .line 765
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hn;
+    check-cast v0, Lcom/android/vendorsettings/hn;
 
-    iget-object v3, p0, Lcom/android/settings/applications/InstalledAppDetails;->IK:Lcom/android/internal/os/BatteryStatsHelper;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IK:Lcom/android/internal/os/BatteryStatsHelper;
 
-    invoke-static {v0, v3, v1, v2, v6}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->a(Lcom/android/settings/hn;Lcom/android/internal/os/BatteryStatsHelper;ILcom/android/settings/fuelgauge/BatteryEntry;Z)V
+    invoke-static {v0, v3, v1, v2, v6}, Lcom/android/vendorsettings/fuelgauge/PowerUsageDetail;->a(Lcom/android/vendorsettings/hn;Lcom/android/internal/os/BatteryStatsHelper;ILcom/android/vendorsettings/fuelgauge/BatteryEntry;Z)V
 
     goto/16 :goto_0
 
@@ -3086,7 +3086,7 @@
     const/4 v1, 0x0
 
     .line 387
-    iget-boolean v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mFinishing:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->mFinishing:Z
 
     if-eqz v0, :cond_0
 
@@ -3096,7 +3096,7 @@
 
     .line 391
     :cond_0
-    iget-boolean v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iz:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iz:Z
 
     if-eqz v0, :cond_1
 
@@ -3111,7 +3111,7 @@
     invoke-interface {v3, v0}, Landroid/view/MenuItem;->setVisible(Z)Landroid/view/MenuItem;
 
     .line 405
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -3124,18 +3124,18 @@
     move v0, v2
 
     :goto_2
-    iput-boolean v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iz:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iz:Z
 
     .line 406
     invoke-interface {p1, v4}, Landroid/view/Menu;->findItem(I)Landroid/view/MenuItem;
 
     move-result-object v0
 
-    iget-boolean v3, p0, Lcom/android/settings/applications/InstalledAppDetails;->Iz:Z
+    iget-boolean v3, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Iz:Z
 
     if-eqz v3, :cond_8
 
-    iget-boolean v3, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fg:Z
+    iget-boolean v3, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fg:Z
 
     if-nez v3, :cond_8
 
@@ -3146,7 +3146,7 @@
 
     .line 393
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     if-nez v0, :cond_2
 
@@ -3157,7 +3157,7 @@
 
     .line 395
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v0, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -3174,13 +3174,13 @@
 
     .line 397
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->jd:Landroid/app/admin/DevicePolicyManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->jd:Landroid/app/admin/DevicePolicyManager;
 
-    iget-object v3, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
 
     iget-object v3, v3, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
 
@@ -3211,7 +3211,7 @@
 
     .line 401
     :cond_6
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->sR:Landroid/os/UserManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->sR:Landroid/os/UserManager;
 
     invoke-virtual {v0}, Landroid/os/UserManager;->getUsers()Ljava/util/List;
 
@@ -3255,10 +3255,10 @@
     const/4 v4, 0x0
 
     .line 297
-    invoke-super {p0}, Lcom/android/settings/applications/AppInfoBase;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/applications/AppInfoBase;->onResume()V
 
     .line 298
-    iget-boolean v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->mFinishing:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->mFinishing:Z
 
     if-eqz v0, :cond_0
 
@@ -3268,80 +3268,80 @@
 
     .line 301
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fh:Lcom/android/b/a/a;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fh:Lcom/android/b/a/a;
 
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->mPackageName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->mPackageName:Ljava/lang/String;
 
-    iget v2, p0, Lcom/android/settings/applications/InstalledAppDetails;->mUserId:I
+    iget v2, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->mUserId:I
 
     invoke-virtual {v0, v1, v2}, Lcom/android/b/a/a;->w(Ljava/lang/String;I)V
 
     .line 302
-    new-instance v0, Lcom/android/settings/DataUsageSummary$AppItem;
+    new-instance v0, Lcom/android/vendorsettings/DataUsageSummary$AppItem;
 
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v1, v1, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
     iget v1, v1, Landroid/content/pm/ApplicationInfo;->uid:I
 
-    invoke-direct {v0, v1}, Lcom/android/settings/DataUsageSummary$AppItem;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/DataUsageSummary$AppItem;-><init>(I)V
 
     .line 303
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fi:Lcom/android/b/a/o;
 
     iget-object v1, v1, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
     iget v1, v1, Landroid/content/pm/ApplicationInfo;->uid:I
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/DataUsageSummary$AppItem;->v(I)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/DataUsageSummary$AppItem;->v(I)V
 
     .line 304
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetails;->gP:Landroid/net/INetworkStatsSession;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->gP:Landroid/net/INetworkStatsSession;
 
     if-eqz v1, :cond_1
 
     .line 305
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getLoaderManager()Landroid/app/LoaderManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getLoaderManager()Landroid/app/LoaderManager;
 
     move-result-object v1
 
     const/4 v2, 0x2
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetails;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/android/settings/applications/InstalledAppDetails;->ap(Landroid/content/Context;)Landroid/net/NetworkTemplate;
+    invoke-static {v3}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->ap(Landroid/content/Context;)Landroid/net/NetworkTemplate;
 
     move-result-object v3
 
-    invoke-static {v3, v0}, Lcom/android/settings/d/b;->a(Landroid/net/NetworkTemplate;Lcom/android/settings/DataUsageSummary$AppItem;)Landroid/os/Bundle;
+    invoke-static {v3, v0}, Lcom/android/vendorsettings/d/b;->a(Landroid/net/NetworkTemplate;Lcom/android/vendorsettings/DataUsageSummary$AppItem;)Landroid/os/Bundle;
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/settings/applications/InstalledAppDetails;->IO:Landroid/app/LoaderManager$LoaderCallbacks;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails;->IO:Landroid/app/LoaderManager$LoaderCallbacks;
 
     invoke-virtual {v1, v2, v0, v3}, Landroid/app/LoaderManager;->restartLoader(ILandroid/os/Bundle;Landroid/app/LoaderManager$LoaderCallbacks;)Landroid/content/Loader;
 
     .line 309
     :cond_1
-    new-instance v0, Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;
+    new-instance v0, Lcom/android/vendorsettings/applications/InstalledAppDetails$BatteryUpdater;
 
-    invoke-direct {v0, p0, v5}, Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;-><init>(Lcom/android/settings/applications/InstalledAppDetails;Lcom/android/settings/applications/InstalledAppDetails$1;)V
+    invoke-direct {v0, p0, v5}, Lcom/android/vendorsettings/applications/InstalledAppDetails$BatteryUpdater;-><init>(Lcom/android/vendorsettings/applications/InstalledAppDetails;Lcom/android/vendorsettings/applications/InstalledAppDetails$1;)V
 
     new-array v1, v4, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/applications/InstalledAppDetails$BatteryUpdater;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 310
-    new-instance v0, Lcom/android/settings/applications/InstalledAppDetails$MemoryUpdater;
+    new-instance v0, Lcom/android/vendorsettings/applications/InstalledAppDetails$MemoryUpdater;
 
-    invoke-direct {v0, p0, v5}, Lcom/android/settings/applications/InstalledAppDetails$MemoryUpdater;-><init>(Lcom/android/settings/applications/InstalledAppDetails;Lcom/android/settings/applications/InstalledAppDetails$1;)V
+    invoke-direct {v0, p0, v5}, Lcom/android/vendorsettings/applications/InstalledAppDetails$MemoryUpdater;-><init>(Lcom/android/vendorsettings/applications/InstalledAppDetails;Lcom/android/vendorsettings/applications/InstalledAppDetails$1;)V
 
     new-array v1, v4, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/InstalledAppDetails$MemoryUpdater;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/applications/InstalledAppDetails$MemoryUpdater;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     goto :goto_0
 .end method

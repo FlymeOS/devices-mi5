@@ -1,18 +1,18 @@
-.class Lcom/android/settings/bQ;
+.class Lcom/android/vendorsettings/bQ;
 .super Landroid/os/AsyncTask;
 .source "DataUsageSummary.java"
 
 
 # instance fields
-.field private final iB:Lcom/android/settings/d/j;
+.field private final iB:Lcom/android/vendorsettings/d/j;
 
-.field private final iF:Lcom/android/settings/DataUsageSummary$AppItem;
+.field private final iF:Lcom/android/vendorsettings/DataUsageSummary$AppItem;
 
 .field private final mTarget:Landroid/view/View;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/d/j;Lcom/android/settings/DataUsageSummary$AppItem;Landroid/view/View;)V
+.method private constructor <init>(Lcom/android/vendorsettings/d/j;Lcom/android/vendorsettings/DataUsageSummary$AppItem;Landroid/view/View;)V
     .locals 1
 
     .prologue
@@ -24,18 +24,18 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/d/j;
+    check-cast v0, Lcom/android/vendorsettings/d/j;
 
-    iput-object v0, p0, Lcom/android/settings/bQ;->iB:Lcom/android/settings/d/j;
+    iput-object v0, p0, Lcom/android/vendorsettings/bQ;->iB:Lcom/android/vendorsettings/d/j;
 
     .line 2450
     invoke-static {p2}, Lcom/android/internal/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/DataUsageSummary$AppItem;
+    check-cast v0, Lcom/android/vendorsettings/DataUsageSummary$AppItem;
 
-    iput-object v0, p0, Lcom/android/settings/bQ;->iF:Lcom/android/settings/DataUsageSummary$AppItem;
+    iput-object v0, p0, Lcom/android/vendorsettings/bQ;->iF:Lcom/android/vendorsettings/DataUsageSummary$AppItem;
 
     .line 2451
     invoke-static {p3}, Lcom/android/internal/util/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -44,13 +44,13 @@
 
     check-cast v0, Landroid/view/View;
 
-    iput-object v0, p0, Lcom/android/settings/bQ;->mTarget:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/bQ;->mTarget:Landroid/view/View;
 
     .line 2452
     return-void
 .end method
 
-.method private static a(Lcom/android/settings/d/i;Landroid/view/View;)V
+.method private static a(Lcom/android/vendorsettings/d/i;Landroid/view/View;)V
     .locals 3
 
     .prologue
@@ -78,17 +78,17 @@
     if-eqz p0, :cond_0
 
     .line 2475
-    iget-object v2, p0, Lcom/android/settings/d/i;->icon:Landroid/graphics/drawable/Drawable;
+    iget-object v2, p0, Lcom/android/vendorsettings/d/i;->icon:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 2476
-    iget-object v0, p0, Lcom/android/settings/d/i;->label:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/vendorsettings/d/i;->label:Ljava/lang/CharSequence;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 2477
-    iget-object v0, p0, Lcom/android/settings/d/i;->contentDescription:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/vendorsettings/d/i;->contentDescription:Ljava/lang/CharSequence;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setContentDescription(Ljava/lang/CharSequence;)V
 
@@ -106,7 +106,7 @@
     goto :goto_0
 .end method
 
-.method public static a(Lcom/android/settings/d/j;Lcom/android/settings/DataUsageSummary$AppItem;Landroid/view/View;)V
+.method public static a(Lcom/android/vendorsettings/d/j;Lcom/android/vendorsettings/DataUsageSummary$AppItem;Landroid/view/View;)V
     .locals 3
 
     .prologue
@@ -117,19 +117,19 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/bQ;
+    check-cast v0, Lcom/android/vendorsettings/bQ;
 
     .line 2457
     if-eqz v0, :cond_0
 
     .line 2458
-    invoke-virtual {v0, v2}, Lcom/android/settings/bQ;->cancel(Z)Z
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/bQ;->cancel(Z)Z
 
     .line 2461
     :cond_0
-    iget v0, p1, Lcom/android/settings/DataUsageSummary$AppItem;->key:I
+    iget v0, p1, Lcom/android/vendorsettings/DataUsageSummary$AppItem;->key:I
 
-    invoke-virtual {p0, v0, v2}, Lcom/android/settings/d/j;->m(IZ)Lcom/android/settings/d/i;
+    invoke-virtual {p0, v0, v2}, Lcom/android/vendorsettings/d/j;->m(IZ)Lcom/android/vendorsettings/d/i;
 
     move-result-object v0
 
@@ -137,7 +137,7 @@
     if-eqz v0, :cond_1
 
     .line 2463
-    invoke-static {v0, p2}, Lcom/android/settings/bQ;->a(Lcom/android/settings/d/i;Landroid/view/View;)V
+    invoke-static {v0, p2}, Lcom/android/vendorsettings/bQ;->a(Lcom/android/vendorsettings/d/i;Landroid/view/View;)V
 
     .line 2468
     :goto_0
@@ -145,15 +145,15 @@
 
     .line 2465
     :cond_1
-    new-instance v0, Lcom/android/settings/bQ;
+    new-instance v0, Lcom/android/vendorsettings/bQ;
 
-    invoke-direct {v0, p0, p1, p2}, Lcom/android/settings/bQ;-><init>(Lcom/android/settings/d/j;Lcom/android/settings/DataUsageSummary$AppItem;Landroid/view/View;)V
+    invoke-direct {v0, p0, p1, p2}, Lcom/android/vendorsettings/bQ;-><init>(Lcom/android/vendorsettings/d/j;Lcom/android/vendorsettings/DataUsageSummary$AppItem;Landroid/view/View;)V
 
     sget-object v1, Landroid/os/AsyncTask;->THREAD_POOL_EXECUTOR:Ljava/util/concurrent/Executor;
 
     new-array v2, v2, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/bQ;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1, v2}, Lcom/android/vendorsettings/bQ;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     move-result-object v0
 
@@ -164,34 +164,34 @@
 
 
 # virtual methods
-.method protected varargs a([Ljava/lang/Void;)Lcom/android/settings/d/i;
+.method protected varargs a([Ljava/lang/Void;)Lcom/android/vendorsettings/d/i;
     .locals 3
 
     .prologue
     .line 2491
-    iget-object v0, p0, Lcom/android/settings/bQ;->iB:Lcom/android/settings/d/j;
+    iget-object v0, p0, Lcom/android/vendorsettings/bQ;->iB:Lcom/android/vendorsettings/d/j;
 
-    iget-object v1, p0, Lcom/android/settings/bQ;->iF:Lcom/android/settings/DataUsageSummary$AppItem;
+    iget-object v1, p0, Lcom/android/vendorsettings/bQ;->iF:Lcom/android/vendorsettings/DataUsageSummary$AppItem;
 
-    iget v1, v1, Lcom/android/settings/DataUsageSummary$AppItem;->key:I
+    iget v1, v1, Lcom/android/vendorsettings/DataUsageSummary$AppItem;->key:I
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/d/j;->m(IZ)Lcom/android/settings/d/i;
+    invoke-virtual {v0, v1, v2}, Lcom/android/vendorsettings/d/j;->m(IZ)Lcom/android/vendorsettings/d/i;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method protected a(Lcom/android/settings/d/i;)V
+.method protected a(Lcom/android/vendorsettings/d/i;)V
     .locals 1
 
     .prologue
     .line 2496
-    iget-object v0, p0, Lcom/android/settings/bQ;->mTarget:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/bQ;->mTarget:Landroid/view/View;
 
-    invoke-static {p1, v0}, Lcom/android/settings/bQ;->a(Lcom/android/settings/d/i;Landroid/view/View;)V
+    invoke-static {p1, v0}, Lcom/android/vendorsettings/bQ;->a(Lcom/android/vendorsettings/d/i;Landroid/view/View;)V
 
     .line 2497
     return-void
@@ -204,7 +204,7 @@
     .line 2443
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/bQ;->a([Ljava/lang/Void;)Lcom/android/settings/d/i;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/bQ;->a([Ljava/lang/Void;)Lcom/android/vendorsettings/d/i;
 
     move-result-object v0
 
@@ -216,9 +216,9 @@
 
     .prologue
     .line 2443
-    check-cast p1, Lcom/android/settings/d/i;
+    check-cast p1, Lcom/android/vendorsettings/d/i;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/bQ;->a(Lcom/android/settings/d/i;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/bQ;->a(Lcom/android/vendorsettings/d/i;)V
 
     return-void
 .end method
@@ -230,9 +230,9 @@
     .line 2486
     const/4 v0, 0x0
 
-    iget-object v1, p0, Lcom/android/settings/bQ;->mTarget:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/vendorsettings/bQ;->mTarget:Landroid/view/View;
 
-    invoke-static {v0, v1}, Lcom/android/settings/bQ;->a(Lcom/android/settings/d/i;Landroid/view/View;)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/bQ;->a(Lcom/android/vendorsettings/d/i;Landroid/view/View;)V
 
     .line 2487
     return-void

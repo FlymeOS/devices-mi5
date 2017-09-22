@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiConfirmLockPasswordInstall;
-.super Lcom/android/settings/MiuiConfirmCommonPassword;
+.class public Lcom/android/vendorsettings/MiuiConfirmLockPasswordInstall;
+.super Lcom/android/vendorsettings/MiuiConfirmCommonPassword;
 .source "MiuiConfirmLockPasswordInstall.java"
 
 
@@ -13,13 +13,13 @@
 
     .prologue
     .line 21
-    const-class v0, Lcom/android/settings/MiuiConfirmLockPasswordInstall;
+    const-class v0, Lcom/android/vendorsettings/MiuiConfirmLockPasswordInstall;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/MiuiConfirmLockPasswordInstall;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/MiuiConfirmLockPasswordInstall;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -29,7 +29,7 @@
 
     .prologue
     .line 20
-    invoke-direct {p0}, Lcom/android/settings/MiuiConfirmCommonPassword;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiConfirmCommonPassword;-><init>()V
 
     .line 69
     return-void
@@ -99,9 +99,9 @@
 
     const/4 v3, 0x1
 
-    new-instance v4, Lcom/android/settings/MiuiConfirmLockPasswordInstall$ApplyRomFile;
+    new-instance v4, Lcom/android/vendorsettings/MiuiConfirmLockPasswordInstall$ApplyRomFile;
 
-    invoke-direct {v4, p0, p1}, Lcom/android/settings/MiuiConfirmLockPasswordInstall$ApplyRomFile;-><init>(Lcom/android/settings/MiuiConfirmLockPasswordInstall;Ljava/lang/String;)V
+    invoke-direct {v4, p0, p1}, Lcom/android/vendorsettings/MiuiConfirmLockPasswordInstall$ApplyRomFile;-><init>(Lcom/android/vendorsettings/MiuiConfirmLockPasswordInstall;Ljava/lang/String;)V
 
     aput-object v4, v2, v3
 
@@ -188,7 +188,7 @@
     if-ne p2, v0, :cond_1
 
     .line 47
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmLockPasswordInstall;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmLockPasswordInstall;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -216,7 +216,7 @@
     move-result v3
 
     .line 51
-    invoke-static {}, Lcom/android/settings/a;->e()Ljava/lang/String;
+    invoke-static {}, Lcom/android/vendorsettings/a;->e()Ljava/lang/String;
 
     move-result-object v4
 
@@ -229,7 +229,7 @@
 
     .line 54
     :try_start_0
-    invoke-static {v0, v4}, Lcom/android/settings/a;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v4}, Lcom/android/vendorsettings/a;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -244,7 +244,7 @@
     if-eqz v4, :cond_0
 
     .line 59
-    sget-object v0, Lcom/android/settings/MiuiConfirmLockPasswordInstall;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/MiuiConfirmLockPasswordInstall;->TAG:Ljava/lang/String;
 
     const-string v1, "empty password"
 
@@ -252,7 +252,7 @@
 
     .line 66
     :goto_1
-    invoke-virtual {p0}, Lcom/android/settings/MiuiConfirmLockPasswordInstall;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiConfirmLockPasswordInstall;->finish()V
 
     .line 67
     return-void
@@ -272,13 +272,13 @@
 
     move-result-object v3
 
-    invoke-direct {p0, v1, v0, v2, v3}, Lcom/android/settings/MiuiConfirmLockPasswordInstall;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;)V
+    invoke-direct {p0, v1, v0, v2, v3}, Lcom/android/vendorsettings/MiuiConfirmLockPasswordInstall;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;)V
 
     goto :goto_1
 
     .line 64
     :cond_1
-    sget-object v0, Lcom/android/settings/MiuiConfirmLockPasswordInstall;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/MiuiConfirmLockPasswordInstall;->TAG:Ljava/lang/String;
 
     const-string v1, "failed to get password"
 

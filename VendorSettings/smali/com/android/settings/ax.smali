@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ax;
+.class Lcom/android/vendorsettings/ax;
 .super Ljava/lang/Object;
 .source "ChooseLockGeneric.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic dG:Lcom/android/settings/av;
+.field final synthetic dG:Lcom/android/vendorsettings/av;
 
 .field final synthetic dH:Landroid/os/Bundle;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/av;Landroid/os/Bundle;)V
+.method constructor <init>(Lcom/android/vendorsettings/av;Landroid/os/Bundle;)V
     .locals 0
 
     .prologue
     .line 629
-    iput-object p1, p0, Lcom/android/settings/ax;->dG:Lcom/android/settings/av;
+    iput-object p1, p0, Lcom/android/vendorsettings/ax;->dG:Lcom/android/vendorsettings/av;
 
-    iput-object p2, p0, Lcom/android/settings/ax;->dH:Landroid/os/Bundle;
+    iput-object p2, p0, Lcom/android/vendorsettings/ax;->dH:Landroid/os/Bundle;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,15 +34,15 @@
 
     .prologue
     .line 632
-    iget-object v0, p0, Lcom/android/settings/ax;->dG:Lcom/android/settings/av;
+    iget-object v0, p0, Lcom/android/vendorsettings/ax;->dG:Lcom/android/vendorsettings/av;
 
-    invoke-virtual {v0}, Lcom/android/settings/av;->getParentFragment()Landroid/app/Fragment;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/av;->getParentFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
+    check-cast v0, Lcom/android/vendorsettings/ChooseLockGeneric$ChooseLockGenericFragment;
 
-    iget-object v1, p0, Lcom/android/settings/ax;->dH:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/android/vendorsettings/ax;->dH:Landroid/os/Bundle;
 
     const-string v2, "unlockMethodToSet"
 
@@ -50,7 +50,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->a(Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/ChooseLockGeneric$ChooseLockGenericFragment;->a(Lcom/android/vendorsettings/ChooseLockGeneric$ChooseLockGenericFragment;Ljava/lang/String;)Z
 
     .line 635
     return-void

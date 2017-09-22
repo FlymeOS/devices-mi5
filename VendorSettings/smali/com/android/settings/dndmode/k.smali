@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/dndmode/k;
-.super Lcom/android/settings/dndmode/q;
+.class public Lcom/android/vendorsettings/dndmode/k;
+.super Lcom/android/vendorsettings/dndmode/q;
 .source "DoNotDisturbModeFragment.java"
 
 # interfaces
@@ -30,25 +30,25 @@
 
     .prologue
     .line 50
-    invoke-direct {p0}, Lcom/android/settings/dndmode/q;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/dndmode/q;-><init>()V
 
     .line 43
-    new-instance v0, Lcom/android/settings/dndmode/l;
+    new-instance v0, Lcom/android/vendorsettings/dndmode/l;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/dndmode/l;-><init>(Lcom/android/settings/dndmode/k;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/dndmode/l;-><init>(Lcom/android/vendorsettings/dndmode/k;)V
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/k;->aaC:Lmiui/provider/ExtraTelephony$QuietModeEnableListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaC:Lmiui/provider/ExtraTelephony$QuietModeEnableListener;
 
     .line 51
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/dndmode/k;)V
+.method static synthetic a(Lcom/android/vendorsettings/dndmode/k;)V
     .locals 0
 
     .prologue
     .line 26
-    invoke-direct {p0}, Lcom/android/settings/dndmode/k;->pX()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/dndmode/k;->pX()V
 
     return-void
 .end method
@@ -58,9 +58,9 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aaw:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaw:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/k;->aav:Lmiui/app/Activity;
+    iget-object v1, p0, Lcom/android/vendorsettings/dndmode/k;->aav:Lmiui/app/Activity;
 
     invoke-static {v1}, Landroid/provider/MiuiSettings$AntiSpam;->isQuietModeEnable(Landroid/content/Context;)Z
 
@@ -83,7 +83,7 @@
     .line 141
     .line 143
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aav:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aav:Lmiui/app/Activity;
 
     invoke-virtual {v0}, Lmiui/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -213,35 +213,35 @@
 
     .prologue
     .line 159
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aav:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aav:Lmiui/app/Activity;
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/k;->aav:Lmiui/app/Activity;
+    iget-object v1, p0, Lcom/android/vendorsettings/dndmode/k;->aav:Lmiui/app/Activity;
 
     invoke-static {v1}, Landroid/provider/MiuiSettings$AntiSpam;->getStartTimeForQuietMode(Landroid/content/Context;)I
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/dndmode/m;->m(Landroid/content/Context;I)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/dndmode/m;->m(Landroid/content/Context;I)Ljava/lang/String;
 
     move-result-object v0
 
     .line 161
-    iget-object v1, p0, Lcom/android/settings/dndmode/k;->aav:Lmiui/app/Activity;
+    iget-object v1, p0, Lcom/android/vendorsettings/dndmode/k;->aav:Lmiui/app/Activity;
 
-    iget-object v2, p0, Lcom/android/settings/dndmode/k;->aav:Lmiui/app/Activity;
+    iget-object v2, p0, Lcom/android/vendorsettings/dndmode/k;->aav:Lmiui/app/Activity;
 
     invoke-static {v2}, Landroid/provider/MiuiSettings$AntiSpam;->getEndTimeForQuietMode(Landroid/content/Context;)I
 
     move-result v2
 
-    invoke-static {v1, v2}, Lcom/android/settings/dndmode/m;->m(Landroid/content/Context;I)Ljava/lang/String;
+    invoke-static {v1, v2}, Lcom/android/vendorsettings/dndmode/m;->m(Landroid/content/Context;I)Ljava/lang/String;
 
     move-result-object v1
 
     .line 163
-    iget-object v2, p0, Lcom/android/settings/dndmode/k;->aaz:Landroid/preference/PreferenceScreen;
+    iget-object v2, p0, Lcom/android/vendorsettings/dndmode/k;->aaz:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {p0}, Lcom/android/settings/dndmode/k;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dndmode/k;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -276,117 +276,117 @@
 
     .prologue
     .line 55
-    invoke-super {p0, p1}, Lcom/android/settings/dndmode/q;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/dndmode/q;->onCreate(Landroid/os/Bundle;)V
 
     .line 56
     const v0, 0x7f080038
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/k;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dndmode/k;->addPreferencesFromResource(I)V
 
     .line 57
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/k;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dndmode/k;->setHasOptionsMenu(Z)V
 
     .line 59
-    invoke-virtual {p0}, Lcom/android/settings/dndmode/k;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dndmode/k;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     check-cast v0, Lmiui/app/Activity;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/k;->aav:Lmiui/app/Activity;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aav:Lmiui/app/Activity;
 
     .line 60
     const-string v0, "key_do_not_disturb_mode"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/k;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dndmode/k;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/k;->aaw:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaw:Landroid/preference/CheckBoxPreference;
 
     .line 61
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aaw:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaw:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 62
     const-string v0, "key_auto_setting_group"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/k;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dndmode/k;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceGroup;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/k;->aax:Landroid/preference/PreferenceGroup;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aax:Landroid/preference/PreferenceGroup;
 
     .line 63
     const-string v0, "key_auto_button"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/k;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dndmode/k;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/k;->aay:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aay:Landroid/preference/CheckBoxPreference;
 
     .line 64
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aay:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aay:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 65
     const-string v0, "key_auto_time_setting"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/k;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dndmode/k;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceScreen;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/k;->aaz:Landroid/preference/PreferenceScreen;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaz:Landroid/preference/PreferenceScreen;
 
     .line 66
     const-string v0, "key_vip_call_setting"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/k;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dndmode/k;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceScreen;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/k;->aaA:Landroid/preference/PreferenceScreen;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaA:Landroid/preference/PreferenceScreen;
 
     .line 67
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aay:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aay:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 68
     const-string v0, "key_repeated_call_button"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/k;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dndmode/k;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/k;->aaB:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaB:Landroid/preference/CheckBoxPreference;
 
     .line 69
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aaB:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaB:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 70
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aav:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aav:Lmiui/app/Activity;
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/k;->aaC:Lmiui/provider/ExtraTelephony$QuietModeEnableListener;
+    iget-object v1, p0, Lcom/android/vendorsettings/dndmode/k;->aaC:Lmiui/provider/ExtraTelephony$QuietModeEnableListener;
 
     invoke-static {v0, v1}, Lmiui/provider/ExtraTelephony;->registerQuietModeEnableListener(Landroid/content/Context;Lmiui/provider/ExtraTelephony$QuietModeEnableListener;)V
 
@@ -399,14 +399,14 @@
 
     .prologue
     .line 169
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aav:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aav:Lmiui/app/Activity;
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/k;->aaC:Lmiui/provider/ExtraTelephony$QuietModeEnableListener;
+    iget-object v1, p0, Lcom/android/vendorsettings/dndmode/k;->aaC:Lmiui/provider/ExtraTelephony$QuietModeEnableListener;
 
     invoke-static {v0, v1}, Lmiui/provider/ExtraTelephony;->unRegisterQuietModeEnableListener(Landroid/content/Context;Lmiui/provider/ExtraTelephony$QuietModeEnableListener;)V
 
     .line 170
-    invoke-super {p0}, Lcom/android/settings/dndmode/q;->onDestroy()V
+    invoke-super {p0}, Lcom/android/vendorsettings/dndmode/q;->onDestroy()V
 
     .line 171
     return-void
@@ -420,12 +420,12 @@
     check-cast p2, Ljava/lang/Boolean;
 
     .line 116
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aaw:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaw:Landroid/preference/CheckBoxPreference;
 
     if-ne p1, v0, :cond_1
 
     .line 117
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aav:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aav:Lmiui/app/Activity;
 
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -442,12 +442,12 @@
 
     .line 119
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aay:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aay:Landroid/preference/CheckBoxPreference;
 
     if-ne p1, v0, :cond_3
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aav:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aav:Lmiui/app/Activity;
 
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -463,27 +463,27 @@
     if-eqz v0, :cond_2
 
     .line 122
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aax:Landroid/preference/PreferenceGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aax:Landroid/preference/PreferenceGroup;
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/k;->aaz:Landroid/preference/PreferenceScreen;
+    iget-object v1, p0, Lcom/android/vendorsettings/dndmode/k;->aaz:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceGroup;->addPreference(Landroid/preference/Preference;)Z
 
     .line 123
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aav:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aav:Lmiui/app/Activity;
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/m;->bv(Landroid/content/Context;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/dndmode/m;->bv(Landroid/content/Context;)V
 
     .line 124
-    invoke-direct {p0}, Lcom/android/settings/dndmode/k;->pZ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/dndmode/k;->pZ()V
 
     goto :goto_0
 
     .line 126
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aax:Landroid/preference/PreferenceGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aax:Landroid/preference/PreferenceGroup;
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/k;->aaz:Landroid/preference/PreferenceScreen;
+    iget-object v1, p0, Lcom/android/vendorsettings/dndmode/k;->aaz:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
 
@@ -491,12 +491,12 @@
 
     .line 129
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aaB:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaB:Landroid/preference/CheckBoxPreference;
 
     if-ne p1, v0, :cond_0
 
     .line 130
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aav:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aav:Lmiui/app/Activity;
 
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -512,7 +512,7 @@
     if-eqz v0, :cond_4
 
     .line 132
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aaB:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaB:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c0bb2
 
@@ -522,7 +522,7 @@
 
     .line 134
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aaB:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaB:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c0bb1
 
@@ -540,12 +540,12 @@
     const/4 v5, 0x1
 
     .line 80
-    invoke-super {p0}, Lcom/android/settings/dndmode/q;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/dndmode/q;->onResume()V
 
     .line 81
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aaw:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaw:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/k;->aav:Lmiui/app/Activity;
+    iget-object v1, p0, Lcom/android/vendorsettings/dndmode/k;->aav:Lmiui/app/Activity;
 
     invoke-static {v1}, Landroid/provider/MiuiSettings$AntiSpam;->isQuietModeEnable(Landroid/content/Context;)Z
 
@@ -554,7 +554,7 @@
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 83
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aav:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aav:Lmiui/app/Activity;
 
     invoke-static {v0}, Landroid/provider/MiuiSettings$AntiSpam;->isVipCallActionEnable(Landroid/content/Context;)Z
 
@@ -563,7 +563,7 @@
     if-nez v0, :cond_1
 
     .line 84
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aaA:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaA:Landroid/preference/PreferenceScreen;
 
     const v1, 0x7f0c0ba6
 
@@ -572,7 +572,7 @@
     .line 95
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aav:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aav:Lmiui/app/Activity;
 
     invoke-static {v0}, Landroid/provider/MiuiSettings$AntiSpam;->isAutoTimerOfQuietModeEnable(Landroid/content/Context;)Z
 
@@ -581,23 +581,23 @@
     if-eqz v0, :cond_3
 
     .line 96
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aay:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aay:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v5}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 97
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aax:Landroid/preference/PreferenceGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aax:Landroid/preference/PreferenceGroup;
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/k;->aaz:Landroid/preference/PreferenceScreen;
+    iget-object v1, p0, Lcom/android/vendorsettings/dndmode/k;->aaz:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceGroup;->addPreference(Landroid/preference/Preference;)Z
 
     .line 98
-    invoke-direct {p0}, Lcom/android/settings/dndmode/k;->pZ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/dndmode/k;->pZ()V
 
     .line 104
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aav:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aav:Lmiui/app/Activity;
 
     invoke-static {v0}, Landroid/provider/MiuiSettings$AntiSpam;->isRepeatedCallActionEnable(Landroid/content/Context;)Z
 
@@ -606,12 +606,12 @@
     if-nez v0, :cond_4
 
     .line 105
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aaB:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaB:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v6}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aaB:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaB:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c0bb1
 
@@ -623,7 +623,7 @@
 
     .line 86
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aav:Lmiui/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aav:Lmiui/app/Activity;
 
     invoke-static {v0}, Landroid/provider/MiuiSettings$AntiSpam;->getVipListForQuietMode(Landroid/content/Context;)I
 
@@ -633,9 +633,9 @@
     if-nez v0, :cond_2
 
     .line 88
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aaA:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaA:Landroid/preference/PreferenceScreen;
 
-    invoke-virtual {p0}, Lcom/android/settings/dndmode/k;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dndmode/k;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -643,7 +643,7 @@
 
     new-array v3, v5, [Ljava/lang/Object;
 
-    invoke-direct {p0}, Lcom/android/settings/dndmode/k;->pY()I
+    invoke-direct {p0}, Lcom/android/vendorsettings/dndmode/k;->pY()I
 
     move-result v4
 
@@ -666,7 +666,7 @@
     if-ne v0, v5, :cond_0
 
     .line 91
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aaA:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaA:Landroid/preference/PreferenceScreen;
 
     const v1, 0x7f0c0ba8
 
@@ -676,14 +676,14 @@
 
     .line 100
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aay:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aay:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v6}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 101
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aax:Landroid/preference/PreferenceGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aax:Landroid/preference/PreferenceGroup;
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/k;->aaz:Landroid/preference/PreferenceScreen;
+    iget-object v1, p0, Lcom/android/vendorsettings/dndmode/k;->aaz:Landroid/preference/PreferenceScreen;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceGroup;->removePreference(Landroid/preference/Preference;)Z
 
@@ -691,12 +691,12 @@
 
     .line 108
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aaB:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaB:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v5}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 109
-    iget-object v0, p0, Lcom/android/settings/dndmode/k;->aaB:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/k;->aaB:Landroid/preference/CheckBoxPreference;
 
     const v1, 0x7f0c0bb2
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/PrivateVolumeUnmount$1;
+.class Lcom/android/vendorsettings/deviceinfo/PrivateVolumeUnmount$1;
 .super Ljava/lang/Object;
 .source "PrivateVolumeUnmount.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Wv:Lcom/android/settings/deviceinfo/PrivateVolumeUnmount;
+.field final synthetic Wv:Lcom/android/vendorsettings/deviceinfo/PrivateVolumeUnmount;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/PrivateVolumeUnmount;)V
+.method constructor <init>(Lcom/android/vendorsettings/deviceinfo/PrivateVolumeUnmount;)V
     .locals 0
 
     .prologue
     .line 64
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/PrivateVolumeUnmount$1;->Wv:Lcom/android/settings/deviceinfo/PrivateVolumeUnmount;
+    iput-object p1, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeUnmount$1;->Wv:Lcom/android/vendorsettings/deviceinfo/PrivateVolumeUnmount;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,32 +30,32 @@
 
     .prologue
     .line 67
-    new-instance v0, Lcom/android/settings/deviceinfo/StorageSettings$UnmountTask;
+    new-instance v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$UnmountTask;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/PrivateVolumeUnmount$1;->Wv:Lcom/android/settings/deviceinfo/PrivateVolumeUnmount;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeUnmount$1;->Wv:Lcom/android/vendorsettings/deviceinfo/PrivateVolumeUnmount;
 
-    invoke-virtual {v1}, Lcom/android/settings/deviceinfo/PrivateVolumeUnmount;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeUnmount;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/PrivateVolumeUnmount$1;->Wv:Lcom/android/settings/deviceinfo/PrivateVolumeUnmount;
+    iget-object v2, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeUnmount$1;->Wv:Lcom/android/vendorsettings/deviceinfo/PrivateVolumeUnmount;
 
-    invoke-static {v2}, Lcom/android/settings/deviceinfo/PrivateVolumeUnmount;->a(Lcom/android/settings/deviceinfo/PrivateVolumeUnmount;)Landroid/os/storage/VolumeInfo;
+    invoke-static {v2}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeUnmount;->a(Lcom/android/vendorsettings/deviceinfo/PrivateVolumeUnmount;)Landroid/os/storage/VolumeInfo;
 
     move-result-object v2
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/deviceinfo/StorageSettings$UnmountTask;-><init>(Landroid/content/Context;Landroid/os/storage/VolumeInfo;)V
+    invoke-direct {v0, v1, v2}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$UnmountTask;-><init>(Landroid/content/Context;Landroid/os/storage/VolumeInfo;)V
 
     const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/deviceinfo/StorageSettings$UnmountTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$UnmountTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 68
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/PrivateVolumeUnmount$1;->Wv:Lcom/android/settings/deviceinfo/PrivateVolumeUnmount;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeUnmount$1;->Wv:Lcom/android/vendorsettings/deviceinfo/PrivateVolumeUnmount;
 
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/PrivateVolumeUnmount;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeUnmount;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

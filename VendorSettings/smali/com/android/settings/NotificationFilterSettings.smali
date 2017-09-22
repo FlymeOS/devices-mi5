@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/NotificationFilterSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/NotificationFilterSettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "NotificationFilterSettings.java"
 
 # interfaces
@@ -38,12 +38,12 @@
 
     .prologue
     .line 24
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 46
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/NotificationFilterSettings;->mUserId:I
+    iput v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mUserId:I
 
     return-void
 .end method
@@ -57,13 +57,13 @@
     const/4 v1, 0x0
 
     .line 146
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
-    iget v3, p0, Lcom/android/settings/NotificationFilterSettings;->mUid:I
+    iget v3, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mUid:I
 
     invoke-static {v0, v2, v3, v4}, Lmiui/util/NotificationFilterHelper;->getAppFlag(Landroid/content/Context;Ljava/lang/String;IZ)I
 
@@ -74,11 +74,11 @@
 
     .line 164
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     invoke-static {v0, v2}, Lmiui/util/NotificationFilterHelper;->isNotificationForcedFor(Landroid/content/Context;Ljava/lang/String;)Z
 
@@ -87,7 +87,7 @@
     if-eqz v0, :cond_1
 
     .line 165
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -96,32 +96,32 @@
     if-nez v0, :cond_0
 
     .line 166
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
-    iget v3, p0, Lcom/android/settings/NotificationFilterSettings;->mUid:I
+    iget v3, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mUid:I
 
     invoke-static {v0, v2, v3, v4}, Lmiui/util/NotificationFilterHelper;->enableNotifications(Landroid/content/Context;Ljava/lang/String;IZ)V
 
     .line 167
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 169
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 172
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/NotificationFilterSettings;->vm:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vm:Landroid/preference/CheckBoxPreference;
 
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -129,11 +129,11 @@
 
     if-eqz v0, :cond_4
 
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     const-string v4, "_keyguard"
 
@@ -145,9 +145,9 @@
     invoke-virtual {v2, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 177
-    iget-object v2, p0, Lcom/android/settings/NotificationFilterSettings;->vo:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vo:Landroid/preference/CheckBoxPreference;
 
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -155,11 +155,11 @@
 
     if-eqz v0, :cond_5
 
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     const-string v4, "_message"
 
@@ -171,11 +171,11 @@
     invoke-virtual {v2, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 181
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     const-string v3, "_sound"
 
@@ -184,11 +184,11 @@
     move-result v0
 
     .line 183
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     const-string v4, "_vibrate"
 
@@ -197,9 +197,9 @@
     move-result v2
 
     .line 186
-    iget-object v3, p0, Lcom/android/settings/NotificationFilterSettings;->vp:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vp:Landroid/preference/CheckBoxPreference;
 
-    iget-object v4, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v4}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -211,9 +211,9 @@
     invoke-virtual {v3, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 189
-    iget-object v3, p0, Lcom/android/settings/NotificationFilterSettings;->vq:Landroid/preference/CheckBoxPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vq:Landroid/preference/CheckBoxPreference;
 
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -227,9 +227,9 @@
     invoke-virtual {v3, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 192
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vr:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vr:Landroid/preference/CheckBoxPreference;
 
-    iget-object v2, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v2}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -237,11 +237,11 @@
 
     if-eqz v2, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     const-string v3, "_led"
 
@@ -253,27 +253,27 @@
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 196
-    iget-boolean v0, p0, Lcom/android/settings/NotificationFilterSettings;->vs:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vs:Z
 
     if-eqz v0, :cond_3
 
     .line 197
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vl:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vl:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
-    iget v2, p0, Lcom/android/settings/NotificationFilterSettings;->mUid:I
+    iget v2, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mUid:I
 
-    invoke-static {v1, v2}, Lcom/android/settings/aI;->b(Ljava/lang/String;I)Z
+    invoke-static {v1, v2}, Lcom/android/vendorsettings/aI;->b(Ljava/lang/String;I)Z
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 198
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vl:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vl:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -283,9 +283,9 @@
 
     .line 200
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vm:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vm:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -294,9 +294,9 @@
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 201
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vo:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vo:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -305,9 +305,9 @@
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 202
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vp:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vp:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -316,9 +316,9 @@
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 203
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vq:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -327,9 +327,9 @@
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 204
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vr:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vr:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -342,17 +342,17 @@
 
     .line 149
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 150
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vn:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vn:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 151
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vn:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vn:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
@@ -360,17 +360,17 @@
 
     .line 154
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vn:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vn:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 155
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vn:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vn:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 156
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -378,17 +378,17 @@
 
     .line 159
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vn:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vn:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v4}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 160
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 161
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vn:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vn:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -436,7 +436,7 @@
 
     .prologue
     .line 53
-    const-class v0, Lcom/android/settings/NotificationFilterSettings;
+    const-class v0, Lcom/android/vendorsettings/NotificationFilterSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -452,10 +452,10 @@
     const/4 v2, 0x0
 
     .line 58
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 60
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -463,7 +463,7 @@
     if-nez v0, :cond_0
 
     .line 62
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -490,7 +490,7 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     .line 66
     const-string v3, "userId"
@@ -508,16 +508,16 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/NotificationFilterSettings;->mUserId:I
+    iput v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mUserId:I
 
     .line 69
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     if-nez v0, :cond_8
 
     .line 70
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -544,7 +544,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     .line 74
     const-string v1, "userId"
@@ -562,7 +562,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/NotificationFilterSettings;->mUserId:I
+    iput v1, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mUserId:I
 
     .line 80
     :cond_2
@@ -577,17 +577,17 @@
     .line 83
     const/4 v4, -0x1
 
-    iget v5, p0, Lcom/android/settings/NotificationFilterSettings;->mUserId:I
+    iget v5, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mUserId:I
 
     if-eq v4, v5, :cond_5
 
     .line 85
     :try_start_0
-    iget-object v4, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     const/4 v5, 0x0
 
-    iget v6, p0, Lcom/android/settings/NotificationFilterSettings;->mUserId:I
+    iget v6, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mUserId:I
 
     invoke-interface {v1, v4, v5, v6}, Landroid/content/pm/IPackageManager;->getApplicationInfo(Ljava/lang/String;II)Landroid/content/pm/ApplicationInfo;
     :try_end_0
@@ -599,13 +599,13 @@
     :try_start_1
     iget v3, v1, Landroid/content/pm/ApplicationInfo;->uid:I
 
-    iput v3, p0, Lcom/android/settings/NotificationFilterSettings;->mUid:I
+    iput v3, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mUid:I
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_3
 
     .line 98
     :goto_1
-    iget-object v3, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -629,7 +629,7 @@
 
     move-result-object v4
 
-    iget-object v5, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -652,7 +652,7 @@
     invoke-static {v3, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 100
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->finish()V
 
     .line 103
     :cond_4
@@ -665,15 +665,15 @@
     const/4 v1, 0x1
 
     :goto_2
-    iput-boolean v1, p0, Lcom/android/settings/NotificationFilterSettings;->vs:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vs:Z
 
     .line 105
     const v1, 0x7f0800a3
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/NotificationFilterSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/NotificationFilterSettings;->addPreferencesFromResource(I)V
 
     .line 106
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -682,45 +682,45 @@
     .line 108
     const-string v0, "enable_notification"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/NotificationFilterSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/NotificationFilterSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     .line 109
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vk:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 111
     const-string v0, "priority"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/NotificationFilterSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/NotificationFilterSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vl:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vl:Landroid/preference/CheckBoxPreference;
 
     .line 112
-    iget-boolean v0, p0, Lcom/android/settings/NotificationFilterSettings;->vs:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vs:Z
 
     if-nez v0, :cond_7
 
     .line 113
     const-string v0, "main_container"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/NotificationFilterSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/NotificationFilterSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iget-object v1, p0, Lcom/android/settings/NotificationFilterSettings;->vl:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vl:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
@@ -728,96 +728,96 @@
     :goto_3
     const-string v0, "show_floating_notification"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/NotificationFilterSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/NotificationFilterSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vn:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vn:Landroid/preference/CheckBoxPreference;
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vn:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vn:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 122
     const-string v0, "show_keyguard_notification"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/NotificationFilterSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/NotificationFilterSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vm:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vm:Landroid/preference/CheckBoxPreference;
 
     .line 123
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vm:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vm:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 125
     const-string v0, "show_home_message"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/NotificationFilterSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/NotificationFilterSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vo:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vo:Landroid/preference/CheckBoxPreference;
 
     .line 126
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vo:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vo:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 128
     const-string v0, "enable_notification_sound"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/NotificationFilterSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/NotificationFilterSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vp:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vp:Landroid/preference/CheckBoxPreference;
 
     .line 129
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vp:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vp:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 131
     const-string v0, "enable_notification_vibrate"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/NotificationFilterSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/NotificationFilterSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vq:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vq:Landroid/preference/CheckBoxPreference;
 
     .line 132
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vq:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vq:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 134
     const-string v0, "enable_notification_led"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/NotificationFilterSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/NotificationFilterSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vr:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vr:Landroid/preference/CheckBoxPreference;
 
     .line 135
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vr:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vr:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -843,11 +843,11 @@
     .line 92
     :cond_5
     :try_start_2
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
-    iget-object v4, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     const/4 v5, 0x0
 
@@ -861,7 +861,7 @@
     :try_start_3
     iget v3, v1, Landroid/content/pm/ApplicationInfo;->uid:I
 
-    iput v3, p0, Lcom/android/settings/NotificationFilterSettings;->mUid:I
+    iput v3, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mUid:I
     :try_end_3
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_3 .. :try_end_3} :catch_1
 
@@ -879,7 +879,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v5, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -907,7 +907,7 @@
 
     .line 116
     :cond_7
-    iget-object v0, p0, Lcom/android/settings/NotificationFilterSettings;->vl:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->vl:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -955,11 +955,11 @@
     if-eqz v1, :cond_3
 
     .line 212
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -1014,12 +1014,12 @@
     .line 238
     const-string v0, "app_packageName"
 
-    iget-object v2, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 239
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1027,7 +1027,7 @@
 
     .line 242
     :cond_2
-    invoke-direct {p0}, Lcom/android/settings/NotificationFilterSettings;->af()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->af()V
 
     .line 243
     const/4 v0, 0x1
@@ -1045,11 +1045,11 @@
     if-eqz v1, :cond_4
 
     .line 215
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     const-string v3, "_keyguard"
 
@@ -1072,13 +1072,13 @@
     if-eqz v1, :cond_5
 
     .line 218
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
-    iget v3, p0, Lcom/android/settings/NotificationFilterSettings;->mUid:I
+    iget v3, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mUid:I
 
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -1099,19 +1099,19 @@
     if-eqz v1, :cond_6
 
     .line 221
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
-    iget v3, p0, Lcom/android/settings/NotificationFilterSettings;->mUid:I
+    iget v3, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mUid:I
 
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v4
 
-    invoke-static {v1, v2, v3, v4}, Lcom/android/settings/aI;->a(Landroid/content/Context;Ljava/lang/String;IZ)Z
+    invoke-static {v1, v2, v3, v4}, Lcom/android/vendorsettings/aI;->a(Landroid/content/Context;Ljava/lang/String;IZ)Z
 
     goto/16 :goto_0
 
@@ -1126,11 +1126,11 @@
     if-eqz v1, :cond_7
 
     .line 224
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     const-string v3, "_message"
 
@@ -1153,11 +1153,11 @@
     if-eqz v1, :cond_8
 
     .line 227
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     const-string v3, "_sound"
 
@@ -1180,11 +1180,11 @@
     if-eqz v1, :cond_9
 
     .line 229
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     const-string v3, "_vibrate"
 
@@ -1207,11 +1207,11 @@
     if-eqz v1, :cond_0
 
     .line 232
-    invoke-virtual {p0}, Lcom/android/settings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/NotificationFilterSettings;->mPackageName:Ljava/lang/String;
 
     const-string v3, "_led"
 
@@ -1229,10 +1229,10 @@
 
     .prologue
     .line 141
-    invoke-direct {p0}, Lcom/android/settings/NotificationFilterSettings;->af()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/NotificationFilterSettings;->af()V
 
     .line 142
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 143
     return-void

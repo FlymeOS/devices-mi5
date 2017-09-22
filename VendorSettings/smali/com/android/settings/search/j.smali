@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/search/j;
+.class public Lcom/android/vendorsettings/search/j;
 .super Landroid/database/sqlite/SQLiteOpenHelper;
 .source "IndexDatabaseHelper.java"
 
@@ -6,7 +6,7 @@
 # static fields
 .field private static final apo:Ljava/lang/String;
 
-.field private static app:Lcom/android/settings/search/j;
+.field private static app:Lcom/android/vendorsettings/search/j;
 
 
 # direct methods
@@ -41,7 +41,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/search/j;->apo:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/search/j;->apo:Ljava/lang/String;
 
     return-void
 .end method
@@ -63,30 +63,30 @@
     return-void
 .end method
 
-.method public static declared-synchronized cg(Landroid/content/Context;)Lcom/android/settings/search/j;
+.method public static declared-synchronized cg(Landroid/content/Context;)Lcom/android/vendorsettings/search/j;
     .locals 2
 
     .prologue
     .line 137
-    const-class v1, Lcom/android/settings/search/j;
+    const-class v1, Lcom/android/vendorsettings/search/j;
 
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/search/j;->app:Lcom/android/settings/search/j;
+    sget-object v0, Lcom/android/vendorsettings/search/j;->app:Lcom/android/vendorsettings/search/j;
 
     if-nez v0, :cond_0
 
     .line 138
-    new-instance v0, Lcom/android/settings/search/j;
+    new-instance v0, Lcom/android/vendorsettings/search/j;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/search/j;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/search/j;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/android/settings/search/j;->app:Lcom/android/settings/search/j;
+    sput-object v0, Lcom/android/vendorsettings/search/j;->app:Lcom/android/vendorsettings/search/j;
 
     .line 140
     :cond_0
-    sget-object v0, Lcom/android/settings/search/j;->app:Lcom/android/settings/search/j;
+    sget-object v0, Lcom/android/vendorsettings/search/j;->app:Lcom/android/vendorsettings/search/j;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -123,7 +123,7 @@
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     .line 156
-    sget-object v0, Lcom/android/settings/search/j;->apo:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/search/j;->apo:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
@@ -143,10 +143,10 @@
 
     .prologue
     .line 194
-    invoke-direct {p0, p1}, Lcom/android/settings/search/j;->l(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/search/j;->l(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 195
-    invoke-direct {p0, p1}, Lcom/android/settings/search/j;->i(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/search/j;->i(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 196
     return-void
@@ -289,7 +289,7 @@
 
     .prologue
     .line 149
-    invoke-direct {p0, p1}, Lcom/android/settings/search/j;->i(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/search/j;->i(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 150
     return-void
@@ -345,7 +345,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 190
-    invoke-direct {p0, p1}, Lcom/android/settings/search/j;->j(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/search/j;->j(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 191
     return-void
@@ -388,7 +388,7 @@
     .line 166
     sget-object v0, Landroid/os/Build$VERSION;->INCREMENTAL:Ljava/lang/String;
 
-    invoke-direct {p0, p1}, Lcom/android/settings/search/j;->k(Landroid/database/sqlite/SQLiteDatabase;)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/search/j;->k(Landroid/database/sqlite/SQLiteDatabase;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -406,7 +406,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 169
-    invoke-direct {p0, p1}, Lcom/android/settings/search/j;->j(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/search/j;->j(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 173
     :goto_0
@@ -478,7 +478,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 181
-    invoke-direct {p0, p1}, Lcom/android/settings/search/j;->j(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/search/j;->j(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 183
     :cond_0

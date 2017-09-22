@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fingerprint/g;
+.class Lcom/android/vendorsettings/fingerprint/g;
 .super Ljava/lang/Object;
 .source "FingerprintEnrollEnrolling.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic abK:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+.field final synthetic abK:Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;)V
+.method constructor <init>(Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;)V
     .locals 0
 
     .prologue
     .line 344
-    iput-object p1, p0, Lcom/android/settings/fingerprint/g;->abK:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iput-object p1, p0, Lcom/android/vendorsettings/fingerprint/g;->abK:Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 347
-    iget-object v0, p0, Lcom/android/settings/fingerprint/g;->abK:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/g;->abK:Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;
 
-    iget-object v1, p0, Lcom/android/settings/fingerprint/g;->abK:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iget-object v1, p0, Lcom/android/vendorsettings/fingerprint/g;->abK:Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;
 
-    iget-object v1, v1, Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;->abp:[B
+    iget-object v1, v1, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;->abp:[B
 
-    invoke-static {v0, v1}, Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;->a(Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;[B)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;->a(Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;[B)V
 
     .line 348
     return-void

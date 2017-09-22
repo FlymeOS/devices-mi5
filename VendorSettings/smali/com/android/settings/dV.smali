@@ -1,4 +1,4 @@
-.class public abstract Lcom/android/settings/dV;
+.class public abstract Lcom/android/vendorsettings/dV;
 .super Ljava/lang/Object;
 .source "MiuiAnimationController.java"
 
@@ -24,11 +24,11 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 19
-    new-instance v0, Lcom/android/settings/dW;
+    new-instance v0, Lcom/android/vendorsettings/dW;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/dW;-><init>(Lcom/android/settings/dV;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/dW;-><init>(Lcom/android/vendorsettings/dV;)V
 
-    iput-object v0, p0, Lcom/android/settings/dV;->pW:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/vendorsettings/dV;->pW:Ljava/lang/Runnable;
 
     .line 27
     new-instance v0, Landroid/os/Handler;
@@ -43,21 +43,21 @@
 
     invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lcom/android/settings/dV;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/vendorsettings/dV;->mHandler:Landroid/os/Handler;
 
     .line 28
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/dV;->c(Landroid/content/Context;I)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/dV;->c(Landroid/content/Context;I)V
 
     .line 29
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/dV;)V
+.method static synthetic a(Lcom/android/vendorsettings/dV;)V
     .locals 0
 
     .prologue
     .line 10
-    invoke-direct {p0}, Lcom/android/settings/dV;->eN()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/dV;->eN()V
 
     return-void
 .end method
@@ -79,24 +79,24 @@
 
     check-cast v0, Landroid/graphics/drawable/StateListDrawable;
 
-    iput-object v0, p0, Lcom/android/settings/dV;->pT:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/android/vendorsettings/dV;->pT:Landroid/graphics/drawable/Drawable;
 
     .line 82
-    iget-object v0, p0, Lcom/android/settings/dV;->pT:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/android/vendorsettings/dV;->pT:Landroid/graphics/drawable/Drawable;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dV;->a(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Animatable;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dV;->a(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Animatable;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/dV;->pU:Landroid/graphics/drawable/Animatable;
+    iput-object v0, p0, Lcom/android/vendorsettings/dV;->pU:Landroid/graphics/drawable/Animatable;
 
     .line 83
-    iget-object v0, p0, Lcom/android/settings/dV;->pT:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/android/vendorsettings/dV;->pT:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, v1, v1}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
     .line 84
-    iget-object v0, p0, Lcom/android/settings/dV;->pU:Landroid/graphics/drawable/Animatable;
+    iget-object v0, p0, Lcom/android/vendorsettings/dV;->pU:Landroid/graphics/drawable/Animatable;
 
     invoke-interface {v0}, Landroid/graphics/drawable/Animatable;->stop()V
 
@@ -109,16 +109,16 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/android/settings/dV;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/dV;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/dV;->pW:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/vendorsettings/dV;->pW:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     .line 67
-    iget-object v0, p0, Lcom/android/settings/dV;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/dV;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/dV;->pW:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/vendorsettings/dV;->pW:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -131,7 +131,7 @@
 
     .prologue
     .line 71
-    iget-object v0, p0, Lcom/android/settings/dV;->pT:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/android/vendorsettings/dV;->pT:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getCallback()Landroid/graphics/drawable/Drawable$Callback;
 
@@ -152,14 +152,14 @@
 
     .line 74
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/dV;->pU:Landroid/graphics/drawable/Animatable;
+    iget-object v0, p0, Lcom/android/vendorsettings/dV;->pU:Landroid/graphics/drawable/Animatable;
 
     invoke-interface {v0}, Landroid/graphics/drawable/Animatable;->start()V
 
     .line 75
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/dV;->pV:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/dV;->pV:Z
 
     goto :goto_0
 .end method
@@ -174,7 +174,7 @@
 
     .prologue
     .line 32
-    iget-object v0, p0, Lcom/android/settings/dV;->pT:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/android/vendorsettings/dV;->pT:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method
@@ -184,7 +184,7 @@
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/dV;->pU:Landroid/graphics/drawable/Animatable;
+    iget-object v0, p0, Lcom/android/vendorsettings/dV;->pU:Landroid/graphics/drawable/Animatable;
 
     return-object v0
 .end method
@@ -194,7 +194,7 @@
 
     .prologue
     .line 50
-    iget-object v0, p0, Lcom/android/settings/dV;->pT:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/android/vendorsettings/dV;->pT:Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x1
 
@@ -203,7 +203,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
     .line 51
-    iget-object v0, p0, Lcom/android/settings/dV;->pT:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/android/vendorsettings/dV;->pT:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getCallback()Landroid/graphics/drawable/Drawable$Callback;
 
@@ -212,7 +212,7 @@
     if-eqz v0, :cond_0
 
     .line 52
-    invoke-direct {p0}, Lcom/android/settings/dV;->eN()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/dV;->eN()V
 
     .line 56
     :goto_0
@@ -220,7 +220,7 @@
 
     .line 54
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/dV;->eM()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/dV;->eM()V
 
     goto :goto_0
 .end method
@@ -232,22 +232,22 @@
     const/4 v1, 0x0
 
     .line 59
-    iget-object v0, p0, Lcom/android/settings/dV;->pT:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/android/vendorsettings/dV;->pT:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, v1, v1}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
     .line 60
-    iget-object v0, p0, Lcom/android/settings/dV;->pU:Landroid/graphics/drawable/Animatable;
+    iget-object v0, p0, Lcom/android/vendorsettings/dV;->pU:Landroid/graphics/drawable/Animatable;
 
     invoke-interface {v0}, Landroid/graphics/drawable/Animatable;->stop()V
 
     .line 61
-    iput-boolean v1, p0, Lcom/android/settings/dV;->pV:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/dV;->pV:Z
 
     .line 62
-    iget-object v0, p0, Lcom/android/settings/dV;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/dV;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/dV;->pW:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/vendorsettings/dV;->pW:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 

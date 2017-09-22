@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloudbackup/a;
+.class public Lcom/android/vendorsettings/cloudbackup/a;
 .super Ljava/lang/Object;
 .source "AdvancedSettingsCloudBackupHelper.java"
 
@@ -61,14 +61,14 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/cloudbackup/a;->Ut:[Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/cloudbackup/a;->Ut:[Ljava/lang/String;
 
     .line 82
     new-array v0, v3, [I
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/cloudbackup/a;->Uu:[I
+    sput-object v0, Lcom/android/vendorsettings/cloudbackup/a;->Uu:[I
 
     return-void
 
@@ -134,7 +134,7 @@
     .line 40
     const-string v1, "CKLed"
 
-    invoke-static {p0}, Lcom/android/settings/cloudbackup/a;->aS(Landroid/content/Context;)Lorg/json/JSONObject;
+    invoke-static {p0}, Lcom/android/vendorsettings/cloudbackup/a;->aS(Landroid/content/Context;)Lorg/json/JSONObject;
 
     move-result-object v2
 
@@ -197,19 +197,19 @@
     const/4 v0, 0x0
 
     :goto_0
-    sget-object v1, Lcom/android/settings/cloudbackup/a;->Ut:[Ljava/lang/String;
+    sget-object v1, Lcom/android/vendorsettings/cloudbackup/a;->Ut:[Ljava/lang/String;
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_2
 
     .line 94
-    sget-object v1, Lcom/android/settings/cloudbackup/a;->Ut:[Ljava/lang/String;
+    sget-object v1, Lcom/android/vendorsettings/cloudbackup/a;->Ut:[Ljava/lang/String;
 
     aget-object v5, v1, v0
 
     .line 95
-    sget-object v1, Lcom/android/settings/cloudbackup/a;->Uu:[I
+    sget-object v1, Lcom/android/vendorsettings/cloudbackup/a;->Uu:[I
 
     aget v1, v1, v0
 
@@ -368,7 +368,7 @@
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Lcom/android/settings/cloudbackup/a;->c(Landroid/content/Context;Lorg/json/JSONObject;)V
+    invoke-static {p0, v0}, Lcom/android/vendorsettings/cloudbackup/a;->c(Landroid/content/Context;Lorg/json/JSONObject;)V
 
     goto :goto_0
 .end method
@@ -386,7 +386,7 @@
 
     .line 118
     :cond_1
-    sget-object v1, Lcom/android/settings/cloudbackup/a;->Ut:[Ljava/lang/String;
+    sget-object v1, Lcom/android/vendorsettings/cloudbackup/a;->Ut:[Ljava/lang/String;
 
     array-length v2, v1
 

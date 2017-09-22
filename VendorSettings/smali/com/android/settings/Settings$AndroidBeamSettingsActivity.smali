@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/Settings$AndroidBeamSettingsActivity;
-.super Lcom/android/settings/hn;
+.class public Lcom/android/vendorsettings/Settings$AndroidBeamSettingsActivity;
+.super Lcom/android/vendorsettings/hn;
 .source "Settings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 89
-    invoke-direct {p0}, Lcom/android/settings/hn;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/hn;-><init>()V
 
     return-void
 .end method

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;
-.super Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;
+.class public Lcom/android/vendorsettings/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;
+.super Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;
 .source "SetupRedactionInterstitial.java"
 
 # interfaces
@@ -12,7 +12,7 @@
 
     .prologue
     .line 70
-    invoke-direct {p0}, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;-><init>()V
 
     return-void
 .end method
@@ -24,7 +24,7 @@
 
     .prologue
     .line 95
-    invoke-virtual {p0}, Lcom/android/settings/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -44,11 +44,11 @@
 
     .prologue
     .line 103
-    invoke-virtual {p0}, Lcom/android/settings/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/SetupRedactionInterstitial;
+    check-cast v0, Lcom/android/vendorsettings/SetupRedactionInterstitial;
 
     .line 104
     if-eqz v0, :cond_0
@@ -56,14 +56,14 @@
     .line 105
     const/4 v1, -0x1
 
-    invoke-virtual {v0}, Lcom/android/settings/SetupRedactionInterstitial;->hL()Landroid/content/Intent;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/SetupRedactionInterstitial;->hL()Landroid/content/Intent;
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/SetupRedactionInterstitial;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/vendorsettings/SetupRedactionInterstitial;->setResult(ILandroid/content/Intent;)V
 
     .line 106
-    invoke-virtual {p0}, Lcom/android/settings/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;->finish()V
 
     .line 108
     :cond_0
@@ -91,7 +91,7 @@
 
     .prologue
     .line 83
-    invoke-super {p0, p1, p2}, Lcom/android/settings/notification/RedactionInterstitial$RedactionInterstitialFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/notification/RedactionInterstitial$RedactionInterstitialFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 84
     const v0, 0x7f1300f6
@@ -120,11 +120,11 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 90
-    invoke-virtual {p0}, Lcom/android/settings/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/hH;->a(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/hH;->a(Landroid/app/Activity;)V
 
     .line 91
     return-void

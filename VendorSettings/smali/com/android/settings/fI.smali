@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fI;
+.class Lcom/android/vendorsettings/fI;
 .super Ljava/lang/Object;
 .source "NewFingerprintInternalActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic vb:Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;
+.field final synthetic vb:Lcom/android/vendorsettings/NewFingerprintInternalActivity$NewFingerprintFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/NewFingerprintInternalActivity$NewFingerprintFragment;)V
     .locals 0
 
     .prologue
     .line 164
-    iput-object p1, p0, Lcom/android/settings/fI;->vb:Lcom/android/settings/NewFingerprintInternalActivity$NewFingerprintFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/fI;->vb:Lcom/android/vendorsettings/NewFingerprintInternalActivity$NewFingerprintFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

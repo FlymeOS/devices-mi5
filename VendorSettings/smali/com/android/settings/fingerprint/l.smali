@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fingerprint/l;
+.class public Lcom/android/vendorsettings/fingerprint/l;
 .super Landroid/app/DialogFragment;
 .source "FingerprintEnrollEnrolling.java"
 
@@ -23,7 +23,7 @@
     .line 387
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/fingerprint/l;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fingerprint/l;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -44,9 +44,9 @@
 
     const v2, 0x7f0c01fe
 
-    new-instance v3, Lcom/android/settings/fingerprint/m;
+    new-instance v3, Lcom/android/vendorsettings/fingerprint/m;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/fingerprint/m;-><init>(Lcom/android/settings/fingerprint/l;)V
+    invoke-direct {v3, p0}, Lcom/android/vendorsettings/fingerprint/m;-><init>(Lcom/android/vendorsettings/fingerprint/l;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

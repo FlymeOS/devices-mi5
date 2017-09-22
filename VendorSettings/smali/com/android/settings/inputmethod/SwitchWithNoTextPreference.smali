@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/SwitchWithNoTextPreference;
+.class Lcom/android/vendorsettings/inputmethod/SwitchWithNoTextPreference;
 .super Landroid/preference/SwitchPreference;
 .source "SwitchWithNoTextPreference.java"
 
@@ -14,12 +14,12 @@
     .line 27
     const-string v0, ""
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/inputmethod/SwitchWithNoTextPreference;->setSwitchTextOn(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/inputmethod/SwitchWithNoTextPreference;->setSwitchTextOn(Ljava/lang/CharSequence;)V
 
     .line 28
     const-string v0, ""
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/inputmethod/SwitchWithNoTextPreference;->setSwitchTextOff(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/inputmethod/SwitchWithNoTextPreference;->setSwitchTextOff(Ljava/lang/CharSequence;)V
 
     .line 29
     return-void

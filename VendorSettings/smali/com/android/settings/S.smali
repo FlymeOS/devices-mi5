@@ -1,4 +1,4 @@
-.class Lcom/android/settings/S;
+.class Lcom/android/vendorsettings/S;
 .super Ljava/lang/Object;
 .source "AutoDisableScreenButtonsAppListSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic bI:Lcom/android/settings/R;
+.field final synthetic bI:Lcom/android/vendorsettings/R;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/R;)V
+.method constructor <init>(Lcom/android/vendorsettings/R;)V
     .locals 0
 
     .prologue
     .line 355
-    iput-object p1, p0, Lcom/android/settings/S;->bI:Lcom/android/settings/R;
+    iput-object p1, p0, Lcom/android/vendorsettings/S;->bI:Lcom/android/vendorsettings/R;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,12 +36,12 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/V;
+    check-cast v0, Lcom/android/vendorsettings/V;
 
     .line 360
-    iget-object v1, p0, Lcom/android/settings/S;->bI:Lcom/android/settings/R;
+    iget-object v1, p0, Lcom/android/vendorsettings/S;->bI:Lcom/android/vendorsettings/R;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/R;->a(Lcom/android/settings/V;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/R;->a(Lcom/android/vendorsettings/V;)V
 
     .line 361
     return-void

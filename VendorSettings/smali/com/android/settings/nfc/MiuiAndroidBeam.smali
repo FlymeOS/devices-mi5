@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/nfc/MiuiAndroidBeam;
-.super Lcom/android/settings/BaseFragment;
+.class public Lcom/android/vendorsettings/nfc/MiuiAndroidBeam;
+.super Lcom/android/vendorsettings/BaseFragment;
 .source "MiuiAndroidBeam.java"
 
 
@@ -15,27 +15,27 @@
 
     .prologue
     .line 33
-    invoke-direct {p0}, Lcom/android/settings/BaseFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/BaseFragment;-><init>()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/nfc/MiuiAndroidBeam;)Lmiui/widget/SlidingButton;
+.method static synthetic a(Lcom/android/vendorsettings/nfc/MiuiAndroidBeam;)Lmiui/widget/SlidingButton;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/android/settings/nfc/MiuiAndroidBeam;->aif:Lmiui/widget/SlidingButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/nfc/MiuiAndroidBeam;->aif:Lmiui/widget/SlidingButton;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/nfc/MiuiAndroidBeam;)Landroid/nfc/NfcAdapter;
+.method static synthetic b(Lcom/android/vendorsettings/nfc/MiuiAndroidBeam;)Landroid/nfc/NfcAdapter;
     .locals 1
 
     .prologue
     .line 33
-    iget-object v0, p0, Lcom/android/settings/nfc/MiuiAndroidBeam;->um:Landroid/nfc/NfcAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/nfc/MiuiAndroidBeam;->um:Landroid/nfc/NfcAdapter;
 
     return-object v0
 .end method
@@ -45,7 +45,7 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/android/settings/nfc/MiuiAndroidBeam;->um:Landroid/nfc/NfcAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/nfc/MiuiAndroidBeam;->um:Landroid/nfc/NfcAdapter;
 
     if-nez v0, :cond_0
 
@@ -63,12 +63,12 @@
 
     check-cast v0, Lmiui/widget/SlidingButton;
 
-    iput-object v0, p0, Lcom/android/settings/nfc/MiuiAndroidBeam;->aif:Lmiui/widget/SlidingButton;
+    iput-object v0, p0, Lcom/android/vendorsettings/nfc/MiuiAndroidBeam;->aif:Lmiui/widget/SlidingButton;
 
     .line 60
-    iget-object v0, p0, Lcom/android/settings/nfc/MiuiAndroidBeam;->aif:Lmiui/widget/SlidingButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/nfc/MiuiAndroidBeam;->aif:Lmiui/widget/SlidingButton;
 
-    iget-object v1, p0, Lcom/android/settings/nfc/MiuiAndroidBeam;->um:Landroid/nfc/NfcAdapter;
+    iget-object v1, p0, Lcom/android/vendorsettings/nfc/MiuiAndroidBeam;->um:Landroid/nfc/NfcAdapter;
 
     invoke-virtual {v1}, Landroid/nfc/NfcAdapter;->isNdefPushEnabled()Z
 
@@ -77,11 +77,11 @@
     invoke-virtual {v0, v1}, Lmiui/widget/SlidingButton;->setChecked(Z)V
 
     .line 61
-    iget-object v0, p0, Lcom/android/settings/nfc/MiuiAndroidBeam;->aif:Lmiui/widget/SlidingButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/nfc/MiuiAndroidBeam;->aif:Lmiui/widget/SlidingButton;
 
-    new-instance v1, Lcom/android/settings/nfc/MiuiAndroidBeam$1;
+    new-instance v1, Lcom/android/vendorsettings/nfc/MiuiAndroidBeam$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/nfc/MiuiAndroidBeam$1;-><init>(Lcom/android/settings/nfc/MiuiAndroidBeam;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/nfc/MiuiAndroidBeam$1;-><init>(Lcom/android/vendorsettings/nfc/MiuiAndroidBeam;)V
 
     invoke-virtual {v0, v1}, Lmiui/widget/SlidingButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
@@ -104,7 +104,7 @@
     move-result-object v0
 
     .line 51
-    invoke-direct {p0, v0}, Lcom/android/settings/nfc/MiuiAndroidBeam;->e(Landroid/view/View;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/nfc/MiuiAndroidBeam;->e(Landroid/view/View;)V
 
     .line 52
     return-object v0
@@ -115,10 +115,10 @@
 
     .prologue
     .line 39
-    invoke-super {p0, p1}, Lcom/android/settings/BaseFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/BaseFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 41
-    invoke-virtual {p0}, Lcom/android/settings/nfc/MiuiAndroidBeam;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/nfc/MiuiAndroidBeam;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -126,15 +126,15 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/nfc/MiuiAndroidBeam;->um:Landroid/nfc/NfcAdapter;
+    iput-object v0, p0, Lcom/android/vendorsettings/nfc/MiuiAndroidBeam;->um:Landroid/nfc/NfcAdapter;
 
     .line 42
-    iget-object v0, p0, Lcom/android/settings/nfc/MiuiAndroidBeam;->um:Landroid/nfc/NfcAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/nfc/MiuiAndroidBeam;->um:Landroid/nfc/NfcAdapter;
 
     if-nez v0, :cond_0
 
     .line 43
-    invoke-virtual {p0}, Lcom/android/settings/nfc/MiuiAndroidBeam;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/nfc/MiuiAndroidBeam;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

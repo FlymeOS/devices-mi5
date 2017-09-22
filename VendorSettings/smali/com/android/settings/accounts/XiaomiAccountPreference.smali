@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/accounts/XiaomiAccountPreference;
-.super Lcom/android/settings/i;
+.class public Lcom/android/vendorsettings/accounts/XiaomiAccountPreference;
+.super Lcom/android/vendorsettings/i;
 .source "XiaomiAccountPreference.java"
 
 
@@ -21,7 +21,7 @@
 
     move-object v4, p4
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/i;-><init>(Landroid/content/Context;Landroid/accounts/Account;Landroid/graphics/drawable/Drawable;Ljava/util/ArrayList;Z)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/i;-><init>(Landroid/content/Context;Landroid/accounts/Account;Landroid/graphics/drawable/Drawable;Ljava/util/ArrayList;Z)V
 
     .line 24
     new-instance v0, Landroid/content/Intent;
@@ -36,7 +36,7 @@
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
     .line 26
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/XiaomiAccountPreference;->setIntent(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accounts/XiaomiAccountPreference;->setIntent(Landroid/content/Intent;)V
 
     .line 29
     invoke-static {p1}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
@@ -60,7 +60,7 @@
     .line 32
     const v0, 0x7f0c0e07
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/XiaomiAccountPreference;->setTitle(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accounts/XiaomiAccountPreference;->setTitle(I)V
 
     .line 34
     :cond_0
@@ -74,7 +74,7 @@
 
     .prologue
     .line 38
-    invoke-virtual {p0}, Lcom/android/settings/accounts/XiaomiAccountPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/XiaomiAccountPreference;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -84,7 +84,7 @@
 
     move-result-object v0
 
-    invoke-super {p0, v0}, Lcom/android/settings/i;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-super {p0, v0}, Lcom/android/vendorsettings/i;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 39
     return-void

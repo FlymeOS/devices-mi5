@@ -1,19 +1,19 @@
-.class Lcom/android/settings/gd;
+.class Lcom/android/vendorsettings/gd;
 .super Landroid/database/ContentObserver;
 .source "PointerSpeedPreference.java"
 
 
 # instance fields
-.field final synthetic vN:Lcom/android/settings/PointerSpeedPreference;
+.field final synthetic vN:Lcom/android/vendorsettings/PointerSpeedPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/PointerSpeedPreference;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/vendorsettings/PointerSpeedPreference;Landroid/os/Handler;)V
     .locals 0
 
     .prologue
     .line 44
-    iput-object p1, p0, Lcom/android/settings/gd;->vN:Lcom/android/settings/PointerSpeedPreference;
+    iput-object p1, p0, Lcom/android/vendorsettings/gd;->vN:Lcom/android/vendorsettings/PointerSpeedPreference;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/android/settings/gd;->vN:Lcom/android/settings/PointerSpeedPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/gd;->vN:Lcom/android/vendorsettings/PointerSpeedPreference;
 
-    invoke-static {v0}, Lcom/android/settings/PointerSpeedPreference;->a(Lcom/android/settings/PointerSpeedPreference;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/PointerSpeedPreference;->a(Lcom/android/vendorsettings/PointerSpeedPreference;)V
 
     .line 48
     return-void

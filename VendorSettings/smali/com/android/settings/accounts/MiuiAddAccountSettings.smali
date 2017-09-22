@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/accounts/MiuiAddAccountSettings;
-.super Lcom/android/settings/MiuiSettings;
+.class public Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;
+.super Lcom/android/vendorsettings/MiuiSettings;
 .source "MiuiAddAccountSettings.java"
 
 
@@ -13,17 +13,17 @@
 
     .prologue
     .line 16
-    invoke-direct {p0}, Lcom/android/settings/MiuiSettings;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiSettings;-><init>()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/accounts/MiuiAddAccountSettings;)V
+.method static synthetic a(Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;)V
     .locals 0
 
     .prologue
     .line 16
-    invoke-direct {p0}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->jq()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->jq()V
 
     return-void
 .end method
@@ -36,7 +36,7 @@
 
     .line 49
     .line 50
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -74,7 +74,7 @@
     .line 98
     const-string v1, "account_setup_wizard"
 
-    invoke-direct {p0}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->jl()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->jl()Z
 
     move-result v2
 
@@ -83,7 +83,7 @@
     .line 99
     const/4 v1, 0x1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 100
     return-void
@@ -96,10 +96,10 @@
     .line 126
     const/4 v0, -0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->setResult(I)V
 
     .line 127
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->finish()V
 
     .line 128
     return-void
@@ -116,25 +116,25 @@
     .line 33
     const v0, 0x7f040006
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->setContentView(I)V
 
     .line 34
-    new-instance v0, Lcom/android/settings/fq;
+    new-instance v0, Lcom/android/vendorsettings/fq;
 
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->getHeaders()Ljava/util/List;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->getHeaders()Ljava/util/List;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->fT()Lcom/android/settings/accounts/AuthenticatorHelper;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->fT()Lcom/android/vendorsettings/accounts/AuthenticatorHelper;
 
     move-result-object v2
 
-    invoke-direct {v0, p0, v1, v2, v3}, Lcom/android/settings/fq;-><init>(Landroid/app/Activity;Ljava/util/List;Lcom/android/settings/accounts/AuthenticatorHelper;Z)V
+    invoke-direct {v0, p0, v1, v2, v3}, Lcom/android/vendorsettings/fq;-><init>(Landroid/app/Activity;Ljava/util/List;Lcom/android/vendorsettings/accounts/AuthenticatorHelper;Z)V
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->setListAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->setListAdapter(Landroid/widget/ListAdapter;)V
 
     .line 36
-    invoke-direct {p0}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->jl()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->jl()Z
 
     move-result v0
 
@@ -143,7 +143,7 @@
     .line 37
     const v0, 0x7f13000e
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -153,9 +153,9 @@
     invoke-virtual {v0, v3}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 39
-    new-instance v1, Lcom/android/settings/accounts/MiuiAddAccountSettings$1;
+    new-instance v1, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/accounts/MiuiAddAccountSettings$1;-><init>(Lcom/android/settings/accounts/MiuiAddAccountSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings$1;-><init>(Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -169,7 +169,7 @@
 
     .prologue
     .line 71
-    invoke-super {p0, p1}, Lcom/android/settings/MiuiSettings;->k(Ljava/util/List;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/MiuiSettings;->k(Ljava/util/List;)V
 
     .line 73
     invoke-interface {p1}, Ljava/util/List;->size()I
@@ -248,7 +248,7 @@
     if-nez v0, :cond_0
 
     .line 109
-    invoke-direct {p0}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->jp()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->jp()V
 
     goto :goto_0
 
@@ -256,7 +256,7 @@
     :cond_0
     const v0, 0x7f13000d
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -268,7 +268,7 @@
 
     .line 114
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->jq()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->jq()V
 
     goto :goto_0
 
@@ -292,17 +292,17 @@
 
     .prologue
     .line 61
-    iget-boolean v0, p0, Lcom/android/settings/accounts/MiuiAddAccountSettings;->mCreated:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->mCreated:Z
 
     if-eqz v0, :cond_0
 
     .line 62
     const v0, 0x7f08000b
 
-    invoke-virtual {p0, v0, p1}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->loadHeadersFromResource(ILjava/util/List;)V
+    invoke-virtual {p0, v0, p1}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->loadHeadersFromResource(ILjava/util/List;)V
 
     .line 63
-    invoke-virtual {p0, p1}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->k(Ljava/util/List;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->k(Ljava/util/List;)V
 
     .line 67
     :goto_0
@@ -310,7 +310,7 @@
 
     .line 65
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->invalidateHeaders()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->invalidateHeaders()V
 
     goto :goto_0
 .end method
@@ -320,15 +320,15 @@
 
     .prologue
     .line 24
-    invoke-super {p0, p1}, Lcom/android/settings/MiuiSettings;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/MiuiSettings;->onCreate(Landroid/os/Bundle;)V
 
     .line 26
-    invoke-direct {p0}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->jp()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->jp()V
 
     .line 28
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/accounts/MiuiAddAccountSettings;->mCreated:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->mCreated:Z
 
     .line 29
     return-void
@@ -349,7 +349,7 @@
     if-ne v0, v1, :cond_0
 
     .line 89
-    invoke-direct {p0}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->jp()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/MiuiAddAccountSettings;->jp()V
 
     .line 93
     :goto_0
@@ -357,7 +357,7 @@
 
     .line 91
     :cond_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/MiuiSettings;->onHeaderClick(Landroid/preference/PreferenceActivity$Header;I)V
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/MiuiSettings;->onHeaderClick(Landroid/preference/PreferenceActivity$Header;I)V
 
     goto :goto_0
 .end method

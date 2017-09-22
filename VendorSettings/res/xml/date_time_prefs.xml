@@ -8,5 +8,5 @@
     <CheckBoxPreference android:title="@string/date_time_24hour" android:key="24 hour" />
     <PreferenceCategory android:title="@string/timezone_settings" />
     <CheckBoxPreference android:title="@string/zone_auto" android:key="auto_zone" android:summaryOn="@string/zone_auto_summaryOn" android:summaryOff="@string/zone_auto_summaryOff" />
-    <PreferenceScreen android:title="@string/date_time_set_timezone" android:key="timezone" android:summary="GMT-8:00" android:fragment="com.android.settings.MiuiZonePicker" />
+    <PreferenceScreen android:title="@string/date_time_set_timezone" android:key="timezone" android:summary="GMT-8:00" android:fragment="com.android.vendorsettings.MiuiZonePicker" />
 </PreferenceScreen>

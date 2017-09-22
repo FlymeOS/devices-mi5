@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fingerprint/b;
+.class Lcom/android/vendorsettings/fingerprint/b;
 .super Ljava/lang/Object;
 .source "FingerprintEnrollEnrolling.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic abK:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+.field final synthetic abK:Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;)V
+.method constructor <init>(Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;)V
     .locals 0
 
     .prologue
     .line 107
-    iput-object p1, p0, Lcom/android/settings/fingerprint/b;->abK:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iput-object p1, p0, Lcom/android/vendorsettings/fingerprint/b;->abK:Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,23 +41,23 @@
     if-nez v0, :cond_2
 
     .line 111
-    iget-object v0, p0, Lcom/android/settings/fingerprint/b;->abK:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/b;->abK:Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;
 
-    invoke-static {v0}, Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;->a(Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;)I
+    invoke-static {v0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;->a(Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;)I
 
     .line 112
-    iget-object v0, p0, Lcom/android/settings/fingerprint/b;->abK:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/b;->abK:Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;
 
-    invoke-static {v0}, Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;->b(Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;)I
+    invoke-static {v0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;->b(Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;)I
 
     move-result v0
 
     if-ne v0, v1, :cond_1
 
     .line 113
-    iget-object v0, p0, Lcom/android/settings/fingerprint/b;->abK:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/b;->abK:Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;
 
-    invoke-static {v0}, Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;->c(Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;->c(Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;)V
 
     .line 122
     :cond_0
@@ -66,15 +66,15 @@
 
     .line 115
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/fingerprint/b;->abK:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/b;->abK:Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;
 
-    invoke-static {v0}, Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;->e(Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;->e(Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;)Landroid/widget/ImageView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/fingerprint/b;->abK:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iget-object v1, p0, Lcom/android/vendorsettings/fingerprint/b;->abK:Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;
 
-    invoke-static {v1}, Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;->d(Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;)Ljava/lang/Runnable;
+    invoke-static {v1}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;->d(Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;)Ljava/lang/Runnable;
 
     move-result-object v1
 
@@ -100,15 +100,15 @@
 
     .line 120
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/fingerprint/b;->abK:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/b;->abK:Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;
 
-    invoke-static {v0}, Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;->e(Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;->e(Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;)Landroid/widget/ImageView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/fingerprint/b;->abK:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iget-object v1, p0, Lcom/android/vendorsettings/fingerprint/b;->abK:Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;
 
-    invoke-static {v1}, Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;->d(Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;)Ljava/lang/Runnable;
+    invoke-static {v1}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;->d(Lcom/android/vendorsettings/fingerprint/FingerprintEnrollEnrolling;)Ljava/lang/Runnable;
 
     move-result-object v1
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/io;
+.class Lcom/android/vendorsettings/io;
 .super Ljava/lang/Object;
 .source "TrustedCredentialsSettings.java"
 
@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field private final BA:Lcom/android/settings/iq;
+.field private final BA:Lcom/android/vendorsettings/iq;
 
 .field private final BD:Landroid/security/IKeyChainService;
 
-.field private final Bz:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+.field private final Bz:Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
 .field public mProfileId:I
 
@@ -29,7 +29,7 @@
 
 
 # direct methods
-.method private constructor <init>(Landroid/security/IKeyChainService;Lcom/android/settings/iq;Lcom/android/settings/TrustedCredentialsSettings$Tab;Ljava/lang/String;Ljava/security/cert/X509Certificate;I)V
+.method private constructor <init>(Landroid/security/IKeyChainService;Lcom/android/vendorsettings/iq;Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;Ljava/lang/String;Ljava/security/cert/X509Certificate;I)V
     .locals 4
 
     .prologue
@@ -37,32 +37,32 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 539
-    iput p6, p0, Lcom/android/settings/io;->mProfileId:I
+    iput p6, p0, Lcom/android/vendorsettings/io;->mProfileId:I
 
     .line 540
-    iput-object p1, p0, Lcom/android/settings/io;->BD:Landroid/security/IKeyChainService;
+    iput-object p1, p0, Lcom/android/vendorsettings/io;->BD:Landroid/security/IKeyChainService;
 
     .line 541
-    iput-object p2, p0, Lcom/android/settings/io;->BA:Lcom/android/settings/iq;
+    iput-object p2, p0, Lcom/android/vendorsettings/io;->BA:Lcom/android/vendorsettings/iq;
 
     .line 542
-    iput-object p3, p0, Lcom/android/settings/io;->Bz:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    iput-object p3, p0, Lcom/android/vendorsettings/io;->Bz:Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     .line 543
-    iput-object p4, p0, Lcom/android/settings/io;->sD:Ljava/lang/String;
+    iput-object p4, p0, Lcom/android/vendorsettings/io;->sD:Ljava/lang/String;
 
     .line 544
-    iput-object p5, p0, Lcom/android/settings/io;->sE:Ljava/security/cert/X509Certificate;
+    iput-object p5, p0, Lcom/android/vendorsettings/io;->sE:Ljava/security/cert/X509Certificate;
 
     .line 546
     new-instance v0, Landroid/net/http/SslCertificate;
 
     invoke-direct {v0, p5}, Landroid/net/http/SslCertificate;-><init>(Ljava/security/cert/X509Certificate;)V
 
-    iput-object v0, p0, Lcom/android/settings/io;->sF:Landroid/net/http/SslCertificate;
+    iput-object v0, p0, Lcom/android/vendorsettings/io;->sF:Landroid/net/http/SslCertificate;
 
     .line 548
-    iget-object v0, p0, Lcom/android/settings/io;->sF:Landroid/net/http/SslCertificate;
+    iget-object v0, p0, Lcom/android/vendorsettings/io;->sF:Landroid/net/http/SslCertificate;
 
     invoke-virtual {v0}, Landroid/net/http/SslCertificate;->getIssuedTo()Landroid/net/http/SslCertificate$DName;
 
@@ -73,7 +73,7 @@
     move-result-object v0
 
     .line 549
-    iget-object v1, p0, Lcom/android/settings/io;->sF:Landroid/net/http/SslCertificate;
+    iget-object v1, p0, Lcom/android/vendorsettings/io;->sF:Landroid/net/http/SslCertificate;
 
     invoke-virtual {v1}, Landroid/net/http/SslCertificate;->getIssuedTo()Landroid/net/http/SslCertificate$DName;
 
@@ -84,7 +84,7 @@
     move-result-object v1
 
     .line 550
-    iget-object v2, p0, Lcom/android/settings/io;->sF:Landroid/net/http/SslCertificate;
+    iget-object v2, p0, Lcom/android/vendorsettings/io;->sF:Landroid/net/http/SslCertificate;
 
     invoke-virtual {v2}, Landroid/net/http/SslCertificate;->getIssuedTo()Landroid/net/http/SslCertificate$DName;
 
@@ -109,25 +109,25 @@
     if-nez v3, :cond_0
 
     .line 556
-    iput-object v1, p0, Lcom/android/settings/io;->sG:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/io;->sG:Ljava/lang/String;
 
     .line 557
-    iput-object v0, p0, Lcom/android/settings/io;->sH:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/io;->sH:Ljava/lang/String;
 
     .line 572
     :goto_0
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/io;->Bz:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    iget-object v0, p0, Lcom/android/vendorsettings/io;->Bz:Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
-    iget-object v1, p0, Lcom/android/settings/io;->BD:Landroid/security/IKeyChainService;
+    iget-object v1, p0, Lcom/android/vendorsettings/io;->BD:Landroid/security/IKeyChainService;
 
-    iget-object v2, p0, Lcom/android/settings/io;->sD:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/io;->sD:Ljava/lang/String;
 
-    invoke-static {v0, v1, v2}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->a(Lcom/android/settings/TrustedCredentialsSettings$Tab;Landroid/security/IKeyChainService;Ljava/lang/String;)Z
+    invoke-static {v0, v1, v2}, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->a(Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;Landroid/security/IKeyChainService;Ljava/lang/String;)Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/io;->sI:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/io;->sI:Z
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -137,10 +137,10 @@
 
     .line 559
     :cond_0
-    iput-object v1, p0, Lcom/android/settings/io;->sG:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/io;->sG:Ljava/lang/String;
 
     .line 560
-    iput-object v2, p0, Lcom/android/settings/io;->sH:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/vendorsettings/io;->sH:Ljava/lang/String;
 
     goto :goto_0
 
@@ -153,18 +153,18 @@
     if-nez v1, :cond_2
 
     .line 564
-    iput-object v0, p0, Lcom/android/settings/io;->sG:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/io;->sG:Ljava/lang/String;
 
     .line 565
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/io;->sH:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/io;->sH:Ljava/lang/String;
 
     goto :goto_0
 
     .line 567
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/io;->sF:Landroid/net/http/SslCertificate;
+    iget-object v0, p0, Lcom/android/vendorsettings/io;->sF:Landroid/net/http/SslCertificate;
 
     invoke-virtual {v0}, Landroid/net/http/SslCertificate;->getIssuedTo()Landroid/net/http/SslCertificate$DName;
 
@@ -174,12 +174,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/io;->sG:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/io;->sG:Ljava/lang/String;
 
     .line 568
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/io;->sH:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/io;->sH:Ljava/lang/String;
 
     goto :goto_0
 
@@ -200,7 +200,7 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/io;->sD:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/io;->sD:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -221,111 +221,111 @@
     .line 576
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/io;->sI:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/io;->sI:Z
 
     goto :goto_1
 .end method
 
-.method synthetic constructor <init>(Landroid/security/IKeyChainService;Lcom/android/settings/iq;Lcom/android/settings/TrustedCredentialsSettings$Tab;Ljava/lang/String;Ljava/security/cert/X509Certificate;ILcom/android/settings/id;)V
+.method synthetic constructor <init>(Landroid/security/IKeyChainService;Lcom/android/vendorsettings/iq;Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;Ljava/lang/String;Ljava/security/cert/X509Certificate;ILcom/android/vendorsettings/id;)V
     .locals 0
 
     .prologue
     .line 520
-    invoke-direct/range {p0 .. p6}, Lcom/android/settings/io;-><init>(Landroid/security/IKeyChainService;Lcom/android/settings/iq;Lcom/android/settings/TrustedCredentialsSettings$Tab;Ljava/lang/String;Ljava/security/cert/X509Certificate;I)V
+    invoke-direct/range {p0 .. p6}, Lcom/android/vendorsettings/io;-><init>(Landroid/security/IKeyChainService;Lcom/android/vendorsettings/iq;Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;Ljava/lang/String;Ljava/security/cert/X509Certificate;I)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/io;Z)Z
+.method static synthetic a(Lcom/android/vendorsettings/io;Z)Z
     .locals 0
 
     .prologue
     .line 520
-    iput-boolean p1, p0, Lcom/android/settings/io;->sI:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/io;->sI:Z
 
     return p1
 .end method
 
-.method static synthetic d(Lcom/android/settings/io;)Z
+.method static synthetic d(Lcom/android/vendorsettings/io;)Z
     .locals 1
 
     .prologue
     .line 520
-    iget-boolean v0, p0, Lcom/android/settings/io;->sI:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/io;->sI:Z
 
     return v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/io;)Lcom/android/settings/TrustedCredentialsSettings$Tab;
+.method static synthetic e(Lcom/android/vendorsettings/io;)Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
     .locals 1
 
     .prologue
     .line 520
-    iget-object v0, p0, Lcom/android/settings/io;->Bz:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    iget-object v0, p0, Lcom/android/vendorsettings/io;->Bz:Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     return-object v0
 .end method
 
-.method static synthetic f(Lcom/android/settings/io;)Lcom/android/settings/iq;
+.method static synthetic f(Lcom/android/vendorsettings/io;)Lcom/android/vendorsettings/iq;
     .locals 1
 
     .prologue
     .line 520
-    iget-object v0, p0, Lcom/android/settings/io;->BA:Lcom/android/settings/iq;
+    iget-object v0, p0, Lcom/android/vendorsettings/io;->BA:Lcom/android/vendorsettings/iq;
 
     return-object v0
 .end method
 
-.method static synthetic g(Lcom/android/settings/io;)Ljava/lang/String;
+.method static synthetic g(Lcom/android/vendorsettings/io;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 520
-    iget-object v0, p0, Lcom/android/settings/io;->sG:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/io;->sG:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic h(Lcom/android/settings/io;)Ljava/lang/String;
+.method static synthetic h(Lcom/android/vendorsettings/io;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 520
-    iget-object v0, p0, Lcom/android/settings/io;->sH:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/io;->sH:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic i(Lcom/android/settings/io;)Ljava/lang/String;
+.method static synthetic i(Lcom/android/vendorsettings/io;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 520
-    iget-object v0, p0, Lcom/android/settings/io;->sD:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/io;->sD:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic j(Lcom/android/settings/io;)Ljava/security/cert/X509Certificate;
+.method static synthetic j(Lcom/android/vendorsettings/io;)Ljava/security/cert/X509Certificate;
     .locals 1
 
     .prologue
     .line 520
-    iget-object v0, p0, Lcom/android/settings/io;->sE:Ljava/security/cert/X509Certificate;
+    iget-object v0, p0, Lcom/android/vendorsettings/io;->sE:Ljava/security/cert/X509Certificate;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public c(Lcom/android/settings/io;)I
+.method public c(Lcom/android/vendorsettings/io;)I
     .locals 2
 
     .prologue
     .line 580
-    iget-object v0, p0, Lcom/android/settings/io;->sG:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/io;->sG:Ljava/lang/String;
 
-    iget-object v1, p1, Lcom/android/settings/io;->sG:Ljava/lang/String;
+    iget-object v1, p1, Lcom/android/vendorsettings/io;->sG:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->compareToIgnoreCase(Ljava/lang/String;)I
 
@@ -339,9 +339,9 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/io;->sH:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/io;->sH:Ljava/lang/String;
 
-    iget-object v1, p1, Lcom/android/settings/io;->sH:Ljava/lang/String;
+    iget-object v1, p1, Lcom/android/vendorsettings/io;->sH:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->compareToIgnoreCase(Ljava/lang/String;)I
 
@@ -355,9 +355,9 @@
 
     .prologue
     .line 520
-    check-cast p1, Lcom/android/settings/io;
+    check-cast p1, Lcom/android/vendorsettings/io;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/io;->c(Lcom/android/settings/io;)I
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/io;->c(Lcom/android/vendorsettings/io;)I
 
     move-result v0
 
@@ -369,7 +369,7 @@
 
     .prologue
     .line 587
-    instance-of v0, p1, Lcom/android/settings/io;
+    instance-of v0, p1, Lcom/android/vendorsettings/io;
 
     if-nez v0, :cond_0
 
@@ -382,12 +382,12 @@
 
     .line 590
     :cond_0
-    check-cast p1, Lcom/android/settings/io;
+    check-cast p1, Lcom/android/vendorsettings/io;
 
     .line 591
-    iget-object v0, p0, Lcom/android/settings/io;->sD:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/io;->sD:Ljava/lang/String;
 
-    iget-object v1, p1, Lcom/android/settings/io;->sD:Ljava/lang/String;
+    iget-object v1, p1, Lcom/android/vendorsettings/io;->sD:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -401,7 +401,7 @@
 
     .prologue
     .line 594
-    iget-object v0, p0, Lcom/android/settings/io;->sD:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/io;->sD:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/al;
+.class public Lcom/android/vendorsettings/wifi/al;
 .super Landroid/database/sqlite/SQLiteOpenHelper;
 .source "WifiDatabaseHelper.java"
 
@@ -31,7 +31,7 @@
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     .line 66
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/al;->o(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/wifi/al;->o(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 67
     return-void
@@ -54,7 +54,7 @@
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     .line 119
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/al;->o(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/wifi/al;->o(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 120
     return-void
@@ -81,7 +81,7 @@
 
     .prologue
     .line 21
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/al;->n(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/wifi/al;->n(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 22
     return-void
@@ -101,7 +101,7 @@
     if-ge p2, v2, :cond_6
 
     .line 28
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/al;->m(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/wifi/al;->m(Landroid/database/sqlite/SQLiteDatabase;)V
 
     move v0, v2
 
@@ -200,7 +200,7 @@
 
     .line 45
     :try_start_1
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/al;->m(Landroid/database/sqlite/SQLiteDatabase;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/wifi/al;->m(Landroid/database/sqlite/SQLiteDatabase;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

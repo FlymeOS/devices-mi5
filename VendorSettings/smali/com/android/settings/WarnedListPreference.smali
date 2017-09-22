@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/WarnedListPreference;
+.class public Lcom/android/vendorsettings/WarnedListPreference;
 .super Landroid/preference/ListPreference;
 .source "WarnedListPreference.java"
 

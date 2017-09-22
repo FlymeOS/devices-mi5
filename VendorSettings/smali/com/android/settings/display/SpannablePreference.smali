@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/SpannablePreference;
+.class public Lcom/android/vendorsettings/display/SpannablePreference;
 .super Landroid/preference/Preference;
 .source "SpannablePreference.java"
 

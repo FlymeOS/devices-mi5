@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;
+.class Lcom/android/vendorsettings/fuelgauge/BatteryHistoryChart$TextAttrs;
 .super Ljava/lang/Object;
 .source "BatteryHistoryChart.java"
 
@@ -26,18 +26,18 @@
     .line 241
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->aeH:Landroid/content/res/ColorStateList;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryHistoryChart$TextAttrs;->aeH:Landroid/content/res/ColorStateList;
 
     .line 242
     const/16 v0, 0xf
 
-    iput v0, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->textSize:I
+    iput v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryHistoryChart$TextAttrs;->textSize:I
 
     .line 243
-    iput v1, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->aeI:I
+    iput v1, p0, Lcom/android/vendorsettings/fuelgauge/BatteryHistoryChart$TextAttrs;->aeI:I
 
     .line 244
-    iput v1, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->aeJ:I
+    iput v1, p0, Lcom/android/vendorsettings/fuelgauge/BatteryHistoryChart$TextAttrs;->aeJ:I
 
     return-void
 .end method
@@ -105,19 +105,19 @@
 
     move-result-object v3
 
-    iput-object v3, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->aeH:Landroid/content/res/ColorStateList;
+    iput-object v3, p0, Lcom/android/vendorsettings/fuelgauge/BatteryHistoryChart$TextAttrs;->aeH:Landroid/content/res/ColorStateList;
 
     goto :goto_2
 
     .line 264
     :pswitch_1
-    iget v4, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->textSize:I
+    iget v4, p0, Lcom/android/vendorsettings/fuelgauge/BatteryHistoryChart$TextAttrs;->textSize:I
 
     invoke-virtual {v1, v3, v4}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v3
 
-    iput v3, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->textSize:I
+    iput v3, p0, Lcom/android/vendorsettings/fuelgauge/BatteryHistoryChart$TextAttrs;->textSize:I
 
     goto :goto_2
 
@@ -127,7 +127,7 @@
 
     move-result v3
 
-    iput v3, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->aeI:I
+    iput v3, p0, Lcom/android/vendorsettings/fuelgauge/BatteryHistoryChart$TextAttrs;->aeI:I
 
     goto :goto_2
 
@@ -137,7 +137,7 @@
 
     move-result v3
 
-    iput v3, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->aeJ:I
+    iput v3, p0, Lcom/android/vendorsettings/fuelgauge/BatteryHistoryChart$TextAttrs;->aeJ:I
 
     goto :goto_2
 
@@ -195,7 +195,7 @@
     invoke-virtual {p2, v0}, Landroid/text/TextPaint;->setCompatibilityScaling(F)V
 
     .line 286
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->aeH:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryHistoryChart$TextAttrs;->aeH:Landroid/content/res/ColorStateList;
 
     invoke-virtual {v0}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 
@@ -204,7 +204,7 @@
     invoke-virtual {p2, v0}, Landroid/text/TextPaint;->setColor(I)V
 
     .line 287
-    iget v0, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->textSize:I
+    iget v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryHistoryChart$TextAttrs;->textSize:I
 
     int-to-float v0, v0
 
@@ -214,15 +214,15 @@
     const/4 v0, 0x0
 
     .line 290
-    iget v1, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->aeI:I
+    iget v1, p0, Lcom/android/vendorsettings/fuelgauge/BatteryHistoryChart$TextAttrs;->aeI:I
 
     packed-switch v1, :pswitch_data_0
 
     .line 304
     :goto_0
-    iget v1, p0, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->aeJ:I
+    iget v1, p0, Lcom/android/vendorsettings/fuelgauge/BatteryHistoryChart$TextAttrs;->aeJ:I
 
-    invoke-virtual {p0, p2, v0, v1}, Lcom/android/settings/fuelgauge/BatteryHistoryChart$TextAttrs;->a(Landroid/text/TextPaint;Landroid/graphics/Typeface;I)V
+    invoke-virtual {p0, p2, v0, v1}, Lcom/android/vendorsettings/fuelgauge/BatteryHistoryChart$TextAttrs;->a(Landroid/text/TextPaint;Landroid/graphics/Typeface;I)V
 
     .line 305
     return-void

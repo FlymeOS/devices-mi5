@@ -1,4 +1,4 @@
-.class Lcom/android/settings/notification/NotificationBackend$Row;
+.class Lcom/android/vendorsettings/notification/NotificationBackend$Row;
 .super Ljava/lang/Object;
 .source "NotificationBackend.java"
 

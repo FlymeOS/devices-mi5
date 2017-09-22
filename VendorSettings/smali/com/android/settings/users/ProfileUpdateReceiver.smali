@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/users/ProfileUpdateReceiver;
+.class public Lcom/android/vendorsettings/users/ProfileUpdateReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "ProfileUpdateReceiver.java"
 
@@ -57,7 +57,7 @@
     check-cast v0, Landroid/os/UserManager;
 
     .line 54
-    invoke-static {p0, v3}, Lcom/android/settings/iC;->f(Landroid/content/Context;Z)Ljava/lang/String;
+    invoke-static {p0, v3}, Lcom/android/vendorsettings/iC;->f(Landroid/content/Context;Z)Ljava/lang/String;
 
     move-result-object v3
 
@@ -98,11 +98,11 @@
 
     .prologue
     .line 38
-    new-instance v0, Lcom/android/settings/users/ProfileUpdateReceiver$1;
+    new-instance v0, Lcom/android/vendorsettings/users/ProfileUpdateReceiver$1;
 
-    invoke-direct {v0, p0, p1}, Lcom/android/settings/users/ProfileUpdateReceiver$1;-><init>(Lcom/android/settings/users/ProfileUpdateReceiver;Landroid/content/Context;)V
+    invoke-direct {v0, p0, p1}, Lcom/android/vendorsettings/users/ProfileUpdateReceiver$1;-><init>(Lcom/android/vendorsettings/users/ProfileUpdateReceiver;Landroid/content/Context;)V
 
-    invoke-virtual {v0}, Lcom/android/settings/users/ProfileUpdateReceiver$1;->start()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/users/ProfileUpdateReceiver$1;->start()V
 
     .line 44
     return-void

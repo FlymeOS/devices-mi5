@@ -1,16 +1,16 @@
-.class Lcom/android/settings/dndmode/A;
+.class Lcom/android/vendorsettings/dndmode/A;
 .super Landroid/preference/Preference;
 .source "VipCallSettingsFragment.java"
 
 
 # instance fields
-.field final synthetic abe:Lcom/android/settings/dndmode/v;
+.field final synthetic abe:Lcom/android/vendorsettings/dndmode/v;
 
 .field private abi:J
 
 .field private abj:Landroid/widget/ImageView;
 
-.field private abk:Lcom/android/settings/dndmode/C;
+.field private abk:Lcom/android/vendorsettings/dndmode/C;
 
 .field private mContext:Landroid/content/Context;
 
@@ -18,63 +18,63 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/dndmode/v;Landroid/content/Context;)V
+.method public constructor <init>(Lcom/android/vendorsettings/dndmode/v;Landroid/content/Context;)V
     .locals 1
 
     .prologue
     .line 372
-    iput-object p1, p0, Lcom/android/settings/dndmode/A;->abe:Lcom/android/settings/dndmode/v;
+    iput-object p1, p0, Lcom/android/vendorsettings/dndmode/A;->abe:Lcom/android/vendorsettings/dndmode/v;
 
     .line 373
     invoke-direct {p0, p2}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
     .line 405
-    new-instance v0, Lcom/android/settings/dndmode/B;
+    new-instance v0, Lcom/android/vendorsettings/dndmode/B;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/dndmode/B;-><init>(Lcom/android/settings/dndmode/A;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/dndmode/B;-><init>(Lcom/android/vendorsettings/dndmode/A;)V
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/A;->nV:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/A;->nV:Landroid/view/View$OnClickListener;
 
     .line 374
-    iput-object p2, p0, Lcom/android/settings/dndmode/A;->mContext:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/vendorsettings/dndmode/A;->mContext:Landroid/content/Context;
 
     .line 375
     const v0, 0x7f080037
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/A;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dndmode/A;->setLayoutResource(I)V
 
     .line 376
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/dndmode/A;)Lcom/android/settings/dndmode/C;
+.method static synthetic a(Lcom/android/vendorsettings/dndmode/A;)Lcom/android/vendorsettings/dndmode/C;
     .locals 1
 
     .prologue
     .line 366
-    iget-object v0, p0, Lcom/android/settings/dndmode/A;->abk:Lcom/android/settings/dndmode/C;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/A;->abk:Lcom/android/vendorsettings/dndmode/C;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/dndmode/A;)J
+.method static synthetic b(Lcom/android/vendorsettings/dndmode/A;)J
     .locals 2
 
     .prologue
     .line 366
-    iget-wide v0, p0, Lcom/android/settings/dndmode/A;->abi:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/dndmode/A;->abi:J
 
     return-wide v0
 .end method
 
 
 # virtual methods
-.method public a(Lcom/android/settings/dndmode/C;)V
+.method public a(Lcom/android/vendorsettings/dndmode/C;)V
     .locals 0
 
     .prologue
     .line 414
-    iput-object p1, p0, Lcom/android/settings/dndmode/A;->abk:Lcom/android/settings/dndmode/C;
+    iput-object p1, p0, Lcom/android/vendorsettings/dndmode/A;->abk:Lcom/android/vendorsettings/dndmode/C;
 
     .line 415
     return-void
@@ -99,14 +99,14 @@
     move-result-object v2
 
     .line 381
-    iput-wide v0, p0, Lcom/android/settings/dndmode/A;->abi:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/dndmode/A;->abi:J
 
     .line 382
     const/4 v0, 0x0
 
     .line 383
-    # getter for: Lcom/android/settings/dndmode/v;->aaX:Ljava/util/HashMap;
-    invoke-static {}, Lcom/android/settings/dndmode/v;->access$100()Ljava/util/HashMap;
+    # getter for: Lcom/android/vendorsettings/dndmode/v;->aaX:Ljava/util/HashMap;
+    invoke-static {}, Lcom/android/vendorsettings/dndmode/v;->access$100()Ljava/util/HashMap;
 
     move-result-object v1
 
@@ -117,8 +117,8 @@
     if-eqz v1, :cond_0
 
     .line 384
-    # getter for: Lcom/android/settings/dndmode/v;->aaX:Ljava/util/HashMap;
-    invoke-static {}, Lcom/android/settings/dndmode/v;->access$100()Ljava/util/HashMap;
+    # getter for: Lcom/android/vendorsettings/dndmode/v;->aaX:Ljava/util/HashMap;
+    invoke-static {}, Lcom/android/vendorsettings/dndmode/v;->access$100()Ljava/util/HashMap;
 
     move-result-object v0
 
@@ -137,7 +137,7 @@
     if-eqz v1, :cond_1
 
     .line 387
-    invoke-virtual {p0, v2}, Lcom/android/settings/dndmode/A;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/dndmode/A;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 392
     :goto_0
@@ -145,10 +145,10 @@
 
     .line 389
     :cond_1
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/A;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dndmode/A;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 390
-    invoke-virtual {p0, v2}, Lcom/android/settings/dndmode/A;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/dndmode/A;->setSummary(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 .end method
@@ -173,22 +173,22 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/A;->abj:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/vendorsettings/dndmode/A;->abj:Landroid/widget/ImageView;
 
     .line 399
-    iget-object v0, p0, Lcom/android/settings/dndmode/A;->abj:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/A;->abj:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setClickable(Z)V
 
     .line 400
-    iget-object v0, p0, Lcom/android/settings/dndmode/A;->abj:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/A;->abj:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setFocusable(Z)V
 
     .line 401
-    iget-object v0, p0, Lcom/android/settings/dndmode/A;->abj:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/A;->abj:Landroid/widget/ImageView;
 
-    iget-object v2, p0, Lcom/android/settings/dndmode/A;->nV:Landroid/view/View$OnClickListener;
+    iget-object v2, p0, Lcom/android/vendorsettings/dndmode/A;->nV:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

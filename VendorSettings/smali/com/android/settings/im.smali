@@ -1,10 +1,10 @@
-.class Lcom/android/settings/im;
+.class Lcom/android/vendorsettings/im;
 .super Landroid/os/AsyncTask;
 .source "TrustedCredentialsSettings.java"
 
 
 # instance fields
-.field final synthetic BB:Lcom/android/settings/il;
+.field final synthetic BB:Lcom/android/vendorsettings/il;
 
 .field private mContext:Landroid/content/Context;
 
@@ -14,32 +14,32 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/il;)V
+.method public constructor <init>(Lcom/android/vendorsettings/il;)V
     .locals 2
 
     .prologue
     .line 417
-    iput-object p1, p0, Lcom/android/settings/im;->BB:Lcom/android/settings/il;
+    iput-object p1, p0, Lcom/android/vendorsettings/im;->BB:Lcom/android/vendorsettings/il;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     .line 418
-    iget-object v0, p1, Lcom/android/settings/il;->Br:Lcom/android/settings/TrustedCredentialsSettings;
+    iget-object v0, p1, Lcom/android/vendorsettings/il;->Br:Lcom/android/vendorsettings/TrustedCredentialsSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/TrustedCredentialsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/TrustedCredentialsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/im;->mContext:Landroid/content/Context;
+    iput-object v0, p0, Lcom/android/vendorsettings/im;->mContext:Landroid/content/Context;
 
     .line 419
-    iget-object v0, p1, Lcom/android/settings/il;->Br:Lcom/android/settings/TrustedCredentialsSettings;
+    iget-object v0, p1, Lcom/android/vendorsettings/il;->Br:Lcom/android/vendorsettings/TrustedCredentialsSettings;
 
-    invoke-static {v0}, Lcom/android/settings/TrustedCredentialsSettings;->b(Lcom/android/settings/TrustedCredentialsSettings;)Ljava/util/HashMap;
+    invoke-static {v0}, Lcom/android/vendorsettings/TrustedCredentialsSettings;->b(Lcom/android/vendorsettings/TrustedCredentialsSettings;)Ljava/util/HashMap;
 
     move-result-object v0
 
-    invoke-static {p1}, Lcom/android/settings/il;->b(Lcom/android/settings/il;)Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    invoke-static {p1}, Lcom/android/vendorsettings/il;->b(Lcom/android/vendorsettings/il;)Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     move-result-object v1
 
@@ -58,9 +58,9 @@
     const/4 v1, 0x0
 
     .line 497
-    iget-object v0, p0, Lcom/android/settings/im;->BB:Lcom/android/settings/il;
+    iget-object v0, p0, Lcom/android/vendorsettings/im;->BB:Lcom/android/vendorsettings/il;
 
-    invoke-static {v0}, Lcom/android/settings/il;->a(Lcom/android/settings/il;)Landroid/util/SparseArray;
+    invoke-static {v0}, Lcom/android/vendorsettings/il;->a(Lcom/android/vendorsettings/il;)Landroid/util/SparseArray;
 
     move-result-object v0
 
@@ -78,9 +78,9 @@
     if-ge v0, v2, :cond_0
 
     .line 500
-    iget-object v3, p0, Lcom/android/settings/im;->BB:Lcom/android/settings/il;
+    iget-object v3, p0, Lcom/android/vendorsettings/im;->BB:Lcom/android/vendorsettings/il;
 
-    invoke-static {v3}, Lcom/android/settings/il;->a(Lcom/android/settings/il;)Landroid/util/SparseArray;
+    invoke-static {v3}, Lcom/android/vendorsettings/il;->a(Lcom/android/vendorsettings/il;)Landroid/util/SparseArray;
 
     move-result-object v3
 
@@ -101,43 +101,43 @@
 
     .line 502
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/im;->BB:Lcom/android/settings/il;
+    iget-object v0, p0, Lcom/android/vendorsettings/im;->BB:Lcom/android/vendorsettings/il;
 
-    invoke-static {v0}, Lcom/android/settings/il;->c(Lcom/android/settings/il;)Lcom/android/settings/iq;
+    invoke-static {v0}, Lcom/android/vendorsettings/il;->c(Lcom/android/vendorsettings/il;)Lcom/android/vendorsettings/iq;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lcom/android/settings/iq;->notifyDataSetChanged()V
+    invoke-interface {v0}, Lcom/android/vendorsettings/iq;->notifyDataSetChanged()V
 
     .line 503
-    iget-object v0, p0, Lcom/android/settings/im;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/im;->mProgressBar:Landroid/widget/ProgressBar;
 
     const/16 v2, 0x8
 
     invoke-virtual {v0, v2}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
     .line 504
-    iget-object v0, p0, Lcom/android/settings/im;->sO:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/im;->sO:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 505
-    iget-object v0, p0, Lcom/android/settings/im;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/im;->mProgressBar:Landroid/widget/ProgressBar;
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setProgress(I)V
 
     .line 506
-    iget-object v0, p0, Lcom/android/settings/im;->BB:Lcom/android/settings/il;
+    iget-object v0, p0, Lcom/android/vendorsettings/im;->BB:Lcom/android/vendorsettings/il;
 
-    iget-object v0, v0, Lcom/android/settings/il;->Br:Lcom/android/settings/TrustedCredentialsSettings;
+    iget-object v0, v0, Lcom/android/vendorsettings/il;->Br:Lcom/android/vendorsettings/TrustedCredentialsSettings;
 
-    invoke-static {v0}, Lcom/android/settings/TrustedCredentialsSettings;->b(Lcom/android/settings/TrustedCredentialsSettings;)Ljava/util/HashMap;
+    invoke-static {v0}, Lcom/android/vendorsettings/TrustedCredentialsSettings;->b(Lcom/android/vendorsettings/TrustedCredentialsSettings;)Ljava/util/HashMap;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/im;->BB:Lcom/android/settings/il;
+    iget-object v1, p0, Lcom/android/vendorsettings/im;->BB:Lcom/android/vendorsettings/il;
 
-    invoke-static {v1}, Lcom/android/settings/il;->b(Lcom/android/settings/il;)Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    invoke-static {v1}, Lcom/android/vendorsettings/il;->b(Lcom/android/vendorsettings/il;)Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     move-result-object v1
 
@@ -160,11 +160,11 @@
     :try_start_0
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/im;->BB:Lcom/android/settings/il;
+    iget-object v2, v0, Lcom/android/vendorsettings/im;->BB:Lcom/android/vendorsettings/il;
 
-    iget-object v2, v2, Lcom/android/settings/il;->Br:Lcom/android/settings/TrustedCredentialsSettings;
+    iget-object v2, v2, Lcom/android/vendorsettings/il;->Br:Lcom/android/vendorsettings/TrustedCredentialsSettings;
 
-    invoke-static {v2}, Lcom/android/settings/TrustedCredentialsSettings;->a(Lcom/android/settings/TrustedCredentialsSettings;)Landroid/os/UserManager;
+    invoke-static {v2}, Lcom/android/vendorsettings/TrustedCredentialsSettings;->a(Lcom/android/vendorsettings/TrustedCredentialsSettings;)Landroid/os/UserManager;
 
     move-result-object v2
 
@@ -221,7 +221,7 @@
     .line 444
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/android/settings/im;->mContext:Landroid/content/Context;
+    iget-object v5, v0, Lcom/android/vendorsettings/im;->mContext:Landroid/content/Context;
 
     invoke-static {v5, v2}, Landroid/security/KeyChain;->bindAsUser(Landroid/content/Context;Landroid/os/UserHandle;)Landroid/security/KeyChain$KeyChainConnection;
 
@@ -230,11 +230,11 @@
     .line 447
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/android/settings/im;->BB:Lcom/android/settings/il;
+    iget-object v5, v0, Lcom/android/vendorsettings/im;->BB:Lcom/android/vendorsettings/il;
 
-    iget-object v5, v5, Lcom/android/settings/il;->Br:Lcom/android/settings/TrustedCredentialsSettings;
+    iget-object v5, v5, Lcom/android/vendorsettings/il;->Br:Lcom/android/vendorsettings/TrustedCredentialsSettings;
 
-    invoke-static {v5}, Lcom/android/settings/TrustedCredentialsSettings;->d(Lcom/android/settings/TrustedCredentialsSettings;)Landroid/util/SparseArray;
+    invoke-static {v5}, Lcom/android/vendorsettings/TrustedCredentialsSettings;->d(Lcom/android/vendorsettings/TrustedCredentialsSettings;)Landroid/util/SparseArray;
 
     move-result-object v5
 
@@ -248,18 +248,18 @@
     .line 449
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/android/settings/im;->BB:Lcom/android/settings/il;
+    iget-object v5, v0, Lcom/android/vendorsettings/im;->BB:Lcom/android/vendorsettings/il;
 
-    invoke-static {v5}, Lcom/android/settings/il;->b(Lcom/android/settings/il;)Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    invoke-static {v5}, Lcom/android/vendorsettings/il;->b(Lcom/android/vendorsettings/il;)Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     move-result-object v5
 
-    invoke-static {v5, v2}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->a(Lcom/android/settings/TrustedCredentialsSettings$Tab;Landroid/security/IKeyChainService;)Ljava/util/List;
+    invoke-static {v5, v2}, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->a(Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;Landroid/security/IKeyChainService;)Ljava/util/List;
 
     move-result-object v2
 
     .line 450
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/im;->isCancelled()Z
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/im;->isCancelled()Z
 
     move-result v5
 
@@ -335,7 +335,7 @@
     move-object v10, v0
 
     .line 460
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/im;->isCancelled()Z
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/im;->isCancelled()Z
 
     move-result v2
 
@@ -374,11 +374,11 @@
     :try_start_1
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/im;->BB:Lcom/android/settings/il;
+    iget-object v2, v0, Lcom/android/vendorsettings/im;->BB:Lcom/android/vendorsettings/il;
 
-    iget-object v2, v2, Lcom/android/settings/il;->Br:Lcom/android/settings/TrustedCredentialsSettings;
+    iget-object v2, v2, Lcom/android/vendorsettings/il;->Br:Lcom/android/vendorsettings/TrustedCredentialsSettings;
 
-    invoke-static {v2}, Lcom/android/settings/TrustedCredentialsSettings;->d(Lcom/android/settings/TrustedCredentialsSettings;)Landroid/util/SparseArray;
+    invoke-static {v2}, Lcom/android/vendorsettings/TrustedCredentialsSettings;->d(Lcom/android/vendorsettings/TrustedCredentialsSettings;)Landroid/util/SparseArray;
 
     move-result-object v2
 
@@ -438,27 +438,27 @@
     move-result-object v7
 
     .line 472
-    new-instance v2, Lcom/android/settings/io;
+    new-instance v2, Lcom/android/vendorsettings/io;
 
     move-object/from16 v0, p0
 
-    iget-object v4, v0, Lcom/android/settings/im;->BB:Lcom/android/settings/il;
+    iget-object v4, v0, Lcom/android/vendorsettings/im;->BB:Lcom/android/vendorsettings/il;
 
-    invoke-static {v4}, Lcom/android/settings/il;->c(Lcom/android/settings/il;)Lcom/android/settings/iq;
+    invoke-static {v4}, Lcom/android/vendorsettings/il;->c(Lcom/android/vendorsettings/il;)Lcom/android/vendorsettings/iq;
 
     move-result-object v4
 
     move-object/from16 v0, p0
 
-    iget-object v5, v0, Lcom/android/settings/im;->BB:Lcom/android/settings/il;
+    iget-object v5, v0, Lcom/android/vendorsettings/im;->BB:Lcom/android/vendorsettings/il;
 
-    invoke-static {v5}, Lcom/android/settings/il;->b(Lcom/android/settings/il;)Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    invoke-static {v5}, Lcom/android/vendorsettings/il;->b(Lcom/android/vendorsettings/il;)Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     move-result-object v5
 
     const/4 v9, 0x0
 
-    invoke-direct/range {v2 .. v9}, Lcom/android/settings/io;-><init>(Landroid/security/IKeyChainService;Lcom/android/settings/iq;Lcom/android/settings/TrustedCredentialsSettings$Tab;Ljava/lang/String;Ljava/security/cert/X509Certificate;ILcom/android/settings/id;)V
+    invoke-direct/range {v2 .. v9}, Lcom/android/vendorsettings/io;-><init>(Landroid/security/IKeyChainService;Lcom/android/vendorsettings/iq;Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;Ljava/lang/String;Ljava/security/cert/X509Certificate;ILcom/android/vendorsettings/id;)V
 
     move-object/from16 v0, v19
 
@@ -489,7 +489,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/im;->publishProgress([Ljava/lang/Object;)V
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/im;->publishProgress([Ljava/lang/Object;)V
 
     .line 467
     add-int/lit8 v2, v12, 0x1
@@ -553,7 +553,7 @@
     .line 412
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/im;->c([Ljava/lang/Void;)Landroid/util/SparseArray;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/im;->c([Ljava/lang/Void;)Landroid/util/SparseArray;
 
     move-result-object v0
 
@@ -567,7 +567,7 @@
     .line 412
     check-cast p1, Landroid/util/SparseArray;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/im;->a(Landroid/util/SparseArray;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/im;->a(Landroid/util/SparseArray;)V
 
     return-void
 .end method
@@ -577,11 +577,11 @@
 
     .prologue
     .line 423
-    iget-object v0, p0, Lcom/android/settings/im;->BB:Lcom/android/settings/il;
+    iget-object v0, p0, Lcom/android/vendorsettings/im;->BB:Lcom/android/vendorsettings/il;
 
-    iget-object v0, v0, Lcom/android/settings/il;->Br:Lcom/android/settings/TrustedCredentialsSettings;
+    iget-object v0, v0, Lcom/android/vendorsettings/il;->Br:Lcom/android/vendorsettings/TrustedCredentialsSettings;
 
-    invoke-static {v0}, Lcom/android/settings/TrustedCredentialsSettings;->c(Lcom/android/settings/TrustedCredentialsSettings;)Landroid/widget/TabHost;
+    invoke-static {v0}, Lcom/android/vendorsettings/TrustedCredentialsSettings;->c(Lcom/android/vendorsettings/TrustedCredentialsSettings;)Landroid/widget/TabHost;
 
     move-result-object v0
 
@@ -590,13 +590,13 @@
     move-result-object v1
 
     .line 424
-    iget-object v0, p0, Lcom/android/settings/im;->BB:Lcom/android/settings/il;
+    iget-object v0, p0, Lcom/android/vendorsettings/im;->BB:Lcom/android/vendorsettings/il;
 
-    invoke-static {v0}, Lcom/android/settings/il;->b(Lcom/android/settings/il;)Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    invoke-static {v0}, Lcom/android/vendorsettings/il;->b(Lcom/android/vendorsettings/il;)Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->g(Lcom/android/settings/TrustedCredentialsSettings$Tab;)I
+    invoke-static {v0}, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->g(Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;)I
 
     move-result v0
 
@@ -606,22 +606,22 @@
 
     check-cast v0, Landroid/widget/ProgressBar;
 
-    iput-object v0, p0, Lcom/android/settings/im;->mProgressBar:Landroid/widget/ProgressBar;
+    iput-object v0, p0, Lcom/android/vendorsettings/im;->mProgressBar:Landroid/widget/ProgressBar;
 
     .line 425
-    iget-object v0, p0, Lcom/android/settings/im;->BB:Lcom/android/settings/il;
+    iget-object v0, p0, Lcom/android/vendorsettings/im;->BB:Lcom/android/vendorsettings/il;
 
-    invoke-static {v0}, Lcom/android/settings/il;->c(Lcom/android/settings/il;)Lcom/android/settings/iq;
+    invoke-static {v0}, Lcom/android/vendorsettings/il;->c(Lcom/android/vendorsettings/il;)Lcom/android/vendorsettings/iq;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/im;->BB:Lcom/android/settings/il;
+    iget-object v2, p0, Lcom/android/vendorsettings/im;->BB:Lcom/android/vendorsettings/il;
 
-    invoke-static {v2}, Lcom/android/settings/il;->b(Lcom/android/settings/il;)Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    invoke-static {v2}, Lcom/android/vendorsettings/il;->b(Lcom/android/vendorsettings/il;)Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     move-result-object v2
 
-    invoke-interface {v0, v2}, Lcom/android/settings/iq;->i(Lcom/android/settings/TrustedCredentialsSettings$Tab;)I
+    invoke-interface {v0, v2}, Lcom/android/vendorsettings/iq;->i(Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;)I
 
     move-result v0
 
@@ -629,17 +629,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/im;->sO:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/im;->sO:Landroid/view/View;
 
     .line 426
-    iget-object v0, p0, Lcom/android/settings/im;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/im;->mProgressBar:Landroid/widget/ProgressBar;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
     .line 427
-    iget-object v0, p0, Lcom/android/settings/im;->sO:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/im;->sO:Landroid/view/View;
 
     const/16 v1, 0x8
 
@@ -672,7 +672,7 @@
     move-result v1
 
     .line 491
-    iget-object v2, p0, Lcom/android/settings/im;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v2, p0, Lcom/android/vendorsettings/im;->mProgressBar:Landroid/widget/ProgressBar;
 
     invoke-virtual {v2}, Landroid/widget/ProgressBar;->getMax()I
 
@@ -681,13 +681,13 @@
     if-eq v1, v2, :cond_0
 
     .line 492
-    iget-object v2, p0, Lcom/android/settings/im;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v2, p0, Lcom/android/vendorsettings/im;->mProgressBar:Landroid/widget/ProgressBar;
 
     invoke-virtual {v2, v1}, Landroid/widget/ProgressBar;->setMax(I)V
 
     .line 494
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/im;->mProgressBar:Landroid/widget/ProgressBar;
+    iget-object v1, p0, Lcom/android/vendorsettings/im;->mProgressBar:Landroid/widget/ProgressBar;
 
     invoke-virtual {v1, v0}, Landroid/widget/ProgressBar;->setProgress(I)V
 
@@ -702,7 +702,7 @@
     .line 412
     check-cast p1, [Ljava/lang/Integer;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/im;->onProgressUpdate([Ljava/lang/Integer;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/im;->onProgressUpdate([Ljava/lang/Integer;)V
 
     return-void
 .end method

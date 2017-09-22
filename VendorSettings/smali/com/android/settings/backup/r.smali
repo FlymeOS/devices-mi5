@@ -1,9 +1,9 @@
-.class public final Lcom/android/settings/backup/r;
+.class public final Lcom/android/vendorsettings/backup/r;
 .super Lcom/google/protobuf/GeneratedMessageLite$Builder;
 .source "SettingProtos.java"
 
 # interfaces
-.implements Lcom/android/settings/backup/s;
+.implements Lcom/android/vendorsettings/backup/s;
 
 
 # instance fields
@@ -29,48 +29,48 @@
     .line 459
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/backup/r;->guid_:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/r;->guid_:Ljava/lang/Object;
 
     .line 495
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/backup/r;->luid_:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/r;->luid_:Ljava/lang/Object;
 
     .line 531
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/backup/r;->name_:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/r;->name_:Ljava/lang/Object;
 
     .line 567
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/backup/r;->value_:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/r;->value_:Ljava/lang/Object;
 
     .line 322
-    invoke-direct {p0}, Lcom/android/settings/backup/r;->mb()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/backup/r;->mb()V
 
     .line 323
     return-void
 .end method
 
-.method private static mQ()Lcom/android/settings/backup/r;
+.method private static mQ()Lcom/android/vendorsettings/backup/r;
     .locals 1
 
     .prologue
     .line 328
-    new-instance v0, Lcom/android/settings/backup/r;
+    new-instance v0, Lcom/android/vendorsettings/backup/r;
 
-    invoke-direct {v0}, Lcom/android/settings/backup/r;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/backup/r;-><init>()V
 
     return-object v0
 .end method
 
-.method static synthetic mV()Lcom/android/settings/backup/r;
+.method static synthetic mV()Lcom/android/vendorsettings/backup/r;
     .locals 1
 
     .prologue
     .line 316
-    invoke-static {}, Lcom/android/settings/backup/r;->mQ()Lcom/android/settings/backup/r;
+    invoke-static {}, Lcom/android/vendorsettings/backup/r;->mQ()Lcom/android/vendorsettings/backup/r;
 
     move-result-object v0
 
@@ -87,7 +87,7 @@
 
 
 # virtual methods
-.method public aF(Ljava/lang/String;)Lcom/android/settings/backup/r;
+.method public aF(Ljava/lang/String;)Lcom/android/vendorsettings/backup/r;
     .locals 1
 
     .prologue
@@ -103,20 +103,20 @@
 
     .line 477
     :cond_0
-    iget v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iget v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iput v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     .line 478
-    iput-object p1, p0, Lcom/android/settings/backup/r;->guid_:Ljava/lang/Object;
+    iput-object p1, p0, Lcom/android/vendorsettings/backup/r;->guid_:Ljava/lang/Object;
 
     .line 480
     return-object p0
 .end method
 
-.method public aG(Ljava/lang/String;)Lcom/android/settings/backup/r;
+.method public aG(Ljava/lang/String;)Lcom/android/vendorsettings/backup/r;
     .locals 1
 
     .prologue
@@ -132,20 +132,20 @@
 
     .line 513
     :cond_0
-    iget v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iget v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x2
 
-    iput v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iput v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     .line 514
-    iput-object p1, p0, Lcom/android/settings/backup/r;->luid_:Ljava/lang/Object;
+    iput-object p1, p0, Lcom/android/vendorsettings/backup/r;->luid_:Ljava/lang/Object;
 
     .line 516
     return-object p0
 .end method
 
-.method public aH(Ljava/lang/String;)Lcom/android/settings/backup/r;
+.method public aH(Ljava/lang/String;)Lcom/android/vendorsettings/backup/r;
     .locals 1
 
     .prologue
@@ -161,20 +161,20 @@
 
     .line 549
     :cond_0
-    iget v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iget v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x4
 
-    iput v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iput v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     .line 550
-    iput-object p1, p0, Lcom/android/settings/backup/r;->name_:Ljava/lang/Object;
+    iput-object p1, p0, Lcom/android/vendorsettings/backup/r;->name_:Ljava/lang/Object;
 
     .line 552
     return-object p0
 .end method
 
-.method public aI(Ljava/lang/String;)Lcom/android/settings/backup/r;
+.method public aI(Ljava/lang/String;)Lcom/android/vendorsettings/backup/r;
     .locals 1
 
     .prologue
@@ -190,14 +190,14 @@
 
     .line 585
     :cond_0
-    iget v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iget v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x8
 
-    iput v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iput v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     .line 586
-    iput-object p1, p0, Lcom/android/settings/backup/r;->value_:Ljava/lang/Object;
+    iput-object p1, p0, Lcom/android/vendorsettings/backup/r;->value_:Ljava/lang/Object;
 
     .line 588
     return-object p0
@@ -208,7 +208,7 @@
 
     .prologue
     .line 316
-    invoke-virtual {p0}, Lcom/android/settings/backup/r;->mT()Lcom/android/settings/backup/SettingProtos$SystemSetting;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/backup/r;->mT()Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;
 
     move-result-object v0
 
@@ -220,7 +220,7 @@
 
     .prologue
     .line 316
-    invoke-virtual {p0}, Lcom/android/settings/backup/r;->mU()Lcom/android/settings/backup/SettingProtos$SystemSetting;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/backup/r;->mU()Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;
 
     move-result-object v0
 
@@ -232,7 +232,7 @@
 
     .prologue
     .line 316
-    invoke-virtual {p0}, Lcom/android/settings/backup/r;->mR()Lcom/android/settings/backup/r;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/backup/r;->mR()Lcom/android/vendorsettings/backup/r;
 
     move-result-object v0
 
@@ -244,7 +244,7 @@
 
     .prologue
     .line 316
-    invoke-virtual {p0}, Lcom/android/settings/backup/r;->mR()Lcom/android/settings/backup/r;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/backup/r;->mR()Lcom/android/vendorsettings/backup/r;
 
     move-result-object v0
 
@@ -256,7 +256,7 @@
 
     .prologue
     .line 316
-    invoke-virtual {p0}, Lcom/android/settings/backup/r;->mS()Lcom/android/settings/backup/r;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/backup/r;->mS()Lcom/android/vendorsettings/backup/r;
 
     move-result-object v0
 
@@ -268,7 +268,7 @@
 
     .prologue
     .line 316
-    invoke-virtual {p0}, Lcom/android/settings/backup/r;->mS()Lcom/android/settings/backup/r;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/backup/r;->mS()Lcom/android/vendorsettings/backup/r;
 
     move-result-object v0
 
@@ -280,7 +280,7 @@
 
     .prologue
     .line 316
-    invoke-virtual {p0}, Lcom/android/settings/backup/r;->mS()Lcom/android/settings/backup/r;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/backup/r;->mS()Lcom/android/vendorsettings/backup/r;
 
     move-result-object v0
 
@@ -292,19 +292,19 @@
 
     .prologue
     .line 316
-    invoke-virtual {p0}, Lcom/android/settings/backup/r;->mS()Lcom/android/settings/backup/r;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/backup/r;->mS()Lcom/android/vendorsettings/backup/r;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public d(Lcom/android/settings/backup/SettingProtos$SystemSetting;)Lcom/android/settings/backup/r;
+.method public d(Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;)Lcom/android/vendorsettings/backup/r;
     .locals 1
 
     .prologue
     .line 395
-    invoke-static {}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->mL()Lcom/android/settings/backup/SettingProtos$SystemSetting;
+    invoke-static {}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->mL()Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;
 
     move-result-object v0
 
@@ -317,68 +317,68 @@
 
     .line 396
     :cond_1
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->lR()Z
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->lR()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
     .line 397
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->lS()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->lS()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/backup/r;->aF(Ljava/lang/String;)Lcom/android/settings/backup/r;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/backup/r;->aF(Ljava/lang/String;)Lcom/android/vendorsettings/backup/r;
 
     .line 399
     :cond_2
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->lU()Z
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->lU()Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
     .line 400
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->lV()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->lV()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/backup/r;->aG(Ljava/lang/String;)Lcom/android/settings/backup/r;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/backup/r;->aG(Ljava/lang/String;)Lcom/android/vendorsettings/backup/r;
 
     .line 402
     :cond_3
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->hasName()Z
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->hasName()Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
     .line 403
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->getName()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/backup/r;->aH(Ljava/lang/String;)Lcom/android/settings/backup/r;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/backup/r;->aH(Ljava/lang/String;)Lcom/android/vendorsettings/backup/r;
 
     .line 405
     :cond_4
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->hasValue()Z
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->hasValue()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 406
-    invoke-virtual {p1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->getValue()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->getValue()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/backup/r;->aI(Ljava/lang/String;)Lcom/android/settings/backup/r;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/backup/r;->aI(Ljava/lang/String;)Lcom/android/vendorsettings/backup/r;
 
     goto :goto_0
 .end method
 
-.method public d(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/android/settings/backup/r;
+.method public d(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/android/vendorsettings/backup/r;
     .locals 1
 
     .prologue
@@ -393,7 +393,7 @@
     sparse-switch v0, :sswitch_data_0
 
     .line 426
-    invoke-virtual {p0, p1, p2, v0}, Lcom/android/settings/backup/r;->parseUnknownField(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;I)Z
+    invoke-virtual {p0, p1, p2, v0}, Lcom/android/vendorsettings/backup/r;->parseUnknownField(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;I)Z
 
     move-result v0
 
@@ -405,69 +405,69 @@
 
     .line 433
     :sswitch_1
-    iget v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iget v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iput v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     .line 434
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readBytes()Lcom/google/protobuf/ByteString;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/backup/r;->guid_:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/r;->guid_:Ljava/lang/Object;
 
     goto :goto_0
 
     .line 438
     :sswitch_2
-    iget v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iget v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x2
 
-    iput v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iput v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     .line 439
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readBytes()Lcom/google/protobuf/ByteString;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/backup/r;->luid_:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/r;->luid_:Ljava/lang/Object;
 
     goto :goto_0
 
     .line 443
     :sswitch_3
-    iget v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iget v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x4
 
-    iput v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iput v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     .line 444
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readBytes()Lcom/google/protobuf/ByteString;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/backup/r;->name_:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/r;->name_:Ljava/lang/Object;
 
     goto :goto_0
 
     .line 448
     :sswitch_4
-    iget v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iget v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x8
 
-    iput v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iput v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     .line 449
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readBytes()Lcom/google/protobuf/ByteString;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/backup/r;->value_:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/r;->value_:Ljava/lang/Object;
 
     goto :goto_0
 
@@ -487,7 +487,7 @@
 
     .prologue
     .line 316
-    invoke-virtual {p0}, Lcom/android/settings/backup/r;->mM()Lcom/android/settings/backup/SettingProtos$SystemSetting;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/backup/r;->mM()Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;
 
     move-result-object v0
 
@@ -499,7 +499,7 @@
 
     .prologue
     .line 316
-    invoke-virtual {p0}, Lcom/android/settings/backup/r;->mM()Lcom/android/settings/backup/SettingProtos$SystemSetting;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/backup/r;->mM()Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;
 
     move-result-object v0
 
@@ -516,19 +516,19 @@
     return v0
 .end method
 
-.method public mM()Lcom/android/settings/backup/SettingProtos$SystemSetting;
+.method public mM()Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;
     .locals 1
 
     .prologue
     .line 349
-    invoke-static {}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->mL()Lcom/android/settings/backup/SettingProtos$SystemSetting;
+    invoke-static {}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->mL()Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public mR()Lcom/android/settings/backup/r;
+.method public mR()Lcom/android/vendorsettings/backup/r;
     .locals 1
 
     .prologue
@@ -538,93 +538,93 @@
     .line 333
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/backup/r;->guid_:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/r;->guid_:Ljava/lang/Object;
 
     .line 334
-    iget v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iget v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x2
 
-    iput v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iput v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     .line 335
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/backup/r;->luid_:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/r;->luid_:Ljava/lang/Object;
 
     .line 336
-    iget v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iget v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x3
 
-    iput v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iput v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     .line 337
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/backup/r;->name_:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/r;->name_:Ljava/lang/Object;
 
     .line 338
-    iget v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iget v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x5
 
-    iput v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iput v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     .line 339
     const-string v0, ""
 
-    iput-object v0, p0, Lcom/android/settings/backup/r;->value_:Ljava/lang/Object;
+    iput-object v0, p0, Lcom/android/vendorsettings/backup/r;->value_:Ljava/lang/Object;
 
     .line 340
-    iget v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iget v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x9
 
-    iput v0, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iput v0, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     .line 341
     return-object p0
 .end method
 
-.method public mS()Lcom/android/settings/backup/r;
+.method public mS()Lcom/android/vendorsettings/backup/r;
     .locals 2
 
     .prologue
     .line 345
-    invoke-static {}, Lcom/android/settings/backup/r;->mQ()Lcom/android/settings/backup/r;
+    invoke-static {}, Lcom/android/vendorsettings/backup/r;->mQ()Lcom/android/vendorsettings/backup/r;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/backup/r;->mU()Lcom/android/settings/backup/SettingProtos$SystemSetting;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/backup/r;->mU()Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/backup/r;->d(Lcom/android/settings/backup/SettingProtos$SystemSetting;)Lcom/android/settings/backup/r;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/backup/r;->d(Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;)Lcom/android/vendorsettings/backup/r;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public mT()Lcom/android/settings/backup/SettingProtos$SystemSetting;
+.method public mT()Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;
     .locals 2
 
     .prologue
     .line 353
-    invoke-virtual {p0}, Lcom/android/settings/backup/r;->mU()Lcom/android/settings/backup/SettingProtos$SystemSetting;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/backup/r;->mU()Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;
 
     move-result-object v0
 
     .line 354
-    invoke-virtual {v0}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->isInitialized()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->isInitialized()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
     .line 355
-    invoke-static {v0}, Lcom/android/settings/backup/r;->newUninitializedMessageException(Lcom/google/protobuf/MessageLite;)Lcom/google/protobuf/UninitializedMessageException;
+    invoke-static {v0}, Lcom/android/vendorsettings/backup/r;->newUninitializedMessageException(Lcom/google/protobuf/MessageLite;)Lcom/google/protobuf/UninitializedMessageException;
 
     move-result-object v0
 
@@ -635,21 +635,21 @@
     return-object v0
 .end method
 
-.method public mU()Lcom/android/settings/backup/SettingProtos$SystemSetting;
+.method public mU()Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;
     .locals 5
 
     .prologue
     const/4 v0, 0x1
 
     .line 371
-    new-instance v2, Lcom/android/settings/backup/SettingProtos$SystemSetting;
+    new-instance v2, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;
 
     const/4 v1, 0x0
 
-    invoke-direct {v2, p0, v1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;-><init>(Lcom/android/settings/backup/r;Lcom/android/settings/backup/k;)V
+    invoke-direct {v2, p0, v1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;-><init>(Lcom/android/vendorsettings/backup/r;Lcom/android/vendorsettings/backup/k;)V
 
     .line 372
-    iget v3, p0, Lcom/android/settings/backup/r;->bitField0_:I
+    iget v3, p0, Lcom/android/vendorsettings/backup/r;->bitField0_:I
 
     .line 373
     const/4 v1, 0x0
@@ -661,9 +661,9 @@
 
     .line 377
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/backup/r;->guid_:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/r;->guid_:Ljava/lang/Object;
 
-    invoke-static {v2, v1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->a(Lcom/android/settings/backup/SettingProtos$SystemSetting;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v2, v1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->a(Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 378
     and-int/lit8 v1, v3, 0x2
@@ -677,9 +677,9 @@
 
     .line 381
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/backup/r;->luid_:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/r;->luid_:Ljava/lang/Object;
 
-    invoke-static {v2, v1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->b(Lcom/android/settings/backup/SettingProtos$SystemSetting;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v2, v1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->b(Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 382
     and-int/lit8 v1, v3, 0x4
@@ -693,9 +693,9 @@
 
     .line 385
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/backup/r;->name_:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/r;->name_:Ljava/lang/Object;
 
-    invoke-static {v2, v1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->c(Lcom/android/settings/backup/SettingProtos$SystemSetting;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v2, v1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->c(Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 386
     and-int/lit8 v1, v3, 0x8
@@ -709,12 +709,12 @@
 
     .line 389
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/backup/r;->value_:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/r;->value_:Ljava/lang/Object;
 
-    invoke-static {v2, v1}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->d(Lcom/android/settings/backup/SettingProtos$SystemSetting;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v2, v1}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->d(Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 390
-    invoke-static {v2, v0}, Lcom/android/settings/backup/SettingProtos$SystemSetting;->a(Lcom/android/settings/backup/SettingProtos$SystemSetting;I)I
+    invoke-static {v2, v0}, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;->a(Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;I)I
 
     .line 391
     return-object v2
@@ -730,7 +730,7 @@
 
     .prologue
     .line 316
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/backup/r;->d(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/android/settings/backup/r;
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/backup/r;->d(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/android/vendorsettings/backup/r;
 
     move-result-object v0
 
@@ -742,9 +742,9 @@
 
     .prologue
     .line 316
-    check-cast p1, Lcom/android/settings/backup/SettingProtos$SystemSetting;
+    check-cast p1, Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/backup/r;->d(Lcom/android/settings/backup/SettingProtos$SystemSetting;)Lcom/android/settings/backup/r;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/backup/r;->d(Lcom/android/vendorsettings/backup/SettingProtos$SystemSetting;)Lcom/android/vendorsettings/backup/r;
 
     move-result-object v0
 
@@ -756,7 +756,7 @@
 
     .prologue
     .line 316
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/backup/r;->d(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/android/settings/backup/r;
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/backup/r;->d(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/android/vendorsettings/backup/r;
 
     move-result-object v0
 

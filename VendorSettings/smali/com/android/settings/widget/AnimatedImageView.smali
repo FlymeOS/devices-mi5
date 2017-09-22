@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/widget/AnimatedImageView;
+.class public Lcom/android/vendorsettings/widget/AnimatedImageView;
 .super Landroid/widget/ImageView;
 .source "AnimatedImageView.java"
 
@@ -37,24 +37,24 @@
 
     .prologue
     .line 39
-    invoke-virtual {p0}, Lcom/android/settings/widget/AnimatedImageView;->isShown()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/AnimatedImageView;->isShown()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
 
     if-eqz v0, :cond_0
 
     .line 40
-    iget-object v0, p0, Lcom/android/settings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/AnimatedRotateDrawable;->stop()V
 
     .line 42
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/widget/AnimatedImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/AnimatedImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
@@ -66,35 +66,35 @@
     .line 44
     check-cast v0, Landroid/graphics/drawable/AnimatedRotateDrawable;
 
-    iput-object v0, p0, Lcom/android/settings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
 
     .line 46
-    iget-object v0, p0, Lcom/android/settings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
 
     const/16 v1, 0x38
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/AnimatedRotateDrawable;->setFramesCount(I)V
 
     .line 47
-    iget-object v0, p0, Lcom/android/settings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
 
     const/16 v1, 0x20
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/AnimatedRotateDrawable;->setFramesDuration(I)V
 
     .line 48
-    invoke-virtual {p0}, Lcom/android/settings/widget/AnimatedImageView;->isShown()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/AnimatedImageView;->isShown()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    iget-boolean v0, p0, Lcom/android/settings/widget/AnimatedImageView;->pV:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/widget/AnimatedImageView;->pV:Z
 
     if-eqz v0, :cond_1
 
     .line 49
-    iget-object v0, p0, Lcom/android/settings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/AnimatedRotateDrawable;->start()V
 
@@ -107,7 +107,7 @@
     :cond_2
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
 
     goto :goto_0
 .end method
@@ -117,23 +117,23 @@
 
     .prologue
     .line 57
-    iget-object v0, p0, Lcom/android/settings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
 
     if-eqz v0, :cond_0
 
     .line 58
-    invoke-virtual {p0}, Lcom/android/settings/widget/AnimatedImageView;->isShown()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/AnimatedImageView;->isShown()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    iget-boolean v0, p0, Lcom/android/settings/widget/AnimatedImageView;->pV:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/widget/AnimatedImageView;->pV:Z
 
     if-eqz v0, :cond_1
 
     .line 59
-    iget-object v0, p0, Lcom/android/settings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/AnimatedRotateDrawable;->start()V
 
@@ -144,7 +144,7 @@
 
     .line 61
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/AnimatedImageView;->awE:Landroid/graphics/drawable/AnimatedRotateDrawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/AnimatedRotateDrawable;->stop()V
 
@@ -161,7 +161,7 @@
     invoke-super {p0}, Landroid/widget/ImageView;->onAttachedToWindow()V
 
     .line 81
-    invoke-direct {p0}, Lcom/android/settings/widget/AnimatedImageView;->vZ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/widget/AnimatedImageView;->vZ()V
 
     .line 82
     return-void
@@ -175,7 +175,7 @@
     invoke-super {p0}, Landroid/widget/ImageView;->onDetachedFromWindow()V
 
     .line 87
-    invoke-direct {p0}, Lcom/android/settings/widget/AnimatedImageView;->vZ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/widget/AnimatedImageView;->vZ()V
 
     .line 88
     return-void
@@ -189,7 +189,7 @@
     invoke-super {p0, p1, p2}, Landroid/widget/ImageView;->onVisibilityChanged(Landroid/view/View;I)V
 
     .line 98
-    invoke-direct {p0}, Lcom/android/settings/widget/AnimatedImageView;->vZ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/widget/AnimatedImageView;->vZ()V
 
     .line 99
     return-void
@@ -200,10 +200,10 @@
 
     .prologue
     .line 91
-    iput-boolean p1, p0, Lcom/android/settings/widget/AnimatedImageView;->pV:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/widget/AnimatedImageView;->pV:Z
 
     .line 92
-    invoke-direct {p0}, Lcom/android/settings/widget/AnimatedImageView;->vZ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/widget/AnimatedImageView;->vZ()V
 
     .line 93
     return-void
@@ -217,7 +217,7 @@
     invoke-super {p0, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 69
-    invoke-direct {p0}, Lcom/android/settings/widget/AnimatedImageView;->updateDrawable()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/widget/AnimatedImageView;->updateDrawable()V
 
     .line 70
     return-void
@@ -231,7 +231,7 @@
     invoke-super {p0, p1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 75
-    invoke-direct {p0}, Lcom/android/settings/widget/AnimatedImageView;->updateDrawable()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/widget/AnimatedImageView;->updateDrawable()V
 
     .line 76
     return-void

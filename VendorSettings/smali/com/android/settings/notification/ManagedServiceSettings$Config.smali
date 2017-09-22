@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/notification/ManagedServiceSettings$Config;
+.class public Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;
 .super Ljava/lang/Object;
 .source "ManagedServiceSettings.java"
 

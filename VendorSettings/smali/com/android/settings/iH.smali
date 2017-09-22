@@ -1,19 +1,19 @@
-.class Lcom/android/settings/iH;
+.class Lcom/android/vendorsettings/iH;
 .super Landroid/content/BroadcastReceiver;
 .source "WifiCallingSettings.java"
 
 
 # instance fields
-.field final synthetic Co:Lcom/android/settings/WifiCallingSettings;
+.field final synthetic Co:Lcom/android/vendorsettings/WifiCallingSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/WifiCallingSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/WifiCallingSettings;)V
     .locals 0
 
     .prologue
     .line 132
-    iput-object p1, p0, Lcom/android/settings/iH;->Co:Lcom/android/settings/WifiCallingSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/iH;->Co:Lcom/android/vendorsettings/WifiCallingSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -43,21 +43,21 @@
     if-eqz v0, :cond_0
 
     .line 143
-    invoke-virtual {p0, v2}, Lcom/android/settings/iH;->setResultCode(I)V
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/iH;->setResultCode(I)V
 
     .line 146
-    iget-object v0, p0, Lcom/android/settings/iH;->Co:Lcom/android/settings/WifiCallingSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/iH;->Co:Lcom/android/vendorsettings/WifiCallingSettings;
 
-    invoke-static {v0}, Lcom/android/settings/WifiCallingSettings;->a(Lcom/android/settings/WifiCallingSettings;)Landroid/widget/Switch;
+    invoke-static {v0}, Lcom/android/vendorsettings/WifiCallingSettings;->a(Lcom/android/vendorsettings/WifiCallingSettings;)Landroid/widget/Switch;
 
     move-result-object v0
 
     invoke-virtual {v0, v2}, Landroid/widget/Switch;->setChecked(Z)V
 
     .line 148
-    iget-object v0, p0, Lcom/android/settings/iH;->Co:Lcom/android/settings/WifiCallingSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/iH;->Co:Lcom/android/vendorsettings/WifiCallingSettings;
 
-    invoke-static {v0, p2}, Lcom/android/settings/WifiCallingSettings;->a(Lcom/android/settings/WifiCallingSettings;Landroid/content/Intent;)V
+    invoke-static {v0, p2}, Lcom/android/vendorsettings/WifiCallingSettings;->a(Lcom/android/vendorsettings/WifiCallingSettings;Landroid/content/Intent;)V
 
     .line 150
     :cond_0

@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/ct;
+.class public Lcom/android/vendorsettings/ct;
 .super Landroid/widget/BaseAdapter;
 .source "DiracHeadsetAdapter.java"
 
 
 # instance fields
-.field private final lt:[Lcom/android/settings/cu;
+.field private final lt:[Lcom/android/vendorsettings/cu;
 
 
 # direct methods
@@ -25,9 +25,9 @@
 
     move-result v0
 
-    new-array v0, v0, [Lcom/android/settings/cu;
+    new-array v0, v0, [Lcom/android/vendorsettings/cu;
 
-    iput-object v0, p0, Lcom/android/settings/ct;->lt:[Lcom/android/settings/cu;
+    iput-object v0, p0, Lcom/android/vendorsettings/ct;->lt:[Lcom/android/vendorsettings/cu;
 
     .line 45
     const/4 v0, 0x0
@@ -67,19 +67,19 @@
     move-result v0
 
     .line 49
-    iget-object v4, p0, Lcom/android/settings/ct;->lt:[Lcom/android/settings/cu;
+    iget-object v4, p0, Lcom/android/vendorsettings/ct;->lt:[Lcom/android/vendorsettings/cu;
 
-    new-instance v5, Lcom/android/settings/cu;
+    new-instance v5, Lcom/android/vendorsettings/cu;
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ct;->C(I)I
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ct;->C(I)I
 
     move-result v6
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ct;->D(I)I
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ct;->D(I)I
 
     move-result v1
 
-    invoke-direct {v5, v6, v1, v0}, Lcom/android/settings/cu;-><init>(III)V
+    invoke-direct {v5, v6, v1, v0}, Lcom/android/vendorsettings/cu;-><init>(III)V
 
     aput-object v5, v4, v2
 
@@ -346,14 +346,14 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/ct;->getCount()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ct;->getCount()I
 
     move-result v1
 
     if-ge v0, v1, :cond_1
 
     .line 86
-    invoke-virtual {p0, v0}, Lcom/android/settings/ct;->B(I)I
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ct;->B(I)I
 
     move-result v1
 
@@ -381,13 +381,13 @@
 
     .prologue
     .line 95
-    invoke-virtual {p0, p1}, Lcom/android/settings/ct;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/ct;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/cu;
+    check-cast v0, Lcom/android/vendorsettings/cu;
 
-    iget v0, v0, Lcom/android/settings/cu;->mType:I
+    iget v0, v0, Lcom/android/vendorsettings/cu;->mType:I
 
     return v0
 .end method
@@ -397,7 +397,7 @@
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/android/settings/ct;->lt:[Lcom/android/settings/cu;
+    iget-object v0, p0, Lcom/android/vendorsettings/ct;->lt:[Lcom/android/vendorsettings/cu;
 
     array-length v0, v0
 
@@ -409,7 +409,7 @@
 
     .prologue
     .line 60
-    iget-object v0, p0, Lcom/android/settings/ct;->lt:[Lcom/android/settings/cu;
+    iget-object v0, p0, Lcom/android/vendorsettings/ct;->lt:[Lcom/android/vendorsettings/cu;
 
     aget-object v0, v0, p1
 
@@ -447,38 +447,38 @@
     move-result-object p2
 
     .line 72
-    new-instance v0, Lcom/android/settings/cv;
+    new-instance v0, Lcom/android/vendorsettings/cv;
 
-    invoke-direct {v0, p2}, Lcom/android/settings/cv;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, p2}, Lcom/android/vendorsettings/cv;-><init>(Landroid/view/View;)V
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 75
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/ct;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/ct;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/cu;
+    check-cast v0, Lcom/android/vendorsettings/cu;
 
     .line 76
     invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/cv;
+    check-cast v1, Lcom/android/vendorsettings/cv;
 
     .line 77
-    iget-object v2, v1, Lcom/android/settings/cv;->lw:Landroid/widget/ImageView;
+    iget-object v2, v1, Lcom/android/vendorsettings/cv;->lw:Landroid/widget/ImageView;
 
-    iget v3, v0, Lcom/android/settings/cu;->lu:I
+    iget v3, v0, Lcom/android/vendorsettings/cu;->lu:I
 
     invoke-virtual {v2, v3}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 78
-    iget-object v1, v1, Lcom/android/settings/cv;->lx:Landroid/widget/TextView;
+    iget-object v1, v1, Lcom/android/vendorsettings/cv;->lx:Landroid/widget/TextView;
 
-    iget v0, v0, Lcom/android/settings/cu;->lv:I
+    iget v0, v0, Lcom/android/vendorsettings/cu;->lv:I
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(I)V
 

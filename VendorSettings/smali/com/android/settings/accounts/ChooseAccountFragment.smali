@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/accounts/ChooseAccountFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/accounts/ChooseAccountFragment;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "ChooseAccountFragment.java"
 
 
@@ -25,37 +25,37 @@
 
     .prologue
     .line 44
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 49
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ey:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ey:Ljava/util/ArrayList;
 
     .line 52
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Et:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Et:Ljava/util/HashMap;
 
     .line 53
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ep:Ljava/util/Map;
+    iput-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ep:Ljava/util/Map;
 
     .line 56
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/accounts/ChooseAccountFragment;ILjava/lang/String;)V
+.method static synthetic a(Lcom/android/vendorsettings/accounts/ChooseAccountFragment;ILjava/lang/String;)V
     .locals 0
 
     .prologue
     .line 44
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/accounts/ChooseAccountFragment;->c(ILjava/lang/String;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->c(ILjava/lang/String;)V
 
     return-void
 .end method
@@ -67,7 +67,7 @@
     .line 305
     const/4 v0, -0x1
 
-    invoke-direct {p0, v0, p1}, Lcom/android/settings/accounts/ChooseAccountFragment;->c(ILjava/lang/String;)V
+    invoke-direct {p0, v0, p1}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->c(ILjava/lang/String;)V
 
     .line 306
     return-void
@@ -80,11 +80,11 @@
     const/4 v1, -0x1
 
     .line 309
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    instance-of v0, v0, Lcom/android/settings/accounts/MiuiChooseAccountActivity;
+    instance-of v0, v0, Lcom/android/vendorsettings/accounts/MiuiChooseAccountActivity;
 
     if-nez v0, :cond_1
 
@@ -104,7 +104,7 @@
     invoke-virtual {v0, v1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 313
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/ChooseAccountFragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->startActivity(Landroid/content/Intent;)V
 
     .line 324
     :cond_0
@@ -130,14 +130,14 @@
 
     .line 321
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-virtual {v1, p1, v0}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
     .line 322
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ChooseAccountFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->finish()V
 
     goto :goto_0
 .end method
@@ -156,35 +156,35 @@
     move v0, v1
 
     :goto_0
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Eq:[Landroid/accounts/AuthenticatorDescription;
+    iget-object v2, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Eq:[Landroid/accounts/AuthenticatorDescription;
 
     array-length v2, v2
 
     if-ge v0, v2, :cond_8
 
     .line 146
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Eq:[Landroid/accounts/AuthenticatorDescription;
+    iget-object v2, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Eq:[Landroid/accounts/AuthenticatorDescription;
 
     aget-object v2, v2, v0
 
     iget-object v4, v2, Landroid/accounts/AuthenticatorDescription;->type:Ljava/lang/String;
 
     .line 147
-    invoke-virtual {p0, v4}, Lcom/android/settings/accounts/ChooseAccountFragment;->ac(Ljava/lang/String;)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v4}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->ac(Ljava/lang/String;)Ljava/lang/CharSequence;
 
     move-result-object v5
 
     .line 151
-    invoke-virtual {p0, v4}, Lcom/android/settings/accounts/ChooseAccountFragment;->aa(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-virtual {p0, v4}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->aa(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v6
 
     .line 153
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->DQ:[Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->DQ:[Ljava/lang/String;
 
     if-eqz v2, :cond_f
 
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->DQ:[Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->DQ:[Ljava/lang/String;
 
     array-length v2, v2
 
@@ -196,14 +196,14 @@
 
     .line 155
     :goto_1
-    iget-object v7, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->DQ:[Ljava/lang/String;
+    iget-object v7, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->DQ:[Ljava/lang/String;
 
     array-length v7, v7
 
     if-ge v2, v7, :cond_e
 
     .line 156
-    iget-object v7, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->DQ:[Ljava/lang/String;
+    iget-object v7, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->DQ:[Ljava/lang/String;
 
     aget-object v7, v7, v2
 
@@ -219,11 +219,11 @@
     :goto_2
     if-eqz v2, :cond_0
 
-    iget-object v6, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ez:Ljava/util/HashSet;
+    iget-object v6, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ez:Ljava/util/HashSet;
 
     if-eqz v6, :cond_0
 
-    iget-object v6, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ez:Ljava/util/HashSet;
+    iget-object v6, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ez:Ljava/util/HashSet;
 
     invoke-virtual {v6, v4}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -251,11 +251,11 @@
     if-eqz v2, :cond_7
 
     .line 186
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ey:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ey:Ljava/util/ArrayList;
 
-    new-instance v6, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;
+    new-instance v6, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;
 
-    invoke-direct {v6, v5, v4}, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;-><init>(Ljava/lang/CharSequence;Ljava/lang/String;)V
+    invoke-direct {v6, v5, v4}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;-><init>(Ljava/lang/CharSequence;Ljava/lang/String;)V
 
     invoke-virtual {v2, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -283,7 +283,7 @@
     if-eqz v6, :cond_6
 
     .line 172
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -325,7 +325,7 @@
 
     .line 180
     :cond_6
-    invoke-static {v4}, Lcom/android/settings/accounts/MiuiAccountListSettings;->ak(Ljava/lang/String;)Z
+    invoke-static {v4}, Lcom/android/vendorsettings/accounts/MiuiAccountListSettings;->ak(Ljava/lang/String;)Z
 
     move-result v6
 
@@ -379,7 +379,7 @@
 
     .line 194
     :cond_8
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ey:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ey:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -388,19 +388,19 @@
     if-ne v0, v3, :cond_a
 
     .line 196
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ey:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ey:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;
+    check-cast v0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;
 
-    invoke-static {v0}, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;->b(Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;->b(Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/accounts/ChooseAccountFragment;->aj(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->aj(Ljava/lang/String;)V
 
     .line 217
     :cond_9
@@ -409,7 +409,7 @@
 
     .line 197
     :cond_a
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ey:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ey:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -418,17 +418,17 @@
     if-lez v0, :cond_b
 
     .line 198
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ey:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ey:Ljava/util/ArrayList;
 
     invoke-static {v0}, Ljava/util/Collections;->sort(Ljava/util/List;)V
 
     .line 199
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ex:Landroid/preference/PreferenceGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ex:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceGroup;->removeAll()V
 
     .line 200
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ey:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ey:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -445,36 +445,36 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;
+    check-cast v0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;
 
     .line 201
-    invoke-static {v0}, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;->b(Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;->b(Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/accounts/ChooseAccountFragment;->ab(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->ab(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
     .line 202
-    new-instance v3, Lcom/android/settings/accounts/ProviderPreference;
+    new-instance v3, Lcom/android/vendorsettings/accounts/ProviderPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
-    invoke-static {v0}, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;->b(Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;->b(Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;)Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-static {v0}, Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;->c(Lcom/android/settings/accounts/ChooseAccountFragment$ProviderEntry;)Ljava/lang/CharSequence;
+    invoke-static {v0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;->c(Lcom/android/vendorsettings/accounts/ChooseAccountFragment$ProviderEntry;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
-    invoke-direct {v3, v4, v5, v2, v0}, Lcom/android/settings/accounts/ProviderPreference;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;)V
+    invoke-direct {v3, v4, v5, v2, v0}, Lcom/android/vendorsettings/accounts/ProviderPreference;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;)V
 
     .line 204
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ex:Landroid/preference/PreferenceGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ex:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v0, v3}, Landroid/preference/PreferenceGroup;->addPreference(Landroid/preference/Preference;)Z
 
@@ -496,7 +496,7 @@
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 209
-    iget-object v3, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->DQ:[Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->DQ:[Ljava/lang/String;
 
     array-length v4, v3
 
@@ -548,7 +548,7 @@
     :cond_d
     const/4 v0, 0x0
 
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/accounts/ChooseAccountFragment;->c(ILjava/lang/String;)V
+    invoke-direct {p0, v1, v0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->c(ILjava/lang/String;)V
 
     goto :goto_5
 
@@ -568,7 +568,7 @@
 
     .prologue
     .line 136
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -580,28 +580,28 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Eq:[Landroid/accounts/AuthenticatorDescription;
+    iput-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Eq:[Landroid/accounts/AuthenticatorDescription;
 
     .line 137
     const/4 v0, 0x0
 
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Eq:[Landroid/accounts/AuthenticatorDescription;
+    iget-object v1, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Eq:[Landroid/accounts/AuthenticatorDescription;
 
     array-length v1, v1
 
     if-ge v0, v1, :cond_0
 
     .line 138
-    iget-object v1, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ep:Ljava/util/Map;
+    iget-object v1, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ep:Ljava/util/Map;
 
-    iget-object v2, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Eq:[Landroid/accounts/AuthenticatorDescription;
+    iget-object v2, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Eq:[Landroid/accounts/AuthenticatorDescription;
 
     aget-object v2, v2, v0
 
     iget-object v2, v2, Landroid/accounts/AuthenticatorDescription;->type:Ljava/lang/String;
 
-    iget-object v3, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Eq:[Landroid/accounts/AuthenticatorDescription;
+    iget-object v3, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Eq:[Landroid/accounts/AuthenticatorDescription;
 
     aget-object v3, v3, v0
 
@@ -614,7 +614,7 @@
 
     .line 140
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/accounts/ChooseAccountFragment;->iZ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->iZ()V
 
     .line 141
     return-void
@@ -628,7 +628,7 @@
 
     .line 105
     .line 106
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -667,7 +667,7 @@
     move-result-object v1
 
     .line 91
-    invoke-direct {p0}, Lcom/android/settings/accounts/ChooseAccountFragment;->jl()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->jl()Z
 
     move-result v0
 
@@ -686,9 +686,9 @@
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 94
-    new-instance v2, Lcom/android/settings/accounts/ChooseAccountFragment$1;
+    new-instance v2, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/accounts/ChooseAccountFragment$1;-><init>(Lcom/android/settings/accounts/ChooseAccountFragment;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$1;-><init>(Lcom/android/vendorsettings/accounts/ChooseAccountFragment;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -702,7 +702,7 @@
 
     .prologue
     .line 220
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Et:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Et:Ljava/util/HashMap;
 
     if-nez v0, :cond_2
 
@@ -711,7 +711,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Et:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Et:Ljava/util/HashMap;
 
     .line 222
     invoke-static {}, Landroid/content/ContentResolver;->getSyncAdapterTypes()[Landroid/content/SyncAdapterType;
@@ -732,7 +732,7 @@
     aget-object v4, v2, v1
 
     .line 226
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Et:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Et:Ljava/util/HashMap;
 
     iget-object v5, v4, Landroid/content/SyncAdapterType;->accountType:Ljava/lang/String;
 
@@ -751,7 +751,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 229
-    iget-object v5, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Et:Ljava/util/HashMap;
+    iget-object v5, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Et:Ljava/util/HashMap;
 
     iget-object v6, v4, Landroid/content/SyncAdapterType;->accountType:Ljava/lang/String;
 
@@ -821,7 +821,7 @@
 
     .line 238
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Et:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Et:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -840,7 +840,7 @@
     const/4 v1, 0x0
 
     .line 248
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ep:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ep:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -850,7 +850,7 @@
 
     .line 250
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ep:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ep:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -859,7 +859,7 @@
     check-cast v0, Landroid/accounts/AuthenticatorDescription;
 
     .line 251
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -992,7 +992,7 @@
     const/4 v1, 0x0
 
     .line 277
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ep:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ep:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -1002,7 +1002,7 @@
 
     .line 279
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ep:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ep:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1011,7 +1011,7 @@
     check-cast v0, Landroid/accounts/AuthenticatorDescription;
 
     .line 280
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -1111,7 +1111,7 @@
 
     .prologue
     .line 77
-    const-class v0, Lcom/android/settings/accounts/ChooseAccountFragment;
+    const-class v0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1125,15 +1125,15 @@
 
     .prologue
     .line 115
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 116
     const v0, 0x7f08000c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/ChooseAccountFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->addPreferencesFromResource(I)V
 
     .line 117
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1147,10 +1147,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->DQ:[Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->DQ:[Ljava/lang/String;
 
     .line 119
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1172,7 +1172,7 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ez:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ez:Ljava/util/HashSet;
 
     .line 123
     array-length v2, v1
@@ -1185,7 +1185,7 @@
     aget-object v3, v1, v0
 
     .line 124
-    iget-object v4, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ez:Ljava/util/HashSet;
+    iget-object v4, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ez:Ljava/util/HashSet;
 
     invoke-virtual {v4, v3}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -1196,14 +1196,14 @@
 
     .line 127
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ChooseAccountFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment;->Ex:Landroid/preference/PreferenceGroup;
+    iput-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->Ex:Landroid/preference/PreferenceGroup;
 
     .line 128
-    invoke-direct {p0}, Lcom/android/settings/accounts/ChooseAccountFragment;->jb()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->jb()V
 
     .line 129
     return-void
@@ -1214,21 +1214,21 @@
 
     .prologue
     .line 82
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 83
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    instance-of v0, v0, Lcom/android/settings/accounts/MiuiChooseAccountActivity;
+    instance-of v0, v0, Lcom/android/vendorsettings/accounts/MiuiChooseAccountActivity;
 
     if-eqz v0, :cond_0
 
     .line 84
     sget v0, Lmiui/R$style;->Theme_Light_Settings_NoTitle:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/ChooseAccountFragment;->setThemeRes(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->setThemeRes(I)V
 
     .line 86
     :cond_0
@@ -1240,12 +1240,12 @@
 
     .prologue
     .line 294
-    instance-of v0, p2, Lcom/android/settings/accounts/ProviderPreference;
+    instance-of v0, p2, Lcom/android/vendorsettings/accounts/ProviderPreference;
 
     if-eqz v0, :cond_1
 
     .line 295
-    check-cast p2, Lcom/android/settings/accounts/ProviderPreference;
+    check-cast p2, Lcom/android/vendorsettings/accounts/ProviderPreference;
 
     .line 296
     const-string v0, "ChooseAccountFragment"
@@ -1271,7 +1271,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p2}, Lcom/android/settings/accounts/ProviderPreference;->getAccountType()Ljava/lang/String;
+    invoke-virtual {p2}, Lcom/android/vendorsettings/accounts/ProviderPreference;->getAccountType()Ljava/lang/String;
 
     move-result-object v2
 
@@ -1287,11 +1287,11 @@
 
     .line 299
     :cond_0
-    invoke-virtual {p2}, Lcom/android/settings/accounts/ProviderPreference;->getAccountType()Ljava/lang/String;
+    invoke-virtual {p2}, Lcom/android/vendorsettings/accounts/ProviderPreference;->getAccountType()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/accounts/ChooseAccountFragment;->aj(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->aj(Ljava/lang/String;)V
 
     .line 301
     :cond_1

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/inputmethod/InputMethodDialogReceiver;
+.class public Lcom/android/vendorsettings/inputmethod/InputMethodDialogReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "InputMethodDialogReceiver.java"
 

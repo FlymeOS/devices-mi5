@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fuelgauge/BatterySaverSettings$3$1;
+.class Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$3$1;
 .super Ljava/lang/Object;
 .source "BatterySaverSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aeV:Lcom/android/settings/fuelgauge/BatterySaverSettings$3;
+.field final synthetic aeV:Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$3;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fuelgauge/BatterySaverSettings$3;)V
+.method constructor <init>(Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$3;)V
     .locals 0
 
     .prologue
     .line 179
-    iput-object p1, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings$3$1;->aeV:Lcom/android/settings/fuelgauge/BatterySaverSettings$3;
+    iput-object p1, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$3$1;->aeV:Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$3;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,8 +30,8 @@
 
     .prologue
     .line 182
-    # getter for: Lcom/android/settings/fuelgauge/BatterySaverSettings;->DEBUG:Z
-    invoke-static {}, Lcom/android/settings/fuelgauge/BatterySaverSettings;->access$200()Z
+    # getter for: Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->DEBUG:Z
+    invoke-static {}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->access$200()Z
 
     move-result v0
 
@@ -45,13 +45,13 @@
 
     .line 183
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings$3$1;->aeV:Lcom/android/settings/fuelgauge/BatterySaverSettings$3;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$3$1;->aeV:Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$3;
 
-    iget-object v0, v0, Lcom/android/settings/fuelgauge/BatterySaverSettings$3;->aeU:Lcom/android/settings/fuelgauge/BatterySaverSettings;
+    iget-object v0, v0, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings$3;->aeU:Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/android/settings/fuelgauge/BatterySaverSettings;->a(Lcom/android/settings/fuelgauge/BatterySaverSettings;Z)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;->a(Lcom/android/vendorsettings/fuelgauge/BatterySaverSettings;Z)V
 
     .line 184
     return-void

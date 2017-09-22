@@ -1,16 +1,16 @@
-.class Lcom/android/settings/applications/AdvancedAppSettings$CountAppsWithOverlayPermission;
+.class Lcom/android/vendorsettings/applications/AdvancedAppSettings$CountAppsWithOverlayPermission;
 .super Landroid/os/AsyncTask;
 .source "AdvancedAppSettings.java"
 
 
 # instance fields
-.field final synthetic Fd:Lcom/android/settings/applications/AdvancedAppSettings;
+.field final synthetic Fd:Lcom/android/vendorsettings/applications/AdvancedAppSettings;
 
 .field Fe:I
 
 
 # virtual methods
-.method protected varargs a([Lcom/android/settings/applications/AppStateOverlayBridge;)Ljava/lang/Integer;
+.method protected varargs a([Lcom/android/vendorsettings/applications/AppStateOverlayBridge;)Ljava/lang/Integer;
     .locals 2
 
     .prologue
@@ -20,14 +20,14 @@
     aget-object v0, p1, v0
 
     .line 150
-    invoke-virtual {v0}, Lcom/android/settings/applications/AppStateOverlayBridge;->jS()I
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/AppStateOverlayBridge;->jS()I
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/applications/AdvancedAppSettings$CountAppsWithOverlayPermission;->Fe:I
+    iput v1, p0, Lcom/android/vendorsettings/applications/AdvancedAppSettings$CountAppsWithOverlayPermission;->Fe:I
 
     .line 152
-    invoke-virtual {v0}, Lcom/android/settings/applications/AppStateOverlayBridge;->jT()I
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/AppStateOverlayBridge;->jT()I
 
     move-result v0
 
@@ -43,9 +43,9 @@
 
     .prologue
     .line 143
-    check-cast p1, [Lcom/android/settings/applications/AppStateOverlayBridge;
+    check-cast p1, [Lcom/android/vendorsettings/applications/AppStateOverlayBridge;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/AdvancedAppSettings$CountAppsWithOverlayPermission;->a([Lcom/android/settings/applications/AppStateOverlayBridge;)Ljava/lang/Integer;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/applications/AdvancedAppSettings$CountAppsWithOverlayPermission;->a([Lcom/android/vendorsettings/applications/AppStateOverlayBridge;)Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -57,24 +57,24 @@
 
     .prologue
     .line 158
-    iget-object v0, p0, Lcom/android/settings/applications/AdvancedAppSettings$CountAppsWithOverlayPermission;->Fd:Lcom/android/settings/applications/AdvancedAppSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AdvancedAppSettings$CountAppsWithOverlayPermission;->Fd:Lcom/android/vendorsettings/applications/AdvancedAppSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/AdvancedAppSettings;->isAdded()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/AdvancedAppSettings;->isAdded()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 159
-    iget-object v0, p0, Lcom/android/settings/applications/AdvancedAppSettings$CountAppsWithOverlayPermission;->Fd:Lcom/android/settings/applications/AdvancedAppSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AdvancedAppSettings$CountAppsWithOverlayPermission;->Fd:Lcom/android/vendorsettings/applications/AdvancedAppSettings;
 
-    invoke-static {v0}, Lcom/android/settings/applications/AdvancedAppSettings;->b(Lcom/android/settings/applications/AdvancedAppSettings;)Landroid/preference/Preference;
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/AdvancedAppSettings;->b(Lcom/android/vendorsettings/applications/AdvancedAppSettings;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/applications/AdvancedAppSettings$CountAppsWithOverlayPermission;->Fd:Lcom/android/settings/applications/AdvancedAppSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AdvancedAppSettings$CountAppsWithOverlayPermission;->Fd:Lcom/android/vendorsettings/applications/AdvancedAppSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/applications/AdvancedAppSettings;->getContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/applications/AdvancedAppSettings;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -90,7 +90,7 @@
 
     const/4 v4, 0x1
 
-    iget v5, p0, Lcom/android/settings/applications/AdvancedAppSettings$CountAppsWithOverlayPermission;->Fe:I
+    iget v5, p0, Lcom/android/vendorsettings/applications/AdvancedAppSettings$CountAppsWithOverlayPermission;->Fe:I
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -116,7 +116,7 @@
     .line 143
     check-cast p1, Ljava/lang/Integer;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/AdvancedAppSettings$CountAppsWithOverlayPermission;->onPostExecute(Ljava/lang/Integer;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/applications/AdvancedAppSettings$CountAppsWithOverlayPermission;->onPostExecute(Ljava/lang/Integer;)V
 
     return-void
 .end method

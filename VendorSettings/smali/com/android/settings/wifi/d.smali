@@ -1,19 +1,19 @@
-.class Lcom/android/settings/wifi/d;
+.class Lcom/android/vendorsettings/wifi/d;
 .super Landroid/content/BroadcastReceiver;
 .source "AdvancedWifiSettings.java"
 
 
 # instance fields
-.field final synthetic aAb:Lcom/android/settings/wifi/AdvancedWifiSettings;
+.field final synthetic aAb:Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/AdvancedWifiSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;)V
     .locals 0
 
     .prologue
     .line 86
-    iput-object p1, p0, Lcom/android/settings/wifi/d;->aAb:Lcom/android/settings/wifi/AdvancedWifiSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/d;->aAb:Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -50,9 +50,9 @@
 
     .line 92
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/wifi/d;->aAb:Lcom/android/settings/wifi/AdvancedWifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/d;->aAb:Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/AdvancedWifiSettings;->a(Lcom/android/settings/wifi/AdvancedWifiSettings;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;->a(Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;)V
 
     .line 94
     :cond_1

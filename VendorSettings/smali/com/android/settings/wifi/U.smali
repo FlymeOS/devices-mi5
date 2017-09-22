@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/wifi/U;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/vendorsettings/wifi/U;
+.super Lcom/android/vendorsettings/search/a;
 .source "SavedAccessPointsWifiSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 200
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/search/a;-><init>()V
 
     return-void
 .end method
@@ -42,18 +42,18 @@
     move-result-object v3
 
     .line 208
-    new-instance v1, Lcom/android/settings/search/n;
+    new-instance v1, Lcom/android/vendorsettings/search/n;
 
-    invoke-direct {v1, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, p1}, Lcom/android/vendorsettings/search/n;-><init>(Landroid/content/Context;)V
 
     .line 209
-    iput-object v3, v1, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v3, v1, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
     .line 210
-    iput-object v3, v1, Lcom/android/settings/search/n;->apu:Ljava/lang/String;
+    iput-object v3, v1, Lcom/android/vendorsettings/search/n;->apu:Ljava/lang/String;
 
     .line 211
-    iput-boolean p2, v1, Lcom/android/settings/search/n;->enabled:Z
+    iput-boolean p2, v1, Lcom/android/vendorsettings/search/n;->enabled:Z
 
     .line 212
     invoke-interface {v2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -75,9 +75,9 @@
     if-ge v1, v5, :cond_0
 
     .line 220
-    new-instance v6, Lcom/android/settings/search/n;
+    new-instance v6, Lcom/android/vendorsettings/search/n;
 
-    invoke-direct {v6, p1}, Lcom/android/settings/search/n;-><init>(Landroid/content/Context;)V
+    invoke-direct {v6, p1}, Lcom/android/vendorsettings/search/n;-><init>(Landroid/content/Context;)V
 
     .line 221
     invoke-interface {v4, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -90,13 +90,13 @@
 
     move-result-object v0
 
-    iput-object v0, v6, Lcom/android/settings/search/n;->title:Ljava/lang/String;
+    iput-object v0, v6, Lcom/android/vendorsettings/search/n;->title:Ljava/lang/String;
 
     .line 222
-    iput-object v3, v6, Lcom/android/settings/search/n;->apu:Ljava/lang/String;
+    iput-object v3, v6, Lcom/android/vendorsettings/search/n;->apu:Ljava/lang/String;
 
     .line 223
-    iput-boolean p2, v6, Lcom/android/settings/search/n;->enabled:Z
+    iput-boolean p2, v6, Lcom/android/vendorsettings/search/n;->enabled:Z
 
     .line 224
     invoke-interface {v2, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z

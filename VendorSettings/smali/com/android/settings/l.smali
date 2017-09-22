@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/l;
+.class public Lcom/android/vendorsettings/l;
 .super Landroid/widget/BaseAdapter;
 .source "ActivityPicker.java"
 
@@ -26,10 +26,10 @@
 
     check-cast v0, Landroid/view/LayoutInflater;
 
-    iput-object v0, p0, Lcom/android/settings/l;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/vendorsettings/l;->mInflater:Landroid/view/LayoutInflater;
 
     .line 279
-    iput-object p2, p0, Lcom/android/settings/l;->D:Ljava/util/List;
+    iput-object p2, p0, Lcom/android/vendorsettings/l;->D:Ljava/util/List;
 
     .line 280
     return-void
@@ -42,7 +42,7 @@
 
     .prologue
     .line 286
-    iget-object v0, p0, Lcom/android/settings/l;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/l;->D:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -56,7 +56,7 @@
 
     .prologue
     .line 293
-    iget-object v0, p0, Lcom/android/settings/l;->D:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/l;->D:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -85,7 +85,7 @@
     if-nez p2, :cond_0
 
     .line 308
-    iget-object v0, p0, Lcom/android/settings/l;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/vendorsettings/l;->mInflater:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0400cb
 
@@ -97,11 +97,11 @@
 
     .line 311
     :goto_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/l;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/l;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/m;
+    check-cast v0, Lcom/android/vendorsettings/m;
 
     move-object v1, v2
 
@@ -109,12 +109,12 @@
     check-cast v1, Landroid/widget/TextView;
 
     .line 313
-    iget-object v3, v0, Lcom/android/settings/m;->label:Ljava/lang/CharSequence;
+    iget-object v3, v0, Lcom/android/vendorsettings/m;->label:Ljava/lang/CharSequence;
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 314
-    iget-object v0, v0, Lcom/android/settings/m;->icon:Landroid/graphics/drawable/Drawable;
+    iget-object v0, v0, Lcom/android/vendorsettings/m;->icon:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, v0, v4, v4, v4}, Landroid/widget/TextView;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 

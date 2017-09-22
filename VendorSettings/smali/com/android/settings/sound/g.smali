@@ -1,4 +1,4 @@
-.class Lcom/android/settings/sound/g;
+.class Lcom/android/vendorsettings/sound/g;
 .super Ljava/lang/Object;
 .source "AudioSettingsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+.field final synthetic aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sound/AudioSettingsFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 120
-    iput-object p1, p0, Lcom/android/settings/sound/g;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/sound/g;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 123
-    iget-object v0, p0, Lcom/android/settings/sound/g;->aqn:Lcom/android/settings/sound/AudioSettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/sound/g;->aqn:Lcom/android/vendorsettings/sound/AudioSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/sound/AudioSettingsFragment;->a(Lcom/android/settings/sound/AudioSettingsFragment;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/sound/AudioSettingsFragment;->a(Lcom/android/vendorsettings/sound/AudioSettingsFragment;)V
 
     .line 124
     return-void

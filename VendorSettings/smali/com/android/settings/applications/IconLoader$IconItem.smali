@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/IconLoader$IconItem;
+.class Lcom/android/vendorsettings/applications/IconLoader$IconItem;
 .super Ljava/lang/Object;
 .source "IconLoader.java"
 
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 19
-    iput-object p1, p0, Lcom/android/settings/applications/IconLoader$IconItem;->It:Landroid/widget/ImageView;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/IconLoader$IconItem;->It:Landroid/widget/ImageView;
 
     .line 20
-    iput-object p2, p0, Lcom/android/settings/applications/IconLoader$IconItem;->Iu:Lcom/android/b/a/o;
+    iput-object p2, p0, Lcom/android/vendorsettings/applications/IconLoader$IconItem;->Iu:Lcom/android/b/a/o;
 
     .line 21
     return-void
@@ -34,7 +34,7 @@
 
     .prologue
     .line 24
-    iget-object v0, p0, Lcom/android/settings/applications/IconLoader$IconItem;->It:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/IconLoader$IconItem;->It:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getTag()Ljava/lang/Object;
 
@@ -43,7 +43,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 25
-    iget-object v1, p0, Lcom/android/settings/applications/IconLoader$IconItem;->Iu:Lcom/android/b/a/o;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/IconLoader$IconItem;->Iu:Lcom/android/b/a/o;
 
     iget-object v1, v1, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -56,9 +56,9 @@
     if-eqz v0, :cond_0
 
     .line 26
-    iget-object v0, p0, Lcom/android/settings/applications/IconLoader$IconItem;->It:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/IconLoader$IconItem;->It:Landroid/widget/ImageView;
 
-    iget-object v1, p0, Lcom/android/settings/applications/IconLoader$IconItem;->Iu:Lcom/android/b/a/o;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/IconLoader$IconItem;->Iu:Lcom/android/b/a/o;
 
     iget-object v1, v1, Lcom/android/b/a/o;->icon:Landroid/graphics/drawable/Drawable;
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fo;
+.class Lcom/android/vendorsettings/fo;
 .super Ljava/lang/Object;
 .source "MiuiSecurityTrustedCredentials.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic sW:Lcom/android/settings/fm;
+.field final synthetic sW:Lcom/android/vendorsettings/fm;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fm;)V
+.method constructor <init>(Lcom/android/vendorsettings/fm;)V
     .locals 0
 
     .prologue
     .line 492
-    iput-object p1, p0, Lcom/android/settings/fo;->sW:Lcom/android/settings/fm;
+    iput-object p1, p0, Lcom/android/vendorsettings/fo;->sW:Lcom/android/vendorsettings/fm;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

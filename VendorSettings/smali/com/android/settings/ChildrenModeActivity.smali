@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ChildrenModeActivity;
+.class public Lcom/android/vendorsettings/ChildrenModeActivity;
 .super Landroid/app/Activity;
 .source "ChildrenModeActivity.java"
 
@@ -21,7 +21,7 @@
 
     .prologue
     .line 21
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeActivity;->finish()V
 
     .line 22
     return-void
@@ -35,7 +35,7 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 11
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeActivity;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeActivity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -45,9 +45,9 @@
     move-result-object v0
 
     .line 13
-    new-instance v1, Lcom/android/settings/ChildrenModeSettings;
+    new-instance v1, Lcom/android/vendorsettings/ChildrenModeSettings;
 
-    invoke-direct {v1}, Lcom/android/settings/ChildrenModeSettings;-><init>()V
+    invoke-direct {v1}, Lcom/android/vendorsettings/ChildrenModeSettings;-><init>()V
 
     .line 14
     const v2, 0x1020002

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/WifiPrioritySettings;
+.class public Lcom/android/vendorsettings/wifi/WifiPrioritySettings;
 .super Lmiui/preference/PreferenceActivity;
 .source "WifiPrioritySettings.java"
 
@@ -110,7 +110,7 @@
     :cond_3
     iget-object v0, p1, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/WifiPrioritySettings;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -120,7 +120,7 @@
     :cond_4
     iget-object v1, p2, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
-    invoke-direct {p0, v1}, Lcom/android/settings/wifi/WifiPrioritySettings;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -292,12 +292,12 @@
     goto/16 :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/wifi/WifiPrioritySettings;Landroid/net/wifi/WifiConfiguration;Landroid/net/wifi/WifiConfiguration;)Z
+.method static synthetic a(Lcom/android/vendorsettings/wifi/WifiPrioritySettings;Landroid/net/wifi/WifiConfiguration;Landroid/net/wifi/WifiConfiguration;)Z
     .locals 1
 
     .prologue
     .line 22
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/wifi/WifiPrioritySettings;->a(Landroid/net/wifi/WifiConfiguration;Landroid/net/wifi/WifiConfiguration;)Z
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->a(Landroid/net/wifi/WifiConfiguration;Landroid/net/wifi/WifiConfiguration;)Z
 
     move-result v0
 
@@ -339,7 +339,7 @@
     iput v1, v0, Landroid/net/wifi/WifiConfiguration;->priority:I
 
     .line 283
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->je:Landroid/net/wifi/WifiManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->je:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v1, v0}, Landroid/net/wifi/WifiManager;->updateNetwork(Landroid/net/wifi/WifiConfiguration;)I
 
@@ -445,9 +445,9 @@
 
     .line 108
     :cond_3
-    new-instance v0, Lcom/android/settings/wifi/ao;
+    new-instance v0, Lcom/android/vendorsettings/wifi/ao;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/wifi/ao;-><init>(Lcom/android/settings/wifi/WifiPrioritySettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/wifi/ao;-><init>(Lcom/android/vendorsettings/wifi/WifiPrioritySettings;)V
 
     invoke-static {p1, v0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -479,7 +479,7 @@
     iput v3, v0, Landroid/net/wifi/WifiConfiguration;->priority:I
 
     .line 121
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/WifiPrioritySettings;->h(Landroid/net/wifi/WifiConfiguration;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->h(Landroid/net/wifi/WifiConfiguration;)V
 
     .line 116
     :cond_4
@@ -500,7 +500,7 @@
     move v2, v0
 
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -509,7 +509,7 @@
     if-ge v2, v0, :cond_2
 
     .line 260
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDx:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDx:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceCategory;->getPreference(I)Landroid/preference/Preference;
 
@@ -519,7 +519,7 @@
     if-eqz v1, :cond_0
 
     .line 262
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -545,7 +545,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiPrioritySettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -614,7 +614,7 @@
     :cond_1
     iget-object v0, v0, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/WifiPrioritySettings;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -637,32 +637,32 @@
     .line 36
     const v0, 0x7f0401a2
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiPrioritySettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->addPreferencesFromResource(I)V
 
     .line 37
     const-string v0, "configured_ap_list"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiPrioritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDx:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDx:Landroid/preference/PreferenceCategory;
 
     .line 39
     const-string v0, "wifi"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiPrioritySettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/wifi/WifiManager;
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->je:Landroid/net/wifi/WifiManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->je:Landroid/net/wifi/WifiManager;
 
     .line 40
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiPrioritySettings;->yq()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->yq()V
 
     .line 41
     return-void
@@ -761,7 +761,7 @@
 
     aput-object p2, v6, v4
 
-    invoke-virtual {p0, v5, v6}, Lcom/android/settings/wifi/WifiPrioritySettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v5, v6}, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -781,9 +781,9 @@
     add-int/lit8 v4, v1, -0x1
 
     .line 235
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
 
-    iget-object v5, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
+    iget-object v5, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
 
     invoke-interface {v5, v3}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
@@ -802,7 +802,7 @@
     move-result v4
 
     .line 238
-    iget-object v3, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
+    iget-object v3, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->size()I
 
@@ -815,7 +815,7 @@
     if-gt v3, v4, :cond_0
 
     .line 240
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
 
     invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -829,7 +829,7 @@
     iput v6, v1, Landroid/net/wifi/WifiConfiguration;->priority:I
 
     .line 242
-    invoke-direct {p0, v1}, Lcom/android/settings/wifi/WifiPrioritySettings;->h(Landroid/net/wifi/WifiConfiguration;)V
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->h(Landroid/net/wifi/WifiConfiguration;)V
 
     .line 239
     add-int/lit8 v1, v3, 0x1
@@ -865,12 +865,12 @@
 
     .line 244
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->je:Landroid/net/wifi/WifiManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->je:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v1}, Landroid/net/wifi/WifiManager;->saveConfiguration()Z
 
     .line 246
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiPrioritySettings;->kW()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->kW()V
 
     .line 252
     :goto_3
@@ -901,7 +901,7 @@
     const/4 v1, 0x0
 
     .line 47
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->je:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->je:Landroid/net/wifi/WifiManager;
 
     if-nez v0, :cond_1
 
@@ -919,39 +919,39 @@
 
     .line 52
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->je:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->je:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->getConfiguredNetworks()Ljava/util/List;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
 
     .line 53
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDx:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDx:Landroid/preference/PreferenceCategory;
 
     if-eqz v0, :cond_0
 
     .line 54
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDx:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDx:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceCategory;->removeAll()V
 
     .line 56
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDz:I
+    iput v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDz:I
 
     .line 57
-    iget v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDz:I
+    iget v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDz:I
 
     new-array v3, v0, [Ljava/lang/String;
 
@@ -959,7 +959,7 @@
 
     .line 58
     :goto_1
-    iget v2, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDz:I
+    iget v2, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDz:I
 
     if-ge v0, v2, :cond_2
 
@@ -982,12 +982,12 @@
 
     .line 62
     :goto_2
-    iget v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDz:I
+    iget v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDz:I
 
     if-ge v2, v0, :cond_3
 
     .line 63
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1041,16 +1041,16 @@
 
     .line 67
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/WifiPrioritySettings;->D(Ljava/util/List;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->D(Ljava/util/List;)V
 
     .line 69
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiPrioritySettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -1076,12 +1076,12 @@
 
     .line 71
     :goto_3
-    iget v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDz:I
+    iget v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDz:I
 
     if-ge v1, v0, :cond_5
 
     .line 72
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDy:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1179,7 +1179,7 @@
     invoke-virtual {v4, v1}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 85
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->aDx:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->aDx:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v4}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -1192,7 +1192,7 @@
     :cond_4
     iget-object v0, v0, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/WifiPrioritySettings;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1200,7 +1200,7 @@
 
     .line 87
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiPrioritySettings;->je:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiPrioritySettings;->je:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->saveConfiguration()Z
 

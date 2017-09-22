@@ -1,19 +1,19 @@
-.class Lcom/android/settings/cn;
+.class Lcom/android/vendorsettings/cn;
 .super Landroid/content/BroadcastReceiver;
 .source "DeviceAdminSettings.java"
 
 
 # instance fields
-.field final synthetic lm:Lcom/android/settings/DeviceAdminSettings;
+.field final synthetic lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DeviceAdminSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/DeviceAdminSettings;)V
     .locals 0
 
     .prologue
     .line 71
-    iput-object p1, p0, Lcom/android/settings/cn;->lm:Lcom/android/settings/DeviceAdminSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/cn;->lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -40,9 +40,9 @@
     if-eqz v0, :cond_0
 
     .line 78
-    iget-object v0, p0, Lcom/android/settings/cn;->lm:Lcom/android/settings/DeviceAdminSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/cn;->lm:Lcom/android/vendorsettings/DeviceAdminSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/DeviceAdminSettings;->dr()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/DeviceAdminSettings;->dr()V
 
     .line 80
     :cond_0

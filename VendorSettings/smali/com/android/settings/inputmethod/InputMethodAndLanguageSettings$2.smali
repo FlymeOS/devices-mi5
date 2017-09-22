@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$2;
+.class Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings$2;
 .super Ljava/lang/Object;
 .source "InputMethodAndLanguageSettings.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic afZ:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+.field final synthetic afZ:Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings;
 
 .field final synthetic aga:Ljava/text/Collator;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;Ljava/text/Collator;)V
+.method constructor <init>(Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings;Ljava/text/Collator;)V
     .locals 0
 
     .prologue
     .line 477
-    iput-object p1, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$2;->afZ:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings$2;->afZ:Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings;
 
-    iput-object p2, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$2;->aga:Ljava/text/Collator;
+    iput-object p2, p0, Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings$2;->aga:Ljava/text/Collator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,14 +29,14 @@
 
 
 # virtual methods
-.method public a(Lcom/android/settings/inputmethod/InputMethodPreference;Lcom/android/settings/inputmethod/InputMethodPreference;)I
+.method public a(Lcom/android/vendorsettings/inputmethod/InputMethodPreference;Lcom/android/vendorsettings/inputmethod/InputMethodPreference;)I
     .locals 1
 
     .prologue
     .line 480
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$2;->aga:Ljava/text/Collator;
+    iget-object v0, p0, Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings$2;->aga:Ljava/text/Collator;
 
-    invoke-virtual {p1, p2, v0}, Lcom/android/settings/inputmethod/InputMethodPreference;->a(Lcom/android/settings/inputmethod/InputMethodPreference;Ljava/text/Collator;)I
+    invoke-virtual {p1, p2, v0}, Lcom/android/vendorsettings/inputmethod/InputMethodPreference;->a(Lcom/android/vendorsettings/inputmethod/InputMethodPreference;Ljava/text/Collator;)I
 
     move-result v0
 
@@ -48,11 +48,11 @@
 
     .prologue
     .line 477
-    check-cast p1, Lcom/android/settings/inputmethod/InputMethodPreference;
+    check-cast p1, Lcom/android/vendorsettings/inputmethod/InputMethodPreference;
 
-    check-cast p2, Lcom/android/settings/inputmethod/InputMethodPreference;
+    check-cast p2, Lcom/android/vendorsettings/inputmethod/InputMethodPreference;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$2;->a(Lcom/android/settings/inputmethod/InputMethodPreference;Lcom/android/settings/inputmethod/InputMethodPreference;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/inputmethod/InputMethodAndLanguageSettings$2;->a(Lcom/android/vendorsettings/inputmethod/InputMethodPreference;Lcom/android/vendorsettings/inputmethod/InputMethodPreference;)I
 
     move-result v0
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/F;
+.class public Lcom/android/vendorsettings/display/F;
 .super Ljava/lang/Object;
 .source "PaperModeTimeModeUtil.java"
 
@@ -198,10 +198,10 @@
 
     .prologue
     .line 29
-    invoke-static {p0}, Lcom/android/settings/display/F;->bm(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/android/vendorsettings/display/F;->bm(Landroid/content/Context;)V
 
     .line 30
-    invoke-static {p0}, Lcom/android/settings/display/F;->bn(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/android/vendorsettings/display/F;->bn(Landroid/content/Context;)V
 
     .line 31
     return-void
@@ -269,25 +269,25 @@
 
     .prologue
     .line 50
-    invoke-static {p0}, Lcom/android/settings/display/F;->bo(Landroid/content/Context;)I
+    invoke-static {p0}, Lcom/android/vendorsettings/display/F;->bo(Landroid/content/Context;)I
 
     move-result v0
 
-    invoke-static {v0}, Lcom/android/settings/display/F;->bO(I)J
+    invoke-static {v0}, Lcom/android/vendorsettings/display/F;->bO(I)J
 
     move-result-wide v0
 
     .line 52
-    invoke-static {p0}, Lcom/android/settings/display/F;->bp(Landroid/content/Context;)I
+    invoke-static {p0}, Lcom/android/vendorsettings/display/F;->bp(Landroid/content/Context;)I
 
     move-result v2
 
-    invoke-static {v2}, Lcom/android/settings/display/F;->bO(I)J
+    invoke-static {v2}, Lcom/android/vendorsettings/display/F;->bO(I)J
 
     move-result-wide v2
 
     .line 53
-    invoke-static {p0, v0, v1, v2, v3}, Lcom/android/settings/display/F;->b(Landroid/content/Context;JJ)V
+    invoke-static {p0, v0, v1, v2, v3}, Lcom/android/vendorsettings/display/F;->b(Landroid/content/Context;JJ)V
 
     .line 54
     return-void

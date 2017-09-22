@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ar;
+.class Lcom/android/vendorsettings/ar;
 .super Ljava/lang/Object;
 .source "ChildrenModeSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic dl:Lcom/android/settings/ChildrenModeSettings;
+.field final synthetic dl:Lcom/android/vendorsettings/ChildrenModeSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ChildrenModeSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/ChildrenModeSettings;)V
     .locals 0
 
     .prologue
     .line 83
-    iput-object p1, p0, Lcom/android/settings/ar;->dl:Lcom/android/settings/ChildrenModeSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/ar;->dl:Lcom/android/vendorsettings/ChildrenModeSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,9 +45,9 @@
     if-ne p2, v2, :cond_0
 
     .line 87
-    iget-object v2, p0, Lcom/android/settings/ar;->dl:Lcom/android/settings/ChildrenModeSettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/ar;->dl:Lcom/android/vendorsettings/ChildrenModeSettings;
 
-    invoke-static {v2}, Lcom/android/settings/ChildrenModeSettings;->b(Lcom/android/settings/ChildrenModeSettings;)Landroid/preference/CheckBoxPreference;
+    invoke-static {v2}, Lcom/android/vendorsettings/ChildrenModeSettings;->b(Lcom/android/vendorsettings/ChildrenModeSettings;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v2
 
@@ -81,9 +81,9 @@
     invoke-virtual {v2, v3}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 92
-    iget-object v3, p0, Lcom/android/settings/ar;->dl:Lcom/android/settings/ChildrenModeSettings;
+    iget-object v3, p0, Lcom/android/vendorsettings/ar;->dl:Lcom/android/vendorsettings/ChildrenModeSettings;
 
-    invoke-virtual {v3}, Lcom/android/settings/ChildrenModeSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {v3}, Lcom/android/vendorsettings/ChildrenModeSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
@@ -123,9 +123,9 @@
     invoke-virtual {v0, v2}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 98
-    iget-object v2, p0, Lcom/android/settings/ar;->dl:Lcom/android/settings/ChildrenModeSettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/ar;->dl:Lcom/android/vendorsettings/ChildrenModeSettings;
 
-    invoke-virtual {v2, v0}, Lcom/android/settings/ChildrenModeSettings;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v2, v0}, Lcom/android/vendorsettings/ChildrenModeSettings;->startActivity(Landroid/content/Intent;)V
 
     move v0, v1
 

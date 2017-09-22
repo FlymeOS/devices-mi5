@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/fingerprint/FingerprintSettings;
-.super Lcom/android/settings/SubSettings;
+.class public Lcom/android/vendorsettings/fingerprint/FingerprintSettings;
+.super Lcom/android/vendorsettings/SubSettings;
 .source "FingerprintSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 72
-    invoke-direct {p0}, Lcom/android/settings/SubSettings;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SubSettings;-><init>()V
 
     .line 705
     return-void
@@ -24,7 +24,7 @@
     .line 87
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/SubSettings;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/vendorsettings/SubSettings;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -33,7 +33,7 @@
     .line 88
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/fingerprint/x;
+    const-class v2, Lcom/android/vendorsettings/fingerprint/x;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -50,7 +50,7 @@
 
     .prologue
     .line 94
-    const-class v0, Lcom/android/settings/fingerprint/x;
+    const-class v0, Lcom/android/vendorsettings/fingerprint/x;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -79,17 +79,17 @@
 
     .prologue
     .line 100
-    invoke-super {p0, p1}, Lcom/android/settings/SubSettings;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SubSettings;->onCreate(Landroid/os/Bundle;)V
 
     .line 101
     const v0, 0x7f0c01eb
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fingerprint/FingerprintSettings;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fingerprint/FingerprintSettings;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     .line 102
-    invoke-virtual {p0, v0}, Lcom/android/settings/fingerprint/FingerprintSettings;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fingerprint/FingerprintSettings;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 103
     return-void

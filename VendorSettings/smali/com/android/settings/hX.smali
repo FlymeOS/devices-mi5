@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/hX;
+.class public Lcom/android/vendorsettings/hX;
 .super Landroid/preference/Preference;
 .source "TintablePreference.java"
 
@@ -29,7 +29,7 @@
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
     .line 42
-    iget v0, p0, Lcom/android/settings/hX;->AV:I
+    iget v0, p0, Lcom/android/vendorsettings/hX;->AV:I
 
     if-eqz v0, :cond_0
 
@@ -42,7 +42,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iget v1, p0, Lcom/android/settings/hX;->AV:I
+    iget v1, p0, Lcom/android/vendorsettings/hX;->AV:I
 
     invoke-static {v1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
@@ -60,10 +60,10 @@
 
     .prologue
     .line 34
-    iput p1, p0, Lcom/android/settings/hX;->AV:I
+    iput p1, p0, Lcom/android/vendorsettings/hX;->AV:I
 
     .line 35
-    invoke-virtual {p0}, Lcom/android/settings/hX;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/hX;->notifyChanged()V
 
     .line 36
     return-void

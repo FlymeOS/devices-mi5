@@ -1,16 +1,16 @@
-.class public final enum Lcom/android/settings/LockPatternView$DisplayMode;
+.class public final enum Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 .super Ljava/lang/Enum;
 .source "LockPatternView.java"
 
 
 # static fields
-.field public static final enum pA:Lcom/android/settings/LockPatternView$DisplayMode;
+.field public static final enum pA:Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
-.field public static final enum pB:Lcom/android/settings/LockPatternView$DisplayMode;
+.field public static final enum pB:Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
-.field private static final synthetic pC:[Lcom/android/settings/LockPatternView$DisplayMode;
+.field private static final synthetic pC:[Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
-.field public static final enum pz:Lcom/android/settings/LockPatternView$DisplayMode;
+.field public static final enum pz:Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
 
 # direct methods
@@ -25,50 +25,50 @@
     const/4 v2, 0x0
 
     .line 121
-    new-instance v0, Lcom/android/settings/LockPatternView$DisplayMode;
+    new-instance v0, Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
     const-string v1, "Correct"
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/LockPatternView$DisplayMode;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v2}, Lcom/android/vendorsettings/LockPatternView$DisplayMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/settings/LockPatternView$DisplayMode;->pz:Lcom/android/settings/LockPatternView$DisplayMode;
+    sput-object v0, Lcom/android/vendorsettings/LockPatternView$DisplayMode;->pz:Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
     .line 126
-    new-instance v0, Lcom/android/settings/LockPatternView$DisplayMode;
+    new-instance v0, Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
     const-string v1, "Animate"
 
-    invoke-direct {v0, v1, v3}, Lcom/android/settings/LockPatternView$DisplayMode;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v3}, Lcom/android/vendorsettings/LockPatternView$DisplayMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/settings/LockPatternView$DisplayMode;->pA:Lcom/android/settings/LockPatternView$DisplayMode;
+    sput-object v0, Lcom/android/vendorsettings/LockPatternView$DisplayMode;->pA:Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
     .line 131
-    new-instance v0, Lcom/android/settings/LockPatternView$DisplayMode;
+    new-instance v0, Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
     const-string v1, "Wrong"
 
-    invoke-direct {v0, v1, v4}, Lcom/android/settings/LockPatternView$DisplayMode;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v4}, Lcom/android/vendorsettings/LockPatternView$DisplayMode;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/settings/LockPatternView$DisplayMode;->pB:Lcom/android/settings/LockPatternView$DisplayMode;
+    sput-object v0, Lcom/android/vendorsettings/LockPatternView$DisplayMode;->pB:Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
     .line 116
     const/4 v0, 0x3
 
-    new-array v0, v0, [Lcom/android/settings/LockPatternView$DisplayMode;
+    new-array v0, v0, [Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
-    sget-object v1, Lcom/android/settings/LockPatternView$DisplayMode;->pz:Lcom/android/settings/LockPatternView$DisplayMode;
+    sget-object v1, Lcom/android/vendorsettings/LockPatternView$DisplayMode;->pz:Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/settings/LockPatternView$DisplayMode;->pA:Lcom/android/settings/LockPatternView$DisplayMode;
+    sget-object v1, Lcom/android/vendorsettings/LockPatternView$DisplayMode;->pA:Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/android/settings/LockPatternView$DisplayMode;->pB:Lcom/android/settings/LockPatternView$DisplayMode;
+    sget-object v1, Lcom/android/vendorsettings/LockPatternView$DisplayMode;->pB:Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/android/settings/LockPatternView$DisplayMode;->pC:[Lcom/android/settings/LockPatternView$DisplayMode;
+    sput-object v0, Lcom/android/vendorsettings/LockPatternView$DisplayMode;->pC:[Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
     return-void
 .end method
@@ -83,34 +83,34 @@
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lcom/android/settings/LockPatternView$DisplayMode;
+.method public static valueOf(Ljava/lang/String;)Lcom/android/vendorsettings/LockPatternView$DisplayMode;
     .locals 1
 
     .prologue
     .line 116
-    const-class v0, Lcom/android/settings/LockPatternView$DisplayMode;
+    const-class v0, Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/LockPatternView$DisplayMode;
+    check-cast v0, Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
     return-object v0
 .end method
 
-.method public static values()[Lcom/android/settings/LockPatternView$DisplayMode;
+.method public static values()[Lcom/android/vendorsettings/LockPatternView$DisplayMode;
     .locals 1
 
     .prologue
     .line 116
-    sget-object v0, Lcom/android/settings/LockPatternView$DisplayMode;->pC:[Lcom/android/settings/LockPatternView$DisplayMode;
+    sget-object v0, Lcom/android/vendorsettings/LockPatternView$DisplayMode;->pC:[Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
-    invoke-virtual {v0}, [Lcom/android/settings/LockPatternView$DisplayMode;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/android/vendorsettings/LockPatternView$DisplayMode;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, [Lcom/android/settings/LockPatternView$DisplayMode;
+    check-cast v0, [Lcom/android/vendorsettings/LockPatternView$DisplayMode;
 
     return-object v0
 .end method

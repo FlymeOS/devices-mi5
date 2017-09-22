@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/ChooseAccountFragment$1;
+.class Lcom/android/vendorsettings/accounts/ChooseAccountFragment$1;
 .super Ljava/lang/Object;
 .source "ChooseAccountFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic EB:Lcom/android/settings/accounts/ChooseAccountFragment;
+.field final synthetic EB:Lcom/android/vendorsettings/accounts/ChooseAccountFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accounts/ChooseAccountFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/accounts/ChooseAccountFragment;)V
     .locals 0
 
     .prologue
     .line 94
-    iput-object p1, p0, Lcom/android/settings/accounts/ChooseAccountFragment$1;->EB:Lcom/android/settings/accounts/ChooseAccountFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$1;->EB:Lcom/android/vendorsettings/accounts/ChooseAccountFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/android/settings/accounts/ChooseAccountFragment$1;->EB:Lcom/android/settings/accounts/ChooseAccountFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ChooseAccountFragment$1;->EB:Lcom/android/vendorsettings/accounts/ChooseAccountFragment;
 
     const/4 v1, 0x0
 
     const/4 v2, 0x0
 
-    invoke-static {v0, v1, v2}, Lcom/android/settings/accounts/ChooseAccountFragment;->a(Lcom/android/settings/accounts/ChooseAccountFragment;ILjava/lang/String;)V
+    invoke-static {v0, v1, v2}, Lcom/android/vendorsettings/accounts/ChooseAccountFragment;->a(Lcom/android/vendorsettings/accounts/ChooseAccountFragment;ILjava/lang/String;)V
 
     .line 98
     return-void

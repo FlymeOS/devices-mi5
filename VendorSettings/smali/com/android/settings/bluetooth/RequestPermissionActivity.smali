@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/bluetooth/RequestPermissionActivity;
+.class public Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;
 .super Landroid/app/Activity;
 .source "RequestPermissionActivity.java"
 
@@ -33,44 +33,44 @@
     .line 61
     const/16 v0, 0x78
 
-    iput v0, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mTimeout:I
+    iput v0, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mTimeout:I
 
     .line 80
-    new-instance v0, Lcom/android/settings/bluetooth/RequestPermissionActivity$1;
+    new-instance v0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity$1;-><init>(Lcom/android/settings/bluetooth/RequestPermissionActivity;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity$1;-><init>(Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;)V
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mReceiver:Landroid/content/BroadcastReceiver;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/bluetooth/RequestPermissionActivity;)Z
+.method static synthetic a(Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;)Z
     .locals 1
 
     .prologue
     .line 43
-    iget-boolean v0, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->Sm:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->Sm:Z
 
     return v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/bluetooth/RequestPermissionActivity;)Z
+.method static synthetic b(Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;)Z
     .locals 1
 
     .prologue
     .line 43
-    iget-boolean v0, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->So:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->So:Z
 
     return v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/bluetooth/RequestPermissionActivity;)V
+.method static synthetic c(Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;)V
     .locals 0
 
     .prologue
     .line 43
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->nZ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->nZ()V
 
     return-void
 .end method
@@ -89,7 +89,7 @@
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 179
-    iget-boolean v1, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->Sm:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->Sm:Z
 
     if-eqz v1, :cond_1
 
@@ -100,7 +100,7 @@
 
     const v2, 0x7f0c013e
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -129,15 +129,15 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mDialog:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mDialog:Landroid/app/AlertDialog;
 
     .line 201
-    iget-object v0, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mDialog:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     .line 203
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -154,7 +154,7 @@
 
     const/4 v1, -0x1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->onClick(Landroid/content/DialogInterface;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->onClick(Landroid/content/DialogInterface;I)V
 
     .line 207
     :cond_0
@@ -162,14 +162,14 @@
 
     .line 189
     :cond_1
-    iget v1, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mTimeout:I
+    iget v1, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mTimeout:I
 
     if-nez v1, :cond_2
 
     .line 190
     const v1, 0x7f0c0138
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -179,7 +179,7 @@
     :goto_1
     const v1, 0x7f0c00d5
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -188,7 +188,7 @@
     .line 197
     const v1, 0x7f0c00d6
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -202,7 +202,7 @@
 
     new-array v2, v5, [Ljava/lang/Object;
 
-    iget v3, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mTimeout:I
+    iget v3, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mTimeout:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -210,7 +210,7 @@
 
     aput-object v3, v2, v4
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v1, v2}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -226,7 +226,7 @@
     const/4 v0, 0x1
 
     .line 251
-    iget-boolean v1, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->Sn:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->Sn:Z
 
     if-eqz v1, :cond_2
 
@@ -236,32 +236,32 @@
     .line 272
     :cond_0
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mDialog:Landroid/app/AlertDialog;
+    iget-object v1, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mDialog:Landroid/app/AlertDialog;
 
     if-eqz v1, :cond_1
 
     .line 273
-    iget-object v1, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mDialog:Landroid/app/AlertDialog;
+    iget-object v1, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v1}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 276
     :cond_1
-    invoke-virtual {p0, v0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->setResult(I)V
 
     .line 277
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->finish()V
 
     .line 278
     return-void
 
     .line 254
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->Qu:Lcom/android/b/b/Q;
+    iget-object v1, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->Qu:Lcom/android/b/b/Q;
 
     const/16 v2, 0x17
 
-    iget v3, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mTimeout:I
+    iget v3, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mTimeout:I
 
     invoke-virtual {v1, v2, v3}, Lcom/android/b/b/Q;->setScanMode(II)Z
 
@@ -274,7 +274,7 @@
 
     move-result-wide v2
 
-    iget v1, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mTimeout:I
+    iget v1, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mTimeout:I
 
     int-to-long v4, v1
 
@@ -285,10 +285,10 @@
     add-long/2addr v2, v4
 
     .line 258
-    invoke-static {p0, v2, v3}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->a(Landroid/content/Context;J)V
+    invoke-static {p0, v2, v3}, Lcom/android/vendorsettings/bluetooth/LocalBluetoothPreferences;->a(Landroid/content/Context;J)V
 
     .line 260
-    iget v1, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mTimeout:I
+    iget v1, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mTimeout:I
 
     if-lez v1, :cond_3
 
@@ -297,7 +297,7 @@
 
     .line 263
     :cond_3
-    iget v1, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mTimeout:I
+    iget v1, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mTimeout:I
 
     .line 265
     if-lt v1, v0, :cond_0
@@ -324,7 +324,7 @@
     const/4 v1, 0x0
 
     .line 285
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -344,12 +344,12 @@
     if-eqz v3, :cond_1
 
     .line 287
-    iput-boolean v0, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->Sn:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->Sn:Z
 
     .line 306
     :cond_0
     :goto_0
-    invoke-static {p0}, Lcom/android/settings/bluetooth/Utils;->ax(Landroid/content/Context;)Lcom/android/b/b/R;
+    invoke-static {p0}, Lcom/android/vendorsettings/bluetooth/Utils;->ax(Landroid/content/Context;)Lcom/android/b/b/R;
 
     move-result-object v2
 
@@ -364,7 +364,7 @@
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 309
-    invoke-virtual {p0, v1}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->setResult(I)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->setResult(I)V
 
     .line 314
     :goto_1
@@ -393,7 +393,7 @@
 
     move-result v2
 
-    iput v2, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mTimeout:I
+    iput v2, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mTimeout:I
 
     .line 293
     const-string v2, "RequestPermissionActivity"
@@ -408,7 +408,7 @@
 
     move-result-object v3
 
-    iget v4, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mTimeout:I
+    iget v4, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mTimeout:I
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -421,11 +421,11 @@
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 295
-    iget v2, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mTimeout:I
+    iget v2, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mTimeout:I
 
     if-ltz v2, :cond_2
 
-    iget v2, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mTimeout:I
+    iget v2, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mTimeout:I
 
     const/16 v3, 0xe10
 
@@ -433,7 +433,7 @@
 
     .line 296
     :cond_2
-    iput v5, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mTimeout:I
+    iput v5, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mTimeout:I
 
     goto :goto_0
 
@@ -446,7 +446,7 @@
     invoke-static {v2, v3}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 302
-    invoke-virtual {p0, v1}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->setResult(I)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->setResult(I)V
 
     goto :goto_1
 
@@ -456,7 +456,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->Qu:Lcom/android/b/b/Q;
+    iput-object v0, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->Qu:Lcom/android/b/b/Q;
 
     move v0, v1
 
@@ -511,10 +511,10 @@
     .line 213
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->setResult(I)V
 
     .line 214
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->finish()V
 
     .line 233
     :goto_0
@@ -527,19 +527,19 @@
     if-eq p2, v0, :cond_1
 
     .line 218
-    invoke-virtual {p0, p2}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->setResult(I)V
+    invoke-virtual {p0, p2}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->setResult(I)V
 
     .line 219
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->finish()V
 
     goto :goto_0
 
     .line 225
     :cond_1
-    iput-boolean v1, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->So:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->So:Z
 
     .line 227
-    iget-object v0, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->Qu:Lcom/android/b/b/Q;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->Qu:Lcom/android/b/b/Q;
 
     invoke-virtual {v0}, Lcom/android/b/b/Q;->Ad()I
 
@@ -550,13 +550,13 @@
     if-ne v0, v1, :cond_2
 
     .line 228
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->nZ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->nZ()V
 
     goto :goto_0
 
     .line 231
     :cond_2
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->nY()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->nY()V
 
     goto :goto_0
 .end method
@@ -568,7 +568,7 @@
     .line 327
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->setResult(I)V
 
     .line 328
     invoke-super {p0}, Landroid/app/Activity;->onBackPressed()V
@@ -590,7 +590,7 @@
 
     .line 238
     :pswitch_0
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->nZ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->nZ()V
 
     goto :goto_0
 
@@ -598,10 +598,10 @@
     :pswitch_1
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->setResult(I)V
 
     .line 243
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->finish()V
 
     goto :goto_0
 
@@ -625,14 +625,14 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 104
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->oa()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->oa()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 105
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->finish()V
 
     .line 174
     :goto_0
@@ -640,7 +640,7 @@
 
     .line 109
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->Qu:Lcom/android/b/b/Q;
+    iget-object v1, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->Qu:Lcom/android/b/b/Q;
 
     invoke-virtual {v1}, Lcom/android/b/b/Q;->getState()I
 
@@ -676,7 +676,7 @@
 
     .line 128
     :pswitch_0
-    iget-object v1, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mReceiver:Landroid/content/BroadcastReceiver;
 
     new-instance v2, Landroid/content/IntentFilter;
 
@@ -684,17 +684,17 @@
 
     invoke-direct {v2, v3}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
+    invoke-virtual {p0, v1, v2}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
     .line 132
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->getCallingActivity()Landroid/content/ComponentName;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->getCallingActivity()Landroid/content/ComponentName;
 
     move-result-object v1
 
     if-eqz v1, :cond_2
 
     .line 133
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -706,14 +706,14 @@
     if-nez v2, :cond_1
 
     .line 135
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->finish()V
 
     goto :goto_0
 
     .line 140
     :cond_1
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->getCallingActivity()Landroid/content/ComponentName;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->getCallingActivity()Landroid/content/ComponentName;
 
     move-result-object v1
 
@@ -746,7 +746,7 @@
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
     .line 148
-    const-class v2, Lcom/android/settings/bluetooth/RequestPermissionHelperActivity;
+    const-class v2, Lcom/android/vendorsettings/bluetooth/RequestPermissionHelperActivity;
 
     invoke-virtual {v1, p0, v2}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
@@ -756,7 +756,7 @@
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 152
-    iget-boolean v0, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->Sn:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->Sn:Z
 
     if-eqz v0, :cond_3
 
@@ -767,10 +767,10 @@
 
     .line 159
     :goto_2
-    invoke-virtual {p0, v1, v4}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v1, v4}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 160
-    iput-boolean v4, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->Sm:Z
+    iput-boolean v4, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->Sm:Z
 
     goto :goto_0
 
@@ -792,7 +792,7 @@
     .line 157
     const-string v0, "android.bluetooth.adapter.extra.DISCOVERABLE_DURATION"
 
-    iget v2, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mTimeout:I
+    iget v2, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mTimeout:I
 
     invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -800,18 +800,18 @@
 
     .line 163
     :pswitch_1
-    iget-boolean v0, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->Sn:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->Sn:Z
 
     if-eqz v0, :cond_4
 
     .line 165
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->nZ()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->nZ()V
 
     goto/16 :goto_0
 
     .line 168
     :cond_4
-    invoke-direct {p0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->nY()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->nY()V
 
     goto/16 :goto_0
 
@@ -833,14 +833,14 @@
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
 
     .line 320
-    iget-boolean v0, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->Sm:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->Sm:Z
 
     if-eqz v0, :cond_0
 
     .line 321
-    iget-object v0, p0, Lcom/android/settings/bluetooth/RequestPermissionActivity;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/bluetooth/RequestPermissionActivity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/bluetooth/RequestPermissionActivity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 323
     :cond_0

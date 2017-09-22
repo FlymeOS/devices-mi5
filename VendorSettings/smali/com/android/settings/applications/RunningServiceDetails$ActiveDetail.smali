@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;
+.class Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;
 .super Ljava/lang/Object;
 .source "RunningServiceDetails.java"
 
@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field final synthetic NQ:Lcom/android/settings/applications/RunningServiceDetails;
+.field final synthetic NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
 .field NR:Landroid/widget/Button;
 
 .field NS:Landroid/widget/Button;
 
-.field NT:Lcom/android/settings/applications/RunningState$ServiceItem;
+.field NT:Lcom/android/vendorsettings/applications/RunningState$ServiceItem;
 
-.field NU:Lcom/android/settings/applications/RunningProcessesView$ActiveItem;
+.field NU:Lcom/android/vendorsettings/applications/RunningProcessesView$ActiveItem;
 
-.field NV:Lcom/android/settings/applications/RunningProcessesView$ViewHolder;
+.field NV:Lcom/android/vendorsettings/applications/RunningProcessesView$ViewHolder;
 
 .field NW:Landroid/app/PendingIntent;
 
@@ -27,12 +27,12 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/RunningServiceDetails;)V
+.method constructor <init>(Lcom/android/vendorsettings/applications/RunningServiceDetails;)V
     .locals 0
 
     .prologue
     .line 85
-    iput-object p1, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,13 +46,13 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NT:Lcom/android/settings/applications/RunningState$ServiceItem;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NT:Lcom/android/vendorsettings/applications/RunningState$ServiceItem;
 
     .line 97
     if-nez p1, :cond_0
 
     .line 98
-    iget-object v1, v0, Lcom/android/settings/applications/RunningState$ServiceItem;->Pi:Landroid/content/pm/ServiceInfo;
+    iget-object v1, v0, Lcom/android/vendorsettings/applications/RunningState$ServiceItem;->Pi:Landroid/content/pm/ServiceInfo;
 
     iget-object v1, v1, Landroid/content/pm/ServiceInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -63,13 +63,13 @@
     if-eqz v1, :cond_0
 
     .line 99
-    iget-object v1, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ServiceItem;->Ph:Landroid/app/ActivityManager$RunningServiceInfo;
+    iget-object v0, v0, Lcom/android/vendorsettings/applications/RunningState$ServiceItem;->Ph:Landroid/app/ActivityManager$RunningServiceInfo;
 
     iget-object v0, v0, Landroid/app/ActivityManager$RunningServiceInfo;->service:Landroid/content/ComponentName;
 
-    invoke-static {v1, v0}, Lcom/android/settings/applications/RunningServiceDetails;->a(Lcom/android/settings/applications/RunningServiceDetails;Landroid/content/ComponentName;)V
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/applications/RunningServiceDetails;->a(Lcom/android/vendorsettings/applications/RunningServiceDetails;Landroid/content/ComponentName;)V
 
     .line 120
     :goto_0
@@ -77,9 +77,9 @@
 
     .line 105
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    invoke-virtual {v1}, Lcom/android/settings/applications/RunningServiceDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/applications/RunningServiceDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -87,7 +87,7 @@
 
     invoke-direct {v2}, Landroid/content/Intent;-><init>()V
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ServiceItem;->Ph:Landroid/app/ActivityManager$RunningServiceInfo;
+    iget-object v0, v0, Lcom/android/vendorsettings/applications/RunningState$ServiceItem;->Ph:Landroid/app/ActivityManager$RunningServiceInfo;
 
     iget-object v0, v0, Landroid/app/ActivityManager$RunningServiceInfo;->service:Landroid/content/ComponentName;
 
@@ -97,50 +97,50 @@
 
     new-instance v2, Landroid/os/UserHandle;
 
-    iget-object v3, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    iget-object v3, v3, Lcom/android/settings/applications/RunningServiceDetails;->NG:Lcom/android/settings/applications/RunningState$MergedItem;
+    iget-object v3, v3, Lcom/android/vendorsettings/applications/RunningServiceDetails;->NG:Lcom/android/vendorsettings/applications/RunningState$MergedItem;
 
-    iget v3, v3, Lcom/android/settings/applications/RunningState$MergedItem;->mUserId:I
+    iget v3, v3, Lcom/android/vendorsettings/applications/RunningState$MergedItem;->mUserId:I
 
     invoke-direct {v2, v3}, Landroid/os/UserHandle;-><init>(I)V
 
     invoke-virtual {v1, v0, v2}, Landroid/app/Activity;->stopServiceAsUser(Landroid/content/Intent;Landroid/os/UserHandle;)Z
 
     .line 108
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningServiceDetails;->NG:Lcom/android/settings/applications/RunningState$MergedItem;
+    iget-object v0, v0, Lcom/android/vendorsettings/applications/RunningServiceDetails;->NG:Lcom/android/vendorsettings/applications/RunningState$MergedItem;
 
     if-nez v0, :cond_1
 
     .line 110
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningServiceDetails;->Hx:Lcom/android/settings/applications/RunningState;
+    iget-object v0, v0, Lcom/android/vendorsettings/applications/RunningServiceDetails;->Hx:Lcom/android/vendorsettings/applications/RunningState;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/RunningState;->lx()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/RunningState;->lx()V
 
     .line 111
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    invoke-static {v0}, Lcom/android/settings/applications/RunningServiceDetails;->a(Lcom/android/settings/applications/RunningServiceDetails;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/RunningServiceDetails;->a(Lcom/android/vendorsettings/applications/RunningServiceDetails;)V
 
     goto :goto_0
 
     .line 112
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    iget-boolean v0, v0, Lcom/android/settings/applications/RunningServiceDetails;->Nh:Z
+    iget-boolean v0, v0, Lcom/android/vendorsettings/applications/RunningServiceDetails;->Nh:Z
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningServiceDetails;->NG:Lcom/android/settings/applications/RunningState$MergedItem;
+    iget-object v0, v0, Lcom/android/vendorsettings/applications/RunningServiceDetails;->NG:Lcom/android/vendorsettings/applications/RunningState$MergedItem;
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$MergedItem;->LZ:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/vendorsettings/applications/RunningState$MergedItem;->LZ:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -151,26 +151,26 @@
     if-gt v0, v1, :cond_2
 
     .line 115
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningServiceDetails;->Hx:Lcom/android/settings/applications/RunningState;
+    iget-object v0, v0, Lcom/android/vendorsettings/applications/RunningServiceDetails;->Hx:Lcom/android/vendorsettings/applications/RunningState;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/RunningState;->lx()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/RunningState;->lx()V
 
     .line 116
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    invoke-static {v0}, Lcom/android/settings/applications/RunningServiceDetails;->a(Lcom/android/settings/applications/RunningServiceDetails;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/RunningServiceDetails;->a(Lcom/android/vendorsettings/applications/RunningServiceDetails;)V
 
     goto :goto_0
 
     .line 118
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningServiceDetails;->Hx:Lcom/android/settings/applications/RunningState;
+    iget-object v0, v0, Lcom/android/vendorsettings/applications/RunningServiceDetails;->Hx:Lcom/android/vendorsettings/applications/RunningState;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/RunningState;->lx()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/RunningState;->lx()V
 
     goto :goto_0
 .end method
@@ -186,7 +186,7 @@
     const/4 v1, 0x0
 
     .line 123
-    iget-object v3, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NS:Landroid/widget/Button;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NS:Landroid/widget/Button;
 
     if-ne p1, v3, :cond_6
 
@@ -201,16 +201,16 @@
     iput v4, v3, Landroid/app/ApplicationErrorReport;->type:I
 
     .line 126
-    iget-object v4, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NT:Lcom/android/settings/applications/RunningState$ServiceItem;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NT:Lcom/android/vendorsettings/applications/RunningState$ServiceItem;
 
-    iget-object v4, v4, Lcom/android/settings/applications/RunningState$ServiceItem;->Pi:Landroid/content/pm/ServiceInfo;
+    iget-object v4, v4, Lcom/android/vendorsettings/applications/RunningState$ServiceItem;->Pi:Landroid/content/pm/ServiceInfo;
 
     iget-object v4, v4, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
 
     iput-object v4, v3, Landroid/app/ApplicationErrorReport;->packageName:Ljava/lang/String;
 
     .line 127
-    iget-object v4, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NX:Landroid/content/ComponentName;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NX:Landroid/content/ComponentName;
 
     invoke-virtual {v4}, Landroid/content/ComponentName;->getPackageName()Ljava/lang/String;
 
@@ -219,9 +219,9 @@
     iput-object v4, v3, Landroid/app/ApplicationErrorReport;->installerPackageName:Ljava/lang/String;
 
     .line 128
-    iget-object v4, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NT:Lcom/android/settings/applications/RunningState$ServiceItem;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NT:Lcom/android/vendorsettings/applications/RunningState$ServiceItem;
 
-    iget-object v4, v4, Lcom/android/settings/applications/RunningState$ServiceItem;->Ph:Landroid/app/ActivityManager$RunningServiceInfo;
+    iget-object v4, v4, Lcom/android/vendorsettings/applications/RunningState$ServiceItem;->Ph:Landroid/app/ActivityManager$RunningServiceInfo;
 
     iget-object v4, v4, Landroid/app/ActivityManager$RunningServiceInfo;->process:Ljava/lang/String;
 
@@ -235,9 +235,9 @@
     iput-wide v4, v3, Landroid/app/ApplicationErrorReport;->time:J
 
     .line 130
-    iget-object v4, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NT:Lcom/android/settings/applications/RunningState$ServiceItem;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NT:Lcom/android/vendorsettings/applications/RunningState$ServiceItem;
 
-    iget-object v4, v4, Lcom/android/settings/applications/RunningState$ServiceItem;->Pi:Landroid/content/pm/ServiceInfo;
+    iget-object v4, v4, Lcom/android/vendorsettings/applications/RunningState$ServiceItem;->Pi:Landroid/content/pm/ServiceInfo;
 
     iget-object v4, v4, Landroid/content/pm/ServiceInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -256,9 +256,9 @@
     invoke-direct {v4}, Landroid/app/ApplicationErrorReport$RunningServiceInfo;-><init>()V
 
     .line 134
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NU:Lcom/android/settings/applications/RunningProcessesView$ActiveItem;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NU:Lcom/android/vendorsettings/applications/RunningProcessesView$ActiveItem;
 
-    iget-wide v0, v0, Lcom/android/settings/applications/RunningProcessesView$ActiveItem;->NA:J
+    iget-wide v0, v0, Lcom/android/vendorsettings/applications/RunningProcessesView$ActiveItem;->NA:J
 
     const-wide/16 v6, 0x0
 
@@ -271,9 +271,9 @@
 
     move-result-wide v0
 
-    iget-object v5, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NU:Lcom/android/settings/applications/RunningProcessesView$ActiveItem;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NU:Lcom/android/vendorsettings/applications/RunningProcessesView$ActiveItem;
 
-    iget-wide v6, v5, Lcom/android/settings/applications/RunningProcessesView$ActiveItem;->NA:J
+    iget-wide v6, v5, Lcom/android/vendorsettings/applications/RunningProcessesView$ActiveItem;->NA:J
 
     sub-long/2addr v0, v6
 
@@ -283,24 +283,24 @@
     :goto_1
     new-instance v5, Landroid/content/ComponentName;
 
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NT:Lcom/android/settings/applications/RunningState$ServiceItem;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NT:Lcom/android/vendorsettings/applications/RunningState$ServiceItem;
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ServiceItem;->Pi:Landroid/content/pm/ServiceInfo;
+    iget-object v0, v0, Lcom/android/vendorsettings/applications/RunningState$ServiceItem;->Pi:Landroid/content/pm/ServiceInfo;
 
     iget-object v0, v0, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NT:Lcom/android/settings/applications/RunningState$ServiceItem;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NT:Lcom/android/vendorsettings/applications/RunningState$ServiceItem;
 
-    iget-object v1, v1, Lcom/android/settings/applications/RunningState$ServiceItem;->Pi:Landroid/content/pm/ServiceInfo;
+    iget-object v1, v1, Lcom/android/vendorsettings/applications/RunningState$ServiceItem;->Pi:Landroid/content/pm/ServiceInfo;
 
     iget-object v1, v1, Landroid/content/pm/ServiceInfo;->name:Ljava/lang/String;
 
     invoke-direct {v5, v0, v1}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 141
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/RunningServiceDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/RunningServiceDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -447,7 +447,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 167
-    iget-object v1, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NX:Landroid/content/ComponentName;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NX:Landroid/content/ComponentName;
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
@@ -462,9 +462,9 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 170
-    iget-object v1, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/applications/RunningServiceDetails;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/applications/RunningServiceDetails;->startActivity(Landroid/content/Intent;)V
 
     .line 198
     :goto_4
@@ -612,19 +612,19 @@
 
     .line 174
     :cond_6
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NW:Landroid/app/PendingIntent;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NW:Landroid/app/PendingIntent;
 
     if-eqz v0, :cond_7
 
     .line 176
     :try_start_c
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/RunningServiceDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/RunningServiceDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NW:Landroid/app/PendingIntent;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NW:Landroid/app/PendingIntent;
 
     invoke-virtual {v1}, Landroid/app/PendingIntent;->getIntentSender()Landroid/content/IntentSender;
 
@@ -681,67 +681,67 @@
 
     .line 187
     :cond_7
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NT:Lcom/android/settings/applications/RunningState$ServiceItem;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NT:Lcom/android/vendorsettings/applications/RunningState$ServiceItem;
 
     if-eqz v0, :cond_8
 
     .line 188
-    invoke-virtual {p0, v1}, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->av(Z)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->av(Z)V
 
     goto/16 :goto_4
 
     .line 189
     :cond_8
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NU:Lcom/android/settings/applications/RunningProcessesView$ActiveItem;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NU:Lcom/android/vendorsettings/applications/RunningProcessesView$ActiveItem;
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningProcessesView$ActiveItem;->Ny:Lcom/android/settings/applications/RunningState$BaseItem;
+    iget-object v0, v0, Lcom/android/vendorsettings/applications/RunningProcessesView$ActiveItem;->Ny:Lcom/android/vendorsettings/applications/RunningState$BaseItem;
 
-    iget-boolean v0, v0, Lcom/android/settings/applications/RunningState$BaseItem;->OT:Z
+    iget-boolean v0, v0, Lcom/android/vendorsettings/applications/RunningState$BaseItem;->OT:Z
 
     if-eqz v0, :cond_9
 
     .line 191
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningServiceDetails;->MT:Landroid/app/ActivityManager;
+    iget-object v0, v0, Lcom/android/vendorsettings/applications/RunningServiceDetails;->MT:Landroid/app/ActivityManager;
 
-    iget-object v1, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NU:Lcom/android/settings/applications/RunningProcessesView$ActiveItem;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NU:Lcom/android/vendorsettings/applications/RunningProcessesView$ActiveItem;
 
-    iget-object v1, v1, Lcom/android/settings/applications/RunningProcessesView$ActiveItem;->Ny:Lcom/android/settings/applications/RunningState$BaseItem;
+    iget-object v1, v1, Lcom/android/vendorsettings/applications/RunningProcessesView$ActiveItem;->Ny:Lcom/android/vendorsettings/applications/RunningState$BaseItem;
 
-    iget-object v1, v1, Lcom/android/settings/applications/RunningState$BaseItem;->OM:Landroid/content/pm/PackageItemInfo;
+    iget-object v1, v1, Lcom/android/vendorsettings/applications/RunningState$BaseItem;->OM:Landroid/content/pm/PackageItemInfo;
 
     iget-object v1, v1, Landroid/content/pm/PackageItemInfo;->packageName:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/app/ActivityManager;->killBackgroundProcesses(Ljava/lang/String;)V
 
     .line 192
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    invoke-static {v0}, Lcom/android/settings/applications/RunningServiceDetails;->a(Lcom/android/settings/applications/RunningServiceDetails;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/RunningServiceDetails;->a(Lcom/android/vendorsettings/applications/RunningServiceDetails;)V
 
     goto/16 :goto_4
 
     .line 195
     :cond_9
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningServiceDetails;->MT:Landroid/app/ActivityManager;
+    iget-object v0, v0, Lcom/android/vendorsettings/applications/RunningServiceDetails;->MT:Landroid/app/ActivityManager;
 
-    iget-object v1, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NU:Lcom/android/settings/applications/RunningProcessesView$ActiveItem;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NU:Lcom/android/vendorsettings/applications/RunningProcessesView$ActiveItem;
 
-    iget-object v1, v1, Lcom/android/settings/applications/RunningProcessesView$ActiveItem;->Ny:Lcom/android/settings/applications/RunningState$BaseItem;
+    iget-object v1, v1, Lcom/android/vendorsettings/applications/RunningProcessesView$ActiveItem;->Ny:Lcom/android/vendorsettings/applications/RunningState$BaseItem;
 
-    iget-object v1, v1, Lcom/android/settings/applications/RunningState$BaseItem;->OM:Landroid/content/pm/PackageItemInfo;
+    iget-object v1, v1, Lcom/android/vendorsettings/applications/RunningState$BaseItem;->OM:Landroid/content/pm/PackageItemInfo;
 
     iget-object v1, v1, Landroid/content/pm/PackageItemInfo;->packageName:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/app/ActivityManager;->forceStopPackage(Ljava/lang/String;)V
 
     .line 196
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    invoke-static {v0}, Lcom/android/settings/applications/RunningServiceDetails;->a(Lcom/android/settings/applications/RunningServiceDetails;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/RunningServiceDetails;->a(Lcom/android/vendorsettings/applications/RunningServiceDetails;)V
 
     goto/16 :goto_4
 

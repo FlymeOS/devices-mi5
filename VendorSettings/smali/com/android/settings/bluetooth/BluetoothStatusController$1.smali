@@ -1,19 +1,19 @@
-.class Lcom/android/settings/bluetooth/BluetoothStatusController$1;
+.class Lcom/android/vendorsettings/bluetooth/BluetoothStatusController$1;
 .super Landroid/content/BroadcastReceiver;
 .source "BluetoothStatusController.java"
 
 
 # instance fields
-.field final synthetic Rg:Lcom/android/settings/bluetooth/BluetoothStatusController;
+.field final synthetic Rg:Lcom/android/vendorsettings/bluetooth/BluetoothStatusController;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothStatusController;)V
+.method constructor <init>(Lcom/android/vendorsettings/bluetooth/BluetoothStatusController;)V
     .locals 0
 
     .prologue
     .line 30
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothStatusController$1;->Rg:Lcom/android/settings/bluetooth/BluetoothStatusController;
+    iput-object p1, p0, Lcom/android/vendorsettings/bluetooth/BluetoothStatusController$1;->Rg:Lcom/android/vendorsettings/bluetooth/BluetoothStatusController;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -36,9 +36,9 @@
     move-result v0
 
     .line 34
-    iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothStatusController$1;->Rg:Lcom/android/settings/bluetooth/BluetoothStatusController;
+    iget-object v1, p0, Lcom/android/vendorsettings/bluetooth/BluetoothStatusController$1;->Rg:Lcom/android/vendorsettings/bluetooth/BluetoothStatusController;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/bluetooth/BluetoothStatusController;->bg(I)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/bluetooth/BluetoothStatusController;->bg(I)V
 
     .line 35
     return-void

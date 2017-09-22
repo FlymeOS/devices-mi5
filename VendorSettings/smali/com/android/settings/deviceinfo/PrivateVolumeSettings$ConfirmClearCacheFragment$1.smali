@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment$1;
+.class Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment$1;
 .super Ljava/lang/Object;
 .source "PrivateVolumeSettings.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic Wq:Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment;
+.field final synthetic Wq:Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment;
 
 .field final synthetic val$context:Landroid/content/Context;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment;Landroid/content/Context;)V
+.method constructor <init>(Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment;Landroid/content/Context;)V
     .locals 0
 
     .prologue
     .line 882
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment$1;->Wq:Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment$1;->Wq:Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment;
 
-    iput-object p2, p0, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment$1;->val$context:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment$1;->val$context:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,16 +34,16 @@
 
     .prologue
     .line 885
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment$1;->Wq:Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment$1;->Wq:Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/deviceinfo/PrivateVolumeSettings;
+    check-cast v0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings;
 
     .line 886
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment$1;->val$context:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$ConfirmClearCacheFragment$1;->val$context:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -57,13 +57,13 @@
     move-result-object v2
 
     .line 888
-    new-instance v3, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;
+    new-instance v3, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;
 
     invoke-interface {v2}, Ljava/util/List;->size()I
 
     move-result v4
 
-    invoke-direct {v3, v0, v4}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;-><init>(Lcom/android/settings/deviceinfo/PrivateVolumeSettings;I)V
+    invoke-direct {v3, v0, v4}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;-><init>(Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings;I)V
 
     .line 890
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;

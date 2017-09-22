@@ -1,20 +1,20 @@
-.class public Lcom/android/settings/notification/ZenModeAutomationSettings;
-.super Lcom/android/settings/notification/ZenModeSettingsBase;
+.class public Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;
+.super Lcom/android/vendorsettings/notification/ZenModeSettingsBase;
 .source "ZenModeAutomationSettings.java"
 
 
 # static fields
-.field static final ajf:Lcom/android/settings/notification/ManagedServiceSettings$Config;
+.field static final ajf:Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;
 
 .field private static final akG:Ljava/util/Comparator;
 
 
 # instance fields
-.field private aiL:Lcom/android/settings/notification/ServiceListing;
+.field private aiL:Lcom/android/vendorsettings/notification/ServiceListing;
 
 .field private final akE:Ljava/text/SimpleDateFormat;
 
-.field private final akF:Lcom/android/settings/notification/ServiceListing$Callback;
+.field private final akF:Lcom/android/vendorsettings/notification/ServiceListing$Callback;
 
 .field private final mCalendar:Ljava/util/Calendar;
 
@@ -25,18 +25,18 @@
 
     .prologue
     .line 55
-    invoke-static {}, Lcom/android/settings/notification/ZenModeAutomationSettings;->sF()Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    invoke-static {}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->sF()Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/notification/ZenModeAutomationSettings;->ajf:Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    sput-object v0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->ajf:Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;
 
     .line 317
-    new-instance v0, Lcom/android/settings/notification/ZenModeAutomationSettings$5;
+    new-instance v0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$5;
 
-    invoke-direct {v0}, Lcom/android/settings/notification/ZenModeAutomationSettings$5;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$5;-><init>()V
 
-    sput-object v0, Lcom/android/settings/notification/ZenModeAutomationSettings;->akG:Ljava/util/Comparator;
+    sput-object v0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->akG:Ljava/util/Comparator;
 
     return-void
 .end method
@@ -46,7 +46,7 @@
 
     .prologue
     .line 53
-    invoke-direct {p0}, Lcom/android/settings/notification/ZenModeSettingsBase;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/ZenModeSettingsBase;-><init>()V
 
     .line 58
     new-instance v0, Ljava/text/SimpleDateFormat;
@@ -55,21 +55,21 @@
 
     invoke-direct {v0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->akE:Ljava/text/SimpleDateFormat;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->akE:Ljava/text/SimpleDateFormat;
 
     .line 59
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->mCalendar:Ljava/util/Calendar;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->mCalendar:Ljava/util/Calendar;
 
     .line 301
-    new-instance v0, Lcom/android/settings/notification/ZenModeAutomationSettings$4;
+    new-instance v0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$4;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/notification/ZenModeAutomationSettings$4;-><init>(Lcom/android/settings/notification/ZenModeAutomationSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$4;-><init>(Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->akF:Lcom/android/settings/notification/ServiceListing$Callback;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->akF:Lcom/android/vendorsettings/notification/ServiceListing$Callback;
 
     .line 332
     return-void
@@ -88,13 +88,13 @@
 
     new-array v1, v5, [Ljava/lang/Object;
 
-    invoke-direct {p0, p1}, Lcom/android/settings/notification/ZenModeAutomationSettings;->b(Landroid/service/notification/ZenModeConfig$EventInfo;)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->b(Landroid/service/notification/ZenModeConfig$EventInfo;)Ljava/lang/String;
 
     move-result-object v2
 
     aput-object v2, v1, v4
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/notification/ZenModeAutomationSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -103,17 +103,17 @@
 
     new-array v2, v5, [Ljava/lang/Object;
 
-    invoke-direct {p0, p1}, Lcom/android/settings/notification/ZenModeAutomationSettings;->c(Landroid/service/notification/ZenModeConfig$EventInfo;)I
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->c(Landroid/service/notification/ZenModeConfig$EventInfo;)I
 
     move-result v3
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/notification/ZenModeAutomationSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
     aput-object v3, v2, v4
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/notification/ZenModeAutomationSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v1, v2}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -128,7 +128,7 @@
 
     aput-object v1, v3, v5
 
-    invoke-virtual {p0, v2, v3}, Lcom/android/settings/notification/ZenModeAutomationSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v2, v3}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -148,7 +148,7 @@
     .line 201
     iget-object v0, p1, Landroid/service/notification/ZenModeConfig$ScheduleInfo;->days:[I
 
-    invoke-direct {p0, v0}, Lcom/android/settings/notification/ZenModeAutomationSettings;->b([I)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->b([I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -157,7 +157,7 @@
 
     iget v2, p1, Landroid/service/notification/ZenModeConfig$ScheduleInfo;->startMinute:I
 
-    invoke-direct {p0, v1, v2}, Lcom/android/settings/notification/ZenModeAutomationSettings;->n(II)Ljava/lang/String;
+    invoke-direct {p0, v1, v2}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->n(II)Ljava/lang/String;
 
     move-result-object v1
 
@@ -166,7 +166,7 @@
 
     iget v3, p1, Landroid/service/notification/ZenModeConfig$ScheduleInfo;->endMinute:I
 
-    invoke-direct {p0, v2, v3}, Lcom/android/settings/notification/ZenModeAutomationSettings;->n(II)Ljava/lang/String;
+    invoke-direct {p0, v2, v3}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->n(II)Ljava/lang/String;
 
     move-result-object v2
 
@@ -179,7 +179,7 @@
 
     aput-object v2, v4, v6
 
-    invoke-virtual {p0, v3, v4}, Lcom/android/settings/notification/ZenModeAutomationSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v3, v4}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -192,7 +192,7 @@
 
     aput-object v1, v3, v6
 
-    invoke-virtual {p0, v2, v3}, Lcom/android/settings/notification/ZenModeAutomationSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v2, v3}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -213,7 +213,7 @@
     :cond_0
     const v0, 0x7f0c0abc
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/notification/ZenModeAutomationSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -223,20 +223,20 @@
 
     .line 188
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/notification/ZenModeAutomationSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
     iget v1, p1, Landroid/service/notification/ZenModeConfig$ZenRule;->zenMode:I
 
-    invoke-static {v0, v1}, Lcom/android/settings/notification/ZenModeAutomationSettings;->c(Landroid/content/res/Resources;I)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->c(Landroid/content/res/Resources;I)Ljava/lang/String;
 
     move-result-object v1
 
     .line 189
     const v0, 0x7f0c0abb
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/notification/ZenModeAutomationSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -258,7 +258,7 @@
     if-eqz v2, :cond_3
 
     .line 193
-    invoke-direct {p0, v2}, Lcom/android/settings/notification/ZenModeAutomationSettings;->a(Landroid/service/notification/ZenModeConfig$ScheduleInfo;)Ljava/lang/String;
+    invoke-direct {p0, v2}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->a(Landroid/service/notification/ZenModeConfig$ScheduleInfo;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -279,7 +279,7 @@
 
     aput-object v1, v3, v0
 
-    invoke-virtual {p0, v2, v3}, Lcom/android/settings/notification/ZenModeAutomationSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v2, v3}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -290,29 +290,29 @@
     if-eqz v3, :cond_2
 
     .line 195
-    invoke-direct {p0, v3}, Lcom/android/settings/notification/ZenModeAutomationSettings;->a(Landroid/service/notification/ZenModeConfig$EventInfo;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->a(Landroid/service/notification/ZenModeConfig$EventInfo;)Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_1
 .end method
 
-.method static synthetic a(Lcom/android/settings/notification/ZenModeAutomationSettings;)V
+.method static synthetic a(Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;)V
     .locals 0
 
     .prologue
     .line 53
-    invoke-direct {p0}, Lcom/android/settings/notification/ZenModeAutomationSettings;->sD()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->sD()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/notification/ZenModeAutomationSettings;Ljava/lang/String;Landroid/content/ComponentName;Ljava/lang/String;Ljava/lang/String;)V
+.method static synthetic a(Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;Ljava/lang/String;Landroid/content/ComponentName;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 53
-    invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/settings/notification/ZenModeAutomationSettings;->a(Ljava/lang/String;Landroid/content/ComponentName;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, p1, p2, p3, p4}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->a(Ljava/lang/String;Landroid/content/ComponentName;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -322,7 +322,7 @@
 
     .prologue
     .line 119
-    sget-boolean v0, Lcom/android/settings/notification/ZenModeAutomationSettings;->DEBUG:Z
+    sget-boolean v0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->DEBUG:Z
 
     if-eqz v0, :cond_0
 
@@ -360,7 +360,7 @@
 
     .line 120
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->mContext:Landroid/content/Context;
 
     new-instance v1, Landroid/content/Intent;
 
@@ -384,12 +384,12 @@
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/notification/ZenModeAutomationSettings;)Lcom/android/settings/notification/ServiceListing;
+.method static synthetic b(Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;)Lcom/android/vendorsettings/notification/ServiceListing;
     .locals 1
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->aiL:Lcom/android/settings/notification/ServiceListing;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->aiL:Lcom/android/vendorsettings/notification/ServiceListing;
 
     return-object v0
 .end method
@@ -411,7 +411,7 @@
     :cond_0
     const v0, 0x7f0c0a90
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/notification/ZenModeAutomationSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -468,7 +468,7 @@
     .line 246
     const v0, 0x7f0c0a9a
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/notification/ZenModeAutomationSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -493,7 +493,7 @@
     .line 250
     const v0, 0x7f0c0a9b
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/notification/ZenModeAutomationSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -598,7 +598,7 @@
     :cond_6
     if-nez v2, :cond_8
 
-    invoke-direct {p0, v4}, Lcom/android/settings/notification/ZenModeAutomationSettings;->cC(I)Ljava/lang/String;
+    invoke-direct {p0, v4}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->cC(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -627,7 +627,7 @@
 
     new-array v8, v11, [Ljava/lang/Object;
 
-    invoke-direct {p0, v4}, Lcom/android/settings/notification/ZenModeAutomationSettings;->cC(I)Ljava/lang/String;
+    invoke-direct {p0, v4}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->cC(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -641,13 +641,13 @@
 
     aget v4, v4, v9
 
-    invoke-direct {p0, v4}, Lcom/android/settings/notification/ZenModeAutomationSettings;->cC(I)Ljava/lang/String;
+    invoke-direct {p0, v4}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->cC(I)Ljava/lang/String;
 
     move-result-object v4
 
     aput-object v4, v8, v10
 
-    invoke-virtual {p0, v7, v8}, Lcom/android/settings/notification/ZenModeAutomationSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v7, v8}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -663,7 +663,7 @@
 
     aput-object v4, v8, v10
 
-    invoke-virtual {p0, v7, v8}, Lcom/android/settings/notification/ZenModeAutomationSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v7, v8}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -794,16 +794,16 @@
 
     .prologue
     .line 274
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->mCalendar:Ljava/util/Calendar;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->mCalendar:Ljava/util/Calendar;
 
     const/4 v1, 0x7
 
     invoke-virtual {v0, v1, p1}, Ljava/util/Calendar;->set(II)V
 
     .line 275
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->akE:Ljava/text/SimpleDateFormat;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->akE:Ljava/text/SimpleDateFormat;
 
-    iget-object v1, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->mCalendar:Ljava/util/Calendar;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->mCalendar:Ljava/util/Calendar;
 
     invoke-virtual {v1}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
@@ -821,27 +821,27 @@
 
     .prologue
     .line 235
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->mCalendar:Ljava/util/Calendar;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->mCalendar:Ljava/util/Calendar;
 
     const/16 v1, 0xb
 
     invoke-virtual {v0, v1, p1}, Ljava/util/Calendar;->set(II)V
 
     .line 236
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->mCalendar:Ljava/util/Calendar;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->mCalendar:Ljava/util/Calendar;
 
     const/16 v1, 0xc
 
     invoke-virtual {v0, v1, p2}, Ljava/util/Calendar;->set(II)V
 
     .line 237
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/text/format/DateFormat;->getTimeFormat(Landroid/content/Context;)Ljava/text/DateFormat;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->mCalendar:Ljava/util/Calendar;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->mCalendar:Ljava/util/Calendar;
 
     invoke-virtual {v1}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
@@ -861,7 +861,7 @@
     const/4 v7, 0x0
 
     .line 138
-    invoke-virtual {p0}, Lcom/android/settings/notification/ZenModeAutomationSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v8
 
@@ -869,7 +869,7 @@
     invoke-virtual {v8}, Landroid/preference/PreferenceScreen;->removeAll()V
 
     .line 140
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     if-nez v0, :cond_0
 
@@ -879,7 +879,7 @@
 
     .line 141
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/notification/ZenModeAutomationSettings;->sE()[Lcom/android/settings/notification/ZenModeAutomationSettings$ZenRuleInfo;
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->sE()[Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$ZenRuleInfo;
 
     move-result-object v9
 
@@ -894,12 +894,12 @@
     .line 143
     aget-object v0, v9, v6
 
-    iget-object v4, v0, Lcom/android/settings/notification/ZenModeAutomationSettings$ZenRuleInfo;->id:Ljava/lang/String;
+    iget-object v4, v0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$ZenRuleInfo;->id:Ljava/lang/String;
 
     .line 144
     aget-object v0, v9, v6
 
-    iget-object v5, v0, Lcom/android/settings/notification/ZenModeAutomationSettings$ZenRuleInfo;->akL:Landroid/service/notification/ZenModeConfig$ZenRule;
+    iget-object v5, v0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$ZenRuleInfo;->akL:Landroid/service/notification/ZenModeConfig$ZenRule;
 
     .line 145
     iget-object v0, v5, Landroid/service/notification/ZenModeConfig$ZenRule;->conditionId:Landroid/net/Uri;
@@ -918,7 +918,7 @@
     .line 147
     new-instance v10, Landroid/preference/Preference;
 
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->mContext:Landroid/content/Context;
 
     invoke-direct {v10, v0}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
@@ -936,7 +936,7 @@
     invoke-virtual {v10, v0}, Landroid/preference/Preference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 152
-    invoke-direct {p0, v5}, Lcom/android/settings/notification/ZenModeAutomationSettings;->a(Landroid/service/notification/ZenModeConfig$ZenRule;)Ljava/lang/String;
+    invoke-direct {p0, v5}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->a(Landroid/service/notification/ZenModeConfig$ZenRule;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -946,11 +946,11 @@
     invoke-virtual {v10, v7}, Landroid/preference/Preference;->setPersistent(Z)V
 
     .line 154
-    new-instance v0, Lcom/android/settings/notification/ZenModeAutomationSettings$2;
+    new-instance v0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$2;
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/notification/ZenModeAutomationSettings$2;-><init>(Lcom/android/settings/notification/ZenModeAutomationSettings;ZZLjava/lang/String;Landroid/service/notification/ZenModeConfig$ZenRule;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$2;-><init>(Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;ZZLjava/lang/String;Landroid/service/notification/ZenModeConfig$ZenRule;)V
 
     invoke-virtual {v10, v0}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
@@ -981,7 +981,7 @@
     :cond_3
     new-instance v0, Landroid/preference/Preference;
 
-    iget-object v1, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->mContext:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
 
@@ -999,9 +999,9 @@
     invoke-virtual {v0, v7}, Landroid/preference/Preference;->setPersistent(Z)V
 
     .line 170
-    new-instance v1, Lcom/android/settings/notification/ZenModeAutomationSettings$3;
+    new-instance v1, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$3;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/notification/ZenModeAutomationSettings$3;-><init>(Lcom/android/settings/notification/ZenModeAutomationSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$3;-><init>(Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;)V
 
     invoke-virtual {v0, v1}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
@@ -1016,15 +1016,15 @@
 
     .prologue
     .line 97
-    new-instance v0, Lcom/android/settings/notification/ZenModeAutomationSettings$1;
+    new-instance v0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$1;
 
-    iget-object v2, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->mContext:Landroid/content/Context;
 
-    iget-object v3, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->aiL:Lcom/android/settings/notification/ServiceListing;
+    iget-object v3, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->aiL:Lcom/android/vendorsettings/notification/ServiceListing;
 
     const/4 v4, 0x0
 
-    iget-object v1, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     invoke-virtual {v1}, Landroid/service/notification/ZenModeConfig;->getAutomaticRuleNames()Landroid/util/ArraySet;
 
@@ -1032,20 +1032,20 @@
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/notification/ZenModeAutomationSettings$1;-><init>(Lcom/android/settings/notification/ZenModeAutomationSettings;Landroid/content/Context;Lcom/android/settings/notification/ServiceListing;Ljava/lang/String;Landroid/util/ArraySet;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$1;-><init>(Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;Landroid/content/Context;Lcom/android/vendorsettings/notification/ServiceListing;Ljava/lang/String;Landroid/util/ArraySet;)V
 
-    invoke-virtual {v0}, Lcom/android/settings/notification/ZenModeAutomationSettings$1;->show()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$1;->show()V
 
     .line 115
     return-void
 .end method
 
-.method private sE()[Lcom/android/settings/notification/ZenModeAutomationSettings$ZenRuleInfo;
+.method private sE()[Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$ZenRuleInfo;
     .locals 4
 
     .prologue
     .line 126
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-object v0, v0, Landroid/service/notification/ZenModeConfig;->automaticRules:Landroid/util/ArrayMap;
 
@@ -1053,7 +1053,7 @@
 
     move-result v0
 
-    new-array v2, v0, [Lcom/android/settings/notification/ZenModeAutomationSettings$ZenRuleInfo;
+    new-array v2, v0, [Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$ZenRuleInfo;
 
     .line 127
     const/4 v0, 0x0
@@ -1066,14 +1066,14 @@
     if-ge v1, v0, :cond_0
 
     .line 128
-    new-instance v3, Lcom/android/settings/notification/ZenModeAutomationSettings$ZenRuleInfo;
+    new-instance v3, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$ZenRuleInfo;
 
     const/4 v0, 0x0
 
-    invoke-direct {v3, v0}, Lcom/android/settings/notification/ZenModeAutomationSettings$ZenRuleInfo;-><init>(Lcom/android/settings/notification/ZenModeAutomationSettings$1;)V
+    invoke-direct {v3, v0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$ZenRuleInfo;-><init>(Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$1;)V
 
     .line 129
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-object v0, v0, Landroid/service/notification/ZenModeConfig;->automaticRules:Landroid/util/ArrayMap;
 
@@ -1083,10 +1083,10 @@
 
     check-cast v0, Ljava/lang/String;
 
-    iput-object v0, v3, Lcom/android/settings/notification/ZenModeAutomationSettings$ZenRuleInfo;->id:Ljava/lang/String;
+    iput-object v0, v3, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$ZenRuleInfo;->id:Ljava/lang/String;
 
     .line 130
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->aah:Landroid/service/notification/ZenModeConfig;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->aah:Landroid/service/notification/ZenModeConfig;
 
     iget-object v0, v0, Landroid/service/notification/ZenModeConfig;->automaticRules:Landroid/util/ArrayMap;
 
@@ -1096,7 +1096,7 @@
 
     check-cast v0, Landroid/service/notification/ZenModeConfig$ZenRule;
 
-    iput-object v0, v3, Lcom/android/settings/notification/ZenModeAutomationSettings$ZenRuleInfo;->akL:Landroid/service/notification/ZenModeConfig$ZenRule;
+    iput-object v0, v3, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings$ZenRuleInfo;->akL:Landroid/service/notification/ZenModeConfig$ZenRule;
 
     .line 131
     aput-object v3, v2, v1
@@ -1110,7 +1110,7 @@
 
     .line 133
     :cond_0
-    sget-object v0, Lcom/android/settings/notification/ZenModeAutomationSettings;->akG:Ljava/util/Comparator;
+    sget-object v0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->akG:Ljava/util/Comparator;
 
     invoke-static {v2, v0}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 
@@ -1118,39 +1118,39 @@
     return-object v2
 .end method
 
-.method private static sF()Lcom/android/settings/notification/ManagedServiceSettings$Config;
+.method private static sF()Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;
     .locals 2
 
     .prologue
     .line 279
-    new-instance v0, Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    new-instance v0, Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;
 
-    invoke-direct {v0}, Lcom/android/settings/notification/ManagedServiceSettings$Config;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;-><init>()V
 
     .line 280
     const-string v1, "ZenModeSettings"
 
-    iput-object v1, v0, Lcom/android/settings/notification/ManagedServiceSettings$Config;->tag:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;->tag:Ljava/lang/String;
 
     .line 281
     const-string v1, "enabled_condition_providers"
 
-    iput-object v1, v0, Lcom/android/settings/notification/ManagedServiceSettings$Config;->aiP:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;->aiP:Ljava/lang/String;
 
     .line 282
     const-string v1, "android.service.notification.ConditionProviderService"
 
-    iput-object v1, v0, Lcom/android/settings/notification/ManagedServiceSettings$Config;->intentAction:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;->intentAction:Ljava/lang/String;
 
     .line 283
     const-string v1, "android.permission.BIND_CONDITION_PROVIDER_SERVICE"
 
-    iput-object v1, v0, Lcom/android/settings/notification/ManagedServiceSettings$Config;->permission:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;->permission:Ljava/lang/String;
 
     .line 284
     const-string v1, "condition provider"
 
-    iput-object v1, v0, Lcom/android/settings/notification/ManagedServiceSettings$Config;->aiQ:Ljava/lang/String;
+    iput-object v1, v0, Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;->aiQ:Ljava/lang/String;
 
     .line 285
     return-object v0
@@ -1163,42 +1163,42 @@
 
     .prologue
     .line 65
-    invoke-super {p0, p1}, Lcom/android/settings/notification/ZenModeSettingsBase;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/notification/ZenModeSettingsBase;->onCreate(Landroid/os/Bundle;)V
 
     .line 66
     const v0, 0x7f0800c6
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/notification/ZenModeAutomationSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->addPreferencesFromResource(I)V
 
     .line 67
-    new-instance v0, Lcom/android/settings/notification/ServiceListing;
+    new-instance v0, Lcom/android/vendorsettings/notification/ServiceListing;
 
-    iget-object v1, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->mContext:Landroid/content/Context;
 
-    sget-object v2, Lcom/android/settings/notification/ZenModeAutomationSettings;->ajf:Lcom/android/settings/notification/ManagedServiceSettings$Config;
+    sget-object v2, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->ajf:Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/notification/ServiceListing;-><init>(Landroid/content/Context;Lcom/android/settings/notification/ManagedServiceSettings$Config;)V
+    invoke-direct {v0, v1, v2}, Lcom/android/vendorsettings/notification/ServiceListing;-><init>(Landroid/content/Context;Lcom/android/vendorsettings/notification/ManagedServiceSettings$Config;)V
 
-    iput-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->aiL:Lcom/android/settings/notification/ServiceListing;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->aiL:Lcom/android/vendorsettings/notification/ServiceListing;
 
     .line 68
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->aiL:Lcom/android/settings/notification/ServiceListing;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->aiL:Lcom/android/vendorsettings/notification/ServiceListing;
 
-    iget-object v1, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->akF:Lcom/android/settings/notification/ServiceListing$Callback;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->akF:Lcom/android/vendorsettings/notification/ServiceListing$Callback;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/notification/ServiceListing;->a(Lcom/android/settings/notification/ServiceListing$Callback;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/notification/ServiceListing;->a(Lcom/android/vendorsettings/notification/ServiceListing$Callback;)V
 
     .line 69
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->aiL:Lcom/android/settings/notification/ServiceListing;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->aiL:Lcom/android/vendorsettings/notification/ServiceListing;
 
-    invoke-virtual {v0}, Lcom/android/settings/notification/ServiceListing;->sy()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/notification/ServiceListing;->sy()Ljava/util/List;
 
     .line 70
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->aiL:Lcom/android/settings/notification/ServiceListing;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->aiL:Lcom/android/vendorsettings/notification/ServiceListing;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/notification/ServiceListing;->setListening(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/notification/ServiceListing;->setListening(Z)V
 
     .line 71
     return-void
@@ -1209,21 +1209,21 @@
 
     .prologue
     .line 75
-    invoke-super {p0}, Lcom/android/settings/notification/ZenModeSettingsBase;->onDestroy()V
+    invoke-super {p0}, Lcom/android/vendorsettings/notification/ZenModeSettingsBase;->onDestroy()V
 
     .line 76
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->aiL:Lcom/android/settings/notification/ServiceListing;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->aiL:Lcom/android/vendorsettings/notification/ServiceListing;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/notification/ServiceListing;->setListening(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/notification/ServiceListing;->setListening(Z)V
 
     .line 77
-    iget-object v0, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->aiL:Lcom/android/settings/notification/ServiceListing;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->aiL:Lcom/android/vendorsettings/notification/ServiceListing;
 
-    iget-object v1, p0, Lcom/android/settings/notification/ZenModeAutomationSettings;->akF:Lcom/android/settings/notification/ServiceListing$Callback;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->akF:Lcom/android/vendorsettings/notification/ServiceListing$Callback;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/notification/ServiceListing;->b(Lcom/android/settings/notification/ServiceListing$Callback;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/notification/ServiceListing;->b(Lcom/android/vendorsettings/notification/ServiceListing$Callback;)V
 
     .line 78
     return-void
@@ -1234,10 +1234,10 @@
 
     .prologue
     .line 92
-    invoke-super {p0}, Lcom/android/settings/notification/ZenModeSettingsBase;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/notification/ZenModeSettingsBase;->onResume()V
 
     .line 93
-    invoke-direct {p0}, Lcom/android/settings/notification/ZenModeAutomationSettings;->pV()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->pV()V
 
     .line 94
     return-void
@@ -1256,7 +1256,7 @@
 
     .prologue
     .line 87
-    invoke-direct {p0}, Lcom/android/settings/notification/ZenModeAutomationSettings;->pV()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/ZenModeAutomationSettings;->pV()V
 
     .line 88
     return-void

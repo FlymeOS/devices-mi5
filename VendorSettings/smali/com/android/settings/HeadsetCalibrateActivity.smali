@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/HeadsetCalibrateActivity;
+.class public Lcom/android/vendorsettings/HeadsetCalibrateActivity;
 .super Lmiui/app/Activity;
 .source "HeadsetCalibrateActivity.java"
 
@@ -21,7 +21,7 @@
 
     .prologue
     .line 38
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetCalibrateActivity;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HeadsetCalibrateActivity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -35,14 +35,14 @@
     .line 40
     if-eqz v0, :cond_0
 
-    instance-of v1, v0, Lcom/android/settings/HeadsetCalibrateFragment;
+    instance-of v1, v0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;
 
     if-eqz v1, :cond_0
 
     .line 41
-    check-cast v0, Lcom/android/settings/BaseFragment;
+    check-cast v0, Lcom/android/vendorsettings/BaseFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/BaseFragment;->Y()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/BaseFragment;->Y()Z
 
     move-result v0
 
@@ -69,7 +69,7 @@
     .line 18
     const-string v0, "audio"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HeadsetCalibrateActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/HeadsetCalibrateActivity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -94,7 +94,7 @@
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     .line 21
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetCalibrateActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HeadsetCalibrateActivity;->finish()V
 
     .line 34
     :goto_0
@@ -102,14 +102,14 @@
 
     .line 24
     :cond_0
-    const-class v0, Lcom/android/settings/HeadsetCalibrateFragment;
+    const-class v0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v1
 
     .line 25
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetCalibrateActivity;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HeadsetCalibrateActivity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v2
 
@@ -152,7 +152,7 @@
 
     .prologue
     .line 51
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetCalibrateActivity;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HeadsetCalibrateActivity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -166,13 +166,13 @@
     .line 53
     if-eqz v0, :cond_0
 
-    instance-of v1, v0, Lcom/android/settings/HeadsetCalibrateFragment;
+    instance-of v1, v0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;
 
     if-eqz v1, :cond_0
 
-    check-cast v0, Lcom/android/settings/HeadsetCalibrateFragment;
+    check-cast v0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;
 
-    invoke-virtual {v0, p1, p2}, Lcom/android/settings/HeadsetCalibrateFragment;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v0, p1, p2}, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 
@@ -198,7 +198,7 @@
 
     .prologue
     .line 62
-    invoke-virtual {p0}, Lcom/android/settings/HeadsetCalibrateActivity;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/HeadsetCalibrateActivity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -212,13 +212,13 @@
     .line 64
     if-eqz v0, :cond_0
 
-    instance-of v1, v0, Lcom/android/settings/HeadsetCalibrateFragment;
+    instance-of v1, v0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;
 
     if-eqz v1, :cond_0
 
-    check-cast v0, Lcom/android/settings/HeadsetCalibrateFragment;
+    check-cast v0, Lcom/android/vendorsettings/HeadsetCalibrateFragment;
 
-    invoke-virtual {v0, p1, p2}, Lcom/android/settings/HeadsetCalibrateFragment;->onKeyUp(ILandroid/view/KeyEvent;)Z
+    invoke-virtual {v0, p1, p2}, Lcom/android/vendorsettings/HeadsetCalibrateFragment;->onKeyUp(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 

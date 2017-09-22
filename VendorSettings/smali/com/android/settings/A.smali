@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/A;
+.class public Lcom/android/vendorsettings/A;
 .super Ljava/lang/Object;
 .source "AppHeader.java"
 
@@ -12,20 +12,20 @@
     return-void
 .end method
 
-.method public static a(Lcom/android/settings/SettingsPreferenceFragment;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Landroid/content/Intent;)V
+.method public static a(Lcom/android/vendorsettings/SettingsPreferenceFragment;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Landroid/content/Intent;)V
     .locals 1
 
     .prologue
     .line 33
     const/4 v0, 0x0
 
-    invoke-static {p0, p1, p2, p3, v0}, Lcom/android/settings/A;->a(Lcom/android/settings/SettingsPreferenceFragment;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Landroid/content/Intent;I)V
+    invoke-static {p0, p1, p2, p3, v0}, Lcom/android/vendorsettings/A;->a(Lcom/android/vendorsettings/SettingsPreferenceFragment;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Landroid/content/Intent;I)V
 
     .line 34
     return-void
 .end method
 
-.method public static a(Lcom/android/settings/SettingsPreferenceFragment;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Landroid/content/Intent;I)V
+.method public static a(Lcom/android/vendorsettings/SettingsPreferenceFragment;Landroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Landroid/content/Intent;I)V
     .locals 0
 
     .prologue

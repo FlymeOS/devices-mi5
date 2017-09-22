@@ -1,4 +1,4 @@
-.class Lcom/android/settings/display/q;
+.class Lcom/android/vendorsettings/display/q;
 .super Ljava/lang/Object;
 .source "HandyModeGuideView.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Yz:Lcom/android/settings/display/p;
+.field final synthetic Yz:Lcom/android/vendorsettings/display/p;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/display/p;)V
+.method constructor <init>(Lcom/android/vendorsettings/display/p;)V
     .locals 0
 
     .prologue
     .line 55
-    iput-object p1, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iput-object p1, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,93 +34,93 @@
     const/4 v2, 0x0
 
     .line 57
-    iget-object v0, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v0, v0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget v3, v0, Lcom/android/settings/display/HandyModeGuideView;->mState:I
+    iget v3, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mState:I
 
     add-int/lit8 v3, v3, 0x1
 
-    iput v3, v0, Lcom/android/settings/display/HandyModeGuideView;->mState:I
+    iput v3, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mState:I
 
     .line 58
-    iget-object v0, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v0, v0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget v0, v0, Lcom/android/settings/display/HandyModeGuideView;->mState:I
+    iget v0, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mState:I
 
     const/4 v3, 0x4
 
     if-le v0, v3, :cond_0
 
     .line 59
-    iget-object v0, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v0, v0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iput v2, v0, Lcom/android/settings/display/HandyModeGuideView;->mState:I
+    iput v2, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mState:I
 
     .line 60
-    iget-object v0, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v3, v0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v3, v0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget-object v0, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v0, v0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget-boolean v0, v0, Lcom/android/settings/display/HandyModeGuideView;->Yw:Z
+    iget-boolean v0, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->Yw:Z
 
     if-nez v0, :cond_1
 
     move v0, v1
 
     :goto_0
-    iput-boolean v0, v3, Lcom/android/settings/display/HandyModeGuideView;->Yw:Z
+    iput-boolean v0, v3, Lcom/android/vendorsettings/display/HandyModeGuideView;->Yw:Z
 
     .line 61
-    iget-object v0, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v0, v0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget-boolean v0, v0, Lcom/android/settings/display/HandyModeGuideView;->Yw:Z
+    iget-boolean v0, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->Yw:Z
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v0, v0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget-object v3, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v3, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v3, v3, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v3, v3, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget-boolean v3, v3, Lcom/android/settings/display/HandyModeGuideView;->Yx:Z
+    iget-boolean v3, v3, Lcom/android/vendorsettings/display/HandyModeGuideView;->Yx:Z
 
     if-nez v3, :cond_2
 
     :goto_1
-    iput-boolean v1, v0, Lcom/android/settings/display/HandyModeGuideView;->Yx:Z
+    iput-boolean v1, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->Yx:Z
 
     .line 63
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v0, v0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget v0, v0, Lcom/android/settings/display/HandyModeGuideView;->mState:I
+    iget v0, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mState:I
 
     packed-switch v0, :pswitch_data_0
 
     .line 83
     :goto_2
-    iget-object v0, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v0, v0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget-object v0, v0, Lcom/android/settings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->start()V
 
@@ -141,17 +141,17 @@
 
     .line 65
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v0, v0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget-object v0, v0, Lcom/android/settings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
 
-    iget-object v1, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v1, v1, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v1, v1, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    invoke-virtual {v1}, Lcom/android/settings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -169,17 +169,17 @@
 
     .line 68
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v0, v0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget-object v0, v0, Lcom/android/settings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
 
-    iget-object v1, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v1, v1, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v1, v1, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    invoke-virtual {v1}, Lcom/android/settings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -194,11 +194,11 @@
     invoke-virtual {v0, v2, v3}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     .line 69
-    iget-object v0, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v0, v0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget-object v0, v0, Lcom/android/settings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
 
     new-instance v1, Landroid/view/animation/LinearInterpolator;
 
@@ -210,17 +210,17 @@
 
     .line 72
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v0, v0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget-object v0, v0, Lcom/android/settings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
 
-    iget-object v1, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v1, v1, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v1, v1, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    invoke-virtual {v1}, Lcom/android/settings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -235,11 +235,11 @@
     invoke-virtual {v0, v2, v3}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     .line 73
-    iget-object v0, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v0, v0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget-object v0, v0, Lcom/android/settings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
 
     new-instance v1, Landroid/view/animation/AccelerateDecelerateInterpolator;
 
@@ -251,17 +251,17 @@
 
     .line 76
     :pswitch_3
-    iget-object v0, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v0, v0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget-object v0, v0, Lcom/android/settings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
 
-    iget-object v1, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v1, v1, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v1, v1, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    invoke-virtual {v1}, Lcom/android/settings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -276,11 +276,11 @@
     invoke-virtual {v0, v2, v3}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     .line 77
-    iget-object v0, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v0, v0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget-object v0, v0, Lcom/android/settings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
 
     new-instance v1, Landroid/view/animation/LinearInterpolator;
 
@@ -292,17 +292,17 @@
 
     .line 80
     :pswitch_4
-    iget-object v0, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v0, v0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget-object v0, v0, Lcom/android/settings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
+    iget-object v0, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mAnimator:Landroid/animation/ValueAnimator;
 
-    iget-object v1, p0, Lcom/android/settings/display/q;->Yz:Lcom/android/settings/display/p;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/q;->Yz:Lcom/android/vendorsettings/display/p;
 
-    iget-object v1, v1, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v1, v1, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    invoke-virtual {v1}, Lcom/android/settings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/display/HandyModeGuideView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 

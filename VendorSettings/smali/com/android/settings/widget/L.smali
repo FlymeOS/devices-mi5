@@ -1,8 +1,8 @@
-.class public interface abstract Lcom/android/settings/widget/L;
+.class public interface abstract Lcom/android/vendorsettings/widget/L;
 .super Ljava/lang/Object;
 .source "TogglePreference.java"
 
 
 # virtual methods
-.method public abstract a(Lcom/android/settings/widget/K;Z)Z
+.method public abstract a(Lcom/android/vendorsettings/widget/K;Z)Z
 .end method

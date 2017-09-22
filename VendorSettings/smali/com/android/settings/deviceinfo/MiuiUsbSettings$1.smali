@@ -1,19 +1,19 @@
-.class Lcom/android/settings/deviceinfo/MiuiUsbSettings$1;
+.class Lcom/android/vendorsettings/deviceinfo/MiuiUsbSettings$1;
 .super Landroid/content/BroadcastReceiver;
 .source "MiuiUsbSettings.java"
 
 
 # instance fields
-.field final synthetic VK:Lcom/android/settings/deviceinfo/MiuiUsbSettings;
+.field final synthetic VK:Lcom/android/vendorsettings/deviceinfo/MiuiUsbSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/MiuiUsbSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/deviceinfo/MiuiUsbSettings;)V
     .locals 0
 
     .prologue
     .line 40
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/MiuiUsbSettings$1;->VK:Lcom/android/settings/deviceinfo/MiuiUsbSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiUsbSettings$1;->VK:Lcom/android/vendorsettings/deviceinfo/MiuiUsbSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -52,9 +52,9 @@
     if-nez v0, :cond_0
 
     .line 45
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiUsbSettings$1;->VK:Lcom/android/settings/deviceinfo/MiuiUsbSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiUsbSettings$1;->VK:Lcom/android/vendorsettings/deviceinfo/MiuiUsbSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/MiuiUsbSettings;->finish()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/deviceinfo/MiuiUsbSettings;->finish()V
 
     .line 52
     :goto_0
@@ -62,15 +62,15 @@
 
     .line 51
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiUsbSettings$1;->VK:Lcom/android/settings/deviceinfo/MiuiUsbSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiUsbSettings$1;->VK:Lcom/android/vendorsettings/deviceinfo/MiuiUsbSettings;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MiuiUsbSettings$1;->VK:Lcom/android/settings/deviceinfo/MiuiUsbSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiUsbSettings$1;->VK:Lcom/android/vendorsettings/deviceinfo/MiuiUsbSettings;
 
-    invoke-static {v1}, Lcom/android/settings/deviceinfo/MiuiUsbSettings;->a(Lcom/android/settings/deviceinfo/MiuiUsbSettings;)Landroid/hardware/usb/UsbManager;
+    invoke-static {v1}, Lcom/android/vendorsettings/deviceinfo/MiuiUsbSettings;->a(Lcom/android/vendorsettings/deviceinfo/MiuiUsbSettings;)Landroid/hardware/usb/UsbManager;
 
     const-string v1, "none"
 
-    invoke-static {v0, v1}, Lcom/android/settings/deviceinfo/MiuiUsbSettings;->a(Lcom/android/settings/deviceinfo/MiuiUsbSettings;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/deviceinfo/MiuiUsbSettings;->a(Lcom/android/vendorsettings/deviceinfo/MiuiUsbSettings;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

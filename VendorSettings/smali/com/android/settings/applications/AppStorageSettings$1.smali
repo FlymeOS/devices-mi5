@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/AppStorageSettings$1;
+.class Lcom/android/vendorsettings/applications/AppStorageSettings$1;
 .super Ljava/lang/Object;
 .source "AppStorageSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Hh:Lcom/android/settings/applications/AppStorageSettings;
+.field final synthetic Hh:Lcom/android/vendorsettings/applications/AppStorageSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/AppStorageSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/applications/AppStorageSettings;)V
     .locals 0
 
     .prologue
     .line 426
-    iput-object p1, p0, Lcom/android/settings/applications/AppStorageSettings$1;->Hh:Lcom/android/settings/applications/AppStorageSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/AppStorageSettings$1;->Hh:Lcom/android/vendorsettings/applications/AppStorageSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 429
-    iget-object v0, p0, Lcom/android/settings/applications/AppStorageSettings$1;->Hh:Lcom/android/settings/applications/AppStorageSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AppStorageSettings$1;->Hh:Lcom/android/vendorsettings/applications/AppStorageSettings;
 
-    invoke-static {v0}, Lcom/android/settings/applications/AppStorageSettings;->a(Lcom/android/settings/applications/AppStorageSettings;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/AppStorageSettings;->a(Lcom/android/vendorsettings/applications/AppStorageSettings;)V
 
     .line 430
     return-void

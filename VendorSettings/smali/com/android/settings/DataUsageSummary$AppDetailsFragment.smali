@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/DataUsageSummary$AppDetailsFragment;
+.class public Lcom/android/vendorsettings/DataUsageSummary$AppDetailsFragment;
 .super Landroid/app/Fragment;
 .source "DataUsageSummary.java"
 
@@ -14,25 +14,25 @@
     return-void
 .end method
 
-.method public static a(Lcom/android/settings/DataUsageSummary;Lcom/android/settings/DataUsageSummary$AppItem;Ljava/lang/CharSequence;)V
+.method public static a(Lcom/android/vendorsettings/DataUsageSummary;Lcom/android/vendorsettings/DataUsageSummary$AppItem;Ljava/lang/CharSequence;)V
     .locals 1
 
     .prologue
     .line 1967
     const/4 v0, 0x1
 
-    invoke-static {p0, p1, p2, v0}, Lcom/android/settings/DataUsageSummary$AppDetailsFragment;->a(Lcom/android/settings/DataUsageSummary;Lcom/android/settings/DataUsageSummary$AppItem;Ljava/lang/CharSequence;Z)V
+    invoke-static {p0, p1, p2, v0}, Lcom/android/vendorsettings/DataUsageSummary$AppDetailsFragment;->a(Lcom/android/vendorsettings/DataUsageSummary;Lcom/android/vendorsettings/DataUsageSummary$AppItem;Ljava/lang/CharSequence;Z)V
 
     .line 1968
     return-void
 .end method
 
-.method public static a(Lcom/android/settings/DataUsageSummary;Lcom/android/settings/DataUsageSummary$AppItem;Ljava/lang/CharSequence;Z)V
+.method public static a(Lcom/android/vendorsettings/DataUsageSummary;Lcom/android/vendorsettings/DataUsageSummary$AppItem;Ljava/lang/CharSequence;Z)V
     .locals 3
 
     .prologue
     .line 1972
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary;->isAdded()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DataUsageSummary;->isAdded()Z
 
     move-result v0
 
@@ -54,20 +54,20 @@
     invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 1977
-    new-instance v1, Lcom/android/settings/DataUsageSummary$AppDetailsFragment;
+    new-instance v1, Lcom/android/vendorsettings/DataUsageSummary$AppDetailsFragment;
 
-    invoke-direct {v1}, Lcom/android/settings/DataUsageSummary$AppDetailsFragment;-><init>()V
+    invoke-direct {v1}, Lcom/android/vendorsettings/DataUsageSummary$AppDetailsFragment;-><init>()V
 
     .line 1978
-    invoke-virtual {v1, v0}, Lcom/android/settings/DataUsageSummary$AppDetailsFragment;->setArguments(Landroid/os/Bundle;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/DataUsageSummary$AppDetailsFragment;->setArguments(Landroid/os/Bundle;)V
 
     .line 1979
     const/4 v0, 0x0
 
-    invoke-virtual {v1, p0, v0}, Lcom/android/settings/DataUsageSummary$AppDetailsFragment;->setTargetFragment(Landroid/app/Fragment;I)V
+    invoke-virtual {v1, p0, v0}, Lcom/android/vendorsettings/DataUsageSummary$AppDetailsFragment;->setTargetFragment(Landroid/app/Fragment;I)V
 
     .line 1980
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DataUsageSummary;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -90,7 +90,7 @@
 
     .line 1985
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DataUsageSummary;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -131,7 +131,7 @@
 
     .line 2010
     :pswitch_0
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary$AppDetailsFragment;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DataUsageSummary$AppDetailsFragment;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -159,14 +159,14 @@
     invoke-super {p0}, Landroid/app/Fragment;->onStart()V
 
     .line 1993
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary$AppDetailsFragment;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DataUsageSummary$AppDetailsFragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/DataUsageSummary;
+    check-cast v0, Lcom/android/vendorsettings/DataUsageSummary;
 
     .line 1994
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary$AppDetailsFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DataUsageSummary$AppDetailsFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -176,12 +176,12 @@
 
     move-result-object v1
 
-    check-cast v1, Lcom/android/settings/DataUsageSummary$AppItem;
+    check-cast v1, Lcom/android/vendorsettings/DataUsageSummary$AppItem;
 
-    invoke-static {v0, v1}, Lcom/android/settings/DataUsageSummary;->a(Lcom/android/settings/DataUsageSummary;Lcom/android/settings/DataUsageSummary$AppItem;)Lcom/android/settings/DataUsageSummary$AppItem;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/DataUsageSummary;->a(Lcom/android/vendorsettings/DataUsageSummary;Lcom/android/vendorsettings/DataUsageSummary$AppItem;)Lcom/android/vendorsettings/DataUsageSummary$AppItem;
 
     .line 1995
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary;->b(Lcom/android/settings/DataUsageSummary;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/DataUsageSummary;->b(Lcom/android/vendorsettings/DataUsageSummary;)V
 
     .line 1996
     return-void
@@ -195,19 +195,19 @@
     invoke-super {p0}, Landroid/app/Fragment;->onStop()V
 
     .line 2001
-    invoke-virtual {p0}, Lcom/android/settings/DataUsageSummary$AppDetailsFragment;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/DataUsageSummary$AppDetailsFragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/DataUsageSummary;
+    check-cast v0, Lcom/android/vendorsettings/DataUsageSummary;
 
     .line 2002
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/DataUsageSummary;->a(Lcom/android/settings/DataUsageSummary;Lcom/android/settings/DataUsageSummary$AppItem;)Lcom/android/settings/DataUsageSummary$AppItem;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/DataUsageSummary;->a(Lcom/android/vendorsettings/DataUsageSummary;Lcom/android/vendorsettings/DataUsageSummary$AppItem;)Lcom/android/vendorsettings/DataUsageSummary$AppItem;
 
     .line 2003
-    invoke-static {v0}, Lcom/android/settings/DataUsageSummary;->b(Lcom/android/settings/DataUsageSummary;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/DataUsageSummary;->b(Lcom/android/vendorsettings/DataUsageSummary;)V
 
     .line 2004
     return-void

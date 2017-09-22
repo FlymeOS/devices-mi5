@@ -1,4 +1,4 @@
-.class Lcom/android/settings/gX;
+.class Lcom/android/vendorsettings/gX;
 .super Ljava/lang/Object;
 .source "ResetNetworkConfirm.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic yk:Lcom/android/settings/ResetNetworkConfirm;
+.field final synthetic yk:Lcom/android/vendorsettings/ResetNetworkConfirm;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ResetNetworkConfirm;)V
+.method constructor <init>(Lcom/android/vendorsettings/ResetNetworkConfirm;)V
     .locals 0
 
     .prologue
     .line 62
-    iput-object p1, p0, Lcom/android/settings/gX;->yk:Lcom/android/settings/ResetNetworkConfirm;
+    iput-object p1, p0, Lcom/android/vendorsettings/gX;->yk:Lcom/android/vendorsettings/ResetNetworkConfirm;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 66
-    invoke-static {}, Lcom/android/settings/iC;->iu()Z
+    invoke-static {}, Lcom/android/vendorsettings/iC;->iu()Z
 
     move-result v0
 
@@ -42,9 +42,9 @@
 
     .line 70
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/gX;->yk:Lcom/android/settings/ResetNetworkConfirm;
+    iget-object v0, p0, Lcom/android/vendorsettings/gX;->yk:Lcom/android/vendorsettings/ResetNetworkConfirm;
 
-    invoke-virtual {v0}, Lcom/android/settings/ResetNetworkConfirm;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/ResetNetworkConfirm;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -93,9 +93,9 @@
     if-eqz v0, :cond_3
 
     .line 87
-    iget-object v1, p0, Lcom/android/settings/gX;->yk:Lcom/android/settings/ResetNetworkConfirm;
+    iget-object v1, p0, Lcom/android/vendorsettings/gX;->yk:Lcom/android/vendorsettings/ResetNetworkConfirm;
 
-    invoke-static {v1}, Lcom/android/settings/ResetNetworkConfirm;->a(Lcom/android/settings/ResetNetworkConfirm;)I
+    invoke-static {v1}, Lcom/android/vendorsettings/ResetNetworkConfirm;->a(Lcom/android/vendorsettings/ResetNetworkConfirm;)I
 
     move-result v1
 
@@ -115,9 +115,9 @@
     if-eqz v1, :cond_4
 
     .line 93
-    iget-object v3, p0, Lcom/android/settings/gX;->yk:Lcom/android/settings/ResetNetworkConfirm;
+    iget-object v3, p0, Lcom/android/vendorsettings/gX;->yk:Lcom/android/vendorsettings/ResetNetworkConfirm;
 
-    invoke-static {v3}, Lcom/android/settings/ResetNetworkConfirm;->a(Lcom/android/settings/ResetNetworkConfirm;)I
+    invoke-static {v3}, Lcom/android/vendorsettings/ResetNetworkConfirm;->a(Lcom/android/vendorsettings/ResetNetworkConfirm;)I
 
     move-result v3
 

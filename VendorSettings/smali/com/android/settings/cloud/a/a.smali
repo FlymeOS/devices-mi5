@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/a/a;
+.class public Lcom/android/vendorsettings/cloud/a/a;
 .super Ljava/lang/Object;
 .source "Client.java"
 

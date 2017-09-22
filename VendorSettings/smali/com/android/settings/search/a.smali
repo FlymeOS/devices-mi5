@@ -1,9 +1,9 @@
-.class public Lcom/android/settings/search/a;
+.class public Lcom/android/vendorsettings/search/a;
 .super Ljava/lang/Object;
 .source "BaseSearchIndexProvider.java"
 
 # interfaces
-.implements Lcom/android/settings/search/l;
+.implements Lcom/android/vendorsettings/search/l;
 
 
 # static fields
@@ -20,7 +20,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/search/a;->EMPTY_LIST:Ljava/util/List;
+    sput-object v0, Lcom/android/vendorsettings/search/a;->EMPTY_LIST:Ljava/util/List;
 
     return-void
 .end method
@@ -63,7 +63,7 @@
 
     .prologue
     .line 47
-    sget-object v0, Lcom/android/settings/search/a;->EMPTY_LIST:Ljava/util/List;
+    sget-object v0, Lcom/android/vendorsettings/search/a;->EMPTY_LIST:Ljava/util/List;
 
     return-object v0
 .end method

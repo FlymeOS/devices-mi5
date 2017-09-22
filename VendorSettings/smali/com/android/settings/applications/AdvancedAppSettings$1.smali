@@ -1,22 +1,22 @@
-.class Lcom/android/settings/applications/AdvancedAppSettings$1;
+.class Lcom/android/vendorsettings/applications/AdvancedAppSettings$1;
 .super Ljava/lang/Object;
 .source "AdvancedAppSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/applications/PermissionsSummaryHelper$PermissionsResultCallback;
+.implements Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$PermissionsResultCallback;
 
 
 # instance fields
-.field final synthetic Fd:Lcom/android/settings/applications/AdvancedAppSettings;
+.field final synthetic Fd:Lcom/android/vendorsettings/applications/AdvancedAppSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/AdvancedAppSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/applications/AdvancedAppSettings;)V
     .locals 0
 
     .prologue
     .line 127
-    iput-object p1, p0, Lcom/android/settings/applications/AdvancedAppSettings$1;->Fd:Lcom/android/settings/applications/AdvancedAppSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/AdvancedAppSettings$1;->Fd:Lcom/android/vendorsettings/applications/AdvancedAppSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,9 +36,9 @@
     const/4 v5, 0x0
 
     .line 130
-    iget-object v0, p0, Lcom/android/settings/applications/AdvancedAppSettings$1;->Fd:Lcom/android/settings/applications/AdvancedAppSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AdvancedAppSettings$1;->Fd:Lcom/android/vendorsettings/applications/AdvancedAppSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/AdvancedAppSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/AdvancedAppSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -50,23 +50,23 @@
 
     .line 133
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/AdvancedAppSettings$1;->Fd:Lcom/android/settings/applications/AdvancedAppSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AdvancedAppSettings$1;->Fd:Lcom/android/vendorsettings/applications/AdvancedAppSettings;
 
-    invoke-static {v0, v1}, Lcom/android/settings/applications/AdvancedAppSettings;->a(Lcom/android/settings/applications/AdvancedAppSettings;Landroid/content/BroadcastReceiver;)Landroid/content/BroadcastReceiver;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/applications/AdvancedAppSettings;->a(Lcom/android/vendorsettings/applications/AdvancedAppSettings;Landroid/content/BroadcastReceiver;)Landroid/content/BroadcastReceiver;
 
     .line 134
     if-eqz p1, :cond_1
 
     .line 135
-    iget-object v0, p0, Lcom/android/settings/applications/AdvancedAppSettings$1;->Fd:Lcom/android/settings/applications/AdvancedAppSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AdvancedAppSettings$1;->Fd:Lcom/android/vendorsettings/applications/AdvancedAppSettings;
 
-    invoke-static {v0}, Lcom/android/settings/applications/AdvancedAppSettings;->a(Lcom/android/settings/applications/AdvancedAppSettings;)Landroid/preference/Preference;
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/AdvancedAppSettings;->a(Lcom/android/vendorsettings/applications/AdvancedAppSettings;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/applications/AdvancedAppSettings$1;->Fd:Lcom/android/settings/applications/AdvancedAppSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AdvancedAppSettings$1;->Fd:Lcom/android/vendorsettings/applications/AdvancedAppSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/applications/AdvancedAppSettings;->getContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/applications/AdvancedAppSettings;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -102,9 +102,9 @@
 
     .line 138
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/applications/AdvancedAppSettings$1;->Fd:Lcom/android/settings/applications/AdvancedAppSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AdvancedAppSettings$1;->Fd:Lcom/android/vendorsettings/applications/AdvancedAppSettings;
 
-    invoke-static {v0}, Lcom/android/settings/applications/AdvancedAppSettings;->a(Lcom/android/settings/applications/AdvancedAppSettings;)Landroid/preference/Preference;
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/AdvancedAppSettings;->a(Lcom/android/vendorsettings/applications/AdvancedAppSettings;)Landroid/preference/Preference;
 
     move-result-object v0
 

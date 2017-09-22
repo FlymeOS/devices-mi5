@@ -1,4 +1,4 @@
-.class Lcom/android/settings/print/a;
+.class Lcom/android/vendorsettings/print/a;
 .super Ljava/lang/Object;
 .source "PrintJobSettingsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic amg:Lcom/android/settings/print/PrintJobSettingsFragment;
+.field final synthetic amg:Lcom/android/vendorsettings/print/PrintJobSettingsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/print/PrintJobSettingsFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/print/PrintJobSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 56
-    iput-object p1, p0, Lcom/android/settings/print/a;->amg:Lcom/android/settings/print/PrintJobSettingsFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/print/a;->amg:Lcom/android/vendorsettings/print/PrintJobSettingsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 59
-    iget-object v0, p0, Lcom/android/settings/print/a;->amg:Lcom/android/settings/print/PrintJobSettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/print/a;->amg:Lcom/android/vendorsettings/print/PrintJobSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/print/PrintJobSettingsFragment;->a(Lcom/android/settings/print/PrintJobSettingsFragment;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/print/PrintJobSettingsFragment;->a(Lcom/android/vendorsettings/print/PrintJobSettingsFragment;)V
 
     .line 60
     return-void

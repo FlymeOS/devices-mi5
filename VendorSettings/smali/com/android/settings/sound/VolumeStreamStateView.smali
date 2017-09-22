@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/sound/VolumeStreamStateView;
+.class public Lcom/android/vendorsettings/sound/VolumeStreamStateView;
 .super Landroid/widget/ImageView;
 .source "VolumeStreamStateView.java"
 
@@ -35,7 +35,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/sound/VolumeStreamStateView;->arm:[I
+    sput-object v0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->arm:[I
 
     .line 15
     new-array v0, v3, [I
@@ -44,7 +44,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/sound/VolumeStreamStateView;->arn:[I
+    sput-object v0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->arn:[I
 
     .line 16
     new-array v0, v3, [I
@@ -53,7 +53,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/sound/VolumeStreamStateView;->aro:[I
+    sput-object v0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->aro:[I
 
     return-void
 .end method
@@ -68,17 +68,17 @@
     .line 18
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/sound/VolumeStreamStateView;->akt:I
+    iput v0, p0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->akt:I
 
     .line 19
     const/16 v0, 0xc
 
-    iput v0, p0, Lcom/android/settings/sound/VolumeStreamStateView;->arp:I
+    iput v0, p0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->arp:I
 
     .line 21
     const/16 v0, 0x380
 
-    iput v0, p0, Lcom/android/settings/sound/VolumeStreamStateView;->DEVICE_OUT_ALL_A2DP:I
+    iput v0, p0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->DEVICE_OUT_ALL_A2DP:I
 
     .line 39
     return-void
@@ -94,17 +94,17 @@
     .line 18
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/sound/VolumeStreamStateView;->akt:I
+    iput v0, p0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->akt:I
 
     .line 19
     const/16 v0, 0xc
 
-    iput v0, p0, Lcom/android/settings/sound/VolumeStreamStateView;->arp:I
+    iput v0, p0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->arp:I
 
     .line 21
     const/16 v0, 0x380
 
-    iput v0, p0, Lcom/android/settings/sound/VolumeStreamStateView;->DEVICE_OUT_ALL_A2DP:I
+    iput v0, p0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->DEVICE_OUT_ALL_A2DP:I
 
     .line 35
     return-void
@@ -120,17 +120,17 @@
     .line 18
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/sound/VolumeStreamStateView;->akt:I
+    iput v0, p0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->akt:I
 
     .line 19
     const/16 v0, 0xc
 
-    iput v0, p0, Lcom/android/settings/sound/VolumeStreamStateView;->arp:I
+    iput v0, p0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->arp:I
 
     .line 21
     const/16 v0, 0x380
 
-    iput v0, p0, Lcom/android/settings/sound/VolumeStreamStateView;->DEVICE_OUT_ALL_A2DP:I
+    iput v0, p0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->DEVICE_OUT_ALL_A2DP:I
 
     .line 31
     return-void
@@ -146,17 +146,17 @@
     .line 18
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/sound/VolumeStreamStateView;->akt:I
+    iput v0, p0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->akt:I
 
     .line 19
     const/16 v0, 0xc
 
-    iput v0, p0, Lcom/android/settings/sound/VolumeStreamStateView;->arp:I
+    iput v0, p0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->arp:I
 
     .line 21
     const/16 v0, 0x380
 
-    iput v0, p0, Lcom/android/settings/sound/VolumeStreamStateView;->DEVICE_OUT_ALL_A2DP:I
+    iput v0, p0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->DEVICE_OUT_ALL_A2DP:I
 
     .line 27
     return-void
@@ -169,7 +169,7 @@
 
     .prologue
     .line 61
-    iput p1, p0, Lcom/android/settings/sound/VolumeStreamStateView;->akt:I
+    iput p1, p0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->akt:I
 
     .line 62
     return-void
@@ -187,14 +187,14 @@
     move-result-object v1
 
     .line 44
-    iget v0, p0, Lcom/android/settings/sound/VolumeStreamStateView;->akt:I
+    iget v0, p0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->akt:I
 
     const/4 v2, -0x1
 
     if-eq v0, v2, :cond_1
 
     .line 45
-    invoke-virtual {p0}, Lcom/android/settings/sound/VolumeStreamStateView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -207,14 +207,14 @@
     check-cast v0, Landroid/media/AudioManager;
 
     .line 46
-    iget v2, p0, Lcom/android/settings/sound/VolumeStreamStateView;->akt:I
+    iget v2, p0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->akt:I
 
     invoke-virtual {v0, v2}, Landroid/media/AudioManager;->getDevicesForStream(I)I
 
     move-result v2
 
     .line 47
-    iget v3, p0, Lcom/android/settings/sound/VolumeStreamStateView;->akt:I
+    iget v3, p0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->akt:I
 
     invoke-virtual {v0, v3}, Landroid/media/AudioManager;->getStreamVolume(I)I
 
@@ -223,9 +223,9 @@
     if-nez v0, :cond_0
 
     .line 48
-    sget-object v0, Lcom/android/settings/sound/VolumeStreamStateView;->arm:[I
+    sget-object v0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->arm:[I
 
-    invoke-static {v1, v0}, Lcom/android/settings/sound/VolumeStreamStateView;->mergeDrawableStates([I[I)[I
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->mergeDrawableStates([I[I)[I
 
     .line 50
     :cond_0
@@ -234,9 +234,9 @@
     if-eqz v0, :cond_2
 
     .line 51
-    sget-object v0, Lcom/android/settings/sound/VolumeStreamStateView;->arn:[I
+    sget-object v0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->arn:[I
 
-    invoke-static {v1, v0}, Lcom/android/settings/sound/VolumeStreamStateView;->mergeDrawableStates([I[I)[I
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->mergeDrawableStates([I[I)[I
 
     .line 57
     :cond_1
@@ -250,9 +250,9 @@
     if-eqz v0, :cond_1
 
     .line 53
-    sget-object v0, Lcom/android/settings/sound/VolumeStreamStateView;->aro:[I
+    sget-object v0, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->aro:[I
 
-    invoke-static {v1, v0}, Lcom/android/settings/sound/VolumeStreamStateView;->mergeDrawableStates([I[I)[I
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/sound/VolumeStreamStateView;->mergeDrawableStates([I[I)[I
 
     goto :goto_0
 .end method

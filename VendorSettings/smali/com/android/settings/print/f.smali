@@ -1,4 +1,4 @@
-.class Lcom/android/settings/print/f;
+.class Lcom/android/vendorsettings/print/f;
 .super Ljava/lang/Object;
 .source "PrintServiceSettingsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic amr:Lcom/android/settings/print/PrintServiceSettingsFragment;
+.field final synthetic amr:Lcom/android/vendorsettings/print/PrintServiceSettingsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/print/PrintServiceSettingsFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/print/PrintServiceSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 482
-    iput-object p1, p0, Lcom/android/settings/print/f;->amr:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/print/f;->amr:Lcom/android/vendorsettings/print/PrintServiceSettingsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 490
-    iget-object v0, p0, Lcom/android/settings/print/f;->amr:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/print/f;->amr:Lcom/android/vendorsettings/print/PrintServiceSettingsFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getListView()Landroid/widget/ListView;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/print/PrintServiceSettingsFragment;->getListView()Landroid/widget/ListView;
 
     move-result-object v0
 

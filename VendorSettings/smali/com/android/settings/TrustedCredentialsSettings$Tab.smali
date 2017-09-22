@@ -1,14 +1,14 @@
-.class final enum Lcom/android/settings/TrustedCredentialsSettings$Tab;
+.class final enum Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 .super Ljava/lang/Enum;
 .source "TrustedCredentialsSettings.java"
 
 
 # static fields
-.field public static final enum BE:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+.field public static final enum BE:Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
-.field public static final enum BF:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+.field public static final enum BF:Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
-.field private static final synthetic BG:[Lcom/android/settings/TrustedCredentialsSettings$Tab;
+.field private static final synthetic BG:[Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
 
 # instance fields
@@ -33,7 +33,7 @@
 
     .prologue
     .line 78
-    new-instance v0, Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    new-instance v0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     const-string v1, "SYSTEM"
 
@@ -53,12 +53,12 @@
 
     const/4 v9, 0x1
 
-    invoke-direct/range {v0 .. v9}, Lcom/android/settings/TrustedCredentialsSettings$Tab;-><init>(Ljava/lang/String;ILjava/lang/String;IIIIIZ)V
+    invoke-direct/range {v0 .. v9}, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;-><init>(Ljava/lang/String;ILjava/lang/String;IIIIIZ)V
 
-    sput-object v0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->BE:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    sput-object v0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->BE:Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     .line 85
-    new-instance v0, Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    new-instance v0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     const-string v1, "USER"
 
@@ -78,28 +78,28 @@
 
     const/4 v9, 0x0
 
-    invoke-direct/range {v0 .. v9}, Lcom/android/settings/TrustedCredentialsSettings$Tab;-><init>(Ljava/lang/String;ILjava/lang/String;IIIIIZ)V
+    invoke-direct/range {v0 .. v9}, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;-><init>(Ljava/lang/String;ILjava/lang/String;IIIIIZ)V
 
-    sput-object v0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->BF:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    sput-object v0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->BF:Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     .line 77
     const/4 v0, 0x2
 
-    new-array v0, v0, [Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    new-array v0, v0, [Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     const/4 v1, 0x0
 
-    sget-object v2, Lcom/android/settings/TrustedCredentialsSettings$Tab;->BE:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    sget-object v2, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->BE:Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x1
 
-    sget-object v2, Lcom/android/settings/TrustedCredentialsSettings$Tab;->BF:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    sget-object v2, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->BF:Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->BG:[Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    sput-object v0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->BG:[Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     return-void
 .end method
@@ -112,36 +112,36 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 103
-    iput-object p3, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mTag:Ljava/lang/String;
+    iput-object p3, p0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->mTag:Ljava/lang/String;
 
     .line 104
-    iput p4, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mLabel:I
+    iput p4, p0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->mLabel:I
 
     .line 105
-    iput p5, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mView:I
+    iput p5, p0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->mView:I
 
     .line 106
-    iput p6, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mProgress:I
+    iput p6, p0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->mProgress:I
 
     .line 107
-    iput p7, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mList:I
+    iput p7, p0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->mList:I
 
     .line 108
-    iput p8, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mExpandableList:I
+    iput p8, p0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->mExpandableList:I
 
     .line 109
-    iput-boolean p9, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mSwitch:Z
+    iput-boolean p9, p0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->mSwitch:Z
 
     .line 110
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/TrustedCredentialsSettings$Tab;Lcom/android/settings/io;)I
+.method static synthetic a(Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;Lcom/android/vendorsettings/io;)I
     .locals 1
 
     .prologue
     .line 77
-    invoke-direct {p0, p1}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->k(Lcom/android/settings/io;)I
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->k(Lcom/android/vendorsettings/io;)I
 
     move-result v0
 
@@ -153,9 +153,9 @@
 
     .prologue
     .line 113
-    sget-object v0, Lcom/android/settings/ik;->Bx:[I
+    sget-object v0, Lcom/android/vendorsettings/ik;->Bx:[I
 
-    invoke-virtual {p0}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->ordinal()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->ordinal()I
 
     move-result v1
 
@@ -205,29 +205,29 @@
     .end packed-switch
 .end method
 
-.method static synthetic a(Lcom/android/settings/TrustedCredentialsSettings$Tab;Landroid/security/IKeyChainService;)Ljava/util/List;
+.method static synthetic a(Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;Landroid/security/IKeyChainService;)Ljava/util/List;
     .locals 1
 
     .prologue
     .line 77
-    invoke-direct {p0, p1}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->a(Landroid/security/IKeyChainService;)Ljava/util/List;
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->a(Landroid/security/IKeyChainService;)Ljava/util/List;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/TrustedCredentialsSettings$Tab;ZLcom/android/settings/io;)V
+.method static synthetic a(Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;ZLcom/android/vendorsettings/io;)V
     .locals 0
 
     .prologue
     .line 77
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->a(ZLcom/android/settings/io;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->a(ZLcom/android/vendorsettings/io;)V
 
     return-void
 .end method
 
-.method private a(ZLcom/android/settings/io;)V
+.method private a(ZLcom/android/vendorsettings/io;)V
     .locals 1
 
     .prologue
@@ -235,16 +235,16 @@
     if-eqz p1, :cond_2
 
     .line 157
-    invoke-static {p2}, Lcom/android/settings/io;->e(Lcom/android/settings/io;)Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    invoke-static {p2}, Lcom/android/vendorsettings/io;->e(Lcom/android/vendorsettings/io;)Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     move-result-object v0
 
-    iget-boolean v0, v0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mSwitch:Z
+    iget-boolean v0, v0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->mSwitch:Z
 
     if-eqz v0, :cond_1
 
     .line 158
-    invoke-static {p2}, Lcom/android/settings/io;->d(Lcom/android/settings/io;)Z
+    invoke-static {p2}, Lcom/android/vendorsettings/io;->d(Lcom/android/vendorsettings/io;)Z
 
     move-result v0
 
@@ -253,15 +253,15 @@
     const/4 v0, 0x1
 
     :goto_0
-    invoke-static {p2, v0}, Lcom/android/settings/io;->a(Lcom/android/settings/io;Z)Z
+    invoke-static {p2, v0}, Lcom/android/vendorsettings/io;->a(Lcom/android/vendorsettings/io;Z)Z
 
     .line 162
     :goto_1
-    invoke-static {p2}, Lcom/android/settings/io;->f(Lcom/android/settings/io;)Lcom/android/settings/iq;
+    invoke-static {p2}, Lcom/android/vendorsettings/io;->f(Lcom/android/vendorsettings/io;)Lcom/android/vendorsettings/iq;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lcom/android/settings/iq;->notifyDataSetChanged()V
+    invoke-interface {v0}, Lcom/android/vendorsettings/iq;->notifyDataSetChanged()V
 
     .line 167
     :goto_2
@@ -275,21 +275,21 @@
 
     .line 160
     :cond_1
-    invoke-static {p2}, Lcom/android/settings/io;->f(Lcom/android/settings/io;)Lcom/android/settings/iq;
+    invoke-static {p2}, Lcom/android/vendorsettings/io;->f(Lcom/android/vendorsettings/io;)Lcom/android/vendorsettings/iq;
 
     move-result-object v0
 
-    invoke-interface {v0, p2}, Lcom/android/settings/iq;->b(Lcom/android/settings/io;)V
+    invoke-interface {v0, p2}, Lcom/android/vendorsettings/iq;->b(Lcom/android/vendorsettings/io;)V
 
     goto :goto_1
 
     .line 165
     :cond_2
-    invoke-static {p2}, Lcom/android/settings/io;->f(Lcom/android/settings/io;)Lcom/android/settings/iq;
+    invoke-static {p2}, Lcom/android/vendorsettings/io;->f(Lcom/android/vendorsettings/io;)Lcom/android/vendorsettings/iq;
 
     move-result-object v0
 
-    invoke-interface {v0}, Lcom/android/settings/iq;->load()V
+    invoke-interface {v0}, Lcom/android/vendorsettings/iq;->load()V
 
     goto :goto_2
 .end method
@@ -301,9 +301,9 @@
     const/4 v0, 0x0
 
     .line 123
-    sget-object v1, Lcom/android/settings/ik;->Bx:[I
+    sget-object v1, Lcom/android/vendorsettings/ik;->Bx:[I
 
-    invoke-virtual {p0}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->ordinal()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->ordinal()I
 
     move-result v2
 
@@ -341,108 +341,108 @@
     .end packed-switch
 .end method
 
-.method static synthetic a(Lcom/android/settings/TrustedCredentialsSettings$Tab;Landroid/security/IKeyChainService;Ljava/lang/String;)Z
+.method static synthetic a(Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;Landroid/security/IKeyChainService;Ljava/lang/String;)Z
     .locals 1
 
     .prologue
     .line 77
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->a(Landroid/security/IKeyChainService;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->a(Landroid/security/IKeyChainService;Ljava/lang/String;)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/TrustedCredentialsSettings$Tab;Lcom/android/settings/io;)I
+.method static synthetic b(Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;Lcom/android/vendorsettings/io;)I
     .locals 1
 
     .prologue
     .line 77
-    invoke-direct {p0, p1}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->l(Lcom/android/settings/io;)I
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->l(Lcom/android/vendorsettings/io;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/TrustedCredentialsSettings$Tab;)Ljava/lang/String;
+.method static synthetic b(Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 77
-    iget-object v0, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mTag:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->mTag:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/TrustedCredentialsSettings$Tab;)I
+.method static synthetic c(Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;)I
     .locals 1
 
     .prologue
     .line 77
-    iget v0, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mView:I
+    iget v0, p0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->mView:I
 
     return v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/TrustedCredentialsSettings$Tab;)I
+.method static synthetic d(Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;)I
     .locals 1
 
     .prologue
     .line 77
-    iget v0, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mLabel:I
+    iget v0, p0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->mLabel:I
 
     return v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/TrustedCredentialsSettings$Tab;)I
+.method static synthetic e(Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;)I
     .locals 1
 
     .prologue
     .line 77
-    iget v0, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mExpandableList:I
+    iget v0, p0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->mExpandableList:I
 
     return v0
 .end method
 
-.method static synthetic f(Lcom/android/settings/TrustedCredentialsSettings$Tab;)I
+.method static synthetic f(Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;)I
     .locals 1
 
     .prologue
     .line 77
-    iget v0, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mList:I
+    iget v0, p0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->mList:I
 
     return v0
 .end method
 
-.method static synthetic g(Lcom/android/settings/TrustedCredentialsSettings$Tab;)I
+.method static synthetic g(Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;)I
     .locals 1
 
     .prologue
     .line 77
-    iget v0, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mProgress:I
+    iget v0, p0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->mProgress:I
 
     return v0
 .end method
 
-.method static synthetic h(Lcom/android/settings/TrustedCredentialsSettings$Tab;)Z
+.method static synthetic h(Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;)Z
     .locals 1
 
     .prologue
     .line 77
-    iget-boolean v0, p0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->mSwitch:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->mSwitch:Z
 
     return v0
 .end method
 
-.method private k(Lcom/android/settings/io;)I
+.method private k(Lcom/android/vendorsettings/io;)I
     .locals 2
 
     .prologue
     .line 132
-    sget-object v0, Lcom/android/settings/ik;->Bx:[I
+    sget-object v0, Lcom/android/vendorsettings/ik;->Bx:[I
 
-    invoke-virtual {p0}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->ordinal()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->ordinal()I
 
     move-result v1
 
@@ -459,7 +459,7 @@
 
     .line 134
     :pswitch_0
-    invoke-static {p1}, Lcom/android/settings/io;->d(Lcom/android/settings/io;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/io;->d(Lcom/android/vendorsettings/io;)Z
 
     move-result v0
 
@@ -494,14 +494,14 @@
     .end packed-switch
 .end method
 
-.method private l(Lcom/android/settings/io;)I
+.method private l(Lcom/android/vendorsettings/io;)I
     .locals 2
 
     .prologue
     .line 144
-    sget-object v0, Lcom/android/settings/ik;->Bx:[I
+    sget-object v0, Lcom/android/vendorsettings/ik;->Bx:[I
 
-    invoke-virtual {p0}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->ordinal()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->ordinal()I
 
     move-result v1
 
@@ -518,7 +518,7 @@
 
     .line 146
     :pswitch_0
-    invoke-static {p1}, Lcom/android/settings/io;->d(Lcom/android/settings/io;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/io;->d(Lcom/android/vendorsettings/io;)Z
 
     move-result v0
 
@@ -553,34 +553,34 @@
     .end packed-switch
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lcom/android/settings/TrustedCredentialsSettings$Tab;
+.method public static valueOf(Ljava/lang/String;)Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
     .locals 1
 
     .prologue
     .line 77
-    const-class v0, Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    const-class v0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    check-cast v0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     return-object v0
 .end method
 
-.method public static values()[Lcom/android/settings/TrustedCredentialsSettings$Tab;
+.method public static values()[Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
     .locals 1
 
     .prologue
     .line 77
-    sget-object v0, Lcom/android/settings/TrustedCredentialsSettings$Tab;->BG:[Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    sget-object v0, Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->BG:[Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
-    invoke-virtual {v0}, [Lcom/android/settings/TrustedCredentialsSettings$Tab;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, [Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    check-cast v0, [Lcom/android/vendorsettings/TrustedCredentialsSettings$Tab;
 
     return-object v0
 .end method

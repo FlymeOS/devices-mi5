@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/toggleposition/b;
+.class public interface abstract Lcom/android/vendorsettings/toggleposition/b;
 .super Ljava/lang/Object;
 .source "DragGridBaseAdapter.java"
 

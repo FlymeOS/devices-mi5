@@ -1,16 +1,16 @@
-.class Lcom/android/settings/applications/AdvancedAppSettings$CountAppsWithWriteSettingsPermission;
+.class Lcom/android/vendorsettings/applications/AdvancedAppSettings$CountAppsWithWriteSettingsPermission;
 .super Landroid/os/AsyncTask;
 .source "AdvancedAppSettings.java"
 
 
 # instance fields
-.field final synthetic Fd:Lcom/android/settings/applications/AdvancedAppSettings;
+.field final synthetic Fd:Lcom/android/vendorsettings/applications/AdvancedAppSettings;
 
 .field Fe:I
 
 
 # virtual methods
-.method protected varargs a([Lcom/android/settings/applications/AppStateWriteSettingsBridge;)Ljava/lang/Integer;
+.method protected varargs a([Lcom/android/vendorsettings/applications/AppStateWriteSettingsBridge;)Ljava/lang/Integer;
     .locals 2
 
     .prologue
@@ -20,14 +20,14 @@
     aget-object v0, p1, v0
 
     .line 173
-    invoke-virtual {v0}, Lcom/android/settings/applications/AppStateWriteSettingsBridge;->jS()I
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/AppStateWriteSettingsBridge;->jS()I
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/applications/AdvancedAppSettings$CountAppsWithWriteSettingsPermission;->Fe:I
+    iput v1, p0, Lcom/android/vendorsettings/applications/AdvancedAppSettings$CountAppsWithWriteSettingsPermission;->Fe:I
 
     .line 175
-    invoke-virtual {v0}, Lcom/android/settings/applications/AppStateWriteSettingsBridge;->jU()I
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/AppStateWriteSettingsBridge;->jU()I
 
     move-result v0
 
@@ -43,9 +43,9 @@
 
     .prologue
     .line 166
-    check-cast p1, [Lcom/android/settings/applications/AppStateWriteSettingsBridge;
+    check-cast p1, [Lcom/android/vendorsettings/applications/AppStateWriteSettingsBridge;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/AdvancedAppSettings$CountAppsWithWriteSettingsPermission;->a([Lcom/android/settings/applications/AppStateWriteSettingsBridge;)Ljava/lang/Integer;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/applications/AdvancedAppSettings$CountAppsWithWriteSettingsPermission;->a([Lcom/android/vendorsettings/applications/AppStateWriteSettingsBridge;)Ljava/lang/Integer;
 
     move-result-object v0
 
@@ -57,24 +57,24 @@
 
     .prologue
     .line 181
-    iget-object v0, p0, Lcom/android/settings/applications/AdvancedAppSettings$CountAppsWithWriteSettingsPermission;->Fd:Lcom/android/settings/applications/AdvancedAppSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AdvancedAppSettings$CountAppsWithWriteSettingsPermission;->Fd:Lcom/android/vendorsettings/applications/AdvancedAppSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/AdvancedAppSettings;->isAdded()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/AdvancedAppSettings;->isAdded()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 182
-    iget-object v0, p0, Lcom/android/settings/applications/AdvancedAppSettings$CountAppsWithWriteSettingsPermission;->Fd:Lcom/android/settings/applications/AdvancedAppSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/AdvancedAppSettings$CountAppsWithWriteSettingsPermission;->Fd:Lcom/android/vendorsettings/applications/AdvancedAppSettings;
 
-    invoke-static {v0}, Lcom/android/settings/applications/AdvancedAppSettings;->c(Lcom/android/settings/applications/AdvancedAppSettings;)Landroid/preference/Preference;
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/AdvancedAppSettings;->c(Lcom/android/vendorsettings/applications/AdvancedAppSettings;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/applications/AdvancedAppSettings$CountAppsWithWriteSettingsPermission;->Fd:Lcom/android/settings/applications/AdvancedAppSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/AdvancedAppSettings$CountAppsWithWriteSettingsPermission;->Fd:Lcom/android/vendorsettings/applications/AdvancedAppSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/applications/AdvancedAppSettings;->getContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/applications/AdvancedAppSettings;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -90,7 +90,7 @@
 
     const/4 v4, 0x1
 
-    iget v5, p0, Lcom/android/settings/applications/AdvancedAppSettings$CountAppsWithWriteSettingsPermission;->Fe:I
+    iget v5, p0, Lcom/android/vendorsettings/applications/AdvancedAppSettings$CountAppsWithWriteSettingsPermission;->Fe:I
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -116,7 +116,7 @@
     .line 166
     check-cast p1, Ljava/lang/Integer;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/AdvancedAppSettings$CountAppsWithWriteSettingsPermission;->onPostExecute(Ljava/lang/Integer;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/applications/AdvancedAppSettings$CountAppsWithWriteSettingsPermission;->onPostExecute(Ljava/lang/Integer;)V
 
     return-void
 .end method

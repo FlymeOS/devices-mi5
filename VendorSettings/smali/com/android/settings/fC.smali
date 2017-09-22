@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/fC;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/vendorsettings/fC;
+.super Lcom/android/vendorsettings/search/a;
 .source "MiuiWirelessSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 931
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/search/a;-><init>()V
 
     return-void
 .end method
@@ -161,7 +161,7 @@
     :cond_3
     if-nez v3, :cond_4
 
-    invoke-static {p1}, Lcom/android/settings/iC;->Z(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/iC;->Z(Landroid/content/Context;)Z
 
     move-result v0
 

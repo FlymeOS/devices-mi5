@@ -10,5 +10,5 @@
         </LinearLayout>
         <TextView android:textSize="14.0sp" android:gravity="center" android:id="@id/footerText" android:layout_width="fill_parent" android:layout_height="wrap_content" />
     </LinearLayout>
-    <com.android.settings.LockPatternView android:layout_gravity="center_vertical" android:id="@id/lockPattern" style="@style/SecurityLockPatternView" />
+    <com.android.vendorsettings.LockPatternView android:layout_gravity="center_vertical" android:id="@id/lockPattern" style="@style/SecurityLockPatternView" />
 </com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient>

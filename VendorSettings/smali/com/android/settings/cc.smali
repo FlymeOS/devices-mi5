@@ -1,4 +1,4 @@
-.class Lcom/android/settings/cc;
+.class Lcom/android/vendorsettings/cc;
 .super Landroid/os/AsyncTask;
 .source "DevelopmentSettings.java"
 
@@ -23,7 +23,7 @@
     .line 2413
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/cc;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/cc;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
 

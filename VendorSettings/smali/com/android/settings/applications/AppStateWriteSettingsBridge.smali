@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/AppStateWriteSettingsBridge;
-.super Lcom/android/settings/applications/AppStateAppOpsBridge;
+.class public Lcom/android/vendorsettings/applications/AppStateWriteSettingsBridge;
+.super Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;
 .source "AppStateWriteSettingsBridge.java"
 
 
@@ -31,26 +31,26 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/applications/AppStateWriteSettingsBridge;->GH:[Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/applications/AppStateWriteSettingsBridge;->GH:[Ljava/lang/String;
 
     .line 79
-    new-instance v0, Lcom/android/settings/applications/AppStateWriteSettingsBridge$1;
+    new-instance v0, Lcom/android/vendorsettings/applications/AppStateWriteSettingsBridge$1;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/AppStateWriteSettingsBridge$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/applications/AppStateWriteSettingsBridge$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/AppStateWriteSettingsBridge;->GI:Lcom/android/b/a/p;
+    sput-object v0, Lcom/android/vendorsettings/applications/AppStateWriteSettingsBridge;->GI:Lcom/android/b/a/p;
 
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lcom/android/b/a/a;Lcom/android/settings/applications/AppStateBaseBridge$Callback;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/android/b/a/a;Lcom/android/vendorsettings/applications/AppStateBaseBridge$Callback;)V
     .locals 6
 
     .prologue
     .line 46
     const/16 v4, 0x17
 
-    sget-object v5, Lcom/android/settings/applications/AppStateWriteSettingsBridge;->GH:[Ljava/lang/String;
+    sget-object v5, Lcom/android/vendorsettings/applications/AppStateWriteSettingsBridge;->GH:[Ljava/lang/String;
 
     move-object v0, p0
 
@@ -60,7 +60,7 @@
 
     move-object v3, p3
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/applications/AppStateAppOpsBridge;-><init>(Landroid/content/Context;Lcom/android/b/a/a;Lcom/android/settings/applications/AppStateBaseBridge$Callback;I[Ljava/lang/String;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;-><init>(Landroid/content/Context;Lcom/android/b/a/a;Lcom/android/vendorsettings/applications/AppStateBaseBridge$Callback;I[Ljava/lang/String;)V
 
     .line 47
     return-void
@@ -73,7 +73,7 @@
 
     .prologue
     .line 51
-    invoke-virtual {p0, p2, p3}, Lcom/android/settings/applications/AppStateWriteSettingsBridge;->k(Ljava/lang/String;I)Lcom/android/settings/applications/AppStateWriteSettingsBridge$WriteSettingsState;
+    invoke-virtual {p0, p2, p3}, Lcom/android/vendorsettings/applications/AppStateWriteSettingsBridge;->k(Ljava/lang/String;I)Lcom/android/vendorsettings/applications/AppStateWriteSettingsBridge$WriteSettingsState;
 
     move-result-object v0
 
@@ -88,7 +88,7 @@
 
     .prologue
     .line 61
-    invoke-super {p0}, Lcom/android/settings/applications/AppStateAppOpsBridge;->jO()I
+    invoke-super {p0}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->jO()I
 
     move-result v0
 
@@ -100,26 +100,26 @@
 
     .prologue
     .line 66
-    invoke-super {p0}, Lcom/android/settings/applications/AppStateAppOpsBridge;->jP()I
+    invoke-super {p0}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->jP()I
 
     move-result v0
 
     return v0
 .end method
 
-.method public k(Ljava/lang/String;I)Lcom/android/settings/applications/AppStateWriteSettingsBridge$WriteSettingsState;
+.method public k(Ljava/lang/String;I)Lcom/android/vendorsettings/applications/AppStateWriteSettingsBridge$WriteSettingsState;
     .locals 2
 
     .prologue
     .line 55
-    invoke-super {p0, p1, p2}, Lcom/android/settings/applications/AppStateAppOpsBridge;->g(Ljava/lang/String;I)Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge;->g(Ljava/lang/String;I)Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;
 
     move-result-object v0
 
     .line 56
-    new-instance v1, Lcom/android/settings/applications/AppStateWriteSettingsBridge$WriteSettingsState;
+    new-instance v1, Lcom/android/vendorsettings/applications/AppStateWriteSettingsBridge$WriteSettingsState;
 
-    invoke-direct {v1, v0}, Lcom/android/settings/applications/AppStateWriteSettingsBridge$WriteSettingsState;-><init>(Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;)V
+    invoke-direct {v1, v0}, Lcom/android/vendorsettings/applications/AppStateWriteSettingsBridge$WriteSettingsState;-><init>(Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;)V
 
     return-object v1
 .end method

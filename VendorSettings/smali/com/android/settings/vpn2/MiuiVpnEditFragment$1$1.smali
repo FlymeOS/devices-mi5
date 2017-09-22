@@ -1,4 +1,4 @@
-.class Lcom/android/settings/vpn2/MiuiVpnEditFragment$1$1;
+.class Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1$1;
 .super Ljava/lang/Object;
 .source "MiuiVpnEditFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic avJ:Lcom/android/settings/vpn2/MiuiVpnEditFragment$1;
+.field final synthetic avJ:Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/vpn2/MiuiVpnEditFragment$1;)V
+.method constructor <init>(Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1;)V
     .locals 0
 
     .prologue
     .line 197
-    iput-object p1, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment$1$1;->avJ:Lcom/android/settings/vpn2/MiuiVpnEditFragment$1;
+    iput-object p1, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1$1;->avJ:Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 200
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment$1$1;->avJ:Lcom/android/settings/vpn2/MiuiVpnEditFragment$1;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1$1;->avJ:Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1;
 
-    iget-object v0, v0, Lcom/android/settings/vpn2/MiuiVpnEditFragment$1;->avI:Lcom/android/settings/vpn2/MiuiVpnEditFragment;
+    iget-object v0, v0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1;->avI:Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->g(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->g(Z)V
 
     .line 201
     return-void

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/ClearDefaultsPreference;
+.class public Lcom/android/vendorsettings/applications/ClearDefaultsPreference;
 .super Landroid/preference/Preference;
 .source "ClearDefaultsPreference.java"
 
@@ -29,13 +29,13 @@
 
     .prologue
     .line 44
-    const-class v0, Lcom/android/settings/applications/ClearDefaultsPreference;
+    const-class v0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/applications/ClearDefaultsPreference;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -47,7 +47,7 @@
     .line 76
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/applications/ClearDefaultsPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 77
     return-void
@@ -60,7 +60,7 @@
     .line 72
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/applications/ClearDefaultsPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 73
     return-void
@@ -73,7 +73,7 @@
     .line 68
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, p3, v0}, Lcom/android/settings/applications/ClearDefaultsPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+    invoke-direct {p0, p1, p2, p3, v0}, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     .line 69
     return-void
@@ -89,21 +89,21 @@
     .line 59
     const v0, 0x7f040016
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/ClearDefaultsPreference;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->setLayoutResource(I)V
 
     .line 61
     invoke-static {p1}, Landroid/appwidget/AppWidgetManager;->getInstance(Landroid/content/Context;)Landroid/appwidget/AppWidgetManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->S:Landroid/appwidget/AppWidgetManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->S:Landroid/appwidget/AppWidgetManager;
 
     .line 62
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->i:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->i:Landroid/content/pm/PackageManager;
 
     .line 63
     const-string v0, "usb"
@@ -117,48 +117,48 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->Fk:Landroid/hardware/usb/IUsbManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->Fk:Landroid/hardware/usb/IUsbManager;
 
     .line 65
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/ClearDefaultsPreference;)Landroid/hardware/usb/IUsbManager;
+.method static synthetic a(Lcom/android/vendorsettings/applications/ClearDefaultsPreference;)Landroid/hardware/usb/IUsbManager;
     .locals 1
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->Fk:Landroid/hardware/usb/IUsbManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->Fk:Landroid/hardware/usb/IUsbManager;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/ClearDefaultsPreference;Landroid/widget/TextView;)V
+.method static synthetic a(Lcom/android/vendorsettings/applications/ClearDefaultsPreference;Landroid/widget/TextView;)V
     .locals 0
 
     .prologue
     .line 42
-    invoke-direct {p0, p1}, Lcom/android/settings/applications/ClearDefaultsPreference;->c(Landroid/widget/TextView;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->c(Landroid/widget/TextView;)V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/applications/ClearDefaultsPreference;)Ljava/lang/String;
+.method static synthetic b(Lcom/android/vendorsettings/applications/ClearDefaultsPreference;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->mPackageName:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->mPackageName:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/applications/ClearDefaultsPreference;)Landroid/content/pm/PackageManager;
+.method static synthetic c(Lcom/android/vendorsettings/applications/ClearDefaultsPreference;)Landroid/content/pm/PackageManager;
     .locals 1
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->i:Landroid/content/pm/PackageManager;
 
     return-object v0
 .end method
@@ -173,7 +173,7 @@
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(I)V
 
     .line 171
-    iget-object v0, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->Ic:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->Ic:Landroid/widget/Button;
 
     const/4 v1, 0x0
 
@@ -183,22 +183,22 @@
     return-void
 .end method
 
-.method static synthetic d(Lcom/android/settings/applications/ClearDefaultsPreference;)Landroid/appwidget/AppWidgetManager;
+.method static synthetic d(Lcom/android/vendorsettings/applications/ClearDefaultsPreference;)Landroid/appwidget/AppWidgetManager;
     .locals 1
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->S:Landroid/appwidget/AppWidgetManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->S:Landroid/appwidget/AppWidgetManager;
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/applications/ClearDefaultsPreference;)Landroid/view/View;
+.method static synthetic e(Lcom/android/vendorsettings/applications/ClearDefaultsPreference;)Landroid/view/View;
     .locals 1
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->mRootView:Landroid/view/View;
 
     return-object v0
 .end method
@@ -210,7 +210,7 @@
 
     .prologue
     .line 84
-    iput-object p1, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->Fi:Lcom/android/b/a/o;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->Fi:Lcom/android/b/a/o;
 
     .line 85
     return-void
@@ -231,9 +231,9 @@
     const/4 v4, 0x0
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->S:Landroid/appwidget/AppWidgetManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->S:Landroid/appwidget/AppWidgetManager;
 
-    iget-object v1, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->Fi:Lcom/android/b/a/o;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->Fi:Lcom/android/b/a/o;
 
     iget-object v1, v1, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
@@ -244,7 +244,7 @@
     move-result v6
 
     .line 123
-    iget-object v0, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->mRootView:Landroid/view/View;
 
     const v1, 0x7f13002b
 
@@ -255,21 +255,21 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 124
-    iget-object v1, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->i:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->i:Landroid/content/pm/PackageManager;
 
-    iget-object v2, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->mPackageName:Ljava/lang/String;
 
-    invoke-static {v1, v2}, Lcom/android/settings/iC;->a(Landroid/content/pm/PackageManager;Ljava/lang/String;)Z
+    invoke-static {v1, v2}, Lcom/android/vendorsettings/iC;->a(Landroid/content/pm/PackageManager;Ljava/lang/String;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->Fk:Landroid/hardware/usb/IUsbManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->Fk:Landroid/hardware/usb/IUsbManager;
 
-    iget-object v2, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->mPackageName:Ljava/lang/String;
 
-    invoke-static {v1, v2}, Lcom/android/settings/iC;->a(Landroid/hardware/usb/IUsbManager;Ljava/lang/String;)Z
+    invoke-static {v1, v2}, Lcom/android/vendorsettings/iC;->a(Landroid/hardware/usb/IUsbManager;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -285,7 +285,7 @@
     if-nez v6, :cond_2
 
     .line 127
-    invoke-direct {p0, v0}, Lcom/android/settings/applications/ClearDefaultsPreference;->c(Landroid/widget/TextView;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->c(Landroid/widget/TextView;)V
 
     .line 165
     :goto_1
@@ -316,7 +316,7 @@
 
     .line 137
     :goto_3
-    invoke-virtual {p0}, Lcom/android/settings/applications/ClearDefaultsPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->getContext()Landroid/content/Context;
 
     move-result-object v7
 
@@ -432,7 +432,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 163
-    iget-object v0, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->Ic:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->Ic:Landroid/widget/Button;
 
     invoke-virtual {v0, v3}, Landroid/widget/Button;->setEnabled(Z)V
 
@@ -505,7 +505,7 @@
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
     .line 116
-    invoke-virtual {p0}, Lcom/android/settings/applications/ClearDefaultsPreference;->kj()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->kj()Z
 
     .line 117
     return-void
@@ -520,10 +520,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->mRootView:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->mRootView:Landroid/view/View;
 
     .line 91
-    iget-object v0, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->mRootView:Landroid/view/View;
 
     const v1, 0x7f13002c
 
@@ -533,19 +533,19 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->Ic:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->Ic:Landroid/widget/Button;
 
     .line 92
-    iget-object v0, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->Ic:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->Ic:Landroid/widget/Button;
 
-    new-instance v1, Lcom/android/settings/applications/ClearDefaultsPreference$1;
+    new-instance v1, Lcom/android/vendorsettings/applications/ClearDefaultsPreference$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/applications/ClearDefaultsPreference$1;-><init>(Lcom/android/settings/applications/ClearDefaultsPreference;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/applications/ClearDefaultsPreference$1;-><init>(Lcom/android/vendorsettings/applications/ClearDefaultsPreference;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 109
-    iget-object v0, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->mRootView:Landroid/view/View;
 
     return-object v0
 .end method
@@ -555,7 +555,7 @@
 
     .prologue
     .line 80
-    iput-object p1, p0, Lcom/android/settings/applications/ClearDefaultsPreference;->mPackageName:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/ClearDefaultsPreference;->mPackageName:Ljava/lang/String;
 
     .line 81
     return-void

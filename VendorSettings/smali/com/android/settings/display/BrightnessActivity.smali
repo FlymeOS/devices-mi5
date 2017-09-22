@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/BrightnessActivity;
+.class public Lcom/android/vendorsettings/display/BrightnessActivity;
 .super Lmiui/app/Activity;
 .source "BrightnessActivity.java"
 
@@ -24,14 +24,14 @@
     invoke-super {p0, p1}, Lmiui/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 37
-    const-class v0, Lcom/android/settings/display/BrightnessFragment;
+    const-class v0, Lcom/android/vendorsettings/display/BrightnessFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v1
 
     .line 38
-    invoke-virtual {p0}, Lcom/android/settings/display/BrightnessActivity;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/BrightnessActivity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v2
 

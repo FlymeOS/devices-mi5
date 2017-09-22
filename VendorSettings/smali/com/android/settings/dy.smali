@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dy;
+.class Lcom/android/vendorsettings/dy;
 .super Ljava/lang/Object;
 .source "IccLockSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic om:Lcom/android/settings/IccLockSettings;
+.field final synthetic om:Lcom/android/vendorsettings/IccLockSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/IccLockSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/IccLockSettings;)V
     .locals 0
 
     .prologue
     .line 494
-    iput-object p1, p0, Lcom/android/settings/dy;->om:Lcom/android/settings/IccLockSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/dy;->om:Lcom/android/vendorsettings/IccLockSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,9 +35,9 @@
     move-result v0
 
     .line 498
-    iget-object v1, p0, Lcom/android/settings/dy;->om:Lcom/android/settings/IccLockSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/dy;->om:Lcom/android/vendorsettings/IccLockSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/IccLockSettings;->getBaseContext()Landroid/content/Context;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/IccLockSettings;->getBaseContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -50,19 +50,19 @@
     move-result-object v0
 
     .line 501
-    iget-object v1, p0, Lcom/android/settings/dy;->om:Lcom/android/settings/IccLockSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/dy;->om:Lcom/android/vendorsettings/IccLockSettings;
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x0
 
     :goto_0
-    invoke-static {v1, v0}, Lcom/android/settings/IccLockSettings;->a(Lcom/android/settings/IccLockSettings;Lcom/android/internal/telephony/Phone;)Lcom/android/internal/telephony/Phone;
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/IccLockSettings;->a(Lcom/android/vendorsettings/IccLockSettings;Lcom/android/internal/telephony/Phone;)Lcom/android/internal/telephony/Phone;
 
     .line 505
-    iget-object v0, p0, Lcom/android/settings/dy;->om:Lcom/android/settings/IccLockSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/dy;->om:Lcom/android/vendorsettings/IccLockSettings;
 
-    invoke-static {v0}, Lcom/android/settings/IccLockSettings;->a(Lcom/android/settings/IccLockSettings;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/IccLockSettings;->a(Lcom/android/vendorsettings/IccLockSettings;)V
 
     .line 506
     return-void

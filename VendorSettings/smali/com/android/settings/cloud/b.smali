@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/cloud/b;
+.class public Lcom/android/vendorsettings/cloud/b;
 .super Ljava/lang/Object;
 .source "CloudDataDbHandler.java"
 
 
 # static fields
-.field private static SC:Lcom/android/settings/cloud/b;
+.field private static SC:Lcom/android/vendorsettings/cloud/b;
 
 
 # instance fields
@@ -19,7 +19,7 @@
     .line 22
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/settings/cloud/b;->SC:Lcom/android/settings/cloud/b;
+    sput-object v0, Lcom/android/vendorsettings/cloud/b;->SC:Lcom/android/vendorsettings/cloud/b;
 
     return-void
 .end method
@@ -32,15 +32,15 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 26
-    new-instance v0, Lcom/android/settings/cloud/c;
+    new-instance v0, Lcom/android/vendorsettings/cloud/c;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/cloud/c;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lcom/android/vendorsettings/cloud/c;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {v0}, Lcom/android/settings/cloud/c;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cloud/c;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
+    iput-object v0, p0, Lcom/android/vendorsettings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
 
     .line 27
     return-void
@@ -70,41 +70,41 @@
 
     aput-object v0, v3, v4
 
-    invoke-virtual {p0, v1, v2, v3}, Lcom/android/settings/cloud/b;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
+    invoke-virtual {p0, v1, v2, v3}, Lcom/android/vendorsettings/cloud/b;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
 
     move-result v0
 
     return v0
 .end method
 
-.method public static declared-synchronized aH(Landroid/content/Context;)Lcom/android/settings/cloud/b;
+.method public static declared-synchronized aH(Landroid/content/Context;)Lcom/android/vendorsettings/cloud/b;
     .locals 3
 
     .prologue
     .line 30
-    const-class v1, Lcom/android/settings/cloud/b;
+    const-class v1, Lcom/android/vendorsettings/cloud/b;
 
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/cloud/b;->SC:Lcom/android/settings/cloud/b;
+    sget-object v0, Lcom/android/vendorsettings/cloud/b;->SC:Lcom/android/vendorsettings/cloud/b;
 
     if-nez v0, :cond_0
 
     .line 31
-    new-instance v0, Lcom/android/settings/cloud/b;
+    new-instance v0, Lcom/android/vendorsettings/cloud/b;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
-    invoke-direct {v0, v2}, Lcom/android/settings/cloud/b;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v2}, Lcom/android/vendorsettings/cloud/b;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/android/settings/cloud/b;->SC:Lcom/android/settings/cloud/b;
+    sput-object v0, Lcom/android/vendorsettings/cloud/b;->SC:Lcom/android/vendorsettings/cloud/b;
 
     .line 33
     :cond_0
-    sget-object v0, Lcom/android/settings/cloud/b;->SC:Lcom/android/settings/cloud/b;
+    sget-object v0, Lcom/android/vendorsettings/cloud/b;->SC:Lcom/android/vendorsettings/cloud/b;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -179,7 +179,7 @@
 
     aput-object v2, v4, v5
 
-    invoke-virtual {p0, v0, v3, v1, v4}, Lcom/android/settings/cloud/b;->a(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)J
+    invoke-virtual {p0, v0, v3, v1, v4}, Lcom/android/vendorsettings/cloud/b;->a(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)J
 
     move-result-wide v0
 
@@ -248,7 +248,7 @@
     if-lez v0, :cond_2
 
     .line 90
-    iget-object v0, p0, Lcom/android/settings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
@@ -283,7 +283,7 @@
     if-nez v4, :cond_1
 
     .line 96
-    invoke-direct {p0, v0}, Lcom/android/settings/cloud/b;->a(Lorg/json/JSONObject;)I
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/cloud/b;->a(Lorg/json/JSONObject;)I
 
     .line 92
     :cond_0
@@ -301,7 +301,7 @@
     if-ne v4, v5, :cond_0
 
     .line 98
-    invoke-direct {p0, v0}, Lcom/android/settings/cloud/b;->b(Lorg/json/JSONObject;)J
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/cloud/b;->b(Lorg/json/JSONObject;)J
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -319,7 +319,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -334,7 +334,7 @@
     .line 101
     :cond_3
     :try_start_2
-    iget-object v0, p0, Lcom/android/settings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
     :try_end_2
@@ -342,7 +342,7 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -353,7 +353,7 @@
     :catchall_0
     move-exception v0
 
-    iget-object v1, p0, Lcom/android/settings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v1, p0, Lcom/android/vendorsettings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
@@ -415,7 +415,7 @@
 
     move-object v7, v2
 
-    invoke-virtual/range {v0 .. v7}, Lcom/android/settings/cloud/b;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-virtual/range {v0 .. v7}, Lcom/android/vendorsettings/cloud/b;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v2
 
@@ -433,7 +433,7 @@
     if-lez v0, :cond_0
 
     .line 59
-    iget-object v0, p0, Lcom/android/settings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Landroid/database/sqlite/SQLiteDatabase;->update(Ljava/lang/String;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
     :try_end_0
@@ -459,7 +459,7 @@
     const/4 v0, 0x0
 
     :try_start_2
-    invoke-virtual {p0, p1, v0, p2}, Lcom/android/settings/cloud/b;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
+    invoke-virtual {p0, p1, v0, p2}, Lcom/android/vendorsettings/cloud/b;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
@@ -504,7 +504,7 @@
 
     .line 44
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0, p1, p2, p3}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
 
@@ -534,7 +534,7 @@
 
     .line 50
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0, p1, p2, p3}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
 
@@ -560,7 +560,7 @@
 
     .prologue
     .line 38
-    iget-object v0, p0, Lcom/android/settings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/b;->SD:Landroid/database/sqlite/SQLiteDatabase;
 
     move-object v1, p1
 

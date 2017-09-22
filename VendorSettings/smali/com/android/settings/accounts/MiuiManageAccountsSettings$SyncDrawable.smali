@@ -1,5 +1,5 @@
-.class Lcom/android/settings/accounts/MiuiManageAccountsSettings$SyncDrawable;
-.super Lcom/android/settings/dV;
+.class Lcom/android/vendorsettings/accounts/MiuiManageAccountsSettings$SyncDrawable;
+.super Lcom/android/vendorsettings/dV;
 .source "MiuiManageAccountsSettings.java"
 
 
@@ -11,10 +11,10 @@
     .line 333
     const v0, 0x7f020011
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/dV;-><init>(Landroid/content/Context;I)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/dV;-><init>(Landroid/content/Context;I)V
 
     .line 335
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings$SyncDrawable;->eK()Landroid/graphics/drawable/Animatable;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/MiuiManageAccountsSettings$SyncDrawable;->eK()Landroid/graphics/drawable/Animatable;
 
     move-result-object v0
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/T;
+.class Lcom/android/vendorsettings/wifi/T;
 .super Ljava/lang/Object;
 .source "SavedAccessPointsWifiSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aBJ:Lcom/android/settings/wifi/SavedAccessPointsWifiSettings;
+.field final synthetic aBJ:Lcom/android/vendorsettings/wifi/SavedAccessPointsWifiSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/SavedAccessPointsWifiSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/SavedAccessPointsWifiSettings;)V
     .locals 0
 
     .prologue
     .line 104
-    iput-object p1, p0, Lcom/android/settings/wifi/T;->aBJ:Lcom/android/settings/wifi/SavedAccessPointsWifiSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/T;->aBJ:Lcom/android/vendorsettings/wifi/SavedAccessPointsWifiSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -68,7 +68,7 @@
 
     check-cast p2, Lcom/android/b/e/a;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/wifi/T;->a(Lcom/android/b/e/a;Lcom/android/b/e/a;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/wifi/T;->a(Lcom/android/b/e/a;Lcom/android/b/e/a;)I
 
     move-result v0
 

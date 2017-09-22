@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/inputmethod/UserDictionarySettingsUtils;
+.class public Lcom/android/vendorsettings/inputmethod/UserDictionarySettingsUtils;
 .super Ljava/lang/Object;
 .source "UserDictionarySettingsUtils.java"
 

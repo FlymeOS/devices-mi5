@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/SetupRedactionInterstitial;
-.super Lcom/android/settings/notification/RedactionInterstitial;
+.class public Lcom/android/vendorsettings/SetupRedactionInterstitial;
+.super Lcom/android/vendorsettings/notification/RedactionInterstitial;
 .source "SetupRedactionInterstitial.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 39
-    invoke-direct {p0}, Lcom/android/settings/notification/RedactionInterstitial;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/notification/RedactionInterstitial;-><init>()V
 
     .line 70
     return-void
@@ -24,7 +24,7 @@
     .line 53
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/notification/RedactionInterstitial;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/vendorsettings/notification/RedactionInterstitial;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -33,7 +33,7 @@
     .line 54
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;
+    const-class v2, Lcom/android/vendorsettings/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -50,7 +50,7 @@
 
     .prologue
     .line 61
-    const-class v0, Lcom/android/settings/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;
+    const-class v0, Lcom/android/vendorsettings/SetupRedactionInterstitial$SetupEncryptionInterstitialFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -68,16 +68,16 @@
 
     .prologue
     .line 66
-    invoke-virtual {p0}, Lcom/android/settings/SetupRedactionInterstitial;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SetupRedactionInterstitial;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/hH;->n(Landroid/content/Intent;)I
+    invoke-static {v0}, Lcom/android/vendorsettings/hH;->n(Landroid/content/Intent;)I
 
     move-result v0
 
     .line 67
-    invoke-super {p0, p1, v0, p3}, Lcom/android/settings/notification/RedactionInterstitial;->onApplyThemeResource(Landroid/content/res/Resources$Theme;IZ)V
+    invoke-super {p0, p1, v0, p3}, Lcom/android/vendorsettings/notification/RedactionInterstitial;->onApplyThemeResource(Landroid/content/res/Resources$Theme;IZ)V
 
     .line 68
     return-void

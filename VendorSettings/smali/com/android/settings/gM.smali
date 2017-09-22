@@ -1,4 +1,4 @@
-.class synthetic Lcom/android/settings/gM;
+.class synthetic Lcom/android/vendorsettings/gM;
 .super Ljava/lang/Object;
 .source "RadioInfo.java"
 
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/gM;->$SwitchMap$com$android$internal$telephony$PhoneConstants$State:[I
+    sput-object v0, Lcom/android/vendorsettings/gM;->$SwitchMap$com$android$internal$telephony$PhoneConstants$State:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/gM;->$SwitchMap$com$android$internal$telephony$PhoneConstants$State:[I
+    sget-object v0, Lcom/android/vendorsettings/gM;->$SwitchMap$com$android$internal$telephony$PhoneConstants$State:[I
 
     sget-object v1, Lcom/android/internal/telephony/PhoneConstants$State;->IDLE:Lcom/android/internal/telephony/PhoneConstants$State;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/gM;->$SwitchMap$com$android$internal$telephony$PhoneConstants$State:[I
+    sget-object v0, Lcom/android/vendorsettings/gM;->$SwitchMap$com$android$internal$telephony$PhoneConstants$State:[I
 
     sget-object v1, Lcom/android/internal/telephony/PhoneConstants$State;->RINGING:Lcom/android/internal/telephony/PhoneConstants$State;
 
@@ -56,7 +56,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/gM;->$SwitchMap$com$android$internal$telephony$PhoneConstants$State:[I
+    sget-object v0, Lcom/android/vendorsettings/gM;->$SwitchMap$com$android$internal$telephony$PhoneConstants$State:[I
 
     sget-object v1, Lcom/android/internal/telephony/PhoneConstants$State;->OFFHOOK:Lcom/android/internal/telephony/PhoneConstants$State;
 

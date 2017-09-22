@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fuelgauge/BatteryEntry;
+.class public Lcom/android/vendorsettings/fuelgauge/BatteryEntry;
 .super Ljava/lang/Object;
 .source "BatteryEntry.java"
 
@@ -10,7 +10,7 @@
 
 .field static acG:Landroid/os/Handler;
 
-.field private static acH:Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;
+.field private static acH:Lcom/android/vendorsettings/fuelgauge/BatteryEntry$NameAndIconLoader;
 
 
 # instance fields
@@ -37,14 +37,14 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acE:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acE:Ljava/util/HashMap;
 
     .line 50
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    sput-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acF:Ljava/util/ArrayList;
+    sput-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acF:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -61,16 +61,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 130
-    sput-object p2, Lcom/android/settings/fuelgauge/BatteryEntry;->acG:Landroid/os/Handler;
+    sput-object p2, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acG:Landroid/os/Handler;
 
     .line 131
-    iput-object p1, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->context:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->context:Landroid/content/Context;
 
     .line 132
-    iput-object p4, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
+    iput-object p4, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
 
     .line 133
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry$1;->$SwitchMap$com$android$internal$os$BatterySipper$DrainType:[I
+    sget-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry$1;->$SwitchMap$com$android$internal$os$BatterySipper$DrainType:[I
 
     iget-object v1, p4, Lcom/android/internal/os/BatterySipper;->drainType:Lcom/android/internal/os/BatterySipper$DrainType;
 
@@ -84,38 +84,38 @@
 
     .line 189
     :goto_0
-    iget v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
+    iget v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->iconId:I
 
     if-lez v0, :cond_0
 
     .line 190
-    iget v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
+    iget v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->iconId:I
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
 
     .line 192
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
-    iget v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
+    iget v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->iconId:I
 
     if-nez v0, :cond_2
 
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
 
     iget-object v0, v0, Lcom/android/internal/os/BatterySipper;->uidObj:Landroid/os/BatteryStats$Uid;
 
     if-eqz v0, :cond_2
 
     .line 193
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
 
     iget-object v0, v0, Lcom/android/internal/os/BatterySipper;->uidObj:Landroid/os/BatteryStats$Uid;
 
@@ -123,7 +123,7 @@
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fuelgauge/BatteryEntry;->ce(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->ce(I)V
 
     .line 195
     :cond_2
@@ -141,12 +141,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     .line 136
     const v0, 0x7f020187
 
-    iput v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
+    iput v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->iconId:I
 
     goto :goto_0
 
@@ -162,12 +162,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     .line 140
     const v0, 0x7f02016c
 
-    iput v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
+    iput v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->iconId:I
 
     goto :goto_0
 
@@ -183,12 +183,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     .line 144
     const v0, 0x7f020193
 
-    iput v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
+    iput v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->iconId:I
 
     goto :goto_0
 
@@ -204,12 +204,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     .line 148
     const v0, 0x7f020194
 
-    iput v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
+    iput v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->iconId:I
 
     goto :goto_0
 
@@ -225,12 +225,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     .line 152
     const v0, 0x7f020169
 
-    iput v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
+    iput v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->iconId:I
 
     goto/16 :goto_0
 
@@ -246,10 +246,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     .line 156
-    iput v3, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
+    iput v3, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->iconId:I
 
     goto/16 :goto_0
 
@@ -265,10 +265,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     .line 160
-    iput v3, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
+    iput v3, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->iconId:I
 
     goto/16 :goto_0
 
@@ -276,7 +276,7 @@
     :pswitch_7
     iget-object v0, p4, Lcom/android/internal/os/BatterySipper;->packageWithHighestDrain:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     goto/16 :goto_0
 
@@ -292,18 +292,18 @@
     if-eqz v0, :cond_3
 
     .line 168
-    invoke-static {p1, p3, v0}, Lcom/android/settings/iC;->a(Landroid/content/Context;Landroid/os/UserManager;Landroid/content/pm/UserInfo;)Landroid/graphics/drawable/Drawable;
+    invoke-static {p1, p3, v0}, Lcom/android/vendorsettings/iC;->a(Landroid/content/Context;Landroid/os/UserManager;Landroid/content/pm/UserInfo;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
 
     .line 169
-    invoke-static {p1, v0}, Lcom/android/settings/iC;->b(Landroid/content/Context;Landroid/content/pm/UserInfo;)Ljava/lang/String;
+    invoke-static {p1, v0}, Lcom/android/vendorsettings/iC;->b(Landroid/content/Context;Landroid/content/pm/UserInfo;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     goto/16 :goto_0
 
@@ -311,7 +311,7 @@
     :cond_3
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
 
     .line 172
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -324,7 +324,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     goto/16 :goto_0
 
@@ -340,10 +340,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     .line 178
-    iput v2, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
+    iput v2, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->iconId:I
 
     goto/16 :goto_0
 
@@ -359,10 +359,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     .line 182
-    iput v2, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
+    iput v2, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->iconId:I
 
     goto/16 :goto_0
 
@@ -378,12 +378,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     .line 186
     const v0, 0x7f02016b
 
-    iput v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
+    iput v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->iconId:I
 
     goto/16 :goto_0
 
@@ -410,18 +410,18 @@
 
     .prologue
     .line 86
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acG:Landroid/os/Handler;
+    sget-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acG:Landroid/os/Handler;
 
     if-eqz v0, :cond_2
 
     .line 87
-    sget-object v1, Lcom/android/settings/fuelgauge/BatteryEntry;->acF:Ljava/util/ArrayList;
+    sget-object v1, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acF:Ljava/util/ArrayList;
 
     monitor-enter v1
 
     .line 88
     :try_start_0
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acF:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acF:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
@@ -430,37 +430,37 @@
     if-nez v0, :cond_1
 
     .line 89
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acH:Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;
+    sget-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acH:Lcom/android/vendorsettings/fuelgauge/BatteryEntry$NameAndIconLoader;
 
     if-eqz v0, :cond_0
 
     .line 90
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acH:Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;
+    sget-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acH:Lcom/android/vendorsettings/fuelgauge/BatteryEntry$NameAndIconLoader;
 
-    invoke-virtual {v0}, Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;->abort()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/fuelgauge/BatteryEntry$NameAndIconLoader;->abort()V
 
     .line 92
     :cond_0
-    new-instance v0, Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;
+    new-instance v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry$NameAndIconLoader;
 
-    invoke-direct {v0}, Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/fuelgauge/BatteryEntry$NameAndIconLoader;-><init>()V
 
-    sput-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acH:Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;
+    sput-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acH:Lcom/android/vendorsettings/fuelgauge/BatteryEntry$NameAndIconLoader;
 
     .line 93
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acH:Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;
+    sget-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acH:Lcom/android/vendorsettings/fuelgauge/BatteryEntry$NameAndIconLoader;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;->setPriority(I)V
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/fuelgauge/BatteryEntry$NameAndIconLoader;->setPriority(I)V
 
     .line 94
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acH:Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;
+    sget-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acH:Lcom/android/vendorsettings/fuelgauge/BatteryEntry$NameAndIconLoader;
 
-    invoke-virtual {v0}, Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;->start()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/fuelgauge/BatteryEntry$NameAndIconLoader;->start()V
 
     .line 95
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acF:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acF:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/lang/Object;->notify()V
 
@@ -488,30 +488,30 @@
 
     .prologue
     .line 102
-    sget-object v1, Lcom/android/settings/fuelgauge/BatteryEntry;->acF:Ljava/util/ArrayList;
+    sget-object v1, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acF:Ljava/util/ArrayList;
 
     monitor-enter v1
 
     .line 103
     :try_start_0
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acH:Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;
+    sget-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acH:Lcom/android/vendorsettings/fuelgauge/BatteryEntry$NameAndIconLoader;
 
     if-eqz v0, :cond_0
 
     .line 104
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acH:Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;
+    sget-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acH:Lcom/android/vendorsettings/fuelgauge/BatteryEntry$NameAndIconLoader;
 
-    invoke-virtual {v0}, Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;->abort()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/fuelgauge/BatteryEntry$NameAndIconLoader;->abort()V
 
     .line 105
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acH:Lcom/android/settings/fuelgauge/BatteryEntry$NameAndIconLoader;
+    sput-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acH:Lcom/android/vendorsettings/fuelgauge/BatteryEntry$NameAndIconLoader;
 
     .line 106
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acG:Landroid/os/Handler;
+    sput-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acG:Landroid/os/Handler;
 
     .line 108
     :cond_0
@@ -536,7 +536,7 @@
 
     .prologue
     .line 112
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acE:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acE:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
@@ -556,7 +556,7 @@
     move-result-object v0
 
     .line 210
-    sget-object v1, Lcom/android/settings/fuelgauge/BatteryEntry;->acE:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acE:Ljava/util/HashMap;
 
     invoke-virtual {v1, v0}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -565,28 +565,28 @@
     if-eqz v1, :cond_1
 
     .line 211
-    sget-object v1, Lcom/android/settings/fuelgauge/BatteryEntry;->acE:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acE:Ljava/util/HashMap;
 
     invoke-virtual {v1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/fuelgauge/BatteryEntry$UidToDetail;
+    check-cast v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry$UidToDetail;
 
     .line 212
-    iget-object v1, v0, Lcom/android/settings/fuelgauge/BatteryEntry$UidToDetail;->packageName:Ljava/lang/String;
+    iget-object v1, v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry$UidToDetail;->packageName:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->defaultPackageName:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->defaultPackageName:Ljava/lang/String;
 
     .line 213
-    iget-object v1, v0, Lcom/android/settings/fuelgauge/BatteryEntry$UidToDetail;->name:Ljava/lang/String;
+    iget-object v1, v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry$UidToDetail;->name:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     .line 214
-    iget-object v0, v0, Lcom/android/settings/fuelgauge/BatteryEntry$UidToDetail;->icon:Landroid/graphics/drawable/Drawable;
+    iget-object v0, v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry$UidToDetail;->icon:Landroid/graphics/drawable/Drawable;
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
 
     .line 236
     :cond_0
@@ -595,7 +595,7 @@
 
     .line 217
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->context:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -606,7 +606,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
 
     .line 219
     invoke-virtual {v0, p1}, Landroid/content/pm/PackageManager;->getPackagesForUid(I)[Ljava/lang/String;
@@ -619,7 +619,7 @@
     if-nez p1, :cond_4
 
     .line 221
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->context:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -631,40 +631,40 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     .line 227
     :cond_2
     :goto_1
     const v0, 0x7f020147
 
-    iput v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
+    iput v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->iconId:I
 
     .line 228
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->context:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->context:Landroid/content/Context;
 
-    iget v1, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->iconId:I
+    iget v1, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->iconId:I
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
 
     .line 231
     :cond_3
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acG:Landroid/os/Handler;
+    sget-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acG:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
     .line 232
-    sget-object v1, Lcom/android/settings/fuelgauge/BatteryEntry;->acF:Ljava/util/ArrayList;
+    sget-object v1, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acF:Ljava/util/ArrayList;
 
     monitor-enter v1
 
     .line 233
     :try_start_0
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acF:Ljava/util/ArrayList;
+    sget-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acF:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -686,7 +686,7 @@
     :cond_4
     const-string v0, "mediaserver"
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -695,7 +695,7 @@
     if-eqz v0, :cond_5
 
     .line 223
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->context:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -707,7 +707,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     goto :goto_1
 
@@ -715,7 +715,7 @@
     :cond_5
     const-string v0, "dex2oat"
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -724,7 +724,7 @@
     if-eqz v0, :cond_2
 
     .line 225
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->context:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -736,7 +736,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     goto :goto_1
 .end method
@@ -746,7 +746,7 @@
 
     .prologue
     .line 198
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method
@@ -756,7 +756,7 @@
 
     .prologue
     .line 205
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -770,7 +770,7 @@
     const/4 v1, 0x0
 
     .line 243
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
 
     iget-object v0, v0, Lcom/android/internal/os/BatterySipper;->uidObj:Landroid/os/BatteryStats$Uid;
 
@@ -783,14 +783,14 @@
 
     .line 247
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->context:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
     .line 248
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
 
     iget-object v0, v0, Lcom/android/internal/os/BatterySipper;->uidObj:Landroid/os/BatteryStats$Uid;
 
@@ -799,7 +799,7 @@
     move-result v4
 
     .line 249
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
 
     invoke-virtual {v3, v4}, Landroid/content/pm/PackageManager;->getPackagesForUid(I)[Ljava/lang/String;
 
@@ -808,14 +808,14 @@
     iput-object v2, v0, Lcom/android/internal/os/BatterySipper;->mPackages:[Ljava/lang/String;
 
     .line 250
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
 
     iget-object v0, v0, Lcom/android/internal/os/BatterySipper;->mPackages:[Ljava/lang/String;
 
     if-eqz v0, :cond_6
 
     .line 251
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
 
     iget-object v0, v0, Lcom/android/internal/os/BatterySipper;->mPackages:[Ljava/lang/String;
 
@@ -824,11 +824,11 @@
     new-array v5, v0, [Ljava/lang/String;
 
     .line 252
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
 
     iget-object v0, v0, Lcom/android/internal/os/BatterySipper;->mPackages:[Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
+    iget-object v2, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
 
     iget-object v2, v2, Lcom/android/internal/os/BatterySipper;->mPackages:[Ljava/lang/String;
 
@@ -932,20 +932,20 @@
     if-eqz v8, :cond_2
 
     .line 271
-    iget-object v8, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
+    iget-object v8, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
 
     iget-object v8, v8, Lcom/android/internal/os/BatterySipper;->mPackages:[Ljava/lang/String;
 
     aget-object v8, v8, v0
 
-    iput-object v8, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->defaultPackageName:Ljava/lang/String;
+    iput-object v8, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->defaultPackageName:Ljava/lang/String;
 
     .line 272
     invoke-virtual {v2, v3}, Landroid/content/pm/ApplicationInfo;->loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
-    iput-object v2, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v2, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -958,7 +958,7 @@
     .line 282
     aget-object v0, v5, v1
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     .line 313
     :cond_6
@@ -968,16 +968,16 @@
     move-result-object v0
 
     .line 314
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     if-nez v1, :cond_7
 
     .line 315
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     .line 318
     :cond_7
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
 
     if-nez v1, :cond_8
 
@@ -986,43 +986,43 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v1, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
 
     .line 322
     :cond_8
-    new-instance v1, Lcom/android/settings/fuelgauge/BatteryEntry$UidToDetail;
+    new-instance v1, Lcom/android/vendorsettings/fuelgauge/BatteryEntry$UidToDetail;
 
-    invoke-direct {v1}, Lcom/android/settings/fuelgauge/BatteryEntry$UidToDetail;-><init>()V
+    invoke-direct {v1}, Lcom/android/vendorsettings/fuelgauge/BatteryEntry$UidToDetail;-><init>()V
 
     .line 323
-    iget-object v2, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
-    iput-object v2, v1, Lcom/android/settings/fuelgauge/BatteryEntry$UidToDetail;->name:Ljava/lang/String;
+    iput-object v2, v1, Lcom/android/vendorsettings/fuelgauge/BatteryEntry$UidToDetail;->name:Ljava/lang/String;
 
     .line 324
-    iget-object v2, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
+    iget-object v2, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
 
-    iput-object v2, v1, Lcom/android/settings/fuelgauge/BatteryEntry$UidToDetail;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v2, v1, Lcom/android/vendorsettings/fuelgauge/BatteryEntry$UidToDetail;->icon:Landroid/graphics/drawable/Drawable;
 
     .line 325
-    iget-object v2, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->defaultPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->defaultPackageName:Ljava/lang/String;
 
-    iput-object v2, v1, Lcom/android/settings/fuelgauge/BatteryEntry$UidToDetail;->packageName:Ljava/lang/String;
+    iput-object v2, v1, Lcom/android/vendorsettings/fuelgauge/BatteryEntry$UidToDetail;->packageName:Ljava/lang/String;
 
     .line 326
-    sget-object v2, Lcom/android/settings/fuelgauge/BatteryEntry;->acE:Ljava/util/HashMap;
+    sget-object v2, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acE:Ljava/util/HashMap;
 
     invoke-virtual {v2, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 327
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acG:Landroid/os/Handler;
+    sget-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acG:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
     .line 328
-    sget-object v0, Lcom/android/settings/fuelgauge/BatteryEntry;->acG:Landroid/os/Handler;
+    sget-object v0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acG:Landroid/os/Handler;
 
-    sget-object v1, Lcom/android/settings/fuelgauge/BatteryEntry;->acG:Landroid/os/Handler;
+    sget-object v1, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acG:Landroid/os/Handler;
 
     invoke-virtual {v1, v12, p0}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
@@ -1075,7 +1075,7 @@
 
     .line 285
     :cond_9
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->acI:Lcom/android/internal/os/BatterySipper;
 
     iget-object v2, v0, Lcom/android/internal/os/BatterySipper;->mPackages:[Ljava/lang/String;
 
@@ -1160,7 +1160,7 @@
 
     move-result-object v9
 
-    iput-object v9, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
+    iput-object v9, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->name:Ljava/lang/String;
 
     .line 298
     iget-object v9, v0, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
@@ -1170,7 +1170,7 @@
     if-eqz v9, :cond_6
 
     .line 299
-    iput-object v8, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->defaultPackageName:Ljava/lang/String;
+    iput-object v8, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->defaultPackageName:Ljava/lang/String;
 
     .line 300
     iget-object v0, v0, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
@@ -1179,7 +1179,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/BatteryEntry;->icon:Landroid/graphics/drawable/Drawable;
     :try_end_1
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
 

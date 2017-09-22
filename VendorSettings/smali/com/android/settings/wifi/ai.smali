@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/wifi/ai;
+.class public Lcom/android/vendorsettings/wifi/ai;
 .super Ljava/lang/Object;
 .source "WifiConfigForSupplicant.java"
 
 
 # static fields
-.field private static aDh:Lcom/android/settings/wifi/ai;
+.field private static aDh:Lcom/android/vendorsettings/wifi/ai;
 
 
 # instance fields
@@ -21,7 +21,7 @@
     .line 42
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/settings/wifi/ai;->aDh:Lcom/android/settings/wifi/ai;
+    sput-object v0, Lcom/android/vendorsettings/wifi/ai;->aDh:Lcom/android/vendorsettings/wifi/ai;
 
     return-void
 .end method
@@ -45,7 +45,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/ai;->mService:Landroid/net/wifi/IWifiManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/ai;->mService:Landroid/net/wifi/IWifiManager;
 
     .line 50
     new-instance v0, Landroid/os/HandlerThread;
@@ -62,10 +62,10 @@
 
     invoke-direct {v1}, Lcom/android/internal/util/AsyncChannel;-><init>()V
 
-    iput-object v1, p0, Lcom/android/settings/wifi/ai;->aDi:Lcom/android/internal/util/AsyncChannel;
+    iput-object v1, p0, Lcom/android/vendorsettings/wifi/ai;->aDi:Lcom/android/internal/util/AsyncChannel;
 
     .line 53
-    iget-object v1, p0, Lcom/android/settings/wifi/ai;->aDi:Lcom/android/internal/util/AsyncChannel;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/ai;->aDi:Lcom/android/internal/util/AsyncChannel;
 
     const/4 v2, 0x0
 
@@ -77,7 +77,7 @@
 
     invoke-direct {v3, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    iget-object v0, p0, Lcom/android/settings/wifi/ai;->mService:Landroid/net/wifi/IWifiManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/ai;->mService:Landroid/net/wifi/IWifiManager;
 
     invoke-interface {v0}, Landroid/net/wifi/IWifiManager;->getWifiServiceMessenger()Landroid/os/Messenger;
 
@@ -152,14 +152,14 @@
     check-cast v0, Landroid/net/wifi/WifiConfiguration;
 
     .line 124
-    invoke-static {p1, v0}, Lcom/android/settings/wifi/ak;->f(Landroid/content/Context;Landroid/net/wifi/WifiConfiguration;)Landroid/net/wifi/WifiConfiguration;
+    invoke-static {p1, v0}, Lcom/android/vendorsettings/wifi/ak;->f(Landroid/content/Context;Landroid/net/wifi/WifiConfiguration;)Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v3
 
     if-nez v3, :cond_0
 
     .line 125
-    invoke-static {v1, v0}, Lcom/android/settings/wifi/ak;->a(Ljava/util/ArrayList;Landroid/net/wifi/WifiConfiguration;)V
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/wifi/ak;->a(Ljava/util/ArrayList;Landroid/net/wifi/WifiConfiguration;)V
 
     goto :goto_0
 
@@ -167,7 +167,7 @@
     :cond_1
     const/4 v0, 0x3
 
-    invoke-static {p1, v1, v0, v4, v4}, Lcom/android/settings/wifi/ak;->a(Landroid/content/Context;Ljava/util/ArrayList;IZI)V
+    invoke-static {p1, v1, v0, v4, v4}, Lcom/android/vendorsettings/wifi/ak;->a(Landroid/content/Context;Ljava/util/ArrayList;IZI)V
 
     .line 129
     return-void
@@ -215,7 +215,7 @@
     if-eqz v1, :cond_2
 
     .line 170
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cf(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cf(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -234,7 +234,7 @@
     if-eqz v1, :cond_3
 
     .line 172
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -253,7 +253,7 @@
     if-eqz v1, :cond_4
 
     .line 174
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -276,7 +276,7 @@
     .line 176
     iget-object v1, p2, Landroid/net/wifi/WifiConfiguration;->wepKeys:[Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -299,7 +299,7 @@
     .line 178
     iget-object v1, p2, Landroid/net/wifi/WifiConfiguration;->wepKeys:[Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -322,7 +322,7 @@
     .line 180
     iget-object v1, p2, Landroid/net/wifi/WifiConfiguration;->wepKeys:[Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -345,7 +345,7 @@
     .line 182
     iget-object v1, p2, Landroid/net/wifi/WifiConfiguration;->wepKeys:[Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -364,7 +364,7 @@
     if-eqz v1, :cond_9
 
     .line 184
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -391,7 +391,7 @@
     if-eqz v1, :cond_a
 
     .line 186
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -418,7 +418,7 @@
     if-eqz v1, :cond_b
 
     .line 188
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -445,7 +445,7 @@
     if-eqz v1, :cond_c
 
     .line 190
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -454,7 +454,7 @@
 
     iget-object v2, p2, Landroid/net/wifi/WifiConfiguration;->allowedKeyManagement:Ljava/util/BitSet;
 
-    invoke-direct {p0, v0, v1, v2}, Lcom/android/settings/wifi/ai;->a(Ljava/lang/String;[Ljava/lang/String;Ljava/util/BitSet;)V
+    invoke-direct {p0, v0, v1, v2}, Lcom/android/vendorsettings/wifi/ai;->a(Ljava/lang/String;[Ljava/lang/String;Ljava/util/BitSet;)V
 
     goto/16 :goto_0
 
@@ -469,7 +469,7 @@
     if-eqz v1, :cond_d
 
     .line 193
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -478,7 +478,7 @@
 
     iget-object v2, p2, Landroid/net/wifi/WifiConfiguration;->allowedProtocols:Ljava/util/BitSet;
 
-    invoke-direct {p0, v0, v1, v2}, Lcom/android/settings/wifi/ai;->a(Ljava/lang/String;[Ljava/lang/String;Ljava/util/BitSet;)V
+    invoke-direct {p0, v0, v1, v2}, Lcom/android/vendorsettings/wifi/ai;->a(Ljava/lang/String;[Ljava/lang/String;Ljava/util/BitSet;)V
 
     goto/16 :goto_0
 
@@ -493,7 +493,7 @@
     if-eqz v1, :cond_e
 
     .line 196
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -502,7 +502,7 @@
 
     iget-object v2, p2, Landroid/net/wifi/WifiConfiguration;->allowedAuthAlgorithms:Ljava/util/BitSet;
 
-    invoke-direct {p0, v0, v1, v2}, Lcom/android/settings/wifi/ai;->a(Ljava/lang/String;[Ljava/lang/String;Ljava/util/BitSet;)V
+    invoke-direct {p0, v0, v1, v2}, Lcom/android/vendorsettings/wifi/ai;->a(Ljava/lang/String;[Ljava/lang/String;Ljava/util/BitSet;)V
 
     goto/16 :goto_0
 
@@ -517,7 +517,7 @@
     if-eqz v1, :cond_f
 
     .line 199
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -526,7 +526,7 @@
 
     iget-object v2, p2, Landroid/net/wifi/WifiConfiguration;->allowedPairwiseCiphers:Ljava/util/BitSet;
 
-    invoke-direct {p0, v0, v1, v2}, Lcom/android/settings/wifi/ai;->a(Ljava/lang/String;[Ljava/lang/String;Ljava/util/BitSet;)V
+    invoke-direct {p0, v0, v1, v2}, Lcom/android/vendorsettings/wifi/ai;->a(Ljava/lang/String;[Ljava/lang/String;Ljava/util/BitSet;)V
 
     goto/16 :goto_0
 
@@ -541,7 +541,7 @@
     if-eqz v1, :cond_10
 
     .line 202
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -550,7 +550,7 @@
 
     iget-object v2, p2, Landroid/net/wifi/WifiConfiguration;->allowedGroupCiphers:Ljava/util/BitSet;
 
-    invoke-direct {p0, v0, v1, v2}, Lcom/android/settings/wifi/ai;->a(Ljava/lang/String;[Ljava/lang/String;Ljava/util/BitSet;)V
+    invoke-direct {p0, v0, v1, v2}, Lcom/android/vendorsettings/wifi/ai;->a(Ljava/lang/String;[Ljava/lang/String;Ljava/util/BitSet;)V
 
     goto/16 :goto_0
 
@@ -565,7 +565,7 @@
     if-eqz v1, :cond_11
 
     .line 205
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -579,7 +579,7 @@
     .line 207
     sget-object v1, Landroid/net/wifi/WifiEnterpriseConfig$Eap;->strings:[Ljava/lang/String;
 
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/wifi/ai;->b([Ljava/lang/String;Ljava/lang/String;)I
+    invoke-direct {p0, v1, v0}, Lcom/android/vendorsettings/wifi/ai;->b([Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v0
 
@@ -601,7 +601,7 @@
     if-eqz v1, :cond_12
 
     .line 211
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cf(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cf(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -615,7 +615,7 @@
     .line 213
     sget-object v1, Landroid/net/wifi/WifiEnterpriseConfig$Phase2;->strings:[Ljava/lang/String;
 
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/wifi/ai;->b([Ljava/lang/String;Ljava/lang/String;)I
+    invoke-direct {p0, v1, v0}, Lcom/android/vendorsettings/wifi/ai;->b([Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v0
 
@@ -637,7 +637,7 @@
     if-eqz v1, :cond_13
 
     .line 217
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cf(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cf(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -659,7 +659,7 @@
     if-eqz v1, :cond_14
 
     .line 220
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cf(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cf(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -681,7 +681,7 @@
     if-eqz v1, :cond_15
 
     .line 223
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cf(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cf(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -703,7 +703,7 @@
     if-eqz v1, :cond_16
 
     .line 226
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cf(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cf(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -725,7 +725,7 @@
     if-eqz v1, :cond_17
 
     .line 229
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cf(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cf(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -747,7 +747,7 @@
     if-eqz v1, :cond_18
 
     .line 232
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cf(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cf(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -769,7 +769,7 @@
     if-eqz v1, :cond_0
 
     .line 235
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cf(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cf(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -936,7 +936,7 @@
     .line 78
     aget-object v3, v2, v0
 
-    invoke-direct {p0, v3, v1}, Lcom/android/settings/wifi/ai;->a(Ljava/lang/String;Landroid/net/wifi/WifiConfiguration;)V
+    invoke-direct {p0, v3, v1}, Lcom/android/vendorsettings/wifi/ai;->a(Ljava/lang/String;Landroid/net/wifi/WifiConfiguration;)V
 
     .line 77
     add-int/lit8 v0, v0, 0x1
@@ -962,7 +962,7 @@
     .line 91
     const-string v1, "ssid"
 
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/ai;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/wifi/ai;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -978,7 +978,7 @@
     iput v1, v0, Landroid/os/Message;->what:I
 
     .line 93
-    iget-object v1, p0, Lcom/android/settings/wifi/ai;->aDi:Lcom/android/internal/util/AsyncChannel;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/ai;->aDi:Lcom/android/internal/util/AsyncChannel;
 
     invoke-virtual {v1, v0}, Lcom/android/internal/util/AsyncChannel;->sendMessageSynchronously(Landroid/os/Message;)Landroid/os/Message;
 
@@ -1026,7 +1026,7 @@
 
     .prologue
     .line 244
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/wifi/ai;->cg(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1038,7 +1038,7 @@
     if-nez v1, :cond_0
 
     .line 246
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1131,27 +1131,27 @@
     goto :goto_0
 .end method
 
-.method public static yg()Lcom/android/settings/wifi/ai;
+.method public static yg()Lcom/android/vendorsettings/wifi/ai;
     .locals 2
 
     .prologue
     .line 61
-    const-class v1, Lcom/android/settings/wifi/ai;
+    const-class v1, Lcom/android/vendorsettings/wifi/ai;
 
     monitor-enter v1
 
     .line 62
     :try_start_0
-    sget-object v0, Lcom/android/settings/wifi/ai;->aDh:Lcom/android/settings/wifi/ai;
+    sget-object v0, Lcom/android/vendorsettings/wifi/ai;->aDh:Lcom/android/vendorsettings/wifi/ai;
 
     if-nez v0, :cond_0
 
     .line 63
-    new-instance v0, Lcom/android/settings/wifi/ai;
+    new-instance v0, Lcom/android/vendorsettings/wifi/ai;
 
-    invoke-direct {v0}, Lcom/android/settings/wifi/ai;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/wifi/ai;-><init>()V
 
-    sput-object v0, Lcom/android/settings/wifi/ai;->aDh:Lcom/android/settings/wifi/ai;
+    sput-object v0, Lcom/android/vendorsettings/wifi/ai;->aDh:Lcom/android/vendorsettings/wifi/ai;
 
     .line 65
     :cond_0
@@ -1160,7 +1160,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 66
-    sget-object v0, Lcom/android/settings/wifi/ai;->aDh:Lcom/android/settings/wifi/ai;
+    sget-object v0, Lcom/android/vendorsettings/wifi/ai;->aDh:Lcom/android/vendorsettings/wifi/ai;
 
     return-object v0
 
@@ -1234,7 +1234,7 @@
     if-eqz v3, :cond_1
 
     .line 145
-    invoke-direct {p0, v0, v3}, Lcom/android/settings/wifi/ai;->a(Ljava/lang/String;Landroid/net/wifi/WifiConfiguration;)V
+    invoke-direct {p0, v0, v3}, Lcom/android/vendorsettings/wifi/ai;->a(Ljava/lang/String;Landroid/net/wifi/WifiConfiguration;)V
 
     .line 137
     :cond_1
@@ -1279,7 +1279,7 @@
     .line 161
     :cond_4
     :goto_2
-    invoke-direct {p0, p1, v4}, Lcom/android/settings/wifi/ai;->a(Landroid/content/Context;Ljava/util/ArrayList;)V
+    invoke-direct {p0, p1, v4}, Lcom/android/vendorsettings/wifi/ai;->a(Landroid/content/Context;Ljava/util/ArrayList;)V
 
     .line 162
     return-void
@@ -1460,15 +1460,15 @@
 
     .prologue
     .line 104
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/ai;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/wifi/ai;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cd(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cd(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cc(Ljava/lang/String;)Landroid/net/wifi/WifiConfiguration;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cc(Ljava/lang/String;)Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v0
 
@@ -1486,7 +1486,7 @@
 
     .line 111
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/wifi/ai;->mService:Landroid/net/wifi/IWifiManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/ai;->mService:Landroid/net/wifi/IWifiManager;
 
     invoke-interface {v0}, Landroid/net/wifi/IWifiManager;->getConfiguredNetworks()Ljava/util/List;
 
@@ -1513,11 +1513,11 @@
     .line 113
     iget-object v0, v0, Landroid/net/wifi/WifiConfiguration;->SSID:Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->removeDoubleQuotes(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/wifi/ai;->cd(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/wifi/ai;->cd(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

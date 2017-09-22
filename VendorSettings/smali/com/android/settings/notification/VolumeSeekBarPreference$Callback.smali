@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/notification/VolumeSeekBarPreference$Callback;
+.class public interface abstract Lcom/android/vendorsettings/notification/VolumeSeekBarPreference$Callback;
 .super Ljava/lang/Object;
 .source "VolumeSeekBarPreference.java"
 

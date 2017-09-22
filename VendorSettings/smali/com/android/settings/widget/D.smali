@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/widget/D;
-.super Lcom/android/settings/widget/C;
+.class final Lcom/android/vendorsettings/widget/D;
+.super Lcom/android/vendorsettings/widget/C;
 .source "SettingsAppWidgetProvider.java"
 
 
@@ -11,17 +11,17 @@
     .line 596
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/widget/C;-><init>(Lcom/android/settings/widget/w;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/widget/C;-><init>(Lcom/android/vendorsettings/widget/w;)V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/widget/w;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/widget/w;)V
     .locals 0
 
     .prologue
     .line 596
-    invoke-direct {p0}, Lcom/android/settings/widget/D;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/widget/D;-><init>()V
 
     return-void
 .end method
@@ -74,11 +74,11 @@
 
     .prologue
     .line 614
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/D;->getActualState(Landroid/content/Context;)I
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/widget/D;->getActualState(Landroid/content/Context;)I
 
     move-result v0
 
-    invoke-virtual {p0, p1, v0}, Lcom/android/settings/widget/D;->setCurrentState(Landroid/content/Context;I)V
+    invoke-virtual {p0, p1, v0}, Lcom/android/vendorsettings/widget/D;->setCurrentState(Landroid/content/Context;I)V
 
     .line 615
     return-void
@@ -103,15 +103,15 @@
     move-result v0
 
     .line 623
-    new-instance v1, Lcom/android/settings/widget/E;
+    new-instance v1, Lcom/android/vendorsettings/widget/E;
 
-    invoke-direct {v1, p0, p2, v0, p1}, Lcom/android/settings/widget/E;-><init>(Lcom/android/settings/widget/D;ZZLandroid/content/Context;)V
+    invoke-direct {v1, p0, p2, v0, p1}, Lcom/android/vendorsettings/widget/E;-><init>(Lcom/android/vendorsettings/widget/D;ZZLandroid/content/Context;)V
 
     const/4 v0, 0x0
 
     new-array v0, v0, [Ljava/lang/Void;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/widget/E;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/widget/E;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     .line 649
     return-void

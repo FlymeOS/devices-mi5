@@ -1,19 +1,19 @@
-.class Lcom/android/settings/notification/ServiceListing$1;
+.class Lcom/android/vendorsettings/notification/ServiceListing$1;
 .super Landroid/database/ContentObserver;
 .source "ServiceListing.java"
 
 
 # instance fields
-.field final synthetic akm:Lcom/android/settings/notification/ServiceListing;
+.field final synthetic akm:Lcom/android/vendorsettings/notification/ServiceListing;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/ServiceListing;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/vendorsettings/notification/ServiceListing;Landroid/os/Handler;)V
     .locals 0
 
     .prologue
     .line 189
-    iput-object p1, p0, Lcom/android/settings/notification/ServiceListing$1;->akm:Lcom/android/settings/notification/ServiceListing;
+    iput-object p1, p0, Lcom/android/vendorsettings/notification/ServiceListing$1;->akm:Lcom/android/vendorsettings/notification/ServiceListing;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 192
-    iget-object v0, p0, Lcom/android/settings/notification/ServiceListing$1;->akm:Lcom/android/settings/notification/ServiceListing;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ServiceListing$1;->akm:Lcom/android/vendorsettings/notification/ServiceListing;
 
-    invoke-virtual {v0}, Lcom/android/settings/notification/ServiceListing;->sy()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/notification/ServiceListing;->sy()Ljava/util/List;
 
     .line 193
     return-void

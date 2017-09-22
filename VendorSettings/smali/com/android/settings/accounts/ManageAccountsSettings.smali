@@ -1,9 +1,9 @@
-.class public Lcom/android/settings/accounts/ManageAccountsSettings;
-.super Lcom/android/settings/accounts/AccountPreferenceBase;
+.class public Lcom/android/vendorsettings/accounts/ManageAccountsSettings;
+.super Lcom/android/vendorsettings/accounts/AccountPreferenceBase;
 .source "ManageAccountsSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/accounts/AuthenticatorHelper$OnAccountsUpdateListener;
+.implements Lcom/android/vendorsettings/accounts/AuthenticatorHelper$OnAccountsUpdateListener;
 
 
 # instance fields
@@ -22,13 +22,13 @@
 
     .prologue
     .line 69
-    invoke-direct {p0}, Lcom/android/settings/accounts/AccountPreferenceBase;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/AccountPreferenceBase;-><init>()V
 
     .line 450
     return-void
 .end method
 
-.method private a(Lcom/android/settings/i;)V
+.method private a(Lcom/android/vendorsettings/i;)V
     .locals 7
 
     .prologue
@@ -40,7 +40,7 @@
     .line 189
     const-string v0, "account"
 
-    invoke-virtual {p1}, Lcom/android/settings/i;->getAccount()Landroid/accounts/Account;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/i;->getAccount()Landroid/accounts/Account;
 
     move-result-object v1
 
@@ -49,16 +49,16 @@
     .line 190
     const-string v0, "android.intent.extra.USER"
 
-    iget-object v1, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->BW:Landroid/os/UserHandle;
+    iget-object v1, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->BW:Landroid/os/UserHandle;
 
     invoke-virtual {v2, v0, v1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 196
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const-class v1, Lcom/android/settings/accounts/AccountSyncSettings;
+    const-class v1, Lcom/android/vendorsettings/accounts/AccountSyncSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
@@ -66,7 +66,7 @@
 
     const v3, 0x7f0c0848
 
-    invoke-virtual {p1}, Lcom/android/settings/i;->getAccount()Landroid/accounts/Account;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/i;->getAccount()Landroid/accounts/Account;
 
     move-result-object v4
 
@@ -76,7 +76,7 @@
 
     move-object v5, p0
 
-    invoke-static/range {v0 .. v6}, Lcom/android/settings/fy;->a(Landroid/app/Activity;Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-static/range {v0 .. v6}, Lcom/android/vendorsettings/fy;->a(Landroid/app/Activity;Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     .line 200
     return-void
@@ -123,11 +123,11 @@
     const/4 v0, 0x0
 
     .line 565
-    iget-object v1, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->te:Lcom/android/settings/accounts/AuthenticatorHelper;
+    iget-object v1, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->te:Lcom/android/vendorsettings/accounts/AuthenticatorHelper;
 
-    iget-object v2, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->mAccountType:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->mAccountType:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/accounts/AuthenticatorHelper;->ah(Ljava/lang/String;)Landroid/accounts/AuthenticatorDescription;
+    invoke-virtual {v1, v2}, Lcom/android/vendorsettings/accounts/AuthenticatorHelper;->ah(Ljava/lang/String;)Landroid/accounts/AuthenticatorDescription;
 
     move-result-object v1
 
@@ -193,12 +193,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/accounts/ManageAccountsSettings;Landroid/content/pm/PackageManager;Landroid/content/Intent;)Z
+.method static synthetic a(Lcom/android/vendorsettings/accounts/ManageAccountsSettings;Landroid/content/pm/PackageManager;Landroid/content/Intent;)Z
     .locals 1
 
     .prologue
     .line 69
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/accounts/ManageAccountsSettings;->a(Landroid/content/pm/PackageManager;Landroid/content/Intent;)Z
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->a(Landroid/content/pm/PackageManager;Landroid/content/Intent;)Z
 
     move-result v0
 
@@ -275,7 +275,7 @@
     const/4 v1, 0x0
 
     .line 234
-    iget-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->BW:Landroid/os/UserHandle;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->BW:Landroid/os/UserHandle;
 
     invoke-virtual {v0}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -299,7 +299,7 @@
     invoke-virtual {v5, v0, v2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 238
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -314,7 +314,7 @@
     if-ge v2, v6, :cond_3
 
     .line 241
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -323,14 +323,14 @@
     move-result-object v0
 
     .line 242
-    instance-of v7, v0, Lcom/android/settings/i;
+    instance-of v7, v0, Lcom/android/vendorsettings/i;
 
     if-eqz v7, :cond_2
 
     .line 243
-    check-cast v0, Lcom/android/settings/i;
+    check-cast v0, Lcom/android/vendorsettings/i;
 
-    invoke-virtual {v0}, Lcom/android/settings/i;->getAccount()Landroid/accounts/Account;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/i;->getAccount()Landroid/accounts/Account;
 
     move-result-object v7
 
@@ -350,7 +350,7 @@
 
     iget-object v9, v9, Landroid/content/SyncAdapterType;->accountType:Ljava/lang/String;
 
-    iget-object v10, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->mAccountType:Ljava/lang/String;
+    iget-object v10, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->mAccountType:Ljava/lang/String;
 
     invoke-virtual {v9, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -407,7 +407,7 @@
 
     .prologue
     .line 491
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -452,9 +452,9 @@
     if-eqz v4, :cond_1
 
     .line 518
-    new-instance v3, Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;
+    new-instance v3, Lcom/android/vendorsettings/accounts/ManageAccountsSettings$FragmentStarter;
 
-    const-class v4, Lcom/android/settings/location/MiuiLocationSettings;
+    const-class v4, Lcom/android/vendorsettings/location/MiuiLocationSettings;
 
     invoke-virtual {v4}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -462,7 +462,7 @@
 
     const v5, 0x7f0c01e5
 
-    invoke-direct {v3, p0, v4, v5}, Lcom/android/settings/accounts/ManageAccountsSettings$FragmentStarter;-><init>(Lcom/android/settings/accounts/ManageAccountsSettings;Ljava/lang/String;I)V
+    invoke-direct {v3, p0, v4, v5}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings$FragmentStarter;-><init>(Lcom/android/vendorsettings/accounts/ManageAccountsSettings;Ljava/lang/String;I)V
 
     invoke-virtual {v2, v3}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
@@ -478,7 +478,7 @@
     :cond_1
     const/high16 v4, 0x10000
 
-    iget-object v5, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->BW:Landroid/os/UserHandle;
+    iget-object v5, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->BW:Landroid/os/UserHandle;
 
     invoke-virtual {v5}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -500,7 +500,7 @@
     :cond_2
     const-string v4, "account"
 
-    iget-object v5, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->EC:Landroid/accounts/Account;
+    iget-object v5, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->EC:Landroid/accounts/Account;
 
     invoke-virtual {v3, v4, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
@@ -516,9 +516,9 @@
     invoke-virtual {v3, v4}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     .line 530
-    new-instance v3, Lcom/android/settings/accounts/ManageAccountsSettings$1;
+    new-instance v3, Lcom/android/vendorsettings/accounts/ManageAccountsSettings$1;
 
-    invoke-direct {v3, p0, v1}, Lcom/android/settings/accounts/ManageAccountsSettings$1;-><init>(Lcom/android/settings/accounts/ManageAccountsSettings;Landroid/content/pm/PackageManager;)V
+    invoke-direct {v3, p0, v1}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings$1;-><init>(Lcom/android/vendorsettings/accounts/ManageAccountsSettings;Landroid/content/pm/PackageManager;)V
 
     invoke-virtual {v2, v3}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
@@ -534,13 +534,13 @@
 
     .prologue
     .line 278
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
     if-eqz v2, :cond_0
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -559,7 +559,7 @@
     :cond_1
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/accounts/ManageAccountsSettings;->BW:Landroid/os/UserHandle;
+    iget-object v2, v0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->BW:Landroid/os/UserHandle;
 
     invoke-virtual {v2}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -621,7 +621,7 @@
     :cond_3
     const/4 v2, 0x0
 
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v3
 
@@ -637,7 +637,7 @@
     if-ge v11, v0, :cond_11
 
     .line 298
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
 
@@ -646,7 +646,7 @@
     move-result-object v2
 
     .line 299
-    instance-of v3, v2, Lcom/android/settings/i;
+    instance-of v3, v2, Lcom/android/vendorsettings/i;
 
     if-nez v3, :cond_5
 
@@ -661,10 +661,10 @@
 
     .line 303
     :cond_5
-    check-cast v2, Lcom/android/settings/i;
+    check-cast v2, Lcom/android/vendorsettings/i;
 
     .line 304
-    invoke-virtual {v2}, Lcom/android/settings/i;->getAccount()Landroid/accounts/Account;
+    invoke-virtual {v2}, Lcom/android/vendorsettings/i;->getAccount()Landroid/accounts/Account;
 
     move-result-object v17
 
@@ -678,7 +678,7 @@
     const/4 v4, 0x0
 
     .line 308
-    invoke-virtual {v2}, Lcom/android/settings/i;->i()Ljava/util/ArrayList;
+    invoke-virtual {v2}, Lcom/android/vendorsettings/i;->i()Ljava/util/ArrayList;
 
     move-result-object v9
 
@@ -726,7 +726,7 @@
 
     move-object/from16 v1, v17
 
-    invoke-direct {v0, v12, v1, v3}, Lcom/android/settings/accounts/ManageAccountsSettings;->a(ILandroid/accounts/Account;Ljava/lang/String;)Z
+    invoke-direct {v0, v12, v1, v3}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->a(ILandroid/accounts/Account;Ljava/lang/String;)Z
 
     move-result v20
 
@@ -742,7 +742,7 @@
 
     move-object/from16 v1, v17
 
-    invoke-direct {v0, v13, v1, v3}, Lcom/android/settings/accounts/ManageAccountsSettings;->a(Ljava/util/List;Landroid/accounts/Account;Ljava/lang/String;)Z
+    invoke-direct {v0, v13, v1, v3}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->a(Ljava/util/List;Landroid/accounts/Account;Ljava/lang/String;)Z
 
     move-result v22
 
@@ -866,7 +866,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {v2, v3, v4}, Lcom/android/settings/i;->a(IZ)V
+    invoke-virtual {v2, v3, v4}, Lcom/android/vendorsettings/i;->a(IZ)V
 
     goto/16 :goto_3
 
@@ -920,7 +920,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {v2, v3, v4}, Lcom/android/settings/i;->a(IZ)V
+    invoke-virtual {v2, v3, v4}, Lcom/android/vendorsettings/i;->a(IZ)V
 
     goto/16 :goto_3
 
@@ -936,7 +936,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {v2, v3, v4}, Lcom/android/settings/i;->a(IZ)V
+    invoke-virtual {v2, v3, v4}, Lcom/android/vendorsettings/i;->a(IZ)V
 
     goto/16 :goto_3
 
@@ -946,7 +946,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {v2, v3, v4}, Lcom/android/settings/i;->a(IZ)V
+    invoke-virtual {v2, v3, v4}, Lcom/android/vendorsettings/i;->a(IZ)V
 
     .line 346
     const-wide/16 v4, 0x0
@@ -960,7 +960,7 @@
 
     const/4 v4, 0x0
 
-    invoke-virtual {v2, v3, v4}, Lcom/android/settings/i;->a(IZ)V
+    invoke-virtual {v2, v3, v4}, Lcom/android/vendorsettings/i;->a(IZ)V
 
     .line 348
     invoke-virtual {v14, v6, v7}, Ljava/util/Date;->setTime(J)V
@@ -968,12 +968,12 @@
     .line 349
     move-object/from16 v0, p0
 
-    invoke-virtual {v0, v14}, Lcom/android/settings/accounts/ManageAccountsSettings;->a(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {v0, v14}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->a(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v3
 
     .line 350
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v4
 
@@ -991,7 +991,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/i;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v2, v3}, Lcom/android/vendorsettings/i;->setSummary(Ljava/lang/CharSequence;)V
 
     goto/16 :goto_3
 
@@ -1001,7 +1001,7 @@
 
     const/4 v4, 0x1
 
-    invoke-virtual {v2, v3, v4}, Lcom/android/settings/i;->a(IZ)V
+    invoke-virtual {v2, v3, v4}, Lcom/android/vendorsettings/i;->a(IZ)V
 
     goto/16 :goto_3
 
@@ -1009,7 +1009,7 @@
     :cond_11
     move-object/from16 v0, p0
 
-    iget-object v3, v0, Lcom/android/settings/accounts/ManageAccountsSettings;->Ei:Landroid/widget/TextView;
+    iget-object v3, v0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->Ei:Landroid/widget/TextView;
 
     if-eqz v8, :cond_12
 
@@ -1019,7 +1019,7 @@
     invoke-virtual {v3, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 361
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->invalidateOptionsMenu()V
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->invalidateOptionsMenu()V
 
     goto/16 :goto_0
 
@@ -1039,7 +1039,7 @@
     const/4 v5, 0x0
 
     .line 389
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1051,7 +1051,7 @@
 
     .line 390
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1059,7 +1059,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->BW:Landroid/os/UserHandle;
+    iget-object v1, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->BW:Landroid/os/UserHandle;
 
     invoke-virtual {v1}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -1070,7 +1070,7 @@
     move-result-object v8
 
     .line 392
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -1079,12 +1079,12 @@
     .line 393
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->EC:Landroid/accounts/Account;
+    iput-object v0, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->EC:Landroid/accounts/Account;
 
     .line 394
     const v0, 0x7f08005c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/ManageAccountsSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->addPreferencesFromResource(I)V
 
     .line 395
     array-length v9, v8
@@ -1098,13 +1098,13 @@
     aget-object v2, v8, v7
 
     .line 398
-    iget-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->mAccountType:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->mAccountType:Ljava/lang/String;
 
     if-eqz v0, :cond_2
 
     iget-object v0, v2, Landroid/accounts/Account;->type:Ljava/lang/String;
 
-    iget-object v1, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->mAccountType:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->mAccountType:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1125,19 +1125,19 @@
     :cond_2
     iget-object v0, v2, Landroid/accounts/Account;->type:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/ManageAccountsSettings;->aa(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->aa(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v4
 
     .line 402
-    iget-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->DQ:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->DQ:[Ljava/lang/String;
 
     if-eqz v0, :cond_9
 
     if-eqz v4, :cond_9
 
     .line 404
-    iget-object v1, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->DQ:[Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->DQ:[Ljava/lang/String;
 
     array-length v3, v1
 
@@ -1164,7 +1164,7 @@
     .line 413
     iget-object v0, v2, Landroid/accounts/Account;->type:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/ManageAccountsSettings;->ab(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->ab(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v3
 
@@ -1191,32 +1191,32 @@
 
     .line 420
     :cond_3
-    new-instance v0, Lcom/android/settings/accounts/XiaomiAccountPreference;
+    new-instance v0, Lcom/android/vendorsettings/accounts/XiaomiAccountPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1, v2, v3, v4}, Lcom/android/settings/accounts/XiaomiAccountPreference;-><init>(Landroid/content/Context;Landroid/accounts/Account;Landroid/graphics/drawable/Drawable;Ljava/util/ArrayList;)V
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/android/vendorsettings/accounts/XiaomiAccountPreference;-><init>(Landroid/content/Context;Landroid/accounts/Account;Landroid/graphics/drawable/Drawable;Ljava/util/ArrayList;)V
 
     .line 426
     :goto_5
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 427
-    iget-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->EC:Landroid/accounts/Account;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->EC:Landroid/accounts/Account;
 
     if-nez v0, :cond_1
 
     .line 428
-    iput-object v2, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->EC:Landroid/accounts/Account;
+    iput-object v2, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->EC:Landroid/accounts/Account;
 
     .line 430
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->invalidateOptionsMenu()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->invalidateOptionsMenu()V
 
     goto :goto_2
 
@@ -1228,34 +1228,34 @@
 
     .line 422
     :cond_5
-    new-instance v0, Lcom/android/settings/i;
+    new-instance v0, Lcom/android/vendorsettings/i;
 
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/i;-><init>(Landroid/content/Context;Landroid/accounts/Account;Landroid/graphics/drawable/Drawable;Ljava/util/ArrayList;Z)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/i;-><init>(Landroid/content/Context;Landroid/accounts/Account;Landroid/graphics/drawable/Drawable;Ljava/util/ArrayList;Z)V
 
     goto :goto_5
 
     .line 434
     :cond_6
-    iget-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->mAccountType:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->mAccountType:Ljava/lang/String;
 
     if-eqz v0, :cond_7
 
-    iget-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->EC:Landroid/accounts/Account;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->EC:Landroid/accounts/Account;
 
     if-eqz v0, :cond_7
 
     .line 435
-    invoke-direct {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->jo()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->jo()V
 
     goto/16 :goto_0
 
     .line 438
     :cond_7
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->finish()V
 
     goto/16 :goto_0
 
@@ -1275,13 +1275,13 @@
 
     .prologue
     .line 443
-    iget-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->mAccountType:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->mAccountType:Ljava/lang/String;
 
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/accounts/ManageAccountsSettings;->a(Ljava/lang/String;Landroid/preference/PreferenceScreen;)Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->a(Ljava/lang/String;Landroid/preference/PreferenceScreen;)Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -1289,7 +1289,7 @@
     if-eqz v0, :cond_0
 
     .line 445
-    invoke-direct {p0, v0}, Lcom/android/settings/accounts/ManageAccountsSettings;->b(Landroid/preference/PreferenceScreen;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->b(Landroid/preference/PreferenceScreen;)V
 
     .line 447
     :cond_0
@@ -1303,7 +1303,7 @@
 
     .prologue
     .line 69
-    invoke-super {p0, p1, p2}, Lcom/android/settings/accounts/AccountPreferenceBase;->a(Ljava/lang/String;Landroid/preference/PreferenceScreen;)Landroid/preference/PreferenceScreen;
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/accounts/AccountPreferenceBase;->a(Ljava/lang/String;Landroid/preference/PreferenceScreen;)Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -1315,10 +1315,10 @@
 
     .prologue
     .line 384
-    invoke-direct {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->jn()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->jn()V
 
     .line 385
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->ja()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->ja()V
 
     .line 386
     return-void
@@ -1329,7 +1329,7 @@
 
     .prologue
     .line 69
-    invoke-super {p0, p1}, Lcom/android/settings/accounts/AccountPreferenceBase;->aa(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/accounts/AccountPreferenceBase;->aa(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -1341,7 +1341,7 @@
 
     .prologue
     .line 96
-    const-class v0, Lcom/android/settings/accounts/ManageAccountsSettings;
+    const-class v0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1360,7 +1360,7 @@
     move v1, v0
 
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -1371,7 +1371,7 @@
     if-ge v1, v0, :cond_1
 
     .line 589
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -1380,25 +1380,25 @@
     move-result-object v0
 
     .line 590
-    instance-of v2, v0, Lcom/android/settings/i;
+    instance-of v2, v0, Lcom/android/vendorsettings/i;
 
     if-eqz v2, :cond_0
 
     .line 591
-    check-cast v0, Lcom/android/settings/i;
+    check-cast v0, Lcom/android/vendorsettings/i;
 
     .line 592
-    invoke-virtual {v0}, Lcom/android/settings/i;->getAccount()Landroid/accounts/Account;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/i;->getAccount()Landroid/accounts/Account;
 
     move-result-object v2
 
     iget-object v2, v2, Landroid/accounts/Account;->type:Ljava/lang/String;
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/accounts/ManageAccountsSettings;->ac(Ljava/lang/String;)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->ac(Ljava/lang/String;)Ljava/lang/CharSequence;
 
     move-result-object v2
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/i;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v0, v2}, Lcom/android/vendorsettings/i;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 588
     :cond_0
@@ -1418,10 +1418,10 @@
 
     .prologue
     .line 264
-    invoke-direct {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->jm()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->jm()V
 
     .line 266
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1441,7 +1441,7 @@
 
     .prologue
     .line 69
-    invoke-super {p0}, Lcom/android/settings/accounts/AccountPreferenceBase;->jb()V
+    invoke-super {p0}, Lcom/android/vendorsettings/accounts/AccountPreferenceBase;->jb()V
 
     return-void
 .end method
@@ -1451,15 +1451,15 @@
 
     .prologue
     .line 138
-    invoke-super {p0, p1}, Lcom/android/settings/accounts/AccountPreferenceBase;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/accounts/AccountPreferenceBase;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 140
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     .line 141
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getView()Landroid/view/View;
 
     move-result-object v0
 
@@ -1472,10 +1472,10 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->Ei:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->Ei:Landroid/widget/TextView;
 
     .line 144
-    iget-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->Ei:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->Ei:Landroid/widget/TextView;
 
     const/16 v2, 0x8
 
@@ -1492,10 +1492,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->DQ:[Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->DQ:[Ljava/lang/String;
 
     .line 148
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -1511,7 +1511,7 @@
     if-eqz v1, :cond_0
 
     .line 150
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1533,10 +1533,10 @@
 
     .prologue
     .line 106
-    invoke-super {p0, p1}, Lcom/android/settings/accounts/AccountPreferenceBase;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/accounts/AccountPreferenceBase;->onCreate(Landroid/os/Bundle;)V
 
     .line 108
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -1558,18 +1558,18 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->mAccountType:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->mAccountType:Ljava/lang/String;
 
     .line 112
     :cond_0
     const v0, 0x7f08005c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/ManageAccountsSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->addPreferencesFromResource(I)V
 
     .line 113
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/ManageAccountsSettings;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->setHasOptionsMenu(Z)V
 
     .line 114
     return-void
@@ -1586,7 +1586,7 @@
 
     const v1, 0x7f0c0859
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/accounts/ManageAccountsSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1603,7 +1603,7 @@
 
     const v1, 0x7f0c085a
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/accounts/ManageAccountsSettings;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1616,7 +1616,7 @@
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
     .line 208
-    invoke-super {p0, p1, p2}, Lcom/android/settings/accounts/AccountPreferenceBase;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/accounts/AccountPreferenceBase;->onCreateOptionsMenu(Landroid/view/Menu;Landroid/view/MenuInflater;)V
 
     .line 209
     return-void
@@ -1645,7 +1645,7 @@
     check-cast v0, Landroid/widget/ListView;
 
     .line 132
-    invoke-static {p2, v1, v0, v2}, Lcom/android/settings/iC;->a(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/View;Z)V
+    invoke-static {p2, v1, v0, v2}, Lcom/android/vendorsettings/iC;->a(Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/View;Z)V
 
     .line 133
     return-object v1
@@ -1665,7 +1665,7 @@
     packed-switch v1, :pswitch_data_0
 
     .line 230
-    invoke-super {p0, p1}, Lcom/android/settings/accounts/AccountPreferenceBase;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/accounts/AccountPreferenceBase;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -1674,7 +1674,7 @@
 
     .line 224
     :pswitch_0
-    invoke-direct {p0, v0}, Lcom/android/settings/accounts/ManageAccountsSettings;->ac(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->ac(Z)V
 
     goto :goto_0
 
@@ -1682,7 +1682,7 @@
     :pswitch_1
     const/4 v1, 0x0
 
-    invoke-direct {p0, v1}, Lcom/android/settings/accounts/ManageAccountsSettings;->ac(Z)V
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->ac(Z)V
 
     goto :goto_0
 
@@ -1699,12 +1699,12 @@
 
     .prologue
     .line 156
-    invoke-super {p0}, Lcom/android/settings/accounts/AccountPreferenceBase;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/accounts/AccountPreferenceBase;->onPause()V
 
     .line 157
-    iget-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->te:Lcom/android/settings/accounts/AuthenticatorHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->te:Lcom/android/vendorsettings/accounts/AuthenticatorHelper;
 
-    invoke-virtual {v0}, Lcom/android/settings/accounts/AuthenticatorHelper;->je()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/accounts/AuthenticatorHelper;->je()V
 
     .line 158
     return-void
@@ -1717,7 +1717,7 @@
     const/4 v0, 0x0
 
     .line 176
-    instance-of v1, p2, Lcom/android/settings/accounts/XiaomiAccountPreference;
+    instance-of v1, p2, Lcom/android/vendorsettings/accounts/XiaomiAccountPreference;
 
     if-eqz v1, :cond_1
 
@@ -1728,14 +1728,14 @@
 
     .line 178
     :cond_1
-    instance-of v1, p2, Lcom/android/settings/i;
+    instance-of v1, p2, Lcom/android/vendorsettings/i;
 
     if-eqz v1, :cond_0
 
     .line 180
-    check-cast p2, Lcom/android/settings/i;
+    check-cast p2, Lcom/android/vendorsettings/i;
 
-    invoke-direct {p0, p2}, Lcom/android/settings/accounts/ManageAccountsSettings;->a(Lcom/android/settings/i;)V
+    invoke-direct {p0, p2}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->a(Lcom/android/vendorsettings/i;)V
 
     .line 184
     const/4 v0, 0x1
@@ -1752,10 +1752,10 @@
     const/4 v1, 0x1
 
     .line 213
-    invoke-super {p0, p1}, Lcom/android/settings/accounts/AccountPreferenceBase;->onPrepareOptionsMenu(Landroid/view/Menu;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/accounts/AccountPreferenceBase;->onPrepareOptionsMenu(Landroid/view/Menu;)V
 
     .line 214
-    iget-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->BW:Landroid/os/UserHandle;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->BW:Landroid/os/UserHandle;
 
     invoke-virtual {v0}, Landroid/os/UserHandle;->getIdentifier()I
 
@@ -1814,21 +1814,21 @@
 
     .prologue
     .line 118
-    invoke-super {p0}, Lcom/android/settings/accounts/AccountPreferenceBase;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/accounts/AccountPreferenceBase;->onResume()V
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/accounts/ManageAccountsSettings;->te:Lcom/android/settings/accounts/AuthenticatorHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->te:Lcom/android/vendorsettings/accounts/AuthenticatorHelper;
 
-    invoke-virtual {v0}, Lcom/android/settings/accounts/AuthenticatorHelper;->jd()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/accounts/AuthenticatorHelper;->jd()V
 
     .line 120
-    invoke-virtual {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->jb()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->jb()V
 
     .line 121
-    invoke-direct {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->jn()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->jn()V
 
     .line 122
-    invoke-direct {p0}, Lcom/android/settings/accounts/ManageAccountsSettings;->jm()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/accounts/ManageAccountsSettings;->jm()V
 
     .line 123
     return-void

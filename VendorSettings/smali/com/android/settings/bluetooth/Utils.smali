@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/bluetooth/Utils;
+.class public final Lcom/android/vendorsettings/bluetooth/Utils;
 .super Ljava/lang/Object;
 .source "Utils.java"
 
@@ -15,18 +15,18 @@
 
     .prologue
     .line 132
-    new-instance v0, Lcom/android/settings/bluetooth/Utils$1;
+    new-instance v0, Lcom/android/vendorsettings/bluetooth/Utils$1;
 
-    invoke-direct {v0}, Lcom/android/settings/bluetooth/Utils$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/bluetooth/Utils$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/bluetooth/Utils;->Sr:Lcom/android/b/b/aj;
+    sput-object v0, Lcom/android/vendorsettings/bluetooth/Utils;->Sr:Lcom/android/b/b/aj;
 
     .line 139
-    new-instance v0, Lcom/android/settings/bluetooth/Utils$2;
+    new-instance v0, Lcom/android/vendorsettings/bluetooth/Utils$2;
 
-    invoke-direct {v0}, Lcom/android/settings/bluetooth/Utils$2;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/bluetooth/Utils$2;-><init>()V
 
-    sput-object v0, Lcom/android/settings/bluetooth/Utils;->Ss:Lcom/android/b/b/S;
+    sput-object v0, Lcom/android/vendorsettings/bluetooth/Utils;->Ss:Lcom/android/b/b/S;
 
     return-void
 .end method
@@ -115,7 +115,7 @@
 
     .prologue
     .line 129
-    sget-object v0, Lcom/android/settings/bluetooth/Utils;->Ss:Lcom/android/b/b/S;
+    sget-object v0, Lcom/android/vendorsettings/bluetooth/Utils;->Ss:Lcom/android/b/b/S;
 
     invoke-static {p0, v0}, Lcom/android/b/b/R;->a(Landroid/content/Context;Lcom/android/b/b/S;)Lcom/android/b/b/R;
 
@@ -142,7 +142,7 @@
     move-result-object v0
 
     .line 100
-    invoke-static {p0}, Lcom/android/settings/bluetooth/Utils;->ax(Landroid/content/Context;)Lcom/android/b/b/R;
+    invoke-static {p0}, Lcom/android/vendorsettings/bluetooth/Utils;->ax(Landroid/content/Context;)Lcom/android/b/b/R;
 
     move-result-object v1
 
@@ -203,7 +203,7 @@
 
     .prologue
     .line 38
-    sget-object v0, Lcom/android/settings/bluetooth/Utils;->Sr:Lcom/android/b/b/aj;
+    sget-object v0, Lcom/android/vendorsettings/bluetooth/Utils;->Sr:Lcom/android/b/b/aj;
 
     return-object v0
 .end method

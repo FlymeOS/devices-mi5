@@ -1,4 +1,4 @@
-.class Lcom/android/settings/backup/d;
+.class Lcom/android/vendorsettings/backup/d;
 .super Ljava/lang/Object;
 .source "AccountRestoreManager.java"
 
@@ -24,12 +24,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/backup/c;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/backup/c;)V
     .locals 0
 
     .prologue
     .line 220
-    invoke-direct {p0}, Lcom/android/settings/backup/d;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/backup/d;-><init>()V
 
     return-void
 .end method

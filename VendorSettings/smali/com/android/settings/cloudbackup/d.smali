@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloudbackup/d;
+.class public Lcom/android/vendorsettings/cloudbackup/d;
 .super Ljava/lang/Object;
 .source "RingtonesCloudBackupHelper.java"
 
@@ -21,14 +21,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloudbackup/d;->Uv:Landroid/net/Uri;
+    sput-object v0, Lcom/android/vendorsettings/cloudbackup/d;->Uv:Landroid/net/Uri;
 
     .line 31
-    new-instance v0, Lcom/android/settings/cloudbackup/RingtonesCloudBackupHelper$1;
+    new-instance v0, Lcom/android/vendorsettings/cloudbackup/RingtonesCloudBackupHelper$1;
 
-    invoke-direct {v0}, Lcom/android/settings/cloudbackup/RingtonesCloudBackupHelper$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/cloudbackup/RingtonesCloudBackupHelper$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/cloudbackup/d;->Uw:Ljava/util/Map;
+    sput-object v0, Lcom/android/vendorsettings/cloudbackup/d;->Uw:Ljava/util/Map;
 
     return-void
 .end method
@@ -38,7 +38,7 @@
 
     .prologue
     .line 52
-    sget-object v0, Lcom/android/settings/cloudbackup/d;->Uw:Ljava/util/Map;
+    sget-object v0, Lcom/android/vendorsettings/cloudbackup/d;->Uw:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -96,7 +96,7 @@
     if-eqz v0, :cond_0
 
     .line 58
-    invoke-static {v0}, Lcom/android/settings/cloudbackup/d;->b(Landroid/net/Uri;)Ljava/io/File;
+    invoke-static {v0}, Lcom/android/vendorsettings/cloudbackup/d;->b(Landroid/net/Uri;)Ljava/io/File;
 
     move-result-object v3
 
@@ -204,7 +204,7 @@
 
     .prologue
     .line 75
-    invoke-static {p0}, Lcom/android/settings/cloudbackup/d;->c(Landroid/net/Uri;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/vendorsettings/cloudbackup/d;->c(Landroid/net/Uri;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -229,7 +229,7 @@
 
     .prologue
     .line 96
-    sget-object v0, Lcom/android/settings/cloudbackup/d;->Uw:Ljava/util/Map;
+    sget-object v0, Lcom/android/vendorsettings/cloudbackup/d;->Uw:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 

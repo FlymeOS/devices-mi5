@@ -1,9 +1,9 @@
-.class public Lcom/android/settings/widget/f;
+.class public Lcom/android/vendorsettings/widget/f;
 .super Ljava/lang/Object;
 .source "ChartDataUsageView.java"
 
 # interfaces
-.implements Lcom/android/settings/widget/a;
+.implements Lcom/android/vendorsettings/widget/a;
 
 
 # static fields
@@ -34,7 +34,7 @@
 
     add-int/lit8 v0, v0, -0x1
 
-    sput v0, Lcom/android/settings/widget/f;->awV:I
+    sput v0, Lcom/android/vendorsettings/widget/f;->awV:I
 
     return-void
 .end method
@@ -56,7 +56,7 @@
 
     sub-long v2, v0, v2
 
-    invoke-virtual {p0, v2, v3, v0, v1}, Lcom/android/settings/widget/f;->c(JJ)Z
+    invoke-virtual {p0, v2, v3, v0, v1}, Lcom/android/vendorsettings/widget/f;->c(JJ)Z
 
     .line 398
     return-void
@@ -90,13 +90,13 @@
 
     .prologue
     .line 407
-    iget-wide v0, p0, Lcom/android/settings/widget/f;->awQ:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/widget/f;->awQ:J
 
     cmp-long v0, v0, p1
 
     if-nez v0, :cond_0
 
-    iget-wide v0, p0, Lcom/android/settings/widget/f;->awR:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/widget/f;->awR:J
 
     cmp-long v0, v0, p3
 
@@ -104,10 +104,10 @@
 
     .line 408
     :cond_0
-    iput-wide p1, p0, Lcom/android/settings/widget/f;->awQ:J
+    iput-wide p1, p0, Lcom/android/vendorsettings/widget/f;->awQ:J
 
     .line 409
-    iput-wide p3, p0, Lcom/android/settings/widget/f;->awR:J
+    iput-wide p3, p0, Lcom/android/vendorsettings/widget/f;->awR:J
 
     .line 410
     const/4 v0, 0x1
@@ -127,14 +127,14 @@
 
     .prologue
     .line 418
-    iget v0, p0, Lcom/android/settings/widget/f;->awS:F
+    iget v0, p0, Lcom/android/vendorsettings/widget/f;->awS:F
 
     cmpl-float v0, v0, p1
 
     if-eqz v0, :cond_0
 
     .line 419
-    iput p1, p0, Lcom/android/settings/widget/f;->awS:F
+    iput p1, p0, Lcom/android/vendorsettings/widget/f;->awS:F
 
     .line 420
     const/4 v0, 0x1
@@ -154,13 +154,13 @@
 
     .prologue
     .line 433
-    iget-wide v0, p0, Lcom/android/settings/widget/f;->awQ:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/widget/f;->awQ:J
 
     long-to-float v0, v0
 
-    iget-wide v2, p0, Lcom/android/settings/widget/f;->awR:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/widget/f;->awR:J
 
-    iget-wide v4, p0, Lcom/android/settings/widget/f;->awQ:J
+    iget-wide v4, p0, Lcom/android/vendorsettings/widget/f;->awQ:J
 
     sub-long/2addr v2, v4
 
@@ -168,7 +168,7 @@
 
     mul-float/2addr v1, p1
 
-    iget v2, p0, Lcom/android/settings/widget/f;->awS:F
+    iget v2, p0, Lcom/android/vendorsettings/widget/f;->awS:F
 
     div-float/2addr v1, v2
 
@@ -190,7 +190,7 @@
 
     const/4 v1, 0x0
 
-    iget-wide v2, p0, Lcom/android/settings/widget/f;->awQ:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/widget/f;->awQ:J
 
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -200,7 +200,7 @@
 
     const/4 v1, 0x1
 
-    iget-wide v2, p0, Lcom/android/settings/widget/f;->awR:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/widget/f;->awR:J
 
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -210,7 +210,7 @@
 
     const/4 v1, 0x2
 
-    iget v2, p0, Lcom/android/settings/widget/f;->awS:F
+    iget v2, p0, Lcom/android/vendorsettings/widget/f;->awS:F
 
     invoke-static {v2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -230,9 +230,9 @@
 
     .prologue
     .line 428
-    iget v0, p0, Lcom/android/settings/widget/f;->awS:F
+    iget v0, p0, Lcom/android/vendorsettings/widget/f;->awS:F
 
-    iget-wide v2, p0, Lcom/android/settings/widget/f;->awQ:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/widget/f;->awQ:J
 
     sub-long v2, p1, v2
 
@@ -240,9 +240,9 @@
 
     mul-float/2addr v0, v1
 
-    iget-wide v2, p0, Lcom/android/settings/widget/f;->awR:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/widget/f;->awR:J
 
-    iget-wide v4, p0, Lcom/android/settings/widget/f;->awQ:J
+    iget-wide v4, p0, Lcom/android/vendorsettings/widget/f;->awQ:J
 
     sub-long/2addr v2, v4
 
@@ -282,7 +282,7 @@
     invoke-direct {v5}, Landroid/text/format/Time;-><init>()V
 
     .line 450
-    iget-wide v0, p0, Lcom/android/settings/widget/f;->awR:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/widget/f;->awR:J
 
     invoke-virtual {v5, v0, v1}, Landroid/text/format/Time;->set(J)V
 
@@ -291,7 +291,7 @@
 
     iget v1, v5, Landroid/text/format/Time;->weekDay:I
 
-    sget v3, Lcom/android/settings/widget/f;->awV:I
+    sget v3, Lcom/android/vendorsettings/widget/f;->awV:I
 
     sub-int/2addr v1, v3
 
@@ -316,14 +316,14 @@
 
     .line 456
     :goto_0
-    iget-wide v6, p0, Lcom/android/settings/widget/f;->awQ:J
+    iget-wide v6, p0, Lcom/android/vendorsettings/widget/f;->awQ:J
 
     cmp-long v3, v0, v6
 
     if-lez v3, :cond_1
 
     .line 457
-    iget-wide v6, p0, Lcom/android/settings/widget/f;->awR:J
+    iget-wide v6, p0, Lcom/android/vendorsettings/widget/f;->awR:J
 
     cmp-long v3, v0, v6
 
@@ -332,7 +332,7 @@
     .line 458
     add-int/lit8 v3, v2, 0x1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/widget/f;->s(J)F
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/widget/f;->s(J)F
 
     move-result v0
 

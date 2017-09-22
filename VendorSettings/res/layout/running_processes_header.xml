@@ -2,7 +2,7 @@
 <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="?android:listPreferredItemPaddingStart" android:paddingEnd="?android:listPreferredItemPaddingEnd"
   xmlns:android="http://schemas.android.com/apk/res/android">
     <TextView android:textAppearance="@android:style/TextAppearance.Material.Body2" android:textColor="?android:colorAccent" android:ellipsize="marquee" android:gravity="center|left" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="48.0sp" android:text="@string/running_processes_header_title" android:singleLine="true" android:textAlignment="viewStart" />
-    <view android:orientation="horizontal" android:id="@id/color_bar" android:layout_width="fill_parent" android:layout_height="16.0sp" class="com.android.settings.applications.LinearColorBar" />
+    <view android:orientation="horizontal" android:id="@id/color_bar" android:layout_width="fill_parent" android:layout_height="16.0sp" class="com.android.vendorsettings.applications.LinearColorBar" />
     <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="32.0sp" android:layout_marginTop="8.0sp">
         <ImageView android:layout_gravity="center" android:layout_width="16.0sp" android:layout_height="16.0sp" android:src="@color/running_processes_system_ram" android:scaleType="centerInside" android:contentDescription="@null" />
         <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">

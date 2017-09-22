@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fj;
+.class Lcom/android/vendorsettings/fj;
 .super Landroid/os/AsyncTask;
 .source "MiuiSecurityTrustedCredentials.java"
 
@@ -8,23 +8,23 @@
 
 .field sP:Lmiui/widget/ProgressBar;
 
-.field final synthetic sQ:Lcom/android/settings/fi;
+.field final synthetic sQ:Lcom/android/vendorsettings/fi;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fi;Landroid/view/View;)V
+.method constructor <init>(Lcom/android/vendorsettings/fi;Landroid/view/View;)V
     .locals 0
 
     .prologue
     .line 256
-    iput-object p1, p0, Lcom/android/settings/fj;->sQ:Lcom/android/settings/fi;
+    iput-object p1, p0, Lcom/android/vendorsettings/fj;->sQ:Lcom/android/vendorsettings/fi;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     .line 257
     check-cast p2, Landroid/widget/ListView;
 
-    iput-object p2, p0, Lcom/android/settings/fj;->mList:Landroid/widget/ListView;
+    iput-object p2, p0, Lcom/android/vendorsettings/fj;->mList:Landroid/widget/ListView;
 
     .line 258
     return-void
@@ -41,19 +41,19 @@
     const/4 v8, 0x0
 
     .line 265
-    iget-object v0, p0, Lcom/android/settings/fj;->sQ:Lcom/android/settings/fi;
+    iget-object v0, p0, Lcom/android/vendorsettings/fj;->sQ:Lcom/android/vendorsettings/fi;
 
-    invoke-static {v0}, Lcom/android/settings/fi;->e(Lcom/android/settings/fi;)Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    invoke-static {v0}, Lcom/android/vendorsettings/fi;->e(Lcom/android/vendorsettings/fi;)Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$Tab;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/fj;->sQ:Lcom/android/settings/fi;
+    iget-object v1, p0, Lcom/android/vendorsettings/fj;->sQ:Lcom/android/vendorsettings/fi;
 
-    invoke-static {v1}, Lcom/android/settings/fi;->d(Lcom/android/settings/fi;)Lcom/android/org/conscrypt/TrustedCertificateStore;
+    invoke-static {v1}, Lcom/android/vendorsettings/fi;->d(Lcom/android/vendorsettings/fi;)Lcom/android/org/conscrypt/TrustedCertificateStore;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->a(Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;Lcom/android/org/conscrypt/TrustedCertificateStore;)Ljava/util/Set;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$Tab;->a(Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$Tab;Lcom/android/org/conscrypt/TrustedCertificateStore;)Ljava/util/Set;
 
     move-result-object v0
 
@@ -88,9 +88,9 @@
     check-cast v4, Ljava/lang/String;
 
     .line 270
-    iget-object v0, p0, Lcom/android/settings/fj;->sQ:Lcom/android/settings/fi;
+    iget-object v0, p0, Lcom/android/vendorsettings/fj;->sQ:Lcom/android/vendorsettings/fi;
 
-    invoke-static {v0}, Lcom/android/settings/fi;->d(Lcom/android/settings/fi;)Lcom/android/org/conscrypt/TrustedCertificateStore;
+    invoke-static {v0}, Lcom/android/vendorsettings/fi;->d(Lcom/android/vendorsettings/fi;)Lcom/android/org/conscrypt/TrustedCertificateStore;
 
     move-result-object v0
 
@@ -101,25 +101,25 @@
     check-cast v5, Ljava/security/cert/X509Certificate;
 
     .line 271
-    new-instance v0, Lcom/android/settings/fh;
+    new-instance v0, Lcom/android/vendorsettings/fh;
 
-    iget-object v1, p0, Lcom/android/settings/fj;->sQ:Lcom/android/settings/fi;
+    iget-object v1, p0, Lcom/android/vendorsettings/fj;->sQ:Lcom/android/vendorsettings/fi;
 
-    invoke-static {v1}, Lcom/android/settings/fi;->d(Lcom/android/settings/fi;)Lcom/android/org/conscrypt/TrustedCertificateStore;
+    invoke-static {v1}, Lcom/android/vendorsettings/fi;->d(Lcom/android/vendorsettings/fi;)Lcom/android/org/conscrypt/TrustedCertificateStore;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/fj;->sQ:Lcom/android/settings/fi;
+    iget-object v2, p0, Lcom/android/vendorsettings/fj;->sQ:Lcom/android/vendorsettings/fi;
 
-    iget-object v3, p0, Lcom/android/settings/fj;->sQ:Lcom/android/settings/fi;
+    iget-object v3, p0, Lcom/android/vendorsettings/fj;->sQ:Lcom/android/vendorsettings/fi;
 
-    invoke-static {v3}, Lcom/android/settings/fi;->e(Lcom/android/settings/fi;)Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    invoke-static {v3}, Lcom/android/vendorsettings/fi;->e(Lcom/android/vendorsettings/fi;)Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$Tab;
 
     move-result-object v3
 
     const/4 v6, 0x0
 
-    invoke-direct/range {v0 .. v6}, Lcom/android/settings/fh;-><init>(Lcom/android/org/conscrypt/TrustedCertificateStore;Lcom/android/settings/fi;Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;Ljava/lang/String;Ljava/security/cert/X509Certificate;Lcom/android/settings/ff;)V
+    invoke-direct/range {v0 .. v6}, Lcom/android/vendorsettings/fh;-><init>(Lcom/android/org/conscrypt/TrustedCertificateStore;Lcom/android/vendorsettings/fi;Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$Tab;Ljava/lang/String;Ljava/security/cert/X509Certificate;Lcom/android/vendorsettings/ff;)V
 
     invoke-interface {v10, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -142,7 +142,7 @@
 
     aput-object v2, v1, v12
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/fj;->publishProgress([Ljava/lang/Object;)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/fj;->publishProgress([Ljava/lang/Object;)V
 
     move v7, v0
 
@@ -164,7 +164,7 @@
     .line 252
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/fj;->b([Ljava/lang/Void;)Ljava/util/List;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/fj;->b([Ljava/lang/Void;)Ljava/util/List;
 
     move-result-object v0
 
@@ -176,49 +176,49 @@
 
     .prologue
     .line 290
-    iget-object v0, p0, Lcom/android/settings/fj;->sQ:Lcom/android/settings/fi;
+    iget-object v0, p0, Lcom/android/vendorsettings/fj;->sQ:Lcom/android/vendorsettings/fi;
 
-    invoke-static {v0}, Lcom/android/settings/fi;->a(Lcom/android/settings/fi;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/vendorsettings/fi;->a(Lcom/android/vendorsettings/fi;)Ljava/util/List;
 
     move-result-object v0
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 291
-    iget-object v0, p0, Lcom/android/settings/fj;->sQ:Lcom/android/settings/fi;
+    iget-object v0, p0, Lcom/android/vendorsettings/fj;->sQ:Lcom/android/vendorsettings/fi;
 
-    invoke-static {v0}, Lcom/android/settings/fi;->a(Lcom/android/settings/fi;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/vendorsettings/fi;->a(Lcom/android/vendorsettings/fi;)Ljava/util/List;
 
     move-result-object v0
 
     invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     .line 292
-    iget-object v0, p0, Lcom/android/settings/fj;->sQ:Lcom/android/settings/fi;
+    iget-object v0, p0, Lcom/android/vendorsettings/fj;->sQ:Lcom/android/vendorsettings/fi;
 
-    invoke-virtual {v0}, Lcom/android/settings/fi;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/fi;->notifyDataSetChanged()V
 
     .line 293
-    invoke-static {}, Lcom/android/settings/fi;->fR()Ljava/util/WeakHashMap;
+    invoke-static {}, Lcom/android/vendorsettings/fi;->fR()Ljava/util/WeakHashMap;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/fj;->sQ:Lcom/android/settings/fi;
+    iget-object v1, p0, Lcom/android/vendorsettings/fj;->sQ:Lcom/android/vendorsettings/fi;
 
-    invoke-static {v1}, Lcom/android/settings/fi;->e(Lcom/android/settings/fi;)Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    invoke-static {v1}, Lcom/android/vendorsettings/fi;->e(Lcom/android/vendorsettings/fi;)Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$Tab;
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->a(Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;)Ljava/lang/String;
+    invoke-static {v1}, Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$Tab;->a(Lcom/android/vendorsettings/MiuiSecurityTrustedCredentials$Tab;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1, p1}, Ljava/util/WeakHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 294
-    iget-object v0, p0, Lcom/android/settings/fj;->mList:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/fj;->mList:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lcom/android/settings/fj;->sP:Lmiui/widget/ProgressBar;
+    iget-object v1, p0, Lcom/android/vendorsettings/fj;->sP:Lmiui/widget/ProgressBar;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->removeHeaderView(Landroid/view/View;)Z
 
@@ -233,7 +233,7 @@
     .line 252
     check-cast p1, Ljava/util/List;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/fj;->j(Ljava/util/List;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/fj;->j(Ljava/util/List;)V
 
     return-void
 .end method
@@ -245,9 +245,9 @@
     .line 261
     new-instance v0, Lmiui/widget/ProgressBar;
 
-    iget-object v1, p0, Lcom/android/settings/fj;->sQ:Lcom/android/settings/fi;
+    iget-object v1, p0, Lcom/android/vendorsettings/fj;->sQ:Lcom/android/vendorsettings/fi;
 
-    invoke-static {v1}, Lcom/android/settings/fi;->c(Lcom/android/settings/fi;)Landroid/app/Activity;
+    invoke-static {v1}, Lcom/android/vendorsettings/fi;->c(Lcom/android/vendorsettings/fi;)Landroid/app/Activity;
 
     move-result-object v1
 
@@ -257,12 +257,12 @@
 
     invoke-direct {v0, v1, v2, v3}, Lmiui/widget/ProgressBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    iput-object v0, p0, Lcom/android/settings/fj;->sP:Lmiui/widget/ProgressBar;
+    iput-object v0, p0, Lcom/android/vendorsettings/fj;->sP:Lmiui/widget/ProgressBar;
 
     .line 262
-    iget-object v0, p0, Lcom/android/settings/fj;->mList:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/fj;->mList:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lcom/android/settings/fj;->sP:Lmiui/widget/ProgressBar;
+    iget-object v1, p0, Lcom/android/vendorsettings/fj;->sP:Lmiui/widget/ProgressBar;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->addHeaderView(Landroid/view/View;)V
 
@@ -293,7 +293,7 @@
     move-result v1
 
     .line 284
-    iget-object v2, p0, Lcom/android/settings/fj;->sP:Lmiui/widget/ProgressBar;
+    iget-object v2, p0, Lcom/android/vendorsettings/fj;->sP:Lmiui/widget/ProgressBar;
 
     invoke-virtual {v2}, Lmiui/widget/ProgressBar;->getMax()I
 
@@ -302,13 +302,13 @@
     if-eq v1, v2, :cond_0
 
     .line 285
-    iget-object v2, p0, Lcom/android/settings/fj;->sP:Lmiui/widget/ProgressBar;
+    iget-object v2, p0, Lcom/android/vendorsettings/fj;->sP:Lmiui/widget/ProgressBar;
 
     invoke-virtual {v2, v1}, Lmiui/widget/ProgressBar;->setMax(I)V
 
     .line 287
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/fj;->sP:Lmiui/widget/ProgressBar;
+    iget-object v1, p0, Lcom/android/vendorsettings/fj;->sP:Lmiui/widget/ProgressBar;
 
     invoke-virtual {v1, v0}, Lmiui/widget/ProgressBar;->setProgress(I)V
 
@@ -323,7 +323,7 @@
     .line 252
     check-cast p1, [Ljava/lang/Integer;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/fj;->onProgressUpdate([Ljava/lang/Integer;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/fj;->onProgressUpdate([Ljava/lang/Integer;)V
 
     return-void
 .end method

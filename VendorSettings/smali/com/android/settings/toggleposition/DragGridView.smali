@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/toggleposition/DragGridView;
+.class public Lcom/android/vendorsettings/toggleposition/DragGridView;
 .super Landroid/widget/GridView;
 .source "DragGridView.java"
 
@@ -28,7 +28,7 @@
 
 .field private arJ:I
 
-.field private arK:Lcom/android/settings/toggleposition/b;
+.field private arK:Lcom/android/vendorsettings/toggleposition/b;
 
 .field private arL:I
 
@@ -83,7 +83,7 @@
     .line 122
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/toggleposition/DragGridView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/toggleposition/DragGridView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 123
     return-void
@@ -96,7 +96,7 @@
     .line 126
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/toggleposition/DragGridView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/vendorsettings/toggleposition/DragGridView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 127
     return-void
@@ -118,85 +118,85 @@
     .line 40
     const-wide/16 v0, 0x1f4
 
-    iput-wide v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arr:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arr:J
 
     .line 45
-    iput-boolean v2, p0, Lcom/android/settings/toggleposition/DragGridView;->ars:Z
+    iput-boolean v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->ars:Z
 
     .line 54
-    iput v4, p0, Lcom/android/settings/toggleposition/DragGridView;->arx:I
+    iput v4, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arx:I
 
     .line 56
-    iput v4, p0, Lcom/android/settings/toggleposition/DragGridView;->ary:I
+    iput v4, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->ary:I
 
     .line 61
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arz:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arz:Landroid/view/View;
 
     .line 109
-    iput-boolean v3, p0, Lcom/android/settings/toggleposition/DragGridView;->arI:Z
+    iput-boolean v3, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arI:Z
 
     .line 119
-    iput v3, p0, Lcom/android/settings/toggleposition/DragGridView;->JI:I
+    iput v3, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->JI:I
 
     .line 145
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->mHandler:Landroid/os/Handler;
 
     .line 148
-    new-instance v0, Lcom/android/settings/toggleposition/c;
+    new-instance v0, Lcom/android/vendorsettings/toggleposition/c;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/toggleposition/c;-><init>(Lcom/android/settings/toggleposition/DragGridView;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/toggleposition/c;-><init>(Lcom/android/vendorsettings/toggleposition/DragGridView;)V
 
-    iput-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arP:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arP:Ljava/lang/Runnable;
 
     .line 439
-    iput v2, p0, Lcom/android/settings/toggleposition/DragGridView;->arQ:I
+    iput v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arQ:I
 
     .line 440
-    iput v2, p0, Lcom/android/settings/toggleposition/DragGridView;->arR:I
+    iput v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arR:I
 
     .line 441
     const/4 v0, 0x2
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arS:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arS:I
 
     .line 442
     const/4 v0, -0x2
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arT:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arT:I
 
     .line 443
-    new-instance v0, Lcom/android/settings/toggleposition/d;
+    new-instance v0, Lcom/android/vendorsettings/toggleposition/d;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/toggleposition/d;-><init>(Lcom/android/settings/toggleposition/DragGridView;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/toggleposition/d;-><init>(Lcom/android/vendorsettings/toggleposition/DragGridView;)V
 
-    iput-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arU:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arU:Ljava/lang/Runnable;
 
     .line 131
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->JI:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->JI:I
 
-    iget v1, p0, Lcom/android/settings/toggleposition/DragGridView;->JI:I
+    iget v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->JI:I
 
-    iget v2, p0, Lcom/android/settings/toggleposition/DragGridView;->JI:I
+    iget v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->JI:I
 
-    iget v3, p0, Lcom/android/settings/toggleposition/DragGridView;->JI:I
+    iget v3, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->JI:I
 
-    invoke-virtual {p0, v0, v1, v2, v3}, Lcom/android/settings/toggleposition/DragGridView;->setPaddingRelative(IIII)V
+    invoke-virtual {p0, v0, v1, v2, v3}, Lcom/android/vendorsettings/toggleposition/DragGridView;->setPaddingRelative(IIII)V
 
     .line 132
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->JI:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->JI:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/toggleposition/DragGridView;->setVerticalSpacing(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->setVerticalSpacing(I)V
 
     .line 133
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->JI:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->JI:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/toggleposition/DragGridView;->setHorizontalSpacing(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->setHorizontalSpacing(I)V
 
     .line 134
     const-string v0, "vibrator"
@@ -207,7 +207,7 @@
 
     check-cast v0, Landroid/os/Vibrator;
 
-    iput-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->uO:Landroid/os/Vibrator;
+    iput-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->uO:Landroid/os/Vibrator;
 
     .line 135
     const-string v0, "window"
@@ -218,7 +218,7 @@
 
     check-cast v0, Landroid/view/WindowManager;
 
-    iput-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->mWindowManager:Landroid/view/WindowManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->mWindowManager:Landroid/view/WindowManager;
 
     .line 136
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -233,7 +233,7 @@
 
     float-to-int v0, v0
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arH:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arH:I
 
     .line 137
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -246,7 +246,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arO:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arO:I
 
     .line 138
     invoke-static {p1}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
@@ -257,27 +257,27 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arJ:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arJ:I
 
     .line 140
-    iget-boolean v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arM:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arM:Z
 
     if-nez v0, :cond_0
 
     .line 141
-    iput v4, p0, Lcom/android/settings/toggleposition/DragGridView;->UI:I
+    iput v4, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->UI:I
 
     .line 143
     :cond_0
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/toggleposition/DragGridView;I)I
+.method static synthetic a(Lcom/android/vendorsettings/toggleposition/DragGridView;I)I
     .locals 0
 
     .prologue
     .line 34
-    iput p1, p0, Lcom/android/settings/toggleposition/DragGridView;->arx:I
+    iput p1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arx:I
 
     return p1
 .end method
@@ -336,12 +336,12 @@
     return-object v2
 .end method
 
-.method static synthetic a(Lcom/android/settings/toggleposition/DragGridView;)Landroid/os/Vibrator;
+.method static synthetic a(Lcom/android/vendorsettings/toggleposition/DragGridView;)Landroid/os/Vibrator;
     .locals 1
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->uO:Landroid/os/Vibrator;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->uO:Landroid/os/Vibrator;
 
     return-object v0
 .end method
@@ -357,71 +357,71 @@
 
     invoke-direct {v0}, Landroid/view/WindowManager$LayoutParams;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
+    iput-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
 
     .line 383
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
 
     const/4 v1, -0x3
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->format:I
 
     .line 384
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
 
     const/16 v1, 0x33
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->gravity:I
 
     .line 385
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
 
-    iget v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arE:I
+    iget v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arE:I
 
     sub-int v1, p2, v1
 
-    iget v2, p0, Lcom/android/settings/toggleposition/DragGridView;->arG:I
+    iget v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arG:I
 
     add-int/2addr v1, v2
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->x:I
 
     .line 386
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
 
-    iget v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arD:I
+    iget v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arD:I
 
     sub-int v1, p3, v1
 
-    iget v2, p0, Lcom/android/settings/toggleposition/DragGridView;->arF:I
+    iget v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arF:I
 
     add-int/2addr v1, v2
 
-    iget v2, p0, Lcom/android/settings/toggleposition/DragGridView;->arH:I
+    iget v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arH:I
 
     sub-int/2addr v1, v2
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->y:I
 
     .line 387
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
 
     const v1, 0x3f666666    # 0.9f
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->alpha:F
 
     .line 388
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
 
     iput v3, v0, Landroid/view/WindowManager$LayoutParams;->width:I
 
     .line 389
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
 
     iput v3, v0, Landroid/view/WindowManager$LayoutParams;->height:I
 
     .line 390
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
 
     const/16 v1, 0x18
 
@@ -430,32 +430,32 @@
     .line 393
     new-instance v0, Landroid/widget/ImageView;
 
-    invoke-virtual {p0}, Lcom/android/settings/toggleposition/DragGridView;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arA:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arA:Landroid/widget/ImageView;
 
     .line 394
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arA:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arA:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
     .line 395
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arA:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arA:Landroid/widget/ImageView;
 
     const/4 v1, -0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setBackgroundColor(I)V
 
     .line 396
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->mWindowManager:Landroid/view/WindowManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->mWindowManager:Landroid/view/WindowManager;
 
-    iget-object v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arA:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arA:Landroid/widget/ImageView;
 
-    iget-object v2, p0, Lcom/android/settings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
+    iget-object v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
 
     invoke-interface {v0, v1, v2}, Landroid/view/WindowManager;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -463,22 +463,22 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/toggleposition/DragGridView;II)V
+.method static synthetic a(Lcom/android/vendorsettings/toggleposition/DragGridView;II)V
     .locals 0
 
     .prologue
     .line 34
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/toggleposition/DragGridView;->u(II)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/toggleposition/DragGridView;->u(II)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/toggleposition/DragGridView;Landroid/graphics/Bitmap;II)V
+.method static synthetic a(Lcom/android/vendorsettings/toggleposition/DragGridView;Landroid/graphics/Bitmap;II)V
     .locals 0
 
     .prologue
     .line 34
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/toggleposition/DragGridView;->a(Landroid/graphics/Bitmap;II)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/vendorsettings/toggleposition/DragGridView;->a(Landroid/graphics/Bitmap;II)V
 
     return-void
 .end method
@@ -536,42 +536,42 @@
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/toggleposition/DragGridView;Z)Z
+.method static synthetic a(Lcom/android/vendorsettings/toggleposition/DragGridView;Z)Z
     .locals 0
 
     .prologue
     .line 34
-    iput-boolean p1, p0, Lcom/android/settings/toggleposition/DragGridView;->ars:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->ars:Z
 
     return p1
 .end method
 
-.method static synthetic b(Lcom/android/settings/toggleposition/DragGridView;)Landroid/view/View;
+.method static synthetic b(Lcom/android/vendorsettings/toggleposition/DragGridView;)Landroid/view/View;
     .locals 1
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arz:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arz:Landroid/view/View;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/toggleposition/DragGridView;Z)Z
+.method static synthetic b(Lcom/android/vendorsettings/toggleposition/DragGridView;Z)Z
     .locals 0
 
     .prologue
     .line 34
-    iput-boolean p1, p0, Lcom/android/settings/toggleposition/DragGridView;->arI:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arI:Z
 
     return p1
 .end method
 
-.method static synthetic c(Lcom/android/settings/toggleposition/DragGridView;)Landroid/graphics/Bitmap;
+.method static synthetic c(Lcom/android/vendorsettings/toggleposition/DragGridView;)Landroid/graphics/Bitmap;
     .locals 1
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arC:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arC:Landroid/graphics/Bitmap;
 
     return-object v0
 .end method
@@ -603,52 +603,52 @@
     goto :goto_0
 .end method
 
-.method static synthetic d(Lcom/android/settings/toggleposition/DragGridView;)I
+.method static synthetic d(Lcom/android/vendorsettings/toggleposition/DragGridView;)I
     .locals 1
 
     .prologue
     .line 34
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->art:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->art:I
 
     return v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/toggleposition/DragGridView;)I
+.method static synthetic e(Lcom/android/vendorsettings/toggleposition/DragGridView;)I
     .locals 1
 
     .prologue
     .line 34
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->aru:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->aru:I
 
     return v0
 .end method
 
-.method static synthetic f(Lcom/android/settings/toggleposition/DragGridView;)I
+.method static synthetic f(Lcom/android/vendorsettings/toggleposition/DragGridView;)I
     .locals 1
 
     .prologue
     .line 34
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arQ:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arQ:I
 
     return v0
 .end method
 
-.method static synthetic g(Lcom/android/settings/toggleposition/DragGridView;)I
+.method static synthetic g(Lcom/android/vendorsettings/toggleposition/DragGridView;)I
     .locals 1
 
     .prologue
     .line 34
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arR:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arR:I
 
     return v0
 .end method
 
-.method static synthetic h(Lcom/android/settings/toggleposition/DragGridView;)I
+.method static synthetic h(Lcom/android/vendorsettings/toggleposition/DragGridView;)I
     .locals 1
 
     .prologue
     .line 34
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arx:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arx:I
 
     return v0
 .end method
@@ -658,53 +658,53 @@
 
     .prologue
     .line 415
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
 
-    iget v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arE:I
+    iget v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arE:I
 
     sub-int v1, p1, v1
 
-    iget v2, p0, Lcom/android/settings/toggleposition/DragGridView;->arG:I
+    iget v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arG:I
 
     add-int/2addr v1, v2
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->x:I
 
     .line 416
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
 
-    iget v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arD:I
+    iget v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arD:I
 
     sub-int v1, p2, v1
 
-    iget v2, p0, Lcom/android/settings/toggleposition/DragGridView;->arF:I
+    iget v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arF:I
 
     add-int/2addr v1, v2
 
-    iget v2, p0, Lcom/android/settings/toggleposition/DragGridView;->arH:I
+    iget v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arH:I
 
     sub-int/2addr v1, v2
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->y:I
 
     .line 417
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->mWindowManager:Landroid/view/WindowManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->mWindowManager:Landroid/view/WindowManager;
 
-    iget-object v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arA:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arA:Landroid/widget/ImageView;
 
-    iget-object v2, p0, Lcom/android/settings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
+    iget-object v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arB:Landroid/view/WindowManager$LayoutParams;
 
     invoke-interface {v0, v1, v2}, Landroid/view/WindowManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 418
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/toggleposition/DragGridView;->t(II)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/toggleposition/DragGridView;->t(II)V
 
     .line 421
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arD:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arD:I
 
     sub-int v0, p2, v0
 
-    iget-object v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arz:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arz:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getHeight()I
 
@@ -712,11 +712,11 @@
 
     add-int/2addr v0, v1
 
-    invoke-virtual {p0}, Lcom/android/settings/toggleposition/DragGridView;->getHeight()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getHeight()I
 
     move-result v1
 
-    iget-object v2, p0, Lcom/android/settings/toggleposition/DragGridView;->arz:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arz:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getHeight()I
 
@@ -729,24 +729,24 @@
     if-le v0, v1, :cond_1
 
     .line 422
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arQ:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arQ:I
 
-    iget v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arS:I
+    iget v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arS:I
 
     if-eq v0, v1, :cond_0
 
     .line 423
-    invoke-direct {p0}, Lcom/android/settings/toggleposition/DragGridView;->uG()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->uG()V
 
     .line 424
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arS:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arS:I
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arQ:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arQ:I
 
     .line 425
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arU:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arU:Ljava/lang/Runnable;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/toggleposition/DragGridView;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->post(Ljava/lang/Runnable;)Z
 
     .line 437
     :cond_0
@@ -755,11 +755,11 @@
 
     .line 427
     :cond_1
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arD:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arD:I
 
     sub-int v0, p2, v0
 
-    iget-object v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arz:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arz:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getHeight()I
 
@@ -770,35 +770,35 @@
     if-ge v0, v1, :cond_2
 
     .line 428
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arQ:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arQ:I
 
-    iget v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arT:I
+    iget v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arT:I
 
     if-eq v0, v1, :cond_0
 
     .line 429
-    invoke-direct {p0}, Lcom/android/settings/toggleposition/DragGridView;->uG()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->uG()V
 
     .line 430
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arT:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arT:I
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arQ:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arQ:I
 
     .line 431
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arU:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arU:Ljava/lang/Runnable;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/toggleposition/DragGridView;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->post(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 
     .line 434
     :cond_2
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arR:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arR:I
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arQ:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arQ:I
 
     .line 435
-    invoke-direct {p0}, Lcom/android/settings/toggleposition/DragGridView;->uG()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->uG()V
 
     goto :goto_0
 .end method
@@ -808,12 +808,12 @@
 
     .prologue
     .line 463
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/toggleposition/DragGridView;->pointToPosition(II)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/toggleposition/DragGridView;->pointToPosition(II)I
 
     move-result v0
 
     .line 466
-    iget v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arx:I
+    iget v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arx:I
 
     if-eq v0, v1, :cond_0
 
@@ -821,31 +821,31 @@
 
     if-eq v0, v1, :cond_0
 
-    iget-boolean v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arI:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arI:Z
 
     if-eqz v1, :cond_0
 
     .line 467
-    iget-object v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arK:Lcom/android/settings/toggleposition/b;
+    iget-object v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arK:Lcom/android/vendorsettings/toggleposition/b;
 
-    iget v2, p0, Lcom/android/settings/toggleposition/DragGridView;->arx:I
+    iget v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arx:I
 
-    invoke-interface {v1, v2, v0}, Lcom/android/settings/toggleposition/b;->r(II)V
+    invoke-interface {v1, v2, v0}, Lcom/android/vendorsettings/toggleposition/b;->r(II)V
 
     .line 468
-    iget-object v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arK:Lcom/android/settings/toggleposition/b;
+    iget-object v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arK:Lcom/android/vendorsettings/toggleposition/b;
 
-    invoke-interface {v1, v0}, Lcom/android/settings/toggleposition/b;->cS(I)V
+    invoke-interface {v1, v0}, Lcom/android/vendorsettings/toggleposition/b;->cS(I)V
 
     .line 469
-    invoke-virtual {p0}, Lcom/android/settings/toggleposition/DragGridView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v1
 
     .line 470
-    new-instance v2, Lcom/android/settings/toggleposition/e;
+    new-instance v2, Lcom/android/vendorsettings/toggleposition/e;
 
-    invoke-direct {v2, p0, v1, v0}, Lcom/android/settings/toggleposition/e;-><init>(Lcom/android/settings/toggleposition/DragGridView;Landroid/view/ViewTreeObserver;I)V
+    invoke-direct {v2, p0, v1, v0}, Lcom/android/vendorsettings/toggleposition/e;-><init>(Lcom/android/vendorsettings/toggleposition/DragGridView;Landroid/view/ViewTreeObserver;I)V
 
     invoke-virtual {v1, v2}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
 
@@ -879,13 +879,13 @@
     if-ge p1, p2, :cond_6
 
     .line 514
-    invoke-virtual {p0}, Lcom/android/settings/toggleposition/DragGridView;->getFirstVisiblePosition()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getFirstVisiblePosition()I
 
     move-result v0
 
     sub-int v0, p1, v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/toggleposition/DragGridView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -895,7 +895,7 @@
     .line 517
     add-int/lit8 v0, p1, 0x1
 
-    iget v2, p0, Lcom/android/settings/toggleposition/DragGridView;->UI:I
+    iget v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->UI:I
 
     rem-int/2addr v0, v2
 
@@ -908,7 +908,7 @@
 
     neg-int v0, v0
 
-    iget v2, p0, Lcom/android/settings/toggleposition/DragGridView;->UI:I
+    iget v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->UI:I
 
     add-int/lit8 v2, v2, -0x1
 
@@ -926,7 +926,7 @@
 
     move v5, v3
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/toggleposition/DragGridView;->a(Landroid/view/View;FFFF)Landroid/animation/AnimatorSet;
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/toggleposition/DragGridView;->a(Landroid/view/View;FFFF)Landroid/animation/AnimatorSet;
 
     move-result-object v0
 
@@ -959,7 +959,7 @@
 
     move v5, v3
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/toggleposition/DragGridView;->a(Landroid/view/View;FFFF)Landroid/animation/AnimatorSet;
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/toggleposition/DragGridView;->a(Landroid/view/View;FFFF)Landroid/animation/AnimatorSet;
 
     move-result-object v0
 
@@ -973,13 +973,13 @@
     if-le p1, p2, :cond_6
 
     .line 529
-    invoke-virtual {p0}, Lcom/android/settings/toggleposition/DragGridView;->getFirstVisiblePosition()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getFirstVisiblePosition()I
 
     move-result v0
 
     sub-int v0, p1, v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/toggleposition/DragGridView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -987,11 +987,11 @@
     if-eqz v1, :cond_4
 
     .line 531
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->UI:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->UI:I
 
     add-int/2addr v0, p1
 
-    iget v2, p0, Lcom/android/settings/toggleposition/DragGridView;->UI:I
+    iget v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->UI:I
 
     rem-int/2addr v0, v2
 
@@ -1002,7 +1002,7 @@
 
     move-result v0
 
-    iget v2, p0, Lcom/android/settings/toggleposition/DragGridView;->UI:I
+    iget v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->UI:I
 
     add-int/lit8 v2, v2, -0x1
 
@@ -1022,7 +1022,7 @@
 
     move v5, v3
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/toggleposition/DragGridView;->a(Landroid/view/View;FFFF)Landroid/animation/AnimatorSet;
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/toggleposition/DragGridView;->a(Landroid/view/View;FFFF)Landroid/animation/AnimatorSet;
 
     move-result-object v0
 
@@ -1051,7 +1051,7 @@
 
     move v5, v3
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/toggleposition/DragGridView;->a(Landroid/view/View;FFFF)Landroid/animation/AnimatorSet;
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/toggleposition/DragGridView;->a(Landroid/view/View;FFFF)Landroid/animation/AnimatorSet;
 
     move-result-object v0
 
@@ -1081,9 +1081,9 @@
     invoke-virtual {v0, v1}, Landroid/animation/AnimatorSet;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     .line 547
-    new-instance v1, Lcom/android/settings/toggleposition/f;
+    new-instance v1, Lcom/android/vendorsettings/toggleposition/f;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/toggleposition/f;-><init>(Lcom/android/settings/toggleposition/DragGridView;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/toggleposition/f;-><init>(Lcom/android/vendorsettings/toggleposition/DragGridView;)V
 
     invoke-virtual {v0, v1}, Landroid/animation/AnimatorSet;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
@@ -1101,15 +1101,15 @@
     const/4 v2, -0x1
 
     .line 565
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arx:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arx:I
 
-    invoke-virtual {p0}, Lcom/android/settings/toggleposition/DragGridView;->getFirstVisiblePosition()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getFirstVisiblePosition()I
 
     move-result v1
 
     sub-int/2addr v0, v1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/toggleposition/DragGridView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -1123,31 +1123,31 @@
 
     .line 569
     :cond_0
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arR:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arR:I
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arQ:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arQ:I
 
     .line 570
-    invoke-direct {p0}, Lcom/android/settings/toggleposition/DragGridView;->uG()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->uG()V
 
     .line 571
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arK:Lcom/android/settings/toggleposition/b;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arK:Lcom/android/vendorsettings/toggleposition/b;
 
-    invoke-interface {v0, v2}, Lcom/android/settings/toggleposition/b;->cS(I)V
+    invoke-interface {v0, v2}, Lcom/android/vendorsettings/toggleposition/b;->cS(I)V
 
     .line 572
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arK:Lcom/android/settings/toggleposition/b;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arK:Lcom/android/vendorsettings/toggleposition/b;
 
-    invoke-interface {v0}, Lcom/android/settings/toggleposition/b;->uE()V
+    invoke-interface {v0}, Lcom/android/vendorsettings/toggleposition/b;->uE()V
 
     .line 573
-    invoke-direct {p0}, Lcom/android/settings/toggleposition/DragGridView;->uF()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->uF()V
 
     .line 574
-    iput v2, p0, Lcom/android/settings/toggleposition/DragGridView;->ary:I
+    iput v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->ary:I
 
     .line 575
-    iput v2, p0, Lcom/android/settings/toggleposition/DragGridView;->arx:I
+    iput v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arx:I
 
     .line 576
     return-void
@@ -1158,21 +1158,21 @@
 
     .prologue
     .line 403
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arA:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arA:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_0
 
     .line 404
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->mWindowManager:Landroid/view/WindowManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->mWindowManager:Landroid/view/WindowManager;
 
-    iget-object v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arA:Landroid/widget/ImageView;
+    iget-object v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arA:Landroid/widget/ImageView;
 
     invoke-interface {v0, v1}, Landroid/view/WindowManager;->removeView(Landroid/view/View;)V
 
     .line 405
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arA:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arA:Landroid/widget/ImageView;
 
     .line 407
     :cond_0
@@ -1184,9 +1184,9 @@
 
     .prologue
     .line 453
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arU:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arU:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
@@ -1225,7 +1225,7 @@
 
     float-to-int v0, v0
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->art:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->art:I
 
     .line 263
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
@@ -1234,26 +1234,26 @@
 
     float-to-int v0, v0
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->aru:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->aru:I
 
     .line 266
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->art:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->art:I
 
-    iget v1, p0, Lcom/android/settings/toggleposition/DragGridView;->aru:I
+    iget v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->aru:I
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/toggleposition/DragGridView;->pointToPosition(II)I
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/toggleposition/DragGridView;->pointToPosition(II)I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->ary:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->ary:I
 
     .line 267
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->ary:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->ary:I
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arx:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arx:I
 
     .line 270
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arx:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arx:I
 
     const/4 v1, -0x1
 
@@ -1268,33 +1268,33 @@
 
     .line 275
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arP:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arP:Ljava/lang/Runnable;
 
-    iget-wide v2, p0, Lcom/android/settings/toggleposition/DragGridView;->arr:J
+    iget-wide v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arr:J
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 278
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arx:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arx:I
 
-    invoke-virtual {p0}, Lcom/android/settings/toggleposition/DragGridView;->getFirstVisiblePosition()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getFirstVisiblePosition()I
 
     move-result v1
 
     sub-int/2addr v0, v1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/toggleposition/DragGridView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arz:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arz:Landroid/view/View;
 
     .line 280
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->aru:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->aru:I
 
-    iget-object v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arz:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arz:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getTop()I
 
@@ -1302,12 +1302,12 @@
 
     sub-int/2addr v0, v1
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arD:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arD:I
 
     .line 281
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->art:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->art:I
 
-    iget-object v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arz:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arz:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getLeft()I
 
@@ -1315,14 +1315,14 @@
 
     sub-int/2addr v0, v1
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arE:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arE:I
 
     .line 283
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getRawY()F
 
     move-result v0
 
-    iget v1, p0, Lcom/android/settings/toggleposition/DragGridView;->aru:I
+    iget v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->aru:I
 
     int-to-float v1, v1
 
@@ -1330,14 +1330,14 @@
 
     float-to-int v0, v0
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arF:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arF:I
 
     .line 284
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result v0
 
-    iget v1, p0, Lcom/android/settings/toggleposition/DragGridView;->art:I
+    iget v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->art:I
 
     int-to-float v1, v1
 
@@ -1345,17 +1345,17 @@
 
     float-to-int v0, v0
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arG:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arG:I
 
     .line 287
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arz:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arz:Landroid/view/View;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setDrawingCacheEnabled(Z)V
 
     .line 289
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arz:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arz:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getDrawingCache()Landroid/graphics/Bitmap;
 
@@ -1365,10 +1365,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arC:Landroid/graphics/Bitmap;
+    iput-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arC:Landroid/graphics/Bitmap;
 
     .line 291
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arz:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arz:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->destroyDrawingCache()V
 
@@ -1390,15 +1390,15 @@
     float-to-int v1, v1
 
     .line 300
-    iget-object v2, p0, Lcom/android/settings/toggleposition/DragGridView;->arz:Landroid/view/View;
+    iget-object v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arz:Landroid/view/View;
 
-    invoke-direct {p0, v2, v0, v1}, Lcom/android/settings/toggleposition/DragGridView;->a(Landroid/view/View;II)Z
+    invoke-direct {p0, v2, v0, v1}, Lcom/android/vendorsettings/toggleposition/DragGridView;->a(Landroid/view/View;II)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->aru:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->aru:I
 
     sub-int v0, v1, v0
 
@@ -1406,19 +1406,19 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arJ:I
+    iget v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arJ:I
 
     if-le v0, v1, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/settings/toggleposition/DragGridView;->ars:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->ars:Z
 
     if-nez v0, :cond_0
 
     .line 302
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arP:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arP:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
@@ -1426,16 +1426,16 @@
 
     .line 307
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arP:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arP:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
     .line 308
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->mHandler:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arU:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arU:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
@@ -1463,12 +1463,12 @@
     invoke-super {p0, p1}, Landroid/widget/GridView;->onDraw(Landroid/graphics/Canvas;)V
 
     .line 231
-    invoke-virtual {p0, v6}, Lcom/android/settings/toggleposition/DragGridView;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v6}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getChildAt(I)Landroid/view/View;
 
     move-result-object v12
 
     .line 232
-    invoke-virtual {p0}, Lcom/android/settings/toggleposition/DragGridView;->getChildCount()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getChildCount()I
 
     move-result v0
 
@@ -1479,7 +1479,7 @@
 
     mul-double/2addr v2, v4
 
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->UI:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->UI:I
 
     int-to-double v4, v0
 
@@ -1497,14 +1497,14 @@
     invoke-direct {v5}, Landroid/graphics/Paint;-><init>()V
 
     .line 236
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->JI:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->JI:I
 
     int-to-float v0, v0
 
     invoke-virtual {v5, v0}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
     .line 237
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arO:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arO:I
 
     invoke-virtual {v5, v0}, Landroid/graphics/Paint;->setColor(I)V
 
@@ -1529,7 +1529,7 @@
 
     add-float/2addr v0, v2
 
-    invoke-virtual {p0}, Lcom/android/settings/toggleposition/DragGridView;->getPaddingTop()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getPaddingTop()I
 
     move-result v2
 
@@ -1537,7 +1537,7 @@
 
     sub-float/2addr v0, v2
 
-    iget v2, p0, Lcom/android/settings/toggleposition/DragGridView;->JI:I
+    iget v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->JI:I
 
     mul-int/2addr v2, v7
 
@@ -1546,7 +1546,7 @@
     add-float/2addr v2, v0
 
     .line 240
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->UI:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->UI:I
 
     invoke-virtual {v12}, Landroid/view/View;->getWidth()I
 
@@ -1554,9 +1554,9 @@
 
     mul-int/2addr v0, v3
 
-    iget v3, p0, Lcom/android/settings/toggleposition/DragGridView;->UI:I
+    iget v3, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->UI:I
 
-    iget v4, p0, Lcom/android/settings/toggleposition/DragGridView;->JI:I
+    iget v4, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->JI:I
 
     mul-int/2addr v3, v4
 
@@ -1582,7 +1582,7 @@
 
     .line 243
     :goto_1
-    iget v2, p0, Lcom/android/settings/toggleposition/DragGridView;->UI:I
+    iget v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->UI:I
 
     if-gt v0, v2, :cond_1
 
@@ -1593,7 +1593,7 @@
 
     mul-int/2addr v2, v0
 
-    iget v3, p0, Lcom/android/settings/toggleposition/DragGridView;->JI:I
+    iget v3, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->JI:I
 
     mul-int/2addr v3, v0
 
@@ -1608,7 +1608,7 @@
 
     mul-int/2addr v2, v13
 
-    iget v3, p0, Lcom/android/settings/toggleposition/DragGridView;->JI:I
+    iget v3, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->JI:I
 
     mul-int/2addr v3, v13
 
@@ -1622,7 +1622,7 @@
 
     add-float/2addr v2, v3
 
-    invoke-virtual {p0}, Lcom/android/settings/toggleposition/DragGridView;->getPaddingTop()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getPaddingTop()I
 
     move-result v3
 
@@ -1657,14 +1657,14 @@
     const/4 v0, 0x1
 
     .line 201
-    iget v1, p0, Lcom/android/settings/toggleposition/DragGridView;->UI:I
+    iget v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->UI:I
 
     const/4 v2, -0x1
 
     if-ne v1, v2, :cond_2
 
     .line 203
-    iget v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arL:I
+    iget v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arL:I
 
     if-lez v1, :cond_0
 
@@ -1673,13 +1673,13 @@
 
     move-result v1
 
-    invoke-virtual {p0}, Lcom/android/settings/toggleposition/DragGridView;->getPaddingLeft()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getPaddingLeft()I
 
     move-result v2
 
     sub-int/2addr v1, v2
 
-    invoke-virtual {p0}, Lcom/android/settings/toggleposition/DragGridView;->getPaddingRight()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getPaddingRight()I
 
     move-result v2
 
@@ -1692,7 +1692,7 @@
     move-result v2
 
     .line 206
-    iget v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arL:I
+    iget v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arL:I
 
     div-int v1, v2, v1
 
@@ -1704,13 +1704,13 @@
     if-eq v1, v0, :cond_3
 
     .line 209
-    iget v3, p0, Lcom/android/settings/toggleposition/DragGridView;->arL:I
+    iget v3, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arL:I
 
     mul-int/2addr v3, v1
 
     add-int/lit8 v4, v1, -0x1
 
-    iget v5, p0, Lcom/android/settings/toggleposition/DragGridView;->arN:I
+    iget v5, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arN:I
 
     mul-int/2addr v4, v5
 
@@ -1730,7 +1730,7 @@
     .line 222
     :cond_1
     :goto_1
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->UI:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->UI:I
 
     .line 225
     :cond_2
@@ -1750,11 +1750,11 @@
 
     .prologue
     .line 341
-    iget-boolean v0, p0, Lcom/android/settings/toggleposition/DragGridView;->ars:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->ars:Z
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arA:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arA:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_0
 
@@ -1781,7 +1781,7 @@
 
     float-to-int v0, v0
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arv:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arv:I
 
     .line 345
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
@@ -1790,18 +1790,18 @@
 
     float-to-int v0, v0
 
-    iput v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arw:I
+    iput v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arw:I
 
     .line 348
-    iget v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arv:I
+    iget v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arv:I
 
-    iget v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arE:I
+    iget v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arE:I
 
-    invoke-virtual {p0}, Lcom/android/settings/toggleposition/DragGridView;->getWidth()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getWidth()I
 
     move-result v2
 
-    iget-object v3, p0, Lcom/android/settings/toggleposition/DragGridView;->arz:Landroid/view/View;
+    iget-object v3, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arz:Landroid/view/View;
 
     invoke-virtual {v3}, Landroid/view/View;->getWidth()I
 
@@ -1809,23 +1809,23 @@
 
     sub-int/2addr v2, v3
 
-    iget v3, p0, Lcom/android/settings/toggleposition/DragGridView;->arE:I
+    iget v3, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arE:I
 
     add-int/2addr v2, v3
 
-    invoke-static {v0, v1, v2}, Lcom/android/settings/toggleposition/DragGridView;->clamp(III)I
+    invoke-static {v0, v1, v2}, Lcom/android/vendorsettings/toggleposition/DragGridView;->clamp(III)I
 
     move-result v0
 
-    iget v1, p0, Lcom/android/settings/toggleposition/DragGridView;->arw:I
+    iget v1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arw:I
 
-    iget v2, p0, Lcom/android/settings/toggleposition/DragGridView;->arD:I
+    iget v2, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arD:I
 
-    invoke-virtual {p0}, Lcom/android/settings/toggleposition/DragGridView;->getHeight()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->getHeight()I
 
     move-result v3
 
-    iget-object v4, p0, Lcom/android/settings/toggleposition/DragGridView;->arz:Landroid/view/View;
+    iget-object v4, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arz:Landroid/view/View;
 
     invoke-virtual {v4}, Landroid/view/View;->getHeight()I
 
@@ -1833,26 +1833,26 @@
 
     sub-int/2addr v3, v4
 
-    iget v4, p0, Lcom/android/settings/toggleposition/DragGridView;->arD:I
+    iget v4, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arD:I
 
     add-int/2addr v3, v4
 
-    invoke-static {v1, v2, v3}, Lcom/android/settings/toggleposition/DragGridView;->clamp(III)I
+    invoke-static {v1, v2, v3}, Lcom/android/vendorsettings/toggleposition/DragGridView;->clamp(III)I
 
     move-result v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/toggleposition/DragGridView;->s(II)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/toggleposition/DragGridView;->s(II)V
 
     goto :goto_0
 
     .line 353
     :pswitch_1
-    invoke-direct {p0}, Lcom/android/settings/toggleposition/DragGridView;->uE()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/toggleposition/DragGridView;->uE()V
 
     .line 354
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/toggleposition/DragGridView;->ars:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->ars:Z
 
     goto :goto_0
 
@@ -1882,7 +1882,7 @@
     .line 34
     check-cast p1, Landroid/widget/ListAdapter;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/toggleposition/DragGridView;->setAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/toggleposition/DragGridView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     return-void
 .end method
@@ -1895,14 +1895,14 @@
     invoke-super {p0, p1}, Landroid/widget/GridView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 166
-    instance-of v0, p1, Lcom/android/settings/toggleposition/b;
+    instance-of v0, p1, Lcom/android/vendorsettings/toggleposition/b;
 
     if-eqz v0, :cond_0
 
     .line 167
-    check-cast p1, Lcom/android/settings/toggleposition/b;
+    check-cast p1, Lcom/android/vendorsettings/toggleposition/b;
 
-    iput-object p1, p0, Lcom/android/settings/toggleposition/DragGridView;->arK:Lcom/android/settings/toggleposition/b;
+    iput-object p1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arK:Lcom/android/vendorsettings/toggleposition/b;
 
     .line 171
     return-void
@@ -1926,7 +1926,7 @@
     invoke-super {p0, p1}, Landroid/widget/GridView;->setColumnWidth(I)V
 
     .line 185
-    iput p1, p0, Lcom/android/settings/toggleposition/DragGridView;->arL:I
+    iput p1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arL:I
 
     .line 186
     return-void
@@ -1940,7 +1940,7 @@
     invoke-super {p0, p1}, Landroid/widget/GridView;->setHorizontalSpacing(I)V
 
     .line 192
-    iput p1, p0, Lcom/android/settings/toggleposition/DragGridView;->arN:I
+    iput p1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arN:I
 
     .line 193
     return-void
@@ -1956,10 +1956,10 @@
     .line 177
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/toggleposition/DragGridView;->arM:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->arM:Z
 
     .line 178
-    iput p1, p0, Lcom/android/settings/toggleposition/DragGridView;->UI:I
+    iput p1, p0, Lcom/android/vendorsettings/toggleposition/DragGridView;->UI:I
 
     .line 179
     return-void

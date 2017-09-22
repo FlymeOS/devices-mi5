@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/notification/SettingPref;
+.class public Lcom/android/vendorsettings/notification/SettingPref;
 .super Ljava/lang/Object;
 .source "SettingPref.java"
 
@@ -12,7 +12,7 @@
 
 .field protected akq:Landroid/preference/TwoStatePreference;
 
-.field protected akr:Lcom/android/settings/DropDownPreference;
+.field protected akr:Lcom/android/vendorsettings/DropDownPreference;
 
 .field private final mKey:Ljava/lang/String;
 
@@ -30,30 +30,30 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 48
-    iput p1, p0, Lcom/android/settings/notification/SettingPref;->mType:I
+    iput p1, p0, Lcom/android/vendorsettings/notification/SettingPref;->mType:I
 
     .line 49
-    iput-object p2, p0, Lcom/android/settings/notification/SettingPref;->mKey:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/vendorsettings/notification/SettingPref;->mKey:Ljava/lang/String;
 
     .line 50
-    iput-object p3, p0, Lcom/android/settings/notification/SettingPref;->akn:Ljava/lang/String;
+    iput-object p3, p0, Lcom/android/vendorsettings/notification/SettingPref;->akn:Ljava/lang/String;
 
     .line 51
-    iput p4, p0, Lcom/android/settings/notification/SettingPref;->ako:I
+    iput p4, p0, Lcom/android/vendorsettings/notification/SettingPref;->ako:I
 
     .line 52
-    iput-object p5, p0, Lcom/android/settings/notification/SettingPref;->akp:[I
+    iput-object p5, p0, Lcom/android/vendorsettings/notification/SettingPref;->akp:[I
 
     .line 53
-    iget v0, p0, Lcom/android/settings/notification/SettingPref;->mType:I
+    iget v0, p0, Lcom/android/vendorsettings/notification/SettingPref;->mType:I
 
-    iget-object v1, p0, Lcom/android/settings/notification/SettingPref;->akn:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/SettingPref;->akn:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lcom/android/settings/notification/SettingPref;->g(ILjava/lang/String;)Landroid/net/Uri;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/notification/SettingPref;->g(ILjava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/notification/SettingPref;->mUri:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/SettingPref;->mUri:Landroid/net/Uri;
 
     .line 54
     return-void
@@ -211,27 +211,27 @@
 
     .prologue
     .line 115
-    iget v0, p0, Lcom/android/settings/notification/SettingPref;->mType:I
+    iget v0, p0, Lcom/android/vendorsettings/notification/SettingPref;->mType:I
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/notification/SettingPref;->akn:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/notification/SettingPref;->akn:Ljava/lang/String;
 
-    iget v3, p0, Lcom/android/settings/notification/SettingPref;->ako:I
+    iget v3, p0, Lcom/android/vendorsettings/notification/SettingPref;->ako:I
 
-    invoke-static {v0, v1, v2, v3}, Lcom/android/settings/notification/SettingPref;->b(ILandroid/content/ContentResolver;Ljava/lang/String;I)I
+    invoke-static {v0, v1, v2, v3}, Lcom/android/vendorsettings/notification/SettingPref;->b(ILandroid/content/ContentResolver;Ljava/lang/String;I)I
 
     move-result v0
 
     .line 116
-    iget-object v1, p0, Lcom/android/settings/notification/SettingPref;->akq:Landroid/preference/TwoStatePreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/SettingPref;->akq:Landroid/preference/TwoStatePreference;
 
     if-eqz v1, :cond_2
 
     .line 117
-    iget-object v1, p0, Lcom/android/settings/notification/SettingPref;->akq:Landroid/preference/TwoStatePreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/SettingPref;->akq:Landroid/preference/TwoStatePreference;
 
     if-eqz v0, :cond_1
 
@@ -253,39 +253,39 @@
 
     .line 118
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/notification/SettingPref;->akr:Lcom/android/settings/DropDownPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/SettingPref;->akr:Lcom/android/vendorsettings/DropDownPreference;
 
     if-eqz v1, :cond_0
 
     .line 119
-    iget-object v1, p0, Lcom/android/settings/notification/SettingPref;->akr:Lcom/android/settings/DropDownPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/SettingPref;->akr:Lcom/android/vendorsettings/DropDownPreference;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/DropDownPreference;->o(Ljava/lang/Object;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/DropDownPreference;->o(Ljava/lang/Object;)V
 
     goto :goto_1
 .end method
 
-.method public c(Lcom/android/settings/SettingsPreferenceFragment;)Landroid/preference/Preference;
+.method public c(Lcom/android/vendorsettings/SettingsPreferenceFragment;)Landroid/preference/Preference;
     .locals 9
 
     .prologue
     const/4 v2, 0x0
 
     .line 65
-    invoke-virtual {p1}, Lcom/android/settings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
     .line 66
-    invoke-virtual {p1}, Lcom/android/settings/SettingsPreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/notification/SettingPref;->mKey:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/notification/SettingPref;->mKey:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
@@ -294,14 +294,14 @@
     .line 67
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/notification/SettingPref;->bN(Landroid/content/Context;)Z
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/notification/SettingPref;->bN(Landroid/content/Context;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 68
-    invoke-virtual {p1}, Lcom/android/settings/SettingsPreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -320,26 +320,26 @@
     .line 72
     check-cast v0, Landroid/preference/TwoStatePreference;
 
-    iput-object v0, p0, Lcom/android/settings/notification/SettingPref;->akq:Landroid/preference/TwoStatePreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/SettingPref;->akq:Landroid/preference/TwoStatePreference;
 
     .line 79
     :cond_1
-    invoke-virtual {p0, v3}, Lcom/android/settings/notification/SettingPref;->bQ(Landroid/content/Context;)V
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/notification/SettingPref;->bQ(Landroid/content/Context;)V
 
     .line 80
-    iget-object v0, p0, Lcom/android/settings/notification/SettingPref;->akq:Landroid/preference/TwoStatePreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/SettingPref;->akq:Landroid/preference/TwoStatePreference;
 
     if-eqz v0, :cond_4
 
     .line 81
-    new-instance v0, Lcom/android/settings/notification/SettingPref$1;
+    new-instance v0, Lcom/android/vendorsettings/notification/SettingPref$1;
 
-    invoke-direct {v0, p0, v3}, Lcom/android/settings/notification/SettingPref$1;-><init>(Lcom/android/settings/notification/SettingPref;Landroid/content/Context;)V
+    invoke-direct {v0, p0, v3}, Lcom/android/vendorsettings/notification/SettingPref$1;-><init>(Lcom/android/vendorsettings/notification/SettingPref;Landroid/content/Context;)V
 
     invoke-virtual {v1, v0}, Landroid/preference/Preference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 88
-    iget-object v2, p0, Lcom/android/settings/notification/SettingPref;->akq:Landroid/preference/TwoStatePreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/notification/SettingPref;->akq:Landroid/preference/TwoStatePreference;
 
     .line 99
     :cond_2
@@ -348,19 +348,19 @@
 
     .line 73
     :cond_3
-    instance-of v0, v1, Lcom/android/settings/DropDownPreference;
+    instance-of v0, v1, Lcom/android/vendorsettings/DropDownPreference;
 
     if-eqz v0, :cond_1
 
     move-object v0, v1
 
     .line 74
-    check-cast v0, Lcom/android/settings/DropDownPreference;
+    check-cast v0, Lcom/android/vendorsettings/DropDownPreference;
 
-    iput-object v0, p0, Lcom/android/settings/notification/SettingPref;->akr:Lcom/android/settings/DropDownPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/notification/SettingPref;->akr:Lcom/android/vendorsettings/DropDownPreference;
 
     .line 75
-    iget-object v4, p0, Lcom/android/settings/notification/SettingPref;->akp:[I
+    iget-object v4, p0, Lcom/android/vendorsettings/notification/SettingPref;->akp:[I
 
     array-length v5, v4
 
@@ -372,13 +372,13 @@
     aget v6, v4, v0
 
     .line 76
-    iget-object v7, p0, Lcom/android/settings/notification/SettingPref;->akr:Lcom/android/settings/DropDownPreference;
+    iget-object v7, p0, Lcom/android/vendorsettings/notification/SettingPref;->akr:Lcom/android/vendorsettings/DropDownPreference;
 
     invoke-virtual {v3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v8
 
-    invoke-virtual {p0, v8, v6}, Lcom/android/settings/notification/SettingPref;->b(Landroid/content/res/Resources;I)Ljava/lang/String;
+    invoke-virtual {p0, v8, v6}, Lcom/android/vendorsettings/notification/SettingPref;->b(Landroid/content/res/Resources;I)Ljava/lang/String;
 
     move-result-object v8
 
@@ -386,7 +386,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v7, v8, v6}, Lcom/android/settings/DropDownPreference;->b(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-virtual {v7, v8, v6}, Lcom/android/vendorsettings/DropDownPreference;->b(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 75
     add-int/lit8 v0, v0, 0x1
@@ -395,21 +395,21 @@
 
     .line 90
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/notification/SettingPref;->akr:Lcom/android/settings/DropDownPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/SettingPref;->akr:Lcom/android/vendorsettings/DropDownPreference;
 
     if-eqz v0, :cond_2
 
     .line 91
-    iget-object v0, p0, Lcom/android/settings/notification/SettingPref;->akr:Lcom/android/settings/DropDownPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/SettingPref;->akr:Lcom/android/vendorsettings/DropDownPreference;
 
-    new-instance v1, Lcom/android/settings/notification/SettingPref$2;
+    new-instance v1, Lcom/android/vendorsettings/notification/SettingPref$2;
 
-    invoke-direct {v1, p0, v3}, Lcom/android/settings/notification/SettingPref$2;-><init>(Lcom/android/settings/notification/SettingPref;Landroid/content/Context;)V
+    invoke-direct {v1, p0, v3}, Lcom/android/vendorsettings/notification/SettingPref$2;-><init>(Lcom/android/vendorsettings/notification/SettingPref;Landroid/content/Context;)V
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/DropDownPreference;->a(Lcom/android/settings/cO;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/DropDownPreference;->a(Lcom/android/vendorsettings/cO;)V
 
     .line 97
-    iget-object v2, p0, Lcom/android/settings/notification/SettingPref;->akr:Lcom/android/settings/DropDownPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/notification/SettingPref;->akr:Lcom/android/vendorsettings/DropDownPreference;
 
     goto :goto_0
 .end method
@@ -419,7 +419,7 @@
 
     .prologue
     .line 111
-    iget-object v0, p0, Lcom/android/settings/notification/SettingPref;->mKey:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/SettingPref;->mKey:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -429,7 +429,7 @@
 
     .prologue
     .line 107
-    iget-object v0, p0, Lcom/android/settings/notification/SettingPref;->mUri:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/SettingPref;->mUri:Landroid/net/Uri;
 
     return-object v0
 .end method
@@ -439,15 +439,15 @@
 
     .prologue
     .line 103
-    iget v0, p0, Lcom/android/settings/notification/SettingPref;->mType:I
+    iget v0, p0, Lcom/android/vendorsettings/notification/SettingPref;->mType:I
 
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/notification/SettingPref;->akn:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/notification/SettingPref;->akn:Ljava/lang/String;
 
-    invoke-static {v0, v1, v2, p2}, Lcom/android/settings/notification/SettingPref;->a(ILandroid/content/ContentResolver;Ljava/lang/String;I)Z
+    invoke-static {v0, v1, v2, p2}, Lcom/android/vendorsettings/notification/SettingPref;->a(ILandroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     move-result v0
 

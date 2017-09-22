@@ -1,31 +1,31 @@
-.class Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;
+.class Lcom/android/vendorsettings/applications/InstalledAppDetails$BatteryUpdater;
 .super Landroid/os/AsyncTask;
 .source "InstalledAppDetails.java"
 
 
 # instance fields
-.field final synthetic IQ:Lcom/android/settings/applications/InstalledAppDetails;
+.field final synthetic IQ:Lcom/android/vendorsettings/applications/InstalledAppDetails;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/applications/InstalledAppDetails;)V
+.method private constructor <init>(Lcom/android/vendorsettings/applications/InstalledAppDetails;)V
     .locals 0
 
     .prologue
     .line 890
-    iput-object p1, p0, Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;->IQ:Lcom/android/settings/applications/InstalledAppDetails;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails$BatteryUpdater;->IQ:Lcom/android/vendorsettings/applications/InstalledAppDetails;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/applications/InstalledAppDetails;Lcom/android/settings/applications/InstalledAppDetails$1;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/applications/InstalledAppDetails;Lcom/android/vendorsettings/applications/InstalledAppDetails$1;)V
     .locals 0
 
     .prologue
     .line 890
-    invoke-direct {p0, p1}, Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;-><init>(Lcom/android/settings/applications/InstalledAppDetails;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/applications/InstalledAppDetails$BatteryUpdater;-><init>(Lcom/android/vendorsettings/applications/InstalledAppDetails;)V
 
     return-void
 .end method
@@ -39,7 +39,7 @@
     .line 890
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/applications/InstalledAppDetails$BatteryUpdater;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
 
@@ -55,9 +55,9 @@
     const/4 v2, 0x0
 
     .line 893
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;->IQ:Lcom/android/settings/applications/InstalledAppDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails$BatteryUpdater;->IQ:Lcom/android/vendorsettings/applications/InstalledAppDetails;
 
-    invoke-static {v0}, Lcom/android/settings/applications/InstalledAppDetails;->b(Lcom/android/settings/applications/InstalledAppDetails;)Lcom/android/internal/os/BatteryStatsHelper;
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->b(Lcom/android/vendorsettings/applications/InstalledAppDetails;)Lcom/android/internal/os/BatteryStatsHelper;
 
     move-result-object v3
 
@@ -68,15 +68,15 @@
     invoke-virtual {v3, v0}, Lcom/android/internal/os/BatteryStatsHelper;->create(Landroid/os/Bundle;)V
 
     .line 894
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;->IQ:Lcom/android/settings/applications/InstalledAppDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails$BatteryUpdater;->IQ:Lcom/android/vendorsettings/applications/InstalledAppDetails;
 
-    invoke-static {v0}, Lcom/android/settings/applications/InstalledAppDetails;->b(Lcom/android/settings/applications/InstalledAppDetails;)Lcom/android/internal/os/BatteryStatsHelper;
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->b(Lcom/android/vendorsettings/applications/InstalledAppDetails;)Lcom/android/internal/os/BatteryStatsHelper;
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;->IQ:Lcom/android/settings/applications/InstalledAppDetails;
+    iget-object v3, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails$BatteryUpdater;->IQ:Lcom/android/vendorsettings/applications/InstalledAppDetails;
 
-    iget-object v3, v3, Lcom/android/settings/applications/InstalledAppDetails;->sR:Landroid/os/UserManager;
+    iget-object v3, v3, Lcom/android/vendorsettings/applications/InstalledAppDetails;->sR:Landroid/os/UserManager;
 
     invoke-virtual {v3}, Landroid/os/UserManager;->getUserProfiles()Ljava/util/List;
 
@@ -85,9 +85,9 @@
     invoke-virtual {v0, v2, v3}, Lcom/android/internal/os/BatteryStatsHelper;->refreshStats(ILjava/util/List;)V
 
     .line 896
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;->IQ:Lcom/android/settings/applications/InstalledAppDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails$BatteryUpdater;->IQ:Lcom/android/vendorsettings/applications/InstalledAppDetails;
 
-    invoke-static {v0}, Lcom/android/settings/applications/InstalledAppDetails;->b(Lcom/android/settings/applications/InstalledAppDetails;)Lcom/android/internal/os/BatteryStatsHelper;
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->b(Lcom/android/vendorsettings/applications/InstalledAppDetails;)Lcom/android/internal/os/BatteryStatsHelper;
 
     move-result-object v0
 
@@ -116,9 +116,9 @@
 
     move-result v5
 
-    iget-object v6, p0, Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;->IQ:Lcom/android/settings/applications/InstalledAppDetails;
+    iget-object v6, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails$BatteryUpdater;->IQ:Lcom/android/vendorsettings/applications/InstalledAppDetails;
 
-    iget-object v6, v6, Lcom/android/settings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
+    iget-object v6, v6, Lcom/android/vendorsettings/applications/InstalledAppDetails;->Fj:Landroid/content/pm/PackageInfo;
 
     iget-object v6, v6, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
@@ -127,9 +127,9 @@
     if-ne v5, v6, :cond_1
 
     .line 901
-    iget-object v2, p0, Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;->IQ:Lcom/android/settings/applications/InstalledAppDetails;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails$BatteryUpdater;->IQ:Lcom/android/vendorsettings/applications/InstalledAppDetails;
 
-    invoke-static {v2, v0}, Lcom/android/settings/applications/InstalledAppDetails;->a(Lcom/android/settings/applications/InstalledAppDetails;Lcom/android/internal/os/BatterySipper;)Lcom/android/internal/os/BatterySipper;
+    invoke-static {v2, v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->a(Lcom/android/vendorsettings/applications/InstalledAppDetails;Lcom/android/internal/os/BatterySipper;)Lcom/android/internal/os/BatterySipper;
 
     .line 905
     :cond_0
@@ -151,7 +151,7 @@
     .line 890
     check-cast p1, Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;->onPostExecute(Ljava/lang/Void;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/applications/InstalledAppDetails$BatteryUpdater;->onPostExecute(Ljava/lang/Void;)V
 
     return-void
 .end method
@@ -161,9 +161,9 @@
 
     .prologue
     .line 910
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;->IQ:Lcom/android/settings/applications/InstalledAppDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails$BatteryUpdater;->IQ:Lcom/android/vendorsettings/applications/InstalledAppDetails;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -175,9 +175,9 @@
 
     .line 913
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/InstalledAppDetails$BatteryUpdater;->IQ:Lcom/android/settings/applications/InstalledAppDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/InstalledAppDetails$BatteryUpdater;->IQ:Lcom/android/vendorsettings/applications/InstalledAppDetails;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/InstalledAppDetails;->jF()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/InstalledAppDetails;->jF()Z
 
     goto :goto_0
 .end method

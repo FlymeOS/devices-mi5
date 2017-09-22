@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/bi;
+.class public Lcom/android/vendorsettings/wifi/bi;
 .super Ljava/lang/Object;
 .source "XiaomiRouterUtils.java"
 
@@ -17,17 +17,17 @@
     .line 29
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/android/settings/wifi/bi;->aFr:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/wifi/bi;->aFr:Ljava/lang/String;
 
     .line 34
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/wifi/bi;->aFs:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/vendorsettings/wifi/bi;->aFs:Ljava/util/HashMap;
 
     .line 37
-    sget-object v0, Lcom/android/settings/wifi/bi;->aFs:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/wifi/bi;->aFs:Ljava/util/HashMap;
 
     const-string v1, "wx"
 
@@ -40,7 +40,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 38
-    sget-object v0, Lcom/android/settings/wifi/bi;->aFs:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/wifi/bi;->aFs:Ljava/util/HashMap;
 
     const-string v1, "dp"
 
@@ -53,7 +53,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 39
-    sget-object v0, Lcom/android/settings/wifi/bi;->aFs:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/wifi/bi;->aFs:Ljava/util/HashMap;
 
     const-string v1, "mt"
 
@@ -66,7 +66,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 40
-    sget-object v0, Lcom/android/settings/wifi/bi;->aFs:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/wifi/bi;->aFs:Ljava/util/HashMap;
 
     const-string v1, "nm"
 
@@ -79,7 +79,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 41
-    sget-object v0, Lcom/android/settings/wifi/bi;->aFs:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/wifi/bi;->aFs:Ljava/util/HashMap;
 
     const-string v1, "xiaomi"
 
@@ -102,7 +102,7 @@
     .line 45
     if-eqz p1, :cond_0
 
-    sget-object v0, Lcom/android/settings/wifi/bi;->aFr:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/wifi/bi;->aFr:Ljava/lang/String;
 
     invoke-static {p1, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -116,7 +116,7 @@
 
     .line 48
     :cond_0
-    sput-object p1, Lcom/android/settings/wifi/bi;->aFr:Ljava/lang/String;
+    sput-object p1, Lcom/android/vendorsettings/wifi/bi;->aFr:Ljava/lang/String;
 
     .line 49
     new-instance v0, Landroid/content/Intent;
@@ -140,7 +140,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
     .line 52
-    invoke-static {p0, v0}, Lcom/android/settings/wifi/bi;->h(Landroid/content/Context;Landroid/content/Intent;)Z
+    invoke-static {p0, v0}, Lcom/android/vendorsettings/wifi/bi;->h(Landroid/content/Context;Landroid/content/Intent;)Z
 
     goto :goto_0
 .end method
@@ -168,7 +168,7 @@
     .line 31
     const/4 v0, 0x0
 
-    invoke-static {p0, v0}, Lcom/android/settings/wifi/bi;->D(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lcom/android/vendorsettings/wifi/bi;->D(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 32
     return-void
@@ -243,7 +243,7 @@
 
     iget-object v0, p0, Landroid/net/wifi/ScanResult;->wpsDeviceName:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/bi;->cl(Ljava/lang/String;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/bi;->cl(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -290,7 +290,7 @@
     if-le v1, v2, :cond_0
 
     .line 93
-    sget-object v1, Lcom/android/settings/wifi/bi;->aFs:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/vendorsettings/wifi/bi;->aFs:Ljava/util/HashMap;
 
     array-length v2, v0
 
@@ -321,7 +321,7 @@
     return v0
 
     :cond_0
-    sget-object v0, Lcom/android/settings/wifi/bi;->aFs:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/wifi/bi;->aFs:Ljava/util/HashMap;
 
     const-string v1, "xiaomi"
 

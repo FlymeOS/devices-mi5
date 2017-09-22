@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/PreferredSmsSettings;
+.class public Lcom/android/vendorsettings/applications/PreferredSmsSettings;
 .super Lmiui/app/ListActivity;
 .source "PreferredSmsSettings.java"
 
@@ -23,22 +23,22 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/PreferredSmsSettings;)Ljava/lang/String;
+.method static synthetic a(Lcom/android/vendorsettings/applications/PreferredSmsSettings;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 47
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredSmsSettings;->KI:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->KI:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/PreferredSmsSettings;Ljava/lang/String;)V
+.method static synthetic a(Lcom/android/vendorsettings/applications/PreferredSmsSettings;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 47
-    invoke-direct {p0, p1}, Lcom/android/settings/applications/PreferredSmsSettings;->au(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->au(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -52,7 +52,7 @@
 
     .line 89
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSmsSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -63,7 +63,7 @@
     move-result-object v1
 
     .line 90
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSmsSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v2
 
@@ -93,22 +93,22 @@
 
     .prologue
     .line 134
-    iput-object p1, p0, Lcom/android/settings/applications/PreferredSmsSettings;->KI:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->KI:Ljava/lang/String;
 
     .line 135
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredSmsSettings;->KI:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->KI:Ljava/lang/String;
 
     invoke-static {v0, p0}, Lcom/android/internal/telephony/SmsApplication;->setDefaultApplication(Ljava/lang/String;Landroid/content/Context;)V
 
     .line 136
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSmsSettings;->getListAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->getListAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/PreferredSmsSettings$SmsApplicationListAdapter;
+    check-cast v0, Lcom/android/vendorsettings/applications/PreferredSmsSettings$SmsApplicationListAdapter;
 
     .line 137
-    invoke-virtual {v0}, Lcom/android/settings/applications/PreferredSmsSettings$SmsApplicationListAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/PreferredSmsSettings$SmsApplicationListAdapter;->notifyDataSetChanged()V
 
     .line 138
     return-void
@@ -134,7 +134,7 @@
     if-nez v0, :cond_0
 
     .line 58
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSmsSettings;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->finish()V
 
     .line 84
     :goto_0
@@ -146,25 +146,25 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/PreferredSmsSettings;->KI:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->KI:Ljava/lang/String;
 
     .line 62
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredSmsSettings;->KI:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->KI:Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/applications/PreferredSmsSettings;->at(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->at(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/PreferredSmsSettings;->KH:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->KH:Ljava/lang/String;
 
     .line 63
     const-string v0, "com.android.mms"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/applications/PreferredSmsSettings;->at(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->at(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/PreferredSmsSettings;->KJ:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->KJ:Ljava/lang/String;
 
     .line 65
     invoke-static {p0}, Lcom/android/internal/telephony/SmsApplication;->getApplicationCollection(Landroid/content/Context;)Ljava/util/Collection;
@@ -194,13 +194,13 @@
     invoke-direct {v1, v3, v5}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
     .line 69
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSmsSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
     const v5, 0x10040
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSmsSettings;->getUserId()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->getUserId()I
 
     move-result v6
 
@@ -273,11 +273,11 @@
 
     .line 83
     :cond_3
-    new-instance v0, Lcom/android/settings/applications/PreferredSmsSettings$SmsApplicationListAdapter;
+    new-instance v0, Lcom/android/vendorsettings/applications/PreferredSmsSettings$SmsApplicationListAdapter;
 
-    invoke-direct {v0, p0, p0, v4}, Lcom/android/settings/applications/PreferredSmsSettings$SmsApplicationListAdapter;-><init>(Lcom/android/settings/applications/PreferredSmsSettings;Landroid/content/Context;Ljava/util/List;)V
+    invoke-direct {v0, p0, p0, v4}, Lcom/android/vendorsettings/applications/PreferredSmsSettings$SmsApplicationListAdapter;-><init>(Lcom/android/vendorsettings/applications/PreferredSmsSettings;Landroid/content/Context;Ljava/util/List;)V
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/PreferredSmsSettings;->setListAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->setListAdapter(Landroid/widget/ListAdapter;)V
 
     goto :goto_0
 
@@ -301,19 +301,19 @@
     invoke-super/range {p0 .. p5}, Lmiui/app/ListActivity;->onListItemClick(Landroid/widget/ListView;Landroid/view/View;IJ)V
 
     .line 100
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSmsSettings;->getListAdapter()Landroid/widget/ListAdapter;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->getListAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/PreferredSmsSettings$SmsApplicationListAdapter;
+    check-cast v0, Lcom/android/vendorsettings/applications/PreferredSmsSettings$SmsApplicationListAdapter;
 
     .line 101
-    invoke-virtual {v0, p3}, Lcom/android/settings/applications/PreferredSmsSettings$SmsApplicationListAdapter;->aW(I)Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
+    invoke-virtual {v0, p3}, Lcom/android/vendorsettings/applications/PreferredSmsSettings$SmsApplicationListAdapter;->aW(I)Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;
 
     move-result-object v2
 
     .line 102
-    iget-object v0, p0, Lcom/android/settings/applications/PreferredSmsSettings;->KI:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->KI:Ljava/lang/String;
 
     iget-object v3, v2, Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;->mPackageName:Ljava/lang/String;
 
@@ -331,7 +331,7 @@
     .line 108
     :cond_1
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/applications/PreferredSmsSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
@@ -361,11 +361,11 @@
 
     new-array v3, v6, [Ljava/lang/Object;
 
-    iget-object v4, p0, Lcom/android/settings/applications/PreferredSmsSettings;->KJ:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->KJ:Ljava/lang/String;
 
     aput-object v4, v3, v7
 
-    invoke-virtual {p0, v0, v3}, Lcom/android/settings/applications/PreferredSmsSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v0, v3}, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -376,15 +376,15 @@
 
     new-array v4, v4, [Ljava/lang/Object;
 
-    iget-object v5, p0, Lcom/android/settings/applications/PreferredSmsSettings;->KJ:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->KJ:Ljava/lang/String;
 
     aput-object v5, v4, v7
 
-    iget-object v5, p0, Lcom/android/settings/applications/PreferredSmsSettings;->KJ:Ljava/lang/String;
+    iget-object v5, p0, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->KJ:Ljava/lang/String;
 
     aput-object v5, v4, v6
 
-    invoke-virtual {p0, v3, v4}, Lcom/android/settings/applications/PreferredSmsSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v3, v4}, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -393,11 +393,11 @@
 
     new-array v5, v6, [Ljava/lang/Object;
 
-    iget-object v6, p0, Lcom/android/settings/applications/PreferredSmsSettings;->KJ:Ljava/lang/String;
+    iget-object v6, p0, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->KJ:Ljava/lang/String;
 
     aput-object v6, v5, v7
 
-    invoke-virtual {p0, v4, v5}, Lcom/android/settings/applications/PreferredSmsSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v4, v5}, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -416,9 +416,9 @@
 
     const v3, 0x7f0c0d7f
 
-    new-instance v5, Lcom/android/settings/applications/PreferredSmsSettings$1;
+    new-instance v5, Lcom/android/vendorsettings/applications/PreferredSmsSettings$1;
 
-    invoke-direct {v5, p0, v2}, Lcom/android/settings/applications/PreferredSmsSettings$1;-><init>(Lcom/android/settings/applications/PreferredSmsSettings;Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;)V
+    invoke-direct {v5, p0, v2}, Lcom/android/vendorsettings/applications/PreferredSmsSettings$1;-><init>(Lcom/android/vendorsettings/applications/PreferredSmsSettings;Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;)V
 
     invoke-virtual {v0, v3, v5}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -444,7 +444,7 @@
     :cond_2
     iget-object v0, v2, Lcom/android/internal/telephony/SmsApplication$SmsApplicationData;->mPackageName:Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/applications/PreferredSmsSettings;->au(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/applications/PreferredSmsSettings;->au(Ljava/lang/String;)V
 
     goto :goto_0
 .end method

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen android:title="@string/development_settings_title"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.android.settings.BugreportPreference android:title="@android:string/bugreport_title" android:key="bugreport" android:dialogTitle="@android:string/bugreport_title" />
+    <com.android.vendorsettings.BugreportPreference android:title="@android:string/bugreport_title" android:key="bugreport" android:dialogTitle="@android:string/bugreport_title" />
     <CheckBoxPreference android:title="@string/bugreport_in_power" android:key="bugreport_in_power" android:summary="@string/bugreport_in_power_summary" />
     <CheckBoxPreference android:title="@string/development_enable" android:key="development_enable" />
     <PreferenceCategory />

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/SpacePreference;
+.class public Lcom/android/vendorsettings/applications/SpacePreference;
 .super Landroid/preference/Preference;
 .source "SpacePreference.java"
 
@@ -15,7 +15,7 @@
     .line 36
     const v0, 0x101008e
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/applications/SpacePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/vendorsettings/applications/SpacePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 37
     return-void
@@ -28,7 +28,7 @@
     .line 40
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, p3, v0}, Lcom/android/settings/applications/SpacePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+    invoke-direct {p0, p1, p2, p3, v0}, Lcom/android/vendorsettings/applications/SpacePreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     .line 41
     return-void
@@ -61,7 +61,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/applications/SpacePreference;->mHeight:I
+    iput v0, p0, Lcom/android/vendorsettings/applications/SpacePreference;->mHeight:I
 
     .line 49
     return-void
@@ -81,7 +81,7 @@
 
     const/4 v1, -0x1
 
-    iget v2, p0, Lcom/android/settings/applications/SpacePreference;->mHeight:I
+    iget v2, p0, Lcom/android/vendorsettings/applications/SpacePreference;->mHeight:I
 
     invoke-direct {v0, v1, v2}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
 
@@ -99,7 +99,7 @@
     .line 57
     new-instance v0, Landroid/widget/Space;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/SpacePreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/SpacePreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 

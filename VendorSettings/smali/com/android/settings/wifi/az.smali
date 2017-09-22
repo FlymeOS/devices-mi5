@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/az;
+.class public Lcom/android/vendorsettings/wifi/az;
 .super Landroid/app/DialogFragment;
 .source "WifiSetupActivity.java"
 
@@ -15,7 +15,7 @@
     return-void
 .end method
 
-.method public static dL(I)Lcom/android/settings/wifi/az;
+.method public static dL(I)Lcom/android/vendorsettings/wifi/az;
     .locals 2
 
     .prologue
@@ -30,12 +30,12 @@
     invoke-virtual {v0, v1, p0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 247
-    new-instance v1, Lcom/android/settings/wifi/az;
+    new-instance v1, Lcom/android/vendorsettings/wifi/az;
 
-    invoke-direct {v1}, Lcom/android/settings/wifi/az;-><init>()V
+    invoke-direct {v1}, Lcom/android/vendorsettings/wifi/az;-><init>()V
 
     .line 248
-    invoke-virtual {v1, v0}, Lcom/android/settings/wifi/az;->setArguments(Landroid/os/Bundle;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/wifi/az;->setArguments(Landroid/os/Bundle;)V
 
     .line 249
     return-object v1
@@ -48,7 +48,7 @@
 
     .prologue
     .line 258
-    invoke-virtual {p0}, Lcom/android/settings/wifi/az;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/az;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -61,7 +61,7 @@
     .line 259
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/az;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/az;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -79,9 +79,9 @@
 
     const v1, 0x7f0c0339
 
-    new-instance v2, Lcom/android/settings/wifi/aB;
+    new-instance v2, Lcom/android/vendorsettings/wifi/aB;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/wifi/aB;-><init>(Lcom/android/settings/wifi/az;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/wifi/aB;-><init>(Lcom/android/vendorsettings/wifi/az;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -89,9 +89,9 @@
 
     const v1, 0x7f0c033a
 
-    new-instance v2, Lcom/android/settings/wifi/aA;
+    new-instance v2, Lcom/android/vendorsettings/wifi/aA;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/wifi/aA;-><init>(Lcom/android/settings/wifi/az;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/wifi/aA;-><init>(Lcom/android/vendorsettings/wifi/az;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -102,7 +102,7 @@
     move-result-object v0
 
     .line 277
-    invoke-static {v0}, Lcom/android/settings/hH;->a(Landroid/app/Dialog;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/hH;->a(Landroid/app/Dialog;)V
 
     .line 278
     return-object v0

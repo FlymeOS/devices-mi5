@@ -1,3 +1,3 @@
-.class public final Lcom/android/settings/cloud/push/a;
+.class public final Lcom/android/vendorsettings/cloud/push/a;
 .super Ljava/lang/Object;
 .source "CloudEntity.java"

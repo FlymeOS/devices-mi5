@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ChildrenModeSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/ChildrenModeSettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "ChildrenModeSettings.java"
 
 # interfaces
@@ -48,24 +48,24 @@
     .line 37
     const/4 v0, 0x1
 
-    sput v0, Lcom/android/settings/ChildrenModeSettings;->db:I
+    sput v0, Lcom/android/vendorsettings/ChildrenModeSettings;->db:I
 
     .line 71
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    sput-object v0, Lcom/android/settings/ChildrenModeSettings;->o:Ljava/util/HashSet;
+    sput-object v0, Lcom/android/vendorsettings/ChildrenModeSettings;->o:Ljava/util/HashSet;
 
     .line 74
-    sget-object v0, Lcom/android/settings/ChildrenModeSettings;->o:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/ChildrenModeSettings;->o:Ljava/util/HashSet;
 
     const-string v1, "com.android.settings"
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 75
-    sget-object v0, Lcom/android/settings/ChildrenModeSettings;->o:Ljava/util/HashSet;
+    sget-object v0, Lcom/android/vendorsettings/ChildrenModeSettings;->o:Ljava/util/HashSet;
 
     const-string v1, "com.miui.securitycenter"
 
@@ -82,50 +82,50 @@
     const/4 v1, 0x0
 
     .line 36
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 47
-    iput-boolean v1, p0, Lcom/android/settings/ChildrenModeSettings;->dh:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dh:Z
 
     .line 49
-    iput-boolean v1, p0, Lcom/android/settings/ChildrenModeSettings;->di:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->di:Z
 
     .line 51
-    new-instance v0, Lcom/android/settings/aq;
+    new-instance v0, Lcom/android/vendorsettings/aq;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/aq;-><init>(Lcom/android/settings/ChildrenModeSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/aq;-><init>(Lcom/android/vendorsettings/ChildrenModeSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->n:Ljava/util/Comparator;
+    iput-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->n:Ljava/util/Comparator;
 
     .line 83
-    new-instance v0, Lcom/android/settings/ar;
+    new-instance v0, Lcom/android/vendorsettings/ar;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/ar;-><init>(Lcom/android/settings/ChildrenModeSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/ar;-><init>(Lcom/android/vendorsettings/ChildrenModeSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->dj:Landroid/view/View$OnKeyListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dj:Landroid/view/View$OnKeyListener;
 
     .line 113
-    iput-boolean v1, p0, Lcom/android/settings/ChildrenModeSettings;->dk:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dk:Z
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/ChildrenModeSettings;)Landroid/content/pm/PackageManager;
+.method static synthetic a(Lcom/android/vendorsettings/ChildrenModeSettings;)Landroid/content/pm/PackageManager;
     .locals 1
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->i:Landroid/content/pm/PackageManager;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/ChildrenModeSettings;Ljava/util/ArrayList;Z)V
+.method static synthetic a(Lcom/android/vendorsettings/ChildrenModeSettings;Ljava/util/ArrayList;Z)V
     .locals 0
 
     .prologue
     .line 36
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/ChildrenModeSettings;->a(Ljava/util/ArrayList;Z)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/ChildrenModeSettings;->a(Ljava/util/ArrayList;Z)V
 
     return-void
 .end method
@@ -135,7 +135,7 @@
 
     .prologue
     .line 236
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->n:Ljava/util/Comparator;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->n:Ljava/util/Comparator;
 
     invoke-static {p1, v0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -158,7 +158,7 @@
     check-cast v0, Landroid/content/pm/ApplicationInfo;
 
     .line 240
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -170,25 +170,25 @@
 
     .line 242
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    new-instance v3, Lcom/android/settings/at;
+    new-instance v3, Lcom/android/vendorsettings/at;
 
-    invoke-direct {v3, p0, v0, p2}, Lcom/android/settings/at;-><init>(Lcom/android/settings/ChildrenModeSettings;Landroid/content/pm/ApplicationInfo;Z)V
+    invoke-direct {v3, p0, v0, p2}, Lcom/android/vendorsettings/at;-><init>(Lcom/android/vendorsettings/ChildrenModeSettings;Landroid/content/pm/ApplicationInfo;Z)V
 
     invoke-virtual {v2, v3}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/ChildrenModeSettings;Ljava/lang/String;)Z
+.method static synthetic a(Lcom/android/vendorsettings/ChildrenModeSettings;Ljava/lang/String;)Z
     .locals 1
 
     .prologue
     .line 36
-    invoke-direct {p0, p1}, Lcom/android/settings/ChildrenModeSettings;->m(Ljava/lang/String;)Z
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/ChildrenModeSettings;->m(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -200,14 +200,14 @@
 
     .prologue
     .line 178
-    iget-boolean v0, p0, Lcom/android/settings/ChildrenModeSettings;->di:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->di:Z
 
     if-nez v0, :cond_0
 
     .line 179
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/ChildrenModeSettings;->di:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->di:Z
 
     .line 180
     new-instance v0, Landroid/content/Intent;
@@ -229,7 +229,7 @@
     .line 183
     const-string v1, "android.intent.extra.shortcut.NAME"
 
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -242,7 +242,7 @@
     .line 184
     const/4 v1, 0x2
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/ChildrenModeSettings;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/ChildrenModeSettings;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 186
     :cond_0
@@ -273,7 +273,7 @@
     .line 308
     const-string v1, "android.intent.extra.shortcut.NAME"
 
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -284,9 +284,9 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 309
-    sget v1, Lcom/android/settings/ChildrenModeSettings;->db:I
+    sget v1, Lcom/android/vendorsettings/ChildrenModeSettings;->db:I
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/ChildrenModeSettings;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/ChildrenModeSettings;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 310
     return-void
@@ -314,32 +314,32 @@
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/ChildrenModeSettings;)Landroid/preference/CheckBoxPreference;
+.method static synthetic b(Lcom/android/vendorsettings/ChildrenModeSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->dd:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dd:Landroid/preference/CheckBoxPreference;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/ChildrenModeSettings;)Lmiui/security/SecurityManager;
+.method static synthetic c(Lcom/android/vendorsettings/ChildrenModeSettings;)Lmiui/security/SecurityManager;
     .locals 1
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->m:Lmiui/security/SecurityManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->m:Lmiui/security/SecurityManager;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/ChildrenModeSettings;)Landroid/preference/PreferenceGroup;
+.method static synthetic d(Lcom/android/vendorsettings/ChildrenModeSettings;)Landroid/preference/PreferenceGroup;
     .locals 1
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->df:Landroid/preference/PreferenceGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->df:Landroid/preference/PreferenceGroup;
 
     return-object v0
 .end method
@@ -351,52 +351,52 @@
     .line 219
     const v0, 0x7f080023
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ChildrenModeSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ChildrenModeSettings;->addPreferencesFromResource(I)V
 
     .line 220
     const-string v0, "tips"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ChildrenModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ChildrenModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->dc:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dc:Landroid/preference/Preference;
 
     .line 221
     const-string v0, "children_mode_enable"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ChildrenModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ChildrenModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->dd:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dd:Landroid/preference/CheckBoxPreference;
 
     .line 222
     const-string v0, "deny_sms_permission"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ChildrenModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ChildrenModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
 
     .line 223
     const-string v0, "access_apps_setting"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ChildrenModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ChildrenModeSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceGroup;
 
-    iput-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->df:Landroid/preference/PreferenceGroup;
+    iput-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->df:Landroid/preference/PreferenceGroup;
 
     .line 224
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->dd:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dd:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -406,37 +406,37 @@
     if-eqz v0, :cond_0
 
     .line 226
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 227
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
 
     .line 231
     :goto_0
     new-instance v0, Landroid/security/ChooseLockSettingsHelper;
 
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Landroid/security/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;)V
 
-    iput-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->b:Landroid/security/ChooseLockSettingsHelper;
+    iput-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->b:Landroid/security/ChooseLockSettingsHelper;
 
     .line 232
     return-void
 
     .line 229
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -448,7 +448,7 @@
 
     .prologue
     .line 319
-    invoke-direct {p0}, Lcom/android/settings/ChildrenModeSettings;->ao()Landroid/content/Intent;
+    invoke-direct {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->ao()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -456,7 +456,7 @@
     invoke-virtual {v0, p1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 321
-    iget-object v1, p0, Lcom/android/settings/ChildrenModeSettings;->i:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->i:Landroid/content/pm/PackageManager;
 
     const/16 v2, 0x40
 
@@ -488,7 +488,7 @@
 
     .prologue
     .line 80
-    const-class v0, Lcom/android/settings/ChildrenModeSettings;
+    const-class v0, Lcom/android/vendorsettings/ChildrenModeSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -506,14 +506,14 @@
     const/4 v2, 0x1
 
     .line 190
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 191
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->dg:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dg:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_0
 
-    sget v0, Lcom/android/settings/ChildrenModeSettings;->db:I
+    sget v0, Lcom/android/vendorsettings/ChildrenModeSettings;->db:I
 
     if-ne p1, v0, :cond_0
 
@@ -521,18 +521,18 @@
     if-ne p2, v3, :cond_0
 
     .line 193
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->dg:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dg:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 194
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->dg:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dg:Landroid/preference/CheckBoxPreference;
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/ChildrenModeSettings;->onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/ChildrenModeSettings;->onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
 
     .line 197
     :cond_0
@@ -543,13 +543,13 @@
     .line 198
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/ChildrenModeSettings;->di:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->di:Z
 
     .line 199
     if-ne p2, v3, :cond_2
 
     .line 200
-    iput-boolean v2, p0, Lcom/android/settings/ChildrenModeSettings;->dh:Z
+    iput-boolean v2, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dh:Z
 
     .line 205
     :cond_1
@@ -558,7 +558,7 @@
 
     .line 202
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeSettings;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->finish()V
 
     goto :goto_0
 .end method
@@ -568,28 +568,28 @@
 
     .prologue
     .line 107
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 108
     const-string v0, "security"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ChildrenModeSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ChildrenModeSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lmiui/security/SecurityManager;
 
-    iput-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->m:Lmiui/security/SecurityManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->m:Lmiui/security/SecurityManager;
 
     .line 109
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->i:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->i:Landroid/content/pm/PackageManager;
 
     .line 110
-    invoke-direct {p0}, Lcom/android/settings/ChildrenModeSettings;->h()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->h()V
 
     .line 111
     return-void
@@ -600,27 +600,27 @@
 
     .prologue
     .line 209
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPause()V
 
     .line 210
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/ChildrenModeSettings;->dh:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dh:Z
 
     .line 211
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->dd:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dd:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
     move-result v0
 
     .line 212
-    iget-boolean v1, p0, Lcom/android/settings/ChildrenModeSettings;->dk:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dk:Z
 
     if-eq v1, v0, :cond_0
 
     .line 213
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -647,7 +647,7 @@
     check-cast p2, Ljava/lang/Boolean;
 
     .line 273
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0}, Landroid/security/ChooseLockSettingsHelper;->isPrivacyPasswordEnabled()Z
 
@@ -658,7 +658,7 @@
     .line 274
     check-cast p1, Landroid/preference/CheckBoxPreference;
 
-    iput-object p1, p0, Lcom/android/settings/ChildrenModeSettings;->dg:Landroid/preference/CheckBoxPreference;
+    iput-object p1, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dg:Landroid/preference/CheckBoxPreference;
 
     .line 275
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
@@ -668,7 +668,7 @@
     if-eqz v0, :cond_0
 
     .line 276
-    invoke-direct {p0}, Lcom/android/settings/ChildrenModeSettings;->an()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->an()V
 
     .line 278
     :cond_0
@@ -680,17 +680,17 @@
 
     .line 279
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->dd:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dd:Landroid/preference/CheckBoxPreference;
 
     if-ne p1, v0, :cond_5
 
     .line 280
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_2
 
     .line 281
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -700,7 +700,7 @@
 
     .line 283
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->df:Landroid/preference/PreferenceGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->df:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -709,7 +709,7 @@
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceGroup;->setEnabled(Z)V
 
     .line 284
-    iget-object v2, p0, Lcom/android/settings/ChildrenModeSettings;->dc:Landroid/preference/Preference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dc:Landroid/preference/Preference;
 
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -730,10 +730,10 @@
     if-eqz v0, :cond_4
 
     .line 286
-    invoke-direct {p0}, Lcom/android/settings/ChildrenModeSettings;->am()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->am()V
 
     .line 287
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -766,7 +766,7 @@
 
     .line 290
     :cond_4
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -789,12 +789,12 @@
 
     .line 294
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
 
     if-ne p1, v0, :cond_6
 
     .line 295
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -818,7 +818,7 @@
     move-result-object v0
 
     .line 299
-    iget-object v2, p0, Lcom/android/settings/ChildrenModeSettings;->m:Lmiui/security/SecurityManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->m:Lmiui/security/SecurityManager;
 
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -839,17 +839,17 @@
     const/4 v4, 0x0
 
     .line 117
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 118
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeSettings;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->getView()Landroid/view/View;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 119
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeSettings;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->getView()Landroid/view/View;
 
     move-result-object v0
 
@@ -858,24 +858,24 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setFocusableInTouchMode(Z)V
 
     .line 120
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeSettings;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->getView()Landroid/view/View;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
 
     .line 121
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeSettings;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->getView()Landroid/view/View;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/ChildrenModeSettings;->dj:Landroid/view/View$OnKeyListener;
+    iget-object v1, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dj:Landroid/view/View$OnKeyListener;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
     .line 124
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -885,14 +885,14 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/ChildrenModeSettings;->dk:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dk:Z
 
     .line 126
-    iget-boolean v0, p0, Lcom/android/settings/ChildrenModeSettings;->dk:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dk:Z
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0}, Landroid/security/ChooseLockSettingsHelper;->isPrivacyPasswordEnabled()Z
 
@@ -900,12 +900,12 @@
 
     if-eqz v0, :cond_1
 
-    iget-boolean v0, p0, Lcom/android/settings/ChildrenModeSettings;->dh:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dh:Z
 
     if-nez v0, :cond_1
 
     .line 127
-    invoke-direct {p0}, Lcom/android/settings/ChildrenModeSettings;->am()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->am()V
 
     .line 175
     :goto_0
@@ -913,23 +913,23 @@
 
     .line 129
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->dd:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dd:Landroid/preference/CheckBoxPreference;
 
-    iget-boolean v1, p0, Lcom/android/settings/ChildrenModeSettings;->dk:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dk:Z
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 130
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->df:Landroid/preference/PreferenceGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->df:Landroid/preference/PreferenceGroup;
 
-    iget-boolean v1, p0, Lcom/android/settings/ChildrenModeSettings;->dk:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dk:Z
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceGroup;->setEnabled(Z)V
 
     .line 131
-    iget-object v1, p0, Lcom/android/settings/ChildrenModeSettings;->dc:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dc:Landroid/preference/Preference;
 
-    iget-boolean v0, p0, Lcom/android/settings/ChildrenModeSettings;->dk:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dk:Z
 
     if-eqz v0, :cond_3
 
@@ -939,7 +939,7 @@
     invoke-virtual {v1, v0}, Landroid/preference/Preference;->setSummary(I)V
 
     .line 133
-    invoke-virtual {p0}, Lcom/android/settings/ChildrenModeSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ChildrenModeSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -950,30 +950,30 @@
     move-result v0
 
     .line 134
-    iget-object v1, p0, Lcom/android/settings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
 
     if-eqz v1, :cond_2
 
     .line 135
-    iget-object v1, p0, Lcom/android/settings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 136
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->de:Landroid/preference/CheckBoxPreference;
 
-    iget-boolean v1, p0, Lcom/android/settings/ChildrenModeSettings;->dk:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->dk:Z
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setEnabled(Z)V
 
     .line 139
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->df:Landroid/preference/PreferenceGroup;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->df:Landroid/preference/PreferenceGroup;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceGroup;->removeAll()V
 
     .line 140
-    iget-object v0, p0, Lcom/android/settings/ChildrenModeSettings;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/ChildrenModeSettings;->i:Landroid/content/pm/PackageManager;
 
     invoke-virtual {v0, v4}, Landroid/content/pm/PackageManager;->getInstalledApplications(I)Ljava/util/List;
 
@@ -990,13 +990,13 @@
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     .line 144
-    new-instance v3, Lcom/android/settings/as;
+    new-instance v3, Lcom/android/vendorsettings/as;
 
-    invoke-direct {v3, p0, v0, v1, v2}, Lcom/android/settings/as;-><init>(Lcom/android/settings/ChildrenModeSettings;Ljava/util/List;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    invoke-direct {v3, p0, v0, v1, v2}, Lcom/android/vendorsettings/as;-><init>(Lcom/android/vendorsettings/ChildrenModeSettings;Ljava/util/List;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
 
     new-array v0, v4, [Ljava/lang/Void;
 
-    invoke-virtual {v3, v0}, Lcom/android/settings/as;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v3, v0}, Lcom/android/vendorsettings/as;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     goto :goto_0
 

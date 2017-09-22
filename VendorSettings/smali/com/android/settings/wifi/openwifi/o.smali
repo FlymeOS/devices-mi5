@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/openwifi/o;
+.class public Lcom/android/vendorsettings/wifi/openwifi/o;
 .super Ljava/lang/Object;
 .source "ShopManager.java"
 
@@ -16,7 +16,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 32
-    iput-object p1, p0, Lcom/android/settings/wifi/openwifi/o;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/openwifi/o;->mContext:Landroid/content/Context;
 
     .line 33
     return-void

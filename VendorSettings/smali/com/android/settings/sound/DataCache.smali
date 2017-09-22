@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/sound/DataCache;
+.class public Lcom/android/vendorsettings/sound/DataCache;
 .super Ljava/util/LinkedHashMap;
 .source "DataCache.java"
 
@@ -19,7 +19,7 @@
     .line 16
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/sound/DataCache;-><init>(II)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/sound/DataCache;-><init>(II)V
 
     .line 17
     return-void
@@ -32,7 +32,7 @@
     .line 20
     const/high16 v0, 0x3f400000    # 0.75f
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/sound/DataCache;-><init>(IIF)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/vendorsettings/sound/DataCache;-><init>(IIF)V
 
     .line 21
     return-void
@@ -48,7 +48,7 @@
     invoke-direct {p0, p2, p3, v0}, Ljava/util/LinkedHashMap;-><init>(IFZ)V
 
     .line 25
-    iput p1, p0, Lcom/android/settings/sound/DataCache;->maximumCapacity:I
+    iput p1, p0, Lcom/android/vendorsettings/sound/DataCache;->maximumCapacity:I
 
     .line 26
     return-void
@@ -61,11 +61,11 @@
 
     .prologue
     .line 43
-    invoke-virtual {p0}, Lcom/android/settings/sound/DataCache;->size()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/sound/DataCache;->size()I
 
     move-result v0
 
-    iget v1, p0, Lcom/android/settings/sound/DataCache;->maximumCapacity:I
+    iget v1, p0, Lcom/android/vendorsettings/sound/DataCache;->maximumCapacity:I
 
     if-le v0, v1, :cond_0
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wfd/a;
+.class Lcom/android/vendorsettings/wfd/a;
 .super Ljava/lang/Object;
 .source "MiuiWifiDisplaySettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic awj:Lcom/android/settings/wfd/MiuiWifiDisplaySettings;
+.field final synthetic awj:Lcom/android/vendorsettings/wfd/MiuiWifiDisplaySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wfd/MiuiWifiDisplaySettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/wfd/MiuiWifiDisplaySettings;)V
     .locals 0
 
     .prologue
     .line 70
-    iput-object p1, p0, Lcom/android/settings/wfd/a;->awj:Lcom/android/settings/wfd/MiuiWifiDisplaySettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/wfd/a;->awj:Lcom/android/vendorsettings/wfd/MiuiWifiDisplaySettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Lcom/android/settings/wfd/a;->awj:Lcom/android/settings/wfd/MiuiWifiDisplaySettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wfd/a;->awj:Lcom/android/vendorsettings/wfd/MiuiWifiDisplaySettings;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/wfd/MiuiWifiDisplaySettings;->a(Lcom/android/settings/wfd/MiuiWifiDisplaySettings;Z)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/wfd/MiuiWifiDisplaySettings;->a(Lcom/android/vendorsettings/wfd/MiuiWifiDisplaySettings;Z)V
 
     .line 74
     return-void

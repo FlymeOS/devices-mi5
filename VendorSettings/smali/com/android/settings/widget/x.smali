@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/widget/x;
-.super Lcom/android/settings/widget/C;
+.class final Lcom/android/vendorsettings/widget/x;
+.super Lcom/android/vendorsettings/widget/C;
 .source "SettingsAppWidgetProvider.java"
 
 
@@ -11,17 +11,17 @@
     .line 439
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/widget/C;-><init>(Lcom/android/settings/widget/w;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/widget/C;-><init>(Lcom/android/vendorsettings/widget/w;)V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/widget/w;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/widget/w;)V
     .locals 0
 
     .prologue
     .line 439
-    invoke-direct {p0}, Lcom/android/settings/widget/x;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/widget/x;-><init>()V
 
     return-void
 .end method
@@ -100,14 +100,14 @@
 
     .prologue
     .line 451
-    invoke-static {}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->wH()Lcom/android/b/b/Q;
+    invoke-static {}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->wH()Lcom/android/b/b/Q;
 
     move-result-object v0
 
     if-nez v0, :cond_1
 
     .line 452
-    invoke-static {p1}, Lcom/android/settings/bluetooth/Utils;->ax(Landroid/content/Context;)Lcom/android/b/b/R;
+    invoke-static {p1}, Lcom/android/vendorsettings/bluetooth/Utils;->ax(Landroid/content/Context;)Lcom/android/b/b/R;
 
     move-result-object v0
 
@@ -127,11 +127,11 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->a(Lcom/android/b/b/Q;)Lcom/android/b/b/Q;
+    invoke-static {v0}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->a(Lcom/android/b/b/Q;)Lcom/android/b/b/Q;
 
     .line 458
     :cond_1
-    invoke-static {}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->wH()Lcom/android/b/b/Q;
+    invoke-static {}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->wH()Lcom/android/b/b/Q;
 
     move-result-object v0
 
@@ -139,7 +139,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lcom/android/settings/widget/x;->dv(I)I
+    invoke-static {v0}, Lcom/android/vendorsettings/widget/x;->dv(I)I
 
     move-result v0
 
@@ -178,11 +178,11 @@
     move-result v0
 
     .line 486
-    invoke-static {v0}, Lcom/android/settings/widget/x;->dv(I)I
+    invoke-static {v0}, Lcom/android/vendorsettings/widget/x;->dv(I)I
 
     move-result v0
 
-    invoke-virtual {p0, p1, v0}, Lcom/android/settings/widget/x;->setCurrentState(Landroid/content/Context;I)V
+    invoke-virtual {p0, p1, v0}, Lcom/android/vendorsettings/widget/x;->setCurrentState(Landroid/content/Context;I)V
 
     goto :goto_0
 .end method
@@ -192,7 +192,7 @@
 
     .prologue
     .line 463
-    invoke-static {}, Lcom/android/settings/widget/SettingsAppWidgetProvider;->wH()Lcom/android/b/b/Q;
+    invoke-static {}, Lcom/android/vendorsettings/widget/SettingsAppWidgetProvider;->wH()Lcom/android/b/b/Q;
 
     move-result-object v0
 
@@ -211,15 +211,15 @@
 
     .line 471
     :cond_0
-    new-instance v0, Lcom/android/settings/widget/y;
+    new-instance v0, Lcom/android/vendorsettings/widget/y;
 
-    invoke-direct {v0, p0, p2}, Lcom/android/settings/widget/y;-><init>(Lcom/android/settings/widget/x;Z)V
+    invoke-direct {v0, p0, p2}, Lcom/android/vendorsettings/widget/y;-><init>(Lcom/android/vendorsettings/widget/x;Z)V
 
     const/4 v1, 0x0
 
     new-array v1, v1, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/y;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/widget/y;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     goto :goto_0
 .end method

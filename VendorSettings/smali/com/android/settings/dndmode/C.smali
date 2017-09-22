@@ -1,4 +1,4 @@
-.class interface abstract Lcom/android/settings/dndmode/C;
+.class interface abstract Lcom/android/vendorsettings/dndmode/C;
 .super Ljava/lang/Object;
 .source "VipCallSettingsFragment.java"
 

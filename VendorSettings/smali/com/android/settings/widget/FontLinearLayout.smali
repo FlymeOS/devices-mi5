@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/widget/FontLinearLayout;
+.class public Lcom/android/vendorsettings/widget/FontLinearLayout;
 .super Landroid/widget/LinearLayout;
 .source "FontLinearLayout.java"
 
@@ -12,7 +12,7 @@
 
 .field private ayb:I
 
-.field private ayc:Lcom/android/settings/widget/j;
+.field private ayc:Lcom/android/vendorsettings/widget/j;
 
 .field private mScale:F
 
@@ -34,7 +34,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/widget/FontLinearLayout;->ayb:I
+    iput v0, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->ayb:I
 
     .line 28
     return-void
@@ -45,9 +45,9 @@
 
     .prologue
     .line 53
-    iget v0, p0, Lcom/android/settings/widget/FontLinearLayout;->axZ:F
+    iget v0, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->axZ:F
 
-    iget v1, p0, Lcom/android/settings/widget/FontLinearLayout;->axY:F
+    iget v1, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->axY:F
 
     sub-float/2addr v0, v1
 
@@ -55,7 +55,7 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/android/settings/widget/FontLinearLayout;->ayb:I
+    iget v1, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->ayb:I
 
     int-to-float v1, v1
 
@@ -64,16 +64,16 @@
     if-gez v0, :cond_0
 
     .line 54
-    invoke-virtual {p0}, Lcom/android/settings/widget/FontLinearLayout;->getWidth()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/FontLinearLayout;->getWidth()I
 
     move-result v0
 
     .line 55
-    iget v1, p0, Lcom/android/settings/widget/FontLinearLayout;->mPaddingLeft:I
+    iget v1, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->mPaddingLeft:I
 
     sub-int v1, v0, v1
 
-    iget v2, p0, Lcom/android/settings/widget/FontLinearLayout;->mPaddingRight:I
+    iget v2, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->mPaddingRight:I
 
     sub-int/2addr v1, v2
 
@@ -85,14 +85,14 @@
     float-to-int v2, v2
 
     .line 58
-    iget v3, p0, Lcom/android/settings/widget/FontLinearLayout;->mPaddingLeft:I
+    iget v3, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->mPaddingLeft:I
 
     if-ge v2, v3, :cond_1
 
     .line 59
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/widget/FontLinearLayout;->mScale:F
+    iput v0, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->mScale:F
 
     .line 66
     :cond_0
@@ -101,7 +101,7 @@
 
     .line 60
     :cond_1
-    iget v3, p0, Lcom/android/settings/widget/FontLinearLayout;->mPaddingRight:I
+    iget v3, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->mPaddingRight:I
 
     sub-int/2addr v0, v3
 
@@ -110,13 +110,13 @@
     .line 61
     const/high16 v0, 0x3f800000    # 1.0f
 
-    iput v0, p0, Lcom/android/settings/widget/FontLinearLayout;->mScale:F
+    iput v0, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->mScale:F
 
     goto :goto_0
 
     .line 63
     :cond_2
-    iget v0, p0, Lcom/android/settings/widget/FontLinearLayout;->mPaddingLeft:I
+    iget v0, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->mPaddingLeft:I
 
     sub-int v0, v2, v0
 
@@ -126,19 +126,19 @@
 
     div-float/2addr v0, v1
 
-    iput v0, p0, Lcom/android/settings/widget/FontLinearLayout;->mScale:F
+    iput v0, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->mScale:F
 
     goto :goto_0
 .end method
 
 
 # virtual methods
-.method public a(Lcom/android/settings/widget/j;)V
+.method public a(Lcom/android/vendorsettings/widget/j;)V
     .locals 0
 
     .prologue
     .line 84
-    iput-object p1, p0, Lcom/android/settings/widget/FontLinearLayout;->ayc:Lcom/android/settings/widget/j;
+    iput-object p1, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->ayc:Lcom/android/vendorsettings/widget/j;
 
     .line 85
     return-void
@@ -151,7 +151,7 @@
     .line 72
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/widget/FontLinearLayout;->aya:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->aya:Z
 
     .line 73
     return-void
@@ -164,7 +164,7 @@
     .line 80
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/widget/FontLinearLayout;->aya:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->aya:Z
 
     .line 81
     return-void
@@ -194,16 +194,16 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/widget/FontLinearLayout;->axY:F
+    iput v0, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->axY:F
 
     .line 35
-    invoke-virtual {p0}, Lcom/android/settings/widget/FontLinearLayout;->onStartTrackingTouch()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/FontLinearLayout;->onStartTrackingTouch()V
 
     goto :goto_0
 
     .line 39
     :pswitch_1
-    iget-boolean v0, p0, Lcom/android/settings/widget/FontLinearLayout;->aya:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->aya:Z
 
     if-eqz v0, :cond_0
 
@@ -212,25 +212,25 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/widget/FontLinearLayout;->axZ:F
+    iput v0, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->axZ:F
 
     .line 41
-    invoke-direct {p0, p1}, Lcom/android/settings/widget/FontLinearLayout;->g(Landroid/view/MotionEvent;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/widget/FontLinearLayout;->g(Landroid/view/MotionEvent;)V
 
     .line 42
-    invoke-virtual {p0}, Lcom/android/settings/widget/FontLinearLayout;->onStopTrackingTouch()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/FontLinearLayout;->onStopTrackingTouch()V
 
     .line 43
-    iget-object v0, p0, Lcom/android/settings/widget/FontLinearLayout;->ayc:Lcom/android/settings/widget/j;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->ayc:Lcom/android/vendorsettings/widget/j;
 
     if-eqz v0, :cond_0
 
     .line 44
-    iget-object v0, p0, Lcom/android/settings/widget/FontLinearLayout;->ayc:Lcom/android/settings/widget/j;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->ayc:Lcom/android/vendorsettings/widget/j;
 
-    iget v1, p0, Lcom/android/settings/widget/FontLinearLayout;->mScale:F
+    iget v1, p0, Lcom/android/vendorsettings/widget/FontLinearLayout;->mScale:F
 
-    invoke-interface {v0, p0, v1}, Lcom/android/settings/widget/j;->a(Lcom/android/settings/widget/FontLinearLayout;F)V
+    invoke-interface {v0, p0, v1}, Lcom/android/vendorsettings/widget/j;->a(Lcom/android/vendorsettings/widget/FontLinearLayout;F)V
 
     goto :goto_0
 

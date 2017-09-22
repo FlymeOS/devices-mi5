@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/WifiConnectionReceiver;
+.class public Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "WifiConnectionReceiver.java"
 
@@ -19,15 +19,15 @@
     const/4 v0, 0x0
 
     .line 25
-    sput-boolean v0, Lcom/android/settings/wifi/WifiConnectionReceiver;->mWifiConnected:Z
+    sput-boolean v0, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->mWifiConnected:Z
 
     .line 26
-    sput-boolean v0, Lcom/android/settings/wifi/WifiConnectionReceiver;->aDp:Z
+    sput-boolean v0, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->aDp:Z
 
     .line 27
     const/4 v0, 0x1
 
-    sput-boolean v0, Lcom/android/settings/wifi/WifiConnectionReceiver;->aDq:Z
+    sput-boolean v0, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->aDq:Z
 
     return-void
 .end method
@@ -68,7 +68,7 @@
     move-result-object v4
 
     .line 100
-    invoke-static {}, Lcom/android/settings/fy;->gg()Lcom/android/settings/fy;
+    invoke-static {}, Lcom/android/vendorsettings/fy;->gg()Lcom/android/vendorsettings/fy;
 
     move-result-object v5
 
@@ -135,7 +135,7 @@
     check-cast v1, Landroid/net/wifi/ScanResult;
 
     .line 111
-    invoke-virtual {v5, v0, v1}, Lcom/android/settings/fy;->a(Landroid/net/wifi/WifiConfiguration;Landroid/net/wifi/ScanResult;)Z
+    invoke-virtual {v5, v0, v1}, Lcom/android/vendorsettings/fy;->a(Landroid/net/wifi/WifiConfiguration;Landroid/net/wifi/ScanResult;)Z
 
     move-result v8
 
@@ -258,27 +258,27 @@
     if-ne v1, v3, :cond_2
 
     .line 39
-    sget-boolean v1, Lcom/android/settings/wifi/WifiConnectionReceiver;->mWifiConnected:Z
+    sget-boolean v1, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->mWifiConnected:Z
 
     .line 40
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->isConnected()Z
 
     move-result v0
 
-    sput-boolean v0, Lcom/android/settings/wifi/WifiConnectionReceiver;->mWifiConnected:Z
+    sput-boolean v0, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->mWifiConnected:Z
 
     .line 41
     if-eqz v1, :cond_0
 
-    sget-boolean v0, Lcom/android/settings/wifi/WifiConnectionReceiver;->mWifiConnected:Z
+    sget-boolean v0, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->mWifiConnected:Z
 
     if-nez v0, :cond_0
 
     .line 42
-    sput-boolean v3, Lcom/android/settings/wifi/WifiConnectionReceiver;->aDq:Z
+    sput-boolean v3, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->aDq:Z
 
     .line 43
-    invoke-static {p1}, Lcom/android/settings/wifi/WifiConnectionDialog;->cB(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/wifi/WifiConnectionDialog;->cB(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -307,7 +307,7 @@
     if-nez v0, :cond_0
 
     .line 46
-    sput-boolean v2, Lcom/android/settings/wifi/WifiConnectionReceiver;->aDq:Z
+    sput-boolean v2, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->aDq:Z
 
     .line 47
     new-instance v1, Landroid/content/Intent;
@@ -342,24 +342,24 @@
     if-nez v1, :cond_0
 
     .line 55
-    sget-boolean v1, Lcom/android/settings/wifi/WifiConnectionReceiver;->aDp:Z
+    sget-boolean v1, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->aDp:Z
 
     .line 56
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->isConnected()Z
 
     move-result v0
 
-    sput-boolean v0, Lcom/android/settings/wifi/WifiConnectionReceiver;->aDp:Z
+    sput-boolean v0, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->aDp:Z
 
     .line 57
     if-nez v1, :cond_0
 
-    sget-boolean v0, Lcom/android/settings/wifi/WifiConnectionReceiver;->aDp:Z
+    sget-boolean v0, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->aDp:Z
 
     if-eqz v0, :cond_0
 
     .line 58
-    sput-boolean v3, Lcom/android/settings/wifi/WifiConnectionReceiver;->aDq:Z
+    sput-boolean v3, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->aDq:Z
 
     goto :goto_0
 
@@ -373,24 +373,24 @@
 
     if-eqz v1, :cond_7
 
-    invoke-static {p1}, Lcom/android/settings/wifi/WifiConnectionDialog;->cB(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/wifi/WifiConnectionDialog;->cB(Landroid/content/Context;)Z
 
     move-result v1
 
     if-eqz v1, :cond_7
 
     .line 63
-    sget-boolean v0, Lcom/android/settings/wifi/WifiConnectionReceiver;->aDq:Z
+    sget-boolean v0, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->aDq:Z
 
     if-nez v0, :cond_4
 
-    invoke-static {p1}, Lcom/android/settings/wifi/WifiConnectionDialog;->cC(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/wifi/WifiConnectionDialog;->cC(Landroid/content/Context;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    invoke-static {p1}, Lcom/android/settings/wifi/WifiConnectionDialog;->cA(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/wifi/WifiConnectionDialog;->cA(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -421,7 +421,7 @@
 
     .line 66
     :cond_5
-    invoke-direct {p0, p1, v2}, Lcom/android/settings/wifi/WifiConnectionReceiver;->q(Landroid/content/Context;Z)Landroid/net/wifi/WifiConfiguration;
+    invoke-direct {p0, p1, v2}, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->q(Landroid/content/Context;Z)Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v0
 
@@ -429,7 +429,7 @@
     if-eqz v0, :cond_0
 
     .line 68
-    sput-boolean v2, Lcom/android/settings/wifi/WifiConnectionReceiver;->aDq:Z
+    sput-boolean v2, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->aDq:Z
 
     .line 69
     new-instance v1, Landroid/content/Intent;
@@ -453,7 +453,7 @@
 
     .line 76
     :cond_6
-    sput-boolean v2, Lcom/android/settings/wifi/WifiConnectionReceiver;->aDq:Z
+    sput-boolean v2, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->aDq:Z
 
     goto/16 :goto_0
 
@@ -467,18 +467,18 @@
 
     if-eqz v0, :cond_0
 
-    sget-boolean v0, Lcom/android/settings/wifi/WifiConnectionReceiver;->aDq:Z
+    sget-boolean v0, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->aDq:Z
 
     if-eqz v0, :cond_0
 
-    invoke-static {p1}, Lcom/android/settings/wifi/WifiConnectionDialog;->cB(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/wifi/WifiConnectionDialog;->cB(Landroid/content/Context;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 79
-    sput-boolean v2, Lcom/android/settings/wifi/WifiConnectionReceiver;->aDq:Z
+    sput-boolean v2, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->aDq:Z
 
     .line 80
     const-string v0, "wifi"
@@ -513,7 +513,7 @@
     .line 83
     const-string v1, "extra_best_ap"
 
-    invoke-direct {p0, p1, v3}, Lcom/android/settings/wifi/WifiConnectionReceiver;->q(Landroid/content/Context;Z)Landroid/net/wifi/WifiConfiguration;
+    invoke-direct {p0, p1, v3}, Lcom/android/vendorsettings/wifi/WifiConnectionReceiver;->q(Landroid/content/Context;Z)Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v2
 

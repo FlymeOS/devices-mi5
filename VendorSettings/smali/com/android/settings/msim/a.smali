@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/msim/a;
-.super Lcom/android/settings/fy;
+.class public Lcom/android/vendorsettings/msim/a;
+.super Lcom/android/vendorsettings/fy;
 .source "MSimUtils.java"
 
 
@@ -21,7 +21,7 @@
 
     move-result v0
 
-    sput v0, Lcom/android/settings/msim/a;->ahL:I
+    sput v0, Lcom/android/vendorsettings/msim/a;->ahL:I
 
     return-void
 .end method
@@ -31,7 +31,7 @@
 
     .prologue
     .line 43
-    invoke-direct {p0}, Lcom/android/settings/fy;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/fy;-><init>()V
 
     .line 48
     return-void
@@ -156,7 +156,7 @@
     if-nez v0, :cond_1
 
     .line 109
-    invoke-super {p0, p1}, Lcom/android/settings/fy;->M(Landroid/content/Context;)Ljava/lang/String;
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/fy;->M(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -170,14 +170,14 @@
     const/4 v0, 0x0
 
     .line 112
-    invoke-virtual {p0, p1, v2}, Lcom/android/settings/msim/a;->o(Landroid/content/Context;I)Z
+    invoke-virtual {p0, p1, v2}, Lcom/android/vendorsettings/msim/a;->o(Landroid/content/Context;I)Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
     .line 113
-    invoke-virtual {p0, p1, v2}, Lcom/android/settings/msim/a;->n(Landroid/content/Context;I)Ljava/lang/String;
+    invoke-virtual {p0, p1, v2}, Lcom/android/vendorsettings/msim/a;->n(Landroid/content/Context;I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -189,14 +189,14 @@
 
     if-eqz v1, :cond_0
 
-    invoke-virtual {p0, p1, v3}, Lcom/android/settings/msim/a;->o(Landroid/content/Context;I)Z
+    invoke-virtual {p0, p1, v3}, Lcom/android/vendorsettings/msim/a;->o(Landroid/content/Context;I)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 117
-    invoke-virtual {p0, p1, v3}, Lcom/android/settings/msim/a;->n(Landroid/content/Context;I)Ljava/lang/String;
+    invoke-virtual {p0, p1, v3}, Lcom/android/vendorsettings/msim/a;->n(Landroid/content/Context;I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -257,7 +257,7 @@
 
     move-result v1
 
-    invoke-static {v3, v1}, Lcom/android/settings/e/a;->isVirtualSim(Landroid/content/Context;I)Z
+    invoke-static {v3, v1}, Lcom/android/vendorsettings/e/a;->isVirtualSim(Landroid/content/Context;I)Z
 
     move-result v1
 
@@ -288,9 +288,9 @@
 
     .line 72
     :cond_4
-    new-instance v1, Lcom/android/settings/msim/b;
+    new-instance v1, Lcom/android/vendorsettings/msim/b;
 
-    invoke-direct {v1}, Lcom/android/settings/msim/b;-><init>()V
+    invoke-direct {v1}, Lcom/android/vendorsettings/msim/b;-><init>()V
 
     invoke-static {v2, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -419,12 +419,12 @@
     const/4 v6, 0x1
 
     .line 124
-    sget v0, Lcom/android/settings/msim/a;->ahL:I
+    sget v0, Lcom/android/vendorsettings/msim/a;->ahL:I
 
     if-ne p2, v0, :cond_1
 
     .line 125
-    invoke-super {p0, p1}, Lcom/android/settings/fy;->M(Landroid/content/Context;)Ljava/lang/String;
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/fy;->M(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -560,12 +560,12 @@
 
     .prologue
     .line 152
-    sget v0, Lcom/android/settings/msim/a;->ahL:I
+    sget v0, Lcom/android/vendorsettings/msim/a;->ahL:I
 
     if-ne p2, v0, :cond_0
 
     .line 153
-    invoke-direct {p0, p1}, Lcom/android/settings/msim/a;->bG(Landroid/content/Context;)Z
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/msim/a;->bG(Landroid/content/Context;)Z
 
     move-result v0
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/Autostar/e;
+.class Lcom/android/vendorsettings/Autostar/e;
 .super Ljava/lang/Object;
 .source "Autoallow.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic bZ:Lcom/android/settings/Autostar/d;
+.field final synthetic bZ:Lcom/android/vendorsettings/Autostar/d;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/Autostar/d;)V
+.method constructor <init>(Lcom/android/vendorsettings/Autostar/d;)V
     .locals 0
 
     .prologue
     .line 43
-    iput-object p1, p0, Lcom/android/settings/Autostar/e;->bZ:Lcom/android/settings/Autostar/d;
+    iput-object p1, p0, Lcom/android/vendorsettings/Autostar/e;->bZ:Lcom/android/vendorsettings/Autostar/d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,17 +34,17 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/Autostar/f;
+    check-cast v0, Lcom/android/vendorsettings/Autostar/f;
 
     .line 47
-    invoke-virtual {v0}, Lcom/android/settings/Autostar/f;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/Autostar/f;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
     move-result-object v2
 
     .line 48
-    iget-object v1, p0, Lcom/android/settings/Autostar/e;->bZ:Lcom/android/settings/Autostar/d;
+    iget-object v1, p0, Lcom/android/vendorsettings/Autostar/e;->bZ:Lcom/android/vendorsettings/Autostar/d;
 
-    invoke-virtual {v1}, Lcom/android/settings/Autostar/d;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/Autostar/d;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -55,11 +55,11 @@
     invoke-static {v1, v3, v4}, Landroid/miui/AppOpsUtils;->setApplicationAutoStart(Landroid/content/Context;Ljava/lang/String;Z)V
 
     .line 49
-    iget-object v1, p0, Lcom/android/settings/Autostar/e;->bZ:Lcom/android/settings/Autostar/d;
+    iget-object v1, p0, Lcom/android/vendorsettings/Autostar/e;->bZ:Lcom/android/vendorsettings/Autostar/d;
 
     const-string v3, "activity"
 
-    invoke-static {v1, v3}, Lcom/android/settings/Autostar/d;->a(Lcom/android/settings/Autostar/d;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v1, v3}, Lcom/android/vendorsettings/Autostar/d;->a(Lcom/android/vendorsettings/Autostar/d;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -70,14 +70,14 @@
     invoke-virtual {v1, v2}, Landroid/app/ActivityManager;->forceStopPackage(Ljava/lang/String;)V
 
     .line 51
-    iget-object v1, v0, Lcom/android/settings/Autostar/f;->cb:Landroid/widget/Button;
+    iget-object v1, v0, Lcom/android/vendorsettings/Autostar/f;->cb:Landroid/widget/Button;
 
     const/16 v2, 0x8
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 52
-    iget-object v0, v0, Lcom/android/settings/Autostar/f;->cc:Landroid/widget/TextView;
+    iget-object v0, v0, Lcom/android/vendorsettings/Autostar/f;->cc:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 

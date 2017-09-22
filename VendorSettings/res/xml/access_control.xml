@@ -9,7 +9,7 @@
         <Preference android:title="@string/ac_enable_title" android:key="ac_enable_phone" android:summary="@string/ac_enable_summary" />
         <CheckBoxPreference android:persistent="false" android:title="@string/ac_enable_title" android:key="ac_enable" android:summary="@string/ac_enable_summary" android:defaultValue="false" />
         <PreferenceScreen android:persistent="false" android:title="@string/ac_set_apps_title" android:key="ac_set_apps" android:dependency="ac_enable">
-            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.AccessControlSetApp" />
+            <intent android:targetPackage="com.android.vendorsettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.vendorsettings.AccessControlSetApp" />
         </PreferenceScreen>
         <CheckBoxPreference android:title="@string/lockpattern_settings_enable_visible_pattern_title" android:key="ac_visiblepattern" android:dependency="ac_enable" android:defaultValue="false" />
     </PreferenceCategory>

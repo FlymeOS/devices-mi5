@@ -1,4 +1,4 @@
-.class synthetic Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$10;
+.class synthetic Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$10;
 .super Ljava/lang/Object;
 .source "PrivacyPasswordConfirmAccessControl.java"
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 482
-    invoke-static {}, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->values()[Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    invoke-static {}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->values()[Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
     move-result-object v0
 
@@ -21,12 +21,12 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$10;->aoj:[I
+    sput-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$10;->aoj:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$10;->aoj:[I
+    sget-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$10;->aoj:[I
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aom:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aom:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -40,9 +40,9 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$10;->aoj:[I
+    sget-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$10;->aoj:[I
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aon:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aon:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -56,9 +56,9 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$10;->aoj:[I
+    sget-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$10;->aoj:[I
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aoo:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aoo:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/ProcessStatsDetail$PkgService;
+.class Lcom/android/vendorsettings/applications/ProcessStatsDetail$PkgService;
 .super Ljava/lang/Object;
 .source "ProcessStatsDetail.java"
 
@@ -22,7 +22,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcessStatsDetail$PkgService;->LZ:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcessStatsDetail$PkgService;->LZ:Ljava/util/ArrayList;
 
     return-void
 .end method

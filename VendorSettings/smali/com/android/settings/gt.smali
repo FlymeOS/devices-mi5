@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/gt;
+.class public final Lcom/android/vendorsettings/gt;
 .super Ljava/lang/Object;
 .source "R.java"
 
@@ -69,14 +69,14 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/gt;->wr:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->wr:[I
 
     .line 16972
     new-array v0, v1, [I
 
     fill-array-data v0, :array_1
 
-    sput-object v0, Lcom/android/settings/gt;->ws:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->ws:[I
 
     .line 17034
     const/4 v0, 0x4
@@ -85,7 +85,7 @@
 
     fill-array-data v0, :array_2
 
-    sput-object v0, Lcom/android/settings/gt;->wt:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->wt:[I
 
     .line 17120
     const/4 v0, 0x7
@@ -94,35 +94,35 @@
 
     fill-array-data v0, :array_3
 
-    sput-object v0, Lcom/android/settings/gt;->wu:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->wu:[I
 
     .line 17236
     new-array v0, v4, [I
 
     fill-array-data v0, :array_4
 
-    sput-object v0, Lcom/android/settings/gt;->wv:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->wv:[I
 
     .line 17291
     new-array v0, v1, [I
 
     fill-array-data v0, :array_5
 
-    sput-object v0, Lcom/android/settings/gt;->ww:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->ww:[I
 
     .line 17377
     new-array v0, v4, [I
 
     fill-array-data v0, :array_6
 
-    sput-object v0, Lcom/android/settings/gt;->wx:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->wx:[I
 
     .line 17406
     new-array v0, v5, [I
 
     fill-array-data v0, :array_7
 
-    sput-object v0, Lcom/android/settings/gt;->wy:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->wy:[I
 
     .line 17463
     new-array v0, v3, [I
@@ -131,7 +131,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/gt;->wz:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->wz:[I
 
     .line 17512
     const/16 v0, 0xe
@@ -140,14 +140,14 @@
 
     fill-array-data v0, :array_8
 
-    sput-object v0, Lcom/android/settings/gt;->LockPatternView:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->LockPatternView:[I
 
     .line 17721
     new-array v0, v4, [I
 
     fill-array-data v0, :array_9
 
-    sput-object v0, Lcom/android/settings/gt;->wA:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->wA:[I
 
     .line 17769
     new-array v0, v3, [I
@@ -156,14 +156,14 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/gt;->Preference:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->Preference:[I
 
     .line 17800
     new-array v0, v5, [I
 
     fill-array-data v0, :array_a
 
-    sput-object v0, Lcom/android/settings/gt;->wB:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->wB:[I
 
     .line 17847
     new-array v0, v3, [I
@@ -172,7 +172,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/gt;->wC:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->wC:[I
 
     .line 17874
     new-array v0, v3, [I
@@ -181,7 +181,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/gt;->wD:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->wD:[I
 
     .line 17901
     new-array v0, v3, [I
@@ -190,7 +190,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/gt;->wE:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->wE:[I
 
     .line 17928
     new-array v0, v3, [I
@@ -199,7 +199,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/gt;->wF:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->wF:[I
 
     .line 17955
     new-array v0, v3, [I
@@ -208,7 +208,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/gt;->wG:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->wG:[I
 
     .line 17998
     const/16 v0, 0x9
@@ -217,7 +217,7 @@
 
     fill-array-data v0, :array_b
 
-    sput-object v0, Lcom/android/settings/gt;->wH:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->wH:[I
 
     .line 18117
     new-array v0, v3, [I
@@ -226,7 +226,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/gt;->wI:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->wI:[I
 
     .line 18140
     new-array v0, v3, [I
@@ -235,7 +235,7 @@
 
     aput v1, v0, v2
 
-    sput-object v0, Lcom/android/settings/gt;->wJ:[I
+    sput-object v0, Lcom/android/vendorsettings/gt;->wJ:[I
 
     return-void
 

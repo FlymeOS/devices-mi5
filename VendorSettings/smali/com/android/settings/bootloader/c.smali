@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bootloader/c;
+.class Lcom/android/vendorsettings/bootloader/c;
 .super Ljava/lang/Object;
 .source "CloudDeviceStatus.java"
 
@@ -8,7 +8,7 @@
 
 .field private static final Sy:Landroid/net/Uri;
 
-.field private static Sz:Lcom/android/settings/bootloader/d;
+.field private static Sz:Lcom/android/vendorsettings/bootloader/d;
 
 
 # direct methods
@@ -23,10 +23,10 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/bootloader/c;->Sx:Landroid/net/Uri;
+    sput-object v0, Lcom/android/vendorsettings/bootloader/c;->Sx:Landroid/net/Uri;
 
     .line 35
-    sget-object v0, Lcom/android/settings/bootloader/c;->Sx:Landroid/net/Uri;
+    sget-object v0, Lcom/android/vendorsettings/bootloader/c;->Sx:Landroid/net/Uri;
 
     const-string v1, "getserinum"
 
@@ -34,14 +34,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/bootloader/c;->Sy:Landroid/net/Uri;
+    sput-object v0, Lcom/android/vendorsettings/bootloader/c;->Sy:Landroid/net/Uri;
 
     .line 38
-    new-instance v0, Lcom/android/settings/bootloader/d;
+    new-instance v0, Lcom/android/vendorsettings/bootloader/d;
 
-    invoke-direct {v0}, Lcom/android/settings/bootloader/d;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/bootloader/d;-><init>()V
 
-    sput-object v0, Lcom/android/settings/bootloader/c;->Sz:Lcom/android/settings/bootloader/d;
+    sput-object v0, Lcom/android/vendorsettings/bootloader/c;->Sz:Lcom/android/vendorsettings/bootloader/d;
 
     return-void
 .end method
@@ -52,12 +52,12 @@
     .prologue
     .line 207
     :try_start_0
-    invoke-static {p0}, Lcom/android/settings/bootloader/Utils;->aE(Landroid/content/Context;)Lcom/xiaomi/accountsdk/account/data/ExtendedAuthToken;
+    invoke-static {p0}, Lcom/android/vendorsettings/bootloader/Utils;->aE(Landroid/content/Context;)Lcom/xiaomi/accountsdk/account/data/ExtendedAuthToken;
 
     move-result-object v0
 
     .line 208
-    invoke-static {p0}, Lcom/android/settings/bootloader/Utils;->aF(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/vendorsettings/bootloader/Utils;->aF(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -101,7 +101,7 @@
 
     invoke-interface {p1, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
-    .catch Lcom/android/settings/bootloader/Utils$AccountExcepiton; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lcom/android/vendorsettings/bootloader/Utils$AccountExcepiton; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 220
     return-void
@@ -173,9 +173,9 @@
     invoke-static {v0, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 92
-    sget-object v0, Lcom/android/settings/bootloader/c;->Sz:Lcom/android/settings/bootloader/d;
+    sget-object v0, Lcom/android/vendorsettings/bootloader/c;->Sz:Lcom/android/vendorsettings/bootloader/d;
 
-    iput v4, v0, Lcom/android/settings/bootloader/d;->SA:I
+    iput v4, v0, Lcom/android/vendorsettings/bootloader/d;->SA:I
 
     .line 93
     iget v0, p0, Lmiui/cloud/net/XHttpClient$HttpResponse;->stateCode:I
@@ -202,11 +202,11 @@
     if-eqz v0, :cond_1
 
     .line 98
-    sget-object v0, Lcom/android/settings/bootloader/c;->Sz:Lcom/android/settings/bootloader/d;
+    sget-object v0, Lcom/android/vendorsettings/bootloader/c;->Sz:Lcom/android/vendorsettings/bootloader/d;
 
     const/4 v2, 0x3
 
-    iput v2, v0, Lcom/android/settings/bootloader/d;->SA:I
+    iput v2, v0, Lcom/android/vendorsettings/bootloader/d;->SA:I
 
     .line 99
     const-string v0, "CloudDeviceStatus"
@@ -245,9 +245,9 @@
 
     .line 101
     :cond_1
-    sget-object v0, Lcom/android/settings/bootloader/c;->Sz:Lcom/android/settings/bootloader/d;
+    sget-object v0, Lcom/android/vendorsettings/bootloader/c;->Sz:Lcom/android/vendorsettings/bootloader/d;
 
-    iput v4, v0, Lcom/android/settings/bootloader/d;->SA:I
+    iput v4, v0, Lcom/android/vendorsettings/bootloader/d;->SA:I
 
     goto :goto_1
 
@@ -280,14 +280,14 @@
 
     .line 110
     :cond_3
-    sget-object v2, Lcom/android/settings/bootloader/c;->Sz:Lcom/android/settings/bootloader/d;
+    sget-object v2, Lcom/android/vendorsettings/bootloader/c;->Sz:Lcom/android/vendorsettings/bootloader/d;
 
     const/4 v3, 0x4
 
-    iput v3, v2, Lcom/android/settings/bootloader/d;->SA:I
+    iput v3, v2, Lcom/android/vendorsettings/bootloader/d;->SA:I
 
     .line 111
-    sget-object v2, Lcom/android/settings/bootloader/c;->Sz:Lcom/android/settings/bootloader/d;
+    sget-object v2, Lcom/android/vendorsettings/bootloader/c;->Sz:Lcom/android/vendorsettings/bootloader/d;
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -323,7 +323,7 @@
 
     move-result-object v0
 
-    iput-object v0, v2, Lcom/android/settings/bootloader/d;->SB:Ljava/lang/String;
+    iput-object v0, v2, Lcom/android/vendorsettings/bootloader/d;->SB:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -513,7 +513,7 @@
     move-result-object v0
 
     .line 178
-    sget-object v1, Lcom/android/settings/bootloader/c;->Sy:Landroid/net/Uri;
+    sget-object v1, Lcom/android/vendorsettings/bootloader/c;->Sy:Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -713,7 +713,7 @@
     goto :goto_0
 .end method
 
-.method public static ay(Landroid/content/Context;)Lcom/android/settings/bootloader/d;
+.method public static ay(Landroid/content/Context;)Lcom/android/vendorsettings/bootloader/d;
     .locals 6
 
     .prologue
@@ -738,7 +738,7 @@
     invoke-virtual {v0, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 48
-    invoke-static {p0}, Lcom/android/settings/bootloader/c;->az(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/vendorsettings/bootloader/c;->az(Landroid/content/Context;)Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -748,7 +748,7 @@
     if-nez v2, :cond_0
 
     .line 54
-    sget-object v0, Lcom/android/settings/bootloader/c;->Sz:Lcom/android/settings/bootloader/d;
+    sget-object v0, Lcom/android/vendorsettings/bootloader/c;->Sz:Lcom/android/vendorsettings/bootloader/d;
 
     .line 86
     :goto_0
@@ -762,17 +762,17 @@
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     .line 51
-    new-instance v0, Lcom/android/settings/bootloader/Utils$ParameterException;
+    new-instance v0, Lcom/android/vendorsettings/bootloader/Utils$ParameterException;
 
     const-string v1, "get paramter error: fid"
 
-    invoke-direct {v0, v1}, Lcom/android/settings/bootloader/Utils$ParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/bootloader/Utils$ParameterException;-><init>(Ljava/lang/String;)V
 
     throw v0
 
     .line 56
     :cond_0
-    invoke-static {p0}, Lcom/android/settings/bootloader/Utils;->aC(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/vendorsettings/bootloader/Utils;->aC(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -780,14 +780,14 @@
     if-nez v3, :cond_1
 
     .line 58
-    sget-object v0, Lcom/android/settings/bootloader/c;->Sz:Lcom/android/settings/bootloader/d;
+    sget-object v0, Lcom/android/vendorsettings/bootloader/c;->Sz:Lcom/android/vendorsettings/bootloader/d;
 
     const/4 v1, 0x1
 
-    iput v1, v0, Lcom/android/settings/bootloader/d;->SA:I
+    iput v1, v0, Lcom/android/vendorsettings/bootloader/d;->SA:I
 
     .line 59
-    sget-object v0, Lcom/android/settings/bootloader/c;->Sz:Lcom/android/settings/bootloader/d;
+    sget-object v0, Lcom/android/vendorsettings/bootloader/c;->Sz:Lcom/android/vendorsettings/bootloader/d;
 
     goto :goto_0
 
@@ -800,7 +800,7 @@
     .line 62
     const-string v2, "cloudsp_devId"
 
-    invoke-static {p0}, Lcom/android/settings/bootloader/Utils;->getDeviceId(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/vendorsettings/bootloader/Utils;->getDeviceId(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -809,7 +809,7 @@
     .line 63
     const-string v2, "cloudsp_cpuId"
 
-    invoke-static {p0}, Lcom/android/settings/bootloader/c;->aA(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/vendorsettings/bootloader/c;->aA(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -833,7 +833,7 @@
     invoke-virtual {v0, v2, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 67
-    invoke-static {v0}, Lcom/android/settings/bootloader/c;->a(Ljava/util/Map;)[B
+    invoke-static {v0}, Lcom/android/vendorsettings/bootloader/c;->a(Ljava/util/Map;)[B
 
     move-result-object v2
 
@@ -841,11 +841,11 @@
     if-nez v2, :cond_2
 
     .line 69
-    new-instance v0, Lcom/android/settings/bootloader/Utils$ParameterException;
+    new-instance v0, Lcom/android/vendorsettings/bootloader/Utils$ParameterException;
 
     const-string v1, "get paramter error: sign"
 
-    invoke-direct {v0, v1}, Lcom/android/settings/bootloader/Utils$ParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/bootloader/Utils$ParameterException;-><init>(Ljava/lang/String;)V
 
     throw v0
 
@@ -853,7 +853,7 @@
     :cond_2
     const-string v3, "cloudp_sign"
 
-    invoke-static {v2}, Lcom/android/settings/bootloader/Utils;->b([B)Ljava/lang/String;
+    invoke-static {v2}, Lcom/android/vendorsettings/bootloader/Utils;->b([B)Ljava/lang/String;
 
     move-result-object v2
 
@@ -867,7 +867,7 @@
     const-string v2, "https://deviceapi.micloud.xiaomi.net/mic/binding/v1/identified/device/account"
 
     .line 73
-    invoke-static {p0, v1}, Lcom/android/settings/bootloader/c;->a(Landroid/content/Context;Ljava/util/Map;)V
+    invoke-static {p0, v1}, Lcom/android/vendorsettings/bootloader/c;->a(Landroid/content/Context;Ljava/util/Map;)V
 
     .line 74
     const-string v3, "CloudDeviceStatus"
@@ -926,21 +926,21 @@
     move-result-object v0
 
     .line 78
-    invoke-static {v0}, Lcom/android/settings/bootloader/c;->a(Lmiui/cloud/net/XHttpClient$HttpResponse;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/bootloader/c;->a(Lmiui/cloud/net/XHttpClient$HttpResponse;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
     .line 79
-    sget-object v0, Lcom/android/settings/bootloader/c;->Sz:Lcom/android/settings/bootloader/d;
+    sget-object v0, Lcom/android/vendorsettings/bootloader/c;->Sz:Lcom/android/vendorsettings/bootloader/d;
 
     const/4 v1, 0x0
 
-    iput v1, v0, Lcom/android/settings/bootloader/d;->SA:I
+    iput v1, v0, Lcom/android/vendorsettings/bootloader/d;->SA:I
 
     .line 80
-    sget-object v0, Lcom/android/settings/bootloader/c;->Sz:Lcom/android/settings/bootloader/d;
+    sget-object v0, Lcom/android/vendorsettings/bootloader/c;->Sz:Lcom/android/vendorsettings/bootloader/d;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -951,11 +951,11 @@
     move-exception v0
 
     .line 83
-    sget-object v0, Lcom/android/settings/bootloader/c;->Sz:Lcom/android/settings/bootloader/d;
+    sget-object v0, Lcom/android/vendorsettings/bootloader/c;->Sz:Lcom/android/vendorsettings/bootloader/d;
 
     const/4 v1, 0x2
 
-    iput v1, v0, Lcom/android/settings/bootloader/d;->SA:I
+    iput v1, v0, Lcom/android/vendorsettings/bootloader/d;->SA:I
 
     .line 84
     const-string v0, "CloudDeviceStatus"
@@ -966,7 +966,7 @@
 
     .line 86
     :cond_3
-    sget-object v0, Lcom/android/settings/bootloader/c;->Sz:Lcom/android/settings/bootloader/d;
+    sget-object v0, Lcom/android/vendorsettings/bootloader/c;->Sz:Lcom/android/vendorsettings/bootloader/d;
 
     goto/16 :goto_0
 .end method
@@ -978,7 +978,7 @@
     const/4 v1, 0x0
 
     .line 121
-    invoke-static {p0}, Lcom/android/settings/bootloader/Utils;->aC(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/vendorsettings/bootloader/Utils;->aC(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -995,7 +995,7 @@
     .line 125
     const-string v4, "cloudsp_devId"
 
-    invoke-static {p0}, Lcom/android/settings/bootloader/Utils;->getDeviceId(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/vendorsettings/bootloader/Utils;->getDeviceId(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -1030,7 +1030,7 @@
     .line 136
     const-string v0, "https://deviceapi.micloud.xiaomi.net/mic/find/v4/anonymous/challenge"
 
-    invoke-static {v0, v2}, Lcom/android/settings/bootloader/Utils;->a(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
+    invoke-static {v0, v2}, Lcom/android/vendorsettings/bootloader/Utils;->a(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1045,7 +1045,7 @@
     move-result-object v0
 
     .line 139
-    invoke-static {v0}, Lcom/android/settings/bootloader/c;->a(Lmiui/cloud/net/XHttpClient$HttpResponse;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/bootloader/c;->a(Lmiui/cloud/net/XHttpClient$HttpResponse;)Z
 
     move-result v2
 
@@ -1083,11 +1083,11 @@
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     .line 134
-    new-instance v0, Lcom/android/settings/bootloader/Utils$ParameterException;
+    new-instance v0, Lcom/android/vendorsettings/bootloader/Utils$ParameterException;
 
     const-string v1, "get paramter error: fid"
 
-    invoke-direct {v0, v1}, Lcom/android/settings/bootloader/Utils$ParameterException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/bootloader/Utils$ParameterException;-><init>(Ljava/lang/String;)V
 
     throw v0
 
@@ -1102,11 +1102,11 @@
     move-exception v0
 
     .line 146
-    sget-object v0, Lcom/android/settings/bootloader/c;->Sz:Lcom/android/settings/bootloader/d;
+    sget-object v0, Lcom/android/vendorsettings/bootloader/c;->Sz:Lcom/android/vendorsettings/bootloader/d;
 
     const/4 v2, 0x2
 
-    iput v2, v0, Lcom/android/settings/bootloader/d;->SA:I
+    iput v2, v0, Lcom/android/vendorsettings/bootloader/d;->SA:I
 
     .line 147
     const-string v0, "CloudDeviceStatus"

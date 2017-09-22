@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/DefaultBrowserPreference;
-.super Lcom/android/settings/AppListPreference;
+.class public Lcom/android/vendorsettings/applications/DefaultBrowserPreference;
+.super Lcom/android/vendorsettings/AppListPreference;
 .source "DefaultBrowserPreference.java"
 
 
@@ -13,17 +13,17 @@
 
     .prologue
     .line 37
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/AppListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/AppListPreference;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 39
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/DefaultBrowserPreference;->i:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/DefaultBrowserPreference;->i:Landroid/content/pm/PackageManager;
 
     .line 40
-    invoke-virtual {p0}, Lcom/android/settings/applications/DefaultBrowserPreference;->kr()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/DefaultBrowserPreference;->kr()V
 
     .line 41
     return-void
@@ -63,7 +63,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
     .line 59
-    iget-object v1, p0, Lcom/android/settings/applications/DefaultBrowserPreference;->i:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/DefaultBrowserPreference;->i:Landroid/content/pm/PackageManager;
 
     const/high16 v3, 0x20000
 
@@ -145,7 +145,7 @@
 
     .prologue
     .line 44
-    invoke-direct {p0}, Lcom/android/settings/applications/DefaultBrowserPreference;->ks()Ljava/util/List;
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/DefaultBrowserPreference;->ks()Ljava/util/List;
 
     move-result-object v0
 
@@ -164,7 +164,7 @@
 
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/applications/DefaultBrowserPreference;->a([Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/applications/DefaultBrowserPreference;->a([Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
 
     .line 47
     return-void

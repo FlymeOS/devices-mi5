@@ -1,19 +1,19 @@
-.class Lcom/android/settings/users/UserSettings$3;
+.class Lcom/android/vendorsettings/users/UserSettings$3;
 .super Landroid/os/AsyncTask;
 .source "UserSettings.java"
 
 
 # instance fields
-.field final synthetic auA:Lcom/android/settings/users/UserSettings;
+.field final synthetic auA:Lcom/android/vendorsettings/users/UserSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/UserSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/users/UserSettings;)V
     .locals 0
 
     .prologue
     .line 328
-    iput-object p1, p0, Lcom/android/settings/users/UserSettings$3;->auA:Lcom/android/settings/users/UserSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/users/UserSettings$3;->auA:Lcom/android/vendorsettings/users/UserSettings;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 331
-    iget-object v0, p0, Lcom/android/settings/users/UserSettings$3;->auA:Lcom/android/settings/users/UserSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/users/UserSettings$3;->auA:Lcom/android/vendorsettings/users/UserSettings;
 
-    invoke-static {v0, p1}, Lcom/android/settings/users/UserSettings;->a(Lcom/android/settings/users/UserSettings;Ljava/lang/String;)V
+    invoke-static {v0, p1}, Lcom/android/vendorsettings/users/UserSettings;->a(Lcom/android/vendorsettings/users/UserSettings;Ljava/lang/String;)V
 
     .line 332
     return-void
@@ -42,7 +42,7 @@
     .line 328
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/users/UserSettings$3;->h([Ljava/lang/Void;)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/users/UserSettings$3;->h([Ljava/lang/Void;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -54,9 +54,9 @@
 
     .prologue
     .line 336
-    iget-object v0, p0, Lcom/android/settings/users/UserSettings$3;->auA:Lcom/android/settings/users/UserSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/users/UserSettings$3;->auA:Lcom/android/vendorsettings/users/UserSettings;
 
-    invoke-static {v0}, Lcom/android/settings/users/UserSettings;->d(Lcom/android/settings/users/UserSettings;)Landroid/os/UserManager;
+    invoke-static {v0}, Lcom/android/vendorsettings/users/UserSettings;->d(Lcom/android/vendorsettings/users/UserSettings;)Landroid/os/UserManager;
 
     move-result-object v0
 
@@ -85,9 +85,9 @@
 
     .line 338
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/users/UserSettings$3;->auA:Lcom/android/settings/users/UserSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/users/UserSettings$3;->auA:Lcom/android/vendorsettings/users/UserSettings;
 
-    invoke-static {v1, v0}, Lcom/android/settings/users/UserSettings;->a(Lcom/android/settings/users/UserSettings;Landroid/content/pm/UserInfo;)V
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/users/UserSettings;->a(Lcom/android/vendorsettings/users/UserSettings;Landroid/content/pm/UserInfo;)V
 
     .line 340
     :cond_1
@@ -103,7 +103,7 @@
     .line 328
     check-cast p1, Ljava/lang/String;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/users/UserSettings$3;->aW(Ljava/lang/String;)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/users/UserSettings$3;->aW(Ljava/lang/String;)V
 
     return-void
 .end method

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ConfirmLockPattern;
-.super Lcom/android/settings/hv;
+.class public Lcom/android/vendorsettings/ConfirmLockPattern;
+.super Lcom/android/vendorsettings/hv;
 .source "ConfirmLockPattern.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 54
-    invoke-direct {p0}, Lcom/android/settings/hv;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/hv;-><init>()V
 
     .line 115
     return-void
@@ -20,7 +20,7 @@
 
     .prologue
     .line 111
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPattern;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ConfirmLockPattern;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -49,7 +49,7 @@
     .line 96
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/hv;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/vendorsettings/hv;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -58,7 +58,7 @@
     .line 97
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;
+    const-class v2, Lcom/android/vendorsettings/ConfirmLockPattern$ConfirmLockPatternFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -82,7 +82,7 @@
 
     .prologue
     .line 104
-    const-class v0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;
+    const-class v0, Lcom/android/vendorsettings/ConfirmLockPattern$ConfirmLockPatternFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -112,10 +112,10 @@
 
     .prologue
     .line 86
-    invoke-super {p0, p1}, Lcom/android/settings/hv;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/hv;->onCreate(Landroid/os/Bundle;)V
 
     .line 88
-    invoke-direct {p0}, Lcom/android/settings/ConfirmLockPattern;->aM()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/ConfirmLockPattern;->aM()Z
 
     move-result v0
 
@@ -124,18 +124,18 @@
     .line 89
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ConfirmLockPattern;->setRequestedOrientation(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ConfirmLockPattern;->setRequestedOrientation(I)V
 
     .line 90
     :cond_0
     const v0, 0x7f0c0544
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ConfirmLockPattern;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ConfirmLockPattern;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     .line 91
-    invoke-virtual {p0, v0}, Lcom/android/settings/ConfirmLockPattern;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ConfirmLockPattern;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 92
     return-void

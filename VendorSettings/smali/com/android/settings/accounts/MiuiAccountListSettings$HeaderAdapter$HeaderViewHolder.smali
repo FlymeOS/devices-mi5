@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;
+.class Lcom/android/vendorsettings/accounts/MiuiAccountListSettings$HeaderAdapter$HeaderViewHolder;
 .super Ljava/lang/Object;
 .source "MiuiAccountListSettings.java"
 

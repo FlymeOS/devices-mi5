@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ha;
+.class Lcom/android/vendorsettings/ha;
 .super Ljava/lang/Object;
 .source "ScreenPinningSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic yv:Lcom/android/settings/ScreenPinningSettings;
+.field final synthetic yv:Lcom/android/vendorsettings/ScreenPinningSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ScreenPinningSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/ScreenPinningSettings;)V
     .locals 0
 
     .prologue
     .line 188
-    iput-object p1, p0, Lcom/android/settings/ha;->yv:Lcom/android/settings/ScreenPinningSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/ha;->yv:Lcom/android/vendorsettings/ScreenPinningSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 191
-    iget-object v0, p0, Lcom/android/settings/ha;->yv:Lcom/android/settings/ScreenPinningSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/ha;->yv:Lcom/android/vendorsettings/ScreenPinningSettings;
 
     check-cast p2, Ljava/lang/Boolean;
 
@@ -38,7 +38,7 @@
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/ScreenPinningSettings;->a(Lcom/android/settings/ScreenPinningSettings;Z)Z
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/ScreenPinningSettings;->a(Lcom/android/vendorsettings/ScreenPinningSettings;Z)Z
 
     move-result v0
 

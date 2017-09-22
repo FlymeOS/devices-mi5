@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiCryptKeeperSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "MiuiCryptKeeperSettings.java"
 
 
@@ -25,63 +25,63 @@
 
     .prologue
     .line 64
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 85
-    new-instance v0, Lcom/android/settings/eh;
+    new-instance v0, Lcom/android/vendorsettings/eh;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/eh;-><init>(Lcom/android/settings/MiuiCryptKeeperSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/eh;-><init>(Lcom/android/vendorsettings/MiuiCryptKeeperSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
     .line 115
-    new-instance v0, Lcom/android/settings/ei;
+    new-instance v0, Lcom/android/vendorsettings/ei;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/ei;-><init>(Lcom/android/settings/MiuiCryptKeeperSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/ei;-><init>(Lcom/android/vendorsettings/MiuiCryptKeeperSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->gK:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->gK:Landroid/view/View$OnClickListener;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiCryptKeeperSettings;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
+.method static synthetic a(Lcom/android/vendorsettings/MiuiCryptKeeperSettings;Landroid/app/AlertDialog;)Landroid/app/AlertDialog;
     .locals 0
 
     .prologue
     .line 64
-    iput-object p1, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->qb:Landroid/app/AlertDialog;
+    iput-object p1, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->qb:Landroid/app/AlertDialog;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiCryptKeeperSettings;)Landroid/widget/Button;
+.method static synthetic a(Lcom/android/vendorsettings/MiuiCryptKeeperSettings;)Landroid/widget/Button;
     .locals 1
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->gH:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->gH:Landroid/widget/Button;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiCryptKeeperSettings;I)Z
+.method static synthetic a(Lcom/android/vendorsettings/MiuiCryptKeeperSettings;I)Z
     .locals 1
 
     .prologue
     .line 64
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiCryptKeeperSettings;->s(I)Z
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->s(I)Z
 
     move-result v0
 
     return v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/MiuiCryptKeeperSettings;)Landroid/widget/TextView;
+.method static synthetic b(Lcom/android/vendorsettings/MiuiCryptKeeperSettings;)Landroid/widget/TextView;
     .locals 1
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->qj:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->qj:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -93,7 +93,7 @@
     .line 241
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiCryptKeeperSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -119,9 +119,9 @@
 
     const v1, 0x104000a
 
-    new-instance v2, Lcom/android/settings/ej;
+    new-instance v2, Lcom/android/vendorsettings/ej;
 
-    invoke-direct {v2, p0, p1, p2}, Lcom/android/settings/ej;-><init>(Lcom/android/settings/MiuiCryptKeeperSettings;ILjava/lang/String;)V
+    invoke-direct {v2, p0, p1, p2}, Lcom/android/vendorsettings/ej;-><init>(Lcom/android/vendorsettings/MiuiCryptKeeperSettings;ILjava/lang/String;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -139,10 +139,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->qk:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->qk:Landroid/app/AlertDialog;
 
     .line 298
-    iget-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->qk:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->qk:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
@@ -150,12 +150,12 @@
     return-void
 .end method
 
-.method static synthetic c(Lcom/android/settings/MiuiCryptKeeperSettings;)Landroid/app/AlertDialog;
+.method static synthetic c(Lcom/android/vendorsettings/MiuiCryptKeeperSettings;)Landroid/app/AlertDialog;
     .locals 1
 
     .prologue
     .line 64
-    iget-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->qb:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->qb:Landroid/app/AlertDialog;
 
     return-object v0
 .end method
@@ -167,7 +167,7 @@
     const/4 v1, 0x1
 
     .line 201
-    invoke-virtual {p0}, Lcom/android/settings/MiuiCryptKeeperSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -176,16 +176,16 @@
     move-result-object v2
 
     .line 202
-    new-instance v3, Lcom/android/settings/aH;
+    new-instance v3, Lcom/android/vendorsettings/aH;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiCryptKeeperSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-direct {v3, v0, p0}, Lcom/android/settings/aH;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
+    invoke-direct {v3, v0, p0}, Lcom/android/vendorsettings/aH;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
 
     .line 204
-    invoke-virtual {v3}, Lcom/android/settings/aH;->aE()Lcom/android/internal/widget/LockPatternUtils;
+    invoke-virtual {v3}, Lcom/android/vendorsettings/aH;->aE()Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v0
 
@@ -202,7 +202,7 @@
     .line 206
     const-string v0, ""
 
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/MiuiCryptKeeperSettings;->b(ILjava/lang/String;)V
+    invoke-direct {p0, v1, v0}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->b(ILjava/lang/String;)V
 
     move v0, v1
 
@@ -211,7 +211,7 @@
     return v0
 
     :cond_0
-    invoke-virtual {v3}, Lcom/android/settings/aH;->aE()Lcom/android/internal/widget/LockPatternUtils;
+    invoke-virtual {v3}, Lcom/android/vendorsettings/aH;->aE()Lcom/android/internal/widget/LockPatternUtils;
 
     move-result-object v0
 
@@ -234,7 +234,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v3, p1, v0, v1}, Lcom/android/settings/aH;->a(ILjava/lang/CharSequence;Z)Z
+    invoke-virtual {v3, p1, v0, v1}, Lcom/android/vendorsettings/aH;->a(ILjava/lang/CharSequence;Z)Z
 
     move-result v0
 
@@ -253,7 +253,7 @@
 
     .prologue
     .line 156
-    const-class v0, Lcom/android/settings/MiuiCryptKeeperSettings;
+    const-class v0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -267,15 +267,15 @@
 
     .prologue
     .line 171
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 172
     const v0, 0x7f04004c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiCryptKeeperSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->addPreferencesFromResource(I)V
 
     .line 173
-    invoke-virtual {p0}, Lcom/android/settings/MiuiCryptKeeperSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -298,7 +298,7 @@
     .line 176
     const-string v2, "crypt_keeper_decrypt_methods_summary"
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/MiuiCryptKeeperSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v2
 
@@ -361,7 +361,7 @@
     const/4 v1, -0x1
 
     .line 221
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 223
     const/16 v0, 0x37
@@ -403,7 +403,7 @@
 
     const-string v1, ""
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/MiuiCryptKeeperSettings;->b(ILjava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->b(ILjava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -415,14 +415,14 @@
     const/4 v1, 0x0
 
     .line 303
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onDestroy()V
 
     .line 304
-    iget-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->qk:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->qk:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->qk:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->qk:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
@@ -431,17 +431,17 @@
     if-eqz v0, :cond_0
 
     .line 305
-    iget-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->qk:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->qk:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 307
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->qb:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->qb:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->qb:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->qb:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->isShowing()Z
 
@@ -450,16 +450,16 @@
     if-eqz v0, :cond_1
 
     .line 308
-    iget-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->qb:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->qb:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 310
     :cond_1
-    iput-object v1, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->qk:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->qk:Landroid/app/AlertDialog;
 
     .line 311
-    iput-object v1, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->qb:Landroid/app/AlertDialog;
+    iput-object v1, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->qb:Landroid/app/AlertDialog;
 
     .line 312
     return-void
@@ -487,14 +487,14 @@
 
     .prologue
     .line 161
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPause()V
 
     .line 162
-    invoke-virtual {p0}, Lcom/android/settings/MiuiCryptKeeperSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
@@ -507,16 +507,16 @@
 
     .prologue
     .line 150
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 151
-    invoke-virtual {p0}, Lcom/android/settings/MiuiCryptKeeperSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->mIntentReceiver:Landroid/content/BroadcastReceiver;
 
-    iget-object v2, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v2, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     invoke-virtual {v0, v1, v2}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -529,17 +529,17 @@
 
     .prologue
     .line 139
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 140
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     .line 141
-    iget-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->mIntentFilter:Landroid/content/IntentFilter;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->mIntentFilter:Landroid/content/IntentFilter;
 
     const-string v1, "android.intent.action.BATTERY_CHANGED"
 
@@ -554,17 +554,17 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->gH:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->gH:Landroid/widget/Button;
 
     .line 143
-    iget-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->gH:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->gH:Landroid/widget/Button;
 
-    iget-object v1, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->gK:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->gK:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 144
-    iget-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->gH:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->gH:Landroid/widget/Button;
 
     const/4 v1, 0x0
 
@@ -579,7 +579,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiCryptKeeperSettings;->qj:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiCryptKeeperSettings;->qj:Landroid/widget/TextView;
 
     .line 146
     return-void

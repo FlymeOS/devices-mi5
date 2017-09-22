@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/Legal;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/Legal;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "Legal.java"
 
 
@@ -17,7 +17,7 @@
 
     .prologue
     .line 14
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -29,7 +29,7 @@
 
     .prologue
     .line 29
-    const-class v0, Lcom/android/settings/Legal;
+    const-class v0, Lcom/android/vendorsettings/Legal;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -45,64 +45,64 @@
     const/4 v3, 0x1
 
     .line 34
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 35
     const v0, 0x7f08002b
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/Legal;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/Legal;->addPreferencesFromResource(I)V
 
     .line 40
-    invoke-virtual {p0}, Lcom/android/settings/Legal;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/Legal;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     .line 42
-    invoke-virtual {p0}, Lcom/android/settings/Legal;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/Legal;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
     .line 43
     const-string v2, "terms"
 
-    invoke-static {v0, v1, v2, v3}, Lcom/android/settings/iC;->a(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
+    invoke-static {v0, v1, v2, v3}, Lcom/android/vendorsettings/iC;->a(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
     .line 45
     const-string v2, "license"
 
-    invoke-static {v0, v1, v2, v3}, Lcom/android/settings/iC;->a(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
+    invoke-static {v0, v1, v2, v3}, Lcom/android/vendorsettings/iC;->a(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
     .line 47
     const-string v2, "copyright"
 
-    invoke-static {v0, v1, v2, v3}, Lcom/android/settings/iC;->a(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
+    invoke-static {v0, v1, v2, v3}, Lcom/android/vendorsettings/iC;->a(Landroid/content/Context;Landroid/preference/PreferenceGroup;Ljava/lang/String;I)Z
 
     .line 50
     const-string v0, "miuiCopyright"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/Legal;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/Legal;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/Legal;->oQ:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/Legal;->oQ:Landroid/preference/Preference;
 
     .line 51
     const-string v0, "miuiUserAgreement"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/Legal;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/Legal;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/Legal;->oR:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/Legal;->oR:Landroid/preference/Preference;
 
     .line 52
     const-string v0, "miuiPrivacyPolicy"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/Legal;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/Legal;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/Legal;->oS:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/vendorsettings/Legal;->oS:Landroid/preference/Preference;
 
     .line 53
     return-void
@@ -120,7 +120,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 67
-    iget-object v1, p0, Lcom/android/settings/Legal;->oQ:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/Legal;->oQ:Landroid/preference/Preference;
 
     if-ne p2, v1, :cond_1
 
@@ -137,7 +137,7 @@
     .line 77
     :cond_0
     :goto_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -145,7 +145,7 @@
 
     .line 70
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/Legal;->oR:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/Legal;->oR:Landroid/preference/Preference;
 
     if-ne p2, v1, :cond_2
 
@@ -163,7 +163,7 @@
 
     .line 73
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/Legal;->oS:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/vendorsettings/Legal;->oS:Landroid/preference/Preference;
 
     if-ne p2, v1, :cond_0
 
@@ -185,10 +185,10 @@
 
     .prologue
     .line 57
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onStart()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onStart()V
 
     .line 58
-    invoke-virtual {p0}, Lcom/android/settings/Legal;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/Legal;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 

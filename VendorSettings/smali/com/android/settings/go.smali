@@ -1,4 +1,4 @@
-.class Lcom/android/settings/go;
+.class Lcom/android/vendorsettings/go;
 .super Ljava/lang/Object;
 .source "ProxySelector.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic wq:Lcom/android/settings/ProxySelector;
+.field final synthetic wq:Lcom/android/vendorsettings/ProxySelector;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ProxySelector;)V
+.method constructor <init>(Lcom/android/vendorsettings/ProxySelector;)V
     .locals 0
 
     .prologue
     .line 243
-    iput-object p1, p0, Lcom/android/settings/go;->wq:Lcom/android/settings/ProxySelector;
+    iput-object p1, p0, Lcom/android/vendorsettings/go;->wq:Lcom/android/vendorsettings/ProxySelector;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,18 +30,18 @@
 
     .prologue
     .line 245
-    iget-object v0, p0, Lcom/android/settings/go;->wq:Lcom/android/settings/ProxySelector;
+    iget-object v0, p0, Lcom/android/vendorsettings/go;->wq:Lcom/android/vendorsettings/ProxySelector;
 
-    invoke-virtual {v0}, Lcom/android/settings/ProxySelector;->gB()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/ProxySelector;->gB()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 246
-    iget-object v0, p0, Lcom/android/settings/go;->wq:Lcom/android/settings/ProxySelector;
+    iget-object v0, p0, Lcom/android/vendorsettings/go;->wq:Lcom/android/vendorsettings/ProxySelector;
 
-    invoke-virtual {v0}, Lcom/android/settings/ProxySelector;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/ProxySelector;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

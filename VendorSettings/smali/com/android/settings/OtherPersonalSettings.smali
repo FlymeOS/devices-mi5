@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/OtherPersonalSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/OtherPersonalSettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "OtherPersonalSettings.java"
 
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 33
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -25,7 +25,7 @@
     .line 136
     const-string v0, "locale_settings"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/OtherPersonalSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/OtherPersonalSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -81,7 +81,7 @@
 
     .line 147
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/OtherPersonalSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/OtherPersonalSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -133,7 +133,7 @@
 
     .prologue
     .line 39
-    const-class v0, Lcom/android/settings/OtherPersonalSettings;
+    const-class v0, Lcom/android/vendorsettings/OtherPersonalSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -151,10 +151,10 @@
     const/4 v2, 0x0
 
     .line 44
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 45
-    invoke-virtual {p0}, Lcom/android/settings/OtherPersonalSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/OtherPersonalSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -164,12 +164,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/OtherPersonalSettings;->vA:Landroid/content/SharedPreferences;
+    iput-object v0, p0, Lcom/android/vendorsettings/OtherPersonalSettings;->vA:Landroid/content/SharedPreferences;
 
     .line 47
     const v0, 0x7f08006c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/OtherPersonalSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/OtherPersonalSettings;->addPreferencesFromResource(I)V
 
     .line 48
     new-instance v4, Ljava/util/ArrayList;
@@ -266,7 +266,7 @@
 
     .line 72
     :cond_4
-    invoke-virtual {p0}, Lcom/android/settings/OtherPersonalSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/OtherPersonalSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
@@ -312,7 +312,7 @@
 
     .line 84
     :cond_7
-    iget-object v0, p0, Lcom/android/settings/OtherPersonalSettings;->vA:Landroid/content/SharedPreferences;
+    iget-object v0, p0, Lcom/android/vendorsettings/OtherPersonalSettings;->vA:Landroid/content/SharedPreferences;
 
     const-string v3, "show"
 
@@ -354,7 +354,7 @@
 
     .line 99
     :cond_a
-    invoke-virtual {p0}, Lcom/android/settings/OtherPersonalSettings;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/OtherPersonalSettings;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -405,7 +405,7 @@
 
     .line 105
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/OtherPersonalSettings;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/OtherPersonalSettings;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
@@ -432,7 +432,7 @@
 
     .line 110
     :cond_b
-    invoke-virtual {p0}, Lcom/android/settings/OtherPersonalSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/OtherPersonalSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v3
 
@@ -455,7 +455,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 112
-    invoke-virtual {p0, v0}, Lcom/android/settings/OtherPersonalSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/OtherPersonalSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -479,7 +479,7 @@
     :cond_e
     const-string v0, "one_key_migrate"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/OtherPersonalSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/OtherPersonalSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -488,7 +488,7 @@
 
     if-nez v4, :cond_f
 
-    invoke-direct {p0}, Lcom/android/settings/OtherPersonalSettings;->gu()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/OtherPersonalSettings;->gu()Z
 
     move-result v4
 
@@ -540,7 +540,7 @@
     aget-object v4, v0, v2
 
     .line 123
-    invoke-virtual {p0, v4}, Lcom/android/settings/OtherPersonalSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v4}, Lcom/android/vendorsettings/OtherPersonalSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v4
 
@@ -580,11 +580,11 @@
     .line 161
     const-string v1, "entry_level_secondary"
 
-    invoke-static {v1, v0}, Lcom/android/settings/analytics/a;->k(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/analytics/a;->k(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 163
     :cond_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -596,10 +596,10 @@
 
     .prologue
     .line 131
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 132
-    invoke-direct {p0}, Lcom/android/settings/OtherPersonalSettings;->gt()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/OtherPersonalSettings;->gt()V
 
     .line 133
     return-void

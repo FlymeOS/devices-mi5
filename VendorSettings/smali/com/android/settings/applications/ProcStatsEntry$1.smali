@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/ProcStatsEntry$1;
+.class final Lcom/android/vendorsettings/applications/ProcStatsEntry$1;
 .super Ljava/lang/Object;
 .source "ProcStatsEntry.java"
 
@@ -19,12 +19,12 @@
 
 
 # virtual methods
-.method public aX(I)[Lcom/android/settings/applications/ProcStatsEntry;
+.method public aX(I)[Lcom/android/vendorsettings/applications/ProcStatsEntry;
     .locals 1
 
     .prologue
     .line 297
-    new-array v0, p1, [Lcom/android/settings/applications/ProcStatsEntry;
+    new-array v0, p1, [Lcom/android/vendorsettings/applications/ProcStatsEntry;
 
     return-object v0
 .end method
@@ -34,21 +34,21 @@
 
     .prologue
     .line 291
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/ProcStatsEntry$1;->h(Landroid/os/Parcel;)Lcom/android/settings/applications/ProcStatsEntry;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/applications/ProcStatsEntry$1;->h(Landroid/os/Parcel;)Lcom/android/vendorsettings/applications/ProcStatsEntry;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public h(Landroid/os/Parcel;)Lcom/android/settings/applications/ProcStatsEntry;
+.method public h(Landroid/os/Parcel;)Lcom/android/vendorsettings/applications/ProcStatsEntry;
     .locals 1
 
     .prologue
     .line 293
-    new-instance v0, Lcom/android/settings/applications/ProcStatsEntry;
+    new-instance v0, Lcom/android/vendorsettings/applications/ProcStatsEntry;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/applications/ProcStatsEntry;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/vendorsettings/applications/ProcStatsEntry;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 291
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/ProcStatsEntry$1;->aX(I)[Lcom/android/settings/applications/ProcStatsEntry;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/applications/ProcStatsEntry$1;->aX(I)[Lcom/android/vendorsettings/applications/ProcStatsEntry;
 
     move-result-object v0
 

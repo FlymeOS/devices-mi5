@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/display/BrightnessFragment;
-.super Lcom/android/settings/BaseFragment;
+.class public Lcom/android/vendorsettings/display/BrightnessFragment;
+.super Lcom/android/vendorsettings/BaseFragment;
 .source "BrightnessFragment.java"
 
 # interfaces
@@ -45,65 +45,65 @@
 
     .prologue
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/BaseFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/BaseFragment;-><init>()V
 
     .line 50
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/display/BrightnessFragment;->XY:I
+    iput v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XY:I
 
     .line 61
-    new-instance v0, Lcom/android/settings/display/a;
+    new-instance v0, Lcom/android/vendorsettings/display/a;
 
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/display/a;-><init>(Lcom/android/settings/display/BrightnessFragment;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/display/a;-><init>(Lcom/android/vendorsettings/display/BrightnessFragment;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->Ya:Landroid/database/ContentObserver;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->Ya:Landroid/database/ContentObserver;
 
     .line 69
-    new-instance v0, Lcom/android/settings/display/b;
+    new-instance v0, Lcom/android/vendorsettings/display/b;
 
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/display/b;-><init>(Lcom/android/settings/display/BrightnessFragment;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/display/b;-><init>(Lcom/android/vendorsettings/display/BrightnessFragment;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->Yb:Landroid/database/ContentObserver;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->Yb:Landroid/database/ContentObserver;
 
     .line 285
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/display/BrightnessFragment;I)I
+.method static synthetic a(Lcom/android/vendorsettings/display/BrightnessFragment;I)I
     .locals 0
 
     .prologue
     .line 32
-    iput p1, p0, Lcom/android/settings/display/BrightnessFragment;->XY:I
+    iput p1, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XY:I
 
     return p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/display/BrightnessFragment;)V
+.method static synthetic a(Lcom/android/vendorsettings/display/BrightnessFragment;)V
     .locals 0
 
     .prologue
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/display/BrightnessFragment;->pu()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->pu()V
 
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/display/BrightnessFragment;)V
+.method static synthetic b(Lcom/android/vendorsettings/display/BrightnessFragment;)V
     .locals 0
 
     .prologue
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/display/BrightnessFragment;->pv()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->pv()V
 
     return-void
 .end method
@@ -115,7 +115,7 @@
     .line 160
     .line 162
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -147,7 +147,7 @@
 
     .prologue
     .line 210
-    iget-boolean v0, p0, Lcom/android/settings/display/BrightnessFragment;->vK:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->vK:Z
 
     if-eqz v0, :cond_0
 
@@ -157,32 +157,32 @@
 
     .line 212
     :cond_0
-    iget-boolean v0, p0, Lcom/android/settings/display/BrightnessFragment;->XW:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XW:Z
 
     if-eqz v0, :cond_1
 
     .line 213
-    iget v0, p0, Lcom/android/settings/display/BrightnessFragment;->XV:I
+    iget v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XV:I
 
-    invoke-direct {p0, v0}, Lcom/android/settings/display/BrightnessFragment;->setMode(I)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/display/BrightnessFragment;->setMode(I)V
 
     .line 215
     :cond_1
-    iget v0, p0, Lcom/android/settings/display/BrightnessFragment;->XU:I
+    iget v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XU:I
 
     const/4 v1, 0x0
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/display/BrightnessFragment;->j(IZ)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/display/BrightnessFragment;->j(IZ)V
 
     .line 216
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/display/BrightnessFragment;->vK:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->vK:Z
 
     .line 217
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/display/BrightnessFragment;->XY:I
+    iput v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XY:I
 
     goto :goto_0
 .end method
@@ -192,7 +192,7 @@
 
     .prologue
     .line 221
-    iget-boolean v0, p0, Lcom/android/settings/display/BrightnessFragment;->XX:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XX:Z
 
     if-eqz v0, :cond_0
 
@@ -212,7 +212,7 @@
     sub-float/2addr v0, v1
 
     .line 224
-    invoke-virtual {p0}, Lcom/android/settings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -231,7 +231,7 @@
 
     .line 229
     :cond_0
-    iget v0, p0, Lcom/android/settings/display/BrightnessFragment;->XZ:I
+    iget v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XZ:I
 
     rsub-int v0, v0, 0xff
 
@@ -252,7 +252,7 @@
 
     add-double/2addr v0, v2
 
-    iget v2, p0, Lcom/android/settings/display/BrightnessFragment;->XZ:I
+    iget v2, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XZ:I
 
     int-to-double v2, v2
 
@@ -261,7 +261,7 @@
     double-to-int v1, v0
 
     .line 231
-    invoke-virtual {p0}, Lcom/android/settings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -286,10 +286,10 @@
     .line 236
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/display/BrightnessFragment;->XY:I
+    iput v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XY:I
 
     .line 237
-    invoke-virtual {p0}, Lcom/android/settings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -306,7 +306,7 @@
 
     .line 241
     :cond_2
-    iput v1, p0, Lcom/android/settings/display/BrightnessFragment;->XY:I
+    iput v1, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XY:I
 
     goto :goto_0
 .end method
@@ -316,9 +316,9 @@
 
     .prologue
     .line 129
-    iget-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->XS:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XS:Landroid/view/View;
 
-    iget-boolean v1, p0, Lcom/android/settings/display/BrightnessFragment;->XX:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XX:Z
 
     if-eqz v1, :cond_0
 
@@ -328,9 +328,9 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 130
-    iget-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->XT:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XT:Landroid/view/View;
 
-    iget-object v1, p0, Lcom/android/settings/display/BrightnessFragment;->XS:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XS:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getVisibility()I
 
@@ -349,7 +349,7 @@
     .line 170
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/display/BrightnessFragment;->bC(I)I
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/display/BrightnessFragment;->bC(I)I
 
     move-result v0
 
@@ -359,7 +359,7 @@
     if-ne v0, v1, :cond_0
 
     .line 174
-    invoke-virtual {p0}, Lcom/android/settings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -396,12 +396,12 @@
 
     .line 178
     :cond_0
-    iget v0, p0, Lcom/android/settings/display/BrightnessFragment;->XY:I
+    iget v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XY:I
 
     if-gez v0, :cond_1
 
     .line 179
-    invoke-virtual {p0}, Lcom/android/settings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -421,13 +421,13 @@
 
     .line 184
     :goto_1
-    iget v1, p0, Lcom/android/settings/display/BrightnessFragment;->XZ:I
+    iget v1, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XZ:I
 
     int-to-float v1, v1
 
     sub-float/2addr v0, v1
 
-    iget v1, p0, Lcom/android/settings/display/BrightnessFragment;->XZ:I
+    iget v1, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XZ:I
 
     rsub-int v1, v1, 0xff
 
@@ -439,7 +439,7 @@
 
     .line 182
     :cond_1
-    iget v0, p0, Lcom/android/settings/display/BrightnessFragment;->XY:I
+    iget v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XY:I
 
     int-to-float v0, v0
 
@@ -451,9 +451,9 @@
 
     .prologue
     .line 191
-    iget-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
 
-    invoke-direct {p0}, Lcom/android/settings/display/BrightnessFragment;->pt()I
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->pt()I
 
     move-result v1
 
@@ -472,7 +472,7 @@
     const/4 v1, 0x0
 
     .line 195
-    invoke-direct {p0, v1}, Lcom/android/settings/display/BrightnessFragment;->bC(I)I
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/display/BrightnessFragment;->bC(I)I
 
     move-result v2
 
@@ -480,14 +480,14 @@
 
     .line 197
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/display/BrightnessFragment;->XQ:Lmiui/widget/SlidingButton;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XQ:Lmiui/widget/SlidingButton;
 
     invoke-virtual {v1, v0}, Lmiui/widget/SlidingButton;->setChecked(Z)V
 
     .line 198
-    iget-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
 
-    invoke-direct {p0}, Lcom/android/settings/display/BrightnessFragment;->pt()I
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->pt()I
 
     move-result v1
 
@@ -513,10 +513,10 @@
     if-ne p1, v0, :cond_0
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/display/BrightnessFragment;->XX:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XX:Z
 
     .line 248
-    invoke-virtual {p0}, Lcom/android/settings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -569,28 +569,28 @@
     const/4 v0, 0x1
 
     :goto_0
-    invoke-direct {p0, v0}, Lcom/android/settings/display/BrightnessFragment;->setMode(I)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/display/BrightnessFragment;->setMode(I)V
 
     .line 151
-    iget-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
 
-    invoke-direct {p0}, Lcom/android/settings/display/BrightnessFragment;->pt()I
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->pt()I
 
     move-result v2
 
     invoke-virtual {v0, v2}, Lmiui/widget/SeekBar;->setProgress(I)V
 
     .line 152
-    iget-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
 
     invoke-virtual {v0}, Lmiui/widget/SeekBar;->getProgress()I
 
     move-result v0
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/display/BrightnessFragment;->j(IZ)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/display/BrightnessFragment;->j(IZ)V
 
     .line 153
-    iget-object v1, p0, Lcom/android/settings/display/BrightnessFragment;->XR:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XR:Landroid/widget/TextView;
 
     if-eqz p2, :cond_1
 
@@ -600,7 +600,7 @@
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(I)V
 
     .line 156
-    invoke-direct {p0}, Lcom/android/settings/display/BrightnessFragment;->ps()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->ps()V
 
     .line 157
     return-void
@@ -625,10 +625,10 @@
     const/4 v3, 0x1
 
     .line 78
-    invoke-super {p0, p1}, Lcom/android/settings/BaseFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/BaseFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 79
-    invoke-virtual {p0}, Lcom/android/settings/display/BrightnessFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -638,10 +638,10 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/display/BrightnessFragment;->XW:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XW:Z
 
     .line 80
-    invoke-virtual {p0}, Lcom/android/settings/display/BrightnessFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -651,10 +651,10 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/display/BrightnessFragment;->XZ:I
+    iput v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XZ:I
 
     .line 82
-    invoke-virtual {p0}, Lcom/android/settings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -668,12 +668,12 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/display/BrightnessFragment;->Ya:Landroid/database/ContentObserver;
+    iget-object v2, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->Ya:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1, v3, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
     .line 86
-    invoke-virtual {p0}, Lcom/android/settings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -687,12 +687,12 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/display/BrightnessFragment;->Ya:Landroid/database/ContentObserver;
+    iget-object v2, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->Ya:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1, v3, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
     .line 90
-    invoke-virtual {p0}, Lcom/android/settings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -706,14 +706,14 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/display/BrightnessFragment;->Yb:Landroid/database/ContentObserver;
+    iget-object v2, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->Yb:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1, v3, v2}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
     .line 93
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/display/BrightnessFragment;->vK:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->vK:Z
 
     .line 94
     return-void
@@ -724,7 +724,7 @@
 
     .prologue
     .line 203
-    invoke-virtual {p0}, Lcom/android/settings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -733,17 +733,17 @@
     move-result-object v0
 
     .line 204
-    iget-object v1, p0, Lcom/android/settings/display/BrightnessFragment;->Ya:Landroid/database/ContentObserver;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->Ya:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
     .line 205
-    iget-object v1, p0, Lcom/android/settings/display/BrightnessFragment;->Yb:Landroid/database/ContentObserver;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->Yb:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
     .line 206
-    invoke-super {p0}, Lcom/android/settings/BaseFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/vendorsettings/BaseFragment;->onDestroy()V
 
     .line 207
     return-void
@@ -756,7 +756,7 @@
     .line 135
     const/4 v0, 0x0
 
-    invoke-direct {p0, p2, v0}, Lcom/android/settings/display/BrightnessFragment;->j(IZ)V
+    invoke-direct {p0, p2, v0}, Lcom/android/vendorsettings/display/BrightnessFragment;->j(IZ)V
 
     .line 136
     return-void
@@ -769,11 +769,11 @@
     const/4 v0, 0x1
 
     .line 255
-    iget-object v1, p0, Lcom/android/settings/display/BrightnessFragment;->mDialog:Landroid/app/Dialog;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->mDialog:Landroid/app/Dialog;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/display/BrightnessFragment;->mDialog:Landroid/app/Dialog;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->mDialog:Landroid/app/Dialog;
 
     invoke-virtual {v1}, Landroid/app/Dialog;->isShowing()Z
 
@@ -782,45 +782,45 @@
     if-eqz v1, :cond_0
 
     .line 257
-    new-instance v1, Lcom/android/settings/display/BrightnessFragment$SavedState;
+    new-instance v1, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;
 
-    invoke-direct {v1}, Lcom/android/settings/display/BrightnessFragment$SavedState;-><init>()V
+    invoke-direct {v1}, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;-><init>()V
 
     .line 258
-    iget-object v2, p0, Lcom/android/settings/display/BrightnessFragment;->XQ:Lmiui/widget/SlidingButton;
+    iget-object v2, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XQ:Lmiui/widget/SlidingButton;
 
     invoke-virtual {v2}, Lmiui/widget/SlidingButton;->isChecked()Z
 
     move-result v2
 
-    iput-boolean v2, v1, Lcom/android/settings/display/BrightnessFragment$SavedState;->automatic:Z
+    iput-boolean v2, v1, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->automatic:Z
 
     .line 259
-    iget-object v2, p0, Lcom/android/settings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
+    iget-object v2, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
 
     invoke-virtual {v2}, Lmiui/widget/SeekBar;->getProgress()I
 
     move-result v2
 
-    iput v2, v1, Lcom/android/settings/display/BrightnessFragment$SavedState;->progress:I
+    iput v2, v1, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->progress:I
 
     .line 260
-    iget v2, p0, Lcom/android/settings/display/BrightnessFragment;->XV:I
+    iget v2, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XV:I
 
     if-ne v2, v0, :cond_1
 
     :goto_0
-    iput-boolean v0, v1, Lcom/android/settings/display/BrightnessFragment$SavedState;->oldAutomatic:Z
+    iput-boolean v0, v1, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->oldAutomatic:Z
 
     .line 261
-    iget v0, p0, Lcom/android/settings/display/BrightnessFragment;->XU:I
+    iget v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XU:I
 
-    iput v0, v1, Lcom/android/settings/display/BrightnessFragment$SavedState;->oldProgress:I
+    iput v0, v1, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->oldProgress:I
 
     .line 262
-    iget v0, p0, Lcom/android/settings/display/BrightnessFragment;->XY:I
+    iget v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XY:I
 
-    iput v0, v1, Lcom/android/settings/display/BrightnessFragment$SavedState;->curBrightness:I
+    iput v0, v1, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->curBrightness:I
 
     .line 263
     const-string v0, "save_state"
@@ -828,11 +828,11 @@
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 266
-    invoke-direct {p0}, Lcom/android/settings/display/BrightnessFragment;->gx()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->gx()V
 
     .line 269
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/settings/BaseFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/BaseFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 270
     return-void
@@ -857,7 +857,7 @@
 
     .prologue
     .line 145
-    iget-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
 
     invoke-virtual {v0}, Lmiui/widget/SeekBar;->getProgress()I
 
@@ -865,7 +865,7 @@
 
     const/4 v1, 0x1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/display/BrightnessFragment;->j(IZ)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/display/BrightnessFragment;->j(IZ)V
 
     .line 146
     return-void
@@ -880,7 +880,7 @@
     const/4 v2, 0x0
 
     .line 105
-    invoke-super {p0, p1, p2}, Lcom/android/settings/BaseFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/BaseFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 106
     const v0, 0x7f13015d
@@ -891,26 +891,26 @@
 
     check-cast v0, Lmiui/widget/SeekBar;
 
-    iput-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
 
     .line 107
-    iget-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
 
     const/16 v3, 0x2710
 
     invoke-virtual {v0, v3}, Lmiui/widget/SeekBar;->setMax(I)V
 
     .line 108
-    invoke-direct {p0}, Lcom/android/settings/display/BrightnessFragment;->pt()I
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->pt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/display/BrightnessFragment;->XU:I
+    iput v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XU:I
 
     .line 109
-    iget-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
 
-    iget v3, p0, Lcom/android/settings/display/BrightnessFragment;->XU:I
+    iget v3, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XU:I
 
     invoke-virtual {v0, v3}, Lmiui/widget/SeekBar;->setProgress(I)V
 
@@ -923,7 +923,7 @@
 
     check-cast v0, Lmiui/widget/SlidingButton;
 
-    iput-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->XQ:Lmiui/widget/SlidingButton;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XQ:Lmiui/widget/SlidingButton;
 
     .line 112
     const v0, 0x7f1301ab
@@ -934,7 +934,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->XR:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XR:Landroid/widget/TextView;
 
     .line 114
     const v0, 0x7f1301a9
@@ -943,7 +943,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->XS:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XS:Landroid/view/View;
 
     .line 115
     const v0, 0x7f1301aa
@@ -952,39 +952,39 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->XT:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XT:Landroid/view/View;
 
     .line 116
-    iget-boolean v0, p0, Lcom/android/settings/display/BrightnessFragment;->XW:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XW:Z
 
     if-eqz v0, :cond_2
 
     .line 117
-    iget-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->XQ:Lmiui/widget/SlidingButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XQ:Lmiui/widget/SlidingButton;
 
     invoke-virtual {v0, p0}, Lmiui/widget/SlidingButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 118
-    invoke-direct {p0, v2}, Lcom/android/settings/display/BrightnessFragment;->bC(I)I
+    invoke-direct {p0, v2}, Lcom/android/vendorsettings/display/BrightnessFragment;->bC(I)I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/display/BrightnessFragment;->XV:I
+    iput v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XV:I
 
     .line 119
-    iget v0, p0, Lcom/android/settings/display/BrightnessFragment;->XV:I
+    iget v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XV:I
 
     if-ne v0, v1, :cond_0
 
     move v0, v1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/display/BrightnessFragment;->XX:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XX:Z
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->XQ:Lmiui/widget/SlidingButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XQ:Lmiui/widget/SlidingButton;
 
-    iget v3, p0, Lcom/android/settings/display/BrightnessFragment;->XV:I
+    iget v3, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XV:I
 
     if-eqz v3, :cond_1
 
@@ -992,11 +992,11 @@
     invoke-virtual {v0, v1}, Lmiui/widget/SlidingButton;->setChecked(Z)V
 
     .line 121
-    invoke-direct {p0}, Lcom/android/settings/display/BrightnessFragment;->ps()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/BrightnessFragment;->ps()V
 
     .line 125
     :goto_2
-    iget-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XP:Lmiui/widget/SeekBar;
 
     invoke-virtual {v0, p0}, Lmiui/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
 
@@ -1017,7 +1017,7 @@
 
     .line 123
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->XQ:Lmiui/widget/SlidingButton;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XQ:Lmiui/widget/SlidingButton;
 
     invoke-virtual {v0, v2}, Lmiui/widget/SlidingButton;->setEnabled(Z)V
 
@@ -1033,11 +1033,11 @@
     const/4 v3, 0x0
 
     .line 274
-    iget-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->mDialog:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->mDialog:Landroid/app/Dialog;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/display/BrightnessFragment;->mDialog:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->mDialog:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
 
@@ -1052,44 +1052,44 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/display/BrightnessFragment$SavedState;
+    check-cast v0, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;
 
     .line 276
-    iget v1, v0, Lcom/android/settings/display/BrightnessFragment$SavedState;->oldProgress:I
+    iget v1, v0, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->oldProgress:I
 
-    iput v1, p0, Lcom/android/settings/display/BrightnessFragment;->XU:I
+    iput v1, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XU:I
 
     .line 277
-    iget-boolean v1, v0, Lcom/android/settings/display/BrightnessFragment$SavedState;->oldAutomatic:Z
+    iget-boolean v1, v0, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->oldAutomatic:Z
 
     if-eqz v1, :cond_1
 
     move v1, v2
 
     :goto_0
-    iput v1, p0, Lcom/android/settings/display/BrightnessFragment;->XV:I
+    iput v1, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XV:I
 
     .line 278
-    iget v1, v0, Lcom/android/settings/display/BrightnessFragment$SavedState;->curBrightness:I
+    iget v1, v0, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->curBrightness:I
 
-    iput v1, p0, Lcom/android/settings/display/BrightnessFragment;->XY:I
+    iput v1, p0, Lcom/android/vendorsettings/display/BrightnessFragment;->XY:I
 
     .line 279
-    iget-boolean v1, v0, Lcom/android/settings/display/BrightnessFragment$SavedState;->automatic:Z
+    iget-boolean v1, v0, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->automatic:Z
 
     if-eqz v1, :cond_2
 
     :goto_1
-    invoke-direct {p0, v2}, Lcom/android/settings/display/BrightnessFragment;->setMode(I)V
+    invoke-direct {p0, v2}, Lcom/android/vendorsettings/display/BrightnessFragment;->setMode(I)V
 
     .line 280
-    iget v0, v0, Lcom/android/settings/display/BrightnessFragment$SavedState;->progress:I
+    iget v0, v0, Lcom/android/vendorsettings/display/BrightnessFragment$SavedState;->progress:I
 
-    invoke-direct {p0, v0, v3}, Lcom/android/settings/display/BrightnessFragment;->j(IZ)V
+    invoke-direct {p0, v0, v3}, Lcom/android/vendorsettings/display/BrightnessFragment;->j(IZ)V
 
     .line 282
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/settings/BaseFragment;->onViewStateRestored(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/BaseFragment;->onViewStateRestored(Landroid/os/Bundle;)V
 
     .line 283
     return-void

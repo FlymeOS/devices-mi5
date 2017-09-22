@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/network/Connection$ConnectionException;
+.class public Lcom/android/vendorsettings/cloud/network/Connection$ConnectionException;
 .super Ljava/lang/Exception;
 .source "Connection.java"
 
@@ -8,6 +8,6 @@
 
 
 # instance fields
-.field protected mError:Lcom/android/settings/cloud/network/Connection$NetworkError;
+.field protected mError:Lcom/android/vendorsettings/cloud/network/Connection$NetworkError;
 
-.field final synthetic this$0:Lcom/android/settings/cloud/network/Connection;
+.field final synthetic this$0:Lcom/android/vendorsettings/cloud/network/Connection;

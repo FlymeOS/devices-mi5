@@ -1,10 +1,10 @@
-.class Lcom/android/settings/widget/G;
+.class Lcom/android/vendorsettings/widget/G;
 .super Landroid/os/AsyncTask;
 .source "SettingsAppWidgetProvider.java"
 
 
 # instance fields
-.field final synthetic azy:Lcom/android/settings/widget/F;
+.field final synthetic azy:Lcom/android/vendorsettings/widget/F;
 
 .field final synthetic val$desiredState:Z
 
@@ -12,16 +12,16 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/widget/F;Landroid/net/wifi/WifiManager;Z)V
+.method constructor <init>(Lcom/android/vendorsettings/widget/F;Landroid/net/wifi/WifiManager;Z)V
     .locals 0
 
     .prologue
     .line 389
-    iput-object p1, p0, Lcom/android/settings/widget/G;->azy:Lcom/android/settings/widget/F;
+    iput-object p1, p0, Lcom/android/vendorsettings/widget/G;->azy:Lcom/android/vendorsettings/widget/F;
 
-    iput-object p2, p0, Lcom/android/settings/widget/G;->val$wifiManager:Landroid/net/wifi/WifiManager;
+    iput-object p2, p0, Lcom/android/vendorsettings/widget/G;->val$wifiManager:Landroid/net/wifi/WifiManager;
 
-    iput-boolean p3, p0, Lcom/android/settings/widget/G;->val$desiredState:Z
+    iput-boolean p3, p0, Lcom/android/vendorsettings/widget/G;->val$desiredState:Z
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -37,7 +37,7 @@
     .line 389
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/widget/G;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/widget/G;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
 
@@ -51,14 +51,14 @@
     const/4 v2, 0x0
 
     .line 395
-    iget-object v0, p0, Lcom/android/settings/widget/G;->val$wifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/G;->val$wifiManager:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->getWifiApState()I
 
     move-result v0
 
     .line 396
-    iget-boolean v1, p0, Lcom/android/settings/widget/G;->val$desiredState:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/widget/G;->val$desiredState:Z
 
     if-eqz v1, :cond_1
 
@@ -72,7 +72,7 @@
 
     .line 398
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/widget/G;->val$wifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/G;->val$wifiManager:Landroid/net/wifi/WifiManager;
 
     const/4 v1, 0x0
 
@@ -80,9 +80,9 @@
 
     .line 401
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/widget/G;->val$wifiManager:Landroid/net/wifi/WifiManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/G;->val$wifiManager:Landroid/net/wifi/WifiManager;
 
-    iget-boolean v1, p0, Lcom/android/settings/widget/G;->val$desiredState:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/widget/G;->val$desiredState:Z
 
     invoke-virtual {v0, v1}, Landroid/net/wifi/WifiManager;->setWifiEnabled(Z)Z
 

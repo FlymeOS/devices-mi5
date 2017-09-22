@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/backup/D;
-.super Lcom/android/settings/backup/g;
+.class public Lcom/android/vendorsettings/backup/D;
+.super Lcom/android/vendorsettings/backup/g;
 .source "WifiAgent.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 22
-    invoke-direct {p0, p1}, Lcom/android/settings/backup/g;-><init>(Lmiui/app/backup/FullBackupAgent;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/backup/g;-><init>(Lmiui/app/backup/FullBackupAgent;)V
 
     .line 23
     return-void
@@ -39,11 +39,11 @@
 
     .line 35
     :try_start_1
-    invoke-static {}, Lcom/android/settings/wifi/ai;->yg()Lcom/android/settings/wifi/ai;
+    invoke-static {}, Lcom/android/vendorsettings/wifi/ai;->yg()Lcom/android/vendorsettings/wifi/ai;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/ai;->getConfiguredNetworks()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/ai;->getConfiguredNetworks()Ljava/util/List;
 
     move-result-object v0
 
@@ -237,17 +237,17 @@
 
     .prologue
     .line 63
-    invoke-static {}, Lcom/android/settings/wifi/ai;->yg()Lcom/android/settings/wifi/ai;
+    invoke-static {}, Lcom/android/vendorsettings/wifi/ai;->yg()Lcom/android/vendorsettings/wifi/ai;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/backup/D;->PL:Lmiui/app/backup/FullBackupAgent;
+    iget-object v1, p0, Lcom/android/vendorsettings/backup/D;->PL:Lmiui/app/backup/FullBackupAgent;
 
     invoke-virtual {p2}, Landroid/os/ParcelFileDescriptor;->getFileDescriptor()Ljava/io/FileDescriptor;
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/wifi/ai;->a(Landroid/content/Context;Ljava/io/FileDescriptor;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/vendorsettings/wifi/ai;->a(Landroid/content/Context;Ljava/io/FileDescriptor;)V
 
     .line 64
     const/4 v0, 0x0

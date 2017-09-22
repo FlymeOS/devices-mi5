@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/SettingsFragment;
-.super Lcom/android/settings/BasePreferenceFragment;
+.class public Lcom/android/vendorsettings/SettingsFragment;
+.super Lcom/android/vendorsettings/BasePreferenceFragment;
 .source "SettingsFragment.java"
 
 # interfaces
@@ -19,7 +19,7 @@
 
 .field private zE:Landroid/widget/EditText;
 
-.field private zF:Lcom/android/settings/fq;
+.field private zF:Lcom/android/vendorsettings/fq;
 
 .field private zG:Ljava/lang/String;
 
@@ -29,7 +29,7 @@
 
 .field private zJ:Ljava/util/List;
 
-.field private zK:Lcom/android/settings/hC;
+.field private zK:Lcom/android/vendorsettings/hC;
 
 .field private zM:Lmiui/view/SearchActionMode$Callback;
 
@@ -48,7 +48,7 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/SettingsFragment;->zL:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/vendorsettings/SettingsFragment;->zL:Ljava/util/HashMap;
 
     return-void
 .end method
@@ -58,28 +58,28 @@
 
     .prologue
     .line 96
-    invoke-direct {p0}, Lcom/android/settings/BasePreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/BasePreferenceFragment;-><init>()V
 
     .line 166
-    new-instance v0, Lcom/android/settings/hx;
+    new-instance v0, Lcom/android/vendorsettings/hx;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/hx;-><init>(Lcom/android/settings/SettingsFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/hx;-><init>(Lcom/android/vendorsettings/SettingsFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/SettingsFragment;->zM:Lmiui/view/SearchActionMode$Callback;
+    iput-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zM:Lmiui/view/SearchActionMode$Callback;
 
     .line 337
-    new-instance v0, Lcom/android/settings/hz;
+    new-instance v0, Lcom/android/vendorsettings/hz;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/hz;-><init>(Lcom/android/settings/SettingsFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/hz;-><init>(Lcom/android/vendorsettings/SettingsFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/SettingsFragment;->zN:Landroid/widget/TextView$OnEditorActionListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zN:Landroid/widget/TextView$OnEditorActionListener;
 
     .line 344
-    new-instance v0, Lcom/android/settings/hA;
+    new-instance v0, Lcom/android/vendorsettings/hA;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/hA;-><init>(Lcom/android/settings/SettingsFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/hA;-><init>(Lcom/android/vendorsettings/SettingsFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/SettingsFragment;->zO:Landroid/text/TextWatcher;
+    iput-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zO:Landroid/text/TextWatcher;
 
     .line 98
     return-void
@@ -90,7 +90,7 @@
 
     .prologue
     .line 240
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zG:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zG:Ljava/lang/String;
 
     invoke-static {v0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -103,29 +103,29 @@
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/SettingsFragment;->zJ:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zJ:Ljava/util/List;
 
     .line 242
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zJ:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zJ:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 243
-    invoke-direct {p0, p1}, Lcom/android/settings/SettingsFragment;->R(Ljava/lang/String;)Ljava/util/List;
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/SettingsFragment;->R(Ljava/lang/String;)Ljava/util/List;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/SettingsFragment;->zJ:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zJ:Ljava/util/List;
 
     .line 244
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zK:Lcom/android/settings/hC;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zK:Lcom/android/vendorsettings/hC;
 
-    iget-object v1, p0, Lcom/android/settings/SettingsFragment;->zJ:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/vendorsettings/SettingsFragment;->zJ:Ljava/util/List;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/hC;->r(Ljava/util/List;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/hC;->r(Ljava/util/List;)V
 
     .line 245
-    iput-object p1, p0, Lcom/android/settings/SettingsFragment;->zG:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/SettingsFragment;->zG:Ljava/lang/String;
 
     .line 247
     :cond_0
@@ -160,7 +160,7 @@
     :cond_0
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/SettingsFragment;->zJ:Ljava/util/List;
+    iget-object v1, v0, Lcom/android/vendorsettings/SettingsFragment;->zJ:Ljava/util/List;
 
     .line 311
     :goto_0
@@ -169,7 +169,7 @@
     .line 255
     :cond_1
     :try_start_0
-    invoke-virtual/range {p0 .. p0}, Lcom/android/settings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual/range {p0 .. p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -342,7 +342,7 @@
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v3, v8}, Lcom/android/settings/SettingsFragment;->h(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {v0, v3, v8}, Lcom/android/vendorsettings/SettingsFragment;->h(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v12
 
@@ -460,13 +460,13 @@
     .line 280
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/SettingsFragment;->zJ:Ljava/util/List;
+    iget-object v1, v0, Lcom/android/vendorsettings/SettingsFragment;->zJ:Ljava/util/List;
 
-    new-instance v7, Lcom/android/settings/hc;
+    new-instance v7, Lcom/android/vendorsettings/hc;
 
     const/4 v13, 0x2
 
-    invoke-direct {v7, v13}, Lcom/android/settings/hc;-><init>(I)V
+    invoke-direct {v7, v13}, Lcom/android/vendorsettings/hc;-><init>(I)V
 
     invoke-interface {v1, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -475,11 +475,11 @@
 
     .line 283
     :cond_4
-    new-instance v1, Lcom/android/settings/hc;
+    new-instance v1, Lcom/android/vendorsettings/hc;
 
     const/4 v7, 0x0
 
-    invoke-direct/range {v1 .. v13}, Lcom/android/settings/hc;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct/range {v1 .. v13}, Lcom/android/vendorsettings/hc;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 285
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -498,7 +498,7 @@
     :cond_5
     move-object/from16 v0, p0
 
-    iget-object v2, v0, Lcom/android/settings/SettingsFragment;->zJ:Ljava/util/List;
+    iget-object v2, v0, Lcom/android/vendorsettings/SettingsFragment;->zJ:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -579,13 +579,13 @@
     :goto_a
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/SettingsFragment;->zJ:Ljava/util/List;
+    iget-object v1, v0, Lcom/android/vendorsettings/SettingsFragment;->zJ:Ljava/util/List;
 
     if-eqz v1, :cond_12
 
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/SettingsFragment;->zJ:Ljava/util/List;
+    iget-object v1, v0, Lcom/android/vendorsettings/SettingsFragment;->zJ:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
 
@@ -596,20 +596,20 @@
     .line 302
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/SettingsFragment;->zJ:Ljava/util/List;
+    iget-object v1, v0, Lcom/android/vendorsettings/SettingsFragment;->zJ:Ljava/util/List;
 
-    new-instance v2, Lcom/android/settings/hc;
+    new-instance v2, Lcom/android/vendorsettings/hc;
 
     const/4 v3, 0x3
 
-    invoke-direct {v2, v3}, Lcom/android/settings/hc;-><init>(I)V
+    invoke-direct {v2, v3}, Lcom/android/vendorsettings/hc;-><init>(I)V
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 303
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/SettingsFragment;->zE:Landroid/widget/EditText;
+    iget-object v1, v0, Lcom/android/vendorsettings/SettingsFragment;->zE:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -659,7 +659,7 @@
     :goto_b
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/SettingsFragment;->zJ:Ljava/util/List;
+    iget-object v1, v0, Lcom/android/vendorsettings/SettingsFragment;->zJ:Ljava/util/List;
 
     goto/16 :goto_0
 
@@ -703,11 +703,11 @@
     :cond_12
     move-object/from16 v0, p0
 
-    iget-object v1, v0, Lcom/android/settings/SettingsFragment;->zJ:Ljava/util/List;
+    iget-object v1, v0, Lcom/android/vendorsettings/SettingsFragment;->zJ:Ljava/util/List;
 
     move-object/from16 v0, p0
 
-    invoke-direct {v0, v1}, Lcom/android/settings/SettingsFragment;->q(Ljava/util/List;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/SettingsFragment;->q(Ljava/util/List;)V
 
     goto :goto_b
 
@@ -733,12 +733,12 @@
     goto :goto_c
 .end method
 
-.method static synthetic a(Lcom/android/settings/SettingsFragment;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;
+.method static synthetic a(Lcom/android/vendorsettings/SettingsFragment;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;
     .locals 1
 
     .prologue
     .line 58
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/SettingsFragment;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/vendorsettings/SettingsFragment;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableStringBuilder;
 
     move-result-object v0
 
@@ -831,7 +831,7 @@
 
     sub-int v2, v4, v2
 
-    invoke-static {p1, v2}, Lcom/android/settings/SettingsFragment;->f(Ljava/lang/String;I)[I
+    invoke-static {p1, v2}, Lcom/android/vendorsettings/SettingsFragment;->f(Ljava/lang/String;I)[I
 
     move-result-object v4
 
@@ -962,37 +962,37 @@
     goto :goto_2
 .end method
 
-.method static synthetic a(Lcom/android/settings/SettingsFragment;Landroid/widget/EditText;)Landroid/widget/EditText;
+.method static synthetic a(Lcom/android/vendorsettings/SettingsFragment;Landroid/widget/EditText;)Landroid/widget/EditText;
     .locals 0
 
     .prologue
     .line 58
-    iput-object p1, p0, Lcom/android/settings/SettingsFragment;->zE:Landroid/widget/EditText;
+    iput-object p1, p0, Lcom/android/vendorsettings/SettingsFragment;->zE:Landroid/widget/EditText;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/SettingsFragment;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic a(Lcom/android/vendorsettings/SettingsFragment;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
     .prologue
     .line 58
-    iput-object p1, p0, Lcom/android/settings/SettingsFragment;->zG:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/SettingsFragment;->zG:Ljava/lang/String;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/SettingsFragment;)Lmiui/view/SearchActionMode$Callback;
+.method static synthetic a(Lcom/android/vendorsettings/SettingsFragment;)Lmiui/view/SearchActionMode$Callback;
     .locals 1
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zM:Lmiui/view/SearchActionMode$Callback;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zM:Lmiui/view/SearchActionMode$Callback;
 
     return-object v0
 .end method
 
-.method private a(Landroid/view/View;Lcom/android/settings/hc;)V
+.method private a(Landroid/view/View;Lcom/android/vendorsettings/hc;)V
     .locals 8
 
     .prologue
@@ -1002,27 +1002,27 @@
     move-result-object v0
 
     .line 439
-    invoke-virtual {p2}, Lcom/android/settings/hc;->hq()Ljava/lang/String;
+    invoke-virtual {p2}, Lcom/android/vendorsettings/hc;->hq()Ljava/lang/String;
 
     move-result-object v1
 
     .line 440
-    invoke-virtual {p2}, Lcom/android/settings/hc;->hr()Ljava/lang/String;
+    invoke-virtual {p2}, Lcom/android/vendorsettings/hc;->hr()Ljava/lang/String;
 
     move-result-object v2
 
     .line 441
-    invoke-virtual {p2}, Lcom/android/settings/hc;->hs()Ljava/lang/String;
+    invoke-virtual {p2}, Lcom/android/vendorsettings/hc;->hs()Ljava/lang/String;
 
     move-result-object v3
 
     .line 442
-    invoke-virtual {p2}, Lcom/android/settings/hc;->getIntentAction()Ljava/lang/String;
+    invoke-virtual {p2}, Lcom/android/vendorsettings/hc;->getIntentAction()Ljava/lang/String;
 
     move-result-object v4
 
     .line 443
-    invoke-virtual {p2}, Lcom/android/settings/hc;->ho()Ljava/lang/String;
+    invoke-virtual {p2}, Lcom/android/vendorsettings/hc;->ho()Ljava/lang/String;
 
     move-result-object v5
 
@@ -1045,7 +1045,7 @@
     :goto_0
     const-string v3, ":settings:show_fragment_title"
 
-    invoke-virtual {p2}, Lcom/android/settings/hc;->hn()Ljava/lang/String;
+    invoke-virtual {p2}, Lcom/android/vendorsettings/hc;->hn()Ljava/lang/String;
 
     move-result-object v4
 
@@ -1089,13 +1089,13 @@
     invoke-virtual {v0, v6}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     .line 465
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zG:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zG:Ljava/lang/String;
 
-    invoke-virtual {p2}, Lcom/android/settings/hc;->hn()Ljava/lang/String;
+    invoke-virtual {p2}, Lcom/android/vendorsettings/hc;->hn()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/SettingsFragment;->i(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/SettingsFragment;->i(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1152,12 +1152,12 @@
     goto :goto_2
 .end method
 
-.method static synthetic a(Lcom/android/settings/SettingsFragment;Landroid/view/View;Lcom/android/settings/hc;)V
+.method static synthetic a(Lcom/android/vendorsettings/SettingsFragment;Landroid/view/View;Lcom/android/vendorsettings/hc;)V
     .locals 0
 
     .prologue
     .line 58
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/SettingsFragment;->a(Landroid/view/View;Lcom/android/settings/hc;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/SettingsFragment;->a(Landroid/view/View;Lcom/android/vendorsettings/hc;)V
 
     return-void
 .end method
@@ -1167,69 +1167,69 @@
 
     .prologue
     .line 58
-    invoke-static {}, Lcom/android/settings/SettingsFragment;->getLanguage()Ljava/lang/String;
+    invoke-static {}, Lcom/android/vendorsettings/SettingsFragment;->getLanguage()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/SettingsFragment;)Landroid/view/View;
+.method static synthetic b(Lcom/android/vendorsettings/SettingsFragment;)Landroid/view/View;
     .locals 1
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zD:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zD:Landroid/view/View;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/SettingsFragment;Ljava/lang/String;)V
+.method static synthetic b(Lcom/android/vendorsettings/SettingsFragment;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 58
-    invoke-direct {p0, p1}, Lcom/android/settings/SettingsFragment;->Q(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/SettingsFragment;->Q(Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method static synthetic c(Lcom/android/settings/SettingsFragment;)Landroid/widget/ListView;
+.method static synthetic c(Lcom/android/vendorsettings/SettingsFragment;)Landroid/widget/ListView;
     .locals 1
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->bz:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->bz:Landroid/widget/ListView;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/SettingsFragment;)Landroid/widget/ListView;
+.method static synthetic d(Lcom/android/vendorsettings/SettingsFragment;)Landroid/widget/ListView;
     .locals 1
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zI:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zI:Landroid/widget/ListView;
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/SettingsFragment;)V
+.method static synthetic e(Lcom/android/vendorsettings/SettingsFragment;)V
     .locals 0
 
     .prologue
     .line 58
-    invoke-direct {p0}, Lcom/android/settings/SettingsFragment;->hN()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsFragment;->hN()V
 
     return-void
 .end method
 
-.method static synthetic f(Lcom/android/settings/SettingsFragment;)Landroid/widget/TextView$OnEditorActionListener;
+.method static synthetic f(Lcom/android/vendorsettings/SettingsFragment;)Landroid/widget/TextView$OnEditorActionListener;
     .locals 1
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zN:Landroid/widget/TextView$OnEditorActionListener;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zN:Landroid/widget/TextView$OnEditorActionListener;
 
     return-object v0
 .end method
@@ -1288,12 +1288,12 @@
     return-object v3
 .end method
 
-.method static synthetic g(Lcom/android/settings/SettingsFragment;)Landroid/widget/EditText;
+.method static synthetic g(Lcom/android/vendorsettings/SettingsFragment;)Landroid/widget/EditText;
     .locals 1
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zE:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zE:Landroid/widget/EditText;
 
     return-object v0
 .end method
@@ -1339,12 +1339,12 @@
     goto :goto_0
 .end method
 
-.method static synthetic h(Lcom/android/settings/SettingsFragment;)Landroid/text/TextWatcher;
+.method static synthetic h(Lcom/android/vendorsettings/SettingsFragment;)Landroid/text/TextWatcher;
     .locals 1
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zO:Landroid/text/TextWatcher;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zO:Landroid/text/TextWatcher;
 
     return-object v0
 .end method
@@ -1358,7 +1358,7 @@
     .line 422
     .line 424
     :try_start_0
-    invoke-virtual {p0}, Lcom/android/settings/SettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1432,7 +1432,7 @@
 
     .prologue
     .line 153
-    invoke-virtual {p0}, Lcom/android/settings/SettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1445,7 +1445,7 @@
     check-cast v0, Landroid/view/inputmethod/InputMethodManager;
 
     .line 155
-    iget-object v1, p0, Lcom/android/settings/SettingsFragment;->zI:Landroid/widget/ListView;
+    iget-object v1, p0, Lcom/android/vendorsettings/SettingsFragment;->zI:Landroid/widget/ListView;
 
     invoke-virtual {v1}, Landroid/widget/ListView;->getWindowToken()Landroid/os/IBinder;
 
@@ -1469,7 +1469,7 @@
     move v1, v0
 
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->ct:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->ct:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -1478,7 +1478,7 @@
     if-ge v1, v0, :cond_1
 
     .line 218
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->ct:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->ct:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1492,7 +1492,7 @@
     if-eqz v0, :cond_0
 
     .line 220
-    invoke-virtual {p0}, Lcom/android/settings/SettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1500,7 +1500,7 @@
 
     move-result-object v2
 
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->ct:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->ct:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1515,7 +1515,7 @@
     move-result-object v2
 
     .line 221
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->ct:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->ct:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1535,7 +1535,7 @@
     if-eqz v0, :cond_0
 
     .line 223
-    sget-object v3, Lcom/android/settings/SettingsFragment;->zL:Ljava/util/HashMap;
+    sget-object v3, Lcom/android/vendorsettings/SettingsFragment;->zL:Ljava/util/HashMap;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1561,7 +1561,7 @@
 
     .prologue
     .line 230
-    invoke-virtual {p0}, Lcom/android/settings/SettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1599,17 +1599,17 @@
 
     .prologue
     .line 58
-    sget-object v0, Lcom/android/settings/SettingsFragment;->zL:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/SettingsFragment;->zL:Ljava/util/HashMap;
 
     return-object v0
 .end method
 
-.method static synthetic i(Lcom/android/settings/SettingsFragment;)V
+.method static synthetic i(Lcom/android/vendorsettings/SettingsFragment;)V
     .locals 0
 
     .prologue
     .line 58
-    invoke-direct {p0}, Lcom/android/settings/SettingsFragment;->hM()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsFragment;->hM()V
 
     return-void
 .end method
@@ -1660,32 +1660,32 @@
     return-void
 .end method
 
-.method static synthetic j(Lcom/android/settings/SettingsFragment;)Ljava/util/List;
+.method static synthetic j(Lcom/android/vendorsettings/SettingsFragment;)Ljava/util/List;
     .locals 1
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zJ:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zJ:Ljava/util/List;
 
     return-object v0
 .end method
 
-.method static synthetic k(Lcom/android/settings/SettingsFragment;)Lcom/android/settings/hC;
+.method static synthetic k(Lcom/android/vendorsettings/SettingsFragment;)Lcom/android/vendorsettings/hC;
     .locals 1
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zK:Lcom/android/settings/hC;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zK:Lcom/android/vendorsettings/hC;
 
     return-object v0
 .end method
 
-.method static synthetic l(Lcom/android/settings/SettingsFragment;)Ljava/lang/String;
+.method static synthetic l(Lcom/android/vendorsettings/SettingsFragment;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zG:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zG:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1711,13 +1711,13 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hc;
+    check-cast v0, Lcom/android/vendorsettings/hc;
 
-    invoke-virtual {v0}, Lcom/android/settings/hc;->hp()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/hc;->hp()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/SettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1753,22 +1753,22 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hc;
+    check-cast v0, Lcom/android/vendorsettings/hc;
 
     .line 322
     if-eqz v0, :cond_3
 
-    invoke-virtual {v0}, Lcom/android/settings/hc;->hp()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/hc;->hp()Ljava/lang/String;
 
     move-result-object v4
 
     if-eqz v4, :cond_3
 
-    invoke-virtual {v0}, Lcom/android/settings/hc;->hp()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/hc;->hp()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/SettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v4
 
@@ -1842,63 +1842,63 @@
     const/16 v5, 0x8
 
     .line 124
-    invoke-super {p0}, Lcom/android/settings/BasePreferenceFragment;->aa()V
+    invoke-super {p0}, Lcom/android/vendorsettings/BasePreferenceFragment;->aa()V
 
     .line 125
-    invoke-virtual {p0}, Lcom/android/settings/SettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/MiuiSettings;
+    check-cast v0, Lcom/android/vendorsettings/MiuiSettings;
 
     .line 126
-    new-instance v1, Lcom/android/settings/fq;
+    new-instance v1, Lcom/android/vendorsettings/fq;
 
-    iget-object v2, p0, Lcom/android/settings/SettingsFragment;->ct:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/vendorsettings/SettingsFragment;->ct:Ljava/util/List;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiSettings;->fT()Lcom/android/settings/accounts/AuthenticatorHelper;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/MiuiSettings;->fT()Lcom/android/vendorsettings/accounts/AuthenticatorHelper;
 
     move-result-object v3
 
     const/4 v4, 0x0
 
-    invoke-direct {v1, v0, v2, v3, v4}, Lcom/android/settings/fq;-><init>(Landroid/app/Activity;Ljava/util/List;Lcom/android/settings/accounts/AuthenticatorHelper;Z)V
+    invoke-direct {v1, v0, v2, v3, v4}, Lcom/android/vendorsettings/fq;-><init>(Landroid/app/Activity;Ljava/util/List;Lcom/android/vendorsettings/accounts/AuthenticatorHelper;Z)V
 
-    iput-object v1, p0, Lcom/android/settings/SettingsFragment;->zF:Lcom/android/settings/fq;
+    iput-object v1, p0, Lcom/android/vendorsettings/SettingsFragment;->zF:Lcom/android/vendorsettings/fq;
 
     .line 127
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->bz:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->bz:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lcom/android/settings/SettingsFragment;->zF:Lcom/android/settings/fq;
+    iget-object v1, p0, Lcom/android/vendorsettings/SettingsFragment;->zF:Lcom/android/vendorsettings/fq;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 128
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->bz:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->bz:Landroid/widget/ListView;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setChoiceMode(I)V
 
     .line 129
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zI:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zI:Landroid/widget/ListView;
 
     invoke-virtual {v0, v5}, Landroid/widget/ListView;->setVisibility(I)V
 
     .line 130
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zI:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zI:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lcom/android/settings/SettingsFragment;->zK:Lcom/android/settings/hC;
+    iget-object v1, p0, Lcom/android/vendorsettings/SettingsFragment;->zK:Lcom/android/vendorsettings/hC;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 131
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zH:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zH:Landroid/widget/ListView;
 
     invoke-virtual {v0, v5}, Landroid/widget/ListView;->setVisibility(I)V
 
     .line 132
-    invoke-virtual {p0}, Lcom/android/settings/SettingsFragment;->ad()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SettingsFragment;->ad()V
 
     .line 133
     return-void
@@ -1919,7 +1919,7 @@
 
     .prologue
     .line 102
-    const-class v0, Lcom/android/settings/SettingsFragment;
+    const-class v0, Lcom/android/vendorsettings/SettingsFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -1933,27 +1933,27 @@
 
     .prologue
     .line 106
-    invoke-super {p0, p1}, Lcom/android/settings/BasePreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/BasePreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 107
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/SettingsFragment;->zJ:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zJ:Ljava/util/List;
 
     .line 108
-    new-instance v0, Lcom/android/settings/hC;
+    new-instance v0, Lcom/android/vendorsettings/hC;
 
-    invoke-virtual {p0}, Lcom/android/settings/SettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/SettingsFragment;->zJ:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/vendorsettings/SettingsFragment;->zJ:Ljava/util/List;
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/android/settings/hC;-><init>(Lcom/android/settings/SettingsFragment;Landroid/content/Context;Ljava/util/List;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/android/vendorsettings/hC;-><init>(Lcom/android/vendorsettings/SettingsFragment;Landroid/content/Context;Ljava/util/List;)V
 
-    iput-object v0, p0, Lcom/android/settings/SettingsFragment;->zK:Lcom/android/settings/hC;
+    iput-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zK:Lcom/android/vendorsettings/hC;
 
     .line 109
     return-void
@@ -1983,15 +1983,15 @@
 
     check-cast v0, Landroid/widget/ListView;
 
-    iput-object v0, p0, Lcom/android/settings/SettingsFragment;->bz:Landroid/widget/ListView;
+    iput-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->bz:Landroid/widget/ListView;
 
     .line 83
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->bz:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->bz:Landroid/widget/ListView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ListView;->setFocusable(Z)V
 
     .line 84
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->bz:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->bz:Landroid/widget/ListView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ListView;->setFocusableInTouchMode(Z)V
 
@@ -2004,15 +2004,15 @@
 
     check-cast v0, Landroid/widget/ListView;
 
-    iput-object v0, p0, Lcom/android/settings/SettingsFragment;->zH:Landroid/widget/ListView;
+    iput-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zH:Landroid/widget/ListView;
 
     .line 86
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zH:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zH:Landroid/widget/ListView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ListView;->setFocusable(Z)V
 
     .line 87
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zH:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zH:Landroid/widget/ListView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ListView;->setFocusableInTouchMode(Z)V
 
@@ -2025,29 +2025,29 @@
 
     check-cast v0, Landroid/widget/ListView;
 
-    iput-object v0, p0, Lcom/android/settings/SettingsFragment;->zI:Landroid/widget/ListView;
+    iput-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zI:Landroid/widget/ListView;
 
     .line 89
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zI:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zI:Landroid/widget/ListView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ListView;->setFocusable(Z)V
 
     .line 90
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zI:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zI:Landroid/widget/ListView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ListView;->setFocusableInTouchMode(Z)V
 
     .line 91
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zI:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zI:Landroid/widget/ListView;
 
     invoke-virtual {v0, p0}, Landroid/widget/ListView;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 92
-    invoke-direct {p0}, Lcom/android/settings/SettingsFragment;->hO()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsFragment;->hO()Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/SettingsFragment;->IS_TABLET:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/SettingsFragment;->IS_TABLET:Z
 
     .line 93
     return-object v1
@@ -2058,12 +2058,12 @@
 
     .prologue
     .line 160
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zI:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zI:Landroid/widget/ListView;
 
     if-ne p1, v0, :cond_0
 
     .line 161
-    invoke-direct {p0}, Lcom/android/settings/SettingsFragment;->hM()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsFragment;->hM()V
 
     .line 163
     :cond_0
@@ -2077,10 +2077,10 @@
 
     .prologue
     .line 137
-    invoke-super {p0, p1, p2}, Lcom/android/settings/BasePreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/BasePreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 138
-    invoke-virtual {p0}, Lcom/android/settings/SettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/SettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -2096,27 +2096,27 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/SettingsFragment;->zD:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zD:Landroid/view/View;
 
     .line 140
-    iget-boolean v0, p0, Lcom/android/settings/SettingsFragment;->IS_TABLET:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/SettingsFragment;->IS_TABLET:Z
 
     if-nez v0, :cond_0
 
     .line 141
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->bz:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->bz:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lcom/android/settings/SettingsFragment;->zD:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/vendorsettings/SettingsFragment;->zD:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->addHeaderView(Landroid/view/View;)V
 
     .line 143
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/SettingsFragment;->zD:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/SettingsFragment;->zD:Landroid/view/View;
 
-    new-instance v1, Lcom/android/settings/hw;
+    new-instance v1, Lcom/android/vendorsettings/hw;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/hw;-><init>(Lcom/android/settings/SettingsFragment;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/hw;-><init>(Lcom/android/vendorsettings/SettingsFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword$3;
+.class Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword$3;
 .super Ljava/lang/Object;
 .source "ModifyAndInstructionPrivacyPassword.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic anl:Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;
+.field final synthetic anl:Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)V
+.method constructor <init>(Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword;)V
     .locals 0
 
     .prologue
     .line 330
-    iput-object p1, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword$3;->anl:Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;
+    iput-object p1, p0, Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword$3;->anl:Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,31 +32,31 @@
     const/4 v1, 0x0
 
     .line 333
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword$3;->anl:Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword$3;->anl:Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword;
 
-    invoke-static {v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->a(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    invoke-static {v0}, Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword;->a(Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword;)Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 
     move-result-object v0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->ba(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->ba(Z)V
 
     .line 334
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword$3;->anl:Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword$3;->anl:Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword;
 
-    invoke-static {v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->c(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)Landroid/preference/CheckBoxPreference;
+    invoke-static {v0}, Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword;->c(Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v0
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 335
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword$3;->anl:Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword$3;->anl:Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword;
 
-    invoke-static {v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->d(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)Lcom/android/settings/cZ;
+    invoke-static {v0}, Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword;->d(Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword;)Lcom/android/vendorsettings/cZ;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/cZ;->dX()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cZ;->dX()V
 
     .line 336
     return-void

@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/applications/ProcStatsEntry$Service;
+.class public final Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;
 .super Ljava/lang/Object;
 .source "ProcStatsEntry.java"
 
@@ -26,11 +26,11 @@
 
     .prologue
     .line 336
-    new-instance v0, Lcom/android/settings/applications/ProcStatsEntry$Service$1;
+    new-instance v0, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service$1;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/ProcStatsEntry$Service$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/ProcStatsEntry$Service;->CREATOR:Landroid/os/Parcelable$Creator;
+    sput-object v0, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
@@ -47,28 +47,28 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry$Service;->mPackage:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mPackage:Ljava/lang/String;
 
     .line 318
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry$Service;->mName:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mName:Ljava/lang/String;
 
     .line 319
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry$Service;->mProcess:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mProcess:Ljava/lang/String;
 
     .line 320
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry$Service;->mDuration:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mDuration:J
 
     .line 321
     return-void
@@ -88,17 +88,17 @@
     .line 308
     iget-object v0, p1, Lcom/android/internal/app/ProcessStats$ServiceState;->mPackage:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry$Service;->mPackage:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mPackage:Ljava/lang/String;
 
     .line 309
     iget-object v0, p1, Lcom/android/internal/app/ProcessStats$ServiceState;->mName:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry$Service;->mName:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mName:Ljava/lang/String;
 
     .line 310
     iget-object v0, p1, Lcom/android/internal/app/ProcessStats$ServiceState;->mProcessName:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry$Service;->mProcess:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mProcess:Ljava/lang/String;
 
     .line 311
     const/4 v4, 0x0
@@ -115,7 +115,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry$Service;->mDuration:J
+    iput-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mDuration:J
 
     .line 314
     return-void
@@ -138,22 +138,22 @@
 
     .prologue
     .line 330
-    iget-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry$Service;->mPackage:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mPackage:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 331
-    iget-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry$Service;->mName:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mName:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 332
-    iget-object v0, p0, Lcom/android/settings/applications/ProcStatsEntry$Service;->mProcess:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mProcess:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 333
-    iget-wide v0, p0, Lcom/android/settings/applications/ProcStatsEntry$Service;->mDuration:J
+    iget-wide v0, p0, Lcom/android/vendorsettings/applications/ProcStatsEntry$Service;->mDuration:J
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 

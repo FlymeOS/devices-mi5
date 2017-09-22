@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fingerprint/E;
+.class Lcom/android/vendorsettings/fingerprint/E;
 .super Ljava/lang/Object;
 .source "FingerprintSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic act:Lcom/android/settings/fingerprint/D;
+.field final synthetic act:Lcom/android/vendorsettings/fingerprint/D;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fingerprint/D;)V
+.method constructor <init>(Lcom/android/vendorsettings/fingerprint/D;)V
     .locals 0
 
     .prologue
     .line 656
-    iput-object p1, p0, Lcom/android/settings/fingerprint/E;->act:Lcom/android/settings/fingerprint/D;
+    iput-object p1, p0, Lcom/android/vendorsettings/fingerprint/E;->act:Lcom/android/vendorsettings/fingerprint/D;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

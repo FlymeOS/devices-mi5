@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ProvisionSpinner;
+.class public Lcom/android/vendorsettings/ProvisionSpinner;
 .super Landroid/widget/Spinner;
 .source "ProvisionSpinner.java"
 
@@ -23,7 +23,7 @@
 
     aput v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/ProvisionSpinner;->wf:[I
+    sput-object v0, Lcom/android/vendorsettings/ProvisionSpinner;->wf:[I
 
     return-void
 .end method
@@ -35,7 +35,7 @@
     .line 16
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/ProvisionSpinner;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/vendorsettings/ProvisionSpinner;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 17
     return-void
@@ -48,7 +48,7 @@
     .line 20
     const/4 v0, -0x1
 
-    invoke-direct {p0, p1, p2, p3, v0}, Lcom/android/settings/ProvisionSpinner;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+    invoke-direct {p0, p1, p2, p3, v0}, Lcom/android/vendorsettings/ProvisionSpinner;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     .line 21
     return-void
@@ -64,7 +64,7 @@
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/widget/Spinner;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     .line 25
-    sget-object v0, Lcom/android/settings/ProvisionSpinner;->wf:[I
+    sget-object v0, Lcom/android/vendorsettings/ProvisionSpinner;->wf:[I
 
     invoke-virtual {p1, p2, v0, p3, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -91,7 +91,7 @@
     invoke-virtual {v2, v1}, Landroid/widget/ArrayAdapter;->setDropDownViewResource(I)V
 
     .line 32
-    invoke-virtual {p0, v2}, Lcom/android/settings/ProvisionSpinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/ProvisionSpinner;->setAdapter(Landroid/widget/SpinnerAdapter;)V
 
     .line 34
     :cond_0

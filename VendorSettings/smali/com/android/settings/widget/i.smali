@@ -1,12 +1,12 @@
-.class public Lcom/android/settings/widget/i;
+.class public Lcom/android/vendorsettings/widget/i;
 .super Landroid/widget/FrameLayout;
 .source "ChartView.java"
 
 
 # instance fields
-.field awW:Lcom/android/settings/widget/a;
+.field awW:Lcom/android/vendorsettings/widget/a;
 
-.field awX:Lcom/android/settings/widget/a;
+.field awX:Lcom/android/vendorsettings/widget/a;
 
 .field private axV:I
 
@@ -25,7 +25,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {p0, p1, v0, v1}, Lcom/android/settings/widget/i;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, v0, v1}, Lcom/android/vendorsettings/widget/i;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 53
     return-void
@@ -38,7 +38,7 @@
     .line 56
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/widget/i;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/vendorsettings/widget/i;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 57
     return-void
@@ -58,20 +58,20 @@
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 45
-    iput v1, p0, Lcom/android/settings/widget/i;->axV:I
+    iput v1, p0, Lcom/android/vendorsettings/widget/i;->axV:I
 
     .line 47
-    iput v4, p0, Lcom/android/settings/widget/i;->axW:F
+    iput v4, p0, Lcom/android/vendorsettings/widget/i;->axW:F
 
     .line 49
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/widget/i;->axX:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/i;->axX:Landroid/graphics/Rect;
 
     .line 62
-    sget-object v0, Lcom/android/settings/gt;->wv:[I
+    sget-object v0, Lcom/android/vendorsettings/gt;->wv:[I
 
     invoke-virtual {p1, p2, v0, p3, v3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
@@ -88,16 +88,16 @@
 
     move-result v2
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/widget/i;->a(IF)V
+    invoke-virtual {p0, v1, v2}, Lcom/android/vendorsettings/widget/i;->a(IF)V
 
     .line 66
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 68
-    invoke-virtual {p0, v3}, Lcom/android/settings/widget/i;->setClipToPadding(Z)V
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/widget/i;->setClipToPadding(Z)V
 
     .line 69
-    invoke-virtual {p0, v3}, Lcom/android/settings/widget/i;->setClipChildren(Z)V
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/widget/i;->setClipChildren(Z)V
 
     .line 70
     return-void
@@ -110,31 +110,31 @@
 
     .prologue
     .line 78
-    iput p1, p0, Lcom/android/settings/widget/i;->axV:I
+    iput p1, p0, Lcom/android/vendorsettings/widget/i;->axV:I
 
     .line 79
-    iput p2, p0, Lcom/android/settings/widget/i;->axW:F
+    iput p2, p0, Lcom/android/vendorsettings/widget/i;->axW:F
 
     .line 80
-    invoke-virtual {p0}, Lcom/android/settings/widget/i;->requestLayout()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/i;->requestLayout()V
 
     .line 81
     return-void
 .end method
 
-.method protected a(Lcom/android/settings/widget/ChartSweepView;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
+.method protected a(Lcom/android/vendorsettings/widget/ChartSweepView;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 5
 
     .prologue
     const v4, 0x800033
 
     .line 143
-    invoke-virtual {p1}, Lcom/android/settings/widget/ChartSweepView;->wm()Landroid/graphics/Rect;
+    invoke-virtual {p1}, Lcom/android/vendorsettings/widget/ChartSweepView;->wm()Landroid/graphics/Rect;
 
     move-result-object v0
 
     .line 146
-    invoke-virtual {p1}, Lcom/android/settings/widget/ChartSweepView;->wl()I
+    invoke-virtual {p1}, Lcom/android/vendorsettings/widget/ChartSweepView;->wl()I
 
     move-result v1
 
@@ -147,7 +147,7 @@
 
     iget v2, v0, Landroid/graphics/Rect;->top:I
 
-    invoke-virtual {p1}, Lcom/android/settings/widget/ChartSweepView;->wt()F
+    invoke-virtual {p1}, Lcom/android/vendorsettings/widget/ChartSweepView;->wt()F
 
     move-result v3
 
@@ -187,7 +187,7 @@
 
     move-result v0
 
-    invoke-virtual {p1}, Lcom/android/settings/widget/ChartSweepView;->getMeasuredHeight()I
+    invoke-virtual {p1}, Lcom/android/vendorsettings/widget/ChartSweepView;->getMeasuredHeight()I
 
     move-result v1
 
@@ -203,7 +203,7 @@
 
     iget v2, v0, Landroid/graphics/Rect;->left:I
 
-    invoke-virtual {p1}, Lcom/android/settings/widget/ChartSweepView;->wt()F
+    invoke-virtual {p1}, Lcom/android/vendorsettings/widget/ChartSweepView;->wt()F
 
     move-result v3
 
@@ -239,7 +239,7 @@
     iput v0, p2, Landroid/graphics/Rect;->bottom:I
 
     .line 159
-    invoke-virtual {p1}, Lcom/android/settings/widget/ChartSweepView;->getMeasuredWidth()I
+    invoke-virtual {p1}, Lcom/android/vendorsettings/widget/ChartSweepView;->getMeasuredWidth()I
 
     move-result v0
 
@@ -252,7 +252,7 @@
     goto :goto_0
 .end method
 
-.method a(Lcom/android/settings/widget/a;Lcom/android/settings/widget/a;)V
+.method a(Lcom/android/vendorsettings/widget/a;Lcom/android/vendorsettings/widget/a;)V
     .locals 1
 
     .prologue
@@ -263,9 +263,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/a;
+    check-cast v0, Lcom/android/vendorsettings/widget/a;
 
-    iput-object v0, p0, Lcom/android/settings/widget/i;->awW:Lcom/android/settings/widget/a;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/i;->awW:Lcom/android/vendorsettings/widget/a;
 
     .line 74
     const-string v0, "missing vert"
@@ -274,22 +274,22 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/widget/a;
+    check-cast v0, Lcom/android/vendorsettings/widget/a;
 
-    iput-object v0, p0, Lcom/android/settings/widget/i;->awX:Lcom/android/settings/widget/a;
+    iput-object v0, p0, Lcom/android/vendorsettings/widget/i;->awX:Lcom/android/vendorsettings/widget/a;
 
     .line 75
     return-void
 .end method
 
-.method protected h(Lcom/android/settings/widget/ChartSweepView;)V
+.method protected h(Lcom/android/vendorsettings/widget/ChartSweepView;)V
     .locals 4
 
     .prologue
     .line 135
     new-instance v0, Landroid/graphics/Rect;
 
-    iget-object v1, p0, Lcom/android/settings/widget/i;->axX:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/android/vendorsettings/widget/i;->axX:Landroid/graphics/Rect;
 
     invoke-direct {v0, v1}, Landroid/graphics/Rect;-><init>(Landroid/graphics/Rect;)V
 
@@ -299,7 +299,7 @@
     invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
 
     .line 138
-    invoke-virtual {p0, p1, v0, v1}, Lcom/android/settings/widget/i;->a(Lcom/android/settings/widget/ChartSweepView;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
+    invoke-virtual {p0, p1, v0, v1}, Lcom/android/vendorsettings/widget/i;->a(Lcom/android/vendorsettings/widget/ChartSweepView;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
 
     .line 139
     iget v0, v1, Landroid/graphics/Rect;->left:I
@@ -310,7 +310,7 @@
 
     iget v1, v1, Landroid/graphics/Rect;->bottom:I
 
-    invoke-virtual {p1, v0, v2, v3, v1}, Lcom/android/settings/widget/ChartSweepView;->layout(IIII)V
+    invoke-virtual {p1, v0, v2, v3, v1}, Lcom/android/vendorsettings/widget/ChartSweepView;->layout(IIII)V
 
     .line 140
     return-void
@@ -321,19 +321,19 @@
 
     .prologue
     .line 97
-    iget-object v0, p0, Lcom/android/settings/widget/i;->axX:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/i;->axX:Landroid/graphics/Rect;
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/i;->getPaddingLeft()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/i;->getPaddingLeft()I
 
     move-result v1
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/i;->getPaddingTop()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/i;->getPaddingTop()I
 
     move-result v2
 
     sub-int v3, p4, p2
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/i;->getPaddingRight()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/i;->getPaddingRight()I
 
     move-result v4
 
@@ -341,7 +341,7 @@
 
     sub-int v4, p5, p3
 
-    invoke-virtual {p0}, Lcom/android/settings/widget/i;->getPaddingBottom()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/i;->getPaddingBottom()I
 
     move-result v5
 
@@ -350,32 +350,32 @@
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/Rect;->set(IIII)V
 
     .line 99
-    iget-object v0, p0, Lcom/android/settings/widget/i;->axX:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/i;->axX:Landroid/graphics/Rect;
 
     invoke-virtual {v0}, Landroid/graphics/Rect;->width()I
 
     move-result v3
 
     .line 100
-    iget-object v0, p0, Lcom/android/settings/widget/i;->axX:Landroid/graphics/Rect;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/i;->axX:Landroid/graphics/Rect;
 
     invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
 
     move-result v4
 
     .line 103
-    iget-object v0, p0, Lcom/android/settings/widget/i;->awW:Lcom/android/settings/widget/a;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/i;->awW:Lcom/android/vendorsettings/widget/a;
 
     int-to-float v1, v3
 
-    invoke-interface {v0, v1}, Lcom/android/settings/widget/a;->d(F)Z
+    invoke-interface {v0, v1}, Lcom/android/vendorsettings/widget/a;->d(F)Z
 
     .line 104
-    iget-object v0, p0, Lcom/android/settings/widget/i;->awX:Lcom/android/settings/widget/a;
+    iget-object v0, p0, Lcom/android/vendorsettings/widget/i;->awX:Lcom/android/vendorsettings/widget/a;
 
     int-to-float v1, v4
 
-    invoke-interface {v0, v1}, Lcom/android/settings/widget/a;->d(F)Z
+    invoke-interface {v0, v1}, Lcom/android/vendorsettings/widget/a;->d(F)Z
 
     .line 106
     new-instance v5, Landroid/graphics/Rect;
@@ -393,14 +393,14 @@
     move v2, v0
 
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/widget/i;->getChildCount()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/i;->getChildCount()I
 
     move-result v0
 
     if-ge v2, v0, :cond_3
 
     .line 110
-    invoke-virtual {p0, v2}, Lcom/android/settings/widget/i;->getChildAt(I)Landroid/view/View;
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/widget/i;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
 
@@ -412,12 +412,12 @@
     check-cast v0, Landroid/widget/FrameLayout$LayoutParams;
 
     .line 113
-    iget-object v7, p0, Lcom/android/settings/widget/i;->axX:Landroid/graphics/Rect;
+    iget-object v7, p0, Lcom/android/vendorsettings/widget/i;->axX:Landroid/graphics/Rect;
 
     invoke-virtual {v5, v7}, Landroid/graphics/Rect;->set(Landroid/graphics/Rect;)V
 
     .line 115
-    instance-of v7, v1, Lcom/android/settings/widget/ChartNetworkSeriesView;
+    instance-of v7, v1, Lcom/android/vendorsettings/widget/ChartNetworkSeriesView;
 
     if-eqz v7, :cond_1
 
@@ -448,7 +448,7 @@
 
     .line 121
     :cond_1
-    instance-of v7, v1, Lcom/android/settings/widget/ChartGridView;
+    instance-of v7, v1, Lcom/android/vendorsettings/widget/ChartGridView;
 
     if-eqz v7, :cond_2
 
@@ -478,16 +478,16 @@
 
     .line 127
     :cond_2
-    instance-of v0, v1, Lcom/android/settings/widget/ChartSweepView;
+    instance-of v0, v1, Lcom/android/vendorsettings/widget/ChartSweepView;
 
     if-eqz v0, :cond_0
 
     move-object v0, v1
 
     .line 128
-    check-cast v0, Lcom/android/settings/widget/ChartSweepView;
+    check-cast v0, Lcom/android/vendorsettings/widget/ChartSweepView;
 
-    invoke-virtual {p0, v0, v5, v6}, Lcom/android/settings/widget/i;->a(Lcom/android/settings/widget/ChartSweepView;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
+    invoke-virtual {p0, v0, v5, v6}, Lcom/android/vendorsettings/widget/i;->a(Lcom/android/vendorsettings/widget/ChartSweepView;Landroid/graphics/Rect;Landroid/graphics/Rect;)V
 
     .line 129
     iget v0, v6, Landroid/graphics/Rect;->left:I
@@ -515,29 +515,29 @@
     invoke-super {p0, p1, p2}, Landroid/widget/FrameLayout;->onMeasure(II)V
 
     .line 87
-    invoke-virtual {p0}, Lcom/android/settings/widget/i;->getMeasuredWidth()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/widget/i;->getMeasuredWidth()I
 
     move-result v0
 
-    iget v1, p0, Lcom/android/settings/widget/i;->axV:I
+    iget v1, p0, Lcom/android/vendorsettings/widget/i;->axV:I
 
     sub-int/2addr v0, v1
 
     .line 88
-    iget v1, p0, Lcom/android/settings/widget/i;->axV:I
+    iget v1, p0, Lcom/android/vendorsettings/widget/i;->axV:I
 
     if-lez v1, :cond_0
 
     if-lez v0, :cond_0
 
     .line 89
-    iget v1, p0, Lcom/android/settings/widget/i;->axV:I
+    iget v1, p0, Lcom/android/vendorsettings/widget/i;->axV:I
 
     int-to-float v1, v1
 
     int-to-float v0, v0
 
-    iget v2, p0, Lcom/android/settings/widget/i;->axW:F
+    iget v2, p0, Lcom/android/vendorsettings/widget/i;->axW:F
 
     mul-float/2addr v0, v2
 

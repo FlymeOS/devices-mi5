@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$SilentObserver;
+.class Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress$SilentObserver;
 .super Landroid/content/pm/IPackageMoveObserver$Stub;
 .source "StorageWizardFormatProgress.java"
 
@@ -14,12 +14,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$1;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress$1;)V
     .locals 0
 
     .prologue
     .line 238
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$SilentObserver;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatProgress$SilentObserver;-><init>()V
 
     return-void
 .end method

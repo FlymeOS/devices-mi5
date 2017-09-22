@@ -1,19 +1,19 @@
-.class Lcom/android/settings/ringtone/MultiSimRingtonePreference$1;
+.class Lcom/android/vendorsettings/ringtone/MultiSimRingtonePreference$1;
 .super Landroid/os/Handler;
 .source "MultiSimRingtonePreference.java"
 
 
 # instance fields
-.field final synthetic aoB:Lcom/android/settings/ringtone/MultiSimRingtonePreference;
+.field final synthetic aoB:Lcom/android/vendorsettings/ringtone/MultiSimRingtonePreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ringtone/MultiSimRingtonePreference;Landroid/os/Looper;)V
+.method constructor <init>(Lcom/android/vendorsettings/ringtone/MultiSimRingtonePreference;Landroid/os/Looper;)V
     .locals 0
 
     .prologue
     .line 35
-    iput-object p1, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference$1;->aoB:Lcom/android/settings/ringtone/MultiSimRingtonePreference;
+    iput-object p1, p0, Lcom/android/vendorsettings/ringtone/MultiSimRingtonePreference$1;->aoB:Lcom/android/vendorsettings/ringtone/MultiSimRingtonePreference;
 
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
@@ -37,22 +37,22 @@
     check-cast v0, Landroid/util/Pair;
 
     .line 39
-    iget-object v2, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference$1;->aoB:Lcom/android/settings/ringtone/MultiSimRingtonePreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ringtone/MultiSimRingtonePreference$1;->aoB:Lcom/android/vendorsettings/ringtone/MultiSimRingtonePreference;
 
     iget-object v1, v0, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v1, Ljava/lang/CharSequence;
 
-    invoke-virtual {v2, v1}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {v2, v1}, Lcom/android/vendorsettings/ringtone/MultiSimRingtonePreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 40
-    iget-object v1, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference$1;->aoB:Lcom/android/settings/ringtone/MultiSimRingtonePreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ringtone/MultiSimRingtonePreference$1;->aoB:Lcom/android/vendorsettings/ringtone/MultiSimRingtonePreference;
 
     iget-object v0, v0, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/CharSequence;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/ringtone/MultiSimRingtonePreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 44
     :cond_0
@@ -68,13 +68,13 @@
     if-ne v0, v1, :cond_0
 
     .line 42
-    iget-object v1, p0, Lcom/android/settings/ringtone/MultiSimRingtonePreference$1;->aoB:Lcom/android/settings/ringtone/MultiSimRingtonePreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ringtone/MultiSimRingtonePreference$1;->aoB:Lcom/android/vendorsettings/ringtone/MultiSimRingtonePreference;
 
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/String;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/ringtone/MultiSimRingtonePreference;->setValue(Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/ringtone/MultiSimRingtonePreference;->setValue(Ljava/lang/String;)V
 
     goto :goto_0
 .end method

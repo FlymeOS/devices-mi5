@@ -1,37 +1,37 @@
-.class public Lcom/android/settings/nfc/NfcForegroundPreference;
-.super Lcom/android/settings/DropDownPreference;
+.class public Lcom/android/vendorsettings/nfc/NfcForegroundPreference;
+.super Lcom/android/vendorsettings/DropDownPreference;
 .source "NfcForegroundPreference.java"
 
 # interfaces
-.implements Lcom/android/settings/cO;
-.implements Lcom/android/settings/nfc/PaymentBackend$Callback;
+.implements Lcom/android/vendorsettings/cO;
+.implements Lcom/android/vendorsettings/nfc/PaymentBackend$Callback;
 
 
 # instance fields
-.field private final aik:Lcom/android/settings/nfc/PaymentBackend;
+.field private final aik:Lcom/android/vendorsettings/nfc/PaymentBackend;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/android/settings/nfc/PaymentBackend;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/android/vendorsettings/nfc/PaymentBackend;)V
     .locals 1
 
     .prologue
     .line 27
-    invoke-direct {p0, p1}, Lcom/android/settings/DropDownPreference;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/DropDownPreference;-><init>(Landroid/content/Context;)V
 
     .line 28
-    iput-object p2, p0, Lcom/android/settings/nfc/NfcForegroundPreference;->aik:Lcom/android/settings/nfc/PaymentBackend;
+    iput-object p2, p0, Lcom/android/vendorsettings/nfc/NfcForegroundPreference;->aik:Lcom/android/vendorsettings/nfc/PaymentBackend;
 
     .line 29
-    iget-object v0, p0, Lcom/android/settings/nfc/NfcForegroundPreference;->aik:Lcom/android/settings/nfc/PaymentBackend;
+    iget-object v0, p0, Lcom/android/vendorsettings/nfc/NfcForegroundPreference;->aik:Lcom/android/vendorsettings/nfc/PaymentBackend;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/nfc/PaymentBackend;->a(Lcom/android/settings/nfc/PaymentBackend$Callback;)V
+    invoke-virtual {v0, p0}, Lcom/android/vendorsettings/nfc/PaymentBackend;->a(Lcom/android/vendorsettings/nfc/PaymentBackend$Callback;)V
 
     .line 30
-    invoke-virtual {p0, p0}, Lcom/android/settings/nfc/NfcForegroundPreference;->a(Lcom/android/settings/cO;)V
+    invoke-virtual {p0, p0}, Lcom/android/vendorsettings/nfc/NfcForegroundPreference;->a(Lcom/android/vendorsettings/cO;)V
 
     .line 31
-    invoke-virtual {p0}, Lcom/android/settings/nfc/NfcForegroundPreference;->refresh()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/nfc/NfcForegroundPreference;->refresh()V
 
     .line 32
     return-void
@@ -44,7 +44,7 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/nfc/NfcForegroundPreference;->aik:Lcom/android/settings/nfc/PaymentBackend;
+    iget-object v0, p0, Lcom/android/vendorsettings/nfc/NfcForegroundPreference;->aik:Lcom/android/vendorsettings/nfc/PaymentBackend;
 
     check-cast p2, Ljava/lang/Boolean;
 
@@ -52,7 +52,7 @@
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/nfc/PaymentBackend;->aV(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/nfc/PaymentBackend;->aV(Z)V
 
     .line 59
     const/4 v0, 0x1
@@ -65,7 +65,7 @@
 
     .prologue
     .line 36
-    invoke-virtual {p0}, Lcom/android/settings/nfc/NfcForegroundPreference;->refresh()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/nfc/NfcForegroundPreference;->refresh()V
 
     .line 37
     return-void
@@ -80,22 +80,22 @@
     const/4 v3, 0x0
 
     .line 40
-    iget-object v0, p0, Lcom/android/settings/nfc/NfcForegroundPreference;->aik:Lcom/android/settings/nfc/PaymentBackend;
+    iget-object v0, p0, Lcom/android/vendorsettings/nfc/NfcForegroundPreference;->aik:Lcom/android/vendorsettings/nfc/PaymentBackend;
 
-    invoke-virtual {v0}, Lcom/android/settings/nfc/PaymentBackend;->rY()Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/nfc/PaymentBackend;->rY()Lcom/android/vendorsettings/nfc/PaymentBackend$PaymentAppInfo;
 
     .line 41
-    iget-object v0, p0, Lcom/android/settings/nfc/NfcForegroundPreference;->aik:Lcom/android/settings/nfc/PaymentBackend;
+    iget-object v0, p0, Lcom/android/vendorsettings/nfc/NfcForegroundPreference;->aik:Lcom/android/vendorsettings/nfc/PaymentBackend;
 
-    invoke-virtual {v0}, Lcom/android/settings/nfc/PaymentBackend;->sa()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/nfc/PaymentBackend;->sa()Z
 
     move-result v0
 
     .line 42
-    invoke-virtual {p0, v3}, Lcom/android/settings/nfc/NfcForegroundPreference;->setPersistent(Z)V
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/nfc/NfcForegroundPreference;->setPersistent(Z)V
 
     .line 43
-    invoke-virtual {p0}, Lcom/android/settings/nfc/NfcForegroundPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/nfc/NfcForegroundPreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -105,13 +105,13 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/nfc/NfcForegroundPreference;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/nfc/NfcForegroundPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 46
-    invoke-virtual {p0}, Lcom/android/settings/nfc/NfcForegroundPreference;->dJ()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/nfc/NfcForegroundPreference;->dJ()V
 
     .line 47
-    invoke-virtual {p0}, Lcom/android/settings/nfc/NfcForegroundPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/nfc/NfcForegroundPreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -125,10 +125,10 @@
 
     move-result-object v2
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/nfc/NfcForegroundPreference;->b(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-virtual {p0, v1, v2}, Lcom/android/vendorsettings/nfc/NfcForegroundPreference;->b(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 48
-    invoke-virtual {p0}, Lcom/android/settings/nfc/NfcForegroundPreference;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/nfc/NfcForegroundPreference;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -142,7 +142,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/nfc/NfcForegroundPreference;->b(Ljava/lang/String;Ljava/lang/Object;)V
+    invoke-virtual {p0, v1, v2}, Lcom/android/vendorsettings/nfc/NfcForegroundPreference;->b(Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 49
     if-eqz v0, :cond_0
@@ -152,7 +152,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/nfc/NfcForegroundPreference;->o(Ljava/lang/Object;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/nfc/NfcForegroundPreference;->o(Ljava/lang/Object;)V
 
     .line 54
     :goto_0
@@ -164,7 +164,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/nfc/NfcForegroundPreference;->o(Ljava/lang/Object;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/nfc/NfcForegroundPreference;->o(Ljava/lang/Object;)V
 
     goto :goto_0
 .end method

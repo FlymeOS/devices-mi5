@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/bootloader/Utils$AccountExcepiton;
+.class public Lcom/android/vendorsettings/bootloader/Utils$AccountExcepiton;
 .super Ljava/lang/Exception;
 .source "Utils.java"
 

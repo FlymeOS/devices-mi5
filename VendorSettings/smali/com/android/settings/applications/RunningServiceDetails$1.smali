@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/RunningServiceDetails$1;
+.class Lcom/android/vendorsettings/applications/RunningServiceDetails$1;
 .super Ljava/lang/Object;
 .source "RunningServiceDetails.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic NQ:Lcom/android/settings/applications/RunningServiceDetails;
+.field final synthetic NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/RunningServiceDetails;)V
+.method constructor <init>(Lcom/android/vendorsettings/applications/RunningServiceDetails;)V
     .locals 0
 
     .prologue
     .line 504
-    iput-object p1, p0, Lcom/android/settings/applications/RunningServiceDetails$1;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$1;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 507
-    iget-object v0, p0, Lcom/android/settings/applications/RunningServiceDetails$1;->NQ:Lcom/android/settings/applications/RunningServiceDetails;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/RunningServiceDetails$1;->NQ:Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/RunningServiceDetails;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/applications/RunningServiceDetails;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

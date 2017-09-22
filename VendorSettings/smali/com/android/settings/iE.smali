@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/iE;
+.class final Lcom/android/vendorsettings/iE;
 .super Ljava/lang/Object;
 .source "Utils.java"
 
@@ -16,7 +16,7 @@
 
     .prologue
     .line 1252
-    iput-object p1, p0, Lcom/android/settings/iE;->val$view:Landroid/view/View;
+    iput-object p1, p0, Lcom/android/vendorsettings/iE;->val$view:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 1263
-    iget-object v0, p0, Lcom/android/settings/iE;->val$view:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/iE;->val$view:Landroid/view/View;
 
     const/4 v1, 0x4
 

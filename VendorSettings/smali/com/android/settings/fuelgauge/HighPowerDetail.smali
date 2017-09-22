@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fuelgauge/HighPowerDetail;
+.class public Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;
 .super Landroid/app/DialogFragment;
 .source "HighPowerDetail.java"
 
@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private final GE:Lcom/android/settings/fuelgauge/PowerWhitelistBackend;
+.field private final GE:Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;
 
 .field private afe:Z
 
@@ -32,11 +32,11 @@
     invoke-direct {p0}, Landroid/app/DialogFragment;-><init>()V
 
     .line 43
-    invoke-static {}, Lcom/android/settings/fuelgauge/PowerWhitelistBackend;->rf()Lcom/android/settings/fuelgauge/PowerWhitelistBackend;
+    invoke-static {}, Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;->rf()Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->GE:Lcom/android/settings/fuelgauge/PowerWhitelistBackend;
+    iput-object v0, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->GE:Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;
 
     return-void
 .end method
@@ -50,7 +50,7 @@
 
     iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 
-    invoke-static {p0, v0}, Lcom/android/settings/fuelgauge/HighPowerDetail;->l(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/CharSequence;
+    invoke-static {p0, v0}, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->l(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -62,9 +62,9 @@
 
     .prologue
     .line 169
-    new-instance v0, Lcom/android/settings/fuelgauge/HighPowerDetail;
+    new-instance v0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;
 
-    invoke-direct {v0}, Lcom/android/settings/fuelgauge/HighPowerDetail;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;-><init>()V
 
     .line 170
     new-instance v1, Landroid/os/Bundle;
@@ -82,23 +82,23 @@
     invoke-virtual {v1, v2, p3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 173
-    invoke-virtual {v0, v1}, Lcom/android/settings/fuelgauge/HighPowerDetail;->setArguments(Landroid/os/Bundle;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->setArguments(Landroid/os/Bundle;)V
 
     .line 174
-    invoke-virtual {v0, p0, p2}, Lcom/android/settings/fuelgauge/HighPowerDetail;->setTargetFragment(Landroid/app/Fragment;I)V
+    invoke-virtual {v0, p0, p2}, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->setTargetFragment(Landroid/app/Fragment;I)V
 
     .line 175
     invoke-virtual {p0}, Landroid/app/Fragment;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/fuelgauge/HighPowerDetail;
+    const-class v2, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/fuelgauge/HighPowerDetail;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     .line 176
     return-void
@@ -109,12 +109,12 @@
 
     .prologue
     .line 161
-    invoke-static {}, Lcom/android/settings/fuelgauge/PowerWhitelistBackend;->rf()Lcom/android/settings/fuelgauge/PowerWhitelistBackend;
+    invoke-static {}, Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;->rf()Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;
 
     move-result-object v0
 
     .line 162
-    invoke-virtual {v0, p1}, Lcom/android/settings/fuelgauge/PowerWhitelistBackend;->aY(Ljava/lang/String;)Z
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;->aY(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -130,7 +130,7 @@
     return-object v0
 
     :cond_0
-    invoke-virtual {v0, p1}, Lcom/android/settings/fuelgauge/PowerWhitelistBackend;->aZ(Ljava/lang/String;)Z
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;->aZ(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -151,7 +151,7 @@
 
     .prologue
     .line 96
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/HighPowerDetail;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -181,11 +181,11 @@
 
     const/4 v2, 0x1
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/fuelgauge/HighPowerDetail;->b(Landroid/view/View;Z)Landroid/widget/Checkable;
+    invoke-virtual {p0, v1, v2}, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->b(Landroid/view/View;Z)Landroid/widget/Checkable;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->aff:Landroid/widget/Checkable;
+    iput-object v1, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->aff:Landroid/widget/Checkable;
 
     .line 100
     const v1, 0x7f130113
@@ -196,14 +196,14 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/fuelgauge/HighPowerDetail;->b(Landroid/view/View;Z)Landroid/widget/Checkable;
+    invoke-virtual {p0, v1, v2}, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->b(Landroid/view/View;Z)Landroid/widget/Checkable;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->afg:Landroid/widget/Checkable;
+    iput-object v1, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->afg:Landroid/widget/Checkable;
 
     .line 101
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/HighPowerDetail;->qW()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->qW()V
 
     .line 102
     return-object v0
@@ -214,16 +214,16 @@
 
     .prologue
     .line 117
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->aff:Landroid/widget/Checkable;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->aff:Landroid/widget/Checkable;
 
-    iget-boolean v1, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->mIsEnabled:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->mIsEnabled:Z
 
     invoke-interface {v0, v1}, Landroid/widget/Checkable;->setChecked(Z)V
 
     .line 118
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->afg:Landroid/widget/Checkable;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->afg:Landroid/widget/Checkable;
 
-    iget-boolean v0, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->mIsEnabled:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->mIsEnabled:Z
 
     if-nez v0, :cond_0
 
@@ -291,11 +291,11 @@
     .line 74
     if-nez p2, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->GE:Lcom/android/settings/fuelgauge/PowerWhitelistBackend;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->GE:Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->mPackageName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->mPackageName:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/fuelgauge/PowerWhitelistBackend;->aY(Ljava/lang/String;)Z
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;->aY(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -335,14 +335,14 @@
     if-ne p2, v0, :cond_0
 
     .line 135
-    iget-boolean v0, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->mIsEnabled:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->mIsEnabled:Z
 
     .line 136
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->GE:Lcom/android/settings/fuelgauge/PowerWhitelistBackend;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->GE:Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;
 
-    iget-object v2, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->mPackageName:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/fuelgauge/PowerWhitelistBackend;->aZ(Ljava/lang/String;)Z
+    invoke-virtual {v1, v2}, Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;->aZ(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -353,11 +353,11 @@
     if-eqz v0, :cond_1
 
     .line 139
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->GE:Lcom/android/settings/fuelgauge/PowerWhitelistBackend;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->GE:Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->mPackageName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->mPackageName:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/fuelgauge/PowerWhitelistBackend;->ba(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;->ba(Ljava/lang/String;)V
 
     .line 145
     :cond_0
@@ -366,11 +366,11 @@
 
     .line 141
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->GE:Lcom/android/settings/fuelgauge/PowerWhitelistBackend;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->GE:Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->mPackageName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->mPackageName:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/fuelgauge/PowerWhitelistBackend;->bb(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;->bb(Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -380,17 +380,17 @@
 
     .prologue
     .line 123
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->aff:Landroid/widget/Checkable;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->aff:Landroid/widget/Checkable;
 
     if-ne p1, v0, :cond_1
 
     .line 124
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->mIsEnabled:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->mIsEnabled:Z
 
     .line 125
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/HighPowerDetail;->qW()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->qW()V
 
     .line 130
     :cond_0
@@ -399,17 +399,17 @@
 
     .line 126
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->afg:Landroid/widget/Checkable;
+    iget-object v0, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->afg:Landroid/widget/Checkable;
 
     if-ne p1, v0, :cond_0
 
     .line 127
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->mIsEnabled:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->mIsEnabled:Z
 
     .line 128
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/HighPowerDetail;->qW()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->qW()V
 
     goto :goto_0
 .end method
@@ -424,7 +424,7 @@
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 56
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/HighPowerDetail;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -434,10 +434,10 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->mPackageName:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->mPackageName:Ljava/lang/String;
 
     .line 57
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/HighPowerDetail;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -447,7 +447,7 @@
 
     .line 59
     :try_start_0
-    iget-object v2, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->mPackageName:Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -459,13 +459,13 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->mLabel:Ljava/lang/CharSequence;
+    iput-object v1, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->mLabel:Ljava/lang/CharSequence;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 63
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/HighPowerDetail;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -475,18 +475,18 @@
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->afe:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->afe:Z
 
     .line 64
-    iget-boolean v1, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->afe:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->afe:Z
 
     if-nez v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->GE:Lcom/android/settings/fuelgauge/PowerWhitelistBackend;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->GE:Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;
 
-    iget-object v2, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->mPackageName:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/fuelgauge/PowerWhitelistBackend;->aZ(Ljava/lang/String;)Z
+    invoke-virtual {v1, v2}, Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;->aZ(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -496,7 +496,7 @@
     const/4 v0, 0x1
 
     :cond_1
-    iput-boolean v0, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->mIsEnabled:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->mIsEnabled:Z
 
     .line 65
     return-void
@@ -506,9 +506,9 @@
     move-exception v1
 
     .line 61
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->mPackageName:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->mPackageName:Ljava/lang/String;
 
-    iput-object v1, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->mLabel:Ljava/lang/CharSequence;
+    iput-object v1, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->mLabel:Ljava/lang/CharSequence;
 
     goto :goto_0
 .end method
@@ -520,13 +520,13 @@
     .line 82
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/HighPowerDetail;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->mLabel:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->mLabel:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
@@ -540,7 +540,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/HighPowerDetail;->qV()Landroid/view/View;
+    invoke-direct {p0}, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->qV()Landroid/view/View;
 
     move-result-object v1
 
@@ -549,11 +549,11 @@
     move-result-object v0
 
     .line 88
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->GE:Lcom/android/settings/fuelgauge/PowerWhitelistBackend;
+    iget-object v1, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->GE:Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;
 
-    iget-object v2, p0, Lcom/android/settings/fuelgauge/HighPowerDetail;->mPackageName:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->mPackageName:Ljava/lang/String;
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/fuelgauge/PowerWhitelistBackend;->aY(Ljava/lang/String;)Z
+    invoke-virtual {v1, v2}, Lcom/android/vendorsettings/fuelgauge/PowerWhitelistBackend;->aY(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -581,7 +581,7 @@
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onDismiss(Landroid/content/DialogInterface;)V
 
     .line 150
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/HighPowerDetail;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
@@ -589,7 +589,7 @@
     if-eqz v0, :cond_0
 
     .line 152
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/HighPowerDetail;->getTargetRequestCode()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fuelgauge/HighPowerDetail;->getTargetRequestCode()I
 
     move-result v1
 

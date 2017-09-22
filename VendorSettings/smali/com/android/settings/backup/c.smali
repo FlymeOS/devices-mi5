@@ -1,3 +1,3 @@
-.class synthetic Lcom/android/settings/backup/c;
+.class synthetic Lcom/android/vendorsettings/backup/c;
 .super Ljava/lang/Object;
 .source "AccountRestoreManager.java"

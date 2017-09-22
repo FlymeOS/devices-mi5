@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dndmode/f;
+.class Lcom/android/vendorsettings/dndmode/f;
 .super Ljava/lang/Object;
 .source "AlarmContentFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aaj:Lcom/android/settings/dndmode/c;
+.field final synthetic aaj:Lcom/android/vendorsettings/dndmode/c;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dndmode/c;)V
+.method constructor <init>(Lcom/android/vendorsettings/dndmode/c;)V
     .locals 0
 
     .prologue
     .line 84
-    iput-object p1, p0, Lcom/android/settings/dndmode/f;->aaj:Lcom/android/settings/dndmode/c;
+    iput-object p1, p0, Lcom/android/vendorsettings/dndmode/f;->aaj:Lcom/android/vendorsettings/dndmode/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
     move-result v0
 
     .line 89
-    iget-object v1, p0, Lcom/android/settings/dndmode/f;->aaj:Lcom/android/settings/dndmode/c;
+    iget-object v1, p0, Lcom/android/vendorsettings/dndmode/f;->aaj:Lcom/android/vendorsettings/dndmode/c;
 
-    invoke-static {v1}, Lcom/android/settings/dndmode/c;->a(Lcom/android/settings/dndmode/c;)Landroid/service/notification/ZenModeConfig;
+    invoke-static {v1}, Lcom/android/vendorsettings/dndmode/c;->a(Lcom/android/vendorsettings/dndmode/c;)Landroid/service/notification/ZenModeConfig;
 
     move-result-object v1
 
@@ -79,9 +79,9 @@
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 93
-    iget-object v1, p0, Lcom/android/settings/dndmode/f;->aaj:Lcom/android/settings/dndmode/c;
+    iget-object v1, p0, Lcom/android/vendorsettings/dndmode/f;->aaj:Lcom/android/vendorsettings/dndmode/c;
 
-    invoke-static {v1}, Lcom/android/settings/dndmode/c;->a(Lcom/android/settings/dndmode/c;)Landroid/service/notification/ZenModeConfig;
+    invoke-static {v1}, Lcom/android/vendorsettings/dndmode/c;->a(Lcom/android/vendorsettings/dndmode/c;)Landroid/service/notification/ZenModeConfig;
 
     move-result-object v1
 
@@ -93,9 +93,9 @@
     iput-boolean v0, v1, Landroid/service/notification/ZenModeConfig;->allowEvents:Z
 
     .line 95
-    iget-object v0, p0, Lcom/android/settings/dndmode/f;->aaj:Lcom/android/settings/dndmode/c;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/f;->aaj:Lcom/android/vendorsettings/dndmode/c;
 
-    invoke-virtual {v0}, Lcom/android/settings/dndmode/c;->getContext()Landroid/content/Context;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/dndmode/c;->getContext()Landroid/content/Context;
 
     move-result-object v0
 

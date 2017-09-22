@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MasterClearConfirm;
-.super Lcom/android/settings/InstrumentedFragment;
+.class public Lcom/android/vendorsettings/MasterClearConfirm;
+.super Lcom/android/vendorsettings/InstrumentedFragment;
 .source "MasterClearConfirm.java"
 
 
@@ -17,24 +17,24 @@
 
     .prologue
     .line 47
-    invoke-direct {p0}, Lcom/android/settings/InstrumentedFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/InstrumentedFragment;-><init>()V
 
     .line 57
-    new-instance v0, Lcom/android/settings/dS;
+    new-instance v0, Lcom/android/vendorsettings/dS;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/dS;-><init>(Lcom/android/settings/MasterClearConfirm;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/dS;-><init>(Lcom/android/vendorsettings/MasterClearConfirm;)V
 
-    iput-object v0, p0, Lcom/android/settings/MasterClearConfirm;->gE:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/MasterClearConfirm;->gE:Landroid/view/View$OnClickListener;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MasterClearConfirm;)V
+.method static synthetic a(Lcom/android/vendorsettings/MasterClearConfirm;)V
     .locals 0
 
     .prologue
     .line 47
-    invoke-direct {p0}, Lcom/android/settings/MasterClearConfirm;->eG()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MasterClearConfirm;->eG()V
 
     return-void
 .end method
@@ -44,7 +44,7 @@
 
     .prologue
     .line 131
-    iget-object v0, p0, Lcom/android/settings/MasterClearConfirm;->gC:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/MasterClearConfirm;->gC:Landroid/view/View;
 
     const v1, 0x7f130135
 
@@ -52,7 +52,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MasterClearConfirm;->gE:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/android/vendorsettings/MasterClearConfirm;->gE:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -86,12 +86,12 @@
     .line 122
     const-string v1, "android.intent.extra.WIPE_EXTERNAL_STORAGE"
 
-    iget-boolean v2, p0, Lcom/android/settings/MasterClearConfirm;->pM:Z
+    iget-boolean v2, p0, Lcom/android/vendorsettings/MasterClearConfirm;->pM:Z
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 123
-    invoke-virtual {p0}, Lcom/android/settings/MasterClearConfirm;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MasterClearConfirm;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -106,7 +106,7 @@
 
     .prologue
     .line 149
-    invoke-virtual {p0}, Lcom/android/settings/MasterClearConfirm;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MasterClearConfirm;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -123,10 +123,10 @@
 
     .prologue
     .line 162
-    invoke-super {p0, p1}, Lcom/android/settings/InstrumentedFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/InstrumentedFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 164
-    invoke-virtual {p0}, Lcom/android/settings/MasterClearConfirm;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MasterClearConfirm;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -144,7 +144,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/MasterClearConfirm;->pM:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/MasterClearConfirm;->pM:Z
 
     .line 167
     return-void
@@ -163,7 +163,7 @@
     const/4 v2, 0x0
 
     .line 138
-    invoke-virtual {p0}, Lcom/android/settings/MasterClearConfirm;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MasterClearConfirm;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -198,16 +198,16 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MasterClearConfirm;->gC:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/MasterClearConfirm;->gC:Landroid/view/View;
 
     .line 143
-    invoke-direct {p0}, Lcom/android/settings/MasterClearConfirm;->bm()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MasterClearConfirm;->bm()V
 
     .line 144
-    invoke-direct {p0}, Lcom/android/settings/MasterClearConfirm;->eH()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MasterClearConfirm;->eH()V
 
     .line 145
-    iget-object v0, p0, Lcom/android/settings/MasterClearConfirm;->gC:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/MasterClearConfirm;->gC:Landroid/view/View;
 
     goto :goto_0
 .end method

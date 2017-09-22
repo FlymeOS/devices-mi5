@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ad/c;
+.class Lcom/android/vendorsettings/ad/c;
 .super Ljava/lang/Object;
 .source "AdServiceSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ER:Lcom/android/settings/ad/AdServiceSettings;
+.field final synthetic ER:Lcom/android/vendorsettings/ad/AdServiceSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ad/AdServiceSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/ad/AdServiceSettings;)V
     .locals 0
 
     .prologue
     .line 73
-    iput-object p1, p0, Lcom/android/settings/ad/c;->ER:Lcom/android/settings/ad/AdServiceSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/ad/c;->ER:Lcom/android/vendorsettings/ad/AdServiceSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/HubReceiver;
+.class public Lcom/android/vendorsettings/HubReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "HubReceiver.java"
 
@@ -49,7 +49,7 @@
     move-result v0
 
     .line 30
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/HubReceiver;->d(Landroid/content/Context;Z)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/HubReceiver;->d(Landroid/content/Context;Z)V
 
     .line 32
     :cond_0
@@ -114,7 +114,7 @@
 
     .line 22
     :cond_0
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/HubReceiver;->b(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/HubReceiver;->b(Landroid/content/Context;Landroid/content/Intent;)V
 
     goto :goto_0
 .end method

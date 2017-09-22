@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ApnEditor;
-.super Lcom/android/settings/dA;
+.class public Lcom/android/vendorsettings/ApnEditor;
+.super Lcom/android/vendorsettings/dA;
 .source "ApnEditor.java"
 
 # interfaces
@@ -91,13 +91,13 @@
 
     .prologue
     .line 58
-    const-class v0, Lcom/android/settings/ApnEditor;
+    const-class v0, Lcom/android/vendorsettings/ApnEditor;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/ApnEditor;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/ApnEditor;->TAG:Ljava/lang/String;
 
     .line 122
     const/16 v0, 0x19
@@ -254,7 +254,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/ApnEditor;->aC:[Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/ApnEditor;->aC:[Ljava/lang/String;
 
     return-void
 .end method
@@ -266,13 +266,13 @@
     const/4 v0, 0x0
 
     .line 54
-    invoke-direct {p0}, Lcom/android/settings/dA;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/dA;-><init>()V
 
     .line 102
-    iput-boolean v0, p0, Lcom/android/settings/ApnEditor;->ax:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/ApnEditor;->ax:Z
 
     .line 115
-    iput v0, p0, Lcom/android/settings/ApnEditor;->az:I
+    iput v0, p0, Lcom/android/vendorsettings/ApnEditor;->az:I
 
     return-void
 .end method
@@ -290,7 +290,7 @@
     const/4 v1, 0x1
 
     .line 302
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v3, 0x18
 
@@ -303,15 +303,15 @@
     move v0, v1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/ApnEditor;->ax:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/ApnEditor;->ax:Z
 
     .line 303
-    iget-boolean v0, p0, Lcom/android/settings/ApnEditor;->ax:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/ApnEditor;->ax:Z
 
     if-eqz v0, :cond_0
 
     .line 304
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -319,12 +319,12 @@
 
     .line 307
     :cond_0
-    iget-boolean v0, p0, Lcom/android/settings/ApnEditor;->mFirstTime:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/ApnEditor;->mFirstTime:Z
 
     if-eqz v0, :cond_5
 
     .line 308
-    iput-boolean v2, p0, Lcom/android/settings/ApnEditor;->mFirstTime:Z
+    iput-boolean v2, p0, Lcom/android/vendorsettings/ApnEditor;->mFirstTime:Z
 
     .line 312
     invoke-static {}, Lmiui/telephony/TelephonyManager;->getDefault()Lmiui/telephony/TelephonyManager;
@@ -360,9 +360,9 @@
 
     .line 320
     :goto_1
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->ac:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->ac:Landroid/preference/EditTextPreference;
 
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v4, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
@@ -371,9 +371,9 @@
     invoke-virtual {v3, v4}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
     .line 321
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->ad:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->ad:Landroid/preference/EditTextPreference;
 
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/4 v5, 0x2
 
@@ -384,9 +384,9 @@
     invoke-virtual {v3, v4}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
     .line 322
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->ae:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->ae:Landroid/preference/EditTextPreference;
 
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v4, v6}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
@@ -395,9 +395,9 @@
     invoke-virtual {v3, v4}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
     .line 323
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->H:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->H:Landroid/preference/EditTextPreference;
 
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v4, v7}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
@@ -406,9 +406,9 @@
     invoke-virtual {v3, v4}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
     .line 324
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->af:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->af:Landroid/preference/EditTextPreference;
 
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/4 v5, 0x5
 
@@ -419,9 +419,9 @@
     invoke-virtual {v3, v4}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
     .line 325
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->G:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->G:Landroid/preference/EditTextPreference;
 
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/4 v5, 0x6
 
@@ -432,9 +432,9 @@
     invoke-virtual {v3, v4}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
     .line 326
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->ag:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->ag:Landroid/preference/EditTextPreference;
 
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/4 v5, 0x7
 
@@ -445,9 +445,9 @@
     invoke-virtual {v3, v4}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
     .line 327
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->ak:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->ak:Landroid/preference/EditTextPreference;
 
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v5, 0xc
 
@@ -458,9 +458,9 @@
     invoke-virtual {v3, v4}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
     .line 328
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->al:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->al:Landroid/preference/EditTextPreference;
 
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v5, 0xd
 
@@ -471,9 +471,9 @@
     invoke-virtual {v3, v4}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
     .line 329
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->ah:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->ah:Landroid/preference/EditTextPreference;
 
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v5, 0x8
 
@@ -484,9 +484,9 @@
     invoke-virtual {v3, v4}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
     .line 330
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->ai:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->ai:Landroid/preference/EditTextPreference;
 
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v5, 0x9
 
@@ -497,9 +497,9 @@
     invoke-virtual {v3, v4}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
     .line 331
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->aj:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->aj:Landroid/preference/EditTextPreference;
 
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v5, 0xa
 
@@ -510,9 +510,9 @@
     invoke-virtual {v3, v4}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
     .line 332
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->an:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->an:Landroid/preference/EditTextPreference;
 
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v5, 0xf
 
@@ -523,7 +523,7 @@
     invoke-virtual {v3, v4}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
     .line 333
-    iget-boolean v3, p0, Lcom/android/settings/ApnEditor;->ay:Z
+    iget-boolean v3, p0, Lcom/android/vendorsettings/ApnEditor;->ay:Z
 
     if-eqz v3, :cond_1
 
@@ -547,24 +547,24 @@
     move-result-object v0
 
     .line 341
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->ai:Landroid/preference/EditTextPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->ai:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v4, v3}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
     .line 342
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->aj:Landroid/preference/EditTextPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->aj:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v4, v0}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
     .line 343
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->av:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->av:Ljava/lang/String;
 
     .line 344
-    iput-object v3, p0, Lcom/android/settings/ApnEditor;->aw:Ljava/lang/String;
+    iput-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->aw:Ljava/lang/String;
 
     .line 347
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v3, 0xe
 
@@ -578,15 +578,15 @@
     if-eq v0, v3, :cond_9
 
     .line 349
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->am:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->am:Landroid/preference/ListPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 354
     :goto_2
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ao:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ao:Landroid/preference/ListPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v4, 0x10
 
@@ -597,9 +597,9 @@
     invoke-virtual {v0, v3}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 355
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ap:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ap:Landroid/preference/ListPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v4, 0x14
 
@@ -610,9 +610,9 @@
     invoke-virtual {v0, v3}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 356
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->aq:Landroid/preference/SwitchPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->aq:Landroid/preference/SwitchPreference;
 
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v4, 0x11
 
@@ -628,7 +628,7 @@
     invoke-virtual {v3, v0}, Landroid/preference/SwitchPreference;->setChecked(Z)V
 
     .line 357
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v3, 0x12
 
@@ -636,7 +636,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/ApnEditor;->az:I
+    iput v0, p0, Lcom/android/vendorsettings/ApnEditor;->az:I
 
     .line 359
     new-instance v4, Ljava/util/HashSet;
@@ -644,7 +644,7 @@
     invoke-direct {v4}, Ljava/util/HashSet;-><init>()V
 
     .line 360
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v3, 0x13
 
@@ -656,7 +656,7 @@
     if-nez v0, :cond_b
 
     .line 362
-    iget v0, p0, Lcom/android/settings/ApnEditor;->az:I
+    iget v0, p0, Lcom/android/vendorsettings/ApnEditor;->az:I
 
     if-nez v0, :cond_2
 
@@ -667,7 +667,7 @@
 
     .line 376
     :cond_2
-    iget v0, p0, Lcom/android/settings/ApnEditor;->az:I
+    iget v0, p0, Lcom/android/vendorsettings/ApnEditor;->az:I
 
     if-eqz v0, :cond_3
 
@@ -681,7 +681,7 @@
 
     move-result-object v0
 
-    iget v3, p0, Lcom/android/settings/ApnEditor;->az:I
+    iget v3, p0, Lcom/android/vendorsettings/ApnEditor;->az:I
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -708,7 +708,7 @@
 
     move-result-object v0
 
-    iget v3, p0, Lcom/android/settings/ApnEditor;->az:I
+    iget v3, p0, Lcom/android/vendorsettings/ApnEditor;->az:I
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -722,14 +722,14 @@
 
     .line 380
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
 
     invoke-virtual {v0, v4}, Landroid/preference/MultiSelectListPreference;->setValues(Ljava/util/Set;)V
 
     .line 382
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->as:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->as:Landroid/preference/ListPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v4, 0x15
 
@@ -740,14 +740,14 @@
     invoke-virtual {v0, v3}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 383
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->at:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->at:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/EditTextPreference;->setEnabled(Z)V
 
     .line 384
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->at:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->at:Landroid/preference/EditTextPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v4, 0x16
 
@@ -758,35 +758,35 @@
     invoke-virtual {v0, v3}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
     .line 385
-    iget-boolean v0, p0, Lcom/android/settings/ApnEditor;->ay:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/ApnEditor;->ay:Z
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->aA:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->aA:Ljava/lang/String;
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->aB:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->aB:Ljava/lang/String;
 
     if-eqz v0, :cond_4
 
     .line 386
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->as:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->as:Landroid/preference/ListPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->aA:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->aA:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 387
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->at:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->at:Landroid/preference/EditTextPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->aB:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->aB:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
     .line 390
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v3, 0x17
 
@@ -795,7 +795,7 @@
     move-result-object v0
 
     .line 391
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->au:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->au:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/EditTextPreference;->setText(Ljava/lang/String;)V
 
@@ -803,218 +803,218 @@
     if-nez v0, :cond_5
 
     .line 393
-    iget-boolean v0, p0, Lcom/android/settings/ApnEditor;->ay:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/ApnEditor;->ay:Z
 
     if-nez v0, :cond_d
 
     .line 394
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->au:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->au:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 401
     :cond_5
     :goto_4
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ac:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ac:Landroid/preference/EditTextPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->ac:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->ac:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v3}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 402
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ad:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ad:Landroid/preference/EditTextPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->ad:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->ad:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v3}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 403
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ae:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ae:Landroid/preference/EditTextPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->ae:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->ae:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v3}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 404
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->H:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->H:Landroid/preference/EditTextPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->H:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->H:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v3}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 405
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->af:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->af:Landroid/preference/EditTextPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->af:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->af:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v3}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 406
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->G:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->G:Landroid/preference/EditTextPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->G:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->G:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v3}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 407
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ag:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ag:Landroid/preference/EditTextPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->ag:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->ag:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v3}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->i(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 408
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ak:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ak:Landroid/preference/EditTextPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->ak:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->ak:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v3}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 409
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->al:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->al:Landroid/preference/EditTextPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->al:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->al:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v3}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 410
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ah:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ah:Landroid/preference/EditTextPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->ah:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->ah:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v3}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 411
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ai:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ai:Landroid/preference/EditTextPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->ai:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->ai:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v3}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 412
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->aj:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->aj:Landroid/preference/EditTextPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->aj:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->aj:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v3}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 413
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->an:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->an:Landroid/preference/EditTextPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->an:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->an:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v3}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 415
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->au:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->au:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v0}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
@@ -1024,9 +1024,9 @@
     if-eqz v0, :cond_6
 
     .line 419
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->au:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->au:Landroid/preference/EditTextPreference;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1034,7 +1034,7 @@
 
     .line 422
     :cond_6
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->am:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->am:Landroid/preference/ListPreference;
 
     invoke-virtual {v0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
 
@@ -1049,12 +1049,12 @@
     move-result v0
 
     .line 425
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->am:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->am:Landroid/preference/ListPreference;
 
     invoke-virtual {v3, v0}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 427
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mRes:Landroid/content/res/Resources;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mRes:Landroid/content/res/Resources;
 
     const v4, 0x7f0a002a
 
@@ -1063,7 +1063,7 @@
     move-result-object v3
 
     .line 428
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->am:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->am:Landroid/preference/ListPreference;
 
     aget-object v0, v3, v0
 
@@ -1071,102 +1071,102 @@
 
     .line 433
     :goto_5
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ao:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ao:Landroid/preference/ListPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->ao:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->ao:Landroid/preference/ListPreference;
 
     invoke-virtual {v3}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->ao:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->ao:Landroid/preference/ListPreference;
 
-    invoke-direct {p0, v3, v4}, Lcom/android/settings/ApnEditor;->a(Ljava/lang/String;Landroid/preference/ListPreference;)Ljava/lang/String;
+    invoke-direct {p0, v3, v4}, Lcom/android/vendorsettings/ApnEditor;->a(Ljava/lang/String;Landroid/preference/ListPreference;)Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 435
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ap:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ap:Landroid/preference/ListPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->ap:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->ap:Landroid/preference/ListPreference;
 
     invoke-virtual {v3}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->ap:Landroid/preference/ListPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->ap:Landroid/preference/ListPreference;
 
-    invoke-direct {p0, v3, v4}, Lcom/android/settings/ApnEditor;->a(Ljava/lang/String;Landroid/preference/ListPreference;)Ljava/lang/String;
+    invoke-direct {p0, v3, v4}, Lcom/android/vendorsettings/ApnEditor;->a(Ljava/lang/String;Landroid/preference/ListPreference;)Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 437
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
 
     invoke-virtual {v3}, Landroid/preference/MultiSelectListPreference;->getValues()Ljava/util/Set;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->a(Ljava/util/Set;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->a(Ljava/util/Set;)Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/preference/MultiSelectListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 439
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->as:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->as:Landroid/preference/ListPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->as:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->as:Landroid/preference/ListPreference;
 
     invoke-virtual {v3}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->h(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->h(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 441
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->at:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->at:Landroid/preference/EditTextPreference;
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->at:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->at:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v3}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Landroid/preference/EditTextPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 443
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1180,7 +1180,7 @@
     if-eqz v0, :cond_f
 
     .line 445
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->aq:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->aq:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
@@ -1206,7 +1206,7 @@
 
     .line 351
     :cond_9
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->am:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->am:Landroid/preference/ListPreference;
 
     const/4 v3, 0x0
 
@@ -1266,7 +1266,7 @@
 
     .line 395
     :cond_d
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -1279,11 +1279,11 @@
     if-eqz v0, :cond_5
 
     .line 396
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->au:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->au:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -1291,9 +1291,9 @@
 
     .line 430
     :cond_e
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->am:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->am:Landroid/preference/ListPreference;
 
-    sget-object v3, Lcom/android/settings/ApnEditor;->F:Ljava/lang/String;
+    sget-object v3, Lcom/android/vendorsettings/ApnEditor;->F:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
@@ -1301,7 +1301,7 @@
 
     .line 447
     :cond_f
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->aq:Landroid/preference/SwitchPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->aq:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, v2}, Landroid/preference/SwitchPreference;->setEnabled(Z)V
 
@@ -1318,46 +1318,46 @@
     const/4 v0, 0x0
 
     .line 776
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->ac:Landroid/preference/EditTextPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->ac:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     .line 777
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->ad:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->ad:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-direct {p0, v2}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v2}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     .line 778
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->ai:Landroid/preference/EditTextPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->ai:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v3}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {p0, v3}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     .line 779
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->aj:Landroid/preference/EditTextPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->aj:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v4}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-direct {p0, v4}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v4}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -1369,7 +1369,7 @@
     if-ge v1, v5, :cond_1
 
     .line 782
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->mRes:Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mRes:Landroid/content/res/Resources;
 
     const v1, 0x7f0c04c3
 
@@ -1391,7 +1391,7 @@
     if-ge v1, v5, :cond_2
 
     .line 784
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->mRes:Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mRes:Landroid/content/res/Resources;
 
     const v1, 0x7f0c04c4
 
@@ -1412,7 +1412,7 @@
     if-eq v1, v2, :cond_3
 
     .line 786
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->mRes:Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mRes:Landroid/content/res/Resources;
 
     const v1, 0x7f0c04c5
 
@@ -1437,7 +1437,7 @@
     if-eq v1, v2, :cond_0
 
     .line 788
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->mRes:Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mRes:Landroid/content/res/Resources;
 
     const v1, 0x7f0c04c6
 
@@ -1455,16 +1455,16 @@
     const/4 v2, 0x0
 
     .line 824
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->mUri:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->mUri:Landroid/net/Uri;
 
     invoke-virtual {v0, v1, v2, v2}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
 
     .line 825
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->finish()V
 
     .line 826
     return-void
@@ -1492,7 +1492,7 @@
 
     .line 461
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->mRes:Landroid/content/res/Resources;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->mRes:Landroid/content/res/Resources;
 
     const v3, 0x7f0a002c
 
@@ -1520,7 +1520,7 @@
 
     .prologue
     .line 485
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->mRes:Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mRes:Landroid/content/res/Resources;
 
     const v1, 0x7f0a002e
 
@@ -1557,7 +1557,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 489
-    iget-object v5, p0, Lcom/android/settings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
+    iget-object v5, p0, Lcom/android/vendorsettings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
 
     invoke-virtual {v5, v0}, Landroid/preference/MultiSelectListPreference;->findIndexOfValue(Ljava/lang/String;)I
 
@@ -1658,7 +1658,7 @@
 
     .line 842
     :cond_0
-    sget-object p1, Lcom/android/settings/ApnEditor;->F:Ljava/lang/String;
+    sget-object p1, Lcom/android/vendorsettings/ApnEditor;->F:Ljava/lang/String;
 
     .line 844
     :cond_1
@@ -1672,7 +1672,7 @@
     .line 849
     if-eqz p1, :cond_0
 
-    sget-object v0, Lcom/android/settings/ApnEditor;->F:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/ApnEditor;->F:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1696,14 +1696,14 @@
     const/4 v0, 0x0
 
     .line 509
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->as:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->as:Landroid/preference/ListPreference;
 
     invoke-virtual {v1, p1}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v1
 
     .line 510
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->as:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->as:Landroid/preference/ListPreference;
 
     invoke-virtual {v2}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
 
@@ -1720,7 +1720,7 @@
 
     .line 515
     :cond_0
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mRes:Landroid/content/res/Resources;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mRes:Landroid/content/res/Resources;
 
     const v4, 0x7f0a0030
 
@@ -1740,7 +1740,7 @@
     if-eqz v4, :cond_2
 
     .line 517
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->at:Landroid/preference/EditTextPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->at:Landroid/preference/EditTextPreference;
 
     const/4 v5, 0x0
 
@@ -1768,9 +1768,9 @@
     if-eqz v2, :cond_3
 
     .line 523
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->at:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->at:Landroid/preference/EditTextPreference;
 
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->mTelephonyManager:Landroid/telephony/TelephonyManager;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v4}, Landroid/telephony/TelephonyManager;->getSimOperatorName()Ljava/lang/String;
 
@@ -1790,7 +1790,7 @@
 
     .line 519
     :cond_2
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->at:Landroid/preference/EditTextPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->at:Landroid/preference/EditTextPreference;
 
     const/4 v5, 0x1
 
@@ -1811,16 +1811,16 @@
     if-eqz v2, :cond_4
 
     .line 525
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->mTelephonyManager:Landroid/telephony/TelephonyManager;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
-    iget v4, p0, Lcom/android/settings/ApnEditor;->mSubId:I
+    iget v4, p0, Lcom/android/vendorsettings/ApnEditor;->mSubId:I
 
     invoke-virtual {v2, v4}, Landroid/telephony/TelephonyManager;->getSimOperator(I)Ljava/lang/String;
 
     move-result-object v2
 
     .line 526
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->at:Landroid/preference/EditTextPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->at:Landroid/preference/EditTextPreference;
 
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -1857,9 +1857,9 @@
     if-eqz v2, :cond_1
 
     .line 528
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->at:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->at:Landroid/preference/EditTextPreference;
 
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->mTelephonyManager:Landroid/telephony/TelephonyManager;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v4}, Landroid/telephony/TelephonyManager;->getGroupIdLevel1()Ljava/lang/String;
 
@@ -1891,7 +1891,7 @@
 
     .line 830
     :cond_0
-    sget-object v0, Lcom/android/settings/ApnEditor;->F:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/ApnEditor;->F:Ljava/lang/String;
 
     .line 836
     :goto_0
@@ -1943,7 +1943,7 @@
     const/4 v1, 0x1
 
     .line 878
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v2}, Landroid/database/Cursor;->moveToFirst()Z
 
@@ -1958,13 +1958,13 @@
 
     .line 881
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->ac:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->ac:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v3, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
@@ -1976,13 +1976,13 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->ad:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->ad:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/4 v4, 0x2
 
@@ -1996,13 +1996,13 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->ae:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->ae:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/4 v4, 0x3
 
@@ -2016,13 +2016,13 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->H:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->H:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/4 v4, 0x4
 
@@ -2036,13 +2036,13 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->af:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->af:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/4 v4, 0x5
 
@@ -2056,13 +2056,13 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->G:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->G:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/4 v4, 0x6
 
@@ -2076,13 +2076,13 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->ag:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->ag:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/4 v4, 0x7
 
@@ -2096,13 +2096,13 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->ak:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->ak:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v4, 0xc
 
@@ -2116,13 +2116,13 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->al:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->al:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v4, 0xd
 
@@ -2136,13 +2136,13 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->ah:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->ah:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v4, 0x8
 
@@ -2156,13 +2156,13 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->ai:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->ai:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->aw:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->aw:Ljava/lang/String;
 
     invoke-static {v2, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -2170,13 +2170,13 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->aj:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->aj:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->av:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->av:Ljava/lang/String;
 
     invoke-static {v2, v3}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -2184,13 +2184,13 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->an:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->an:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v4, 0xf
 
@@ -2204,13 +2204,13 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->ao:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->ao:Landroid/preference/ListPreference;
 
     invoke-virtual {v2}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v4, 0x10
 
@@ -2224,13 +2224,13 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->ap:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->ap:Landroid/preference/ListPreference;
 
     invoke-virtual {v2}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v4, 0x14
 
@@ -2244,13 +2244,13 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->aq:Landroid/preference/SwitchPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->aq:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v2}, Landroid/preference/SwitchPreference;->isChecked()Z
 
     move-result v3
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v4, 0x11
 
@@ -2267,13 +2267,13 @@
 
     if-nez v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->as:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->as:Landroid/preference/ListPreference;
 
     invoke-virtual {v2}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v4, 0x15
 
@@ -2287,13 +2287,13 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->at:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->at:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v4, 0x16
 
@@ -2307,13 +2307,13 @@
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->au:Landroid/preference/EditTextPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->au:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v2}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/16 v4, 0x17
 
@@ -2350,12 +2350,12 @@
     const/4 v2, 0x0
 
     .line 671
-    iget-boolean v0, p0, Lcom/android/settings/ApnEditor;->ax:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/ApnEditor;->ax:Z
 
     if-eqz v0, :cond_0
 
     .line 672
-    sget-object v0, Lcom/android/settings/ApnEditor;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/ApnEditor;->TAG:Ljava/lang/String;
 
     const-string v1, "Form is disabled. Nothing to save."
 
@@ -2369,51 +2369,51 @@
 
     .line 675
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ac:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ac:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v0}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 676
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->ad:Landroid/preference/EditTextPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->ad:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     .line 677
-    iget-object v4, p0, Lcom/android/settings/ApnEditor;->ai:Landroid/preference/EditTextPreference;
+    iget-object v4, p0, Lcom/android/vendorsettings/ApnEditor;->ai:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v4}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-direct {p0, v4}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v4}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
     .line 678
-    iget-object v5, p0, Lcom/android/settings/ApnEditor;->aj:Landroid/preference/EditTextPreference;
+    iget-object v5, p0, Lcom/android/vendorsettings/ApnEditor;->aj:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v5}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-direct {p0, v5}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v5}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
     .line 680
-    invoke-direct {p0}, Lcom/android/settings/ApnEditor;->B()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/ApnEditor;->B()Ljava/lang/String;
 
     move-result-object v6
 
@@ -2422,13 +2422,13 @@
     if-nez p1, :cond_1
 
     .line 681
-    invoke-virtual {p0, v2}, Lcom/android/settings/ApnEditor;->showDialog(I)V
+    invoke-virtual {p0, v2}, Lcom/android/vendorsettings/ApnEditor;->showDialog(I)V
 
     goto :goto_0
 
     .line 685
     :cond_1
-    iget-object v6, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v6, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v6}, Landroid/database/Cursor;->moveToFirst()Z
 
@@ -2437,7 +2437,7 @@
     if-nez v6, :cond_2
 
     .line 686
-    sget-object v0, Lcom/android/settings/ApnEditor;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/ApnEditor;->TAG:Ljava/lang/String;
 
     const-string v1, "Could not go to the first row in the Cursor when saving data."
 
@@ -2449,7 +2449,7 @@
     :cond_2
     if-eqz p1, :cond_3
 
-    iget-boolean v6, p0, Lcom/android/settings/ApnEditor;->ay:Z
+    iget-boolean v6, p0, Lcom/android/vendorsettings/ApnEditor;->ay:Z
 
     if-eqz v6, :cond_3
 
@@ -2466,11 +2466,11 @@
     if-ge v6, v3, :cond_3
 
     .line 693
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->mUri:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->mUri:Landroid/net/Uri;
 
     invoke-virtual {v0, v1, v9, v9}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
 
@@ -2491,7 +2491,7 @@
 
     if-ge v8, v3, :cond_4
 
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -2512,13 +2512,13 @@
     .line 704
     const-string v0, "proxy"
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->ae:Landroid/preference/EditTextPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->ae:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2527,13 +2527,13 @@
     .line 705
     const-string v0, "port"
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->H:Landroid/preference/EditTextPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->H:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2542,13 +2542,13 @@
     .line 706
     const-string v0, "mmsproxy"
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->ak:Landroid/preference/EditTextPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->ak:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2557,13 +2557,13 @@
     .line 707
     const-string v0, "mmsport"
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->al:Landroid/preference/EditTextPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->al:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2572,13 +2572,13 @@
     .line 708
     const-string v0, "user"
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->af:Landroid/preference/EditTextPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->af:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2587,13 +2587,13 @@
     .line 709
     const-string v0, "server"
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->G:Landroid/preference/EditTextPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->G:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2602,13 +2602,13 @@
     .line 710
     const-string v0, "password"
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->ag:Landroid/preference/EditTextPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->ag:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2617,20 +2617,20 @@
     .line 711
     const-string v0, "mmsc"
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->ah:Landroid/preference/EditTextPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->ah:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v6, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 713
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->am:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->am:Landroid/preference/ListPreference;
 
     invoke-virtual {v0}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
 
@@ -2656,13 +2656,13 @@
     :cond_5
     const-string v0, "protocol"
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->ao:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->ao:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2671,13 +2671,13 @@
     .line 719
     const-string v0, "roaming_protocol"
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->ap:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->ap:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2686,13 +2686,13 @@
     .line 721
     const-string v0, "type"
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->an:Landroid/preference/EditTextPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->an:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2730,7 +2730,7 @@
     invoke-virtual {v6, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 728
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->au:Landroid/preference/EditTextPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->au:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v0}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
@@ -2740,7 +2740,7 @@
     if-eqz v0, :cond_6
 
     .line 730
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -2754,16 +2754,16 @@
 
     .line 733
     :cond_6
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->av:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->av:Ljava/lang/String;
 
     if-eqz v0, :cond_7
 
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->aw:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->aw:Ljava/lang/String;
 
     if-eqz v0, :cond_7
 
     .line 734
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->av:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->av:Ljava/lang/String;
 
     invoke-virtual {v0, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2771,7 +2771,7 @@
 
     if-eqz v0, :cond_7
 
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->aw:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->aw:Ljava/lang/String;
 
     invoke-virtual {v0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2790,7 +2790,7 @@
 
     .line 739
     :cond_7
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
 
     invoke-virtual {v0}, Landroid/preference/MultiSelectListPreference;->getValues()Ljava/util/Set;
 
@@ -2838,7 +2838,7 @@
     .line 752
     if-eqz v1, :cond_9
 
-    iget v0, p0, Lcom/android/settings/ApnEditor;->az:I
+    iget v0, p0, Lcom/android/vendorsettings/ApnEditor;->az:I
 
     if-nez v0, :cond_c
 
@@ -2858,13 +2858,13 @@
     .line 764
     const-string v0, "mvno_type"
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->as:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->as:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getValue()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2873,13 +2873,13 @@
     .line 765
     const-string v0, "mvno_match_data"
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->at:Landroid/preference/EditTextPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->at:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v1}, Landroid/preference/EditTextPreference;->getText()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ApnEditor;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -2888,7 +2888,7 @@
     .line 767
     const-string v0, "carrier_enabled"
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->aq:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->aq:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v1}, Landroid/preference/SwitchPreference;->isChecked()Z
 
@@ -2906,11 +2906,11 @@
     invoke-virtual {v6, v0, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
     .line 768
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->mUri:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->mUri:Landroid/net/Uri;
 
     invoke-virtual {v0, v1, v6, v9, v9}, Landroid/content/ContentResolver;->update(Landroid/net/Uri;Landroid/content/ContentValues;Ljava/lang/String;[Ljava/lang/String;)I
 
@@ -2938,7 +2938,7 @@
 
     .line 754
     :cond_c
-    iget v0, p0, Lcom/android/settings/ApnEditor;->az:I
+    iget v0, p0, Lcom/android/vendorsettings/ApnEditor;->az:I
 
     invoke-static {v1, v0}, Landroid/telephony/ServiceState;->bitmaskHasTech(II)Z
 
@@ -2947,7 +2947,7 @@
     if-eqz v0, :cond_d
 
     .line 755
-    iget v0, p0, Lcom/android/settings/ApnEditor;->az:I
+    iget v0, p0, Lcom/android/vendorsettings/ApnEditor;->az:I
 
     goto :goto_2
 
@@ -2967,15 +2967,15 @@
     const/4 v1, 0x1
 
     .line 185
-    invoke-super {p0, p1}, Lcom/android/settings/dA;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/dA;->onCreate(Landroid/os/Bundle;)V
 
     .line 187
     const v0, 0x7f080011
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->addPreferencesFromResource(I)V
 
     .line 189
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -2985,273 +2985,273 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/ApnEditor;->F:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/ApnEditor;->F:Ljava/lang/String;
 
     .line 190
     const-string v0, "apn_name"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->ac:Landroid/preference/EditTextPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ac:Landroid/preference/EditTextPreference;
 
     .line 191
     const-string v0, "apn_apn"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->ad:Landroid/preference/EditTextPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ad:Landroid/preference/EditTextPreference;
 
     .line 192
     const-string v0, "apn_http_proxy"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->ae:Landroid/preference/EditTextPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ae:Landroid/preference/EditTextPreference;
 
     .line 193
     const-string v0, "apn_http_port"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->H:Landroid/preference/EditTextPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->H:Landroid/preference/EditTextPreference;
 
     .line 194
     const-string v0, "apn_user"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->af:Landroid/preference/EditTextPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->af:Landroid/preference/EditTextPreference;
 
     .line 195
     const-string v0, "apn_server"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->G:Landroid/preference/EditTextPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->G:Landroid/preference/EditTextPreference;
 
     .line 196
     const-string v0, "apn_password"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->ag:Landroid/preference/EditTextPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ag:Landroid/preference/EditTextPreference;
 
     .line 197
     const-string v0, "apn_mms_proxy"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->ak:Landroid/preference/EditTextPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ak:Landroid/preference/EditTextPreference;
 
     .line 198
     const-string v0, "apn_mms_port"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->al:Landroid/preference/EditTextPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->al:Landroid/preference/EditTextPreference;
 
     .line 199
     const-string v0, "apn_mmsc"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->ah:Landroid/preference/EditTextPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ah:Landroid/preference/EditTextPreference;
 
     .line 200
     const-string v0, "apn_mcc"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->ai:Landroid/preference/EditTextPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ai:Landroid/preference/EditTextPreference;
 
     .line 201
     const-string v0, "apn_mnc"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->aj:Landroid/preference/EditTextPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->aj:Landroid/preference/EditTextPreference;
 
     .line 202
     const-string v0, "apn_type"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->an:Landroid/preference/EditTextPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->an:Landroid/preference/EditTextPreference;
 
     .line 203
     const-string v0, "apn_ppp_number"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->au:Landroid/preference/EditTextPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->au:Landroid/preference/EditTextPreference;
 
     .line 205
     const-string v0, "auth_type"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->am:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->am:Landroid/preference/ListPreference;
 
     .line 206
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->am:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->am:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 208
     const-string v0, "apn_protocol"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->ao:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ao:Landroid/preference/ListPreference;
 
     .line 209
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ao:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ao:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 211
     const-string v0, "apn_roaming_protocol"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->ap:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ap:Landroid/preference/ListPreference;
 
     .line 212
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ap:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ap:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 214
     const-string v0, "carrier_enabled"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/SwitchPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->aq:Landroid/preference/SwitchPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->aq:Landroid/preference/SwitchPreference;
 
     .line 216
     const-string v0, "bearer_multi"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/MultiSelectListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
 
     .line 217
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/MultiSelectListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 219
     const-string v0, "mvno_type"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->as:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->as:Landroid/preference/ListPreference;
 
     .line 220
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->as:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->as:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 221
     const-string v0, "mvno_match_data"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/EditTextPreference;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->at:Landroid/preference/EditTextPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->at:Landroid/preference/EditTextPreference;
 
     .line 223
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->mRes:Landroid/content/res/Resources;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mRes:Landroid/content/res/Resources;
 
     .line 225
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -3269,7 +3269,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/ApnEditor;->mSubId:I
+    iput v0, p0, Lcom/android/vendorsettings/ApnEditor;->mSubId:I
 
     .line 237
     if-nez p1, :cond_1
@@ -3277,7 +3277,7 @@
     move v0, v1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/ApnEditor;->mFirstTime:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/ApnEditor;->mFirstTime:Z
 
     .line 239
     const-string v0, "android.intent.action.EDIT"
@@ -3293,37 +3293,37 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->mUri:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mUri:Landroid/net/Uri;
 
     .line 270
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->mUri:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mUri:Landroid/net/Uri;
 
-    sget-object v1, Lcom/android/settings/ApnEditor;->aC:[Ljava/lang/String;
+    sget-object v1, Lcom/android/vendorsettings/ApnEditor;->aC:[Ljava/lang/String;
 
-    invoke-virtual {p0, v0, v1, v6, v6}, Lcom/android/settings/ApnEditor;->managedQuery(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-virtual {p0, v0, v1, v6, v6}, Lcom/android/vendorsettings/ApnEditor;->managedQuery(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     .line 273
     const-string v0, "phone"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/telephony/TelephonyManager;
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->mTelephonyManager:Landroid/telephony/TelephonyManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
     .line 275
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     invoke-interface {v0}, Landroid/database/Cursor;->moveToFirst()Z
 
@@ -3332,7 +3332,7 @@
     if-eqz v0, :cond_0
 
     .line 276
-    invoke-direct {p0}, Lcom/android/settings/ApnEditor;->A()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/ApnEditor;->A()V
 
     .line 279
     :cond_0
@@ -3356,7 +3356,7 @@
     if-eqz v0, :cond_6
 
     .line 242
-    iget-boolean v0, p0, Lcom/android/settings/ApnEditor;->mFirstTime:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/ApnEditor;->mFirstTime:Z
 
     if-nez v0, :cond_3
 
@@ -3370,7 +3370,7 @@
 
     .line 243
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -3386,11 +3386,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->mUri:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mUri:Landroid/net/Uri;
 
     .line 248
     :goto_3
-    iput-boolean v1, p0, Lcom/android/settings/ApnEditor;->ay:Z
+    iput-boolean v1, p0, Lcom/android/vendorsettings/ApnEditor;->ay:Z
 
     .line 249
     const-string v0, "mvno_type"
@@ -3399,7 +3399,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->aA:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->aA:Ljava/lang/String;
 
     .line 250
     const-string v0, "mvno_match_data"
@@ -3408,15 +3408,15 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->aB:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->aB:Ljava/lang/String;
 
     .line 254
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->mUri:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mUri:Landroid/net/Uri;
 
     if-nez v0, :cond_5
 
     .line 255
-    sget-object v0, Lcom/android/settings/ApnEditor;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/ApnEditor;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3428,7 +3428,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->getIntent()Landroid/content/Intent;
 
     move-result-object v2
 
@@ -3447,7 +3447,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 257
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->finish()V
 
     goto :goto_2
 
@@ -3467,7 +3467,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ApnEditor;->mUri:Landroid/net/Uri;
+    iput-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->mUri:Landroid/net/Uri;
 
     goto :goto_3
 
@@ -3479,7 +3479,7 @@
 
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->mUri:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->mUri:Landroid/net/Uri;
 
     invoke-virtual {v2}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
@@ -3489,13 +3489,13 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/ApnEditor;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/ApnEditor;->setResult(ILandroid/content/Intent;)V
 
     goto/16 :goto_1
 
     .line 266
     :cond_6
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->finish()V
 
     goto/16 :goto_2
 .end method
@@ -3508,7 +3508,7 @@
     if-nez p1, :cond_0
 
     .line 798
-    invoke-direct {p0}, Lcom/android/settings/ApnEditor;->B()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/ApnEditor;->B()Ljava/lang/String;
 
     move-result-object v0
 
@@ -3544,7 +3544,7 @@
     return-object v0
 
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/settings/dA;->onCreateDialog(I)Landroid/app/Dialog;
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/dA;->onCreateDialog(I)Landroid/app/Dialog;
 
     move-result-object v0
 
@@ -3560,15 +3560,15 @@
     const/4 v2, 0x0
 
     .line 601
-    invoke-super {p0, p1}, Lcom/android/settings/dA;->onCreateOptionsMenu(Landroid/view/Menu;)Z
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/dA;->onCreateOptionsMenu(Landroid/view/Menu;)Z
 
     .line 602
-    iget-boolean v0, p0, Lcom/android/settings/ApnEditor;->ax:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/ApnEditor;->ax:Z
 
     if-eqz v0, :cond_0
 
     .line 603
-    sget-object v0, Lcom/android/settings/ApnEditor;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/ApnEditor;->TAG:Ljava/lang/String;
 
     const-string v1, "Form is disabled. Do not create the options menu."
 
@@ -3580,7 +3580,7 @@
 
     .line 607
     :cond_0
-    iget-boolean v0, p0, Lcom/android/settings/ApnEditor;->ay:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/ApnEditor;->ay:Z
 
     if-nez v0, :cond_1
 
@@ -3633,7 +3633,7 @@
     packed-switch p1, :pswitch_data_0
 
     .line 649
-    invoke-super {p0, p1, p2}, Lcom/android/settings/dA;->onKeyDown(ILandroid/view/KeyEvent;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/dA;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result v0
 
@@ -3644,14 +3644,14 @@
     :pswitch_0
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->c(Z)Z
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->c(Z)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 644
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->finish()V
 
     .line 646
     :cond_0
@@ -3682,7 +3682,7 @@
     packed-switch v1, :pswitch_data_0
 
     .line 636
-    invoke-super {p0, p1}, Lcom/android/settings/dA;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/dA;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -3692,7 +3692,7 @@
 
     .line 622
     :pswitch_0
-    invoke-direct {p0}, Lcom/android/settings/ApnEditor;->C()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/ApnEditor;->C()V
 
     goto :goto_0
 
@@ -3700,35 +3700,35 @@
     :pswitch_1
     const/4 v1, 0x0
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/ApnEditor;->c(Z)Z
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/ApnEditor;->c(Z)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 626
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->finish()V
 
     goto :goto_0
 
     .line 630
     :pswitch_2
-    iget-boolean v1, p0, Lcom/android/settings/ApnEditor;->ay:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/ApnEditor;->ay:Z
 
     if-eqz v1, :cond_1
 
     .line 631
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->mUri:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->mUri:Landroid/net/Uri;
 
     invoke-virtual {v1, v2, v3, v3}, Landroid/content/ContentResolver;->delete(Landroid/net/Uri;Ljava/lang/String;[Ljava/lang/String;)I
 
     .line 633
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->finish()V
 
     goto :goto_0
 
@@ -3746,7 +3746,7 @@
 
     .prologue
     .line 295
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -3757,7 +3757,7 @@
     invoke-interface {v0, p0}, Landroid/content/SharedPreferences;->unregisterOnSharedPreferenceChangeListener(Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;)V
 
     .line 297
-    invoke-super {p0}, Lcom/android/settings/dA;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/dA;->onPause()V
 
     .line 298
     return-void
@@ -3792,12 +3792,12 @@
     move-result v0
 
     .line 559
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->am:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->am:Landroid/preference/ListPreference;
 
     invoke-virtual {v2, v0}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 561
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->mRes:Landroid/content/res/Resources;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->mRes:Landroid/content/res/Resources;
 
     const v3, 0x7f0a002a
 
@@ -3806,7 +3806,7 @@
     move-result-object v2
 
     .line 562
-    iget-object v3, p0, Lcom/android/settings/ApnEditor;->am:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/vendorsettings/ApnEditor;->am:Landroid/preference/ListPreference;
 
     aget-object v0, v2, v0
 
@@ -3846,9 +3846,9 @@
     .line 567
     check-cast v0, Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->ao:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->ao:Landroid/preference/ListPreference;
 
-    invoke-direct {p0, v0, v2}, Lcom/android/settings/ApnEditor;->a(Ljava/lang/String;Landroid/preference/ListPreference;)Ljava/lang/String;
+    invoke-direct {p0, v0, v2}, Lcom/android/vendorsettings/ApnEditor;->a(Ljava/lang/String;Landroid/preference/ListPreference;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -3862,12 +3862,12 @@
 
     .line 571
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->ao:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->ao:Landroid/preference/ListPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 572
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ao:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ao:Landroid/preference/ListPreference;
 
     check-cast p2, Ljava/lang/String;
 
@@ -3890,9 +3890,9 @@
     .line 574
     check-cast v0, Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/settings/ApnEditor;->ap:Landroid/preference/ListPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/ApnEditor;->ap:Landroid/preference/ListPreference;
 
-    invoke-direct {p0, v0, v2}, Lcom/android/settings/ApnEditor;->a(Ljava/lang/String;Landroid/preference/ListPreference;)Ljava/lang/String;
+    invoke-direct {p0, v0, v2}, Lcom/android/vendorsettings/ApnEditor;->a(Ljava/lang/String;Landroid/preference/ListPreference;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -3906,12 +3906,12 @@
 
     .line 578
     :cond_4
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->ap:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->ap:Landroid/preference/ListPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 579
-    iget-object v0, p0, Lcom/android/settings/ApnEditor;->ap:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/ApnEditor;->ap:Landroid/preference/ListPreference;
 
     check-cast p2, Ljava/lang/String;
 
@@ -3934,7 +3934,7 @@
     .line 581
     check-cast v0, Ljava/util/Set;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/ApnEditor;->a(Ljava/util/Set;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->a(Ljava/util/Set;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -3948,14 +3948,14 @@
 
     .line 585
     :cond_6
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
 
     check-cast p2, Ljava/util/Set;
 
     invoke-virtual {v1, p2}, Landroid/preference/MultiSelectListPreference;->setValues(Ljava/util/Set;)V
 
     .line 586
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/MultiSelectListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
@@ -3976,7 +3976,7 @@
     .line 588
     check-cast v0, Ljava/lang/String;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/ApnEditor;->h(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->h(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -3990,14 +3990,14 @@
 
     .line 592
     :cond_8
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->as:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->as:Landroid/preference/ListPreference;
 
     check-cast p2, Ljava/lang/String;
 
     invoke-virtual {v1, p2}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 593
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->as:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->as:Landroid/preference/ListPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/ListPreference;->setSummary(Ljava/lang/CharSequence;)V
 
@@ -4040,7 +4040,7 @@
     return v0
 
     :cond_0
-    invoke-super {p0, p1, p2}, Lcom/android/settings/dA;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/dA;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -4052,13 +4052,13 @@
 
     .prologue
     .line 812
-    invoke-super {p0, p1, p2}, Lcom/android/settings/dA;->onPrepareDialog(ILandroid/app/Dialog;)V
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/dA;->onPrepareDialog(ILandroid/app/Dialog;)V
 
     .line 814
     if-nez p1, :cond_0
 
     .line 815
-    invoke-direct {p0}, Lcom/android/settings/ApnEditor;->B()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/ApnEditor;->B()Ljava/lang/String;
 
     move-result-object v0
 
@@ -4080,10 +4080,10 @@
 
     .prologue
     .line 288
-    invoke-super {p0}, Lcom/android/settings/dA;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/dA;->onResume()V
 
     .line 289
-    invoke-virtual {p0}, Lcom/android/settings/ApnEditor;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ApnEditor;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -4102,12 +4102,12 @@
 
     .prologue
     .line 654
-    invoke-super {p0, p1}, Lcom/android/settings/dA;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/dA;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 655
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ApnEditor;->c(Z)Z
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/ApnEditor;->c(Z)Z
 
     move-result v0
 
@@ -4116,7 +4116,7 @@
     .line 656
     const-string v0, "pos"
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->mCursor:Landroid/database/Cursor;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->mCursor:Landroid/database/Cursor;
 
     const/4 v2, 0x0
 
@@ -4136,7 +4136,7 @@
 
     .prologue
     .line 857
-    invoke-virtual {p0, p2}, Lcom/android/settings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p2}, Lcom/android/vendorsettings/ApnEditor;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -4144,7 +4144,7 @@
     if-eqz v0, :cond_0
 
     .line 859
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->ag:Landroid/preference/EditTextPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->ag:Landroid/preference/EditTextPreference;
 
     invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -4159,7 +4159,7 @@
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ApnEditor;->i(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ApnEditor;->i(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -4172,7 +4172,7 @@
 
     .line 867
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->aq:Landroid/preference/SwitchPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->aq:Landroid/preference/SwitchPreference;
 
     invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -4180,7 +4180,7 @@
 
     if-nez v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->ar:Landroid/preference/MultiSelectListPreference;
 
     invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -4188,7 +4188,7 @@
 
     if-nez v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->ao:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->ao:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -4196,7 +4196,7 @@
 
     if-nez v1, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/ApnEditor;->ap:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/ApnEditor;->ap:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -4211,7 +4211,7 @@
 
     move-result-object v1
 
-    invoke-direct {p0, v1}, Lcom/android/settings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/ApnEditor;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 

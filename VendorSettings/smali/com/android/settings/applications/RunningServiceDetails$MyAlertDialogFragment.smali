@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;
+.class public Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment;
 .super Landroid/app/DialogFragment;
 .source "RunningServiceDetails.java"
 
@@ -14,14 +14,14 @@
     return-void
 .end method
 
-.method public static a(ILandroid/content/ComponentName;)Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;
+.method public static a(ILandroid/content/ComponentName;)Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment;
     .locals 3
 
     .prologue
     .line 596
-    new-instance v0, Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;
+    new-instance v0, Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment;-><init>()V
 
     .line 597
     new-instance v1, Landroid/os/Bundle;
@@ -39,7 +39,7 @@
     invoke-virtual {v1, v2, p1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 600
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;->setArguments(Landroid/os/Bundle;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment;->setArguments(Landroid/os/Bundle;)V
 
     .line 601
     return-object v0
@@ -47,16 +47,16 @@
 
 
 # virtual methods
-.method lw()Lcom/android/settings/applications/RunningServiceDetails;
+.method lw()Lcom/android/vendorsettings/applications/RunningServiceDetails;
     .locals 1
 
     .prologue
     .line 605
-    invoke-virtual {p0}, Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/RunningServiceDetails;
+    check-cast v0, Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
     return-object v0
 .end method
@@ -68,7 +68,7 @@
     const/4 v1, 0x0
 
     .line 610
-    invoke-virtual {p0}, Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -108,7 +108,7 @@
 
     .line 613
     :pswitch_0
-    invoke-virtual {p0}, Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -121,11 +121,11 @@
     check-cast v0, Landroid/content/ComponentName;
 
     .line 614
-    invoke-virtual {p0}, Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;->lw()Lcom/android/settings/applications/RunningServiceDetails;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment;->lw()Lcom/android/vendorsettings/applications/RunningServiceDetails;
 
     move-result-object v2
 
-    invoke-virtual {v2, v0}, Lcom/android/settings/applications/RunningServiceDetails;->c(Landroid/content/ComponentName;)Lcom/android/settings/applications/RunningServiceDetails$ActiveDetail;
+    invoke-virtual {v2, v0}, Lcom/android/vendorsettings/applications/RunningServiceDetails;->c(Landroid/content/ComponentName;)Lcom/android/vendorsettings/applications/RunningServiceDetails$ActiveDetail;
 
     move-result-object v2
 
@@ -140,13 +140,13 @@
     :cond_0
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
     invoke-direct {v2, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -160,7 +160,7 @@
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -176,9 +176,9 @@
 
     const v3, 0x7f0c05b1
 
-    new-instance v4, Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment$1;
+    new-instance v4, Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment$1;
 
-    invoke-direct {v4, p0, v0}, Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment$1;-><init>(Lcom/android/settings/applications/RunningServiceDetails$MyAlertDialogFragment;Landroid/content/ComponentName;)V
+    invoke-direct {v4, p0, v0}, Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment$1;-><init>(Lcom/android/vendorsettings/applications/RunningServiceDetails$MyAlertDialogFragment;Landroid/content/ComponentName;)V
 
     invoke-virtual {v2, v3, v4}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

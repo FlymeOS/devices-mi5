@@ -1,19 +1,19 @@
-.class Lcom/android/settings/fingerprint/z;
+.class Lcom/android/vendorsettings/fingerprint/z;
 .super Landroid/hardware/fingerprint/FingerprintManager$RemovalCallback;
 .source "FingerprintSettings.java"
 
 
 # instance fields
-.field final synthetic acr:Lcom/android/settings/fingerprint/x;
+.field final synthetic acr:Lcom/android/vendorsettings/fingerprint/x;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fingerprint/x;)V
+.method constructor <init>(Lcom/android/vendorsettings/fingerprint/x;)V
     .locals 0
 
     .prologue
     .line 161
-    iput-object p1, p0, Lcom/android/settings/fingerprint/z;->acr:Lcom/android/settings/fingerprint/x;
+    iput-object p1, p0, Lcom/android/vendorsettings/fingerprint/z;->acr:Lcom/android/vendorsettings/fingerprint/x;
 
     invoke-direct {p0}, Landroid/hardware/fingerprint/FingerprintManager$RemovalCallback;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 171
-    iget-object v0, p0, Lcom/android/settings/fingerprint/z;->acr:Lcom/android/settings/fingerprint/x;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/z;->acr:Lcom/android/vendorsettings/fingerprint/x;
 
-    invoke-virtual {v0}, Lcom/android/settings/fingerprint/x;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/fingerprint/x;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -51,9 +51,9 @@
 
     .prologue
     .line 165
-    iget-object v0, p0, Lcom/android/settings/fingerprint/z;->acr:Lcom/android/settings/fingerprint/x;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/z;->acr:Lcom/android/vendorsettings/fingerprint/x;
 
-    invoke-static {v0}, Lcom/android/settings/fingerprint/x;->a(Lcom/android/settings/fingerprint/x;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/vendorsettings/fingerprint/x;->a(Lcom/android/vendorsettings/fingerprint/x;)Landroid/os/Handler;
 
     move-result-object v0
 

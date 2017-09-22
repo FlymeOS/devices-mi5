@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/sound/RingtoneActivity;
-.super Lcom/android/settings/sound/q;
+.class public Lcom/android/vendorsettings/sound/RingtoneActivity;
+.super Lcom/android/vendorsettings/sound/q;
 .source "RingtoneActivity.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 6
-    invoke-direct {p0}, Lcom/android/settings/sound/q;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/sound/q;-><init>()V
 
     return-void
 .end method

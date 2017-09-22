@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;
+.class public Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;
 .super Ljava/lang/Object;
 .source "AppStateAppOpsBridge.java"
 
@@ -26,15 +26,15 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 307
-    iput-object p1, p0, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;->packageName:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;->packageName:Ljava/lang/String;
 
     .line 308
     const/4 v0, 0x3
 
-    iput v0, p0, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;->Gq:I
+    iput v0, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;->Gq:I
 
     .line 309
-    iput-object p2, p0, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;->userHandle:Landroid/os/UserHandle;
+    iput-object p2, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;->userHandle:Landroid/os/UserHandle;
 
     .line 310
     return-void
@@ -47,21 +47,21 @@
 
     .prologue
     .line 316
-    iget v0, p0, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;->Gq:I
+    iget v0, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;->Gq:I
 
     const/4 v1, 0x3
 
     if-ne v0, v1, :cond_0
 
     .line 317
-    iget-boolean v0, p0, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;->Go:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;->Go:Z
 
     .line 319
     :goto_0
     return v0
 
     :cond_0
-    iget v0, p0, Lcom/android/settings/applications/AppStateAppOpsBridge$PermissionState;->Gq:I
+    iget v0, p0, Lcom/android/vendorsettings/applications/AppStateAppOpsBridge$PermissionState;->Gq:I
 
     if-nez v0, :cond_1
 

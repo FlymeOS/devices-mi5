@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hz;
+.class Lcom/android/vendorsettings/hz;
 .super Ljava/lang/Object;
 .source "SettingsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic zP:Lcom/android/settings/SettingsFragment;
+.field final synthetic zP:Lcom/android/vendorsettings/SettingsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SettingsFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/SettingsFragment;)V
     .locals 0
 
     .prologue
     .line 337
-    iput-object p1, p0, Lcom/android/settings/hz;->zP:Lcom/android/settings/SettingsFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/hz;->zP:Lcom/android/vendorsettings/SettingsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

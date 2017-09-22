@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/ForceTouchGuideActivity;
+.class public Lcom/android/vendorsettings/display/ForceTouchGuideActivity;
 .super Lmiui/preference/PreferenceActivity;
 .source "ForceTouchGuideActivity.java"
 
@@ -28,14 +28,14 @@
     .line 28
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mEnabled:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mEnabled:Z
 
     .line 71
-    new-instance v0, Lcom/android/settings/display/o;
+    new-instance v0, Lcom/android/vendorsettings/display/o;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/display/o;-><init>(Lcom/android/settings/display/ForceTouchGuideActivity;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/display/o;-><init>(Lcom/android/vendorsettings/display/ForceTouchGuideActivity;)V
 
-    iput-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->Yq:Landroid/preference/Preference$OnPreferenceChangeListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->Yq:Landroid/preference/Preference$OnPreferenceChangeListener;
 
     return-void
 .end method
@@ -45,12 +45,12 @@
 
     .prologue
     .line 84
-    invoke-virtual {p0}, Lcom/android/settings/display/ForceTouchGuideActivity;->getPackageName()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->getPackageName()Ljava/lang/String;
 
     move-result-object v0
 
     .line 85
-    invoke-virtual {p0}, Lcom/android/settings/display/ForceTouchGuideActivity;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -106,22 +106,22 @@
     goto :goto_0
 .end method
 
-.method static synthetic a(Lcom/android/settings/display/ForceTouchGuideActivity;)Landroid/widget/VideoView;
+.method static synthetic a(Lcom/android/vendorsettings/display/ForceTouchGuideActivity;)Landroid/widget/VideoView;
     .locals 1
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/display/ForceTouchGuideActivity;Z)Z
+.method static synthetic a(Lcom/android/vendorsettings/display/ForceTouchGuideActivity;Z)Z
     .locals 0
 
     .prologue
     .line 20
-    iput-boolean p1, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mEnabled:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mEnabled:Z
 
     return p1
 .end method
@@ -131,7 +131,7 @@
 
     .prologue
     .line 94
-    iget-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
 
     if-nez v0, :cond_0
 
@@ -144,21 +144,21 @@
     if-eqz p1, :cond_1
 
     .line 98
-    iget-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
 
     invoke-virtual {v0}, Landroid/widget/VideoView;->start()V
 
     .line 99
-    invoke-virtual {p0}, Lcom/android/settings/display/ForceTouchGuideActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->Yp:Lmiui/preference/ValuePreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->Yp:Lmiui/preference/ValuePreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 100
-    iget-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
 
     const/4 v1, 0x0
 
@@ -168,21 +168,21 @@
 
     .line 102
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
 
     invoke-virtual {v0}, Landroid/widget/VideoView;->pause()V
 
     .line 103
-    invoke-virtual {p0}, Lcom/android/settings/display/ForceTouchGuideActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->Yp:Lmiui/preference/ValuePreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->Yp:Lmiui/preference/ValuePreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 104
-    iget-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
 
     const/16 v1, 0x8
 
@@ -191,42 +191,42 @@
     goto :goto_0
 .end method
 
-.method static synthetic b(Lcom/android/settings/display/ForceTouchGuideActivity;)Landroid/content/Context;
+.method static synthetic b(Lcom/android/vendorsettings/display/ForceTouchGuideActivity;)Landroid/content/Context;
     .locals 1
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mContext:Landroid/content/Context;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/display/ForceTouchGuideActivity;Z)V
+.method static synthetic b(Lcom/android/vendorsettings/display/ForceTouchGuideActivity;Z)V
     .locals 0
 
     .prologue
     .line 20
-    invoke-direct {p0, p1}, Lcom/android/settings/display/ForceTouchGuideActivity;->aK(Z)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->aK(Z)V
 
     return-void
 .end method
 
-.method static synthetic c(Lcom/android/settings/display/ForceTouchGuideActivity;)Z
+.method static synthetic c(Lcom/android/vendorsettings/display/ForceTouchGuideActivity;)Z
     .locals 1
 
     .prologue
     .line 20
-    iget-boolean v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mEnabled:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mEnabled:Z
 
     return v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/display/ForceTouchGuideActivity;)Landroid/preference/CheckBoxPreference;
+.method static synthetic d(Lcom/android/vendorsettings/display/ForceTouchGuideActivity;)Landroid/preference/CheckBoxPreference;
     .locals 1
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->Yo:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->Yo:Landroid/preference/CheckBoxPreference;
 
     return-object v0
 .end method
@@ -236,98 +236,98 @@
 
     .prologue
     .line 51
-    invoke-virtual {p0}, Lcom/android/settings/display/ForceTouchGuideActivity;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mContext:Landroid/content/Context;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mContext:Landroid/content/Context;
 
     .line 52
     const-string v0, "force_touch_demo"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/ForceTouchGuideActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Lmiui/preference/ValuePreference;
 
-    iput-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->Yp:Lmiui/preference/ValuePreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->Yp:Lmiui/preference/ValuePreference;
 
     .line 53
-    iget-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/provider/MiuiSettings$ForceTouch;->isEnabled(Landroid/content/Context;)Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mEnabled:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mEnabled:Z
 
     .line 54
     const-string v0, "force_touch_enable"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/ForceTouchGuideActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->Yo:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->Yo:Landroid/preference/CheckBoxPreference;
 
     .line 55
-    iget-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->Yo:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->Yo:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->Yq:Landroid/preference/Preference$OnPreferenceChangeListener;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->Yq:Landroid/preference/Preference$OnPreferenceChangeListener;
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 56
-    iget-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->Yo:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->Yo:Landroid/preference/CheckBoxPreference;
 
-    iget-boolean v1, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mEnabled:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mEnabled:Z
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 58
     const v0, 0x7f130106
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/ForceTouchGuideActivity;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/VideoView;
 
-    iput-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
 
     .line 59
-    new-instance v0, Lcom/android/settings/display/n;
+    new-instance v0, Lcom/android/vendorsettings/display/n;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/display/n;-><init>(Lcom/android/settings/display/ForceTouchGuideActivity;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/display/n;-><init>(Lcom/android/vendorsettings/display/ForceTouchGuideActivity;)V
 
     .line 65
-    iget-object v1, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
 
     invoke-virtual {v1, v0}, Landroid/widget/VideoView;->setOnCompletionListener(Landroid/media/MediaPlayer$OnCompletionListener;)V
 
     .line 66
-    iget-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
 
     const-string v1, "force_touch"
 
-    invoke-direct {p0, v1}, Lcom/android/settings/display/ForceTouchGuideActivity;->L(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-direct {p0, v1}, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->L(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/widget/VideoView;->setVideoURI(Landroid/net/Uri;)V
 
     .line 67
-    iget-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/VideoView;->setZOrderOnTop(Z)V
 
     .line 68
-    iget-object v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mu:Landroid/widget/VideoView;
 
     invoke-virtual {v0}, Landroid/widget/VideoView;->requestFocus()Z
 
@@ -347,15 +347,15 @@
     .line 33
     const v0, 0x7f040088
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/ForceTouchGuideActivity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->setContentView(I)V
 
     .line 34
     const v0, 0x7f080044
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/ForceTouchGuideActivity;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->addPreferencesFromResource(I)V
 
     .line 35
-    invoke-direct {p0}, Lcom/android/settings/display/ForceTouchGuideActivity;->pw()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->pw()V
 
     .line 36
     return-void
@@ -371,7 +371,7 @@
     .line 47
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/display/ForceTouchGuideActivity;->aK(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->aK(Z)V
 
     .line 48
     return-void
@@ -385,9 +385,9 @@
     invoke-super {p0}, Lmiui/preference/PreferenceActivity;->onResume()V
 
     .line 41
-    iget-boolean v0, p0, Lcom/android/settings/display/ForceTouchGuideActivity;->mEnabled:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->mEnabled:Z
 
-    invoke-direct {p0, v0}, Lcom/android/settings/display/ForceTouchGuideActivity;->aK(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/display/ForceTouchGuideActivity;->aK(Z)V
 
     .line 42
     return-void

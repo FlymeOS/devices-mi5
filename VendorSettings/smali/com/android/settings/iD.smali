@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/iD;
+.class final Lcom/android/vendorsettings/iD;
 .super Ljava/lang/Object;
 .source "Utils.java"
 
@@ -16,7 +16,7 @@
 
     .prologue
     .line 657
-    iput-object p1, p0, Lcom/android/settings/iD;->Cf:Ljava/lang/Runnable;
+    iput-object p1, p0, Lcom/android/vendorsettings/iD;->Cf:Ljava/lang/Runnable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 660
-    iget-object v0, p0, Lcom/android/settings/iD;->Cf:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/vendorsettings/iD;->Cf:Ljava/lang/Runnable;
 
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 

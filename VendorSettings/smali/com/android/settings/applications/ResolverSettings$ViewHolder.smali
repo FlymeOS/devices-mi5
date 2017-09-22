@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/ResolverSettings$ViewHolder;
+.class Lcom/android/vendorsettings/applications/ResolverSettings$ViewHolder;
 .super Ljava/lang/Object;
 .source "ResolverSettings.java"
 
@@ -28,7 +28,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ResolverSettings$ViewHolder;->text:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ViewHolder;->text:Landroid/widget/TextView;
 
     .line 217
     const v0, 0x1020006
@@ -39,7 +39,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/android/settings/applications/ResolverSettings$ViewHolder;->icon:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ViewHolder;->icon:Landroid/widget/ImageView;
 
     .line 218
     const v0, 0x7f13027d
@@ -48,7 +48,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/ResolverSettings$ViewHolder;->MR:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/applications/ResolverSettings$ViewHolder;->MR:Landroid/view/View;
 
     .line 219
     return-void

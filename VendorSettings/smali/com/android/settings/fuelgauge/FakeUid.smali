@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fuelgauge/FakeUid;
+.class public Lcom/android/vendorsettings/fuelgauge/FakeUid;
 .super Landroid/os/BatteryStats$Uid;
 .source "FakeUid.java"
 
@@ -16,7 +16,7 @@
     invoke-direct {p0}, Landroid/os/BatteryStats$Uid;-><init>()V
 
     .line 33
-    iput p1, p0, Lcom/android/settings/fuelgauge/FakeUid;->mUid:I
+    iput p1, p0, Lcom/android/vendorsettings/fuelgauge/FakeUid;->mUid:I
 
     .line 34
     return-void
@@ -219,7 +219,7 @@
 
     .prologue
     .line 38
-    iget v0, p0, Lcom/android/settings/fuelgauge/FakeUid;->mUid:I
+    iget v0, p0, Lcom/android/vendorsettings/fuelgauge/FakeUid;->mUid:I
 
     return v0
 .end method

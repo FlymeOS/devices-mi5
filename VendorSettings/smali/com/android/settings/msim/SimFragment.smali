@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/msim/SimFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/msim/SimFragment;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "SimFragment.java"
 
 
@@ -83,7 +83,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/msim/SimFragment;->ahJ:[Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/msim/SimFragment;->ahJ:[Ljava/lang/String;
 
     return-void
 .end method
@@ -93,26 +93,26 @@
 
     .prologue
     .line 47
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 81
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/msim/SimFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iput-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     .line 90
-    new-instance v0, Lcom/android/settings/msim/c;
+    new-instance v0, Lcom/android/vendorsettings/msim/c;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/msim/c;-><init>(Lcom/android/settings/msim/SimFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/msim/c;-><init>(Lcom/android/vendorsettings/msim/SimFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/msim/SimFragment;->xC:Landroid/telephony/PhoneStateListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->xC:Landroid/telephony/PhoneStateListener;
 
     .line 108
-    new-instance v0, Lcom/android/settings/msim/d;
+    new-instance v0, Lcom/android/vendorsettings/msim/d;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/msim/d;-><init>(Lcom/android/settings/msim/SimFragment;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/msim/d;-><init>(Lcom/android/vendorsettings/msim/SimFragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/msim/SimFragment;->WI:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->WI:Landroid/content/BroadcastReceiver;
 
     return-void
 .end method
@@ -127,7 +127,7 @@
     move-result v1
 
     .line 283
-    iget-object v0, p0, Lcom/android/settings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
 
     const v2, 0x7f0c00fd
 
@@ -142,7 +142,7 @@
     :goto_0
     const-string v1, "service_state"
 
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/msim/SimFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v1, v0}, Lcom/android/vendorsettings/msim/SimFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 300
     invoke-virtual {p1}, Landroid/telephony/ServiceState;->getRoaming()Z
@@ -154,7 +154,7 @@
     .line 301
     const-string v0, "roaming_state"
 
-    iget-object v1, p0, Lcom/android/settings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
+    iget-object v1, p0, Lcom/android/vendorsettings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
 
     const v2, 0x7f0c00f4
 
@@ -162,7 +162,7 @@
 
     move-result-object v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/msim/SimFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/msim/SimFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 305
     :goto_1
@@ -172,14 +172,14 @@
 
     move-result-object v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/msim/SimFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/msim/SimFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 306
     return-void
 
     .line 287
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
 
     const v1, 0x7f0c00f0
 
@@ -191,7 +191,7 @@
 
     .line 291
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
 
     const v1, 0x7f0c00f1
 
@@ -203,7 +203,7 @@
 
     .line 294
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
 
     const v1, 0x7f0c00f3
 
@@ -217,7 +217,7 @@
     :cond_0
     const-string v0, "roaming_state"
 
-    iget-object v1, p0, Lcom/android/settings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
+    iget-object v1, p0, Lcom/android/vendorsettings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
 
     const v2, 0x7f0c00f5
 
@@ -225,7 +225,7 @@
 
     move-result-object v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/msim/SimFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/msim/SimFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -239,32 +239,32 @@
     .end packed-switch
 .end method
 
-.method static synthetic a(Lcom/android/settings/msim/SimFragment;)V
+.method static synthetic a(Lcom/android/vendorsettings/msim/SimFragment;)V
     .locals 0
 
     .prologue
     .line 47
-    invoke-direct {p0}, Lcom/android/settings/msim/SimFragment;->gL()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/msim/SimFragment;->gL()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/msim/SimFragment;Landroid/telephony/ServiceState;)V
+.method static synthetic a(Lcom/android/vendorsettings/msim/SimFragment;Landroid/telephony/ServiceState;)V
     .locals 0
 
     .prologue
     .line 47
-    invoke-direct {p0, p1}, Lcom/android/settings/msim/SimFragment;->a(Landroid/telephony/ServiceState;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/msim/SimFragment;->a(Landroid/telephony/ServiceState;)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/msim/SimFragment;Ljava/lang/String;)V
+.method static synthetic a(Lcom/android/vendorsettings/msim/SimFragment;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 47
-    invoke-direct {p0, p1}, Lcom/android/settings/msim/SimFragment;->aV(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/msim/SimFragment;->aV(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -274,7 +274,7 @@
 
     .prologue
     .line 213
-    invoke-virtual {p0, p1}, Lcom/android/settings/msim/SimFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/msim/SimFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -282,7 +282,7 @@
     if-eqz v0, :cond_0
 
     .line 215
-    invoke-virtual {p0}, Lcom/android/settings/msim/SimFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/SimFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -303,19 +303,19 @@
     .line 310
     const-string v0, "latest_area_info"
 
-    invoke-direct {p0, v0, p1}, Lcom/android/settings/msim/SimFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, p1}, Lcom/android/vendorsettings/msim/SimFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 312
     :cond_0
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/msim/SimFragment;)V
+.method static synthetic b(Lcom/android/vendorsettings/msim/SimFragment;)V
     .locals 0
 
     .prologue
     .line 47
-    invoke-direct {p0}, Lcom/android/settings/msim/SimFragment;->gM()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/msim/SimFragment;->gM()V
 
     return-void
 .end method
@@ -327,7 +327,7 @@
     const v3, 0x7f0c00f9
 
     .line 261
-    iget-object v0, p0, Lcom/android/settings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
 
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -338,7 +338,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/settings/msim/SimFragment;->mSlotId:I
+    iget v2, p0, Lcom/android/vendorsettings/msim/SimFragment;->mSlotId:I
 
     invoke-virtual {v1, v2}, Lmiui/telephony/TelephonyManager;->getDataStateForSlot(I)I
 
@@ -351,14 +351,14 @@
     :goto_0
     const-string v1, "data_state"
 
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/msim/SimFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v1, v0}, Lcom/android/vendorsettings/msim/SimFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 279
     return-void
 
     .line 265
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
 
     const v1, 0x7f0c00fb
 
@@ -370,7 +370,7 @@
 
     .line 268
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
 
     const v1, 0x7f0c00fc
 
@@ -382,7 +382,7 @@
 
     .line 271
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
 
     const v1, 0x7f0c00fa
 
@@ -394,7 +394,7 @@
 
     .line 274
     :pswitch_3
-    iget-object v0, p0, Lcom/android/settings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
 
     invoke-virtual {v0, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -424,7 +424,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/msim/SimFragment;->mSlotId:I
+    iget v1, p0, Lcom/android/vendorsettings/msim/SimFragment;->mSlotId:I
 
     invoke-virtual {v0, v1}, Lmiui/telephony/TelephonyManager;->getNetworkTypeForSlot(I)I
 
@@ -446,14 +446,14 @@
     :goto_0
     const-string v1, "network_type"
 
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/msim/SimFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v1, v0}, Lcom/android/vendorsettings/msim/SimFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 258
     return-void
 
     .line 251
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/msim/SimFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v0}, Lcom/android/internal/telephony/Phone;->getPhoneName()Ljava/lang/String;
 
@@ -491,18 +491,18 @@
     if-eqz v0, :cond_0
 
     .line 235
-    iget-object p2, p0, Lcom/android/settings/msim/SimFragment;->ahK:Ljava/lang/String;
+    iget-object p2, p0, Lcom/android/vendorsettings/msim/SimFragment;->ahK:Ljava/lang/String;
 
     .line 238
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/msim/SimFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/msim/SimFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 239
-    invoke-virtual {p0, p1}, Lcom/android/settings/msim/SimFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/msim/SimFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -527,18 +527,18 @@
     const/4 v4, -0x1
 
     .line 319
-    iget-object v0, p0, Lcom/android/settings/msim/SimFragment;->WD:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->WD:Landroid/preference/Preference;
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {p0}, Lcom/android/settings/msim/SimFragment;->isAdded()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/SimFragment;->isAdded()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
     .line 320
-    iget-object v0, p0, Lcom/android/settings/msim/SimFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v0}, Lcom/android/internal/telephony/Phone;->getServiceState()Landroid/telephony/ServiceState;
 
@@ -549,7 +549,7 @@
     move-result v0
 
     .line 322
-    invoke-virtual {p0}, Lcom/android/settings/msim/SimFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/SimFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
@@ -564,7 +564,7 @@
 
     .line 326
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/msim/SimFragment;->WD:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->WD:Landroid/preference/Preference;
 
     check-cast v0, Lmiui/preference/ValuePreference;
 
@@ -594,7 +594,7 @@
 
     .line 337
     :goto_1
-    iget-object v0, p0, Lcom/android/settings/msim/SimFragment;->WD:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->WD:Landroid/preference/Preference;
 
     check-cast v0, Lmiui/preference/ValuePreference;
 
@@ -694,15 +694,15 @@
     const/4 v0, 0x0
 
     .line 134
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 135
     sget v1, Lmiui/R$style;->Theme_Light_Settings_NoTitle:I
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/msim/SimFragment;->setThemeRes(I)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/msim/SimFragment;->setThemeRes(I)V
 
     .line 136
-    invoke-virtual {p0}, Lcom/android/settings/msim/SimFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/SimFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -710,22 +710,22 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/msim/SimFragment;->mSlotId:I
+    iput v1, p0, Lcom/android/vendorsettings/msim/SimFragment;->mSlotId:I
 
     .line 138
     const v1, 0x7f0800a7
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/msim/SimFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/msim/SimFragment;->addPreferencesFromResource(I)V
 
     .line 140
-    invoke-virtual {p0}, Lcom/android/settings/msim/SimFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/SimFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
+    iput-object v1, p0, Lcom/android/vendorsettings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
 
     .line 141
-    iget-object v1, p0, Lcom/android/settings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
+    iget-object v1, p0, Lcom/android/vendorsettings/msim/SimFragment;->mRes:Landroid/content/res/Resources;
 
     const v2, 0x7f0c00d9
 
@@ -733,7 +733,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/msim/SimFragment;->ahK:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/msim/SimFragment;->ahK:Ljava/lang/String;
 
     .line 142
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
@@ -743,34 +743,34 @@
     if-nez v1, :cond_0
 
     .line 143
-    invoke-static {}, Lcom/android/settings/fy;->gg()Lcom/android/settings/fy;
+    invoke-static {}, Lcom/android/vendorsettings/fy;->gg()Lcom/android/vendorsettings/fy;
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/settings/msim/SimFragment;->mSlotId:I
+    iget v2, p0, Lcom/android/vendorsettings/msim/SimFragment;->mSlotId:I
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/fy;->getPhone(I)Lcom/android/internal/telephony/Phone;
+    invoke-virtual {v1, v2}, Lcom/android/vendorsettings/fy;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/msim/SimFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iput-object v1, p0, Lcom/android/vendorsettings/msim/SimFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     .line 146
     :cond_0
     const-string v1, "signal_strength"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/msim/SimFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/msim/SimFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/msim/SimFragment;->WD:Landroid/preference/Preference;
+    iput-object v1, p0, Lcom/android/vendorsettings/msim/SimFragment;->WD:Landroid/preference/Preference;
 
     .line 149
-    iget-object v1, p0, Lcom/android/settings/msim/SimFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iget-object v1, p0, Lcom/android/vendorsettings/msim/SimFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {p0}, Lcom/android/settings/msim/SimFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/SimFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -778,7 +778,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/iC;->Z(Landroid/content/Context;)Z
+    invoke-static {v1}, Lcom/android/vendorsettings/iC;->Z(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -786,7 +786,7 @@
 
     .line 150
     :cond_1
-    sget-object v1, Lcom/android/settings/msim/SimFragment;->ahJ:[Ljava/lang/String;
+    sget-object v1, Lcom/android/vendorsettings/msim/SimFragment;->ahJ:[Ljava/lang/String;
 
     array-length v2, v1
 
@@ -796,7 +796,7 @@
     aget-object v3, v1, v0
 
     .line 151
-    invoke-direct {p0, v3}, Lcom/android/settings/msim/SimFragment;->aT(Ljava/lang/String;)V
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/msim/SimFragment;->aT(Ljava/lang/String;)V
 
     .line 150
     add-int/lit8 v0, v0, 0x1
@@ -805,7 +805,7 @@
 
     .line 156
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/msim/SimFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v0}, Lcom/android/internal/telephony/Phone;->getPhoneName()Ljava/lang/String;
 
@@ -826,7 +826,7 @@
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/settings/msim/SimFragment;->mSlotId:I
+    iget v2, p0, Lcom/android/vendorsettings/msim/SimFragment;->mSlotId:I
 
     invoke-virtual {v1, v2}, Lmiui/telephony/TelephonyManager;->getSimCountryIsoForSlot(I)Ljava/lang/String;
 
@@ -841,11 +841,11 @@
     .line 159
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/msim/SimFragment;->WF:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->WF:Z
 
     .line 163
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/msim/SimFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v0}, Lcom/android/internal/telephony/Phone;->getLine1Number()Ljava/lang/String;
 
@@ -870,17 +870,17 @@
     :cond_4
     const-string v1, "number"
 
-    invoke-direct {p0, v1, v0}, Lcom/android/settings/msim/SimFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v1, v0}, Lcom/android/vendorsettings/msim/SimFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 171
-    iget-boolean v0, p0, Lcom/android/settings/msim/SimFragment;->WF:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->WF:Z
 
     if-nez v0, :cond_5
 
     .line 172
     const-string v0, "latest_area_info"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/msim/SimFragment;->aT(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/msim/SimFragment;->aT(Ljava/lang/String;)V
 
     .line 175
     :cond_5
@@ -892,14 +892,14 @@
 
     .prologue
     .line 198
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPause()V
 
     .line 200
-    iget-object v0, p0, Lcom/android/settings/msim/SimFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/msim/SimFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/SimFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -907,7 +907,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/iC;->Z(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/iC;->Z(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -918,9 +918,9 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/msim/SimFragment;->mSlotId:I
+    iget v1, p0, Lcom/android/vendorsettings/msim/SimFragment;->mSlotId:I
 
-    iget-object v2, p0, Lcom/android/settings/msim/SimFragment;->xC:Landroid/telephony/PhoneStateListener;
+    iget-object v2, p0, Lcom/android/vendorsettings/msim/SimFragment;->xC:Landroid/telephony/PhoneStateListener;
 
     const/4 v3, 0x0
 
@@ -928,16 +928,16 @@
 
     .line 203
     :cond_0
-    iget-boolean v0, p0, Lcom/android/settings/msim/SimFragment;->WF:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->WF:Z
 
     if-eqz v0, :cond_1
 
     .line 204
-    invoke-virtual {p0}, Lcom/android/settings/msim/SimFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/SimFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/msim/SimFragment;->WI:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/msim/SimFragment;->WI:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
@@ -951,14 +951,14 @@
 
     .prologue
     .line 179
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 180
-    iget-object v0, p0, Lcom/android/settings/msim/SimFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/msim/SimFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/SimFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -966,7 +966,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/iC;->Z(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/vendorsettings/iC;->Z(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -977,25 +977,25 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/msim/SimFragment;->mSlotId:I
+    iget v1, p0, Lcom/android/vendorsettings/msim/SimFragment;->mSlotId:I
 
-    iget-object v2, p0, Lcom/android/settings/msim/SimFragment;->xC:Landroid/telephony/PhoneStateListener;
+    iget-object v2, p0, Lcom/android/vendorsettings/msim/SimFragment;->xC:Landroid/telephony/PhoneStateListener;
 
     const/16 v3, 0x141
 
     invoke-virtual {v0, v1, v2, v3}, Lmiui/telephony/TelephonyManager;->listenForSlot(ILandroid/telephony/PhoneStateListener;I)V
 
     .line 185
-    iget-boolean v0, p0, Lcom/android/settings/msim/SimFragment;->WF:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/msim/SimFragment;->WF:Z
 
     if-eqz v0, :cond_0
 
     .line 186
-    invoke-virtual {p0}, Lcom/android/settings/msim/SimFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/SimFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/msim/SimFragment;->WI:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/msim/SimFragment;->WI:Landroid/content/BroadcastReceiver;
 
     new-instance v2, Landroid/content/IntentFilter;
 
@@ -1017,7 +1017,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 190
-    invoke-virtual {p0}, Lcom/android/settings/msim/SimFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/SimFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 

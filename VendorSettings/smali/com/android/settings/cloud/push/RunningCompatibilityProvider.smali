@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/push/RunningCompatibilityProvider;
+.class public Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;
 .super Landroid/content/ContentProvider;
 .source "RunningCompatibilityProvider.java"
 
@@ -10,7 +10,7 @@
 
 
 # instance fields
-.field private Un:Lcom/android/settings/cloud/push/g;
+.field private Un:Lcom/android/vendorsettings/cloud/push/g;
 
 
 # direct methods
@@ -25,10 +25,10 @@
 
     invoke-direct {v0, v1}, Landroid/content/UriMatcher;-><init>(I)V
 
-    sput-object v0, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Um:Landroid/content/UriMatcher;
+    sput-object v0, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Um:Landroid/content/UriMatcher;
 
     .line 29
-    sget-object v0, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Um:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Um:Landroid/content/UriMatcher;
 
     const-string v1, "com.android.settings.cloud.compatibility.running"
 
@@ -39,7 +39,7 @@
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 30
-    sget-object v0, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Um:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Um:Landroid/content/UriMatcher;
 
     const-string v1, "com.android.settings.cloud.compatibility.running"
 
@@ -54,10 +54,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Ul:Ljava/util/HashMap;
+    sput-object v0, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Ul:Ljava/util/HashMap;
 
     .line 33
-    sget-object v0, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Ul:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Ul:Ljava/util/HashMap;
 
     const-string v1, "_id"
 
@@ -66,7 +66,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 35
-    sget-object v0, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Ul:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Ul:Ljava/util/HashMap;
 
     const-string v1, "c_package_name"
 
@@ -75,7 +75,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 37
-    sget-object v0, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Ul:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Ul:Ljava/util/HashMap;
 
     const-string v1, "c_message"
 
@@ -84,7 +84,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 39
-    sget-object v0, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Ul:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Ul:Ljava/util/HashMap;
 
     const-string v1, "c_precise"
 
@@ -93,7 +93,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 41
-    sget-object v0, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Ul:Ljava/util/HashMap;
+    sget-object v0, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Ul:Ljava/util/HashMap;
 
     const-string v1, "c_versions"
 
@@ -122,15 +122,15 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Un:Lcom/android/settings/cloud/push/g;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Un:Lcom/android/vendorsettings/cloud/push/g;
 
-    invoke-virtual {v0}, Lcom/android/settings/cloud/push/g;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cloud/push/g;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
     .line 51
     :try_start_0
-    sget-object v0, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Um:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Um:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -184,7 +184,7 @@
 
     .line 70
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -300,7 +300,7 @@
 
     .prologue
     .line 80
-    sget-object v0, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Um:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Um:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -361,7 +361,7 @@
     const/4 v4, 0x0
 
     .line 93
-    sget-object v0, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Um:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Um:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -479,9 +479,9 @@
 
     .line 117
     :cond_4
-    iget-object v1, p0, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Un:Lcom/android/settings/cloud/push/g;
+    iget-object v1, p0, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Un:Lcom/android/vendorsettings/cloud/push/g;
 
-    invoke-virtual {v1}, Lcom/android/settings/cloud/push/g;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/cloud/push/g;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
@@ -500,14 +500,14 @@
     if-lez v2, :cond_6
 
     .line 120
-    sget-object v2, Lcom/android/settings/cloud/push/e;->CONTENT_URI:Landroid/net/Uri;
+    sget-object v2, Lcom/android/vendorsettings/cloud/push/e;->CONTENT_URI:Landroid/net/Uri;
 
     invoke-static {v2, v0, v1}, Landroid/content/ContentUris;->withAppendedId(Landroid/net/Uri;J)Landroid/net/Uri;
 
     move-result-object v0
 
     .line 122
-    invoke-virtual {p0}, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -560,15 +560,15 @@
 
     .prologue
     .line 131
-    new-instance v0, Lcom/android/settings/cloud/push/g;
+    new-instance v0, Lcom/android/vendorsettings/cloud/push/g;
 
-    invoke-virtual {p0}, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/cloud/push/g;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/cloud/push/g;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Un:Lcom/android/settings/cloud/push/g;
+    iput-object v0, p0, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Un:Lcom/android/vendorsettings/cloud/push/g;
 
     .line 132
     const/4 v0, 0x1
@@ -588,7 +588,7 @@
     invoke-direct {v0}, Landroid/database/sqlite/SQLiteQueryBuilder;-><init>()V
 
     .line 140
-    sget-object v1, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Um:Landroid/content/UriMatcher;
+    sget-object v1, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Um:Landroid/content/UriMatcher;
 
     invoke-virtual {v1, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -628,7 +628,7 @@
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteQueryBuilder;->setTables(Ljava/lang/String;)V
 
     .line 143
-    sget-object v1, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Ul:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Ul:Ljava/util/HashMap;
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteQueryBuilder;->setProjectionMap(Ljava/util/Map;)V
 
@@ -645,9 +645,9 @@
 
     .line 161
     :goto_1
-    iget-object v1, p0, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Un:Lcom/android/settings/cloud/push/g;
+    iget-object v1, p0, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Un:Lcom/android/vendorsettings/cloud/push/g;
 
-    invoke-virtual {v1}, Lcom/android/settings/cloud/push/g;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/cloud/push/g;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
@@ -665,7 +665,7 @@
     move-result-object v0
 
     .line 164
-    invoke-virtual {p0}, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -685,7 +685,7 @@
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteQueryBuilder;->setTables(Ljava/lang/String;)V
 
     .line 147
-    sget-object v1, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Ul:Ljava/util/HashMap;
+    sget-object v1, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Ul:Ljava/util/HashMap;
 
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteQueryBuilder;->setProjectionMap(Ljava/util/Map;)V
 
@@ -743,15 +743,15 @@
 
     .prologue
     .line 172
-    iget-object v0, p0, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Un:Lcom/android/settings/cloud/push/g;
+    iget-object v0, p0, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Un:Lcom/android/vendorsettings/cloud/push/g;
 
-    invoke-virtual {v0}, Lcom/android/settings/cloud/push/g;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cloud/push/g;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
     .line 175
     :try_start_0
-    sget-object v0, Lcom/android/settings/cloud/push/RunningCompatibilityProvider;->Um:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/vendorsettings/cloud/push/RunningCompatibilityProvider;->Um:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 

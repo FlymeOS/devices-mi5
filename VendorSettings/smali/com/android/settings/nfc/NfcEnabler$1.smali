@@ -1,19 +1,19 @@
-.class Lcom/android/settings/nfc/NfcEnabler$1;
+.class Lcom/android/vendorsettings/nfc/NfcEnabler$1;
 .super Landroid/content/BroadcastReceiver;
 .source "NfcEnabler.java"
 
 
 # instance fields
-.field final synthetic aij:Lcom/android/settings/nfc/NfcEnabler;
+.field final synthetic aij:Lcom/android/vendorsettings/nfc/NfcEnabler;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/nfc/NfcEnabler;)V
+.method constructor <init>(Lcom/android/vendorsettings/nfc/NfcEnabler;)V
     .locals 0
 
     .prologue
     .line 50
-    iput-object p1, p0, Lcom/android/settings/nfc/NfcEnabler$1;->aij:Lcom/android/settings/nfc/NfcEnabler;
+    iput-object p1, p0, Lcom/android/vendorsettings/nfc/NfcEnabler$1;->aij:Lcom/android/vendorsettings/nfc/NfcEnabler;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -41,7 +41,7 @@
     if-eqz v0, :cond_0
 
     .line 55
-    iget-object v0, p0, Lcom/android/settings/nfc/NfcEnabler$1;->aij:Lcom/android/settings/nfc/NfcEnabler;
+    iget-object v0, p0, Lcom/android/vendorsettings/nfc/NfcEnabler$1;->aij:Lcom/android/vendorsettings/nfc/NfcEnabler;
 
     const-string v1, "android.nfc.extra.ADAPTER_STATE"
 
@@ -51,7 +51,7 @@
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/nfc/NfcEnabler;->a(Lcom/android/settings/nfc/NfcEnabler;I)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/nfc/NfcEnabler;->a(Lcom/android/vendorsettings/nfc/NfcEnabler;I)V
 
     .line 58
     :cond_0

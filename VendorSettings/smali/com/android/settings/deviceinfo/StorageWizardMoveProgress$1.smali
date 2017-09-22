@@ -1,19 +1,19 @@
-.class Lcom/android/settings/deviceinfo/StorageWizardMoveProgress$1;
+.class Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress$1;
 .super Landroid/content/pm/PackageManager$MoveCallback;
 .source "StorageWizardMoveProgress.java"
 
 
 # instance fields
-.field final synthetic XJ:Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;
+.field final synthetic XJ:Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;)V
+.method constructor <init>(Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress;)V
     .locals 0
 
     .prologue
     .line 66
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/StorageWizardMoveProgress$1;->XJ:Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;
+    iput-object p1, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress$1;->XJ:Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress;
 
     invoke-direct {p0}, Landroid/content/pm/PackageManager$MoveCallback;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 69
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardMoveProgress$1;->XJ:Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress$1;->XJ:Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;->a(Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;)I
+    invoke-static {v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress;->a(Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress;)I
 
     move-result v0
 
@@ -76,11 +76,11 @@
     if-eq p2, v0, :cond_1
 
     .line 74
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardMoveProgress$1;->XJ:Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress$1;->XJ:Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/StorageWizardMoveProgress$1;->XJ:Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress$1;->XJ:Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress;
 
-    invoke-static {v1, p2}, Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;->a(Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;I)Ljava/lang/CharSequence;
+    invoke-static {v1, p2}, Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress;->a(Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress;I)Ljava/lang/CharSequence;
 
     move-result-object v1
 
@@ -94,17 +94,17 @@
 
     .line 77
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardMoveProgress$1;->XJ:Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress$1;->XJ:Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress;
 
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;->finishAffinity()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress;->finishAffinity()V
 
     goto :goto_0
 
     .line 80
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardMoveProgress$1;->XJ:Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress$1;->XJ:Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress;
 
-    invoke-virtual {v0, p2}, Lcom/android/settings/deviceinfo/StorageWizardMoveProgress;->by(I)V
+    invoke-virtual {v0, p2}, Lcom/android/vendorsettings/deviceinfo/StorageWizardMoveProgress;->by(I)V
 
     goto :goto_0
 .end method

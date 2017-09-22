@@ -1,4 +1,4 @@
-.class Lcom/android/settings/display/w;
+.class Lcom/android/vendorsettings/display/w;
 .super Ljava/lang/Object;
 .source "PageLayoutFragment.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic YX:Z
 
-.field final synthetic YY:Lcom/android/settings/display/v;
+.field final synthetic YY:Lcom/android/vendorsettings/display/v;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/display/v;Z)V
+.method constructor <init>(Lcom/android/vendorsettings/display/v;Z)V
     .locals 0
 
     .prologue
     .line 645
-    iput-object p1, p0, Lcom/android/settings/display/w;->YY:Lcom/android/settings/display/v;
+    iput-object p1, p0, Lcom/android/vendorsettings/display/w;->YY:Lcom/android/vendorsettings/display/v;
 
-    iput-boolean p2, p0, Lcom/android/settings/display/w;->YX:Z
+    iput-boolean p2, p0, Lcom/android/vendorsettings/display/w;->YX:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,24 +34,24 @@
 
     .prologue
     .line 648
-    iget-boolean v0, p0, Lcom/android/settings/display/w;->YX:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/display/w;->YX:Z
 
     if-eqz v0, :cond_0
 
     .line 649
-    iget-object v0, p0, Lcom/android/settings/display/w;->YY:Lcom/android/settings/display/v;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/w;->YY:Lcom/android/vendorsettings/display/v;
 
-    invoke-virtual {v0}, Lcom/android/settings/display/v;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/display/v;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/display/w;->YY:Lcom/android/settings/display/v;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/w;->YY:Lcom/android/vendorsettings/display/v;
 
-    invoke-static {v1}, Lcom/android/settings/display/v;->a(Lcom/android/settings/display/v;)I
+    invoke-static {v1}, Lcom/android/vendorsettings/display/v;->a(Lcom/android/vendorsettings/display/v;)I
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/display/PageLayoutFragment;->b(Landroid/app/Activity;I)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/display/PageLayoutFragment;->b(Landroid/app/Activity;I)V
 
     .line 657
     :goto_0
@@ -59,19 +59,19 @@
 
     .line 651
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/display/w;->YY:Lcom/android/settings/display/v;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/w;->YY:Lcom/android/vendorsettings/display/v;
 
-    invoke-virtual {v0}, Lcom/android/settings/display/v;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/display/v;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/display/w;->YY:Lcom/android/settings/display/v;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/w;->YY:Lcom/android/vendorsettings/display/v;
 
-    invoke-static {v1}, Lcom/android/settings/display/v;->a(Lcom/android/settings/display/v;)I
+    invoke-static {v1}, Lcom/android/vendorsettings/display/v;->a(Lcom/android/vendorsettings/display/v;)I
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/display/s;->j(Landroid/content/Context;I)Z
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/display/s;->j(Landroid/content/Context;I)Z
 
     .line 653
     const/4 v0, 0x0
@@ -86,9 +86,9 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 655
-    iget-object v1, p0, Lcom/android/settings/display/w;->YY:Lcom/android/settings/display/v;
+    iget-object v1, p0, Lcom/android/vendorsettings/display/w;->YY:Lcom/android/vendorsettings/display/v;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/display/v;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/display/v;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 .end method

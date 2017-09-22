@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/nfc/PaymentBackend$PaymentAppInfo;
+.class public Lcom/android/vendorsettings/nfc/PaymentBackend$PaymentAppInfo;
 .super Ljava/lang/Object;
 .source "PaymentBackend.java"
 

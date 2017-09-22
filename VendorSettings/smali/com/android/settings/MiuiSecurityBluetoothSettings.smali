@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/MiuiSecurityBluetoothSettings;
+.class public Lcom/android/vendorsettings/MiuiSecurityBluetoothSettings;
 .super Landroid/preference/PreferenceActivity;
 .source "MiuiSecurityBluetoothSettings.java"
 
@@ -25,13 +25,13 @@
 
     .prologue
     .line 36
-    iget-boolean v0, p0, Lcom/android/settings/MiuiSecurityBluetoothSettings;->rR:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettings;->rR:Z
 
     if-eqz v0, :cond_0
 
     const-string v0, "keyguard"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityBluetoothSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -85,7 +85,7 @@
     const/4 v3, 0x0
 
     .line 17
-    iput-boolean v3, p0, Lcom/android/settings/MiuiSecurityBluetoothSettings;->rR:Z
+    iput-boolean v3, p0, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettings;->rR:Z
 
     .line 18
     new-instance v1, Landroid/content/Intent;
@@ -112,7 +112,7 @@
     .line 20
     const-string v0, "keyguard"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityBluetoothSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -139,7 +139,7 @@
     .line 22
     const-string v0, ":android:show_fragment"
 
-    const-class v2, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;
+    const-class v2, Lcom/android/vendorsettings/MiuiSecurityBluetoothMatchDeviceFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -175,12 +175,12 @@
 
     .line 26
     :cond_1
-    iput-boolean v4, p0, Lcom/android/settings/MiuiSecurityBluetoothSettings;->rR:Z
+    iput-boolean v4, p0, Lcom/android/vendorsettings/MiuiSecurityBluetoothSettings;->rR:Z
 
     .line 27
     const-string v0, ":android:show_fragment"
 
-    const-class v2, Lcom/android/settings/MiuiSecurityChooseUnlock$MiuiSecurityChooseUnlockFragment;
+    const-class v2, Lcom/android/vendorsettings/MiuiSecurityChooseUnlock$MiuiSecurityChooseUnlockFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

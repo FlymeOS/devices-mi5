@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/dI;
+.class public Lcom/android/vendorsettings/dI;
 .super Ljava/lang/Object;
 .source "LinkifyUtils.java"
 
 
 # direct methods
-.method public static a(Landroid/widget/TextView;Ljava/lang/StringBuilder;Lcom/android/settings/dK;)Z
+.method public static a(Landroid/widget/TextView;Ljava/lang/StringBuilder;Lcom/android/vendorsettings/dK;)Z
     .locals 5
 
     .prologue
@@ -92,9 +92,9 @@
     check-cast v0, Landroid/text/Spannable;
 
     .line 68
-    new-instance v3, Lcom/android/settings/dJ;
+    new-instance v3, Lcom/android/vendorsettings/dJ;
 
-    invoke-direct {v3, p2}, Lcom/android/settings/dJ;-><init>(Lcom/android/settings/dK;)V
+    invoke-direct {v3, p2}, Lcom/android/vendorsettings/dJ;-><init>(Lcom/android/vendorsettings/dK;)V
 
     .line 80
     const/16 v4, 0x21

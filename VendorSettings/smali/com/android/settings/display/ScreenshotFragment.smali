@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/display/ScreenshotFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/display/ScreenshotFragment;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "ScreenshotFragment.java"
 
 # interfaces
@@ -19,7 +19,7 @@
 
     .prologue
     .line 11
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -29,7 +29,7 @@
 
     .prologue
     .line 58
-    invoke-virtual {p0}, Lcom/android/settings/display/ScreenshotFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ScreenshotFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -52,7 +52,7 @@
 
     .prologue
     .line 67
-    invoke-virtual {p0}, Lcom/android/settings/display/ScreenshotFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ScreenshotFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -77,7 +77,7 @@
     const/4 v2, 0x0
 
     .line 53
-    invoke-virtual {p0}, Lcom/android/settings/display/ScreenshotFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ScreenshotFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -99,7 +99,7 @@
 
     .prologue
     .line 62
-    invoke-virtual {p0}, Lcom/android/settings/display/ScreenshotFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ScreenshotFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -127,7 +127,7 @@
 
     .prologue
     .line 19
-    const-class v0, Lcom/android/settings/display/ScreenshotFragment;
+    const-class v0, Lcom/android/vendorsettings/display/ScreenshotFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -141,58 +141,58 @@
 
     .prologue
     .line 24
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 26
     const v0, 0x7f080084
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/ScreenshotFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/ScreenshotFragment;->addPreferencesFromResource(I)V
 
     .line 28
     const-string v0, "three_gesture"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/ScreenshotFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/ScreenshotFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/display/ScreenshotFragment;->ZV:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/ScreenshotFragment;->ZV:Landroid/preference/CheckBoxPreference;
 
     .line 29
     const-string v0, "screenshot_sound"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/ScreenshotFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/display/ScreenshotFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/display/ScreenshotFragment;->ZW:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/display/ScreenshotFragment;->ZW:Landroid/preference/CheckBoxPreference;
 
     .line 30
-    iget-object v0, p0, Lcom/android/settings/display/ScreenshotFragment;->ZV:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenshotFragment;->ZV:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 31
-    iget-object v0, p0, Lcom/android/settings/display/ScreenshotFragment;->ZV:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenshotFragment;->ZV:Landroid/preference/CheckBoxPreference;
 
-    invoke-direct {p0}, Lcom/android/settings/display/ScreenshotFragment;->pP()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/ScreenshotFragment;->pP()Z
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 32
-    iget-object v0, p0, Lcom/android/settings/display/ScreenshotFragment;->ZW:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenshotFragment;->ZW:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 33
-    iget-object v0, p0, Lcom/android/settings/display/ScreenshotFragment;->ZW:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenshotFragment;->ZW:Landroid/preference/CheckBoxPreference;
 
-    invoke-direct {p0}, Lcom/android/settings/display/ScreenshotFragment;->pQ()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/display/ScreenshotFragment;->pQ()Z
 
     move-result v1
 
@@ -207,7 +207,7 @@
 
     .prologue
     .line 44
-    iget-object v0, p0, Lcom/android/settings/display/ScreenshotFragment;->ZV:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenshotFragment;->ZV:Landroid/preference/CheckBoxPreference;
 
     if-ne p1, v0, :cond_1
 
@@ -218,7 +218,7 @@
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/display/ScreenshotFragment;->aN(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/display/ScreenshotFragment;->aN(Z)V
 
     .line 49
     :cond_0
@@ -229,7 +229,7 @@
 
     .line 46
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/display/ScreenshotFragment;->ZW:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/ScreenshotFragment;->ZW:Landroid/preference/CheckBoxPreference;
 
     if-ne p1, v0, :cond_0
 
@@ -240,7 +240,7 @@
 
     move-result v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/display/ScreenshotFragment;->aO(Z)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/display/ScreenshotFragment;->aO(Z)V
 
     goto :goto_0
 .end method
@@ -260,10 +260,10 @@
 
     .prologue
     .line 38
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onStart()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onStart()V
 
     .line 39
-    invoke-virtual {p0}, Lcom/android/settings/display/ScreenshotFragment;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/display/ScreenshotFragment;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 

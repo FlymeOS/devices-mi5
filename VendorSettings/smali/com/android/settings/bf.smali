@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bf;
+.class Lcom/android/vendorsettings/bf;
 .super Ljava/lang/Object;
 .source "CryptKeeper.java"
 
@@ -9,22 +9,22 @@
 # instance fields
 .field final synthetic gA:Z
 
-.field final synthetic gu:Lcom/android/settings/CryptKeeper;
+.field final synthetic gu:Lcom/android/vendorsettings/CryptKeeper;
 
 .field final synthetic gz:Z
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/CryptKeeper;ZZ)V
+.method constructor <init>(Lcom/android/vendorsettings/CryptKeeper;ZZ)V
     .locals 0
 
     .prologue
     .line 636
-    iput-object p1, p0, Lcom/android/settings/bf;->gu:Lcom/android/settings/CryptKeeper;
+    iput-object p1, p0, Lcom/android/vendorsettings/bf;->gu:Lcom/android/vendorsettings/CryptKeeper;
 
-    iput-boolean p2, p0, Lcom/android/settings/bf;->gz:Z
+    iput-boolean p2, p0, Lcom/android/vendorsettings/bf;->gz:Z
 
-    iput-boolean p3, p0, Lcom/android/settings/bf;->gA:Z
+    iput-boolean p3, p0, Lcom/android/vendorsettings/bf;->gA:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
 
     .prologue
     .line 639
-    iget-boolean v0, p0, Lcom/android/settings/bf;->gz:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/bf;->gz:Z
 
     if-eqz v0, :cond_0
 
@@ -51,14 +51,14 @@
 
     .line 642
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/bf;->gu:Lcom/android/settings/CryptKeeper;
+    iget-object v0, p0, Lcom/android/vendorsettings/bf;->gu:Lcom/android/vendorsettings/CryptKeeper;
 
-    invoke-static {v0}, Lcom/android/settings/CryptKeeper;->c(Lcom/android/settings/CryptKeeper;)Landroid/os/storage/IMountService;
+    invoke-static {v0}, Lcom/android/vendorsettings/CryptKeeper;->c(Lcom/android/vendorsettings/CryptKeeper;)Landroid/os/storage/IMountService;
 
     move-result-object v0
 
     .line 645
-    invoke-static {}, Lcom/android/settings/fy;->gg()Lcom/android/settings/fy;
+    invoke-static {}, Lcom/android/vendorsettings/fy;->gg()Lcom/android/vendorsettings/fy;
 
     move-result-object v1
 
@@ -66,7 +66,7 @@
 
     const-string v3, ""
 
-    invoke-virtual {v1, v0, v2, v3}, Lcom/android/settings/fy;->a(Landroid/os/storage/IMountService;ILjava/lang/String;)V
+    invoke-virtual {v1, v0, v2, v3}, Lcom/android/vendorsettings/fy;->a(Landroid/os/storage/IMountService;ILjava/lang/String;)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -113,7 +113,7 @@
 
     move-result-object v2
 
-    iget-boolean v3, p0, Lcom/android/settings/bf;->gA:Z
+    iget-boolean v3, p0, Lcom/android/vendorsettings/bf;->gA:Z
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -126,9 +126,9 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 657
-    iget-object v1, p0, Lcom/android/settings/bf;->gu:Lcom/android/settings/CryptKeeper;
+    iget-object v1, p0, Lcom/android/vendorsettings/bf;->gu:Lcom/android/vendorsettings/CryptKeeper;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/CryptKeeper;->sendBroadcast(Landroid/content/Intent;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/CryptKeeper;->sendBroadcast(Landroid/content/Intent;)V
 
     goto :goto_0
 .end method

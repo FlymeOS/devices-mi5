@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dndmode/t;
+.class Lcom/android/vendorsettings/dndmode/t;
 .super Ljava/lang/Object;
 .source "RepeatPreference.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic aaV:[I
 
-.field final synthetic aaW:Lcom/android/settings/dndmode/RepeatPreference;
+.field final synthetic aaW:Lcom/android/vendorsettings/dndmode/RepeatPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dndmode/RepeatPreference;[I)V
+.method constructor <init>(Lcom/android/vendorsettings/dndmode/RepeatPreference;[I)V
     .locals 0
 
     .prologue
     .line 110
-    iput-object p1, p0, Lcom/android/settings/dndmode/t;->aaW:Lcom/android/settings/dndmode/RepeatPreference;
+    iput-object p1, p0, Lcom/android/vendorsettings/dndmode/t;->aaW:Lcom/android/vendorsettings/dndmode/RepeatPreference;
 
-    iput-object p2, p0, Lcom/android/settings/dndmode/t;->aaV:[I
+    iput-object p2, p0, Lcom/android/vendorsettings/dndmode/t;->aaV:[I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,7 +36,7 @@
     const/4 v3, 0x1
 
     .line 113
-    iget-object v0, p0, Lcom/android/settings/dndmode/t;->aaV:[I
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/t;->aaV:[I
 
     aget v0, v0, p2
 
@@ -52,55 +52,55 @@
 
     .line 115
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/dndmode/t;->aaW:Lcom/android/settings/dndmode/RepeatPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/t;->aaW:Lcom/android/vendorsettings/dndmode/RepeatPreference;
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/RepeatPreference;->a(Lcom/android/settings/dndmode/RepeatPreference;)Lcom/android/settings/dndmode/b;
+    invoke-static {v0}, Lcom/android/vendorsettings/dndmode/RepeatPreference;->a(Lcom/android/vendorsettings/dndmode/RepeatPreference;)Lcom/android/vendorsettings/dndmode/b;
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/dndmode/b;
+    new-instance v1, Lcom/android/vendorsettings/dndmode/b;
 
     const/16 v2, 0x7f
 
-    invoke-direct {v1, v2}, Lcom/android/settings/dndmode/b;-><init>(I)V
+    invoke-direct {v1, v2}, Lcom/android/vendorsettings/dndmode/b;-><init>(I)V
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/b;->a(Lcom/android/settings/dndmode/b;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/dndmode/b;->a(Lcom/android/vendorsettings/dndmode/b;)V
 
     .line 116
-    iget-object v0, p0, Lcom/android/settings/dndmode/t;->aaW:Lcom/android/settings/dndmode/RepeatPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/t;->aaW:Lcom/android/vendorsettings/dndmode/RepeatPreference;
 
-    invoke-virtual {v0, v3}, Lcom/android/settings/dndmode/RepeatPreference;->onDialogClosed(Z)V
+    invoke-virtual {v0, v3}, Lcom/android/vendorsettings/dndmode/RepeatPreference;->onDialogClosed(Z)V
 
     goto :goto_0
 
     .line 119
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/dndmode/t;->aaW:Lcom/android/settings/dndmode/RepeatPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/t;->aaW:Lcom/android/vendorsettings/dndmode/RepeatPreference;
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/RepeatPreference;->a(Lcom/android/settings/dndmode/RepeatPreference;)Lcom/android/settings/dndmode/b;
+    invoke-static {v0}, Lcom/android/vendorsettings/dndmode/RepeatPreference;->a(Lcom/android/vendorsettings/dndmode/RepeatPreference;)Lcom/android/vendorsettings/dndmode/b;
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/dndmode/b;
+    new-instance v1, Lcom/android/vendorsettings/dndmode/b;
 
     const/16 v2, 0x1f
 
-    invoke-direct {v1, v2}, Lcom/android/settings/dndmode/b;-><init>(I)V
+    invoke-direct {v1, v2}, Lcom/android/vendorsettings/dndmode/b;-><init>(I)V
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/b;->a(Lcom/android/settings/dndmode/b;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/dndmode/b;->a(Lcom/android/vendorsettings/dndmode/b;)V
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/dndmode/t;->aaW:Lcom/android/settings/dndmode/RepeatPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/t;->aaW:Lcom/android/vendorsettings/dndmode/RepeatPreference;
 
-    invoke-virtual {v0, v3}, Lcom/android/settings/dndmode/RepeatPreference;->onDialogClosed(Z)V
+    invoke-virtual {v0, v3}, Lcom/android/vendorsettings/dndmode/RepeatPreference;->onDialogClosed(Z)V
 
     goto :goto_0
 
     .line 123
     :pswitch_3
-    iget-object v0, p0, Lcom/android/settings/dndmode/t;->aaW:Lcom/android/settings/dndmode/RepeatPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/t;->aaW:Lcom/android/vendorsettings/dndmode/RepeatPreference;
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/RepeatPreference;->b(Lcom/android/settings/dndmode/RepeatPreference;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/dndmode/RepeatPreference;->b(Lcom/android/vendorsettings/dndmode/RepeatPreference;)V
 
     goto :goto_0
 

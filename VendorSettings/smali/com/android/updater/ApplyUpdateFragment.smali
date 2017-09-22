@@ -1,5 +1,5 @@
 .class public Lcom/android/updater/ApplyUpdateFragment;
-.super Lcom/android/settings/BaseFragment;
+.super Lcom/android/vendorsettings/BaseFragment;
 .source "ApplyUpdateFragment.java"
 
 
@@ -73,7 +73,7 @@
 
     .prologue
     .line 83
-    invoke-direct {p0}, Lcom/android/settings/BaseFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/BaseFragment;-><init>()V
 
     .line 443
     new-instance v0, Lcom/android/updater/g;
@@ -1232,7 +1232,7 @@
     const/4 v1, 0x1
 
     .line 115
-    invoke-super {p0, p1}, Lcom/android/settings/BaseFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/BaseFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 117
     invoke-virtual {p0}, Lcom/android/updater/ApplyUpdateFragment;->getActivity()Landroid/app/Activity;
@@ -1721,7 +1721,7 @@
 
     .prologue
     .line 93
-    invoke-super {p0, p1}, Lcom/android/settings/BaseFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/BaseFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 94
     const v0, 0x7f0d00ab
@@ -1775,7 +1775,7 @@
 
     .line 375
     :goto_0
-    invoke-super {p0}, Lcom/android/settings/BaseFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/vendorsettings/BaseFragment;->onDestroy()V
 
     .line 376
     return-void
@@ -1796,7 +1796,7 @@
     const/4 v2, 0x0
 
     .line 356
-    invoke-super {p0}, Lcom/android/settings/BaseFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/BaseFragment;->onPause()V
 
     .line 357
     iget-object v0, p0, Lcom/android/updater/ApplyUpdateFragment;->aMD:Landroid/widget/LinearLayout;
@@ -1880,7 +1880,7 @@
 
     .prologue
     .line 88
-    invoke-super {p0, p1}, Lcom/android/settings/BaseFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/BaseFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 89
     return-void
@@ -1891,7 +1891,7 @@
 
     .prologue
     .line 99
-    invoke-super {p0}, Lcom/android/settings/BaseFragment;->onStart()V
+    invoke-super {p0}, Lcom/android/vendorsettings/BaseFragment;->onStart()V
 
     .line 100
     invoke-virtual {p0}, Lcom/android/updater/ApplyUpdateFragment;->getActionBar()Lmiui/app/ActionBar;

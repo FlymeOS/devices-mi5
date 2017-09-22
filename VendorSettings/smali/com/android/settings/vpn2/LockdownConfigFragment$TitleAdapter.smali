@@ -1,4 +1,4 @@
-.class Lcom/android/settings/vpn2/LockdownConfigFragment$TitleAdapter;
+.class Lcom/android/vendorsettings/vpn2/LockdownConfigFragment$TitleAdapter;
 .super Landroid/widget/ArrayAdapter;
 .source "LockdownConfigFragment.java"
 

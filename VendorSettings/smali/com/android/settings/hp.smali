@@ -1,19 +1,19 @@
-.class Lcom/android/settings/hp;
+.class Lcom/android/vendorsettings/hp;
 .super Landroid/os/Handler;
 .source "SettingsActivity.java"
 
 
 # instance fields
-.field final synthetic zB:Lcom/android/settings/hn;
+.field final synthetic zB:Lcom/android/vendorsettings/hn;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/hn;)V
+.method constructor <init>(Lcom/android/vendorsettings/hn;)V
     .locals 0
 
     .prologue
     .line 428
-    iput-object p1, p0, Lcom/android/settings/hp;->zB:Lcom/android/settings/hn;
+    iput-object p1, p0, Lcom/android/vendorsettings/hp;->zB:Lcom/android/vendorsettings/hn;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
@@ -52,15 +52,15 @@
     if-eqz v0, :cond_0
 
     .line 435
-    iget-object v0, p0, Lcom/android/settings/hp;->zB:Lcom/android/settings/hn;
+    iget-object v0, p0, Lcom/android/vendorsettings/hp;->zB:Lcom/android/vendorsettings/hn;
 
-    iget-object v1, p0, Lcom/android/settings/hp;->zB:Lcom/android/settings/hn;
+    iget-object v1, p0, Lcom/android/vendorsettings/hp;->zB:Lcom/android/vendorsettings/hn;
 
-    invoke-static {v1}, Lcom/android/settings/hn;->b(Lcom/android/settings/hn;)Ljava/util/ArrayList;
+    invoke-static {v1}, Lcom/android/vendorsettings/hn;->b(Lcom/android/vendorsettings/hn;)Ljava/util/ArrayList;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/hn;->a(Lcom/android/settings/hn;Ljava/util/List;)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/hn;->a(Lcom/android/vendorsettings/hn;Ljava/util/List;)V
 
     goto :goto_0
 

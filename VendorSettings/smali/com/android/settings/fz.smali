@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/fz;
+.class final Lcom/android/vendorsettings/fz;
 .super Ljava/lang/Object;
 .source "MiuiUtils.java"
 
@@ -22,13 +22,13 @@
 
     .prologue
     .line 358
-    iput-object p1, p0, Lcom/android/settings/fz;->ug:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/vendorsettings/fz;->ug:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/android/settings/fz;->val$act:Landroid/app/Activity;
+    iput-object p2, p0, Lcom/android/vendorsettings/fz;->val$act:Landroid/app/Activity;
 
-    iput-object p3, p0, Lcom/android/settings/fz;->uh:Landroid/security/MiuiLockPatternUtils;
+    iput-object p3, p0, Lcom/android/vendorsettings/fz;->uh:Landroid/security/MiuiLockPatternUtils;
 
-    iput-object p4, p0, Lcom/android/settings/fz;->ui:Landroid/content/Intent;
+    iput-object p4, p0, Lcom/android/vendorsettings/fz;->ui:Landroid/content/Intent;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -69,7 +69,7 @@
     if-eqz v0, :cond_1
 
     .line 365
-    iget-object v0, p0, Lcom/android/settings/fz;->ug:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/fz;->ug:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -78,13 +78,13 @@
     if-nez v0, :cond_0
 
     .line 366
-    iget-object v0, p0, Lcom/android/settings/fz;->val$act:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/fz;->val$act:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/fz;->ug:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/fz;->ug:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -92,14 +92,14 @@
 
     .line 368
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/fz;->uh:Landroid/security/MiuiLockPatternUtils;
+    iget-object v0, p0, Lcom/android/vendorsettings/fz;->uh:Landroid/security/MiuiLockPatternUtils;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/security/MiuiLockPatternUtils;->saveMiuiLockPattern(Ljava/util/List;)V
 
     .line 369
-    iget-object v0, p0, Lcom/android/settings/fz;->uh:Landroid/security/MiuiLockPatternUtils;
+    iget-object v0, p0, Lcom/android/vendorsettings/fz;->uh:Landroid/security/MiuiLockPatternUtils;
 
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
@@ -108,12 +108,12 @@
     invoke-virtual {v0, v1}, Landroid/security/MiuiLockPatternUtils;->clearLock(I)V
 
     .line 370
-    iget-object v0, p0, Lcom/android/settings/fz;->uh:Landroid/security/MiuiLockPatternUtils;
+    iget-object v0, p0, Lcom/android/vendorsettings/fz;->uh:Landroid/security/MiuiLockPatternUtils;
 
     invoke-virtual {v0}, Landroid/security/MiuiLockPatternUtils;->clearLockoutAttemptDeadline()V
 
     .line 371
-    iget-object v0, p0, Lcom/android/settings/fz;->val$act:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/fz;->val$act:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -126,18 +126,18 @@
     invoke-static {v0, v1, v2}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 373
-    iget-object v0, p0, Lcom/android/settings/fz;->val$act:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/fz;->val$act:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->finish()V
 
     .line 374
-    iget-object v0, p0, Lcom/android/settings/fz;->ui:Landroid/content/Intent;
+    iget-object v0, p0, Lcom/android/vendorsettings/fz;->ui:Landroid/content/Intent;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/fz;->val$act:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/vendorsettings/fz;->val$act:Landroid/app/Activity;
 
-    iget-object v1, p0, Lcom/android/settings/fz;->ui:Landroid/content/Intent;
+    iget-object v1, p0, Lcom/android/vendorsettings/fz;->ui:Landroid/content/Intent;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
     :try_end_0

@@ -1,10 +1,10 @@
-.class Lcom/android/settings/wifi/aK;
+.class Lcom/android/vendorsettings/wifi/aK;
 .super Ljava/lang/Thread;
 .source "WifiStatusTest.java"
 
 
 # instance fields
-.field final synthetic aEB:Lcom/android/settings/wifi/WifiStatusTest;
+.field final synthetic aEB:Lcom/android/vendorsettings/wifi/WifiStatusTest;
 
 .field final synthetic yc:Landroid/os/Handler;
 
@@ -12,16 +12,16 @@
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiStatusTest;Landroid/os/Handler;Ljava/lang/Runnable;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/WifiStatusTest;Landroid/os/Handler;Ljava/lang/Runnable;)V
     .locals 0
 
     .prologue
     .line 335
-    iput-object p1, p0, Lcom/android/settings/wifi/aK;->aEB:Lcom/android/settings/wifi/WifiStatusTest;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/aK;->aEB:Lcom/android/vendorsettings/wifi/WifiStatusTest;
 
-    iput-object p2, p0, Lcom/android/settings/wifi/aK;->yc:Landroid/os/Handler;
+    iput-object p2, p0, Lcom/android/vendorsettings/wifi/aK;->yc:Landroid/os/Handler;
 
-    iput-object p3, p0, Lcom/android/settings/wifi/aK;->yd:Ljava/lang/Runnable;
+    iput-object p3, p0, Lcom/android/vendorsettings/wifi/aK;->yd:Ljava/lang/Runnable;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -35,14 +35,14 @@
 
     .prologue
     .line 338
-    iget-object v0, p0, Lcom/android/settings/wifi/aK;->aEB:Lcom/android/settings/wifi/WifiStatusTest;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/aK;->aEB:Lcom/android/vendorsettings/wifi/WifiStatusTest;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/WifiStatusTest;->s(Lcom/android/settings/wifi/WifiStatusTest;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/WifiStatusTest;->s(Lcom/android/vendorsettings/wifi/WifiStatusTest;)V
 
     .line 339
-    iget-object v0, p0, Lcom/android/settings/wifi/aK;->yc:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/aK;->yc:Landroid/os/Handler;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/aK;->yd:Ljava/lang/Runnable;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/aK;->yd:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

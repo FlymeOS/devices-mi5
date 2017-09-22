@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dndmode/x;
+.class Lcom/android/vendorsettings/dndmode/x;
 .super Ljava/lang/Object;
 .source "VipCallSettingsFragment.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic abe:Lcom/android/settings/dndmode/v;
+.field final synthetic abe:Lcom/android/vendorsettings/dndmode/v;
 
 .field final synthetic abf:[Ljava/lang/String;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dndmode/v;[Ljava/lang/String;)V
+.method constructor <init>(Lcom/android/vendorsettings/dndmode/v;[Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 160
-    iput-object p1, p0, Lcom/android/settings/dndmode/x;->abe:Lcom/android/settings/dndmode/v;
+    iput-object p1, p0, Lcom/android/vendorsettings/dndmode/x;->abe:Lcom/android/vendorsettings/dndmode/v;
 
-    iput-object p2, p0, Lcom/android/settings/dndmode/x;->abf:[Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/vendorsettings/dndmode/x;->abf:[Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +44,7 @@
     if-eqz v0, :cond_0
 
     .line 165
-    iget-object v0, p0, Lcom/android/settings/dndmode/x;->abf:[Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/x;->abf:[Ljava/lang/String;
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
@@ -68,15 +68,15 @@
     if-ne v0, v1, :cond_1
 
     .line 167
-    iget-object v1, p0, Lcom/android/settings/dndmode/x;->abe:Lcom/android/settings/dndmode/v;
+    iget-object v1, p0, Lcom/android/vendorsettings/dndmode/x;->abe:Lcom/android/vendorsettings/dndmode/v;
 
-    invoke-static {v1}, Lcom/android/settings/dndmode/v;->b(Lcom/android/settings/dndmode/v;)V
+    invoke-static {v1}, Lcom/android/vendorsettings/dndmode/v;->b(Lcom/android/vendorsettings/dndmode/v;)V
 
     .line 171
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/dndmode/x;->abe:Lcom/android/settings/dndmode/v;
+    iget-object v1, p0, Lcom/android/vendorsettings/dndmode/x;->abe:Lcom/android/vendorsettings/dndmode/v;
 
-    invoke-static {v1}, Lcom/android/settings/dndmode/v;->d(Lcom/android/settings/dndmode/v;)Landroid/service/notification/ZenModeConfig;
+    invoke-static {v1}, Lcom/android/vendorsettings/dndmode/v;->d(Lcom/android/vendorsettings/dndmode/v;)Landroid/service/notification/ZenModeConfig;
 
     move-result-object v1
 
@@ -91,9 +91,9 @@
     iput v0, v1, Landroid/service/notification/ZenModeConfig;->allowMessagesFrom:I
 
     .line 174
-    iget-object v0, p0, Lcom/android/settings/dndmode/x;->abe:Lcom/android/settings/dndmode/v;
+    iget-object v0, p0, Lcom/android/vendorsettings/dndmode/x;->abe:Lcom/android/vendorsettings/dndmode/v;
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/v;->a(Lcom/android/settings/dndmode/v;)Lmiui/app/Activity;
+    invoke-static {v0}, Lcom/android/vendorsettings/dndmode/v;->a(Lcom/android/vendorsettings/dndmode/v;)Lmiui/app/Activity;
 
     move-result-object v0
 
@@ -107,9 +107,9 @@
 
     .line 169
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/dndmode/x;->abe:Lcom/android/settings/dndmode/v;
+    iget-object v1, p0, Lcom/android/vendorsettings/dndmode/x;->abe:Lcom/android/vendorsettings/dndmode/v;
 
-    invoke-static {v1}, Lcom/android/settings/dndmode/v;->c(Lcom/android/settings/dndmode/v;)V
+    invoke-static {v1}, Lcom/android/vendorsettings/dndmode/v;->c(Lcom/android/vendorsettings/dndmode/v;)V
 
     goto :goto_0
 .end method

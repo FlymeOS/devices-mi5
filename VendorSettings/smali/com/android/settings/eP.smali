@@ -1,4 +1,4 @@
-.class Lcom/android/settings/eP;
+.class Lcom/android/vendorsettings/eP;
 .super Ljava/lang/Object;
 .source "MiuiSecurityBluetoothMatchDeviceFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic rQ:Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;
+.field final synthetic rQ:Lcom/android/vendorsettings/MiuiSecurityBluetoothMatchDeviceFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiSecurityBluetoothMatchDeviceFragment;)V
     .locals 0
 
     .prologue
     .line 263
-    iput-object p1, p0, Lcom/android/settings/eP;->rQ:Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/eP;->rQ:Lcom/android/vendorsettings/MiuiSecurityBluetoothMatchDeviceFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 269
-    iget-object v0, p0, Lcom/android/settings/eP;->rQ:Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/eP;->rQ:Lcom/android/vendorsettings/MiuiSecurityBluetoothMatchDeviceFragment;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;->i(Lcom/android/settings/MiuiSecurityBluetoothMatchDeviceFragment;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiSecurityBluetoothMatchDeviceFragment;->i(Lcom/android/vendorsettings/MiuiSecurityBluetoothMatchDeviceFragment;)Landroid/widget/ImageView;
 
     move-result-object v0
 

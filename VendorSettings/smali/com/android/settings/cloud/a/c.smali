@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/a/c;
+.class public Lcom/android/vendorsettings/cloud/a/c;
 .super Ljava/lang/Object;
 .source "Utils.java"
 
@@ -25,12 +25,12 @@
 
     move-result v0
 
-    sput-boolean v0, Lcom/android/settings/cloud/a/c;->DEBUG:Z
+    sput-boolean v0, Lcom/android/vendorsettings/cloud/a/c;->DEBUG:Z
 
     .line 101
     const/4 v0, 0x0
 
-    sput v0, Lcom/android/settings/cloud/a/c;->Us:I
+    sput v0, Lcom/android/vendorsettings/cloud/a/c;->Us:I
 
     return-void
 .end method

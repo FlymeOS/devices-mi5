@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/sound/p;
+.class public Lcom/android/vendorsettings/sound/p;
 .super Ljava/lang/Object;
 .source "AudioSettingsUtils.java"
 
@@ -163,7 +163,7 @@
     .line 35
     const-string v0, "value"
 
-    invoke-static {p0, p1, v0}, Lcom/android/settings/sound/p;->a(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p1, v0}, Lcom/android/vendorsettings/sound/p;->a(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -191,7 +191,7 @@
     .line 42
     const/4 v0, 0x1
 
-    invoke-static {p0, v1, v0}, Lcom/android/settings/sound/p;->a(Landroid/content/Context;Landroid/net/Uri;Z)Ljava/lang/String;
+    invoke-static {p0, v1, v0}, Lcom/android/vendorsettings/sound/p;->a(Landroid/content/Context;Landroid/net/Uri;Z)Ljava/lang/String;
 
     move-result-object v0
 
@@ -210,7 +210,7 @@
     .line 37
     const-string v0, "_data"
 
-    invoke-static {p0, p1, v0}, Lcom/android/settings/sound/p;->a(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0, p1, v0}, Lcom/android/vendorsettings/sound/p;->a(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -493,7 +493,7 @@
     .line 23
     const/4 v1, 0x1
 
-    invoke-static {p0, v0, v1}, Lcom/android/settings/sound/p;->a(Landroid/content/Context;Landroid/net/Uri;Z)Ljava/lang/String;
+    invoke-static {p0, v0, v1}, Lcom/android/vendorsettings/sound/p;->a(Landroid/content/Context;Landroid/net/Uri;Z)Ljava/lang/String;
 
     move-result-object v0
 

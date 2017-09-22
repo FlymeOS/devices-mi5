@@ -1,19 +1,19 @@
-.class Lcom/android/settings/wifi/D;
+.class Lcom/android/vendorsettings/wifi/D;
 .super Landroid/net/ConnectivityManager$NetworkCallback;
 .source "MiuiWifiNoInternetDialog.java"
 
 
 # instance fields
-.field final synthetic aAW:Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;
+.field final synthetic aAW:Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;)V
     .locals 0
 
     .prologue
     .line 79
-    iput-object p1, p0, Lcom/android/settings/wifi/D;->aAW:Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/D;->aAW:Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;
 
     invoke-direct {p0}, Landroid/net/ConnectivityManager$NetworkCallback;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Lcom/android/settings/wifi/D;->aAW:Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/D;->aAW:Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;->a(Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;)Landroid/net/Network;
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;->a(Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;)Landroid/net/Network;
 
     move-result-object v0
 
@@ -60,9 +60,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/wifi/D;->aAW:Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;
+    iget-object v2, p0, Lcom/android/vendorsettings/wifi/D;->aAW:Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;
 
-    invoke-static {v2}, Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;->a(Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;)Landroid/net/Network;
+    invoke-static {v2}, Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;->a(Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;)Landroid/net/Network;
 
     move-result-object v2
 
@@ -83,9 +83,9 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 93
-    iget-object v0, p0, Lcom/android/settings/wifi/D;->aAW:Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/D;->aAW:Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;->finish()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;->finish()V
 
     .line 95
     :cond_0
@@ -97,9 +97,9 @@
 
     .prologue
     .line 83
-    iget-object v0, p0, Lcom/android/settings/wifi/D;->aAW:Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/D;->aAW:Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;->a(Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;)Landroid/net/Network;
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;->a(Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;)Landroid/net/Network;
 
     move-result-object v0
 
@@ -122,9 +122,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/wifi/D;->aAW:Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;
+    iget-object v2, p0, Lcom/android/vendorsettings/wifi/D;->aAW:Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;
 
-    invoke-static {v2}, Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;->a(Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;)Landroid/net/Network;
+    invoke-static {v2}, Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;->a(Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;)Landroid/net/Network;
 
     move-result-object v2
 
@@ -145,9 +145,9 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 85
-    iget-object v0, p0, Lcom/android/settings/wifi/D;->aAW:Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/D;->aAW:Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/MiuiWifiNoInternetDialog;->finish()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/MiuiWifiNoInternetDialog;->finish()V
 
     .line 87
     :cond_0

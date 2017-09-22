@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fA;
+.class Lcom/android/vendorsettings/fA;
 .super Ljava/lang/Object;
 .source "MiuiWirelessSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic uD:Lcom/android/settings/MiuiWirelessSettings;
+.field final synthetic uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiWirelessSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiWirelessSettings;)V
     .locals 0
 
     .prologue
     .line 143
-    iput-object p1, p0, Lcom/android/settings/fA;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/fA;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 145
-    iget-object v0, p0, Lcom/android/settings/fA;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fA;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiWirelessSettings;->a(Lcom/android/settings/MiuiWirelessSettings;)Ljava/util/concurrent/atomic/AtomicReference;
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->a(Lcom/android/vendorsettings/MiuiWirelessSettings;)Ljava/util/concurrent/atomic/AtomicReference;
 
     move-result-object v0
 
@@ -49,9 +49,9 @@
 
     .prologue
     .line 148
-    iget-object v0, p0, Lcom/android/settings/fA;->uD:Lcom/android/settings/MiuiWirelessSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fA;->uD:Lcom/android/vendorsettings/MiuiWirelessSettings;
 
-    invoke-static {v0}, Lcom/android/settings/MiuiWirelessSettings;->a(Lcom/android/settings/MiuiWirelessSettings;)Ljava/util/concurrent/atomic/AtomicReference;
+    invoke-static {v0}, Lcom/android/vendorsettings/MiuiWirelessSettings;->a(Lcom/android/vendorsettings/MiuiWirelessSettings;)Ljava/util/concurrent/atomic/AtomicReference;
 
     move-result-object v0
 

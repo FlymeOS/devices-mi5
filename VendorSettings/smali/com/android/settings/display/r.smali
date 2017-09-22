@@ -1,4 +1,4 @@
-.class Lcom/android/settings/display/r;
+.class Lcom/android/vendorsettings/display/r;
 .super Ljava/lang/Object;
 .source "HandyModeGuideView.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Yy:Lcom/android/settings/display/HandyModeGuideView;
+.field final synthetic Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/display/HandyModeGuideView;)V
+.method constructor <init>(Lcom/android/vendorsettings/display/HandyModeGuideView;)V
     .locals 0
 
     .prologue
     .line 88
-    iput-object p1, p0, Lcom/android/settings/display/r;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iput-object p1, p0, Lcom/android/vendorsettings/display/r;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,25 +30,25 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Lcom/android/settings/display/r;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/r;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget v0, v0, Lcom/android/settings/display/HandyModeGuideView;->mState:I
+    iget v0, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mState:I
 
     const/4 v1, 0x2
 
     if-eq v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/display/r;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/r;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget v0, v0, Lcom/android/settings/display/HandyModeGuideView;->mState:I
+    iget v0, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mState:I
 
     const/4 v1, 0x1
 
     if-eq v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/display/r;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/r;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    iget v0, v0, Lcom/android/settings/display/HandyModeGuideView;->mState:I
+    iget v0, v0, Lcom/android/vendorsettings/display/HandyModeGuideView;->mState:I
 
     const/4 v1, 0x3
 
@@ -56,9 +56,9 @@
 
     .line 94
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/display/r;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/r;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    invoke-virtual {v0}, Lcom/android/settings/display/HandyModeGuideView;->invalidate()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/display/HandyModeGuideView;->invalidate()V
 
     .line 96
     :cond_1

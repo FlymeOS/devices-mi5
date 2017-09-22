@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bootloader/a;
+.class Lcom/android/vendorsettings/bootloader/a;
 .super Ljava/lang/Object;
 .source "BootloaderStatusActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Sw:Lcom/android/settings/bootloader/BootloaderStatusActivity;
+.field final synthetic Sw:Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bootloader/BootloaderStatusActivity;)V
+.method constructor <init>(Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;)V
     .locals 0
 
     .prologue
     .line 50
-    iput-object p1, p0, Lcom/android/settings/bootloader/a;->Sw:Lcom/android/settings/bootloader/BootloaderStatusActivity;
+    iput-object p1, p0, Lcom/android/vendorsettings/bootloader/a;->Sw:Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 54
-    iget-object v0, p0, Lcom/android/settings/bootloader/a;->Sw:Lcom/android/settings/bootloader/BootloaderStatusActivity;
+    iget-object v0, p0, Lcom/android/vendorsettings/bootloader/a;->Sw:Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;
 
-    invoke-static {v0}, Lcom/android/settings/bootloader/BootloaderStatusActivity;->a(Lcom/android/settings/bootloader/BootloaderStatusActivity;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;->a(Lcom/android/vendorsettings/bootloader/BootloaderStatusActivity;)V
 
     .line 55
     return-void

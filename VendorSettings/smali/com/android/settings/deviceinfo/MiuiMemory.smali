@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/deviceinfo/MiuiMemory;
-.super Lcom/android/settings/deviceinfo/PrivateVolumeSettings;
+.class public Lcom/android/vendorsettings/deviceinfo/MiuiMemory;
+.super Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings;
 .source "MiuiMemory.java"
 
 # interfaces
@@ -18,24 +18,24 @@
 
     .prologue
     .line 52
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings;-><init>()V
 
     .line 173
-    new-instance v0, Lcom/android/settings/deviceinfo/MiuiMemory$1;
+    new-instance v0, Lcom/android/vendorsettings/deviceinfo/MiuiMemory$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/deviceinfo/MiuiMemory$1;-><init>(Lcom/android/settings/deviceinfo/MiuiMemory;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory$1;-><init>(Lcom/android/vendorsettings/deviceinfo/MiuiMemory;)V
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/MiuiMemory;->Vn:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->Vn:Landroid/content/BroadcastReceiver;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/deviceinfo/MiuiMemory;)V
+.method static synthetic a(Lcom/android/vendorsettings/deviceinfo/MiuiMemory;)V
     .locals 0
 
     .prologue
     .line 52
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/MiuiMemory;->oX()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->oX()V
 
     return-void
 .end method
@@ -50,7 +50,7 @@
     .line 188
     const-string v0, "storage"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/MiuiMemory;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -115,7 +115,7 @@
 
     .line 200
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MiuiMemory;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -137,7 +137,7 @@
     .line 205
     new-instance v0, Landroid/preference/PreferenceCategory;
 
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MiuiMemory;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -154,7 +154,7 @@
     .line 208
     new-instance v1, Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MiuiMemory;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -217,10 +217,10 @@
 
     .prologue
     .line 63
-    invoke-super {p0, p1}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings;->onCreate(Landroid/os/Bundle;)V
 
     .line 64
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MiuiMemory;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -239,16 +239,16 @@
     .line 65
     const-string v0, "usb_mode"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/MiuiMemory;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
 
     .line 66
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -261,7 +261,7 @@
     :cond_1
     const-string v0, "usb_mode_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/MiuiMemory;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -269,7 +269,7 @@
     if-eqz v0, :cond_0
 
     .line 70
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MiuiMemory;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -292,7 +292,7 @@
     packed-switch v0, :pswitch_data_0
 
     .line 134
-    invoke-super {p0, p1}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -301,7 +301,7 @@
 
     .line 123
     :pswitch_0
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MiuiMemory;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -310,13 +310,13 @@
     if-eqz v0, :cond_0
 
     .line 124
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MiuiMemory;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceActivity;
 
-    const-class v1, Lcom/android/settings/deviceinfo/MiuiUsbSettings;
+    const-class v1, Lcom/android/vendorsettings/deviceinfo/MiuiUsbSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
@@ -340,7 +340,7 @@
 
     .line 130
     :cond_0
-    const-class v0, Lcom/android/settings/deviceinfo/MiuiUsbSettings;
+    const-class v0, Lcom/android/vendorsettings/deviceinfo/MiuiUsbSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
@@ -348,7 +348,7 @@
 
     const/4 v1, -0x1
 
-    invoke-virtual {p0, p0, v0, v1, v2}, Lcom/android/settings/deviceinfo/MiuiMemory;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
+    invoke-virtual {p0, p0, v0, v1, v2}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
 
     goto :goto_1
 
@@ -366,14 +366,14 @@
 
     .prologue
     .line 97
-    invoke-super {p0}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings;->onPause()V
 
     .line 98
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MiuiMemory;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MiuiMemory;->Vn:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->Vn:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
@@ -399,7 +399,7 @@
     if-eqz v0, :cond_0
 
     .line 104
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
 
     check-cast p2, Ljava/lang/String;
 
@@ -408,7 +408,7 @@
     move-result v0
 
     .line 105
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MiuiMemory;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -417,14 +417,14 @@
     invoke-static {v1, v2, v0}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 106
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 107
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -461,7 +461,7 @@
     if-eqz v0, :cond_0
 
     .line 141
-    const-class v0, Lcom/android/settings/deviceinfo/PriorityStorageFragment;
+    const-class v0, Lcom/android/vendorsettings/deviceinfo/PriorityStorageFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
@@ -477,7 +477,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/deviceinfo/MiuiMemory;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     move v0, v6
 
@@ -487,7 +487,7 @@
 
     .line 145
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiMemory;->Wc:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->Wc:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -505,10 +505,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;
+    check-cast v0, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;
 
     .line 146
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->oZ()Landroid/os/storage/VolumeInfo;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->oZ()Landroid/os/storage/VolumeInfo;
 
     move-result-object v2
 
@@ -516,7 +516,7 @@
     if-eqz v2, :cond_1
 
     .line 152
-    invoke-virtual {v0, p2}, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->g(Landroid/preference/Preference;)Z
+    invoke-virtual {v0, p2}, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->g(Landroid/preference/Preference;)Z
 
     move-result v3
 
@@ -534,7 +534,7 @@
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Lcom/android/settings/deviceinfo/StorageSettings$VolumeUnmountedFragment;->b(Landroid/app/Fragment;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$VolumeUnmountedFragment;->b(Landroid/app/Fragment;Ljava/lang/String;)V
 
     move v0, v6
 
@@ -543,17 +543,17 @@
 
     .line 157
     :cond_2
-    new-instance v0, Lcom/android/settings/deviceinfo/StorageSettings$UnmountTask;
+    new-instance v0, Lcom/android/vendorsettings/deviceinfo/StorageSettings$UnmountTask;
 
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MiuiMemory;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/deviceinfo/StorageSettings$UnmountTask;-><init>(Landroid/content/Context;Landroid/os/storage/VolumeInfo;)V
+    invoke-direct {v0, v1, v2}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$UnmountTask;-><init>(Landroid/content/Context;Landroid/os/storage/VolumeInfo;)V
 
     new-array v1, v5, [Ljava/lang/Void;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/deviceinfo/StorageSettings$UnmountTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/deviceinfo/StorageSettings$UnmountTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     move v0, v6
 
@@ -562,7 +562,7 @@
 
     .line 160
     :cond_3
-    invoke-virtual {v0, p2}, Lcom/android/settings/deviceinfo/MiuiStorageVolumePreferenceCategory;->h(Landroid/preference/Preference;)Z
+    invoke-virtual {v0, p2}, Lcom/android/vendorsettings/deviceinfo/MiuiStorageVolumePreferenceCategory;->h(Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -571,11 +571,11 @@
     .line 161
     new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MiuiMemory;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->getContext()Landroid/content/Context;
 
     move-result-object v3
 
-    const-class v4, Lcom/android/settings/deviceinfo/StorageWizardFormatConfirm;
+    const-class v4, Lcom/android/vendorsettings/deviceinfo/StorageWizardFormatConfirm;
 
     invoke-direct {v0, v3, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -594,13 +594,13 @@
     invoke-virtual {v0, v2, v5}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 164
-    invoke-virtual {p0, v0}, Lcom/android/settings/deviceinfo/MiuiMemory;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_1
 
     .line 170
     :cond_4
-    invoke-super {p0, p1, p2}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -620,15 +620,15 @@
 
     .prologue
     .line 77
-    invoke-super {p0}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeSettings;->onResume()V
 
     .line 78
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
 
     if-eqz v0, :cond_0
 
     .line 79
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MiuiMemory;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -641,7 +641,7 @@
     move-result v0
 
     .line 82
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
@@ -656,14 +656,14 @@
     move-result v0
 
     .line 84
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 85
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->Vm:Landroid/preference/ListPreference;
 
     invoke-virtual {v1}, Landroid/preference/ListPreference;->getEntry()Ljava/lang/CharSequence;
 
@@ -673,7 +673,7 @@
 
     .line 87
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/deviceinfo/MiuiMemory;->oX()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->oX()V
 
     .line 88
     new-instance v0, Landroid/content/IntentFilter;
@@ -696,11 +696,11 @@
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addDataScheme(Ljava/lang/String;)V
 
     .line 92
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/MiuiMemory;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/deviceinfo/MiuiMemory;->Vn:Landroid/content/BroadcastReceiver;
+    iget-object v2, p0, Lcom/android/vendorsettings/deviceinfo/MiuiMemory;->Vn:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v1, v2, v0}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 

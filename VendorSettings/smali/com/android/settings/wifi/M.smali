@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/M;
+.class public Lcom/android/vendorsettings/wifi/M;
 .super Landroid/widget/BaseAdapter;
 .source "MultiSimAdapter.java"
 
@@ -29,7 +29,7 @@
 
     fill-array-data v0, :array_0
 
-    sput-object v0, Lcom/android/settings/wifi/M;->aBw:[I
+    sput-object v0, Lcom/android/vendorsettings/wifi/M;->aBw:[I
 
     return-void
 
@@ -50,21 +50,21 @@
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 37
-    iput-object p1, p0, Lcom/android/settings/wifi/M;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/M;->mContext:Landroid/content/Context;
 
     .line 38
     const/4 v0, 0x0
 
-    iput v0, p0, Lcom/android/settings/wifi/M;->aBx:I
+    iput v0, p0, Lcom/android/vendorsettings/wifi/M;->aBx:I
 
     .line 39
-    iget-object v0, p0, Lcom/android/settings/wifi/M;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/M;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/M;->mInflater:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/M;->mInflater:Landroid/view/LayoutInflater;
 
     .line 40
     invoke-static {}, Lmiui/telephony/SubscriptionManager;->getDefault()Lmiui/telephony/SubscriptionManager;
@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/M;->aBy:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/M;->aBy:Ljava/util/List;
 
     .line 41
     return-void
@@ -88,20 +88,20 @@
 
     .prologue
     .line 53
-    iget-object v0, p0, Lcom/android/settings/wifi/M;->aBy:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/M;->aBy:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
     if-ltz p1, :cond_0
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/M;->getCount()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/M;->getCount()I
 
     move-result v0
 
     if-ge p1, v0, :cond_0
 
     .line 54
-    iget-object v0, p0, Lcom/android/settings/wifi/M;->aBy:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/M;->aBy:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -127,7 +127,7 @@
     if-ltz p1, :cond_0
 
     .line 78
-    iput p1, p0, Lcom/android/settings/wifi/M;->aBx:I
+    iput p1, p0, Lcom/android/vendorsettings/wifi/M;->aBx:I
 
     .line 79
     :cond_0
@@ -139,12 +139,12 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/android/settings/wifi/M;->aBy:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/M;->aBy:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
     .line 46
-    iget-object v0, p0, Lcom/android/settings/wifi/M;->aBy:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/M;->aBy:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -179,13 +179,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/M;->aBy:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/M;->aBy:Ljava/util/List;
 
     .line 88
     if-nez p2, :cond_0
 
     .line 89
-    iget-object v0, p0, Lcom/android/settings/wifi/M;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/M;->mInflater:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0400b6
 
@@ -194,9 +194,9 @@
     move-result-object p2
 
     .line 90
-    new-instance v1, Lcom/android/settings/wifi/O;
+    new-instance v1, Lcom/android/vendorsettings/wifi/O;
 
-    invoke-direct {v1, p0, v2}, Lcom/android/settings/wifi/O;-><init>(Lcom/android/settings/wifi/M;Lcom/android/settings/wifi/N;)V
+    invoke-direct {v1, p0, v2}, Lcom/android/vendorsettings/wifi/O;-><init>(Lcom/android/vendorsettings/wifi/M;Lcom/android/vendorsettings/wifi/N;)V
 
     .line 91
     const v0, 0x7f13014b
@@ -207,7 +207,7 @@
 
     check-cast v0, Landroid/widget/CheckedTextView;
 
-    iput-object v0, v1, Lcom/android/settings/wifi/O;->aBz:Landroid/widget/CheckedTextView;
+    iput-object v0, v1, Lcom/android/vendorsettings/wifi/O;->aBz:Landroid/widget/CheckedTextView;
 
     .line 93
     const v0, 0x7f13014c
@@ -218,7 +218,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, v1, Lcom/android/settings/wifi/O;->aBA:Landroid/widget/ImageView;
+    iput-object v0, v1, Lcom/android/vendorsettings/wifi/O;->aBA:Landroid/widget/ImageView;
 
     .line 94
     const v0, 0x7f13014d
@@ -229,7 +229,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v1, Lcom/android/settings/wifi/O;->aBB:Landroid/widget/TextView;
+    iput-object v0, v1, Lcom/android/vendorsettings/wifi/O;->aBB:Landroid/widget/TextView;
 
     .line 95
     invoke-virtual {p2, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
@@ -238,7 +238,7 @@
 
     .line 100
     :goto_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/wifi/M;->dD(I)Lmiui/telephony/SubscriptionInfo;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/wifi/M;->dD(I)Lmiui/telephony/SubscriptionInfo;
 
     move-result-object v1
 
@@ -246,24 +246,24 @@
     if-nez v1, :cond_1
 
     .line 102
-    iget-object v1, v0, Lcom/android/settings/wifi/O;->aBz:Landroid/widget/CheckedTextView;
+    iget-object v1, v0, Lcom/android/vendorsettings/wifi/O;->aBz:Landroid/widget/CheckedTextView;
 
     const-string v2, ""
 
     invoke-virtual {v1, v2}, Landroid/widget/CheckedTextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 103
-    iget-object v1, v0, Lcom/android/settings/wifi/O;->aBA:Landroid/widget/ImageView;
+    iget-object v1, v0, Lcom/android/vendorsettings/wifi/O;->aBA:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 104
-    iget-object v1, v0, Lcom/android/settings/wifi/O;->aBB:Landroid/widget/TextView;
+    iget-object v1, v0, Lcom/android/vendorsettings/wifi/O;->aBB:Landroid/widget/TextView;
 
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 105
-    iget-object v0, v0, Lcom/android/settings/wifi/O;->aBz:Landroid/widget/CheckedTextView;
+    iget-object v0, v0, Lcom/android/vendorsettings/wifi/O;->aBz:Landroid/widget/CheckedTextView;
 
     invoke-virtual {v0, v6}, Landroid/widget/CheckedTextView;->setChecked(Z)V
 
@@ -277,7 +277,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/wifi/O;
+    check-cast v0, Lcom/android/vendorsettings/wifi/O;
 
     goto :goto_0
 
@@ -292,12 +292,12 @@
     move-result-object v2
 
     .line 111
-    iget-object v3, v0, Lcom/android/settings/wifi/O;->aBz:Landroid/widget/CheckedTextView;
+    iget-object v3, v0, Lcom/android/vendorsettings/wifi/O;->aBz:Landroid/widget/CheckedTextView;
 
     invoke-virtual {v3, v2}, Landroid/widget/CheckedTextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 112
-    sget-object v2, Lcom/android/settings/wifi/M;->aBw:[I
+    sget-object v2, Lcom/android/vendorsettings/wifi/M;->aBw:[I
 
     invoke-virtual {v1}, Lmiui/telephony/SubscriptionInfo;->getSlotId()I
 
@@ -309,13 +309,13 @@
     if-lez v2, :cond_2
 
     .line 114
-    iget-object v3, v0, Lcom/android/settings/wifi/O;->aBA:Landroid/widget/ImageView;
+    iget-object v3, v0, Lcom/android/vendorsettings/wifi/O;->aBA:Landroid/widget/ImageView;
 
     invoke-virtual {v3, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 118
     :goto_2
-    iget-object v2, v0, Lcom/android/settings/wifi/O;->aBB:Landroid/widget/TextView;
+    iget-object v2, v0, Lcom/android/vendorsettings/wifi/O;->aBB:Landroid/widget/TextView;
 
     invoke-virtual {v1}, Lmiui/telephony/SubscriptionInfo;->getDisplayNumber()Ljava/lang/String;
 
@@ -324,12 +324,12 @@
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 119
-    iget-object v2, v0, Lcom/android/settings/wifi/O;->aBA:Landroid/widget/ImageView;
+    iget-object v2, v0, Lcom/android/vendorsettings/wifi/O;->aBA:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v6}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 120
-    iget-object v2, v0, Lcom/android/settings/wifi/O;->aBB:Landroid/widget/TextView;
+    iget-object v2, v0, Lcom/android/vendorsettings/wifi/O;->aBB:Landroid/widget/TextView;
 
     invoke-virtual {v2, v6}, Landroid/widget/TextView;->setVisibility(I)V
 
@@ -340,9 +340,9 @@
 
     int-to-long v2, v1
 
-    iget v1, p0, Lcom/android/settings/wifi/M;->aBx:I
+    iget v1, p0, Lcom/android/vendorsettings/wifi/M;->aBx:I
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/wifi/M;->getItemId(I)J
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/wifi/M;->getItemId(I)J
 
     move-result-wide v4
 
@@ -351,7 +351,7 @@
     if-nez v1, :cond_3
 
     .line 122
-    iget-object v0, v0, Lcom/android/settings/wifi/O;->aBz:Landroid/widget/CheckedTextView;
+    iget-object v0, v0, Lcom/android/vendorsettings/wifi/O;->aBz:Landroid/widget/CheckedTextView;
 
     const/4 v1, 0x1
 
@@ -361,7 +361,7 @@
 
     .line 116
     :cond_2
-    iget-object v2, v0, Lcom/android/settings/wifi/O;->aBA:Landroid/widget/ImageView;
+    iget-object v2, v0, Lcom/android/vendorsettings/wifi/O;->aBA:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
@@ -369,7 +369,7 @@
 
     .line 124
     :cond_3
-    iget-object v0, v0, Lcom/android/settings/wifi/O;->aBz:Landroid/widget/CheckedTextView;
+    iget-object v0, v0, Lcom/android/vendorsettings/wifi/O;->aBz:Landroid/widget/CheckedTextView;
 
     invoke-virtual {v0, v6}, Landroid/widget/CheckedTextView;->setChecked(Z)V
 
@@ -381,7 +381,7 @@
 
     .prologue
     .line 25
-    invoke-virtual {p0, p1}, Lcom/android/settings/wifi/M;->dD(I)Lmiui/telephony/SubscriptionInfo;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/wifi/M;->dD(I)Lmiui/telephony/SubscriptionInfo;
 
     move-result-object v0
 
@@ -393,14 +393,14 @@
 
     .prologue
     .line 61
-    invoke-virtual {p0, p1}, Lcom/android/settings/wifi/M;->dD(I)Lmiui/telephony/SubscriptionInfo;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/wifi/M;->dD(I)Lmiui/telephony/SubscriptionInfo;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 62
-    invoke-virtual {p0, p1}, Lcom/android/settings/wifi/M;->dD(I)Lmiui/telephony/SubscriptionInfo;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/wifi/M;->dD(I)Lmiui/telephony/SubscriptionInfo;
 
     move-result-object v0
 
@@ -439,13 +439,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/wifi/M;->aBy:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/M;->aBy:Ljava/util/List;
 
     .line 138
     if-nez p2, :cond_0
 
     .line 139
-    iget-object v0, p0, Lcom/android/settings/wifi/M;->mInflater:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/M;->mInflater:Landroid/view/LayoutInflater;
 
     const v1, 0x7f0400b7
 
@@ -454,9 +454,9 @@
     move-result-object p2
 
     .line 140
-    new-instance v1, Lcom/android/settings/wifi/P;
+    new-instance v1, Lcom/android/vendorsettings/wifi/P;
 
-    invoke-direct {v1, p0, v2}, Lcom/android/settings/wifi/P;-><init>(Lcom/android/settings/wifi/M;Lcom/android/settings/wifi/N;)V
+    invoke-direct {v1, p0, v2}, Lcom/android/vendorsettings/wifi/P;-><init>(Lcom/android/vendorsettings/wifi/M;Lcom/android/vendorsettings/wifi/N;)V
 
     .line 141
     const v0, 0x7f13014e
@@ -467,7 +467,7 @@
 
     check-cast v0, Landroid/widget/CheckedTextView;
 
-    iput-object v0, v1, Lcom/android/settings/wifi/P;->aBz:Landroid/widget/CheckedTextView;
+    iput-object v0, v1, Lcom/android/vendorsettings/wifi/P;->aBz:Landroid/widget/CheckedTextView;
 
     .line 142
     const v0, 0x7f13014c
@@ -478,7 +478,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, v1, Lcom/android/settings/wifi/P;->aBA:Landroid/widget/ImageView;
+    iput-object v0, v1, Lcom/android/vendorsettings/wifi/P;->aBA:Landroid/widget/ImageView;
 
     .line 143
     invoke-virtual {p2, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
@@ -487,7 +487,7 @@
 
     .line 148
     :goto_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/wifi/M;->dD(I)Lmiui/telephony/SubscriptionInfo;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/wifi/M;->dD(I)Lmiui/telephony/SubscriptionInfo;
 
     move-result-object v1
 
@@ -495,20 +495,20 @@
     if-nez v1, :cond_1
 
     .line 150
-    iget-object v1, v0, Lcom/android/settings/wifi/P;->aBz:Landroid/widget/CheckedTextView;
+    iget-object v1, v0, Lcom/android/vendorsettings/wifi/P;->aBz:Landroid/widget/CheckedTextView;
 
     const-string v2, ""
 
     invoke-virtual {v1, v2}, Landroid/widget/CheckedTextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 151
-    iget-object v1, v0, Lcom/android/settings/wifi/P;->aBA:Landroid/widget/ImageView;
+    iget-object v1, v0, Lcom/android/vendorsettings/wifi/P;->aBA:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v5}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 166
     :goto_1
-    iget-object v0, v0, Lcom/android/settings/wifi/P;->aBz:Landroid/widget/CheckedTextView;
+    iget-object v0, v0, Lcom/android/vendorsettings/wifi/P;->aBz:Landroid/widget/CheckedTextView;
 
     invoke-virtual {v0, v4}, Landroid/widget/CheckedTextView;->setChecked(Z)V
 
@@ -521,7 +521,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/wifi/P;
+    check-cast v0, Lcom/android/vendorsettings/wifi/P;
 
     goto :goto_0
 
@@ -536,12 +536,12 @@
     move-result-object v2
 
     .line 157
-    iget-object v3, v0, Lcom/android/settings/wifi/P;->aBz:Landroid/widget/CheckedTextView;
+    iget-object v3, v0, Lcom/android/vendorsettings/wifi/P;->aBz:Landroid/widget/CheckedTextView;
 
     invoke-virtual {v3, v2}, Landroid/widget/CheckedTextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 158
-    sget-object v2, Lcom/android/settings/wifi/M;->aBw:[I
+    sget-object v2, Lcom/android/vendorsettings/wifi/M;->aBw:[I
 
     invoke-virtual {v1}, Lmiui/telephony/SubscriptionInfo;->getSlotId()I
 
@@ -553,13 +553,13 @@
     if-lez v1, :cond_2
 
     .line 160
-    iget-object v2, v0, Lcom/android/settings/wifi/P;->aBA:Landroid/widget/ImageView;
+    iget-object v2, v0, Lcom/android/vendorsettings/wifi/P;->aBA:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 164
     :goto_2
-    iget-object v1, v0, Lcom/android/settings/wifi/P;->aBA:Landroid/widget/ImageView;
+    iget-object v1, v0, Lcom/android/vendorsettings/wifi/P;->aBA:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
@@ -567,7 +567,7 @@
 
     .line 162
     :cond_2
-    iget-object v1, v0, Lcom/android/settings/wifi/P;->aBA:Landroid/widget/ImageView;
+    iget-object v1, v0, Lcom/android/vendorsettings/wifi/P;->aBA:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v5}, Landroid/widget/ImageView;->setVisibility(I)V
 
@@ -579,7 +579,7 @@
 
     .prologue
     .line 69
-    invoke-virtual {p0, p1}, Lcom/android/settings/wifi/M;->dD(I)Lmiui/telephony/SubscriptionInfo;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/wifi/M;->dD(I)Lmiui/telephony/SubscriptionInfo;
 
     move-result-object v0
 

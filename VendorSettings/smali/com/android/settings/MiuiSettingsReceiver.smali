@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/MiuiSettingsReceiver;
+.class public Lcom/android/vendorsettings/MiuiSettingsReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "MiuiSettingsReceiver.java"
 
@@ -25,24 +25,24 @@
     const/4 v1, 0x1
 
     .line 280
-    invoke-static {}, Lcom/android/settings/fy;->gg()Lcom/android/settings/fy;
+    invoke-static {}, Lcom/android/vendorsettings/fy;->gg()Lcom/android/vendorsettings/fy;
 
     move-result-object v0
 
     .line 281
-    invoke-virtual {v0, p1}, Lcom/android/settings/fy;->K(Landroid/content/Context;)Z
+    invoke-virtual {v0, p1}, Lcom/android/vendorsettings/fy;->K(Landroid/content/Context;)Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
     .line 282
-    invoke-virtual {v0, p1, v1}, Lcom/android/settings/fy;->e(Landroid/content/Context;Z)V
+    invoke-virtual {v0, p1, v1}, Lcom/android/vendorsettings/fy;->e(Landroid/content/Context;Z)V
 
     .line 286
     :cond_0
     :try_start_0
-    invoke-static {p1}, Lcom/android/settings/b/a;->aW(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/vendorsettings/b/a;->aW(Landroid/content/Context;)V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -63,13 +63,13 @@
     move v0, v1
 
     :goto_1
-    invoke-static {v0}, Lcom/android/settings/fy;->O(Z)V
+    invoke-static {v0}, Lcom/android/vendorsettings/fy;->O(Z)V
 
     .line 294
-    invoke-static {p1}, Lcom/android/settings/MiuiSettingsReceiver;->x(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/vendorsettings/MiuiSettingsReceiver;->x(Landroid/content/Context;)V
 
     .line 297
-    invoke-static {p1}, Lcom/android/settings/display/d;->be(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/vendorsettings/display/d;->be(Landroid/content/Context;)V
 
     .line 299
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -85,7 +85,7 @@
     if-eqz v0, :cond_1
 
     .line 300
-    invoke-static {v1}, Lcom/android/settings/dj;->z(Z)V
+    invoke-static {v1}, Lcom/android/vendorsettings/dj;->z(Z)V
 
     .line 303
     :cond_1
@@ -145,7 +145,7 @@
     .line 310
     const/4 v3, 0x2
 
-    invoke-static {v0, v3}, Lcom/android/settings/fs;->a(Landroid/hardware/input/InputManager;I)V
+    invoke-static {v0, v3}, Lcom/android/vendorsettings/fs;->a(Landroid/hardware/input/InputManager;I)V
 
     .line 313
     :cond_3
@@ -223,7 +223,7 @@
 
     .line 328
     :cond_6
-    invoke-static {p1}, Lcom/android/settings/MiuiSettingsReceiver;->B(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/vendorsettings/MiuiSettingsReceiver;->B(Landroid/content/Context;)V
 
     .line 331
     const-string v0, "persist.audio.vns.mode"
@@ -673,7 +673,7 @@
 
     .line 472
     :cond_1
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiSettingsReceiver;->G(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/MiuiSettingsReceiver;->G(Landroid/content/Context;)V
 
     .line 474
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -739,7 +739,7 @@
     move-result v0
 
     .line 484
-    invoke-static {p1}, Lcom/android/settings/privacypassword/XiaomiAccountUtils;->cd(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/privacypassword/XiaomiAccountUtils;->cd(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -755,7 +755,7 @@
 
     const-string v1, "app_lock_add_account_md5"
 
-    invoke-static {p1}, Lcom/android/settings/privacypassword/XiaomiAccountUtils;->ce(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/android/vendorsettings/privacypassword/XiaomiAccountUtils;->ce(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -768,7 +768,7 @@
 
     const-string v1, "privacy_add_account_md5"
 
-    invoke-static {p1}, Lcom/android/settings/privacypassword/XiaomiAccountUtils;->ce(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/android/vendorsettings/privacypassword/XiaomiAccountUtils;->ce(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -810,7 +810,7 @@
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/wifi/WifiConfigActivity;
+    const-class v1, Lcom/android/vendorsettings/wifi/WifiConfigActivity;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -888,7 +888,7 @@
     move-result-object v0
 
     .line 395
-    invoke-static {p2}, Lcom/android/settings/wifi/WifiTipActivity;->dP(I)Ljava/lang/String;
+    invoke-static {p2}, Lcom/android/vendorsettings/wifi/WifiTipActivity;->dP(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -909,7 +909,7 @@
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/wifi/WifiTipActivity;
+    const-class v1, Lcom/android/vendorsettings/wifi/WifiTipActivity;
 
     invoke-direct {v0, p1, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -1138,7 +1138,7 @@
     .line 239
     new-instance v1, Landroid/content/Intent;
 
-    const-class v2, Lcom/android/settings/wifi/MiuiWifiService;
+    const-class v2, Lcom/android/vendorsettings/wifi/MiuiWifiService;
 
     invoke-direct {v1, p0, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -1291,12 +1291,12 @@
     if-lez v0, :cond_0
 
     .line 271
-    invoke-static {p1}, Lcom/android/settings/wifi/e;->cv(Landroid/content/Context;)Lcom/android/settings/wifi/e;
+    invoke-static {p1}, Lcom/android/vendorsettings/wifi/e;->cv(Landroid/content/Context;)Lcom/android/vendorsettings/wifi/e;
 
     move-result-object v0
 
     .line 272
-    invoke-virtual {v0, p1, v1, v4}, Lcom/android/settings/wifi/e;->a(Landroid/content/Context;Ljava/util/HashSet;Z)V
+    invoke-virtual {v0, p1, v1, v4}, Lcom/android/vendorsettings/wifi/e;->a(Landroid/content/Context;Ljava/util/HashSet;Z)V
 
     goto :goto_0
 .end method
@@ -1317,7 +1317,7 @@
     move-result-object v0
 
     .line 93
-    invoke-static {p1}, Lcom/android/settings/wifi/aC;->isWifiConnected(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/wifi/aC;->isWifiConnected(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -1331,18 +1331,18 @@
     if-eqz v4, :cond_2
 
     .line 95
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiSettingsReceiver;->A(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/MiuiSettingsReceiver;->A(Landroid/content/Context;)V
 
     .line 96
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiSettingsReceiver;->E(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/MiuiSettingsReceiver;->E(Landroid/content/Context;)V
 
     .line 97
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiSettingsReceiver;->z(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/MiuiSettingsReceiver;->z(Landroid/content/Context;)V
 
     .line 98
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/analytics/ObserverService;
+    const-class v1, Lcom/android/vendorsettings/analytics/ObserverService;
 
     invoke-direct {v0, p1, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -1361,7 +1361,7 @@
     .line 101
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/gm;
+    const-class v1, Lcom/android/vendorsettings/gm;
 
     invoke-direct {v0, p1, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -1370,10 +1370,10 @@
 
     .line 104
     :cond_0
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiSettingsReceiver;->w(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/MiuiSettingsReceiver;->w(Landroid/content/Context;)V
 
     .line 105
-    invoke-static {p1}, Lcom/android/settings/MiuiSettingsReceiver;->y(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/vendorsettings/MiuiSettingsReceiver;->y(Landroid/content/Context;)V
 
     .line 107
     new-instance v0, Landroid/security/ChooseLockSettingsHelper;
@@ -1384,7 +1384,7 @@
     invoke-virtual {v0, v3}, Landroid/security/ChooseLockSettingsHelper;->setPrivacyModeEnabled(Z)V
 
     .line 109
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiSettingsReceiver;->F(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/MiuiSettingsReceiver;->F(Landroid/content/Context;)V
 
     .line 196
     :cond_1
@@ -1411,7 +1411,7 @@
 
     if-eqz v1, :cond_4
 
-    invoke-static {p1}, Lcom/android/settings/wifi/ak;->cz(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/wifi/ak;->cz(Landroid/content/Context;)Z
 
     move-result v4
 
@@ -1430,7 +1430,7 @@
     :cond_4
     new-instance v1, Landroid/content/Intent;
 
-    const-class v2, Lcom/android/settings/wifi/MiuiWifiService;
+    const-class v2, Lcom/android/vendorsettings/wifi/MiuiWifiService;
 
     invoke-direct {v1, p1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -1453,7 +1453,7 @@
     if-eqz v4, :cond_6
 
     .line 118
-    invoke-static {p1}, Lcom/android/settings/MiuiSettingsReceiver;->C(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/vendorsettings/MiuiSettingsReceiver;->C(Landroid/content/Context;)V
 
     goto :goto_0
 
@@ -1485,7 +1485,7 @@
 
     .line 122
     :cond_7
-    invoke-static {p1}, Lcom/android/settings/display/F;->bl(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/vendorsettings/display/F;->bl(Landroid/content/Context;)V
 
     goto :goto_0
 
@@ -1500,10 +1500,10 @@
     if-eqz v4, :cond_9
 
     .line 124
-    invoke-static {p1, p2}, Lcom/android/settings/MiuiSettingsReceiver;->c(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-static {p1, p2}, Lcom/android/vendorsettings/MiuiSettingsReceiver;->c(Landroid/content/Context;Landroid/content/Intent;)V
 
     .line 125
-    invoke-static {p1, p2}, Lcom/android/settings/MiuiSettingsReceiver;->d(Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-static {p1, p2}, Lcom/android/vendorsettings/MiuiSettingsReceiver;->d(Landroid/content/Context;Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -1527,7 +1527,7 @@
     check-cast v0, Landroid/net/wifi/WifiConfiguration;
 
     .line 128
-    invoke-static {p1, v0}, Lcom/android/settings/MiuiSettingsReceiver;->a(Landroid/content/Context;Landroid/net/wifi/WifiConfiguration;)V
+    invoke-static {p1, v0}, Lcom/android/vendorsettings/MiuiSettingsReceiver;->a(Landroid/content/Context;Landroid/net/wifi/WifiConfiguration;)V
 
     goto :goto_0
 
@@ -1558,7 +1558,7 @@
     if-ne v0, v2, :cond_1
 
     .line 133
-    invoke-static {p1, v1}, Lcom/android/settings/wifi/openwifi/l;->m(Landroid/content/Context;Z)V
+    invoke-static {p1, v1}, Lcom/android/vendorsettings/wifi/openwifi/l;->m(Landroid/content/Context;Z)V
 
     goto/16 :goto_0
 
@@ -1746,14 +1746,14 @@
 
     if-nez v1, :cond_12
 
-    invoke-static {p1}, Lcom/android/settings/n;->c(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/vendorsettings/n;->c(Landroid/content/Context;)Z
 
     move-result v5
 
     if-eqz v5, :cond_12
 
     .line 161
-    invoke-direct {p0, p1, v3}, Lcom/android/settings/MiuiSettingsReceiver;->d(Landroid/content/Context;I)V
+    invoke-direct {p0, p1, v3}, Lcom/android/vendorsettings/MiuiSettingsReceiver;->d(Landroid/content/Context;I)V
 
     .line 172
     :cond_10
@@ -1786,7 +1786,7 @@
     :cond_11
     new-instance v1, Landroid/content/Intent;
 
-    const-class v4, Lcom/android/settings/wifi/MiuiWifiService;
+    const-class v4, Lcom/android/vendorsettings/wifi/MiuiWifiService;
 
     invoke-direct {v1, p1, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -1808,7 +1808,7 @@
     if-ne v0, v1, :cond_13
 
     :goto_4
-    invoke-static {p1, v2}, Lcom/android/settings/wifi/openwifi/l;->m(Landroid/content/Context;Z)V
+    invoke-static {p1, v2}, Lcom/android/vendorsettings/wifi/openwifi/l;->m(Landroid/content/Context;Z)V
 
     goto/16 :goto_0
 
@@ -1843,7 +1843,7 @@
     if-eqz v1, :cond_10
 
     .line 166
-    invoke-direct {p0, p1, v2}, Lcom/android/settings/MiuiSettingsReceiver;->d(Landroid/content/Context;I)V
+    invoke-direct {p0, p1, v2}, Lcom/android/vendorsettings/MiuiSettingsReceiver;->d(Landroid/content/Context;I)V
 
     goto :goto_3
 
@@ -1864,7 +1864,7 @@
     if-eqz v1, :cond_15
 
     .line 181
-    invoke-direct {p0, p1}, Lcom/android/settings/MiuiSettingsReceiver;->D(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/MiuiSettingsReceiver;->D(Landroid/content/Context;)V
 
     goto/16 :goto_0
 
@@ -1879,10 +1879,10 @@
     if-eqz v1, :cond_16
 
     .line 183
-    invoke-static {p1}, Lcom/android/settings/MiuiSettingsReceiver;->y(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/vendorsettings/MiuiSettingsReceiver;->y(Landroid/content/Context;)V
 
     .line 184
-    invoke-static {p1}, Lcom/android/settings/b/a;->aW(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/vendorsettings/b/a;->aW(Landroid/content/Context;)V
 
     goto/16 :goto_0
 
@@ -1904,7 +1904,7 @@
     move-result v0
 
     .line 187
-    invoke-static {p1, v0}, Lcom/android/settings/vpn2/VpnUtils;->p(Landroid/content/Context;Z)V
+    invoke-static {p1, v0}, Lcom/android/vendorsettings/vpn2/VpnUtils;->p(Landroid/content/Context;Z)V
 
     goto/16 :goto_0
 
@@ -1923,16 +1923,16 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/hd;->S(Landroid/content/Context;)Lcom/android/settings/hd;
+    invoke-static {v1}, Lcom/android/vendorsettings/hd;->S(Landroid/content/Context;)Lcom/android/vendorsettings/hd;
 
     move-result-object v1
 
-    invoke-virtual {v1, p2}, Lcom/android/settings/hd;->h(Landroid/content/Intent;)V
+    invoke-virtual {v1, p2}, Lcom/android/vendorsettings/hd;->h(Landroid/content/Intent;)V
 
     .line 190
     new-instance v1, Landroid/content/Intent;
 
-    const-class v2, Lcom/android/settings/wifi/MiuiWifiService;
+    const-class v2, Lcom/android/vendorsettings/wifi/MiuiWifiService;
 
     invoke-direct {v1, p1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -1959,11 +1959,11 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/hd;->S(Landroid/content/Context;)Lcom/android/settings/hd;
+    invoke-static {v0}, Lcom/android/vendorsettings/hd;->S(Landroid/content/Context;)Lcom/android/vendorsettings/hd;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/hd;->ht()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/hd;->ht()V
 
     goto/16 :goto_0
 .end method

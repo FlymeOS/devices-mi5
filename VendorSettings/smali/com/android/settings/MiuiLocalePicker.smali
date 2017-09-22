@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiLocalePicker;
-.super Lcom/android/settings/LocalePicker;
+.class public Lcom/android/vendorsettings/MiuiLocalePicker;
+.super Lcom/android/vendorsettings/LocalePicker;
 .source "MiuiLocalePicker.java"
 
 
@@ -17,7 +17,7 @@
 
     .prologue
     .line 22
-    invoke-direct {p0}, Lcom/android/settings/LocalePicker;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/LocalePicker;-><init>()V
 
     .line 83
     return-void
@@ -56,9 +56,9 @@
 
     .line 79
     :cond_0
-    new-instance v0, Lcom/android/settings/eu;
+    new-instance v0, Lcom/android/vendorsettings/eu;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiLocalePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiLocalePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -68,18 +68,18 @@
 
     move-object v1, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/eu;-><init>(Lcom/android/settings/MiuiLocalePicker;Landroid/content/Context;IILjava/util/List;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/eu;-><init>(Lcom/android/vendorsettings/MiuiLocalePicker;Landroid/content/Context;IILjava/util/List;)V
 
     .line 80
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiLocalePicker;)Ljava/lang/String;
+.method static synthetic a(Lcom/android/vendorsettings/MiuiLocalePicker;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 22
-    iget-object v0, p0, Lcom/android/settings/MiuiLocalePicker;->rg:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiLocalePicker;->rg:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -94,7 +94,7 @@
     move-result-object v1
 
     .line 55
-    iget-object v0, p0, Lcom/android/settings/MiuiLocalePicker;->mk:Landroid/widget/ArrayAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiLocalePicker;->mk:Landroid/widget/ArrayAdapter;
 
     const/4 v2, 0x0
 
@@ -129,7 +129,7 @@
 
     .line 61
     :goto_0
-    iput-object v0, p0, Lcom/android/settings/MiuiLocalePicker;->rg:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiLocalePicker;->rg:Ljava/lang/String;
 
     .line 62
     return-void
@@ -148,10 +148,10 @@
 
     .prologue
     .line 29
-    invoke-super {p0, p1}, Lcom/android/settings/LocalePicker;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/LocalePicker;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 30
-    invoke-virtual {p0}, Lcom/android/settings/MiuiLocalePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiLocalePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -159,24 +159,24 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiLocalePicker;->mk:Landroid/widget/ArrayAdapter;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiLocalePicker;->mk:Landroid/widget/ArrayAdapter;
 
     .line 31
-    iget-object v0, p0, Lcom/android/settings/MiuiLocalePicker;->mk:Landroid/widget/ArrayAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiLocalePicker;->mk:Landroid/widget/ArrayAdapter;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiLocalePicker;->a(Landroid/widget/ArrayAdapter;)Landroid/widget/ArrayAdapter;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/MiuiLocalePicker;->a(Landroid/widget/ArrayAdapter;)Landroid/widget/ArrayAdapter;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiLocalePicker;->mk:Landroid/widget/ArrayAdapter;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiLocalePicker;->mk:Landroid/widget/ArrayAdapter;
 
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/MiuiLocalePicker;->fe()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/MiuiLocalePicker;->fe()V
 
     .line 33
-    iget-object v0, p0, Lcom/android/settings/MiuiLocalePicker;->mk:Landroid/widget/ArrayAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiLocalePicker;->mk:Landroid/widget/ArrayAdapter;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiLocalePicker;->setListAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiLocalePicker;->setListAdapter(Landroid/widget/ListAdapter;)V
 
     .line 34
     return-void
@@ -197,10 +197,10 @@
 
     iget v0, v0, Landroid/view/WindowManager$LayoutParams;->softInputMode:I
 
-    iput v0, p0, Lcom/android/settings/MiuiLocalePicker;->rh:I
+    iput v0, p0, Lcom/android/vendorsettings/MiuiLocalePicker;->rh:I
 
     .line 40
-    invoke-super {p0, p1}, Lcom/android/settings/LocalePicker;->onAttach(Landroid/app/Activity;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/LocalePicker;->onAttach(Landroid/app/Activity;)V
 
     .line 42
     invoke-virtual {p1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
@@ -220,7 +220,7 @@
 
     .prologue
     .line 48
-    invoke-virtual {p0}, Lcom/android/settings/MiuiLocalePicker;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/MiuiLocalePicker;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -228,12 +228,12 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/MiuiLocalePicker;->rh:I
+    iget v1, p0, Lcom/android/vendorsettings/MiuiLocalePicker;->rh:I
 
     invoke-virtual {v0, v1}, Landroid/view/Window;->setSoftInputMode(I)V
 
     .line 50
-    invoke-super {p0}, Lcom/android/settings/LocalePicker;->onDetach()V
+    invoke-super {p0}, Lcom/android/vendorsettings/LocalePicker;->onDetach()V
 
     .line 51
     return-void
@@ -244,7 +244,7 @@
 
     .prologue
     .line 66
-    iget-object v0, p0, Lcom/android/settings/MiuiLocalePicker;->mk:Landroid/widget/ArrayAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiLocalePicker;->mk:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v0, p3}, Landroid/widget/ArrayAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -261,7 +261,7 @@
     move-result-object v0
 
     .line 67
-    iget-object v1, p0, Lcom/android/settings/MiuiLocalePicker;->rg:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/MiuiLocalePicker;->rg:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -270,15 +270,15 @@
     if-nez v1, :cond_0
 
     .line 68
-    iput-object v0, p0, Lcom/android/settings/MiuiLocalePicker;->rg:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/MiuiLocalePicker;->rg:Ljava/lang/String;
 
     .line 69
-    iget-object v0, p0, Lcom/android/settings/MiuiLocalePicker;->mk:Landroid/widget/ArrayAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiLocalePicker;->mk:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v0}, Landroid/widget/ArrayAdapter;->notifyDataSetChanged()V
 
     .line 70
-    iget-object v0, p0, Lcom/android/settings/MiuiLocalePicker;->mk:Landroid/widget/ArrayAdapter;
+    iget-object v0, p0, Lcom/android/vendorsettings/MiuiLocalePicker;->mk:Landroid/widget/ArrayAdapter;
 
     invoke-virtual {v0, p3}, Landroid/widget/ArrayAdapter;->getItem(I)Ljava/lang/Object;
 
@@ -290,7 +290,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiLocalePicker;->onLocaleSelected(Ljava/util/Locale;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/MiuiLocalePicker;->onLocaleSelected(Ljava/util/Locale;)V
 
     .line 72
     :cond_0

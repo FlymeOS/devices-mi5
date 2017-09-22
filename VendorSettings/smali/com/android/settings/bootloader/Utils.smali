@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bootloader/Utils;
+.class Lcom/android/vendorsettings/bootloader/Utils;
 .super Ljava/lang/Object;
 .source "Utils.java"
 
@@ -180,7 +180,7 @@
 
     .prologue
     .line 80
-    invoke-static {p0}, Lcom/android/settings/bootloader/Utils;->aD(Landroid/content/Context;)Landroid/accounts/Account;
+    invoke-static {p0}, Lcom/android/vendorsettings/bootloader/Utils;->aD(Landroid/content/Context;)Landroid/accounts/Account;
 
     move-result-object v0
 
@@ -202,7 +202,7 @@
 
     .prologue
     .line 84
-    invoke-static {p0}, Lcom/android/settings/bootloader/Utils;->aD(Landroid/content/Context;)Landroid/accounts/Account;
+    invoke-static {p0}, Lcom/android/vendorsettings/bootloader/Utils;->aD(Landroid/content/Context;)Landroid/accounts/Account;
 
     move-result-object v0
 
@@ -266,7 +266,7 @@
 
     .line 150
     .line 151
-    invoke-static {p0}, Lcom/android/settings/bootloader/Utils;->aD(Landroid/content/Context;)Landroid/accounts/Account;
+    invoke-static {p0}, Lcom/android/vendorsettings/bootloader/Utils;->aD(Landroid/content/Context;)Landroid/accounts/Account;
 
     move-result-object v1
 
@@ -274,11 +274,11 @@
     if-nez v1, :cond_0
 
     .line 153
-    new-instance v0, Lcom/android/settings/bootloader/Utils$AccountExcepiton;
+    new-instance v0, Lcom/android/vendorsettings/bootloader/Utils$AccountExcepiton;
 
     const-string v1, "not found xiaomi account"
 
-    invoke-direct {v0, v1}, Lcom/android/settings/bootloader/Utils$AccountExcepiton;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/bootloader/Utils$AccountExcepiton;-><init>(Ljava/lang/String;)V
 
     throw v0
 
@@ -363,7 +363,7 @@
     move-result-object v0
 
     .line 173
-    invoke-static {p0}, Lcom/android/settings/bootloader/Utils;->aD(Landroid/content/Context;)Landroid/accounts/Account;
+    invoke-static {p0}, Lcom/android/vendorsettings/bootloader/Utils;->aD(Landroid/content/Context;)Landroid/accounts/Account;
 
     move-result-object v1
 
@@ -371,11 +371,11 @@
     if-nez v1, :cond_0
 
     .line 175
-    new-instance v0, Lcom/android/settings/bootloader/Utils$AccountExcepiton;
+    new-instance v0, Lcom/android/vendorsettings/bootloader/Utils$AccountExcepiton;
 
     const-string v1, "not found xiaomi account"
 
-    invoke-direct {v0, v1}, Lcom/android/settings/bootloader/Utils$AccountExcepiton;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/bootloader/Utils$AccountExcepiton;-><init>(Ljava/lang/String;)V
 
     throw v0
 

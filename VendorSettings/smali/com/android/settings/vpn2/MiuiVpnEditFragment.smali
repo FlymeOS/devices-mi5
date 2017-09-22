@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/vpn2/MiuiVpnEditFragment;
-.super Lcom/android/settings/BaseEditFragment;
+.class public Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;
+.super Lcom/android/vendorsettings/BaseEditFragment;
 .source "MiuiVpnEditFragment.java"
 
 # interfaces
@@ -56,14 +56,14 @@
 
     .prologue
     .line 40
-    invoke-direct {p0}, Lcom/android/settings/BaseEditFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/BaseEditFragment;-><init>()V
 
     .line 47
     invoke-static {}, Landroid/security/KeyStore;->getInstance()Landroid/security/KeyStore;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->dt:Landroid/security/KeyStore;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->dt:Landroid/security/KeyStore;
 
     return-void
 .end method
@@ -77,7 +77,7 @@
     const/4 v5, 0x0
 
     .line 358
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -88,7 +88,7 @@
 
     .line 360
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->dt:Landroid/security/KeyStore;
+    iget-object v1, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->dt:Landroid/security/KeyStore;
 
     invoke-virtual {v1, p2}, Landroid/security/KeyStore;->list(Ljava/lang/String;)[Ljava/lang/String;
 
@@ -204,7 +204,7 @@
     if-nez p1, :cond_2
 
     .line 304
-    iget-object v2, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avl:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avl:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -216,7 +216,7 @@
 
     if-eqz v2, :cond_1
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avm:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avm:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -242,7 +242,7 @@
 
     .line 306
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->mName:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->mName:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -254,7 +254,7 @@
 
     if-eqz v2, :cond_3
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avk:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avk:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -266,7 +266,7 @@
 
     if-eqz v2, :cond_3
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avo:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avo:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -276,13 +276,13 @@
 
     move-result-object v2
 
-    invoke-direct {p0, v2, v1}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->g(Ljava/lang/String;Z)Z
+    invoke-direct {p0, v2, v1}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->g(Ljava/lang/String;Z)Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avp:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avp:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -292,7 +292,7 @@
 
     move-result-object v2
 
-    invoke-direct {p0, v2, v0}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->g(Ljava/lang/String;Z)Z
+    invoke-direct {p0, v2, v0}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->g(Ljava/lang/String;Z)Z
 
     move-result v2
 
@@ -306,7 +306,7 @@
 
     .line 311
     :cond_4
-    iget-object v2, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avl:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avl:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -318,7 +318,7 @@
 
     if-eqz v2, :cond_5
 
-    iget-object v2, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avm:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avm:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -338,7 +338,7 @@
 
     .line 314
     :cond_6
-    iget-object v2, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avj:Landroid/widget/Spinner;
+    iget-object v2, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avj:Landroid/widget/Spinner;
 
     invoke-virtual {v2}, Landroid/widget/Spinner;->getSelectedItemPosition()I
 
@@ -353,7 +353,7 @@
 
     .line 321
     :pswitch_1
-    iget-object v2, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avt:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avt:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -371,7 +371,7 @@
 
     .line 325
     :pswitch_2
-    iget-object v2, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avu:Landroid/widget/Spinner;
+    iget-object v2, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avu:Landroid/widget/Spinner;
 
     invoke-virtual {v2}, Landroid/widget/Spinner;->getSelectedItemPosition()I
 
@@ -410,12 +410,12 @@
     const/4 v2, 0x0
 
     .line 257
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->getView()Landroid/view/View;
 
     move-result-object v0
 
     .line 259
-    iget-object v1, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avq:Landroid/widget/CheckBox;
+    iget-object v1, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avq:Landroid/widget/CheckBox;
 
     invoke-virtual {v1, v3}, Landroid/widget/CheckBox;->setVisibility(I)V
 
@@ -485,7 +485,7 @@
 
     .line 271
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avq:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avq:Landroid/widget/CheckBox;
 
     invoke-virtual {v0, v2}, Landroid/widget/CheckBox;->setVisibility(I)V
 
@@ -809,13 +809,13 @@
 
     .prologue
     .line 226
-    iget-boolean v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avi:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avi:Z
 
-    invoke-direct {p0, v0}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->bk(Z)Z
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->bk(Z)Z
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->h(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->h(Z)V
 
     .line 227
     return-void
@@ -834,7 +834,7 @@
 
     .prologue
     .line 446
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->vH()Lcom/android/internal/net/VpnProfile;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->vH()Lcom/android/internal/net/VpnProfile;
 
     move-result-object v0
 
@@ -865,7 +865,7 @@
     invoke-virtual {v1, v0, p1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 451
-    invoke-virtual {p0, v1}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->b(Landroid/os/Bundle;)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->b(Landroid/os/Bundle;)V
 
     .line 452
     return-void
@@ -876,7 +876,7 @@
 
     .prologue
     .line 440
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->mArgs:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->mArgs:Landroid/os/Bundle;
 
     const-string v1, "profile_add"
 
@@ -892,7 +892,7 @@
     const v0, 0x7f0c092c
 
     :goto_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -912,7 +912,7 @@
     check-cast p1, Landroid/widget/CheckBox;
 
     .line 240
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->getView()Landroid/view/View;
 
     move-result-object v0
 
@@ -938,7 +938,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avH:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avH:Z
 
     .line 242
     return-void
@@ -955,7 +955,7 @@
 
     .prologue
     .line 72
-    invoke-super {p0, p1}, Lcom/android/settings/BaseEditFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/BaseEditFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 73
     if-eqz p1, :cond_0
@@ -967,18 +967,18 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avH:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avH:Z
 
     .line 76
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->mArgs:Landroid/os/Bundle;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->mArgs:Landroid/os/Bundle;
 
     .line 77
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->mArgs:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->mArgs:Landroid/os/Bundle;
 
     const-string v1, "profile"
 
@@ -987,7 +987,7 @@
     move-result-object v0
 
     .line 78
-    iget-object v1, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->mArgs:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->mArgs:Landroid/os/Bundle;
 
     const-string v2, "profile_key"
 
@@ -1020,13 +1020,13 @@
 
     invoke-direct {v0, v1}, Lcom/android/internal/net/VpnProfile;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     .line 88
     :goto_1
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avi:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avi:Z
 
     goto :goto_0
 
@@ -1036,7 +1036,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     goto :goto_1
 .end method
@@ -1046,22 +1046,22 @@
 
     .prologue
     .line 246
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avj:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avj:Landroid/widget/Spinner;
 
     if-ne p1, v0, :cond_0
 
     .line 247
-    invoke-direct {p0, p3}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->dg(I)V
+    invoke-direct {p0, p3}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->dg(I)V
 
     .line 249
     :cond_0
-    iget-boolean v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avi:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avi:Z
 
-    invoke-direct {p0, v0}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->bk(Z)Z
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->bk(Z)Z
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->h(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->h(Z)V
 
     .line 250
     return-void
@@ -1080,12 +1080,12 @@
 
     .prologue
     .line 93
-    invoke-super {p0, p1}, Lcom/android/settings/BaseEditFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/BaseEditFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 94
     const-string v0, "show_options_flag"
 
-    iget-boolean v1, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avH:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avH:Z
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
@@ -1098,16 +1098,16 @@
 
     .prologue
     .line 220
-    invoke-super {p0}, Lcom/android/settings/BaseEditFragment;->onStart()V
+    invoke-super {p0}, Lcom/android/vendorsettings/BaseEditFragment;->onStart()V
 
     .line 221
-    iget-boolean v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avi:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avi:Z
 
-    invoke-direct {p0, v0}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->bk(Z)Z
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->bk(Z)Z
 
     move-result v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->h(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->h(Z)V
 
     .line 222
     return-void
@@ -1130,10 +1130,10 @@
     const/4 v1, 0x0
 
     .line 106
-    invoke-super {p0, p1, p2}, Lcom/android/settings/BaseEditFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/vendorsettings/BaseEditFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 107
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->mArgs:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->mArgs:Landroid/os/Bundle;
 
     const-string v3, "profile_key"
 
@@ -1149,7 +1149,7 @@
     if-eqz v0, :cond_1
 
     .line 109
-    invoke-virtual {p0}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->finish()V
 
     .line 216
     :cond_0
@@ -1166,7 +1166,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->mName:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->mName:Landroid/widget/TextView;
 
     .line 115
     const v0, 0x7f13014f
@@ -1177,7 +1177,7 @@
 
     check-cast v0, Landroid/widget/Spinner;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avj:Landroid/widget/Spinner;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avj:Landroid/widget/Spinner;
 
     .line 116
     const v0, 0x7f13030e
@@ -1188,7 +1188,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avk:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avk:Landroid/widget/TextView;
 
     .line 117
     const v0, 0x7f130326
@@ -1199,7 +1199,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avl:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avl:Landroid/widget/TextView;
 
     .line 118
     const v0, 0x7f13021a
@@ -1210,7 +1210,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avm:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avm:Landroid/widget/TextView;
 
     .line 119
     const v0, 0x7f130322
@@ -1221,7 +1221,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avn:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avn:Landroid/widget/TextView;
 
     .line 120
     const v0, 0x7f130323
@@ -1232,7 +1232,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avo:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avo:Landroid/widget/TextView;
 
     .line 121
     const v0, 0x7f130324
@@ -1243,7 +1243,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avp:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avp:Landroid/widget/TextView;
 
     .line 122
     const v0, 0x7f13030f
@@ -1254,7 +1254,7 @@
 
     check-cast v0, Landroid/widget/CheckBox;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avq:Landroid/widget/CheckBox;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avq:Landroid/widget/CheckBox;
 
     .line 123
     const v0, 0x7f130313
@@ -1265,7 +1265,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avr:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avr:Landroid/widget/TextView;
 
     .line 124
     const v0, 0x7f130317
@@ -1276,7 +1276,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avs:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avs:Landroid/widget/TextView;
 
     .line 125
     const v0, 0x7f13031a
@@ -1287,7 +1287,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avt:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avt:Landroid/widget/TextView;
 
     .line 126
     const v0, 0x7f13031c
@@ -1298,7 +1298,7 @@
 
     check-cast v0, Landroid/widget/Spinner;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avu:Landroid/widget/Spinner;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avu:Landroid/widget/Spinner;
 
     .line 127
     const v0, 0x7f13031e
@@ -1309,7 +1309,7 @@
 
     check-cast v0, Landroid/widget/Spinner;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avv:Landroid/widget/Spinner;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avv:Landroid/widget/Spinner;
 
     .line 128
     const v0, 0x7f13031f
@@ -1320,167 +1320,167 @@
 
     check-cast v0, Landroid/widget/Spinner;
 
-    iput-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avw:Landroid/widget/Spinner;
+    iput-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avw:Landroid/widget/Spinner;
 
     .line 131
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->mName:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->mName:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget-object v3, v3, Lcom/android/internal/net/VpnProfile;->name:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 132
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avj:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avj:Landroid/widget/Spinner;
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget v3, v3, Lcom/android/internal/net/VpnProfile;->type:I
 
     invoke-virtual {v0, v3}, Landroid/widget/Spinner;->setSelection(I)V
 
     .line 133
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avk:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avk:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget-object v3, v3, Lcom/android/internal/net/VpnProfile;->server:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 134
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avl:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avl:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget-object v3, v3, Lcom/android/internal/net/VpnProfile;->username:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 135
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avm:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avm:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget-object v3, v3, Lcom/android/internal/net/VpnProfile;->password:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 136
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avn:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avn:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget-object v3, v3, Lcom/android/internal/net/VpnProfile;->searchDomains:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 137
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avo:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avo:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget-object v3, v3, Lcom/android/internal/net/VpnProfile;->dnsServers:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 138
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avp:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avp:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget-object v3, v3, Lcom/android/internal/net/VpnProfile;->routes:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 139
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avq:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avq:Landroid/widget/CheckBox;
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget-boolean v3, v3, Lcom/android/internal/net/VpnProfile;->mppe:Z
 
     invoke-virtual {v0, v3}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     .line 140
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avr:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avr:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget-object v3, v3, Lcom/android/internal/net/VpnProfile;->l2tpSecret:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 141
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avs:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avs:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget-object v3, v3, Lcom/android/internal/net/VpnProfile;->ipsecIdentifier:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 142
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avt:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avt:Landroid/widget/TextView;
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget-object v3, v3, Lcom/android/internal/net/VpnProfile;->ipsecSecret:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 143
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avu:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avu:Landroid/widget/Spinner;
 
     const-string v3, "USRPKEY_"
 
-    iget-object v4, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v4, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget-object v4, v4, Lcom/android/internal/net/VpnProfile;->ipsecUserCert:Ljava/lang/String;
 
-    invoke-direct {p0, v0, v3, v1, v4}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->a(Landroid/widget/Spinner;Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {p0, v0, v3, v1, v4}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->a(Landroid/widget/Spinner;Ljava/lang/String;ILjava/lang/String;)V
 
     .line 145
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avv:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avv:Landroid/widget/Spinner;
 
     const-string v3, "CACERT_"
 
     const v4, 0x7f0c091f
 
-    iget-object v5, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v5, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget-object v5, v5, Lcom/android/internal/net/VpnProfile;->ipsecCaCert:Ljava/lang/String;
 
-    invoke-direct {p0, v0, v3, v4, v5}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->a(Landroid/widget/Spinner;Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {p0, v0, v3, v4, v5}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->a(Landroid/widget/Spinner;Ljava/lang/String;ILjava/lang/String;)V
 
     .line 147
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avw:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avw:Landroid/widget/Spinner;
 
     const-string v3, "USRCERT_"
 
     const v4, 0x7f0c0920
 
-    iget-object v5, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v5, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget-object v5, v5, Lcom/android/internal/net/VpnProfile;->ipsecServerCert:Ljava/lang/String;
 
-    invoke-direct {p0, v0, v3, v4, v5}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->a(Landroid/widget/Spinner;Ljava/lang/String;ILjava/lang/String;)V
+    invoke-direct {p0, v0, v3, v4, v5}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->a(Landroid/widget/Spinner;Ljava/lang/String;ILjava/lang/String;)V
 
     .line 151
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->mName:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->mName:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 152
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avj:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avj:Landroid/widget/Spinner;
 
     invoke-virtual {v0, p0}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 153
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avj:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avj:Landroid/widget/Spinner;
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avj:Landroid/widget/Spinner;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avj:Landroid/widget/Spinner;
 
     invoke-virtual {v3}, Landroid/widget/Spinner;->getPrompt()Ljava/lang/CharSequence;
 
@@ -1489,44 +1489,44 @@
     invoke-virtual {v0, v3}, Landroid/widget/Spinner;->setPrompt(Ljava/lang/CharSequence;)V
 
     .line 154
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avk:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avk:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 155
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avl:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avl:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 156
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avm:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avm:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 157
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avo:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avo:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 158
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avp:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avp:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 159
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avt:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avt:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 160
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avu:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avu:Landroid/widget/Spinner;
 
     invoke-virtual {v0, p0}, Landroid/widget/Spinner;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
     .line 161
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avu:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avu:Landroid/widget/Spinner;
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avu:Landroid/widget/Spinner;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avu:Landroid/widget/Spinner;
 
     invoke-virtual {v3}, Landroid/widget/Spinner;->getPrompt()Ljava/lang/CharSequence;
 
@@ -1535,9 +1535,9 @@
     invoke-virtual {v0, v3}, Landroid/widget/Spinner;->setPrompt(Ljava/lang/CharSequence;)V
 
     .line 162
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avv:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avv:Landroid/widget/Spinner;
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avv:Landroid/widget/Spinner;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avv:Landroid/widget/Spinner;
 
     invoke-virtual {v3}, Landroid/widget/Spinner;->getPrompt()Ljava/lang/CharSequence;
 
@@ -1546,9 +1546,9 @@
     invoke-virtual {v0, v3}, Landroid/widget/Spinner;->setPrompt(Ljava/lang/CharSequence;)V
 
     .line 163
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avw:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avw:Landroid/widget/Spinner;
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avw:Landroid/widget/Spinner;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avw:Landroid/widget/Spinner;
 
     invoke-virtual {v3}, Landroid/widget/Spinner;->getPrompt()Ljava/lang/CharSequence;
 
@@ -1557,12 +1557,12 @@
     invoke-virtual {v0, v3}, Landroid/widget/Spinner;->setPrompt(Ljava/lang/CharSequence;)V
 
     .line 166
-    invoke-direct {p0, v2}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->bk(Z)Z
+    invoke-direct {p0, v2}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->bk(Z)Z
 
     move-result v0
 
     .line 167
-    iget-boolean v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avi:Z
+    iget-boolean v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avi:Z
 
     if-nez v3, :cond_2
 
@@ -1572,10 +1572,10 @@
     move v0, v2
 
     :goto_1
-    iput-boolean v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avi:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avi:Z
 
     .line 169
-    iget-boolean v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avi:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avi:Z
 
     if-eqz v0, :cond_4
 
@@ -1595,7 +1595,7 @@
 
     move-result-object v3
 
-    iget-boolean v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avH:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avH:Z
 
     if-eqz v0, :cond_6
 
@@ -1605,11 +1605,11 @@
     invoke-virtual {v3, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 177
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget v0, v0, Lcom/android/internal/net/VpnProfile;->type:I
 
-    invoke-direct {p0, v0}, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->dg(I)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->dg(I)V
 
     .line 179
     const v0, 0x7f130320
@@ -1622,7 +1622,7 @@
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 182
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget-object v3, v3, Lcom/android/internal/net/VpnProfile;->searchDomains:Ljava/lang/String;
 
@@ -1632,7 +1632,7 @@
 
     if-eqz v3, :cond_3
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget-object v3, v3, Lcom/android/internal/net/VpnProfile;->dnsServers:Ljava/lang/String;
 
@@ -1642,7 +1642,7 @@
 
     if-eqz v3, :cond_3
 
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget-object v3, v3, Lcom/android/internal/net/VpnProfile;->routes:Ljava/lang/String;
 
@@ -1667,7 +1667,7 @@
     check-cast v0, Landroid/widget/Button;
 
     .line 189
-    iget-object v3, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->mArgs:Landroid/os/Bundle;
+    iget-object v3, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->mArgs:Landroid/os/Bundle;
 
     const-string v4, "profile_add"
 
@@ -1682,9 +1682,9 @@
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
 
     .line 192
-    new-instance v1, Lcom/android/settings/vpn2/MiuiVpnEditFragment$1;
+    new-instance v1, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/vpn2/MiuiVpnEditFragment$1;-><init>(Lcom/android/settings/vpn2/MiuiVpnEditFragment;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment$1;-><init>(Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -1710,14 +1710,14 @@
     .line 392
     new-instance v1, Lcom/android/internal/net/VpnProfile;
 
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avh:Lcom/android/internal/net/VpnProfile;
 
     iget-object v0, v0, Lcom/android/internal/net/VpnProfile;->key:Ljava/lang/String;
 
     invoke-direct {v1, v0}, Lcom/android/internal/net/VpnProfile;-><init>(Ljava/lang/String;)V
 
     .line 393
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->mName:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->mName:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -1730,7 +1730,7 @@
     iput-object v0, v1, Lcom/android/internal/net/VpnProfile;->name:Ljava/lang/String;
 
     .line 394
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avj:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avj:Landroid/widget/Spinner;
 
     invoke-virtual {v0}, Landroid/widget/Spinner;->getSelectedItemPosition()I
 
@@ -1739,7 +1739,7 @@
     iput v0, v1, Lcom/android/internal/net/VpnProfile;->type:I
 
     .line 395
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avk:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avk:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -1756,7 +1756,7 @@
     iput-object v0, v1, Lcom/android/internal/net/VpnProfile;->server:Ljava/lang/String;
 
     .line 396
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avl:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avl:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -1769,7 +1769,7 @@
     iput-object v0, v1, Lcom/android/internal/net/VpnProfile;->username:Ljava/lang/String;
 
     .line 397
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avm:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avm:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -1782,7 +1782,7 @@
     iput-object v0, v1, Lcom/android/internal/net/VpnProfile;->password:Ljava/lang/String;
 
     .line 398
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avn:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avn:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -1799,7 +1799,7 @@
     iput-object v0, v1, Lcom/android/internal/net/VpnProfile;->searchDomains:Ljava/lang/String;
 
     .line 399
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avo:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avo:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -1816,7 +1816,7 @@
     iput-object v0, v1, Lcom/android/internal/net/VpnProfile;->dnsServers:Ljava/lang/String;
 
     .line 400
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avp:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avp:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -1849,7 +1849,7 @@
 
     .line 405
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avq:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avq:Landroid/widget/CheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
 
@@ -1861,7 +1861,7 @@
 
     .line 409
     :pswitch_1
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avr:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avr:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -1875,7 +1875,7 @@
 
     .line 412
     :pswitch_2
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avs:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avs:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -1888,7 +1888,7 @@
     iput-object v0, v1, Lcom/android/internal/net/VpnProfile;->ipsecIdentifier:Ljava/lang/String;
 
     .line 413
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avt:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avt:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -1904,7 +1904,7 @@
 
     .line 417
     :pswitch_3
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avr:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avr:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
@@ -1918,7 +1918,7 @@
 
     .line 420
     :pswitch_4
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avu:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avu:Landroid/widget/Spinner;
 
     invoke-virtual {v0}, Landroid/widget/Spinner;->getSelectedItemPosition()I
 
@@ -1927,7 +1927,7 @@
     if-eqz v0, :cond_1
 
     .line 421
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avu:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avu:Landroid/widget/Spinner;
 
     invoke-virtual {v0}, Landroid/widget/Spinner;->getSelectedItem()Ljava/lang/Object;
 
@@ -1940,7 +1940,7 @@
     .line 425
     :cond_1
     :pswitch_5
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avv:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avv:Landroid/widget/Spinner;
 
     invoke-virtual {v0}, Landroid/widget/Spinner;->getSelectedItemPosition()I
 
@@ -1949,7 +1949,7 @@
     if-eqz v0, :cond_2
 
     .line 426
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avv:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avv:Landroid/widget/Spinner;
 
     invoke-virtual {v0}, Landroid/widget/Spinner;->getSelectedItem()Ljava/lang/Object;
 
@@ -1961,7 +1961,7 @@
 
     .line 428
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avw:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avw:Landroid/widget/Spinner;
 
     invoke-virtual {v0}, Landroid/widget/Spinner;->getSelectedItemPosition()I
 
@@ -1970,7 +1970,7 @@
     if-eqz v0, :cond_0
 
     .line 429
-    iget-object v0, p0, Lcom/android/settings/vpn2/MiuiVpnEditFragment;->avw:Landroid/widget/Spinner;
+    iget-object v0, p0, Lcom/android/vendorsettings/vpn2/MiuiVpnEditFragment;->avw:Landroid/widget/Spinner;
 
     invoke-virtual {v0}, Landroid/widget/Spinner;->getSelectedItem()Ljava/lang/Object;
 

@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/wifi/openwifi/n;
+.class public interface abstract Lcom/android/vendorsettings/wifi/openwifi/n;
 .super Ljava/lang/Object;
 .source "OpenWifiController.java"
 

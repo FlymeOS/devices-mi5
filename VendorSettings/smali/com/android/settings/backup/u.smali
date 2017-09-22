@@ -1,3 +1,3 @@
-.class synthetic Lcom/android/settings/backup/u;
+.class synthetic Lcom/android/vendorsettings/backup/u;
 .super Ljava/lang/Object;
 .source "SettingsAgent.java"

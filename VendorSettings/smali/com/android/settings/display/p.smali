@@ -1,19 +1,19 @@
-.class Lcom/android/settings/display/p;
+.class Lcom/android/vendorsettings/display/p;
 .super Landroid/animation/AnimatorListenerAdapter;
 .source "HandyModeGuideView.java"
 
 
 # instance fields
-.field final synthetic Yy:Lcom/android/settings/display/HandyModeGuideView;
+.field final synthetic Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/display/HandyModeGuideView;)V
+.method constructor <init>(Lcom/android/vendorsettings/display/HandyModeGuideView;)V
     .locals 0
 
     .prologue
     .line 52
-    iput-object p1, p0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iput-object p1, p0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -27,13 +27,13 @@
 
     .prologue
     .line 55
-    iget-object v0, p0, Lcom/android/settings/display/p;->Yy:Lcom/android/settings/display/HandyModeGuideView;
+    iget-object v0, p0, Lcom/android/vendorsettings/display/p;->Yy:Lcom/android/vendorsettings/display/HandyModeGuideView;
 
-    new-instance v1, Lcom/android/settings/display/q;
+    new-instance v1, Lcom/android/vendorsettings/display/q;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/display/q;-><init>(Lcom/android/settings/display/p;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/display/q;-><init>(Lcom/android/vendorsettings/display/p;)V
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/display/HandyModeGuideView;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/display/HandyModeGuideView;->post(Ljava/lang/Runnable;)Z
 
     .line 86
     return-void

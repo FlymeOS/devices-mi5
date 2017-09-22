@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/openwifi/j;
+.class Lcom/android/vendorsettings/wifi/openwifi/j;
 .super Ljava/lang/Object;
 .source "FreeWifiLogin.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aFN:Lcom/android/settings/wifi/openwifi/FreeWifiLogin;
+.field final synthetic aFN:Lcom/android/vendorsettings/wifi/openwifi/FreeWifiLogin;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/openwifi/FreeWifiLogin;)V
     .locals 0
 
     .prologue
     .line 329
-    iput-object p1, p0, Lcom/android/settings/wifi/openwifi/j;->aFN:Lcom/android/settings/wifi/openwifi/FreeWifiLogin;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/openwifi/j;->aFN:Lcom/android/vendorsettings/wifi/openwifi/FreeWifiLogin;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,37 +30,37 @@
 
     .prologue
     .line 336
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/j;->aFN:Lcom/android/settings/wifi/openwifi/FreeWifiLogin;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/openwifi/j;->aFN:Lcom/android/vendorsettings/wifi/openwifi/FreeWifiLogin;
 
-    check-cast p2, Lcom/android/settings/wifi/F;
+    check-cast p2, Lcom/android/vendorsettings/wifi/F;
 
-    invoke-virtual {p2}, Lcom/android/settings/wifi/F;->xy()Lcom/android/settings/wifi/MiuiWifiService;
+    invoke-virtual {p2}, Lcom/android/vendorsettings/wifi/F;->xy()Lcom/android/vendorsettings/wifi/MiuiWifiService;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->a(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;Lcom/android/settings/wifi/MiuiWifiService;)Lcom/android/settings/wifi/MiuiWifiService;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/wifi/openwifi/FreeWifiLogin;->a(Lcom/android/vendorsettings/wifi/openwifi/FreeWifiLogin;Lcom/android/vendorsettings/wifi/MiuiWifiService;)Lcom/android/vendorsettings/wifi/MiuiWifiService;
 
     .line 337
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/j;->aFN:Lcom/android/settings/wifi/openwifi/FreeWifiLogin;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/openwifi/j;->aFN:Lcom/android/vendorsettings/wifi/openwifi/FreeWifiLogin;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->a(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;)Lcom/android/settings/wifi/MiuiWifiService;
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/openwifi/FreeWifiLogin;->a(Lcom/android/vendorsettings/wifi/openwifi/FreeWifiLogin;)Lcom/android/vendorsettings/wifi/MiuiWifiService;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/wifi/openwifi/j;->aFN:Lcom/android/settings/wifi/openwifi/FreeWifiLogin;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/openwifi/j;->aFN:Lcom/android/vendorsettings/wifi/openwifi/FreeWifiLogin;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/wifi/MiuiWifiService;->a(Lcom/android/settings/wifi/openwifi/n;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/wifi/MiuiWifiService;->a(Lcom/android/vendorsettings/wifi/openwifi/n;)V
 
     .line 338
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/j;->aFN:Lcom/android/settings/wifi/openwifi/FreeWifiLogin;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/openwifi/j;->aFN:Lcom/android/vendorsettings/wifi/openwifi/FreeWifiLogin;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/openwifi/j;->aFN:Lcom/android/settings/wifi/openwifi/FreeWifiLogin;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/openwifi/j;->aFN:Lcom/android/vendorsettings/wifi/openwifi/FreeWifiLogin;
 
-    invoke-static {v1}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->d(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;)Ljava/lang/Runnable;
+    invoke-static {v1}, Lcom/android/vendorsettings/wifi/openwifi/FreeWifiLogin;->d(Lcom/android/vendorsettings/wifi/openwifi/FreeWifiLogin;)Ljava/lang/Runnable;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->runOnUiThread(Ljava/lang/Runnable;)V
+    invoke-virtual {v0, v1}, Lcom/android/vendorsettings/wifi/openwifi/FreeWifiLogin;->runOnUiThread(Ljava/lang/Runnable;)V
 
     .line 339
     const-string v0, "com.android.settings.wifi.openwifi.FreeWifiLogin"
@@ -78,11 +78,11 @@
 
     .prologue
     .line 347
-    iget-object v0, p0, Lcom/android/settings/wifi/openwifi/j;->aFN:Lcom/android/settings/wifi/openwifi/FreeWifiLogin;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/openwifi/j;->aFN:Lcom/android/vendorsettings/wifi/openwifi/FreeWifiLogin;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/wifi/openwifi/FreeWifiLogin;->a(Lcom/android/settings/wifi/openwifi/FreeWifiLogin;Lcom/android/settings/wifi/MiuiWifiService;)Lcom/android/settings/wifi/MiuiWifiService;
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/wifi/openwifi/FreeWifiLogin;->a(Lcom/android/vendorsettings/wifi/openwifi/FreeWifiLogin;Lcom/android/vendorsettings/wifi/MiuiWifiService;)Lcom/android/vendorsettings/wifi/MiuiWifiService;
 
     .line 348
     const-string v0, "com.android.settings.wifi.openwifi.FreeWifiLogin"

@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/eS;
+.class final Lcom/android/vendorsettings/eS;
 .super Ljava/lang/Object;
 .source "MiuiSecurityCommonSettings.java"
 
@@ -18,9 +18,9 @@
 
     .prologue
     .line 53
-    iput p1, p0, Lcom/android/settings/eS;->rU:I
+    iput p1, p0, Lcom/android/vendorsettings/eS;->rU:I
 
-    iput-object p2, p0, Lcom/android/settings/eS;->val$fragment:Landroid/app/Fragment;
+    iput-object p2, p0, Lcom/android/vendorsettings/eS;->val$fragment:Landroid/app/Fragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,26 +41,26 @@
     .line 57
     const-string v0, "miui_security_fragment_result"
 
-    iget v2, p0, Lcom/android/settings/eS;->rU:I
+    iget v2, p0, Lcom/android/vendorsettings/eS;->rU:I
 
     invoke-virtual {v1, v0, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 58
-    iget-object v0, p0, Lcom/android/settings/eS;->val$fragment:Landroid/app/Fragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/eS;->val$fragment:Landroid/app/Fragment;
 
     invoke-virtual {v0}, Landroid/app/Fragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/SettingsPreferenceFragment;
+    check-cast v0, Lcom/android/vendorsettings/SettingsPreferenceFragment;
 
-    iget-object v2, p0, Lcom/android/settings/eS;->val$fragment:Landroid/app/Fragment;
+    iget-object v2, p0, Lcom/android/vendorsettings/eS;->val$fragment:Landroid/app/Fragment;
 
     invoke-virtual {v2}, Landroid/app/Fragment;->getTargetRequestCode()I
 
     move-result v2
 
-    invoke-virtual {v0, v2, v1}, Lcom/android/settings/SettingsPreferenceFragment;->a(ILandroid/os/Bundle;)V
+    invoke-virtual {v0, v2, v1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->a(ILandroid/os/Bundle;)V
 
     .line 59
     return-void

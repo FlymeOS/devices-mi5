@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/I;
+.class public Lcom/android/vendorsettings/I;
 .super Ljava/lang/Object;
 .source "AppWidgetLoader.java"
 
@@ -6,13 +6,13 @@
 # instance fields
 .field private S:Landroid/appwidget/AppWidgetManager;
 
-.field bq:Lcom/android/settings/K;
+.field bq:Lcom/android/vendorsettings/K;
 
 .field private mContext:Landroid/content/Context;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;Lcom/android/settings/K;)V
+.method public constructor <init>(Landroid/content/Context;Landroid/appwidget/AppWidgetManager;Lcom/android/vendorsettings/K;)V
     .locals 0
 
     .prologue
@@ -20,13 +20,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 47
-    iput-object p1, p0, Lcom/android/settings/I;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/I;->mContext:Landroid/content/Context;
 
     .line 48
-    iput-object p2, p0, Lcom/android/settings/I;->S:Landroid/appwidget/AppWidgetManager;
+    iput-object p2, p0, Lcom/android/vendorsettings/I;->S:Landroid/appwidget/AppWidgetManager;
 
     .line 49
-    iput-object p3, p0, Lcom/android/settings/I;->bq:Lcom/android/settings/K;
+    iput-object p3, p0, Lcom/android/vendorsettings/I;->bq:Lcom/android/vendorsettings/K;
 
     .line 50
     return-void
@@ -39,7 +39,7 @@
 
     .prologue
     .line 179
-    iget-object v0, p0, Lcom/android/settings/I;->S:Landroid/appwidget/AppWidgetManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/I;->S:Landroid/appwidget/AppWidgetManager;
 
     invoke-virtual {v0, p2}, Landroid/appwidget/AppWidgetManager;->getInstalledProviders(I)Ljava/util/List;
 
@@ -56,7 +56,7 @@
 
     move v4, p2
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/I;->a(Ljava/util/List;Ljava/util/List;Ljava/util/List;IZ)V
+    invoke-virtual/range {v0 .. v5}, Lcom/android/vendorsettings/I;->a(Ljava/util/List;Ljava/util/List;Ljava/util/List;IZ)V
 
     .line 182
     return-void
@@ -105,7 +105,7 @@
 
     move-object v3, p1
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/I;->a(Ljava/util/List;Ljava/util/List;Ljava/util/List;IZ)V
+    invoke-virtual/range {v0 .. v5}, Lcom/android/vendorsettings/I;->a(Ljava/util/List;Ljava/util/List;Ljava/util/List;IZ)V
 
     .line 107
     return-void
@@ -364,9 +364,9 @@
 
     .line 127
     :cond_2
-    iget-object v4, p0, Lcom/android/settings/I;->bq:Lcom/android/settings/K;
+    iget-object v4, p0, Lcom/android/vendorsettings/I;->bq:Lcom/android/vendorsettings/K;
 
-    iget-object v5, p0, Lcom/android/settings/I;->mContext:Landroid/content/Context;
+    iget-object v5, p0, Lcom/android/vendorsettings/I;->mContext:Landroid/content/Context;
 
     if-eqz p2, :cond_3
 
@@ -377,11 +377,11 @@
     check-cast v1, Landroid/os/Bundle;
 
     :goto_2
-    invoke-interface {v4, v5, v0, v1}, Lcom/android/settings/K;->a(Landroid/content/Context;Landroid/appwidget/AppWidgetProviderInfo;Landroid/os/Bundle;)Ljava/lang/Object;
+    invoke-interface {v4, v5, v0, v1}, Lcom/android/vendorsettings/K;->a(Landroid/content/Context;Landroid/appwidget/AppWidgetProviderInfo;Landroid/os/Bundle;)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/L;
+    check-cast v0, Lcom/android/vendorsettings/L;
 
     .line 130
     invoke-interface {p3, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -421,19 +421,19 @@
     move-result v2
 
     .line 154
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/I;->a(Ljava/util/List;I)V
+    invoke-virtual {p0, v1, v2}, Lcom/android/vendorsettings/I;->a(Ljava/util/List;I)V
 
     .line 157
     if-eqz v0, :cond_0
 
     .line 158
-    invoke-virtual {p0, v1, p1}, Lcom/android/settings/I;->a(Ljava/util/List;Landroid/content/Intent;)V
+    invoke-virtual {p0, v1, p1}, Lcom/android/vendorsettings/I;->a(Ljava/util/List;Landroid/content/Intent;)V
 
     .line 160
     :cond_0
-    new-instance v2, Lcom/android/settings/J;
+    new-instance v2, Lcom/android/vendorsettings/J;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/J;-><init>(Lcom/android/settings/I;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/J;-><init>(Lcom/android/vendorsettings/I;)V
 
     invoke-static {v1, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -446,7 +446,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 169
-    invoke-virtual {p0, v0, p1}, Lcom/android/settings/I;->a(Ljava/util/List;Landroid/content/Intent;)V
+    invoke-virtual {p0, v0, p1}, Lcom/android/vendorsettings/I;->a(Ljava/util/List;Landroid/content/Intent;)V
 
     .line 170
     invoke-interface {v1, v0}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z

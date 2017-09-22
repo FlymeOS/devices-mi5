@@ -1,13 +1,13 @@
-.class public Lcom/android/settings/wifi/MiuiAddNetworkFragment;
-.super Lcom/android/settings/BaseEditFragment;
+.class public Lcom/android/vendorsettings/wifi/MiuiAddNetworkFragment;
+.super Lcom/android/vendorsettings/BaseEditFragment;
 .source "MiuiAddNetworkFragment.java"
 
 # interfaces
-.implements Lcom/android/settings/wifi/q;
+.implements Lcom/android/vendorsettings/wifi/q;
 
 
 # instance fields
-.field private aAv:Lcom/android/settings/wifi/p;
+.field private aAv:Lcom/android/vendorsettings/wifi/p;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     .prologue
     .line 15
-    invoke-direct {p0}, Lcom/android/settings/BaseEditFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/BaseEditFragment;-><init>()V
 
     return-void
 .end method
@@ -28,9 +28,9 @@
 
     .prologue
     .line 45
-    iget-object v0, p0, Lcom/android/settings/wifi/MiuiAddNetworkFragment;->aAv:Lcom/android/settings/wifi/p;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/MiuiAddNetworkFragment;->aAv:Lcom/android/vendorsettings/wifi/p;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/p;->wX()Landroid/net/wifi/WifiConfiguration;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/p;->wX()Landroid/net/wifi/WifiConfiguration;
 
     move-result-object v1
 
@@ -52,7 +52,7 @@
 
     .line 51
     :cond_0
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/MiuiAddNetworkFragment;->b(Landroid/os/Bundle;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/MiuiAddNetworkFragment;->b(Landroid/os/Bundle;)V
 
     .line 52
     return-void
@@ -80,7 +80,7 @@
 
     .prologue
     .line 35
-    invoke-virtual {p0, p1}, Lcom/android/settings/wifi/MiuiAddNetworkFragment;->h(Z)V
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/wifi/MiuiAddNetworkFragment;->h(Z)V
 
     .line 36
     return-void
@@ -93,7 +93,7 @@
     .line 40
     const v0, 0x7f0c0de5
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/wifi/MiuiAddNetworkFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/wifi/MiuiAddNetworkFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -105,17 +105,17 @@
 
     .prologue
     .line 28
-    invoke-super {p0, p1}, Lcom/android/settings/BaseEditFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/BaseEditFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 29
-    invoke-virtual {p0}, Lcom/android/settings/wifi/MiuiAddNetworkFragment;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/MiuiAddNetworkFragment;->getView()Landroid/view/View;
 
     move-result-object v2
 
     .line 30
-    new-instance v0, Lcom/android/settings/wifi/p;
+    new-instance v0, Lcom/android/vendorsettings/wifi/p;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/MiuiAddNetworkFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/MiuiAddNetworkFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -125,9 +125,9 @@
 
     move-object v5, p0
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/wifi/p;-><init>(Landroid/app/Activity;Landroid/view/View;Lcom/android/b/e/a;ZLcom/android/settings/wifi/q;)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/vendorsettings/wifi/p;-><init>(Landroid/app/Activity;Landroid/view/View;Lcom/android/b/e/a;ZLcom/android/vendorsettings/wifi/q;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/MiuiAddNetworkFragment;->aAv:Lcom/android/settings/wifi/p;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/MiuiAddNetworkFragment;->aAv:Lcom/android/vendorsettings/wifi/p;
 
     .line 31
     return-void

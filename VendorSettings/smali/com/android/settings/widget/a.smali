@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/widget/a;
+.class public interface abstract Lcom/android/vendorsettings/widget/a;
 .super Ljava/lang/Object;
 .source "ChartAxis.java"
 

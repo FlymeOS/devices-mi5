@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/privacypassword/TransparentHelper$TransparentHelperFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/privacypassword/TransparentHelper$TransparentHelperFragment;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "TransparentHelper.java"
 
 
 # instance fields
-.field private anb:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+.field private anb:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 
 
 # direct methods
@@ -13,7 +13,7 @@
 
     .prologue
     .line 38
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -38,26 +38,26 @@
     .line 75
     new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/TransparentHelper$TransparentHelperFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/privacypassword/TransparentHelper$TransparentHelperFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;
+    const-class v2, Lcom/android/vendorsettings/privacypassword/ModifyAndInstructionPrivacyPassword;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 76
-    invoke-virtual {p0, v0}, Lcom/android/settings/privacypassword/TransparentHelper$TransparentHelperFragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/privacypassword/TransparentHelper$TransparentHelperFragment;->startActivity(Landroid/content/Intent;)V
 
     .line 78
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/TransparentHelper$TransparentHelperFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/privacypassword/TransparentHelper$TransparentHelperFragment;->finish()V
 
     goto :goto_0
 
     .line 81
     :sswitch_1
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/TransparentHelper$TransparentHelperFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/privacypassword/TransparentHelper$TransparentHelperFragment;->finish()V
 
     goto :goto_0
 
@@ -99,7 +99,7 @@
     if-eqz v2, :cond_1
 
     :goto_1
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/privacypassword/TransparentHelper$TransparentHelperFragment;->b(II)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/privacypassword/TransparentHelper$TransparentHelperFragment;->b(II)V
 
     .line 69
     return-void
@@ -122,7 +122,7 @@
 
     .prologue
     .line 89
-    const-class v0, Lcom/android/settings/privacypassword/TransparentHelper$TransparentHelperFragment;
+    const-class v0, Lcom/android/vendorsettings/privacypassword/TransparentHelper$TransparentHelperFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -136,10 +136,10 @@
 
     .prologue
     .line 61
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 62
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/privacypassword/TransparentHelper$TransparentHelperFragment;->b(II)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/privacypassword/TransparentHelper$TransparentHelperFragment;->b(II)V
 
     .line 63
     return-void
@@ -150,23 +150,23 @@
 
     .prologue
     .line 46
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 47
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/TransparentHelper$TransparentHelperFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/privacypassword/TransparentHelper$TransparentHelperFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->bW(Landroid/content/Context;)Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    invoke-static {v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->bW(Landroid/content/Context;)Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/TransparentHelper$TransparentHelperFragment;->anb:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iput-object v0, p0, Lcom/android/vendorsettings/privacypassword/TransparentHelper$TransparentHelperFragment;->anb:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 
     .line 48
-    iget-object v0, p0, Lcom/android/settings/privacypassword/TransparentHelper$TransparentHelperFragment;->anb:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/TransparentHelper$TransparentHelperFragment;->anb:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 
-    invoke-virtual {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->tG()Z
+    invoke-virtual {v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->tG()Z
 
     move-result v0
 
@@ -176,18 +176,18 @@
     .line 51
     new-instance v0, Landroid/content/Intent;
 
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/TransparentHelper$TransparentHelperFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/privacypassword/TransparentHelper$TransparentHelperFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    const-class v2, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl;
+    const-class v2, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl;
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 52
     const v1, 0x46db0
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/privacypassword/TransparentHelper$TransparentHelperFragment;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/privacypassword/TransparentHelper$TransparentHelperFragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 57
     :goto_0
@@ -195,7 +195,7 @@
 
     .line 55
     :cond_0
-    const-class v0, Lcom/android/settings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;
+    const-class v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordSetting$PrivacyPasswordSettingFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -211,7 +211,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/privacypassword/TransparentHelper$TransparentHelperFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/vendorsettings/privacypassword/TransparentHelper$TransparentHelperFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 .end method

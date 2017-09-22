@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fW;
+.class Lcom/android/vendorsettings/fW;
 .super Ljava/lang/Object;
 .source "OldmanModeSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic vx:Lcom/android/settings/OldmanModeSettings;
+.field final synthetic vx:Lcom/android/vendorsettings/OldmanModeSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/OldmanModeSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/OldmanModeSettings;)V
     .locals 0
 
     .prologue
     .line 41
-    iput-object p1, p0, Lcom/android/settings/fW;->vx:Lcom/android/settings/OldmanModeSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/fW;->vx:Lcom/android/vendorsettings/OldmanModeSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     .line 45
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    iget-object v2, p0, Lcom/android/settings/fW;->vx:Lcom/android/settings/OldmanModeSettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/fW;->vx:Lcom/android/vendorsettings/OldmanModeSettings;
 
     invoke-direct {v0, v2}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
@@ -66,9 +66,9 @@
 
     const v2, 0x1040013
 
-    new-instance v3, Lcom/android/settings/fX;
+    new-instance v3, Lcom/android/vendorsettings/fX;
 
-    invoke-direct {v3, p0, v1}, Lcom/android/settings/fX;-><init>(Lcom/android/settings/fW;Z)V
+    invoke-direct {v3, p0, v1}, Lcom/android/vendorsettings/fX;-><init>(Lcom/android/vendorsettings/fW;Z)V
 
     invoke-virtual {v0, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 

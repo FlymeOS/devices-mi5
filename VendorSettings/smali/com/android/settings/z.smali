@@ -1,31 +1,31 @@
-.class Lcom/android/settings/z;
+.class Lcom/android/vendorsettings/z;
 .super Landroid/os/Handler;
 .source "ApnSettings.java"
 
 
 # instance fields
-.field final synthetic aT:Lcom/android/settings/ApnSettings;
+.field final synthetic aT:Lcom/android/vendorsettings/ApnSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/ApnSettings;)V
+.method private constructor <init>(Lcom/android/vendorsettings/ApnSettings;)V
     .locals 0
 
     .prologue
     .line 582
-    iput-object p1, p0, Lcom/android/settings/z;->aT:Lcom/android/settings/ApnSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/z;->aT:Lcom/android/vendorsettings/ApnSettings;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/ApnSettings;Lcom/android/settings/w;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/ApnSettings;Lcom/android/vendorsettings/w;)V
     .locals 0
 
     .prologue
     .line 582
-    invoke-direct {p0, p1}, Lcom/android/settings/z;-><init>(Lcom/android/settings/ApnSettings;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/z;-><init>(Lcom/android/vendorsettings/ApnSettings;)V
 
     return-void
 .end method
@@ -51,9 +51,9 @@
 
     .line 587
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/z;->aT:Lcom/android/settings/ApnSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/z;->aT:Lcom/android/vendorsettings/ApnSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/ApnSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/ApnSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -61,39 +61,39 @@
     if-nez v0, :cond_0
 
     .line 589
-    invoke-static {v2}, Lcom/android/settings/ApnSettings;->d(Z)Z
+    invoke-static {v2}, Lcom/android/vendorsettings/ApnSettings;->d(Z)Z
 
     goto :goto_0
 
     .line 592
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/z;->aT:Lcom/android/settings/ApnSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/z;->aT:Lcom/android/vendorsettings/ApnSettings;
 
-    invoke-static {v1}, Lcom/android/settings/ApnSettings;->a(Lcom/android/settings/ApnSettings;)V
+    invoke-static {v1}, Lcom/android/vendorsettings/ApnSettings;->a(Lcom/android/vendorsettings/ApnSettings;)V
 
     .line 593
-    iget-object v1, p0, Lcom/android/settings/z;->aT:Lcom/android/settings/ApnSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/z;->aT:Lcom/android/vendorsettings/ApnSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/ApnSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/ApnSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
     invoke-virtual {v1, v3}, Landroid/preference/PreferenceScreen;->setEnabled(Z)V
 
     .line 594
-    invoke-static {v2}, Lcom/android/settings/ApnSettings;->d(Z)Z
+    invoke-static {v2}, Lcom/android/vendorsettings/ApnSettings;->d(Z)Z
 
     .line 595
-    iget-object v1, p0, Lcom/android/settings/z;->aT:Lcom/android/settings/ApnSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/z;->aT:Lcom/android/vendorsettings/ApnSettings;
 
     const/16 v2, 0x3e9
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/ApnSettings;->removeDialog(I)V
+    invoke-virtual {v1, v2}, Lcom/android/vendorsettings/ApnSettings;->removeDialog(I)V
 
     .line 596
-    iget-object v1, p0, Lcom/android/settings/z;->aT:Lcom/android/settings/ApnSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/z;->aT:Lcom/android/vendorsettings/ApnSettings;
 
-    invoke-virtual {v1}, Lcom/android/settings/ApnSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/ApnSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 

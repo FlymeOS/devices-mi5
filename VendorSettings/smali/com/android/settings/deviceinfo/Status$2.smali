@@ -1,19 +1,19 @@
-.class Lcom/android/settings/deviceinfo/Status$2;
+.class Lcom/android/vendorsettings/deviceinfo/Status$2;
 .super Landroid/content/BroadcastReceiver;
 .source "Status.java"
 
 
 # instance fields
-.field final synthetic WX:Lcom/android/settings/deviceinfo/Status;
+.field final synthetic WX:Lcom/android/vendorsettings/deviceinfo/Status;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/Status;)V
+.method constructor <init>(Lcom/android/vendorsettings/deviceinfo/Status;)V
     .locals 0
 
     .prologue
     .line 148
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/Status$2;->WX:Lcom/android/settings/deviceinfo/Status;
+    iput-object p1, p0, Lcom/android/vendorsettings/deviceinfo/Status$2;->WX:Lcom/android/vendorsettings/deviceinfo/Status;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -32,8 +32,8 @@
     move-result-object v0
 
     .line 152
-    # getter for: Lcom/android/settings/deviceinfo/Status;->WK:[Ljava/lang/String;
-    invoke-static {}, Lcom/android/settings/deviceinfo/Status;->access$200()[Ljava/lang/String;
+    # getter for: Lcom/android/vendorsettings/deviceinfo/Status;->WK:[Ljava/lang/String;
+    invoke-static {}, Lcom/android/vendorsettings/deviceinfo/Status;->access$200()[Ljava/lang/String;
 
     move-result-object v1
 
@@ -44,9 +44,9 @@
     if-eqz v0, :cond_0
 
     .line 153
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/Status$2;->WX:Lcom/android/settings/deviceinfo/Status;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/Status$2;->WX:Lcom/android/vendorsettings/deviceinfo/Status;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/Status;->c(Lcom/android/settings/deviceinfo/Status;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/vendorsettings/deviceinfo/Status;->c(Lcom/android/vendorsettings/deviceinfo/Status;)Landroid/os/Handler;
 
     move-result-object v0
 

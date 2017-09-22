@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/msim/ImeiFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/msim/ImeiFragment;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "ImeiFragment.java"
 
 
@@ -65,7 +65,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lcom/android/settings/msim/ImeiFragment;->ahJ:[Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/msim/ImeiFragment;->ahJ:[Ljava/lang/String;
 
     return-void
 .end method
@@ -75,12 +75,12 @@
 
     .prologue
     .line 45
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 63
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iput-object v0, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     return-void
 .end method
@@ -90,7 +90,7 @@
 
     .prologue
     .line 137
-    invoke-virtual {p0, p1}, Lcom/android/settings/msim/ImeiFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/msim/ImeiFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -98,7 +98,7 @@
     if-eqz v0, :cond_0
 
     .line 139
-    invoke-virtual {p0}, Lcom/android/settings/msim/ImeiFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/ImeiFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -121,18 +121,18 @@
     if-eqz v0, :cond_0
 
     .line 160
-    iget-object p2, p0, Lcom/android/settings/msim/ImeiFragment;->ahK:Ljava/lang/String;
+    iget-object p2, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->ahK:Ljava/lang/String;
 
     .line 163
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/android/settings/msim/ImeiFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/msim/ImeiFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 164
-    invoke-virtual {p0, p1}, Lcom/android/settings/msim/ImeiFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/msim/ImeiFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -165,15 +165,15 @@
     const/4 v0, 0x0
 
     .line 77
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 78
     sget v1, Lmiui/R$style;->Theme_Light_Settings_NoTitle:I
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/msim/ImeiFragment;->setThemeRes(I)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/msim/ImeiFragment;->setThemeRes(I)V
 
     .line 79
-    invoke-virtual {p0}, Lcom/android/settings/msim/ImeiFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/ImeiFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -181,10 +181,10 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/android/settings/msim/ImeiFragment;->mSlotId:I
+    iput v1, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->mSlotId:I
 
     .line 80
-    invoke-virtual {p0}, Lcom/android/settings/msim/ImeiFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/ImeiFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -192,22 +192,22 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/msim/ImeiFragment;->mTelephonyManager:Landroid/telephony/TelephonyManager;
+    iput-object v1, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
     .line 82
     const v1, 0x7f0800a6
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/msim/ImeiFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/msim/ImeiFragment;->addPreferencesFromResource(I)V
 
     .line 84
-    invoke-virtual {p0}, Lcom/android/settings/msim/ImeiFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/ImeiFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/msim/ImeiFragment;->mRes:Landroid/content/res/Resources;
+    iput-object v1, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->mRes:Landroid/content/res/Resources;
 
     .line 85
-    iget-object v1, p0, Lcom/android/settings/msim/ImeiFragment;->mRes:Landroid/content/res/Resources;
+    iget-object v1, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->mRes:Landroid/content/res/Resources;
 
     const v2, 0x7f0c00d9
 
@@ -215,7 +215,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/msim/ImeiFragment;->ahK:Ljava/lang/String;
+    iput-object v1, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->ahK:Ljava/lang/String;
 
     .line 86
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
@@ -225,25 +225,25 @@
     if-nez v1, :cond_0
 
     .line 87
-    invoke-static {}, Lcom/android/settings/fy;->gg()Lcom/android/settings/fy;
+    invoke-static {}, Lcom/android/vendorsettings/fy;->gg()Lcom/android/vendorsettings/fy;
 
     move-result-object v1
 
-    iget v2, p0, Lcom/android/settings/msim/ImeiFragment;->mSlotId:I
+    iget v2, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->mSlotId:I
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/fy;->getPhone(I)Lcom/android/internal/telephony/Phone;
+    invoke-virtual {v1, v2}, Lcom/android/vendorsettings/fy;->getPhone(I)Lcom/android/internal/telephony/Phone;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iput-object v1, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     .line 90
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iget-object v1, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {p0}, Lcom/android/settings/msim/ImeiFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/ImeiFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -251,7 +251,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lcom/android/settings/iC;->Z(Landroid/content/Context;)Z
+    invoke-static {v1}, Lcom/android/vendorsettings/iC;->Z(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -259,7 +259,7 @@
 
     .line 91
     :cond_1
-    sget-object v1, Lcom/android/settings/msim/ImeiFragment;->ahJ:[Ljava/lang/String;
+    sget-object v1, Lcom/android/vendorsettings/msim/ImeiFragment;->ahJ:[Ljava/lang/String;
 
     array-length v2, v1
 
@@ -269,7 +269,7 @@
     aget-object v3, v1, v0
 
     .line 92
-    invoke-direct {p0, v3}, Lcom/android/settings/msim/ImeiFragment;->aT(Ljava/lang/String;)V
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/msim/ImeiFragment;->aT(Ljava/lang/String;)V
 
     .line 91
     add-int/lit8 v0, v0, 0x1
@@ -278,7 +278,7 @@
 
     .line 97
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v0}, Lcom/android/internal/telephony/Phone;->getPhoneName()Ljava/lang/String;
 
@@ -295,27 +295,27 @@
     .line 98
     const-string v0, "meid_number"
 
-    iget-object v1, p0, Lcom/android/settings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iget-object v1, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v1}, Lcom/android/internal/telephony/Phone;->getMeid()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/msim/ImeiFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/msim/ImeiFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 99
     const-string v0, "min_number"
 
-    iget-object v1, p0, Lcom/android/settings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iget-object v1, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v1}, Lcom/android/internal/telephony/Phone;->getCdmaMin()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/msim/ImeiFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/msim/ImeiFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 100
-    invoke-virtual {p0}, Lcom/android/settings/msim/ImeiFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/msim/ImeiFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -330,7 +330,7 @@
     .line 101
     const-string v0, "min_number"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/msim/ImeiFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/msim/ImeiFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
@@ -342,21 +342,21 @@
     :cond_3
     const-string v0, "prl_version"
 
-    iget-object v1, p0, Lcom/android/settings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iget-object v1, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v1}, Lcom/android/internal/telephony/Phone;->getCdmaPrlVersion()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/msim/ImeiFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/msim/ImeiFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 104
     const-string v0, "imei_sv"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/msim/ImeiFragment;->aT(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/msim/ImeiFragment;->aT(Ljava/lang/String;)V
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iget-object v0, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v0}, Lcom/android/internal/telephony/Phone;->getLteOnCdmaMode()I
 
@@ -369,24 +369,24 @@
     .line 108
     const-string v0, "icc_id"
 
-    iget-object v1, p0, Lcom/android/settings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iget-object v1, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v1}, Lcom/android/internal/telephony/Phone;->getIccSerialNumber()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/msim/ImeiFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/msim/ImeiFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 109
     const-string v0, "imei"
 
-    iget-object v1, p0, Lcom/android/settings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iget-object v1, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v1}, Lcom/android/internal/telephony/Phone;->getImei()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/msim/ImeiFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/msim/ImeiFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 130
     :cond_4
@@ -397,12 +397,12 @@
     :cond_5
     const-string v0, "imei"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/msim/ImeiFragment;->aT(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/msim/ImeiFragment;->aT(Ljava/lang/String;)V
 
     .line 114
     const-string v0, "icc_id"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/msim/ImeiFragment;->aT(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/msim/ImeiFragment;->aT(Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -410,44 +410,44 @@
     :cond_6
     const-string v0, "imei"
 
-    iget-object v1, p0, Lcom/android/settings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
+    iget-object v1, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->ci:Lcom/android/internal/telephony/Phone;
 
     invoke-interface {v1}, Lcom/android/internal/telephony/Phone;->getDeviceId()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/msim/ImeiFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/msim/ImeiFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 119
     const-string v0, "imei_sv"
 
-    iget-object v1, p0, Lcom/android/settings/msim/ImeiFragment;->mTelephonyManager:Landroid/telephony/TelephonyManager;
+    iget-object v1, p0, Lcom/android/vendorsettings/msim/ImeiFragment;->mTelephonyManager:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v1}, Landroid/telephony/TelephonyManager;->getDeviceSoftwareVersion()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/msim/ImeiFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/vendorsettings/msim/ImeiFragment;->t(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 124
     const-string v0, "prl_version"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/msim/ImeiFragment;->aT(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/msim/ImeiFragment;->aT(Ljava/lang/String;)V
 
     .line 125
     const-string v0, "meid_number"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/msim/ImeiFragment;->aT(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/msim/ImeiFragment;->aT(Ljava/lang/String;)V
 
     .line 126
     const-string v0, "min_number"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/msim/ImeiFragment;->aT(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/msim/ImeiFragment;->aT(Ljava/lang/String;)V
 
     .line 127
     const-string v0, "icc_id"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/msim/ImeiFragment;->aT(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/msim/ImeiFragment;->aT(Ljava/lang/String;)V
 
     goto :goto_1
 .end method

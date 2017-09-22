@@ -1,19 +1,19 @@
-.class final Lcom/android/settings/applications/PermissionsSummaryHelper$1;
+.class final Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$1;
 .super Landroid/content/BroadcastReceiver;
 .source "PermissionsSummaryHelper.java"
 
 
 # instance fields
-.field final synthetic KG:Lcom/android/settings/applications/PermissionsSummaryHelper$PermissionsResultCallback;
+.field final synthetic KG:Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$PermissionsResultCallback;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/PermissionsSummaryHelper$PermissionsResultCallback;)V
+.method constructor <init>(Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$PermissionsResultCallback;)V
     .locals 0
 
     .prologue
     .line 45
-    iput-object p1, p0, Lcom/android/settings/applications/PermissionsSummaryHelper$1;->KG:Lcom/android/settings/applications/PermissionsSummaryHelper$PermissionsResultCallback;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$1;->KG:Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$PermissionsResultCallback;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -41,9 +41,9 @@
     move-result-object v1
 
     .line 53
-    iget-object v2, p0, Lcom/android/settings/applications/PermissionsSummaryHelper$1;->KG:Lcom/android/settings/applications/PermissionsSummaryHelper$PermissionsResultCallback;
+    iget-object v2, p0, Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$1;->KG:Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$PermissionsResultCallback;
 
-    invoke-interface {v2, v0, v1}, Lcom/android/settings/applications/PermissionsSummaryHelper$PermissionsResultCallback;->a([I[Ljava/lang/CharSequence;)V
+    invoke-interface {v2, v0, v1}, Lcom/android/vendorsettings/applications/PermissionsSummaryHelper$PermissionsResultCallback;->a([I[Ljava/lang/CharSequence;)V
 
     .line 55
     invoke-virtual {p1, p0}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ResetNetworkConfirm;
-.super Lcom/android/settings/InstrumentedFragment;
+.class public Lcom/android/vendorsettings/ResetNetworkConfirm;
+.super Lcom/android/vendorsettings/InstrumentedFragment;
 .source "ResetNetworkConfirm.java"
 
 
@@ -17,29 +17,29 @@
 
     .prologue
     .line 53
-    invoke-direct {p0}, Lcom/android/settings/InstrumentedFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/InstrumentedFragment;-><init>()V
 
     .line 56
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/ResetNetworkConfirm;->mSubId:I
+    iput v0, p0, Lcom/android/vendorsettings/ResetNetworkConfirm;->mSubId:I
 
     .line 62
-    new-instance v0, Lcom/android/settings/gX;
+    new-instance v0, Lcom/android/vendorsettings/gX;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/gX;-><init>(Lcom/android/settings/ResetNetworkConfirm;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/gX;-><init>(Lcom/android/vendorsettings/ResetNetworkConfirm;)V
 
-    iput-object v0, p0, Lcom/android/settings/ResetNetworkConfirm;->gE:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/ResetNetworkConfirm;->gE:Landroid/view/View$OnClickListener;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/ResetNetworkConfirm;)I
+.method static synthetic a(Lcom/android/vendorsettings/ResetNetworkConfirm;)I
     .locals 1
 
     .prologue
     .line 53
-    iget v0, p0, Lcom/android/settings/ResetNetworkConfirm;->mSubId:I
+    iget v0, p0, Lcom/android/vendorsettings/ResetNetworkConfirm;->mSubId:I
 
     return v0
 .end method
@@ -49,7 +49,7 @@
 
     .prologue
     .line 112
-    iget-object v0, p0, Lcom/android/settings/ResetNetworkConfirm;->gC:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/ResetNetworkConfirm;->gC:Landroid/view/View;
 
     const v1, 0x7f13027c
 
@@ -57,7 +57,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/ResetNetworkConfirm;->gE:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/android/vendorsettings/ResetNetworkConfirm;->gE:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -72,10 +72,10 @@
 
     .prologue
     .line 130
-    invoke-super {p0, p1}, Lcom/android/settings/InstrumentedFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/InstrumentedFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 132
-    invoke-virtual {p0}, Lcom/android/settings/ResetNetworkConfirm;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ResetNetworkConfirm;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -91,7 +91,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/ResetNetworkConfirm;->mSubId:I
+    iput v0, p0, Lcom/android/vendorsettings/ResetNetworkConfirm;->mSubId:I
 
     .line 137
     :cond_0
@@ -105,7 +105,7 @@
     const/4 v2, 0x0
 
     .line 119
-    invoke-virtual {p0}, Lcom/android/settings/ResetNetworkConfirm;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/ResetNetworkConfirm;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -140,13 +140,13 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/ResetNetworkConfirm;->gC:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/vendorsettings/ResetNetworkConfirm;->gC:Landroid/view/View;
 
     .line 124
-    invoke-direct {p0}, Lcom/android/settings/ResetNetworkConfirm;->bm()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/ResetNetworkConfirm;->bm()V
 
     .line 125
-    iget-object v0, p0, Lcom/android/settings/ResetNetworkConfirm;->gC:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/ResetNetworkConfirm;->gC:Landroid/view/View;
 
     goto :goto_0
 .end method

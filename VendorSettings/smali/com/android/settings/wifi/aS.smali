@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/aS;
+.class Lcom/android/vendorsettings/wifi/aS;
 .super Ljava/lang/Object;
 .source "WpsDialog.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aEK:Lcom/android/settings/wifi/aR;
+.field final synthetic aEK:Lcom/android/vendorsettings/wifi/aR;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/aR;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/aR;)V
     .locals 0
 
     .prologue
     .line 199
-    iput-object p1, p0, Lcom/android/settings/wifi/aS;->aEK:Lcom/android/settings/wifi/aR;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/aS;->aEK:Lcom/android/vendorsettings/wifi/aR;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 203
-    iget-object v0, p0, Lcom/android/settings/wifi/aS;->aEK:Lcom/android/settings/wifi/aR;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/aS;->aEK:Lcom/android/vendorsettings/wifi/aR;
 
-    iget-object v0, v0, Lcom/android/settings/wifi/aR;->aEJ:Lcom/android/settings/wifi/WpsDialog;
+    iget-object v0, v0, Lcom/android/vendorsettings/wifi/aR;->aEJ:Lcom/android/vendorsettings/wifi/WpsDialog;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/WpsDialog;->b(Lcom/android/settings/wifi/WpsDialog;)Landroid/widget/ProgressBar;
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/WpsDialog;->b(Lcom/android/vendorsettings/wifi/WpsDialog;)Landroid/widget/ProgressBar;
 
     move-result-object v0
 

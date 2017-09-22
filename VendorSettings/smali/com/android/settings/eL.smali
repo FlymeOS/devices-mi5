@@ -1,4 +1,4 @@
-.class Lcom/android/settings/eL;
+.class Lcom/android/vendorsettings/eL;
 .super Ljava/lang/Object;
 .source "MiuiSecurityBluetoothDeviceInfoFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic rJ:Lcom/android/settings/eK;
+.field final synthetic rJ:Lcom/android/vendorsettings/eK;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/eK;)V
+.method constructor <init>(Lcom/android/vendorsettings/eK;)V
     .locals 0
 
     .prologue
     .line 135
-    iput-object p1, p0, Lcom/android/settings/eL;->rJ:Lcom/android/settings/eK;
+    iput-object p1, p0, Lcom/android/vendorsettings/eL;->rJ:Lcom/android/vendorsettings/eK;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,27 +35,27 @@
     if-ne p2, v0, :cond_0
 
     .line 139
-    new-instance v0, Lcom/android/settings/aH;
+    new-instance v0, Lcom/android/vendorsettings/aH;
 
-    iget-object v1, p0, Lcom/android/settings/eL;->rJ:Lcom/android/settings/eK;
+    iget-object v1, p0, Lcom/android/vendorsettings/eL;->rJ:Lcom/android/vendorsettings/eK;
 
-    iget-object v1, v1, Lcom/android/settings/eK;->rI:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iget-object v1, v1, Lcom/android/vendorsettings/eK;->rI:Lcom/android/vendorsettings/MiuiSecurityBluetoothDeviceInfoFragment;
 
-    invoke-virtual {v1}, Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/vendorsettings/MiuiSecurityBluetoothDeviceInfoFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/eL;->rJ:Lcom/android/settings/eK;
+    iget-object v2, p0, Lcom/android/vendorsettings/eL;->rJ:Lcom/android/vendorsettings/eK;
 
-    iget-object v2, v2, Lcom/android/settings/eK;->rI:Lcom/android/settings/MiuiSecurityBluetoothDeviceInfoFragment;
+    iget-object v2, v2, Lcom/android/vendorsettings/eK;->rI:Lcom/android/vendorsettings/MiuiSecurityBluetoothDeviceInfoFragment;
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/aH;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
+    invoke-direct {v0, v1, v2}, Lcom/android/vendorsettings/aH;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
 
     const/16 v1, 0x64
 
     const/4 v2, 0x0
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/aH;->b(ILjava/lang/CharSequence;)Z
+    invoke-virtual {v0, v1, v2}, Lcom/android/vendorsettings/aH;->b(ILjava/lang/CharSequence;)Z
 
     .line 142
     :cond_0

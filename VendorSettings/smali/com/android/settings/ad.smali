@@ -1,19 +1,19 @@
-.class Lcom/android/settings/ad;
+.class Lcom/android/vendorsettings/ad;
 .super Landroid/database/ContentObserver;
 .source "BaseEnabler.java"
 
 
 # instance fields
-.field final synthetic cq:Lcom/android/settings/ac;
+.field final synthetic cq:Lcom/android/vendorsettings/ac;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ac;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/vendorsettings/ac;Landroid/os/Handler;)V
     .locals 0
 
     .prologue
     .line 17
-    iput-object p1, p0, Lcom/android/settings/ad;->cq:Lcom/android/settings/ac;
+    iput-object p1, p0, Lcom/android/vendorsettings/ad;->cq:Lcom/android/vendorsettings/ac;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -27,25 +27,25 @@
 
     .prologue
     .line 20
-    iget-object v0, p0, Lcom/android/settings/ad;->cq:Lcom/android/settings/ac;
+    iget-object v0, p0, Lcom/android/vendorsettings/ad;->cq:Lcom/android/vendorsettings/ac;
 
-    iget-object v0, v0, Lcom/android/settings/ac;->co:Lmiui/widget/SlidingButton;
+    iget-object v0, v0, Lcom/android/vendorsettings/ac;->co:Lmiui/widget/SlidingButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lmiui/widget/SlidingButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 21
-    iget-object v0, p0, Lcom/android/settings/ad;->cq:Lcom/android/settings/ac;
+    iget-object v0, p0, Lcom/android/vendorsettings/ad;->cq:Lcom/android/vendorsettings/ac;
 
-    invoke-virtual {v0}, Lcom/android/settings/ac;->update()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/ac;->update()V
 
     .line 22
-    iget-object v0, p0, Lcom/android/settings/ad;->cq:Lcom/android/settings/ac;
+    iget-object v0, p0, Lcom/android/vendorsettings/ad;->cq:Lcom/android/vendorsettings/ac;
 
-    iget-object v0, v0, Lcom/android/settings/ac;->co:Lmiui/widget/SlidingButton;
+    iget-object v0, v0, Lcom/android/vendorsettings/ac;->co:Lmiui/widget/SlidingButton;
 
-    iget-object v1, p0, Lcom/android/settings/ad;->cq:Lcom/android/settings/ac;
+    iget-object v1, p0, Lcom/android/vendorsettings/ad;->cq:Lcom/android/vendorsettings/ac;
 
     invoke-virtual {v0, v1}, Lmiui/widget/SlidingButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 

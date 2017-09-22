@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/push/CloudService;
+.class public Lcom/android/vendorsettings/cloud/push/CloudService;
 .super Landroid/app/IntentService;
 .source "CloudService.java"
 
@@ -13,13 +13,13 @@
 
     .prologue
     .line 18
-    const-class v0, Lcom/android/settings/cloud/push/CloudService;
+    const-class v0, Lcom/android/vendorsettings/cloud/push/CloudService;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/cloud/push/CloudService;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/cloud/push/CloudService;->TAG:Ljava/lang/String;
 
     return-void
 .end method
@@ -29,7 +29,7 @@
 
     .prologue
     .line 21
-    sget-object v0, Lcom/android/settings/cloud/push/CloudService;->TAG:Ljava/lang/String;
+    sget-object v0, Lcom/android/vendorsettings/cloud/push/CloudService;->TAG:Ljava/lang/String;
 
     invoke-direct {p0, v0}, Landroid/app/IntentService;-><init>(Ljava/lang/String;)V
 
@@ -65,9 +65,9 @@
     move-result-object v0
 
     .line 65
-    new-instance v5, Lcom/android/settings/cloud/push/k;
+    new-instance v5, Lcom/android/vendorsettings/cloud/push/k;
 
-    invoke-direct {v5}, Lcom/android/settings/cloud/push/k;-><init>()V
+    invoke-direct {v5}, Lcom/android/vendorsettings/cloud/push/k;-><init>()V
 
     .line 67
     const-string v6, "pkg_name"
@@ -105,19 +105,19 @@
     move-result v10
 
     .line 72
-    invoke-virtual {v5, v6}, Lcom/android/settings/cloud/push/k;->setPackageName(Ljava/lang/String;)V
+    invoke-virtual {v5, v6}, Lcom/android/vendorsettings/cloud/push/k;->setPackageName(Ljava/lang/String;)V
 
     .line 73
-    invoke-virtual {v5, v7}, Lcom/android/settings/cloud/push/k;->setMessage(Ljava/lang/String;)V
+    invoke-virtual {v5, v7}, Lcom/android/vendorsettings/cloud/push/k;->setMessage(Ljava/lang/String;)V
 
     .line 74
-    invoke-virtual {v5, v8}, Lcom/android/settings/cloud/push/k;->setTitle(Ljava/lang/String;)V
+    invoke-virtual {v5, v8}, Lcom/android/vendorsettings/cloud/push/k;->setTitle(Ljava/lang/String;)V
 
     .line 75
-    invoke-virtual {v5, v9}, Lcom/android/settings/cloud/push/k;->aQ(Ljava/lang/String;)V
+    invoke-virtual {v5, v9}, Lcom/android/vendorsettings/cloud/push/k;->aQ(Ljava/lang/String;)V
 
     .line 76
-    invoke-virtual {v5, v10}, Lcom/android/settings/cloud/push/k;->aF(Z)V
+    invoke-virtual {v5, v10}, Lcom/android/vendorsettings/cloud/push/k;->aF(Z)V
 
     .line 78
     const-string v6, "versions"
@@ -168,7 +168,7 @@
 
     .line 84
     :cond_0
-    invoke-virtual {v5, v7}, Lcom/android/settings/cloud/push/k;->c(Ljava/util/Set;)V
+    invoke-virtual {v5, v7}, Lcom/android/vendorsettings/cloud/push/k;->c(Ljava/util/Set;)V
 
     .line 87
     :cond_1
@@ -183,7 +183,7 @@
 
     .line 95
     :cond_2
-    invoke-direct {p0, p1, v3}, Lcom/android/settings/cloud/push/CloudService;->c(Landroid/content/Context;Ljava/util/List;)V
+    invoke-direct {p0, p1, v3}, Lcom/android/vendorsettings/cloud/push/CloudService;->c(Landroid/content/Context;Ljava/util/List;)V
 
     .line 96
     return-void
@@ -217,9 +217,9 @@
     move-result-object v0
 
     .line 103
-    new-instance v5, Lcom/android/settings/cloud/push/l;
+    new-instance v5, Lcom/android/vendorsettings/cloud/push/l;
 
-    invoke-direct {v5}, Lcom/android/settings/cloud/push/l;-><init>()V
+    invoke-direct {v5}, Lcom/android/vendorsettings/cloud/push/l;-><init>()V
 
     .line 105
     const-string v6, "pkg_name"
@@ -243,13 +243,13 @@
     move-result v8
 
     .line 108
-    invoke-virtual {v5, v6}, Lcom/android/settings/cloud/push/l;->setPackageName(Ljava/lang/String;)V
+    invoke-virtual {v5, v6}, Lcom/android/vendorsettings/cloud/push/l;->setPackageName(Ljava/lang/String;)V
 
     .line 109
-    invoke-virtual {v5, v7}, Lcom/android/settings/cloud/push/l;->setMessage(Ljava/lang/String;)V
+    invoke-virtual {v5, v7}, Lcom/android/vendorsettings/cloud/push/l;->setMessage(Ljava/lang/String;)V
 
     .line 110
-    invoke-virtual {v5, v8}, Lcom/android/settings/cloud/push/l;->aF(Z)V
+    invoke-virtual {v5, v8}, Lcom/android/vendorsettings/cloud/push/l;->aF(Z)V
 
     .line 112
     const-string v6, "versions"
@@ -300,7 +300,7 @@
 
     .line 118
     :cond_0
-    invoke-virtual {v5, v7}, Lcom/android/settings/cloud/push/l;->c(Ljava/util/Set;)V
+    invoke-virtual {v5, v7}, Lcom/android/vendorsettings/cloud/push/l;->c(Ljava/util/Set;)V
 
     .line 121
     :cond_1
@@ -315,10 +315,10 @@
 
     .line 124
     :cond_2
-    invoke-static {p1}, Lcom/android/settings/cloud/push/f;->aN(Landroid/content/Context;)I
+    invoke-static {p1}, Lcom/android/vendorsettings/cloud/push/f;->aN(Landroid/content/Context;)I
 
     .line 126
-    invoke-static {p1, v3}, Lcom/android/settings/cloud/push/f;->a(Landroid/content/Context;Ljava/util/List;)V
+    invoke-static {p1, v3}, Lcom/android/vendorsettings/cloud/push/f;->a(Landroid/content/Context;Ljava/util/List;)V
 
     .line 127
     return-void
@@ -329,11 +329,11 @@
 
     .prologue
     .line 163
-    invoke-static {p1}, Lcom/android/settings/cloud/push/h;->aP(Landroid/content/Context;)Lcom/android/settings/cloud/push/h;
+    invoke-static {p1}, Lcom/android/vendorsettings/cloud/push/h;->aP(Landroid/content/Context;)Lcom/android/vendorsettings/cloud/push/h;
 
     move-result-object v0
 
-    invoke-virtual {v0, p2}, Lcom/android/settings/cloud/push/h;->w(Ljava/util/List;)V
+    invoke-virtual {v0, p2}, Lcom/android/vendorsettings/cloud/push/h;->w(Ljava/util/List;)V
 
     .line 164
     return-void
@@ -367,9 +367,9 @@
     move-result-object v0
 
     .line 134
-    new-instance v5, Lcom/android/settings/cloud/push/m;
+    new-instance v5, Lcom/android/vendorsettings/cloud/push/m;
 
-    invoke-direct {v5}, Lcom/android/settings/cloud/push/m;-><init>()V
+    invoke-direct {v5}, Lcom/android/vendorsettings/cloud/push/m;-><init>()V
 
     .line 136
     const-string v6, "pkg_name"
@@ -393,13 +393,13 @@
     move-result v8
 
     .line 139
-    invoke-virtual {v5, v6}, Lcom/android/settings/cloud/push/m;->setPackageName(Ljava/lang/String;)V
+    invoke-virtual {v5, v6}, Lcom/android/vendorsettings/cloud/push/m;->setPackageName(Ljava/lang/String;)V
 
     .line 140
-    invoke-virtual {v5, v7}, Lcom/android/settings/cloud/push/m;->setMessage(Ljava/lang/String;)V
+    invoke-virtual {v5, v7}, Lcom/android/vendorsettings/cloud/push/m;->setMessage(Ljava/lang/String;)V
 
     .line 141
-    invoke-virtual {v5, v8}, Lcom/android/settings/cloud/push/m;->aF(Z)V
+    invoke-virtual {v5, v8}, Lcom/android/vendorsettings/cloud/push/m;->aF(Z)V
 
     .line 143
     const-string v6, "versions"
@@ -450,7 +450,7 @@
 
     .line 149
     :cond_0
-    invoke-virtual {v5, v7}, Lcom/android/settings/cloud/push/m;->c(Ljava/util/Set;)V
+    invoke-virtual {v5, v7}, Lcom/android/vendorsettings/cloud/push/m;->c(Ljava/util/Set;)V
 
     .line 152
     :cond_1
@@ -465,13 +465,13 @@
 
     .line 155
     :cond_2
-    invoke-static {p1}, Lcom/android/settings/cloud/push/f;->aO(Landroid/content/Context;)I
+    invoke-static {p1}, Lcom/android/vendorsettings/cloud/push/f;->aO(Landroid/content/Context;)I
 
     .line 157
-    invoke-static {p1, v3}, Lcom/android/settings/cloud/push/f;->b(Landroid/content/Context;Ljava/util/List;)V
+    invoke-static {p1, v3}, Lcom/android/vendorsettings/cloud/push/f;->b(Landroid/content/Context;Ljava/util/List;)V
 
     .line 159
-    invoke-direct {p0, p1, v3}, Lcom/android/settings/cloud/push/CloudService;->d(Landroid/content/Context;Ljava/util/List;)V
+    invoke-direct {p0, p1, v3}, Lcom/android/vendorsettings/cloud/push/CloudService;->d(Landroid/content/Context;Ljava/util/List;)V
 
     .line 160
     return-void
@@ -482,11 +482,11 @@
 
     .prologue
     .line 167
-    invoke-static {p1}, Lcom/android/settings/cloud/push/h;->aP(Landroid/content/Context;)Lcom/android/settings/cloud/push/h;
+    invoke-static {p1}, Lcom/android/vendorsettings/cloud/push/h;->aP(Landroid/content/Context;)Lcom/android/vendorsettings/cloud/push/h;
 
     move-result-object v0
 
-    invoke-virtual {v0, p2}, Lcom/android/settings/cloud/push/h;->x(Ljava/util/List;)V
+    invoke-virtual {v0, p2}, Lcom/android/vendorsettings/cloud/push/h;->x(Ljava/util/List;)V
 
     .line 168
     return-void
@@ -513,7 +513,7 @@
     if-eqz v1, :cond_0
 
     .line 41
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/cloud/push/CloudService;->a(Landroid/content/Context;Lorg/json/JSONArray;)V
+    invoke-direct {p0, p1, v1}, Lcom/android/vendorsettings/cloud/push/CloudService;->a(Landroid/content/Context;Lorg/json/JSONArray;)V
 
     .line 45
     :cond_0
@@ -527,7 +527,7 @@
     if-eqz v1, :cond_1
 
     .line 47
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/cloud/push/CloudService;->b(Landroid/content/Context;Lorg/json/JSONArray;)V
+    invoke-direct {p0, p1, v1}, Lcom/android/vendorsettings/cloud/push/CloudService;->b(Landroid/content/Context;Lorg/json/JSONArray;)V
 
     .line 51
     :cond_1
@@ -541,7 +541,7 @@
     if-eqz v0, :cond_2
 
     .line 53
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/cloud/push/CloudService;->c(Landroid/content/Context;Lorg/json/JSONArray;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/cloud/push/CloudService;->c(Landroid/content/Context;Lorg/json/JSONArray;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -581,7 +581,7 @@
     if-nez v1, :cond_0
 
     .line 30
-    invoke-direct {p0, p0, v0}, Lcom/android/settings/cloud/push/CloudService;->t(Landroid/content/Context;Ljava/lang/String;)V
+    invoke-direct {p0, p0, v0}, Lcom/android/vendorsettings/cloud/push/CloudService;->t(Landroid/content/Context;Ljava/lang/String;)V
 
     .line 32
     :cond_0

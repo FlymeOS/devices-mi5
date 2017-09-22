@@ -1,19 +1,19 @@
-.class Lcom/android/settings/cloud/k;
+.class Lcom/android/vendorsettings/cloud/k;
 .super Ljava/lang/Object;
 .source "MiuiSecurityDeviceInfo.java"
 
 
 # instance fields
-.field final synthetic TI:Lcom/android/settings/cloud/j;
+.field final synthetic TI:Lcom/android/vendorsettings/cloud/j;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/cloud/j;)V
+.method constructor <init>(Lcom/android/vendorsettings/cloud/j;)V
     .locals 0
 
     .prologue
     .line 356
-    iput-object p1, p0, Lcom/android/settings/cloud/k;->TI:Lcom/android/settings/cloud/j;
+    iput-object p1, p0, Lcom/android/vendorsettings/cloud/k;->TI:Lcom/android/vendorsettings/cloud/j;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -87,7 +87,7 @@
 
     .line 382
     :try_start_0
-    invoke-direct {p0}, Lcom/android/settings/cloud/k;->getPublicKey()Ljava/security/PublicKey;
+    invoke-direct {p0}, Lcom/android/vendorsettings/cloud/k;->getPublicKey()Ljava/security/PublicKey;
 
     move-result-object v0
 

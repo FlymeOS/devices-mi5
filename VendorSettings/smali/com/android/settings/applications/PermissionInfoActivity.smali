@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/applications/PermissionInfoActivity;
+.class public Lcom/android/vendorsettings/applications/PermissionInfoActivity;
 .super Lmiui/preference/PreferenceActivity;
 .source "PermissionInfoActivity.java"
 
@@ -24,7 +24,7 @@
     invoke-super {p0, p1}, Lmiui/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 28
-    invoke-virtual {p0}, Lcom/android/settings/applications/PermissionInfoActivity;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PermissionInfoActivity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -41,7 +41,7 @@
     if-nez v0, :cond_0
 
     .line 31
-    invoke-virtual {p0}, Lcom/android/settings/applications/PermissionInfoActivity;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PermissionInfoActivity;->finish()V
 
     .line 48
     :goto_0
@@ -49,17 +49,17 @@
 
     .line 35
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/applications/PermissionInfoActivity;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PermissionInfoActivity;->getActionBar()Lmiui/app/ActionBar;
 
     .line 36
-    const-class v1, Lcom/android/settings/applications/PermissionInfoFragment;
+    const-class v1, Lcom/android/vendorsettings/applications/PermissionInfoFragment;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v2
 
     .line 37
-    invoke-virtual {p0}, Lcom/android/settings/applications/PermissionInfoActivity;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/applications/PermissionInfoActivity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v3
 

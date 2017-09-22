@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/WifiProvider;
+.class public Lcom/android/vendorsettings/wifi/WifiProvider;
 .super Landroid/content/ContentProvider;
 .source "WifiProvider.java"
 
@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field private aDC:Lcom/android/settings/wifi/al;
+.field private aDC:Lcom/android/vendorsettings/wifi/al;
 
 
 # direct methods
@@ -23,10 +23,10 @@
 
     invoke-direct {v0, v1}, Landroid/content/UriMatcher;-><init>(I)V
 
-    sput-object v0, Lcom/android/settings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
+    sput-object v0, Lcom/android/vendorsettings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
 
     .line 27
-    sget-object v0, Lcom/android/settings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/vendorsettings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
 
     const-string v1, "wifi"
 
@@ -37,7 +37,7 @@
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 28
-    sget-object v0, Lcom/android/settings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/vendorsettings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
 
     const-string v1, "wifi"
 
@@ -48,7 +48,7 @@
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 29
-    sget-object v0, Lcom/android/settings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/vendorsettings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
 
     const-string v1, "wifi"
 
@@ -59,7 +59,7 @@
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 30
-    sget-object v0, Lcom/android/settings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/vendorsettings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
 
     const-string v1, "wifi"
 
@@ -70,7 +70,7 @@
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 31
-    sget-object v0, Lcom/android/settings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/vendorsettings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
 
     const-string v1, "wifi"
 
@@ -81,7 +81,7 @@
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/UriMatcher;->addURI(Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 32
-    sget-object v0, Lcom/android/settings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/vendorsettings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
 
     const-string v1, "wifi"
 
@@ -237,7 +237,7 @@
     if-eq v0, v1, :cond_0
 
     .line 256
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiProvider;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/WifiProvider;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -277,17 +277,17 @@
     const/4 v2, 0x1
 
     .line 141
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiProvider;->g(Landroid/net/Uri;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/wifi/WifiProvider;->g(Landroid/net/Uri;)V
 
     .line 144
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiProvider;->aDC:Lcom/android/settings/wifi/al;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiProvider;->aDC:Lcom/android/vendorsettings/wifi/al;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/al;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/al;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
     .line 146
-    sget-object v0, Lcom/android/settings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/vendorsettings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -364,7 +364,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, p2}, Lcom/android/settings/wifi/WifiProvider;->cj(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p2}, Lcom/android/vendorsettings/wifi/WifiProvider;->cj(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -427,7 +427,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, p2}, Lcom/android/settings/wifi/WifiProvider;->cj(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p2}, Lcom/android/vendorsettings/wifi/WifiProvider;->cj(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -490,7 +490,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, p2}, Lcom/android/settings/wifi/WifiProvider;->cj(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p2}, Lcom/android/vendorsettings/wifi/WifiProvider;->cj(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -540,17 +540,17 @@
     const/4 v4, 0x0
 
     .line 111
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiProvider;->g(Landroid/net/Uri;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/wifi/WifiProvider;->g(Landroid/net/Uri;)V
 
     .line 113
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiProvider;->aDC:Lcom/android/settings/wifi/al;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiProvider;->aDC:Lcom/android/vendorsettings/wifi/al;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/al;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/al;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
     .line 115
-    sget-object v1, Lcom/android/settings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
+    sget-object v1, Lcom/android/vendorsettings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
 
     invoke-virtual {v1, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -586,7 +586,7 @@
 
     .line 117
     :pswitch_1
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/wifi/WifiProvider;->a(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/content/ContentValues;
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/wifi/WifiProvider;->a(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/content/ContentValues;
 
     move-result-object v1
 
@@ -655,20 +655,20 @@
 
     .prologue
     .line 37
-    new-instance v0, Lcom/android/settings/wifi/al;
+    new-instance v0, Lcom/android/vendorsettings/wifi/al;
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiProvider;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/WifiProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/wifi/al;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/vendorsettings/wifi/al;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/wifi/WifiProvider;->aDC:Lcom/android/settings/wifi/al;
+    iput-object v0, p0, Lcom/android/vendorsettings/wifi/WifiProvider;->aDC:Lcom/android/vendorsettings/wifi/al;
 
     .line 39
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiProvider;->aDC:Lcom/android/settings/wifi/al;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiProvider;->aDC:Lcom/android/vendorsettings/wifi/al;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/al;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/al;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
@@ -690,12 +690,12 @@
     const/4 v6, 0x0
 
     .line 47
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiProvider;->g(Landroid/net/Uri;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/wifi/WifiProvider;->g(Landroid/net/Uri;)V
 
     .line 50
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiProvider;->aDC:Lcom/android/settings/wifi/al;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiProvider;->aDC:Lcom/android/vendorsettings/wifi/al;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/al;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/al;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
@@ -734,7 +734,7 @@
 
     .line 57
     :cond_0
-    sget-object v2, Lcom/android/settings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
+    sget-object v2, Lcom/android/vendorsettings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
 
     invoke-virtual {v2, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -790,7 +790,7 @@
     if-eqz v0, :cond_1
 
     .line 95
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiProvider;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/WifiProvider;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -835,7 +835,7 @@
 
     move-result-object v2
 
-    invoke-direct {p0, p3}, Lcom/android/settings/wifi/WifiProvider;->cj(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p3}, Lcom/android/vendorsettings/wifi/WifiProvider;->cj(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -914,7 +914,7 @@
 
     move-result-object v2
 
-    invoke-direct {p0, p3}, Lcom/android/settings/wifi/WifiProvider;->cj(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p3}, Lcom/android/vendorsettings/wifi/WifiProvider;->cj(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -991,7 +991,7 @@
 
     move-result-object v2
 
-    invoke-direct {p0, p3}, Lcom/android/settings/wifi/WifiProvider;->cj(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p3}, Lcom/android/vendorsettings/wifi/WifiProvider;->cj(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -1038,17 +1038,17 @@
     const/4 v3, 0x1
 
     .line 191
-    invoke-direct {p0, p1}, Lcom/android/settings/wifi/WifiProvider;->g(Landroid/net/Uri;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/wifi/WifiProvider;->g(Landroid/net/Uri;)V
 
     .line 194
-    iget-object v0, p0, Lcom/android/settings/wifi/WifiProvider;->aDC:Lcom/android/settings/wifi/al;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/WifiProvider;->aDC:Lcom/android/vendorsettings/wifi/al;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/al;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/al;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v1
 
     .line 196
-    sget-object v0, Lcom/android/settings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
+    sget-object v0, Lcom/android/vendorsettings/wifi/WifiProvider;->aDB:Landroid/content/UriMatcher;
 
     invoke-virtual {v0, p1}, Landroid/content/UriMatcher;->match(Landroid/net/Uri;)I
 
@@ -1083,7 +1083,7 @@
 
     .line 198
     :pswitch_0
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/wifi/WifiProvider;->a(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/content/ContentValues;
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/wifi/WifiProvider;->a(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/content/ContentValues;
 
     move-result-object v0
 
@@ -1103,7 +1103,7 @@
 
     .line 204
     :pswitch_1
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/wifi/WifiProvider;->a(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/content/ContentValues;
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/wifi/WifiProvider;->a(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/content/ContentValues;
 
     move-result-object v2
 
@@ -1135,7 +1135,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, p3}, Lcom/android/settings/wifi/WifiProvider;->cj(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p3}, Lcom/android/vendorsettings/wifi/WifiProvider;->cj(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -1198,7 +1198,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, p3}, Lcom/android/settings/wifi/WifiProvider;->cj(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p3}, Lcom/android/vendorsettings/wifi/WifiProvider;->cj(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -1287,7 +1287,7 @@
 
     move-result-object v0
 
-    invoke-direct {p0, p3}, Lcom/android/settings/wifi/WifiProvider;->cj(Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {p0, p3}, Lcom/android/vendorsettings/wifi/WifiProvider;->cj(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 

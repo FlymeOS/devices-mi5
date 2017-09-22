@@ -1,9 +1,9 @@
-.class public Lcom/android/settings/wifi/WifiPickerActivity;
-.super Lcom/android/settings/hn;
+.class public Lcom/android/vendorsettings/wifi/WifiPickerActivity;
+.super Lcom/android/vendorsettings/hn;
 .source "WifiPickerActivity.java"
 
 # interfaces
-.implements Lcom/android/settings/al;
+.implements Lcom/android/vendorsettings/al;
 
 
 # direct methods
@@ -12,7 +12,7 @@
 
     .prologue
     .line 28
-    invoke-direct {p0}, Lcom/android/settings/hn;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/hn;-><init>()V
 
     return-void
 .end method
@@ -26,7 +26,7 @@
     .line 32
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/hn;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/vendorsettings/hn;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -44,7 +44,7 @@
     .line 34
     const-string v1, ":settings:show_fragment"
 
-    invoke-virtual {p0}, Lcom/android/settings/wifi/WifiPickerActivity;->yp()Ljava/lang/Class;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/wifi/WifiPickerActivity;->yp()Ljava/lang/Class;
 
     move-result-object v2
 
@@ -71,7 +71,7 @@
 
     .prologue
     .line 44
-    const-class v0, Lcom/android/settings/wifi/MiuiWifiSettings;
+    const-class v0, Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -83,7 +83,7 @@
 
     if-nez v0, :cond_0
 
-    const-class v0, Lcom/android/settings/wifi/p2p/WifiP2pSettings;
+    const-class v0, Lcom/android/vendorsettings/wifi/p2p/WifiP2pSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -95,7 +95,7 @@
 
     if-nez v0, :cond_0
 
-    const-class v0, Lcom/android/settings/wifi/SavedAccessPointsWifiSettings;
+    const-class v0, Lcom/android/vendorsettings/wifi/SavedAccessPointsWifiSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -107,7 +107,7 @@
 
     if-nez v0, :cond_0
 
-    const-class v0, Lcom/android/settings/wifi/AdvancedWifiSettings;
+    const-class v0, Lcom/android/vendorsettings/wifi/AdvancedWifiSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -138,7 +138,7 @@
 
     .prologue
     .line 54
-    const-class v0, Lcom/android/settings/wifi/MiuiWifiSettings;
+    const-class v0, Lcom/android/vendorsettings/wifi/MiuiWifiSettings;
 
     return-object v0
 .end method

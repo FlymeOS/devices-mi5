@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/c/a;
+.class public Lcom/android/vendorsettings/c/a;
 .super Landroid/graphics/drawable/Drawable;
 .source "CircleFramedDrawable.java"
 
@@ -30,12 +30,12 @@
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
     .line 60
-    iput p2, p0, Lcom/android/settings/c/a;->mSize:I
+    iput p2, p0, Lcom/android/vendorsettings/c/a;->mSize:I
 
     .line 62
-    iget v0, p0, Lcom/android/settings/c/a;->mSize:I
+    iget v0, p0, Lcom/android/vendorsettings/c/a;->mSize:I
 
-    iget v1, p0, Lcom/android/settings/c/a;->mSize:I
+    iget v1, p0, Lcom/android/vendorsettings/c/a;->mSize:I
 
     sget-object v2, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
@@ -43,12 +43,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/c/a;->mBitmap:Landroid/graphics/Bitmap;
+    iput-object v0, p0, Lcom/android/vendorsettings/c/a;->mBitmap:Landroid/graphics/Bitmap;
 
     .line 63
     new-instance v0, Landroid/graphics/Canvas;
 
-    iget-object v1, p0, Lcom/android/settings/c/a;->mBitmap:Landroid/graphics/Bitmap;
+    iget-object v1, p0, Lcom/android/vendorsettings/c/a;->mBitmap:Landroid/graphics/Bitmap;
 
     invoke-direct {v0, v1}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
@@ -83,11 +83,11 @@
     .line 70
     new-instance v1, Landroid/graphics/RectF;
 
-    iget v2, p0, Lcom/android/settings/c/a;->mSize:I
+    iget v2, p0, Lcom/android/vendorsettings/c/a;->mSize:I
 
     int-to-float v2, v2
 
-    iget v3, p0, Lcom/android/settings/c/a;->mSize:I
+    iget v3, p0, Lcom/android/vendorsettings/c/a;->mSize:I
 
     int-to-float v3, v3
 
@@ -113,36 +113,36 @@
 
     invoke-direct {v3}, Landroid/graphics/Paint;-><init>()V
 
-    iput-object v3, p0, Lcom/android/settings/c/a;->mPaint:Landroid/graphics/Paint;
+    iput-object v3, p0, Lcom/android/vendorsettings/c/a;->mPaint:Landroid/graphics/Paint;
 
     .line 79
-    iget-object v3, p0, Lcom/android/settings/c/a;->mPaint:Landroid/graphics/Paint;
+    iget-object v3, p0, Lcom/android/vendorsettings/c/a;->mPaint:Landroid/graphics/Paint;
 
     const/4 v5, 0x1
 
     invoke-virtual {v3, v5}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
     .line 80
-    iget-object v3, p0, Lcom/android/settings/c/a;->mPaint:Landroid/graphics/Paint;
+    iget-object v3, p0, Lcom/android/vendorsettings/c/a;->mPaint:Landroid/graphics/Paint;
 
     const/high16 v5, -0x1000000
 
     invoke-virtual {v3, v5}, Landroid/graphics/Paint;->setColor(I)V
 
     .line 81
-    iget-object v3, p0, Lcom/android/settings/c/a;->mPaint:Landroid/graphics/Paint;
+    iget-object v3, p0, Lcom/android/vendorsettings/c/a;->mPaint:Landroid/graphics/Paint;
 
     sget-object v5, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v3, v5}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 82
-    iget-object v3, p0, Lcom/android/settings/c/a;->mPaint:Landroid/graphics/Paint;
+    iget-object v3, p0, Lcom/android/vendorsettings/c/a;->mPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v2, v3}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
     .line 85
-    iget-object v2, p0, Lcom/android/settings/c/a;->mPaint:Landroid/graphics/Paint;
+    iget-object v2, p0, Lcom/android/vendorsettings/c/a;->mPaint:Landroid/graphics/Paint;
 
     new-instance v3, Landroid/graphics/PorterDuffXfermode;
 
@@ -153,12 +153,12 @@
     invoke-virtual {v2, v3}, Landroid/graphics/Paint;->setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
 
     .line 86
-    iget-object v2, p0, Lcom/android/settings/c/a;->mPaint:Landroid/graphics/Paint;
+    iget-object v2, p0, Lcom/android/vendorsettings/c/a;->mPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1, v4, v1, v2}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/RectF;Landroid/graphics/Paint;)V
 
     .line 89
-    iget-object v0, p0, Lcom/android/settings/c/a;->mPaint:Landroid/graphics/Paint;
+    iget-object v0, p0, Lcom/android/vendorsettings/c/a;->mPaint:Landroid/graphics/Paint;
 
     const/4 v1, 0x0
 
@@ -167,39 +167,39 @@
     .line 91
     const/high16 v0, 0x3f800000    # 1.0f
 
-    iput v0, p0, Lcom/android/settings/c/a;->mScale:F
+    iput v0, p0, Lcom/android/vendorsettings/c/a;->mScale:F
 
     .line 93
     new-instance v0, Landroid/graphics/Rect;
 
-    iget v1, p0, Lcom/android/settings/c/a;->mSize:I
+    iget v1, p0, Lcom/android/vendorsettings/c/a;->mSize:I
 
-    iget v2, p0, Lcom/android/settings/c/a;->mSize:I
+    iget v2, p0, Lcom/android/vendorsettings/c/a;->mSize:I
 
     invoke-direct {v0, v7, v7, v1, v2}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    iput-object v0, p0, Lcom/android/settings/c/a;->abm:Landroid/graphics/Rect;
+    iput-object v0, p0, Lcom/android/vendorsettings/c/a;->abm:Landroid/graphics/Rect;
 
     .line 94
     new-instance v0, Landroid/graphics/RectF;
 
-    iget v1, p0, Lcom/android/settings/c/a;->mSize:I
+    iget v1, p0, Lcom/android/vendorsettings/c/a;->mSize:I
 
     int-to-float v1, v1
 
-    iget v2, p0, Lcom/android/settings/c/a;->mSize:I
+    iget v2, p0, Lcom/android/vendorsettings/c/a;->mSize:I
 
     int-to-float v2, v2
 
     invoke-direct {v0, v6, v6, v1, v2}, Landroid/graphics/RectF;-><init>(FFFF)V
 
-    iput-object v0, p0, Lcom/android/settings/c/a;->abn:Landroid/graphics/RectF;
+    iput-object v0, p0, Lcom/android/vendorsettings/c/a;->abn:Landroid/graphics/RectF;
 
     .line 95
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;Landroid/graphics/Bitmap;)Lcom/android/settings/c/a;
+.method public static a(Landroid/content/Context;Landroid/graphics/Bitmap;)Lcom/android/vendorsettings/c/a;
     .locals 2
 
     .prologue
@@ -216,11 +216,11 @@
     move-result v0
 
     .line 54
-    new-instance v1, Lcom/android/settings/c/a;
+    new-instance v1, Lcom/android/vendorsettings/c/a;
 
     float-to-int v0, v0
 
-    invoke-direct {v1, p1, v0}, Lcom/android/settings/c/a;-><init>(Landroid/graphics/Bitmap;I)V
+    invoke-direct {v1, p1, v0}, Lcom/android/vendorsettings/c/a;-><init>(Landroid/graphics/Bitmap;I)V
 
     .line 55
     return-object v1
@@ -233,16 +233,16 @@
 
     .prologue
     .line 99
-    iget v0, p0, Lcom/android/settings/c/a;->mScale:F
+    iget v0, p0, Lcom/android/vendorsettings/c/a;->mScale:F
 
-    iget v1, p0, Lcom/android/settings/c/a;->mSize:I
+    iget v1, p0, Lcom/android/vendorsettings/c/a;->mSize:I
 
     int-to-float v1, v1
 
     mul-float/2addr v0, v1
 
     .line 100
-    iget v1, p0, Lcom/android/settings/c/a;->mSize:I
+    iget v1, p0, Lcom/android/vendorsettings/c/a;->mSize:I
 
     int-to-float v1, v1
 
@@ -253,15 +253,15 @@
     div-float/2addr v0, v1
 
     .line 102
-    iget-object v1, p0, Lcom/android/settings/c/a;->abn:Landroid/graphics/RectF;
+    iget-object v1, p0, Lcom/android/vendorsettings/c/a;->abn:Landroid/graphics/RectF;
 
-    iget v2, p0, Lcom/android/settings/c/a;->mSize:I
+    iget v2, p0, Lcom/android/vendorsettings/c/a;->mSize:I
 
     int-to-float v2, v2
 
     sub-float/2addr v2, v0
 
-    iget v3, p0, Lcom/android/settings/c/a;->mSize:I
+    iget v3, p0, Lcom/android/vendorsettings/c/a;->mSize:I
 
     int-to-float v3, v3
 
@@ -270,11 +270,11 @@
     invoke-virtual {v1, v0, v0, v2, v3}, Landroid/graphics/RectF;->set(FFFF)V
 
     .line 103
-    iget-object v0, p0, Lcom/android/settings/c/a;->mBitmap:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lcom/android/vendorsettings/c/a;->mBitmap:Landroid/graphics/Bitmap;
 
-    iget-object v1, p0, Lcom/android/settings/c/a;->abm:Landroid/graphics/Rect;
+    iget-object v1, p0, Lcom/android/vendorsettings/c/a;->abm:Landroid/graphics/Rect;
 
-    iget-object v2, p0, Lcom/android/settings/c/a;->abn:Landroid/graphics/RectF;
+    iget-object v2, p0, Lcom/android/vendorsettings/c/a;->abn:Landroid/graphics/RectF;
 
     const/4 v3, 0x0
 
@@ -289,7 +289,7 @@
 
     .prologue
     .line 134
-    iget v0, p0, Lcom/android/settings/c/a;->mSize:I
+    iget v0, p0, Lcom/android/vendorsettings/c/a;->mSize:I
 
     return v0
 .end method
@@ -299,7 +299,7 @@
 
     .prologue
     .line 129
-    iget v0, p0, Lcom/android/settings/c/a;->mSize:I
+    iget v0, p0, Lcom/android/vendorsettings/c/a;->mSize:I
 
     return v0
 .end method

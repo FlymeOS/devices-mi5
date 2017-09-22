@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/CreateShortcut;
+.class public Lcom/android/vendorsettings/CreateShortcut;
 .super Landroid/app/LauncherActivity;
 .source "CreateShortcut.java"
 
@@ -109,7 +109,7 @@
     .line 92
     const v1, 0x7f080024
 
-    invoke-static {v1, v0, p0}, Lcom/android/settings/hn;->a(ILjava/util/List;Landroid/content/Context;)V
+    invoke-static {v1, v0, p0}, Lcom/android/vendorsettings/hn;->a(ILjava/util/List;Landroid/content/Context;)V
 
     .line 93
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -127,10 +127,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/dashboard/DashboardCategory;
+    check-cast v0, Lcom/android/vendorsettings/dashboard/DashboardCategory;
 
     .line 94
-    iget-object v0, v0, Lcom/android/settings/dashboard/DashboardCategory;->UE:Ljava/util/List;
+    iget-object v0, v0, Lcom/android/vendorsettings/dashboard/DashboardCategory;->UE:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -147,10 +147,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/dashboard/DashboardTile;
+    check-cast v0, Lcom/android/vendorsettings/dashboard/DashboardTile;
 
     .line 95
-    iget-wide v4, v0, Lcom/android/settings/dashboard/DashboardTile;->id:J
+    iget-wide v4, v0, Lcom/android/vendorsettings/dashboard/DashboardTile;->id:J
 
     int-to-long v6, p1
 
@@ -159,7 +159,7 @@
     if-nez v3, :cond_1
 
     .line 96
-    iget v0, v0, Lcom/android/settings/dashboard/DashboardTile;->iconRes:I
+    iget v0, v0, Lcom/android/vendorsettings/dashboard/DashboardTile;->iconRes:I
 
     .line 100
     :goto_0
@@ -215,7 +215,7 @@
 
     .prologue
     .line 57
-    invoke-virtual {p0, p3}, Lcom/android/settings/CreateShortcut;->intentForPosition(I)Landroid/content/Intent;
+    invoke-virtual {p0, p3}, Lcom/android/vendorsettings/CreateShortcut;->intentForPosition(I)Landroid/content/Intent;
 
     move-result-object v0
 
@@ -248,7 +248,7 @@
     .line 63
     const-string v0, "android.intent.extra.shortcut.NAME"
 
-    invoke-virtual {p0, p3}, Lcom/android/settings/CreateShortcut;->itemForPosition(I)Landroid/app/LauncherActivity$ListItem;
+    invoke-virtual {p0, p3}, Lcom/android/vendorsettings/CreateShortcut;->itemForPosition(I)Landroid/app/LauncherActivity$ListItem;
 
     move-result-object v2
 
@@ -257,7 +257,7 @@
     invoke-virtual {v1, v0, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/CharSequence;)Landroid/content/Intent;
 
     .line 64
-    invoke-virtual {p0, p3}, Lcom/android/settings/CreateShortcut;->itemForPosition(I)Landroid/app/LauncherActivity$ListItem;
+    invoke-virtual {p0, p3}, Lcom/android/vendorsettings/CreateShortcut;->itemForPosition(I)Landroid/app/LauncherActivity$ListItem;
 
     move-result-object v0
 
@@ -291,14 +291,14 @@
     move-result v0
 
     .line 68
-    invoke-direct {p0, v0}, Lcom/android/settings/CreateShortcut;->q(I)I
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/CreateShortcut;->q(I)I
 
     move-result v0
 
     .line 69
     const-string v2, "android.intent.extra.shortcut.ICON"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/CreateShortcut;->p(I)Landroid/graphics/Bitmap;
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/CreateShortcut;->p(I)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
@@ -308,10 +308,10 @@
     :cond_0
     const/4 v0, -0x1
 
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings/CreateShortcut;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {p0, v0, v1}, Lcom/android/vendorsettings/CreateShortcut;->setResult(ILandroid/content/Intent;)V
 
     .line 72
-    invoke-virtual {p0}, Lcom/android/settings/CreateShortcut;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/CreateShortcut;->finish()V
 
     .line 73
     return-void
@@ -322,7 +322,7 @@
 
     .prologue
     .line 113
-    invoke-virtual {p0}, Lcom/android/settings/CreateShortcut;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/CreateShortcut;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
@@ -366,7 +366,7 @@
 
     iget-object v0, v0, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
 
-    const-class v3, Lcom/android/settings/Settings$TetherSettingsActivity;
+    const-class v3, Lcom/android/vendorsettings/Settings$TetherSettingsActivity;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 

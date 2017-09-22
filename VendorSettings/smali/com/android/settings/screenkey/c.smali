@@ -1,31 +1,31 @@
-.class Lcom/android/settings/screenkey/c;
+.class Lcom/android/vendorsettings/screenkey/c;
 .super Landroid/widget/BaseAdapter;
 .source "ScreenKeySettings.java"
 
 
 # instance fields
-.field final synthetic aoS:Lcom/android/settings/screenkey/ScreenKeySettings;
+.field final synthetic aoS:Lcom/android/vendorsettings/screenkey/ScreenKeySettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/screenkey/ScreenKeySettings;)V
+.method private constructor <init>(Lcom/android/vendorsettings/screenkey/ScreenKeySettings;)V
     .locals 0
 
     .prologue
     .line 70
-    iput-object p1, p0, Lcom/android/settings/screenkey/c;->aoS:Lcom/android/settings/screenkey/ScreenKeySettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/screenkey/c;->aoS:Lcom/android/vendorsettings/screenkey/ScreenKeySettings;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/screenkey/ScreenKeySettings;Lcom/android/settings/screenkey/b;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/screenkey/ScreenKeySettings;Lcom/android/vendorsettings/screenkey/b;)V
     .locals 0
 
     .prologue
     .line 70
-    invoke-direct {p0, p1}, Lcom/android/settings/screenkey/c;-><init>(Lcom/android/settings/screenkey/ScreenKeySettings;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/screenkey/c;-><init>(Lcom/android/vendorsettings/screenkey/ScreenKeySettings;)V
 
     return-void
 .end method
@@ -37,9 +37,9 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/android/settings/screenkey/c;->aoS:Lcom/android/settings/screenkey/ScreenKeySettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/screenkey/c;->aoS:Lcom/android/vendorsettings/screenkey/ScreenKeySettings;
 
-    invoke-static {v0}, Lcom/android/settings/screenkey/ScreenKeySettings;->c(Lcom/android/settings/screenkey/ScreenKeySettings;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/android/vendorsettings/screenkey/ScreenKeySettings;->c(Lcom/android/vendorsettings/screenkey/ScreenKeySettings;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -55,9 +55,9 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/android/settings/screenkey/c;->aoS:Lcom/android/settings/screenkey/ScreenKeySettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/screenkey/c;->aoS:Lcom/android/vendorsettings/screenkey/ScreenKeySettings;
 
-    invoke-static {v0}, Lcom/android/settings/screenkey/ScreenKeySettings;->c(Lcom/android/settings/screenkey/ScreenKeySettings;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/android/vendorsettings/screenkey/ScreenKeySettings;->c(Lcom/android/vendorsettings/screenkey/ScreenKeySettings;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -73,9 +73,9 @@
 
     .prologue
     .line 84
-    iget-object v0, p0, Lcom/android/settings/screenkey/c;->aoS:Lcom/android/settings/screenkey/ScreenKeySettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/screenkey/c;->aoS:Lcom/android/vendorsettings/screenkey/ScreenKeySettings;
 
-    invoke-static {v0}, Lcom/android/settings/screenkey/ScreenKeySettings;->c(Lcom/android/settings/screenkey/ScreenKeySettings;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/android/vendorsettings/screenkey/ScreenKeySettings;->c(Lcom/android/vendorsettings/screenkey/ScreenKeySettings;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -99,9 +99,9 @@
 
     .prologue
     .line 90
-    iget-object v0, p0, Lcom/android/settings/screenkey/c;->aoS:Lcom/android/settings/screenkey/ScreenKeySettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/screenkey/c;->aoS:Lcom/android/vendorsettings/screenkey/ScreenKeySettings;
 
-    invoke-static {v0}, Lcom/android/settings/screenkey/ScreenKeySettings;->c(Lcom/android/settings/screenkey/ScreenKeySettings;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lcom/android/vendorsettings/screenkey/ScreenKeySettings;->c(Lcom/android/vendorsettings/screenkey/ScreenKeySettings;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -116,9 +116,9 @@
     move-result v1
 
     .line 92
-    iget-object v0, p0, Lcom/android/settings/screenkey/c;->aoS:Lcom/android/settings/screenkey/ScreenKeySettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/screenkey/c;->aoS:Lcom/android/vendorsettings/screenkey/ScreenKeySettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/screenkey/ScreenKeySettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/screenkey/ScreenKeySettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -142,9 +142,9 @@
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/settings/screenkey/c;->aoS:Lcom/android/settings/screenkey/ScreenKeySettings;
+    iget-object v3, p0, Lcom/android/vendorsettings/screenkey/c;->aoS:Lcom/android/vendorsettings/screenkey/ScreenKeySettings;
 
-    invoke-static {v3}, Lcom/android/settings/screenkey/ScreenKeySettings;->a(Lcom/android/settings/screenkey/ScreenKeySettings;)Landroid/widget/SortableListView;
+    invoke-static {v3}, Lcom/android/vendorsettings/screenkey/ScreenKeySettings;->a(Lcom/android/vendorsettings/screenkey/ScreenKeySettings;)Landroid/widget/SortableListView;
 
     move-result-object v3
 
@@ -163,7 +163,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    invoke-static {v1}, Lcom/android/settings/screenkey/a;->getName(I)I
+    invoke-static {v1}, Lcom/android/vendorsettings/screenkey/a;->getName(I)I
 
     move-result v3
 
@@ -178,7 +178,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    invoke-static {v1}, Lcom/android/settings/screenkey/a;->getImage(I)I
+    invoke-static {v1}, Lcom/android/vendorsettings/screenkey/a;->getImage(I)I
 
     move-result v1
 

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/LocalePicker$MyDialogFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+.class public Lcom/android/vendorsettings/LocalePicker$MyDialogFragment;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment$SettingsDialogFragment;
 .source "LocalePicker.java"
 
 
@@ -9,18 +9,18 @@
 
     .prologue
     .line 125
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment$SettingsDialogFragment;-><init>()V
 
     .line 126
     return-void
 .end method
 
-.method public constructor <init>(Lcom/android/settings/cs;I)V
+.method public constructor <init>(Lcom/android/vendorsettings/cs;I)V
     .locals 0
 
     .prologue
     .line 129
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;-><init>(Lcom/android/settings/cs;I)V
+    invoke-direct {p0, p1, p2}, Lcom/android/vendorsettings/SettingsPreferenceFragment$SettingsDialogFragment;-><init>(Lcom/android/vendorsettings/cs;I)V
 
     .line 130
     return-void
@@ -33,17 +33,17 @@
 
     .prologue
     .line 134
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->onCancel(Landroid/content/DialogInterface;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment$SettingsDialogFragment;->onCancel(Landroid/content/DialogInterface;)V
 
     .line 135
-    invoke-virtual {p0}, Lcom/android/settings/LocalePicker$MyDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/LocalePicker$MyDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 136
-    invoke-virtual {p0}, Lcom/android/settings/LocalePicker$MyDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/LocalePicker$MyDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -59,17 +59,17 @@
 
     .prologue
     .line 142
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->onDismiss(Landroid/content/DialogInterface;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment$SettingsDialogFragment;->onDismiss(Landroid/content/DialogInterface;)V
 
     .line 143
-    invoke-virtual {p0}, Lcom/android/settings/LocalePicker$MyDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/LocalePicker$MyDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 144
-    invoke-virtual {p0}, Lcom/android/settings/LocalePicker$MyDialogFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/LocalePicker$MyDialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

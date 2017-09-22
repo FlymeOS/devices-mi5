@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dashboard/c;
+.class public Lcom/android/vendorsettings/dashboard/c;
 .super Landroid/widget/FrameLayout;
 .source "DashboardTileView.java"
 
@@ -11,7 +11,7 @@
 
 .field private UM:I
 
-.field private UN:Lcom/android/settings/dashboard/DashboardTile;
+.field private UN:Lcom/android/vendorsettings/dashboard/DashboardTile;
 
 
 # virtual methods
@@ -20,7 +20,7 @@
 
     .prologue
     .line 81
-    iget-object v1, p0, Lcom/android/settings/dashboard/c;->UL:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/vendorsettings/dashboard/c;->UL:Landroid/view/View;
 
     if-eqz p1, :cond_0
 
@@ -44,7 +44,7 @@
 
     .prologue
     .line 89
-    iget v0, p0, Lcom/android/settings/dashboard/c;->UM:I
+    iget v0, p0, Lcom/android/vendorsettings/dashboard/c;->UM:I
 
     return v0
 .end method
@@ -58,42 +58,42 @@
     const/4 v4, 0x0
 
     .line 94
-    iget-object v0, p0, Lcom/android/settings/dashboard/c;->UN:Lcom/android/settings/dashboard/DashboardTile;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/c;->UN:Lcom/android/vendorsettings/dashboard/DashboardTile;
 
-    iget-object v0, v0, Lcom/android/settings/dashboard/DashboardTile;->fragment:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/vendorsettings/dashboard/DashboardTile;->fragment:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
     .line 95
-    invoke-virtual {p0}, Lcom/android/settings/dashboard/c;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dashboard/c;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/dashboard/c;->UN:Lcom/android/settings/dashboard/DashboardTile;
+    iget-object v1, p0, Lcom/android/vendorsettings/dashboard/c;->UN:Lcom/android/vendorsettings/dashboard/DashboardTile;
 
-    iget-object v1, v1, Lcom/android/settings/dashboard/DashboardTile;->fragment:Ljava/lang/String;
+    iget-object v1, v1, Lcom/android/vendorsettings/dashboard/DashboardTile;->fragment:Ljava/lang/String;
 
-    iget-object v2, p0, Lcom/android/settings/dashboard/c;->UN:Lcom/android/settings/dashboard/DashboardTile;
+    iget-object v2, p0, Lcom/android/vendorsettings/dashboard/c;->UN:Lcom/android/vendorsettings/dashboard/DashboardTile;
 
-    iget-object v2, v2, Lcom/android/settings/dashboard/DashboardTile;->fragmentArguments:Landroid/os/Bundle;
+    iget-object v2, v2, Lcom/android/vendorsettings/dashboard/DashboardTile;->fragmentArguments:Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
-    iget-object v5, p0, Lcom/android/settings/dashboard/c;->UN:Lcom/android/settings/dashboard/DashboardTile;
+    iget-object v5, p0, Lcom/android/vendorsettings/dashboard/c;->UN:Lcom/android/vendorsettings/dashboard/DashboardTile;
 
-    iget v5, v5, Lcom/android/settings/dashboard/DashboardTile;->titleRes:I
+    iget v5, v5, Lcom/android/vendorsettings/dashboard/DashboardTile;->titleRes:I
 
-    iget-object v6, p0, Lcom/android/settings/dashboard/c;->UN:Lcom/android/settings/dashboard/DashboardTile;
+    iget-object v6, p0, Lcom/android/vendorsettings/dashboard/c;->UN:Lcom/android/vendorsettings/dashboard/DashboardTile;
 
-    invoke-virtual {p0}, Lcom/android/settings/dashboard/c;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dashboard/c;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
-    invoke-virtual {v6, v7}, Lcom/android/settings/dashboard/DashboardTile;->getTitle(Landroid/content/res/Resources;)Ljava/lang/CharSequence;
+    invoke-virtual {v6, v7}, Lcom/android/vendorsettings/dashboard/DashboardTile;->getTitle(Landroid/content/res/Resources;)Ljava/lang/CharSequence;
 
     move-result-object v6
 
-    invoke-static/range {v0 .. v6}, Lcom/android/settings/iC;->a(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;IILjava/lang/CharSequence;)V
+    invoke-static/range {v0 .. v6}, Lcom/android/vendorsettings/iC;->a(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Fragment;IILjava/lang/CharSequence;)V
 
     .line 107
     :cond_0
@@ -102,16 +102,16 @@
 
     .line 97
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/dashboard/c;->UN:Lcom/android/settings/dashboard/DashboardTile;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/c;->UN:Lcom/android/vendorsettings/dashboard/DashboardTile;
 
-    iget-object v0, v0, Lcom/android/settings/dashboard/DashboardTile;->intent:Landroid/content/Intent;
+    iget-object v0, v0, Lcom/android/vendorsettings/dashboard/DashboardTile;->intent:Landroid/content/Intent;
 
     if-eqz v0, :cond_0
 
     .line 98
-    iget-object v0, p0, Lcom/android/settings/dashboard/c;->UN:Lcom/android/settings/dashboard/DashboardTile;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/c;->UN:Lcom/android/vendorsettings/dashboard/DashboardTile;
 
-    iget-object v0, v0, Lcom/android/settings/dashboard/DashboardTile;->UK:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/vendorsettings/dashboard/DashboardTile;->UK:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -121,7 +121,7 @@
     if-le v0, v1, :cond_2
 
     .line 100
-    invoke-virtual {p0}, Lcom/android/settings/dashboard/c;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dashboard/c;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -131,9 +131,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/dashboard/c;->UN:Lcom/android/settings/dashboard/DashboardTile;
+    iget-object v1, p0, Lcom/android/vendorsettings/dashboard/c;->UN:Lcom/android/vendorsettings/dashboard/DashboardTile;
 
-    invoke-static {v0, v1}, Lcom/android/settings/gj;->a(Landroid/app/FragmentManager;Lcom/android/settings/dashboard/DashboardTile;)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/gj;->a(Landroid/app/FragmentManager;Lcom/android/vendorsettings/dashboard/DashboardTile;)V
 
     goto :goto_0
 
@@ -142,17 +142,17 @@
     if-ne v0, v1, :cond_3
 
     .line 102
-    invoke-virtual {p0}, Lcom/android/settings/dashboard/c;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dashboard/c;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/android/settings/dashboard/c;->UN:Lcom/android/settings/dashboard/DashboardTile;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/c;->UN:Lcom/android/vendorsettings/dashboard/DashboardTile;
 
-    iget-object v2, v0, Lcom/android/settings/dashboard/DashboardTile;->intent:Landroid/content/Intent;
+    iget-object v2, v0, Lcom/android/vendorsettings/dashboard/DashboardTile;->intent:Landroid/content/Intent;
 
-    iget-object v0, p0, Lcom/android/settings/dashboard/c;->UN:Lcom/android/settings/dashboard/DashboardTile;
+    iget-object v0, p0, Lcom/android/vendorsettings/dashboard/c;->UN:Lcom/android/vendorsettings/dashboard/DashboardTile;
 
-    iget-object v0, v0, Lcom/android/settings/dashboard/DashboardTile;->UK:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/android/vendorsettings/dashboard/DashboardTile;->UK:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -166,13 +166,13 @@
 
     .line 104
     :cond_3
-    invoke-virtual {p0}, Lcom/android/settings/dashboard/c;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dashboard/c;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/dashboard/c;->UN:Lcom/android/settings/dashboard/DashboardTile;
+    iget-object v1, p0, Lcom/android/vendorsettings/dashboard/c;->UN:Lcom/android/vendorsettings/dashboard/DashboardTile;
 
-    iget-object v1, v1, Lcom/android/settings/dashboard/DashboardTile;->intent:Landroid/content/Intent;
+    iget-object v1, v1, Lcom/android/vendorsettings/dashboard/DashboardTile;->intent:Landroid/content/Intent;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 

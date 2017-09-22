@@ -1,31 +1,31 @@
-.class Lcom/android/settings/print/t;
+.class Lcom/android/vendorsettings/print/t;
 .super Lcom/android/internal/content/PackageMonitor;
 .source "PrintSettingsFragment.java"
 
 
 # instance fields
-.field final synthetic amF:Lcom/android/settings/print/PrintSettingsFragment;
+.field final synthetic amF:Lcom/android/vendorsettings/print/PrintSettingsFragment;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/print/PrintSettingsFragment;)V
+.method private constructor <init>(Lcom/android/vendorsettings/print/PrintSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 386
-    iput-object p1, p0, Lcom/android/settings/print/t;->amF:Lcom/android/settings/print/PrintSettingsFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/print/t;->amF:Lcom/android/vendorsettings/print/PrintSettingsFragment;
 
     invoke-direct {p0}, Lcom/android/internal/content/PackageMonitor;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/print/PrintSettingsFragment;Lcom/android/settings/print/m;)V
+.method synthetic constructor <init>(Lcom/android/vendorsettings/print/PrintSettingsFragment;Lcom/android/vendorsettings/print/m;)V
     .locals 0
 
     .prologue
     .line 386
-    invoke-direct {p0, p1}, Lcom/android/settings/print/t;-><init>(Lcom/android/settings/print/PrintSettingsFragment;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/print/t;-><init>(Lcom/android/vendorsettings/print/PrintSettingsFragment;)V
 
     return-void
 .end method
@@ -37,9 +37,9 @@
 
     .prologue
     .line 389
-    iget-object v0, p0, Lcom/android/settings/print/t;->amF:Lcom/android/settings/print/PrintSettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/print/t;->amF:Lcom/android/vendorsettings/print/PrintSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/print/PrintSettingsFragment;->b(Lcom/android/settings/print/PrintSettingsFragment;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/vendorsettings/print/PrintSettingsFragment;->b(Lcom/android/vendorsettings/print/PrintSettingsFragment;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -58,9 +58,9 @@
 
     .prologue
     .line 394
-    iget-object v0, p0, Lcom/android/settings/print/t;->amF:Lcom/android/settings/print/PrintSettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/print/t;->amF:Lcom/android/vendorsettings/print/PrintSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/print/PrintSettingsFragment;->b(Lcom/android/settings/print/PrintSettingsFragment;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/vendorsettings/print/PrintSettingsFragment;->b(Lcom/android/vendorsettings/print/PrintSettingsFragment;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -79,9 +79,9 @@
 
     .prologue
     .line 399
-    iget-object v0, p0, Lcom/android/settings/print/t;->amF:Lcom/android/settings/print/PrintSettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/print/t;->amF:Lcom/android/vendorsettings/print/PrintSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/print/PrintSettingsFragment;->b(Lcom/android/settings/print/PrintSettingsFragment;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/vendorsettings/print/PrintSettingsFragment;->b(Lcom/android/vendorsettings/print/PrintSettingsFragment;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -100,9 +100,9 @@
 
     .prologue
     .line 404
-    iget-object v0, p0, Lcom/android/settings/print/t;->amF:Lcom/android/settings/print/PrintSettingsFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/print/t;->amF:Lcom/android/vendorsettings/print/PrintSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/print/PrintSettingsFragment;->b(Lcom/android/settings/print/PrintSettingsFragment;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/vendorsettings/print/PrintSettingsFragment;->b(Lcom/android/vendorsettings/print/PrintSettingsFragment;)Landroid/os/Handler;
 
     move-result-object v0
 

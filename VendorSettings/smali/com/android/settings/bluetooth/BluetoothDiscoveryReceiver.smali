@@ -1,4 +1,4 @@
-.class public final Lcom/android/settings/bluetooth/BluetoothDiscoveryReceiver;
+.class public final Lcom/android/vendorsettings/bluetooth/BluetoothDiscoveryReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "BluetoothDiscoveryReceiver.java"
 
@@ -67,7 +67,7 @@
 
     .line 46
     :cond_0
-    invoke-static {p1}, Lcom/android/settings/bluetooth/LocalBluetoothPreferences;->av(Landroid/content/Context;)V
+    invoke-static {p1}, Lcom/android/vendorsettings/bluetooth/LocalBluetoothPreferences;->av(Landroid/content/Context;)V
 
     .line 48
     :cond_1

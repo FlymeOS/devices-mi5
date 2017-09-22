@@ -1,19 +1,19 @@
-.class Lcom/android/settings/tts/c;
+.class Lcom/android/vendorsettings/tts/c;
 .super Landroid/speech/tts/UtteranceProgressListener;
 .source "TextToSpeechSettings.java"
 
 
 # instance fields
-.field final synthetic asH:Lcom/android/settings/tts/TextToSpeechSettings;
+.field final synthetic asH:Lcom/android/vendorsettings/tts/TextToSpeechSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/tts/TextToSpeechSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/tts/TextToSpeechSettings;)V
     .locals 0
 
     .prologue
     .line 204
-    iput-object p1, p0, Lcom/android/settings/tts/c;->asH:Lcom/android/settings/tts/TextToSpeechSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/tts/c;->asH:Lcom/android/vendorsettings/tts/TextToSpeechSettings;
 
     invoke-direct {p0}, Landroid/speech/tts/UtteranceProgressListener;-><init>()V
 

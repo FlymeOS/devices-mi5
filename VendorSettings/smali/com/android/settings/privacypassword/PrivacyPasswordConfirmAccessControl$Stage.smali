@@ -1,16 +1,16 @@
-.class public final enum Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+.class public final enum Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 .super Ljava/lang/Enum;
 .source "PrivacyPasswordConfirmAccessControl.java"
 
 
 # static fields
-.field public static final enum aom:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+.field public static final enum aom:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
-.field public static final enum aon:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+.field public static final enum aon:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
-.field public static final enum aoo:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+.field public static final enum aoo:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
-.field private static final synthetic aop:[Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+.field private static final synthetic aop:[Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
 
 # direct methods
@@ -25,48 +25,48 @@
     const/4 v2, 0x0
 
     .line 82
-    new-instance v0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    new-instance v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
     const-string v1, "NeedToUnlock"
 
-    invoke-direct {v0, v1, v2}, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v2}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aom:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    sput-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aom:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
-    new-instance v0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    new-instance v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
     const-string v1, "NeedToUnlockWrong"
 
-    invoke-direct {v0, v1, v3}, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v3}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aon:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    sput-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aon:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
-    new-instance v0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    new-instance v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
     const-string v1, "LockedOut"
 
-    invoke-direct {v0, v1, v4}, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, v4}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aoo:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    sput-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aoo:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
     .line 81
     const/4 v0, 0x3
 
-    new-array v0, v0, [Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    new-array v0, v0, [Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aom:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aom:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
     aput-object v1, v0, v2
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aon:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aon:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
     aput-object v1, v0, v3
 
-    sget-object v1, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aoo:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    sget-object v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aoo:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
     aput-object v1, v0, v4
 
-    sput-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aop:[Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    sput-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aop:[Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
     return-void
 .end method
@@ -81,34 +81,34 @@
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+.method public static valueOf(Ljava/lang/String;)Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
     .locals 1
 
     .prologue
     .line 81
-    const-class v0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    const-class v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    check-cast v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
     return-object v0
 .end method
 
-.method public static values()[Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+.method public static values()[Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
     .locals 1
 
     .prologue
     .line 81
-    sget-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aop:[Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    sget-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->aop:[Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
-    invoke-virtual {v0}, [Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->clone()Ljava/lang/Object;
+    invoke-virtual {v0}, [Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;->clone()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, [Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
+    check-cast v0, [Lcom/android/vendorsettings/privacypassword/PrivacyPasswordConfirmAccessControl$Stage;
 
     return-object v0
 .end method

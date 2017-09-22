@@ -1,4 +1,4 @@
-.class Lcom/android/settings/if;
+.class Lcom/android/vendorsettings/if;
 .super Ljava/lang/Object;
 .source "TrustedCredentialsSettings.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic Br:Lcom/android/settings/TrustedCredentialsSettings;
+.field final synthetic Br:Lcom/android/vendorsettings/TrustedCredentialsSettings;
 
 .field final synthetic Bt:Ljava/util/ArrayList;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/TrustedCredentialsSettings;Ljava/util/ArrayList;)V
+.method constructor <init>(Lcom/android/vendorsettings/TrustedCredentialsSettings;Ljava/util/ArrayList;)V
     .locals 0
 
     .prologue
     .line 647
-    iput-object p1, p0, Lcom/android/settings/if;->Br:Lcom/android/settings/TrustedCredentialsSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/if;->Br:Lcom/android/vendorsettings/TrustedCredentialsSettings;
 
-    iput-object p2, p0, Lcom/android/settings/if;->Bt:Ljava/util/ArrayList;
+    iput-object p2, p0, Lcom/android/vendorsettings/if;->Bt:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,7 +39,7 @@
     move v1, v2
 
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/if;->Bt:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/if;->Bt:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -48,7 +48,7 @@
     if-ge v1, v0, :cond_1
 
     .line 652
-    iget-object v0, p0, Lcom/android/settings/if;->Bt:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/vendorsettings/if;->Bt:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 

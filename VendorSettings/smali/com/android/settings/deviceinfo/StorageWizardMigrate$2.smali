@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/StorageWizardMigrate$2;
+.class Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate$2;
 .super Ljava/lang/Object;
 .source "StorageWizardMigrate.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic XD:Lcom/android/settings/deviceinfo/StorageWizardMigrate;
+.field final synthetic XD:Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/StorageWizardMigrate;)V
+.method constructor <init>(Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate;)V
     .locals 0
 
     .prologue
     .line 67
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/StorageWizardMigrate$2;->XD:Lcom/android/settings/deviceinfo/StorageWizardMigrate;
+    iput-object p1, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate$2;->XD:Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,18 +35,18 @@
     if-eqz p2, :cond_1
 
     .line 71
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardMigrate$2;->XD:Lcom/android/settings/deviceinfo/StorageWizardMigrate;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate$2;->XD:Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/StorageWizardMigrate;->a(Lcom/android/settings/deviceinfo/StorageWizardMigrate;)Landroid/widget/RadioButton;
+    invoke-static {v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate;->a(Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate;)Landroid/widget/RadioButton;
 
     move-result-object v0
 
     if-ne p1, v0, :cond_2
 
     .line 72
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardMigrate$2;->XD:Lcom/android/settings/deviceinfo/StorageWizardMigrate;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate$2;->XD:Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/StorageWizardMigrate;->b(Lcom/android/settings/deviceinfo/StorageWizardMigrate;)Landroid/widget/RadioButton;
+    invoke-static {v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate;->b(Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate;)Landroid/widget/RadioButton;
 
     move-result-object v0
 
@@ -55,9 +55,9 @@
     .line 76
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardMigrate$2;->XD:Lcom/android/settings/deviceinfo/StorageWizardMigrate;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate$2;->XD:Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate;
 
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/StorageWizardMigrate;->getNextButton()Landroid/widget/Button;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate;->getNextButton()Landroid/widget/Button;
 
     move-result-object v0
 
@@ -71,18 +71,18 @@
 
     .line 73
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardMigrate$2;->XD:Lcom/android/settings/deviceinfo/StorageWizardMigrate;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate$2;->XD:Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/StorageWizardMigrate;->b(Lcom/android/settings/deviceinfo/StorageWizardMigrate;)Landroid/widget/RadioButton;
+    invoke-static {v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate;->b(Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate;)Landroid/widget/RadioButton;
 
     move-result-object v0
 
     if-ne p1, v0, :cond_0
 
     .line 74
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardMigrate$2;->XD:Lcom/android/settings/deviceinfo/StorageWizardMigrate;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate$2;->XD:Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/StorageWizardMigrate;->a(Lcom/android/settings/deviceinfo/StorageWizardMigrate;)Landroid/widget/RadioButton;
+    invoke-static {v0}, Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate;->a(Lcom/android/vendorsettings/deviceinfo/StorageWizardMigrate;)Landroid/widget/RadioButton;
 
     move-result-object v0
 

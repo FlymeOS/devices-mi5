@@ -1,4 +1,4 @@
-.class Lcom/android/settings/cX;
+.class Lcom/android/vendorsettings/cX;
 .super Ljava/lang/Object;
 .source "EncryptionSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic mL:Lcom/android/settings/cV;
+.field final synthetic mL:Lcom/android/vendorsettings/cV;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/cV;)V
+.method constructor <init>(Lcom/android/vendorsettings/cV;)V
     .locals 0
 
     .prologue
     .line 313
-    iput-object p1, p0, Lcom/android/settings/cX;->mL:Lcom/android/settings/cV;
+    iput-object p1, p0, Lcom/android/vendorsettings/cX;->mL:Lcom/android/vendorsettings/cV;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 316
-    iget-object v0, p0, Lcom/android/settings/cX;->mL:Lcom/android/settings/cV;
+    iget-object v0, p0, Lcom/android/vendorsettings/cX;->mL:Lcom/android/vendorsettings/cV;
 
-    invoke-virtual {v0}, Lcom/android/settings/cV;->dR()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cV;->dR()V
 
     .line 317
     return-void

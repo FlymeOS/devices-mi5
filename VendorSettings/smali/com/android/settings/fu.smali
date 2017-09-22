@@ -1,19 +1,19 @@
-.class Lcom/android/settings/fu;
+.class Lcom/android/vendorsettings/fu;
 .super Landroid/database/ContentObserver;
 .source "MiuiSoundSettings.java"
 
 
 # instance fields
-.field final synthetic tH:Lcom/android/settings/MiuiSoundSettings;
+.field final synthetic tH:Lcom/android/vendorsettings/MiuiSoundSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiSoundSettings;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/vendorsettings/MiuiSoundSettings;Landroid/os/Handler;)V
     .locals 0
 
     .prologue
     .line 357
-    iput-object p1, p0, Lcom/android/settings/fu;->tH:Lcom/android/settings/MiuiSoundSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/fu;->tH:Lcom/android/vendorsettings/MiuiSoundSettings;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -30,9 +30,9 @@
     invoke-super {p0, p1}, Landroid/database/ContentObserver;->onChange(Z)V
 
     .line 362
-    iget-object v0, p0, Lcom/android/settings/fu;->tH:Lcom/android/settings/MiuiSoundSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/fu;->tH:Lcom/android/vendorsettings/MiuiSoundSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiSoundSettings;->fZ()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/MiuiSoundSettings;->fZ()V
 
     .line 363
     return-void

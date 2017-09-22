@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dndmode/DoNotDisturbModeActivity;
+.class public Lcom/android/vendorsettings/dndmode/DoNotDisturbModeActivity;
 .super Lmiui/app/Activity;
 .source "DoNotDisturbModeActivity.java"
 
@@ -26,13 +26,13 @@
     .line 14
     const v0, 0x7f04006c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/DoNotDisturbModeActivity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dndmode/DoNotDisturbModeActivity;->setContentView(I)V
 
     .line 16
     if-nez p1, :cond_0
 
     .line 17
-    invoke-virtual {p0}, Lcom/android/settings/dndmode/DoNotDisturbModeActivity;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dndmode/DoNotDisturbModeActivity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -42,9 +42,9 @@
 
     const v1, 0x7f1300df
 
-    new-instance v2, Lcom/android/settings/dndmode/k;
+    new-instance v2, Lcom/android/vendorsettings/dndmode/k;
 
-    invoke-direct {v2}, Lcom/android/settings/dndmode/k;-><init>()V
+    invoke-direct {v2}, Lcom/android/vendorsettings/dndmode/k;-><init>()V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/FragmentTransaction;->add(ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;
 

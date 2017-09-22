@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/ManageAssist$1;
+.class Lcom/android/vendorsettings/applications/ManageAssist$1;
 .super Ljava/lang/Object;
 .source "ManageAssist.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Kr:Lcom/android/settings/applications/ManageAssist;
+.field final synthetic Kr:Lcom/android/vendorsettings/applications/ManageAssist;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/ManageAssist;)V
+.method constructor <init>(Lcom/android/vendorsettings/applications/ManageAssist;)V
     .locals 0
 
     .prologue
     .line 124
-    iput-object p1, p0, Lcom/android/settings/applications/ManageAssist$1;->Kr:Lcom/android/settings/applications/ManageAssist;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/ManageAssist$1;->Kr:Lcom/android/vendorsettings/applications/ManageAssist;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 127
-    iget-object v0, p0, Lcom/android/settings/applications/ManageAssist$1;->Kr:Lcom/android/settings/applications/ManageAssist;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ManageAssist$1;->Kr:Lcom/android/vendorsettings/applications/ManageAssist;
 
-    invoke-static {v0}, Lcom/android/settings/applications/ManageAssist;->a(Lcom/android/settings/applications/ManageAssist;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/ManageAssist;->a(Lcom/android/vendorsettings/applications/ManageAssist;)V
 
     .line 128
     return-void

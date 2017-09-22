@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/fuelgauge/PowerUsageSummary$1;
+.class final Lcom/android/vendorsettings/fuelgauge/PowerUsageSummary$1;
 .super Ljava/lang/Object;
 .source "PowerUsageSummary.java"
 
@@ -44,7 +44,7 @@
 
     check-cast p2, Lcom/android/internal/os/BatterySipper;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/fuelgauge/PowerUsageSummary$1;->compare(Lcom/android/internal/os/BatterySipper;Lcom/android/internal/os/BatterySipper;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/fuelgauge/PowerUsageSummary$1;->compare(Lcom/android/internal/os/BatterySipper;Lcom/android/internal/os/BatterySipper;)I
 
     move-result v0
 

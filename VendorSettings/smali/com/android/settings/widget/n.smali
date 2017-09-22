@@ -1,6 +1,6 @@
-.class Lcom/android/settings/widget/n;
+.class Lcom/android/vendorsettings/widget/n;
 .super Landroid/widget/ImageView;
 .source "ScreenView.java"
 
 # interfaces
-.implements Lcom/android/settings/widget/p;
+.implements Lcom/android/vendorsettings/widget/p;

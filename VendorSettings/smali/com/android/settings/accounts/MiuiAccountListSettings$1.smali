@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/MiuiAccountListSettings$1;
+.class Lcom/android/vendorsettings/accounts/MiuiAccountListSettings$1;
 .super Ljava/lang/Object;
 .source "MiuiAccountListSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic EG:Lcom/android/settings/accounts/MiuiAccountListSettings;
+.field final synthetic EG:Lcom/android/vendorsettings/accounts/MiuiAccountListSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accounts/MiuiAccountListSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/accounts/MiuiAccountListSettings;)V
     .locals 0
 
     .prologue
     .line 88
-    iput-object p1, p0, Lcom/android/settings/accounts/MiuiAccountListSettings$1;->EG:Lcom/android/settings/accounts/MiuiAccountListSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/accounts/MiuiAccountListSettings$1;->EG:Lcom/android/vendorsettings/accounts/MiuiAccountListSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiAccountListSettings$1;->EG:Lcom/android/settings/accounts/MiuiAccountListSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/accounts/MiuiAccountListSettings$1;->EG:Lcom/android/vendorsettings/accounts/MiuiAccountListSettings;
 
-    invoke-static {v0}, Lcom/android/settings/accounts/MiuiAccountListSettings;->a(Lcom/android/settings/accounts/MiuiAccountListSettings;)Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;
+    invoke-static {v0}, Lcom/android/vendorsettings/accounts/MiuiAccountListSettings;->a(Lcom/android/vendorsettings/accounts/MiuiAccountListSettings;)Lcom/android/vendorsettings/accounts/MiuiAccountListSettings$HeaderAdapter;
 
     move-result-object v0
 
-    invoke-virtual {v0, p3}, Lcom/android/settings/accounts/MiuiAccountListSettings$HeaderAdapter;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {v0, p3}, Lcom/android/vendorsettings/accounts/MiuiAccountListSettings$HeaderAdapter;->getItem(I)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -46,9 +46,9 @@
     if-eqz v0, :cond_0
 
     .line 93
-    iget-object v1, p0, Lcom/android/settings/accounts/MiuiAccountListSettings$1;->EG:Lcom/android/settings/accounts/MiuiAccountListSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/accounts/MiuiAccountListSettings$1;->EG:Lcom/android/vendorsettings/accounts/MiuiAccountListSettings;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/accounts/MiuiAccountListSettings;->c(Landroid/preference/PreferenceActivity$Header;)V
+    invoke-virtual {v1, v0}, Lcom/android/vendorsettings/accounts/MiuiAccountListSettings;->c(Landroid/preference/PreferenceActivity$Header;)V
 
     .line 95
     :cond_0

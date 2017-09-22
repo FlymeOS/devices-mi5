@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/it;
+.class public Lcom/android/vendorsettings/it;
 .super Ljava/lang/Object;
 .source "UsageStatsActivity.java"
 
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 64
-    iput-object p1, p0, Lcom/android/settings/it;->BK:Ljava/util/Map;
+    iput-object p1, p0, Lcom/android/vendorsettings/it;->BK:Ljava/util/Map;
 
     .line 65
     return-void
@@ -32,7 +32,7 @@
 
     .prologue
     .line 69
-    iget-object v0, p0, Lcom/android/settings/it;->BK:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/vendorsettings/it;->BK:Ljava/util/Map;
 
     invoke-virtual {p1}, Landroid/app/usage/UsageStats;->getPackageName()Ljava/lang/String;
 
@@ -45,7 +45,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 70
-    iget-object v1, p0, Lcom/android/settings/it;->BK:Ljava/util/Map;
+    iget-object v1, p0, Lcom/android/vendorsettings/it;->BK:Ljava/util/Map;
 
     invoke-virtual {p2}, Landroid/app/usage/UsageStats;->getPackageName()Ljava/lang/String;
 
@@ -74,7 +74,7 @@
 
     check-cast p2, Landroid/app/usage/UsageStats;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/it;->a(Landroid/app/usage/UsageStats;Landroid/app/usage/UsageStats;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/vendorsettings/it;->a(Landroid/app/usage/UsageStats;Landroid/app/usage/UsageStats;)I
 
     move-result v0
 

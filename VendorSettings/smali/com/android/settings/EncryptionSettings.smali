@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/EncryptionSettings;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/EncryptionSettings;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "EncryptionSettings.java"
 
 # interfaces
@@ -13,9 +13,9 @@
 # instance fields
 .field private dC:Lcom/android/internal/widget/LockPatternUtils;
 
-.field private mB:Lcom/android/settings/cU;
+.field private mB:Lcom/android/vendorsettings/cU;
 
-.field private mC:Lcom/android/settings/cV;
+.field private mC:Lcom/android/vendorsettings/cV;
 
 .field private mD:Z
 
@@ -36,7 +36,7 @@
 
     move-result v0
 
-    sput v0, Lcom/android/settings/EncryptionSettings;->mE:I
+    sput v0, Lcom/android/vendorsettings/EncryptionSettings;->mE:I
 
     return-void
 .end method
@@ -46,14 +46,14 @@
 
     .prologue
     .line 34
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 51
-    new-instance v0, Lcom/android/settings/cT;
+    new-instance v0, Lcom/android/vendorsettings/cT;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/cT;-><init>(Lcom/android/settings/EncryptionSettings;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/cT;-><init>(Lcom/android/vendorsettings/EncryptionSettings;)V
 
-    iput-object v0, p0, Lcom/android/settings/EncryptionSettings;->mReceiver:Landroid/content/BroadcastReceiver;
+    iput-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     .line 280
     return-void
@@ -66,7 +66,7 @@
     const/4 v4, 0x0
 
     .line 193
-    invoke-virtual {p0}, Lcom/android/settings/EncryptionSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EncryptionSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -86,7 +86,7 @@
 
     .line 197
     :sswitch_0
-    const-class v0, Lcom/android/settings/ConfirmLockPattern$ConfirmLockPatternFragment;
+    const-class v0, Lcom/android/vendorsettings/ConfirmLockPattern$ConfirmLockPatternFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -100,13 +100,13 @@
 
     move v3, p1
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/EncryptionSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/vendorsettings/EncryptionSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 
     .line 205
     :sswitch_1
-    const-class v0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;
+    const-class v0, Lcom/android/vendorsettings/ConfirmLockPassword$ConfirmLockPasswordFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -120,13 +120,13 @@
 
     move v3, p1
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/EncryptionSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/vendorsettings/EncryptionSettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     goto :goto_0
 
     .line 209
     :sswitch_2
-    invoke-direct {p0}, Lcom/android/settings/EncryptionSettings;->dO()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/EncryptionSettings;->dO()V
 
     goto :goto_0
 
@@ -143,42 +143,42 @@
     .end sparse-switch
 .end method
 
-.method static synthetic a(Lcom/android/settings/EncryptionSettings;)Lcom/android/settings/cV;
+.method static synthetic a(Lcom/android/vendorsettings/EncryptionSettings;)Lcom/android/vendorsettings/cV;
     .locals 1
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/android/settings/EncryptionSettings;->mC:Lcom/android/settings/cV;
+    iget-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mC:Lcom/android/vendorsettings/cV;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/EncryptionSettings;I)V
+.method static synthetic a(Lcom/android/vendorsettings/EncryptionSettings;I)V
     .locals 0
 
     .prologue
     .line 34
-    invoke-direct {p0, p1}, Lcom/android/settings/EncryptionSettings;->E(I)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/EncryptionSettings;->E(I)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/EncryptionSettings;Z)Z
+.method static synthetic a(Lcom/android/vendorsettings/EncryptionSettings;Z)Z
     .locals 0
 
     .prologue
     .line 34
-    iput-boolean p1, p0, Lcom/android/settings/EncryptionSettings;->mD:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/EncryptionSettings;->mD:Z
 
     return p1
 .end method
 
-.method static synthetic b(Lcom/android/settings/EncryptionSettings;)Landroid/preference/CheckBoxPreference;
+.method static synthetic b(Lcom/android/vendorsettings/EncryptionSettings;)Landroid/preference/CheckBoxPreference;
     .locals 1
 
     .prologue
     .line 34
-    iget-object v0, p0, Lcom/android/settings/EncryptionSettings;->mF:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mF:Landroid/preference/CheckBoxPreference;
 
     return-object v0
 .end method
@@ -190,28 +190,28 @@
     const/4 v3, 0x1
 
     .line 148
-    iget-object v0, p0, Lcom/android/settings/EncryptionSettings;->mF:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mF:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 149
-    new-instance v0, Lcom/android/settings/cV;
+    new-instance v0, Lcom/android/vendorsettings/cV;
 
     const v1, 0x7f0c118e
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/android/settings/cV;-><init>(Lcom/android/settings/EncryptionSettings;ILcom/android/settings/cT;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/android/vendorsettings/cV;-><init>(Lcom/android/vendorsettings/EncryptionSettings;ILcom/android/vendorsettings/cT;)V
 
-    iput-object v0, p0, Lcom/android/settings/EncryptionSettings;->mC:Lcom/android/settings/cV;
+    iput-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mC:Lcom/android/vendorsettings/cV;
 
     .line 150
-    iget-object v0, p0, Lcom/android/settings/EncryptionSettings;->mC:Lcom/android/settings/cV;
+    iget-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mC:Lcom/android/vendorsettings/cV;
 
-    invoke-virtual {v0}, Lcom/android/settings/cV;->show()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cV;->show()V
 
     .line 151
-    invoke-direct {p0, v3}, Lcom/android/settings/EncryptionSettings;->y(Z)V
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/EncryptionSettings;->y(Z)V
 
     .line 152
     return-void
@@ -224,38 +224,38 @@
     const/4 v3, 0x0
 
     .line 157
-    iget-object v0, p0, Lcom/android/settings/EncryptionSettings;->dC:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->dC:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v0}, Lcom/android/internal/widget/LockPatternUtils;->clearEncryptionPassword()V
 
     .line 158
-    iget-object v0, p0, Lcom/android/settings/EncryptionSettings;->dC:Lcom/android/internal/widget/LockPatternUtils;
+    iget-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->dC:Lcom/android/internal/widget/LockPatternUtils;
 
     invoke-virtual {v0, v3}, Lcom/android/internal/widget/LockPatternUtils;->setCredentialRequiredToDecrypt(Z)V
 
     .line 160
-    iget-object v0, p0, Lcom/android/settings/EncryptionSettings;->mF:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mF:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 161
-    new-instance v0, Lcom/android/settings/cV;
+    new-instance v0, Lcom/android/vendorsettings/cV;
 
     const v1, 0x7f0c118f
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, p0, v1, v2}, Lcom/android/settings/cV;-><init>(Lcom/android/settings/EncryptionSettings;ILcom/android/settings/cT;)V
+    invoke-direct {v0, p0, v1, v2}, Lcom/android/vendorsettings/cV;-><init>(Lcom/android/vendorsettings/EncryptionSettings;ILcom/android/vendorsettings/cT;)V
 
-    iput-object v0, p0, Lcom/android/settings/EncryptionSettings;->mC:Lcom/android/settings/cV;
+    iput-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mC:Lcom/android/vendorsettings/cV;
 
     .line 162
-    iget-object v0, p0, Lcom/android/settings/EncryptionSettings;->mC:Lcom/android/settings/cV;
+    iget-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mC:Lcom/android/vendorsettings/cV;
 
-    invoke-virtual {v0}, Lcom/android/settings/cV;->show()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cV;->show()V
 
     .line 163
-    invoke-direct {p0, v3}, Lcom/android/settings/EncryptionSettings;->y(Z)V
+    invoke-direct {p0, v3}, Lcom/android/vendorsettings/EncryptionSettings;->y(Z)V
 
     .line 164
     return-void
@@ -268,7 +268,7 @@
     const/4 v0, 0x0
 
     .line 168
-    invoke-virtual {p0}, Lcom/android/settings/EncryptionSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EncryptionSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -291,7 +291,7 @@
 
     .prologue
     .line 173
-    invoke-virtual {p0}, Lcom/android/settings/EncryptionSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EncryptionSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -321,7 +321,7 @@
 
     .prologue
     .line 143
-    const-class v0, Lcom/android/settings/EncryptionSettings;
+    const-class v0, Lcom/android/vendorsettings/EncryptionSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -349,7 +349,7 @@
     if-ne p2, v0, :cond_0
 
     .line 181
-    invoke-direct {p0}, Lcom/android/settings/EncryptionSettings;->dN()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/EncryptionSettings;->dN()V
 
     goto :goto_0
 
@@ -358,7 +358,7 @@
     if-ne p2, v0, :cond_0
 
     .line 186
-    invoke-direct {p0}, Lcom/android/settings/EncryptionSettings;->dO()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/EncryptionSettings;->dO()V
 
     goto :goto_0
 
@@ -377,26 +377,26 @@
 
     .prologue
     .line 66
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 67
     new-instance v0, Lcom/android/internal/widget/LockPatternUtils;
 
-    invoke-virtual {p0}, Lcom/android/settings/EncryptionSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EncryptionSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1}, Lcom/android/internal/widget/LockPatternUtils;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/EncryptionSettings;->dC:Lcom/android/internal/widget/LockPatternUtils;
+    iput-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->dC:Lcom/android/internal/widget/LockPatternUtils;
 
     .line 70
     const v0, 0x7f08003e
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/EncryptionSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/EncryptionSettings;->addPreferencesFromResource(I)V
 
     .line 73
-    invoke-virtual {p0}, Lcom/android/settings/EncryptionSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EncryptionSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -409,19 +409,19 @@
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/EncryptionSettings;->mF:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mF:Landroid/preference/CheckBoxPreference;
 
     .line 75
-    iget-object v0, p0, Lcom/android/settings/EncryptionSettings;->mF:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mF:Landroid/preference/CheckBoxPreference;
 
-    invoke-direct {p0}, Lcom/android/settings/EncryptionSettings;->dP()Z
+    invoke-direct {p0}, Lcom/android/vendorsettings/EncryptionSettings;->dP()Z
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 76
-    iget-object v0, p0, Lcom/android/settings/EncryptionSettings;->mF:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mF:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -430,10 +430,10 @@
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/EncryptionSettings;->mG:Landroid/content/IntentFilter;
+    iput-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mG:Landroid/content/IntentFilter;
 
     .line 80
-    iget-object v0, p0, Lcom/android/settings/EncryptionSettings;->mG:Landroid/content/IntentFilter;
+    iget-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mG:Landroid/content/IntentFilter;
 
     const-string v1, "com.miui.EncryptionPassword"
 
@@ -448,17 +448,17 @@
 
     .prologue
     .line 135
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroy()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onDestroy()V
 
     .line 136
-    iget-object v0, p0, Lcom/android/settings/EncryptionSettings;->mC:Lcom/android/settings/cV;
+    iget-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mC:Lcom/android/vendorsettings/cV;
 
     if-eqz v0, :cond_0
 
     .line 137
-    iget-object v0, p0, Lcom/android/settings/EncryptionSettings;->mC:Lcom/android/settings/cV;
+    iget-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mC:Lcom/android/vendorsettings/cV;
 
-    invoke-virtual {v0}, Lcom/android/settings/cV;->dR()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cV;->dR()V
 
     .line 139
     :cond_0
@@ -470,14 +470,14 @@
 
     .prologue
     .line 129
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onPause()V
 
     .line 130
-    invoke-virtual {p0}, Lcom/android/settings/EncryptionSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EncryptionSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/EncryptionSettings;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/EncryptionSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
@@ -508,7 +508,7 @@
     if-eqz v2, :cond_1
 
     .line 89
-    iget-object v2, p0, Lcom/android/settings/EncryptionSettings;->mF:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/vendorsettings/EncryptionSettings;->mF:Landroid/preference/CheckBoxPreference;
 
     check-cast p2, Ljava/lang/Boolean;
 
@@ -522,18 +522,18 @@
     invoke-virtual {v2, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 92
-    new-instance v0, Lcom/android/settings/cU;
+    new-instance v0, Lcom/android/vendorsettings/cU;
 
     const/4 v2, 0x0
 
-    invoke-direct {v0, p0, v2}, Lcom/android/settings/cU;-><init>(Lcom/android/settings/EncryptionSettings;Lcom/android/settings/cT;)V
+    invoke-direct {v0, p0, v2}, Lcom/android/vendorsettings/cU;-><init>(Lcom/android/vendorsettings/EncryptionSettings;Lcom/android/vendorsettings/cT;)V
 
-    iput-object v0, p0, Lcom/android/settings/EncryptionSettings;->mB:Lcom/android/settings/cU;
+    iput-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mB:Lcom/android/vendorsettings/cU;
 
     .line 93
-    iget-object v0, p0, Lcom/android/settings/EncryptionSettings;->mB:Lcom/android/settings/cU;
+    iget-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mB:Lcom/android/vendorsettings/cU;
 
-    invoke-virtual {v0}, Lcom/android/settings/cU;->show()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cU;->show()V
 
     .line 99
     :goto_1
@@ -558,16 +558,16 @@
     const/4 v1, 0x0
 
     .line 112
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 114
-    invoke-virtual {p0}, Lcom/android/settings/EncryptionSettings;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EncryptionSettings;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p0}, Lcom/android/settings/EncryptionSettings;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EncryptionSettings;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -588,34 +588,34 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/EncryptionSettings;->mD:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mD:Z
 
     .line 118
-    iget-boolean v0, p0, Lcom/android/settings/EncryptionSettings;->mD:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mD:Z
 
     if-eqz v0, :cond_0
 
     .line 119
-    new-instance v0, Lcom/android/settings/cU;
+    new-instance v0, Lcom/android/vendorsettings/cU;
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/cU;-><init>(Lcom/android/settings/EncryptionSettings;Lcom/android/settings/cT;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/vendorsettings/cU;-><init>(Lcom/android/vendorsettings/EncryptionSettings;Lcom/android/vendorsettings/cT;)V
 
-    iput-object v0, p0, Lcom/android/settings/EncryptionSettings;->mB:Lcom/android/settings/cU;
+    iput-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mB:Lcom/android/vendorsettings/cU;
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/EncryptionSettings;->mB:Lcom/android/settings/cU;
+    iget-object v0, p0, Lcom/android/vendorsettings/EncryptionSettings;->mB:Lcom/android/vendorsettings/cU;
 
-    invoke-virtual {v0}, Lcom/android/settings/cU;->show()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/cU;->show()V
 
     .line 124
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/EncryptionSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EncryptionSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/EncryptionSettings;->mReceiver:Landroid/content/BroadcastReceiver;
+    iget-object v1, p0, Lcom/android/vendorsettings/EncryptionSettings;->mReceiver:Landroid/content/BroadcastReceiver;
 
-    iget-object v2, p0, Lcom/android/settings/EncryptionSettings;->mG:Landroid/content/IntentFilter;
+    iget-object v2, p0, Lcom/android/vendorsettings/EncryptionSettings;->mG:Landroid/content/IntentFilter;
 
     invoke-virtual {v0, v1, v2}, Landroid/app/Activity;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
@@ -634,17 +634,17 @@
 
     .prologue
     .line 104
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     .line 105
     const-string v0, "show_dialog"
 
-    iget-boolean v1, p0, Lcom/android/settings/EncryptionSettings;->mD:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/EncryptionSettings;->mD:Z
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 106
-    invoke-virtual {p0}, Lcom/android/settings/EncryptionSettings;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/EncryptionSettings;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 

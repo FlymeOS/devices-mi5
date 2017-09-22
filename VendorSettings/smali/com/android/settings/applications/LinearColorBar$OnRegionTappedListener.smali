@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/applications/LinearColorBar$OnRegionTappedListener;
+.class public interface abstract Lcom/android/vendorsettings/applications/LinearColorBar$OnRegionTappedListener;
 .super Ljava/lang/Object;
 .source "LinearColorBar.java"
 

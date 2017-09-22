@@ -1,4 +1,4 @@
-.class Lcom/android/settings/location/MiuiLocationSettings$2;
+.class Lcom/android/vendorsettings/location/MiuiLocationSettings$2;
 .super Ljava/lang/Object;
 .source "MiuiLocationSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ahu:Lcom/android/settings/location/MiuiLocationSettings;
+.field final synthetic ahu:Lcom/android/vendorsettings/location/MiuiLocationSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/location/MiuiLocationSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/location/MiuiLocationSettings;)V
     .locals 0
 
     .prologue
     .line 167
-    iput-object p1, p0, Lcom/android/settings/location/MiuiLocationSettings$2;->ahu:Lcom/android/settings/location/MiuiLocationSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings$2;->ahu:Lcom/android/vendorsettings/location/MiuiLocationSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,13 +32,13 @@
     const/4 v2, 0x0
 
     .line 170
-    iget-object v0, p0, Lcom/android/settings/location/MiuiLocationSettings$2;->ahu:Lcom/android/settings/location/MiuiLocationSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings$2;->ahu:Lcom/android/vendorsettings/location/MiuiLocationSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/location/MiuiLocationSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/location/MiuiLocationSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    const-class v1, Lcom/android/settings/location/LocationMode;
+    const-class v1, Lcom/android/vendorsettings/location/LocationMode;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -46,13 +46,13 @@
 
     const v3, 0x7f0c0517
 
-    iget-object v5, p0, Lcom/android/settings/location/MiuiLocationSettings$2;->ahu:Lcom/android/settings/location/MiuiLocationSettings;
+    iget-object v5, p0, Lcom/android/vendorsettings/location/MiuiLocationSettings$2;->ahu:Lcom/android/vendorsettings/location/MiuiLocationSettings;
 
     const/4 v6, 0x0
 
     move-object v4, v2
 
-    invoke-static/range {v0 .. v6}, Lcom/android/settings/fy;->a(Landroid/app/Activity;Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-static/range {v0 .. v6}, Lcom/android/vendorsettings/fy;->a(Landroid/app/Activity;Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     .line 174
     const/4 v0, 0x1

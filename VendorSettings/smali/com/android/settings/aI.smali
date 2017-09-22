@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/aI;
+.class public Lcom/android/vendorsettings/aI;
 .super Ljava/lang/Object;
 .source "CompatibilityUtils.java"
 
@@ -27,17 +27,17 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/aI;->eS:Landroid/app/INotificationManager;
+    sput-object v0, Lcom/android/vendorsettings/aI;->eS:Landroid/app/INotificationManager;
 
     .line 17
     const-string v0, "app_uid"
 
-    sput-object v0, Lcom/android/settings/aI;->EXTRA_APP_UID:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/aI;->EXTRA_APP_UID:Ljava/lang/String;
 
     .line 18
     const-string v0, "high_priority_setting"
 
-    sput-object v0, Lcom/android/settings/aI;->eT:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/aI;->eT:Ljava/lang/String;
 
     return-void
 .end method
@@ -52,7 +52,7 @@
 
     .line 22
     :try_start_0
-    sget-object v3, Lcom/android/settings/aI;->eS:Landroid/app/INotificationManager;
+    sget-object v3, Lcom/android/vendorsettings/aI;->eS:Landroid/app/INotificationManager;
 
     if-eqz p3, :cond_0
 
@@ -69,7 +69,7 @@
     invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 24
-    sget-object v3, Lcom/android/settings/aI;->eT:Ljava/lang/String;
+    sget-object v3, Lcom/android/vendorsettings/aI;->eT:Ljava/lang/String;
 
     const/4 v4, 0x1
 
@@ -81,7 +81,7 @@
     invoke-virtual {v2, v3, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 26
-    sget-object v3, Lcom/android/settings/aI;->EXTRA_APP_UID:Ljava/lang/String;
+    sget-object v3, Lcom/android/vendorsettings/aI;->EXTRA_APP_UID:Ljava/lang/String;
 
     invoke-virtual {v2, v3, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
@@ -118,7 +118,7 @@
 
     .line 36
     :try_start_0
-    sget-object v1, Lcom/android/settings/aI;->eS:Landroid/app/INotificationManager;
+    sget-object v1, Lcom/android/vendorsettings/aI;->eS:Landroid/app/INotificationManager;
 
     invoke-interface {v1, p0, p1}, Landroid/app/INotificationManager;->getPackagePriority(Ljava/lang/String;I)I
     :try_end_0

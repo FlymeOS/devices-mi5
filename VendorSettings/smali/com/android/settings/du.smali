@@ -1,4 +1,4 @@
-.class Lcom/android/settings/du;
+.class Lcom/android/vendorsettings/du;
 .super Landroid/preference/Preference;
 .source "HomeSettings.java"
 
@@ -6,11 +6,11 @@
 # instance fields
 .field index:I
 
-.field final synthetic nW:Lcom/android/settings/HomeSettings;
+.field final synthetic nW:Lcom/android/vendorsettings/HomeSettings;
 
 .field nX:Landroid/content/ComponentName;
 
-.field nY:Lcom/android/settings/HomeSettings;
+.field nY:Lcom/android/vendorsettings/HomeSettings;
 
 .field final nZ:Landroid/graphics/ColorFilter;
 
@@ -22,12 +22,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/HomeSettings;Landroid/content/Context;Landroid/content/ComponentName;ILandroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Lcom/android/settings/HomeSettings;Landroid/content/pm/ActivityInfo;ZLjava/lang/CharSequence;)V
+.method public constructor <init>(Lcom/android/vendorsettings/HomeSettings;Landroid/content/Context;Landroid/content/ComponentName;ILandroid/graphics/drawable/Drawable;Ljava/lang/CharSequence;Lcom/android/vendorsettings/HomeSettings;Landroid/content/pm/ActivityInfo;ZLjava/lang/CharSequence;)V
     .locals 4
 
     .prologue
     .line 310
-    iput-object p1, p0, Lcom/android/settings/du;->nW:Lcom/android/settings/HomeSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/du;->nW:Lcom/android/vendorsettings/HomeSettings;
 
     .line 311
     invoke-direct {p0, p2}, Landroid/preference/Preference;-><init>(Landroid/content/Context;)V
@@ -35,28 +35,28 @@
     .line 312
     const v0, 0x7f0400de
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/du;->setLayoutResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/du;->setLayoutResource(I)V
 
     .line 313
-    invoke-virtual {p0, p5}, Lcom/android/settings/du;->setIcon(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p0, p5}, Lcom/android/vendorsettings/du;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
     .line 314
-    invoke-virtual {p0, p6}, Lcom/android/settings/du;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p6}, Lcom/android/vendorsettings/du;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 315
-    invoke-virtual {p0, p9}, Lcom/android/settings/du;->setEnabled(Z)V
+    invoke-virtual {p0, p9}, Lcom/android/vendorsettings/du;->setEnabled(Z)V
 
     .line 316
-    invoke-virtual {p0, p10}, Lcom/android/settings/du;->setSummary(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, p10}, Lcom/android/vendorsettings/du;->setSummary(Ljava/lang/CharSequence;)V
 
     .line 317
-    iput-object p3, p0, Lcom/android/settings/du;->nX:Landroid/content/ComponentName;
+    iput-object p3, p0, Lcom/android/vendorsettings/du;->nX:Landroid/content/ComponentName;
 
     .line 318
-    iput-object p7, p0, Lcom/android/settings/du;->nY:Lcom/android/settings/HomeSettings;
+    iput-object p7, p0, Lcom/android/vendorsettings/du;->nY:Lcom/android/vendorsettings/HomeSettings;
 
     .line 319
-    iput p4, p0, Lcom/android/settings/du;->index:I
+    iput p4, p0, Lcom/android/vendorsettings/du;->index:I
 
     .line 321
     new-instance v0, Landroid/graphics/ColorMatrix;
@@ -85,10 +85,10 @@
 
     invoke-direct {v1, v0}, Landroid/graphics/ColorMatrixColorFilter;-><init>(Landroid/graphics/ColorMatrix;)V
 
-    iput-object v1, p0, Lcom/android/settings/du;->nZ:Landroid/graphics/ColorFilter;
+    iput-object v1, p0, Lcom/android/vendorsettings/du;->nZ:Landroid/graphics/ColorFilter;
 
     .line 327
-    invoke-direct {p0, p8}, Lcom/android/settings/du;->a(Landroid/content/pm/ActivityInfo;)V
+    invoke-direct {p0, p8}, Lcom/android/vendorsettings/du;->a(Landroid/content/pm/ActivityInfo;)V
 
     .line 328
     return-void
@@ -120,9 +120,9 @@
 
     .line 338
     :try_start_0
-    iget-object v3, p0, Lcom/android/settings/du;->nW:Lcom/android/settings/HomeSettings;
+    iget-object v3, p0, Lcom/android/vendorsettings/du;->nW:Lcom/android/vendorsettings/HomeSettings;
 
-    invoke-static {v3}, Lcom/android/settings/HomeSettings;->d(Lcom/android/settings/HomeSettings;)Landroid/content/pm/PackageManager;
+    invoke-static {v3}, Lcom/android/vendorsettings/HomeSettings;->d(Lcom/android/vendorsettings/HomeSettings;)Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
@@ -136,9 +136,9 @@
     if-ltz v3, :cond_1
 
     .line 340
-    iget-object v3, p0, Lcom/android/settings/du;->nW:Lcom/android/settings/HomeSettings;
+    iget-object v3, p0, Lcom/android/vendorsettings/du;->nW:Lcom/android/vendorsettings/HomeSettings;
 
-    invoke-static {v3}, Lcom/android/settings/HomeSettings;->d(Lcom/android/settings/HomeSettings;)Landroid/content/pm/PackageManager;
+    invoke-static {v3}, Lcom/android/vendorsettings/HomeSettings;->d(Lcom/android/vendorsettings/HomeSettings;)Landroid/content/pm/PackageManager;
 
     move-result-object v3
 
@@ -161,12 +161,12 @@
     move v2, v0
 
     :goto_0
-    iput-boolean v2, p0, Lcom/android/settings/du;->ob:Z
+    iput-boolean v2, p0, Lcom/android/vendorsettings/du;->ob:Z
 
     .line 343
     iget-object v2, v3, Landroid/content/pm/PackageInfo;->packageName:Ljava/lang/String;
 
-    iput-object v2, p0, Lcom/android/settings/du;->oc:Ljava/lang/String;
+    iput-object v2, p0, Lcom/android/vendorsettings/du;->oc:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -202,12 +202,12 @@
     if-eqz v2, :cond_2
 
     :goto_2
-    iput-boolean v0, p0, Lcom/android/settings/du;->ob:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/du;->ob:Z
 
     .line 354
     iget-object v0, p1, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/du;->oc:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/du;->oc:Ljava/lang/String;
 
     goto :goto_1
 
@@ -237,14 +237,14 @@
     check-cast v0, Landroid/widget/RadioButton;
 
     .line 362
-    iget-boolean v1, p0, Lcom/android/settings/du;->oa:Z
+    iget-boolean v1, p0, Lcom/android/vendorsettings/du;->oa:Z
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     .line 364
     new-instance v1, Ljava/lang/Integer;
 
-    iget v0, p0, Lcom/android/settings/du;->index:I
+    iget v0, p0, Lcom/android/vendorsettings/du;->index:I
 
     invoke-direct {v1, v0}, Ljava/lang/Integer;-><init>(I)V
 
@@ -258,7 +258,7 @@
     check-cast v0, Landroid/widget/ImageView;
 
     .line 367
-    iget-boolean v2, p0, Lcom/android/settings/du;->ob:Z
+    iget-boolean v2, p0, Lcom/android/vendorsettings/du;->ob:Z
 
     if-eqz v2, :cond_0
 
@@ -268,7 +268,7 @@
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setEnabled(Z)V
 
     .line 369
-    iget-object v2, p0, Lcom/android/settings/du;->nZ:Landroid/graphics/ColorFilter;
+    iget-object v2, p0, Lcom/android/vendorsettings/du;->nZ:Landroid/graphics/ColorFilter;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
@@ -284,9 +284,9 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 379
-    iget-object v1, p0, Lcom/android/settings/du;->nW:Lcom/android/settings/HomeSettings;
+    iget-object v1, p0, Lcom/android/vendorsettings/du;->nW:Lcom/android/vendorsettings/HomeSettings;
 
-    iget-object v1, v1, Lcom/android/settings/HomeSettings;->nU:Landroid/view/View$OnClickListener;
+    iget-object v1, v1, Lcom/android/vendorsettings/HomeSettings;->nU:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -300,9 +300,9 @@
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setEnabled(Z)V
 
     .line 372
-    iget-object v2, p0, Lcom/android/settings/du;->nW:Lcom/android/settings/HomeSettings;
+    iget-object v2, p0, Lcom/android/vendorsettings/du;->nW:Lcom/android/vendorsettings/HomeSettings;
 
-    iget-object v2, v2, Lcom/android/settings/HomeSettings;->nV:Landroid/view/View$OnClickListener;
+    iget-object v2, v2, Lcom/android/vendorsettings/HomeSettings;->nV:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -317,15 +317,15 @@
 
     .prologue
     .line 383
-    iget-boolean v0, p0, Lcom/android/settings/du;->oa:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/du;->oa:Z
 
     if-eq p1, v0, :cond_0
 
     .line 384
-    iput-boolean p1, p0, Lcom/android/settings/du;->oa:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/du;->oa:Z
 
     .line 385
-    invoke-virtual {p0}, Lcom/android/settings/du;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/du;->notifyChanged()V
 
     .line 387
     :cond_0

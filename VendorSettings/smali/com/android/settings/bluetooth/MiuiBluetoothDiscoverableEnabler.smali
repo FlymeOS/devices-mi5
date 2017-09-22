@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/bluetooth/MiuiBluetoothDiscoverableEnabler;
-.super Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;
+.class public Lcom/android/vendorsettings/bluetooth/MiuiBluetoothDiscoverableEnabler;
+.super Lcom/android/vendorsettings/bluetooth/BluetoothDiscoverableEnabler;
 .source "MiuiBluetoothDiscoverableEnabler.java"
 
 # interfaces
@@ -16,10 +16,10 @@
 
     .prologue
     .line 16
-    invoke-direct {p0, p2, p3}, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;-><init>(Lcom/android/b/b/Q;Landroid/preference/CheckBoxPreference;)V
+    invoke-direct {p0, p2, p3}, Lcom/android/vendorsettings/bluetooth/BluetoothDiscoverableEnabler;-><init>(Lcom/android/b/b/Q;Landroid/preference/CheckBoxPreference;)V
 
     .line 17
-    iput-object p1, p0, Lcom/android/settings/bluetooth/MiuiBluetoothDiscoverableEnabler;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/vendorsettings/bluetooth/MiuiBluetoothDiscoverableEnabler;->mContext:Landroid/content/Context;
 
     .line 18
     return-void
@@ -32,10 +32,10 @@
 
     .prologue
     .line 46
-    invoke-super {p0, p1}, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;->bf(I)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/bluetooth/BluetoothDiscoverableEnabler;->bf(I)V
 
     .line 47
-    iget-object v1, p0, Lcom/android/settings/bluetooth/MiuiBluetoothDiscoverableEnabler;->Qt:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/bluetooth/MiuiBluetoothDiscoverableEnabler;->Qt:Landroid/preference/CheckBoxPreference;
 
     const/16 v0, 0x17
 
@@ -61,7 +61,7 @@
 
     .prologue
     .line 40
-    invoke-virtual {p0, p1}, Lcom/android/settings/bluetooth/MiuiBluetoothDiscoverableEnabler;->onPreferenceClick(Landroid/preference/Preference;)Z
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/bluetooth/MiuiBluetoothDiscoverableEnabler;->onPreferenceClick(Landroid/preference/Preference;)Z
 
     .line 41
     const/4 v0, 0x1
@@ -74,10 +74,10 @@
 
     .prologue
     .line 31
-    invoke-super {p0}, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;->pause()V
+    invoke-super {p0}, Lcom/android/vendorsettings/bluetooth/BluetoothDiscoverableEnabler;->pause()V
 
     .line 32
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothDiscoverableEnabler;->Qu:Lcom/android/b/b/Q;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/MiuiBluetoothDiscoverableEnabler;->Qu:Lcom/android/b/b/Q;
 
     if-nez v0, :cond_0
 
@@ -87,7 +87,7 @@
 
     .line 35
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothDiscoverableEnabler;->Qt:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/MiuiBluetoothDiscoverableEnabler;->Qt:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
@@ -101,12 +101,12 @@
 
     .prologue
     .line 21
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothDiscoverableEnabler;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/MiuiBluetoothDiscoverableEnabler;->mContext:Landroid/content/Context;
 
-    invoke-super {p0, v0}, Lcom/android/settings/bluetooth/BluetoothDiscoverableEnabler;->as(Landroid/content/Context;)V
+    invoke-super {p0, v0}, Lcom/android/vendorsettings/bluetooth/BluetoothDiscoverableEnabler;->as(Landroid/content/Context;)V
 
     .line 22
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothDiscoverableEnabler;->Qu:Lcom/android/b/b/Q;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/MiuiBluetoothDiscoverableEnabler;->Qu:Lcom/android/b/b/Q;
 
     if-nez v0, :cond_0
 
@@ -116,14 +116,14 @@
 
     .line 25
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothDiscoverableEnabler;->Qt:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/MiuiBluetoothDiscoverableEnabler;->Qt:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 26
-    iget-object v0, p0, Lcom/android/settings/bluetooth/MiuiBluetoothDiscoverableEnabler;->Qt:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/bluetooth/MiuiBluetoothDiscoverableEnabler;->Qt:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 

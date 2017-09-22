@@ -1,4 +1,4 @@
-.class Lcom/android/settings/widget/ScreenView$SavedState;
+.class Lcom/android/vendorsettings/widget/ScreenView$SavedState;
 .super Landroid/view/View$BaseSavedState;
 .source "ScreenView.java"
 
@@ -17,11 +17,11 @@
 
     .prologue
     .line 1961
-    new-instance v0, Lcom/android/settings/widget/q;
+    new-instance v0, Lcom/android/vendorsettings/widget/q;
 
-    invoke-direct {v0}, Lcom/android/settings/widget/q;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/widget/q;-><init>()V
 
-    sput-object v0, Lcom/android/settings/widget/ScreenView$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
+    sput-object v0, Lcom/android/vendorsettings/widget/ScreenView$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
@@ -36,25 +36,25 @@
     .line 1972
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView$SavedState;->currentScreen:I
+    iput v0, p0, Lcom/android/vendorsettings/widget/ScreenView$SavedState;->currentScreen:I
 
     .line 1980
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView$SavedState;->currentScreen:I
+    iput v0, p0, Lcom/android/vendorsettings/widget/ScreenView$SavedState;->currentScreen:I
 
     .line 1981
     return-void
 .end method
 
-.method synthetic constructor <init>(Landroid/os/Parcel;Lcom/android/settings/widget/l;)V
+.method synthetic constructor <init>(Landroid/os/Parcel;Lcom/android/vendorsettings/widget/l;)V
     .locals 0
 
     .prologue
     .line 1959
-    invoke-direct {p0, p1}, Lcom/android/settings/widget/ScreenView$SavedState;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/widget/ScreenView$SavedState;-><init>(Landroid/os/Parcel;)V
 
     return-void
 .end method
@@ -69,7 +69,7 @@
     .line 1972
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/widget/ScreenView$SavedState;->currentScreen:I
+    iput v0, p0, Lcom/android/vendorsettings/widget/ScreenView$SavedState;->currentScreen:I
 
     .line 1976
     return-void
@@ -85,7 +85,7 @@
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 1986
-    iget v0, p0, Lcom/android/settings/widget/ScreenView$SavedState;->currentScreen:I
+    iget v0, p0, Lcom/android/vendorsettings/widget/ScreenView$SavedState;->currentScreen:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 

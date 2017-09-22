@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/CryptKeeperConfirm$Blank;
+.class public Lcom/android/vendorsettings/CryptKeeperConfirm$Blank;
 .super Landroid/app/Activity;
 .source "CryptKeeperConfirm.java"
 
@@ -20,7 +20,7 @@
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/CryptKeeperConfirm$Blank;->mHandler:Landroid/os/Handler;
+    iput-object v0, p0, Lcom/android/vendorsettings/CryptKeeperConfirm$Blank;->mHandler:Landroid/os/Handler;
 
     return-void
 .end method
@@ -37,23 +37,23 @@
     .line 58
     const v0, 0x7f040040
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/CryptKeeperConfirm$Blank;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/CryptKeeperConfirm$Blank;->setContentView(I)V
 
     .line 60
-    invoke-static {}, Lcom/android/settings/iC;->iu()Z
+    invoke-static {}, Lcom/android/vendorsettings/iC;->iu()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 61
-    invoke-virtual {p0}, Lcom/android/settings/CryptKeeperConfirm$Blank;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/CryptKeeperConfirm$Blank;->finish()V
 
     .line 64
     :cond_0
     const-string v0, "statusbar"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/CryptKeeperConfirm$Blank;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/CryptKeeperConfirm$Blank;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -65,11 +65,11 @@
     invoke-virtual {v0, v1}, Landroid/app/StatusBarManager;->disable(I)V
 
     .line 77
-    iget-object v0, p0, Lcom/android/settings/CryptKeeperConfirm$Blank;->mHandler:Landroid/os/Handler;
+    iget-object v0, p0, Lcom/android/vendorsettings/CryptKeeperConfirm$Blank;->mHandler:Landroid/os/Handler;
 
-    new-instance v1, Lcom/android/settings/bn;
+    new-instance v1, Lcom/android/vendorsettings/bn;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/bn;-><init>(Lcom/android/settings/CryptKeeperConfirm$Blank;)V
+    invoke-direct {v1, p0}, Lcom/android/vendorsettings/bn;-><init>(Lcom/android/vendorsettings/CryptKeeperConfirm$Blank;)V
 
     const-wide/16 v2, 0x2bc
 

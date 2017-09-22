@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen android:title="@string/about_settings"
   xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.android.settings.applications.AppInfoPreference android:persistent="false" android:clickable="false" android:key="applications_info" />
+    <com.android.vendorsettings.applications.AppInfoPreference android:persistent="false" android:clickable="false" android:key="applications_info" />
     <PreferenceCategory />
     <miui.preference.ValuePreference android:persistent="false" android:title="@string/app_notifications_switch_label" android:key="notification_switch" />
     <CheckBoxPreference android:title="@string/floating_window_switch_label" android:key="floating_window_switch" android:defaultValue="false" />

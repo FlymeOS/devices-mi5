@@ -2,6 +2,6 @@
 <preference-headers
   xmlns:android="http://schemas.android.com/apk/res/android">
     <header android:icon="@drawable/ic_screen_timeout_settings" android:id="@id/screen_timeout_settings" android:title="@string/screen_timeout_title">
-        <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings.display.ScreenTimeoutDialogActivity" />
+        <intent android:targetPackage="com.android.vendorsettings" android:targetClass="com.android.vendorsettings.display.ScreenTimeoutDialogActivity" />
     </header>
 </preference-headers>

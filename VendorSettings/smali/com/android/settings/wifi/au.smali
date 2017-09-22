@@ -1,22 +1,22 @@
-.class Lcom/android/settings/wifi/au;
+.class Lcom/android/vendorsettings/wifi/au;
 .super Ljava/lang/Object;
 .source "WifiSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/dK;
+.implements Lcom/android/vendorsettings/dK;
 
 
 # instance fields
-.field final synthetic aDW:Lcom/android/settings/wifi/WifiSettings;
+.field final synthetic aDW:Lcom/android/vendorsettings/wifi/WifiSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/WifiSettings;)V
     .locals 0
 
     .prologue
     .line 800
-    iput-object p1, p0, Lcom/android/settings/wifi/au;->aDW:Lcom/android/settings/wifi/WifiSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/au;->aDW:Lcom/android/vendorsettings/wifi/WifiSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,16 +32,16 @@
     const/4 v2, 0x0
 
     .line 803
-    iget-object v0, p0, Lcom/android/settings/wifi/au;->aDW:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/au;->aDW:Lcom/android/vendorsettings/wifi/WifiSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/WifiSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hn;
+    check-cast v0, Lcom/android/vendorsettings/hn;
 
     .line 805
-    const-class v1, Lcom/android/settings/location/ScanningSettings;
+    const-class v1, Lcom/android/vendorsettings/location/ScanningSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -55,7 +55,7 @@
 
     move-object v5, v2
 
-    invoke-virtual/range {v0 .. v6}, Lcom/android/settings/hn;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lcom/android/vendorsettings/hn;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     .line 807
     return-void

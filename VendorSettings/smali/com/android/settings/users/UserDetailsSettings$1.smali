@@ -1,4 +1,4 @@
-.class Lcom/android/settings/users/UserDetailsSettings$1;
+.class Lcom/android/vendorsettings/users/UserDetailsSettings$1;
 .super Ljava/lang/Object;
 .source "UserDetailsSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic auk:Lcom/android/settings/users/UserDetailsSettings;
+.field final synthetic auk:Lcom/android/vendorsettings/users/UserDetailsSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/UserDetailsSettings;)V
+.method constructor <init>(Lcom/android/vendorsettings/users/UserDetailsSettings;)V
     .locals 0
 
     .prologue
     .line 170
-    iput-object p1, p0, Lcom/android/settings/users/UserDetailsSettings$1;->auk:Lcom/android/settings/users/UserDetailsSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/users/UserDetailsSettings$1;->auk:Lcom/android/vendorsettings/users/UserDetailsSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 172
-    iget-object v0, p0, Lcom/android/settings/users/UserDetailsSettings$1;->auk:Lcom/android/settings/users/UserDetailsSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/users/UserDetailsSettings$1;->auk:Lcom/android/vendorsettings/users/UserDetailsSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/users/UserDetailsSettings;->removeUser()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/users/UserDetailsSettings;->removeUser()V
 
     .line 173
     return-void

@@ -1,19 +1,19 @@
-.class Lcom/android/settings/wifi/aE;
+.class Lcom/android/vendorsettings/wifi/aE;
 .super Landroid/content/BroadcastReceiver;
 .source "WifiStatusController.java"
 
 
 # instance fields
-.field final synthetic aEk:Lcom/android/settings/wifi/aD;
+.field final synthetic aEk:Lcom/android/vendorsettings/wifi/aD;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/aD;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/aD;)V
     .locals 0
 
     .prologue
     .line 25
-    iput-object p1, p0, Lcom/android/settings/wifi/aE;->aEk:Lcom/android/settings/wifi/aD;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/aE;->aEk:Lcom/android/vendorsettings/wifi/aD;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -41,7 +41,7 @@
     if-eqz v1, :cond_1
 
     .line 31
-    iget-object v0, p0, Lcom/android/settings/wifi/aE;->aEk:Lcom/android/settings/wifi/aD;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/aE;->aEk:Lcom/android/vendorsettings/wifi/aD;
 
     const-string v1, "wifi_state"
 
@@ -51,7 +51,7 @@
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/wifi/aD;->a(Lcom/android/settings/wifi/aD;I)V
+    invoke-static {v0, v1}, Lcom/android/vendorsettings/wifi/aD;->a(Lcom/android/vendorsettings/wifi/aD;I)V
 
     .line 36
     :cond_0
@@ -69,9 +69,9 @@
     if-eqz v0, :cond_0
 
     .line 34
-    iget-object v0, p0, Lcom/android/settings/wifi/aE;->aEk:Lcom/android/settings/wifi/aD;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/aE;->aEk:Lcom/android/vendorsettings/wifi/aD;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/aD;->af()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/wifi/aD;->af()V
 
     goto :goto_0
 .end method

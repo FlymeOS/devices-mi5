@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/sound/y;
+.class public Lcom/android/vendorsettings/sound/y;
 .super Ljava/lang/Object;
 .source "FolderCache.java"
 

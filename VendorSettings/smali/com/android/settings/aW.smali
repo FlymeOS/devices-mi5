@@ -1,4 +1,4 @@
-.class synthetic Lcom/android/settings/aW;
+.class synthetic Lcom/android/vendorsettings/aW;
 .super Ljava/lang/Object;
 .source "CredentialStorage.java"
 
@@ -21,10 +21,10 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/aW;->fX:[I
+    sput-object v0, Lcom/android/vendorsettings/aW;->fX:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/aW;->fX:[I
+    sget-object v0, Lcom/android/vendorsettings/aW;->fX:[I
 
     sget-object v1, Landroid/security/KeyStore$State;->UNINITIALIZED:Landroid/security/KeyStore$State;
 
@@ -40,7 +40,7 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/aW;->fX:[I
+    sget-object v0, Lcom/android/vendorsettings/aW;->fX:[I
 
     sget-object v1, Landroid/security/KeyStore$State;->LOCKED:Landroid/security/KeyStore$State;
 
@@ -56,7 +56,7 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/aW;->fX:[I
+    sget-object v0, Lcom/android/vendorsettings/aW;->fX:[I
 
     sget-object v1, Landroid/security/KeyStore$State;->UNLOCKED:Landroid/security/KeyStore$State;
 

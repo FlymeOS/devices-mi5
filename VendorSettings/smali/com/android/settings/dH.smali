@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/dH;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/vendorsettings/dH;
+.super Lcom/android/vendorsettings/search/a;
 .source "LegalSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 72
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/search/a;-><init>()V
 
     return-void
 .end method
@@ -130,7 +130,7 @@
     .line 85
     const-string v1, "android.settings.TERMS"
 
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/dH;->f(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, v1}, Lcom/android/vendorsettings/dH;->f(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -145,7 +145,7 @@
     :cond_0
     const-string v1, "android.settings.LICENSE"
 
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/dH;->f(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, v1}, Lcom/android/vendorsettings/dH;->f(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -160,7 +160,7 @@
     :cond_1
     const-string v1, "android.settings.COPYRIGHT"
 
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/dH;->f(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, v1}, Lcom/android/vendorsettings/dH;->f(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -175,7 +175,7 @@
     :cond_2
     const-string v1, "android.settings.WEBVIEW_LICENSE"
 
-    invoke-direct {p0, p1, v1}, Lcom/android/settings/dH;->f(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, v1}, Lcom/android/vendorsettings/dH;->f(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 

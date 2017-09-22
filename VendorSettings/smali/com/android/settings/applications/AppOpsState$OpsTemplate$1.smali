@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/AppOpsState$OpsTemplate$1;
+.class final Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate$1;
 .super Ljava/lang/Object;
 .source "AppOpsState.java"
 
@@ -19,12 +19,12 @@
 
 
 # virtual methods
-.method public aD(I)[Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+.method public aD(I)[Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
     .locals 1
 
     .prologue
     .line 94
-    new-array v0, p1, [Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    new-array v0, p1, [Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     return-object v0
 .end method
@@ -34,21 +34,21 @@
 
     .prologue
     .line 88
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/AppOpsState$OpsTemplate$1;->g(Landroid/os/Parcel;)Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate$1;->g(Landroid/os/Parcel;)Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public g(Landroid/os/Parcel;)Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+.method public g(Landroid/os/Parcel;)Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
     .locals 1
 
     .prologue
     .line 90
-    new-instance v0, Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    new-instance v0, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/applications/AppOpsState$OpsTemplate;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 88
-    invoke-virtual {p0, p1}, Lcom/android/settings/applications/AppOpsState$OpsTemplate$1;->aD(I)[Lcom/android/settings/applications/AppOpsState$OpsTemplate;
+    invoke-virtual {p0, p1}, Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate$1;->aD(I)[Lcom/android/vendorsettings/applications/AppOpsState$OpsTemplate;
 
     move-result-object v0
 

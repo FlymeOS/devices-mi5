@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloud/a;
+.class public Lcom/android/vendorsettings/cloud/a;
 .super Ljava/lang/Object;
 .source "AccessibilityDisableList.java"
 

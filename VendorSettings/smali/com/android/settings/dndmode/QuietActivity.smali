@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dndmode/QuietActivity;
+.class public Lcom/android/vendorsettings/dndmode/QuietActivity;
 .super Lmiui/app/Activity;
 .source "QuietActivity.java"
 
@@ -27,13 +27,13 @@
     .line 23
     const v0, 0x7f04006c
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/QuietActivity;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/dndmode/QuietActivity;->setContentView(I)V
 
     .line 25
     if-nez p1, :cond_0
 
     .line 26
-    invoke-virtual {p0}, Lcom/android/settings/dndmode/QuietActivity;->getFragmentManager()Landroid/app/FragmentManager;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dndmode/QuietActivity;->getFragmentManager()Landroid/app/FragmentManager;
 
     move-result-object v0
 
@@ -43,9 +43,9 @@
 
     const v1, 0x7f1300df
 
-    new-instance v2, Lcom/android/settings/dndmode/r;
+    new-instance v2, Lcom/android/vendorsettings/dndmode/r;
 
-    invoke-direct {v2}, Lcom/android/settings/dndmode/r;-><init>()V
+    invoke-direct {v2}, Lcom/android/vendorsettings/dndmode/r;-><init>()V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/FragmentTransaction;->add(ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;
 

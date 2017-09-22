@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+.class public Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 .super Ljava/lang/Object;
 .source "PrivacyPasswordManager.java"
 
 
 # static fields
-.field private static aoq:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+.field private static aoq:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 
 
 # instance fields
@@ -28,54 +28,54 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->mContext:Landroid/content/Context;
+    iput-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->mContext:Landroid/content/Context;
 
     .line 43
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->mContentResolver:Landroid/content/ContentResolver;
+    iput-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->mContentResolver:Landroid/content/ContentResolver;
 
     .line 44
     new-instance v0, Landroid/security/ChooseLockSettingsHelper;
 
-    iget-object v1, p0, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->mContext:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Landroid/security/ChooseLockSettingsHelper;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->b:Landroid/security/ChooseLockSettingsHelper;
+    iput-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->b:Landroid/security/ChooseLockSettingsHelper;
 
     .line 45
     return-void
 .end method
 
-.method public static declared-synchronized bW(Landroid/content/Context;)Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+.method public static declared-synchronized bW(Landroid/content/Context;)Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
     .locals 2
 
     .prologue
     .line 48
-    const-class v1, Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    const-class v1, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 
     monitor-enter v1
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->aoq:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    sget-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->aoq:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 
     if-nez v0, :cond_0
 
     .line 49
-    new-instance v0, Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    new-instance v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->aoq:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    sput-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->aoq:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
 
     .line 51
     :cond_0
-    sget-object v0, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->aoq:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    sget-object v0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->aoq:Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -99,7 +99,7 @@
 
     .prologue
     .line 84
-    iget-object v1, p0, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v1, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "fingerprint_apply_to_privacy_password"
 
@@ -125,7 +125,7 @@
 
     .prologue
     .line 77
-    iget-object v1, p0, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v1, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "privacy_add_account_md5"
 
@@ -139,7 +139,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->h([B)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordUtils;->h([B)Ljava/lang/String;
 
     move-result-object v0
 
@@ -161,7 +161,7 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->b:Landroid/security/ChooseLockSettingsHelper;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->b:Landroid/security/ChooseLockSettingsHelper;
 
     invoke-virtual {v0}, Landroid/security/ChooseLockSettingsHelper;->isPrivacyPasswordEnabled()Z
 
@@ -175,7 +175,7 @@
 
     .prologue
     .line 65
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "privacy_password_bind_xiaomi_account"
 
@@ -187,7 +187,7 @@
     if-eqz v0, :cond_0
 
     .line 67
-    iget-object v1, p0, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v1, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "privacy_add_account_md5"
 
@@ -195,14 +195,14 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->h([B)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordUtils;->h([B)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {v1, v2, v0}, Landroid/provider/Settings$Secure;->putString(Landroid/content/ContentResolver;Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 68
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "privacy_password_bind_xiaomi_account"
 
@@ -212,7 +212,7 @@
 
     .line 70
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v0, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v1, "privacy_add_account_md5"
 
@@ -230,7 +230,7 @@
     const/4 v0, 0x1
 
     .line 91
-    iget-object v1, p0, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->mContentResolver:Landroid/content/ContentResolver;
+    iget-object v1, p0, Lcom/android/vendorsettings/privacypassword/PrivacyPasswordManager;->mContentResolver:Landroid/content/ContentResolver;
 
     const-string v2, "fingerprint_apply_to_privacy_password"
 

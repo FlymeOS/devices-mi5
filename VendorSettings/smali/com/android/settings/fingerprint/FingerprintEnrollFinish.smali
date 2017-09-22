@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/fingerprint/FingerprintEnrollFinish;
-.super Lcom/android/settings/fingerprint/a;
+.class public Lcom/android/vendorsettings/fingerprint/FingerprintEnrollFinish;
+.super Lcom/android/vendorsettings/fingerprint/a;
 .source "FingerprintEnrollFinish.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 36
-    invoke-direct {p0}, Lcom/android/settings/fingerprint/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/fingerprint/a;-><init>()V
 
     return-void
 .end method
@@ -30,7 +30,7 @@
     if-ne v0, v1, :cond_0
 
     .line 66
-    invoke-virtual {p0}, Lcom/android/settings/fingerprint/FingerprintEnrollFinish;->qj()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollFinish;->qj()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -40,14 +40,14 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 68
-    invoke-virtual {p0, v0}, Lcom/android/settings/fingerprint/FingerprintEnrollFinish;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollFinish;->startActivity(Landroid/content/Intent;)V
 
     .line 69
-    invoke-virtual {p0}, Lcom/android/settings/fingerprint/FingerprintEnrollFinish;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollFinish;->finish()V
 
     .line 71
     :cond_0
-    invoke-super {p0, p1}, Lcom/android/settings/fingerprint/a;->onClick(Landroid/view/View;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/fingerprint/a;->onClick(Landroid/view/View;)V
 
     .line 72
     return-void
@@ -58,22 +58,22 @@
 
     .prologue
     .line 40
-    invoke-super {p0, p1}, Lcom/android/settings/fingerprint/a;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/fingerprint/a;->onCreate(Landroid/os/Bundle;)V
 
     .line 41
     const v0, 0x7f040081
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fingerprint/FingerprintEnrollFinish;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollFinish;->setContentView(I)V
 
     .line 42
     const v0, 0x7f0c0204
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fingerprint/FingerprintEnrollFinish;->bZ(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollFinish;->bZ(I)V
 
     .line 43
     const v0, 0x7f1300ff
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fingerprint/FingerprintEnrollFinish;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollFinish;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -82,7 +82,7 @@
     .line 45
     const-string v1, "fingerprint"
 
-    invoke-virtual {p0, v1}, Lcom/android/settings/fingerprint/FingerprintEnrollFinish;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v1}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollFinish;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -98,7 +98,7 @@
     move-result v1
 
     .line 47
-    invoke-virtual {p0}, Lcom/android/settings/fingerprint/FingerprintEnrollFinish;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollFinish;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -134,10 +134,10 @@
     .line 59
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fingerprint/FingerprintEnrollFinish;->setResult(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollFinish;->setResult(I)V
 
     .line 60
-    invoke-virtual {p0}, Lcom/android/settings/fingerprint/FingerprintEnrollFinish;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/fingerprint/FingerprintEnrollFinish;->finish()V
 
     .line 61
     return-void

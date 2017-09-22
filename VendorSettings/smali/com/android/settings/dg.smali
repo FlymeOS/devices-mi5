@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dg;
+.class public Lcom/android/vendorsettings/dg;
 .super Lmiui/preference/RadioButtonPreference;
 .source "FontSizePreference.java"
 
@@ -27,7 +27,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 25
-    iget v1, p0, Lcom/android/settings/dg;->mS:I
+    iget v1, p0, Lcom/android/vendorsettings/dg;->mS:I
 
     int-to-float v1, v1
 
@@ -43,7 +43,7 @@
     check-cast v0, Landroid/widget/TextView;
 
     .line 27
-    iget v1, p0, Lcom/android/settings/dg;->mS:I
+    iget v1, p0, Lcom/android/vendorsettings/dg;->mS:I
 
     int-to-float v1, v1
 

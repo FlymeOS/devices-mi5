@@ -1,4 +1,4 @@
-.class public abstract Lcom/android/settings/dA;
+.class public abstract Lcom/android/vendorsettings/dA;
 .super Lmiui/preference/PreferenceActivity;
 .source "InstrumentedPreferenceActivity.java"
 
@@ -24,7 +24,7 @@
     invoke-super {p0}, Lmiui/preference/PreferenceActivity;->onPause()V
 
     .line 44
-    invoke-virtual {p0}, Lcom/android/settings/dA;->z()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dA;->z()I
 
     move-result v0
 
@@ -42,7 +42,7 @@
     invoke-super {p0}, Lmiui/preference/PreferenceActivity;->onResume()V
 
     .line 38
-    invoke-virtual {p0}, Lcom/android/settings/dA;->z()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/dA;->z()I
 
     move-result v0
 

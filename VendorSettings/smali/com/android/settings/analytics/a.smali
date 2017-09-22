@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/analytics/a;
+.class public Lcom/android/vendorsettings/analytics/a;
 .super Ljava/lang/Object;
 .source "AnalyticsUtil.java"
 
@@ -13,13 +13,13 @@
 
     .prologue
     .line 13
-    const-class v0, Lcom/android/settings/analytics/a;
+    const-class v0, Lcom/android/vendorsettings/analytics/a;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/analytics/a;->TAG:Ljava/lang/String;
+    sput-object v0, Lcom/android/vendorsettings/analytics/a;->TAG:Ljava/lang/String;
 
     return-void
 .end method

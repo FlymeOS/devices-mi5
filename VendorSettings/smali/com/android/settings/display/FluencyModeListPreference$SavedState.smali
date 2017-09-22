@@ -1,4 +1,4 @@
-.class Lcom/android/settings/display/FluencyModeListPreference$SavedState;
+.class Lcom/android/vendorsettings/display/FluencyModeListPreference$SavedState;
 .super Landroid/preference/Preference$BaseSavedState;
 .source "FluencyModeListPreference.java"
 
@@ -17,11 +17,11 @@
 
     .prologue
     .line 97
-    new-instance v0, Lcom/android/settings/display/j;
+    new-instance v0, Lcom/android/vendorsettings/display/j;
 
-    invoke-direct {v0}, Lcom/android/settings/display/j;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/display/j;-><init>()V
 
-    sput-object v0, Lcom/android/settings/display/FluencyModeListPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
+    sput-object v0, Lcom/android/vendorsettings/display/FluencyModeListPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
@@ -38,7 +38,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/display/FluencyModeListPreference$SavedState;->value:I
+    iput v0, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference$SavedState;->value:I
 
     .line 85
     return-void
@@ -65,7 +65,7 @@
     invoke-super {p0, p1, p2}, Landroid/preference/Preference$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 90
-    iget v0, p0, Lcom/android/settings/display/FluencyModeListPreference$SavedState;->value:I
+    iget v0, p0, Lcom/android/vendorsettings/display/FluencyModeListPreference$SavedState;->value:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 

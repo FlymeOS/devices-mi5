@@ -1,19 +1,19 @@
-.class Lcom/android/settings/applications/ManageDefaultApps$2;
+.class Lcom/android/vendorsettings/applications/ManageDefaultApps$2;
 .super Lcom/android/internal/content/PackageMonitor;
 .source "ManageDefaultApps.java"
 
 
 # instance fields
-.field final synthetic Kw:Lcom/android/settings/applications/ManageDefaultApps;
+.field final synthetic Kw:Lcom/android/vendorsettings/applications/ManageDefaultApps;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/ManageDefaultApps;)V
+.method constructor <init>(Lcom/android/vendorsettings/applications/ManageDefaultApps;)V
     .locals 0
 
     .prologue
     .line 71
-    iput-object p1, p0, Lcom/android/settings/applications/ManageDefaultApps$2;->Kw:Lcom/android/settings/applications/ManageDefaultApps;
+    iput-object p1, p0, Lcom/android/vendorsettings/applications/ManageDefaultApps$2;->Kw:Lcom/android/vendorsettings/applications/ManageDefaultApps;
 
     invoke-direct {p0}, Lcom/android/internal/content/PackageMonitor;-><init>()V
 
@@ -25,15 +25,15 @@
 
     .prologue
     .line 93
-    iget-object v0, p0, Lcom/android/settings/applications/ManageDefaultApps$2;->Kw:Lcom/android/settings/applications/ManageDefaultApps;
+    iget-object v0, p0, Lcom/android/vendorsettings/applications/ManageDefaultApps$2;->Kw:Lcom/android/vendorsettings/applications/ManageDefaultApps;
 
-    invoke-static {v0}, Lcom/android/settings/applications/ManageDefaultApps;->c(Lcom/android/settings/applications/ManageDefaultApps;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/vendorsettings/applications/ManageDefaultApps;->c(Lcom/android/vendorsettings/applications/ManageDefaultApps;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/applications/ManageDefaultApps$2;->Kw:Lcom/android/settings/applications/ManageDefaultApps;
+    iget-object v1, p0, Lcom/android/vendorsettings/applications/ManageDefaultApps$2;->Kw:Lcom/android/vendorsettings/applications/ManageDefaultApps;
 
-    invoke-static {v1}, Lcom/android/settings/applications/ManageDefaultApps;->b(Lcom/android/settings/applications/ManageDefaultApps;)Ljava/lang/Runnable;
+    invoke-static {v1}, Lcom/android/vendorsettings/applications/ManageDefaultApps;->b(Lcom/android/vendorsettings/applications/ManageDefaultApps;)Ljava/lang/Runnable;
 
     move-result-object v1
 
@@ -52,7 +52,7 @@
 
     .prologue
     .line 74
-    invoke-direct {p0}, Lcom/android/settings/applications/ManageDefaultApps$2;->iL()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/ManageDefaultApps$2;->iL()V
 
     .line 75
     return-void
@@ -63,7 +63,7 @@
 
     .prologue
     .line 79
-    invoke-direct {p0}, Lcom/android/settings/applications/ManageDefaultApps$2;->iL()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/ManageDefaultApps$2;->iL()V
 
     .line 80
     return-void
@@ -74,7 +74,7 @@
 
     .prologue
     .line 84
-    invoke-direct {p0}, Lcom/android/settings/applications/ManageDefaultApps$2;->iL()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/ManageDefaultApps$2;->iL()V
 
     .line 85
     return-void
@@ -85,7 +85,7 @@
 
     .prologue
     .line 89
-    invoke-direct {p0}, Lcom/android/settings/applications/ManageDefaultApps$2;->iL()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/applications/ManageDefaultApps$2;->iL()V
 
     .line 90
     return-void

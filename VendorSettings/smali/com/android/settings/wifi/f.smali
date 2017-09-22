@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/f;
+.class Lcom/android/vendorsettings/wifi/f;
 .super Ljava/lang/Object;
 .source "EditTetherFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aAl:Lcom/android/settings/wifi/EditTetherFragment;
+.field final synthetic aAl:Lcom/android/vendorsettings/wifi/EditTetherFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/EditTetherFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/wifi/EditTetherFragment;)V
     .locals 0
 
     .prologue
     .line 114
-    iput-object p1, p0, Lcom/android/settings/wifi/f;->aAl:Lcom/android/settings/wifi/EditTetherFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/wifi/f;->aAl:Lcom/android/vendorsettings/wifi/EditTetherFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,27 +30,27 @@
 
     .prologue
     .line 118
-    iget-object v0, p0, Lcom/android/settings/wifi/f;->aAl:Lcom/android/settings/wifi/EditTetherFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/f;->aAl:Lcom/android/vendorsettings/wifi/EditTetherFragment;
 
-    invoke-static {v0, p3}, Lcom/android/settings/wifi/EditTetherFragment;->a(Lcom/android/settings/wifi/EditTetherFragment;I)I
+    invoke-static {v0, p3}, Lcom/android/vendorsettings/wifi/EditTetherFragment;->a(Lcom/android/vendorsettings/wifi/EditTetherFragment;I)I
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/wifi/f;->aAl:Lcom/android/settings/wifi/EditTetherFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/f;->aAl:Lcom/android/vendorsettings/wifi/EditTetherFragment;
 
-    iget-object v0, v0, Lcom/android/settings/wifi/EditTetherFragment;->ub:Landroid/net/wifi/WifiConfiguration;
+    iget-object v0, v0, Lcom/android/vendorsettings/wifi/EditTetherFragment;->ub:Landroid/net/wifi/WifiConfiguration;
 
-    iget-object v1, p0, Lcom/android/settings/wifi/f;->aAl:Lcom/android/settings/wifi/EditTetherFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/wifi/f;->aAl:Lcom/android/vendorsettings/wifi/EditTetherFragment;
 
-    invoke-static {v1}, Lcom/android/settings/wifi/EditTetherFragment;->a(Lcom/android/settings/wifi/EditTetherFragment;)I
+    invoke-static {v1}, Lcom/android/vendorsettings/wifi/EditTetherFragment;->a(Lcom/android/vendorsettings/wifi/EditTetherFragment;)I
 
     move-result v1
 
     iput v1, v0, Landroid/net/wifi/WifiConfiguration;->apBand:I
 
     .line 120
-    iget-object v0, p0, Lcom/android/settings/wifi/f;->aAl:Lcom/android/settings/wifi/EditTetherFragment;
+    iget-object v0, p0, Lcom/android/vendorsettings/wifi/f;->aAl:Lcom/android/vendorsettings/wifi/EditTetherFragment;
 
-    invoke-static {v0}, Lcom/android/settings/wifi/EditTetherFragment;->b(Lcom/android/settings/wifi/EditTetherFragment;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/vendorsettings/wifi/EditTetherFragment;->b(Lcom/android/vendorsettings/wifi/EditTetherFragment;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -64,9 +64,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/wifi/f;->aAl:Lcom/android/settings/wifi/EditTetherFragment;
+    iget-object v2, p0, Lcom/android/vendorsettings/wifi/f;->aAl:Lcom/android/vendorsettings/wifi/EditTetherFragment;
 
-    invoke-static {v2}, Lcom/android/settings/wifi/EditTetherFragment;->a(Lcom/android/settings/wifi/EditTetherFragment;)I
+    invoke-static {v2}, Lcom/android/vendorsettings/wifi/EditTetherFragment;->a(Lcom/android/vendorsettings/wifi/EditTetherFragment;)I
 
     move-result v2
 
@@ -80,9 +80,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/wifi/f;->aAl:Lcom/android/settings/wifi/EditTetherFragment;
+    iget-object v2, p0, Lcom/android/vendorsettings/wifi/f;->aAl:Lcom/android/vendorsettings/wifi/EditTetherFragment;
 
-    iget-object v2, v2, Lcom/android/settings/wifi/EditTetherFragment;->ub:Landroid/net/wifi/WifiConfiguration;
+    iget-object v2, v2, Lcom/android/vendorsettings/wifi/EditTetherFragment;->ub:Landroid/net/wifi/WifiConfiguration;
 
     iget v2, v2, Landroid/net/wifi/WifiConfiguration;->apBand:I
 

@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/cb;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/vendorsettings/cb;
+.super Lcom/android/vendorsettings/search/a;
 .source "DevelopmentSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 2452
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/search/a;-><init>()V
 
     return-void
 .end method
@@ -51,7 +51,7 @@
 
     .prologue
     .line 2465
-    invoke-direct {p0, p1}, Lcom/android/settings/cb;->l(Landroid/content/Context;)Z
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/cb;->l(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -96,7 +96,7 @@
 
     .prologue
     .line 2476
-    invoke-direct {p0, p1}, Lcom/android/settings/cb;->l(Landroid/content/Context;)Z
+    invoke-direct {p0, p1}, Lcom/android/vendorsettings/cb;->l(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -117,8 +117,8 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 2481
-    # invokes: Lcom/android/settings/DevelopmentSettings;->bY()Z
-    invoke-static {}, Lcom/android/settings/DevelopmentSettings;->access$500()Z
+    # invokes: Lcom/android/vendorsettings/DevelopmentSettings;->bY()Z
+    invoke-static {}, Lcom/android/vendorsettings/DevelopmentSettings;->access$500()Z
 
     move-result v1
 
@@ -131,7 +131,7 @@
 
     .line 2484
     :cond_2
-    invoke-static {}, Lcom/android/settings/DevelopmentSettings;->dn()Z
+    invoke-static {}, Lcom/android/vendorsettings/DevelopmentSettings;->dn()Z
 
     move-result v1
 

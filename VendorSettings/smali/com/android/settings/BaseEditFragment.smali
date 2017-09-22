@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/BaseEditFragment;
-.super Lcom/android/settings/BaseFragment;
+.class public Lcom/android/vendorsettings/BaseEditFragment;
+.super Lcom/android/vendorsettings/BaseFragment;
 .source "BaseEditFragment.java"
 
 
@@ -13,12 +13,12 @@
 
     .prologue
     .line 24
-    invoke-direct {p0}, Lcom/android/settings/BaseFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/BaseFragment;-><init>()V
 
     .line 25
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/BaseEditFragment;->cm:Z
+    iput-boolean v0, p0, Lcom/android/vendorsettings/BaseEditFragment;->cm:Z
 
     return-void
 .end method
@@ -32,7 +32,7 @@
     .line 77
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/BaseEditFragment;->g(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/BaseEditFragment;->g(Z)V
 
     .line 78
     return-void
@@ -45,7 +45,7 @@
     const/4 v1, 0x0
 
     .line 113
-    invoke-virtual {p0}, Lcom/android/settings/BaseEditFragment;->isChanged()Z
+    invoke-virtual {p0}, Lcom/android/vendorsettings/BaseEditFragment;->isChanged()Z
 
     move-result v0
 
@@ -54,7 +54,7 @@
     .line 114
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/BaseEditFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/BaseEditFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -68,9 +68,9 @@
     .line 116
     const v2, 0x104000a
 
-    new-instance v3, Lcom/android/settings/ab;
+    new-instance v3, Lcom/android/vendorsettings/ab;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/ab;-><init>(Lcom/android/settings/BaseEditFragment;)V
+    invoke-direct {v3, p0}, Lcom/android/vendorsettings/ab;-><init>(Lcom/android/vendorsettings/BaseEditFragment;)V
 
     invoke-virtual {v0, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -96,28 +96,28 @@
 
     .line 128
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/BaseEditFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/BaseEditFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    invoke-virtual {p0}, Lcom/android/settings/BaseEditFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/BaseEditFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    instance-of v0, v0, Lcom/android/settings/MiuiSettings;
+    instance-of v0, v0, Lcom/android/vendorsettings/MiuiSettings;
 
     if-eqz v0, :cond_1
 
     .line 129
-    invoke-virtual {p0}, Lcom/android/settings/BaseEditFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/BaseEditFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/MiuiSettings;
+    check-cast v0, Lcom/android/vendorsettings/MiuiSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiSettings;->fX()V
+    invoke-virtual {v0}, Lcom/android/vendorsettings/MiuiSettings;->fX()V
 
     :cond_1
     move v0, v1
@@ -133,31 +133,31 @@
     .line 81
     if-eqz p1, :cond_0
 
-    iget-boolean v0, p0, Lcom/android/settings/BaseEditFragment;->cm:Z
+    iget-boolean v0, p0, Lcom/android/vendorsettings/BaseEditFragment;->cm:Z
 
     if-eqz v0, :cond_0
 
     .line 82
-    invoke-virtual {p0}, Lcom/android/settings/BaseEditFragment;->getTargetFragment()Landroid/app/Fragment;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/BaseEditFragment;->getTargetFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/SettingsPreferenceFragment;
+    check-cast v0, Lcom/android/vendorsettings/SettingsPreferenceFragment;
 
     .line 83
     if-eqz v0, :cond_1
 
     .line 84
-    invoke-virtual {p0}, Lcom/android/settings/BaseEditFragment;->getTargetRequestCode()I
+    invoke-virtual {p0}, Lcom/android/vendorsettings/BaseEditFragment;->getTargetRequestCode()I
 
     move-result v1
 
-    invoke-virtual {v0, v1, p1}, Lcom/android/settings/SettingsPreferenceFragment;->a(ILandroid/os/Bundle;)V
+    invoke-virtual {v0, v1, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->a(ILandroid/os/Bundle;)V
 
     .line 91
     :cond_0
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/BaseEditFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/BaseEditFragment;->finish()V
 
     .line 92
     return-void
@@ -172,7 +172,7 @@
     invoke-virtual {v0, p1}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
     .line 88
-    invoke-virtual {p0}, Lcom/android/settings/BaseEditFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/BaseEditFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -190,7 +190,7 @@
     .line 73
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/BaseEditFragment;->b(Landroid/os/Bundle;)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/BaseEditFragment;->b(Landroid/os/Bundle;)V
 
     .line 74
     return-void
@@ -211,7 +211,7 @@
 
     .prologue
     .line 103
-    invoke-virtual {p0}, Lcom/android/settings/BaseEditFragment;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/BaseEditFragment;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v0
 
@@ -240,7 +240,7 @@
 
     .line 108
     :cond_0
-    iput-boolean p1, p0, Lcom/android/settings/BaseEditFragment;->cm:Z
+    iput-boolean p1, p0, Lcom/android/vendorsettings/BaseEditFragment;->cm:Z
 
     .line 109
     return-void
@@ -261,7 +261,7 @@
 
     .prologue
     .line 95
-    invoke-virtual {p0}, Lcom/android/settings/BaseEditFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/vendorsettings/BaseEditFragment;->finish()V
 
     .line 96
     return-void
@@ -274,10 +274,10 @@
     const/16 v0, 0x10
 
     .line 29
-    invoke-super {p0}, Lcom/android/settings/BaseFragment;->onStart()V
+    invoke-super {p0}, Lcom/android/vendorsettings/BaseFragment;->onStart()V
 
     .line 31
-    invoke-virtual {p0}, Lcom/android/settings/BaseEditFragment;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/BaseEditFragment;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v1
 
@@ -311,7 +311,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    invoke-virtual {p0}, Lcom/android/settings/BaseEditFragment;->getTitle()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/BaseEditFragment;->getTitle()Ljava/lang/String;
 
     move-result-object v3
 
@@ -332,9 +332,9 @@
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(I)V
 
     .line 42
-    new-instance v3, Lcom/android/settings/Z;
+    new-instance v3, Lcom/android/vendorsettings/Z;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/Z;-><init>(Lcom/android/settings/BaseEditFragment;)V
+    invoke-direct {v3, p0}, Lcom/android/vendorsettings/Z;-><init>(Lcom/android/vendorsettings/BaseEditFragment;)V
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -353,21 +353,21 @@
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setText(I)V
 
     .line 50
-    new-instance v2, Lcom/android/settings/aa;
+    new-instance v2, Lcom/android/vendorsettings/aa;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/aa;-><init>(Lcom/android/settings/BaseEditFragment;)V
+    invoke-direct {v2, p0}, Lcom/android/vendorsettings/aa;-><init>(Lcom/android/vendorsettings/BaseEditFragment;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 57
-    invoke-virtual {p0}, Lcom/android/settings/BaseEditFragment;->getTitle()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/BaseEditFragment;->getTitle()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v1, v0}, Landroid/app/ActionBar;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 59
-    invoke-static {p0}, Lcom/android/settings/fy;->c(Landroid/app/Fragment;)V
+    invoke-static {p0}, Lcom/android/vendorsettings/fy;->c(Landroid/app/Fragment;)V
 
     goto :goto_0
 .end method
@@ -377,10 +377,10 @@
 
     .prologue
     .line 64
-    invoke-static {p0}, Lcom/android/settings/fy;->d(Landroid/app/Fragment;)V
+    invoke-static {p0}, Lcom/android/vendorsettings/fy;->d(Landroid/app/Fragment;)V
 
     .line 65
-    invoke-super {p0}, Lcom/android/settings/BaseFragment;->onStop()V
+    invoke-super {p0}, Lcom/android/vendorsettings/BaseFragment;->onStop()V
 
     .line 66
     return-void

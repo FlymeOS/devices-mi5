@@ -1,19 +1,19 @@
-.class Lcom/android/settings/msim/d;
+.class Lcom/android/vendorsettings/msim/d;
 .super Landroid/content/BroadcastReceiver;
 .source "SimFragment.java"
 
 
 # instance fields
-.field final synthetic ahM:Lcom/android/settings/msim/SimFragment;
+.field final synthetic ahM:Lcom/android/vendorsettings/msim/SimFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/msim/SimFragment;)V
+.method constructor <init>(Lcom/android/vendorsettings/msim/SimFragment;)V
     .locals 0
 
     .prologue
     .line 108
-    iput-object p1, p0, Lcom/android/settings/msim/d;->ahM:Lcom/android/settings/msim/SimFragment;
+    iput-object p1, p0, Lcom/android/vendorsettings/msim/d;->ahM:Lcom/android/vendorsettings/msim/SimFragment;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -80,9 +80,9 @@
     move-result-object v0
 
     .line 120
-    iget-object v1, p0, Lcom/android/settings/msim/d;->ahM:Lcom/android/settings/msim/SimFragment;
+    iget-object v1, p0, Lcom/android/vendorsettings/msim/d;->ahM:Lcom/android/vendorsettings/msim/SimFragment;
 
-    invoke-static {v1, v0}, Lcom/android/settings/msim/SimFragment;->a(Lcom/android/settings/msim/SimFragment;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/vendorsettings/msim/SimFragment;->a(Lcom/android/vendorsettings/msim/SimFragment;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

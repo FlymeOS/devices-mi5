@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/AirplaneModeVoiceActivity;
-.super Lcom/android/settings/f/a;
+.class public Lcom/android/vendorsettings/AirplaneModeVoiceActivity;
+.super Lcom/android/vendorsettings/f/a;
 .source "AirplaneModeVoiceActivity.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 29
-    invoke-direct {p0}, Lcom/android/settings/f/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/f/a;-><init>()V
 
     return-void
 .end method
@@ -34,7 +34,7 @@
     if-eqz v2, :cond_1
 
     .line 34
-    invoke-virtual {p0}, Lcom/android/settings/AirplaneModeVoiceActivity;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/AirplaneModeVoiceActivity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v2
 

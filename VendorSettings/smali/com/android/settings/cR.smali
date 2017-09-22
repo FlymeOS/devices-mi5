@@ -1,4 +1,4 @@
-.class Lcom/android/settings/cR;
+.class Lcom/android/vendorsettings/cR;
 .super Ljava/lang/Object;
 .source "EdgeModeGuideActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic mv:Lcom/android/settings/EdgeModeGuideActivity;
+.field final synthetic mv:Lcom/android/vendorsettings/EdgeModeGuideActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/EdgeModeGuideActivity;)V
+.method constructor <init>(Lcom/android/vendorsettings/EdgeModeGuideActivity;)V
     .locals 0
 
     .prologue
     .line 158
-    iput-object p1, p0, Lcom/android/settings/cR;->mv:Lcom/android/settings/EdgeModeGuideActivity;
+    iput-object p1, p0, Lcom/android/vendorsettings/cR;->mv:Lcom/android/vendorsettings/EdgeModeGuideActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,15 +30,15 @@
 
     .prologue
     .line 161
-    iget-object v0, p0, Lcom/android/settings/cR;->mv:Lcom/android/settings/EdgeModeGuideActivity;
+    iget-object v0, p0, Lcom/android/vendorsettings/cR;->mv:Lcom/android/vendorsettings/EdgeModeGuideActivity;
 
-    invoke-static {v0}, Lcom/android/settings/EdgeModeGuideActivity;->b(Lcom/android/settings/EdgeModeGuideActivity;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->b(Lcom/android/vendorsettings/EdgeModeGuideActivity;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/cR;->mv:Lcom/android/settings/EdgeModeGuideActivity;
+    iget-object v1, p0, Lcom/android/vendorsettings/cR;->mv:Lcom/android/vendorsettings/EdgeModeGuideActivity;
 
-    invoke-static {v1}, Lcom/android/settings/EdgeModeGuideActivity;->b(Lcom/android/settings/EdgeModeGuideActivity;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/android/vendorsettings/EdgeModeGuideActivity;->b(Lcom/android/vendorsettings/EdgeModeGuideActivity;)Landroid/os/Handler;
 
     move-result-object v1
 

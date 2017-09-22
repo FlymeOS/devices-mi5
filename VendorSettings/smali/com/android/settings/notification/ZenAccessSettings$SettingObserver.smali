@@ -1,19 +1,19 @@
-.class final Lcom/android/settings/notification/ZenAccessSettings$SettingObserver;
+.class final Lcom/android/vendorsettings/notification/ZenAccessSettings$SettingObserver;
 .super Landroid/database/ContentObserver;
 .source "ZenAccessSettings.java"
 
 
 # instance fields
-.field final synthetic akB:Lcom/android/settings/notification/ZenAccessSettings;
+.field final synthetic akB:Lcom/android/vendorsettings/notification/ZenAccessSettings;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/notification/ZenAccessSettings;)V
+.method public constructor <init>(Lcom/android/vendorsettings/notification/ZenAccessSettings;)V
     .locals 2
 
     .prologue
     .line 169
-    iput-object p1, p0, Lcom/android/settings/notification/ZenAccessSettings$SettingObserver;->akB:Lcom/android/settings/notification/ZenAccessSettings;
+    iput-object p1, p0, Lcom/android/vendorsettings/notification/ZenAccessSettings$SettingObserver;->akB:Lcom/android/vendorsettings/notification/ZenAccessSettings;
 
     .line 170
     new-instance v0, Landroid/os/Handler;
@@ -37,9 +37,9 @@
 
     .prologue
     .line 175
-    iget-object v0, p0, Lcom/android/settings/notification/ZenAccessSettings$SettingObserver;->akB:Lcom/android/settings/notification/ZenAccessSettings;
+    iget-object v0, p0, Lcom/android/vendorsettings/notification/ZenAccessSettings$SettingObserver;->akB:Lcom/android/vendorsettings/notification/ZenAccessSettings;
 
-    invoke-static {v0}, Lcom/android/settings/notification/ZenAccessSettings;->b(Lcom/android/settings/notification/ZenAccessSettings;)V
+    invoke-static {v0}, Lcom/android/vendorsettings/notification/ZenAccessSettings;->b(Lcom/android/vendorsettings/notification/ZenAccessSettings;)V
 
     .line 176
     return-void

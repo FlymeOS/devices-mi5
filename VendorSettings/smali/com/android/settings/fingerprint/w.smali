@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fingerprint/w;
+.class public Lcom/android/vendorsettings/fingerprint/w;
 .super Landroid/preference/Preference;
 .source "FingerprintSettings.java"
 
@@ -17,7 +17,7 @@
     .line 685
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/fingerprint/w;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/vendorsettings/fingerprint/w;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 686
     return-void
@@ -30,7 +30,7 @@
     .line 681
     const v0, 0x101008e
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/fingerprint/w;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/vendorsettings/fingerprint/w;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 682
     return-void
@@ -43,7 +43,7 @@
     .line 677
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, p3, v0}, Lcom/android/settings/fingerprint/w;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
+    invoke-direct {p0, p1, p2, p3, v0}, Lcom/android/vendorsettings/fingerprint/w;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     .line 678
     return-void
@@ -67,7 +67,7 @@
 
     .prologue
     .line 691
-    iput-object p1, p0, Lcom/android/settings/fingerprint/w;->ack:Landroid/hardware/fingerprint/Fingerprint;
+    iput-object p1, p0, Lcom/android/vendorsettings/fingerprint/w;->ack:Landroid/hardware/fingerprint/Fingerprint;
 
     .line 692
     return-void
@@ -78,7 +78,7 @@
 
     .prologue
     .line 695
-    iget-object v0, p0, Lcom/android/settings/fingerprint/w;->ack:Landroid/hardware/fingerprint/Fingerprint;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/w;->ack:Landroid/hardware/fingerprint/Fingerprint;
 
     return-object v0
 .end method
@@ -88,7 +88,7 @@
 
     .prologue
     .line 688
-    iget-object v0, p0, Lcom/android/settings/fingerprint/w;->mView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/vendorsettings/fingerprint/w;->mView:Landroid/view/View;
 
     return-object v0
 .end method
@@ -101,7 +101,7 @@
     invoke-super {p0, p1}, Landroid/preference/Preference;->onBindView(Landroid/view/View;)V
 
     .line 701
-    iput-object p1, p0, Lcom/android/settings/fingerprint/w;->mView:Landroid/view/View;
+    iput-object p1, p0, Lcom/android/vendorsettings/fingerprint/w;->mView:Landroid/view/View;
 
     .line 702
     return-void

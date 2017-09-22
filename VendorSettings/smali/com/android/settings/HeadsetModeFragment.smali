@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/HeadsetModeFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/vendorsettings/HeadsetModeFragment;
+.super Lcom/android/vendorsettings/SettingsPreferenceFragment;
 .source "HeadsetModeFragment.java"
 
 # interfaces
@@ -20,12 +20,12 @@
 
     .prologue
     .line 12
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;-><init>()V
 
     .line 28
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetModeFragment;->nt:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/HeadsetModeFragment;->nt:Ljava/lang/String;
 
     return-void
 .end method
@@ -55,12 +55,12 @@
     const/4 v2, 0x0
 
     .line 54
-    invoke-direct {p0}, Lcom/android/settings/HeadsetModeFragment;->getMode()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/vendorsettings/HeadsetModeFragment;->getMode()Ljava/lang/String;
 
     move-result-object v0
 
     .line 55
-    iget-object v1, p0, Lcom/android/settings/HeadsetModeFragment;->nt:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/HeadsetModeFragment;->nt:Ljava/lang/String;
 
     invoke-static {v1, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -74,15 +74,15 @@
 
     .line 59
     :cond_0
-    iput-object v0, p0, Lcom/android/settings/HeadsetModeFragment;->nt:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/vendorsettings/HeadsetModeFragment;->nt:Ljava/lang/String;
 
     .line 60
-    iget-object v1, p0, Lcom/android/settings/HeadsetModeFragment;->nr:Lmiui/preference/RadioButtonPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/HeadsetModeFragment;->nr:Lmiui/preference/RadioButtonPreference;
 
     invoke-virtual {v1, v2}, Lmiui/preference/RadioButtonPreference;->setChecked(Z)V
 
     .line 61
-    iget-object v1, p0, Lcom/android/settings/HeadsetModeFragment;->ns:Lmiui/preference/RadioButtonPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/HeadsetModeFragment;->ns:Lmiui/preference/RadioButtonPreference;
 
     invoke-virtual {v1, v2}, Lmiui/preference/RadioButtonPreference;->setChecked(Z)V
 
@@ -96,7 +96,7 @@
     if-eqz v0, :cond_1
 
     .line 64
-    iget-object v0, p0, Lcom/android/settings/HeadsetModeFragment;->ns:Lmiui/preference/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetModeFragment;->ns:Lmiui/preference/RadioButtonPreference;
 
     invoke-virtual {v0, v3}, Lmiui/preference/RadioButtonPreference;->setChecked(Z)V
 
@@ -104,7 +104,7 @@
 
     .line 66
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/HeadsetModeFragment;->nr:Lmiui/preference/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetModeFragment;->nr:Lmiui/preference/RadioButtonPreference;
 
     invoke-virtual {v0, v3}, Lmiui/preference/RadioButtonPreference;->setChecked(Z)V
 
@@ -154,7 +154,7 @@
 
     .prologue
     .line 32
-    const-class v0, Lcom/android/settings/HeadsetModeFragment;
+    const-class v0, Lcom/android/vendorsettings/HeadsetModeFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -168,42 +168,42 @@
 
     .prologue
     .line 37
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 38
     const v0, 0x7f080067
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HeadsetModeFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/HeadsetModeFragment;->addPreferencesFromResource(I)V
 
     .line 40
     const-string v0, "mode_volume"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HeadsetModeFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/HeadsetModeFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Lmiui/preference/RadioButtonPreference;
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetModeFragment;->nr:Lmiui/preference/RadioButtonPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/HeadsetModeFragment;->nr:Lmiui/preference/RadioButtonPreference;
 
     .line 41
     const-string v0, "mode_music"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/HeadsetModeFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/vendorsettings/HeadsetModeFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Lmiui/preference/RadioButtonPreference;
 
-    iput-object v0, p0, Lcom/android/settings/HeadsetModeFragment;->ns:Lmiui/preference/RadioButtonPreference;
+    iput-object v0, p0, Lcom/android/vendorsettings/HeadsetModeFragment;->ns:Lmiui/preference/RadioButtonPreference;
 
     .line 43
-    iget-object v0, p0, Lcom/android/settings/HeadsetModeFragment;->nr:Lmiui/preference/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetModeFragment;->nr:Lmiui/preference/RadioButtonPreference;
 
     invoke-virtual {v0, p0}, Lmiui/preference/RadioButtonPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 44
-    iget-object v0, p0, Lcom/android/settings/HeadsetModeFragment;->ns:Lmiui/preference/RadioButtonPreference;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetModeFragment;->ns:Lmiui/preference/RadioButtonPreference;
 
     invoke-virtual {v0, p0}, Lmiui/preference/RadioButtonPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
@@ -216,10 +216,10 @@
 
     .prologue
     .line 81
-    iget-object v0, p0, Lcom/android/settings/HeadsetModeFragment;->nt:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/vendorsettings/HeadsetModeFragment;->nt:Ljava/lang/String;
 
     .line 82
-    iget-object v1, p0, Lcom/android/settings/HeadsetModeFragment;->nr:Lmiui/preference/RadioButtonPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/HeadsetModeFragment;->nr:Lmiui/preference/RadioButtonPreference;
 
     if-ne v1, p1, :cond_2
 
@@ -229,7 +229,7 @@
     .line 88
     :cond_0
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/HeadsetModeFragment;->nt:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/vendorsettings/HeadsetModeFragment;->nt:Ljava/lang/String;
 
     invoke-static {v1, v0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
@@ -238,10 +238,10 @@
     if-nez v1, :cond_1
 
     .line 89
-    invoke-direct {p0, v0}, Lcom/android/settings/HeadsetModeFragment;->setMode(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/vendorsettings/HeadsetModeFragment;->setMode(Ljava/lang/String;)V
 
     .line 90
-    invoke-direct {p0}, Lcom/android/settings/HeadsetModeFragment;->refresh()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/HeadsetModeFragment;->refresh()V
 
     .line 93
     :cond_1
@@ -251,7 +251,7 @@
 
     .line 84
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/HeadsetModeFragment;->ns:Lmiui/preference/RadioButtonPreference;
+    iget-object v1, p0, Lcom/android/vendorsettings/HeadsetModeFragment;->ns:Lmiui/preference/RadioButtonPreference;
 
     if-ne v1, p1, :cond_0
 
@@ -266,10 +266,10 @@
 
     .prologue
     .line 49
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/vendorsettings/SettingsPreferenceFragment;->onResume()V
 
     .line 50
-    invoke-direct {p0}, Lcom/android/settings/HeadsetModeFragment;->refresh()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/HeadsetModeFragment;->refresh()V
 
     .line 51
     return-void

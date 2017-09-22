@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/deviceinfo/PrivateVolumeFormat;
-.super Lcom/android/settings/InstrumentedFragment;
+.class public Lcom/android/vendorsettings/deviceinfo/PrivateVolumeFormat;
+.super Lcom/android/vendorsettings/InstrumentedFragment;
 .source "PrivateVolumeFormat.java"
 
 
@@ -17,34 +17,34 @@
 
     .prologue
     .line 36
-    invoke-direct {p0}, Lcom/android/settings/InstrumentedFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/vendorsettings/InstrumentedFragment;-><init>()V
 
     .line 64
-    new-instance v0, Lcom/android/settings/deviceinfo/PrivateVolumeFormat$1;
+    new-instance v0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeFormat$1;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/deviceinfo/PrivateVolumeFormat$1;-><init>(Lcom/android/settings/deviceinfo/PrivateVolumeFormat;)V
+    invoke-direct {v0, p0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeFormat$1;-><init>(Lcom/android/vendorsettings/deviceinfo/PrivateVolumeFormat;)V
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/PrivateVolumeFormat;->VQ:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeFormat;->VQ:Landroid/view/View$OnClickListener;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/deviceinfo/PrivateVolumeFormat;)Landroid/os/storage/DiskInfo;
+.method static synthetic a(Lcom/android/vendorsettings/deviceinfo/PrivateVolumeFormat;)Landroid/os/storage/DiskInfo;
     .locals 1
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/PrivateVolumeFormat;->Vv:Landroid/os/storage/DiskInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeFormat;->Vv:Landroid/os/storage/DiskInfo;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/deviceinfo/PrivateVolumeFormat;)Landroid/os/storage/VolumeInfo;
+.method static synthetic b(Lcom/android/vendorsettings/deviceinfo/PrivateVolumeFormat;)Landroid/os/storage/VolumeInfo;
     .locals 1
 
     .prologue
     .line 36
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/PrivateVolumeFormat;->Vq:Landroid/os/storage/VolumeInfo;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeFormat;->Vq:Landroid/os/storage/VolumeInfo;
 
     return-object v0
 .end method
@@ -58,7 +58,7 @@
     const/4 v6, 0x0
 
     .line 48
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/PrivateVolumeFormat;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeFormat;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -71,7 +71,7 @@
     check-cast v0, Landroid/os/storage/StorageManager;
 
     .line 49
-    invoke-virtual {p0}, Lcom/android/settings/deviceinfo/PrivateVolumeFormat;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeFormat;->getArguments()Landroid/os/Bundle;
 
     move-result-object v1
 
@@ -86,10 +86,10 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/android/settings/deviceinfo/PrivateVolumeFormat;->Vq:Landroid/os/storage/VolumeInfo;
+    iput-object v1, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeFormat;->Vq:Landroid/os/storage/VolumeInfo;
 
     .line 51
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/PrivateVolumeFormat;->Vq:Landroid/os/storage/VolumeInfo;
+    iget-object v1, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeFormat;->Vq:Landroid/os/storage/VolumeInfo;
 
     invoke-virtual {v1}, Landroid/os/storage/VolumeInfo;->getDiskId()Ljava/lang/String;
 
@@ -99,7 +99,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/deviceinfo/PrivateVolumeFormat;->Vv:Landroid/os/storage/DiskInfo;
+    iput-object v0, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeFormat;->Vv:Landroid/os/storage/DiskInfo;
 
     .line 53
     const v0, 0x7f04015d
@@ -129,7 +129,7 @@
     .line 57
     const v3, 0x7f0c0471
 
-    invoke-virtual {p0, v3}, Lcom/android/settings/deviceinfo/PrivateVolumeFormat;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v3}, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeFormat;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v3
 
@@ -137,7 +137,7 @@
 
     new-array v4, v4, [Ljava/lang/CharSequence;
 
-    iget-object v5, p0, Lcom/android/settings/deviceinfo/PrivateVolumeFormat;->Vv:Landroid/os/storage/DiskInfo;
+    iget-object v5, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeFormat;->Vv:Landroid/os/storage/DiskInfo;
 
     invoke-virtual {v5}, Landroid/os/storage/DiskInfo;->getDescription()Ljava/lang/String;
 
@@ -152,7 +152,7 @@
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 59
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/PrivateVolumeFormat;->VQ:Landroid/view/View$OnClickListener;
+    iget-object v0, p0, Lcom/android/vendorsettings/deviceinfo/PrivateVolumeFormat;->VQ:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v1, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

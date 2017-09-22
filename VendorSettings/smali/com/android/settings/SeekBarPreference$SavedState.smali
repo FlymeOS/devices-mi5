@@ -1,4 +1,4 @@
-.class Lcom/android/settings/SeekBarPreference$SavedState;
+.class Lcom/android/vendorsettings/SeekBarPreference$SavedState;
 .super Landroid/preference/Preference$BaseSavedState;
 .source "SeekBarPreference.java"
 
@@ -19,11 +19,11 @@
 
     .prologue
     .line 221
-    new-instance v0, Lcom/android/settings/hj;
+    new-instance v0, Lcom/android/vendorsettings/hj;
 
-    invoke-direct {v0}, Lcom/android/settings/hj;-><init>()V
+    invoke-direct {v0}, Lcom/android/vendorsettings/hj;-><init>()V
 
-    sput-object v0, Lcom/android/settings/SeekBarPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
+    sput-object v0, Lcom/android/vendorsettings/SeekBarPreference$SavedState;->CREATOR:Landroid/os/Parcelable$Creator;
 
     return-void
 .end method
@@ -40,14 +40,14 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/SeekBarPreference$SavedState;->progress:I
+    iput v0, p0, Lcom/android/vendorsettings/SeekBarPreference$SavedState;->progress:I
 
     .line 204
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/SeekBarPreference$SavedState;->max:I
+    iput v0, p0, Lcom/android/vendorsettings/SeekBarPreference$SavedState;->max:I
 
     .line 205
     return-void
@@ -74,12 +74,12 @@
     invoke-super {p0, p1, p2}, Landroid/preference/Preference$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 212
-    iget v0, p0, Lcom/android/settings/SeekBarPreference$SavedState;->progress:I
+    iget v0, p0, Lcom/android/vendorsettings/SeekBarPreference$SavedState;->progress:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 213
-    iget v0, p0, Lcom/android/settings/SeekBarPreference$SavedState;->max:I
+    iget v0, p0, Lcom/android/vendorsettings/SeekBarPreference$SavedState;->max:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
