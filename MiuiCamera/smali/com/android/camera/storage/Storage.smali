@@ -95,7 +95,7 @@
 
     move-result-object v1
 
-    const-string v2, "/DCIM/Camera"
+    const-string v2, "/DCIM"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -118,7 +118,7 @@
 
     move-result-object v1
 
-    const-string v2, "/DCIM/Camera/.ubifocus"
+    const-string v2, "/DCIM/.ubifocus"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -154,7 +154,7 @@
 
     move-result-object v1
 
-    const-string v2, "/DCIM/Camera"
+    const-string v2, "/DCIM"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -185,7 +185,7 @@
 
     move-result-object v1
 
-    const-string v2, "/DCIM/Camera"
+    const-string v2, "/DCIM"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1765,7 +1765,7 @@
     .line 501
     if-eqz v4, :cond_2
 
-    const-string v7, "/DCIM/Camera"
+    const-string v7, "/DCIM"
 
     invoke-virtual {p0, v7}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
@@ -2376,7 +2376,7 @@
 
     move-result-object v23
 
-    const-string v24, "/DCIM/Camera"
+    const-string v24, "/DCIM"
 
     invoke-virtual/range {v23 .. v24}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3024,7 +3024,7 @@
 
     move-result-object v0
 
-    const-string v1, "/DCIM/Camera"
+    const-string v1, "/DCIM"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -3047,7 +3047,7 @@
 
     move-result-object v0
 
-    const-string v1, "/DCIM/Camera/.ubifocus"
+    const-string v1, "/DCIM/.ubifocus"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

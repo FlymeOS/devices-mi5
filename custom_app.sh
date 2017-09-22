@@ -38,8 +38,12 @@ elif [ "$apkBaseName" = "SystemUI" ]; then
     echo ">>> in custom_app for $apkBaseName."
     injectMethod $tempSmaliDir/smali/com/android/systemui/keyguard/KeyguardViewMediator.smali "onSystemReady()V" "const/4 v0, 0x1\n    invoke-direct {p0, v0}, Lcom/android/systemui/keyguard/KeyguardViewMediator;->enableFingerprintNavigation(Z)V"
     sed -i '$i\    <uses-permission android:name="com.fingerprints.service.ACCESS_EXTENSION_SERVICE"/>' $tempSmaliDir/AndroidManifest.xml
+    find $tempSmaliDir/ -name "*.smali" | xargs sed -i 's#com.meizu.media.camera.CameraLauncher#com.android.camera.Camera#g'
+    find $tempSmaliDir/ -name "*.smali" | xargs sed -i 's#com.meizu.media.camera.SecureCameraActivity#com.android.camera.Camera#g'
+    find $tempSmaliDir/ -name "*.smali" | xargs sed -i 's#com.meizu.media.camera#com.android.camera#g'
+    sed -i 's#sput-object v0, Lcom\/android\/systemui\/statusbar\/phone\/MzKeyguardBottomAreaView;->SECURE_CAMERA_INTENT:Landroid\/content\/Intent;#    const-string v1, "ShowCameraWhenLocked"\n\n    const/4 v2, 0x1\n\n    invoke-virtual {v0, v1, v2}, Landroid\/content\/Intent;->putExtra(Ljava\/lang\/String;Z)Landroid\/content\/Intent;\n\n    const-string v1, "StartActivityWhenLocked"\n\n    invoke-virtual {v0, v1, v2}, Landroid\/content\/Intent;->putExtra(Ljava\/lang\/String;Z)Landroid\/content\/Intent;\n\n    sput-object v0, Lcom\/android\/systemui\/statusbar\/phone\/MzKeyguardBottomAreaView;->SECURE_CAMERA_INTENT:Landroid\/content\/Intent;#g' $tempSmaliDir/smali/com/android/systemui/statusbar/phone/MzKeyguardBottomAreaView.smali
 
-elif [ "$apkBaseName" = "VendorSettings" ]; then
+elif [ "$apkBaseName" = "VendorSettings" ] || [ "$apkBaseName" = "MiuiCamera" ]; then
     echo ">>> in custom_app for $apkBaseName."
     $PORT_ROOT/tools/apktool if -t merged_mi5 vendor/system/app/miui/miui.apk
     $PORT_ROOT/tools/apktool if -t merged_mi5 vendor/system/app/miuisystem/miuisystem.apk

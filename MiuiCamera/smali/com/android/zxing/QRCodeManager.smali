@@ -714,28 +714,42 @@
     .local v0, "activityBase":Lcom/android/camera/ActivityBase;
     invoke-virtual {v0}, Lcom/android/camera/ActivityBase;->dismissKeyguard()V
 
-    .line 116
     new-instance v2, Landroid/content/Intent;
 
-    const-string v3, "android.intent.action.receiverResultBarcodeScanner"
-
-    invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    .line 117
-    .local v2, "intent":Landroid/content/Intent;
-    const-string v3, "com.xiaomi.scanner"
-
-    invoke-virtual {v2, v3}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
-
-    .line 118
-    const-string v3, "result"
+    const-string v3, "android.intent.action.VIEW"
 
     iget-object v4, p0, Lcom/android/zxing/QRCodeManager;->mResult:Ljava/lang/String;
 
-    invoke-virtual {v2, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-static {v4}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v4
+
+    invoke-direct {v2, v3, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
+
+    invoke-virtual {v0, v2}, Lcom/android/camera/ActivityBase;->startActivity(Landroid/content/Intent;)V
+
+    .line 116
+    #new-instance v2, Landroid/content/Intent;
+
+    #const-string v3, "android.intent.action.receiverResultBarcodeScanner"
+
+    #invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    .line 117
+    .local v2, "intent":Landroid/content/Intent;
+    #const-string v3, "com.xiaomi.scanner"
+
+    #invoke-virtual {v2, v3}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 118
+    #const-string v3, "result"
+
+    #iget-object v4, p0, Lcom/android/zxing/QRCodeManager;->mResult:Ljava/lang/String;
+
+    #invoke-virtual {v2, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 119
-    invoke-virtual {v0, v2}, Lcom/android/camera/ActivityBase;->startActivity(Landroid/content/Intent;)V
+    #invoke-virtual {v0, v2}, Lcom/android/camera/ActivityBase;->startActivity(Landroid/content/Intent;)V
 
     .line 120
     const/4 v3, 0x3

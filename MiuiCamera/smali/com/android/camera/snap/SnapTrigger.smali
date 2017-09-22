@@ -350,7 +350,7 @@
     .local v2, "notificationManager":Landroid/app/NotificationManager;
     new-instance v1, Landroid/app/Notification;
 
-    const v4, 0x1080041
+    sget v4, Lcom/flyme/internal/R$drawable;->mz_stat_sys_vpn_connected:I
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
