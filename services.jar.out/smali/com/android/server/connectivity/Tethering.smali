@@ -2056,7 +2056,7 @@
 
     iget-object v1, p0, Lcom/android/server/connectivity/Tethering;->mTetheredNotificationBuilder:Landroid/app/Notification$Builder;
 
-    invoke-static {v0, v1}, Lcom/android/server/connectivity/TetheringInjector;->setTetheredNotification(Landroid/content/Context;Landroid/app/Notification$Builder;)V
+    #invoke-static {v0, v1}, Lcom/android/server/connectivity/TetheringInjector;->setTetheredNotification(Landroid/content/Context;Landroid/app/Notification$Builder;)V
 
     .line 732
     const/4 v0, 0x0
