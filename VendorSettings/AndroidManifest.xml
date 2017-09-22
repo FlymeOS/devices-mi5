@@ -934,7 +934,6 @@
         </activity>
         <activity-alias android:launchMode="singleInstance" android:name="ShortcutConfirmAccessControl" android:targetActivity="ConfirmAccessControl" android:windowAnimationStyle="@null">
             <intent-filter>
-                <action android:name="android.app.action.CONFIRM_ACCESS_CONTROL"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity-alias>
@@ -949,7 +948,6 @@
         </activity>
         <activity android:exported="true" android:name="ConfirmDeviceCredentialActivity" android:theme="@style/Transparent">
             <intent-filter android:priority="1">
-                <action android:name="android.app.action.CONFIRM_DEVICE_CREDENTIAL"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
@@ -962,13 +960,11 @@
         </activity>
         <activity android:name="ConfirmLockPattern">
             <intent-filter>
-                <action android:name="android.app.action.CONFIRM_LOCK_PATTERN"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
         <activity android:name="ConfirmLockPassword" android:windowSoftInputMode="adjustResize|stateHidden">
             <intent-filter>
-                <action android:name="android.app.action.CONFIRM_LOCK_PASSWORD"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
@@ -998,7 +994,6 @@
         <activity android:excludeFromRecents="true" android:label="@string/lockpassword_choose_lock_generic_header" android:name="ChooseLockGeneric"/>
         <activity android:excludeFromRecents="true" android:label="@string/lockpassword_choose_lock_generic_header" android:name="MiuiSecurityChooseUnlock">
             <intent-filter android:priority="1">
-                <action android:name="android.app.action.SET_NEW_PASSWORD"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
             <meta-data android:name="com.android.vendorsettings.PRIMARY_PROFILE_CONTROLLED" android:value="true"/>
@@ -1861,7 +1856,6 @@
         </activity>
         <activity android:excludeFromRecents="true" android:name="ConfirmSmsLockPattern" android:noHistory="true">
             <intent-filter>
-                <action android:name="android.app.action.CONFIRM_SMS_PASSWORD"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
@@ -1873,7 +1867,6 @@
         </activity>
         <activity android:excludeFromRecents="true" android:name="ConfirmGalleryLockPattern" android:noHistory="true">
             <intent-filter>
-                <action android:name="android.app.action.CONFIRM_GALLERY_PASSWORD"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
