@@ -290,6 +290,12 @@
     .end local v3    # "longPressTimeout":I
     .end local v4    # "point":[F
     :cond_3
+
+    :goto_flyme_0
+    iget-object v5, p0, Landroid/widget/AbsListView$CheckForTap;->this$0:Landroid/widget/AbsListView;
+
+    invoke-static {v5}, Landroid/widget/AbsListView$FlymeInjector;->setFlymeShowPressed(Landroid/widget/AbsListView;)V
+
     :goto_1
     return-void
 
@@ -313,7 +319,7 @@
 
     iput v10, v5, Landroid/widget/AbsListView;->mTouchMode:I
 
-    goto :goto_1
+    goto :goto_flyme_0
 
     .line 3355
     .end local v2    # "longClickable":Z

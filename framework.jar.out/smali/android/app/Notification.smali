@@ -436,6 +436,8 @@
     .param p8, "contentIntent"    # Landroid/content/Intent;
 
     .prologue
+    invoke-static/range {p0 .. p0}, Landroid/app/Notification$FlymeInjector;->initFlymeExtFields(Landroid/app/Notification;)V
+
     const/4 v1, 0x0
 
     .line 1376
@@ -467,8 +469,6 @@
     invoke-direct {v0}, Landroid/app/MiuiNotification;-><init>()V
 
     iput-object v0, p0, Landroid/app/Notification;->extraNotification:Landroid/app/MiuiNotification;
-
-    invoke-static/range {p0 .. p0}, Landroid/app/Notification$FlymeInjector;->initFlymeExtFields(Landroid/app/Notification;)V
 
     .line 1377
     new-instance v0, Landroid/app/Notification$Builder;
