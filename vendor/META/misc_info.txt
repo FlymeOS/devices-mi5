@@ -11,7 +11,6 @@ tool_extensions=.
 default_system_dev_certificate=build/security/testkey
 use_set_metadata=1
 multistage_support=1
-update_rename_support=1
 fs_type=ext4
 selinux_fc=.
 
