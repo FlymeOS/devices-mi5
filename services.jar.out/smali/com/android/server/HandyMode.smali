@@ -1575,16 +1575,16 @@
 
     .line 230
     .local v0, "settingIntent":Landroid/content/Intent;
-    const-string v1, "com.android.settings"
+    const-string v1, "com.android.vendorsettings"
 
-    const-string v2, "com.android.settings.Settings"
+    const-string v2, "com.android.vendorsettings.Settings"
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 231
     const-string v1, ":android:show_fragment"
 
-    const-string v2, "com.android.settings.display.HandyModeFragment"
+    const-string v2, "com.android.vendorsettings.display.HandyModeFragment"
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
