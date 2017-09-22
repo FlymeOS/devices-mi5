@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <bool name="adjust_network_mode_values_enabled">true</bool>
+    <integer-array name="gsm_network_mode_values_phone0" translatable="false">
+        <item>1</item>
+        <item>18</item>
+        <item>20</item>
+    </integer-array>
+    <integer-array name="gsm_network_mode_values_phone1" translatable="false">
+        <item>1</item>
+        <item>18</item>
+        <item>20</item>
+    </integer-array>
+    <integer-array name="cdma_network_mode_values_phone0" translatable="false">
+        <item>4</item>
+        <item>8</item>
+        <item>10</item>
+    </integer-array>
+    <integer-array name="cdma_network_mode_values_phone1" translatable="false">
+        <item>4</item>
+        <item>8</item>
+        <item>10</item>
+    </integer-array>
+</resources>
