@@ -77,6 +77,8 @@
 
     move-result v2
 
+    return v2
+
     .line 49
     .local v2, "zenMode":I
     const-string v4, "audio"
