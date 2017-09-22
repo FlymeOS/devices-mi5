@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.settings.ImagePreference />
+    <Preference android:persistent="false" android:title="@string/edge_mode_back" android:key="edge_mode_back" />
+    <Preference android:persistent="false" android:title="@string/edge_mode_clean" android:key="edge_mode_clean" />
+    <Preference android:persistent="false" android:title="@string/edge_mode_photo" android:key="edge_mode_photo" />
+</PreferenceScreen>

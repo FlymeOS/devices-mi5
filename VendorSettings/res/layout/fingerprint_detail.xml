@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/fingerprint_detail_image_top_margin" android:src="@drawable/fingerprint_detail_image" />
+        <EditText android:gravity="top" android:id="@id/fingerprint_title_edit_text" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fingerprint_detail_edittext_horizontal_margin" android:layout_marginTop="@dimen/fingerprint_detail_edittext_top_margin" android:layout_marginRight="@dimen/fingerprint_detail_edittext_horizontal_margin" android:maxLength="15" android:inputType="textNoSuggestions" />
+        <Button android:id="@id/fingerprint_delete" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fingerprint_detail_button_horizontal_margin" android:layout_marginTop="@dimen/fingerprint_detail_button_top_margin" android:layout_marginRight="@dimen/fingerprint_detail_button_horizontal_margin" android:text="@string/delete_fingerprint_text" style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</ScrollView>

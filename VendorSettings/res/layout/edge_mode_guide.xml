@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/edge_mode" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/action_bar_back" android:background="@drawable/action_bar_bg_light" android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_default_height">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@miui:drawable/action_bar_back_light" />
+            <TextView android:gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" style="@miui:style/TextAppearance.WindowTitle" />
+        </LinearLayout>
+        <VideoView android:id="@id/video" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <View android:background="@color/preference_divide" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="@miui:dimen/preference_item_padding_side" android:layout_marginRight="@miui:dimen/preference_item_padding_side" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

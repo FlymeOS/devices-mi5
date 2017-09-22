@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@miui:drawable/list_item_bg_dialog_light" android:layout_width="fill_parent" style="@miui:style/Widget.ListView.Item.DoubleLine"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <miui.widget.CheckedTextView android:textAppearance="@miui:style/TextAppearance.AlertDialogListItem.SingleChoice" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/txt_sim_displayname" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="?android:listChoiceIndicatorSingle" android:singleLine="true" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/img_sim_icon" android:paddingLeft="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textAppearance="@miui:style/TextAppearance.List.Secondary.Preference" android:ellipsize="end" android:id="@id/txt_sim_number" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:singleLine="true" />
+</LinearLayout>

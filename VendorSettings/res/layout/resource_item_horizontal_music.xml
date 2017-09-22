@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/category" layout="@miui:layout/preference_category" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/item" style="@miui:style/Widget.ListView.Item.DoubleLine">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="end" android:id="@android:id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:ellipsize="end" android:id="@id/subTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:paddingEnd="5.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/stateFlag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flag_using" android:paddingEnd="5.0dip" />
+        <ImageView android:gravity="center" android:layout_gravity="end|center" android:id="@id/arrow_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@miui:drawable/arrow_right" />
+    </LinearLayout>
+</LinearLayout>

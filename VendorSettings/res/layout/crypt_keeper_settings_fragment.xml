@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/crypt_keeper_content_title" android:key="crypt_keeper_content">
+        <Preference android:summary="@string/crypt_keeper_content" style="?android:attr/preferenceInformationStyle" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/crypt_keeper_decrypt_methods_title" android:key="crypt_keeper_decrypt_methods">
+        <Preference android:key="crypt_keeper_decrypt_methods_summary" android:summary="@string/crypt_keeper_decrypt_methods" style="?android:attr/preferenceInformationStyle" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/crypt_keeper_conditions_title" android:key="crypt_keeper_conditions">
+        <Preference android:summary="@string/crypt_keeper_conditions" style="?android:attr/preferenceInformationStyle" />
+    </PreferenceCategory>
+</PreferenceScreen>

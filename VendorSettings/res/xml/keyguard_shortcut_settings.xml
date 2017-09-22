@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/keyguard_left_function_title">
+        <CheckBoxPreference android:persistent="false" android:title="@string/keyguard_left_function_title" android:key="keyguard_left_function" />
+        <PreferenceScreen android:persistent="false" android:title="@string/keyguard_left_function_chooser_title" android:key="keyguard_left_function_chooser" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/keyguard_right_function_title">
+        <CheckBoxPreference android:persistent="false" android:title="@string/keyguard_right_function_title" android:key="keyguard_right_function" />
+        <PreferenceScreen android:persistent="false" android:title="@string/keyguard_right_function_chooser_title" android:key="keyguard_right_function_chooser" />
+    </PreferenceCategory>
+</PreferenceScreen>

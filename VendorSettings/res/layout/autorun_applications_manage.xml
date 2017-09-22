@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:id="@android:id/empty" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/power_autorun_empty" android:drawableTop="@drawable/icon_list_empty" android:drawablePadding="20.0px" android:layout_centerInParent="true" />
+</RelativeLayout>

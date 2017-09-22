@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:layout_gravity="right" android:id="@id/device_name_key_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bluetooth_device_name" />
+        <TextView android:textSize="16.0sp" android:id="@id/device_name_value_id" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bluetooth_unlock_state_label" />
+        <TextView android:textSize="16.0sp" android:layout_gravity="center_horizontal" android:id="@id/device_status" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/bluetooth_device_default" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bluetooth_device_unlock_default" />
+        <ImageView android:id="@id/bluetooth_device_confirmed" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bluetooth_device_unlock_confirmed" />
+        <ImageView android:layout_gravity="center" android:id="@id/bluetooth_device_light" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bluetooth_device_light" />
+    </FrameLayout>
+    <Button android:layout_gravity="center_horizontal" android:id="@id/delete_this_device" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/bluetooth_unlock_delete_device" style="?android:attr/buttonBarButtonStyle" />
+</LinearLayout>

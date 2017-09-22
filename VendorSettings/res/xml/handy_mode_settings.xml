@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/handy_mode"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.settings.display.HandyModeGuidePreference />
+    <CheckBoxPreference android:persistent="false" android:title="@string/handy_mode_enter_ask" android:key="handy_mode_enter_ask" />
+</PreferenceScreen>

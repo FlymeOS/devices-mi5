@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@miui:drawable/preference_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@miui:style/TextAppearance.PreferenceList" android:layout_gravity="center_vertical" android:id="@android:id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+    <TextView android:textAppearance="@miui:style/TextAppearance.List.Secondary" android:layout_gravity="center_vertical" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

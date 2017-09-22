@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/zen_mode_settings_title" android:key="zen_mode_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:miui="http://schemas.android.com/apk/res/com.android.settings">
+    <CheckBoxPreference android:persistent="false" android:title="@string/dndm_open" android:key="key_do_not_disturb_mode" android:summary="@string/dndm_summary" />
+    <PreferenceCategory android:title="@string/dndm_auto_setting_group" android:key="key_auto_setting_group">
+        <CheckBoxPreference android:persistent="false" android:title="@string/dndm_auto_button_title" android:key="key_auto_button" />
+        <com.android.settings.dndmode.LabelPreference android:persistent="false" android:title="@string/dndm_auto_time_setting" android:key="key_auto_time_setting" miui:clickable="true">
+            <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings.dndmode.AutoTimeSettings" />
+        </com.android.settings.dndmode.LabelPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/zen_mode_important_category" android:key="alarm_use">
+        <com.android.settings.dndmode.LabelPreference android:persistent="false" android:title="@string/dndm_vip_call_setting_title" android:key="vip" miui:clickable="true" />
+        <com.android.settings.dndmode.LabelPreference android:persistent="false" android:title="@string/dndm_alarm_content" android:key="alarm_content" miui:clickable="true" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/dndm_repeated_call_setting_title" android:key="repeat" android:summary="@string/dndm_repeated_call_summary_3min" android:switchTextOn="dndm_repeated_call_summary_3min" android:switchTextOff="dndm_repeated_call_summary_3min" />
+    </PreferenceCategory>
+</PreferenceScreen>

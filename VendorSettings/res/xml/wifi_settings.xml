@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/wifi_settings_category"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/wifi_enable" android:key="wifi_enable" android:order="1" />
+    <PreferenceCategory android:title="@string/wifi_settings_category" android:key="wifi_settings" android:order="100">
+        <CheckBoxPreference android:persistent="false" android:title="@string/wifi_notify_open_networks" android:key="notify_open_networks" android:summary="@string/wifi_notify_open_networks_summary" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/wifi_enable_data_and_wifi_roam" android:key="enable_data_and_wifi_roam" android:summary="@string/wifi_enable_data_and_wifi_roam_summary" />
+        <Preference android:persistent="false" android:title="@string/saved_wifi" android:key="saved_wifi" android:fragment="com.android.settings.wifi.MiuiSavedAccessPointsWifiSettings" />
+        <Preference android:persistent="false" android:title="@string/advanced_settings" android:fragment="com.android.settings.wifi.AdvancedWifiSettings" />
+    </PreferenceCategory>
+</PreferenceScreen>

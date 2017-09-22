@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/confirm_fingerprint_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_password_fingerprint_dialog_title" style="?android:attr/textAppearanceLarge" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/confirm_fingerprint_view_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_password_fingerprint_dialog_message" style="?android:attr/textAppearanceMedium" />
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/confirm_fingerprint_img" />
+</LinearLayout>

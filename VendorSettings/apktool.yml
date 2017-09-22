@@ -1,0 +1,37 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: VendorSettings.apk
+compressionType: false
+doNotCompress:
+- arsc
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '21'
+  targetSdkVersion: '23'
+sharedLibrary: false
+unknownFiles:
+  miui_push_version: '8'
+  com/xiaomi/smack/package.html: '8'
+  com/xiaomi/smack/debugger/package.html: '8'
+  com/xiaomi/smack/filter/package.html: '8'
+  com/xiaomi/smack/packet/package.html: '8'
+  com/xiaomi/smack/provider/package.html: '8'
+  com/xiaomi/smack/util/package.html: '8'
+  org/htmlparser/beans/BeanyBaby.form: '8'
+  org/htmlparser/beans/images/Chain16.gif: '8'
+  org/htmlparser/beans/images/Chain32.gif: '8'
+  org/htmlparser/beans/images/Knot16.gif: '8'
+  org/htmlparser/beans/images/Knot32.gif: '8'
+usesFramework:
+  ids:
+  - 1
+  - 16
+  - 17
+  - 18
+  tag: null
+version: 2.1.1-04d478-SNAPSHOT
+versionInfo:
+  versionCode: '23'
+  versionName: 6.0.1

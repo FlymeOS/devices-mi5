@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/count" android:background="@miui:drawable/preference_category_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="bottom" android:id="@id/startup_count" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" style="@miui:style/TextAppearance.PreferenceCategory" />
+    </FrameLayout>
+    <Button android:id="@id/btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="?android:listPreferredItemPaddingLeft" android:layout_marginTop="?android:listPreferredItemPaddingLeft" android:layout_marginRight="?android:listPreferredItemPaddingRight" android:layout_marginBottom="?android:listPreferredItemPaddingLeft" android:text="@string/man_add_application" android:layout_alignParentBottom="true" style="@miui:style/Widget.Button.Positive" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/btn" android:layout_below="@id/count" />
+    <TextView android:id="@android:id/empty" android:paddingBottom="50.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/power_autorun_apps_empty" android:drawableTop="@drawable/icon_list_empty" android:drawablePadding="20.0px" android:layout_centerInParent="true" />
+</RelativeLayout>

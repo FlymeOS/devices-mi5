@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <miui.preference.ValuePreference android:persistent="false" android:title="@string/status_min_number" android:key="min_number" />
+    <miui.preference.ValuePreference android:persistent="false" android:title="@string/status_prl_version" android:key="prl_version" />
+    <miui.preference.ValuePreference android:persistent="false" android:title="@string/status_meid_number" android:key="meid_number" />
+    <miui.preference.ValuePreference android:persistent="false" android:title="@string/status_imei" android:key="imei" />
+    <miui.preference.ValuePreference android:persistent="false" android:title="@string/status_imei_sv" android:key="imei_sv" />
+    <miui.preference.ValuePreference android:persistent="false" android:title="@string/status_icc_id" android:key="icc_id" />
+</PreferenceScreen>

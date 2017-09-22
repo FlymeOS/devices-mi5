@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:miui="http://schemas.android.com/apk/res/com.android.settings">
+    <CheckBoxPreference android:persistent="false" android:title="@string/screen_paper_mode_title" android:key="paper_mode_enable" android:summary="@string/screen_paper_mode_summary" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/screen_paper_mode_time_title" android:key="paper_mode_time_enable" android:dependency="paper_mode_enable" />
+    <com.android.settings.dndmode.LabelPreference android:persistent="false" android:title="@string/paper_mode_start_time_title" android:key="paper_mode_start_time" android:dependency="paper_mode_time_enable" miui:clickable="true" />
+    <com.android.settings.dndmode.LabelPreference android:persistent="false" android:title="@string/paper_mode_end_time_title" android:key="paper_mode_end_time" android:dependency="paper_mode_time_enable" miui:clickable="true" />
+    <com.android.settings.SeekBarPreference android:persistent="true" android:title="@string/screen_paper_mode_adjust_level" android:key="paper_mode_adjust_level" android:dependency="paper_mode_enable" />
+    <PreferenceCategory android:persistent="false" android:title="@string/screen_paper_mode_range_title" android:key="paper_mode_range">
+        <com.android.settings.display.PaperModePreference android:persistent="false" android:title="@string/screen_paper_mode_global_title" android:key="pape_mode_global" android:summary="@string/screen_paper_mode_global_summary" />
+        <com.android.settings.display.PaperModePreference android:persistent="false" android:title="@string/screen_paper_mode_local_title" android:key="pape_mode_local" android:summary="@string/screen_paper_mode_local_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/battery_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/battery_settings_title" android:key="battery_category" />
+    <Preference android:title="@string/power_center" android:key="power_center" />
+    <PreferenceScreen android:title="@string/power_usage_history" android:key="power_usage" android:fragment="com.android.settings.fuelgauge.PowerUsageSummary" />
+    <PreferenceScreen android:title="@string/power_hide_mode_title" android:key="power_hide_mode" android:summary="@string/power_hide_mode_summary" />
+    <PreferenceCategory android:title="@string/performance_category" android:key="performance_category" />
+    <ListPreference android:persistent="false" android:entries="@array/power_mode_entries" android:title="@string/power_mode" android:key="power_mode" />
+    <com.android.settings.display.FluencyModeListPreference android:entries="@array/fluency_mode_entries" android:title="@string/fluency_mode" android:key="fluency_mode" android:defaultValue="0" />
+</PreferenceScreen>

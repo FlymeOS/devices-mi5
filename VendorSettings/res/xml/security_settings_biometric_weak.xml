@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/APKTOOL_DUMMY_1239" android:key="biometric_weak_improve_matching" />
+    <CheckBoxPreference android:title="@string/APKTOOL_DUMMY_123a" android:key="biometric_weak_liveliness" android:summary="@string/APKTOOL_DUMMY_123b" />
+    <CheckBoxPreference android:title="@string/lockpattern_settings_enable_visible_pattern_title" android:key="visiblepattern" />
+</PreferenceScreen>

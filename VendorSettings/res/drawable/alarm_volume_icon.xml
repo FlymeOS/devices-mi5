@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <item android:drawable="@drawable/ic_audio_alarm_mute" settings:state_muted="true" />
+    <item android:drawable="@drawable/ic_audio_alarm" settings:state_muted="false" />
+</selector>

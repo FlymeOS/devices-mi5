@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/screen_paper_mode_apps_title" android:key="paper_mode_pkg_list" />
+    <PreferenceCategory android:title="@string/screen_paper_mode_off_apps_title" android:key="paper_mode_off_pkg_list" />
+</PreferenceScreen>

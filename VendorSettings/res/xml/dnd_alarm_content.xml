@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/zen_mode_settings_title" android:key="zen_mode_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:miui="http://schemas.android.com/apk/res/com.android.settings">
+    <CheckBoxPreference android:persistent="false" android:title="@string/zen_mode_events" android:key="events" android:switchTextOn="" android:switchTextOff="" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/zen_mode_phone_calls" android:key="phone_calls" android:switchTextOn="" android:switchTextOff="" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/zen_mode_messages" android:key="messages" android:switchTextOn="" android:switchTextOff="" />
+</PreferenceScreen>

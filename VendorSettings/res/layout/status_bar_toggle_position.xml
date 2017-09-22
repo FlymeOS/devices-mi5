@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@miui:style/TextAppearance.List.Secondary" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_marginBottom="13.0dip" android:text="@string/status_bar_settings_long_click_sort" android:layout_marginStart="?android:listPreferredItemPaddingLeft" android:layout_marginEnd="?android:listPreferredItemPaddingLeft" />
+    <com.android.settings.toggleposition.DragGridView android:gravity="center" android:id="@id/dragGridView" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="true" android:cacheColorHint="@android:color/transparent" android:numColumns="auto_fit" android:overScrollMode="never" android:requiresFadingEdge="vertical" android:layout_marginStart="22.0dip" android:layout_marginEnd="22.0dip" />
+</LinearLayout>

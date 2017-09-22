@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="status_bar_settings_disabled_header_title">
+        <item quantity="other">བཀོལ་སྤྱོད་%dལྟག་བརྡ་ཐོར་སྐྱེལ་བར་བཀག་པ།</item>
+    </plurals>
+    <plurals name="status_bar_settings_enabled_header_title">
+        <item quantity="other">བཀོལ་སྤྱོད%dལྟག་བརྡ་ཐོར་སྐྱེལ་ཆོག་པ།</item>
+    </plurals>
+    <plurals name="show_dev_countdown">
+        <item quantity="other">ད་ལྟར་ཡང་བསྐྱར་གྱིས་གོ་རིམ%1$dཔའི་གཏོང་བ་ལག་ལེན་བྱས་ནས་གསར་སྤོལ་བྱེད་མཁན་གྱི་དཔེ་དབྱིབས་ལ་འབྱོར་བ་བྱེད་ཐུབ།</item>
+    </plurals>
+    <plurals name="security_settings_fingerprint_preference_summary">
+        <item quantity="other">མཛུབ་རིས%1$dལ་སྒྲིག་པ་བྱས།</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_letters">
+        <item quantity="other">གསང་གྲངས་ལ་ཉུང་མཐའ་དབྱངས་གསལ་ཡི་གེ%dའདུ་བ་བྱེད།</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_lowercase">
+        <item quantity="other">གསང་གྲངས་ལ་ཉུང་མཐའ་ཆུང་བྲིས་ཀྱི་དབྱངས་གསལ་ཡི་གེ%dའདུ་བ་བྱེད།</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_uppercase">
+        <item quantity="other">གསང་གྲངས་ལ་ཉུང་མཐའ་ཆེ་བྲིས་ཀྱི་དབྱངས་གསལ་ཡི་གེ%dའདུ་བ་བྱེད།</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_numeric">
+        <item quantity="other">གསང་གྲངས་ལ་ཉུང་མཐའ་ཨང་གྲངས%dའདུ་བ་བྱེད།</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_symbols">
+        <item quantity="other">གསང་གྲངས་ལ་ཉུང་མཐའ་དམིགས་གསལ་མཚོན་རྟགས%dའདུ་བ་བྱེད།</item>
+    </plurals>
+    <plurals name="lockpassword_password_requires_nonletter">
+        <item quantity="other">གསང་གྲངས་ལ་ཉུང་མཐའ་དབྱངས་གསལ་མིན་པའི་ཡི་གེ%dའདུ་བ་བྱེད།</item>
+    </plurals>
+    <plurals name="wrong_pin_code">
+        <item quantity="other">ནོར་འཁྲུལ་གྱིSIMཁཱའིPINཨང་གྲངས་རེད། ཁྱེད་རང་གིས་ཐེངས%dལ་ཚོད་ལྟ་བྱེད་ཐུབ།</item>
+    </plurals>
+    <plurals name="manage_notification_access_summary_nonzero">
+        <item quantity="other">བཀོལ་སྤྱོད%dལ་བརྡ་ཡིག་ཐོབ་ཐུབ།</item>
+    </plurals>
+    <plurals name="zen_mode_summary_alarms_only_by_minute">
+        <item quantity="other">ཐིར་ལྡན་ཆུ་ཚོད་དེ་རང་ལས་མི་འདའ་བར་དག་བཅོས་བྱེད། སྐར་མ %1$dརྒྱུན་ཁྱུངས་བྱེད། （%2$sསླེབས།）</item>
+    </plurals>
+    <plurals name="zen_mode_summary_alarms_only_by_hour">
+        <item quantity="other">ཐིར་ལྡན་ཆུ་ཚོད་དེ་རང་ལས་མི་འདའ་བར་དག་བཅོས་བྱེད། དུས་ཚོད %1$d རྒྱུན་ཁྱུངས་བྱེད།（%2$sསླེབས།）</item>
+    </plurals>
+    <plurals name="permissions_summary">
+        <item quantity="other">དབང་མཚམས%dདབང་བཅོལ་བྱས།</item>
+    </plurals>
+    <plurals name="runtime_permissions_summary">
+        <item quantity="other">དབང་མཚམས %1$dདབང་བཅོལ་བྱས། （ཁྱོན་བསྡོམས %2$d）</item>
+    </plurals>
+    <plurals name="runtime_permissions_additional_count">
+        <item quantity="other">གཞན་གྱི་དབང་མཚམས%d</item>
+    </plurals>
+    <plurals name="domain_urls_apps_summary">
+        <item quantity="other">བཀོལ་སྤྱོད%dཡིས་རྒྱབ་སྐྱོར་གྱི་འབྱོར་བའི་གནས་སར་སྒོ་འབྱེད་བྱེད་ཐུབ།</item>
+    </plurals>
+    <plurals name="high_power_count">
+        <item quantity="other">ཉེར་སྤྱོད%dཡིས་གློག་ཁུངས་ལེགས་སྒྲིག་བྱེད་པར་ཁས་ལེན་བྱས།</item>
+    </plurals>
+    <plurals name="memory_usage_apps_summary">
+        <item quantity="other">སྔོན་གྱི་དུས་ཚོད %2$sརིང་ལ་བཀོལ་སྤྱོད%1$dཡིས་ནང་གསོག་བདེ་སྤྱོད་བྱས།</item>
+    </plurals>
+    <plurals name="connected_devices_number">
+        <item quantity="other">%dསྒྲིག་ཆས།</item>
+    </plurals>
+    <plurals name="show_pho_countdown">
+        <item quantity="other">%1$d གོམ་རིམ་འདི་བཀོལ་སྤྱོད་བྱས་ན་ཁ་པར་ཆ་འཕྲིན་ལ་འགྲོ་ཐུབ།</item>
+    </plurals>
+    <plurals name="show_cit_countdown">
+        <item quantity="other">%1$d གོམ་རིམ་འདི་བཀོལ་སྤྱོད་བྱས་ན་citལ་འགྲོ་ཐུབ།</item>
+    </plurals>
+    <plurals name="show_rep_countdown">
+        <item quantity="other">" %1$d གོམ་རིམ་འདི་བཀོལ་སྤྱོད་བྱས་ན་ཉིན་ཐོ་བླངས་ཆོག"</item>
+    </plurals>
+    <plurals name="auto_disable_screenbuttons_enabled_header_title">
+        <item quantity="other">%dཉེར་སྤྱོད་འོག་རང་འགུལ་གྱིས་བརྙན་ཤེལ་མཐེབ་རྒྱག་སྒྲིབ་པ།</item>
+    </plurals>
+    <plurals name="auto_disable_screenbuttons_disabled_header_title">
+        <item quantity="other">%dཉེར་སྤྱོད་འོག་རང་འགུལ་གྱིས་བརྙན་ཤེལ་མཐེབ་རྒྱག་མི་སྒྲིབ་པ།</item>
+    </plurals>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/bootloader_lock" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/bootloader_status_locked_info" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff000000" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bootloader_status_locked_summary" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_weight="0.19">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textColor="#73000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bootloader_locked_question_1" style="@miui:style/TextAppearance.List.Primary" />
+                <View android:background="#ffbfbfbf" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" />
+                <TextView android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/bootloader_locked_answer_1" style="@miui:style/TextAppearance.List.Primary" />
+                <TextView android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bootloader_locked_answer_1_warning" style="@miui:style/TextAppearance.List.Primary" />
+                <TextView android:textColor="#73000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/bootloader_locked_question_2" style="@miui:style/TextAppearance.List.Primary" />
+                <View android:background="#ffbfbfbf" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" />
+                <TextView android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/bootloader_locked_answer_2" style="@miui:style/TextAppearance.List.Primary" />
+                <TextView android:textColor="#ff0d90ff" android:id="@id/web_uri" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bootloader_unlock_webhome" style="@miui:style/TextAppearance.List.Primary" />
+            </LinearLayout>
+        </ScrollView>
+        <Button android:textColor="#ff000000" android:id="@id/button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/bootloader_locked_check_status" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+</LinearLayout>

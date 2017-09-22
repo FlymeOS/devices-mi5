@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/music_headset_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/music_headset_button_settings">
+        <Preference android:title="@string/music_headset_mode_settings" android:key="headset_mode" android:fragment="com.android.settings.HeadsetModeFragment" />
+        <Preference android:title="@string/music_headset_calibrate" android:key="calibrate" android:fragment="com.android.settings.HeadsetCalibrateFragment" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/music_audio_effect_optimize" android:key="audio_effect_optimize">
+        <Preference android:title="@string/music_title_dolby_control" android:key="dolby_settings" android:summary="@string/music_dolby_mode_off" android:fragment="com.android.settings.dolby.DolbySettings" />
+        <Preference android:title="@string/music_equalizer" android:key="equalizer" android:summary="@string/music_equalizer_summary">
+            <intent android:targetPackage="com.miui.player" android:action="com.miui.player.DIRAC_EQUALIZER" android:targetClass="com.miui.player.phone.ui.DiracEqualizer" />
+        </Preference>
+        <CheckBoxPreference android:persistent="false" android:title="@string/music_hifi_title" android:key="hifi_enable" android:summary="@string/music_hifi_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/music_mi_effect_title" android:key="dirac_enable" android:summary="@string/music_mi_effect_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/music_headphone_settings" android:key="headset_type_setting">
+        <com.android.settings.view.GridPreference android:key="headsets_grid" />
+    </PreferenceCategory>
+</PreferenceScreen>

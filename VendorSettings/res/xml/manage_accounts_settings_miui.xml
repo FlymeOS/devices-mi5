@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/sync_enable" android:key="sync_enable" android:order="-1" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/sync_wifi_only" android:key="wifi_only" android:order="1" android:dependency="sync_enable" />
+</PreferenceScreen>

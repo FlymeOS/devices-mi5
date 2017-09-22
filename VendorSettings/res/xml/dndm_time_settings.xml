@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="time_setting_root"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:miui="http://schemas.android.com/apk/res/com.android.settings">
+    <com.android.settings.dndmode.LabelPreference android:persistent="false" android:title="@string/dndm_auto_time_turn_on" android:key="start_time" miui:clickable="true" />
+    <com.android.settings.dndmode.LabelPreference android:persistent="false" android:title="@string/dndm_auto_time_turn_off" android:key="end_time" miui:clickable="true" />
+    <com.android.settings.dndmode.RepeatPreference android:layout="@layout/dndm_label_preference" android:title="@string/repeat" android:key="repeat" />
+    <PreferenceCategory android:key="key_quiet_wristband_category">
+        <CheckBoxPreference android:persistent="false" android:title="@string/dndm_wristband" android:key="key_quiet_wristband" />
+        <com.android.settings.dndmode.LabelPreference android:layout="@layout/dndm_label_preference" miui:label="@string/dndm_wristband_detailed" miui:labelright="false" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/status_bar_settings" android:key="status_bar_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <ListPreference android:persistent="false" android:entries="@array/status_bar_style_entries" android:title="@string/status_bar_settings_style" android:key="status_bar_style" android:entryValues="@array/status_bar_style_values" />
+    <PreferenceScreen android:title="@string/status_bar_settings_manage_notification" android:key="settings_custom_notification" android:fragment="com.android.settings.NotificationAppListSettings" />
+    <PreferenceScreen android:title="@string/status_bar_settings_toggle_position" android:key="toggle_sort" />
+    <PreferenceCategory android:title="@string/status_bar_settings_status_bar" android:key="settings_status_bar">
+        <CheckBoxPreference android:persistent="false" android:title="@string/status_bar_settings_show_notification_icon" android:key="show_notification_icon" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/status_bar_settings_show_network_speed" android:key="show_network_speed" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/status_bar_settings_show_carrier" android:key="show_carrier" android:summary="@string/status_bar_settings_show_carrier_summary" />
+        <miui.preference.ValuePreference android:persistent="false" android:title="@string/status_bar_settings_custom_carrier" android:key="custom_carrier" />
+        <ListPreference android:persistent="false" android:entries="@array/battery_indicator_style_entries" android:title="@string/battery_indicator_style" android:key="battery_indicator" android:entryValues="@array/battery_indicator_style_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/status_bar_settings_notification_bar">
+        <CheckBoxPreference android:persistent="false" android:title="@string/status_bar_settings_toggle_collapse_after_clicked" android:key="toggle_collapse_after_clicked" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/status_bar_settings_expandable_under_keyguard" android:key="expandable_under_keyguard" />
+    </PreferenceCategory>
+</PreferenceScreen>

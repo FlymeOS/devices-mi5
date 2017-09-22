@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/sound_settings" android:key="sound_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/sound_settings" />
+    <CheckBoxPreference android:title="@string/silent_mode_title" android:key="silent_mode" android:defaultValue="false" />
+    <com.android.settings.sound.VolumeSeekBarPreference android:persistent="true" android:title="@string/ring_volume_option_title" android:key="ring_volume" />
+    <com.android.settings.sound.VolumeSeekBarPreference android:persistent="true" android:title="@string/alarm_volume_option_title" android:key="alarm_volume" />
+    <com.android.settings.sound.VolumeSeekBarPreference android:persistent="true" android:title="@string/media_volume_option_title" android:key="media_volume" />
+    <PreferenceCategory android:title="@string/sound_category_call_ringtone_vibrate_title" android:key="category_calls_and_notification" />
+    <com.android.settings.MiuiDefaultRingtonePreference android:persistent="false" android:title="@string/ringtone_title" android:key="ringtone" android:dialogTitle="@string/ringtone_title" android:ringtoneType="ringtone" android:showSilent="false" style="@style/RingTonePreferenceStyle" />
+    <com.android.settings.MiuiDefaultRingtonePreference android:title="@string/sms_received_sound_title" android:key="sms_received_sound" android:dialogTitle="@string/sms_received_sound_dialog_title" android:ringtoneType="notification" style="@style/RingTonePreferenceStyle" />
+    <com.android.settings.MiuiDefaultRingtonePreference android:persistent="false" android:title="@string/alarm_sound_title" android:key="alarm_sound" android:dialogTitle="@string/alarm_sound_dialog_title" android:ringtoneType="alarm" style="@style/RingTonePreferenceStyle" />
+    <com.android.settings.MiuiDefaultRingtonePreference android:persistent="false" android:title="@string/calendar_sound_title" android:key="calendar_sound" android:dialogTitle="@string/calendar_sound_dialog_title" android:ringtoneType="all" style="@style/RingTonePreferenceStyle" />
+    <com.android.settings.MiuiDefaultRingtonePreference android:persistent="false" android:title="@string/notification_sound_title" android:key="notification_sound" android:dialogTitle="@string/notification_sound_dialog_title" android:ringtoneType="notification" style="@style/RingTonePreferenceStyle" />
+    <PreferenceCategory android:title="@string/vibrate_category_title" android:key="miui_vibrate_category" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/vibrate_when_ringing_title" android:key="miui_vibrate_in_normal_key" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/vibrate_in_silent_title" android:key="miui_vibrate_in_silent_key" />
+    <CheckBoxPreference android:title="@string/haptic_feedback_enable_title" android:key="haptic_feedback" android:defaultValue="true" />
+    <ListPreference android:entries="@array/haptic_feedback_level_texts" android:layout="@layout/preference_ringtone" android:title="@string/haptic_feedback_enable_title" android:key="haptic_feedback_level" android:entryValues="@array/haptic_feedback_level_values" />
+    <PreferenceCategory android:title="@string/sound_category_system_title" />
+    <CheckBoxPreference android:title="@string/dtmf_tone_enable_title" android:key="dtmf_tone" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/sound_effects_enable_title" android:key="sound_effects" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/lock_sounds_enable_title" android:key="lock_sounds" android:defaultValue="true" />
+    <Preference android:title="@string/music_title_dolby_control" android:key="dolby_control" android:summary="@string/music_dolby_mode_off" android:fragment="com.android.settings.dolby.DolbySettings" />
+    <Preference android:title="@string/music_audio_effect_optimize" android:key="dirac_control" android:summary="@string/music_audio_effect_optimize_summary" android:fragment="com.android.settings.HeadsetSettings" />
+    <PreferenceCategory android:title="@string/dock_settings" android:key="dock_category" />
+    <PreferenceScreen android:title="@string/dock_audio_settings_title" android:key="dock_audio">
+        <CheckBoxPreference android:enabled="true" android:title="@string/bluetooth_dock_settings_a2dp" android:key="dock_audio_media_enabled" />
+    </PreferenceScreen>
+    <CheckBoxPreference android:title="@string/dock_sounds_enable_title" android:key="dock_sounds" android:defaultValue="false" />
+</PreferenceScreen>

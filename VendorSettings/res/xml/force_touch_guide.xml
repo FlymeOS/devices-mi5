@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/force_touch_enable" android:key="force_touch_enable" android:summary="@string/force_touch_enable_tips" android:defaultValue="true" />
+    <miui.preference.ValuePreference android:title="@string/force_touch_demo" android:key="force_touch_demo" />
+</PreferenceScreen>

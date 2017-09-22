@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="false" android:title="@string/dndm_open" android:key="key_do_not_disturb_mode" android:summary="@string/dndm_summary" />
+    <PreferenceCategory android:title="@string/dndm_auto_setting_group" android:key="key_auto_setting_group">
+        <CheckBoxPreference android:persistent="false" android:title="@string/dndm_auto_button_title" android:key="key_auto_button" />
+        <PreferenceScreen android:persistent="false" android:title="@string/dndm_auto_time_setting" android:key="key_auto_time_setting">
+            <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings.dndmode.AutoTimeSettings" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/dndm_special_call_setting_group">
+        <PreferenceScreen android:persistent="false" android:title="@string/dndm_vip_call_setting_title" android:key="key_vip_call_setting">
+            <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings.dndmode.VipCallSettings" />
+        </PreferenceScreen>
+        <CheckBoxPreference android:persistent="false" android:title="@string/dndm_repeated_call_setting_title" android:key="key_repeated_call_button" />
+    </PreferenceCategory>
+</PreferenceScreen>

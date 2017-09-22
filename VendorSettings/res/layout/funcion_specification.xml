@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/privacy_funciotn_icon_top_margin">
+                <ImageView android:layout_gravity="center" android:id="@id/function_specific_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/full_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="213.0dip" android:src="@drawable/privacy_password_down" android:layout_toRightOf="@id/function_specific_icon" android:layout_marginStart="5.0dip" />
+            </RelativeLayout>
+            <TextView android:textSize="13.0sp" android:textColor="#99000000" android:gravity="center" android:id="@id/function_specific" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <Button android:id="@id/use_privacy_password_immediate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/privacy_function_button_bottom_margin" android:text="@string/use_privacy_password_immediate" android:layout_alignParentBottom="true" android:layout_marginStart="23.0dip" android:layout_marginEnd="23.0dip" />
+</LinearLayout>

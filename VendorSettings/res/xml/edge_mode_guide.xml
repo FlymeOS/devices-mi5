@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="false" android:title="@string/edge_mode_back" android:key="edge_mode_back" android:summary="@string/edge_mode_back_summary" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/edge_mode_clean" android:key="edge_mode_clean" android:summary="@string/edge_mode_clean_summary" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/edge_mode_photo" android:key="edge_mode_photo" android:summary="@string/edge_mode_photo_summary" />
+</PreferenceScreen>

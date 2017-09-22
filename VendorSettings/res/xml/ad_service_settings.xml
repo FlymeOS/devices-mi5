@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/ad_service"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/use_personalized_ad_service" android:key="personalized_ad_switch" />
+    <Preference android:title="@string/reset_aaid" android:key="reset_aaid" android:summary="@string/aaid_info" style="?android:attr/preferenceInformationStyle" />
+</PreferenceScreen>

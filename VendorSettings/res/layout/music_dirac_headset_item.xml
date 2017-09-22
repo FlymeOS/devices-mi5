@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:paddingTop="@dimen/music_dirac_headset_item_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/headset_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    <TextView android:textAppearance="@miui:style/TextAppearance.List.Primary" android:textSize="15.0dip" android:textColor="@color/music_toggle_style_text" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/headset_name" android:background="@drawable/music_toggle_style_text_bg" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="12.0dip" android:maxWidth="@dimen/music_dirac_headset_item_text_max_width" android:layout_below="@id/headset_image" android:layout_centerHorizontal="true" />
+    <View android:layout_width="@dimen/music_dirac_headset_item_width" android:layout_height="1.0dip" />
+</RelativeLayout>

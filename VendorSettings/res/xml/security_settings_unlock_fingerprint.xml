@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/fingerprint_lock_second" android:key="fingerprint_list" />
+    <PreferenceCategory android:title="@string/fingerprint_lock_first" android:key="fingerprint_list_main" />
+</PreferenceScreen>

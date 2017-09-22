@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/screenshot"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="false" android:title="@string/screenshot_three_gesture" android:key="three_gesture" android:summary="@string/screenshot_three_gesture_summary" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/has_screenshot_sound" android:key="screenshot_sound" />
+</PreferenceScreen>

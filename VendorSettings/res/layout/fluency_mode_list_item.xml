@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.settings.display.CheckableLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:background="@miui:drawable/list_item_bg_dialog_light" android:layout_width="fill_parent" style="@miui:style/Widget.ListView.Item.DoubleLine"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <miui.widget.CheckedTextView android:textAppearance="@miui:style/TextAppearance.AlertDialogListItem.SingleChoice" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/txt_fluency_content" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="?android:listChoiceIndicatorSingle" android:singleLine="true" />
+    <TextView android:textAppearance="@miui:style/TextAppearance.List.Secondary" android:ellipsize="end" android:id="@id/txt_fluency_summary" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="24.0dip" />
+</com.android.settings.display.CheckableLayout>

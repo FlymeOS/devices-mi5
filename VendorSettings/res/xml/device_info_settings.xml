@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/about_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <miui.preference.ValuePreference android:persistent="false" android:title="@string/device_name" android:key="device_name" />
+    <PreferenceCategory />
+    <miui.preference.ValuePreference android:title="@string/model_number" android:key="model_number" />
+    <miui.preference.ValuePreference android:title="@string/firmware_version" android:key="firmware_version" />
+    <miui.preference.ValuePreference android:title="@string/security_patch" android:key="security_patch" />
+    <miui.preference.ValuePreference android:title="@string/device_miui_version" android:key="device_miui_version" />
+    <miui.preference.ValuePreference android:title="@string/device_cpu" android:key="device_cpu" />
+    <miui.preference.ValuePreference android:title="@string/device_memory" android:key="device_memory" />
+    <miui.preference.ValuePreference android:title="@string/device_internal_memory" android:key="device_internal_memory" />
+    <miui.preference.ValuePreference android:title="@string/baseband_version" android:key="baseband_version" />
+    <miui.preference.ValuePreference android:title="@string/kernel_version" android:key="kernel_version" />
+    <miui.preference.ValuePreference android:title="@string/build_number" android:key="build_number" />
+    <miui.preference.ValuePreference android:title="@string/hardware_version" android:key="hardware_version" />
+    <miui.preference.ValuePreference android:title="@string/wifi_type_approval_title" android:key="wifi_type_approval" />
+    <PreferenceScreen android:title="@string/device_status" android:key="status_info" android:summary="@string/device_status_summary">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.deviceinfo.Status" />
+    </PreferenceScreen>
+    <PreferenceCategory android:key="user">
+        <PreferenceScreen android:title="@string/translation_contributors_title" android:key="translation_contributors">
+            <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings.TranslationContributors" />
+        </PreferenceScreen>
+        <Preference android:title="@miui:string/user_manual" android:key="user_manual" />
+        <PreferenceScreen android:title="@string/legal_information" android:key="container" android:fragment="com.android.settings.Legal" />
+        <PreferenceScreen android:title="@string/settings_safetylegal_title" android:key="safetylegal">
+            <intent android:action="android.settings.SAFETY" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/instruction_title" android:key="instruction">
+            <intent android:action="android.settings.INSTRUCTION" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

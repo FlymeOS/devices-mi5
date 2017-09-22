@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@drawable/provision_input_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/input_item_horizontal"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@android:id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Provision.InputTextView" />
+    <TextView android:textAppearance="@miui:style/TextAppearance.List.Secondary" android:textSize="12.0sp" android:textColor="@color/provision_spinner_text" android:layout_gravity="center_vertical" android:id="@android:id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+</LinearLayout>

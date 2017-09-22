@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="@string/screen_color_temperature" android:key="screen_color_temperature" />
+    <PreferenceCategory android:title="@string/screen_saturation" android:key="screen_color_saturation" />
+</PreferenceScreen>

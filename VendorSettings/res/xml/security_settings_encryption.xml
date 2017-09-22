@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/security_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/crypt_keeper_settings_title" android:key="security_category">
+        <miui.preference.ValuePreference android:persistent="false" android:title="@string/security_encryption_title" android:key="security_encryption_title" android:fragment="com.android.settings.EncryptionSettings" />
+    </PreferenceCategory>
+</PreferenceScreen>

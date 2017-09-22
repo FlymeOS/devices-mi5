@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/title_font2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <miui.preference.ValuePreference android:title="@string/title_font_current2" android:key="preferred_font" />
+    <PreferenceCategory android:title="@string/title_font_size" />
+    <miui.preference.ValuePreference android:title="@string/title_layout_current2" android:key="preferred_page_layout" android:fragment="com.android.settings.display.PageLayoutFragment" />
+    <com.android.settings.display.SpannablePreference android:enabled="false" android:key="font_size_summary" style="?android:attr/preferenceInformationStyle" />
+</PreferenceScreen>

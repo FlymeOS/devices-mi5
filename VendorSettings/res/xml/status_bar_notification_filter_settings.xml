@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="root"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory>
+        <CheckBoxPreference android:persistent="false" android:title="@string/status_bar_settings_enable_notification" android:key="enable_notification" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="main_container">
+        <CheckBoxPreference android:persistent="false" android:title="@string/status_bar_settings_notification_priority" android:key="priority" android:summary="@string/status_bar_settings_notification_priority_summary" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/status_bar_settings_show_home_message" android:key="show_home_message" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/status_bar_settings_show_floating_notification" android:key="show_floating_notification" android:summary="@string/status_bar_settings_show_floating_notification_summary" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/status_bar_settings_show_keyguard_notification" android:key="show_keyguard_notification" />
+    </PreferenceCategory>
+    <PreferenceCategory>
+        <CheckBoxPreference android:persistent="false" android:title="@string/status_bar_settings_notification_sound" android:key="enable_notification_sound" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/status_bar_settings_notification_vibrate" android:key="enable_notification_vibrate" />
+        <CheckBoxPreference android:persistent="false" android:title="@string/status_bar_settings_notification_led" android:key="enable_notification_led" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>ཕྱགས་འགོད་བྱེད་ཀྱི་ཡོད།</item>
+        <item>འབྲེལ་བ་བྱེད་ཀྱི་ཡོད།</item>
+        <item>ཐོབ་ཐང་ལ་ཚོད་ལྟས་ར་སྤྲོད་བྱེད་ཀྱི་ཡོད།</item>
+        <item>IPགནས་སར་ཐོབ་བྱེད་ཀྱི་ཡོད།</item>
+        <item>འབྲེལ་བ་བྱས།</item>
+        <item>གནས་སྐབས་ཀྱིས་མཚམས་འཇོག་བྱས།</item>
+        <item>འབྲེལ་བར་བར་ཆད་བྱེད་ཀྱི་ཡོད།</item>
+        <item>འབྲེལ་བར་བར་ཆད་བྱས།</item>
+        <item>མ་འགྲུབ་བྱེད།</item>
+        <item>སྤྱོད་པ་མཚམས་འཇོག་བྱས།</item>
+        <item>གནས་སྐབས་ཀྱིས་སྒོ་རྒྱག་བྱེད།（དྲ་རྒྱར་གནས་ཚུལ་ཡག་པོ་མི་འདུག）</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>ཕྱགས་འགོད་བྱེད་ཀྱི་ཡོད།</item>
+        <item>%1$sལ་འབྲེལ་བ་བྱེད་ཀྱི་ཡོད།</item>
+        <item>%1$sབརྒྱུད་ནས་ཐོབ་ཐང་ལ་ཚོད་ལྟས་ར་སྤྲོད་བྱེད་ཀྱི་ཡོད།</item>
+        <item>%1$sནསIPགནས་སར་ཐོབ་བྱེད་ཀྱི་ཡོད།</item>
+        <item>%1$sལ་འབྲེལ་བ་བྱས།</item>
+        <item>གནས་སྐབས་ཀྱིས་མཚམས་འཇོག་བྱས།</item>
+        <item>%1$s འི་འབྲེལ་བ་བར་ཆད་བྱེད་ཀྱི་ཡོད།</item>
+        <item>འབྲེལ་བར་བར་ཆད་བྱས།</item>
+        <item>མ་འགྲུབ་བྱེད།</item>
+        <item>སྤྱོད་པ་མཚམས་འཇོག་བྱས།</item>
+        <item>གནས་སྐབས་ཀྱིས་སྒོ་རྒྱག་བྱེད།（དྲ་རྒྱར་གནས་ཚུལ་ཡག་པོ་མི་འདུག）</item>
+    </string-array>
+    <string-array name="status_bar_style_entries">
+        <item>རྐྱང་ངོས།</item>
+        <item>ཟུང་ངོས།</item>
+    </string-array>
+    <string-array name="timezone_filters">
+        <item>གླིང་ཆེན་ཨ་མེ་རི་ཀ།</item>
+        <item>ཡོ་རོབ་གླིང་།</item>
+        <item>གླིང་ཆེན་ཨ་ཧྥེ་རི་ཀ།</item>
+        <item>གླིང་ཆེན་ཨ་ཤེ་ཡ།</item>
+        <item>ཨའོ་སི་ཀྲུ་ལི་ཡ།</item>
+        <item>ཞི་བདེ་རྒྱ་མཚོ་ཆེན་པོ།</item>
+        <item>ཚང་མ།</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>སྐར་ཆ15</item>
+        <item>སྐར་ཆ30</item>
+        <item>སྐར་མ1</item>
+        <item>སྐར་མ2</item>
+        <item>སྐར་མ5</item>
+        <item>སྐར་མ10</item>
+        <item>གཏན་ནས་མིན།</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>ནམ་ཡང་མི་བྱེད།</item>
+        <item>སྐར་ཆ15</item>
+        <item>སྐར་ཆ་སུམ་བཅུ།</item>
+        <item>སྐར་མ་གཅིག</item>
+        <item>སྐར་མ་གཉིས།</item>
+        <item>སྐར་མ་ལྔ།</item>
+        <item>སྐར་མ་བཅུ།</item>
+        <item>སྐར་མ་སུམ་བཅུ།</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>ལམ་སང་།</item>
+        <item>སྐར་ཆ་ལྔ།</item>
+        <item>སྐར་ཆ15</item>
+        <item>སྐར་ཆ30</item>
+        <item>སྐར་མ་གཅིག</item>
+        <item>སྐར་མ་གཉིས།</item>
+        <item>སྐར་མ་ལྔ།</item>
+        <item>སྐར་མ་བཅུ།</item>
+        <item>སྐར་མ་སུམ་བཅུ།</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>ཚད་ལྡན།</item>
+        <item>ཨང་རྟགས་འབྲིང་བ།</item>
+        <item>ཨང་རྟགས་ཆེ་བ།</item>
+        <item>ཤིན་ཏུ་ཆེ་བ།</item>
+        <item>རབ་ཏུ་ཆེ་བ།</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>ཧ་ཅང་དལ།</item>
+        <item>དལ།</item>
+        <item>རྒྱུན་ལྡན།</item>
+        <item>མགྱོགས་པོ།</item>
+        <item>ཏོག་ཚམ་མགྱོགས།</item>
+        <item>ཧ་ཅང་མགྱོགས་པོ།</item>
+        <item>མགྱོགས་པོ།</item>
+        <item>ཧ་ཅང་མགྱོགས་པོ།</item>
+        <item>མགྱོགས་ཤོས།</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>ཧ་ཅང་དམའ་པོ།</item>
+        <item>དམའ་པོ།</item>
+        <item>རྒྱུན་ལྡན།</item>
+        <item>མཐོ།</item>
+        <item>ཧ་ཅང་མཐོ།</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>PWD</item>
+        <item>SIM</item>
+        <item>AKA</item>
+        <item>"AKA'"</item>
+    </string-array>
+    <string-array name="eap_method_without_sim_auth">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>PWD</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>གཅུས་སྒོ།</item>
+        <item>རིམ་མཚུངས་པའི་སྒྲིག་ཆས་ནསPINཨང་གྲངས་ལ་ཐོབ་བྱེད།</item>
+        <item>སྒྲིག་ཆས་འདི་ནས་ཆགས་པའིPINཨང་གྲངས།</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>འབྲེལ་བ་བྱས།</item>
+        <item>གདན་འདྲེན་བྱས།</item>
+        <item>མ་འགྲུབ་བྱེད།</item>
+        <item>བདེ་སྤྱོད་བྱེད་ཐུབ།</item>
+        <item>བརྒལ་བའི་ཚོད་འཛིན།</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>སྐར་མ་གཉིས།</item>
+        <item>སྐར་མ་ལྔ།</item>
+        <item>དུས་ཚོད་གཅིག</item>
+        <item>ནམ་ཡང་གིས་དུས་ཚོད་བརྒལ་བ་མི་བྱེད།</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>ཞན་པོ།</item>
+        <item>སྤྱིར།</item>
+        <item>ལྷག་ཙམ་དྲག་པོ།</item>
+        <item>དྲག་པོ།</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>ནམ་ཡང་།</item>
+        <item>གློག་གསོག་བྱེད་དུས་དེ་རང་ལ་མི་འདའ་བ།</item>
+        <item>ནམ་ཡང་གིས་མི་བྱེད།</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>ནམ་ཡང་།</item>
+        <item>གློག་གསོག་བྱེད་དུས་དེ་རང་ལ་མི་འདའ་བ།</item>
+        <item>ནམ་ཡང་གིས་མི་བྱེད།</item>
+    </string-array>
+    <string-array name="data_usage_data_range">
+        <item>སྔོན་གྱི་ཉི་མ་སུམ་བཅུ།</item>
+        <item>དྲ་རྒྱ་དུས་ཚོད་ཞབས་ཞུའི་འཁོར་ཡུན་ལ་སྒྲིག་པ་་བྱེད།</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>རང་འགུལ་བ།</item>
+        <item>གློག་རླབས་རིང་ཚད5GHzདེ་མ་གཏོགས་ལ་བདེ་སྤྱོད་མི་བྱེད།</item>
+        <item>གློག་རླབས་རིང་ཚད2.4GHzདེ་མ་གཏོགས་ལ་བདེ་སྤྱོད་མི་བྱེད།</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>བདེ་སྤྱོད་བྱེད་པའི་དུས་ཚོད།</item>
+        <item>ཐེངས་སྔོན་གྱི་བདེ་སྤྱོད་དུས་ཚོད།</item>
+        <item>བཀོལ་སྤྱོད་ཀྱི་མིང་།</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>PEAP</item>
+        <item>TLS</item>
+        <item>TTLS</item>
+        <item>PWD</item>
+    </string-array>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>མེད།</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>མེད།</item>
+        <item>PAP</item>
+        <item>MSCHAP</item>
+        <item>MSCHAPV2</item>
+        <item>GTC</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>DHCP</item>
+        <item>འགུལ་མེད་ཀྱི་རྣམ་པ།</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>མེད།</item>
+        <item>ལག་ཤས་བྱེད།</item>
+        <item>ལས་ཚབ་ལ་རང་འགུལ་གྱིས་བཀོད་སྒྲིག་བྱེད།</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>མེད།</item>
+        <item>PAP</item>
+        <item>CHAP</item>
+        <item>PAP དང CHAP</item>
+    </string-array>
+    <string-array name="apn_protocol_entries">
+        <item>IPv4</item>
+        <item>IPv6</item>
+        <item>IPv4དངIPv6</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>དམིགས་འཛུགས་མི་བྱེད།</item>
+        <item>LTE</item>
+        <item>HSPAP</item>
+        <item>HSPA</item>
+        <item>HSUPA</item>
+        <item>HSDPA</item>
+        <item>UMTS</item>
+        <item>EDGE</item>
+        <item>GPRS</item>
+        <item>eHRPD</item>
+        <item>EVDO_B</item>
+        <item>EVDO_A</item>
+        <item>EVDO_0</item>
+        <item>1xRTT</item>
+        <item>IS95B</item>
+        <item>IS95A</item>
+    </string-array>
+    <string-array name="mvno_type_entries">
+        <item>མེད།</item>
+        <item>SPN</item>
+        <item>IMSI</item>
+        <item>GID</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>ནང་ཕྱོགས་ཀྱི་གསོག་འཇོག་སྒྲིག་ཆས།</item>
+        <item>འབྱིན་ཐུབ་པའིSDཁཱ།</item>
+        <item>མ་ལག་གིས་གཏན་འཁེལ་བྱེད།</item>
+    </string-array>
+    <string-array name="app_ops_categories">
+        <item>གནས་ས།</item>
+        <item>མི་སྒེར།</item>
+        <item>བརྗེད་ཐོ།</item>
+        <item>བརྒྱད་རྫས།</item>
+        <item>སྒྲིག་ཆས།</item>
+    </string-array>
+    <string-array name="app_ops_summaries">
+        <item>ཕལ་ཆེར་གྱི་གནས་ས།</item>
+        <item>ཞིབ་མོའི་གནས་ས།</item>
+        <item>GPS</item>
+        <item>འགུལ་བ།</item>
+        <item>འབྲལ་མཁན་ལ་ཐོབ་པ་བྱེད།</item>
+        <item>འབྲལ་མཁན་ལ་དག་བཅོས་བྱེད།</item>
+        <item>ཁ་པར་གཏོང་ལེན་པའི་ཟིན་ཐོ་ལ་ཐོབ་པ་བྱེད།</item>
+        <item>ཁ་པར་གཏོང་བའི་ཟིན་ཐོ་ལ་དག་བཅོས་བྱེད།</item>
+        <item>ལོ་ཐོ་ལ་ཐོབ་པ་བྱེད།</item>
+        <item>ལོ་ཐོ་ལ་དག་བཅོས་བྱེད།</item>
+        <item>WLANཕྱོགས་འགོད་བྱེད།</item>
+        <item>བརྡ་ཡིག</item>
+        <item>ཁ་པར་གིསWLANཕྱགས་འགོད་བྱེད།</item>
+        <item>ཁ་པར་གཏོང་།</item>
+        <item>བརྗེད་ཐོ་ལ་ཐོབ་པ་བྱེད།</item>
+        <item>བརྗེད་ཐོ་ལ་རྩོམ་སྒྲིག་བྱེད།</item>
+        <item>བརྗེད་ཐོ་ལ་ལེན་པ་བྱེད།</item>
+        <item>བྲེལ་མྱུར་གྱི་བརྗེད་ཐོ་ལ་ལེན་པ་བྱེད།</item>
+        <item>ཚོན་འཕྲིན་ལ་ལེན་པ་བྱེད།</item>
+        <item>WAP PUSHའི་ཆ་འཕྲིན་ལ་ལེན་པ་བྱེད།</item>
+        <item>བརྗེད་ཐོ་ལ་སྐྱེལ་བ་བྱེད།</item>
+        <item>ICCབརྗེད་ཐོ་ལ་ཐོབ་པ་བྱེད།</item>
+        <item>ICC བརྗེད་ཐོ་ལ་བྲི་བ་བྱེད།</item>
+        <item>དག་བཅོས་སྒྲིག་པ།</item>
+        <item>སྟེང་ལ་འབྲི་བ་བྱེད།</item>
+        <item>འཚམས་འདྲི་བརྡ་ཡིག</item>
+        <item>པར་ཆས།</item>
+        <item>སྒྲའི་སགུལ་ཚད་ལ་སྒྲ་འཇུག་པ་བྱེད།</item>
+        <item>སྒྲའི་སགུལ་ཚད་ལ་གཏོང་བ་བྱེད།</item>
+        <item>དྲས་སྦྱར་པང་གི་ནང་དོན་ལ་ཐོབ་པ་བྱེད།</item>
+        <item>དྲས་སྦྱར་པང་གི་ནང་དོན་ལ་དག་བཅོས་བྱེད།</item>
+        <item>བརྒྱད་རྫས་གཅུས་སྒོ།</item>
+        <item>སྒྲའི་སགུལ་ཚད་མདོ་གནས།</item>
+        <item>གཙོ་བའི་སྒྲ་གདངས་དྲག་ཞན།</item>
+        <item>སྐད་གདངས་དྲག་ཞན།</item>
+        <item>དྲིལ་བུའི་སྒྲ་ཚད་དྲག་ཞན།</item>
+        <item>བརྒྱད་རྫས་ཀྱི་སྒྲ་གདངས་དྲ་ཞན།</item>
+        <item>ཐིར་ལྡན་ཆུ་ཚོད་ཀྱི་སྒྲ་གདངས་དྲ་ཞན།</item>
+        <item>བརྡ་ཡིག་གི་སྒྲ་གདངས་དྲ་ཞན།</item>
+        <item>སོ་སྔོའི་སྒྲ་གདངས་དྲ་ཞན།</item>
+        <item>སྐུལ་སློང་བྱེད་པའི་གནས་ཚུལ་ལ་སྲུང་འཛིན་བྱེད།</item>
+        <item>གནས་སར་ལྟ་ཞིབ་ཚད་ལེན་བྱེད།</item>
+        <item>གློག་གྲོན་མཐོ་བའི་གནས་ས་ཆ་འཕྲིན་ཞབས་ཞུ་ལ་ལྟ་ཞིབ་ཚད་ལེན་བྱེད།</item>
+        <item>བདེ་སྤྱོད་གནས་ཚུལ་གྱི་བསྡོམས་རྩིས་ཆ་འཕྲིནལ་ཐོབ་པ་བྱེད།</item>
+        <item>སྒྲ་དུང་ལ་ཁ་ཁུ་སིམ་པོར་སྡོད་པ་སྒྲིག་པ་བྱེད་པ་དང་ཕྱིར་འཐེན་བྱེད་ཀྱི་རེད།</item>
+        <item>གྲིབ་གཟུགས་ཕོག་པའི་བརྒྱད་རྫས།</item>
+        <item>VPNསྐུལ་སློང་བྱེད།</item>
+        <item>རྩིག་ཤོག་ནང་ལ་འབྲི་བ་བྱེད།</item>
+        <item>ལས་རོགས་ཀྱི་སྒྲིག་གཞི།</item>
+        <item>བརྙན་ཡོལ་ལ་པར་ཕྱེད་ཀ་ལས་རོགས་བྱེད།</item>
+    </string-array>
+    <string-array name="app_ops_labels">
+        <item>གནས་ས།</item>
+        <item>གནས་ས།</item>
+        <item>གནས་ས།</item>
+        <item>འགུལ་བ།</item>
+        <item>འབྲལ་མཁན་ལ་ཐོབ་པ་བྱེད།</item>
+        <item>འབྲལ་མཁན་ལ་དག་བཅོས་བྱེད།</item>
+        <item>ཁ་པར་གཏོང་ལེན་པའི་ཟིན་ཐོ་ལ་ཐོབ་པ་བྱེད།</item>
+        <item>ཁ་པར་གཏོང་བའི་ཟིན་ཐོ་ལ་དག་བཅོས་བྱེད།</item>
+        <item>ལོ་ཐོ་ལ་ཐོབ་པ་བྱེད།</item>
+        <item>ལོ་ཐོ་ལ་དག་བཅོས་བྱེད།</item>
+        <item>གནས་ས།</item>
+        <item>བརྡ་ཡིག་ལ་སྐྱེལ་བ་བྱེད།</item>
+        <item>གནས་ས།</item>
+        <item>ཁ་པར་གཏོང་།</item>
+        <item>བརྗེད་ཐོ་དང་ཚོན་འཕྲིན་ལ་ཐོབ་པ་བྱེད།</item>
+        <item>བརྗེད་ཐོ་དང་ཚོན་འཕྲིན་ལ་རྩོམ་སྒྲིག་བྱེད།</item>
+        <item>བརྗེད་ཐོ་དང་ཚོན་འཕྲིན་ལ་ལེན་པ་བྱེད།</item>
+        <item>བརྗེད་ཐོ་དང་ཚོན་འཕྲིན་ལ་ལེན་པ་བྱེད།</item>
+        <item>བརྗེད་ཐོ་དང་ཚོན་འཕྲིན་ལ་ལེན་པ་བྱེད།</item>
+        <item>བརྗེད་ཐོ་དང་ཚོན་འཕྲིན་ལ་ལེན་པ་བྱེད།</item>
+        <item>བརྗེད་ཐོ་དང་ཚོན་འཕྲིན་ལ་སྐྱེལ་བ་བྱེད།</item>
+        <item>བརྗེད་ཐོ་དང་ཚོན་འཕྲིན་ལ་ཐོབ་པ་བྱེད།</item>
+        <item>བརྗེད་ཐོ་དང་ཚོན་འཕྲིན་ལ་རྩོམ་སྒྲིག་བྱེད།</item>
+        <item>དག་བཅོས་སྒྲིག་པ།</item>
+        <item>སྟེང་ལ་འབྲི་བ་བྱེད།</item>
+        <item>འཚམས་འདྲི་བརྡ་ཡིག</item>
+        <item>པར་ཆས།</item>
+        <item>སྒྲའི་སགུལ་ཚད་ལ་སྒྲ་འཇུག་པ་བྱེད།</item>
+        <item>སྒྲའི་སགུལ་ཚད་ལ་གཏོང་བ་བྱེད།</item>
+        <item>དྲས་སྦྱར་པང་གི་ནང་དོན་ལ་ཐོབ་པ་བྱེད།</item>
+        <item>དྲས་སྦྱར་པང་གི་ནང་དོན་ལ་དག་བཅོས་བྱེད།</item>
+        <item>བརྒྱད་རྫས་གཅུས་སྒོ།</item>
+        <item>སྒྲའི་སགུལ་ཚད་མདོ་གནས།</item>
+        <item>གཙོ་བའི་སྒྲ་གདངས་དྲག་ཞན།</item>
+        <item>སྐད་གདངས་དྲག་ཞན།</item>
+        <item>དྲིལ་བུའི་སྒྲ་གདངས་དྲ་ཞན།</item>
+        <item>བརྒྱད་རྫས་ཀྱི་སྒྲ་གདངས་དྲ་ཞན།</item>
+        <item>ཐིར་ལྡན་ཆུ་ཚོད་ཀྱི་སྒྲ་གདངས་དྲ་ཞན།</item>
+        <item>བརྡ་ཡིག་གི་སྒྲ་གདངས་དྲ་ཞན།</item>
+        <item>སོ་སྔོའི་སྒྲ་གདངས་དྲ་ཞན།</item>
+        <item>སྐུལ་སློང་བྱེད་པའི་གནས་ཚུལ་ལ་སྲུང་འཛིན་བྱེད།</item>
+        <item>གནས་ས།</item>
+        <item>གནས་སའི་ཆ་འཕྲིན།</item>
+        <item>བདེ་སྤྱོད་གནས་ཚུལ་གྱི་བསྡོམས་རྩིས་ཆ་འཕྲིནལ་ཐོབ་པ་བྱེད།</item>
+        <item>སྒྲ་དུང་ལ་ཁ་ཁུ་སིམ་པོར་སྡོད་པ་སྒྲིག་པ་བྱེད་པ་དང་ཕྱིར་འཐེན་བྱེད་ཀྱི་རེད།</item>
+        <item>གྲིབ་གཟུགས་ཕོག་པའི་བརྒྱད་རྫས།</item>
+        <item>VPNསྐུལ་སློང་བྱེད།</item>
+        <item>རྩིག་ཤོག་ནང་ལ་འབྲི་བ་བྱེད།</item>
+        <item>ལས་རོགས་ཀྱི་སྒྲིག་གཞི།</item>
+        <item>བརྙན་ཡོལ་ལ་པར་ཕྱེད་ཀ་ལས་རོགས་བྱེད།</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>ཐུང་།</item>
+        <item>འབྲིང་བ།</item>
+        <item>རིང་།</item>
+    </string-array>
+    <string-array name="captioning_typeface_selector_titles">
+        <item>ཁོག་ནས་ཁས་ལེན་པ་བྱེད།</item>
+        <item>Sans-serif</item>
+        <item>Sans-serif condensed</item>
+        <item>Sans-serif monospace</item>
+        <item>Serif</item>
+        <item>Serif monospace</item>
+        <item>Casual</item>
+        <item>Cursive</item>
+        <item>Small capitals</item>
+    </string-array>
+    <string-array name="captioning_font_size_selector_titles">
+        <item>རིམ་འདས་ཆུང་།</item>
+        <item>ཆུང་།</item>
+        <item>རྒྱུན་ལྡན།</item>
+        <item>ཆེ།</item>
+        <item>རིམ་འདས་ཆེ།</item>
+    </string-array>
+    <string-array name="captioning_edge_type_selector_titles">
+        <item>ཁོག་ནས་ཁས་ལེན་པ་བྱེད།</item>
+        <item>མེད།</item>
+        <item>སྐྱ་རིས།</item>
+        <item>གྲིབ་ནག</item>
+        <item>འབུར་བ།</item>
+        <item>ཀོང་ཀོང་།</item>
+    </string-array>
+    <string-array name="captioning_opacity_selector_titles">
+        <item>བརྒྱ་ཆའི་ཉི་ཤུ་རྩ་ལྔ།</item>
+        <item>བརྒྱ་ཆའི་ལྔ་བཅུ།</item>
+        <item>བརྒྱ་ཆའི་བདུན་བཅུ་དུན་ལྔ།</item>
+        <item>བརྒྱ་ཆའི་བརྒྱ།</item>
+    </string-array>
+    <string-array name="captioning_preset_selector_titles">
+        <item>བཀོལ་སྤྱོད་ཀྱི་ཁོག་ནས་ཁས་ལེན་པའི་དཔེ་དབྱིབས་ལ་བདེ་སྤྱོད་བྱེད།</item>
+        <item>མཐིལ་ནག་དང་ཡི་གེ་དཀར།</item>
+        <item>མཐིལ་དཀར་དང་ཡི་གེ་ནག</item>
+        <item>མཐིལ་ནག་ཡི་གེ་སེར།</item>
+        <item>མཐིལ་སྔོ་དང་ཡི་གེ་སེར།</item>
+        <item>རང་འགུལ་གྱི་མཚན་ཉིད་བྱེད།</item>
+    </string-array>
+    <string-array name="select_logd_size_titles">
+        <item>༦༤K</item>
+        <item>༢༥༦K</item>
+        <item>1M</item>
+        <item>4M</item>
+        <item>16M</item>
+    </string-array>
+    <string-array name="select_logd_size_lowram_titles">
+        <item>༦༤K</item>
+        <item>༢༥༦K</item>
+        <item>1M</item>
+    </string-array>
+    <string-array name="select_logd_size_summaries">
+        <item>བར་ཆོད་ས་ཁུལ་རེ་རེརKདྲུག་བཅུ་དྲུ་བཞི་འདུག</item>
+        <item>བར་ཆོད་ས་ཁུལ་རེ་རེརKགཉིས་བརྒྱ་དང་ལྔ་བཅུ་ལྔ་དྲུག་འདུག</item>
+        <item>བར་ཆོད་ས་ཁུལ་རེ་རེརMགཅིག་འདུག</item>
+        <item>བར་ཆོད་ས་ཁུལ་རེ་རེརMབཞི་འདུག</item>
+        <item>བར་ཆོད་ས་ཁུལ་རེ་རེརMབཅུ་དྲུག་འདུག</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>ནམ་ཡང་གིས་ལྟ་ཞིབ་མི་བྱེད།</item>
+        <item>DRMནང་དོན་ལ་ལྟ་ཞིབ་མ་གཏོགས་གཞན་ལ་ལྟ་ཞིབ་མི་བྱེད།</item>
+        <item>གང་ལྟར་གྱིས་ལྟ་ཞིབ་བྱེད།</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>ཚང་མརHDCPལ་བདེ་སྤྱོད་མི་བྱས་ནས་ལྟ་ཞིབ་བྱེད།</item>
+        <item>HDCPབདེ་སྤྱོད་བྱས་ནས DRM ནང་དོན་ལ་ལྟ་ཞིབ་བྱེད་མ་གཏོགས་ལ་གཞན་ལ་སྤྱོད་བྱེད་མི་ཐུབ།</item>
+        <item>གང་ལྟར་གྱིསHDCPལ་བདེ་སྤྱོད་བྱས་ནས་ལྟ་ཞིབ་བྱེད།</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>འགུལ་རིས་ལ་སྒོ་རྒྱག་བྱེད།</item>
+        <item>འགུལ་རིས0.5xལ་ཆེ་ཆུང་གཏོང་བ་བྱེད།</item>
+        <item>འགུལ་རིས1xལ་ཆེ་ཆུང་གཏོང་བ་བྱེད།</item>
+        <item>འགུལ་རིས1.5xལ་ཆེ་ཆུང་གཏོང་བ་བྱེད།</item>
+        <item>འགུལ་རིས2xལ་ཆེ་ཆུང་གཏོང་བ་བྱེད།</item>
+        <item>འགུལ་རིས5xལ་ཆེ་ཆུང་གཏོང་བ་བྱེད།</item>
+        <item>འགུལ་རིས10xལ་ཆེ་ཆུང་གཏོང་བ་བྱེད།</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>འགུལ་རིས་ལ་སྒོ་རྒྱག་བྱེད།</item>
+        <item>འགུལ་རིས0.5xལ་ཆེ་ཆུང་གཏོང་བ་བྱེད།</item>
+        <item>འགུལ་རིས1xལ་ཆེ་ཆུང་གཏོང་བ་བྱེད།</item>
+        <item>འགུལ་རིས1.5xལ་ཆེ་ཆུང་གཏོང་བ་བྱེད།</item>
+        <item>འགུལ་རིས2xལ་ཆེ་ཆུང་གཏོང་བ་བྱེད།</item>
+        <item>འགུལ་རིས5xལ་ཆེ་ཆུང་གཏོང་བ་བྱེད།</item>
+        <item>འགུལ་རིས10xལ་ཆེ་ཆུང་གཏོང་བ་བྱེད།</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>འགུལ་རིས་ལ་སྒོ་རྒྱག་བྱེད།</item>
+        <item>འགུལ་རིས0.5xལ་ཆེ་ཆུང་གཏོང་བ་བྱེད།</item>
+        <item>འགུལ་རིས1xལ་ཆེ་ཆུང་གཏོང་བ་བྱེད།</item>
+        <item>འགུལ་རིས1.5xལ་ཆེ་ཆུང་གཏོང་བ་བྱེད།</item>
+        <item>འགུལ་རིས2xལ་ཆེ་ཆུང་གཏོང་བ་བྱེད།</item>
+        <item>འགུལ་རིས5xལ་ཆེ་ཆུང་གཏོང་བ་བྱེད།</item>
+        <item>འགུལ་རིས10xལ་ཆེ་ཆུང་གཏོང་བ་བྱེད།</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>མེད།</item>
+        <item>480p</item>
+        <item>480p（བདེ་འཇགས།）</item>
+        <item>720p</item>
+        <item>720p（བདེ་འཇགས།）</item>
+        <item>1080p</item>
+        <item>1080p（བདེ་འཇགས།）</item>
+        <item>4K</item>
+        <item>4K（བདེ་འཇགས།）</item>
+        <item>4K（པར་རིས་ཀྱི་སྤུས་ཚད་ལ་ཡག་པོར་སྒྱུར་བྱེད།）</item>
+        <item>4K（པར་རིས་ཀྱི་སྤུས་ཚད་ལ་ཡག་པོར་སྒྱུར་བྱེད་པ་དང་དེ་ནི་བདེ་འཇགས་རེད།）</item>
+        <item>720p，1080p（བརྙན་ཡོལ་གཉིས།）</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>མེད།</item>
+        <item>Logcat</item>
+        <item>Systrace（དབྱིབས་རིས།）</item>
+        <item>glGetErrorནང་ཀྱི་འཐེན་པའི་དོས་བཅོལ་ཁང་།</item>
+    </string-array>
+    <string-array name="show_non_rect_clip_entries">
+        <item>སྒོ་རྒྱག་བྱེད།</item>
+        <item>གྲུ་བཞི་ནར་མོ་མ་ཡིན་པའི་དྲེས་རྒྱག་པའི་ས་ཁོངས་ལ་ཚོས་མདོག་སྔོན་པོ་སྤྱོད་ནས་ཁ་སྐོང་བྱེད།</item>
+        <item>ལྗང་གུ་སྤྱོད་ནས་ཚོད་ལེན་ཚོད་ལྟ་བར་འབྲི་བའི་བཀའ་ལ་མངོན་གསལ་ཆེ་བས་མཚོན་པ་བྱེད།</item>
+    </string-array>
+    <string-array name="track_frame_time_entries">
+        <item>སྒོ་རྒྱག་བྱེད།</item>
+        <item>བརྙན་ཡོལ་ནང་ལ་ནར་དབྱིབས་ཀྱི་པར་རིས་ལ་མཚོན་པ་བྱེད།</item>
+        <item>adb shell dumpsys gfxinfo ནང་ལ།</item>
+    </string-array>
+    <string-array name="debug_hw_overdraw_entries">
+        <item>སྒོ་རྒྱག་བྱེད།</item>
+        <item>ཚད་ལས་བརྒལ་བའི་ས་ཁོངས་ལ་མཚོན་པ་བྱེད།</item>
+        <item>ལྗང་གུ་མིག་ཤུགས་ཞན་པའི་ནད་པར་སྟུན་པའི་ལྲ་ཞིབ་པའི་ས་ཁོངས་ལ་མཚོན་པ་བྱེད།</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>ཚད་གཞི་ཚོད་འཛིན།</item>
+        <item>རྒྱབ་ཆེ་སའི་འཕེལ་རིམ་ལ་ཁས་མི་ལེན་བྱེད།</item>
+        <item>འཕེལ་རིམ་གཅིག་ལ་བརྒལ་བ་བྱེད་མི་ཐུབ།</item>
+        <item>འཕེལ་རིམ་གཉིས་ལ་བརྒལ་བ་བྱེད་མི་ཐུབ།</item>
+        <item>འཕེལ་རིམ་གསུམ་ལ་བརྒལ་བ་བྱེད་མི་ཐུབ།</item>
+        <item>འཕེལ་རིམ་བཞི་ལ་བརྒལ་བ་བྱེད་མི་ཐུབ།</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>PPTP VPN</item>
+        <item>སྔོན་ཚུད་ཀྱིས་མཉམ་སྤྱོད་པའི་གསང་ལྡེ་ལ་ལྡན་པའིL2TP/IPSec VPN</item>
+        <item>དཔང་ཡིག་ལྡན་པའི L2TP/IPSec VPN</item>
+        <item>སྔོན་ཚུད་ཀྱིས་མཉམ་སྤྱོད་པའི་གསང་ལྡེ་དང་ཐོབ་ཐང Xauth ལ་ཚོད་ལྟས་ར་སྤྲོད་བྱེད་པར་ལྡན་པའིIPSec VPN</item>
+        <item>དཔང་ཡིག་དང་ཐོབ་ཐང Xauth ལ་ཚོད་ལྟས་ར་སྤྲོད་བྱེད་པར་ལྡན་པའིIPSec VPN</item>
+        <item>དཔང་ཡིག་དང་སྲེ་བའི་ཐོབ་ཐང་ཚོད་ལྟས་ར་སྤྲོད་བྱེད་པར་ལྡན་པའིIPSec VPN</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>འབྲེལ་བ་བར་ཆད་བྱས།</item>
+        <item>དང་ཐོག་གི་སྒྲིག་པ་ཉམས་གསོ་བྱེད་ཀྱི་ཡོད།</item>
+        <item>འབྲེལ་བ་བྱེད་ཀྱི་ཡོད།</item>
+        <item>འབྲེལ་བ་བྱས།</item>
+        <item>དུས་ཚོད་ལ་བརྒལ་བ་བྱེད།</item>
+        <item>མ་འགྲུབ་བྱེད།</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>འཚམས་འདྲི་བྱེད།</item>
+        <item>ནམ་ཡང་གིས་ཁས་མི་ལེན་བྱེད།</item>
+        <item>ནམ་ཡང་གིས་ཁས་ལེན་བྱེད།</item>
+    </string-array>
+    <string-array name="ram_states">
+        <item>རྒྱུན་ལྡན།</item>
+        <item>འབྲིང་བ།</item>
+        <item>མི་ལྡང་བ།</item>
+        <item>ཚབས་ཆེན་གྱིས་མི་ལྡང་བ།</item>
+        <item>མ་ཤེས་པ།</item>
+    </string-array>
+    <string-array name="proc_stats_memory_states">
+        <item>རྒྱུན་ལྡན།</item>
+        <item>འབྲིང་བ།</item>
+        <item>མི་ལྡང་བ།</item>
+        <item>ཚབས་ཆེན་གྱིས་མི་ལྡང་བ།</item>
+    </string-array>
+    <string-array name="proc_stats_process_states">
+        <item>རྒྱུན་བཞུགས།</item>
+        <item>རིམ་མཐོ་ཤོས་ཀྱི་བྱེད་སྒོ།</item>
+        <item>གལ་ཆེན་པོ།（མདུན་ཆེ་ས།）</item>
+        <item>གལ་ཆེན་པོ།（རྒྱབ་ཆེ་ས།）</item>
+        <item>གྲབས་ཉར་བྱེད།</item>
+        <item>ལྗིད་ཚད་རིམ་པ།</item>
+        <item>ཞབས་ཞུ།（འཁོར་སྐྱོད་བྱེད་ཀྱི་ཡོད།）</item>
+        <item>ཞབས་ཞུ།（ཡང་བསྐྱར་གྱིས་འཁོར་སྐྱོད་བྱེད་ཀྱི་ཡོད།）</item>
+        <item>ལེན་ཆས།</item>
+        <item>བརྙན་ཡོལ་གཙོ་བོ།</item>
+        <item>སྔོན་གྱི་བྱེད་སྒོ་ཞིག</item>
+        <item>གསོག་འཇོག་ཕྱིར་འགྱངས་བྱས།（བྱེད་སྒོ།）</item>
+        <item>གསོག་འཇོག་ཕྱིར་འགྱངས་བྱས།（བྱེད་སྒོའི་མཐའ་སྣེ།）</item>
+        <item>གསོག་འཇོག་ཕྱིར་འགྱངས་བྱས།（སྟོང་པོ།）</item>
+    </string-array>
+    <string-array name="color_picker">
+        <item>སྔོན་པོ།</item>
+        <item>སྔོན་པོ།</item>
+        <item>སྔོན་པོ།</item>
+        <item>སྨུག་པོ།</item>
+        <item>ཟིང་སྐྱ།</item>
+        <item>དམར་པོ།</item>
+    </string-array>
+    <string-array name="wifi_calling_mode_choices">
+        <item>དང་ཐོག་གིསWLANལ་འདེམས་པ་བྱེད།</item>
+        <item>དང་ཐོག་གིས་འཕོ་བའི་དྲ་བ་ལ་འདེམས་པ་བྱེད།</item>
+    </string-array>
+    <string-array name="wifi_calling_mode_values">
+        <item>གཉིས།</item>
+        <item>གཅིག</item>
+    </string-array>
+    <string-array name="haptic_feedback_level_texts">
+        <item>ཁ་རྒྱག</item>
+        <item>ཅུང་ཞན།</item>
+        <item>འོས་འཚམ་ཡིན།</item>
+        <item>སྟོབས་ཅུང་ཆེ།</item>
+    </string-array>
+    <string-array name="media_feedback_level_entries">
+        <item>སྟོབས་ཅུང་ཆེ།</item>
+        <item>འོས་འཚམ་ཡིན།</item>
+        <item>ཅུང་ཞན།</item>
+    </string-array>
+    <string-array name="battery_indicator_style_entries">
+        <item>རིས་དབྱིབས་བྱེད་སྟངས།</item>
+        <item>ཨང་ཡིག་བྱེད་སྟངས།</item>
+        <item>སྟེང་ཕྱོགས་བྱེད་སྟངས།</item>
+    </string-array>
+    <string-array name="usb_connection_mode_entries">
+        <item>སྦྲེལ་དུས་འདྲི་རྩད་བྱེད་དགོས།</item>
+        <item>གློག་གསོག་ཁོ་ན།</item>
+        <item>རང་འགུལ་གྱིས་གསོག་བྱང་ཁ་འབྱེད་པ།</item>
+    </string-array>
+    <string-array name="led_freq_entries">
+        <item>སྐར་ཆ2</item>
+        <item>སྐར་ཆ3</item>
+        <item>སྐར་ཆ4</item>
+        <item>སྐར་ཆ5</item>
+        <item>སྐར་ཆ6</item>
+        <item>སྐར་ཆ7</item>
+        <item>སྐར་ཆ8</item>
+        <item>སྐར་ཆ9</item>
+    </string-array>
+    <string-array name="mi1_led_color_entries">
+        <item>སྔོན་པོ།</item>
+        <item>དམར་པོ།</item>
+        <item>ལྗང་ཁུ།</item>
+        <item>ཟིང་སྐྱ།</item>
+        <item>མེ་ཏོག་ཙི་ལུའོ་ལན།</item>
+        <item>རྒྱ་སྨུག</item>
+    </string-array>
+    <string-array name="led_color_entries">
+        <item>སྔོན་པོ།</item>
+        <item>དམར་པོ།</item>
+        <item>སེར་པོ།</item>
+        <item>ལྗང་ཁུ།</item>
+        <item>སྤང་མདོག</item>
+        <item>དཀར་པོ།</item>
+        <item>སྨུག་པོ།</item>
+    </string-array>
+    <string-array name="screen_key_position_action">
+        <item>གཡོན་ཕྱོགས་ལས་འགན་མཐེབ། གཡས་ཕྱོགས་ཕྱིར་ལོག་མཐེབ།</item>
+        <item>གཡོན་ཕྱོགས་ཕྱིར་ལོག་མཐེབ། གཡས་ཕྱོགས་ལས་འགན་མཐེབ།</item>
+    </string-array>
+    <string-array name="screen_key_press_action">
+        <item>ཉེ་ལམ་ལས་འགན་སྐུལ་སློང་བྱེད་པ།</item>
+        <item>གདམ་ཐོ་མངོན་འཆར།</item>
+    </string-array>
+    <string-array name="screen_key_long_press_action">
+        <item>མི་འདུག</item>
+        <item>ཉེ་ལམ་ལས་འགན་སྐུལ་སློང་བྱེད་པ།</item>
+        <item>སྐད་ཆའི་ལག་རོགས་སྐུལ་སློང་བྱེད་པ།</item>
+        <item>Googleབཤེར་འཚོལ་སྐུལ་སློང་བྱེད་པ།</item>
+        <item>མིག་སྔར་གྱི་བྱ་རིམ་མཚམས་འཇོག་པ།</item>
+        <item>ཕྱོགས་ཡོངས་ནས་འཚོལ་བ་སྒོ་ཕྱེ་བ།</item>
+        <item>གདམ་ཐོ་མངོན་འཆར།</item>
+    </string-array>
+    <string-array name="screen_key_long_press_timeout">
+        <item>སྐར་ཆ0.5</item>
+        <item>སྐར་ཆ1</item>
+        <item>སྐར་ཆ1.5</item>
+        <item>སྐར་ཆ2</item>
+    </string-array>
+    <string-array name="long_press_volume_down_action">
+        <item>མེད།</item>
+        <item>ཁྲོམ་དུ་ལེན་པའི་རྣམ་པ།(པར་ལེན་ཆས་ཀྱི་ནང་དུ་རྣམ་པ་འདེམས་དགོས།)</item>
+        <item>འགྲིམ་འགྲུལ་བྱང་བུས་མྱུར་ཏུ་སྤྲོད་པའི་ཐབས།</item>
+    </string-array>
+    <string-array name="button_light_timeout_entries">
+        <item>སྐར་ཆ1</item>
+        <item>སྐར་ཆ2</item>
+        <item>སྐར་ཆ5</item>
+        <item>སྐར་ཆ10</item>
+        <item>སྐར་ཆ20</item>
+        <item>མགོ་མཇུག་བར་གསུམ་དུ་ཕྱེ་བ།</item>
+    </string-array>
+    <string-array name="wfd_status">
+        <item>ཞབས་ཞུ་འཛུགས་བཞིན་པ།</item>
+        <item>ཞབས་ཞུ་བཙུགས་ཟིན།</item>
+        <item>ཞབས་ཞུ་ཁ་རྒྱག་བཞིན་པ།</item>
+        <item>ཞབས་ཞུ་འཛུགས་པར་ཕམ་ཉེས་བྱུང་།</item>
+        <item>ཞབས་ཞུ་འཛུགས་པ་དུས་ཡོལ་ཟིན། ཡང་བསྐྱར་ཚོད་ལྟ་བྱེད་བཞིན་ཡོད།</item>
+        <item>སྦྲེལ་ཟིན།</item>
+    </string-array>
+    <string-array name="power_mode_entries">
+        <item>ནུས་པའི་དཔེ་ཚུལ།</item>
+        <item>དོ་མཉམ་དཔེ་ཚུལ（སོར་འཇོག）</item>
+    </string-array>
+    <string-array name="msd_pc_system">
+        <item>Windows XPདང་གཤམ་གྱི་པར་གཞི།</item>
+        <item>Windows Vista དང་གོང་གི་པར་གཞི།</item>
+        <item>Mac OS</item>
+        <item>Linux</item>
+    </string-array>
+    <string-array name="msd_pc_system_install_summary">
+        <item>"2、སྒྲིག་འཇུག་གོ་རིམ་ཁྲོད་དམ་སྒྲིག་འཇུག་ཚར་རྗེས། གློག་ཀླད་རྒྱུད་ཁོངས་སྲ་ཆས་ཕྱོགས་སྟོན་འཕར་ཐོན་བྱེད་ངེས། 
+སྣེ་དྲངས་པར་བརྟེན་ནས་སྒྲིག་འཇུག་ཚར་དགོས།"</item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string-array name="msd_pc_system_install_finish_summary">
+        <item>@string/msd_pc_system_install_finish_summary_xp</item>
+        <item>@string/msd_pc_system_install_finish_summary_vista</item>
+        <item>"མཉེན་ཆས་རང་འགུལ་གྱིས་ཁ་འབྱེད་སྲིད། གཞི་གྲངས་ཀྱང་ཀློག་ཐུབ། 
+ ཁྱེད་ཀྱིས་ཡིག་ཆ་བརྒྱུད་འདྲེན་བྱས་ཆོག"</item>
+        <item></item>
+    </string-array>
+    <string-array name="msd_pc_system_retry_xp">
+        <item>@string/msd_install_retry_connect</item>
+        <item>ཞའོ་མེའུ་ལག་རོགས་ཡང་བསྐྱར་སྒྲིག་འཇུག་བྱེད་པ།</item>
+    </string-array>
+    <string-array name="msd_pc_system_retry_vista">
+        <item>@string/msd_install_retry_connect</item>
+    </string-array>
+    <string-array name="msd_pc_system_retry_mac">
+        <item>@string/msd_install_retry_reinstall_mac</item>
+        <item>@string/msd_install_retry_connect</item>
+        <item>@string/msd_install_retry_reinstall</item>
+    </string-array>
+    <string-array name="msd_pc_system_retry_linux">
+        <item>སྒྲིག་འཇུག་ལག་ཆ།sudo aptitude install mtpfs libfuse-dev libmad0-dev</item>
+        <item>དཀར་ཆག་གསར་འཛུགས།mkdir /media/mtp</item>
+        <item>སྤྱོད་མཁན་ཚན་པའི་དབང་ཚད་གཏན་འཁེལ་དང་མིག་སྔར་གྱི་སྤྱོད་མཁན་ fuse ཚན་པ་ཁྲོད་ཡོད་པར་གཏན་འཁེལ་བ།</item>
+        <item>ཐོ་འདོར་རྗེས་སུ་ཡང་བསྐྱར་ཐོ་འགོད་གསར་བ་བྱེད་པ།</item>
+        <item>འདྲུད་སྒྲོམ་སྒྲིག་ཆས།mtpfs /media/mtpཡིག་ཆ་དོ་དམ་ཆས་ཀྱིས་འཚམས་འདྲི་བྱེད་པ། རང་གནས་དཀར་ཆག་དང་མཚུངས།</item>
+        <item>"སྒྲིག་ཆས་ཕྱིར་ལེན་པ།fusermount -u /media/mtp
+ གསལ་བཤད། ubuntu 8.04 ཁོར་ཡུག་ཁྲོད།"</item>
+    </string-array>
+    <string-array name="screen_color_title">
+        <item>དྲོད་མདོག</item>
+        <item>རང་བྱུང་།</item>
+        <item>འཁྱག་མདོག</item>
+    </string-array>
+    <string-array name="screen_saturation_title">
+        <item>གསར་བ།</item>
+        <item>ཚད་ལྡན།</item>
+    </string-array>
+    <string-array name="screen_optimize_title">
+        <item>རིག་ནུས་ཁོར་ཡུག་འཚམ（འོས་སྦྱོར།）</item>
+        <item>བརྙན་ཤེལ་ཤུགས་ཆེར་གཏོང་།</item>
+        <item>ཚད་ལྡན་དཔེ་ཚུལ།</item>
+    </string-array>
+    <string-array name="screen_optimize_summary">
+        <item>ཁོར་ཡུག་རིག་ནུས་ལ་བརྟེན་ནས་འོས་འཚམ་གྱི་མངོན་འཆར་ཕན་འབྲས་འདེམ་པ།</item>
+        <item>བརྙན་ཤེལ་གྱི་དམིགས་བསལ་ལ་བརྟེན་ནས་མངོན་འཆར་སྟོབས་ཆེའི་ཕན་འབྲས་ཇེ་ཡག་ལ་གཏོང་བ།</item>
+        <item>ཚད་ལྡན་ཚོན་ལྡན་སོར་འཇོག གཞན་པའི་ཚད་ལྡན་མངོན་འཆར་སྒྲིག་ཆས་དང་ཕན་འབྲས་གཅིག་པ་འཆར་བ།</item>
+    </string-array>
+    <string-array name="perm_hips_action">
+        <item>ཆོག</item>
+        <item>གསལ་འདེབས།</item>
+        <item>བཀག་བྱོལ།</item>
+    </string-array>
+    <string-array name="startup_hips_action">
+        <item>ཆོག</item>
+        <item>བཀག་བྱོལ།</item>
+    </string-array>
+    <string-array name="phone_call_noise_suppression_title">
+        <item>སྐད་སྦུག་རྐྱང་བའི་འཛེར་སྒྲ་ཞན་པར་གཏོང་བ།</item>
+        <item>སྐད་སྦུག་ཟུང་གི་འཛེར་སྒྲ་ཞན་པར་གཏོང་བ།</item>
+    </string-array>
+    <string-array name="change_security_lock_picker">
+        <item>ངོ་གདོང་གི་ཟྭ་འབྱེད་པ།</item>
+        <item>རྒྱན་རིས་ཀྱིས་ཟྭ་འབྱེད་པ།</item>
+        <item>ཨང་ཡིག་གསང་གྲངས།</item>
+        <item>གསང་ཨང་འདྲེས་མ།</item>
+    </string-array>
+    <string-array name="wifi_connect_type_entries">
+        <item>རང་འགུལ་གྱིས་སྦྲེལ་བ།</item>
+        <item>ལག་འགུལ་སྦྲེལ་བ།</item>
+        <item>ཐེངས་རེའི་འདྲི་རྩད།</item>
+    </string-array>
+    <string-array name="wifi_ssid_type_entries">
+        <item>རང་འགུལ་གྱིས་སྦྲེལ་བ།</item>
+        <item>ལག་འགུལ་སྦྲེལ་བ།</item>
+    </string-array>
+    <string-array name="preferred_app_entries">
+        <item>ཅོག་ངོས།</item>
+        <item>ཨང་འབོད།</item>
+        <item>འཕྲིན་ཐུང་།</item>
+        <item>བཤར་ཆས།</item>
+        <item>པར་ཆས།</item>
+        <item>པར་མཛོད།</item>
+        <item>རོལ་དབྱངས།</item>
+        <item>སྦྲག་ཡིག</item>
+        <item>བརྙན་ཟློས་བཏང་བ།</item>
+    </string-array>
+    <string-array name="network_speed_slow_summary">
+        <item>མི་འགས་དུས་གཅིག་ལ་དྲ་རྒྱ་སྤྱད་ན་འགག་འགྲོ།</item>
+        <item>ཚ་ཁུལ་ལ་བར་ཐག་ཅུང་རིང་ན་བརྡ་རྟགས་ཞན།</item>
+        <item>སྤོ་བཞོན་ཡོད།</item>
+    </string-array>
+    <string-array name="priority_storage_entries">
+        <item>ནང་སྒྲིག་གསོག་ས།</item>
+        <item>ཕྱི་སྒྲིགSDབྱང་བུ།</item>
+    </string-array>
+    <string-array name="tts_rate_xunfei_entries">
+        <item>很慢</item>
+        <item>慢</item>
+        <item>正常</item>
+        <item>快</item>
+        <item>较快</item>
+    </string-array>
+    <string-array name="whetstone_level_entries">
+        <item>སྤྱོད་མི་ཆོག</item>
+        <item>དམའ་རིམ།</item>
+        <item>འབྲིང་རིམ།</item>
+        <item>མཐོ་རིམ།</item>
+    </string-array>
+    <string-array name="handy_mode_size_text_entries">
+        <item>དུས་ཚོད།4.5</item>
+        <item>དུས་ཚོད4.0</item>
+        <item>དུས་ཚོད3.5</item>
+    </string-array>
+    <string-array name="lock_screen_secure_after_timeout_entries">
+        <item>མྱུར་ཏུ།</item>
+        <item>སྐར་ཆ30</item>
+        <item>སྐར་མ1</item>
+        <item>སྐར་མ2</item>
+        <item>སྐར་མ5</item>
+    </string-array>
+    <string-array name="fluency_mode_entries">
+        <item>རྒྱུན་བདེ་དཔེ་ཚུལ།</item>
+        <item>ཕན་འབྲས་དཔེ་ཚུལ།</item>
+    </string-array>
+    <string-array name="fluency_mode_summaries">
+        <item>ཕན་འབྲས་ཁག་འགའ་ཇེ་ཉུང་དང་ཇེ་དམར་བཏང་། རྒྱུད་ཁོངས་ཀྱི་རྒྱུན་བདེ་ཚད་མཐོར་འདེགས་བྱེད།</item>
+        <item>CPUདང་་GPUནུས་པ་ལེགས་པར་བཏོན་ཏེ། ཕན་འབྲས་ཆེས་བཟང་བ་མངོན།</item>
+    </string-array>
+    <string-array name="fluency_mode_confirms">
+        <item>རྒྱུན་བདེའི་དཔེ་ཚུལ་ལ་བརྗེས་ན་རྒྱུད་ཁོངས་བསྐྱར་སློང་བྱེད་དགོས། བརྗེ་རྒྱུ་གཏན་འཁེལ་ཡིན་ནམ།</item>
+        <item>ཕན་འབྲས་དཔེ་ཚུལ་ལ་བརྗེས་ན་རྒྱུད་ཁོངས་བསྐྱར་སློང་བྱེད་དགོས། བརྗེ་རྒྱུ་གཏན་འཁེལ་ཡིན་ནམ།</item>
+    </string-array>
+    <string-array name="screen_resolution_entries">
+        <item>ཚད་ལས་བརྒལ་བའི་མཐོ་ཚད། (2K)</item>
+        <item>སྤྱིར་བཏང་། (720P)</item>
+    </string-array>
+    <string-array name="screen_resolution_values">
+        <item>1440</item>
+        <item>720</item>
+    </string-array>
+    <string-array name="miui_entries_font_size">
+        <item>ཨང་རྟགས་ཆུང་བ།</item>
+        <item>ཚད་ལྡན།</item>
+        <item>ཨང་རྟགས་འབྲིང་བ།</item>
+        <item>ཨང་རྟགས་ཆེ་བ།</item>
+        <item>ཤིན་ཏུ་ཆེ་བ།</item>
+        <item>རབ་ཏུ་ཆེ་བ།</item>
+    </string-array>
+    <string-array name="common_password_business_names">
+        <item>བརྙན་ཤེལ་ཁ་རྒྱག</item>
+        <item>བྱིས་པའི་དཔེ་ཚུལ།</item>
+        <item>ཡིག་ཆ་དོ་དམ།</item>
+        <item>ཉེར་སྤྱོད་ཟྭ།</item>
+        <item>ཁ་པར་ཆ་བགོས།</item>
+    </string-array>
+    <string-array name="alarm_repeat_type">
+        <item>ཉིན་རེར།</item>
+        <item>གཟའ་ཟླ་བ་ནས་པ་སངས་བར།</item>
+        <item>རང་སྒྲུབ།</item>
+    </string-array>
+    <string-array name="alarm_repeat_type_no_workdays">
+        <item>ཉིན་རེར།</item>
+        <item>གཟའ་ཟླ་བ་ནས་གཟའ་པ་སངས་བར།</item>
+        <item>རང་སྒྲུབ།</item>
+    </string-array>
+    <string-array name="install_non_market_app_entries">
+        <item>ཉེན་ཁ་ཡོད་དུས་ང་ལ་གསལ་འདེབས་བྱོས（འོས་སྦྱོར）</item>
+        <item>ཆོག</item>
+    </string-array>
+    <string-array name="install_non_market_app_contents">
+        <item>དྲན་སྐུལ།</item>
+        <item>ཆོག</item>
+    </string-array>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient android:orientation="horizontal" android:id="@id/topLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/settings">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="310.0dip" android:layout_height="fill_parent">
+        <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/headerText" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:gravity="center" android:id="@id/lock_secure_after_timeout_view" android:paddingTop="@dimen/lock_secure_after_timeout_text_top_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/choose_lock_pattern_button" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <com.android.settings.LockPatternView android:layout_gravity="center_vertical" android:id="@id/lockPattern" style="@style/SecurityLockPatternView" />
+</com.android.internal.widget.LinearLayoutWithDefaultTouchRecepient>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:paddingBottom="@dimen/add_fingerprint_page_bottom_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/add_fingerprint_page_main_content_height">
+                <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/new_fingerprint_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/all_fingerprint_finish" />
+                <VideoView android:layout_gravity="center" android:id="@id/new_fingerprint_instruction_video" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <VideoView android:layout_gravity="center" android:id="@id/new_fingerprint_step_video" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/add_fingerprint_title_text_size" android:textColor="@color/add_fingerprint_title_text_color" android:gravity="center" android:id="@id/new_fingerprint_top_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" />
+            <TextView android:textSize="@dimen/add_fingerprint_msg_text_size" android:textColor="@color/add_fingerprint_msg_text_color" android:gravity="center" android:id="@id/new_fingerprint_top_text" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <Button android:id="@id/new_fingerprint_button" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/add_fingerprint_finished_button_text" />
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

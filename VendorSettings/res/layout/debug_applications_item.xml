@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@miui:drawable/list_item_bg_dialog_light" android:paddingLeft="20.0dip" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/app_icon" android:layout_width="@dimen/application_icon_size" android:layout_height="@dimen/application_icon_size" android:layout_marginRight="11.0dip" android:scaleType="fitCenter" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textAppearance="@miui:style/TextAppearance.PreferenceList" android:ellipsize="marquee" android:id="@id/app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAlignedChildIndex="0">
+            <TextView android:textAppearance="@miui:style/TextAppearance.List.Secondary.Preference" android:layout_gravity="center|left" android:id="@id/app_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <TextView android:textAppearance="@miui:style/TextAppearance.List.Secondary.Preference" android:layout_gravity="center|right" android:id="@id/app_disabled" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/disabled" android:layout_weight="0.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <CheckBox android:layout_gravity="center_vertical" android:id="@id/app_on_sdcard" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginStart="?android:listPreferredItemPaddingLeft" android:layout_marginEnd="?android:listPreferredItemPaddingLeft"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/single_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/status_bar_style_list" />
+    <TextView android:id="@id/dual_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/status_bar_style_page" android:layout_marginStart="30.0dip" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/title_font"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/title_font_current" android:key="preferred_font" android:order="-2" />
+    <PreferenceCategory android:title="@string/title_font_size" android:order="-1" />
+    <Preference android:title="@string/title_layout_current" android:key="preferred_page_layout" android:order="0" android:fragment="com.android.settings.display.PageLayoutFragment" />
+    <com.android.settings.display.SpannablePreference android:enabled="false" android:key="font_size_summary" android:order="10" style="?android:attr/preferenceInformationStyle" />
+</PreferenceScreen>

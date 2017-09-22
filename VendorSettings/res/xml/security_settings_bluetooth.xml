@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/bluetooth_unlock_settings_toggle_title">
+        <CheckBoxPreference android:persistent="false" android:title="@string/bluetooth_unlock_settings_unlock_device" android:key="unlock_device_by_bluetooth" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/bluetooth_unlock_settings_devices_title" android:key="bluetooth_devices" />
+</PreferenceScreen>

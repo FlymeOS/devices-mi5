@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/location_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="true" android:title="@string/location_access_title" android:key="location_toggle" android:summary="@string/location_access_summary" />
+    <PreferenceCategory android:title="@string/location_mode_screen_title" android:key="location_mode">
+        <com.android.settings.location.RadioButtonPreference android:persistent="false" android:title="@string/location_mode_high_accuracy_title" android:key="high_accuracy" android:summary="@string/location_mode_high_accuracy_description" />
+        <com.android.settings.location.RadioButtonPreference android:persistent="false" android:title="@string/location_mode_battery_saving_title" android:key="battery_saving" android:summary="@string/location_mode_battery_saving_description" />
+        <com.android.settings.location.RadioButtonPreference android:persistent="false" android:title="@string/location_mode_sensors_only_title" android:key="sensors_only" android:summary="@string/location_mode_sensors_only_description" />
+    </PreferenceCategory>
+    <PreferenceCategory />
+    <Preference android:title="@string/recent_location_requests_title" android:key="recent_location_requests" android:summary="@string/recent_location_requests_summary" android:fragment="com.android.settings.location.RecentAppFragment" />
+    <PreferenceCategory android:title="@string/location_category_location_services" android:key="location_services" />
+    <CheckBoxPreference android:title="@string/assisted_gps" android:key="assisted_gps" android:summaryOn="@string/assisted_gps_enabled" android:summaryOff="@string/assisted_gps_disabled" />
+    <CheckBoxPreference android:title="@string/agps_roaming" android:key="agps_roaming" android:summary="@string/agps_roaming_summary" android:dependency="assisted_gps" />
+    <PreferenceScreen android:title="@string/location_agps_params_settings_title" android:key="assisted_gps_params" android:dependency="assisted_gps">
+        <intent android:targetPackage="com.android.settings" android:targetClass="com.android.settings.AgpsSettings" />
+    </PreferenceScreen>
+</PreferenceScreen>

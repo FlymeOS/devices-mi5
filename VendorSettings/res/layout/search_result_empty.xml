@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/search_empty_view_margin_top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_list_empty" />
+    <TextView android:textAppearance="@miui:style/TextAppearance.BlankPage" android:id="@id/empty_text" android:paddingTop="@dimen/search_empty_view_margin_element" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_empty" />
+</LinearLayout>
