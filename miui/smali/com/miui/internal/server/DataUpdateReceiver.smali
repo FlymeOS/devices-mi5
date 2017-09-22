@@ -1,0 +1,341 @@
+.class public Lcom/miui/internal/server/DataUpdateReceiver;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# static fields
+.field public static final ACTION_DATA_JOB:Ljava/lang/String; = "com.miui.internal.action.DATA_JOB"
+
+.field public static final ACTION_DATA_UPDATE:Ljava/lang/String; = "com.miui.internal.action.DATA_UPDATE"
+
+.field public static final CHECK_UPDATE_ONLY_WIFI_AVAILABLE:Ljava/lang/String; = "check_update_only_wifi_available"
+
+.field public static final CHECK_UPDATE_ONLY_WIFI_AVAILABLE_DEFAULT:I = 0x1
+
+.field public static final LAST_UPDATE_TIME:Ljava/lang/String; = "last_update_time"
+
+.field private static final hi:J = 0x240c8400L
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 20
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method private static a(Landroid/content/Context;J)V
+    .locals 3
+
+    .prologue
+    const/4 v2, 0x0
+
+    .line 87
+    new-instance v0, Landroid/content/Intent;
+
+    const-class v1, Lcom/miui/internal/server/Receiver;
+
+    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 88
+    const-string v1, "com.miui.internal.action.DATA_UPDATE"
+
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 89
+    invoke-static {p0, v2, v0, v2}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
+    move-result-object v1
+
+    .line 90
+    const-string v0, "alarm"
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/app/AlarmManager;
+
+    .line 91
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v2, p1, p2, v1}, Landroid/app/AlarmManager;->set(IJLandroid/app/PendingIntent;)V
+
+    .line 92
+    return-void
+.end method
+
+.method public static isUpdateExpired(Landroid/content/Context;)Z
+    .locals 6
+
+    .prologue
+    .line 95
+    invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    .line 96
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v2
+
+    .line 97
+    const-string v1, "last_update_time"
+
+    const-wide/16 v4, 0x0
+
+    invoke-interface {v0, v1, v4, v5}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
+
+    move-result-wide v0
+
+    .line 98
+    sub-long v0, v2, v0
+
+    const-wide/32 v2, 0x240c8400
+
+    cmp-long v0, v0, v2
+
+    if-lez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method private static l(Landroid/content/Context;)Z
+    .locals 3
+
+    .prologue
+    const/4 v0, 0x1
+
+    .line 58
+    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v2, "check_update_only_wifi_available"
+
+    invoke-static {v1, v2, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
+    .line 60
+    if-ne v1, v0, :cond_0
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method private static m(Landroid/content/Context;)V
+    .locals 4
+
+    .prologue
+    const/4 v1, 0x1
+
+    .line 65
+    const-string v0, "connectivity"
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/net/ConnectivityManager;
+
+    .line 66
+    const/4 v2, 0x0
+
+    .line 67
+    invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
+
+    move-result-object v3
+
+    .line 68
+    if-eqz v3, :cond_2
+
+    invoke-virtual {v3}, Landroid/net/NetworkInfo;->isAvailable()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_2
+
+    .line 69
+    invoke-static {p0}, Lcom/miui/internal/server/DataUpdateReceiver;->l(Landroid/content/Context;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_1
+
+    .line 71
+    invoke-virtual {v0}, Landroid/net/ConnectivityManager;->isActiveNetworkMetered()Z
+
+    move-result v0
+
+    if-nez v0, :cond_2
+
+    move v0, v1
+
+    .line 79
+    :goto_0
+    if-eqz v0, :cond_0
+
+    .line 81
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v0
+
+    const-wide/32 v2, 0x240c8400
+
+    add-long/2addr v0, v2
+
+    invoke-static {p0, v0, v1}, Lcom/miui/internal/server/DataUpdateReceiver;->a(Landroid/content/Context;J)V
+
+    .line 82
+    new-instance v0, Landroid/content/Intent;
+
+    const-class v1, Lcom/miui/internal/server/DataUpdateService;
+
+    invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    invoke-virtual {p0, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
+
+    .line 84
+    :cond_0
+    return-void
+
+    :cond_1
+    move v0, v1
+
+    .line 75
+    goto :goto_0
+
+    :cond_2
+    move v0, v2
+
+    goto :goto_0
+.end method
+
+.method public static onReceive(Landroid/content/Context;Landroid/content/Intent;)V
+    .locals 4
+
+    .prologue
+    .line 32
+    sget-boolean v0, Lcom/miui/internal/util/DeviceHelper;->IS_CTA_BUILD:Z
+
+    if-eqz v0, :cond_1
+
+    .line 54
+    :cond_0
+    :goto_0
+    return-void
+
+    .line 36
+    :cond_1
+    invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 37
+    const-string v1, "android.intent.action.BOOT_COMPLETED"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    .line 39
+    invoke-static {p0}, Lcom/miui/internal/server/DataUpdateReceiver;->isUpdateExpired(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 40
+    invoke-static {p0}, Lcom/miui/internal/server/DataUpdateReceiver;->m(Landroid/content/Context;)V
+
+    goto :goto_0
+
+    .line 43
+    :cond_2
+    invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
+
+    move-result-object v0
+
+    const-string v1, "last_update_time"
+
+    const-wide/16 v2, 0x0
+
+    invoke-interface {v0, v1, v2, v3}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
+
+    move-result-wide v0
+
+    .line 44
+    const-wide/32 v2, 0x240c8400
+
+    add-long/2addr v0, v2
+
+    invoke-static {p0, v0, v1}, Lcom/miui/internal/server/DataUpdateReceiver;->a(Landroid/content/Context;J)V
+
+    goto :goto_0
+
+    .line 46
+    :cond_3
+    const-string v1, "android.net.conn.CONNECTIVITY_CHANGE"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_4
+
+    const-string v1, "com.miui.internal.action.DATA_JOB"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_5
+
+    .line 48
+    :cond_4
+    invoke-static {p0}, Lcom/miui/internal/server/DataUpdateReceiver;->isUpdateExpired(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 49
+    invoke-static {p0}, Lcom/miui/internal/server/DataUpdateReceiver;->m(Landroid/content/Context;)V
+
+    goto :goto_0
+
+    .line 51
+    :cond_5
+    const-string v1, "com.miui.internal.action.DATA_UPDATE"
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 52
+    invoke-static {p0}, Lcom/miui/internal/server/DataUpdateReceiver;->m(Landroid/content/Context;)V
+
+    goto :goto_0
+.end method

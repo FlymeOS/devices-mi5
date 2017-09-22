@@ -1,0 +1,13 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: miui.apk
+compressionType: false
+doNotCompress:
+- arsc
+isFrameworkApk: false
+packageInfo: null
+sdkInfo: null
+sharedLibrary: false
+unknownFiles: {}
+usesFramework: null
+version: 2.1.1-04d478-SNAPSHOT
+versionInfo: null
