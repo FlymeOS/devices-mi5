@@ -158,6 +158,7 @@ name="SecurityCenter.apk" certificate="build/security/platform.x509.pem" private
 name="SecurityCoreAdd.apk" certificate="build/security/platform.x509.pem" private_key="build/security/platform.pk8"
 name="SeempService.apk" certificate="build/security/platform.x509.pem" private_key="build/security/platform.pk8"
 name="Settings.apk" certificate="build/security/platform.x509.pem" private_key="build/security/platform.pk8"
+name="VendorSettings.apk" certificate="build/security/platform.x509.pem" private_key="build/security/platform.pk8"
 name="SettingsProvider.apk" certificate="build/security/platform.x509.pem" private_key="build/security/platform.pk8"
 name="SharedStorageBackup.apk" certificate="build/security/platform.x509.pem" private_key="build/security/platform.pk8"
 name="Shell.apk" certificate="build/security/platform.x509.pem" private_key="build/security/platform.pk8"
