@@ -1675,7 +1675,6 @@
         </receiver>
         <provider android:authorities="com.android.vendorsettings" android:exported="true" android:grantUriPermissions="true" android:multiprocess="false" android:name=".search.SettingsSearchIndexablesProvider" android:permission="android.permission.READ_SEARCH_INDEXABLES">
             <intent-filter>
-                <action android:name="android.content.action.SEARCH_INDEXABLES_PROVIDER"/>
             </intent-filter>
         </provider>
         <activity android:label="@string/draw_overlay_title" android:name="Settings$OverlaySettingsActivity" android:taskAffinity="">
