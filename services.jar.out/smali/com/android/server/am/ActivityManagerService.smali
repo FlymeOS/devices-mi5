@@ -11086,7 +11086,6 @@
 
     .line 15920
     :cond_15
-
     if-eqz v8, :cond_18
 
     iget-boolean v9, p1, Lcom/android/server/am/ProcessRecord;->isolated:Z

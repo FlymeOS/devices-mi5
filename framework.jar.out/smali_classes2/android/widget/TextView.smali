@@ -21666,7 +21666,6 @@
     .line 8235
     .end local v6    # "sp":Landroid/text/Spannable;
     :cond_3
-
     invoke-direct {p0, p1}, Landroid/widget/TextView;->startStopMarquee(Z)V
 
     .line 8237
@@ -25677,7 +25676,6 @@
 
     .line 8366
     :cond_b
-
     invoke-static {}, Landroid/view/inputmethod/InputMethodManager;->peekInstance()Landroid/view/inputmethod/InputMethodManager;
 
     move-result-object v2
@@ -29832,7 +29830,6 @@
 
     .line 4568
     :cond_4
-
     invoke-static {}, Landroid/view/inputmethod/InputMethodManager;->peekInstance()Landroid/view/inputmethod/InputMethodManager;
 
     move-result-object v1

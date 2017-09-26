@@ -406,6 +406,7 @@
 
     invoke-direct/range {p0 .. p0}, Landroid/inputmethodservice/InputMethodService$InputMethodImpl;->unbindInputExit()V
 
+    .line 397
     return-void
 .end method
 
@@ -428,6 +429,5 @@
 
     invoke-static {v0}, Landroid/inputmethodservice/InputMethodService$FlymeInjector;->unbindInputExit(Landroid/inputmethodservice/InputMethodService;)V
 
-    .line 397
     return-void
 .end method
