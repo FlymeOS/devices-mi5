@@ -24,7 +24,7 @@
     .param p1, "this$1"    # Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     .prologue
-    .line 128
+    .line 146
     iput-object p1, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$1;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -49,17 +49,17 @@
 
     const/4 v3, 0x0
 
-    .line 130
+    .line 148
     iget v0, p1, Landroid/os/Message;->what:I
 
     packed-switch v0, :pswitch_data_0
 
-    .line 129
+    .line 147
     :cond_0
     :goto_0
     return-void
 
-    .line 132
+    .line 150
     :pswitch_0
     iget-object v0, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$1;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
@@ -67,13 +67,14 @@
 
     invoke-virtual {v0, v7}, Lcom/android/server/policy/FlymeConfirmPasswordView;->setVisibility(I)V
 
+    .line 151
     sget-object v0, Lcom/android/server/policy/MzGlobalActions;->mMzDialog:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
     goto :goto_0
 
-    .line 135
+    .line 154
     :pswitch_1
     iget-object v0, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$1;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
@@ -83,12 +84,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 136
+    .line 155
     iget-object v0, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$1;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     invoke-static {v0, v3}, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;->-set0(Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;Z)Z
 
-    .line 137
+    .line 156
     iget-object v0, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$1;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     invoke-static {v0}, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;->-get4(Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;)Landroid/animation/AnimatorSet;
@@ -101,7 +102,7 @@
 
     if-eqz v0, :cond_1
 
-    .line 138
+    .line 157
     iget-object v0, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$1;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     invoke-static {v0}, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;->-get4(Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;)Landroid/animation/AnimatorSet;
@@ -110,7 +111,7 @@
 
     invoke-virtual {v0}, Landroid/animation/AnimatorSet;->cancel()V
 
-    .line 140
+    .line 159
     iget-object v0, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$1;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     invoke-static {v0}, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;->-get3(Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;)Landroid/animation/ObjectAnimator;
@@ -119,7 +120,7 @@
 
     new-array v1, v6, [F
 
-    .line 141
+    .line 160
     iget-object v2, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$1;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     iget-object v2, v2, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;->mContainer:Landroid/widget/LinearLayout;
@@ -132,10 +133,10 @@
 
     aput v4, v1, v5
 
-    .line 140
+    .line 159
     invoke-virtual {v0, v1}, Landroid/animation/ObjectAnimator;->setFloatValues([F)V
 
-    .line 144
+    .line 163
     :cond_1
     iget-object v0, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$1;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
@@ -145,7 +146,7 @@
 
     new-array v1, v6, [F
 
-    .line 145
+    .line 164
     iget-object v2, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$1;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     iget-object v2, v2, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;->mShutdownView:Lcom/android/server/policy/MzCustomCircleButton;
@@ -158,10 +159,10 @@
 
     aput v4, v1, v5
 
-    .line 144
+    .line 163
     invoke-virtual {v0, v1}, Landroid/animation/ObjectAnimator;->setFloatValues([F)V
 
-    .line 146
+    .line 165
     iget-object v0, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$1;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     invoke-static {v0}, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;->-get1(Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;)Landroid/animation/ObjectAnimator;
@@ -170,7 +171,7 @@
 
     new-array v1, v6, [F
 
-    .line 147
+    .line 166
     iget-object v2, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$1;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     iget-object v2, v2, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;->mRestartView:Lcom/android/server/policy/MzCustomCircleButton;
@@ -183,10 +184,10 @@
 
     aput v4, v1, v5
 
-    .line 146
+    .line 165
     invoke-virtual {v0, v1}, Landroid/animation/ObjectAnimator;->setFloatValues([F)V
 
-    .line 148
+    .line 167
     iget-object v0, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$1;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     invoke-static {v0}, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;->-get5(Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;)Landroid/animation/AnimatorSet;
@@ -195,6 +196,7 @@
 
     invoke-virtual {v0}, Landroid/animation/AnimatorSet;->start()V
 
+    .line 168
     iget-object v0, p0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog$1;->this$1:Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;
 
     iget-object v0, v0, Lcom/android/server/policy/MzGlobalActions$MzGlobalActionsDialog;->mConfirmView:Lcom/android/server/policy/FlymeConfirmPasswordView;
@@ -203,6 +205,7 @@
 
     goto/16 :goto_0
 
+    .line 148
     :pswitch_data_0
     .packed-switch 0x0
         :pswitch_0

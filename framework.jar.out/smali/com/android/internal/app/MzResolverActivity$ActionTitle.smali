@@ -64,49 +64,56 @@
 
     const/4 v2, 0x0
 
+    .line 173
     new-instance v0, Lcom/android/internal/app/MzResolverActivity$ActionTitle;
 
-    const-string v1, "VIEW"
+    const-string/jumbo v1, "VIEW"
 
-    const-string v3, "android.intent.action.VIEW"
+    const-string/jumbo v3, "android.intent.action.VIEW"
 
-    const-string v4, "string"
+    .line 174
+    const-string/jumbo v4, "string"
 
-    const-string v5, "whichViewApplication"
+    const-string/jumbo v5, "whichViewApplication"
 
     invoke-static {v4, v5}, Lcom/meizu/util/InternalResUtils;->getInternalResId(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v4
 
-    const-string v5, "string"
+    .line 175
+    const-string/jumbo v5, "string"
 
-    const-string v6, "whichViewApplicationNamed"
+    const-string/jumbo v6, "whichViewApplicationNamed"
 
     invoke-static {v5, v6}, Lcom/meizu/util/InternalResUtils;->getInternalResId(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v5
 
+    .line 173
     invoke-direct/range {v0 .. v5}, Lcom/android/internal/app/MzResolverActivity$ActionTitle;-><init>(Ljava/lang/String;ILjava/lang/String;II)V
 
     sput-object v0, Lcom/android/internal/app/MzResolverActivity$ActionTitle;->VIEW:Lcom/android/internal/app/MzResolverActivity$ActionTitle;
 
+    .line 176
     new-instance v3, Lcom/android/internal/app/MzResolverActivity$ActionTitle;
 
-    const-string v4, "EDIT"
+    const-string/jumbo v4, "EDIT"
 
-    const-string v6, "android.intent.action.EDIT"
+    const-string/jumbo v6, "android.intent.action.EDIT"
 
-    const-string v0, "string"
+    .line 177
+    const-string/jumbo v0, "string"
 
-    const-string v1, "whichEditApplication"
+    const-string/jumbo v1, "whichEditApplication"
 
     invoke-static {v0, v1}, Lcom/meizu/util/InternalResUtils;->getInternalResId(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v7
 
-    const-string v0, "string"
+    .line 178
+    const-string/jumbo v0, "string"
 
-    const-string v1, "whichEditApplicationNamed"
+    const-string/jumbo v1, "whichEditApplicationNamed"
 
     invoke-static {v0, v1}, Lcom/meizu/util/InternalResUtils;->getInternalResId(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -114,27 +121,31 @@
 
     move v5, v9
 
+    .line 176
     invoke-direct/range {v3 .. v8}, Lcom/android/internal/app/MzResolverActivity$ActionTitle;-><init>(Ljava/lang/String;ILjava/lang/String;II)V
 
     sput-object v3, Lcom/android/internal/app/MzResolverActivity$ActionTitle;->EDIT:Lcom/android/internal/app/MzResolverActivity$ActionTitle;
 
+    .line 179
     new-instance v3, Lcom/android/internal/app/MzResolverActivity$ActionTitle;
 
-    const-string v4, "SEND"
+    const-string/jumbo v4, "SEND"
 
-    const-string v6, "android.intent.action.SEND"
+    const-string/jumbo v6, "android.intent.action.SEND"
 
-    const-string v0, "string"
+    .line 180
+    const-string/jumbo v0, "string"
 
-    const-string v1, "whichSendApplication"
+    const-string/jumbo v1, "whichSendApplication"
 
     invoke-static {v0, v1}, Lcom/meizu/util/InternalResUtils;->getInternalResId(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v7
 
-    const-string v0, "string"
+    .line 181
+    const-string/jumbo v0, "string"
 
-    const-string v1, "whichSendApplicationNamed"
+    const-string/jumbo v1, "whichSendApplicationNamed"
 
     invoke-static {v0, v1}, Lcom/meizu/util/InternalResUtils;->getInternalResId(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -142,27 +153,31 @@
 
     move v5, v10
 
+    .line 179
     invoke-direct/range {v3 .. v8}, Lcom/android/internal/app/MzResolverActivity$ActionTitle;-><init>(Ljava/lang/String;ILjava/lang/String;II)V
 
     sput-object v3, Lcom/android/internal/app/MzResolverActivity$ActionTitle;->SEND:Lcom/android/internal/app/MzResolverActivity$ActionTitle;
 
+    .line 182
     new-instance v3, Lcom/android/internal/app/MzResolverActivity$ActionTitle;
 
-    const-string v4, "SENDTO"
+    const-string/jumbo v4, "SENDTO"
 
-    const-string v6, "android.intent.action.SENDTO"
+    const-string/jumbo v6, "android.intent.action.SENDTO"
 
-    const-string v0, "string"
+    .line 183
+    const-string/jumbo v0, "string"
 
-    const-string v1, "whichSendApplication"
+    const-string/jumbo v1, "whichSendApplication"
 
     invoke-static {v0, v1}, Lcom/meizu/util/InternalResUtils;->getInternalResId(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v7
 
-    const-string v0, "string"
+    .line 184
+    const-string/jumbo v0, "string"
 
-    const-string v1, "whichSendApplicationNamed"
+    const-string/jumbo v1, "whichSendApplicationNamed"
 
     invoke-static {v0, v1}, Lcom/meizu/util/InternalResUtils;->getInternalResId(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -170,27 +185,31 @@
 
     move v5, v11
 
+    .line 182
     invoke-direct/range {v3 .. v8}, Lcom/android/internal/app/MzResolverActivity$ActionTitle;-><init>(Ljava/lang/String;ILjava/lang/String;II)V
 
     sput-object v3, Lcom/android/internal/app/MzResolverActivity$ActionTitle;->SENDTO:Lcom/android/internal/app/MzResolverActivity$ActionTitle;
 
+    .line 185
     new-instance v3, Lcom/android/internal/app/MzResolverActivity$ActionTitle;
 
-    const-string v4, "SEND_MULTIPLE"
+    const-string/jumbo v4, "SEND_MULTIPLE"
 
-    const-string v6, "android.intent.action.SEND_MULTIPLE"
+    const-string/jumbo v6, "android.intent.action.SEND_MULTIPLE"
 
-    const-string v0, "string"
+    .line 186
+    const-string/jumbo v0, "string"
 
-    const-string v1, "whichSendApplication"
+    const-string/jumbo v1, "whichSendApplication"
 
     invoke-static {v0, v1}, Lcom/meizu/util/InternalResUtils;->getInternalResId(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v7
 
-    const-string v0, "string"
+    .line 187
+    const-string/jumbo v0, "string"
 
-    const-string v1, "whichSendApplicationNamed"
+    const-string/jumbo v1, "whichSendApplicationNamed"
 
     invoke-static {v0, v1}, Lcom/meizu/util/InternalResUtils;->getInternalResId(Ljava/lang/String;Ljava/lang/String;)I
 
@@ -198,30 +217,35 @@
 
     move v5, v12
 
+    .line 185
     invoke-direct/range {v3 .. v8}, Lcom/android/internal/app/MzResolverActivity$ActionTitle;-><init>(Ljava/lang/String;ILjava/lang/String;II)V
 
     sput-object v3, Lcom/android/internal/app/MzResolverActivity$ActionTitle;->SEND_MULTIPLE:Lcom/android/internal/app/MzResolverActivity$ActionTitle;
 
+    .line 188
     new-instance v3, Lcom/android/internal/app/MzResolverActivity$ActionTitle;
 
-    const-string v4, "DEFAULT"
+    const-string/jumbo v4, "DEFAULT"
 
-    const-string v0, "string"
+    .line 189
+    const-string/jumbo v0, "string"
 
-    const-string v1, "whichApplication"
+    const-string/jumbo v1, "whichApplication"
 
     invoke-static {v0, v1}, Lcom/meizu/util/InternalResUtils;->getInternalResId(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v7
 
-    const-string v0, "string"
+    .line 190
+    const-string/jumbo v0, "string"
 
-    const-string v1, "whichApplicationNamed"
+    const-string/jumbo v1, "whichApplicationNamed"
 
     invoke-static {v0, v1}, Lcom/meizu/util/InternalResUtils;->getInternalResId(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v8
 
+    .line 188
     const/4 v5, 0x5
 
     const/4 v6, 0x0
@@ -230,34 +254,39 @@
 
     sput-object v3, Lcom/android/internal/app/MzResolverActivity$ActionTitle;->DEFAULT:Lcom/android/internal/app/MzResolverActivity$ActionTitle;
 
+    .line 191
     new-instance v3, Lcom/android/internal/app/MzResolverActivity$ActionTitle;
 
-    const-string v4, "HOME"
+    const-string/jumbo v4, "HOME"
 
-    const-string v6, "android.intent.action.MAIN"
+    const-string/jumbo v6, "android.intent.action.MAIN"
 
-    const-string v0, "string"
+    .line 192
+    const-string/jumbo v0, "string"
 
-    const-string v1, "whichHomeApplication"
+    const-string/jumbo v1, "whichHomeApplication"
 
     invoke-static {v0, v1}, Lcom/meizu/util/InternalResUtils;->getInternalResId(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v7
 
-    const-string v0, "string"
+    .line 193
+    const-string/jumbo v0, "string"
 
-    const-string v1, "whichHomeApplicationNamed"
+    const-string/jumbo v1, "whichHomeApplicationNamed"
 
     invoke-static {v0, v1}, Lcom/meizu/util/InternalResUtils;->getInternalResId(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v8
 
+    .line 191
     const/4 v5, 0x6
 
     invoke-direct/range {v3 .. v8}, Lcom/android/internal/app/MzResolverActivity$ActionTitle;-><init>(Ljava/lang/String;ILjava/lang/String;II)V
 
     sput-object v3, Lcom/android/internal/app/MzResolverActivity$ActionTitle;->HOME:Lcom/android/internal/app/MzResolverActivity$ActionTitle;
 
+    .line 172
     const/4 v0, 0x7
 
     new-array v0, v0, [Lcom/android/internal/app/MzResolverActivity$ActionTitle;
@@ -306,19 +335,19 @@
     .param p5, "namedTitleRes"    # I
 
     .prologue
-    .line 194
+    .line 199
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 195
+    .line 200
     iput-object p3, p0, Lcom/android/internal/app/MzResolverActivity$ActionTitle;->action:Ljava/lang/String;
 
-    .line 196
+    .line 201
     iput p4, p0, Lcom/android/internal/app/MzResolverActivity$ActionTitle;->titleRes:I
 
-    .line 197
+    .line 202
     iput p5, p0, Lcom/android/internal/app/MzResolverActivity$ActionTitle;->namedTitleRes:I
 
-    .line 194
+    .line 199
     return-void
 .end method
 
@@ -327,7 +356,7 @@
     .param p0, "action"    # Ljava/lang/String;
 
     .prologue
-    .line 201
+    .line 206
     invoke-static {}, Lcom/android/internal/app/MzResolverActivity$ActionTitle;->values()[Lcom/android/internal/app/MzResolverActivity$ActionTitle;
 
     move-result-object v2
@@ -341,7 +370,7 @@
 
     aget-object v0, v2, v1
 
-    .line 202
+    .line 207
     .local v0, "title":Lcom/android/internal/app/MzResolverActivity$ActionTitle;
     sget-object v4, Lcom/android/internal/app/MzResolverActivity$ActionTitle;->HOME:Lcom/android/internal/app/MzResolverActivity$ActionTitle;
 
@@ -357,16 +386,16 @@
 
     if-eqz v4, :cond_0
 
-    .line 203
+    .line 208
     return-object v0
 
-    .line 201
+    .line 206
     :cond_0
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 206
+    .line 211
     .end local v0    # "title":Lcom/android/internal/app/MzResolverActivity$ActionTitle;
     :cond_1
     sget-object v1, Lcom/android/internal/app/MzResolverActivity$ActionTitle;->DEFAULT:Lcom/android/internal/app/MzResolverActivity$ActionTitle;
@@ -379,7 +408,7 @@
     .param p0, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 167
+    .line 172
     const-class v0, Lcom/android/internal/app/MzResolverActivity$ActionTitle;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -395,7 +424,7 @@
     .locals 1
 
     .prologue
-    .line 167
+    .line 172
     sget-object v0, Lcom/android/internal/app/MzResolverActivity$ActionTitle;->$VALUES:[Lcom/android/internal/app/MzResolverActivity$ActionTitle;
 
     return-object v0
